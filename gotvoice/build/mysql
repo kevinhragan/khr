@@ -1,0 +1,7 @@
+aptitude install mysql-server phpmyadmin
+http://wiki.gotvoice.com/index.php/Setting_up_MYSQL_users
+vi /etc/mysql/my.cnf
+    bind-address = 0.0.0.0
+
+# for nagios replication check
+usermod -aG mysql nagios

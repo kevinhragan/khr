@@ -1,0 +1,6 @@
+host	ip	ram	#proc	Hz	#disk	disk-gb	os	kernel
+isis		1gb	2	3G	2		sw	2.6.16.16
+khufu		1gb	2 	3G	2		sw	2.6.16.16
+ramses		1gb	2	3G	2		sw	2.6.16.16
+spool1		2gb	2	3G	2		sw	2.4.29
+uadjet		2gb	2	3G	2		sw	2.6.16.16

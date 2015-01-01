@@ -1,0 +1,576 @@
+// <!-- <mdb:mork:z v="1.4"/> -->
+< <(a=c)> // (f=iso-8859-1)
+  (B8=charSetOverride)(B9=ns:msg:db:row:scope:ops:all)
+  (BA=ns:msg:db:table:kind:ops)(BB=ns:msg:db:row:scope:pending:all)
+  (BC=ns:msg:db:table:kind:pending)(BD=imageSize)(BE=junkscore)
+  (BF=keywords)(C0=current-view)(C1=notAPhishMessage)(C2=account)
+  (80=ns:msg:db:row:scope:msgs:all)(81=subject)(82=sender)(83=message-id)
+  (84=references)(85=recipients)(86=date)(87=size)(88=flags)(89=priority)
+  (8A=label)(8B=statusOfset)(8C=numLines)(8D=ccList)(8E=msgThreadId)
+  (8F=threadId)(90=threadFlags)(91=threadNewestMsgDate)(92=children)
+  (93=unreadChildren)(94=threadSubject)(95=numRefs)(96=msgCharSet)
+  (97=ns:msg:db:table:kind:msgs)(98=ns:msg:db:table:kind:thread)
+  (99=ns:msg:db:table:kind:allthreads)
+  (9A=ns:msg:db:row:scope:threads:all)(9B=threadParent)(9C=threadRoot)
+  (9D=msgOffset)(9E=offlineMsgSize)
+  (9F=ns:msg:db:row:scope:dbfolderinfo:all)
+  (A0=ns:msg:db:table:kind:dbfolderinfo)(A1=numMsgs)(A2=numNewMsgs)
+  (A3=folderSize)(A4=expungedBytes)(A5=folderDate)(A6=highWaterKey)
+  (A7=mailboxName)(A8=UIDValidity)(A9=totPendingMsgs)
+  (AA=unreadPendingMsgs)(AB=expiredMark)(AC=version)
+  (AD=fixedBadRefThreading)(AE=onlineName)(AF=folderName)(B0=charSet)
+  (B1=LastPurgeTime)(B2=sortType)(B3=sortOrder)(B4=viewFlags)
+  (B5=viewType)(B6=imapFlags)(B7=aclFlags)>
+<(AE=9159)(AA=48067e40)(80=1)>[1:m(^9C^AE)(^8F^AE)(^91^AA)(^92=1)]
+<(B5=915c)(B3=48071199)>[2:m(^9C^B5)(^8F^B5)(^91^B3)(^92=1)]
+<(BD=915d)(BA=480722ca)>[3:m(^9C^BD)(^8F^BD)(^91^BA)(^92=1)]
+<(C3=915e)(C1=4806771e)>[4:m(^9C^C3)(^8F^C3)(^91^C1)(^92=1)]
+<(C8=9161)(241=48081ad3)(8F=3)>[5:m(^9C^C8)(^8F^C8)(^91^241)(^92=3)]
+<(CD=9162)(244=48081add)(14B=5)>
+[6:m(^9C^CD)(^8F^CD)(^91^244)(^92=5)]
+<(D2=9166)(D0=480775e8)>[7:m(^9C^D2)(^8F^D2)(^91^D0)(^92=1)]
+<(D8=9167)>[8:m(^9C^D8)(^8F^D8)(^91^D0)(^92=1)]
+<(DE=9171)(10D=480785d7)(8E=2)>[9:m(^9C^DE)(^8F^DE)(^91^10D)(^92=2)]
+<(E4=9172)(E2=48077bce)>[A:m(^9C^E4)(^8F^E4)(^91^E2)(^92=1)]
+<(E9=9173)(E7=48077c29)>[B:m(^9C^E9)(^8F^E9)(^91^E7)(^92=1)]
+<(EE=9174)(EC=48077c4f)>[C:m(^9C^EE)(^8F^EE)(^91^EC)(^92=1)]
+<(F3=9175)(F1=48077cc9)>[D:m(^9C^F3)(^8F^F3)(^91^F1)(^92=1)]
+<(FB=9176)(25C=480808ea)(14C=7)>
+[E:m(^9C^FB)(^8F^FB)(^91^25C)(^92=7)]
+<(100=9180)(FE=480783f7)>[F:m(^9C^100)(^8F^100)(^91^FE)(^92=1)]
+<(107=9181)(105=4807841c)>[10:m(^9C^107)(^8F^107)(^91^105)(^92=1)]
+<(12E=918b)(132=48051edf)>[11:m(^9C^12E)(^8F^12E)(^91^132)(^92=2)]
+<(139=918d)(137=47ff8e77)>[12:m(^9C^139)(^8F^139)(^91^137)(^92=1)]
+<(13E=918e)(13C=47ffceed)>[13:m(^9C^13E)(^8F^13E)(^91^13C)(^92=1)]
+<(143=918f)(141=48039132)>[14:m(^9C^143)(^8F^143)(^91^141)(^92=1)]
+<(149=9190)(147=4803ec80)>[15:m(^9C^149)(^8F^149)(^91^147)(^92=1)]
+<(15A=9191)(158=48051d23)>[16:m(^9C^15A)(^8F^15A)(^91^158)(^92=1)]
+<(161=9192)(15F=48051c15)>[17:m(^9C^161)(^8F^161)(^91^15F)(^92=1)]
+<(169=9193)(16F=48050f25)>[18:m(^9C^169)(^8F^169)(^91^16F)(^92=2)]
+<(178=9195)(17E=4803eb25)>[19:m(^9C^178)(^8F^178)(^91^17E)(^92=2)]
+<(189=9197)(187=48041500)>[1A:m(^9C^189)(^8F^189)(^91^187)(^92=1)]
+<(190=9198)(18E=480380ae)>[1B:m(^9C^190)(^8F^190)(^91^18E)(^92=1)]
+<(196=9199)(194=48037b57)>[1C:m(^9C^196)(^8F^196)(^91^194)(^92=1)]
+<(19D=919a)(19B=47fbeb2d)>[1D:m(^9C^19D)(^8F^19D)(^91^19B)(^92=1)]
+<(1A4=919b)(1A2=47fbeed9)>[1E:m(^9C^1A4)(^8F^1A4)(^91^1A2)(^92=1)]
+<(1AE=919c)(1AB=48041536)>[1F:m(^9C^1AE)(^8F^1AE)(^91^1AB)(^92=1)]
+<(1B6=919d)(1BB=4803b359)>[20:m(^9C^1B6)(^8F^1B6)(^91^1BB)(^92=2)]
+<(1C3=919f)(1C9=463b4ad0)>[21:m(^9C^1C3)(^8F^1C3)(^91^1C9)(^92=2)]
+<(1E2=91a4)(1E0=47992301)>[22:m(^9C^1E2)(^8F^1E2)(^91^1E0)(^92=1)]
+<(1E9=91a5)(1E7=470c0d57)>[23:m(^9C^1E9)(^8F^1E9)(^91^1E7)(^92=1)]
+<(1EF=91a6)(1ED=44eb6cc4)>[24:m(^9C^1EF)(^8F^1EF)(^91^1ED)(^92=1)]
+<(1F5=91a7)(1F3=44d769eb)>[25:m(^9C^1F5)(^8F^1F5)(^91^1F3)(^92=1)]
+<(1FE=91a8)(1FC=44c8fc13)>[26:m(^9C^1FE)(^8F^1FE)(^91^1FC)(^92=1)]
+<(208=91a9)(204=44be348b)>[27:m(^9C^208)(^8F^208)(^91^204)(^92=1)]
+<(20E=91ac)(20C=4807ae45)>[28:m(^9C^20E)(^8F^20E)(^91^20C)(^92=1)]
+<(214=91ae)(212=4807baed)>[29:m(^9C^214)(^8F^214)(^91^212)(^92=1)]
+<(21B=91b0)(219=4807b8a2)>[2A:m(^9C^21B)(^8F^21B)(^91^219)(^92=1)]
+<(221=91b2)(21F=4807c0ba)>[2B:m(^9C^221)(^8F^221)(^91^21F)(^92=1)]
+<(227=91bf)(247=480844e5)>[2C:m(^9C^227)(^8F^227)(^91^247)(^92=2)]
+<(22D=91c0)(22B=480802af)>[2D:m(^9C^22D)(^8F^22D)(^91^22B)(^92=1)]
+<(23E=91d0)(23C=480817c7)>[2E:m(^9C^23E)(^8F^23E)(^91^23C)(^92=1)]
+<(24D=91d4)(24B=480852f5)>[2F:m(^9C^24D)(^8F^24D)(^91^24B)(^92=1)]
+<(253=91d5)(251=48085313)>[30:m(^9C^253)(^8F^253)(^91^251)(^92=1)]
+<(258=91d6)(257=4808531d)>[31:m(^9C^258)(^8F^258)(^91^257)(^92=1)]
+<(263=91d9)(261=4808631a)>[32:m(^9C^263)(^8F^263)(^91^261)(^92=1)]
+<(269=91dd)(26D=4808ca56)>[33:m(^9C^269)(^8F^269)(^91^26D)(^92=2)]
+<(274=91e2)(272=4808acbd)>[34:m(^9C^274)(^8F^274)(^91^272)(^92=1)]
+<(27E=91e3)(27C=461fb2d4)>[35:m(^9C^27E)(^8F^27E)(^91^27C)(^92=1)]
+<(285=91e4)(283=461d394a)>[36:m(^9C^285)(^8F^285)(^91^283)(^92=1)]
+<(28C=91e5)(28A=44d3c065)>[37:m(^9C^28C)(^8F^28C)(^91^28A)(^92=1)]
+<(292=91e9)(290=4808f92b)>[38:m(^9C^292)(^8F^292)(^91^290)(^92=1)(^93=1)]
+
+<(86=0)(A6=nagios@'mail.gotvoice.com')(A7=ops@gotvoice.com)(229
+    =** PROBLEM alert - cairo.gotvoice.com/wordzx-vip_timeout is$0A CRITICAL *\
+*)(22A=200804180208.m3I28lmP022423@seadev4.gotvoice.com)(AB=us-ascii)
+  (22C=7b4)(AD=ffffffff)>
+{91C0:^80 {(k^98:c)(s=9)2D:m } [91C0(^88=1)(^8B=0)(^82^A6)(^85^A7)(^81^229)
+    (^83^22A)(^86^22B)(^89=1)(^96^AB)(^87=7b4)(^9B^AD)(^8E^22D)]}
+
+<(A8
+    =** PROBLEM alert - server1.gotvoice.com/Transcription Callbacks$0A is CRI\
+TICAL **)(A9=200804162231.m3GMVSkr004795@seadev4.gotvoice.com)(AC=7a1)
+  (AF=lwalters@gotvoice.com)(B0
+    =kevinr@gotvoice.com, jkaseda@gotvoice.com, opsreports@gotvoice.com)
+  (B1=Daily Spooler Report 2008-04-16)(B2
+    =48071199.wyA2DKmShZWi2pc6%lwalters@gotvoice.com)(B4=1204)(B6
+    =joey@infodrom.org (Martin Schulze\))(B7
+    =Debian Security Announcements <debian-security-announce@lists.debian.org>)
+  (B8
+    =[SECURITY] [DSA 1547-1] New OpenOffice.org packages fix arbitrary code ex\
+ecution)(B9=20080417101331.14A45FD86@finlandia.home.infodrom.org)(BB
+    =iso-8859-1)(BC=de36)(BE="Robert Ingman" <roberti@gotvoice.com>)
+  (BF=New V2T vendor in test-mode)(C0
+    =00bb01c8a00d\$6343dcf0\$ba015c0a@ROBERTINGMAN)(C2=fdb)(C4
+    =** PROBLEM alert - uadjet.gotvoice.com/Core files is CRITICAL **)
+  (C5=200804171451.m3HEpm9t020313@seadev4.gotvoice.com)(C6=48076404)
+  (C7=772)(C9
+    =** PROBLEM alert - anubis.gotvoice.com/Core files is CRITICAL **)
+  (CA=200804171451.m3HEpwZB020360@seadev4.gotvoice.com)(CB=4807640e)
+  (CC=770)(CE
+    =** PROBLEM alert - cairo.gotvoice.com/lynxbits_timeout is$0A CRITICAL **)
+  (CF=200804171608.m3HG88Ze031664@seadev4.gotvoice.com)(D1=7ac)(D3
+    ="Robert Ingman" <robertingman@comcast.net>)(D4=everybody@gotvoice.com)
+  (D5=FW: TED talks...)(D6=003b01c8a0a5\$3ac77fa0\$ba015c0a@ROBERTINGMAN)
+  (D7=7c5)(D9
+    ="'Edwin Onchari'" <eonchari@lynxbits.com>, losoro@lynxbits.com)
+  (DA
+    =FW: ** PROBLEM alert - cairo.gotvoice.com/lynxbits_timeout is CRITICAL **)
+  (DB=004301c8a0a6\$606b9e20\$ba015c0a@ROBERTINGMAN)(DC=480777ca)(92=6)
+  (DD=8b4)(DF=nagios@nut.gotvoice.com)(E0
+    =** PROBLEM alert 1 - nagios.gotvoice.com host is DOWN **)(E1
+    =200804171633.m3HGXIDU027118@nut.gotvoice.com)(E3=6bf)(E5
+    =Host DOWN alert for aku!)(E6
+    =200804171634.m3HGYnSF002615@seadev4.gotvoice.com)(E8=711)(EA
+    =Host UP alert for aku!)(EB
+    =200804171635.m3HGZREL003099@seadev4.gotvoice.com)(ED=70d)(EF
+    =** RECOVERY alert 2 - nagios.gotvoice.com host is UP **)(F0
+    =200804171637.m3HGbTK8027513@nut.gotvoice.com)(F2=6bb)(F4
+    =Kevin Ragan <kevinr@gotvoice.com>)(F5
+    ='every body' <everybody@gotvoice.com>)(F6=leaving)(F7
+    =480780C9.5080404@gotvoice.com)(F8=480780c9)(F9=ISO-8859-1)(FA=589)
+  (FC=** RECOVERY alert - cairo.gotvoice.com/lynxbits_timeout is OK **)
+  (FD=200804171708.m3HH87w8007729@seadev4.gotvoice.com)(FF=799)(101
+    =Devin Carraway <devin@debian.org>)(102
+    =debian-security-announce@lists.debian.org)(103
+    =[SECURITY] [DSA 1548-1] New xpdf packages fix arbitrary code exitution)
+  (104=E1JmXbI-0002DE-1N@klecker.debian.org)(106=25b1)(9C=11)(108
+    ="Edwin Onchari" <eonchari@lynxbits.com>)(109
+    ="'Robert Ingman'" <roberti@gotvoice.com>, losoro@lynxbits.com)
+  (10A
+    =** PROBLEM alert - cairo.gotvoice.com/lynxbits_timeout is CRITICAL **)
+  (10B=005c01c8a0ae\$c0c3cbf0\$424b63d0\$@com)(10C
+    =<004301c8a0a6\$606b9e20\$ba015c0a@ROBERTINGMAN>)(10E=bf5)(10F
+    =Aaron DeForest <adeforest@gotvoice.com>)(110
+    =** PROBLEM alert - anubis.gotvoice.com/Core files is CRITICAL$0A **)
+  (111=480785DA.2010800@gotvoice.com)(112
+    =<200804171451.m3HEpwZB020360@seadev4.gotvoice.com> <48078180.7030103@gotv\
+oice.com>)(113=480785da)(114=829)(119=9186)(115
+    =48078180.7030103@gotvoice.com)(116
+    =<200804171451.m3HEpwZB020360@seadev4.gotvoice.com>)(117=48078180)
+  (118=78c)(9D=13)(11A=Mike Webb <mwebb@gotvoice.com>)(11B
+    =480781AA.503@gotvoice.com)(11C=<480780C9.5080404@gotvoice.com>)
+  (11D=480781aa)(11E=6aa)(11F=Janet Kaseda <jkaseda@gotvoice.com>)(120
+    =32703960.74641208451950182.JavaMail.root@mail)(121=4807836e)(122
+    =utf-8)(123=75b)(124=Allen Caldwell <acaldwell@gotvoice.com>)(125
+    =4807867C.6010605@gotvoice.com)(126=4807867c)(127=6e1)(128
+    ="Colin Lamont" <colinl@gotvoice.com>)(129
+    ="'Kevin Ragan'" <kevinr@gotvoice.com>, "'Martin Dunsmuir'" <martind@gotvo\
+ice.com>, "'Aaron DeForest'" <adeforest@gotvoice.com>, "'Mike Webb'" <mwebb@go\
+tvoice.com>, "'Robert Ingman'" <roberti@gotvoice.com>)(12A
+    =whois ... also sendvoice.net)(12B
+    =20080415212833.84D0E5A0002@mail.gotvoice.com)(12C=48051d97)(12D=1990)
+  (12F
+    ="'Colin Lamont'" <colinl@gotvoice.com>, "'Kevin Ragan'" <kevinr@gotvoice.\
+com>, "'Martin Dunsmuir'" <martind@gotvoice.com>, "'Aaron DeForest'" <adefores\
+t@gotvoice.com>, "'Mike Webb'" <mwebb@gotvoice.com>)(130
+    =013201c89f40\$33dc0640\$ba015c0a@ROBERTINGMAN)(131
+    =<20080415212833.84D0E5A0002@mail.gotvoice.com>)(133=1b46)(134
+    =khr@huskies.com)(135=poverty line)(136=47FF8E77.4090303@gotvoice.com)
+  (138=14f)(13A=apartment capitol hill)(13B=47FFCEED.3030209@gotvoice.com)
+  (13D=159)(13F=fuhrman vitamin; unix magagement book)(140
+    =48039132.4070408@gotvoice.com)(142=168)(144
+    =therese.ragan@sbcglobal.net)(145=check in hand)(146
+    =4803EC80.2040104@gotvoice.com)(148=186)(156
+    =** PROBLEM alert - aku.gotvoice.com/HTTP is CRITICAL **)(157
+    =200804152124.m3FLOpp0013650@seadev4.gotvoice.com)(159=748)(15C
+    =sample of curl)(15D=24591335.72001208294421196.JavaMail.root@mail)
+  (15E=<48051B26.6090505@gotvoice.com>)(160=950)(163
+    =Bob Lloyd <bobl@gotvoice.com>, Mike Webb <mwebb@gotvoice.com>, Robert Ing\
+man <roberti@gotvoice.com>, Colin Lamont <colinl@gotvoice.com>, Kevin Ragan <k\
+evinr@gotvoice.com>)(164=Next week)(165=4804EBE0.9030804@gotvoice.com)
+  (166=<4804D448.60207@gotvoice.com> <4804E69D.7060601@gotvoice.com>)
+  (167=4804ebe0)(168=b5b)(16B
+    ="'Aaron DeForest'" <adeforest@gotvoice.com>, "'Bob Lloyd'" <bobl@gotvoice\
+.com>, "'Mike Webb'" <mwebb@gotvoice.com>, "'Robert Ingman'" <roberti@gotvoice\
+.com>, "'Kevin Ragan'" <kevinr@gotvoice.com>)(16C=swu@gotvoice.com)
+  (16D=20080415202655.21F145A0002@mail.gotvoice.com)(16E
+    =<4804EBE0.9030804@gotvoice.com>)(170=d16)(172
+    =Mike Webb <mwebb@gotvoice.com>, Robert Ingman <roberti@gotvoice.com>)
+  (173
+    =Aaron DeForest <adeforest@gotvoice.com>, Kevin Ragan <kevinr@gotvoice.com\
+>)(174=replicate or backup db on server1?)(175
+    =29423833.45291208216094443.JavaMail.root@mail)(176=4803ea1e)(177=634)
+  (17A
+    ="'Janet Kaseda'" <jkaseda@gotvoice.com>, "'Mike Webb'" <mwebb@gotvoice.co\
+m>)(17B
+    ="'Aaron DeForest'" <adeforest@gotvoice.com>, "'Kevin Ragan'" <kevinr@gotv\
+oice.com>)(17C=00fa01c89e88\$c835f7a0\$ba015c0a@ROBERTINGMAN)(17D
+    =<29423833.45291208216094443.JavaMail.root@mail>)(17F=US-ASCII)
+  (180=9be)(182=Dan Cox <danc@gotvoice.com>)(183
+    =Kevin Ragan <kevinr@gotvoice.com>, Mike Webb <mwebb@gotvoice.com>)
+  (184=Apache ssl on aku)(185
+    =27968437.45581208227072307.JavaMail.root@mail)(186
+    =<2303526.45561208226963553.JavaMail.root@mail>)(188=7c1)(18B
+    =core files for apache)(18C=480380AE.3030400@gotvoice.com)(18D
+    =<47FCE914.5010003@gotvoice.com> <48037568.4090702@gotvoice.com> <48037C2D\
+.1060506@gotvoice.com>)(18F=10d9)(192=at home this morning)(193
+    =48037B57.8000501@gotvoice.com)(195=564)(198
+    =ops <ops@gotvoice.com>, eng@gotvoice.com, 'Dan Cox' <danc@gotvoice.com>)
+  (199=network interruption)(19A=47FBEB2D.90307@gotvoice.com)(19C=61e)
+  (19F=ftp)(1A0=28222819.37881207693017562.JavaMail.root@mail)(1A1
+    =<2297811.37861207692938777.JavaMail.root@mail>)(1A3=931)(1A6
+    =bugzilla-daemon@icecream.gotvoice.com)(1A7=kevinr@gotvoice.com)
+  (1A8
+    =[Bug 2680] Need to run Oceanic sign-up and acct pages over HTTPS,$0A and \
+update Apache)(1A9=200804150238.m3F2cku5013658@icecream.gotvoice.com)
+  (1AA=<bug-2680-28@http.bugzilla.gotvoice.com/>)(1AC=UTF-8)(1AD=a85)
+  (1B0="'kevin ragan'" <kevinr@gotvoice.com>)(1B1=whois)(1B2
+    =20080414184119.23D9D5A0002@mail.gotvoice.com)(1B3
+    =<4803A3CC.4080804@gotvoice.com>)(1B4=4803a4e6)(1B5=b81)(1B8
+    =Colin Lamont <colinl@gotvoice.com>, Robert Ingman <roberti@gotvoice.com>,\
+ 'Aaron DeForest' <adeforest@gotvoice.com>)(1B9
+    =4803B359.1040006@gotvoice.com)(1BA
+    =<20080414184119.23D9D5A0002@mail.gotvoice.com> <4803B22A.4020208@gotvoice\
+.com>)(1BC=fda)(1BE=ops <ops@gotvoice.com>)(1BF=server1)(1C0
+    =463A5303.6070601@gotvoice.com)(1C1=463a5303)(1C2=1e4)(1C5
+    =Robert Ingman <roberti@gotvoice.com>)(1C6
+    =Aaron DeForest <adeforest@gotvoice.com>, ops <ops@gotvoice.com>)
+  (1C7=463B4AD0.6040205@gotvoice.com)(1C8
+    =<29040761.3571178259359941.JavaMail.root@mail>)(1CA=629)(1D7
+    ="'Kevin Ragan'" <kevinr@gotvoice.com>)(1D8
+    =20080417184113.3A6E75A0002@mail.gotvoice.com)(1D9=4807995c)(1DA=74c)
+  (1DC="Bruce J. Peterson" <bpeterson@gotvoice.com>)(1DD
+    =GV-MVS v1-1:  Transcription Proofreading Scoring)(1DE
+    =004901c85ee3\$25fa58d0\$71ef0a70\$@com)(1DF
+    =<004b01c85ecd\$1f73f9a0\$5e5bece0\$@com>)(1E1=13c9)(1E4
+    ="Jesse Ruggenberg" <jesse.ruggenberg@siliconmechanics.com>)(1E5
+    =Your Silicon Mechanics Quote:  #125260)(1E6
+    =343597.1191972183@siliconmechanics.com)(1E8=1196)(1EB=iBackup account)
+  (1EC=005b01c6c62b\$d2328f20\$ba015c0a@ROBERTINGMAN)(1EE=b2b)(1F1
+    =FW: Reminder: Sender ID Records required for Program Senders)(1F2
+    =000601c6ba3e\$5d3c4f10\$ba015c0a@ROBERTINGMAN)(1F4=c66)(1F7
+    ="'Curt Blake'" <curtb@gotvoice.com>, "'Mike Webb'" <mwebb@gotvoice.com>, \
+"'Aaron DeForest'" <adeforest@gotvoice.com>)(1F8
+    ="'Kevin Ragan'" <kevinr@gotvoice.com>, "'Jesse Weigert'" <jesse@gotvoice.\
+com>)(1F9=[WARNING] Sender Score Certified IPs for GotVoice (#664555\))
+  (1FA=001a01c6b1a4\$a9007450\$ba015c0a@ROBERTINGMAN)(1FB
+    =<001801c6b199\$41de5400\$c0015c0a@curtbxphome>)(1FD=1072)(207
+    =10000001)(200="Curt Blake" <curtb@gotvoice.com>)(201
+    ="'every body'" <everybody@gotvoice.com>)(202
+    =FW: GotVoice Presentation)(203=006c01c6ab37\$dae3f000\$063be20a@Curt)
+  (206=3aa16d)(20A
+    =** PROBLEM alert - ammut.gotvoice.com/GV provisioning is CRITICAL **)
+  (20B=200804172008.m3HK8bbb001974@seadev4.gotvoice.com)(20D=7ae)(210
+    =** RECOVERY alert - ammut.gotvoice.com/GV provisioning is OK **)
+  (211=200804172102.m3HL2bXt010014@seadev4.gotvoice.com)(213=79d)(216
+    =Moritz Muehlenhoff <jmm@debian.org>)(217
+    =[SECURITY] [DSA 1549-1] New clamav packages fix several vulnerabilities)
+  (218=20080417205250.GA5014@galadriel.inutil.org)(21A=4ca4)(21D
+    =[SECURITY] [DSA 1550-1] New suphp packages fix local privilege escalation)
+  (21E=20080417212722.GA6349@galadriel.inutil.org)(220=2e10)(223
+    =** PROBLEM alert - ramses.gotvoice.com/Core files is CRITICAL **)
+  (224=200804180051.m3I0pHM4011176@seadev4.gotvoice.com)(225=4807f085)
+  (226=76e)(22F=200804172151.m3HLplxg017219@seadev4.gotvoice.com)(230
+    =4807c673)(232=200804172151.m3HLpvxU017233@seadev4.gotvoice.com)
+  (233=4807c67d)(235
+    ="'Kevin Ragan'" <kevinr@gotvoice.com>, "'every body'" <everybody@gotvoice\
+.com>)(236=013301c8a0dd\$32c46f10\$ba015c0a@ROBERTINGMAN)(237=4807d3c3)
+  (238=81a)(23A
+    =** RECOVERY alert - cairo.gotvoice.com/wordzx-vip_timeout is OK$0A **)
+  (23B=200804180338.m3I3clKS003098@seadev4.gotvoice.com)(23D=7a3)(240
+    =200804180351.m3I3plJU005084@seadev4.gotvoice.com)(243
+    =200804180351.m3I3pvEH005099@seadev4.gotvoice.com)(246
+    =200804180651.m3I6pHeh031328@seadev4.gotvoice.com)(249
+    =** RECOVERY alert - ramses.gotvoice.com/Core files is OK **)(24A
+    =200804180751.m3I7pHD8007602@seadev4.gotvoice.com)(24C=760)(24F
+    =** RECOVERY alert - uadjet.gotvoice.com/Core files is OK **)(250
+    =200804180751.m3I7plLo007617@seadev4.gotvoice.com)(252=762)(255
+    =** RECOVERY alert - anubis.gotvoice.com/Core files is OK **)(256
+    =200804180751.m3I7pv6W007628@seadev4.gotvoice.com)(25A
+    =Bob Lloyd <bobl@gotvoice.com>)(25B=480808EA.1070202@gotvoice.com)
+  (25D=73a)(25F=Daily Spooler Report 2008-04-17)(260
+    =4808631a.tXDysFAP2aADDWOX%lwalters@gotvoice.com)(262=1205)(265
+    =heket again)(266=4808B6B3.4010204@gotvoice.com)(267=4808b6b3)(268=5b6)
+  (26B=004e01c8a170\$2aa95a50\$ba015c0a@ROBERTINGMAN)(26C
+    =<4808B6B3.4010204@gotvoice.com>)(26E=798)(270=sys admin questions)
+  (271=4808ACBD.2040706@gotvoice.com)(273=63e)(276
+    =Maria Lo <mlo@zimbra.com>)(277
+    =kevinr@gotvoice.com, support@zimbra.com)(278=support@zimbra.com)
+  (279=SF: Case 00011056: Gotvoice - install failure)(27A
+    =1083022020.4301176482516169.JavaMail.root@dogfood.liquidsys.com)
+  (27B=<16591914.14601176478277287.JavaMail.email2case@dogfood.zimbra.com>)
+  (27D=1289)(280=eng@gotvoice.com)(281=new asterisk manual)(282
+    =461D394A.40708@gotvoice.com)(284=495)(287
+    ="'Mike Webb'" <mwebb@gotvoice.com>)(288=FW: VPN is complete)(289
+    =008201c6b80f\$8e375910\$ba015c0a@ROBERTINGMAN)(28B=e30)(28E
+    =** PROBLEM alert - heket.gotvoice.com/Remote dispatcher is$0A CRITICAL **)
+  (28F=200804181940.m3IJeRxa013854@seadev4.gotvoice.com)(291=78d)>
+{1:^80 {(k^97:c)(s=9)} 
+  [9159(^88=1)(^8B=0)(^82^A6)(^85^A7)(^81^A8)(^83^A9)(^86^AA)(^89=1)
+    (^96^AB)(^87^AC)(^9B^AD)(^8E^AE)]
+  [915C(^88=1)(^8B=0)(^82^AF)(^85^B0)(^81^B1)(^83^B2)(^86^B3)(^89=1)
+    (^96^AB)(^87^B4)(^9B^AD)(^8E^B5)]
+  [915D(^88=1)(^8B=0)(^82^B6)(^85^B7)(^81^B8)(^83^B9)(^86^BA)(^89=1)
+    (^96^BB)(^87^BC)(^9B^AD)(^8E^BD)]
+  [915E(^88=1)(^8B=0)(^82^BE)(^85^A7)(^81^BF)(^83^C0)(^86^C1)(^89=1)
+    (^87^C2)(^9B^AD)(^8E^C3)]
+  [9161(^88=1)(^8B=0)(^82^A6)(^85^A7)(^81^C4)(^83^C5)(^86^C6)(^89=1)
+    (^96^AB)(^87^C7)(^9B^AD)(^8E^C8)]
+  [9162(^88=1)(^8B=0)(^82^A6)(^85^A7)(^81^C9)(^83^CA)(^86^CB)(^89=1)
+    (^96^AB)(^87^CC)(^9B^AD)(^8E^CD)]
+  [9166(^88=1)(^8B=0)(^82^A6)(^85^A7)(^81^CE)(^83^CF)(^86^D0)(^89=1)
+    (^96^AB)(^87^D1)(^9B^AD)(^8E^D2)]
+  [9167(^88=1)(^8B=0)(^82^D3)(^85^D4)(^81^D5)(^83^D6)(^86^D0)(^89=1)
+    (^96^AB)(^87^D7)(^9B^AD)(^8E^D8)]
+  [9171(^88=1)(^8B=0)(^82^BE)(^85^D9)(^8D^A7)(^81^DA)(^83^DB)(^86^DC)
+    (^89=6)(^96^AB)(^87^DD)(^9B^AD)(^8E^DE)]
+  [9172(^88=1)(^8B=0)(^82^DF)(^85^A7)(^81^E0)(^83^E1)(^86^E2)(^89=1)
+    (^87^E3)(^9B^AD)(^8E^E4)]
+  [9173(^88=1)(^8B=0)(^82^A6)(^85^A7)(^81^E5)(^83^E6)(^86^E7)(^89=1)
+    (^96^AB)(^87^E8)(^9B^AD)(^8E^E9)]
+  [9174(^88=1)(^8B=0)(^82^A6)(^85^A7)(^81^EA)(^83^EB)(^86^EC)(^89=1)
+    (^96^AB)(^87^ED)(^9B^AD)(^8E^EE)]
+  [9175(^88=1)(^8B=0)(^82^DF)(^85^A7)(^81^EF)(^83^F0)(^86^F1)(^89=1)
+    (^87^F2)(^9B^AD)(^8E^F3)]
+  [9176(^88=1)(^8B=0)(^82^F4)(^85^F5)(^81^F6)(^83^F7)(^86^F8)(^89=1)
+    (^96^F9)(^87^FA)(^9B^AD)(^8E^FB)]
+  [9180(^88=1)(^8B=0)(^82^A6)(^85^A7)(^81^FC)(^83^FD)(^86^FE)(^89=1)
+    (^96^AB)(^87^FF)(^9B^AD)(^8E^100)]
+  [9181(^88=1)(^8B=0)(^82^101)(^85^102)(^81^103)(^83^104)(^86^105)(^89=1)
+    (^87^106)(^9B^AD)(^8E^107)]
+  [9182(^88=11)(^8B=0)(^82^108)(^85^109)(^8D^A7)(^81^10A)(^83^10B)(^95=1)
+    (^84^10C)(^86^10D)(^89=1)(^96^AB)(^87=bf5)(^9B^DE)(^8E^DE)]
+  [9183(^88=11)(^8B=0)(^82^10F)(^85^A7)(^81^110)(^83^111)(^95=2)(^84^112)
+    (^86^113)(^89=1)(^96^F9)(^87=829)(^9B^119)(^8E^CD)]
+  [9186(^88=11)(^8B=0)(^82^10F)(^85^A7)(^8D^A7)(^81^110)(^83^115)(^95=1)
+    (^84^116)(^86^117)(^89=1)(^96^F9)(^87=78c)(^9B^CD)(^8E^CD)]
+  [9187(^88=13)(^8B=0)(^82^11A)(^85^F4)(^81^F6)(^83^11B)(^95=1)(^84^11C)
+    (^86^11D)(^89=1)(^96^F9)(^87=6aa)(^9B^FB)(^8E^FB)]
+  [9188(^88=13)(^8B=0)(^82^11F)(^85^F4)(^81^F6)(^83^120)(^95=1)(^84^11C)
+    (^86^121)(^89=1)(^96^122)(^87=75b)(^9B^FB)(^8E^FB)]
+  [918A(^88=13)(^8B=0)(^82^124)(^85^F4)(^81^F6)(^83^125)(^95=1)(^84^11C)
+    (^86^126)(^89=1)(^96^F9)(^87=6e1)(^9B^FB)(^8E^FB)]
+  [918B(^88=11)(^8B=0)(^82^128)(^85^129)(^81^12A)(^83^12B)(^86^12C)
+    (^89=6)(^96^AB)(^87^12D)(^9B^AD)(^8E^12E)]
+  [918C(^88=11)(^8B=0)(^82^BE)(^85^12F)(^81^12A)(^83^130)(^95=1)(^84^131)
+    (^86^132)(^89=1)(^96^AB)(^87^133)(^9B^12E)(^8E^12E)]
+  [918D(^88=1)(^8B=0)(^82^F4)(^85^134)(^81^135)(^83^136)(^86^137)(^89=1)
+    (^96^F9)(^87=14f)(^9B^AD)(^8E^139)]
+  [918E(^88=1)(^8B=0)(^82^F4)(^85^134)(^81^13A)(^83^13B)(^86^13C)(^89=1)
+    (^96^F9)(^87=159)(^9B^AD)(^8E^13E)]
+  [918F(^88=1)(^8B=0)(^82^F4)(^85^134)(^81^13F)(^83^140)(^86^141)(^89=1)
+    (^96^F9)(^87=168)(^9B^AD)(^8E^143)]
+  [9190(^88=1)(^8B=0)(^82^F4)(^85^144)(^81^145)(^83^146)(^86^147)(^89=1)
+    (^96^F9)(^87=186)(^9B^AD)(^8E^149)]
+  [9191(^88=1)(^8B=0)(^82^A6)(^85^A7)(^81^156)(^83^157)(^86^158)(^89=1)
+    (^96^AB)(^87=748)(^9B^AD)(^8E^15A)]
+  [9192(^88=13)(^8B=0)(^82^11F)(^85^F4)(^81^15C)(^83^15D)(^95=1)(^84^15E)
+    (^86^15F)(^89=1)(^96^122)(^87=950)(^9B^AD)(^8E^161)]
+  [9193(^88=11)(^8B=0)(^82^10F)(^85^163)(^81^164)(^83^165)(^95=2)(^84^166)
+    (^86^167)(^89=1)(^96^F9)(^87=b5b)(^9B^AD)(^8E^169)]
+  [9194(^88=11)(^8B=0)(^82^128)(^85^16B)(^8D^16C)(^81^164)(^83^16D)
+    (^95=1)(^84^16E)(^86^16F)(^89=1)(^96^AB)(^87=d16)(^9B^169)(^8E^169)]
+  [9195(^88=3)(^8B=0)(^82^11F)(^85^172)(^8D^173)(^81^174)(^83^175)(^86^176)
+    (^89=1)(^96^122)(^87=634)(^9B^AD)(^8E^178)]
+  [9196(^88=11)(^8B=0)(^82^BE)(^85^17A)(^8D^17B)(^81^174)(^83^17C)(^95=1)
+    (^84^17D)(^86^17E)(^89=1)(^96^17F)(^87=9be)(^9B^178)(^8E^178)]
+  [9197(^88=3)(^8B=0)(^82^182)(^85^183)(^81^184)(^83^185)(^95=1)(^84^186)
+    (^86^187)(^89=1)(^96^122)(^87=7c1)(^9B^AD)(^8E^189)]
+  [9198(^88=11)(^8B=0)(^82^10F)(^85^11A)(^8D^F4)(^81^18B)(^83^18C)(^95=3)
+    (^84^18D)(^86^18E)(^89=1)(^96^F9)(^87^18F)(^9B^AD)(^8E^190)]
+  [9199(^88=1)(^8B=0)(^82^11A)(^85^D4)(^81^192)(^83^193)(^86^194)(^89=1)
+    (^96^F9)(^87=564)(^9B^AD)(^8E^196)]
+  [919A(^88=1)(^8B=0)(^82^F4)(^85^198)(^81^199)(^83^19A)(^86^19B)(^89=1)
+    (^96^F9)(^87=61e)(^9B^AD)(^8E^19D)]
+  [919B(^88=13)(^8B=0)(^82^11F)(^85^F4)(^81=ftp)(^83^1A0)(^95=1)(^84^1A1)
+    (^86^1A2)(^89=1)(^96^122)(^87=931)(^9B^AD)(^8E^1A4)]
+  [919C(^88=1)(^8B=0)(^82^1A6)(^85^1A7)(^81^1A8)(^83^1A9)(^95=1)(^84^1AA)
+    (^86^1AB)(^89=1)(^96^1AC)(^87=a85)(^9B^AD)(^8E^1AE)]
+  [919D(^88=13)(^8B=0)(^82^128)(^85^1B0)(^81^1B1)(^83^1B2)(^95=1)(^84^1B3)
+    (^86^1B4)(^89=1)(^96^AB)(^87=b81)(^9B^AD)(^8E^1B6)]
+  [919E(^88=11)(^8B=0)(^82^11A)(^85^F4)(^8D^1B8)(^81^12A)(^83^1B9)(^95=2)
+    (^84^1BA)(^86^1BB)(^89=1)(^96^F9)(^87=fda)(^9B^1B6)(^8E^1B6)]
+  [919F(^88=1)(^8B=0)(^82^F4)(^85^1BE)(^81^1BF)(^83^1C0)(^86^1C1)(^89=1)
+    (^96^F9)(^87=1e4)(^9B^AD)(^8E^1C3)]
+  [91A0(^88=11)(^8B=0)(^82^F4)(^85^1C5)(^8D^1C6)(^81^1BF)(^83^1C7)(^95=1)
+    (^84^1C8)(^86^1C9)(^89=1)(^96^1AC)(^87=629)(^9B^1C3)(^8E^1C3)]
+  [91A3(^88=13)(^8B=0)(^82^128)(^85^1D7)(^81^F6)(^83^1D8)(^95=1)(^84^11C)
+    (^86^1D9)(^89=1)(^96^AB)(^87=74c)(^9B^FB)(^8E^FB)]
+  [91A4(^88=1)(^8B=0)(^82^1DC)(^85^D4)(^81^1DD)(^83^1DE)(^95=1)(^84^1DF)
+    (^86^1E0)(^89=1)(^96^AB)(^87^1E1)(^9B^AD)(^8E^1E2)]
+  [91A5(^88=3)(^8B=0)(^82^1E4)(^85^1A7)(^81^1E5)(^83^1E6)(^86^1E7)(^89=1)
+    (^87^1E8)(^9B^AD)(^8E^1E9)]
+  [91A6(^88=1)(^8B=0)(^82^D3)(^85^1D7)(^81^1EB)(^83^1EC)(^86^1ED)(^89=1)
+    (^87=b2b)(^9B^AD)(^8E^1EF)]
+  [91A7(^88=1)(^8B=0)(^82^BE)(^85^1D7)(^81^1F1)(^83^1F2)(^86^1F3)(^89=1)
+    (^96^AB)(^87=c66)(^9B^AD)(^8E^1F5)]
+  [91A8(^88=11)(^8B=0)(^82^BE)(^85^1F7)(^8D^1F8)(^81^1F9)(^83^1FA)(^95=1)
+    (^84^1FB)(^86^1FC)(^89=1)(^96^AB)(^87^1FD)(^9B^AD)(^8E^1FE)]
+  [91A9(^88^207)(^8B=0)(^82^200)(^85^201)(^81^202)(^83^203)(^86^204)
+    (^89=1)(^87^206)(^9B^AD)(^8E^208)]
+  [91AC(^88=1)(^8B=0)(^82^A6)(^85^A7)(^81^20A)(^83^20B)(^86^20C)(^89=1)
+    (^96^AB)(^87=7ae)(^9B^AD)(^8E^20E)]
+  [91AE(^88=1)(^8B=0)(^82^A6)(^85^A7)(^81^210)(^83^211)(^86^212)(^89=1)
+    (^96^AB)(^87=79d)(^9B^AD)(^8E^214)]
+  [91B0(^88=1)(^8B=0)(^82^216)(^85^102)(^81^217)(^83^218)(^86^219)(^89=1)
+    (^96^AB)(^87^21A)(^9B^AD)(^8E^21B)]
+  [91B2(^88=1)(^8B=0)(^82^216)(^85^102)(^81^21D)(^83^21E)(^86^21F)(^89=1)
+    (^96^AB)(^87^220)(^9B^AD)(^8E^221)]
+  [91BF(^88=1)(^8B=0)(^82^A6)(^85^A7)(^81^223)(^83^224)(^86^225)(^89=1)
+    (^96^AB)(^87=76e)(^9B^AD)(^8E^227)]91C0 
+  [91CA(^88=1)(^8B=0)(^82^A6)(^85^A7)(^81^C4)(^83^22F)(^86^230)(^89=1)
+    (^96^AB)(^87^C7)(^9B^C8)(^8E^C8)]
+  [91CB(^88=1)(^8B=0)(^82^A6)(^85^A7)(^81^C9)(^83^232)(^86^233)(^89=1)
+    (^96^AB)(^87=76e)(^9B^CD)(^8E^CD)]
+  [91CF(^88=11)(^8B=0)(^82^BE)(^85^235)(^81^F6)(^83^236)(^95=1)(^84^11C)
+    (^86^237)(^89=1)(^96^AB)(^87=81a)(^9B^FB)(^8E^FB)]
+  [91D0(^88=1)(^8B=0)(^82^A6)(^85^A7)(^81^23A)(^83^23B)(^86^23C)(^89=1)
+    (^96^AB)(^87=7a3)(^9B^AD)(^8E^23E)]
+  [91D1(^88=1)(^8B=0)(^82^A6)(^85^A7)(^81^C4)(^83^240)(^86^241)(^89=1)
+    (^96^AB)(^87^CC)(^9B^C8)(^8E^C8)]
+  [91D2(^88=1)(^8B=0)(^82^A6)(^85^A7)(^81^C9)(^83^243)(^86^244)(^89=1)
+    (^96^AB)(^87^CC)(^9B^CD)(^8E^CD)]
+  [91D3(^88=1)(^8B=0)(^82^A6)(^85^A7)(^81^223)(^83^246)(^86^247)(^89=1)
+    (^96^AB)(^87^CC)(^9B^227)(^8E^227)]
+  [91D4(^88=1)(^8B=0)(^82^A6)(^85^A7)(^81^249)(^83^24A)(^86^24B)(^89=1)
+    (^96^AB)(^87=760)(^9B^AD)(^8E^24D)]
+  [91D5(^88=1)(^8B=0)(^82^A6)(^85^A7)(^81^24F)(^83^250)(^86^251)(^89=1)
+    (^96^AB)(^87=762)(^9B^AD)(^8E^253)]
+  [91D6(^88=1)(^8B=0)(^82^A6)(^85^A7)(^81^255)(^83^256)(^86^257)(^89=1)
+    (^96^AB)(^87=760)(^9B^AD)(^8E^258)]
+  [91D8(^88=13)(^8B=0)(^82^25A)(^85^F4)(^81^F6)(^83^25B)(^95=1)(^84^11C)
+    (^86^25C)(^89=1)(^96^F9)(^87=73a)(^9B^FB)(^8E^FB)]
+  [91D9(^88=1)(^8B=0)(^82^AF)(^85^B0)(^81^25F)(^83^260)(^86^261)(^89=1)
+    (^96^AB)(^87^262)(^9B^AD)(^8E^263)]
+  [91DD(^88=1)(^8B=0)(^82^F4)(^85^1BE)(^81^265)(^83^266)(^86^267)(^89=1)
+    (^96^F9)(^87=5b6)(^9B^AD)(^8E^269)]
+  [91E0(^88=11)(^8B=0)(^82^BE)(^85^1D7)(^81^265)(^83^26B)(^95=1)(^84^26C)
+    (^86^26D)(^89=1)(^96^AB)(^87=798)(^9B^269)(^8E^269)]
+  [91E2(^88=1)(^8B=0)(^82^F4)(^85^1BE)(^81^270)(^83^271)(^86^272)(^89=1)
+    (^96^F9)(^87=63e)(^9B^AD)(^8E^274)]
+  [91E3(^88=13)(^8B=0)(^82^276)(^85^277)(^8D^278)(^81^279)(^83^27A)
+    (^95=1)(^84^27B)(^86^27C)(^89=1)(^96^122)(^87^27D)(^9B^AD)(^8E^27E)]
+  [91E4(^88=1)(^8B=0)(^82^11A)(^85^280)(^81^281)(^83^282)(^86^283)(^89=1)
+    (^96^F9)(^87=495)(^9B^AD)(^8E^285)]
+  [91E5(^88=1)(^8B=0)(^82^BE)(^85^1D7)(^8D^287)(^81^288)(^83^289)(^86^28A)
+    (^89=1)(^96^AB)(^87=e30)(^9B^AD)(^8E^28C)]
+  [91E9(^88=0)(^8B=0)(^82^A6)(^85^A7)(^81^28E)(^83^28F)(^86^290)(^89=1)
+    (^96^AB)(^87=78d)(^9B^AD)(^8E^292)]}
+{9171:^80 {(k^98:c)(s=9)9:m } 9171 9182 }
+{9172:^80 {(k^98:c)(s=9)A:m } 9172 }
+{9173:^80 {(k^98:c)(s=9)B:m } 9173 }
+{9174:^80 {(k^98:c)(s=9)C:m } 9174 }
+{9175:^80 {(k^98:c)(s=9)D:m } 9175 }
+{9176:^80 {(k^98:c)(s=9)E:m } 9176 9187 9188 918A 91A3 91CF 91D8 }
+{91D0:^80 {(k^98:c)(s=9)2E:m } 91D0 }
+{91D4:^80 {(k^98:c)(s=9)2F:m } 91D4 }
+{91D5:^80 {(k^98:c)(s=9)30:m } 91D5 }
+{91D6:^80 {(k^98:c)(s=9)31:m } 91D6 }
+{9180:^80 {(k^98:c)(s=9)F:m } 9180 }
+{91D9:^80 {(k^98:c)(s=9)32:m } 91D9 }
+{9181:^80 {(k^98:c)(s=9)10:m } 9181 }
+{91DD:^80 {(k^98:c)(s=9)33:m } 91DD 91E0 }
+{91E2:^80 {(k^98:c)(s=9)34:m } 91E2 }
+{91E3:^80 {(k^98:c)(s=9)35:m } 91E3 }
+{918B:^80 {(k^98:c)(s=9)11:m } 918B 918C }
+{91E4:^80 {(k^98:c)(s=9)36:m } 91E4 }
+{91E5:^80 {(k^98:c)(s=9)37:m } 91E5 }
+{918D:^80 {(k^98:c)(s=9)12:m } 918D }
+{918E:^80 {(k^98:c)(s=9)13:m } 918E }
+{918F:^80 {(k^98:c)(s=9)14:m } 918F }
+{9190:^80 {(k^98:c)(s=9)15:m } 9190 }
+{91E9:^80 {(k^98:c)(s=9)38:m } 91E9 }
+{9191:^80 {(k^98:c)(s=9)16:m } 9191 }
+{9192:^80 {(k^98:c)(s=9)17:m } 9192 }
+{9193:^80 {(k^98:c)(s=9)18:m } 9193 9194 }
+{9195:^80 {(k^98:c)(s=9)19:m } 9195 9196 }
+{9197:^80 {(k^98:c)(s=9)1A:m } 9197 }
+{9198:^80 {(k^98:c)(s=9)1B:m } 9198 }
+{9199:^80 {(k^98:c)(s=9)1C:m } 9199 }
+{919A:^80 {(k^98:c)(s=9)1D:m } 919A }
+{919B:^80 {(k^98:c)(s=9)1E:m } 919B }
+{919C:^80 {(k^98:c)(s=9)1F:m } 919C }
+{919D:^80 {(k^98:c)(s=9)20:m } 919D 919E }
+{919F:^80 {(k^98:c)(s=9)21:m } 919F 91A0 }
+{91A4:^80 {(k^98:c)(s=9)22:m } 91A4 }
+{91A5:^80 {(k^98:c)(s=9)23:m } 91A5 }
+{91A6:^80 {(k^98:c)(s=9)24:m } 91A6 }
+{91A7:^80 {(k^98:c)(s=9)25:m } 91A7 }
+{91A8:^80 {(k^98:c)(s=9)26:m } 91A8 }
+{91A9:^80 {(k^98:c)(s=9)27:m } 91A9 }
+{91AC:^80 {(k^98:c)(s=9)28:m } 91AC }
+{91AE:^80 {(k^98:c)(s=9)29:m } 91AE }
+{91B0:^80 {(k^98:c)(s=9)2A:m } 91B0 }
+{9159:^80 {(k^98:c)(s=9)1:m } 9159 }
+{91B2:^80 {(k^98:c)(s=9)2B:m } 91B2 }
+{915C:^80 {(k^98:c)(s=9)2:m } 915C }
+{915D:^80 {(k^98:c)(s=9)3:m } 915D }
+{915E:^80 {(k^98:c)(s=9)4:m } 915E }
+{9161:^80 {(k^98:c)(s=9)5:m } 9161 91CA 91D1 }
+{9162:^80 {(k^98:c)(s=9)6:m } 9162 9186 9183 91CB 91D2 }
+{9166:^80 {(k^98:c)(s=9)7:m } 9166 }
+{91BF:^80 {(k^98:c)(s=9)2C:m } 91BF 91D3 }
+{9167:^80 {(k^98:c)(s=9)8:m } 9167 }
+{FFFFFFFD:^9A {(k^99:c)(s=9)} [9159(^94^A8)]
+  [915C(^94^B1)]
+  [915D(^94^B8)]
+  [915E(^94^BF)]
+  [9161(^94^C4)]
+  [9162(^94^C9)]
+  [9166(^94^CE)]
+  [9167(^94^D5)]
+  [9171(^94^DA)]
+  [9172(^94^E0)]
+  [9173(^94^E5)]
+  [9174(^94^EA)]
+  [9175(^94^EF)]
+  [9176(^94^F6)]
+  [9180(^94^FC)]
+  [9181(^94^103)]
+  [918B(^94^12A)]
+  [918D(^94^135)]
+  [918E(^94^13A)]
+  [918F(^94^13F)]
+  [9190(^94^145)]
+  [9191(^94^156)]
+  [9192(^94^15C)]
+  [9193(^94^164)]
+  [9195(^94^174)]
+  [9197(^94^184)]
+  [9198(^94^18B)]
+  [9199(^94^192)]
+  [919A(^94^199)]
+  [919B(^94=ftp)]
+  [919C(^94^1A8)]
+  [919D(^94^1B1)]
+  [919F(^94^1BF)]
+  [91A4(^94^1DD)]
+  [91A5(^94^1E5)]
+  [91A6(^94^1EB)]
+  [91A7(^94^1F1)]
+  [91A8(^94^1F9)]
+  [91A9(^94^202)]
+  [91AC(^94^20A)]
+  [91AE(^94^210)]
+  [91B0(^94^217)]
+  [91B2(^94^21D)]
+  [91BF(^94^223)]
+  [91C0(^94^229)]
+  [91D0(^94^23A)]
+  [91D4(^94^249)]
+  [91D5(^94^24F)]
+  [91D6(^94^255)]
+  [91D9(^94^25F)]
+  [91DD(^94^265)]
+  [91E2(^94^270)]
+  [91E3(^94^279)]
+  [91E4(^94^281)]
+  [91E5(^94^288)]
+  [91E9(^94^28E)]}
+
+<(81=Trash)(82=882104)(1CE=Fri Apr 18 06:24:34 2008)(85=12)(87=ee00)
+  (293=4c)(8A=ef)>
+{1:^9F {(k^A0:c)(s=9)} 
+  [1(^AC=1)(^AD=1)(^AE^81)(^88^82)(^A7^81)(^A9=0)(^B1^1CE)(^B2=12)(^B3=1)
+    (^B4=0)(^B5=0)(^B6^87)(^A8=1)(^A1=4c)(^A2=1)(^AA=0)(^B7=ef)]}
+
+@$${1{@
+<(296=9)(297=Fri Apr 18 14:24:36 2008)>
+[-1:^9F(^AC=1)(^AD=1)(^AE^81)(^88^82)(^A7^81)(^A9=9)(^B1^297)(^B2=12)
+    (^B3=1)(^B4=0)(^B5=0)(^B6^87)(^A8=1)(^A1=4c)(^A2=1)(^AA=0)(^B7=ef)]
+@$$}1}@
+
+@$${2{@
+<(29C=e)>[1:^9F(^A9=e)]
+@$$}2}@

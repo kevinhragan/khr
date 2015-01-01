@@ -1,0 +1,1282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                      "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <title>Bug 2680 &ndash; Need to run Oceanic sign-up and acct pages over HTTPS, and update Apache</title>
+
+
+<link rel="Top" href="http://bugzilla.gotvoice.com/">
+
+  
+    <link rel="Up" href="buglist.cgi?regetlastlist=1">
+
+    <link rel="First" href="show_bug.cgi?id=2311">
+    <link rel="Last" href="show_bug.cgi?id=863">
+
+
+
+  
+
+
+  
+    <link rel="Show" title="Dependency Tree"
+          href="showdependencytree.cgi?id=2680&amp;hide_resolved=1">
+      <link rel="Show" title="Dependency Graph"
+            href="showdependencygraph.cgi?id=2680">
+
+
+      <link rel="Show" title="Bug Activity"
+            href="show_activity.cgi?id=2680">
+      <link rel="Show" title="Printer-Friendly Version"
+            href="show_bug.cgi?format=multiple&amp;id=2680">
+
+
+  
+    <link rel="Saved&nbsp;Searches" title="My Bugs"
+          href="buglist.cgi?bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;emailassigned_to1=1&amp;emailreporter1=1&amp;emailtype1=exact&amp;email1=kevinr%40gotvoice.com&amp;field0-0-0=bug_status&amp;type0-0-0=notequals&amp;value0-0-0=UNCONFIRMED&amp;field0-0-1=reporter&amp;type0-0-1=equals&amp;value0-0-1=kevinr%40gotvoice.com">
+
+
+
+   <link rel="Administration" title="Parameters"    
+                  href="editparams.cgi"><link rel="Administration" title="Users"    
+                  href="editusers.cgi"><link rel="Administration" title="Products" href="editproducts.cgi"><link rel="Administration" title="Flag Types"   
+                  href="editflagtypes.cgi"><link rel="Administration" title="Groups"        
+                  href="editgroups.cgi"><link rel="Administration" title="Keywords"      
+                  href="editkeywords.cgi"><link rel="Administration" title="Whining"       
+                  href="editwhines.cgi"><link rel="Administration" title="Sanity Check"  
+                  href="sanitycheck.cgi">
+
+
+    
+
+    <script type="text/javascript">
+  <!--
+  
+  function initHelp() {}
+  // -->
+  </script>
+
+    
+
+    
+      <link href="skins/standard/global.css"
+            rel="stylesheet"
+            type="text/css">
+    <!--[if IE]>
+      
+      <link href="skins/standard/IE-fixes.css"
+            rel="stylesheet"
+            type="text/css">
+    <![endif]-->
+
+    
+        <link href="skins/standard/global.css"
+              rel="stylesheet"
+              title="Classic"
+              type="text/css">
+      <!--[if IE]>
+        
+        <link href="skins/standard/IE-fixes.css"
+              rel="stylesheet"
+              title="Classic"
+              type="text/css">
+      <![endif]-->
+
+    
+
+    
+
+    
+        <link href="skins/custom/global.css" rel="stylesheet" type="text/css">
+    <!--[if IE]>
+      
+      <link href="skins/custom/IE-fixes.css"
+            rel="stylesheet"
+            type="text/css">
+    <![endif]-->
+
+    
+
+    
+    <link rel="search" type="application/opensearchdescription+xml"
+                       title="Bugzilla" href="./search_plugin.cgi">
+  </head>
+
+
+
+  <body onload=""
+        class="bugzilla-gotvoice-com bz_bug bz_status_ASSIGNED bz_component_Account_pages bz_bug_2680">
+
+
+
+
+<div id="header">
+<div id="banner">
+  </div>
+
+<table border="0" cellspacing="0" cellpadding="0" id="titles">
+<tr>
+    <td id="title">
+      <p>Bugzilla &ndash; Bug&nbsp;2680</p>
+    </td>
+
+    <td id="subtitle">
+      <p class="subheader">Need to run Oceanic sign-up and acct pages over HTTPS, and update Apache</p>
+    </td>
+
+    <td id="information">
+      <p class="header_addl_info">Last modified: 2008-04-14 19:38:45 PDT</p>
+    </td>
+</tr>
+</table>
+<ul class="links">
+  <li><a href="./">Home</a></li>
+  <li><span class="separator">| </span><a href="enter_bug.cgi">New</a></li>
+  <li><span class="separator">| </span><a href="query.cgi">Search</a></li>
+
+  <li class="form">
+    <span class="separator">| </span>
+    <form action="buglist.cgi" method="get"
+        onsubmit="if (this.quicksearch.value == '')
+                  { alert('Please enter one or more search terms first.');
+                    return false; } return true;">
+    <input class="txt" type="text" name="quicksearch">
+    <input class="btn" type="submit" value="Find" id="find_top"></form></li>
+
+  <li><span class="separator">| </span><a href="report.cgi">Reports</a></li>
+
+  <li>
+    <span class="separator">| </span>
+      <a href="request.cgi?requester=kevinr%40gotvoice.com&amp;requestee=kevinr%40gotvoice.com&amp;do_union=1&amp;group=type">My Requests</a></li>
+
+    <li><span class="separator">| </span><a href="votes.cgi?action=show_user">My&nbsp;Votes</a></li>
+
+    <li><span class="separator">| </span><a href="userprefs.cgi">Preferences</a></li>
+    <li>
+      <span class="separator">| </span>
+        <a href="relogin.cgi">Log&nbsp;out</a>
+        kevinr&#64;gotvoice.com</li>
+</ul>
+
+</div>
+
+<div id="bugzilla-body">
+
+<b>Bug List:</b>
+
+
+      (This bug is not in your last search results)
+
+  &nbsp;&nbsp;<a href="buglist.cgi?regetlastlist=1">Show last search results</a>
+
+<hr>
+<script type="text/javascript">
+  <!--
+
+  /* Outputs a link to call replyToComment(); used to reduce HTML output */
+  function addReplyLink(id) {
+      /* XXX this should really be updated to use the DOM Core's
+       * createElement, but finding a container isn't trivial.
+       */
+      document.write('[<a href="#add_comment" onclick="replyToComment(' + 
+                     id + ');">reply<' + '/a>]');
+  }
+
+  /* Adds the reply text to the `comment' textarea */
+  function replyToComment(id) {
+      /* pre id="comment_name_N" */
+      var text_elem = document.getElementById('comment_text_'+id);
+      var text = getText(text_elem);
+
+      /* make sure we split on all newlines -- IE or Moz use \r and \n
+       * respectively.
+       */
+      text = text.split(/\r|\n/);
+
+      var replytext = "";
+      for (var i=0; i < text.length; i++) {
+          replytext += "> " + text[i] + "\n"; 
+      }
+
+      replytext = "(In reply to comment #" + id + ")\n" + replytext + "\n";
+
+
+      /* <textarea id="comment"> */
+      var textarea = document.getElementById('comment');
+      textarea.value += replytext;
+
+      textarea.focus();
+  }
+
+  if (typeof Node == 'undefined') {
+      /* MSIE doesn't define Node, so provide a compatibility object */
+      window.Node = {
+          TEXT_NODE: 3,
+          ENTITY_REFERENCE_NODE: 5
+      };
+  }
+
+  /* Concatenates all text from element's childNodes. This is used
+   * instead of innerHTML because we want the actual text (and
+   * innerText is non-standard).
+   */
+  function getText(element) {
+      var child, text = "";
+      for (var i=0; i < element.childNodes.length; i++) {
+          child = element.childNodes[i];
+          var type = child.nodeType;
+          if (type == Node.TEXT_NODE || type == Node.ENTITY_REFERENCE_NODE) {
+              text += child.nodeValue;
+          } else {
+              /* recurse into nodes of other types */
+              text += getText(child);
+          }
+      }
+      return text;
+  }
+
+  var fRemainingTime = 0.00; // holds the original value
+  function adjustRemainingTime() {
+      // subtracts time spent from remaining time
+      var new_time;
+
+      // prevent negative values if work_time > fRemainingTime
+      new_time =
+          Math.max(fRemainingTime - document.changeform.work_time.value, 0.0);
+      // get upto 2 decimal places
+      document.changeform.remaining_time.value =
+          Math.round(new_time * 100)/100;
+  }
+
+  function updateRemainingTime() {
+      // if the remaining time is changed manually, update fRemainingTime
+      fRemainingTime = document.changeform.remaining_time.value;
+  }
+
+
+  function updateCommentTagControl(checkbox, form) {
+      if (checkbox.checked) {
+          form.comment.className='bz_private';
+      } else {
+          form.comment.className='';
+      }
+  }
+
+  //-->
+  </script>
+
+<form name="changeform" method="post" action="process_bug.cgi">
+
+  <input type="hidden" name="delta_ts" value="2008-04-14 19:38:45">
+  <input type="hidden" name="longdesclength" value="5">
+  <input type="hidden" name="id" value="2680">
+
+  
+  <table>
+    <tr>
+      <td valign="top">
+        <fieldset>
+          <legend>Details</legend>
+          <table>
+
+            
+            <tr>
+              <td align="right">
+                <label for="short_desc" accesskey="s"><b><u>S</u>ummary</b></label>:
+              </td><td colspan="2">
+       <input id="short_desc" name="short_desc"
+              value="Need to run Oceanic sign-up and acct pages over HTTPS, and update Apache" size="60" maxlength="255">
+  </td>
+            </tr>
+
+            <tr>
+              <td colspan="3">
+                <table>
+                  <tr>
+                    
+                    <td valign="top"><table cellspacing="1" cellpadding="1">
+    <tr>
+      <td align="right">
+        <b>Bug#</b>:
+      </td>
+      <td>
+        <a href="http://bugzilla.gotvoice.com/show_bug.cgi?id=2680">2680</a>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td align="right">
+        <label for="product" accesskey="p"><b><u>P</u>roduct</b></label>:
+      </td><td>
+      <select id="product" name="product">
+          <option value="API service">API service
+          </option>
+          <option value="Corp web-site (www.gotvoice.com)">Corp web-site (www.gotvoice.com)
+          </option>
+          <option value="GV Net Account Pages">GV Net Account Pages
+          </option>
+          <option value="GV Net Admin Pages">GV Net Admin Pages
+          </option>
+          <option value="GV Net Mobile">GV Net Mobile
+          </option>
+          <option value="GV Net Oceanic" selected>GV Net Oceanic
+          </option>
+          <option value="GV Net Sign-up Pages">GV Net Sign-up Pages
+          </option>
+          <option value="GV Yahoo! Widget">GV Yahoo! Widget
+          </option>
+          <option value="GVMC applet">GVMC applet
+          </option>
+          <option value="Operations">Operations
+          </option>
+          <option value="Product Ideas!">Product Ideas!
+          </option>
+          <option value="Scripts">Scripts
+          </option>
+          <option value="SDK">SDK
+          </option>
+          <option value="SINWIP">SINWIP
+          </option>
+          <option value="Spooler">Spooler
+          </option>
+          <option value="Transcription Workbench">Transcription Workbench
+          </option>
+      </select>
+  </td>
+    </tr>
+
+    <tr>
+      <td align="right">
+        <label for="component" accesskey="m"><b><a href="describecomponents.cgi?product=GV%20Net%20Oceanic">Co<u>m</u>ponent</a></b></label>:
+      </td><td>
+      <select id="component" name="component">
+          <option value="Account pages" selected>Account pages
+          </option>
+          <option value="Admin pages">Admin pages
+          </option>
+          <option value="Asterisk">Asterisk
+          </option>
+          <option value="Misc">Misc
+          </option>
+          <option value="Sign-up pages">Sign-up pages
+          </option>
+          <option value="SINWIP">SINWIP
+          </option>
+          <option value="Spooler">Spooler
+          </option>
+      </select>
+  </td>
+    </tr>
+
+    <tr>
+      <td align="right">
+        <b><a href="page.cgi?id=fields.html#status">Status</a></b>:
+      </td>
+      <td>ASSIGNED</td>
+    </tr>
+
+    <tr>
+      <td align="right">
+        <b><a href="page.cgi?id=fields.html#resolution">Resolution</a></b>:
+      </td>
+      <td>
+      </td>
+    </tr>
+  </table></td>
+
+                    
+                    <td valign="top"><table cellspacing="1" cellpadding="1">
+    <tr>
+      <td align="right">
+        <label for="rep_platform" accesskey="h"><b><u>H</u>ardware</b></label>:
+      </td><td>
+      <select id="rep_platform" name="rep_platform">
+          <option value="All">All
+          </option>
+          <option value="Mac">Mac
+          </option>
+          <option value="PC" selected>PC
+          </option>
+          <option value="Mobile phone">Mobile phone
+          </option>
+          <option value="PDA">PDA
+          </option>
+          <option value="Other">Other
+          </option>
+      </select>
+  </td>
+    </tr>
+
+    <tr>
+      <td align="right">
+        <label for="op_sys" accesskey="o"><b><u>O</u>S</b></label>:
+      </td><td>
+      <select id="op_sys" name="op_sys">
+          <option value="All">All
+          </option>
+          <option value="Windows 98">Windows 98
+          </option>
+          <option value="Windows ME">Windows ME
+          </option>
+          <option value="Windows 2000">Windows 2000
+          </option>
+          <option value="Windows XP">Windows XP
+          </option>
+          <option value="Windows XP SP1">Windows XP SP1
+          </option>
+          <option value="Windows XP SP2" selected>Windows XP SP2
+          </option>
+          <option value="Windows Vista">Windows Vista
+          </option>
+          <option value="Windows Mobile">Windows Mobile
+          </option>
+          <option value="Mac OS 9.X">Mac OS 9.X
+          </option>
+          <option value="Mac OS X v10.0 - 10.2">Mac OS X v10.0 - 10.2
+          </option>
+          <option value="Mac OS X v10.3 (Panther)">Mac OS X v10.3 (Panther)
+          </option>
+          <option value="Mac OS X v10.4 (Tiger)">Mac OS X v10.4 (Tiger)
+          </option>
+          <option value="Max OS X v10.5 (Leopard)">Max OS X v10.5 (Leopard)
+          </option>
+          <option value="Blackberry">Blackberry
+          </option>
+          <option value="Palm OS">Palm OS
+          </option>
+          <option value="Linux">Linux
+          </option>
+          <option value="Solaris">Solaris
+          </option>
+          <option value="other">other
+          </option>
+      </select>
+  </td>
+    </tr>
+
+    <tr>
+      <td align="right">
+        <label for="version"><b>Version</b></label>:
+      </td><td>
+      <select id="version" name="version">
+          <option value="5.2.4" selected>5.2.4
+          </option>
+          <option value="unspecified">unspecified
+          </option>
+      </select>
+  </td>
+    </tr>
+
+    <tr>
+      <td align="right">
+        <label for="priority" accesskey="i"><b><a href="page.cgi?id=fields.html#priority">Pr<u>i</u>ority</a></b></label>:
+      </td><td>
+      <select id="priority" name="priority">
+          <option value="P1" selected>P1
+          </option>
+          <option value="P2">P2
+          </option>
+          <option value="P3">P3
+          </option>
+          <option value="P4">P4
+          </option>
+          <option value="P5">P5
+          </option>
+      </select>
+  </td>
+    </tr>
+
+    <tr>
+      <td align="right">
+        <label for="bug_severity"><b><a href="page.cgi?id=fields.html#bug_severity">Severity</a></b></label>:
+      </td><td>
+      <select id="bug_severity" name="bug_severity">
+          <option value="blocker">blocker
+          </option>
+          <option value="critical" selected>critical
+          </option>
+          <option value="major">major
+          </option>
+          <option value="normal">normal
+          </option>
+          <option value="minor">minor
+          </option>
+          <option value="trivial">trivial
+          </option>
+          <option value="enhancement">enhancement
+          </option>
+      </select>
+  </td>
+    </tr>
+
+  </table></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="3"><hr size="1"></td>
+            </tr>
+
+            
+
+            <tr>
+              <td align="right">
+                <label for="bug_file_loc" accesskey="u"><b>
+                    <u>U</u>RL</b></label>:
+              </td><td colspan="2">
+       <input id="bug_file_loc" name="bug_file_loc"
+              value="" size="60">
+  </td>
+            </tr>
+
+
+
+            
+
+                <tr><th class="field_label">
+    <label for="cf_browser">Browser:</label>
+</th>
+
+<td class="field_value" colspan="2">
+        <select id="cf_browser" name="cf_browser">
+            <option value="---" selected="selected">---</option>
+            <option value="All">All</option>
+            <option value="Firefox 1.5.X">Firefox 1.5.X</option>
+            <option value="Firefox 2.0">Firefox 2.0</option>
+            <option value="IE 5.5">IE 5.5</option>
+            <option value="IE 6.0.X">IE 6.0.X</option>
+            <option value="IE 7.0">IE 7.0</option>
+            <option value="Safari v1.0 - 1.1">Safari v1.0 - 1.1</option>
+            <option value="Safari v1.2 - 1.3">Safari v1.2 - 1.3</option>
+            <option value="Safari v2.0">Safari v2.0</option>
+            <option value="Safari v3.0 BETA">Safari v3.0 BETA</option>
+            <option value="Blackberry">Blackberry</option>
+            <option value="Blazer">Blazer</option>
+            <option value="Pocket IE">Pocket IE</option>
+            <option value="Opera">Opera</option>
+            <option value="Camino">Camino</option>
+            <option value="Other">Other</option>
+        </select>
+</td>
+                </tr>
+
+            
+
+            <tr><th align="right">
+    <label for="dependson">Depends&nbsp;on</label>:
+  </th>
+  <td>
+  </td>
+  <td>
+      <input name="dependson" id="dependson"
+             value="">
+  </td>
+            </tr>
+
+            <tr><th align="right">
+    <label for="blocked" accesskey="b"><u>B</u>locks</label>:
+  </th>
+  <td>
+  </td>
+  <td>
+      <input name="blocked" id="blocked"
+             value="">
+  </td>
+            </tr>
+
+            <tr>
+              <th>&nbsp;</th>
+
+              <td colspan="2">
+                <a href="showdependencytree.cgi?id=2680&amp;hide_resolved=1">Show
+                   dependency tree</a>
+
+                  - <a href="showdependencygraph.cgi?id=2680">Show
+                       dependency graph</a>
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+      </td>
+
+      <td valign="top">
+        
+        <fieldset>
+          <legend>People</legend><table cellpadding="1" cellspacing="1">
+    <tr>
+      <td align="right">
+        <b>Reporter</b>:
+      </td>
+      <td>
+        <a href="mailto:roberti&#64;gotvoice.com">Robert Ingman &lt;roberti&#64;gotvoice.com&gt;</a>
+      </td>
+    </tr>
+
+    <tr>
+      <td align="right">
+        <b><a href="page.cgi?id=fields.html#assigned_to">Assigned&nbsp;To</a></b>:
+      </td>
+      <td>
+        <a href="mailto:danc&#64;gotvoice.com">Dan Cox &lt;danc&#64;gotvoice.com&gt;</a>
+      </td>
+    </tr>
+
+
+      <tr>
+        <td align="right" valign="top">
+          <label for="newcc" accesskey="a"><b><u>A</u>dd&nbsp;CC</b></label>:
+        </td>
+        <td><input
+  name="newcc"
+  value="" size="30"  id="newcc" 
+>
+        </td>
+      </tr>
+
+    <tr>
+        <td align="right" valign="top">
+          <label for="cc"><b>CC</b></label>:
+        </td>
+        <td valign="top">
+          <select id="cc" name="cc" multiple="multiple" size="5">
+            <option value="adeforest&#64;gotvoice.com">adeforest&#64;gotvoice.com</option>
+            <option value="kevinr&#64;gotvoice.com">kevinr&#64;gotvoice.com</option>
+            <option value="mwebb&#64;gotvoice.com">mwebb&#64;gotvoice.com</option>
+          </select>
+            <br>
+            <input type="checkbox" id="removecc" name="removecc"><label for="removecc">Remove selected CCs</label>
+            <br>
+        </td>
+    </tr>
+  </table>
+        </fieldset>
+
+        
+      </td>
+    </tr>
+  </table>
+
+    <br>
+    <table cellspacing="0" cellpadding="4" border="1">
+      <tr>
+        <th align="center" bgcolor="#cccccc">
+          <label for="estimated_time">Orig. Est.</label>
+        </th>
+        <th align="center" bgcolor="#cccccc">
+          Current Est.
+        </th>
+        <th align="center" bgcolor="#cccccc">
+          <label for="work_time">Hours Worked</label>
+        </th>
+        <th align="center" bgcolor="#cccccc">
+          <label for="remaining_time">Hours Left</label>
+        </th>
+        <th align="center" bgcolor="#cccccc">
+          %Complete
+        </th>
+        <th align="center" bgcolor="#cccccc">
+          Gain
+        </th>
+        <th align="center" bgcolor="#cccccc">
+          <label for="deadline">Deadline</label>
+        </th>
+      </tr>
+      <tr>
+        <td align="center">
+          <input name="estimated_time" id="estimated_time"
+                 value="0.0"
+                 size="6" maxlength="6">
+        </td>
+        <td align="center">0.0
+        </td>
+        <td align="center">0.0 +
+          <input name="work_time" id="work_time"
+                 value="0" size="3" maxlength="6"
+                 onchange="adjustRemainingTime();">
+        </td>
+        <td align="center">
+          <input name="remaining_time" id="remaining_time"
+                 value="0.0"
+                 size="6" maxlength="6" onchange="updateRemainingTime();">
+        </td>
+        <td align="center">0
+        </td>
+        <td align="center">0.0
+        </td>
+         <td align="center">
+           <input name="deadline" id="deadline" value=""
+                  size="10" maxlength="10"><br />
+           <small>(YYYY-MM-DD)</small>
+        </td>        
+      </tr>
+      <tr>
+        <td colspan="7" align="right">
+          <a href="summarize_time.cgi?id=2680&amp;do_depends=1">
+          Summarize time (including time for bugs
+          blocking this bug)</a>
+        </td>
+      </tr>
+    </table>
+
+
+<script type="text/javascript">
+  <!--
+  function toggle_display(link) {
+    var table = document.getElementById("attachment_table");
+    var rows = table.getElementsByTagName("tr");
+    var originalHeight = table.offsetHeight; // Store current height for scrolling
+
+    var toggle;
+    if (link.innerHTML == "Show Obsolete") {
+      toggle = ""; // This should be 'table-row', but IE 6 doesn't understand it.
+      link.innerHTML = "Hide Obsolete";
+    }
+    else {
+      toggle = "none";
+      link.innerHTML = "Show Obsolete";
+    }
+
+    for (var i = 0; i < rows.length; i++) {
+      if (rows[i].className.match('bz_tr_obsolete'))
+        rows[i].style.display = toggle;
+    }
+
+    var newHeight = table.offsetHeight;
+    window.scrollBy(0, newHeight - originalHeight);
+
+    return false;
+  }
+  //-->
+</script>
+
+<br>
+<table id="attachment_table" cellspacing="0" cellpadding="4">
+  <tr>
+    <th colspan="2" align="left">
+      <a name="a0" id="a0">Attachments</a>
+    </th>
+  </tr>
+
+
+
+  <tr class="bz_attach_footer">
+    <td colspan="2">
+      <a href="attachment.cgi?bugid=2680&amp;action=enter">Add an attachment</a>
+      (proposed patch, testcase, etc.)
+    </td>
+  </tr>
+</table>
+<br>
+
+
+
+
+  <br>
+  <table cellpadding="1" cellspacing="1">
+    <tr>
+      <td>
+          <label for="comment" accesskey="c"><b>Additional <u>C</u>omments</b></label>:
+          <br>
+          <a name="add_comment"></a><textarea name="comment" id="comment"
+            rows="10"
+          cols="80"
+            onFocus="this.rows=25"></textarea>
+
+      </td>
+
+      <td valign="top">
+        <fieldset>
+          <legend>Related actions</legend>
+          <ul>
+            <li><a href="show_activity.cgi?id=2680">View Bug Activity</a></li>
+            <li><a href="show_bug.cgi?format=multiple&amp;id=2680">Format For Printing</a></li>
+            <li><a href="show_bug.cgi?ctype=xml&amp;id=2680">XML</a></li>
+            <li><a href="enter_bug.cgi?cloned_bug_id=2680">Clone This Bug</a></li>
+          </ul>
+
+
+          
+        </fieldset>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+<br>
+<div id="knob">
+  <div id="knob-options">
+
+
+
+
+<input type="radio" id="knob-leave" name="knob" value="none" checked="checked">
+    <label for="knob-leave">
+      Leave as <b>ASSIGNED&nbsp;</b>
+    </label>
+    <br>
+      <input type="radio" id="knob-resolve" name="knob" value="resolve">
+      <label for="knob-resolve">
+        Resolve bug, changing 
+        <a href="page.cgi?id=fields.html#resolution">resolution</a> to
+      </label>  <select name="resolution"
+          onchange="document.changeform.knob[1].checked=true">
+      <option value="FIXED">FIXED</option>
+      <option value="INVALID">INVALID</option>
+      <option value="WONTFIX">WONTFIX</option>
+      <option value="LATER">LATER</option>
+      <option value="REMIND">REMIND</option>
+      <option value="WORKSFORME">WORKSFORME</option>
+      <option value="BYDESIGN">BYDESIGN</option>
+  </select>
+  <br>
+<input type="radio" id="knob-duplicate" name="knob" value="duplicate">
+  <label for="knob-duplicate">
+    Mark the bug as duplicate of bug #
+  </label>
+  <input name="dup_id" size="6"
+         onchange="if (this.value != '') {document.changeform.knob[2].checked=true}">
+  <br>
+
+        <input type="radio" id="knob-reassign" name="knob" value="reassign">
+        <label for="knob-reassign">
+          <a href="page.cgi?id=fields.html#assigned_to">Reassign</a> bug to
+        </label><input
+  name="assigned_to"
+  value="danc&#64;gotvoice.com" onchange="if ((this.value != 'danc\x40gotvoice.com') &amp;&amp; (this.value != '')) {
+                               document.changeform.knob[3].checked=true;
+                          }"  size="32"  id="assigned_to" 
+>
+        <br>
+
+        <input type="radio" id="knob-reassign-cmp" name="knob" value="reassignbycomponent">
+        <label for="knob-reassign-cmp">
+          Reassign bug to default assignee
+          and add Default CC of selected component
+        </label>
+        <br>
+  </div>
+
+  <div id="knob-buttons">
+  <input type="submit" value="Commit" id="commit">
+  </div>
+</div>
+
+
+
+<hr>
+
+<div id="comments"><script type="text/javascript">
+  <!--
+  function updateCommentPrivacy(checkbox, id) {
+    var comment_elem = document.getElementById('comment_text_'+id).parentNode;
+    if (checkbox.checked) {
+      if (!comment_elem.className.match('bz_private')) {
+        comment_elem.className = comment_elem.className.concat(' bz_private');
+      }
+    }
+    else {
+      comment_elem.className =
+        comment_elem.className.replace(/(\s*|^)bz_private(\s*|$)/, '$2');
+    }
+  }
+  //-->
+  </script>
+
+
+
+
+
+
+
+
+<div class="bz_comment">
+        <table>
+          <tr>
+            <th align="left">
+              <b><a name="c0" href="show_bug.cgi?id=2680#c0">
+                Description</a>:</b>&nbsp;&nbsp;<script type="text/javascript"><!-- 
+                    addReplyLink(0);
+                  //--></script>
+            </th>
+            <td align="left" width="30%">
+              <b>Opened:</b> 2008-03-31 16:14 PDT
+            </td>
+          </tr>
+        </table>
+        
+
+
+<pre id="comment_text_0">Dan, TW Oceanic is next on the plate... we gotta do some stuff for them on the
+existing codebase they run, which is old.
+Let's discuss. I'll setup a conf call.
+
+
+--------------------------------------------------------------------------------
+From: Wong, Kiman [<a href="mailto:kiman.wong@twcable.com">mailto:kiman.wong@twcable.com</a>] 
+Sent: Saturday, March 22, 2008 12:26 AM
+To: Robert Ingman
+Cc: Curt Blake; Martin Dunsmuir; Mike Webb
+Subject: RE: Security for GotVoice Server
+
+Robert,
+
+Thanks for getting on this.
+
+Yes, by using HTTPS/SSL that should protect customer’s information that is
+now shown as clear text.  Actually in my discussion with Chi, it’s even
+before the customer login for the first time.  Since there is a link from the
+Oceanic My Account, the GotVoice sign up page is populated with customer
+information.
+
+The other concern they had was the old version of Apache.
+
+Thanks,
+
+Kiman
+
+--------------------------------------------------------------------------------
+
+From: Robert Ingman [<a href="mailto:roberti@gotvoice.com">mailto:roberti@gotvoice.com</a>] 
+Sent: Friday, March 21, 2008 6:55 AM
+To: Wong, Kiman
+Cc: 'Curt Blake'; 'Martin Dunsmuir'; 'Mike Webb'
+Subject: RE: Security for GotVoice Server
+
+Hi Kiman,
+
+we understand your concerns regarding security and the standards you need to
+follow.
+
+Is the main concern that the GotVoice account pages are not run over HTTPS/SSL
+after a user logs in?
+
+Or are there other or additional concerns?
+
+If we could some more details on the specifics then we can respond with a plan
+of action that will address your concerns the proper way.
+
+Thanks much,
+
+Robert
+
+--------------------------------------------------------------------------------
+
+From: Wong, Kiman [<a href="mailto:kiman.wong@twcable.com">mailto:kiman.wong@twcable.com</a>] 
+Sent: Thursday, March 20, 2008 8:27 PM
+To: Robert Ingman; Martin Dunsmuir
+Cc: Curt Blake
+Subject: Security for GotVoice Server
+Importance: High
+
+Robert and Martin,
+
+We need to fix a few things on the Oceanic GotVoice servers.  Since it is in
+our network and “connected” to our Billing system, we need to have comply
+with PCI standards.  Our Security guy did a PCI scan and on server and found
+that there are clear text customer information being sent out.  He recommends
+that we implement SSL on the server so that this information is secure.  His
+scan also showed that the version of Apache being run is quite old and that
+there are known vulnerabilities.  He recommends that this be updated as soon as
+possible.
+
+I know that we are suppose to switch over to the new server and would suspect
+the software will be more up to date but probably the SSL was not a new
+feature.  Would you let me know if we can implement these changes and if so
+when it can be done?  Luckily this was just a scan by our internal Security
+folks and not by our Corp Security…
+
+
+Thanks,
+
+Kiman
+
+
+Kiman K. L. Wong
+
+General Manager - Digital Phone
+
+Oceanic Time Warner Cable
+
+Phone: (808) 625-8335
+</pre>
+    </div>
+  <div class="bz_comment">
+        <span class="bz_comment_head">
+          <span class="comment_rule">-------</span> <i>Comment
+          <a name="c1" href="show_bug.cgi?id=2680#c1">
+            #1</a> From 
+          <a href="mailto:danc&#64;gotvoice.com">Dan Cox</a>
+          2008-04-01 20:29:59 PDT 
+          </i>
+          <script type="text/javascript"><!-- 
+            addReplyLink(1); //--></script>
+          <span class="comment_rule">-------</span>
+        </span>
+        
+
+
+<pre id="comment_text_1">I now have all of the gotvoice web-application working in https.
+
+Problem is, 8083 doesn't want to connect :-(
+
+I am working with Mike and Kevin to find a solution.
+
+--Dan
+</pre>
+    </div>
+  <div class="bz_comment">
+        <span class="bz_comment_head">
+          <span class="comment_rule">-------</span> <i>Comment
+          <a name="c2" href="show_bug.cgi?id=2680#c2">
+            #2</a> From 
+          <a href="mailto:danc&#64;gotvoice.com">Dan Cox</a>
+          2008-04-08 22:08:23 PDT 
+          </i>
+          <script type="text/javascript"><!-- 
+            addReplyLink(2); //--></script>
+          <span class="comment_rule">-------</span>
+        </span>
+        
+
+
+<pre id="comment_text_2">I am on the box:
+waimanalo - 10.244.51.30
+
+I found the oceanic code, but there is a lot of changes not checked into the
+code base:
+
+gv@waimanalo:/var/www/oceanic2/gvweb2$ cvs -q diff | grep &quot;RCS file&quot;
+RCS file: /home/cvs/cvsroot/gvweb2/api/api_compose_lite.php,v
+RCS file: /home/cvs/cvsroot/gvweb2/api/api_silentsend_check.php,v
+RCS file: /home/cvs/cvsroot/gvweb2/api/p_adminlogin.php,v
+RCS file: /home/cvs/cvsroot/gvweb2/classes/c_accounts.php,v
+RCS file: /home/cvs/cvsroot/gvweb2/classes/c_availability.php,v
+RCS file: /home/cvs/cvsroot/gvweb2/classes/c_display_utilities.php,v
+RCS file: /home/cvs/cvsroot/gvweb2/classes/c_logins.php,v
+RCS file: /home/cvs/cvsroot/gvweb2/classes/c_properties_mgr.php,v
+RCS file: /home/cvs/cvsroot/gvweb2/common/logged-in.php,v
+RCS file: /home/cvs/cvsroot/gvweb2/common/p_login.php,v
+RCS file: /home/cvs/cvsroot/gvweb2/config/gvweb.conf.host1,v
+RCS file: /home/cvs/cvsroot/gvweb2/iad/index.php,v
+RCS file: /home/cvs/cvsroot/gvweb2/javascript/utilities.js,v
+RCS file: /home/cvs/cvsroot/gvweb2/layouts/applicationFrame.php,v
+RCS file: /home/cvs/cvsroot/gvweb2/messages/index.php,v
+RCS file: /home/cvs/cvsroot/gvweb2/messages/index2.php,v
+RCS file: /home/cvs/cvsroot/gvweb2/messages/int_files/Attic/utilities.js,v
+RCS file: /home/cvs/cvsroot/gvweb2/mgv/index.php,v
+RCS file: /home/cvs/cvsroot/gvweb2/signup/p_premium_singlepage_sdk.php,v
+RCS file: /home/cvs/cvsroot/gvweb2/signup/p_signup_page1_sdk.php,v
+RCS file: /home/cvs/cvsroot/gvweb2/signup/p_signup_page2_sdk.php,v
+RCS file: /home/cvs/cvsroot/gvweb2/widgets/index.php,v
+RCS file: /home/cvs/cvsroot/gvweb2/xscribe/Attic/index.php,v
+
+In order to get it to work properly, I need to edit a JS file, but I need to
+know who is working on this code base, and if this is the proper place to do
+the tests.
+
+Is martin the person to ask these questions?
+
+--Dan
+</pre>
+    </div>
+  <div class="bz_comment">
+        <span class="bz_comment_head">
+          <span class="comment_rule">-------</span> <i>Comment
+          <a name="c3" href="show_bug.cgi?id=2680#c3">
+            #3</a> From 
+          <a href="mailto:danc&#64;gotvoice.com">Dan Cox</a>
+          2008-04-13 14:05:17 PDT 
+          </i>
+          <script type="text/javascript"><!-- 
+            addReplyLink(3); //--></script>
+          <span class="comment_rule">-------</span>
+        </span>
+        
+
+
+<pre id="comment_text_3">I think I have the first fix for this deployed.
+I need martin's login/pass to test.
+
+Once I verify that it is working, we will get rolling and get this resolved.
+</pre>
+    </div>
+  <div class="bz_comment">
+        <span class="bz_comment_head">
+          <span class="comment_rule">-------</span> <i>Comment
+          <a name="c4" href="show_bug.cgi?id=2680#c4">
+            #4</a> From 
+          <a href="mailto:danc&#64;gotvoice.com">Dan Cox</a>
+          2008-04-14 19:38:45 PDT 
+          </i>
+          <script type="text/javascript"><!-- 
+            addReplyLink(4); //--></script>
+          <span class="comment_rule">-------</span>
+        </span>
+        
+
+
+<pre id="comment_text_4">I am working with Kevin on getting ssl running on aku.
+So far, no luck, after a few hours of fiddling and creating ssl certificates.
+</pre>
+    </div>
+</div>
+
+</form>
+
+<hr>
+<b>Bug List:</b>
+
+
+      (This bug is not in your last search results)
+
+  &nbsp;&nbsp;<a href="buglist.cgi?regetlastlist=1">Show last search results</a>
+
+<br>
+</div>
+
+
+
+<div id="footer">
+  <div class="intro"></div>
+
+
+
+
+<ul id="useful-links">
+  <li id="links-actions">
+    <div class="label">Actions: </div><ul class="links">
+  <li><a href="./">Home</a></li>
+  <li><span class="separator">| </span><a href="enter_bug.cgi">New</a></li>
+  <li><span class="separator">| </span><a href="query.cgi">Search</a></li>
+
+  <li class="form">
+    <span class="separator">| </span>
+    <form action="buglist.cgi" method="get"
+        onsubmit="if (this.quicksearch.value == '')
+                  { alert('Please enter one or more search terms first.');
+                    return false; } return true;">
+    <input class="txt" type="text" name="quicksearch">
+    <input class="btn" type="submit" value="Find" id="find_bottom"></form></li>
+
+  <li><span class="separator">| </span><a href="report.cgi">Reports</a></li>
+
+  <li>
+    <span class="separator">| </span>
+      <a href="request.cgi?requester=kevinr%40gotvoice.com&amp;requestee=kevinr%40gotvoice.com&amp;do_union=1&amp;group=type">My Requests</a></li>
+
+    <li><span class="separator">| </span><a href="votes.cgi?action=show_user">My&nbsp;Votes</a></li>
+
+    <li><span class="separator">| </span><a href="userprefs.cgi">Preferences</a></li>
+    <li>
+      <span class="separator">| </span>
+        <a href="relogin.cgi">Log&nbsp;out</a>
+        kevinr&#64;gotvoice.com</li>
+</ul>
+  </li>
+
+  
+
+    <li id="links-edit">
+      <div class="label">Edit: </div>
+      <ul class="links">
+          <li><a href="editparams.cgi">Parameters</a></li>
+          <li><span class="separator">| </span><a href="editsettings.cgi">User Preferences</a></li>
+          <li><span class="separator">| </span><a href="sanitycheck.cgi">Sanity Check</a></li>
+          <li><span class="separator">| </span><a href="editusers.cgi">Users</a></li>
+          <li><span class="separator">| </span><a href="editproducts.cgi">Products</a></li>
+          <li><span class="separator">| </span><a href="editflagtypes.cgi">Flags</a></li>
+          <li><span class="separator">| </span><a href="editfields.cgi">Custom Fields</a></li>
+          <li><span class="separator">| </span><a href="editvalues.cgi">Field Values</a></li>
+          <li><span class="separator">| </span><a href="editgroups.cgi">Groups</a></li>
+          <li><span class="separator">| </span><a href="editkeywords.cgi">Keywords</a></li>
+          <li><span class="separator">| </span><a href="editwhines.cgi">Whining</a></li>
+      </ul>
+    </li>
+    
+    
+    
+    <li id="links-saved">
+      <div class="label">
+        Saved Searches:
+      </div>
+      <ul class="links">
+          <li><a href="buglist.cgi?bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;emailassigned_to1=1&amp;emailreporter1=1&amp;emailtype1=exact&amp;email1=kevinr%40gotvoice.com&amp;field0-0-0=bug_status&amp;type0-0-0=notequals&amp;value0-0-0=UNCONFIRMED&amp;field0-0-1=reporter&amp;type0-0-1=equals&amp;value0-0-1=kevinr%40gotvoice.com">My Bugs</a></li>
+
+      </ul>
+    </li>
+
+  
+<li id="links-special">
+    <script type="text/javascript">
+      <!--
+      function update_text() {
+        // 'lob' means list_of_bugs.
+        var lob_action = document.getElementById('lob_action');
+        var action = lob_action.options[lob_action.selectedIndex].value;
+        var text = document.getElementById('lob_direction');
+        var new_query_text = document.getElementById('lob_new_query_text');
+
+        if (action == "add") {
+          text.innerHTML = "to";
+          new_query_text.style.display = 'inline';
+        }
+        else {
+          text.innerHTML = "from";
+          new_query_text.style.display = 'none';
+        }
+      }
+
+      function manage_old_lists() {
+        var old_lists = document.getElementById('lob_oldqueryname');
+        // If there is no saved searches available, returns.
+        if (!old_lists) return;
+
+        var new_query = document.getElementById('lob_newqueryname').value;
+
+        if (new_query != "") {
+          old_lists.disabled = true;
+        }
+        else {
+          old_lists.disabled = false;
+        }
+      }
+      //-->
+    </script>
+
+    
+    <div class="label"></div>
+    <ul class="links"><li class="form">
+      <form id="list_of_bugs" action="buglist.cgi" method="get">
+        <input type="hidden" name="cmdtype" value="doit">
+        <input type="hidden" name="remtype" value="asnamed">
+        <input type="hidden" name="list_of_bugs" value="1">
+        <select id="lob_action" name="action" onchange="update_text();">
+          <option value="add">Add</option>
+        </select>
+
+          <a href="docs/html/query.html#individual-buglists">the named tag</a>
+
+        <span id="lob_new_query_text">
+          <input class="txt" type="text" id="lob_newqueryname"
+                 size="20" maxlength="64" name="newqueryname"
+                 onkeyup="manage_old_lists();">
+        </span>
+        <span id="lob_direction">to</span>
+        bugs
+        <input type="text" name="bug_ids" size="12" maxlength="80" value="2680">
+        <input type="submit" value="Commit" id="commit_list_of_bugs">
+      </form>
+    </li></ul>
+  </li>
+
+  
+</ul>
+
+  <div class="outro"></div>
+</div>
+
+</body>
+</html>

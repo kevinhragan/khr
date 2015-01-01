@@ -1,0 +1,40 @@
+path-mtu project
+	allow icmp packets on osiris, osiris2
+        test hawaii - colo
+        allow icmp packets on ipcop firewalls
+        test
+        allow fragments on osiris, osiris2
+	test
+        allow fragment on ipcop firewalls
+
+
+The IP Tables state module can allow ICMP error messages for an existing connection by using the RELATED keyword after the --state option:
+iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+iptables -A FORWARD -m state --state ESTABLISHED,RELATED -j ACCEPT
+iptables -A OUTPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+
+If you can't or don't want to use the state module, you can allow the required ICMP packets manually.
+
+For IP Tables to pass destination unreachable, fragmentation needed but don't fragment bit set ICMP messages, execute the following command for each active chain. Replace CHAIN-NAME by the name of your chain.
+iptables -I CHAIN-NAME -p ICMP --icmp-type 3/4 -j ACCEPT
+
+
+# migrate osiris to khufu
+services iptables/router from internet to production net
+ipsec tunnel to kirkland
+
+khufu
+    all external ips on eth0
+    10.96.1.1 on eth1
+ 
+
+
+steps:
+turn off nagios notifications
+take khufu off network cables;
+set ips interfaces correctly
+start iptables
+connect khufu as osiris
+test
+start ipsec tunnel 
+turn on nagios notifications

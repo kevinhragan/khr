@@ -1,0 +1,25 @@
+x follow build-firewall steps
+x config all the ips
+x ipsec config
+x interface config
+x firewall file and cronjob
+
+x catalog functions with ips
+turn off nagios
+turn on ips      
+update internal ip to gateway
+restart ipsec tunnels
+
+
+
+
+verify:
+ping external gateway
+ping internal hosts
+internal hosts can get to internet
+dns
+www web
+ra web
+ra sendmail in/out
+asterisk access for fig, nile
+ipsec tunnel

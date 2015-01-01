@@ -1,0 +1,12 @@
+#for pdf to ps
+pdftops file.pdf
+
+#reversed and odd
+psselect -o -r file.ps odd.ps
+#reversed and even
+psselect -e -r file.ps even.ps
+ 
+lpr odd.ps
+#flip upside for down
+lpr even.ps
+

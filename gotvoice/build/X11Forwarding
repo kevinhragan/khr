@@ -1,0 +1,12 @@
+Client:
+    Done on bean.
+    vi /etc/ssh/ssh-client
+         X11Forwarding  true   (?)
+
+Debian Server:
+    aptitude install install xbase-clients
+    no change: /etc/ssh/sshd_config
+
+Slackware Server:  # hasn't been done yet
+    vi /etc/ssh/sshd_config
+ 

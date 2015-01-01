@@ -1,0 +1,119 @@
+// <!-- <mdb:mork:z v="1.4"/> -->
+< <(a=c)> // (f=iso-8859-1)
+  (B8=ns:msg:db:table:kind:pending)(B9=folderName)(BA=current-view)
+  (BB=imageSize)(BC=junkscore)(BD=keywords)(BE=retainBy)
+  (BF=daysToKeepHdrs)(C0=numHdrsToKeep)(C1=daysToKeepBodies)
+  (C2=keepUnreadOnly)(C3=useServerDefaults)(C4=cleanupBodies)
+  (80=ns:msg:db:row:scope:msgs:all)(81=subject)(82=sender)(83=message-id)
+  (84=references)(85=recipients)(86=date)(87=size)(88=flags)(89=priority)
+  (8A=label)(8B=statusOfset)(8C=numLines)(8D=ccList)(8E=msgThreadId)
+  (8F=threadId)(90=threadFlags)(91=threadNewestMsgDate)(92=children)
+  (93=unreadChildren)(94=threadSubject)(95=numRefs)(96=msgCharSet)
+  (97=ns:msg:db:table:kind:msgs)(98=ns:msg:db:table:kind:thread)
+  (99=ns:msg:db:table:kind:allthreads)
+  (9A=ns:msg:db:row:scope:threads:all)(9B=threadParent)(9C=threadRoot)
+  (9D=msgOffset)(9E=offlineMsgSize)
+  (9F=ns:msg:db:row:scope:dbfolderinfo:all)
+  (A0=ns:msg:db:table:kind:dbfolderinfo)(A1=numMsgs)(A2=numNewMsgs)
+  (A3=folderSize)(A4=expungedBytes)(A5=folderDate)(A6=highWaterKey)
+  (A7=mailboxName)(A8=UIDValidity)(A9=totPendingMsgs)
+  (AA=unreadPendingMsgs)(AB=expiredMark)(AC=version)
+  (AD=fixedBadRefThreading)(AE=onlineName)(AF=LastPurgeTime)(B0=sortType)
+  (B1=sortOrder)(B2=viewFlags)(B3=viewType)(B4=imapFlags)
+  (B5=charSetOverride)(B6=charSet)(B7=ns:msg:db:row:scope:pending:all)>
+<(8E=7a57d)(8B=46081dbe)(80=1)>[1:m(^9C^8E)(^8F^8E)(^91^8B)(^92=1)]
+<(95=7a65a)(93=4605d2f5)>[2:m(^9C^95)(^8F^95)(^91^93)(^92=1)]
+<(9D=7a65c)(BB=460988a6)(B6=a)(B2=9)>
+[3:m(^9C^9D)(^8F^9D)(^91^BB)(^92=a)(^93=9)]
+<(C6=7a6a8)(C2=45f08aa7)>[4:m(^9C^C6)(^8F^C6)(^91^C2)(^92=1)]
+
+<(84=0)(87=<>)(88=undisclosed-recipients:;)(89=)(8A
+    =BAY124-W27F934AAF823530A057DC7BA6F0@phx.gbl)(8C=1c57)(8D=ffffffff)
+  (8F=Martin Dunsmuir <martind@gotvoice.com>)(90=support@gotvoice.com)
+  (91=Problem using Composer over phone on Firefox/Win XP)(92
+    =12621645.9011174786805318.JavaMail.root@mail.gotvoice.com)(94=aa5)
+  (97=gv@trial.gotvoice.com)(98=Problems with Automatic Scheduling!)
+  (99=46096A10.mailNZQ119MLE@trial)(9A=46096a10)(9B=us-ascii)(9C=741)
+  (9F=46098630.mailN4T1WTEC5@trial)(A0=46098630)(A1=740)(A3
+    =460986E4.mail2ED11CDB0@trial)(A4=460986e4)(A5=732)(A7
+    =46098720.mail3T711DR44@trial)(A8=46098720)(AA
+    =4609875C.mail53U11AI0I@trial)(AB=4609875c)(AD
+    =46098798.mail6OP115CPL@trial)(AE=46098798)(B0
+    =4609882E.mail9YG12JTKP@trial)(B1=4609882e)(B3
+    =4609884C.mailAPV1RHF8J@trial)(B4=4609884c)(B5=733)(B7
+    =46098888.mailC8X1TYH51@trial)(B8=46098888)(BA
+    =460988A6.mailCYR11F4YF@trial)(C5=4000011)(BD
+    ="davidjay || away message" <dj@davidjay.com>)(BE
+    =GotVoice <support@gotvoice.com>)(C0
+    =GotVoice Schedule Results for 805-637-2034.)(C1
+    =E1HPQs3-0005Ve-Q2@cust11455.ipslink.com)(C3=iso-8859-1)(C4=122e)
+  (96=2)>
+{1:^80 {(k^97:c)(s=9)} 
+  [7A57D(^88=1)(^8B=0)(^82=<>)(^85^88)(^81=)(^83^8A)(^86^8B)(^89=1)
+    (^87^8C)(^9B^8D)(^8E^8E)]
+  [7A65A(^88=1)(^8B=0)(^82^8F)(^85^90)(^81^91)(^83^92)(^86^93)(^89=1)
+    (^87^94)(^9B^8D)(^8E^95)]
+  [7A65C(^88=0)(^8B=0)(^82^97)(^85^90)(^81^98)(^83^99)(^86^9A)(^89=1)
+    (^96^9B)(^87^9C)(^9B^8D)(^8E^9D)]
+  [7A65E(^88=0)(^8B=0)(^82^97)(^85^90)(^81^98)(^83^9F)(^86^A0)(^89=1)
+    (^96^9B)(^87^A1)(^9B^9D)(^8E^9D)]
+  [7A660(^88=0)(^8B=0)(^82^97)(^85^90)(^81^98)(^83^A3)(^86^A4)(^89=1)
+    (^96^9B)(^87^A5)(^9B^9D)(^8E^9D)]
+  [7A662(^88=0)(^8B=0)(^82^97)(^85^90)(^81^98)(^83^A7)(^86^A8)(^89=1)
+    (^96^9B)(^87^A5)(^9B^9D)(^8E^9D)]
+  [7A664(^88=0)(^8B=0)(^82^97)(^85^90)(^81^98)(^83^AA)(^86^AB)(^89=1)
+    (^96^9B)(^87^A1)(^9B^9D)(^8E^9D)]
+  [7A666(^88=0)(^8B=0)(^82^97)(^85^90)(^81^98)(^83^AD)(^86^AE)(^89=1)
+    (^96^9B)(^87^A1)(^9B^9D)(^8E^9D)]
+  [7A668(^88=0)(^8B=0)(^82^97)(^85^90)(^81^98)(^83^B0)(^86^B1)(^89=1)
+    (^96^9B)(^87^A5)(^9B^9D)(^8E^9D)]
+  [7A66A(^88=0)(^8B=0)(^82^97)(^85^90)(^81^98)(^83^B3)(^86^B4)(^89=1)
+    (^96^9B)(^87^B5)(^9B^9D)(^8E^9D)]
+  [7A66C(^88=0)(^8B=0)(^82^97)(^85^90)(^81^98)(^83^B7)(^86^B8)(^89=1)
+    (^96^9B)(^87^9C)(^9B^9D)(^8E^9D)]
+  [7A66E(^88=1)(^8B=0)(^82^97)(^85^90)(^81^98)(^83^BA)(^86^BB)(^89=1)
+    (^96^9B)(^87^9C)(^9B^9D)(^8E^9D)]
+  [7A6A8(^88^C5)(^8B=0)(^82^BD)(^85^BE)(^81^C0)(^83^C1)(^86^C2)(^89=1)
+    (^96^C3)(^87^C4)(^8A=2)(^9B^8D)(^8E^C6)]}
+{7A57D:^80 {(k^98:c)(s=9)1:m } 7A57D }
+{7A65A:^80 {(k^98:c)(s=9)2:m } 7A65A }
+{7A6A8:^80 {(k^98:c)(s=9)4:m } 7A6A8 }
+{7A65C:^80 {(k^98:c)(s=9)3:m } 7A65C 7A65E 7A660 7A662 7A664 7A666 7A668 
+  7A66A 7A66C 7A66E }
+{FFFFFFFD:^9A {(k^99:c)(s=9)} [7A57D(^94=)]
+  [7A65A(^94^91)]
+  [7A65C(^94^98)]
+  [7A6A8(^94^C0)]}
+
+<(81=Trash)(529=Wed Apr 16 18:59:28 2008)(83=12)(85=ee00)(86=cdb1)(C7=d)>
+{1:^9F {(k^A0:c)(s=9)} 
+  [1(^AC=1)(^AD=1)(^AE^81)(^A7^81)(^AF^529)(^B0=12)(^B1=1)(^B2=0)(^B3=0)
+    (^B4^85)(^A8^86)(^A1=d)(^A2=9)]}
+
+@$${279{@
+<(52A=Thu Apr 17 02:59:29 2008)>
+[1:^9F(^AF^52A)]
+@$$}279}@
+
+@$${27A{@
+<(52B=Thu Apr 17 10:59:30 2008)>
+[1:^9F(^AF^52B)]
+@$$}27A}@
+
+@$${27B{@
+<(52C=Thu Apr 17 18:59:32 2008)>
+[1:^9F(^AF^52C)]
+@$$}27B}@
+
+@$${27C{@
+<(52D=Fri Apr 18 02:59:34 2008)>
+[1:^9F(^AF^52D)]
+@$$}27C}@
+
+@$${27D{@
+<(52E=Fri Apr 18 10:59:35 2008)>
+[1:^9F(^AF^52E)]
+@$$}27D}@
+
+@$${27E{@
+@$$}27E}@

@@ -1,0 +1,387 @@
+#compPgHrLo{margin:0}
+#compPgHrL{position:static;float:right;clear:both}
+#compPgHrL UL{margin:15px 21px 0 0}
+#compPgHrL LI{padding:0 0 0 15px;background:url(/xp/images/tinyBulletYellow.gif) 12px 1px no-repeat;display:block;float:right;font-size:1px;line-height:1px;height:5px}
+#compPgHrL LI A{display:block;margin:0;padding:0;height:5px}
+#compPgHrL LI .t2i{display:block;margin:0;padding:0;font-size:1px;height:5px}
+#compPgHrL LI.login A{display:block;margin-left:1px;width:24px;height:5px;background:url(/xp/images/topOptionsLogin.gif) top left no-repeat}
+#compPgHrL LI.helpOption A{display:block;margin-left:1px;width:21px;height:5px;background:url(/xp/images/topOptionsHelp.gif) top left no-repeat}
+#compPgHrL LI.support A{display:block;margin-left:1px;width:41px;height:5px;background:url(/xp/images/topOptionsSupport.gif) top left no-repeat}
+#compPgHrL LI.home A{display:block;margin-left:1px;width:22px;height:5px;background:url(/xp/images/topOptionsHome.gif) top left no-repeat}
+#compPgHrSrch{margin-top:12px}
+#compPgHrSrch INPUT.textInput{height:13px;font-family:arial, helvetica, sans-serif;font-size:9px;border:1px solid #9fbad2;background-color:white}
+#compPgHrSrch INPUT.radio{margin-left:0}
+.Opera #compPgHrSrch INPUT.radio{margin-top:-3px;margin-left:-2px}
+.Safari #compPgHrSrch INPUT.radio{margin-top:-3px;margin-left:1px}
+.IE7 #compPgHrSrch INPUT.radio{margin-top:-3px;margin-left:-4px}
+.IE #compPgHrSrch INPUT.radio{margin-top:-4px;margin-left:-4px}
+.Firefox #compPgHrSrch BUTTON{display:block}
+#compPgHrSrch BUTTON{position:relative;top:-1px;margin:0 17px 0 0}
+.Firefox #compPgHrSrch BUTTON, .IE7 #compPgHrSrch BUTTON{top:-3px}
+#compPgHrSrch LABEL{color:#fff;font-size:10px}
+#compPgHrSrch .bTypeButton{float:left}
+#compPgHrSrch .advancedSearchLink .t2i{margin:3px 24px 0 0;float:right}
+.Firefox #compPgHrSrch .advancedSearchLink .t2i{margin-top:-9px}
+.IE #compPgHrSrch .advancedSearchLink .t2i{margin-right:12px}
+.IE #compPgHrSrch .advancedSearchLink .t2i, .IE7 #compPgHrSrch .advancedSearchLink .t2i{margin-top:-11px}
+.Opera #compPgHrSrch .advancedSearchLink .t2i{margin-top:-10px}
+.Safari #compPgHrSrch .advancedSearchLink .t2i{margin-top:-8px;margin-right:28px}
+#compPgHrNav{top:84px;height:1px;position:absolute;background:url(/xp/images/pageHeaderNavBottom.gif) 0 42px repeat-x}
+#compPgHrNav UL{padding-left:11px}
+#compPgHrNav LI{display:block;position:relative;background-image:none;margin-left:-23px;padding-left:0;padding-right:0}
+.Opera #compPgHrNav UL{height:45px}
+#compPgHrNav .compPgHrNavHm{margin-left:0}
+.compPgHrNavHm, .compPgHrNavHm A{z-index:60}
+.compPgHrNavHIW, .compPgHrNavHIW A, .compPgHrNavFA, .compPgHrNavFA A, .compPgHrNavWIW, .compPgHrNavWIW A{z-index:50}
+.compPgHrNavAZ, .compPgHrNavAZ A{z-index:40}
+.compPgHrNavEx, .compPgHrNavEx A{z-index:30}
+#compPgHrNav LI A{margin:0;padding:18px 8px 0 0;height:27px;width:145px;background-image:none;overflow:hidden;display:block;cursor:pointer;background:url(/xp/images/pageHeaderNavTab.png) top left no-repeat}
+LI#compPgHrNavC A{padding-top:17px;height:28px}
+.IE #compPgHrNav LI A{background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/pageHeaderNavTab.png',sizingMethod='crop')}
+#compPgHrNav LI A:hover{background:url(/xp/images/pageHeaderNavTabHover.png) top left no-repeat}
+.IE #compPgHrNav LI A:hover{background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/pageHeaderNavTabHover.png',sizingMethod='crop')}
+LI#compPgHrNavC, LI#compPgHrNavC A{z-index:100}
+#compPgHrNav A SPAN{display:block;background-repeat:no-repeat;text-indent:-9999px;overflow:hidden}
+.IE #compPgHrNav A SPAN, .IE #compPgHrNav #compPgHrNavC A SPAN{background-image:none}
+.compPgHrNavHm A SPAN{background-image:url(/xp/images/navHm.png);background-position:47px 0;height:18px}
+.IE .compPgHrNavHm A SPAN{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/navHm.png',sizingMethod='crop');margin-left:47px}
+.compPgHrNavHm#compPgHrNavC A SPAN{background-image:url(/xp/images/navHmc.png);height:19px}
+.IE .compPgHrNavHm#compPgHrNavC A SPAN{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/navHmc.png',sizingMethod='crop')}
+.compPgHrNavFA A SPAN{background-image:url(/xp/images/navFA.png);background-position:22px 0;height:18px}
+.IE .compPgHrNavFA A SPAN{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/navFA.png',sizingMethod='crop');margin-left:22px}
+.compPgHrNavFA#compPgHrNavC A SPAN{background-image:url(/xp/images/navFAc.png)}
+.IE .compPgHrNavFA#compPgHrNavC A SPAN{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/navFAc.png',sizingMethod='crop')}
+.compPgHrNavHIW A SPAN{background-image:url(/xp/images/navHIW.png);background-position:24px 0;height:18px}
+.IE .compPgHrNavHIW A SPAN{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/navHIW.png',sizingMethod='crop');margin-left:24px}
+.compPgHrNavHIW#compPgHrNavC A SPAN{background-image:url(/xp/images/navHIWc.png);height:19px}
+.IE .compPgHrNavHIW#compPgHrNavC A SPAN{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/navHIWc.png',sizingMethod='crop')}
+.compPgHrNavWIW A SPAN{background-image:url(/xp/images/navWIW.png);background-position:24px 0;height:20px}
+.IE .compPgHrNavWIW A SPAN{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/navWIW.png',sizingMethod='crop');margin-left:24px}
+.compPgHrNavWIW#compPgHrNavC A SPAN{background-image:url(/xp/images/navWIWc.png);height:22px}
+.IE .compPgHrNavWIW#compPgHrNavC A SPAN{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/navWIWc.png',sizingMethod='crop')}
+.compPgHrNavAZ A SPAN{background-image:url(/xp/images/navAZ.png);background-position:36px 0;height:18px}
+.IE .compPgHrNavAZ A SPAN{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/navAZ.png',sizingMethod='crop');margin-left:36px}
+.compPgHrNavAZ#compPgHrNavC A SPAN{background-image:url(/xp/images/navAZc.png);height:19px}
+.IE .compPgHrNavAZ#compPgHrNavC A SPAN{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/navAZc.png',sizingMethod='crop')}
+.compPgHrNavEx A SPAN{background-image:url(/xp/images/navEx.png);background-position:41px 0;height:19px}
+.IE .compPgHrNavEx A SPAN{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/navEx.png',sizingMethod='crop');margin-left:41px}
+.compPgHrNavEx#compPgHrNavC A SPAN{background-image:url(/xp/images/navExc.png);background-position:40px 0;height:22px}
+.IE .compPgHrNavEx#compPgHrNavC A SPAN{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/navExc.png',sizingMethod='crop');margin-left:40px}
+.compPgHrNavT A SPAN{background-image:url(/xp/images/navT.png);background-position:26px 0;height:22px}
+.IE .compPgHrNavT A SPAN{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/navT.png',sizingMethod='crop');margin-left:26px}
+.compPgHrNavT#compPgHrNavC A SPAN{background-image:url(/xp/images/navTc.png);background-position:25px 0;height:19px}
+.IE .compPgHrNavT#compPgHrNavC A SPAN{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/navTc.png',sizingMethod='crop');margin-left:25px}
+#compPgHrNav LI#compPgHrNavC A, #compPgHrNav LI#compPgHrNavC A:hover{background-position:0 0;background-image:url(/xp/images/pageHeaderNavTabCurrent.png)}
+.IE #compPgHrNav LI#compPgHrNavC A, .IE #compPgHrNav LI#compPgHrNavC A:hover{background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/pageHeaderNavTabCurrent.png',sizingMethod='crop')}
+#compPgHrNav .compPgHrNavBm{position:relative;height:4px;width:967px;top:-6px;z-index:99;font-size:0;margin:0;left:0;background-image:url(/xp/images/zoneNavTop.png)}
+.IE #compPgHrNav .compPgHrNavBm{top:-5px;background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/zoneNavTop.png',sizingMethod='crop')}
+#compZnNavCont{float:right;margin-top:5px;margin-right:1px;background-repeat:no-repeat;width:24px;z-index:1000;height:16px;display:block;cursor:pointer;background-image:url(/xp/images/zonePrevBack.png)}
+.IE #compZnNavCont{background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/zonePrevBack.png',sizingMethod='crop')}
+#compZnNav .next{background-image:url(/xp/images/zoneNextMore.png)}
+.IE #compZnNav .next{background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/zoneNextMore.png',sizingMethod='crop')}
+#compZnNav{top:127px;margin:0;position:absolute;width:957px;height:25px;white-space:nowrap;background:url(/xp/images/subNavBlue.gif) repeat-x;padding:0 10px 0 0;overflow:hidden}
+#compZnNavCl{position:absolute;overflow:hidden}
+#compZnNav UL{width:960px;margin:0;height:25px;position:relative;clear:none;overflow:hidden}
+#compZnNav #compZnNavL{background:url(/xp/images/subNavBack.gif) repeat-x;height:25px}
+#compZnNav LI{background:url(/xp/images/zoneDivider.gif) 100% 100% no-repeat;display:block;margin:0;float:left;padding:0 3px 0 0}
+#compZnNavCl A{display:block;height:23px;background-position:19px 7px;background-repeat:no-repeat;margin:0;padding:0}
+#compZnNav LI A SPAN{display:block;width:100%;height:23px;text-indent:-9999px;overflow:hidden}
+#compZnNav LI.nCur A:hover SPAN, #compZnNav LI.firstChild A:hover SPAN{background:url(/xp/images/15p_w_opacity.png) repeat-x}
+.IE #compZnNav LI.nCur A:hover SPAN, .IE #compZnNav LI.firstChild A:hover SPAN{background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/15p_w_opacity.png',sizingMethod='scale')}
+#compZnNav LI.current A, #compZnNav LI.current A:hover{height:23px;background:url(/xp/images/zoneNav_opacity.png) repeat-x}
+#compZnNav LI.current A SPAN{background-position:19px 7px;background-repeat:no-repeat}
+.IE #compZnNav LI.current A, .IE #compZnNav LI.current A:hover{background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/zoneNav_opacity.png',sizingMethod='scale')}
+.IE #compZnNav LI.current A SPAN{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/none.png',sizingMethod='scale')}
+#compZnNav .root5297 A{width:89px;background-image:url(/xp/images/navMicrosoft.gif)}
+#compZnNav LI.current .root5297 A SPAN{background-image:url(/xp/images/navMicrosoft_active.gif)}
+#compZnNav .root5349 A{width:70px;background-image:url(/xp/images/navApple.gif)}
+#compZnNav LI.current .root5349 A SPAN{background-image:url(/xp/images/navApple_active.gif)}
+#compZnNav .root5374 A{width:81px;background-image:url(/xp/images/navInternet.gif)}
+#compZnNav LI.current .root5374 A SPAN{background-image:url(/xp/images/navInternet_active.gif)}
+#compZnNav .root5624 A{width:79px;background-image:url(/xp/images/navGamers.gif)}
+#compZnNav LI.current .root5624 A SPAN{background-image:url(/xp/images/navGamers_active.gif)}
+#compZnNav .root5375 A{width:108px;background-image:url(/xp/images/navDigitalLiving.gif)}
+#compZnNav LI.current .root5375 A SPAN{background-image:url(/xp/images/navDigitalLiving_active.gif)}
+#compZnNav .root5377 A{width:126px;background-image:url(/xp/images/navVirus&Spy.gif)}
+#compZnNav LI.current .root5377 A SPAN{background-image:url(/xp/images/navVirus&Spy_active.gif)}
+#compZnNav .root5625 A{width:89px;background-image:url(/xp/images/navHardware.gif)}
+#compZnNav LI.current .root5625 A SPAN{background-image:url(/xp/images/navHardware_active.gif)}
+#compZnNav .root3062 A{width:86px;background-image:url(/xp/images/navSoftware.gif)}
+#compZnNav LI.current .root3062 A SPAN{background-image:url(/xp/images/navSoftware_active.gif)}
+#compZnNav .root5379 A{width:66px;background-image:url(/xp/images/navITPro.gif)}
+#compZnNav LI.current .root5379 A SPAN{background-image:url(/xp/images/navITPro_active.gif)}
+#compZnNav .root5380 A{width:91px;background-image:url(/xp/images/navDeveloper.gif)}
+#compZnNav LI.current .root5380 A SPAN{background-image:url(/xp/images/navDeveloper_active.gif)}
+#compZnNav .root5381 A{width:80px;background-image:url(/xp/images/navStorage.gif)}
+#compZnNav LI.current .root5381 A SPAN{background-image:url(/xp/images/navStorage_active.gif)}
+#compZnNav .root5382 A{width:54px;background-image:url(/xp/images/navOS.gif)}
+#compZnNav LI.current .root5382 A SPAN{background-image:url(/xp/images/navOS_active.gif)}
+#compZnNav .root5383 A{width:88px;background-image:url(/xp/images/navDatabase.gif)}
+#compZnNav LI.current .root5383 A SPAN{background-image:url(/xp/images/navDatabase_active.gif)}
+#compZnNav .root5384 A{width:83px;background-image:url(/xp/images/navSecurity.gif)}
+#compZnNav LI.current .root5384 A SPAN{background-image:url(/xp/images/navSecurity_active.gif)}
+#compZnNav .root5628 A{width:111px;background-image:url(/xp/images/navProgram.gif)}
+#compZnNav LI.current .root5628 A SPAN{background-image:url(/xp/images/navProgram_active.gif)}
+#compZnNav .root5385 A{width:134px;background-image:url(/xp/images/navWebDev.gif)}
+#compZnNav LI.current .root5385 A SPAN{background-image:url(/xp/images/navWebDev_active.gif)}
+#compZnNav .root5626 A{width:100px;background-image:url(/xp/images/navNetworking.gif)}
+#compZnNav LI.current .root5626 A SPAN{background-image:url(/xp/images/navNetworking_active.gif)}
+#compZnNav .root5627 A{width:69px;background-image:url(/xp/images/navOther.gif)}
+#compZnNav LI.current .root5627 A SPAN{background-image:url(/xp/images/navOther_active.gif)}
+#pageMain .c{width:100%}
+.c{width:187px;margin-bottom:17px}
+.c .f{width:100%;border-spacing:0;border-collapse:collapse;font-size:5px;line-height:6px}
+.c .f TD{background:url(/cf.gif) repeat-x}
+.c .f .l{width:5px;background-image:url(/cfl.gif)}
+.c .f .r{width:5px;background-image:url(/cfr.gif)}
+.c .h{height:28px;border-spacing:0;border-collapse:collapse;width:100%}
+.c .h .t2i{display:none}
+.cnh .h{height:6px;font-size:5px;line-height:6px}
+.c .h TD .t2i{margin:6px 0 0 4px}
+.c .h TD{background:url(/ch.gif) repeat-x}
+.c .h .l{width:6px;background-image:url(/cl.gif)}
+.c .h .r{width:6px;background-image:url(/cr.gif)}
+.cr .h TD{background-image:url(/chr.gif)}
+.cr .h .l{background-image:url(/clr.gif)}
+.cr .h .r{background-image:url(/crr.gif)}
+.cg .h TD{background-image:url(/chg.gif)}
+.cg .h .l{background-image:url(/clg.gif)}
+.cg .h .r{background-image:url(/crg.gif)}
+.co .h TD{background-image:url(/cho.gif)}
+.co .h .l{background-image:url(/clo.gif)}
+.co .h .r{background-image:url(/cro.gif)}
+.cb .h TD{background-image:url(/chb.gif)}
+.cb .h .l{background-image:url(/clb.gif)}
+.cb .h .r{background-image:url(/crb.gif)}
+.cnh .h TD{background-image:url(/cnh.gif)}
+.cnh .h .l{background-image:url(/cnhl.gif)}
+.cnh .h .r{background-image:url(/cnhr.gif)}
+.c .h SPAN{float:left;margin:2px 0 0 5px}
+.c .h .mlb{width:89px;height:18px;background:url(/xp/images/compMLb.gif)}
+.c .h .mlo{width:89px;height:18px;background:url(/xp/images/compMLo.gif)}
+.c .h .myAcc{width:75px;height:18px;background:url(/xp/images/compMyAcc.gif)}
+.c .h .TEg{width:95px;height:18px;background:url(/xp/images/compTEg.gif)}
+.c .h .TEgn{width:95px;height:18px;background:url(/xp/images/compTEgn.gif)}
+.c .h .HOFgn{width:80px;height:18px;background:url(/xp/images/compHOFgn.gif)}
+.c .h .HOFg{width:80px;height:18px;background:url(/xp/images/compHOFg.gif)}
+.c .h .myFav{width:81px;height:18px;background:url(/xp/images/compMyFav.gif)}
+.c .h .ccbox{width:122px;height:18px;background:url(/xp/images/compUpdateCC.gif);position:relative;top:2px}
+.c .h .adBox{width:70px;height:18px;background:url(/xp/images/compAdBox.gif)}
+.c .h .OT{width:72px;height:18px;background:url(/xp/images/compOT.gif)}
+.c .h .WUEE{width:98px;height:18px;background:url(/xp/images/compWUEE.gif)}
+.c .bc{margin-left:0;width:100%;background:#f5f5f5 url(/br.gif) top right repeat-y}
+.c .b{padding:5px 15px;background:url(/bl.gif) repeat-y}
+.in .c .b{padding-top:5px;padding-bottom:0;padding-left:0;padding-right:0}
+#compMmbInc LI{padding-left:0em;margin-bottom:1em;background:#fff;color:#0472a5}
+#compOTr .b{padding-right:2px}
+#compOTr P{background:url(/xp/images/componentTourBG.gif) top left no-repeat;padding-top:65px;margin-top:2px;margin-bottom:2px}
+#compLgnBox INPUT#componentmsuLoginName{margin-bottom:2px}
+#compRsndVE{position:relative;left:-5px;margin-bottom:11px}
+#compRsndVE A{display:block;width:199px;height:40px;background:url(/xp/images/resendVerificationEmailButton.png)}
+.IE #compRsndVE A{background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/resendVerificationEmailButton.png',sizingMethod='crop')}
+#compNwQst, #compQEx, #compCCExpiring{position:relative;left:-2px;margin-bottom:13px}
+#compSignUpNow, #compStartFreeTrial{position:relative;left:-4px;margin-bottom:5px;margin-top:-14px}
+#compSignUpNow A, #compStartFreeTrial A{display:block;width:195px;height:56px;text-indent:-9999px;overflow:hidden}
+#compSignUpNow A{background-image:url(/xp/images/signUpNow.png)}
+#compStartFreeTrial A{background-image:url(/xp/images/startFreeTrial.png)}
+#compSignUpNowLarge, #compStartFreeTrialLarge{position:relative;left:-4px;margin-bottom:10px;margin-top:0}
+#compSignUpNowLarge A, #compStartFreeTrialLarge A{display:block;width:196px;height:239px;text-indent:-9999px;overflow:hidden}
+#compSignUpNowLarge A{background-image:url(/xp/images/signUpNowSide.jpg)}
+#compStartFreeTrialLarge A{background-image:url(/xp/images/startFreeTrialSide.jpg)}
+#compUpNow{position:relative;left:-4px;margin-bottom:5px;margin-top:-14px}
+#compUpNow A{display:block;width:195px;height:55px;background:url(/xp/images/upgradeNow.png);text-indent:-9999px;overflow:hidden}
+.IE #compUpNow A{background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/upgradeNow.png',sizingMethod='crop')}
+#compNwQst A.newQuestionWizardButton{display:block;width:191px;height:35px;background:url(/xp/images/askNewQuestion.png)}
+.IE #compNwQst A.newQuestionWizardButton{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/askNewQuestion.png',sizingMethod='crop')}
+#compCCExpiring A.updateCCButton{display:block;width:191px;height:35px;background:url(/xp/images/updateCreditCard.gif)}
+.IE #compCcExpiring .b{padding-right:2px}
+#compCCExpired .notice{color:#f60;font-weight:bold}
+#compCCExpired A.updateCCButton{display:block;width:164px;height:29px;background:url(/xp/images/updateCreditCardMed.gif);position:relative;left:-2px;margin-top:7px}
+.IE #compCCExpired A.updateCCButton{margin-right:-7px}
+#compMyAct .b{padding-right:2px}
+#compMyAct .compMyActC{background:url(/xp/images/xBack.gif) right top no-repeat;height:118px;position:relative;z-index:2;margin-bottom:-13px}
+.IE #compMyAct .b, .IE7 #compMyAct .b{height:105px}
+.IE #compMyAct .compMyActC{width:100%;position:absolute;float:left}
+#pageRight #setSkinBox .expertSkinUpgradeButton{background:url(/xp/images/expertSkinUpgradeButton.gif) top left no-repeat;width:241px;height:89px;display:block;text-indent:-9999px;overflow:hidden}
+#pageRight #compMyAct .infoBoxContainer{margin-top:-50px}
+#pageRight #compMyAct .infoBox{margin-left:-300px;width:275px}
+#compMyFav UL, #compMyAct UL{margin-bottom:10px;width:100%}
+#compMyAct .loginName, #compMyAct .status{color:#999;margin-left:12px}
+#compMyAct .loginName{margin-top:-6px}
+#compMyFav .b{padding-right:2px}
+#compMyFav A .t2i{display:none}
+#compMyFav .bTextAddThisZone, #compMyFav .bTextEditFavorites{float:left;height:33px;width:83px}
+#compMyFav .addedFav{color:#f63}
+#compMyFav P{margin-bottom:10px;width:100%}
+#compMyFav A.bTextEditFavorites{background-image:url("/xp/images/editFavoritesButton.png")}
+.IE #compMyFav A.bTextEditFavorites{background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/editFavoritesButton.png',sizingMethod='crop')}
+#compMyFav .bTextAddThisZone{margin-left:-4px}
+#compMyFav A.bTextAddThisZone{background-image:url("/xp/images/addFavoritesButton.png")}
+.IE #compMyFav A.bTextAddThisZone{background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/addFavoritesButton.png',sizingMethod='crop')}
+#compAdmBx .b{padding-right:2px;padding-bottom:0}
+#compAdmBx .componentBG{min-height:100px;background:url(/xp/images/adminBoxBG.gif) bottom right no-repeat;margin-bottom:-3px;position:relative}
+.IE #compAdmBx .componentBG{height:107px;width:100%;position:absolute}
+.IE #compAdmBx .b{height:104px}
+#compEdtBx H5{font-size:1em}
+#compUsgEE .b{text-align:center}
+#compUsgEE .b .t2i{margin:auto;margin-top:10px}
+#compUsgEE .b P{text-align:left;color:#909090;font-size:11px}
+#compTst .b{background:url(/xp/images/componentTestimonialBG.gif) 78px 0 no-repeat}
+#compTst P{margin-right:50px;font-size:0.8em;color:#0472a5}
+#compPcMag P{margin-left:55px;color:#0472a5;font-size:0.8em}
+#compPcMag .b{background:url(/images/pcworld_sm.gif) 5px 8px no-repeat;padding-right:0;width:143px}
+#compErnMem .b{background:url(/xp/images/componentEarnMembershipBG.gif) bottom left no-repeat}
+#compErnMem .b{height:85px}
+#compErnMem P{margin-top:8px;margin-left:35px;color:#0472a5;font-size:0.8em}
+#compSrchBox .subSectionHeader{color:blue;font-size:1.3em}
+#compSrchBox INPUT{vertical-align:middle}
+#compSrchBox BUTTON{background-color:rgb(234, 242, 255);height:25px;vertical-align:middle}
+#compSrchBox BUTTON.submitButton DIV{background:url(/xp/images/buttonL_subsection.gif) top left no-repeat;width:4.5em}
+#compSrchBox BUTTON.submitButton SPAN{background:url(/xp/images/buttonR_subsection.gif) top left no-repeat}
+#compCpyr{color:#f5a24b;font-weight:bold;letter-spacing:-.03em;background:url(/xp/images/copyright_notice.gif) no-repeat;text-indent:-9999px;overflow:hidden}
+#compFL{float:right}
+#compFL LI{font-size:9px;display:block;float:left;background-image:none;list-style-type:none;color:#ccc;margin-top:-3px;padding:0}
+#compFL LI A{position:relative;top:1px;padding:0 5px 0 5px;text-decoration:none;color:#888;font-size:11px}
+#compFL LI.lastInList A{padding-right:0}
+#compFL LI A:hover{width:auto;margin-top:0;color:#405060}
+#compDt{font-family:arial, helvetica, sans-serif;color:#777;font-size:10px}
+#compTrans{z-index:1}
+#compTrans .translationIconsLinks{width:230px;height:15px}
+#compTrans .translationIconsLinks .translationIconsLink{display:block;float:left;width:21px;height:13px;padding:2px 0 0 2px}
+#compTrans .translationIconsLinks .currentTranslationIcon{background:url(/xp/images/translationIconsLink.gif) left top no-repeat}
+#compTrans .translationIconsLinks .translationIconsLink:hover{background:url(/xp/images/translationIconsLink.gif) left top no-repeat}
+#compTrans .translationIconsLinks .translationIconsLink SPAN{display:block;width:19px;height:11px;background-position:left top;background-repeat:no-repeat}
+#compTrans .translationIconsLinks .translationIconsLink#englishCompTrans SPAN{background-image:url(/xp/images/englishIcon_dim.gif)}
+#compTrans .translationIconsLinks .currentTranslationIcon#englishCompTrans SPAN{background-image:url(/xp/images/englishIcon.gif)}
+#compTrans .translationIconsLinks .translationIconsLink#frenchCompTrans SPAN{background-image:url(/xp/images/frenchIcon_dim.gif)}
+#compTrans .translationIconsLinks .currentTranslationIcon#frenchCompTrans SPAN{background-image:url(/xp/images/frenchIcon.gif)}
+#compTrans .translationIconsLinks .translationIconsLink#italianCompTrans SPAN{background-image:url(/xp/images/italianIcon_dim.gif)}
+#compTrans .translationIconsLinks .currentTranslationIcon#italianCompTrans SPAN{background-image:url(/xp/images/italianIcon.gif)}
+#compTrans .translationIconsLinks .translationIconsLink#spanishCompTrans SPAN{background-image:url(/xp/images/spanishIcon_dim.gif)}
+#compTrans .translationIconsLinks .currentTranslationIcon#spanishCompTrans SPAN{background-image:url(/xp/images/spanishIcon.gif)}
+#compTrans .translationIconsLinks .translationIconsLink#russianCompTrans SPAN{background-image:url(/xp/images/russianIcon_dim.gif)}
+#compTrans .translationIconsLinks .currentTranslationIcon#russianCompTrans SPAN{background-image:url(/xp/images/russianIcon.gif)}
+#compTrans .translationIconsLinks .translationIconsLink#koreanCompTrans SPAN{background-image:url(/xp/images/koreanIcon_dim.gif)}
+#compTrans .translationIconsLinks .currentTranslationIcon#koreanCompTrans SPAN{background-image:url(/xp/images/koreanIcon.gif)}
+#compTrans .translationIconsLinks .translationIconsLink#germanCompTrans SPAN{background-image:url(/xp/images/germanIcon_dim.gif)}
+#compTrans .translationIconsLinks .currentTranslationIcon#germanCompTrans SPAN{background-image:url(/xp/images/germanIcon.gif)}
+#compTrans .translationIconsLinks .translationIconsLink#arabicCompTrans SPAN{background-image:url(/xp/images/arabicIcon_dim.gif)}
+#compTrans .translationIconsLinks .currentTranslationIcon#arabicCompTrans SPAN{background-image:url(/xp/images/arabicIcon.gif)}
+#compTrans .translationIconsLinks .translationIconsLink#japaneseCompTrans SPAN{background-image:url(/xp/images/japaneseIcon_dim.gif)}
+#compTrans .translationIconsLinks .currentTranslationIcon#japaneseCompTrans SPAN{background-image:url(/xp/images/japaneseIcon.gif)}
+#compTrans .translationIconsLinks .translationIconsLink#chinese_simplifiedCompTrans SPAN{background-image:url(/xp/images/chineseIcon_dim.gif)}
+#compTrans .translationIconsLinks .currentTranslationIcon#chinese_simplifiedCompTrans SPAN{background-image:url(/xp/images/chineseIcon.gif)}
+#compTE .b{padding:5px 6px}
+.IE #compTE .b{padding-right:3px}
+#compTE .summary{overflow:auto}
+#compTE .cA{display:block;height:70px;margin:5px 0;text-decoration:none;background:url(/xp/images/topExpertMale.png) left top no-repeat}
+.IE #compTE .cA{background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/topExpertMale.png',sizingMethod='crop')}
+#compTE .female .cA{background:url(/xp/images/topExpertFemale.png) left top no-repeat}
+.IE #compTE .female .cA{background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/topExpertFemale.png',sizingMethod='crop')}
+#compTE .femaleMaster .cA{background:url(/xp/images/topExpertFemaleMaster.png) left top no-repeat}
+.IE #compTE .femaleMaster .cA{background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/topExpertFemaleMaster.png',sizingMethod='crop')}
+#compTE .femaleGuru .cA{background:url(/xp/images/topExpertFemaleGuru.png) left top no-repeat}
+.IE #compTE .femaleGuru .cA{background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/topExpertFemaleGuru.png',sizingMethod='crop')}
+#compTE .femaleWizard .cA{background:url(/xp/images/topExpertFemaleWizard.png) left top no-repeat}
+.IE #compTE .femaleWizard .cA{background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/topExpertFemaleWizard.png',sizingMethod='crop')}
+#compTE .femaleSage .cA{background:url(/xp/images/topExpertFemaleSage.png) left top no-repeat}
+.IE #compTE .femaleSage .cA{background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/topExpertFemaleSage.png',sizingMethod='crop')}
+#compTE .femaleGenius .cA{background:url(/xp/images/topExpertFemaleGenius.png) left top no-repeat}
+.IE #compTE .femaleGenius .cA{background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/topExpertFemaleGenius.png',sizingMethod='crop')}
+#compTE .femaleSavant .cA{background:url(/xp/images/topExpertFemaleSavant.png) left top no-repeat}
+.IE #compTE .femaleSavant .cA{background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/topExpertFemaleSavant.png',sizingMethod='crop')}
+#compTE .femaleElite .cA{background:url(/xp/images/topExpertFemaleElite.png) left top no-repeat}
+.IE #compTE .femaleElite .cA{background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/topExpertFemaleElite.png',sizingMethod='crop')}
+#compTE .femaleTechnocrat .cA{background:url(/xp/images/topExpertFemaleTechnocrat.png) left top no-repeat}
+.IE #compTE .femaleTechnocrat .cA{background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/topExpertFemaleTechnocrat.png',sizingMethod='crop')}
+#compTE .femaleLegend .cA{background:url(/xp/images/topExpertFemaleLegend.png) left top no-repeat}
+.IE #compTE .femaleLegend .cA{background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/topExpertFemaleLegend.png',sizingMethod='crop')}
+#compTE .maleMaster .cA{background:url(/xp/images/topExpertMaleMaster.png) left top no-repeat}
+.IE #compTE .maleMaster .cA{background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/topExpertMaleMaster.png',sizingMethod='crop')}
+#compTE .maleGuru .cA{background:url(/xp/images/topExpertMaleGuru.png) left top no-repeat}
+.IE #compTE .maleGuru .cA{background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/topExpertMaleGuru.png',sizingMethod='crop')}
+#compTE .maleWizard .cA{background:url(/xp/images/topExpertMaleWizard.png) left top no-repeat}
+.IE #compTE .maleWizard .cA{background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/topExpertMaleWizard.png',sizingMethod='crop')}
+#compTE .maleSage .cA{background:url(/xp/images/topExpertMaleSage.png) left top no-repeat}
+.IE #compTE .maleSage .cA{background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/topExpertMaleSage.png',sizingMethod='crop')}
+#compTE .maleGenius .cA{background:url(/xp/images/topExpertMaleGenius.png) left top no-repeat}
+.IE #compTE .maleGenius .cA{background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/topExpertMaleGenius.png',sizingMethod='crop')}
+#compTE .maleSavant .cA{background:url(/xp/images/topExpertMaleSavant.png) left top no-repeat}
+.IE #compTE .maleSavant .cA{background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/topExpertMaleSavant.png',sizingMethod='crop')}
+#compTE .maleElite .cA{background:url(/xp/images/topExpertMaleElite.png) left top no-repeat}
+.IE #compTE .maleElite .cA{background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/topExpertMaleElite.png',sizingMethod='crop')}
+#compTE .maleTechnocrat .cA{background:url(/xp/images/topExpertMaleTechnocrat.png) left top no-repeat}
+.IE #compTE .maleTechnocrat .cA{background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/topExpertMaleTechnocrat.png',sizingMethod='crop')}
+#compTE .maleLegend .cA{background:url(/xp/images/topExpertMaleLegend.png) left top no-repeat}
+.IE #compTE .maleLegend .cA{background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/topExpertMaleLegend.png',sizingMethod='crop')}
+#compTE .cA .level{float:left;width:69px;text-align:center}
+#compTE .cA .level .t2i{margin-left:auto;margin-right:auto;margin-top:55px}
+#compTE .cA .info{margin-left:70px}
+#compTE .cA .info .profile{height:24px;line-height:24px;text-decoration:underline}
+#compTE .cA .info P{margin:9px 9px 0 0;color:#888}
+#compTE .cA .info P .points{text-decoration:underline}
+#compTE .summary SPAN.name, #compTE .summary SPAN.rank, #compTE .summary A.cC{display:block;float:left}
+#compTE .summary .name{padding-left:2px;margin:0;width:84px;overflow:hidden}
+#compTE .summary .name.lo{width:99px}
+#compTE .summary .name A{text-decoration:none}
+#compTE .summary .name A:hover{text-decoration:underline}
+#compTE .summary A.co{background-image:url(/xp/images/lists_plus.gif)}
+#compTE .co{display:none}
+#compTE .summary .cC{width:9px;height:14px;float:left;background:url(/xp/images/lists_minus.gif) top left no-repeat;text-indent:-9999px;margin-left:2px;margin-right:2px;background-position:0 3px;overflow:hidden}
+#compTE .summary .rank{padding-left:14px;width:55px;text-align:right;height:14px;overflow:hidden;background-repeat:no-repeat;background-position:left center;background-image:url(/xp/images/topExperts_neutral.gif)}
+#compTE .summary .rankup{background-image:url(/xp/images/topExperts_rankup.gif)}
+#compTE .summary .rankdown{background-image:url(/xp/images/topExperts_rankdown.gif)}
+#compTE .timeframe{font-weight:bold;padding-top:5px}
+.IE #compTE .timeframe{padding-bottom:2px}
+#compTE .overall{padding-top:16px}
+#compTE OL{display:table;width:100%;clear:both}
+#compTE LI{border-top:1px solid #cdd0d4;width:170px;overflow:hidden;margin:0;padding:0;clear:both;display:table}
+#compTE .bTextHallOfFame DIV.t2i{display:none}
+#compTE .bTextHallOfFame{float:none;display:block;width:175px;height:70px;margin-left:2px;text-indent:-10000px;overflow:hidden;background:url(/xp/images/hallOfFameButton.jpg) left top no-repeat}
+.IE #compTE .bTextHallOfFame{background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/hallOfFameButton.jpg',sizingMethod='crop')}
+#compEA P{width:158px;height:251px;margin:4px 0 4px 0}
+#compCorpAcc .b{padding-left:11px;padding-right:0;padding-top:3px;padding-bottom:5px}
+.c UL LI, #compMyFav UL LI{background:url(/xp/images/bulletArrow.gif) left center no-repeat;padding-left:12px}
+#compFeedback{display:block;width:84px;height:20px;background-image:url(/xp/images/siteFeedback.gif);position:absolute;top:87px;top:82px;left:865px;text-indent:-9999px;overflow:hidden}
+#compAnnounce{display:block;width:95px;height:20px;background-image:url(/xp/images/announcements.gif);position:absolute;top:87px;top:82px;left:765px;text-indent:-9999px;overflow:hidden}
+#compQEx A{display:block;width:192px;height:52px;background-image:url(/xp/images/youQualify.png);margin-top:-12px;margin-bottom:-5px}
+#psProblemsSolved .psQTitle, #psProblemsSolved .psTitle, #psProblemsSolvedNoQuest .psTitle{margin:10px 0;font-size:13px;font-weight:bold;color:#f60}
+#psProblemsSolvedNoQuest .psTitle{margin-top:0;padding-top:10px}
+#psProblemsSolved .psQTitle, #psProblemsSolved .psQBody, #psProblemsSolvedNoQuest .psTitle{width:147px;overflow:hidden}
+#psProblemsSolved .psQBody{height:173px}
+.Opera #psProblemsSolved .psQBody{height:179px}
+.IE #psProblemsSolved .psQBody, .IE7 #psProblemsSolved .psQBody{height:193px}
+#psProblemsSolved .psQRow{overflow:hidden}
+.IE #psProblemsSolved .psQRow{height:14px}
+#psProblemsSolved .psQRow .psQName{float:left;width:77px;color:#777;text-align:right}
+#psProblemsSolved .psQRow .psQValue{float:right;width:75px;overflow:hidden}
+#psProblemsSolved UL LI{margin-bottom:5px;padding-left:23px;background:url(/xp/images/bulletArrowRed.gif) 0 0 no-repeat}
+#psProblemsSolved UL LI STRONG{font-weight:normal;color:#f60}
+#psWhosUsingEE .bc .b{text-align:center}
+#psWhosUsingEE .bc .b IMG{margin-top:17px}
+#psProblemsSolvedNoQuest UL{margin-top:13px}
+.IE #psProblemsSolvedNoQuest UL, .IE7 #psProblemsSolvedNoQuest UL, .Safari #psProblemsSolvedNoQuest UL{margin-top:15px}
+#psProblemsSolvedNoQuest UL LI{margin-bottom:13px;margin-left:10px;padding-left:20px;background:url(/xp/images/bulletArrowRed.gif) top left no-repeat}
+.IE #psProblemsSolvedNoQuest UL LI, .IE7 #psProblemsSolvedNoQuest UL LI, .Safari #psProblemsSolvedNoQuest UL LI{margin-bottom:15px}
+#psProblemsSolvedNoQuest .textSect, #psProblemsSolvedNoQuest .quoted{line-height:15px}
+#psProblemsSolvedNoQuest .textSect{margin-bottom:15px;margin-left:10px}
+#psProblemsSolvedNoQuest UL LI SPAN{font-weight:bold}
+#psProblemsSolvedNoQuest UL LI SPAN.orange{font-weight:normal;color:#ff6600}
+#psDidYouKnow .bc .b .quoted, #psTestimonials .bc .b .quoted{margin:17px 17px 17px 0}
+#psTestimonials .bc .b DIV{margin-top:10px}
+#psBecomeAnExpert .bc .b .quoted{margin:17px 17px 0 0}
+#psBecomeAnExpert .bc .b .psBE{margin:0 17px 17px 17px;text-align:right}
+.Safari #psTestimonials DIV.person{margin-bottom:27px}
+.IE #psTestimonials DIV.person{margin-bottom:23px}
+.translationFooter{float:right;margin:-5px 0 0 10px}
+.translationFooter SELECT{width:105px}
+.ccExpirationWarning .bc{margin-bottom:10px}
+.ccExpirationWarning .ccWarn SPAN{color:#f60}
+.ccExpirationWarning .ccWarn{margin-top:-1em;width:560px;height:auto}
+.ccExpirationWarning .updateCCButton{float:left;margin-top:13px;height:auto}
+.ccExpirationWarning .userIcon{float:right;margin-top:-55px;margin-right:-20px;height:1px;width:105px}
+.IE .ccExpirationWarning .userIcon{margin-right:-10px}
+.ccExpirationWarning .userIcon DIV{height:127px;width:105px;position:relative;background:url(/xp/images/ccWarningIcon.png) left top no-repeat transparent;z-index:100}
+.Safari .ccExpirationWarning .userIcon, .Firefox .ccExpirationWarning .userIcon{margin-top:-43px}
+.Safari .ccExpirationWarning .userIcon DIV{position:absolute}
+.IE .ccExpirationWarning .userIcon DIV{background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/ccWarningIcon.png',sizingMethod='crop')}

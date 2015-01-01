@@ -1,0 +1,4 @@
+config new interface on yam
+firewall rule for new yam interface
+internal dns entry for sms moved
+external dns entry for sms moved

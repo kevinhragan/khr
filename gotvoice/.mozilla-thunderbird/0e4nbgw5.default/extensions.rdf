@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:NS1="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="rdf:#$XS1xW3"
+                   NS1:id="{3550f703-e582-4d05-9a08-453d09bdfdc6}"
+                   NS1:minVersion="1.5"
+                   NS1:maxVersion="2.0.0.*" />
+  <RDF:Description RDF:about="urn:mozilla:item:{79898015-E980-457c-BDE0-D2ECCAF4B654}"
+                   NS1:installLocation="app-profile"
+                   NS1:version="0.3"
+                   NS1:name="SearchWith"
+                   NS1:description="Search text with various search services"
+                   NS1:creator="Soyapi Mumba"
+                   NS1:homepageURL="http://searchwith.mozdev.org"
+                   NS1:optionsURL="chrome://searchwith/content/searchwithOptions.xul"
+                   NS1:iconURL="chrome://searchwith/skin/icon32.png"
+                   NS1:availableUpdateURL="http://releases.mozilla.org/pub/mozilla.org/addons/2194/searchwith-0.4.1-fx+tb.xpi"
+                   NS1:availableUpdateHash="sha1:7db668da2f5e140b7e607ae35d90f02dc88045aa"
+                   NS1:availableUpdateVersion="0.4.1">
+    <NS1:type NC:parseType="Integer">2</NS1:type>
+    <NS1:contributor>Vasa Maximov, ConQuery (Mycroft Plugins Integration)</NS1:contributor>
+    <NS1:contributor>Luana Di Muzio, BabelZilla (Italian translation)</NS1:contributor>
+    <NS1:contributor>AlleyKat, BabelZilla (Danish translation)</NS1:contributor>
+    <NS1:contributor>Fenian, BabelZilla (German translation)</NS1:contributor>
+    <NS1:contributor>tegos, BabelZilla (Greek translation)</NS1:contributor>
+    <NS1:contributor>chuzo, BabelZilla (Spanish translation)</NS1:contributor>
+    <NS1:contributor>jojaba, BabelZilla (French translation)</NS1:contributor>
+    <NS1:contributor>krcko, BabelZilla (Croatian translation)</NS1:contributor>
+    <NS1:contributor>Alice0775, BabelZilla (Japanese translation)</NS1:contributor>
+    <NS1:contributor>pedsann, BabelZilla (Portuguese translation)</NS1:contributor>
+    <NS1:contributor>SerdarSahin, BabelZilla (Turkish translation)</NS1:contributor>
+    <NS1:contributor>Mark, BabelZilla (Dutch translation)</NS1:contributor>
+    <NS1:contributor>wladow, BabelZilla (Slovack translation)</NS1:contributor>
+    <NS1:targetApplication RDF:resource="rdf:#$VS1xW3"/>
+    <NS1:targetApplication RDF:resource="rdf:#$WS1xW3"/>
+    <NS1:targetApplication RDF:resource="rdf:#$XS1xW3"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$CoWIc3"
+                   NS1:id="{3550f703-e582-4d05-9a08-453d09bdfdc6}"
+                   NS1:minVersion="1.5.0.14pre"
+                   NS1:maxVersion="1.5.0.14pre" />
+  <RDF:Description RDF:about="rdf:#$VS1xW3"
+                   NS1:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   NS1:minVersion="1.5"
+                   NS1:maxVersion="3.0a3" />
+  <RDF:Seq RDF:about="urn:mozilla:item:root">
+    <RDF:li RDF:resource="urn:mozilla:item:{972ce4c6-7e08-4474-a285-3208198ce6fd}"/>
+    <RDF:li RDF:resource="urn:mozilla:item:{79898015-E980-457c-BDE0-D2ECCAF4B654}"/>
+  </RDF:Seq>
+  <RDF:Description RDF:about="urn:mozilla:item:{972ce4c6-7e08-4474-a285-3208198ce6fd}"
+                   NS1:installLocation="app-global"
+                   NS1:version="2.0"
+                   NS1:name="Icedove (default)"
+                   NS1:description="The Thunderbird theme for Icedove"
+                   NS1:creator="Arvid Axelsson"
+                   NS1:internalName="classic/1.0"
+                   NS1:locked="true"
+                   NS1:appManaged="true"
+                   NS1:contributor="Mozilla Contributors">
+    <NS1:type NC:parseType="Integer">4</NS1:type>
+    <NS1:targetApplication RDF:resource="rdf:#$CoWIc3"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$WS1xW3"
+                   NS1:id="{a463f10c-3994-11da-9945-000d60ca027b}"
+                   NS1:minVersion="0.4+"
+                   NS1:maxVersion="1.0+" />
+</RDF:RDF>

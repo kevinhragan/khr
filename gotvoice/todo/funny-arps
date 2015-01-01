@@ -1,0 +1,18 @@
+Test network:  
+
+tefnut	10.98.1.135  ( 128 + tefnuts ip)
+thoth	192.168.1.111
+re	10.98.1.134 (128 +)
+kale	127.0.0.1
+
+production:
+uadjet	192.168.1.110
+nekhebet 192.168.1.110 
+spool1 192.168.1.110
+unknown 192.168.1.115
+
+suspect ipmi hardware emitting arp requests
+
+commands:
+tcpdump  -ne not port 22 and not port 3306 |grep arp > /tmp/funny-arps
+awk '{ print $2, $3, $4, $11, $12, $13, $14 }' /tmp/funny-arps  |sort |uniq -c 

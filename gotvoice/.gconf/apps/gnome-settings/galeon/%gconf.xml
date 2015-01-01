@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<gconf>
+        <entry name="history-galeon-url-history" mtime="1169593032" type="list" ltype="string">
+                <li type="string">
+                        <stringvalue>nut.gotvoice.com/phpmyadmin</stringvalue>
+                </li>
+                <li type="string">
+                        <stringvalue>https://10.44.51.1:445</stringvalue>
+                </li>
+        </entry>
+</gconf>

@@ -1,0 +1,54 @@
+switch  
+72.11.67.14	74.93.110.137
+72.11.67.11	74.93.110.138
+
+shorten resource record expiration one day  prior to ip move
+update external dns for entries in 72.11.67.10/8; force reload on 808
+turn off nagios
+config cable modem to ip range 74.93.110.136/29, turn off dhcp
+update kirkfw network settings via setup command   
+reconfig kirkfw ipcop firewall to new external ips 
+verify/edit ip in openvpn global settings
+connect to openvpn via linux host
+ip change alone sufficient?
+connect to openvpn via ms host
+publish instructions to user
+connect tom's host to our network
+change external ip for all kirkfw ipcops ipsec vpns 
+update ipsec config on oceanic host, makahalr, osiris, osiris2, osiris3
+restart ipsec tunnels
+verify and update nagios config
+restart nagios
+update internal dns: ext-kirkfw
+
+
+
+ipcop section
+
+rerun setup to update ip address
+
+####
+root@kirkfw1:~ # grep -l -R 72.11.67 /var/
+/var/log/messages
+/var/log/snort/alert
+/var/log/snort/snort.log.1167321059
+/var/log/snort/snort.log.1167321060
+/var/ipcop/ethernet/aliases
+/var/ipcop/ethernet/settings
+/var/ipcop/portfw/config
+/var/ipcop/red/local-ipaddress
+/var/ipcop/red/remote-ipaddress
+/var/ipcop/vpn/settings
+/var/ipcop/vpn/ipsec.conf
+/var/ipcop/vpn/ipsec.secrets
+/var/ipcop/xtaccess/config
+/var/ipcop/ovpn/certs/index.txt
+/var/ipcop/ovpn/certs/index.txt.old
+/var/ipcop/ovpn/settings
+/var/ipcop/ovpn/server.conf
+
+root@kirkfw1:~ # grep -l -R 72.11.67 /etc/
+/etc/ipsec.conf
+/etc/ipsec.secrets
+/etc/snort/vars
+

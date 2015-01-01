@@ -1,0 +1,12 @@
+# adjust apache config for ip based virtual hosting
+aptitude install libapache-mod-ssl
+apache-modconf apache enable mod_ssl  (?)
+# or append below to http.conf; maybe see server1 config
+cp /usr/share/doc/libapache-mod-ssl/examples/mod-ssl.conf /etc/apache/conf.d/
+# make certs
+dpkg-reconfigure libapache-mod-ssl
+config virtual host(s) for port 443
+    SSLEngine On
+        SSLCertificateFile /etc/apache/ssl.crt/dev1.crt
+        SSLCertificateKeyFile /etc/apache/ssl.key/dev1.key
+

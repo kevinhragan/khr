@@ -1,0 +1,426 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>thawte - SSL certificates with extended validation from thawte the global SSL certificate authority</title>
+<meta name="description" content="thawte ssl certificates, thawte is a global certificate authority providing ssl certificate products and 128-bit encryption and extended validation SSL certificates (EV SSL)">
+<meta name="keywords" content="thawte, ssl, ssl certificate, ssl certificates, digital certificates, extended validation ssl certificates, extended validation, ev, certificate authority, digital certificate, wildcard ssl, ssl 123, sgc super certs,128-bit encryption">
+<meta name="section" content="Homepage">
+<meta name="pagename" content="Homepage">
+<link rel="stylesheet" type="text/css" href="/dynamic/en/style/home.css">
+<script src="https://static.thawte.com/en/scripts/newscripts.js" type="text/javascript"></script><script src="https://static.thawte.com/en/scripts/mbox.js" language="JavaScript1.2"></script>
+</head>
+<body bgcolor="#ffffff">
+<table width="800" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr><td colspan="2" width="100%"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td><img src="https://static.thawte.com/en/images/common/spacer.gif" width="197" height="1" border="0" alt=""></td>
+<td><img src="https://static.thawte.com/en/images/common/spacer.gif" width="77" height="1" border="0" alt=""></td>
+<td><img src="https://static.thawte.com/en/images/common/spacer.gif" width="51" height="1" border="0" alt=""></td>
+<td><img src="https://static.thawte.com/en/images/common/spacer.gif" width="68" height="1" border="0" alt=""></td>
+<td><img src="https://static.thawte.com/en/images/common/spacer.gif" width="66" height="1" border="0" alt=""></td>
+<td><img src="https://static.thawte.com/en/images/common/spacer.gif" width="39" height="1" border="0" alt=""></td>
+<td><img src="https://static.thawte.com/en/images/common/spacer.gif" width="55" height="1" border="0" alt=""></td>
+<td><img src="https://static.thawte.com/en/images/common/spacer.gif" width="50" height="1" border="0" alt=""></td>
+<td><img src="https://static.thawte.com/en/images/common/spacer.gif" width="56" height="1" border="0" alt=""></td>
+<td><img src="https://static.thawte.com/en/images/common/spacer.gif" width="64" height="1" border="0" alt=""></td>
+<td><img src="https://static.thawte.com/en/images/common/spacer.gif" width="77" height="1" border="0" alt=""></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="/"><img src="https://static.thawte.com/en/images/common/thawte-ssl-digital-certificates.gif" width="197" name="thawte-ssl-digital-certificates" height="64" border="0" alt="thawte homepage"></a></td>
+<td colspan="10" valign="middle" background="https://static.thawte.com/en/images/common/header_brochureware_r1_c2.gif"><div align="right"><table border="0" cellspacing="0" cellpadding="2">
+<tr><td align="right" nowrap>
+<span class="blueSmall">worldwide sites: <img src="https://static.thawte.com/en/images/common/spacer.gif" width="3" border="0"></span><span class="redSmall"><a href="http://www.thawte.de/">Deutsch</a><img src="https://static.thawte.com/en/images/common/spacer.gif" width="8" border="0"><a href="http://www.thawte.com/es/">Español</a><img src="https://static.thawte.com/en/images/common/spacer.gif" width="8" border="0"><a href="http://www.thawte.fr/">Français</a><img src="https://static.thawte.com/en/images/common/spacer.gif" width="8" border="0"><a href="http://www.thawte.com/it/">Italiano</a><img src="https://static.thawte.com/en/images/common/spacer.gif" width="8" border="0"></span>
+</td></tr>
+<tr><td align="right">
+<span class="blueSmall">quick login: </span><img src="https://static.thawte.com/en/images/common/spacer.gif" width="3" border="0"><select class="toolbar" name="menu1" onChange="MM_jumpMenu('parent',this,0)"><option selected>make your selection >></option>
+<option>------------------------------</option>
+<option value="/cgi/server/status.exe">Certificate Status</option>
+<option value="https://www.t-refer.com/core/process?process=protected-referral-console-manager">t-refer</option>
+<option value="/digital-certificate-resellers/reseller-partners/login.html">Reseller  console</option>
+<option value="/cgi/enterprise/contents.exe">SPKI console</option>
+<option value="/cgi/personal/contents.exe">Personal E-mail Certificates</option>
+<option value="/cgi/personal/wot/contents.exe">Web of Trust</option></select><a href="/sitemap.html"><span class="blueSmall">					
+[   sitemap ] </span></a>
+</td></tr>
+</table></div></td>
+<td><img src="https://static.thawte.com/en/images/common/spacer.gif" width="1" height="64" border="0" alt=""></td>
+</tr>
+</table></td></tr>
+<tr><td colspan="2" valign="top">
+<table width="100%" border="0" cellspacing="0" cellpadding="0"><tr bgcolor="#EFEFEF">
+<td width="12" height="1" bgcolor="#FFFFFF"></td>
+<td width="774" height="1" bgcolor="#FFFFFF"></td>
+<td width="14" height="1" bgcolor="#FFFFFF"></td>
+</tr></table>
+<table width="800" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr><td colspan="2" valign="top"><div id="menucontainer"><ul class="menu">
+<li class="home"><a href="/">Home</a></li>
+<li class="products">
+<a href="/digital-certificates/?click=main-nav-products-overview" title="thawte Digital Certificate Products" class="drop">Products<!--[if IE 7]><!--></a><!--<![endif]--><!--[if lte IE 6]><table><tr><td><![endif]--><ul>
+<li class="subprod"><a href="/digital-certificates/?click=main-nav-products-overview" title="thawte Digital Certificate Products Overview">Overview</a></li>
+<li class="subprod"><a href="/managed-multiple-certificates-spki/index.html?click=main-nav-products-spki" title="SPKI/Managed Multiple Certificates">SPKI/Managed Multiple Certificates</a></li>
+<li class="subprod"><a href="/ssl-digital-certificates/extended-validation-ssl-ev/index.html?click=main-nav-products-ev" title="SSL Digital Certificates with Extended Validation">SSL Web Server Certificates with EV</a></li>
+<li class="subprod"><a href="/ssl-digital-certificates/128-bit-sgc/index.html?click=main-nav-products-sgc" title="SSL Certificates with SGC Encryption Technology">SGC SuperCerts</a></li>
+<li class="subprod"><a href="/ssl-digital-certificates/ssl/index.html?click=main-nav-products-webserver" title="SSL Web Server Certificates">SSL Web Server Certificates</a></li>
+<li class="subprod"><a href="/ssl-digital-certificates/ssl123/index.html?click=main-nav-products-ssl123" title="SSL123 Certificates">SSL123 Certificates</a></li>
+<li class="subprod"><a href="/ssl-digital-certificates/wildcardssl/index.html?click=main-nav-products-wildcard" title="Wildcard SSL Certificates to Secure Multiple Sub-domains">Wildcard Certificates</a></li>
+<li class="subprod"><a href="/ssl-digital-certificates/code-signing/index.html?click=main-nav-products-codesigning" title="Code Signing Certificates">Code Signing Certificates</a></li>
+<li class="subprod"><a href="/ssl-digital-certificates/trusted-site-seal/index.html?click=main-nav-products-siteseal" title="thawte Trusted Site Seal">thawte Trusted Site Seal</a></li>
+<li class="subprod"><a href="/secure-email/personal-email-certificates/index.html?click=main-nav-products-email" title="Free Personal E-mail Certificates">Free Personal E-mail Certificates</a></li>
+<li class="subprod"><a href="/secure-email/web-of-trust-wot/index.html?click=main-nav-products-wot" title="Web of Trust">Web of Trust</a></li>
+<li class="subprod"><a href="/internationalized-domain-names/idns/index.html?click=main-nav-products-idn" title="Internationalized Domain Names">Internationalized Domain Names</a></li>
+</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+<li class="partners">
+<a href="/digital-certificate-resellers/partners/" title="Partners" class="drop">Partners<!--[if IE 7]><!--></a><!--<![endif]--><!--[if lte IE 6]><table><tr><td><![endif]--><ul>
+<li class="subpart"><a href="/digital-certificate-resellers/partners" title="Overview">Overview</a></li>
+<li class="subpart"><a href="/digital-certificate-resellers/reseller-partners/index.html" title="Reseller Program">Reseller Program</a></li>
+<li class="subpart"><a href="http://www.t-refer.com" title="t-refer">t-refer</a></li>
+<li class="subpart"><a href="/digital-certificate-resellers/partners/tech_form.html" title="Technology Partners">Technology Partners</a></li>
+</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+<li class="menu"><a href="/ssl-digital-certificates/buy-ssl-certificates/index.html?click=main-nav-buy" title="buy thawte certificates">Buy</a></li>
+<li class="menu"><a href="/ssl-digital-certificates/renew-ssl-certificates/index.html?click=main-nav-renew" title="renew thawte certificates">Renew</a></li>
+<li class="menu"><a href="/ssl-digital-certificates/free-trial" title="thawte trial certificates">Trials</a></li>
+<li class="menu"><a href="/ssl-digital-certificates/free-guides-whitepapers/" title="FREE guides available from thawte">Guides</a></li>
+<li class="menu"><a href="/ssl-digital-certificates/technical-support" title="thawte Technical Support">Support</a></li>
+<li class="menu"><a href="/contact/index.html" title="Contact thawte">Contact Us</a></li>
+</ul></div></td></tr>
+<tr><td><table width="800" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td rowspan="3" align="right"><table id="Table_01" width="520" height="145" border="0" cellpadding="0" cellspacing="0"><tr>
+<td><img src="https://static.thawte.com/en/images/buttons_banner.jpg" border="0" alt="thawte offers a full range of ssl certificates and code signing digital certificates to secure all forms of online data transfer" usemap="#Map"></td>
+<td><img src="https://static.thawte.com/en/images/main_banner.jpg" border="0" alt="thawte offers a full range of ssl certificates and code signing digital certificates to secure all forms of online data transfer"></td>
+</tr></table></td>
+<td><img src="https://static.thawte.com/en/images/128-bit-ssl-digital-certificates_top_right.jpg" alt="thawte offers a full range of ssl certificates and code signing digital certificates to secure all forms of online data transfer." border="0"></td>
+</tr>
+<tr><td><script type="text/javascript" LANGUAGE="javascript">  
+		document.write('<object id="flash" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"');
+		switch (window.location.protocol)
+			{
+				case "http:":
+					document.write(' codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0"');
+					break;
+				case "https:":
+					document.write(' codebase="https://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0"');
+					break;
+				default:
+					document.write(' codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0"');
+					break;
+			}
+		document.write(' width="280" height="87" border="0" align="left">');
+		document.write('<param name="movie" value="https://static.thawte.com/en/images/10_year_banner.swf"/>');
+		document.write('<param name="quality" value="high"/>');
+		document.write('<param name="wmode" value="transparent"/>');
+		document.write('<embed src="https://static.thawte.com/en/images/10_year_banner.swf" quality="high"');
+		switch (window.location.protocol)
+			{
+				case "http:":
+					document.write(' pluginspage="http://www.macromedia.com/go/getflashplayer"');
+					break;
+				case "https:":
+					document.write(' pluginspage="https://www.macromedia.com/go/getflashplayer"');
+					break;
+				default:
+					document.write(' pluginspage="http://www.macromedia.com/go/getflashplayer"');
+					break;
+			}
+		document.write(' type="application/x-shockwave-flash" width="280" height="87" wmode="transparent"></embed></object>');</script></td></tr>
+<tr><td align="left"><img src="https://static.thawte.com/en/images/128-bit-ssl-digital-certificates_bottom_right.jpg" alt="thawte offers a full range of ssl certificates and code signing digital certificates to secure all forms of online data transfer" border="0"></td></tr>
+</table></td></tr>
+<tr><td><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td height="1"></td></tr></table></td></tr>
+</table>
+<table width="800" border="0" cellpadding="0" cellspacing="0"><tr><td><table width="800" border="0" cellpadding="0" cellspacing="0"><tr>
+<td valign="top" width="200"><table cellpadding="0" cellspacing="0" border="0"><tr>
+<td valign="top" width="199"><table cellpadding="0" cellspacing="0" border="0">
+<tr><td colspan="2"><table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FECF71"><tr bgcolor="#FECF71"><td height="20" width="200" class="homeSSL">
+<img src="https://static.thawte.com/en/images/common/spacer.gif" width="10" alt=""><strong><a href="/ssl-digital-certificates/buy-ssl-certificates/index.html?click=buyssl-buttonsleft" class="homeSSL">BUY SSL CERTIFICATES</a></strong>
+</td></tr></table></td></tr>
+<tr><td height="8"></td></tr>
+<tr><td><table cellpadding="1" bgcolor="#E6E7E9">
+<tr><td colspan="2"><table width="100%" border="0" cellpadding="1" cellspacing="0">
+<tr>
+<td valign="middle" width="55"><a href="/ssl-digital-certificates/buy-ssl-certificates/?click=buyssl-buttonsleft"><img src="https://static.thawte.com/en/images/buy_offermatica_2.gif" border="0" alt=""></a></td>
+<td valign="middle" width="145"><a href="/ssl-digital-certificates/buy-ssl-certificates/?click=buyssl-buttonsleft" class="homeBlue">SSL Certificates</a></td>
+</tr>
+<tr>
+<td valign="middle" width="55"><a href="/ssl-digital-certificates/extended-validation-ssl-ev/index.html?click=buyssl-buttonsleft"><img src="https://static.thawte.com/en/images/buy_offermatica_2.gif" border="0" alt=""></a></td>
+<td valign="middle" width="145"><a href="/ssl-digital-certificates/extended-validation-ssl-ev/index.html?click=buyssl-buttonsleft" class="homeBlue">EV SSL Certificates</a></td>
+</tr>
+</table></td></tr>
+<tr>
+<td valign="middle" width="55"><a href="/ssl-digital-certificates/code-signing/index.html?click=buyssl-buttonsleft"><img src="https://static.thawte.com/en/images/buy_offermatica_2.gif" border="0" alt=""></a></td>
+<td valign="middle" width="145"><a href="/ssl-digital-certificates/code-signing/index.html?click=buyssl-buttonsleft" class="homeBlue">Code Signing</a></td>
+</tr>
+<tr>
+<td valign="middle" width="55"><a href="/ssl-digital-certificates/renew-ssl-certificates/?click=buyssl-buttonsleft"><img src="https://static.thawte.com/en/images/15075_renew_offermatica_3.gif" border="0" alt=""></a></td>
+<td valign="middle" width="145"><a href="/ssl-digital-certificates/renew-ssl-certificates/?click=buyssl-buttonsleft" class="homeBlue">SSL Certificates</a></td>
+</tr>
+<tr><td valign="middle" colspan="2">
+<img src="https://static.thawte.com/en/images/common/header_marker_long_grey.gif" height="3" alt=""><a href="/cgi/server/status.exe?click=buyssl-buttonsleft" class="homeBlue">Check Order Status</a>
+</td></tr>
+<tr><td valign="middle" colspan="2">
+<img src="https://static.thawte.com/en/images/common/header_marker_long_grey.gif" height="3" alt=""><a href="/reissue/?click=buyssl-buttonsleft" class="homeBlue">Reissue SSL Certificates</a>
+</td></tr>
+</table></td></tr>
+</table></td>
+<td valign="top"><table cellpadding="0" cellspacing="0" border="0">
+<tr bgcolor="#AD0034"><td height="20" width="1" valign="middle" class="homeWhite"></td></tr>
+<tr><td height="8"></td></tr>
+<tr><td height="130" width="1"></td></tr>
+</table></td>
+</tr></table></td>
+<td valign="top" width="200"><table cellpadding="0" cellspacing="0" border="0"><tr>
+<td valign="top" width="199"><table cellpadding="0" cellspacing="0" border="0">
+<tr><td colspan="2"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="homeWhite" bgcolor="#AD0034"><tr bgcolor="#AD0034"><td height="20" class="homeWhite" width="199">
+<img src="https://static.thawte.com/en/images/common/spacer.gif" width="10" alt="">DO YOU NEED TO?</td></tr></table></td></tr>
+<tr><td height="8"></td></tr>
+<tr><td><table cellpadding="1">
+<tr>
+<td valign="middle" width="17"><img src="https://static.thawte.com/en/images/common/header_marker_long.gif" height="3" alt=""></td>
+<td valign="middle" width="183"><a href="/digital-certificates/index.html?click=DoYouNeedTo-SecureWebServer" class="homeBlue">Secure a Web Server</a></td>
+</tr>
+<tr>
+<td valign="middle" width="17"><img src="https://static.thawte.com/en/images/common/header_marker_long.gif" height="3" alt=""></td>
+<td valign="middle" width="183"><a href="/managed-multiple-certificates-spki/index.html?click=DoYouNeedTo-MultipleCerts" class="homeBlue">Manage Multiple Certificates</a></td>
+</tr>
+<tr>
+<td valign="middle" width="17"><img src="https://static.thawte.com/en/images/common/header_marker_long.gif" height="3" alt=""></td>
+<td valign="middle" width="183"><a href="/ssl-digital-certificates/code-signing/index.html?click=DoYouNeedTo-SecureCode" class="homeBlue">Secure Your Code</a></td>
+</tr>
+<tr>
+<td valign="middle" width="17"><img src="https://static.thawte.com/en/images/common/header_marker_long.gif" height="3" alt=""></td>
+<td valign="middle" width="183"><a href="/secure-email/personal-email-certificates/index.html?click=DoYouNeedTo-SecureMail" class="homeBlue">Secure Your E-mail </a></td>
+</tr>
+<tr>
+<td valign="middle" width="17"><img src="https://static.thawte.com/en/images/common/header_marker_long.gif" height="3" alt=""></td>
+<td valign="middle" width="183"><a href="/ssl-digital-certificates/128-bit-sgc/index.html?click=DoYouNeedTo-HighestEncryption" class="homeBlue">Offer the Highest Possible Encryption</a></td>
+</tr>
+</table></td></tr>
+</table></td>
+<td valign="top"><table cellpadding="0" cellspacing="0" border="0">
+<tr bgcolor="#AD0034"><td height="20" width="1" valign="middle" class="homeWhite"><img src="https://static.thawte.com/en/images/common/vertical_line_red.gif" alt=""></td></tr>
+<tr><td height="8"></td></tr>
+<tr><td height="130" width="1" background="https://static.thawte.com/en/images/common/vertical_line.gif"></td></tr>
+</table></td>
+</tr></table></td>
+<td valign="top" width="199"><table cellpadding="0" cellspacing="0" border="0"><tr><td valign="top" width="199"><table cellpadding="0" cellspacing="0" border="0">
+<tr><td colspan="2"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="homeWhite" bgcolor="#AD0034"><tr bgcolor="#AD0034"><td height="20" class="homeWhite" width="199">
+<img src="https://static.thawte.com/en/images/common/spacer.gif" width="10" alt="">FIND OUT MORE</td></tr></table></td></tr>
+<tr><td height="8"></td></tr>
+<tr><td><table cellpadding="1">
+<tr>
+<td valign="middle" width="17"><img src="https://static.thawte.com/en/images/common/header_marker_long.gif" height="3" alt=""></td>
+<td valign="middle" width="183"><a href="/ssl-digital-certificates/extended-validation/info.html?click=FindOutMore-EVSSL" class="contentsmHeader">Extended Validation SSL</a></td>
+</tr>
+<tr>
+<td valign="middle" width="17"><img src="https://static.thawte.com/en/images/common/header_marker_long.gif" height="3" alt=""></td>
+<td valign="middle" width="183"><a href="/internationalized-domain-names/idns/index.html" class="homeBlue">Only <i>thawte</i> Secures IDNs</a></td>
+</tr>
+<tr>
+<td valign="middle" width="17"><img src="https://static.thawte.com/en/images/common/header_marker_long.gif" height="3" alt=""></td>
+<td valign="middle" width="183"><a href="/ssl-digital-certificates/trusted-site-seal/index.html" class="homeBlue">When is a Site Really Secure</a></td>
+</tr>
+<tr>
+<td valign="middle" width="17"><img src="https://static.thawte.com/en/images/common/header_marker_long.gif" height="3" alt=""></td>
+<td valign="middle" width="183"><a href="https://www.thawte.com/ucgi/gothawte.cgi?a=w33830166137100000" class="homeBlue">Register for product updates</a></td>
+</tr>
+<tr>
+<td valign="middle" width="17"><img src="https://static.thawte.com/en/images/common/header_marker_long.gif" height="3" alt=""></td>
+<td valign="middle" width="183"><a href="/ssl-digital-certificates/ssl-info/index.html" class="homeBlue">Facts on SSL</a></td>
+</tr>
+<tr>
+<td valign="middle" width="17"><img src="https://static.thawte.com/en/images/common/header_marker_long.gif" height="3" alt=""></td>
+<td valign="middle" width="183"><a href="ssl-digital-certificates/technical-support/keygen/index.html" class="homeBlue">Key and CSR Generation</a></td>
+</tr>
+</table></td></tr>
+</table></td></tr></table></td>
+<td valign="top" width="201"><table cellpadding="0" cellspacing="0" border="0"><tr>
+<td valign="top"><table cellpadding="0" cellspacing="0" border="0">
+<tr bgcolor="#AD0034"><td height="20" width="1" valign="middle" class="homeWhite"><img src="https://static.thawte.com/en/images/common/vertical_line_red.gif" alt=""></td></tr>
+<tr><td height="8"></td></tr>
+<tr><td height="130" width="1" background="https://static.thawte.com/en/images/common/vertical_line.gif"></td></tr>
+</table></td>
+<td valign="top" width="199"><table cellpadding="0" cellspacing="0" border="0">
+<tr><td colspan="2"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="homeWhite" bgcolor="#AD0034"><tr bgcolor="#AD0034"><td height="20" class="homeWhite" width="199">
+<img src="https://static.thawte.com/en/images/spacer.gif" width="10" alt="">SOLUTIONS FOR</td></tr></table></td></tr>
+<tr><td height="8"></td></tr>
+<tr><td><table cellpadding="1">
+<tr><td colspan="2"><table width="100%" border="0" cellpadding="1" cellspacing="0">
+<tr>
+<td valign="middle" width="17"><img src="https://static.thawte.com/en/images/common/header_marker_long.gif" height="3" alt=""></td>
+<td valign="middle" width="183"><a href="/online-merchants/index.html" class="homeBlue">Merchants</a></td>
+</tr>
+<tr>
+<td valign="middle" width="17"><img src="https://static.thawte.com/en/images/common/header_marker_long.gif" height="3" alt=""></td>
+<td valign="middle" width="183"><a href="/hosting-providers/index.html" class="homeBlue">Hosting Companies</a></td>
+</tr>
+<tr>
+<td valign="middle" width="17"><img src="https://static.thawte.com/en/images/common/header_marker_long.gif" height="3" alt=""></td>
+<td valign="middle" width="183"><a href="/digital-certificates-resellers-referrers/index.html" class="homeBlue">Resellers</a></td>
+</tr>
+<tr>
+<td valign="middle" width="17"><img src="https://static.thawte.com/en/images/common/header_marker_long.gif" height="3" alt=""></td>
+<td valign="middle" width="183"><a href="/domain-registrars/index.html" class="homeBlue">Registrars</a></td>
+</tr>
+<tr>
+<td valign="middle" width="17"><img src="https://static.thawte.com/en/images/common/header_marker_long.gif" height="3" alt=""></td>
+<td valign="middle" width="183"><a href="/enterprises/index.html" class="homeBlue">Enterprises</a></td>
+</tr>
+<tr>
+<td valign="middle" width="17"><img src="https://static.thawte.com/en/images/common/header_marker_long.gif" height="3" alt=""></td>
+<td valign="middle" width="183"><a href="/educational-institutions/index.html" class="homeBlue">Educational Institutions</a></td>
+</tr>
+<tr>
+<td valign="middle" width="17"><img src="https://static.thawte.com/en/images/common/header_marker_long.gif" height="3" alt=""></td>
+<td valign="middle" width="183"><a href="/digital-certificate-resellers/partners/tech_form.html" class="homeBlue">Technology Partners</a></td>
+</tr>
+</table></td></tr>
+<tr></tr>
+</table></td></tr>
+</table></td>
+</tr></table></td>
+</tr></table></td></tr></table>
+<table width="800" border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="5"><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td height="10"></td></tr></table></td></tr>
+<tr>
+<td><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td>
+<div class="mboxDefault"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td width="1" bgcolor="#EAEAEA"></td>
+<td height="18" background="https://static.thawte.com/en/images/common/home_guides_background.gif" class="homeBlue" colspan="3">
+<img src="https://static.thawte.com/en/images/common/spacer.gif" width="10" alt=""><strong><a href="https://www.thawte.com/ssl-digital-certificates/free-guides-whitepapers" class="footer">FREE INTERNET SECURITY GUIDES</a></strong>
+</td>
+<td width="1" bgcolor="#EAEAEA"></td>
+</tr>
+<tr>
+<td width="1" bgcolor="#EAEAEA"></td>
+<td colspan="3" height="7"></td>
+<td width="1" bgcolor="#EAEAEA"></td>
+</tr>
+<tr>
+<td width="1" bgcolor="#EAEAEA"></td>
+<td valign="top" width="217" style="padding-left:7px;"><table cellpadding="2" width="100%">
+<tr><td valign="middle">
+<img src="https://static.thawte.com/en/images/home_freeguides_icon.jpg" alt=""><img src="https://static.thawte.com/en/images/common/spacer.gif" width="5" height="5" alt=""><a href="https://www.thawte.com/ucgi/gothawte.cgi?a=w44690158207050000" class="homeGrey">Secure SSL data transfer online</a>
+</td></tr>
+<tr><td valign="middle">
+<img src="https://static.thawte.com/en/images/home_freeguides_icon.jpg" alt=""><img src="https://static.thawte.com/en/images/common/spacer.gif" width="5" height="5" alt=""><span class="homeGrey">Secure your </span><a href="https://www.thawte.com/ucgi/gothawte.cgi?a=w44570158217048000" class="homeBlue">Apache</a><span class="homeGrey"> or </span><a href="https://www.thawte.com/ucgi/gothawte.cgi?a=w44600158217054000" class="homeBlue">IIS server</a>
+</td></tr>
+<tr><td valign="middle">
+<img src="https://static.thawte.com/en/images/home_freeguides_icon.jpg" alt=""><img src="https://static.thawte.com/en/images/common/spacer.gif" width="5" height="5" alt=""><a href="https://www.thawte.com/ucgi/gothawte.cgi?a=w44650158227051000" class="homeGrey">Step-up SSL encryption with SGC</a>
+</td></tr>
+</table></td>
+<td width="80" align="center" valign="middle"><table cellpadding="0" align="center" valign="middle"><tr><td height="60" width="1" background="https://static.thawte.com/en/images/common/vertical_line.gif"></td></tr></table></td>
+<td valign="top" width="280"><table cellpadding="2" width="100%">
+<tr><td valign="middle">
+<img src="https://static.thawte.com/en/images/home_freeguides_icon.jpg" alt=""><img src="https://static.thawte.com/en/images/common/spacer.gif" width="5" height="5" alt=""><a href="https://www.thawte.com/ucgi/gothawte.cgi?a=w44590158237056000" class="homeGrey">Sign code for secure download</a>
+</td></tr>
+<tr><td valign="middle">
+<img src="https://static.thawte.com/en/images/home_freeguides_icon.jpg" alt=""><img src="https://static.thawte.com/en/images/common/spacer.gif" width="5" height="5" alt=""><a href="https://www.thawte.com/ucgi/gothawte.cgi?a=w44660158247052000" class="homeGrey">Manage multiple SSL certificates</a>
+</td></tr>
+<tr><td valign="middle">
+<img src="https://static.thawte.com/en/images/home_freeguides_icon.jpg" alt=""><img src="https://static.thawte.com/en/images/common/spacer.gif" width="5" height="5" alt=""><a href="/ssl-digital-certificates/free-guides-whitepapers/" class="homeBlue">Browse Internet security guides...</a>
+</td></tr>
+</table></td>
+<td width="1" bgcolor="#EAEAEA"></td>
+</tr>
+<tr>
+<td width="1" bgcolor="#EAEAEA"></td>
+<td colspan="3" height="5"></td>
+<td width="1" bgcolor="#EAEAEA"></td>
+</tr>
+</table></div>
+<script language="JavaScript1.2">mboxCreate('THT_homepage_guidelinks','Locale=en', 'Domain=' + window.location.host);</script>
+</td></tr></table></td>
+<td><img src="https://static.thawte.com/en/images/common/spacer.gif" width="10" alt=""></td>
+<td width="1" bgcolor="#EAEAEA"></td>
+<td valign="top" width="200" align="right"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr><td height="18" background="https://static.thawte.com/en/images/common/home_guides_background.gif" class="homeBlue" colspan="4" align="left">
+<img src="https://static.thawte.com/en/images/common/spacer.gif" width="9" alt=""><strong><a href="/ssl-digital-certificates/trusted-site-seal/index.html?click=site-seal-tile" class="footer"><i>thawte</i> SITE SEAL</a></strong>
+</td></tr>
+<tr><td colspan="4" height="9"></td></tr>
+<tr>
+<td valign="top" width="145"><table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="middle" width="17"><img src="https://static.thawte.com/en/images/common/header_marker_long.gif" height="3" alt=""></td>
+<td width="128" align="left" valign="top" style="padding:0px;margin:0px;"><a href="/ssl-digital-certificates/trusted-site-seal/index.html?click=site-seal-tile" class="homeBlue"><i>thawte</i></a></td>
+</tr>
+<tr>
+<td valign="top" width="17"></td>
+<td width="128" align="left" valign="top" style="padding:0px;margin:0px;"><a href="/ssl-digital-certificates/trusted-site-seal/index.html?click=site-seal-tile" class="homeBlue">Secured Seal</a></td>
+</tr>
+<tr><td valign="top" height="4" colspan="2"></td></tr>
+<tr>
+<td valign="middle" width="17"><img src="https://static.thawte.com/en/images/common/header_marker_long.gif" height="3" alt=""></td>
+<td width="128" align="left" valign="top" style="padding:0px;margin:0px;"><a href="/digital-certificates/index.html?click=site-seal-tile" class="homeBlue">About</a></td>
+</tr>
+<tr>
+<td valign="top" width="17"></td>
+<td width="128" align="left" valign="top" style="padding:0px;margin:0px;"><a href="/digital-certificates/index.html?click=site-seal-tile" class="homeBlue">SSL Certificates</a></td>
+</tr>
+</table></td>
+<td><img src="https://static.thawte.com/en/images/common/spacer.gif" width="9" height="1" alt=""></td>
+<td align="center" valign="top"><script src="https://siteseal.thawte.com/cgi/server/thawte_seal_generator.exe"></script></td>
+<td><img src="https://static.thawte.com/en/images/common/spacer.gif" width="16" height="1" alt=""></td>
+</tr>
+</table></td>
+<td width="1" bgcolor="#EAEAEA"></td>
+</tr>
+<tr>
+<td height="1" bgcolor="#eaeaea"></td>
+<td></td>
+<td height="1" bgcolor="#eaeaea" colspan="2"></td>
+</tr>
+<tr><td colspan="5"><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td height="10"></td></tr></table></td></tr>
+<tr><td colspan="5"><table width="100%" border="0" cellpadding="0" cellspacing="0" align="center"><tr>
+<td align="center"><a href="/ssl-digital-certificates/extended-validation/info.html?click=ev-banner" target="blank"><img src="https://static.thawte.com/en/images/ev_ssl.gif" border="0" alt="Extended Validation certificates"></a></td>
+<td align="center">
+<div class="mboxDefault"><a href="https://www.thawte.com/ucgi/gothawte.cgi?a=b79850273967049007"><img src="https://static.thawte.com/en/images/home_trial_banner.gif" border="0" alt="Free SSL digital Certificates Trial"></a></div>
+<script language="JavaScript1.2">mboxCreate('THT_homepage_testcertbanner','Locale=en', 'Domain=' + window.location.host);</script>
+</td>
+<td align="center"><a href="#" onClick="bigWindow('/chat/chat_intro.html');return false;" target="blank"><img src="https://static.thawte.com/en/images/home_chat_banner.gif" border="0" alt="SSL digital certificates sales live chat."></a></td>
+<td align="center"><a href="https://cert.webtrust.org/ViewSeal?id=527" target="blank"><img src="https://static.thawte.com/en/images/home_kpmg_logo.gif" border="0" alt=""></a></td>
+</tr></table></td></tr>
+<tr><td colspan="5"><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td height="10"></td></tr></table></td></tr>
+</table>
+</td></tr>
+<tr><td colspan="2"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="27" bgcolor="#efefef"><div align="center"><div align="center">
+<a href="/corporate/index.html" class="footer"> About <i>thawte</i> |</a><a href="/ssl-digital-certificates/trusted-site-seal/siteseal_consumer.html" class="footer"> Consumer Awareness |</a><span class="footer"> © <i>thawte</i>, Inc. 1995-2008 |</span><a href="/repository/index.html" class="footer"> Repository |</a><a href="/legal/privacy.html" class="footer"> Privacy Policy |</a><a href="/legal/legalnotice.html" class="footer"> Legal Notices</a>
+</div></div></td></tr>
+<tr><td><table width="100%" cellpadding="4" align="center"><tr><td class="foot"><span class="foot"><a href="/ssl-digital-certificates/buy-ssl-certificates/?click=footerkeyword-thawte" class="foot"><i>thawte</i> </a>is a leading global Certification Authority. Our <a href="/ssl-digital-certificates/ssl/index.html?click=footerkeyword-ssl" class="foot">SSL </a>and <a href="/ssl-digital-certificates/code-signing/index.html?click=footerkeyword-code-signing" class="foot">code signing</a> <a href="/ssl-digital-certificates/ssl123/index.html?click=footerkeyword-digital-certificates" class="foot">digital certificates</a> are used globally to secure servers, provide data encryption, authenticate users, protect privacy and assure online identifies through stringent authentication and verification processes. Our <a href="/ssl-digital-certificates/ssl/index.html?click=footerkeyword-ssl-certificates" class="foot">SSL certificates</a> include <a href="/ssl-digital-certificates/wildcardssl/index.html?click=footerkeyword-wildcard-ssl-certificates" class="foot">Wildcard SSL Certificates, </a><a href="/ssl-digital-certificates/128-bit-sgc/index.html?click=footerkeyword-sgc-supercerts" class="foot">SGC SuperCerts</a> and <a href="/ssl-digital-certificates/extended-validation/info.html?click=footerkeyword-extended-validation-ssl-certificates" class="foot">Extended Validation SSL Certificates.</a></span></td></tr></table></td></tr>
+</table></td></tr>
+</table>
+<map name="Map"><area shape="rect" coords="19,42,166,69" href="/ssl-digital-certificates/buy-ssl-certificates/?position=mainimage_buy_button">
+<area shape="rect" coords="19,73,165,99" href="/ssl-digital-certificates/renew-ssl-certificates/?position=mainimage_renew_button"></map><SCRIPT LANGUAGE="javascript">
+         function include(script_filename) {
+                document.write('<' + 'script');
+                document.write(' language="javascript"');
+                document.write(' type="text/javascript"');
+                document.write(' src="' + script_filename + '">');
+                document.write('</' + 'script' + '>');
+         }
+
+    	switch (window.location.protocol)
+        {
+            case "http:":
+                include('http://www.google-analytics.com/urchin.js');
+                break;
+            case "https:":
+                include('https://ssl.google-analytics.com/urchin.js');
+                break;
+            default:
+                include('http://www.google-analytics.com/urchin.js');
+                break;
+        }
+    </SCRIPT><script type="text/javascript">
+    _uacct = "UA-230424-1";
+    urchinTracker();
+    </script>
+</body>
+</html>

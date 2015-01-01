@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<gconf>
+        <entry name="show_sidebar" mtime="1172180335" type="bool" value="false">
+        </entry>
+        <entry name="sidebar_size" mtime="1208199271" type="int" value="135">
+        </entry>
+</gconf>

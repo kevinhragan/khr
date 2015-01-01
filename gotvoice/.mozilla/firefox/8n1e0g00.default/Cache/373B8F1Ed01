@@ -1,0 +1,2584 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+            "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<meta name="description" content="Apache 1.3.33 Released -- article related to Security, Index, and Apache.">
+<title>Slashdot | Apache 1.3.33 Released</title>
+
+<link rel="stylesheet" type="text/css" media="screen, projection" href="//images.slashdot.org/core-tidied.css?T_2_5_0_201">
+<link rel="stylesheet" type="text/css" media="screen, projection" href="//images.slashdot.org/comments.css?T_2_5_0_201">
+<!--[if IE]><link rel="stylesheet" type="text/css" media="screen, projection" href="//images.slashdot.org/iestyles.css?T_2_5_0_201"><![endif]-->
+<link rel="stylesheet" type="text/css" media="screen, projection" href="//images.slashdot.org/slashdot_apache.css?T_2_5_0_201">
+<link rel="stylesheet" type="text/css" media="print" href="//images.slashdot.org/print.css?T_2_5_0_201">
+<link rel="stylesheet" type="text/css" media="handheld" href="//images.slashdot.org/handheld.css?T_2_5_0_201">
+
+
+<script src="//slashdot.org/all-minified.js?T_2_5_0_201" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+var adpage = 'article';
+</script><link rel="top"       title="News for nerds, stuff that matters" href="//slashdot.org/" >
+<link rel="search"    title="Search Slashdot" href="//apache.slashdot.org/search.pl">
+<link rel="parent"    title="Index" href="//slashdot.org/">
+<link rel="author"    href="//apache.slashdot.org/search.pl?op=stories&amp;author=4">
+<link rel="alternate" title="Slashdot RSS" href="http://rss.slashdot.org/Slashdot/slashdotApache" type="application/rss+xml">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<!-- DoubleClick Random Number -->
+<script type="text/javascript">
+   dfp_ord=Math.random()*10000000000000000;
+   dfp_tile = 1;
+</script>
+<!-- End DoubleClick Random Number -->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-32013-5");
+pageTracker._setDomainName("slashdot.org");
+pageTracker._initData();
+</script>
+
+</head>
+<body>
+<div id="top_parent"></div>
+
+
+<div id="jump">
+	<a href="#main-articles">Stories</a>
+	<br>
+	<a href="#blocks">Slash Boxes</a>
+	<br>
+	<a href="#comments">Comments</a>
+</div>
+
+<div id="frame">
+<div></div>
+	<div id="topnav">
+		<div id="logo">
+			<h1>
+				<a href="//slashdot.org">Slashdot</a>
+			</h1>
+		</div>
+		<div class="search">
+
+			<form method="get" action="//apache.slashdot.org/search.pl">
+				<fieldset>
+					<legend>Search</legend>
+					<input type="text" name="query" value="">
+					<input type="submit" value="Search" class="button">
+				</fieldset>
+			</form>
+
+		</div>
+	</div> 
+	<div id="slogan">
+		<h2>
+			News for nerds, stuff that matters
+		</h2>
+	</div>
+	<div id="wrapper">
+		<div id="user-section">
+			<div class="content">
+				<ul>
+			
+					<li class="begin"><a id="loginlink" class="collapsed" href="//slashdot.org/login.pl">Log In</a></li>
+					<li><a href="//slashdot.org/login.pl?op=newuserform" title="">Create Account</a></li>
+                                        <li><a href="//slashdot.org/help" title="Get help with your account.">Help</a></li>
+					<li><a href="//slashdot.org/subscribe.pl" title="An option to see Slashdot without these ads">Subscribe</a></li>
+					<li><a href="//slashdot.org/firehose.shtml">Firehose</a></li>
+			
+				</ul>
+				<ul id="user-utils">
+                                
+					<li><a href="//slashdot.org/faq/accounts.shtml#ac050" title="Save preferences, your own Journal, define Friends &amp;  Foes for discussions, participate in Moderation and more ...">Why Log In?</a></li>
+				
+				
+					<li><a href="//slashdot.org/faq/subscriptions.shtml" title="An option to see Slashdot without these ads">Why Subscribe?</a></li>
+				
+				</ul>
+			
+				<div id="loginform">
+					<form action="//slashdot.org/login.pl" method="post">
+<fieldset>
+	<legend>Log In</legend>
+	<label>
+		Nickname
+	</label>
+	<input type="text" name="unickname" size="20" value="">
+	<label>
+		Password
+	</label>
+	<input type="hidden" name="returnto" value="//apache.slashdot.org/">
+	<input type="hidden" name="op" value="userlogin">
+	<input type="password" name="upasswd" size="20">
+	<label class="checkbox">
+		<input type="checkbox" name="login_temp" value="yes">
+		Public Terminal
+	</label>
+	<input type="submit" name="userlogin" value="Log in" class="button">
+	</fieldset>
+</form>
+<p>
+	[ <b>
+		<a href="//slashdot.org/login.pl?op=newuserform">
+			Create a new account
+		</a>
+	</b> ]
+</p>
+				</div>
+			
+			</div>
+		</div>
+		<div id="links">
+			
+			<div class="block" id="links-sections">
+	<div class="title" id="links-sections-title">
+		<h4>
+                        Sections
+		</h4>
+	</div>
+	<div class="content" id="links-sections-content">
+	<ul>
+	<li><a href="//slashdot.org/">Main</a></li>
+	
+	
+	<li><a href="//apple.slashdot.org/">Apple</a></li>
+	
+	
+	
+	<li><a href="//ask.slashdot.org/">AskSlashdot</a></li>
+	
+	
+	
+	<li><a href="//backslash.slashdot.org/">Backslash</a></li>
+	
+	
+	
+	<li><a href="//books.slashdot.org/">Books</a></li>
+	
+	
+	
+	<li><a href="//developers.slashdot.org/">Developers</a></li>
+	
+	
+	
+	<li><a href="//games.slashdot.org/">Games</a></li>
+	
+	
+	
+	<li><a href="//hardware.slashdot.org/">Hardware</a></li>
+	
+	
+	
+	<li><a href="//interviews.slashdot.org/">Interviews</a></li>
+	
+	
+	
+	<li><a href="//it.slashdot.org/">IT</a></li>
+	
+	
+	
+	<li><a href="//linux.slashdot.org/">Linux</a></li>
+	
+	
+	
+	<li><a href="//mobile.slashdot.org//" onclick="javascript:pageTracker._trackPageview('/toshiba/mobile_section')">Mobile</a></li>
+	
+	
+	
+	<li><a href="//politics.slashdot.org/">Politics</a></li>
+	
+	
+	
+	<li><a href="//science.slashdot.org/">Science</a></li>
+	
+	
+	
+	<li><a href="//yro.slashdot.org/">YRO</a></li>
+	
+
+</ul>
+	</div>
+	
+</div>
+
+<div class="block" id="links-help">
+	<div class="title" id="links-help-title">
+		<h4>Help</h4>
+	</div>
+	<div class="content" id="links-help-content">
+		<ul>
+			<li><a href="//slashdot.org/faq/">FAQ</a></li>
+			<li><a href="http://sourceforge.net/tracker/?func=add&amp;group_id=4421&amp;atid=104421">Bugs</a></li>
+		</ul>
+	</div>
+</div>
+<div class="block" id="links-stories">
+	<div class="title" id="links-stories-title">
+		<h4>Stories</h4>
+	</div>
+	<div class="content" id="links-stories-content">
+		<ul>
+			<li><a href="//slashdot.org/search.pl">Old Stories</a></li>
+			<li><a href="http://polls.slashdot.org">Old Polls</a></li>
+			<li><a href="//slashdot.org/topics.shtml">Topics</a></li>
+			<li><a href="//slashdot.org/hof.shtml">Hall of Fame</a></li>
+			<li><a href="//slashdot.org/bookmarks/">Bookmarks</a></li>
+			<li><a href="//slashdot.org/submit.pl">Submit Story</a></li>
+		</ul>
+	</div>
+</div>
+<div class="block" id="links-about">
+	<div class="title" id="links-about-title">
+		<h4>About</h4>
+	</div>
+	<div class="content" id="links-about-content">
+		<ul>
+			<li><a href="//slashdot.org/supporters.shtml">Supporters</a></li>
+			<li><a href="//slashdot.org/code.shtml">Code</a></li>
+		</ul>
+	</div>
+</div>
+<div class="block" id="links-services">
+	<div class="title" id="links-services-title">
+		<h4>Services</h4>
+	</div>
+	<div class="content" id="links-services-content">
+		<ul>
+			<li><a href="http://jobs.slashdot.org/">Jobs</a></li>
+			<li><a href="//slashdot.org/relocate.pl?id=5698263263f8466f3709fd92f355367f">PriceGrabber</a></li>
+			<li><a href="//slashdot.org/relocate.pl?id=a27a66150282ba2c8d94d57fabaf3e58">Special Offers</a></li>
+			<li><a href="http://ad.doubleclick.net/clk;172276006;13503038;t?http://www.linux.com/sponsor_solutions/">Sponsor Solutions</a></li>
+			<li><a href="http://www.techsay.com/default.php?page=join.php&amp;p=slashdot&amp;CID=SLASHDOTSITE">Surveys</a></li>
+		</ul>
+	</div>
+</div> 
+		
+                        
+<div class="block static" id="links-jobs">
+	<div class="title" id="links-jobs-title" style="cursor:pointer;" onclick="window.location='http://jobs.slashdot.org/';">
+		<h4><a href=" http://jobs.slashdot.org/" style="text-decoration:none;border-style:none;">Jobs</a></h4>
+	</div>
+	<div class="content" id="links-jobs-content">
+		<script type="text/javascript" src="http://edge.jobthread.com/feeds/jobroll/?s_user_id=100540&subtype=slashdot "></script>
+	</div>
+</div>
+			
+			
+			
+		</div>
+		<div id="contents">
+
+<div class="lb"><div class="ad1"><!-- ad position 1 -->
+<!-- DoubleClick Ad Tag -->
+
+<script type="text/javascript">
+                var ad6 = 'inactive';
+</script>
+<style type="text/css">.lb {_height: 90px;}</style>
+
+<div id="fad1">
+	<script type="text/javascript">
+	//<![CDATA[
+
+		var hint   = 'apache,apache,it,software,technology,security';
+		var parent = 'http://apache.slashdot.org/apache/04/10/29/0034258.shtml';
+
+		document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/ostg.slashdot/apache_p1_leader;pg=article;logged_in=0;dcopt=ist;tile='+dfp_tile+';tpc=apache;tpc=it;tpc=software;tpc=technology;tpc=security;ord='+dfp_ord+'?"><\/script>');
+		dfp_tile++;
+	//]]>
+	</script>
+</div>
+<!-- End DoubleClick Ad Tag --></div></div>
+
+		
+			<div id="article" class="aduserbox ">
+		
+
+
+<div class="ad98">
+<script type="text/javascript">
+//<![CDATA[
+   document.write('<script src="http://ad.doubleclick.net/adj/ostg.slashdot/sitewide_p98_interstitial;pg=article;dcopt=ist;psrch=0;logged_in=0;tile='+dfp_tile+';ord='+dfp_ord+'?" type="text/javascript"><\/script>');
+   dfp_tile++;
+//]]>
+</script>
+</div><div id="slashboxes">
+	<div class="ad2"><!-- placeholder for ad position 2 --></div>
+
+<div class="block">
+	<div class="title" id="userlogin-title">
+		<h4>
+			Slashdot Log In
+		</h4>
+	</div>
+	<div class="content" id="userlogin-content">
+		
+			<form action="//slashdot.org/login.pl" method="post">
+<fieldset>
+	<legend>Log In</legend>
+	<label>
+		Nickname
+	</label>
+	<input type="text" name="unickname" size="20" value="">
+	<label>
+		Password
+	</label>
+	<input type="hidden" name="returnto" value="//apache.slashdot.org/article.pl?sid=04/10/29/0034258">
+	<input type="hidden" name="op" value="userlogin">
+	<input type="password" name="upasswd" size="20">
+	<label class="checkbox">
+		<input type="checkbox" name="login_temp" value="yes">
+		Public Terminal
+	</label>
+	<input type="submit" name="userlogin" value="Log in" class="button">
+	</fieldset>
+</form>
+<p>
+	[ <b>
+		<a href="//slashdot.org/login.pl?op=newuserform">
+			Create a new account
+		</a>
+	</b> ]
+</p>
+		
+	</div>
+</div>
+
+<div class="block">
+	<div class="title" id="related-title">
+		<h4>
+			Related Links
+		</h4>
+	</div>
+	<div class="content" id="related-content">
+		<ul>
+<li><a href="//slashdot.org/relocate.pl?id=1373939297ea2e0676deb8a6223eba22">Compare prices</a></li>
+<li><a href="//slashdot.org/relocate.pl?id=76327cc8c8536052e4a3cf1ad7d46279">Compare prices on Security Software & Related Items</a></li>
+<li><a href="//slashdot.org/relocate.pl?id=bb8aa73653cf979a1a6988e8421cf426">Review IT Products</a></li>
+<li><a href="//slashdot.org/relocate.pl?id=2e75e75fa5589351ab518256e57d4782">Review Apache Products</a></li>
+<li><a href="//slashdot.org/relocate.pl?id=2512fabcc768db999565257ac59b6fff">Compare prices on Apache-related Products</a></li>
+<li><a href="//slashdot.org/relocate.pl?id=d4bed2f62da652cd9f2edf8e37f3485d">Review Security Products</a></li>
+<li><a href="http://www.apache.org/dist/httpd/Announcement.html">official announcement</a></li>
+<li><a href="http://www.apache.org/dist/httpd/CHANGES_1.3">ChangeLog for the 1.3.x series</a></li>
+<li><a href="//slashdot.org/search.pl?tid=172">More Security stories</a></li>
+	
+		<li><a href="//slashdot.org/search.pl?tid=1">More Index stories</a></li>
+	
+		<li><a href="//slashdot.org/search.pl?tid=2">More Apache stories</a></li>
+	
+	<li><a href="//slashdot.org/search.pl?op=stories&amp;author=4">Also by CowboyNeal</a></li>
+</ul>
+	</div>
+</div>
+
+
+
+</div>
+<a name="main-articles"></a>
+<div id="articles">
+
+<div class="article" id="art1">
+
+
+
+<div class="generaltitle" >
+	<div class="title">
+		<h3 >
+			Apache 1.3.33 Released
+			
+		</h3>
+	</div>
+</div>
+	<div class="details">
+
+	
+	<b>Posted by
+	
+	<a href="http://cowboyneal.org/">CowboyNeal</a>
+
+	on Fri Oct 29, 2004 01:14 AM</b><br>
+	<strong>from the <b>one-more-try</b> dept.</strong>
+	</div>
+	<div class="body">
+		<div class="topic">
+		
+		
+		
+			<a href="//apache.slashdot.org/search.pl?tid=172">
+				<img src="//images.slashdot.org/topics/topicsecurity.gif" width="59" height="78" alt="Security" title="Security" >
+			</a>
+		
+		
+			
+			
+			
+			
+				
+					<a href="//apache.slashdot.org/search.pl?tid=2" class="topic2">
+						<img src="//images.slashdot.org/topics/topicapache.gif" width="80" height="25" alt="Apache" title="Apache" >
+					</a>
+				
+		
+			
+			
+			
+				
+		
+		
+		</div>
+		<div class="intro">
+			harmgsn writes <i>"Following the release of Apache 1.3.32, the Apache Group released Apache 1.3.33 to fix a security flaw in mod_include and in the Content-Length field.  The <a href="http://www.apache.org/dist/httpd/Announcement.html">official announcement</a> is available as well as the <a href="http://www.apache.org/dist/httpd/CHANGES_1.3">ChangeLog for the 1.3.x series</a>."</i>
+		</div>
+
+
+
+
+
+		
+
+
+
+
+	<div class="ad6"><!-- placeholder for ad position 6 --></div>
+
+	</div>
+</div><div id="tagbox-04-10-29-0034258" class="tags">
+
+<div id="tagbox-title-04-10-29-0034258" class="tagtitleclosed">&nbsp;<a href="//apache.slashdot.org/login.pl"><span class="tagsheader" id="toggletags-button-04-10-29-0034258">[+]</span></a>
+
+<i>(<a href="/faq/tags.shtml">tagging beta</a>)</i>
+</div>
+
+
+
+</div>
+<div class="prev-next">
+
+</div>
+
+
+
+
+
+</div><a name="comments"></a>
+<div class="commentwrap">
+<div class="commentBox">
+			
+
+		
+			
+				This discussion has been archived.
+			
+			No new comments can be posted.
+		
+	
+</div>
+</div><a name="acomments"></a>
+<div class="commentwrap" id="commentwrap">
+
+<div class="commentBox" style="font-size: 120%">
+	<div>
+<span class="escape-link"><a href="//apache.slashdot.org/article.pl?sid=04/10/29/0034258&amp;tid=148" title="Back to Article - Apache 1.3.33 Released">Apache 1.3.33 Released</a></span>
+<span class="commentBoxLinks"><a href="#" onclick="ajaxFetchComments(0,1); return false"><span id="more_comments_num_d"></span> More</a> | 
+<div id="login_cover" style="display:none" onclick="hide_login_box()"></div>
+<div id="login_box" style="display:none">
+<div class="generaltitle" >
+	<div class="title">
+		<h3 >
+			Please Log In to Continue<a href="#" onclick="hide_login_box(); return false" class="close" title="Close this box"><img src="//images.slashdot.org/sic_close.png" id="login_box_close" alt="Close"></a>
+			
+		</h3>
+	</div>
+</div>
+<div id="login_box_content">
+<form action="//slashdot.org/login.pl" method="post">
+<fieldset>
+	<legend>Log In</legend>
+	<label>
+		Nickname
+	</label>
+	<input type="text" name="unickname" size="20" value="">
+	<label>
+		Password
+	</label>
+	<input type="hidden" name="returnto" value="//apache.slashdot.org/comments.pl?sid=127596">
+	<input type="hidden" name="op" value="userlogin">
+	<input type="password" name="upasswd" size="20">
+	<label class="checkbox">
+		<input type="checkbox" name="login_temp" value="yes">
+		Public Terminal
+	</label>
+	<input type="submit" name="userlogin" value="Log in" class="button">
+	</fieldset>
+</form>
+<p>
+	[ <b>
+		<a href="//slashdot.org/login.pl?op=newuserform">
+			Create a new account
+		</a>
+	</b> ]
+</p>
+</div></div>
+<script type="text/javascript">logged_in = 0</script>
+	<a href="//apache.slashdot.org/login.pl" onclick="show_login_box(); return false">Login</a></span>
+	</div>
+</div>
+
+	<div class="commentBoxForm" id="commentControlBox">
+<div></div>
+	<div class="commentBox">
+		<small>
+		<b>The Fine Print:</b> The following comments are owned by whoever posted them.  We are not responsible for them in any way.
+		</small>
+<noscript><br><small>Without JavaScript enabled, you might want to
+use <a href="//apache.slashdot.org/comments.pl?sid=127596&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;no_d2=1&amp;pid=0">the classic discussion system</a> instead.  If you <a href="//apache.slashdot.org/login.pl">login</a>, you can remember this preference.
+</small></noscript>
+	</div>
+	</div>
+	
+		<div id="d2out" class="vertical">
+		<div id="d2act" class="hide">
+		<div class="loki" id="gods">
+		<div class="block">
+			<div class="title">
+				<h4>
+				
+					<span class="h-inline"><a href="//apache.slashdot.org/article.pl?sid=04/10/29/0034258&amp;tid=148" title="Back to Article - Please Log In to Continue&lt;a href=&#34;#&#34; onclick=&#34;hide_login_box(); return false&#34; class=&#34;close&#34; title=&#34;Close this box&#34;&gt;&lt;img id=&#34;login_box_close&#34; src=&#34;//images.slashdot.org/sic_close.png&#34; alt=&#34;Close&#34;&gt;&lt;/a&gt;">Please Log In to Continue<a href="#" onclick="hide_login_box(); return false" class="close" title="Close this box"><img src="//images.slashdot.org/sic_close.png" id="login_box_close" alt="Close"></a></a></span>
+					<span class="titlecount"><a href="//apache.slashdot.org/article.pl?sid=04/10/29/0034258&amp;tid=148#topcomment" title="Back to Top Comment - Please Log In to Continue&lt;a href=&#34;#&#34; onclick=&#34;hide_login_box(); return false&#34; class=&#34;close&#34; title=&#34;Close this box&#34;&gt;&lt;img id=&#34;login_box_close&#34; src=&#34;//images.slashdot.org/sic_close.png&#34; alt=&#34;Close&#34;&gt;&lt;/a&gt;"><span id="titlecountnum">50</span>&nbsp;Comments</a></span>
+				
+		<span class="ccw-header-links"><a href="#" onclick="ajaxFetchComments(0,1); return false"><span id="more_comments_num_b"></span> More</a> | 
+<div id="login_cover" style="display:none" onclick="hide_login_box()"></div>
+<div id="login_box" style="display:none">
+<div class="generaltitle" >
+	<div class="title">
+		<h3 >
+			Please Log In to Continue<a href="#" onclick="hide_login_box(); return false" class="close" title="Close this box"><img src="//images.slashdot.org/sic_close.png" id="login_box_close" alt="Close"></a>
+			
+		</h3>
+	</div>
+</div>
+<div id="login_box_content">
+<form action="//slashdot.org/login.pl" method="post">
+<fieldset>
+	<legend>Log In</legend>
+	<label>
+		Nickname
+	</label>
+	<input type="text" name="unickname" size="20" value="">
+	<label>
+		Password
+	</label>
+	<input type="hidden" name="returnto" value="//apache.slashdot.org/comments.pl?sid=127596">
+	<input type="hidden" name="op" value="userlogin">
+	<input type="password" name="upasswd" size="20">
+	<label class="checkbox">
+		<input type="checkbox" name="login_temp" value="yes">
+		Public Terminal
+	</label>
+	<input type="submit" name="userlogin" value="Log in" class="button">
+	</fieldset>
+</form>
+<p>
+	[ <b>
+		<a href="//slashdot.org/login.pl?op=newuserform">
+			Create a new account
+		</a>
+	</b> ]
+</p>
+</div></div>
+<script type="text/javascript">logged_in = 0</script>
+	<a href="//apache.slashdot.org/login.pl" onclick="show_login_box(); return false">Login</a></span>
+		<span id="d2toggle" title="Toggle window location" onclick="toggleDisplayOptions()" class="close">/</span>
+				</h4>
+			</div>
+		</div>
+<script type="text/javascript">
+gCommentControlWidget = null;
+
+YAHOO.slashdot.ThresholdApp = function() {
+  return {
+    init: function() {
+      gCommentControlWidget = new YAHOO.slashdot.ThresholdWidget();
+      gCommentControlWidget.setTHT(user_threshold, user_highlightthresh);
+      updateTotals();
+    }
+  };
+}();
+
+YAHOO.util.Event.addListener(window, "load", YAHOO.slashdot.ThresholdApp.init);
+</script>
+		<div id="bones">
+      <div id="ccw">
+        <div id="ccw-body" class="ccw-core">
+          <div id="ccw-panel-container" class="ccw-core">
+            <div id="ccw-full-panel" class="ccw-panel">
+              <div class="ccw-panel-border"></div>
+              <div id="ccw-full-count-pos" class="ccw-core-pos ccw-count-pos">
+                <span id="ccw-full-count-text" class="ccw-count-text"><span id="currentFull"></span><span id="ccw-full-phrase">&nbsp;Full</span></span>
+              </div>
+            </div>
+            <div id="ccw-abbr-panel" class="ccw-panel">
+              <div class="ccw-panel-border"></div>
+              <div id="ccw-abbr-count-pos" class="ccw-core-pos ccw-count-pos">
+                <span id="ccw-abbr-count-text" class="ccw-count-text"><span id="currentOneline"></span><span id="ccw-abbr-phrase">&nbsp;Abbreviated</span></span>
+              </div>
+            </div>
+            <div id="ccw-hide-panel" class="ccw-panel">
+              <div id="ccw-hide-count-pos" class="ccw-core-pos ccw-count-pos">
+                <span id="ccw-hide-count-text" class="ccw-count-text"><span id="currentHidden"></span><span id="ccw-hide-phrase">&nbsp;Hidden</span></span>
+              </div>
+            </div>
+          </div>
+    
+          <div id="ccw-control" class="ccw-core">
+            <div id="ccw-centering-rail" class="ccw-core">
+              <div id="ccw-hide-bar-pos" class="ccw-core-pos">
+                <div id="ccw-hide-bar" class="ccw-bar">
+                  <div id="ccw-hide-bar-tab" class="ccw-bar-tab"></div>
+                  <div id="ccw-hide-bar-upzone" class="ccw-upzone" onclick="gCommentControlWidget.stepTHT(HIDE_BAR, +1)"></div>
+                  <div id="ccw-hide-bar-downzone" class="ccw-downzone" onclick="gCommentControlWidget.stepTHT(HIDE_BAR, -1)"></div>
+                </div>
+              </div>
+              <div id="ccw-abbr-bar-pos" class="ccw-core-pos">
+                <div id="ccw-abbr-bar" class="ccw-bar">
+                  <div id="ccw-abbr-bar-tab" class="ccw-bar-tab"></div>
+                  <div id="ccw-abbr-bar-upzone" class="ccw-upzone" onclick="gCommentControlWidget.stepTHT(ABBR_BAR, +1)"></div>
+                  <div id="ccw-abbr-bar-downzone" class="ccw-downzone" onclick="gCommentControlWidget.stepTHT(ABBR_BAR, -1)"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+		</div>
+		<div class="commentControlFooter"><a href="#" onclick="ajaxFetchComments(0,1); return false"><span id="more_comments_num_c"></span> More</a> | 
+<div id="login_cover" style="display:none" onclick="hide_login_box()"></div>
+<div id="login_box" style="display:none">
+<div class="generaltitle" >
+	<div class="title">
+		<h3 >
+			Please Log In to Continue<a href="#" onclick="hide_login_box(); return false" class="close" title="Close this box"><img src="//images.slashdot.org/sic_close.png" id="login_box_close" alt="Close"></a>
+			
+		</h3>
+	</div>
+</div>
+<div id="login_box_content">
+<form action="//slashdot.org/login.pl" method="post">
+<fieldset>
+	<legend>Log In</legend>
+	<label>
+		Nickname
+	</label>
+	<input type="text" name="unickname" size="20" value="">
+	<label>
+		Password
+	</label>
+	<input type="hidden" name="returnto" value="//apache.slashdot.org/comments.pl?sid=127596">
+	<input type="hidden" name="op" value="userlogin">
+	<input type="password" name="upasswd" size="20">
+	<label class="checkbox">
+		<input type="checkbox" name="login_temp" value="yes">
+		Public Terminal
+	</label>
+	<input type="submit" name="userlogin" value="Log in" class="button">
+	</fieldset>
+</form>
+<p>
+	[ <b>
+		<a href="//slashdot.org/login.pl?op=newuserform">
+			Create a new account
+		</a>
+	</b> ]
+</p>
+</div></div>
+<script type="text/javascript">logged_in = 0</script>
+	<a href="//apache.slashdot.org/login.pl" onclick="show_login_box(); return false">Login</a></div>
+		<div id="commentControlBoxStatus" class="hide"><b>Loading... please wait.</b></div>
+	</div>
+</div>
+		</div>
+	
+</div>
+<a name="topcomment"></a><script src="//images.slashdot.org/comments.js?T_2_5_0_201" type="text/javascript"></script>
+	<script type="text/javascript">
+<!--
+	window.onscroll = d2act;
+	boxStatus(1);
+comments = { 10660872: { uid: 555885, pid: 10660701, points: 4, kids: [ 10661043 ], opid: 10660701 }, 10660738: { uid: 30274, pid: 10660626, points: 5, kids: [ 10660827, 10660871, 10660927, 10662736 ], opid: 10660626 }, 10661412: { uid: 562862, pid: 10660857, points: 4, kids: [  ], opid: 10660857 }, 10661847: { uid: 29931, pid: 10660667, points: 3, kids: [  ], opid: 10660667 }, 10660801: { uid: 823187, pid: 10660629, points: 3, kids: [  ], opid: 10660629 }, 10660882: { uid: 189797, pid: 10660761, points: 2, kids: [  ], opid: 10660761 }, 10660626: { uid: undefined, pid: 0, points: -2, kids: [ 10660631, 10660738, 10660922 ], opid: undefined }, 10660989: { uid: 766577, pid: 10660942, points: 2, kids: [  ], opid: 10660942 }, 10665696: { uid: 148650, pid: 10662675, points: 3, kids: [  ], opid: 10662675 }, 10662675: { uid: undefined, pid: 10660871, points: -2, kids: [ 10665696 ], opid: undefined }, 10660881: { uid: 639563, pid: 10660857, points: 2, kids: [  ], opid: 10660857 }, 10660792: { uid: 447917, pid: 10660749, points: 3, kids: [  ], opid: 10660749 }, 10661267: { uid: 1498, pid: 10660927, points: 3, kids: [  ], opid: 10660927 }, 10660667: { uid: 691306, pid: 0, points: 4, kids: [ 10660701, 10661847 ], opid: 0 }, 10661837: { uid: 444734, pid: 0, points: 4, kids: [ 10663475 ], opid: 0 }, 10660618: { uid: undefined, pid: 0, points: -2, kids: [ 10660653, 10660686 ], opid: undefined }, 10660688: { uid: 708000, pid: 10660632, points: 5, kids: [  ], opid: 10660632 }, 10661303: { uid: 214915, pid: 0, points: 5, kids: [  ], opid: 0 }, 10661172: { uid: 597, pid: 10661043, points: 3, kids: [  ], opid: 10661043 }, 10660888: { uid: 569020, pid: 10660761, points: 3, kids: [ 10660998 ], opid: 10660761 }, 10660942: { uid: undefined, pid: 0, points: -2, kids: [ 10660989, 10661002, 10661038 ], opid: undefined }, 10660686: { uid: undefined, pid: 10660618, points: -2, kids: [ 10660763, 10660815, 10660857, 10660912 ], opid: undefined }, 10660701: { uid: 577505, pid: 10660667, points: 5, kids: [ 10660730, 10660872 ], opid: 10660667 }, 10661002: { uid: 519657, pid: 10660942, points: 3, kids: [  ], opid: 10660942 }, 10660629: { uid: 126, pid: 0, points: 2, kids: [ 10660801 ], opid: 0 }, 10660912: { uid: 714892, pid: 10660686, points: 2, kids: [  ], opid: 10660686 }, 10661010: { uid: undefined, pid: 10660827, points: -2, kids: [ 10661068 ], opid: undefined }, 10660998: { uid: 118053, pid: 10660888, points: 4, kids: [  ], opid: 10660888 }, 10660817: { uid: 681592, pid: 10660695, points: 5, kids: [ 10661031, 10661088 ], opid: 10660695 }, 10660871: { uid: 148650, pid: 10660738, points: 5, kids: [ 10662675 ], opid: 10660738 }, 10661044: { uid: 519657, pid: 10661020, points: 4, kids: [  ], opid: 10661020 }, 10660815: { uid: 589271, pid: 10660686, points: 5, kids: [  ], opid: 10660686 }, 10660927: { uid: 519657, pid: 10660738, points: 3, kids: [ 10661267 ], opid: 10660738 }, 10660653: { uid: 198274, pid: 10660618, points: 2, kids: [ 10660749 ], opid: 10660618 }, 10660995: { uid: 148650, pid: 0, points: 3, kids: [  ], opid: 0 }, 10661043: { uid: undefined, pid: 10660872, points: -2, kids: [ 10661172 ], opid: undefined }, 10661356: { uid: 122480, pid: 10661088, points: 3, kids: [  ], opid: 10661088 }, 10660922: { uid: undefined, pid: 10660626, points: -2, kids: [ 10661300 ], opid: undefined }, 10660761: { uid: 624603, pid: 0, points: 5, kids: [ 10660855, 10660868, 10660882, 10660888 ], opid: 0 }, 10661884: { uid: 452396, pid: 0, points: 5, kids: [  ], opid: 0 }, 10660899: { uid: 714892, pid: 10660857, points: 2, kids: [  ], opid: 10660857 }, 10660631: { uid: 666, pid: 10660626, points: 2, kids: [  ], opid: 10660626 }, 10660730: { uid: 666, pid: 10660701, points: 4, kids: [  ], opid: 10660701 }, 10660855: { uid: 681592, pid: 10660761, points: 2, kids: [  ], opid: 10660761 }, 10661274: { uid: 220629, pid: 0, points: 4, kids: [  ], opid: 0 }, 10661759: { uid: 673005, pid: 10661068, points: 3, kids: [  ], opid: 10661068 }, 10661088: { uid: undefined, pid: 10660817, points: -2, kids: [ 10661356 ], opid: undefined }, 10662736: { uid: 118965, pid: 10660738, points: 3, kids: [  ], opid: 10660738 }, 10660632: { uid: 793348, pid: 0, points: 2, kids: [ 10660688 ], opid: 0 }, 10660763: { uid: 705374, pid: 10660686, points: 5, kids: [  ], opid: 10660686 }, 10663475: { uid: 737399, pid: 10661837, points: 3, kids: [  ], opid: 10661837 }, 10660857: { uid: 447917, pid: 10660686, points: 5, kids: [ 10660881, 10660899, 10661412 ], opid: 10660686 }, 10660695: { uid: undefined, pid: 0, points: -2, kids: [ 10660817 ], opid: undefined }, 10660749: { uid: undefined, pid: 10660653, points: -2, kids: [ 10660792 ], opid: undefined }, 10661068: { uid: 8651, pid: 10661010, points: 5, kids: [ 10661759 ], opid: 10661010 }, 10661038: { uid: 679316, pid: 10660942, points: 4, kids: [  ], opid: 10660942 }, 10661031: { uid: 719364, pid: 10660817, points: 3, kids: [  ], opid: 10660817 }, 10661020: { uid: 663131, pid: 0, points: 3, kids: [ 10661044 ], opid: 0 }, 10661300: { uid: 229885, pid: 10660922, points: 3, kids: [  ], opid: 10660922 }, 10660868: { uid: 462472, pid: 10660761, points: 2, kids: [  ], opid: 10660761 }, 10660827: { uid: 8651, pid: 10660738, points: 5, kids: [ 10661010 ], opid: 10660738 } };
+
+thresh_totals = {6:{6:{1:50,3:0,2:0}},4:{6:{1:28,3:3,2:19},4:{1:28,3:22,2:0},5:{1:28,3:16,2:6}},1:{6:{1:0,3:3,2:47},4:{1:0,3:24,2:26},1:{1:0,3:50,2:0},3:{1:0,3:41,2:9},2:{1:0,3:50,2:0},5:{1:0,3:16,2:34}},3:{6:{1:11,3:3,2:36},4:{1:11,3:24,2:15},3:{1:11,3:39,2:0},5:{1:11,3:16,2:23}},0:{6:{1:0,3:3,2:47},4:{1:0,3:24,2:26},1:{1:0,3:50,2:0},3:{1:0,3:41,2:9},0:{1:0,3:50,2:0},2:{1:0,3:50,2:0},5:{1:0,3:16,2:34}},2:{6:{1:0,3:3,2:47},4:{1:0,3:24,2:26},3:{1:0,3:41,2:9},2:{1:0,3:50,2:0},5:{1:0,3:16,2:34}},5:{6:{1:37,3:3,2:10},5:{1:37,3:13,2:0}},"-1":{6:{1:0,3:3,2:47},4:{1:0,3:24,2:26},1:{1:0,3:50,2:0},3:{1:0,3:41,2:9},0:{1:0,3:50,2:0},2:{1:0,3:50,2:0},5:{1:0,3:16,2:34},"-1":{1:0,3:50,2:0}}};
+
+root_comment = 0;
+root_comments = [10660629,10660632,10660667,10660761,10660995,10661020,10661274,10661303,10661837,10661884,10660626,10660618,10660695,10660942];
+root_comments_hash = {10661303:1,10660942:1,10661884:1,10661274:1,10660632:1,10661020:1,10660626:1,10661837:1,10660667:1,10660618:1,10660629:1,10660995:1,10660761:1,10660695:1};
+max_cid = 10665696;
+
+user_uid = 666;
+user_is_anon = 1;
+user_is_admin = 0;
+user_is_subscriber = 0;
+user_threshold = 1;
+user_highlightthresh = 4;
+
+discussion_id = 127596;
+
+d2_seen = '10660629,2,1,21,14,21,13,29,8,23,2,29,9,14,2,10,28,2,11,3,1,9,1,6,11,13,15,62,6,3,4,18,11,7,6,24,104,95,7,26,3,53,56,347,78,10,37,852,739,2221';
+more_comments_num = 177;
+adTimerUrl = '//images.slashdot.org/iframe/apache.html';
+
+
+//-->
+	</script>
+
+
+
+
+	
+	
+	
+	
+		<ul id="commentlisting" class="d2">
+			<li id="tree_10660629" class="comment">
+<div id="comment_status_10660629" class="commentstatus"></div>
+<div id="comment_10660629" class="oneline">
+	<div id="comment_top_10660629" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10660629" name="comment_link_10660629" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660629" onclick="return setFocusComment(10660629)">Good thing I use Apache 2</a>
+
+
+		 	<span id="comment_score_10660629" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10660629); return false">Score:2</a>, Funny)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~brandonp">brandonp (126)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10660629"></span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10660629">Been using Apache 2 on Fedora Core for the past few months, so shouldn't have any worries.<br> <br>Brandon Petersen<br> <a href="http://www.spreadfirefox.com/?q=affiliates&amp;id=7994&amp;t=1" title="spreadfirefox.com" rel="nofollow">Get Firefox!</a> [spreadfirefox.com]</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10660629">
+
+</div>
+</div>
+
+<div id="replyto_10660629"></div>
+
+<ul id="group_10660629">
+	<li id="hiddens_10660629" class="hide"></li>
+</ul>
+
+<ul id="commtree_10660629"><li id="tree_10660801" class="comment">
+<div id="comment_status_10660801" class="commentstatus"></div>
+<div id="comment_10660801" class="oneline">
+	<div id="comment_top_10660801" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10660801" name="comment_link_10660801" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660801" onclick="return setFocusComment(10660801)">Re:Good thing I use Apache 2</a>
+
+
+		 	<span id="comment_score_10660801" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10660801); return false">Score:3</a>, Funny)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~eobanb">eobanb (823187)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10660801"></span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10660801">Personally, I'm waiting for Apache 1.3.37. 0h y34h!!!</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10660801">
+
+</div>
+</div>
+
+<div id="replyto_10660801"></div>
+
+<ul id="group_10660801">
+	<li id="hiddens_10660801" class="hide"></li>
+</ul>
+
+</li></ul></li><li id="tree_10660632" class="comment">
+<div id="comment_status_10660632" class="commentstatus"></div>
+<div id="comment_10660632" class="oneline">
+	<div id="comment_top_10660632" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10660632" name="comment_link_10660632" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660632" onclick="return setFocusComment(10660632)">One small change</a>
+
+
+		 	<span id="comment_score_10660632" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10660632); return false">Score:2</a>, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~jZnat">jZnat (793348)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10660632"></span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10660632">So, one small change was made to prevent dumbasses from fucking over the buffer if they use characters not intended in the first place? Not worth it without updating other bugs, sorry to say. Work on the more important yet less known bugs instead!</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10660632">
+
+</div>
+</div>
+
+<div id="replyto_10660632"></div>
+
+<ul id="group_10660632">
+	<li id="hiddens_10660632" class="hide"></li>
+</ul>
+
+<ul id="commtree_10660632"><li id="tree_10660688" class="comment contain">
+<div id="comment_status_10660688" class="commentstatus"></div>
+<div id="comment_10660688" class="full">
+	<div id="comment_top_10660688" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10660688" name="comment_link_10660688" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660688" onclick="return setFocusComment(10660688)">Re:One small change</a>
+
+
+		 	<span id="comment_score_10660688" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10660688); return false">Score:5</a>, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~Electroly">Electroly (708000)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10660688">		
+		on Friday October 29 2004, @01:31AM (<a href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660688">#10660688</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10660688">Without that "one small change", someone could own your computer by just sending a specially crafted HTTP response when you hit a website.  I personally think anything that can allow "bad people" to get access to your computer without too much difficulty is something that should get fixed.  Suit yourself.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10660688">
+<span class="nbutton"><p><b><a href="//apache.slashdot.org/comments.pl?sid=127596&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=10660632" onclick="return selectParent(10660632)">Parent</a></b></p></span>
+</div>
+</div>
+
+<div id="replyto_10660688"></div>
+
+<ul id="group_10660688">
+	<li id="hiddens_10660688" class="hide"></li>
+</ul>
+
+</li></ul></li><li id="tree_10660667" class="comment contain">
+<div id="comment_status_10660667" class="commentstatus"></div>
+<div id="comment_10660667" class="full">
+	<div id="comment_top_10660667" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10660667" name="comment_link_10660667" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660667" onclick="return setFocusComment(10660667)">A little overblown</a>
+
+
+		 	<span id="comment_score_10660667" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10660667); return false">Score:4</a>, Interesting)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~Stevyn">Stevyn (691306)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10660667">		
+		on Friday October 29 2004, @01:26AM (<a href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660667">#10660667</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10660667">After looking at the <a href="http://www.apache.org/dist/httpd/CHANGES_1.3" title="apache.org">changelog</a> [apache.org], is this a topic for the main page?  I mean people complain when a minor revision of the Linux kernel or KDE comes out.  <p>Not to say that justifies it, but this is just one bugfix.  I hope people maintaining servers running Apache don't rely on Slashdot to inform them of this bug.  This seems more an issue for a mailing list.</p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10660667">
+
+</div>
+</div>
+
+<div id="replyto_10660667"></div>
+
+<ul id="group_10660667">
+	<li id="hiddens_10660667" class="hide"></li>
+</ul>
+
+<ul id="commtree_10660667"><li id="tree_10660701" class="comment contain">
+<div id="comment_status_10660701" class="commentstatus"></div>
+<div id="comment_10660701" class="full">
+	<div id="comment_top_10660701" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10660701" name="comment_link_10660701" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660701" onclick="return setFocusComment(10660701)">Re:A little overblown</a>
+
+
+		 	<span id="comment_score_10660701" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10660701); return false">Score:5</a>, Funny)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~Anonymous+Crowhead">Anonymous Crowhead (577505)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10660701">		
+		on Friday October 29 2004, @01:34AM (<a href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660701">#10660701</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10660701"><i>After looking at the changelog [apache.org], is this a topic for the main page? </i> <br> <br>No kidding.  The Apache section is like Ralph Nader.  It's always there, it gets about 1% as many comments as any other section, a boring story about it still hits the headlines now and again, but you try to get rid of it and it gets all crazy.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10660701">
+<span class="nbutton"><p><b><a href="//apache.slashdot.org/comments.pl?sid=127596&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=10660667" onclick="return selectParent(10660667)">Parent</a></b></p></span>
+</div>
+</div>
+
+<div id="replyto_10660701"></div>
+
+<ul id="group_10660701">
+	<li id="hiddens_10660701" class="hide"></li>
+</ul>
+
+<ul id="commtree_10660701"><li id="tree_10660730" class="comment contain">
+<div id="comment_status_10660730" class="commentstatus"></div>
+<div id="comment_10660730" class="full">
+	<div id="comment_top_10660730" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10660730" name="comment_link_10660730" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660730" onclick="return setFocusComment(10660730)">Re:A little overblown</a>
+
+
+		 	<span id="comment_score_10660730" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10660730); return false">Score:4</a>, Funny)</span></h4>
+		</div>
+		<div class="details">
+			by Anonymous Coward 
+			<span class="otherdetails" id="comment_otherdetails_10660730">		
+		on Friday October 29 2004, @01:40AM (<a href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660730">#10660730</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10660730">Don't blame me, I voted IIS.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10660730">
+<span class="nbutton"><p><b><a href="//apache.slashdot.org/comments.pl?sid=127596&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=10660701" onclick="return selectParent(10660701)">Parent</a></b></p></span>
+</div>
+</div>
+
+<div id="replyto_10660730"></div>
+
+<ul id="group_10660730">
+	<li id="hiddens_10660730" class="hide"></li>
+</ul>
+
+</li><li id="tree_10660872" class="comment contain">
+<div id="comment_status_10660872" class="commentstatus"></div>
+<div id="comment_10660872" class="full">
+	<div id="comment_top_10660872" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10660872" name="comment_link_10660872" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660872" onclick="return setFocusComment(10660872)">Re:A little overblown</a>
+
+
+		 	<span id="comment_score_10660872" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10660872); return false">Score:4</a>, Funny)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~Neil+Blender">Neil Blender (555885)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10660872">		 &lt;<a href="mailto:neilblender%40gmail.com">neilblender@gmail.com</a>&gt;
+		on Friday October 29 2004, @02:14AM (<a href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660872">#10660872</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10660872"><i>No kidding. The Apache section is like Ralph Nader. It's always there, it gets about 1% as many comments as any other section, a boring story about it still hits the headlines now and again, but you try to get rid of it and it gets all crazy.</i> <br> <br>Heh, that reminds me: About 3 or 4 years ago, I was up late fixing some server issue.  While I was waiting around I checked Slashdot and saw a story in the Apache section about some Apache conference or party or something that was taking place in Belgium or Norway, I can't remember exactly.  It had been up for hours, maybe even days with no comments.  So, thinking it would be like taking candy from a baby, I first posted.  About a week later, I checked the same story and the only post was my first post.  I think that story got archived with that single post.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10660872">
+<span class="nbutton"><p><b><a href="//apache.slashdot.org/comments.pl?sid=127596&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=10660701" onclick="return selectParent(10660701)">Parent</a></b></p></span>
+</div>
+</div>
+
+<div id="replyto_10660872"></div>
+
+<ul id="group_10660872">
+	<li id="hiddens_10660872" class="hide"></li>
+</ul>
+
+<ul id="commtree_10660872"><li id="tree_10661043" class="comment">
+<div id="comment_status_10661043" class="commentstatus"></div>
+<div id="comment_10661043" class="hidden">
+</div>
+
+<div id="replyto_10661043"></div>
+
+<ul id="group_10661043">
+	<li id="hiddens_10661043" class="hide"></li>
+</ul>
+
+<ul id="commtree_10661043"><li id="tree_10661172" class="comment">
+<div id="comment_status_10661172" class="commentstatus"></div>
+<div id="comment_10661172" class="oneline">
+	<div id="comment_top_10661172" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10661172" name="comment_link_10661172" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10661172" onclick="return setFocusComment(10661172)">Re:A little overblown</a>
+
+
+		 	<span id="comment_score_10661172" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10661172); return false">Score:3</a>, Funny)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~Trepidity">Trepidity (597)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10661172"></span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10661172"><i>God we're geeks<nobr> <wbr></nobr>:)</i> <br> <br>People told me that I shouldn't take the comments on Slashdot seriously because they are inaccurate, but I believe I have evidence to the contrary.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10661172">
+
+</div>
+</div>
+
+<div id="replyto_10661172"></div>
+
+<ul id="group_10661172">
+	<li id="hiddens_10661172" class="hide"></li>
+</ul>
+
+</li></ul></li></ul></li></ul></li><li id="tree_10661847" class="comment">
+<div id="comment_status_10661847" class="commentstatus"></div>
+<div id="comment_10661847" class="oneline">
+	<div id="comment_top_10661847" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10661847" name="comment_link_10661847" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10661847" onclick="return setFocusComment(10661847)">Re:A little overblown</a>
+
+
+		 	<span id="comment_score_10661847" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10661847); return false">Score:3</a>, Funny)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~Tony-A">Tony-A (29931)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10661847"></span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10661847">With all the stories on Microsoft exploits, the Slashdot editors are <b>trying</b> to give equal time.<br> <br>"mod_include: Fix potential buffer overflow with escaped characters in SSI tag string."<br>-- At least it's a different one.<br> <br>"Multiple security issues<nobr> <wbr></nobr>... that coul</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10661847">
+
+</div>
+</div>
+
+<div id="replyto_10661847"></div>
+
+<ul id="group_10661847">
+	<li id="hiddens_10661847" class="hide"></li>
+</ul>
+
+</li></ul></li><li id="tree_10660761" class="comment contain">
+<div id="comment_status_10660761" class="commentstatus"></div>
+<div id="comment_10660761" class="full">
+	<div id="comment_top_10660761" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10660761" name="comment_link_10660761" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660761" onclick="return setFocusComment(10660761)">I tried to migrate to Apache.</a>
+
+
+		 	<span id="comment_score_10660761" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10660761); return false">Score:5</a>, Funny)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~shaneh0">shaneh0 (624603)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10660761">		
+		on Friday October 29 2004, @01:47AM (<a href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660761">#10660761</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10660761">During last years jihad on IIS &amp; IE I decided it would be a good idea to migrate the company's web servers to Apache. I decided to start simple and submit a plan to migrate just the department intranet server.
+<br> <br>
+This is the actual response from management. The brain-dead VP that made this truly-enlightened decision first made a name for himself as a VP at a FAUCET COMPANY.
+<br> <br>
+Listen to the faucet kings great idea:
+<br> <br>
+"Shane, Thanks for your proposal. Unfortunately, I cannot approve the change. In fact, I've decided that we need to streamline these things in the future and make sure everyone is on the same page.
+<br> <br>
+From now on, we will only install software on the servers that is at version 2.0 and above. There will be no exceptions to this. It's about security and reliability. Everyone knows you dont buy a car the first model year, why should software be any different. I've never heard of apachee, but if these guys are as good as you say they are enough people will bite to keep them going, and when they come out with the next major realease I think you'll see then that we're better off for waiting for them to really get it right.
+<br> <br>
+thanks for beging on board with this, tom." [my name's shane]
+<br> <br>
+Two years ago this guy won the "visionary of the year" award at the company conference.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10660761">
+
+</div>
+</div>
+
+<div id="replyto_10660761"></div>
+
+<ul id="group_10660761">
+	<li id="hiddens_10660761" class="hide"></li>
+</ul>
+
+<ul id="commtree_10660761"><li id="tree_10660855" class="comment">
+<div id="comment_status_10660855" class="commentstatus"></div>
+<div id="comment_10660855" class="oneline">
+	<div id="comment_top_10660855" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10660855" name="comment_link_10660855" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660855" onclick="return setFocusComment(10660855)">Re:I tried to migrate to Apache.</a>
+
+
+		 	<span id="comment_score_10660855" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10660855); return false">Score:2</a>)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~mrchaotica">mrchaotica (681592)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10660855"></span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10660855">Luckily, there <i>is</i> an Apache 2.0!</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10660855">
+
+</div>
+</div>
+
+<div id="replyto_10660855"></div>
+
+<ul id="group_10660855">
+	<li id="hiddens_10660855" class="hide"></li>
+</ul>
+
+</li><li id="tree_10660868" class="comment">
+<div id="comment_status_10660868" class="commentstatus"></div>
+<div id="comment_10660868" class="oneline">
+	<div id="comment_top_10660868" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10660868" name="comment_link_10660868" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660868" onclick="return setFocusComment(10660868)">Re:I tried to migrate to Apache.</a>
+
+
+		 	<span id="comment_score_10660868" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10660868); return false">Score:2</a>, Interesting)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~quillsta">quillsta (462472)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10660868"></span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10660868">I was called by the wrong name 8 months into my current job staying in a company flat with the CFO in london (now 2nd Sr. Admin). I feel the v2.0 scenario and it hurts my heart. blessed be (God|Allah|Jeebus|Jehova|Budda|Mr. Dobbs) and blessed be apache 1.3</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10660868">
+
+</div>
+</div>
+
+<div id="replyto_10660868"></div>
+
+<ul id="group_10660868">
+	<li id="hiddens_10660868" class="hide"></li>
+</ul>
+
+</li><li id="tree_10660882" class="comment">
+<div id="comment_status_10660882" class="commentstatus"></div>
+<div id="comment_10660882" class="oneline">
+	<div id="comment_top_10660882" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10660882" name="comment_link_10660882" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660882" onclick="return setFocusComment(10660882)">Re:I tried to migrate to Apache.</a>
+
+
+		 	<span id="comment_score_10660882" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10660882); return false">Score:2</a>)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~jesterzog">jesterzog (189797)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10660882"></span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10660882"><p>
+ Out of interest, how did you respond?
+</p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10660882">
+
+</div>
+</div>
+
+<div id="replyto_10660882"></div>
+
+<ul id="group_10660882">
+	<li id="hiddens_10660882" class="hide"></li>
+</ul>
+
+</li><li id="tree_10660888" class="comment">
+<div id="comment_status_10660888" class="commentstatus"></div>
+<div id="comment_10660888" class="oneline">
+	<div id="comment_top_10660888" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10660888" name="comment_link_10660888" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660888" onclick="return setFocusComment(10660888)">Re:I tried to migrate to Apache.</a>
+
+
+		 	<span id="comment_score_10660888" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10660888); return false">Score:3</a>, Interesting)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~Vellmont">Vellmont (569020)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10660888"></span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10660888">The idea is sound enough, we all know of course that no one adheres to any standards with regard to software revisions.  Some software goes for years at version 0.x, and a 1.0 release is a really exceptional product.  Others (like Microsoft) take at least</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10660888">
+
+</div>
+</div>
+
+<div id="replyto_10660888"></div>
+
+<ul id="group_10660888">
+	<li id="hiddens_10660888" class="hide"></li>
+</ul>
+
+<ul id="commtree_10660888"><li id="tree_10660998" class="comment contain">
+<div id="comment_status_10660998" class="commentstatus"></div>
+<div id="comment_10660998" class="full">
+	<div id="comment_top_10660998" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10660998" name="comment_link_10660998" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660998" onclick="return setFocusComment(10660998)">Re:I tried to migrate to Apache.</a>
+
+
+		 	<span id="comment_score_10660998" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10660998); return false">Score:4</a>, Funny)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~pchan-">pchan- (118053)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10660998">		
+		on Friday October 29 2004, @02:54AM (<a href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660998">#10660998</a>)
+		<small><a href="//slashdot.org/~pchan-/journal/" title="Wednesday March 09 2005, @04:04AM" class="user_journal_display">Journal</a> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10660998">i would love to have had the chance to respond to this.<br> <br>you could just download apache, edit the code and bump up the version number.  but really, the right solution would have been to inform him that, in fact, there exists an "apachee 3.0".  unfortunately, "apachee 3.0" is no longer free, and requires a 500$ yearly site license for under 10 installs (and reasonable fees for more).  then you can bump up the version on apache 1.3 and install it on the company's computers.  your friend (er, the "apachee foundation") can cash the yearly check for you.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10660998">
+<span class="nbutton"><p><b><a href="//apache.slashdot.org/comments.pl?sid=127596&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=10660888" onclick="return selectParent(10660888)">Parent</a></b></p></span>
+</div>
+</div>
+
+<div id="replyto_10660998"></div>
+
+<ul id="group_10660998">
+	<li id="hiddens_10660998" class="hide"></li>
+</ul>
+
+</li></ul></li></ul></li><li id="tree_10660995" class="comment contain">
+<div id="comment_status_10660995" class="commentstatus"></div>
+<div id="comment_10660995" class="full">
+	<div id="comment_top_10660995" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10660995" name="comment_link_10660995" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660995" onclick="return setFocusComment(10660995)">Mod_ssl?</a>
+
+
+		 	<span id="comment_score_10660995" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10660995); return false">Score:3</a>, Informative)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~mcrbids">mcrbids (148650)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10660995">		
+		on Friday October 29 2004, @02:53AM (<a href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660995">#10660995</a>)
+		<small><a href="//slashdot.org/~mcrbids/journal/" title="Sunday November 18, @07:33PM" class="user_journal_display">Journal</a> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10660995">It doesn't appear that mod_ssl 1.3.33-NNN is available yet. I can't update until this is done, or all my ssl sites break.<br> <br>ugh...<br> <br>and I'd just started rolling out 1.3.32!</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10660995">
+
+</div>
+</div>
+
+<div id="replyto_10660995"></div>
+
+<ul id="group_10660995">
+	<li id="hiddens_10660995" class="hide"></li>
+</ul>
+
+</li><li id="tree_10661020" class="comment contain">
+<div id="comment_status_10661020" class="commentstatus"></div>
+<div id="comment_10661020" class="full">
+	<div id="comment_top_10661020" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10661020" name="comment_link_10661020" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10661020" onclick="return setFocusComment(10661020)">why cant they just release patches?</a>
+
+
+		 	<span id="comment_score_10661020" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10661020); return false">Score:3</a>, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~xot">xot (663131)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10661020">		 &lt;<a href="mailto:fragiledeath%40gmail.+c+o+m">fragiledeath@gmail. c o m</a>&gt;
+		on Friday October 29 2004, @02:59AM (<a href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10661020">#10661020</a>)
+		<small><a href="//slashdot.org/~xot/journal/" title="Thursday March 03 2005, @09:38AM" class="user_journal_display">Journal</a> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10661020">Do they have to keep releasing a new version everytime a bug or security flaw comes up?<br>
+Why not just release patches for the bugs and just update the patch tree??</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10661020">
+
+</div>
+</div>
+
+<div id="replyto_10661020"></div>
+
+<ul id="group_10661020">
+	<li id="hiddens_10661020" class="hide"></li>
+</ul>
+
+<ul id="commtree_10661020"><li id="tree_10661044" class="comment contain">
+<div id="comment_status_10661044" class="commentstatus"></div>
+<div id="comment_10661044" class="full">
+	<div id="comment_top_10661044" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10661044" name="comment_link_10661044" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10661044" onclick="return setFocusComment(10661044)">Re:why cant they just release patches?</a>
+
+
+		 	<span id="comment_score_10661044" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10661044); return false">Score:4</a>, Informative)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~pairo">pairo (519657)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10661044">		 &lt;<a href="mailto:gcbirzan%40cEINSTEINonstanta.rdsnet.ro+minus+physici">gcbirzan@cEINSTE ... ro minus physici</a>&gt;
+		on Friday October 29 2004, @03:06AM (<a href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10661044">#10661044</a>)
+		<small><a href="http://wolfheart.ro/" title="http://wolfheart.ro/" class="user_homepage_display" rel="nofollow">Homepage</a> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10661044">Because it makes it easy to keep track of wether you're vulnerable or not. Because it makes it obvious something important changed. Because it allows them to release a couple of other patches as well.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10661044">
+<span class="nbutton"><p><b><a href="//apache.slashdot.org/comments.pl?sid=127596&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=10661020" onclick="return selectParent(10661020)">Parent</a></b></p></span>
+</div>
+</div>
+
+<div id="replyto_10661044"></div>
+
+<ul id="group_10661044">
+	<li id="hiddens_10661044" class="hide"></li>
+</ul>
+
+</li></ul></li><li id="tree_10661274" class="comment contain">
+<div id="comment_status_10661274" class="commentstatus"></div>
+<div id="comment_10661274" class="full">
+	<div id="comment_top_10661274" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10661274" name="comment_link_10661274" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10661274" onclick="return setFocusComment(10661274)">Content-Length in mod_proxy</a>
+
+
+		 	<span id="comment_score_10661274" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10661274); return false">Score:4</a>, Informative)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~morten+poulsen">morten poulsen (220629)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10661274">		
+		on Friday October 29 2004, @04:37AM (<a href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10661274">#10661274</a>)
+		<small><a href="http://www.afdelingp.dk/" title="http://www.afdelingp.dk/" class="user_homepage_display" rel="nofollow">Homepage</a> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10661274">It is worth noting that the Content-Length security problem is in mod_proxy, not in the main daemon.<br>
+<br>
+See <a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CAN-2004-0492" title="mitre.org" rel="nofollow">CAN-2004-0492</a> [mitre.org] for details.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10661274">
+
+</div>
+</div>
+
+<div id="replyto_10661274"></div>
+
+<ul id="group_10661274">
+	<li id="hiddens_10661274" class="hide"></li>
+</ul>
+
+</li><li id="tree_10661303" class="comment contain">
+<div id="comment_status_10661303" class="commentstatus"></div>
+<div id="comment_10661303" class="full">
+	<div id="comment_top_10661303" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10661303" name="comment_link_10661303" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10661303" onclick="return setFocusComment(10661303)">In other news....</a>
+
+
+		 	<span id="comment_score_10661303" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10661303); return false">Score:5</a>, Funny)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~abdulwahid">abdulwahid (214915)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10661303">		
+		on Friday October 29 2004, @04:49AM (<a href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10661303">#10661303</a>)
+		<small><a href="http://www.lintrix.net/" title="http://www.lintrix.net/" class="user_homepage_display">Homepage</a> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10661303"><p>Kernel developers today released the eagerly awaited linux kernel 1.2.14. Everyone should update  to this latest version as soon as possible to make use of the security fixes that this update provides.</p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10661303">
+
+</div>
+</div>
+
+<div id="replyto_10661303"></div>
+
+<ul id="group_10661303">
+	<li id="hiddens_10661303" class="hide"></li>
+</ul>
+
+</li><li id="tree_10661837" class="comment contain">
+<div id="comment_status_10661837" class="commentstatus"></div>
+<div id="comment_10661837" class="full">
+	<div id="comment_top_10661837" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10661837" name="comment_link_10661837" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10661837" onclick="return setFocusComment(10661837)">Back to /. roots?</a>
+
+
+		 	<span id="comment_score_10661837" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10661837); return false">Score:4</a>, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~FudgePackinJesus">FudgePackinJesus (444734)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10661837">		
+		on Friday October 29 2004, @07:59AM (<a href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10661837">#10661837</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10661837">I really hope that, with this post, this is a hint of things to come at<nobr> <wbr></nobr>/.<br> <br>I really think that overall feel of slashdot has changed and not necessarily for the better.  I'd really like to see kernel releases, Gnome &amp; KDE flamewars, Quickies, obscure language write-ups and everything else that made<nobr> <wbr></nobr>/. special in the past make it to the front page again.  Instead we're getting game reviews, movie reviews and politics.  Sounds more like a mainstream news source now, doesn't it?<br> <br>The buzz of the open source world fell flat the last couple of years.  I really hope it wasn't because of the market crash and that the core of the excitement wasn't the dream of cashing out by installing linux everywhere.<br> <br>Open source, I think most people still don't realize, is the source of true power in speech in this day and age.  If it wasn't for projects like Linux, Apache, MySQL, PHP/Perl/Python, etc. the web would be dominated by large corporations who would be the only ones capable of paying the large sums of cash for web-service software that would have no doubt been that most expensive software out if not for the free-as-in-beer-speech competition.  Open source bestowed the average man  a voice in the newest of media channels.<br> <br>I truely hope the energy &amp; excitement due to that fact never leaves... especially here on Slashdot.  The editors shouldn't let the tagline "News for Nerds.  Stuff that matters." limit the vibe<nobr> <wbr></nobr>/. gave off before because, at the end of the day, that's all it is.  A tagline.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10661837">
+
+</div>
+</div>
+
+<div id="replyto_10661837"></div>
+
+<ul id="group_10661837">
+	<li id="hiddens_10661837" class="hide"></li>
+</ul>
+
+<ul id="commtree_10661837"><li id="tree_10663475" class="comment">
+<div id="comment_status_10663475" class="commentstatus"></div>
+<div id="comment_10663475" class="oneline">
+	<div id="comment_top_10663475" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10663475" name="comment_link_10663475" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10663475" onclick="return setFocusComment(10663475)">Re:Back to /. roots?</a>
+
+
+		 	<span id="comment_score_10663475" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10663475); return false">Score:3</a>, Funny)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~74nova">74nova (737399)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10663475"></span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10663475"><blockquote> <div>I'd really like to see<nobr> <wbr></nobr>... Gnome &amp; KDE flamewars</div></blockquote>
+there arent gnome and kde flame wars anymore because we kde zealots won.  <br> <br> <br>easy there boys, its a joke</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10663475">
+
+</div>
+</div>
+
+<div id="replyto_10663475"></div>
+
+<ul id="group_10663475">
+	<li id="hiddens_10663475" class="hide"></li>
+</ul>
+
+</li></ul></li><li id="tree_10661884" class="comment contain">
+<div id="comment_status_10661884" class="commentstatus"></div>
+<div id="comment_10661884" class="full">
+	<div id="comment_top_10661884" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10661884" name="comment_link_10661884" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10661884" onclick="return setFocusComment(10661884)">Future thought</a>
+
+
+		 	<span id="comment_score_10661884" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10661884); return false">Score:5</a>, Funny)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~SirLestat">SirLestat (452396)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10661884">		
+		on Friday October 29 2004, @08:12AM (<a href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10661884">#10661884</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10661884">I can't wait for release 1.3.37</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10661884">
+
+</div>
+</div>
+
+<div id="replyto_10661884"></div>
+
+<ul id="group_10661884">
+	<li id="hiddens_10661884" class="hide"></li>
+</ul>
+
+</li><li id="tree_10660626" class="comment">
+<div id="comment_status_10660626" class="commentstatus"></div>
+<div id="comment_10660626" class="hidden">
+</div>
+
+<div id="replyto_10660626"></div>
+
+<ul id="group_10660626">
+	<li id="hiddens_10660626" class="hide"></li>
+</ul>
+
+<ul id="commtree_10660626"><li id="tree_10660631" class="comment">
+<div id="comment_status_10660631" class="commentstatus"></div>
+<div id="comment_10660631" class="oneline">
+	<div id="comment_top_10660631" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10660631" name="comment_link_10660631" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660631" onclick="return setFocusComment(10660631)">Re:How</a>
+
+
+		 	<span id="comment_score_10660631" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10660631); return false">Score:2</a>, Funny)</span></h4>
+		</div>
+		<div class="details">
+			by Anonymous Coward 
+			<span class="otherdetails" id="comment_otherdetails_10660631"></span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10660631">Yes, I think there is one, it is called the "Hello World" program.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10660631">
+
+</div>
+</div>
+
+<div id="replyto_10660631"></div>
+
+<ul id="group_10660631">
+	<li id="hiddens_10660631" class="hide"></li>
+</ul>
+
+</li><li id="tree_10660738" class="comment contain">
+<div id="comment_status_10660738" class="commentstatus"></div>
+<div id="comment_10660738" class="full">
+	<div id="comment_top_10660738" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10660738" name="comment_link_10660738" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660738" onclick="return setFocusComment(10660738)">Re:How</a>
+
+
+		 	<span id="comment_score_10660738" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10660738); return false">Score:5</a>, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~pavon">pavon (30274)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10660738">		
+		on Friday October 29 2004, @01:43AM (<a href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660738">#10660738</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10660738">Sure, no one has found any bugs Knuth's TeX in years. Same for Qmail, and others.  You have to know exactly what you are doing before you start - which often means writing a throw away version of the software first to work out the kinks in the design. You have to have a simple clean design, and coding practice - as one of the Unix developers said debuging is 10x harder than writing code, so you you write code as cleverly as you can, you are, by definition, not qualified to debug that code. You have to know upfront how to write secure code, and think about with every function you write - never put this off for later.  Then you have to have some one else rigorously read over every line of code to find any mistakes. Lastly you have to systematically test each part of the code individually and together. Then after years of widespread use without any major feature changes you will have weeded out nearly all of the bugs.<br> <br>Nearly all software that is written leaves out some of these things, choosing to balence getting something done with quality. Some find a better balance than others<nobr> <wbr></nobr>:)<br> <br>BTW. The mozilla programs are definately good programmers, but the codebase is certainly not the paragon of clean code. It is huge and unweildy, which is the main reason that Apple chose to build off of KHTML instead of Gecko when they made Safari. The situation has improved over time, but making an existing non-secure program secure, is much harder than doing it (mostly) correct from the start.<br></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10660738">
+<span class="nbutton"><p><b><a href="//apache.slashdot.org/comments.pl?sid=127596&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=10660626" onclick="return selectParent(10660626)">Parent</a></b></p></span>
+</div>
+</div>
+
+<div id="replyto_10660738"></div>
+
+<ul id="group_10660738">
+	<li id="hiddens_10660738" class="hide"></li>
+</ul>
+
+<ul id="commtree_10660738"><li id="tree_10660827" class="comment contain">
+<div id="comment_status_10660827" class="commentstatus"></div>
+<div id="comment_10660827" class="full">
+	<div id="comment_top_10660827" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10660827" name="comment_link_10660827" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660827" onclick="return setFocusComment(10660827)">Re:How</a>
+
+
+		 	<span id="comment_score_10660827" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10660827); return false">Score:5</a>, Informative)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~Goonie">Goonie (8651)</a> <a href="/faq/com-mod.shtml#cm2600">*</a> 
+			<span class="otherdetails" id="comment_otherdetails_10660827">		 &lt;<a href="mailto:robert.merkel%40benam%5B+%5D.org+%5B'bra'+in+gap%5D">robert.merkel@be ... g ['bra' in gap]</a>&gt;
+		on Friday October 29 2004, @02:01AM (<a href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660827">#10660827</a>)
+		<small><a href="http://benambra.org/" title="http://benambra.org/" class="user_homepage_display">Homepage</a> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10660827"><blockquote> <div><em>Sure, no one has found any bugs Knuth's TeX in years.</em></div> </blockquote>
+<p>Knuth is a freak of nature who spent eight years writing a program on his own, largely for his own edification and completely free of commercial pressure.  Few others have that freakish ability, fewer still get to work on their pet project by themselves for that long before offering it to the world.  So there are limits to how many lessons can be drawn from this very unusual example.</p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10660827">
+<span class="nbutton"><p><b><a href="//apache.slashdot.org/comments.pl?sid=127596&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=10660738" onclick="return selectParent(10660738)">Parent</a></b></p></span>
+</div>
+</div>
+
+<div id="replyto_10660827"></div>
+
+<ul id="group_10660827">
+	<li id="hiddens_10660827" class="hide"></li>
+</ul>
+
+<ul id="commtree_10660827"><li id="tree_10661010" class="comment">
+<div id="comment_status_10661010" class="commentstatus"></div>
+<div id="comment_10661010" class="hidden">
+</div>
+
+<div id="replyto_10661010"></div>
+
+<ul id="group_10661010">
+	<li id="hiddens_10661010" class="hide"></li>
+</ul>
+
+<ul id="commtree_10661010"><li id="tree_10661068" class="comment contain">
+<div id="comment_status_10661068" class="commentstatus"></div>
+<div id="comment_10661068" class="full">
+	<div id="comment_top_10661068" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10661068" name="comment_link_10661068" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10661068" onclick="return setFocusComment(10661068)">No...</a>
+
+
+		 	<span id="comment_score_10661068" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10661068); return false">Score:5</a>, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~Goonie">Goonie (8651)</a> <a href="/faq/com-mod.shtml#cm2600">*</a> 
+			<span class="otherdetails" id="comment_otherdetails_10661068">		 &lt;<a href="mailto:robert.merkel%40benam%5B+%5D.org+%5B'bra'+in+gap%5D">robert.merkel@be ... g ['bra' in gap]</a>&gt;
+		on Friday October 29 2004, @03:13AM (<a href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10661068">#10661068</a>)
+		<small><a href="http://benambra.org/" title="http://benambra.org/" class="user_homepage_display">Homepage</a> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10661068"><blockquote> <div><em>So Knuth is the only open source developer to write his own code and thats freakish?</em></div> </blockquote>
+<p>That's not what I meant at all.  What I meant was by the comment that Knuth is a "freak" that Knuth is a freakishly talented individual.  And, yes, Knuth's situation is pretty unique, even for open source developers.  Not only does he have tenure (that means they can't sack him), because of his reputation he's able to spend his time doing pretty much whatever he wants to do free of the restrictions on ordinary academics, like that little thing, "teaching", or sweating over whether he's going to get published.  So he could hack away at TeX as and when the mood took him, without any pressure from his boss to actually produce anything, or any users badgering him for a new release, or figuring out how the other developers had screwed up, or trying to implement broken bits of the standard (because there *was* no standard).
+</p><p>They are *not* the typical circumstances under which most developers have to work.</p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10661068">
+<span class="nbutton"><p><b><a href="//apache.slashdot.org/comments.pl?sid=127596&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=10661010" onclick="return selectParent(10661010)">Parent</a></b></p></span>
+</div>
+</div>
+
+<div id="replyto_10661068"></div>
+
+<ul id="group_10661068">
+	<li id="hiddens_10661068" class="hide"></li>
+</ul>
+
+<ul id="commtree_10661068"><li id="tree_10661759" class="comment">
+<div id="comment_status_10661759" class="commentstatus"></div>
+<div id="comment_10661759" class="oneline">
+	<div id="comment_top_10661759" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10661759" name="comment_link_10661759" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10661759" onclick="return setFocusComment(10661759)">Re:No...</a>
+
+
+		 	<span id="comment_score_10661759" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10661759); return false">Score:3</a>, Interesting)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~martin_b1sh0p">martin_b1sh0p (673005)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10661759"></span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10661759">Apparently his code does have bugs from time to time:<br> <br>From http://www.tug.org/whatis.html<br>
+<i>Donald Knuth, a professor of computer science at Stanford University and the author of numerous books on computer science and the TeX composition system, rewards the<span class="substr"> </span></i></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10661759">
+
+</div>
+</div>
+
+<div id="replyto_10661759"></div>
+
+<ul id="group_10661759">
+	<li id="hiddens_10661759" class="hide"></li>
+</ul>
+
+</li></ul></li></ul></li></ul></li><li id="tree_10660871" class="comment contain">
+<div id="comment_status_10660871" class="commentstatus"></div>
+<div id="comment_10660871" class="full">
+	<div id="comment_top_10660871" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10660871" name="comment_link_10660871" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660871" onclick="return setFocusComment(10660871)">Re:How</a>
+
+
+		 	<span id="comment_score_10660871" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10660871); return false">Score:5</a>, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~mcrbids">mcrbids (148650)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10660871">		
+		on Friday October 29 2004, @02:14AM (<a href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660871">#10660871</a>)
+		<small><a href="//slashdot.org/~mcrbids/journal/" title="Sunday November 18, @07:33PM" class="user_journal_display">Journal</a> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10660871">Secure code is HARD to write!<br> <br>Even properly structured, carefully written stuff will contain securiity bugs! It requires attention, more attention, and yet more attention still.<br> <br>It requires proper layering of the code so that the number of variables to track at any one point is as small as possible.<br> <br>Spend lots of time on design. Draw flowcharts to cover key areas of your application.  <a href="http://www.koffice.org/kivio/" title="koffice.org">kivio is your friend!</a> [koffice.org]  Consult your flowcharts before you make changes to the program. A well-layed-out flowchart can be worth more than reams of notes in the code.<br> <br>Above all, structure your code so that the default behavior is secure in the event of a failure.<br> <br>For example, you've done something stupid, and you're passing unescaped text to the database.<br> <br>Whoops!<br> <br>1) Why are you passing text directly to the database? If you communicate with the database with a proper API, you *can't* pass unescaped text to the database.<br> <br>2) Are you capturing the errors from the database, so that you aren't displaying any obvious sign (to the public) of what's gone wrong?<br> <br>3) Is the database connection transacted, so that you can return to a known good state?<br> <br>4) Do you have some kind of error trap or handler so that you can find out exactly what the errors were and fix them in a sane way?<br> <br>5) Have you tested your code with DELIBERATE bugs so that you know how it will behave in the event of a failure?<br> <br>The hendling of any errors from that should *NEVER* be made clear to the outside, only that "an error has occured".<br> <br>The goal is a system designed with multiple layers of protection so that a failure at any point does not result in a security breach! It should fail securely, so that problems result only in error reports, NOT SECURITY HOLES.<br> <br>Easy to say, damn hard to do...</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10660871">
+<span class="nbutton"><p><b><a href="//apache.slashdot.org/comments.pl?sid=127596&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=10660738" onclick="return selectParent(10660738)">Parent</a></b></p></span>
+</div>
+</div>
+
+<div id="replyto_10660871"></div>
+
+<ul id="group_10660871">
+	<li id="hiddens_10660871" class="hide"></li>
+</ul>
+
+<ul id="commtree_10660871"><li id="tree_10662675" class="comment">
+<div id="comment_status_10662675" class="commentstatus"></div>
+<div id="comment_10662675" class="hidden">
+</div>
+
+<div id="replyto_10662675"></div>
+
+<ul id="group_10662675">
+	<li id="hiddens_10662675" class="hide"></li>
+</ul>
+
+<ul id="commtree_10662675"><li id="tree_10665696" class="comment">
+<div id="comment_status_10665696" class="commentstatus"></div>
+<div id="comment_10665696" class="oneline">
+	<div id="comment_top_10665696" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10665696" name="comment_link_10665696" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10665696" onclick="return setFocusComment(10665696)">Re:How</a>
+
+
+		 	<span id="comment_score_10665696" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10665696); return false">Score:3</a>, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~mcrbids">mcrbids (148650)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10665696"></span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10665696"><i>"Why are you passing text directly to the database". Um... because the API to a SQL database is SQL which is... text?</i> <br> <br>Ahem...<br> <br>Here's an example of BAD YOU-ARE-SO-OWNED CODE<nobr> <wbr></nobr>...<span class="substr"> </span><p><blockquote> <div> <tt>$sql="SELECT * FROM userdb WHERE login='".$_REQUEST['login']."' AND password='</tt></div></blockquote></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10665696">
+
+</div>
+</div>
+
+<div id="replyto_10665696"></div>
+
+<ul id="group_10665696">
+	<li id="hiddens_10665696" class="hide"></li>
+</ul>
+
+</li></ul></li></ul></li><li id="tree_10660927" class="comment">
+<div id="comment_status_10660927" class="commentstatus"></div>
+<div id="comment_10660927" class="oneline">
+	<div id="comment_top_10660927" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10660927" name="comment_link_10660927" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660927" onclick="return setFocusComment(10660927)">Re:How</a>
+
+
+		 	<span id="comment_score_10660927" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10660927); return false">Score:3</a>, Informative)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~pairo">pairo (519657)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10660927"></span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10660927"><i> Sure, no one has found any bugs Knuth's TeX in years. Same for Qmail, and others.</i> <br>
+Er, wrong. qmail has had a couple of security flaws, and more than a couple of <a href="http://www-dt.e-technik.uni-dortmund.de/~ma/qmail-bugs.html" title="uni-dortmund.de" rel="nofollow">bugs</a> [uni-dortmund.de]. For a more exhaustive list, <a href="http://www.google.com/search?q=bug+qmail" title="google.com" rel="nofollow">Google</a> [google.com] is your friend.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10660927">
+
+</div>
+</div>
+
+<div id="replyto_10660927"></div>
+
+<ul id="group_10660927">
+	<li id="hiddens_10660927" class="hide"></li>
+</ul>
+
+<ul id="commtree_10660927"><li id="tree_10661267" class="comment">
+<div id="comment_status_10661267" class="commentstatus"></div>
+<div id="comment_10661267" class="oneline">
+	<div id="comment_top_10661267" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10661267" name="comment_link_10661267" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10661267" onclick="return setFocusComment(10661267)">Re:How</a>
+
+
+		 	<span id="comment_score_10661267" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10661267); return false">Score:3</a>, Informative)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~Chexum">Chexum (1498)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10661267"></span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10661267"><span class="substr"> </span><p><blockquote> <div>...more than a couple</div> <div> <a href="http://www-dt.e-technik.uni-dortmund.de/~ma/qmail-bugs.html" title="uni-dortmund.de">bugs</a> [uni-dortmund.de]...</div> </blockquote>
+<p>Many of the "bugs" listed above are arguable, and frequently disputed by qmail users and opponents.  That is, many of them could not be a reason to single-handedly strike down qmail itself.</p>
+<p>As an example..  From the above docu</p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10661267">
+
+</div>
+</div>
+
+<div id="replyto_10661267"></div>
+
+<ul id="group_10661267">
+	<li id="hiddens_10661267" class="hide"></li>
+</ul>
+
+</li></ul></li><li id="tree_10662736" class="comment">
+<div id="comment_status_10662736" class="commentstatus"></div>
+<div id="comment_10662736" class="oneline">
+	<div id="comment_top_10662736" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10662736" name="comment_link_10662736" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10662736" onclick="return setFocusComment(10662736)">Re:How</a>
+
+
+		 	<span id="comment_score_10662736" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10662736); return false">Score:3</a>, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~DrSkwid">DrSkwid (118965)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10662736"></span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10662736"> Debugging is twice as hard as writing the code in the first place. Therefore,if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.<br> <br>-- Brian W. Kernighan<br> <br></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10662736">
+
+</div>
+</div>
+
+<div id="replyto_10662736"></div>
+
+<ul id="group_10662736">
+	<li id="hiddens_10662736" class="hide"></li>
+</ul>
+
+</li></ul></li><li id="tree_10660922" class="comment">
+<div id="comment_status_10660922" class="commentstatus"></div>
+<div id="comment_10660922" class="hidden">
+</div>
+
+<div id="replyto_10660922"></div>
+
+<ul id="group_10660922">
+	<li id="hiddens_10660922" class="hide"></li>
+</ul>
+
+<ul id="commtree_10660922"><li id="tree_10661300" class="comment">
+<div id="comment_status_10661300" class="commentstatus"></div>
+<div id="comment_10661300" class="oneline">
+	<div id="comment_top_10661300" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10661300" name="comment_link_10661300" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10661300" onclick="return setFocusComment(10661300)">Re:How</a>
+
+
+		 	<span id="comment_score_10661300" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10661300); return false">Score:3</a>, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~gbjbaanb">gbjbaanb (229885)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10661300"></span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10661300">nothing to do with complexity really, your old 8086 was never connected to the internet as we know it, and security was more a case of choosing a password that wasn't 'password'.<br> <br>Today, I had a new linux server installed for me, and before I even told my c</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10661300">
+
+</div>
+</div>
+
+<div id="replyto_10661300"></div>
+
+<ul id="group_10661300">
+	<li id="hiddens_10661300" class="hide"></li>
+</ul>
+
+</li></ul></li></ul></li><li id="tree_10660618" class="comment">
+<div id="comment_status_10660618" class="commentstatus"></div>
+<div id="comment_10660618" class="hidden">
+</div>
+
+<div id="replyto_10660618"></div>
+
+<ul id="group_10660618">
+	<li id="hiddens_10660618" class="hide"></li>
+</ul>
+
+<ul id="commtree_10660618"><li id="tree_10660653" class="comment">
+<div id="comment_status_10660653" class="commentstatus"></div>
+<div id="comment_10660653" class="oneline">
+	<div id="comment_top_10660653" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10660653" name="comment_link_10660653" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660653" onclick="return setFocusComment(10660653)">Re:What ever</a>
+
+
+		 	<span id="comment_score_10660653" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10660653); return false">Score:2</a>, Informative)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~mirko">mirko (198274)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10660653"></span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10660653">Well, Apache 2 doesn't support all the mods at this moment, for example, it is still impossible to use some auth_tk (not sure about the name, to autologin in our Intranet.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10660653">
+
+</div>
+</div>
+
+<div id="replyto_10660653"></div>
+
+<ul id="group_10660653">
+	<li id="hiddens_10660653" class="hide"></li>
+</ul>
+
+<ul id="commtree_10660653"><li id="tree_10660749" class="comment">
+<div id="comment_status_10660749" class="commentstatus"></div>
+<div id="comment_10660749" class="hidden">
+</div>
+
+<div id="replyto_10660749"></div>
+
+<ul id="group_10660749">
+	<li id="hiddens_10660749" class="hide"></li>
+</ul>
+
+<ul id="commtree_10660749"><li id="tree_10660792" class="comment">
+<div id="comment_status_10660792" class="commentstatus"></div>
+<div id="comment_10660792" class="oneline">
+	<div id="comment_top_10660792" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10660792" name="comment_link_10660792" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660792" onclick="return setFocusComment(10660792)">Re:What ever</a>
+
+
+		 	<span id="comment_score_10660792" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10660792); return false">Score:3</a>, Informative)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~FireChipmunk">FireChipmunk (447917)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10660792"></span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10660792">FUD.<br>
+<br>
+mod_defalte does GZIP encoding, and comes with the Apache 2.0 core:<br>
+<a href="http://httpd.apache.org/docs-2.0/mod/mod_deflate.html" title="apache.org">http://httpd.apache.org/docs-2.0/mod/mod_deflate.<nobr>h<wbr></nobr>  tml</a> [apache.org]</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10660792">
+
+</div>
+</div>
+
+<div id="replyto_10660792"></div>
+
+<ul id="group_10660792">
+	<li id="hiddens_10660792" class="hide"></li>
+</ul>
+
+</li></ul></li></ul></li><li id="tree_10660686" class="comment">
+<div id="comment_status_10660686" class="commentstatus"></div>
+<div id="comment_10660686" class="hidden">
+</div>
+
+<div id="replyto_10660686"></div>
+
+<ul id="group_10660686">
+	<li id="hiddens_10660686" class="hide"></li>
+</ul>
+
+<ul id="commtree_10660686"><li id="tree_10660763" class="comment contain">
+<div id="comment_status_10660763" class="commentstatus"></div>
+<div id="comment_10660763" class="full">
+	<div id="comment_top_10660763" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10660763" name="comment_link_10660763" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660763" onclick="return setFocusComment(10660763)">Re:What ever</a>
+
+
+		 	<span id="comment_score_10660763" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10660763); return false">Score:5</a>, Informative)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~myg">myg (705374)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10660763">		
+		on Friday October 29 2004, @01:47AM (<a href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660763">#10660763</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10660763">Apache 2 has quite a few good things going for it over Apache 1. First off, it handles multi-threading much better meaning that very heavy workloads require less CPU time[*]
+<p>
+Second, Apache 2 supports things like DAV which mean that to publish information on the web users need less access than with Apache 1 (such as shell accounts or worse FTP, since most ISP's don't think users should use SSH for some odd reason).
+</p><p>
+Lastly, Apache 2 can run <a href="http://subversion.tigris.org/" title="tigris.org">Subversion</a> [tigris.org]. So not only can you use DAV to update information without shell access of any kind but you can version that information too.
+</p><p>
+[*] Why is multi-threading faster than the pre-fork model of Apache 1? Because there is less work to do when context-switching threads. A thread shares the same virtual address space with other threads in the process. Changing virtual address spaces is slow because it requires a TLB flush (as well as one or more extra registers to save). The TLB flush increases memory accesses.</p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10660763">
+<span class="nbutton"><p><b><a href="//apache.slashdot.org/comments.pl?sid=127596&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=10660686" onclick="return selectParent(10660686)">Parent</a></b></p></span>
+</div>
+</div>
+
+<div id="replyto_10660763"></div>
+
+<ul id="group_10660763">
+	<li id="hiddens_10660763" class="hide"></li>
+</ul>
+
+</li><li id="tree_10660815" class="comment contain">
+<div id="comment_status_10660815" class="commentstatus"></div>
+<div id="comment_10660815" class="full">
+	<div id="comment_top_10660815" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10660815" name="comment_link_10660815" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660815" onclick="return setFocusComment(10660815)">Re:What ever</a>
+
+
+		 	<span id="comment_score_10660815" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10660815); return false">Score:5</a>, Informative)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~PhrostyMcByte">PhrostyMcByte (589271)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10660815">		 &lt;<a href="mailto:phrosty%40gmail.com">phrosty@gmail.com</a>&gt;
+		on Friday October 29 2004, @01:59AM (<a href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660815">#10660815</a>)
+		<small><a href="http://www.int64.org/" title="http://www.int64.org/" class="user_homepage_display">Homepage</a> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10660815">SF.NET just sent out an email a few days ago:<br> <br> <blockquote> <div><tt>The SourceForge.net team is pleased to announce the long-awaited<br>upgrade to our project web service. SourceForge.net staff are<br>currently in the process of completing hardware procurement and<br>system build-out. The official date for this upgrade has not yet<br>been set; once our hardware build-out has been completed, the<br>date will be announced on the SourceForge.net Site Status page.<br>https://sourceforge.net/docs/A04/<br> <br>This upgrade consists of a significant hardware upgrade and<br>Operating System upgrade. Due to the large upgrades involved here,<br>it may be necessary to upgrade your scripts.<br> <br>...<br> <br>New configuration:<br> <br> Fedora Linux: Fedora Core 2<br> Linux kernel 2.6.x<br> GNU libc 2.3.3<br> Apache 2.0.51<br> Perl 5.8.3<br> PHP 4.3.8<br> Python 2.3.3<br> Tcl 8.4.5</tt></div> </blockquote>Apache 2.x is good enough for a large site such as sf.net, it is good enough for others.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10660815">
+<span class="nbutton"><p><b><a href="//apache.slashdot.org/comments.pl?sid=127596&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=10660686" onclick="return selectParent(10660686)">Parent</a></b></p></span>
+</div>
+</div>
+
+<div id="replyto_10660815"></div>
+
+<ul id="group_10660815">
+	<li id="hiddens_10660815" class="hide"></li>
+</ul>
+
+</li><li id="tree_10660857" class="comment contain">
+<div id="comment_status_10660857" class="commentstatus"></div>
+<div id="comment_10660857" class="full">
+	<div id="comment_top_10660857" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10660857" name="comment_link_10660857" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660857" onclick="return setFocusComment(10660857)">Re:What ever</a>
+
+
+		 	<span id="comment_score_10660857" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10660857); return false">Score:5</a>, Informative)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~FireChipmunk">FireChipmunk (447917)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10660857">		 &lt;<a href="mailto:chip%40%40%40force-elite...com">chip@@@force-elite...com</a>&gt;
+		on Friday October 29 2004, @02:10AM (<a href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660857">#10660857</a>)
+		<small><a href="http://www.force-elite.com/" title="http://www.force-elite.com/" class="user_homepage_display">Homepage</a> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10660857"><a href="http://www.cnn.com/" title="cnn.com">No</a> [cnn.com] <a href="http://www.cnet.com/" title="cnet.com">one</a> [cnet.com] <a href="http://www.redhat.com/" title="redhat.com">uses</a> [redhat.com] <a href="http://www.bbc.co.uk/" title="bbc.co.uk">Apache 2</a> [bbc.co.uk] <a href="http://us2.php.net/" title="php.net">in</a> [php.net] <a href="http://www.apache.org/" title="apache.org">production</a> [apache.org].
+
+I guess all those sites don't have a clue about security.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10660857">
+<span class="nbutton"><p><b><a href="//apache.slashdot.org/comments.pl?sid=127596&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=10660686" onclick="return selectParent(10660686)">Parent</a></b></p></span>
+</div>
+</div>
+
+<div id="replyto_10660857"></div>
+
+<ul id="group_10660857">
+	<li id="hiddens_10660857" class="hide"></li>
+</ul>
+
+<ul id="commtree_10660857"><li id="tree_10660881" class="comment">
+<div id="comment_status_10660881" class="commentstatus"></div>
+<div id="comment_10660881" class="oneline">
+	<div id="comment_top_10660881" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10660881" name="comment_link_10660881" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660881" onclick="return setFocusComment(10660881)">Riddle me this then?</a>
+
+
+		 	<span id="comment_score_10660881" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10660881); return false">Score:2</a>, Funny)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~Bill_Royle">Bill_Royle (639563)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10660881"></span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10660881">Why is your server running 2.0, then?
+<br> <br>
+<a href="http://uptime.netcraft.com/up/graph/?host=www.force-elite.com" title="netcraft.com">Netcraft's "What's That Site Running?" report on www.force-elite.com</a> [netcraft.com]
+<br> <br>
+I'm assuming by your nick here that you're Chip, of course.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10660881">
+
+</div>
+</div>
+
+<div id="replyto_10660881"></div>
+
+<ul id="group_10660881">
+	<li id="hiddens_10660881" class="hide"></li>
+</ul>
+
+</li><li id="tree_10660899" class="comment">
+<div id="comment_status_10660899" class="commentstatus"></div>
+<div id="comment_10660899" class="oneline">
+	<div id="comment_top_10660899" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10660899" name="comment_link_10660899" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660899" onclick="return setFocusComment(10660899)">Re:What ever</a>
+
+
+		 	<span id="comment_score_10660899" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10660899); return false">Score:2</a>)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~Quattro+Vezina">Quattro Vezina (714892)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10660899"></span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10660899"><a href="http://www.kernel.org/" title="kernel.org">You forgot one.</a> [kernel.org]</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10660899">
+
+</div>
+</div>
+
+<div id="replyto_10660899"></div>
+
+<ul id="group_10660899">
+	<li id="hiddens_10660899" class="hide"></li>
+</ul>
+
+</li><li id="tree_10661412" class="comment contain">
+<div id="comment_status_10661412" class="commentstatus"></div>
+<div id="comment_10661412" class="full">
+	<div id="comment_top_10661412" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10661412" name="comment_link_10661412" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10661412" onclick="return setFocusComment(10661412)">Re:What ever</a>
+
+
+		 	<span id="comment_score_10661412" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10661412); return false">Score:4</a>, Informative)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~bustersnyvel">bustersnyvel (562862)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10661412">		
+		on Friday October 29 2004, @05:21AM (<a href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10661412">#10661412</a>)
+		<small><a href="http://www.stuvel.eu/" title="http://www.stuvel.eu/" class="user_homepage_display" rel="nofollow">Homepage</a> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10661412">www.apache.org - Apache 2:<br>HTTP/1.1 200 OK<br>Date: Fri, 29 Oct 2004 09:17:14 GMT<br>Server: Apache/2.0.52 (Unix)<nobr> <wbr></nobr>....<br> <br>www.redhat.com - Unknown apache version:<br>HTTP/1.1 200 OK<br>Date: Fri, 29 Oct 2004 09:18:05 GMT<br>Server: Apache<nobr> <wbr></nobr>...<br> <br>www.cnn.com - Unknown apache version:<br>HTTP/1.1 200 OK<br>Date: Fri, 29 Oct 2004 09:18:45 GMT<br>Server: Apache<br> <br>www.cnet.com - Apache 2:<br>HTTP/1.1 200 OK<br>Date: Fri, 29 Oct 2004 09:19:08 GMT<br>Server: Apache/2.0<br> <br>www.bbc.co.uk - Apache 2:<br>HTTP/1.1 200 OK<br>Date: Fri, 29 Oct 2004 09:19:38 GMT<br>Server: Apache/2.0.51 (Unix)<br> <br>us2.php.net - Apache 2:<br>HTTP/1.1 200 OK<br>Date: Fri, 29 Oct 2004 09:20:01 GMT<br>Server: Apache/2.0.46 (Unix) mod_perl/1.99_09 Perl/v5.8.0 mod_ssl/2.0.46 OpenSSL/0.9.6g DAV/2 FrontPage/5.0.2.2634 PHP/4.3.2 mod_gzip/2.0.26.1a<br> <br>I guess a lot of people use Apache 2!</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10661412">
+<span class="nbutton"><p><b><a href="//apache.slashdot.org/comments.pl?sid=127596&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=10660857" onclick="return selectParent(10660857)">Parent</a></b></p></span>
+</div>
+</div>
+
+<div id="replyto_10661412"></div>
+
+<ul id="group_10661412">
+	<li id="hiddens_10661412" class="hide"></li>
+</ul>
+
+</li></ul></li><li id="tree_10660912" class="comment">
+<div id="comment_status_10660912" class="commentstatus"></div>
+<div id="comment_10660912" class="oneline">
+	<div id="comment_top_10660912" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10660912" name="comment_link_10660912" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660912" onclick="return setFocusComment(10660912)">Re:What ever</a>
+
+
+		 	<span id="comment_score_10660912" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10660912); return false">Score:2</a>)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~Quattro+Vezina">Quattro Vezina (714892)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10660912"></span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10660912">I can't but help noticing you made a typo. Your entire message should be spelled ``FUD''.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10660912">
+
+</div>
+</div>
+
+<div id="replyto_10660912"></div>
+
+<ul id="group_10660912">
+	<li id="hiddens_10660912" class="hide"></li>
+</ul>
+
+</li></ul></li></ul></li><li id="tree_10660695" class="comment">
+<div id="comment_status_10660695" class="commentstatus"></div>
+<div id="comment_10660695" class="hidden">
+</div>
+
+<div id="replyto_10660695"></div>
+
+<ul id="group_10660695">
+	<li id="hiddens_10660695" class="hide"></li>
+</ul>
+
+<ul id="commtree_10660695"><li id="tree_10660817" class="comment contain">
+<div id="comment_status_10660817" class="commentstatus"></div>
+<div id="comment_10660817" class="full">
+	<div id="comment_top_10660817" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10660817" name="comment_link_10660817" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660817" onclick="return setFocusComment(10660817)">Re:I can't figure this release note out</a>
+
+
+		 	<span id="comment_score_10660817" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10660817); return false">Score:5</a>, Funny)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~mrchaotica">mrchaotica (681592)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10660817">		 &lt;<a href="mailto:mrchaoticaNO%40SPAMyahoo.com">mrchaoticaNO@SPAMyahoo.com</a>&gt;
+		on Friday October 29 2004, @01:59AM (<a href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660817">#10660817</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10660817"><blockquote> <div><i>does this effect me?</i></div> </blockquote>I don't see how it could, since "effect" is a noun.<blockquote> <div><i>I don't want to loose the security battle</i></div> </blockquote>Well, better keep that battle tied up then!<br> <br>[note to mods:  With a story this useless, what else <i>could</i> I do but correct usage (I'll leave grammar and capitalization as an exercise for the reader)?  I mean come on, the <i>front page</i> for a bugfix?!]</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10660817">
+<span class="nbutton"><p><b><a href="//apache.slashdot.org/comments.pl?sid=127596&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=10660695" onclick="return selectParent(10660695)">Parent</a></b></p></span>
+</div>
+</div>
+
+<div id="replyto_10660817"></div>
+
+<ul id="group_10660817">
+	<li id="hiddens_10660817" class="hide"></li>
+</ul>
+
+<ul id="commtree_10660817"><li id="tree_10661031" class="comment">
+<div id="comment_status_10661031" class="commentstatus"></div>
+<div id="comment_10661031" class="oneline">
+	<div id="comment_top_10661031" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10661031" name="comment_link_10661031" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10661031" onclick="return setFocusComment(10661031)">Re:I can't figure this release note out</a>
+
+
+		 	<span id="comment_score_10661031" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10661031); return false">Score:3</a>, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~value_added">value_added (719364)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10661031"></span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10661031">"I don't see how it could, since "effect" is a noun."<br> <br>Good try (and moderately funny) but no cigar.  The word "effect" can be used as a noun *or* a transitive verb in which case the meaning can be read as "to bring about."  That, too, would be moderately f</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10661031">
+
+</div>
+</div>
+
+<div id="replyto_10661031"></div>
+
+<ul id="group_10661031">
+	<li id="hiddens_10661031" class="hide"></li>
+</ul>
+
+</li><li id="tree_10661088" class="comment">
+<div id="comment_status_10661088" class="commentstatus"></div>
+<div id="comment_10661088" class="hidden">
+</div>
+
+<div id="replyto_10661088"></div>
+
+<ul id="group_10661088">
+	<li id="hiddens_10661088" class="hide"></li>
+</ul>
+
+<ul id="commtree_10661088"><li id="tree_10661356" class="comment">
+<div id="comment_status_10661356" class="commentstatus"></div>
+<div id="comment_10661356" class="oneline">
+	<div id="comment_top_10661356" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10661356" name="comment_link_10661356" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10661356" onclick="return setFocusComment(10661356)">Re:I can't figure this release note out</a>
+
+
+		 	<span id="comment_score_10661356" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10661356); return false">Score:3</a>, Funny)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~Scarblac">Scarblac (122480)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10661356"></span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10661356"><p> <i>Security effects ALL of us.</i> </p>
+<p>ITYM the other way around - it's LACK of secure (safe) sex that effects all of us.</p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10661356">
+
+</div>
+</div>
+
+<div id="replyto_10661356"></div>
+
+<ul id="group_10661356">
+	<li id="hiddens_10661356" class="hide"></li>
+</ul>
+
+</li></ul></li></ul></li></ul></li><li id="tree_10660942" class="comment">
+<div id="comment_status_10660942" class="commentstatus"></div>
+<div id="comment_10660942" class="hidden">
+</div>
+
+<div id="replyto_10660942"></div>
+
+<ul id="group_10660942">
+	<li id="hiddens_10660942" class="hide"></li>
+</ul>
+
+<ul id="commtree_10660942"><li id="tree_10660989" class="comment">
+<div id="comment_status_10660989" class="commentstatus"></div>
+<div id="comment_10660989" class="oneline">
+	<div id="comment_top_10660989" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10660989" name="comment_link_10660989" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10660989" onclick="return setFocusComment(10660989)">Re:Apache is awful.</a>
+
+
+		 	<span id="comment_score_10660989" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10660989); return false">Score:2</a>)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~killjoe">killjoe (766577)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10660989"></span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10660989">Wow cold fusion and jrun? People still use those? Are they running as modules or a CGI?<br> <br>Maybe you should go back to IIS. You should not run a web server you can't get working. Leave apache for other people.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10660989">
+
+</div>
+</div>
+
+<div id="replyto_10660989"></div>
+
+<ul id="group_10660989">
+	<li id="hiddens_10660989" class="hide"></li>
+</ul>
+
+</li><li id="tree_10661002" class="comment">
+<div id="comment_status_10661002" class="commentstatus"></div>
+<div id="comment_10661002" class="oneline">
+	<div id="comment_top_10661002" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10661002" name="comment_link_10661002" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10661002" onclick="return setFocusComment(10661002)">Re:Apache is awful.</a>
+
+
+		 	<span id="comment_score_10661002" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10661002); return false">Score:3</a>, Funny)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~pairo">pairo (519657)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10661002"></span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10661002">I'm only going to comment on two bits of your post, since I've never used ColdFusion/JRun with Apache (Or at all, for that matter) and cannot address the main issue.<br> <br>
+<i>disabled all uneeded services, performance tuned our app</i> <br> <br>
+You only did that _after_ you</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10661002">
+
+</div>
+</div>
+
+<div id="replyto_10661002"></div>
+
+<ul id="group_10661002">
+	<li id="hiddens_10661002" class="hide"></li>
+</ul>
+
+</li><li id="tree_10661038" class="comment contain">
+<div id="comment_status_10661038" class="commentstatus"></div>
+<div id="comment_10661038" class="full">
+	<div id="comment_top_10661038" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_10661038" name="comment_link_10661038" href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10661038" onclick="return setFocusComment(10661038)">Re:Apache is awful.</a>
+
+
+		 	<span id="comment_score_10661038" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 10661038); return false">Score:4</a>, Interesting)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~LnxAddct">LnxAddct (679316)</a> 
+			<span class="otherdetails" id="comment_otherdetails_10661038">		 &lt;<a href="mailto:sgk25%40drexel.edu">sgk25@drexel.edu</a>&gt;
+		on Friday October 29 2004, @03:05AM (<a href="//apache.slashdot.org/comments.pl?sid=127596&amp;cid=10661038">#10661038</a>)
+		<small><a href="http://krenzel.info/" title="http://krenzel.info/" class="user_homepage_display" rel="nofollow">Homepage</a> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_10661038">Wow... did you ever here the cliche of a face so ugly it breaks mirrors... that site is so horrendous it breaks apache. Anyway...your huge community doesn't seem to be all that huge... google uses a modified version of apache, slashdot uses apache, sourceforge.net uses apache, and Amazon.com runs apache... as well as many others. If your having hours of downtime a day you must not be all there in your head. Seriously, go download Fedora Core 2, install it, everything will be set up for you... port your code to php or jsp or whatever if your finding it unstable. Coldfusion is hell and way overrated. If your going to use opensource, go completely open source because thats what it was designed with in mind. But judging from your website, you've got a lot more work to do then just getting a server running properly. Ugh... go buy a book or two, one for servers and one for web design. I'm not trying to troll... I just can't believe what this guy said, never in all my years have I had any trouble with Apache, whereas I also admin an IIS server and its *hell*...but it pays the bills:)<br>Regards,<br>Steve</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_10661038">
+<span class="nbutton"><p><b><a href="//apache.slashdot.org/comments.pl?sid=127596&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=10660942" onclick="return selectParent(10660942)">Parent</a></b></p></span>
+</div>
+</div>
+
+<div id="replyto_10661038"></div>
+
+<ul id="group_10661038">
+	<li id="hiddens_10661038" class="hide"></li>
+</ul>
+
+</li></ul></li>
+			<li id="roothiddens" class="hide"></li>
+		</ul>
+	
+	
+	
+	
+
+
+<div id="replyto_0"></div>
+
+
+<div id="discussion_buttons">
+
+
+<span class="nbutton"><p><b><a href="#" onclick="ajaxFetchComments(0,1); return false"><span id="more_comments_num_a" class="hide">Get More Comments</span></a></b></p></span>
+
+
+
+
+
+
+
+</div>
+
+
+	<script type="text/javascript">
+<!--
+		currents['hidden']   = 0;
+		currents['full']     = 24;
+		currents['oneline']  = 26;
+		// currents_total = 50;
+
+		abbrev_comments      = {10661847:301,10665696:218,10661267:0,10660888:255,10661002:278,10661759:270,10661031:264,10661300:264,10660868:256};
+		noshow_comments      = [10661043,10660626,10661010,10662675,10660922,10660618,10660749,10660686,10660695,10661088,10660942];
+		pieces_comments      = [10660629,10660801,10660632,10661172,10661847,10660855,10660868,10660882,10660888,10663475,10660631,10661759,10665696,10660927,10661267,10662736,10661300,10660653,10660792,10660881,10660899,10660912,10661031,10661356,10660989,10661002];
+		init_hiddens         = [];
+
+		finishLoading();
+//-->
+	</script></div>	
+		</div>
+			<div id="footer">
+				<div class="search">
+				
+					<form method="get" action="//apache.slashdot.org/search.pl">
+						<fieldset>
+							<legend>Search</legend>
+							<input type="text" name="query" value="" size="20">
+							<input type="submit" value="Search" class="button">
+						</fieldset>
+					</form>
+				
+				</div>
+				<div class="rightcontent">
+					
+                		        <small>To be or not to be.
+		-- Shakespeare
+To do is to be.
+		-- Nietzsche
+To be is to do.
+		-- Sartre
+Do be do be do.
+		-- Sinatra</small>
+					
+				</div>	
+			</div>
+		</div>	
+	</div>
+	<div class="copyright">
+		<p>
+
+			All trademarks and copyrights on this page are owned by their respective owners.  Comments are owned by the Poster.  The Rest &copy; 1997-2008 <a href="http://sourceforge.com/">SourceForge</a>, Inc.
+		</p>
+	</div>
+	<div class="btmnav">
+		<ul>
+			<li class="begin"><a href="//apache.slashdot.org/">home</a></li>
+			<li><a href="//apache.slashdot.org/awards.shtml">awards</a></li>
+			<li><a href="//apache.slashdot.org/submit.pl">contribute story</a></li>
+			<li><a href="//apache.slashdot.org/search.pl">older articles</a></li>
+			<li><a href="http://sourceforge.com/">sourceforge, inc.</a></li>
+			<li><a href="http://web.sourceforge.com/media_kit.php">advertise</a></li>
+			<li><a href="//apache.slashdot.org/about.shtml">about</a></li>
+			<li><a href="http://web.sourceforge.com/terms.php">terms of service</a></li>
+			<li><a href="http://web.sourceforge.com/privacy.php">privacy</a></li>
+			<li><a href="//apache.slashdot.org/faq/">faq</a></li>
+			<li><a href="http://rss.slashdot.org/Slashdot/slashdotApache">rss</a></li>
+		</ul>
+	</div>
+<script type="text/javascript">
+pageTracker._trackPageview();
+</script>
+<div id="modal_cover" style="display:none" onclick="hide_modal_box()"></div>
+<div id="modal_box" style="display:none">
+        <div class="generaltitle" >
+                <div class="title"><h3><span id="preference_title"></span> <a href="#" onclick="hide_modal_box(); return false"><img src="//images.slashdot.org/sic_close.png" alt="Close"></a></h3></div>
+        </div>
+        <div id="modal_box_content"></div>
+</div>
+</body>
+</html>

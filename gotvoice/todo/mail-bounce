@@ -1,0 +1,11 @@
+July 5 2007
+ra sending about 22K mails to outside addresses daily
+sudo grep stat=Sent  maillog|grep 'Jun 28'|grep @ |grep -v gotvoice.com|wc -l
+Roughly 1500 bounce message daily
+perl module to analyze mail:
+http://search.cpan.org/~freeside/Mail-DeliveryStatus-BounceParser-1.4/BounceParser.pm
+
+Oct 2007
+document how bounces get created
+gv@ra.gotvoice.com vs support@gotvoice.com
+no dnsbl hits for 209.245.176.14 at www.MXToolbox.com 

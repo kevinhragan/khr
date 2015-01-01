@@ -1,0 +1,593 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<head>
+<title>Curl: RE: libcurl and Microsoft IIS FTP server</title>
+<meta name="Author" content="Jeff Vincent (Jeff_Vincent_at_symantec.com)" />
+<meta name="Subject" content="RE: libcurl and Microsoft IIS FTP server" />
+<meta content="text/html; charset=ISO-8859-1" http-equiv="Content-Type">
+<link rel="STYLESHEET" type="text/css" href="/curl.css">
+<link rel="shortcut icon" href="/favicon.ico">
+</head>
+<BODY bgcolor="#ffffff" text="#000000" LINK="#0000ff" VLINK="#808080" ALINK="red">
+<!-- first-line-in-body -->
+<table width="100%"><tr valign="top"><td> <a href="/"><img src="/ds-curlicon.png" width="99" border="0" height="37" alt="cURL"></a></td>
+<td align="center">
+<table><tr valign="top"><td>
+<a href="/about.html#ads" title="Your ad here would be seen by 100,000 unique
+vistors every month"><img src=http://config.privoxy.org/send-banner?type=auto border="0" title=Killed--by-size width="468" height="60"></a>
+</td><td>
+<a href="http://www.easyalgo.com/eaupload.aspx" title="Asp.net file upload component"><img
+src="/pix/easyalgo.gif" width="150" hight="60" border="0" alt="File upload component for ASP.NET" /></a>
+</td>
+</tr></table>
+</td>
+<td align="right"><a
+href="/libcurl/"><img src="/ds-libcurlicon.png" width="99" border="0" alt="libcurl" height="37"></a></td></tr></table>
+<span class="mirrorlinks">
+<a title="Takes you to this same page on the mirror server closest to you!"
+ href="http://curlm.haxx.se/">Automatically get a mirror near you</a>
+</span>
+<table cellspacing="0" cellpadding="5"><tr><td valign="top" align="left">
+<div class="mainmenu">
+<div><a href="/" class="menuitem" title="curl site front page">Front Page</a></div>
+<div><a href="/download.html" class="menuitem" title="Get curl packages">Download</a></div>
+<div><a href="/docs/" class="menuitem" title="curl documentation">Docs &raquo;</a></div>
+<div><a href="/news.html" class="menuitem" title="Recent events and news in the project">News</a></div>
+<div class="itemselect">Mailing Lists</div>
+<div><a href="/devel.html" class="menuitem" title="Resources for development and developers">Development</a></div>
+<div><a href="/libcurl/" class="menuitem" title="libcurl web site section">libcurl &raquo;</a></div>
+<div><a href="/support.html" class="menuitem" title="Buy commercial support from these companies">Support</a></div>
+<div><a href="/search.html" class="menuitem" title="Search the curl web site">Search</a></div>
+</div>
+<p>
+<p>
+<TABLE WIDTH="120" CELLPADDING="4" HEIGHT="240" style="border-width: thin;
+border-style: solid;" BORDERCOLOR="#000000" BGCOLOR="#CCCCCC">
+<TR><TD VALIGN="TOP">
+</TD></TR></TABLE>
+<p>
+<TABLE WIDTH="120" CELLPADDING="4" HEIGHT="240" style="border-width: thin;
+border-style: solid;" BORDERCOLOR="#000000" BGCOLOR="#e0e0ff">
+<TR><TD VALIGN="TOP">
+</TD></TR></TABLE>
+<p>
+<table cellspacing="0" cellpadding="0" width="120" border="1">
+<tbody> <tr> <td>
+<font face="arial" size="1">
+<a href="http://www.shop-script.com">Shopping cart software</a>,
+<a href="http://www.webasyst.net/files/">Online file storage and sharing</a>,
+<a href="http://www.webasyst.net/photos/">Online photo storage and sharing</a>,
+<a href="http://www.webasyst.net/shop/">Online store builder</a>,
+<a href="http://www.webasyst.net/contacts/">Online contact management</a>,
+<a href="http://www.webasyst.net/mail/">Online email marketing</a>,
+<a href="http://www.webasyst.net/projects/">Online project management</a>,
+<a href="http://www.webasyst.net/issue-tracker/">Online issue tracking</a>,
+<a href="http://www.webasyst.net/notes/">Online notepad</a>,
+<a href="http://www.webasyst.net/pages/">Online publishing</a>
+</font>
+</td></tr></tbody></table>
+<p>
+<a href="http://sourceforge.net/projects/curl/"><img src="http://config.privoxy.org/send-banner?type=auto" border="0" title="Killed-http://sourceforge.net/sflogo.php?group_id=976&amp;type=1-by-size" width="88" height="31"></a>
+</td><td valign="top" align="left" width="100%">
+<a href="/">cURL</a> <img alt=">" src="/arrow.png"> <a href="/mail/">Mailing List</a> <img alt=">" src="/arrow.png"> <a href="./">Monthly Index</a> <img alt=">" src="/arrow.png"> <b>Single Mail</b>
+<h1 class="pagetitle"> curl-library Mailing List Archives </h1>
+<p>
+<div class="head">
+<h1>RE: libcurl and Microsoft IIS FTP server</h1>
+<!-- received="Fri Dec  7 17:08:23 2007" -->
+<!-- isoreceived="20071207160823" -->
+<!-- sent="Fri, 7 Dec 2007 08:53:02 -0700" -->
+<!-- isosent="20071207155302" -->
+<!-- name="Jeff Vincent" -->
+<!-- email="Jeff_Vincent_at_symantec.com" -->
+<!-- subject="RE: libcurl and Microsoft IIS FTP server" -->
+<!-- id="B4BCA67D9CDBCE4781B04ACCD3EE47D3014B814E_at_TUS1XCHCLUPIN16.enterprise.veritas.com" -->
+<!-- charset="us-ascii" -->
+<!-- inreplyto="Pine.LNX.4.64.0712061227090.24443&#64;yvahk3.pbagnpgbe.fr" -->
+<!-- expires="-1" -->
+<map id="navbar" name="navbar">
+<ul class="links">
+<li>
+<dfn>This message</dfn>:
+[ <a href="#start" name="options1" id="options1" tabindex="1">Message body</a> ]
+ [ <a href="#options2">More options</a> ]
+</li>
+<li>
+<dfn>Related messages</dfn>:
+<!-- unext="start" -->
+[ <a href="0074.html" title="Jamie Lokier: &quot;Re: FTP keep alive connection&quot;">Next message</a> ]
+[ <a href="0072.html" title="Daniel Stenberg: &quot;Re: CURLOPT_LOW_SPEED_* option doesn't work as expected&quot;">Previous message</a> ]
+[ <a href="0050.html" title="Daniel Stenberg: &quot;RE: libcurl and Microsoft IIS FTP server&quot;">In reply to</a> ]
+<!-- unextthread="start" -->
+[ <a href="0087.html" title="Daniel Stenberg: &quot;RE: libcurl and Microsoft IIS FTP server&quot;">Next in thread</a> ]
+ [ <a href="#replies">Replies</a> ]
+<!-- ureply="end" -->
+</li>
+</ul>
+</map>
+</div>
+<!-- body="start" -->
+<div class="mail">
+<address class="headers">
+<span id="from">
+<dfn>From</dfn>: Jeff Vincent &lt;<a href="mailto:Jeff_Vincent_at_symantec.com?Subject=RE:%20libcurl%20and%20Microsoft%20IIS%20FTP%20server">Jeff_Vincent_at_symantec.com</a>&gt;
+</span><br />
+<span id="date"><dfn>Date</dfn>: Fri, 7 Dec 2007 08:53:02 -0700</span><br />
+</address>
+<p>
+My comments inline:
+<br />
+<p>&nbsp;
+<br />
+<p><em class="quotelev1">&gt; -----Original Message-----
+</em><br />
+<p><em class="quotelev1">&gt; From: curl-library-bounces_at_cool&#46;<!--nospam-->haxx.se [mailto:curl-library-
+</em><br />
+<p><em class="quotelev1">&gt; bounces_at_cool&#46;<!--nospam-->haxx.se] On Behalf Of Daniel Stenberg
+</em><br />
+<p><em class="quotelev1">&gt; Sent: Thursday, December 06, 2007 4:40 AM
+</em><br />
+<p><em class="quotelev1">&gt; To: libcurl development
+</em><br />
+<p><em class="quotelev1">&gt; Subject: RE: libcurl and Microsoft IIS FTP server
+</em><br />
+<p><em class="quotelev1">&gt; 
+</em><br />
+<p><em class="quotelev1">&gt; On Thu, 6 Dec 2007, Jeff Vincent wrote:
+</em><br />
+<p><em class="quotelev1">&gt; 
+</em><br />
+<p><em class="quotelev2">&gt; &gt; We are now seeing a similar issue when uploading to IIS6/Win2K3.
+</em><br />
+<p><em class="quotelev1">&gt; 
+</em><br />
+<p><em class="quotelev1">&gt; And this is still only libcurl that shows this behaviour? What libcurl
+</em><br />
+<p><em class="quotelev1">&gt; version
+</em><br />
+<p><em class="quotelev1">&gt; are you using now? Have you compared the ftp command sequence with a
+</em><br />
+<p><em class="quotelev1">&gt; working
+</em><br />
+<p><em class="quotelev1">&gt; ftp client with the particular sequence that libcurl uses?
+</em><br />
+<p><em class="quotelev1">&gt; 
+</em><br />
+<p>&nbsp;
+<br />
+<p>We are using version 7.16.3 I believe.
+<br />
+<p>&nbsp;
+<br />
+<p>I've thus far used the MS FTP Command-line client which works fine and
+<br />
+appears to do the same sequence as libcurl.  I tried running a
+<br />
+precompiled version of the curl client for windows but I'm still working
+<br />
+through issues.  
+<br />
+<p>&nbsp;
+<br />
+<p>In our implementation, libcurl works great against FileZilla and vsftpd
+<br />
+on openSuse 10.3.  IIS works fine for most other files.  There is a
+<br />
+subset that causes this condition to manifest itself.  If we add a delay
+<br />
+between completing the file transfer and cleaning up the curl handle,
+<br />
+the destination file is completely written.  
+<br />
+<p>&nbsp;
+<br />
+<p>However, the packet trace still doesn't show the complete 226/QUIT/221
+<br />
+sequence.  If we remove the delay and certain files are encountered, we
+<br />
+see the connection being RST by the server before it sends any 226
+<br />
+responses and the file is truncated.  If we introduce a delay, the trace
+<br />
+does show a 226 response from the server, but the server then
+<br />
+immediately resets the connection and no QUIT/221 sequence is seen.
+<br />
+<p>&nbsp;
+<br />
+<p><em class="quotelev2">&gt; &gt; At the end of *some* file transfers we do not see the typical
+</em><br />
+<p><em class="quotelev1">&gt; 226/QUIT/221
+</em><br />
+<p><em class="quotelev2">&gt; &gt; message sequence, but a similar connection RST issue and the
+</em><br />
+resulting
+<br />
+<p><em class="quotelev1">&gt; file
+</em><br />
+<p><em class="quotelev2">&gt; &gt; is truncated.  It doesn't happen on all files, but it happens
+</em><br />
+<p><em class="quotelev1">&gt; consistently
+</em><br />
+<p><em class="quotelev2">&gt; &gt; on files of certain sizes.
+</em><br />
+<p><em class="quotelev1">&gt; 
+</em><br />
+<p><em class="quotelev1">&gt; libcurl waits for the 226 response when it still thinks everything is
+</em><br />
+<p><em class="quotelev1">&gt; fine, it
+</em><br />
+<p><em class="quotelev1">&gt; doesn't if it already has deemed the transfer to have failed. See
+</em><br />
+<p><em class="quotelev1">&gt; Curl_ftp_done() in lib/ftp.c.
+</em><br />
+<p><em class="quotelev1">&gt; 
+</em><br />
+<p>&nbsp;
+<br />
+<p>I don't believe that curl ever thinks the transfer has failed in any of
+<br />
+the failure cases.  Curl always reports the correct byte count sent to
+<br />
+the server.  What we need is some guidance in trying to determine why
+<br />
+curl reports success when there is no 226 in the packet trace or when we
+<br />
+do see the 226, there is no QUIT/221 sequence.
+<br />
+<p>&nbsp;
+<br />
+<p><em class="quotelev2">&gt; &gt; Rob Lievaart suggested a scenario where a command connection request
+</em><br />
+may
+<br />
+<p><em class="quotelev1">&gt; be
+</em><br />
+<p><em class="quotelev2">&gt; &gt; getting to the server before the data connection upload/closure
+</em><br />
+sequence
+<br />
+<p><em class="quotelev2">&gt; &gt; completes.
+</em><br />
+<p><em class="quotelev1">&gt; 
+</em><br />
+<p><em class="quotelev1">&gt; I don't see how this can happen, and if it does happen it is a major
+</em><br />
+<p><em class="quotelev1">&gt; server
+</em><br />
+<p><em class="quotelev1">&gt; bug that I can't see what a client can do to avoid.
+</em><br />
+<p><em class="quotelev1">&gt; 
+</em><br />
+<p>&nbsp;
+<br />
+<p>I won't deny the server implementation may have issues, but when we
+<br />
+introduce a delay between transfer and cleanup and it works so it seems
+<br />
+there is a scenario we might be able to detect and work around.
+<br />
+<p>&nbsp;
+<br />
+<p>Responding to Rob also, I can see that the issue he described was file
+<br />
+size related and how the CURLOPT_INFILESIZE* options were (mis)used.  We
+<br />
+aren't using that option.  However, the timing issue even now still
+<br />
+seems related.
+<br />
+<p>&nbsp;
+<br />
+<p><em class="quotelev2">&gt; &gt; Though we don't see cURL checking SIZE at the end of the transfer,
+</em><br />
+we
+<br />
+<p><em class="quotelev1">&gt; felt
+</em><br />
+<p><em class="quotelev2">&gt; &gt; that there is a good chance that we are seeing a similar issue.
+</em><br />
+<p><em class="quotelev1">&gt; 
+</em><br />
+<p><em class="quotelev1">&gt; No it doesn't check SIZE, why would it? libcurl knows how much data it
+</em><br />
+<p><em class="quotelev1">&gt; sent
+</em><br />
+<p><em class="quotelev1">&gt; and if it sent the entire file without problems, it just needs to wait
+</em><br />
+for
+<br />
+<p><em class="quotelev1">&gt; the
+</em><br />
+<p><em class="quotelev1">&gt; 226 (or 250) to know the file transfer was fine.
+</em><br />
+<p><em class="quotelev1">&gt; 
+</em><br />
+<p>&nbsp;
+<br />
+<p>Makes sense.
+<br />
+<p>&nbsp;
+<br />
+<p><em class="quotelev2">&gt; &gt; In the case that seems to always work, we keep the curl handle
+</em><br />
+around to
+<br />
+<p><em class="quotelev1">&gt; be
+</em><br />
+<p><em class="quotelev2">&gt; &gt; reused, thus the cleanup is delayed significantly after the transfer
+</em><br />
+<p><em class="quotelev2">&gt; &gt; completes.  In the failure cases, if we introduce a hard-coded sleep
+</em><br />
+<p><em class="quotelev1">&gt; after
+</em><br />
+<p><em class="quotelev2">&gt; &gt; the data connection is closed but before curl is cleaned up, all
+</em><br />
+file
+<br />
+<p><em class="quotelev2">&gt; &gt; transfers succeed!!
+</em><br />
+<p><em class="quotelev1">&gt; 
+</em><br />
+<p><em class="quotelev1">&gt; This somehow implies that Curl_ftp_done() is buggy or that its 60
+</em><br />
+second
+<br />
+<p><em class="quotelev1">&gt; timeout is too short?
+</em><br />
+<p><em class="quotelev1">&gt; 
+</em><br />
+<p>&nbsp;
+<br />
+<p>I can only offer observation that something is wrong and what we did to
+<br />
+&quot;work around&quot; the issue did in fact help.  The &quot;work around&quot; was only an
+<br />
+attempt at explaining why the connection is being reset as opposed to a
+<br />
+correct 226/QUIT/221 message sequence.
+<br />
+<p>&nbsp;
+<br />
+<p><em class="quotelev2">&gt; &gt; THE THEORY:  It seems that if we close the data connection and clean
+</em><br />
+up
+<br />
+<p><em class="quotelev1">&gt; curl
+</em><br />
+<p><em class="quotelev2">&gt; &gt; too quickly, the MS FTP server is still processing or flushing the
+</em><br />
+last
+<br />
+<p><em class="quotelev1">&gt; bits
+</em><br />
+<p><em class="quotelev2">&gt; &gt; of the data stream to disk when the command connection is closed.
+</em><br />
+The
+<br />
+<p><em class="quotelev2">&gt; &gt; server thinks there was an error so it sends a RST and aborts,
+</em><br />
+causing
+<br />
+<p><em class="quotelev1">&gt; the
+</em><br />
+<p><em class="quotelev2">&gt; &gt; file to be truncated, thought curl thinks everything is happy.
+</em><br />
+<p><em class="quotelev1">&gt; 
+</em><br />
+<p><em class="quotelev1">&gt; I don't see how this theory matches how the code is written-
+</em><br />
+<p><em class="quotelev1">&gt; 
+</em><br />
+<p><em class="quotelev1">&gt; First, the data connection is *OF COURSE* closed when the transfer is
+</em><br />
+<p><em class="quotelev1">&gt; complete
+</em><br />
+<p><em class="quotelev1">&gt; as that's how a client signals that the transfer is complete. There's
+</em><br />
+no
+<br />
+<p><em class="quotelev1">&gt; other
+</em><br />
+<p><em class="quotelev1">&gt; way to do this - it just can't be wrong. See RFC959.
+</em><br />
+<p><em class="quotelev1">&gt; 
+</em><br />
+<p><em class="quotelev1">&gt; Then, libcurl _does_ wait for the server to tell that the operation is
+</em><br />
+<p><em class="quotelev1">&gt; fine
+</em><br />
+<p><em class="quotelev1">&gt; (or not) before it continues and if the server does tell it things are
+</em><br />
+<p><em class="quotelev1">&gt; fine
+</em><br />
+<p><em class="quotelev1">&gt; before it is then the server is buggy. If the server doesn't say that
+</em><br />
+and
+<br />
+<p><em class="quotelev1">&gt; libcurl still continues (but the 226 comes after yet a while) then our
+</em><br />
+<p><em class="quotelev1">&gt; hardcoded 60 second timeout in Curl_ftp_done() is too strict and
+</em><br />
+should be
+<br />
+<p><em class="quotelev1">&gt; prolonged.
+</em><br />
+<p>&nbsp;
+<br />
+<p>Again, I can only say that my observations suggest that there is a
+<br />
+scenario when either lib curl is not waiting for the 226 or we are not
+<br />
+cleaning up correctly whether due to a poor server implementation or to
+<br />
+an obscure bug or an error on our part.
+<br />
+<p>&nbsp;
+<br />
+<p>The 60 second timeout is also not being invoked because the file
+<br />
+transfer for a 1.103 MB file is taking less than a second to complete,
+<br />
+even in the failure case.
+<br />
+<p>&nbsp;
+<br />
+<p>In the packet traces for the files that fail, if we cleanup the curl
+<br />
+handle as soon as the file transfer is complete, we never see the 226 on
+<br />
+the wire, only a RST.  If we wait before cleaning up, the 226 is seen.
+<br />
+Again, it was a theory.  If there is a better theory then I'm up for
+<br />
+further enlightenment that can help us make file transfers to IIS
+<br />
+servers more reliable.
+<br />
+<p>&nbsp;
+<br />
+<p><em class="quotelev1">&gt; 
+</em><br />
+<p><em class="quotelev2">&gt; &gt; THE BIG QUESTION:  What is the mechanism to watch and wait for the
+</em><br />
+226 -
+<br />
+<p><em class="quotelev2">&gt; &gt; Transfer Complete message from the server before initiating the
+</em><br />
+cleanup?
+<br />
+<p><em class="quotelev1">&gt; 
+</em><br />
+<p><em class="quotelev1">&gt; libcurl always does that.
+</em><br />
+<p><em class="quotelev1">&gt; 
+</em><br />
+<p>&nbsp;
+<br />
+<p>Again, curl reports success, we clean up, packet trace shows server
+<br />
+sending a RST but no 226 on the wire and curl is not waiting any
+<br />
+significant time at all, but file is short a few hundred bytes.
+<br />
+<p>&nbsp;
+<br />
+<p>If we wait before we clean up, curl reports success, 226 is shown as
+<br />
+being sent from the server and the file is complete w/ no truncation.
+<br />
+However, I have noticed that there is still a RST and the client never
+<br />
+issues the QUIT.
+<br />
+<p>&nbsp;
+<br />
+<p><em class="quotelev2">&gt; &gt; I can not find any examples/docs of how this might be done as it
+</em><br />
+seems
+<br />
+<p><em class="quotelev2">&gt; &gt; that once initiated, curl handles everything internally and never
+</em><br />
+<p><em class="quotelev2">&gt; &gt; exposes the 226 or other server messages.
+</em><br />
+<p><em class="quotelev1">&gt; 
+</em><br />
+<p><em class="quotelev1">&gt; libcurl exposes the 226 response the same way as all other respones,
+</em><br />
+in
+<br />
+<p><em class="quotelev1">&gt; header
+</em><br />
+<p><em class="quotelev1">&gt; callbacks. All this that you talk about are details that just should
+</em><br />
+work,
+<br />
+<p><em class="quotelev1">&gt; with no particular treatment required from an application so I don't
+</em><br />
+see
+<br />
+<p><em class="quotelev1">&gt; why
+</em><br />
+<p><em class="quotelev1">&gt; any particular exposure of the 226 is necessary.
+</em><br />
+<p><em class="quotelev1">&gt; 
+</em><br />
+<p>&nbsp;
+<br />
+<p>Again, my theories could be wrong and I agree we shouldn't have to worry
+<br />
+about it, but it isn't working in this case and we are trying to
+<br />
+determine why.
+<br />
+<p>&nbsp;
+<br />
+<p>Where can we look, set breakpoints, what CURL options to set conditions
+<br />
+we can poll for?  The initial thought was that if we can watch for the
+<br />
+226 ourselves, we can then know it's safe to clean up.  
+<br />
+<p>&nbsp;
+<br />
+<p>Does curl use separate threads to process responses from the server?
+<br />
+Would it be possible to 
+<br />
+<p>&nbsp;
+<br />
+<p><em class="quotelev2">&gt; &gt; Any suggestions/helps/links are much appreciated!!  Thanks.
+</em><br />
+<p><em class="quotelev1">&gt; 
+</em><br />
+<p><em class="quotelev1">&gt; Oh, and please don't top-post, it makes it totally confusing to read
+</em><br />
+<p><em class="quotelev1">&gt; quotes in
+</em><br />
+<p><em class="quotelev1">&gt; mails in mixed (or just reversed) order.
+</em><br />
+<p><em class="quotelev1">&gt; 
+</em><br />
+<p><em class="quotelev1">&gt; --
+</em><br />
+<p><em class="quotelev1">&gt;   Commercial curl and libcurl Technical Support:
+</em><br />
+<a href="http://haxx.se/curl.html">http://haxx.se/curl.html</a>
+<br />
+<span id="received"><dfn>Received on</dfn> 2007-12-07</span>
+</div>
+<!-- body="end" -->
+<div class="foot">
+<map id="navbarfoot" name="navbarfoot" title="Related messages">
+<ul class="links">
+<li><dfn>This message</dfn>: [ <a href="#start">Message body</a> ]</li>
+<!-- lnext="start" -->
+<li><dfn>Next message</dfn>: <a href="0074.html" title="Next message in the list">Jamie Lokier: "Re: FTP keep alive connection"</a></li>
+<li><dfn>Previous message</dfn>: <a href="0072.html" title="Previous message in the list">Daniel Stenberg: "Re: CURLOPT_LOW_SPEED_* option doesn't work as expected"</a></li>
+<li><dfn>In reply to</dfn>: <a href="0050.html" title="Message to which this message replies">Daniel Stenberg: "RE: libcurl and Microsoft IIS FTP server"</a></li>
+<!-- lnextthread="start" -->
+<li><dfn>Next in thread</dfn>: <a href="0087.html" title="Next message in this discussion thread">Daniel Stenberg: "RE: libcurl and Microsoft IIS FTP server"</a></li>
+<li><a name="replies" id="replies"></a>
+<dfn>Reply</dfn>: <a href="0087.html" title="Message sent in reply to this message">Daniel Stenberg: "RE: libcurl and Microsoft IIS FTP server"</a></li>
+<!-- lreply="end" -->
+</ul>
+<ul class="links">
+<li><a name="options2" id="options2"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#73" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#73" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#73" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#73" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</map>
+</div>
+<!-- trailer="footer" -->
+<p>
+ These mail archives are generated by <a href="http://www.hypermail-project.org">hypermail</a>.
+</td></tr></table>
+<p>
+<a href="/donation.html"><img src="http://config.privoxy.org/send-banner?type=auto" border="0" title="Killed-/pix/donate.png-by-size" width="88" height="31"></a>
+<span class="aboutbox">
+Page updated February 27, 2008.<br>
+<a href="/about.html">web site info</a>
+</span>
+<!-- last-line-in-body -->
+</BODY>
+</HTML>
+</body>
+</html>

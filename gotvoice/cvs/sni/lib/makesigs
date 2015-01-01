@@ -1,0 +1,15 @@
+size=$1
+shift
+ratio=$1
+shift
+for i in $*
+do
+	cd $i
+	rm *.sni
+	echo $i
+	for j in *.wav
+	do
+		snigen -n${size} -a${ratio} -b0.5 -B1.00 $j -D0
+	done
+	cd ..
+done

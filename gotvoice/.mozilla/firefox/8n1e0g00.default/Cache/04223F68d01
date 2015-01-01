@@ -1,0 +1,1402 @@
+
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html>
+		<head>
+		<link rev="x-refresh" href="/cgi-bin/findweather/getForecast?query=98101&hourly=1&yday=101&weekday=Friday&MR=1" />
+		<meta name="ICBM" content="47.61167908, -122.33325958" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="pics-label" content='(pics-1.1 "http://www.icra.org/ratingsv02.html" comment "ICRAonline v2.0" l gen true for "http://www.wunderground.com" r (nz 0 vz 0 lz 0 oz 0 cz 0) "http://www.rsac.org/ratingsv01.html" l gen true for "http://www.wunderground.com"  r (n 0 s 0 v 0 l 0))' />
+  <title>Seattle, Washington (98101) Conditions &amp; Forecast : Weather Underground</title>
+		<link rel="stylesheet" type="text/css" href="http://icons-pe.wxug.com/css/wu2_base.css?v=2008033101" />
+		<link rel="stylesheet" type="text/css" href="http://icons-pe.wxug.com/css/wu2_print.css?v=2008030602" media="print" />
+		<link rel="stylesheet" type="text/css" href="http://icons-pe.wxug.com/css/wu2_conditions.css?v=2008022701" />
+	<link rel="search" href="/scripts/opensearchdescription.xml" type="application/opensearchdescription+xml" title="Weather Underground" />
+	<script language="javascript" type="text/javascript">
+		<!--
+			function bodyOnLoad()
+			{
+			
+			}
+		//-->
+	</script>
+		<script language="javascript" type="text/javascript" src="http://icons-pe.wxug.com/scripts/tablesort.js"></script>
+		<!-- PUT THIS TAG IN THE head SECTION -->
+		<script type="text/javascript" src="http://partner.googleadservices.com/gampad/google_service.js">
+		</script>
+		<script type="text/javascript">
+  GS_googleAddAdSenseService("ca-pub-0983527230240367");
+  GS_googleEnableAllServices();
+		</script>
+		<script type="text/javascript">
+  GA_googleAddSlot("ca-pub-0983527230240367", "300x250_ROS");
+		</script>
+		<script type="text/javascript">
+  GA_googleFetchAds();
+		</script>
+		<!-- END OF TAG FOR head SECTION -->
+</head>
+<!-- Iterate ad calls
+	
+		CAMPAIGN - DRPM-00060  - 
+	
+		CAMPAIGN -   - 
+	
+		CAMPAIGN -  popup - 
+	
+		CAMPAIGN -   - 
+	
+		CAMPAIGN -   - 
+	
+		CAMPAIGN - DRPM-00060 468x60_0 - 
+	
+--->
+<body onload="bodyOnLoad()">
+<a name="top"></a>
+<table cellpadding="0" cellspacing="0" class="full" id="topNav">
+	<tr>
+		<td class="vaT taC">
+		<div class="leftBar">
+		<div><a href="/"><img src="http://icons-pe.wxug.com/graphics/smash/wunderTransparent3.gif" width="120" height="70" alt="Weather Underground" /></a></div>
+		<div class="sm"><a href="http://m.wund.com/">Mobile</a> - <a href="http://i.wund.com/">iPhone</a></div>
+		</div>
+		</td>
+		<td class="vaM">
+		<form action=/cgi-bin/findweather/getForecast name="wxsearch">
+		<div class="taJ">Find the Weather for any <b>City</b>, <b>State</b> or <b>ZIP Code</b>, or <b>Airport Code</b> or <b>Country</b></div>
+		<table cellspacing="2" cellpadding="0">
+		<tr>
+		<td><input type="text" name="query" id="wxQuery" /></td>
+		<td>
+		<a href="javascript: document.wxsearch.submit();"><img src="http://icons-pe.wxug.com/graphics/smash/blue_search.gif" width="22" alt="Fast Forecast" height="22" /></a>
+		<noscript>
+		<input type="submit" value="Fast Forecast" />
+		</noscript>
+		</td>
+		</tr>
+		</table>
+		</form>
+		</td>
+		<td class="vaM taR full">
+		<script language="javascript" type="text/javascript">
+		if (screen.width >= 1024)
+		{
+		document.write('<a href="/wximage/viewsingleimage.html?mode=singleimage&handle=TAGE&number=1335&gallery=CURRWEATHER"><img src="http://icons-pe.wxug.com/data/wximagenew/t/TAGE/1335-banner.jpg" width="640" height="80" alt="View More Weather Photos" /></a>');
+		}
+		else
+		{
+		document.write('&nbsp;');
+		}
+		</script>
+		</td>
+	</tr>
+</table>
+<table cellpadding="0" cellspacing="0" class="full" id="wrapperTable">
+	<tr>
+		<td>
+		<div class="taC leftBar">
+		<a href="/members/signup.asp"><img src="http://icons-pe.wxug.com/graphics/wu2/signup.png" width="100" height="30" alt="Signup" /></a>
+		</div>
+		</td>
+		<td colspan="2" class="full" id="featuresBar">
+		<table cellpadding="0" cellspacing="0">
+	<tr>
+		<td class="topLeft"><div></div></td>
+		<td class="b">Features:</td>
+		<td class="topDiv"><div></div></td>
+		<td class="topLink"><a href="/wximage/viewimages.html">Wunder Photos</a></td>
+		<td class="topSep"><div></div></td>
+		<td class="topLink"><a href="/radar/map.asp">NEXRAD Radar</a></td>
+		<td class="topSep"><div></div></td>
+		<td class="topLink"><a href="/radar/mosaic.asp">Regional Radar</a></td>
+		<td class="topSep"><div></div></td>
+		<td class="topLink"><a href="/satellite/vis/1k/US.html">Zoom Satellite</a></td>
+		<td class="topSep"><div></div></td>
+		<td class="topLink"><a href="/US/Region/Northwest/Temperature.html">Maps</a></td>
+		<td class="topSep"><div></div></td>
+		<td class="topLink"><a href="/tripplanner/index.asp">Trip Planner</a></td>
+		<td class="topSep"><div></div></td>
+		<td class="topLink"><a href="/history/">History</a></td>
+		<td class="topSep"><div></div></td>
+		<td class="topLink"><a href="/download/index.asp">Downloads</a></td>
+		<td class="topSep"><div></div></td>
+		<td class="topLink"><a href="/sports/">Sports</a></td>
+		<td class="topSep"><div></div></td>
+		<td class="topLink"><a href="/tornado/">Tornadoes</a></td>
+		<td class="topRight"><div></div></td>
+	</tr>
+	<tr>
+		<td class="midDiv" colspan="23"><img src="http://icons-pe.wxug.com/graphics/smash/r3c1.gif" width="27" height="1" alt="" /></td>
+	</tr>
+</table>
+<table cellpadding="0" cellspacing="0">
+	<tr class="taC">
+		<td class="botLeft"><div></div></td>
+		<td class="bgG"><a href="/tropical/">Tropical / Hurricane</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/MAR/">Marine</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/severe.asp">Severe</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/sky/index.asp">Astronomy</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/ski/">Ski</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/education/education.asp">Education</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/webcams/index.html">Web Cams</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/blog/index.html?range=updated">Blogs</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/climate/">Climate Change</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/favorites/edit.html">Favorites</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/weatherstation/">Personal Weather Stations</a></td>
+		<td class="botRight"><div></div></td>
+	</tr>
+	<tr>
+		<td class="lowLeft"><img src="http://icons-pe.wxug.com/graphics/smash/r5c1.gif" width="27" height="2" alt="" /></td>
+		<td class="lowRight" colspan="22"><img src="http://icons-pe.wxug.com/graphics/smash/r5c5.gif" width="18" height="2" alt="" /></td>
+	</tr>
+</table>
+		</td>
+	</tr>
+	<tr>
+		<td class="vaT">
+		<div class="leftBar">
+		<div class="none taC"><a href="/members/signup.asp"><img src="http://icons-pe.wxug.com/graphics/sign-up10.gif" width="110" height="75" alt="Sign Up" /></a></div>
+		<form action="/login/submitlogin.php" method="post" class="bm10">
+		<input type="hidden" name="referer" value="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=98101&hourly=1&yday=101&weekday=Friday" />
+		<div class="smB">Email:</div>
+		<div class="taC"><input type="text" name="email" autocomplete="on" value="" style="width: 120px;" /></div>
+		<div class="smB">Password:</div>
+		<div class="taC"><input type="password" autocomplete="off" name="password" onchange="this.form.submit()" style="width: 120px;" /></div>
+		<div class="taC"><input type="submit" value="Sign In" /></div>
+		</form>
+	<div class="leftButton">
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td><a href="/help/"><img src="http://icons-pe.wxug.com/graphics/smash/blue_help.gif" width="22" height="22" alt="Help & Support"></a></td>
+		<td class="full"><a href="/help/">Help & Support</a></td>
+		</tr>
+		</table>
+	</div>
+	<div class="leftButton">
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td><a href="/member/membersettings.html"><img src="http://icons-pe.wxug.com/graphics/smash/blue_M.gif" width="22" height="22" alt="Preferences"></a></td>
+		<td class="full"><a href="/member/membersettings.html">Preferences</a></td>
+		</tr>
+		</table>
+	</div>
+	<div class="leftButton">
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td><a href="http://printer.wunderground.com/cgi-bin/findweather/getForecast?query=98101&hourly=1&yday=101&weekday=Friday"><img src="http://icons-pe.wxug.com/graphics/smash/blue_printer.gif" width="22" height="22" alt="Print This Page"></a></td>
+		<td class="full"><a href="http://printer.wunderground.com/cgi-bin/findweather/getForecast?query=98101&hourly=1&yday=101&weekday=Friday">Print This Page</a></td>
+		</tr>
+		</table>
+	</div>
+	<div class="leftButton">
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td><a href="/wxradio/index.html"><img src="http://icons-pe.wxug.com/graphics/smash/blue_radio.gif" width="22" height="22" alt="Weather Radio"></a></td>
+		<td class="full"><a href="/wxradio/index.html">Weather Radio</a></td>
+		</tr>
+		</table>
+	</div>
+	<div class="leftButton">
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td><a href="/printer/cityforecast.asp?zip=98101"><img src="http://icons-pe.wxug.com/graphics/smash/blue_forecastFlyer.gif" width="22" height="22" alt="Forecast Flyer"></a></td>
+		<td class="full"><a href="/printer/cityforecast.asp?zip=98101">Forecast Flyer</a></td>
+		</tr>
+		</table>
+	</div>
+	<h2>Favorites</h2>
+	<table cellspacing="0" cellpadding="1" class="full bgW">
+		<tr class="rowG">
+		<td colspan="2" class="sm">
+		<a href="/cgi-bin/findweather/getForecast?query=80014" class="nu b">Denver, CO</a>
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/cgi-bin/findweather/getForecast?query=80014"><img src="http://icons-pe.wxug.com/i/c/a/snow.gif" width="25" alt="Snow" height="25" class="condIcon" /></a>
+		</td>
+		<td class="full vaM">
+		<div>
+  <nobr><b>30.4</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>-0.9</b>&nbsp;&#176;C</nobr>
+</div>
+		<div>Snow</div>
+		</td>
+		</tr>
+		<tr class="rowG">
+		<td colspan="2" class="sm">
+		<a href="/cgi-bin/findweather/getForecast?query=10001" class="nu b">New York, NY</a>
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/cgi-bin/findweather/getForecast?query=10001"><img src="http://icons-pe.wxug.com/i/c/a/hazy.gif" width="25" alt="Haze" height="25" class="condIcon" /></a>
+		</td>
+		<td class="full vaM">
+		<div>
+  <nobr><b>67.0</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>19.4</b>&nbsp;&#176;C</nobr>
+</div>
+		<div>Haze</div>
+		</td>
+		</tr>
+		<tr class="rowG">
+		<td colspan="2" class="sm">
+		<a href="/cgi-bin/findweather/getForecast?query=94101" class="nu b">San Francisco, CA</a>
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/cgi-bin/findweather/getForecast?query=94101"><img src="http://icons-pe.wxug.com/i/c/a/partlycloudy.gif" width="25" alt="Partly Cloudy" height="25" class="condIcon" /></a>
+		</td>
+		<td class="full vaM">
+		<div>
+  <nobr><b>46.7</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>8.2</b>&nbsp;&#176;C</nobr>
+</div>
+		<div>Partly Cloudy</div>
+		</td>
+		</tr>
+	</table>
+	<p class="sm taC bgG tm10 bm10"><a href="/favorites/edit.html" class="leftLink">Edit My Favorites</a></p>
+		<a name="PPREFS"></a>
+<h2>Page Preferences</h2>
+<form action="post">
+	<table cellspacing="0" cellpadding="1" class="full bgW">
+		<tr class="rowG">
+		<td colspan="3">Language: <span class="b">English</span></td>
+		</tr>
+		<tr>
+		<td colspan="3" class="p5 sm">&raquo; <a href="/SwitchLanguage.asp">Select Language</a></td>
+		</tr>
+		<tr class="rowG">
+		<td colspan="3">Timezone: <span class="b">GMT</span></td>
+		</tr>
+		<tr>
+		<td colspan="3" class="p5 sm">&raquo; <a href="/picktimezone.asp?tz=America/Los_Angeles">Set My Timezone</a></td>
+		</tr>
+		<tr class="rowG">
+		<td colspan="3">
+		Units:
+		<span class="b">
+		Both
+		</span>
+		</td>
+		</tr>
+		<tr>
+		<td colspan="3" class="p5 sm taC">
+		<a href="/cgi-bin/findweather/getForecast?setunits=metric">Metric</a> | <a href="/cgi-bin/findweather/getForecast?setunits=english">English</a>
+		</td>
+		</tr>
+		<tr class="rowG">
+		<td class="b">Show</td>
+		<td class="taC b">Yes</td>
+		<td class="taC b">No</td>
+		</tr>
+		<tr>
+		<td class="vaT" style="border-bottom: 1px solid #EEE;">
+		Favorites
+		</td>
+		<td style="border-bottom: 1px solid #EEE;"><input type="radio" name="0&value" value="1" checked="checked" onclick="location.href='/cgi-bin/findweather/getForecast?setpref=FAVS&value=1&referer=%2fcgi%2dbin%2ffindweather%2fgetForecast%3fquery%3d98101%26hourly%3d1%26yday%3d101%26weekday%3dFriday';" /></td>
+		<td style="border-bottom: 1px solid #EEE;"><input type="radio" name="0&value" value="0" onclick="location.href='/cgi-bin/findweather/getForecast?setpref=FAVS&value=0&referer=%2fcgi%2dbin%2ffindweather%2fgetForecast%3fquery%3d98101%26hourly%3d1%26yday%3d101%26weekday%3dFriday';" /></td>
+		</tr>
+		<tr>
+		<td class="vaT" style="border-bottom: 1px solid #EEE;">
+		Wunder Photos
+		</td>
+		<td style="border-bottom: 1px solid #EEE;"><input type="radio" name="10&value" value="1" checked="checked" onclick="location.href='/cgi-bin/findweather/getForecast?setpref=WPHO&value=1&referer=%2fcgi%2dbin%2ffindweather%2fgetForecast%3fquery%3d98101%26hourly%3d1%26yday%3d101%26weekday%3dFriday';" /></td>
+		<td style="border-bottom: 1px solid #EEE;"><input type="radio" name="10&value" value="0" onclick="location.href='/cgi-bin/findweather/getForecast?setpref=WPHO&value=0&referer=%2fcgi%2dbin%2ffindweather%2fgetForecast%3fquery%3d98101%26hourly%3d1%26yday%3d101%26weekday%3dFriday';" /></td>
+		</tr>
+		<tr>
+		<td class="vaT" style="border-bottom: 1px solid #EEE;">
+		Top Photo Banner
+		</td>
+		<td style="border-bottom: 1px solid #EEE;"><input type="radio" name="11&value" value="1" checked="checked" onclick="location.href='/cgi-bin/findweather/getForecast?setpref=PHOT&value=1&referer=%2fcgi%2dbin%2ffindweather%2fgetForecast%3fquery%3d98101%26hourly%3d1%26yday%3d101%26weekday%3dFriday';" /></td>
+		<td style="border-bottom: 1px solid #EEE;"><input type="radio" name="11&value" value="0" onclick="location.href='/cgi-bin/findweather/getForecast?setpref=PHOT&value=0&referer=%2fcgi%2dbin%2ffindweather%2fgetForecast%3fquery%3d98101%26hourly%3d1%26yday%3d101%26weekday%3dFriday';" /></td>
+		</tr>
+		<tr>
+		<td class="vaT" style="border-bottom: 1px solid #EEE;">
+		Gift Promo
+		</td>
+		<td style="border-bottom: 1px solid #EEE;"><input type="radio" name="12&value" value="1" checked="checked" onclick="location.href='/cgi-bin/findweather/getForecast?setpref=GIFT&value=1&referer=%2fcgi%2dbin%2ffindweather%2fgetForecast%3fquery%3d98101%26hourly%3d1%26yday%3d101%26weekday%3dFriday';" /></td>
+		<td style="border-bottom: 1px solid #EEE;"><input type="radio" name="12&value" value="0" onclick="location.href='/cgi-bin/findweather/getForecast?setpref=GIFT&value=0&referer=%2fcgi%2dbin%2ffindweather%2fgetForecast%3fquery%3d98101%26hourly%3d1%26yday%3d101%26weekday%3dFriday';" /></td>
+		</tr>
+		<tr>
+		<td class="vaT" style="border-bottom: 1px solid #EEE;">
+		Wunder Photos
+		</td>
+		<td style="border-bottom: 1px solid #EEE;"><input type="radio" name="2&value" value="1" checked="checked" onclick="location.href='/cgi-bin/findweather/getForecast?setpref=WPHO&value=1&referer=%2fcgi%2dbin%2ffindweather%2fgetForecast%3fquery%3d98101%26hourly%3d1%26yday%3d101%26weekday%3dFriday';" /></td>
+		<td style="border-bottom: 1px solid #EEE;"><input type="radio" name="2&value" value="0" onclick="location.href='/cgi-bin/findweather/getForecast?setpref=WPHO&value=0&referer=%2fcgi%2dbin%2ffindweather%2fgetForecast%3fquery%3d98101%26hourly%3d1%26yday%3d101%26weekday%3dFriday';" /></td>
+		</tr>
+	</table>
+</form>
+<h2>Maps</h2>
+	<ul class="leftList">
+		<li><a href="/US/Region/Northwest/Temperature.html">Temperature</a></li>
+		<li><a href="/US/Region/Northwest/HeatIndex.html">Heat Index</a></li>
+		<li><a href="/US/Region/Northwest/WindChill.html">Windchill</a></li>
+		<li><a href="/US/Region/Northwest/Humidity.html">Humidity</a></li>
+		<li><a href="/US/Region/Northwest/Radar.html">Radar</a></li>
+		<li><a href="/US/Region/Northwest/Dewpoint.html">Dew Point</a></li>
+		<li><a href="/US/Region/Northwest/WindSpeed.html">Wind</a></li>
+		<li><a href="/US/Region/Northwest/Visibility.html">Visibility</a></li>
+		<li><a href="/US/Region/Northwest/VisSatellite.html">Visible Satellite</a></li>
+		<li><a href="/US/Region/Northwest/IRSatellite.html">Satellite</a></li>
+		<li><a href="/US/Region/Northwest/Fronts.html">Fronts</a></li>
+		<li><a href="/US/Region/Northwest/SnowDepth.html">Snow Depth</a></li>
+		<li><a href="/US/Region/Northwest/Precip.html">Precipitation</a></li>
+		<li><a href="/US/Region/Northwest/JetStream.html">Jet Stream</a></li>
+		<li><a href="/US/Region/Northwest/Flight.html">Flight Rules</a></li>
+	</ul>
+  <div class="b bgG p3">Health Maps</div>
+	<ul class="leftList">
+		<li><a href="/US/Region/Northwest/UVForecast.html">UV Forecast</a></li>
+		<li><a href="/US/Region/Northwest/AirQuality.html">Air Quality</a></li>
+		<li><a href="/US/Region/Northwest/MaxAQI.html">Peak Air Quality Index</a></li>
+	</ul>
+<div class="b bgG p3">International</div>
+<ul class="leftList">
+	<li><a href="/US/Region/US/Temperature.html">United States</a></li>
+	<li><a href="/global/Region/CN/Temperature.html">Canada</a></li>
+	<li><a href="/global/Region/CA/Temperature.html">Mexico</a></li>
+	<li><a href="/global/Region/CA/Temperature.html">Central America</a></li>
+	<li><a href="/global/Region/SA/Temperature.html">South America</a></li>
+	<li><a href="/global/Region/AS/Temperature.html">Northern Asia</a></li>
+	<li><a href="/global/Region/A2/Temperature.html">Southern Asia</a></li>
+	<li><a href="/global/Region/EU/Temperature.html">Europe</a></li>
+	<li><a href="/global/Region/AU/Temperature.html">Australia</a></li>
+	<li><a href="/global/Region/AF/Temperature.html">Africa</a></li>
+	<li><a href="/global/IS_ST_Index.html">Islands</a></li>
+	<li><a href="/global/Region/AN/Temperature.html">Antarctica</a></li>
+</ul>
+<h2>Information</h2>
+<ul class="leftList">
+	<li><a href="/help/">Need Help?</a></li>
+	<li><a href="/about/faq/faq.asp">Link to Us</a></li>
+	<li><a href="/about/contact.asp">About Us</a></li>
+	<li><a href="/autobrand/">Custom Weather</a></li>
+	<li><a href="/newspaper/">Newspaper Weather</a></li>
+	<li><a href="/about/adinfo.asp">Advertising</a></li>
+	<li><a href="http://www.cafepress.com/wunderground" target="new">Online WunderStore</a></li>
+</ul>
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class=smalltable>
+<!-- ADPL-00032 -->
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Vacation Deals</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<center>
+<a href="http://www.redweek.com">
+<img src="http://icons.wunderground.com/ads/images/ADPL-00032-Redweek_logo2.jpg" width=100 height=25 border=0></a></center>
+<li><a href="http://www.redweek.com">Save On Vacation Condo Rentals</a></li>
+<li><a href="http://www.redweek.com">Save money with Timeshare rentals</a></li>
+</td></tr>
+</table>
+</td></tr>
+<!-- CNDO-00002 -->
+<tr><td bgcolor="#000080" align=center class=leftadhead><font face="Arial,Helvetica" color="FFFFFF"><b>Seattle</b></font> <a href="http://www.condocompany.com/"><font face="Arial,Helvetica" color="FFFFFF"><b>Condos</b></font></a><font face="Arial,Helvetica" color="FFFFFF"><b> and Vacations</b>
+</font></td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<a href="http://www.condocompany.com/"><center><img src="http://icons.wunderground.com/ads/images/CONDO-cclogo.jpg" width="100" alt="Condominiums for sale, for rent, and vacation rentals" height="25" border="0"></center></a>
+<li><a href="http://miami.condocompany.com">Miami Condos</a></li>
+<li><a href="http://seattle.condocompany.com/">Seattle Condos</a></li>
+<li><a href="http://www.beachstore.com/">Beach Chairs
+</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Seattle Tickets and Technology</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.xpandercommunications.com/">VOIP Phone Systems</a></li>
+<li><a href="http://www.dwtickets.com/">Disney Tickets</a></li>
+<li><a href="http://www.premiumseatsusa.com/">Event and Concert Tickets</a></li>
+<li><a href="http://www.orlandofuntickets.com/">Disney World Tickets</a></li>
+</td></tr>
+</table>
+</td></tr><!-- UGEN-00003 -->
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Real Estate Guide</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.50stateshomesforsale.com">Seattle Homes For Sale</a></li>
+<li><a href="http://www.jbriggsrealty.com">Seattle Real Estate Agents</a></li>
+<li><a href="http://www.icomjh.com">Seattle Investment Property</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Hot Travel Savings</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.vacationpackages.bz">Seattle Vacation Packages</a></li>
+<li><a href="http://www.rentalcars.bz">Seattle Car Rentals</a></li>
+<li><a href="http://www.findhotels.cc">Seattle Hotels</a></li>
+<li><a href="http://www.airlinetickets.vc">Seattle Airline Tickets</a></li>
+<li><a href="http://www.internetproviders.cc">Seattle Internet Providers</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Great Vacation Ideas</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.funvacationscheap.com">Seattle Cheap Vacations</a></li>
+<li><a href="http://www.bedandbreakfastideas.net">Seattle Bed and Breakfast</a></li>
+<li><a href="http://www.vacationideas.biz">Seattle Vacation</a></li>
+<li><a href="http://www.4lasvegasvacation.org">Las Vegas Travel Deals</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Real Estate</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.us-homes-for-sale.com">Seattle Homes For Sale</a></li>
+<li><a href="http://www.foreclosures.bz">Seattle Foreclosures</a></li>
+<li><a href="http://www.homeownersinsurance.cc">Washington Homeowners Insurance</a></li>
+<li><a href="http://www.1st-nationwide-mortgage-loans.com">Seattle Real Estate</a></li>
+<li><a href="http://www.fasthighspeedinternetaccess.com">Seattle High Speed Internet</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Fantastic Rental Deals</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.4vacationrentals.info">Seattle Vacation Rentals</a></li>
+<li><a href="http://www.timeshares.la">Seattle Timeshares</a></li>
+<li><a href="http://www.apartmentsforrent.bz">Seattle Apartments</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Cosmetic Surgery</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://tummytuck.esurgery.us">Seattle Tummy Tuck</a></li>
+<li><a href="http://cosmetic.esurgery.us">Cosmetic Surgery Seattle</a></li>
+<li><a href="http://www.lapbandsurgeryanswers.com">Seattle Lap Band Surgery</a></li>
+<li><a href="http://bariatric.esurgery.us">Seattle Bariatric Surgery</a></li>
+<li><a href="http://liposuction.esurgery.us">Liposuction Seattle</a></li>
+<li><a href="http://www.plasticsurgeonstat.com">Seattle Plastic Surgeon</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Financial Advice on...</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.foreclosure.vc">Seattle Foreclosure</a></li>
+<li><a href="http://www.personalinjuryattorney.bz">Seattle Personal Injury Attorney</a></li>
+<li><a href="http://www.bankruptcy.vc">Washington Bankruptcy</a></li>
+<li><a href="http://www.jobs411.biz">Seattle Jobs</a></li>
+<li><a href="http://www.broadband-service-providers.com">Seattle Broadband Service Providers</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Detailed Information on...</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.taxpreparation.la">Seattle Tax Preparation</a></li>
+<li><a href="http://www.workathomejobslisting.com">Work at Home Jobs</a></li>
+<li><a href="http://www.singlesnearyou.org">Seattle Singles - Online Dating</a></li>
+<li><a href="http://www.tummytuckanswers.com">Seattle Tummy Tucks</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>How To Save Money On...</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.carinsurance.vc">Seattle Car Insurance</a></li>
+<li><a href="http://www.cheapflightsto.info">Seattle Cheap Flights</a></li>
+<li><a href="http://www.usedcars.vc">Seattle Used Cars</a></li>
+<li><a href="http://www.4traveldeals.org">Seattle Travel Deals</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Industrial Magnets</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.magnetsinc.com">Magnets</a></li>
+</td></tr>
+</table>
+</td></tr><!-- HMKY-00002 -->
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF">
+<a href="http://www.homekeys.net/" target="_blank"><font color="#FFFFFF"><b>Real Estate</b></font></a>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.byownerhomes.com" "target="_blank">
+For Sale By Owner <br>Flat Fee MLS Listing<br></a></li>
+<li><a href="http://www.reversemortgageloansusa.net" "target="_blank">Reverse Mortgages
+<br>Mortgage Loans</a></li>
+</td></tr>
+</table>
+</td></tr><!-- ATDC-00001 -->
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Tickets and Worldwide Attractions</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.attraction-tickets-direct.co.uk">Disney Tickets</a></li>
+<li><a href="http://www.dosomethingdifferent.com">Tours and Tickets</a></li>
+</td></tr>
+</table>
+</td></tr><!-- RXCA-00007 -->
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Canadian Pharmacy</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<li><a href="http://www.rxcarecanada.com">Canada Pharmacy</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Cheap Hotels</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.hoteldealsandmore.com">Cheap Hotel</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Find Jobs In Your City</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.mployd.com">Seattle Jobs </a></li>
+</td></tr>
+</table>
+</td></tr><!-- ONMP-00001 -->
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Condos for Sale</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.prodigynetwork.com">Condos for Sale</a></li>
+<li><a href="http://www.mareazul.com">Playa del Carmen Condos</a></li>
+<li><a href="http://www.theflowerexchange.com">Wholesale Flowers</a></li>
+</td></tr>
+</table>
+</td></tr><!-- GREE-00006 -->
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>College Students</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.greek101.com/">Fraternity</a></li>
+<li><a href="http://www.greek101.com/">Sorority</a></li>
+<li><a href="http://puertorealestate.com">Puerto Escondido</a></li>
+</td></tr>
+</table>
+</td></tr>
+<!-- goog-00015 -->
+<tr><td bgcolor="000080" align=center class=leftadhead><font face="Arial,Helvetica"
+color="#ffffff">
+<b>Google Search
+</b></font>
+</td></tr>
+<tr>
+<td bgcolor=#ffffff class=leftadbody>
+<form action=http://www.google.com/custom>
+Search the Net!<br>
+<input type=text name=q size=14>
+<INPUT type=hidden name=cof VALUE="LW:440;L:http://www.wunderground.com/graphics/WUIlogo.gif;LH:55;AH:center;AWFID:1351276b545b1450;">
+<table><tr><td><input type=submit value="Search"><input type=hidden name=start value=0></td></tr></table>
+<a href="http://www.google.com">Powered by Google</a>
+<br>
+</form>
+</td>
+</tr>
+</table>
+<div class="sm" style="color: #EEE;">
+	<!-- SERVERHOSTNAME -->
+	l3a20<br />
+	Apr 8 2008 14:45:57<br />
+</div>
+		</div>
+		</td>
+		<td id="gutter"><div></div></td>
+		<td class="full vaT" id="content">
+		<a name="a_topad"></a>
+		<div class="taC tm10">
+		<? # ---- Special Case Marine Ad for Marine Pages --- ?>
+  <!-- Campaign=DRPM-00060 Views=1 Caps=[86400,1207838761] -->
+
+<iframe src="http://view.atdmt.com/APM/iview/wthrnful0140000024ful/direct;wi.728;hi.90/01?click=" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" allowtransparency="true" width="728" height="90">
+<script language="JavaScript" type="text/javascript">
+document.write('<a href="http://clk.atdmt.com/APM/go/wthrnful0140000024ful/direct;wi.728;hi.90/01/" target="_blank"><img src="http://view.atdmt.com/APM/view/wthrnful0140000024ful/direct;wi.728;hi.90/01/"/></a>');
+</script><noscript><a href="http://clk.atdmt.com/APM/go/wthrnful0140000024ful/direct;wi.728;hi.90/01/" target="_blank"><img src="http://view.atdmt.com/APM/view/wthrnful0140000024ful/direct;wi.728;hi.90/01/" border="0" /></a></noscript></iframe>
+		</div>
+		<div class="tm10">
+<h1>National Weather Service Hourly Forecast for Friday at 98101</h1>
+<div id="titleBar">Forecast data from the <a href="http://www.nws.noaa.gov/ndfd/">National Digital Forecast Database</a></div>
+<div class="selectorBox">
+	<table cellspacing="0" cellpadding="0" class="full" id="typeTable">
+		<tr>
+		<td class="inactiveTab"><a href="/cgi-bin/findweather/getForecast?hourly=1&query=98101&yday=99&weekday=Wednesday">Wednesday</a></td>
+		<td class="inactiveTab"><a href="/cgi-bin/findweather/getForecast?hourly=1&query=98101&yday=100&weekday=Thursday">Thursday</a></td>
+		<td class="activeTab">Friday</td>
+		<td class="inactiveTab"><a href="/cgi-bin/findweather/getForecast?hourly=1&query=98101&yday=102&weekday=Saturday">Saturday</a></td>
+		<td class="inactiveTab"><a href="/cgi-bin/findweather/getForecast?hourly=1&query=98101&yday=103&weekday=Sunday">Sunday</a></td>
+		<td class="inactiveTab"><a href="/cgi-bin/findweather/getForecast?hourly=1&query=98101&yday=104&weekday=Monday">Monday</a></td>
+		<td class="inactiveTab"><a href="/cgi-bin/findweather/getForecast?hourly=1&query=98101&yday=105&weekday=Tuesday">Tuesday</a></td>
+		<td class="inactiveTab"><a href="/cgi-bin/findweather/getForecast?hourly=1&query=98101&yday=106&weekday=Wednesday">Wednesday</a></td>
+		</tr>
+	</table>
+</div>
+<table cellspacing="0" cellpadding="0" class="full" id="hourlyTable">
+	<tr>
+		<td class="taC vaB" style="width: 12.5%; background-color: #FF0; color: #000;">
+		<div class="b">2&nbsp;AM</div>
+		</td>
+		<td class="taC vaB" style="width: 12.5%; background-color: #FF0; color: #000;">
+		<div class="b">5&nbsp;AM</div>
+		</td>
+		<td class="taC vaB" style="width: 12.5%; background-color: #FF0; color: #000;">
+		<div class="b">8&nbsp;AM</div>
+		</td>
+		<td class="taC vaB" style="width: 12.5%; background-color: #FF0; color: #000;">
+		<div class="b">11&nbsp;AM</div>
+		</td>
+		<td class="taC vaB" style="width: 12.5%; background-color: #172C6C; color: #FFF;">
+		<div class="b">2&nbsp;PM</div>
+		</td>
+		<td class="taC vaB" style="width: 12.5%; background-color: #172C6C; color: #FFF;">
+		<div class="b">5&nbsp;PM</div>
+		</td>
+		<td class="taC vaB" style="width: 12.5%; background-color: #172C6C; color: #FFF;">
+		<div class="b">8&nbsp;PM</div>
+		</td>
+		<td class="taC vaB" style="width: 12.5%; background-color: #172C6C; color: #FFF;">
+		<div class="b">11&nbsp;PM</div>
+		</td>
+	</tr>
+		<tr class="sectionTitle">
+		<td colspan="8"><span class="red">Temperature</span> / <span class="green">Dew Point</span> (&deg;F):</td>
+		</tr>
+	<tr>
+		<td class="taC vaB" style="background-color: #FFC; color: #000;">
+		<div>40 / 38</div>
+		<img src="http://icons-pe.wxug.com/graphics/graph_redtop.gif" width="15" height="5" /><br />
+		<img src="http://icons-pe.wxug.com/graphics/graph_red.gif" width="15" height="4" /><br />
+		<img src="http://icons-pe.wxug.com/graphics/graph_greentop.gif" width="15" height="5" /><br />
+		<img src="http://icons-pe.wxug.com/graphics/graph_green.gif" width="15" height="12" /><br />
+		<img src="http://icons-pe.wxug.com/graphics/graph_greenbottom.gif" width="15" height="5" /><br />
+		</td>
+		<td class="taC vaB" style="background-color: #FFC; color: #000;">
+		<div>40 / 38</div>
+		<img src="http://icons-pe.wxug.com/graphics/graph_redtop.gif" width="15" height="5" /><br />
+		<img src="http://icons-pe.wxug.com/graphics/graph_red.gif" width="15" height="4" /><br />
+		<img src="http://icons-pe.wxug.com/graphics/graph_greentop.gif" width="15" height="5" /><br />
+		<img src="http://icons-pe.wxug.com/graphics/graph_green.gif" width="15" height="12" /><br />
+		<img src="http://icons-pe.wxug.com/graphics/graph_greenbottom.gif" width="15" height="5" /><br />
+		</td>
+		<td class="taC vaB" style="background-color: #FFC; color: #000;">
+		<div>38 / 38</div>
+		<img src="http://icons-pe.wxug.com/graphics/graph_redgreentop.gif" width="15" height="5" /><br />
+		<img src="http://icons-pe.wxug.com/graphics/graph_green.gif" width="15" height="12" /><br />
+		<img src="http://icons-pe.wxug.com/graphics/graph_greenbottom.gif" width="15" height="5" /><br />
+		</td>
+		<td class="taC vaB" style="background-color: #FFC; color: #000;">
+		<div>47 / 38</div>
+		<img src="http://icons-pe.wxug.com/graphics/graph_redtop.gif" width="15" height="5" /><br />
+		<img src="http://icons-pe.wxug.com/graphics/graph_red.gif" width="15" height="15" /><br />
+		<img src="http://icons-pe.wxug.com/graphics/graph_greentop.gif" width="15" height="5" /><br />
+		<img src="http://icons-pe.wxug.com/graphics/graph_green.gif" width="15" height="12" /><br />
+		<img src="http://icons-pe.wxug.com/graphics/graph_greenbottom.gif" width="15" height="5" /><br />
+		</td>
+		<td class="taC vaB" style="background-color: #E8EFFC; color: #000;">
+		<div>59 / 36</div>
+		<img src="http://icons-pe.wxug.com/graphics/graph_redtop.gif" width="15" height="5" /><br />
+		<img src="http://icons-pe.wxug.com/graphics/graph_red.gif" width="15" height="37" /><br />
+		<img src="http://icons-pe.wxug.com/graphics/graph_greentop.gif" width="15" height="5" /><br />
+		<img src="http://icons-pe.wxug.com/graphics/graph_green.gif" width="15" height="9" /><br />
+		<img src="http://icons-pe.wxug.com/graphics/graph_greenbottom.gif" width="15" height="5" /><br />
+		</td>
+		<td class="taC vaB" style="background-color: #E8EFFC; color: #000;">
+		<div>61 / 36</div>
+		<img src="http://icons-pe.wxug.com/graphics/graph_redtop.gif" width="15" height="5" /><br />
+		<img src="http://icons-pe.wxug.com/graphics/graph_red.gif" width="15" height="40" /><br />
+		<img src="http://icons-pe.wxug.com/graphics/graph_greentop.gif" width="15" height="5" /><br />
+		<img src="http://icons-pe.wxug.com/graphics/graph_green.gif" width="15" height="9" /><br />
+		<img src="http://icons-pe.wxug.com/graphics/graph_greenbottom.gif" width="15" height="5" /><br />
+		</td>
+		<td class="taC vaB" style="background-color: #E8EFFC; color: #000;">
+		<div>52 / 41</div>
+		<img src="http://icons-pe.wxug.com/graphics/graph_redtop.gif" width="15" height="5" /><br />
+		<img src="http://icons-pe.wxug.com/graphics/graph_red.gif" width="15" height="18" /><br />
+		<img src="http://icons-pe.wxug.com/graphics/graph_greentop.gif" width="15" height="5" /><br />
+		<img src="http://icons-pe.wxug.com/graphics/graph_green.gif" width="15" height="17" /><br />
+		<img src="http://icons-pe.wxug.com/graphics/graph_greenbottom.gif" width="15" height="5" /><br />
+		</td>
+		<td class="taC vaB" style="background-color: #E8EFFC; color: #000;">
+		<div>47 / 40</div>
+		<img src="http://icons-pe.wxug.com/graphics/graph_redtop.gif" width="15" height="5" /><br />
+		<img src="http://icons-pe.wxug.com/graphics/graph_red.gif" width="15" height="11" /><br />
+		<img src="http://icons-pe.wxug.com/graphics/graph_greentop.gif" width="15" height="5" /><br />
+		<img src="http://icons-pe.wxug.com/graphics/graph_green.gif" width="15" height="16" /><br />
+		<img src="http://icons-pe.wxug.com/graphics/graph_greenbottom.gif" width="15" height="5" /><br />
+		</td>
+	</tr>
+		<tr class="sectionTitle">
+		<td colspan="8">Humidity (%):</td>
+		</tr>
+	<tr>
+		<td class="taC vaB" style="background-color: #FFC; color: #000;">
+		92%
+		</td>
+		<td class="taC vaB" style="background-color: #FFC; color: #000;">
+		96%
+		</td>
+		<td class="taC vaB" style="background-color: #FFC; color: #000;">
+		92%
+		</td>
+		<td class="taC vaB" style="background-color: #FFC; color: #000;">
+		71%
+		</td>
+		<td class="taC vaB" style="background-color: #E8EFFC; color: #000;">
+		41%
+		</td>
+		<td class="taC vaB" style="background-color: #E8EFFC; color: #000;">
+		39%
+		</td>
+		<td class="taC vaB" style="background-color: #E8EFFC; color: #000;">
+		66%
+		</td>
+		<td class="taC vaB" style="background-color: #E8EFFC; color: #000;">
+		76%
+		</td>
+	</tr>
+		<tr class="sectionTitle">
+		<td colspan="8">Wind (mph):</td>
+		</tr>
+	<tr>
+		<td class="taC vaB" style="background-color: #FFC; color: #000;">
+		<div><img src="http://icons-pe.wxug.com/graphics/44x44_East_b.gif" width="19" height="19" alt="East" /></div>
+		<div>0 mph East</div>
+		<div>(90&deg;)</div>
+		</td>
+		<td class="taC vaB" style="background-color: #FFC; color: #000;">
+		<div><img src="http://icons-pe.wxug.com/graphics/44x44_South_b.gif" width="24" height="24" alt="South" /></div>
+		<div>5 mph South</div>
+		<div>(170&deg;)</div>
+		</td>
+		<td class="taC vaB" style="background-color: #FFC; color: #000;">
+		<div><img src="http://icons-pe.wxug.com/graphics/44x44_South_b.gif" width="24" height="24" alt="South" /></div>
+		<div>2 mph South</div>
+		<div>(180&deg;)</div>
+		</td>
+		<td class="taC vaB" style="background-color: #FFC; color: #000;">
+		<div><img src="http://icons-pe.wxug.com/graphics/44x44_South_b.gif" width="24" height="24" alt="South" /></div>
+		<div>5 mph South</div>
+		<div>(180&deg;)</div>
+		</td>
+		<td class="taC vaB" style="background-color: #E8EFFC; color: #000;">
+		<div><img src="http://icons-pe.wxug.com/graphics/44x44_SE_b.gif" width="19" height="19" alt="SE" /></div>
+		<div>1 mph SE</div>
+		<div>(140&deg;)</div>
+		</td>
+		<td class="taC vaB" style="background-color: #E8EFFC; color: #000;">
+		<div><img src="http://icons-pe.wxug.com/graphics/44x44_NNE_b.gif" width="19" height="19" alt="NNE" /></div>
+		<div>1 mph NNE</div>
+		<div>(20&deg;)</div>
+		</td>
+		<td class="taC vaB" style="background-color: #E8EFFC; color: #000;">
+		<div><img src="http://icons-pe.wxug.com/graphics/44x44_North_b.gif" width="24" height="24" alt="North" /></div>
+		<div>5 mph North</div>
+		<div>(0&deg;)</div>
+		</td>
+		<td class="taC vaB" style="background-color: #E8EFFC; color: #000;">
+		<div><img src="http://icons-pe.wxug.com/graphics/44x44_North_b.gif" width="24" height="24" alt="North" /></div>
+		<div>5 mph North</div>
+		<div>(10&deg;)</div>
+		</td>
+	</tr>
+		<tr class="sectionTitle">
+		<td colspan="8">Conditions:</td>
+		</tr>
+	<tr>
+		<td class="taC vaT" style="background-color: #FFC; color: #000;">
+		<div><img src="http://icons-pe.wxug.com/i/c/a/nt_fog.gif" width="42" height="42" alt="" class="condIcon" /></div>
+		Patchy Fog
+		</td>
+		<td class="taC vaT" style="background-color: #FFC; color: #000;">
+		<div><img src="http://icons-pe.wxug.com/i/c/a/nt_fog.gif" width="42" height="42" alt="" class="condIcon" /></div>
+		Patchy Fog
+		</td>
+		<td class="taC vaT" style="background-color: #FFC; color: #000;">
+		<div><img src="http://icons-pe.wxug.com/i/c/a/fog.gif" width="42" height="42" alt="" class="condIcon" /></div>
+		Patchy Fog
+		</td>
+		<td class="taC vaT" style="background-color: #FFC; color: #000;">
+		<div><img src="http://icons-pe.wxug.com/i/c/a/partlycloudy.gif" width="42" height="42" alt="" class="condIcon" /></div>
+		</td>
+		<td class="taC vaT" style="background-color: #E8EFFC; color: #000;">
+		<div><img src="http://icons-pe.wxug.com/i/c/a/partlycloudy.gif" width="42" height="42" alt="" class="condIcon" /></div>
+		</td>
+		<td class="taC vaT" style="background-color: #E8EFFC; color: #000;">
+		<div><img src="http://icons-pe.wxug.com/i/c/a/clear.gif" width="42" height="42" alt="" class="condIcon" /></div>
+		</td>
+		<td class="taC vaT" style="background-color: #E8EFFC; color: #000;">
+		<div><img src="http://icons-pe.wxug.com/i/c/a/nt_clear.gif" width="42" height="42" alt="" class="condIcon" /></div>
+		</td>
+		<td class="taC vaT" style="background-color: #E8EFFC; color: #000;">
+		<div><img src="http://icons-pe.wxug.com/i/c/a/nt_clear.gif" width="42" height="42" alt="" class="condIcon" /></div>
+		</td>
+	</tr>
+		<tr class="sectionTitle">
+		<td colspan="8">Probability of Precipitation (%):</td>
+		</tr>
+	<tr>
+		<td class="taC vaB" style="background-color: #FFC; color: #000;">
+		10%
+		</td>
+		<td class="taC vaB" style="background-color: #FFC; color: #000;">
+		10%
+		</td>
+		<td class="taC vaB" style="background-color: #FFC; color: #000;">
+		0%
+		</td>
+		<td class="taC vaB" style="background-color: #FFC; color: #000;">
+		0%
+		</td>
+		<td class="taC vaB" style="background-color: #E8EFFC; color: #000;">
+		0%
+		</td>
+		<td class="taC vaB" style="background-color: #E8EFFC; color: #000;">
+		0%
+		</td>
+		<td class="taC vaB" style="background-color: #E8EFFC; color: #000;">
+		0%
+		</td>
+		<td class="taC vaB" style="background-color: #E8EFFC; color: #000;">
+		0%
+		</td>
+	</tr>
+		<tr class="sectionTitle">
+		<td colspan="8">Cloud Cover (%):</td>
+		</tr>
+	<tr>
+		<td class="taC vaB" style="background-color: #FFC; color: #000;">
+		48%
+		</td>
+		<td class="taC vaB" style="background-color: #FFC; color: #000;">
+		37%
+		</td>
+		<td class="taC vaB" style="background-color: #FFC; color: #000;">
+		37%
+		</td>
+		<td class="taC vaB" style="background-color: #FFC; color: #000;">
+		32%
+		</td>
+		<td class="taC vaB" style="background-color: #E8EFFC; color: #000;">
+		32%
+		</td>
+		<td class="taC vaB" style="background-color: #E8EFFC; color: #000;">
+		20%
+		</td>
+		<td class="taC vaB" style="background-color: #E8EFFC; color: #000;">
+		20%
+		</td>
+		<td class="taC vaB" style="background-color: #E8EFFC; color: #000;">
+		15%
+		</td>
+	</tr>
+</table>
+<div class="pageTop"><span class="noPrint">: <a href="#">Top of Page</a> :</span></div>
+<table cellspacing="0" cellpadding="0" class="full tm10">
+	<tr class="vaT">
+		<td class="full">
+		<table cellspacing="0" cellpadding="0" class="blueTop">
+		<tr>
+		<td class="hLeft"><img src="http://icons-pe.wxug.com/graphics/wu2/headerBlue-left.gif" width="20" height="20" alt="" /></td>
+		<td class="hCenter">Forecast Summary &amp; Maps</td>
+		<td class="hRight"><img src="http://icons-pe.wxug.com/graphics/wu2/headerBlue-right.gif" width="20" height="20" alt="" /></td>
+		</tr>
+		<tr>
+		<td class="sLeft"><img src="http://icons-pe.wxug.com/graphics/wu2/subBlue-left.gif" width="20" height="6" alt="" /></td>
+		<td class="sCenter">&nbsp;</td>
+		<td class="sRight"><img src="http://icons-pe.wxug.com/graphics/wu2/subBlue-right.gif" width="20" height="6" alt="" /></td>
+		</tr>
+		</table>
+		<div class="blueBox">
+	<div class="mainB">
+		<table cellspacing="0" cellpadding="0" class="full">
+		<tr>
+		<td class="full">
+		Extended Forecast
+		for
+		ZIP Code 98101
+		</td>
+		<td class="nobr"><a href="/member/membersettings.html?page=icons" id="iconsLink">Customize Your Icons!</a></td>
+		</tr>
+		</table>
+	</div>
+	<table cellspacing="0" cellpadding="0" class="dataTable">
+		<thead>
+		<tr>
+		<td class="taC" style="width: 12%;">Thursday</td>
+		<td class="taC" style="width: 12%;">Friday</td>
+		<td class="taC" style="width: 12%;">Saturday</td>
+		<td class="taC" style="width: 12%;">Sunday</td>
+		<td class="taC" style="width: 12%;">Monday</td>
+		<td class="taC" style="width: 12%;">Tuesday</td>
+		<td class="taC" style="width: 12%;">Wednesday</td>
+		</tr>
+		</thead>
+		<tbody>
+		<tr class="wHover noBorder">
+		<td class="taC" >
+		<div><img src="http://icons-pe.wxug.com/i/c/a/chancerain.gif" width="42" alt="Chance of Rain" height="42" class="condIcon" /></div>
+		<div class="b nobr">
+		<span style="color: #900;">52&deg; F</span>
+		<span style="font-weight: normal; color: #999;">|</span>
+		<span style="color: #009;">38&deg; F</span>
+		<br />
+		<span style="color: #900;">11&deg; C</span>
+		<span style="font-weight: normal; color: #999;">|</span>
+		<span style="color: #009;">3&deg; C</span>
+		</div>
+		</td>
+		<td class="taC" style="background-color: #FFC; border-left: 1px solid #9A8221; border-right: 1px solid #9A8221;">
+		<div><img src="http://icons-pe.wxug.com/i/c/a/partlycloudy.gif" width="42" alt="Partly Cloudy" height="42" class="condIcon" /></div>
+		<div class="b nobr">
+		<span style="color: #900;">63&deg; F</span>
+		<span style="font-weight: normal; color: #999;">|</span>
+		<span style="color: #009;">41&deg; F</span>
+		<br />
+		<span style="color: #900;">17&deg; C</span>
+		<span style="font-weight: normal; color: #999;">|</span>
+		<span style="color: #009;">5&deg; C</span>
+		</div>
+		</td>
+		<td class="taC" >
+		<div><img src="http://icons-pe.wxug.com/i/c/a/partlycloudy.gif" width="42" alt="Partly Cloudy" height="42" class="condIcon" /></div>
+		<div class="b nobr">
+		<span style="color: #900;">70&deg; F</span>
+		<span style="font-weight: normal; color: #999;">|</span>
+		<span style="color: #009;">47&deg; F</span>
+		<br />
+		<span style="color: #900;">21&deg; C</span>
+		<span style="font-weight: normal; color: #999;">|</span>
+		<span style="color: #009;">8&deg; C</span>
+		</div>
+		</td>
+		<td class="taC" >
+		<div><img src="http://icons-pe.wxug.com/i/c/a/chancerain.gif" width="42" alt="Chance of Rain" height="42" class="condIcon" /></div>
+		<div class="b nobr">
+		<span style="color: #900;">61&deg; F</span>
+		<span style="font-weight: normal; color: #999;">|</span>
+		<span style="color: #009;">40&deg; F</span>
+		<br />
+		<span style="color: #900;">16&deg; C</span>
+		<span style="font-weight: normal; color: #999;">|</span>
+		<span style="color: #009;">4&deg; C</span>
+		</div>
+		</td>
+		<td class="taC" >
+		<div><img src="http://icons-pe.wxug.com/i/c/a/chancerain.gif" width="42" alt="Chance of Rain" height="42" class="condIcon" /></div>
+		<div class="b nobr">
+		<span style="color: #900;">58&deg; F</span>
+		<span style="font-weight: normal; color: #999;">|</span>
+		<span style="color: #009;">38&deg; F</span>
+		<br />
+		<span style="color: #900;">14&deg; C</span>
+		<span style="font-weight: normal; color: #999;">|</span>
+		<span style="color: #009;">3&deg; C</span>
+		</div>
+		</td>
+		<td class="taC" >
+		<div><img src="http://icons-pe.wxug.com/i/c/a/chancerain.gif" width="42" alt="Chance of Rain" height="42" class="condIcon" /></div>
+		<div class="b nobr">
+		<span style="color: #900;">58&deg; F</span>
+		<span style="font-weight: normal; color: #999;">|</span>
+		<span style="color: #009;">45&deg; F</span>
+		<br />
+		<span style="color: #900;">14&deg; C</span>
+		<span style="font-weight: normal; color: #999;">|</span>
+		<span style="color: #009;">7&deg; C</span>
+		</div>
+		</td>
+		<td class="taC" >
+		<div><img src="http://icons-pe.wxug.com/i/c/a/chancerain.gif" width="42" alt="Chance of Rain" height="42" class="condIcon" /></div>
+		<div class="b nobr">
+		<span style="color: #900;">58&deg; F</span>
+		<span style="font-weight: normal; color: #999;">|</span>
+		<span style="color: #009;"> NA </span>
+		<br />
+		<span style="color: #900;">14&deg; C</span>
+		<span style="font-weight: normal; color: #999;">|</span>
+		<span style="color: #009;"> NA </span>
+		</div>
+		</td>
+		</tr>
+		<tr class="wHover noBorder">
+		<td class="taC" >
+		Chance of Rain
+		<div>
+		<span class="b green">30%</span> chance of precipitation
+		</div>
+		</td>
+		<td class="taC" style="background-color: #FFC; border-left: 1px solid #9A8221; border-right: 1px solid #9A8221;">
+		Partly Cloudy
+		</td>
+		<td class="taC" >
+		Partly Cloudy
+		</td>
+		<td class="taC" >
+		Chance of Rain
+		<div>
+		<span class="b green">30%</span> chance of precipitation
+		</div>
+		</td>
+		<td class="taC" >
+		Chance of Rain
+		<div>
+		<span class="b green">30%</span> chance of precipitation
+		</div>
+		</td>
+		<td class="taC" >
+		Chance of Rain
+		<div>
+		<span class="b green">30%</span> chance of precipitation
+		</div>
+		</td>
+		<td class="taC" >
+		Chance of Rain
+		<div>
+		<span class="b green">30%</span> chance of precipitation
+		</div>
+		</td>
+		</tr>
+		<tr class="wHover noBorder">
+		<td class="taC" >
+		<a href="/health/uv.asp">UV</a>: <span class="b">5</span>
+		</td>
+		<td class="taC" style="background-color: #FFC; border-left: 1px solid #9A8221; border-right: 1px solid #9A8221; border-bottom: 1px solid #9A8221;">
+		<a href="/health/uv.asp">UV</a>: <span class="b">6</span>
+		</td>
+		<td class="taC" >
+		<a href="/health/uv.asp">UV</a>: <span class="b">7</span>
+		</td>
+		<td class="taC" >
+		<a href="/health/uv.asp">UV</a>: <span class="b">3</span>
+		</td>
+		<td class="taC" >
+		<a href="/health/uv.asp">UV</a>: <span class="b">3</span>
+		</td>
+		<td class="taC" >
+		<a href="/health/uv.asp">UV</a>: <span class="b">3</span>
+		</td>
+		<td class="taC" >
+		<a href="/health/uv.asp">UV</a>: <span class="b">4</span>
+		</td>
+		</tr>
+		<tr class="wHover noBorder">
+		<td class="taC">
+		<div><a href="/cgi-bin/findweather/getForecast?query=98101&hourly=1&yday=100&weekday=Thursday">Hourly</a></div>
+		<div><a href="/history/airport/KWASEATT92/2008/4/10/DailyHistory.html?FULLALMANAC=">Almanac</a></div>
+		</td>
+		<td class="taC">
+		<div><a href="/cgi-bin/findweather/getForecast?query=98101&hourly=1&yday=101&weekday=Friday">Hourly</a></div>
+		<div><a href="/history/airport/KWASEATT92/2008/4/11/DailyHistory.html?FULLALMANAC=">Almanac</a></div>
+		</td>
+		<td class="taC">
+		<div><a href="/cgi-bin/findweather/getForecast?query=98101&hourly=1&yday=102&weekday=Saturday">Hourly</a></div>
+		<div><a href="/history/airport/KWASEATT92/2008/4/12/DailyHistory.html?FULLALMANAC=">Almanac</a></div>
+		</td>
+		<td class="taC">
+		<div><a href="/cgi-bin/findweather/getForecast?query=98101&hourly=1&yday=103&weekday=Sunday">Hourly</a></div>
+		<div><a href="/history/airport/KWASEATT92/2008/4/13/DailyHistory.html?FULLALMANAC=">Almanac</a></div>
+		</td>
+		<td class="taC">
+		<div><a href="/cgi-bin/findweather/getForecast?query=98101&hourly=1&yday=104&weekday=Monday">Hourly</a></div>
+		<div><a href="/history/airport/KWASEATT92/2008/4/14/DailyHistory.html?FULLALMANAC=">Almanac</a></div>
+		</td>
+		<td class="taC">
+		<div><a href="/cgi-bin/findweather/getForecast?query=98101&hourly=1&yday=105&weekday=Tuesday">Hourly</a></div>
+		<div><a href="/history/airport/KWASEATT92/2008/4/15/DailyHistory.html?FULLALMANAC=">Almanac</a></div>
+		</td>
+		<td class="taC">
+		<div><a href="/cgi-bin/findweather/getForecast?query=98101&hourly=1&yday=106&weekday=Wednesday">Hourly</a></div>
+		<div><a href="/history/airport/KWASEATT92/2008/4/16/DailyHistory.html?FULLALMANAC=">Almanac</a></div>
+		</td>
+		</tr>
+		</tbody>
+	</table>
+<!--
+				<div class="mainB tm10">Forecast Maps</div>
+		<div class="subG">Select the map you would like to view using the menu below.</div>
+		<div class="tm10 taC">
+  <select>
+		<option>Temperature</option>
+		<option>Maximum Temperature</option>
+		<option>Minimum Temperature</option>
+		<option>Dew Point</option>
+		<option selected="selected" value="Wx">Prevalent Weather</option>
+		<option>12Hr Probability of Precip.</option>
+		<option>Sky Cover</option>
+		<option>Snowfall (previous 6 hours)</option>
+		<option>Precipitation Amount</option>
+  </select>
+		<select name="">
+		<option value="">Wed, April 9 - 8:00 PM PDT</option>
+		<option value="">Wed, April 9 - 11:00 PM PDT</option>
+		<option value="">Wed, April 9 - 2:00 PM PDT</option>
+		<option value="">Wed, April 9 - 5:00 PM PDT</option>
+		<option value="">Wed, April 9 - 8:00 PM PDT</option>
+		<option value="">Wed, April 9 - 11:00 PM PDT</option>
+		<option value="">Thu, April 10 - 2:00 PM PDT</option>
+		<option value="">Thu, April 10 - 5:00 PM PDT</option>
+		<option value="">Thu, April 10 - 8:00 PM PDT</option>
+		<option value="">Thu, April 10 - 11:00 PM PDT</option>
+		<option value="">Thu, April 10 - 2:00 PM PDT</option>
+		<option value="">Thu, April 10 - 5:00 PM PDT</option>
+		<option value="">Thu, April 10 - 8:00 PM PDT</option>
+		<option value="">Thu, April 10 - 11:00 PM PDT</option>
+		<option value="">Fri, April 11 - 2:00 PM PDT</option>
+		<option value="">Fri, April 11 - 5:00 PM PDT</option>
+		<option value="">Fri, April 11 - 8:00 PM PDT</option>
+		<option value="">Fri, April 11 - 11:00 PM PDT</option>
+		<option value=""selected="selected">Fri, April 11 - 2:00 PM PDT</option>
+		<option value="">Fri, April 11 - 5:00 PM PDT</option>
+		<option value="">Fri, April 11 - 8:00 PM PDT</option>
+		<option value="">Fri, April 11 - 11:00 PM PDT</option>
+		<option value="">Sat, April 12 - 2:00 PM PDT</option>
+		<option value="">Sat, April 12 - 5:00 PM PDT</option>
+		<option value="">Sat, April 12 - 8:00 PM PDT</option>
+		<option value="">Sat, April 12 - 11:00 PM PDT</option>
+		<option value="">Sat, April 12 - 2:00 PM PDT</option>
+		<option value="">Sat, April 12 - 5:00 PM PDT</option>
+		<option value="">Sat, April 12 - 11:00 PM PDT</option>
+		<option value="">Sun, April 13 - 5:00 PM PDT</option>
+		<option value="">Sun, April 13 - 11:00 PM PDT</option>
+		<option value="">Sun, April 13 - 5:00 PM PDT</option>
+		<option value="">Sun, April 13 - 11:00 PM PDT</option>
+		<option value="">Mon, April 14 - 5:00 PM PDT</option>
+		<option value="">Mon, April 14 - 11:00 PM PDT</option>
+		<option value="">Mon, April 14 - 5:00 PM PDT</option>
+		<option value="">Mon, April 14 - 11:00 PM PDT</option>
+		<option value="">Tue, April 15 - 5:00 PM PDT</option>
+		<option value="">Tue, April 15 - 11:00 PM PDT</option>
+		<option value="">Tue, April 15 - 5:00 PM PDT</option>
+		<option value="">Tue, April 15 - 11:00 PM PDT</option>
+		<option value="">Wed, April 16 - 5:00 PM PDT</option>
+		<option value="">Wed, April 16 - 11:00 PM PDT</option>
+		<option value="">Wed, April 16 - 5:00 PM PDT</option>
+		</select>
+  </div>
+		<div class="taC tm10"><img src="http://icons.wunderground.com/data/ndfdimages/Wx20084111200_nw.png" /></div>
+-->
+		<div class="noGap">&nbsp;</div>
+		</div>
+		<table cellspacing="0" cellpadding="0" class="blueBottom">
+		<tr>
+		<td class="bLeft"><div></div></td>
+		<td class="bCenter full"><div></div></td>
+		<td class="bRight"><div></div></td>
+		</tr>
+		</table>
+		<div>&nbsp;</div>
+		</td>
+		<td>
+		<div class="rightCol">
+		<div><img src="http://icons-pe.wxug.com/graphics/wu2/topBlue-300.gif" width="300" height="10" alt="" /></div>
+		<div class="contentBox">
+		<div class="headerText">Current Conditions:</div>
+		<table cellspacing="2" cellpadding="0" class="dataTable">
+		<thead>
+		<tr>
+		<td colspan="2">Queen Anne - Toddster weather, Seattle, Washington</td>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+		<td>Temperature:</td>
+		<td>
+  <nobr><b>43.0</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>6.1</b>&nbsp;&#176;C</nobr>
+:</td>
+		</tr>
+		<tr>
+		<td>Humidity:</td>
+		<td class="b"><b>72%</td>
+		</tr>
+		<tr>
+		<td>Dew Point:</td>
+		<td>
+  <nobr><b>35</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>1</b>&nbsp;&#176;C</nobr>
+</td>
+		</tr>
+		<tr>
+		<td>Wind:</td>
+		<td><span class="b">West</span> at
+  <nobr><b>5.0</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>8.0</b>&nbsp;km/h</nobr> / <nobr><b>2.2</b>&nbsp;m/s</nobr>
+</td>
+		</tr>
+		<tr>
+		<td>Conditions:</td>
+		<td class="b">Overcast</td>
+		</tr>
+		</tbody>
+		<tr class="gHover">
+		<td colspan="2" class="dataFooter">
+		Updated: <span class="b">7:45 AM PDT</span>
+		</td>
+		</tr>
+		</table>
+		<p class="taC"><a href="/cgi-bin/findweather/getForecast?query=98101" class="subLink">Current Conditions &amp; Forecast</a></p>
+		<div>&nbsp;</div>
+		<div class="headerText">Almanac for KBFI:</div>
+		<table cellspacing="1" cellpadding="0" class="dataTable">
+		<thead>
+		<tr>
+		<td>&nbsp;</td>
+		<td>Average:</td>
+		<td>Record:</td>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+		<td>High Temperature:</td>
+		<td>
+  <nobr><b>56</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>13</b>&nbsp;&#176;C</nobr>
+</td>
+		<td>
+  <nobr><b>81</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>27</b>&nbsp;&#176;C</nobr>
+(2004)</td>
+		</tr>
+		<tr>
+		<td>Low Temperature:</td>
+		<td>
+  <nobr><b>39</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>3</b>&nbsp;&#176;C</nobr>
+</td>
+		<td>
+  <nobr><b>35</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>1</b>&nbsp;&#176;C</nobr>
+(1966)</td>
+		</tr>
+		<tr>
+		<td>Average Temperature:</td>
+		<td>
+  -
+</td>
+		<td>-</td>
+		</tr>
+		</tbody>
+		</table>
+		<p class="taC"><a href="/history/airport/KBFI/2008/4/11/DailyHistory.html" class="subLink">View Complete Almanac</a></p>
+		<div>&nbsp;</div>
+		</div>
+		<div><img src="http://icons-pe.wxug.com/graphics/wu2/botBlue-300.gif" width="300" height="10" alt="" /></div>
+  </div>
+  </td>
+  </tr>
+</table>
+		</div>
+		<div class="pageTop"><span class="noPrint">: <a href="#">Top of Page</a> :</span></div>
+		<div id="bottomAds">
+		<!-- blue credits bar -->
+		<!-- serial # 041801-1 -->
+		<h3>Please Visit Our Sponsors:</h3>
+		<!-- ads -->
+	<div style="background-color: #EEEEEE;">
+		<div style="clear: both;">&nbsp;</div>
+		<div class="ad125">
+		<!-- VDON-00058 3 -->
+		<a href="http://server.as5000.com/AS5000/adserver/click?ID=VDON-00058&C=3"><img src="http://config.privoxy.org/send-banner?type=auto" border="0" title="Killed-http://icons.wunderground.com/ads/images/VDON_VTG_creative.gif-by-size" width=125 height=125></a>
+		</div>
+		<div class="ad125">
+		<!-- CLSM-00018 0 -->
+		<a href="http://server.as5000.com/AS5000/adserver/click?ID=CLSM-00018&C=0"><img src="http://config.privoxy.org/send-banner?type=auto" border="0" title="Killed-http://icons.wunderground.com/ads/images/CLSM-00014-CMb11_125x125.gif-by-size" width=125 height=125></a>
+		</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<br>
+		</div>
+  <div class="taC">
+		<!-- Start Quantcast tag -->
+		<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+		<script type="text/javascript">_qacct="p-01lvMKu--eLQE";quantserve();</script>
+		<noscript></noscript>
+		<!-- End Quantcast tag -->
+<table class="taC tm20 center">
+	<tr>
+		<td><img src="http://icons-pe.wxug.com/graphics/wu2/logo_footer.gif" width="53" height="25" alt="" /></td>
+		<td>Copyright &copy; 2008 <a href="/about/background.asp">The Weather Underground, Inc.</a></td>
+	</tr>
+</table>
+<div class="taC noPrint"><a href="/about/employment.asp">Employment</a> | <a href="/about/contact.asp">Contact Us</a> | <a href="/help/">Help</a> | <a href="/members/tos.asp">Terms of Service</a> | <a href="/about/adinfo.asp">Advertise Here</a></div>
+</div>
+		</td>
+	</tr>
+</table>
+</body>
+	</html>
+  <div id="debug">
+	<!--  WUICATEGORY:CityPage:HourlyNDFD -->
+<!-- 0.169:0 -->

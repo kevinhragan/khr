@@ -1,0 +1,132 @@
+cfagent -q
+useradd -u 500 -g 100 -m gv
+
+# chown everything
+
+#chown -R gv:users /var/gv
+#chown -R gv:users /usr/local/bin
+
+# make directories as gv
+#mkdir -p /var/gv/spool
+mkdir -p /var/gv/spool/pipes
+mkdir /var/gv/spool/dev
+mkdir /var/gv/spool/ambience
+mkdir /var/gv/spool/dispatch
+mkdir /var/gv/spool/greetings
+mkdir /var/gv/spool/voicemail
+mkdir /var/gv/spool/tts
+mkdir /var/gv/messages
+#mkdir /var/gv/lib
+mkdir -p /var/gv/spool/outbox
+ln -s /var/gv/messages /var/gv/spool/inbox
+
+# make a pipe file
+mknod /var/gv/spool/pipes/spooler p
+chmod +w /var/gv/spool/pipes/spooler
+
+# create a file
+touch /var/gv/spool/lastjobs
+
+
+
+# as root
+#
+# inet daemon settings
+# Add the new entries.
+echo "#       GotVoice Sigtool Service (port 9200)" >> /etc/inetd.conf
+echo "gotvoice stream tcp nowait gv /usr/sbin/tcpd /usr/local/bin/in.gvjd -r/var/gv/spool -D0 -T120"  >> /etc/inetd.conf
+
+
+
+#
+# services settings
+# Add the new entries.
+echo "gotvoice        9200/tcp   #gotvoice sigtool" >> /etc/services
+#
+# Restart the services. ( Slackware)
+/bin/bash /etc/rc.d/rc.inetd restart
+
+
+#
+# Setting up the services side of the spooler
+#
+# cfengine
+#cp -r services /var/gv/spool
+#cp common/common.conf /var/gv/spool
+#cp gvspool/config/*.conf /var/gv/spool
+
+
+#
+# Put the starter e-mail into the spooler directory.x
+cp common/hotmail_email.txt /var/gv/spool ?
+#
+# Create the astrix call directories.
+
+
+#
+# Shouldn't need anymore
+#
+#cp signupd/gv_welcome.wav /var/gv/spool/outbox
+
+
+#
+# Shouldn't need anymore....
+#
+echo "# GotVoice logging system." >> /etc/syslog.conf
+echo "local0.*      @server1" >> /etc/syslog.conf
+
+
+#
+# WTF
+#
+m4 gvspool/config/sendmail-gvconfig.mc > /etc/mail/sendmail.cf
+
+
+#
+#
+# MySQL
+#
+# Debian: aptitude install mysql-client
+
+groupadd mysql
+useradd -g mysql -d /usr/local/mysql mysql
+cvs co mysql
+rm -rf /tmp/.build.mysql
+echo "`pwd`/mysql/mysql-standard-5.0.18-linux-i686.tar.gz" > /tmp/.build.mysql
+cd /usr/local && \
+  gzip -cd `cat /tmp/.build.mysql` | tar xvpf -
+rm -f /usr/local/mysql
+ln -s mysql-standard-5.0.18-linux-i686 /usr/local/mysql
+cd /usr/local/mysql && \
+  scripts/mysql_install_db --user=mysql
+chown -R root:mysql /usr/local/mysql
+chown -R mysql /usr/local/mysql/data
+#
+# This comes from our setup instructions. cd to where cvs checkout was done
+cp mysql/rc.mysqld /etc/rc.d
+chown root:root /etc/rc.d/rc.mysqld
+chmod 755 /etc/rc.d/rc.mysqld
+#
+# Either move the data directory over /var, or use the existing directory.
+mv /usr/local/mysql/data /var/mysql || \
+  rm -rf /usr/local/mysql/data
+ln -s /var/mysql /usr/local/mysql/data
+# Make sure that mysql is in the standard path.
+rm -f /usr/bin/mysql
+ln -s /usr/local/mysql/bin/mysql /usr/bin/mysql
+
+## now the flaky stuff
+
+mkdir -p /var/gv/spool/tmp/outbox
+mkdir -p /var/gv/spool/tmp/dispatch
+
+# as gv
+for f in common.conf gotvoice.conf gotvoice.wisdom gvaliases.conf gvcall.conf gvroutes.conf local.conf rc.gvspool
+do
+    scp seth:/var/gv/spool/$f /var/gv/spool
+done
+
+scp seth:/var/gv/spool/dispatch/*conf /var/gv/spool/dispatch
+
+scp cheddar:~build/dist/usr-local-bin_2_0-Jan18-2007.tar /tmp
+cd /usr/local/bin/; tar xf /tmp/usr-local-bin_2_0-Jan18-2007.tar

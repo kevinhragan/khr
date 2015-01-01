@@ -1,0 +1,11 @@
+scp ra:/root/sysstat-7.0.0.tar.gz .
+tar xzf sysstat-7.0.0.tar.gz 
+cd sysstat-7.0.0
+make config
+# take defaults except for days: 30
+make install
+crontab -e  
+# add this line: 1 * * * * /usr/local/lib/sa/sa1 -d 600 6 &
+# check with sar about an hour later
+
+

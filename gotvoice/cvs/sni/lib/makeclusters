@@ -1,0 +1,9 @@
+thresh=$1
+shift
+for i in $*
+do
+	cd $i
+	echo $i
+	snicluster -D0 -C${thresh} -o${i}.sni *.sni
+	cd ..
+done

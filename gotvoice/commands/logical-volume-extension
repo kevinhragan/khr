@@ -1,0 +1,5 @@
+# extending hathor's space
+lvextend -L 400G /dev/system/nfs
+resize_reiserfs  /dev/system/nfs 
+
+# try lvextend -L 400G -r /dev/system/nfs

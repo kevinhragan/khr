@@ -1,0 +1,15 @@
+#! /usr/bin/awk -f
+# get os from host and update; slackware and suse = "other" !
+
+BEGIN {OFS = FS = ","}
+
+NR == 1 { print }
+NR != 1{
+    sshcommand = "ssh " $1 " uname -r" 
+    sshcommand| getline version
+    close(sshcommand)
+    sub("-.*$", "", version)
+    if (version ~ /^[2-9]\./)
+        $3 = version
+    print $0
+} 

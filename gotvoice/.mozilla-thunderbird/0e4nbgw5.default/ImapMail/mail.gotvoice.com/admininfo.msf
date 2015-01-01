@@ -1,0 +1,240 @@
+// <!-- <mdb:mork:z v="1.4"/> -->
+< <(a=c)> // (f=iso-8859-1)
+  (B8=ns:msg:db:table:kind:pending)(B9=folderName)(BA=current-view)
+  (BB=imageSize)(BC=junkscore)(BD=keywords)(BE=retainBy)
+  (BF=daysToKeepHdrs)(C0=numHdrsToKeep)(C1=daysToKeepBodies)
+  (C2=keepUnreadOnly)(C3=useServerDefaults)(C4=cleanupBodies)
+  (C5=ns:msg:db:row:scope:ops:all)(C6=ns:msg:db:table:kind:ops)
+  (C7=notAPhishMessage)(C8=aclFlags)(80=ns:msg:db:row:scope:msgs:all)
+  (81=subject)(82=sender)(83=message-id)(84=references)(85=recipients)
+  (86=date)(87=size)(88=flags)(89=priority)(8A=label)(8B=statusOfset)
+  (8C=numLines)(8D=ccList)(8E=msgThreadId)(8F=threadId)(90=threadFlags)
+  (91=threadNewestMsgDate)(92=children)(93=unreadChildren)
+  (94=threadSubject)(95=numRefs)(96=msgCharSet)
+  (97=ns:msg:db:table:kind:msgs)(98=ns:msg:db:table:kind:thread)
+  (99=ns:msg:db:table:kind:allthreads)
+  (9A=ns:msg:db:row:scope:threads:all)(9B=threadParent)(9C=threadRoot)
+  (9D=msgOffset)(9E=offlineMsgSize)
+  (9F=ns:msg:db:row:scope:dbfolderinfo:all)
+  (A0=ns:msg:db:table:kind:dbfolderinfo)(A1=numMsgs)(A2=numNewMsgs)
+  (A3=folderSize)(A4=expungedBytes)(A5=folderDate)(A6=highWaterKey)
+  (A7=mailboxName)(A8=UIDValidity)(A9=totPendingMsgs)
+  (AA=unreadPendingMsgs)(AB=expiredMark)(AC=version)
+  (AD=fixedBadRefThreading)(AE=onlineName)(AF=LastPurgeTime)
+  (B0=imapFlags)(B1=sortType)(B2=sortOrder)(B3=viewFlags)(B4=viewType)
+  (B5=charSetOverride)(B6=charSet)(B7=ns:msg:db:row:scope:pending:all)>
+<(40C=7d4d)(40A=47992301)(80=1)>
+[9:m(^9C^40C)(^8F^40C)(^91^40A)(^92=1)]
+<(9D=1341)(99=44be348b)>[2:m(^9C^9D)(^8F^9D)(^91^99)(^92=1)]
+<(A8=134f)(A4=44c8fc13)>[3:m(^9C^A8)(^8F^A8)(^91^A4)(^92=1)]
+<(AF=1390)(AD=44d769eb)>[4:m(^9C^AF)(^8F^AF)(^91^AD)(^92=1)]
+<(B9=13de)(B6=44eb455f)>[5:m(^9C^B9)(^8F^B9)(^91^B6)(^92=1)]
+<(C0=13e1)(BE=44eb6cc4)>[6:m(^9C^C0)(^8F^C0)(^91^BE)(^92=1)]
+<(2C5=5d5b)(2C2=470c0d57)>[8:m(^9C^2C5)(^8F^2C5)(^91^2C2)(^92=1)]
+
+<(83=0)(405="Bruce J. Peterson" <bpeterson@gotvoice.com>)(406
+    =everybody@gotvoice.com)(407
+    =GV-MVS v1-1:  Transcription Proofreading Scoring)(408
+    =004901c85ee3\$25fa58d0\$71ef0a70\$@com)(409
+    =<004b01c85ecd\$1f73f9a0\$5e5bece0\$@com>)(A5=us-ascii)(40B=13c9)
+  (94=ffffffff)>
+{7D4D:^80 {(k^98:c)(s=9)9:m } [7D4D(^88=1)(^8B=0)(^82^405)(^85^406)(^81^407)
+    (^83^408)(^95=1)(^84^409)(^86^40A)(^89=1)(^96^A5)(^87^40B)(^9B^94)
+    (^8E^40C)]}
+
+<(9C=10000001)(96="Curt Blake" <curtb@gotvoice.com>)(8B
+    ="'every body'" <everybody@gotvoice.com>)(97=FW: GotVoice Presentation)
+  (98=006c01c6ab37\$dae3f000\$063be20a@Curt)(9B=3aa16d)>
+{1341:^80 {(k^98:c)(s=9)2:m } [1341(^88^9C)(^8B=0)(^82^96)(^85^8B)(^81^97)
+    (^83^98)(^86^99)(^89=1)(^87^9B)(^9B^94)(^8E^9D)]}
+
+<(A7=11)(8A="Robert Ingman" <roberti@gotvoice.com>)(9F
+    ="'Curt Blake'" <curtb@gotvoice.com>, "'Mike Webb'" <mwebb@gotvoice.com>, \
+"'Aaron DeForest'" <adeforest@gotvoice.com>)(A0
+    ="'Kevin Ragan'" <kevinr@gotvoice.com>, "'Jesse Weigert'" <jesse@gotvoice.\
+com>)(A1=[WARNING] Sender Score Certified IPs for GotVoice (#664555\))
+  (A2=001a01c6b1a4\$a9007450\$ba015c0a@ROBERTINGMAN)(A3
+    =<001801c6b199\$41de5400\$c0015c0a@curtbxphome>)(A6=1072)(AA
+    ="'Kevin Ragan'" <kevinr@gotvoice.com>)(AB
+    =FW: Reminder: Sender ID Records required for Program Senders)(AC
+    =000601c6ba3e\$5d3c4f10\$ba015c0a@ROBERTINGMAN)(AE=c66)(B1
+    =Aaron DeForest <adeforest@gotvoice.com>)(B2
+    =Robert Ingman <roberti@gotvoice.com>)(B3
+    =Kevin Ragan <kevinr@gotvoice.com>)(B4=Thyme)(B5
+    =2991922.151156269407147.JavaMail.root@mail.gotvoice.com)(B7=utf-8)
+  (B8=913)(BB="Robert Ingman" <robertingman@comcast.net>)(BC
+    =iBackup account)(BD=005b01c6c62b\$d2328f20\$ba015c0a@ROBERTINGMAN)
+  (BF=b2b)(2C4=3)(2BE
+    ="Jesse Ruggenberg" <jesse.ruggenberg@siliconmechanics.com>)(2BF
+    =kevinr@gotvoice.com)(2C0=Your Silicon Mechanics Quote:  #125260)
+  (2C1=343597.1191972183@siliconmechanics.com)(2C3=1196)>
+{1:^80 {(k^97:c)(s=9)} 1341 
+  [134F(^88=11)(^8B=0)(^82^8A)(^85^9F)(^8D^A0)(^81^A1)(^83^A2)(^95=1)
+    (^84^A3)(^86^A4)(^89=1)(^96^A5)(^87^A6)(^9B^94)(^8E^A8)]
+  [1390(^88=1)(^8B=0)(^82^8A)(^85^AA)(^81^AB)(^83^AC)(^86^AD)(^89=1)
+    (^96^A5)(^87^AE)(^9B^94)(^8E^AF)]
+  [13DE(^88=11)(^8B=0)(^82^B1)(^85^B2)(^8D^B3)(^81^B4)(^83^B5)(^86^B6)
+    (^89=1)(^96^B7)(^87^B8)(^9B^94)(^8E^B9)]
+  [13E1(^88=1)(^8B=0)(^82^BB)(^85^AA)(^81^BC)(^83^BD)(^86^BE)(^89=1)
+    (^87^BF)(^9B^94)(^8E^C0)]
+  [5D5B(^88=3)(^8B=0)(^82^2BE)(^85^2BF)(^81^2C0)(^83^2C1)(^86^2C2)(^89=1)
+    (^87^2C3)(^9B^94)(^8E^2C5)]7D4D }
+{1390:^80 {(k^98:c)(s=9)4:m } 1390 }
+{13DE:^80 {(k^98:c)(s=9)5:m } 13DE }
+{134F:^80 {(k^98:c)(s=9)3:m } 134F }
+{13E1:^80 {(k^98:c)(s=9)6:m } 13E1 }
+{5D5B:^80 {(k^98:c)(s=9)8:m } 5D5B }
+{FFFFFFFD:^9A {(k^99:c)(s=9)} [1341(^94^97)]
+  [134F(^94^A1)]
+  [1390(^94^AB)]
+  [13DE(^94^B4)]
+  [13E1(^94^BC)]
+  [5D5B(^94^2C0)]
+  [7D4D(^94^407)]}
+
+<(81=admininfo)(3BF=882004)(4DE=Tue Apr 15 06:24:20 2008)(85=ee00)(89=1f12)
+  (40D=7)(88=12)(187=2)(3BE=ef)>
+{1:^9F {(k^A0:c)(s=9u)} 
+  [1(^AC=1)(^AD=1)(^AE^81)(^88^3BF)(^A7^81)(^A9=1)(^AF^4DE)(^B0^85)
+    (^A8^89)(^A1=7)(^B1=12)(^B2=2)(^B3=0)(^B4=0)(^C8=ef)]}
+
+@$${1{@
+{-1:^C5 {(k^C6:c)(s=9)} }
+@$$}1}@
+
+@$${2{@
+@$$}2}@
+
+@$${4{@
+<(4DF=Tue Apr 15 14:24:22 2008)>
+[1:^9F(^AF^4DF)]
+@$$}4}@
+
+@$${5{@
+@$$}5}@
+
+@$${7{@
+<(4E0=Tue Apr 15 22:24:23 2008)>
+[1:^9F(^AF^4E0)]
+@$$}7}@
+
+@$${8{@
+@$$}8}@
+
+@$${A{@
+<(4E1=Wed Apr 16 06:24:24 2008)>
+[1:^9F(^AF^4E1)]
+@$$}A}@
+
+@$${B{@
+@$$}B}@
+
+@$${D{@
+<(4E2=Wed Apr 16 14:24:27 2008)>
+[1:^9F(^AF^4E2)]
+@$$}D}@
+
+@$${E{@
+@$$}E}@
+
+@$${10{@
+<(4E3=Wed Apr 16 22:24:28 2008)>
+[1:^9F(^AF^4E3)]
+@$$}10}@
+
+@$${11{@
+@$$}11}@
+
+@$${13{@
+<(4E4=Thu Apr 17 06:24:30 2008)>
+[1:^9F(^AF^4E4)]
+@$$}13}@
+
+@$${14{@
+@$$}14}@
+
+@$${17{@
+[-9:m(^9C^40C)(^8F^40C)(^91=0)(^92=0)]
+{1:^80 {(k^97:c)(s=9)} -
+  [-7D4D]}
+{-7D4D:^80 {(k^98:c)(s=9)9:m } }
+{FFFFFFFD:^9A {(k^99:c)(s=9)} -7D4D }
+<(4E7=6)>[1:^9F(^A1=6)]
+@$$}17}@
+
+@$${18{@
+[-8:m(^9C^2C5)(^8F^2C5)(^91=0)(^92=0)]
+{1:^80 {(k^97:c)(s=9)} -
+  [-5D5B]}
+{-5D5B:^80 {(k^98:c)(s=9)8:m } }
+{FFFFFFFD:^9A {(k^99:c)(s=9)} -5D5B }
+<(4EA=5)>[1:^9F(^A1=5)]
+@$$}18}@
+
+@$${19{@
+[-6:m(^9C^C0)(^8F^C0)(^91=0)(^92=0)]
+{1:^80 {(k^97:c)(s=9)} -
+  [-13E1]}
+{-13E1:^80 {(k^98:c)(s=9)6:m } }
+{FFFFFFFD:^9A {(k^99:c)(s=9)} -13E1 }
+<(4EB=4)>[1:^9F(^A1=4)]
+@$$}19}@
+
+@$${1A{@
+[-4:m(^9C^AF)(^8F^AF)(^91=0)(^92=0)]
+{1:^80 {(k^97:c)(s=9)} -
+  [-1390]}
+{-1390:^80 {(k^98:c)(s=9)4:m } }
+{FFFFFFFD:^9A {(k^99:c)(s=9)} -1390 }[1:^9F(^A1=3)]
+@$$}1A}@
+
+@$${1B{@
+[-3:m(^9C^A8)(^8F^A8)(^91=0)(^92=0)]
+{-1:^80 {(k^97:c)(s=9)} 1341 13DE }
+{-134F:^80 {(k^98:c)(s=9)3:m } }[-134F:^80]
+{-FFFFFFFD:^9A {(k^99:c)(s=9)} 1341 13DE }
+[1:^9F(^A1=2)]
+@$$}1B}@
+
+@$${1C{@
+[-2:m(^9C^9D)(^8F^9D)(^91=0)(^92=0)]
+{-1:^80 {(k^97:c)(s=9)} 13DE }
+{-1341:^80 {(k^98:c)(s=9)2:m } }[-1341:^80]
+{-FFFFFFFD:^9A {(k^99:c)(s=9)} 13DE }
+[1:^9F(^A1=1)]
+@$$}1C}@
+
+@$${1D{@
+@$$}1D}@
+
+@$${1F{@
+<(4EC=Thu Apr 17 14:24:31 2008)>
+[1:^9F(^AF^4EC)]
+@$$}1F}@
+
+@$${20{@
+@$$}20}@
+
+@$${22{@
+<(4ED=Thu Apr 17 22:24:33 2008)>
+[1:^9F(^AF^4ED)]
+@$$}22}@
+
+@$${23{@
+@$$}23}@
+
+@$${25{@
+<(4EE=Fri Apr 18 06:24:34 2008)>
+[1:^9F(^AF^4EE)]
+@$$}25}@
+
+@$${26{@
+@$$}26}@
+
+@$${28{@
+<(4EF=Fri Apr 18 14:24:36 2008)>
+[1:^9F(^AF^4EF)]
+@$$}28}@
+
+@$${29{@
+@$$}29}@

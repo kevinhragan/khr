@@ -1,0 +1,7 @@
+version="8"
+logging="no"
+name="shu admin"
+enabled="no"
+type="1"
+action="Delete"
+condition="OR (to,contains,postmaster@heket.gotvoice.com) OR (to,contains,postmaster@shu.gotvoice.com)"

@@ -1,0 +1,5 @@
+# hack wavefile <basis>
+cp $1 $2
+cd $2
+snicut -h12 -X -s400 $1
+makedigits $1

@@ -1,0 +1,104 @@
+cfagent -q
+
+useradd -u 500 -g 100 -m -s /bin/bash gv; passwd gv
+
+# chown everything
+
+chown -R gv:users /var/gv
+chown -R gv:users /usr/local/bin
+
+# make directories as gv
+mkdir -p /var/gv/spool
+mkdir -p /var/gv/spool/pipes
+mkdir /var/gv/spool/dev
+mkdir /var/gv/spool/ambience
+mkdir /var/gv/spool/dispatch
+mkdir /var/gv/spool/greetings
+mkdir /var/gv/spool/voicemail
+mkdir /var/gv/spool/tts
+mkdir /var/gv/messages
+#mkdir /var/gv/lib
+mkdir -p /var/gv/spool/outbox
+ln -s /var/gv/messages /var/gv/spool/inbox
+
+# make a pipe file
+mknod /var/gv/spool/pipes/spooler p
+chmod +w /var/gv/spool/pipes/spooler
+
+# create a file
+touch /var/gv/spool/lastjobs
+
+
+
+# as root
+#
+# inet daemon settings
+# Add the new entries.
+echo "#       GotVoice Sigtool Service (port 9200)" >> /etc/inetd.conf
+echo "gotvoice stream tcp nowait gv /usr/sbin/tcpd /usr/local/bin/in.gvjd -r/var/gv/spool -D0 -T120"  >> /etc/inetd.conf
+
+
+add lame
+
+echo "/var/gv/spool/logs  10.96.1.0/24(rw)" >> /etc/exports
+# pick one:
+#echo "peach:/var/gv/messages /var/gv/messages nfs intr        0       0" >> /etc/fstab
+#echo "hathor:/srv/host1/messages /var/gv/messages nfs intr        0       0" >> /etc/fstab
+
+#
+# services settings
+# Add the new entries.
+echo "gotvoice        9200/tcp   #gotvoice sigtool" >> /etc/services
+#
+# Restart the services. 
+/etc/init.d/openbsd-inetd restart
+
+
+#
+# Setting up the services side of the spooler
+#
+# cfengine does this for us
+# cp -r services /var/gv/spool
+# cp common/common.conf /var/gv/spool
+
+
+
+#
+# Shouldn't need anymore....
+#
+echo "# GotVoice logging system." >> /etc/syslog.conf
+echo "local0.*      @server1" >> /etc/syslog.conf
+
+
+#
+# WTF
+#
+# m4 gvspool/config/sendmail-gvconfig.mc > /etc/mail/sendmail.cf
+
+
+#
+aptitude install nfs-kernel-server
+
+
+## now the flaky stuff
+# as gv
+
+mkdir -p /var/gv/spool/tmp/outbox
+mkdir -p /var/gv/spool/tmp/dispatch
+mkdir -p /var/gv/spool/messages
+
+# these are superfluous 
+#for f in common.conf gotvoice.conf gotvoice.wisdom gvaliases.conf gvcall.conf gvroutes.conf local.conf rc.gvspool
+#do
+#    scp seth:/var/gv/spool/$f /var/gv/spool
+#done
+
+# should't this be cfengine?
+# These are shared by nfs in production
+scp seth:/var/gv/spool/dispatch/*conf /var/gv/spool/dispatch
+
+scp cheddar:~build/dist/usr-local-bin_2_0-Jan18-2007.tar /tmp
+cd /usr/local/bin/; tar xf /tmp/usr-local-bin_2_0-Jan18-2007.tar
+
+# add mount to web server /etc/fstab
+$host:/var/gv/spool/logs /var/gv/spool/$host nfs intr 0 0

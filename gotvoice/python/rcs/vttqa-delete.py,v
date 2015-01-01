@@ -1,0 +1,37 @@
+head	1.1;
+access;
+symbols;
+locks
+	kevinr:1.1; strict;
+comment	@# @;
+
+
+1.1
+date	2008.01.30.18.42.58;	author kevinr;	state Exp;
+branches;
+next	;
+
+
+desc
+@delete older messages from the bloat-prone vttq mailbox
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@#! /usr/bin/python
+# erase old mail from admin@@heket
+import getpass, imaplib
+
+M = imaplib.IMAP4("mail.gotvoice.com")
+M.login("vttqa", getpass.getpass())
+M.select()
+typ, data = M.search(None, '(BEFORE 19-Jan-2008)')
+for num in data[0].split():
+    M.store(num, '+FLAGS.SILENT', '\\Deleted')
+M.expunge()
+M.logout()
+@

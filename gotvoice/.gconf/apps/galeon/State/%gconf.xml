@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<gconf>
+        <entry name="recovery_method" mtime="1170180268" type="int" value="0">
+        </entry>
+</gconf>

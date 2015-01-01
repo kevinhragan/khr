@@ -1,0 +1,6 @@
+aptitude install sendmail-bin sensible-mda
+scp server1:/etc/mail/sendmail.cf /etc/mail
+# verify correct host, domain names
+sendmail -d0.3 
+#test aliases
+echo "test from $HOSTNAME"|sendmail -v root 

@@ -1,0 +1,6 @@
+2.6 kernel
+
+for higher gv limits:
+    /etc/limits has gv N8192
+   /etc/sshd_config UserSeparation no
+   /sbin/initscript ulimit -n 8192

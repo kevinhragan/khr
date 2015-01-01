@@ -1,0 +1,6 @@
+server1 had to add blowfish secret to /etc/phpmyadmin/config.inc.php.
+It was already in the /etc/phpmyadmin/blowfish* file.  Both are included
+by /var/www/phpmyadmin/config.inc.php.
+
+It works but why doesn't the /etc/phpmyadmon/blowfis* file do it?
+ 

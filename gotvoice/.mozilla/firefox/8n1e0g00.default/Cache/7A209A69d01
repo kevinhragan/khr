@@ -1,0 +1,634 @@
+<!-- MHonArc v2.6.16 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+<title>sysutils.cfengine.general (date)</title>
+<link rel="stylesheet" type="text/css" href="http://osdir.com/ml/sstylesheet.css">
+<meta name='description' content="sysutils.cfengine.general (date)" />
+<link rev="x-refresh" href="">
+</head>
+<body>
+
+
+<script language="JavaScript" type="text/javascript">
+    if (!window.netshel_ord) { netshel_ord=Math.random()*10000000000000000;
+    }
+    if (!window.netshel_tile) { netshel_tile=1; }
+    document.write('<script language="JavaScript" src="http://ad.doubleclick.net/adj/ns.osdir/homepage;sz=728x90;dcopt=ist;tile='+netshel_tile+';ord=' + netshel_ord + '?" type="text/javascript"></scr' + 'ipt>');
+    netshel_tile++;
+    </script>
+<br>
+<table>
+  <tr>
+    <td valign="middle">
+<a href="http://osdir.com/ml/"><img src="http://osdir.com/images/MLnewosdirlogo.gif" border="0" alt="logo"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </td>
+	<td valign="middle" align="right">
+
+<!-- Google CSE Search Box Begins -->
+     <form id="searchbox_008059810939676512379:f5owd_2hq3u" action="http://osdir.com/ml/search.html">
+     <input type="hidden" name="cx" value="008059810939676512379:f5owd_2hq3u" />
+     <input type="hidden" name="cof" value="FORID:10" />
+     <input name="q" type="text" size="40" />
+     <input type="submit" name="sa" value="Search" />
+     <img src="http://google.com/coop/images/google_custom_search_smnar.gif" alt="Google Custom Search" />
+     </form>
+     <!-- Google CSE Search Box Ends -->
+   </td>
+  <td>
+  </td>
+<td>  <!-- AddThis Bookmark Button BEGIN -->
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.addthis.com/bookmark.php" onclick="addthis_url   = location.href; addthis_title = document.title; return addthis_click(this);" target="_blank"><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" border="0" alt="AddThis Social Bookmark Button" /></a> <script type="text/javascript">var addthis_pub = 'comforteagle';</script><script type="text/javascript" src="http://s9.addthis.com/js/widget.php?v=10"></script>  
+<!-- AddThis Bookmark Button END -->
+</div></td>
+</tr>
+</table>
+
+<center>
+<div class="idxTitle">
+<span class="listTitle"><h2>sysutils.cfengine.general (date)</h2></span>
+</div>
+</center>
+<table width="100%">
+<tr>
+<td align="left"><span class="periodLink">&lt;<a href="/cgi-bin/mnav.cgi?a=sysutils.cfengine.general&amp;m=2004-10&amp;d=prev" STYLE="background-color: rgb(255,255,0)">Prev&nbsp;Period</a>]</span></td>
+<td align="right"><span class="periodLink">[<a href="/cgi-bin/mnav.cgi?a=sysutils.cfengine.general&amp;m=2004-10&amp;d=next" STYLE="background-color: rgb(255,255,0)">Next&nbsp;Period</a>&gt;</span></td>
+</tr>
+</table>
+
+
+<table>
+  <tr>
+  <td valign="top">  
+  
+  <!-- BEGIN NetShelter Ad Tag for OSDir.com 120x600,160x600 -->
+<script language="JavaScript" type="text/javascript">
+if (!window.netshel_ord) { netshel_ord=Math.random()*10000000000000000;
+}
+if (!window.netshel_tile) { netshel_tile=1; }
+document.write('<script language="JavaScript" src="http://ad.doubleclick.net/adj/ns.osdir/general;sz=120x600,160x600;tile='+netshel_tile+';ord=' + netshel_ord + '?" type="text/javascript"></scr' + 'ipt>');
+netshel_tile++;
+</script>
+<!-- END AD TAG -->
+<p>
+<script type="text/javascript"><!--
+google_ad_client = "pub-2048202115983124";
+google_ad_width = 160;
+google_ad_height = 600;
+google_ad_format = "160x600_as";
+google_ad_type = "text_image";
+google_ad_channel = "7422506357";
+google_color_border = "ffffff";
+google_color_bg = "ffffff";
+google_color_link = "0000ff";
+google_color_url = "3366cc";
+google_color_text = "000000";
+//-->
+</script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+
+
+  </td>
+
+
+
+    <td valign="top">
+<div class="dateList">
+<div class="dayGroup">
+<strong>October 31, 2004</strong>
+<ul>
+<li><a name="00178" href="msg00178.html">classes / variable overriding etc.. / (master serves more than one domain) / Q for Mark?</a>, <i>Jan Y. Brueckner</i></li>
+<li><a name="00177" href="msg00177.html">Re: providing custom actions</a>, <i>Phil D'Amore</i></li>
+</ul>
+</div>
+<div class="dayGroup">
+<strong>October 30, 2004</strong>
+<ul>
+<li><a name="00176" href="msg00176.html">Re: providing custom actions</a>, <i>martin f krafft</i></li>
+<li><a name="00175" href="msg00175.html">Re: providing custom actions</a>, <i>Mark Burgess</i></li>
+<li><a name="00174" href="msg00174.html">Re: providing custom actions</a>, <i>martin f krafft</i></li>
+<li><a name="00173" href="msg00173.html">providing custom actions</a>, <i>martin f krafft</i></li>
+<li><a name="00172" href="msg00172.html">disble and dest problem under Solaris</a>, <i>Zeev Fisher</i></li>
+<li><a name="00171" href="msg00171.html">Re: cf_procs rename: No such file or directory</a>, <i>Mark . Burgess</i></li>
+</ul>
+</div>
+<div class="dayGroup">
+<strong>October 29, 2004</strong>
+<ul>
+<li><a name="00170" href="msg00170.html">Re: problem w/ copying files</a>, <i>Mark . Burgess</i></li>
+<li><a name="00169" href="msg00169.html">Re: problem w/ copying files</a>, <i>root</i></li>
+<li><a name="00168" href="msg00168.html">Re: cf_procs rename: No such file or directory</a>, <i>Tod Oace</i></li>
+<li><a name="00167" href="msg00167.html">Re: problem w/ copying files</a>, <i>Mark . Burgess</i></li>
+<li><a name="00166" href="msg00166.html">Re: problem w/ copying files</a>, <i>root</i></li>
+<li><a name="00165" href="msg00165.html">Re: problem w/ copying files</a>, <i>root</i></li>
+<li><a name="00164" href="msg00164.html">Re: problem w/ copying files</a>, <i>Mark . Burgess</i></li>
+<li><a name="00163" href="msg00163.html">problem w/ copying files</a>, <i>root</i></li>
+</ul>
+</div>
+<div class="dayGroup">
+<strong>October 28, 2004</strong>
+<ul>
+<li><a name="00162" href="msg00162.html">Re: RecursiveCheck was looking at ... lstat: No such file or directory</a>, <i>Mark . Burgess</i></li>
+<li><a name="00161" href="msg00161.html">Re: cf_procs rename: No such file or directory</a>, <i>Mark . Burgess</i></li>
+<li><a name="00160" href="msg00160.html">Re: RecursiveCheck was looking at ... lstat: No such file or directory</a>, <i>Mark . Burgess</i></li>
+<li><a name="00159" href="msg00159.html">cf_procs rename: No such file or directory</a>, <i>Tod Oace</i></li>
+<li><a name="00158" href="msg00158.html">Re: RecursiveCheck was looking at ... lstat: No such file or	directory</a>, <i>Tod Oace</i></li>
+<li><a name="00157" href="msg00157.html">Re: RecursiveCheck was looking at ... lstat: No such file or	directory</a>, <i>Brendan Strejcek</i></li>
+<li><a name="00156" href="msg00156.html">Re: RecursiveCheck was looking at ... lstat: No such file or	directory</a>, <i>Tod Oace</i></li>
+<li><a name="00155" href="msg00155.html">Wee patch for building cfengine 2.1.10 under Cygwin</a>, <i>Erik Williamson</i></li>
+<li><a name="00154" href="msg00154.html">Re: RecursiveCheck was looking at ... lstat: No such file or	directory</a>, <i>Brendan Strejcek</i></li>
+<li><a name="00153" href="msg00153.html">RecursiveCheck was looking at ... lstat: No such file or directory</a>, <i>David E. Nelson</i></li>
+</ul>
+</div>
+<div class="dayGroup">
+<strong>October 27, 2004</strong>
+<ul>
+<li><a name="00152" href="msg00152.html">simple unmount help</a>, <i>Adam M. Dunn</i></li>
+<li><a name="00151" href="msg00151.html">Re: is there a bug with packages action based on -release numbers?</a>, <i>Phil D'Amore</i></li>
+<li><a name="00150" href="msg00150.html">pthread error (Solaris 2.5.1)</a>, <i>Boran</i></li>
+<li><a name="00149" href="msg00149.html">Re: Permissions on copied directories</a>, <i>Philippe</i></li>
+<li><a name="00148" href="msg00148.html">Re: Linux ACLs</a>, <i>Philippe</i></li>
+<li><a name="00147" href="msg00147.html">Re: Linux ACLs</a>, <i>Mark . Burgess</i></li>
+<li><a name="00146" href="msg00146.html">Re: cfengine config files location (fwd)</a>, <i>Wil Cooley</i></li>
+<li><a name="00145" href="msg00145.html">Re: Linux ACLs</a>, <i>John Valdes</i></li>
+<li><a name="00144" href="msg00144.html">Re: Linux ACLs</a>, <i>John Valdes</i></li>
+<li><a name="00143" href="msg00143.html">Re: Excluding directories in recursive copies</a>, <i>Erik Williamson</i></li>
+</ul>
+</div>
+<div class="dayGroup">
+<strong>October 26, 2004</strong>
+<ul>
+<li><a name="00142" href="msg00142.html">Permissions on copied directories</a>, <i>Scott Burch</i></li>
+<li><a name="00141" href="msg00141.html">Re: Excluding directories in recursive copies</a>, <i>Brendan Strejcek</i></li>
+<li><a name="00140" href="msg00140.html">Re: Excluding directories in recursive copies</a>, <i>Mark . Burgess</i></li>
+<li><a name="00139" href="msg00139.html">Excluding directories in recursive copies</a>, <i>Erik Williamson</i></li>
+<li><a name="00138" href="msg00138.html">Re: Linux ACLs</a>, <i>martin f krafft</i></li>
+<li><a name="00137" href="msg00137.html">Re: Linux ACLs</a>, <i>Mark . Burgess</i></li>
+<li><a name="00136" href="msg00136.html">Re: Linux ACLs</a>, <i>martin f krafft</i></li>
+<li><a name="00135" href="msg00135.html">Interview questions</a>, <i>Christian Pearce</i></li>
+<li><a name="00134" href="msg00134.html">Re: Linux ACLs</a>, <i>Mark . Burgess</i></li>
+<li><a name="00133" href="msg00133.html">Re: Linux ACLs</a>, <i>martin f krafft</i></li>
+<li><a name="00132" href="msg00132.html">Re: Linux ACLs</a>, <i>Sven Mueller</i></li>
+<li><a name="00131" href="msg00131.html">Re: Linux ACLs</a>, <i>Mark . Burgess</i></li>
+<li><a name="00130" href="msg00130.html">Re: Linux ACLs</a>, <i>Mark . Burgess</i></li>
+<li><a name="00129" href="msg00129.html">Re: Linux ACLs</a>, <i>Sven Mueller</i></li>
+<li><a name="00128" href="msg00128.html">Re: Linux ACLs</a>, <i>Philippe</i></li>
+<li><a name="00127" href="msg00127.html">Re: Linux ACLs</a>, <i>Wil Cooley</i></li>
+<li><a name="00126" href="msg00126.html">Re: Help!  private network with linux clusters -- Solved!</a>, <i>Adam M. Dunn</i></li>
+<li><a name="00125" href="msg00125.html">Re: Linux ACLs</a>, <i>Philippe</i></li>
+<li><a name="00124" href="msg00124.html">Help!  private network with linux clusters</a>, <i>Adam M. Dunn</i></li>
+<li><a name="00123" href="msg00123.html">Linux ACLs</a>, <i>Mark . Burgess</i></li>
+</ul>
+</div>
+<div class="dayGroup">
+<strong>October 25, 2004</strong>
+<ul>
+<li><a name="00122" href="msg00122.html">Re: '/' is a special character in control section; how do I divide?</a>, <i>Christian Pearce</i></li>
+<li><a name="00121" href="msg00121.html">what does &quot;hailed us&quot; mean?</a>, <i>Kevin Matthews</i></li>
+<li><a name="00120" href="msg00120.html">'/' is a special character in control section; how do I divide?</a>, <i>John Borwick</i></li>
+<li><a name="00119" href="msg00119.html">Re: [Fwd: Re: ${clientip} ?]</a>, <i>Chip Seraphine</i></li>
+</ul>
+</div>
+<div class="dayGroup">
+<strong>October 24, 2004</strong>
+<ul>
+<li><a name="00118" href="msg00118.html">Re: cfengine uses incorrect typedef for setnetgrent() (I think)</a>, <i>Mark . Burgess</i></li>
+<li><a name="00117" href="msg00117.html">cfengine uses incorrect typedef for setnetgrent() (I think)</a>, <i>Kurt Lieber</i></li>
+</ul>
+</div>
+<div class="dayGroup">
+<strong>October 23, 2004</strong>
+<ul>
+<li><a name="00116" href="msg00116.html">is there a bug with packages action based on -release numbers?</a>, <i>rader</i></li>
+</ul>
+</div>
+<div class="dayGroup">
+<strong>October 22, 2004</strong>
+<ul>
+<li><a name="00115" href="msg00115.html">Re: [Fwd: Re: ${clientip} ?]</a>, <i>rader</i></li>
+<li><a name="00114" href="msg00114.html">Re: [Fwd: Re: ${clientip} ?]</a>, <i>Tod Oace</i></li>
+<li><a name="00113" href="msg00113.html">Re: [Fwd: Re: ${clientip} ?]</a>, <i>Tod Oace</i></li>
+<li><a name="00112" href="msg00112.html">RE: [Fwd: Re: ${clientip} ?]</a>, <i>Ed Brown</i></li>
+<li><a name="00111" href="msg00111.html">Re: [Fwd: Re: ${clientip} ?]</a>, <i>Tod Oace</i></li>
+<li><a name="00110" href="msg00110.html">Re: [Fwd: Re: ${clientip} ?]</a>, <i>Tod Oace</i></li>
+<li><a name="00109" href="msg00109.html">Re: [Fwd: Re: ${clientip} ?]</a>, <i>Ed Brown</i></li>
+<li><a name="00108" href="msg00108.html">Not receiving mail from all hosts</a>, <i>Pau Capdevila/Upcnet</i></li>
+<li><a name="00107" href="msg00107.html">Re: [Fwd: Re: ${clientip} ?]</a>, <i>Mark Burgess</i></li>
+<li><a name="00106" href="msg00106.html">Re: Problem with cfservd on Mandrake 10.0 -- Solved.</a>, <i>Mark Burgess</i></li>
+<li><a name="00105" href="msg00105.html">Re: [Fwd: Re: ${clientip} ?]</a>, <i>Tim Nelson</i></li>
+<li><a name="00104" href="msg00104.html">Re: backrefs in regexps?</a>, <i>Tim Nelson</i></li>
+</ul>
+</div>
+<div class="dayGroup">
+<strong>October 21, 2004</strong>
+<ul>
+<li><a name="00103" href="msg00103.html">Re: [Fwd: Re: ${clientip} ?]</a>, <i>Tod Oace</i></li>
+<li><a name="00102" href="msg00102.html">Re: [Fwd: Re: ${clientip} ?]</a>, <i>Ed Brown</i></li>
+<li><a name="00101" href="msg00101.html">Re: backrefs in regexps?</a>, <i>martin f krafft</i></li>
+<li><a name="00100" href="msg00100.html">Re: [Fwd: Re: ${clientip} ?]</a>, <i>Tod Oace</i></li>
+<li><a name="00099" href="msg00099.html">[Fwd: Re: ${clientip} ?]</a>, <i>Ed Brown</i></li>
+<li><a name="00098" href="msg00098.html">${clientip} ?</a>, <i>Tod Oace</i></li>
+<li><a name="00097" href="msg00097.html">Re: Setting an OS-specific class</a>, <i>Tod Oace</i></li>
+<li><a name="00096" href="msg00096.html">Re: Problem with cfservd on Mandrake 10.0 -- Solved.</a>, <i>Eric Sorenson</i></li>
+<li><a name="00095" href="msg00095.html">Re: Problem with cfservd on Mandrake 10.0 -- Solved.</a>, <i>Tod Oace</i></li>
+<li><a name="00094" href="msg00094.html">Problem with cfservd on Mandrake 10.0 -- Solved.</a>, <i>Brian Thomas</i></li>
+<li><a name="00093" href="msg00093.html">disable: /tmp/somefile.txt action=disable doesn't work</a>, <i>Thornton, John</i></li>
+</ul>
+</div>
+<div class="dayGroup">
+<strong>October 20, 2004</strong>
+<ul>
+<li><a name="00092" href="msg00092.html">Re: [Cfengine] Method to assure that action was taken</a>, <i>Bas van der Vlies</i></li>
+<li><a name="00091" href="msg00091.html">Re: Method to assure that action was taken</a>, <i>Brendan Strejcek</i></li>
+<li><a name="00090" href="msg00090.html">Method to assure that action was taken</a>, <i>Chris Kacoroski</i></li>
+<li><a name="00089" href="msg00089.html">Cfservd error messages</a>, <i>Pau Capdevila/Upcnet</i></li>
+</ul>
+</div>
+<div class="dayGroup">
+<strong>October 19, 2004</strong>
+<ul>
+<li><a name="00088" href="msg00088.html">Re: beta of cfengine-2.1.11</a>, <i>Chip Seraphine</i></li>
+<li><a name="00087" href="msg00087.html">Re: Staging rollouts to production environment</a>, <i>Ed Brown</i></li>
+<li><a name="00086" href="msg00086.html">Re: cf_lastseen.db [was: List of monitored files?]</a>, <i>Chip Seraphine</i></li>
+<li><a name="00085" href="msg00085.html">Editfiles error messages</a>, <i>Chip Seraphine</i></li>
+<li><a name="00084" href="msg00084.html">Re: quotes in regexp patterns</a>, <i>Andrew Stribblehill</i></li>
+<li><a name="00083" href="msg00083.html">[Fwd: Re: [Fwd: Re: Multiple Domains]]</a>, <i>Leslie Smith</i></li>
+<li><a name="00082" href="msg00082.html">Re: backrefs in regexps?</a>, <i>martin f krafft</i></li>
+<li><a name="00081" href="msg00081.html">Re: backrefs in regexps?</a>, <i>Tim Nelson</i></li>
+<li><a name="00080" href="msg00080.html">quotes in regexp patterns</a>, <i>martin f krafft</i></li>
+<li><a name="00079" href="msg00079.html">backrefs in regexps?</a>, <i>martin f krafft</i></li>
+</ul>
+</div>
+<div class="dayGroup">
+<strong>October 18, 2004</strong>
+<ul>
+<li><a name="00078" href="msg00078.html">Re: [Fwd: Re: Multiple Domains]</a>, <i>Tim Nelson</i></li>
+<li><a name="00077" href="msg00077.html">Re: Staging rollouts to production environment</a>, <i>Ted Zlatanov</i></li>
+<li><a name="00076" href="msg00076.html">Staging rollouts to production environment</a>, <i>Brian Thomas</i></li>
+<li><a name="00075" href="msg00075.html">cfwiki.org, the Cfengine Wiki is launched!</a>, <i>Josh Rabinowitz</i></li>
+<li><a name="00074" href="msg00074.html">[Fwd: Re: Multiple Domains]</a>, <i>Leslie Smith</i></li>
+<li><a name="00073" href="msg00073.html">Re: Multiple Domains</a>, <i>Tim Nelson</i></li>
+<li><a name="00072" href="msg00072.html">Re: Wrong date for Sysadm mail</a>, <i>Tim Nelson</i></li>
+</ul>
+</div>
+<div class="dayGroup">
+<strong>October 17, 2004</strong>
+<ul>
+<li><a name="00071" href="msg00071.html">Re: beta of cfengine-2.1.11</a>, <i>Philippe Lafoucri&#xE8;re</i></li>
+<li><a name="00070" href="msg00070.html">beta of cfengine-2.1.11</a>, <i>Mark . Burgess</i></li>
+</ul>
+</div>
+<div class="dayGroup">
+<strong>October 15, 2004</strong>
+<ul>
+<li><a name="00069" href="msg00069.html">Re: Cfexecd patch</a>, <i>Mark . Burgess</i></li>
+<li><a name="00068" href="msg00068.html">RHEL clone patch</a>, <i>Erik Williamson</i></li>
+<li><a name="00067" href="msg00067.html">RE: Cfexecd patch</a>, <i>Wheeler, John</i></li>
+<li><a name="00066" href="msg00066.html">RE: user adding and &quot;files&quot;</a>, <i>Wheeler, John</i></li>
+<li><a name="00065" href="msg00065.html">Re: Cfexecd patch</a>, <i>Russell Adams</i></li>
+<li><a name="00064" href="msg00064.html">Cfexecd patch</a>, <i>Chip Seraphine</i></li>
+<li><a name="00063" href="msg00063.html">Re: Using editfiles in method</a>, <i>Free Ekanayaka</i></li>
+<li><a name="00062" href="msg00062.html">Re: Using editfiles in method</a>, <i>Predrag Zecevic - Solaris System Administrator</i></li>
+<li><a name="00061" href="msg00061.html">Using editfiles in method</a>, <i>Free Ekanayaka</i></li>
+<li><a name="00060" href="msg00060.html">Re: Still having issues with multiple cfagents starting on clients</a>, <i>Mark . Burgess</i></li>
+<li><a name="00059" href="msg00059.html">Re: Still having issues with multiple cfagents starting on clients</a>, <i>Alexander Mattausch</i></li>
+</ul>
+</div>
+<div class="dayGroup">
+<strong>October 14, 2004</strong>
+<ul>
+<li><a name="00058" href="msg00058.html">Schedule expressions</a>, <i>Chip Seraphine</i></li>
+<li><a name="00057" href="msg00057.html">user adding and &quot;files&quot;</a>, <i>John Borwick</i></li>
+</ul>
+</div>
+<div class="dayGroup">
+<strong>October 13, 2004</strong>
+<ul>
+<li><a name="00056" href="msg00056.html">Still having issues with multiple cfagents starting on clients</a>, <i>Chris Kacoroski</i></li>
+<li><a name="00055" href="msg00055.html">Re: Wrong date for Sysadm mail</a>, <i>Anders Grund</i></li>
+<li><a name="00054" href="msg00054.html">Multiple Domains</a>, <i>Leslie Smith</i></li>
+</ul>
+</div>
+<div class="dayGroup">
+<strong>October 12, 2004</strong>
+<ul>
+<li><a name="00053" href="msg00053.html">Re: Detecting unused CPUs on Linux</a>, <i>Chip Seraphine</i></li>
+<li><a name="00052" href="msg00052.html">Re: Detecting unused CPUs on Linux</a>, <i>Frank Smith</i></li>
+<li><a name="00051" href="msg00051.html">Re: Detecting unused CPUs on Linux</a>, <i>Eric Sorenson</i></li>
+<li><a name="00050" href="msg00050.html">Detecting unused CPUs on Linux</a>, <i>Chip Seraphine</i></li>
+<li><a name="00049" href="msg00049.html">Re: 2.1.9 patches</a>, <i>Anders Grund</i></li>
+<li><a name="00048" href="msg00048.html">Wrong date for Sysadm mail</a>, <i>Anders Grund</i></li>
+<li><a name="00047" href="msg00047.html">Cfengine Styleguide...</a>, <i>Christian Pearce</i></li>
+</ul>
+</div>
+<div class="dayGroup">
+<strong>October 11, 2004</strong>
+<ul>
+<li><a name="00046" href="msg00046.html">Re: cfexecd and cfagent</a>, <i>Alan Silver</i></li>
+<li><a name="00045" href="msg00045.html">Re: Lack of output</a>, <i>Russell Adams</i></li>
+</ul>
+</div>
+<div class="dayGroup">
+<strong>October 09, 2004</strong>
+<ul>
+<li><a name="00044" href="msg00044.html">Re: copy rules w/checksum &amp; w/timestamp</a>, <i>Mark . Burgess</i></li>
+<li><a name="00043" href="msg00043.html">Re: owner and group in files and copy</a>, <i>Mark . Burgess</i></li>
+<li><a name="00042" href="msg00042.html">Re: Force cfengine to exit with warning..</a>, <i>Tyson Tucker</i></li>
+<li><a name="00041" href="msg00041.html">Force cfengine to exit with warning..</a>, <i>Darrell Fuhriman</i></li>
+</ul>
+</div>
+<div class="dayGroup">
+<strong>October 08, 2004</strong>
+<ul>
+<li><a name="00040" href="msg00040.html">Thanks! - SyslogFacility setting not working for cfservd</a>, <i>David E. Nelson</i></li>
+<li><a name="00039" href="msg00039.html">Re: SyslogFacility setting not working for cfservd</a>, <i>Predrag Zecevic - Solaris System Administrator</i></li>
+<li><a name="00038" href="msg00038.html">Re: SyslogFacility setting not working for cfservd</a>, <i>Frank Ranner</i></li>
+<li><a name="00037" href="msg00037.html">Re: SyslogFacility setting not working for cfservd</a>, <i>Predrag Zecevic - Solaris System Administrator</i></li>
+</ul>
+</div>
+<div class="dayGroup">
+<strong>October 07, 2004</strong>
+<ul>
+<li><a name="00036" href="msg00036.html">SyslogFacility setting not working for cfservd</a>, <i>David E. Nelson</i></li>
+<li><a name="00035" href="msg00035.html">Re: what's cfexecd for? (was cfexecd, FatalError(), leaves cfagent)</a>, <i>Andrew Stribblehill</i></li>
+<li><a name="00034" href="msg00034.html">ipv4* classes not being set up mac OSX machines with fixed ips</a>, <i>Chris Kacoroski</i></li>
+<li><a name="00033" href="msg00033.html">Re: big files</a>, <i>Mark . Burgess</i></li>
+<li><a name="00032" href="msg00032.html">Re: what's cfexecd for? (was cfexecd, FatalError(), leaves cfagent)</a>, <i>Chip Seraphine</i></li>
+<li><a name="00031" href="msg00031.html">what's cfexecd for? (was cfexecd, FatalError(), leaves cfagent)</a>, <i>Will Lowe</i></li>
+<li><a name="00030" href="msg00030.html">Re: big files</a>, <i>Iain Morgan</i></li>
+<li><a name="00029" href="msg00029.html">Re: owner and group in files and copy</a>, <i>Mark . Burgess</i></li>
+<li><a name="00028" href="msg00028.html">Re: [Cfengine] Re: cfexecd, FatalError(),	leaves cfagent burning 100% cpu</a>, <i>Chip Seraphine</i></li>
+<li><a name="00027" href="msg00027.html">Re: big files</a>, <i>Brendan Strejcek</i></li>
+<li><a name="00026" href="msg00026.html">big files</a>, <i>Brendan Strejcek</i></li>
+<li><a name="00025" href="msg00025.html">Re: owner and group in files and copy</a>, <i>Ed Brown</i></li>
+<li><a name="00024" href="msg00024.html">Re: owner and group in files and copy</a>, <i>Christian Pearce</i></li>
+<li><a name="00023" href="msg00023.html">Re: Return codes</a>, <i>Chip Seraphine</i></li>
+<li><a name="00022" href="msg00022.html">Re: Return codes</a>, <i>David E. Nelson</i></li>
+<li><a name="00021" href="msg00021.html">Return codes</a>, <i>Chip Seraphine</i></li>
+<li><a name="00020" href="msg00020.html">Re: owner and group in files and copy</a>, <i>Ed Brown</i></li>
+<li><a name="00019" href="msg00019.html">Re: owner and group in files and copy</a>, <i>Chris Edillon</i></li>
+</ul>
+</div>
+<div class="dayGroup">
+<strong>October 06, 2004</strong>
+<ul>
+<li><a name="00018" href="msg00018.html">Re: [Cfengine] Re: cfexecd, FatalError(),	leaves cfagent burning 100% cpu</a>, <i>Andrew Stribblehill</i></li>
+<li><a name="00017" href="msg00017.html">Re: cfexecd, FatalError(), leaves cfagent burning 100% cpu</a>, <i>Mark Burgess</i></li>
+<li><a name="00016" href="msg00016.html">Re: [Cfengine] Re: cfexecd, FatalError(),	leaves cfagent burning 100% cpu</a>, <i>Mark Burgess</i></li>
+<li><a name="00015" href="msg00015.html">Re: cfexecd, FatalError(), leaves cfagent burning 100% cpu</a>, <i>Andrew Stribblehill</i></li>
+<li><a name="00014" href="msg00014.html">Re: [Cfengine] Re: cfexecd, FatalError(),	leaves cfagent burning 100% cpu</a>, <i>Bas van der Vlies</i></li>
+</ul>
+</div>
+<div class="dayGroup">
+<strong>October 05, 2004</strong>
+<ul>
+<li><a name="00013" href="msg00013.html">Re: cfexecd, FatalError(), leaves cfagent burning 100% cpu</a>, <i>Tod Oace</i></li>
+<li><a name="00012" href="msg00012.html">Re: cfexecd and cfagent</a>, <i>Tod Oace</i></li>
+<li><a name="00011" href="msg00011.html">Re: cfexecd, FatalError(), leaves cfagent burning 100% cpu</a>, <i>Tom Carlile</i></li>
+<li><a name="00010" href="msg00010.html">Re: cfexecd, FatalError(), leaves cfagent burning 100% cpu</a>, <i>Will Lowe</i></li>
+<li><a name="00009" href="msg00009.html">Re: cfexecd, FatalError(), leaves cfagent burning 100% cpu</a>, <i>Andrew Stribblehill</i></li>
+<li><a name="00008" href="msg00008.html">cfexecd, FatalError(), leaves cfagent burning 100% cpu</a>, <i>Will Lowe</i></li>
+</ul>
+</div>
+<div class="dayGroup">
+<strong>October 04, 2004</strong>
+<ul>
+<li><a name="00007" href="msg00007.html">Re: cfexecd and cfagent</a>, <i>Christian Pearce</i></li>
+<li><a name="00006" href="msg00006.html">cfexecd and cfagent</a>, <i>Alan Silver</i></li>
+</ul>
+</div>
+<div class="dayGroup">
+<strong>October 03, 2004</strong>
+<ul>
+<li><a name="00005" href="msg00005.html">Re: Killed wrong proc!</a>, <i>Ted Zlatanov</i></li>
+</ul>
+</div>
+<div class="dayGroup">
+<strong>October 02, 2004</strong>
+<ul>
+<li><a name="00004" href="msg00004.html">Re: disable: actually deletes files???</a>, <i>Mark . Burgess</i></li>
+</ul>
+</div>
+<div class="dayGroup">
+<strong>October 01, 2004</strong>
+<ul>
+<li><a name="00003" href="msg00003.html">Re: disable: actually deletes files???</a>, <i>Harry Hoffman</i></li>
+<li><a name="00002" href="msg00002.html">Re: disable: actually deletes files???</a>, <i>Brendan Strejcek</i></li>
+<li><a name="00001" href="msg00001.html">disable: actually deletes files???</a>, <i>Harry Hoffman</i></li>
+<li><a name="00000" href="msg00000.html">Re: cf_lastseen.db [was: List of monitored files?]</a>, <i>Mark . Burgess</i></li>
+</ul>
+</div>
+
+</div>
+
+
+<!-- tada -->
+  <td valign="top">
+  <div style="position: absolute; right: -1px;">
+<table>
+  <tr>
+    <td>
+
+
+
+
+<script type="text/javascript"><!--
+google_ad_client = "pub-2048202115983124";
+google_ad_width = 300;
+google_ad_height = 250;
+google_ad_format = "300x250_as";
+google_ad_type = "text_image";
+google_ad_channel = "0680650065";
+google_color_border = "ffffff";
+google_color_bg = "ffffff";
+google_color_link = "0000ff";
+google_color_url = "3366cc";
+google_color_text = "000000";
+//-->
+</script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<br>
+<!-- BEGIN NetShelter Ad Tag for OSDir.com 300x250,336x280 -->
+<script language="JavaScript" type="text/javascript">
+if (!window.netshel_ord) { netshel_ord=Math.random()*10000000000000000;
+}
+if (!window.netshel_tile) { netshel_tile=1; }
+document.write('<script language="JavaScript" src="http://ad.doubleclick.net/adj/ns.osdir/general;sz=300x250,336x280;tile='+netshel_tile+';ord=' + netshel_ord + '?" type="text/javascript"></scr' + 'ipt>');
+netshel_tile++;
+</script>
+<!-- END AD TAG -->
+
+
+</td>
+</tr>
+<tr><td>
+
+</td></tr></table>
+</div>
+</td>
+
+
+
+
+
+
+<!-- End leftnav -->
+</td></tr></table>
+
+
+
+
+<table width="100%">
+<tr valign="bottom">
+<td align="left"><span class="periodLink">&lt;<a href="/cgi-bin/mnav.cgi?a=sysutils.cfengine.general&amp;m=2004-10&amp;d=prev" STYLE="background-color: rgb(255,255,0)">Prev&nbsp;Period</a>]</span></td>
+<td align="right"><span class="periodLink">[<a href="/cgi-bin/mnav.cgi?a=sysutils.cfengine.general&amp;m=2004-10&amp;d=next" STYLE="background-color: rgb(255,255,0)">Next&nbsp;Period</a>&gt;</span></td>
+</tr>
+</table>
+
+<p>
+<table align="center">
+  <tr>
+   <td><h2>Did this help?</h2>
+   If not please try a <i>much deeper search</i>: <!-- Google CSE Search Box Begins -->
+     <form id="searchbox_008059810939676512379:f5owd_2hq3u" action="http://osdir.com/ml/search.html">
+     <input type="hidden" name="cx" value="008059810939676512379:f5owd_2hq3u" />
+     <input type="hidden" name="cof" value="FORID:10" />
+     <input name="q" type="text" size="40" />
+     <input type="submit" name="sa" value="Search" />
+     <img src="http://google.com/coop/images/google_custom_search_smnar.gif" alt="Google Custom Search" />
+     </form>     <!-- Google CSE Search Box Ends -->
+<p><h2>Found a better answer or URL? Have a Question?</h2>
+<div class="js-kit-comments" label="comment"></div>
+<script src="http://js-kit.com/comments.js"></script>
+    </td>
+ </tr>
+</table>
+
+
+<center>
+<script type="text/javascript"><!--
+google_ad_client = "pub-2048202115983124";
+/* 728x15, created 4/15/08 */
+google_ad_slot = "4146565188";
+google_ad_width = 728;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</center>
+
+<hr><font size="-1">
+Recently Viewed:<br/>
+<a href='http://osdir.com/ml/altlinux.sisyphus/2004-08/msg00052.html
+'>altlinux.sisyph...
+</a>&nbsp;&nbsp;  
+<a href='http://osdir.com/ml/freedesktop.hal/2006-03/msg00186.html
+'>freedesktop.hal...
+</a>&nbsp;&nbsp;  
+<a href='http://osdir.com/ml/network.thinstation.general/2003-05/msg00029.html
+'>network.thinsta...
+</a>&nbsp;&nbsp;  
+<a href='http://osdir.com/ml/os.cygwin.patches/2003-08/msg00085.html
+'>os.cygwin.patch...
+</a>&nbsp;&nbsp;  
+<a href='http://osdir.com/ml/tex.live/2002-05/msg00187.html
+'>tex.live/2002-0...
+</a>&nbsp;&nbsp;  
+<a href='http://osdir.com/ml/handhelds.ipaq.ipaqworld/2005-05/msg00006.html
+'>handhelds.ipaq....
+</a>&nbsp;&nbsp;  
+<a href='http://osdir.com/ml/mail.squirrelmail.user/2002-09/msg00222.html
+'>mail.squirrelma...
+</a>&nbsp;&nbsp;  
+<a href='http://osdir.com/ml/version-control.revctrl/2005-08/msg00013.html
+'>version-control...
+</a>&nbsp;&nbsp;  
+<a href='http://osdir.com/ml/suse.general.spanish/2006-02/msg00285.html
+'>suse.general.sp...
+</a>&nbsp;&nbsp;  
+<a href='http://osdir.com/ml/java.cruise-control.devel/2004-02/msg00109.html
+'>java.cruise-con...
+</a>&nbsp;&nbsp;  
+<a href='http://osdir.com/ml/ietf.xmpp/2003-01/msg00056.html
+'>ietf.xmpp/2003-...
+</a>&nbsp;&nbsp;  
+<a href='http://osdir.com/ml/xfce.user/2003-12/msg00330.html
+'>xfce.user/2003-...
+</a>&nbsp;&nbsp;  
+<a href='http://osdir.com/ml/kde.internationalization.german/2005-12/msg00088.html
+'>kde.internation...
+</a>&nbsp;&nbsp;  
+<a href='http://osdir.com/ml/yellowdog.general/2004-02/msg00098.html
+'>yellowdog.gener...
+</a>&nbsp;&nbsp;  
+<a href='http://osdir.com/ml/bsd.api.general/2002-09/msg00024.html
+'>bsd.api.general...
+</a>&nbsp;&nbsp;  
+<a href='http://osdir.com/ml/python.brasil/2004-03/msg00222.html
+'>python.brasil/2...
+</a>&nbsp;&nbsp;  
+<a href='http://osdir.com/ml/qnx.openqnx.devel/2002-01/msg00007.html
+'>qnx.openqnx.dev...
+</a>&nbsp;&nbsp;  
+<a href='http://osdir.com/ml/culture.language.basque.itzul/2001-02/msg00176.html
+'>culture.languag...
+</a>&nbsp;&nbsp;  
+<a href='http://osdir.com/ml/db.postgresql.jdbc/2004-04/msg00066.html
+'>db.postgresql.j...
+</a>&nbsp;&nbsp;  
+<a href='http://osdir.com/ml/region.ukraine.devtalk/2005-09/msg00007.html
+'>region.ukraine....
+</a>&nbsp;&nbsp;  
+<a href='http://osdir.com/ml/user-groups.linux.chlug/2006-02/msg00044.html
+'>user-groups.lin...
+</a>&nbsp;&nbsp;  
+<a href='http://osdir.com/ml/web.midgard.devel/2003-01/msg00104.html
+'>web.midgard.dev...
+</a>&nbsp;&nbsp;  
+</font>
+<hr>
+<center>
+<a href="/ml/index.php">Home</a> | <a href="http://mlblog.osdir.com">blog view</a> | <a href="http://osdir.com/Article9135.phtml">advertise</a> | OSDir is an <a href="http://inevitablecorp.com">inevitable</a> website. <img src="http://osdir.com/ml/images/supertinyappleboy.gif" alt="super tiny logo"> 
+<!-- Google CSE Search Box Begins -->
+     <form id="searchbox_008059810939676512379:f5owd_2hq3u" action="http://osdir.com/ml/search.html">
+     <input type="hidden" name="cx" value="008059810939676512379:f5owd_2hq3u" />
+     <input type="hidden" name="cof" value="FORID:10" />
+     <input name="q" type="text" size="40" />
+     <input type="submit" name="sa" value="Search" />
+     <img src="http://google.com/coop/images/google_custom_search_smnar.gif" alt="Google Custom Search" />
+     </form>
+     <!-- Google CSE Search Box Ends -->
+</center>
+<hr>
+<script type="text/javascript" src="http://osdir.com/ml/YYKFLOLAUU.js"><noscript><a href="http://app.feeddigest.com/digest3/YYKFLOLAUU.html">Click for &quot;Change Me&quot;.</a> Powered by <a href="http://www.feeddigest.com/">RSS Feed Digest</a></noscript></script> 
+
+<!-- Kontera ContentLink™ -->
+<script type="text/javascript">
+var dc_UnitID = 14;
+var dc_PublisherID = 4576;
+var dc_AdLinkColor = 'blue';
+var dc_adprod='ADL';
+</script>
+<script type="text/javascript" src="http://kona.kontera.com/javascript/lib/KonaLibInline.js"></script>
+<!-- Kontera ContentLink™ -->
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-381510-10";
+urchinTracker();
+</script>
+</body>
+</html>
+</body>
+</html>
+<!-- MHonArc v2.6.16 -->

@@ -1,0 +1,25 @@
+# add ipsec rules to bypass kirkland     8 April 2008
+
+     
+at magic hour: 
+watch/turnoff nagios 
+on osiris3:
+/etc/init.d/setkey restart; /etc/init.d/racoon restart
+  tail -50 /var/log/deamon.log
+  setkey -D
+  setkey -DP
+dup above on osiris2
+both sides pingable from kirkland/production?
+
+
+ping times test to api
+turn on nagios
+
+try no encryptian algorithm, 'null_enc'
+return test network/kirkland to normal
+
+osiris2 4.79.104.122
+osiris 209.245.176.14
+
+
+

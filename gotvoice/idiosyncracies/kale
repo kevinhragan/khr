@@ -1,0 +1,13 @@
+add /usr/local/jdk/bin to /etc/profile PATH's
+
+# for not enough open files for gv; append to /etc/security/limits.conf
+gv              hard    nofile          8192
+gv              soft    nofile          8192
+
+18 Sept 07:
+wordzx system
+/var/gv/wordzx*
+/usr/local/bin/(down|up)load-ftp
+
+For compose.gotvoice.com, etc.
+special senddmail config - see wiki

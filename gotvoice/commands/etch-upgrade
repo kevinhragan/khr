@@ -1,0 +1,16 @@
+ref: http://www.debian.org/releases/stable/sparc/release-notes/ch-upgrading.en.html
+
+dpkg --audit
+aptitude search "~ahold" | grep "^.h"
+dpkg --get-selections | grep hold
+script -t 2>~/upgrade-etch.time -a ~/upgrade-etch.script
+aptitude update
+aptitude upgrade
+aptitude install initrd-tools
+# X installed?
+dpkg -l xfree86-common 
+# if not:
+aptitude install linux-image-2.6-686
+aptitude dist-upgrade
+aptitude update
+

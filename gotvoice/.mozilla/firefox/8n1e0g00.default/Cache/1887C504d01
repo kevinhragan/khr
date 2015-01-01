@@ -1,0 +1,321 @@
+H1 DIV.hText{text-indent:-9999px}
+#pageMain .qTitle SPAN.value{color:#f47910}
+#pageMain .deletedQuestion .qTitle SPAN.value{color:#f00}
+#pageMain .qBody{padding-top:6px;background:url(/xp/images/quoteBig.gif) 84px 0 no-repeat;clear:left}
+#pageMain .qBody SPAN.value{padding-top:2px;min-height:40px}
+.IE #pageMain .qBody SPAN.value{height:40px}
+#pageMain DIV.paq{height:31px;line-height:31px}
+.IE .answers .answer .bc .answerBody, .IE7 .answers .answer .bc .answerBody{clear:right}
+#pageMain .sectionChoice .bbg{background-color:#ebebeb}
+#pageMain .sectionChoice .f TD{background-image:url(/cfEB.gif)}
+#pageMain .sectionChoice .f .l{background-image:url(/cflEB.gif)}
+#pageMain .sectionChoice .f .r{width:6px;background-image:url(/cfrEB.gif)}
+.sectionChoiceLast .bc P{color:#969696}
+.lookItUp{width:253px;height:42px;background:url(/xp/images/lookItUp.gif) top left no-repeat;text-indent:-9999px}
+.googleUser{background:url(/xp/images/googleUser.png) top left no-repeat}
+.googleUser .hr{width:290px;margin:2px 0 5px 0}
+.googleUser .keywords, .googleUser .more A{color:#666}
+.googleUser A{padding-left:10px;background:url(/xp/images/aArrow.gif) left 5px no-repeat;color:#000}
+UL.questionOptions{overflow:hidden;margin-bottom:15px}
+.IE UL.questionOptions{height:0;overflow:visible}
+UL.questionOptions LI{float:left;margin-right:5px;padding:0;background:none}
+UL.questionOptions LI A{display:block;height:30px;text-indent:-100000px;overflow:hidden;cursor:pointer;background-position:left top;background-repeat:no-repeat}
+UL.questionOptions LI.unaccept A{width:81px;background-image:url(/xp/images/unacceptButton.png)}
+.IE UL.questionOptions LI.unaccept A{background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/unacceptButton.png',sizingMethod='crop')}
+UL.questionOptions LI.edit A{width:96px;background-image:url(/xp/images/editQuestionButton.png)}
+.IE UL.questionOptions LI.edit A{background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/editQuestionButton.png',sizingMethod='crop')}
+UL.questionOptions LI.knowledgebase A{width:136px;background-image:url(/xp/images/knowledgebaseButton.png)}
+.IE UL.questionOptions LI.knowledgebase A{background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/knowledgebaseButton.png',sizingMethod='crop')}
+UL.questionOptions LI.notifySubscribe A{width:111px;background-image:url(/xp/images/notifySubscribeButton.png)}
+.IE UL.questionOptions LI.notifySubscribe A{background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/notifySubscribeButton.png',sizingMethod='crop')}
+UL.questionOptions LI.notifyUnsubscribe A{width:111px;background-image:url(/xp/images/notifyUnsubscribeButton.png)}
+.IE UL.questionOptions LI.notifyUnsubscribe A{background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/notifyUnsubscribeButton.png',sizingMethod='crop')}
+UL.questionOptions LI.printerFriendly, UL.questionOptions LI.emailFriend, UL.questionOptions LI.bookmark{float:right;margin:0 0 0 5px}
+UL.questionOptions LI.printerFriendly A{width:108px;background-image:url(/xp/images/printerFriendlyButton.png)}
+.IE UL.questionOptions LI.printerFriendly A{background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/printerFriendlyButton.png',sizingMethod='crop')}
+UL.questionOptions LI.emailFriend A{width:108px;background-image:url(/xp/images/emailFriendButton.png)}
+.IE UL.questionOptions LI.emailFriend A{background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/emailFriendButton.png',sizingMethod='crop')}
+UL.questionOptions LI.bookmark A{width:86px;background-image:url(/xp/images/bookmarkButton.png)}
+.IE UL.questionOptions LI.bookmark A{background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/bookmarkButton.png',sizingMethod='crop')}
+#pageMain .sectionHeaderExtraQuestion{font-size:11px;font-weight:bold}
+.relatedSolutions .sectionHeaderExtra, .answers .answer .h TD .sectionHeaderExtra{font-size:11px;font-weight:bold}
+.answers .answer .h TD .sectionHeaderExtra .answerID{margin-right:1em}
+.answers .answer .infoCol P{font-weight:bold;color:#666;padding-bottom:10px}
+.answers .answer .infoCol P SPAN{color:#000}
+.answers .answer .bc .answerer{height:20px;line-height:20px;font-weight:bold}
+.answers .answer .bc .answerer A{color:#444}
+.answers .bc{margin:20px 20px 6px 20px}
+.answers .answer .bc{margin:8px}
+.answers .answer .bc .answerBody{margin:0;padding:10px 0 0 10px}
+.answers .answer .bc .footnote{color:#e63a19;font-weight:bold;font-size:10px;text-transform:uppercase}
+.answers .answer .infoColHeader{height:3px;font-size:0;background:url(/xp/images/answerInfoColHeader.gif) left top no-repeat}
+.answers .answer .infoColContainer{background:url(/xp/images/answerInfoColContainer.gif) left top repeat-y}
+.IE7 .answers .answer .infoColContainer{width:100%}
+.answers .answer .infoColContainer .infoCol{width:106px}
+.answers .answer .infoColContainer .infoBody{margin-left:123px;margin-right:9px}
+.IE .answers .answer .infoColContainer .infoBody{height:0}
+.answers .answer .infoColFooter{height:3px;font-size:0;background:url(/xp/images/answerInfoColFooter.gif) left top no-repeat}
+.answers .answer .infoColContainer .infoCol .infoColIcon, .viewSol .infoCol .infoColIcon{width:84px;height:85px;margin:10px 10px 5px 10px}
+.answers .askerHeader .infoColContainer .infoCol .infoColIcon{background-image:url(/xp/images/askerInfoColIcon.png)}
+.IE .answers .askerHeader .infoColContainer .infoCol .infoColIcon{background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/askerInfoColIcon.png',sizingMethod='crop')}
+.answers .askerHeader .female .infoCol .infoColIcon{background-image:url(/xp/images/askerWomanInfoColIcon.png)}
+.IE .answers .askerHeader .female .infoCol .infoColIcon{background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/askerWomanInfoColIcon.png',sizingMethod='crop')}
+.answers .proposedHeader .infoColContainer .infoCol .infoColIcon, .answers .assistedHeader .infoColContainer .infoCol .infoColIcon, .answers .acceptedHeader .infoColContainer .infoCol .infoColIcon, .viewSol .infoCol .infoColIcon{background-image:url(/xp/images/acceptedInfoColIcon.png)}
+.IE .answers .proposedHeader .infoColContainer .infoCol .infoColIcon, .IE .answers .assistedHeader .infoColContainer .infoCol .infoColIcon, .IE .answers .acceptedHeader .infoColContainer .infoCol .infoColIcon, .IE .viewSol .infoCol .infoColIcon{background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/acceptedInfoColIcon.png',sizingMethod='crop')}
+.answers .proposedHeader .female .infoCol .infoColIcon, .answers .assistedHeader .female .infoCol .infoColIcon, .answers .acceptedHeader .female .infoCol .infoColIcon, .viewSol .female .infoCol .infoColIcon{background-image:url(/xp/images/acceptedWomanInfoColIcon.png)}
+.IE .answers .proposedHeader .female .infoCol .infoColIcon, .IE .answers .assistedHeader .female .infoCol .infoColIcon, .IE .answers .acceptedHeader .female .infoCol .infoColIcon, .IE .viewSol .female .infoCol .infoColIcon{background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/acceptedWomanInfoColIcon.png',sizingMethod='crop')}
+.answers .answer UL.answerOptions{margin-top:1em;padding-top:10px;overflow:hidden;background:url(/xp/images/answerOptions.gif) left top repeat-x}
+.IE .answers .answer UL.answerOptions{height:0;overflow:visible}
+.answers .answer UL.answerOptions LI{float:left;padding:0;background:none}
+.answers .answer UL.answerOptions LI.accept, .answers .answer UL.answerOptions LI.split, .answers .answer UL.answerOptions LI.acceptAndAwardPoints{float:right}
+.answers .answer UL.answerOptions LI A{display:block;height:34px;text-indent:-100000px;overflow:hidden;cursor:pointer;background-position:left top;background-repeat:no-repeat}
+.answers .answer UL.answerOptions LI.edit A{width:85px;background-image:url(/xp/images/editAnswerButton.png)}
+.IE .answers .answer UL.answerOptions LI.edit A{background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/editAnswerButton.png',sizingMethod='crop')}
+.answers .answer UL.answerOptions LI.accept A{width:125px;background-image:url(/xp/images/acceptAnswerButton.png)}
+.IE .answers .answer UL.answerOptions LI.accept A{background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/acceptAnswerButton.png',sizingMethod='crop')}
+.answers .answer UL.answerOptions LI.split A{width:160px;background-image:url(/xp/images/splitPointsButton.png)}
+.IE .answers .answer UL.answerOptions LI.split A{background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/splitPointsButton.png',sizingMethod='crop')}
+.answers .answer UL.answerOptions LI.acceptAndAwardPoints A{width:160px;background-image:url(/xp/images/buttonAcceptAndAwardPoints.png)}
+.IE .answers .answer UL.answerOptions LI.acceptAndAwardPoints A{background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/buttonAcceptAndAwardPoints.png',sizingMethod='crop')}
+.answers .answer UL.answerOptions LI.acceptKnowledgebase A{width:260px;height:60px;background-image:url(/xp/images/accept_knowledgebaseButton.png)}
+.IE .answers .answer UL.answerOptions LI.acceptKnowledgebase A{background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/accept_knowledgebaseButton.png',sizingMethod='crop')}
+.answers .answer UL.answerOptions LI.acceptViewSolutions{float:right}
+.answers .answer UL.answerOptions LI.acceptViewSolutions A{width:256px;height:60px;background-image:url(/xp/images/accept_viewSolutionsButton.png)}
+.IE .answers .answer UL.answerOptions LI.acceptViewSolutions A{background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/accept_viewSolutionsButton.png',sizingMethod='crop')}
+.qDate{position:relative;margin-top:-12px;float:right}
+.qTitle{font-size:15px;padding-bottom:14px;width:488px;float:left}
+.IE .qTitle{width:463px}
+.IE7 .qTitle{width:467px}
+.Safari .qTitle{width:483px}
+.Opera .qTitle{width:488px}
+.loggedOutQTitle, .qDateRow{float:left;width:498px}
+.qBody .name{font-size:15px}
+.qTagRow, .qZoneRow, .qAuthorRow, .qAuthorRowExtra, .qTimeZoneRow, .qPointsRow, .qCodeSnippetRow{width:600px;display:block}
+#pageMain .qRelatedRow{margin-top:15px;overflow:hidden}
+.qTimeZoneRow, .qPointsRow{width:400px;float:left}
+.qCodeSnippetRow{width:669px}
+#pageMain .qTagRow .value, #pageMain .qAuthorRowExtra .value, #pageMain .qAuthorRow .value, #pageMain .qPointsRow .value, #pageMain .qZoneRow .value, #pageMain .qTimeZoneRow .value, #pageMain .qExtraNotifRow .value, #pageMain .qRelatedRow .value{color:#777;font-size:11px}
+#pageMain .qRelatedRow .value{width:581px;height:52px;background:url(/xp/images/qRelatedRowBG.gif) left top no-repeat}
+#pageMain .qRelatedRow .value A.qRelatedParent, #pageMain .qRelatedRow .value A.qRelatedChild{display:block;margin-top:1px;height:49px;line-height:49px}
+#pageMain .qRelatedRow .value A.qRelatedParent{float:left;margin-left:2px;padding-left:51px;background:url(/xp/images/qRelatedParentArrow.png) left top no-repeat}
+#pageMain .qRelatedRow .value A.qRelatedChild{float:right;margin-right:2px;padding-right:51px;background:url(/xp/images/qRelatedChildArrow.png) right top no-repeat}
+.qAuthorRowExtra .knowledgeLevel{color:#f47910}
+.qDateRow{margin-bottom:8px}
+#pageMain .postComment .formFactory .formRow .formName{width:80px}
+#pageMain .postComment .formFactory .formRow .formValue{width:525px}
+#pageMain .postComment .verifyEmailButton{margin-top:-10px}
+#pageMain .postComment .verifyEmailButton .t2i{display:none}
+#pageMain .postComment .verifyEmailButton A{background:url(/xp/images/resendVerificationEmailButton.png);width:199px;height:40px;padding:0}
+.IE #pageMain .postComment .verifyEmailButton A{background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/resendVerificationEmailButton.png',sizingMethod='crop')}
+#pageMain .backButton .bTypeA{margin-right:5px}
+#pageMain .backButton .t2i{display:none}
+#pageMain .backButton A{background:url(/xp/images/buttons/medium/back_to_previous.png)}
+.IE #pageMain .backButton A{background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/buttons/medium/back_to_previous.png',sizingMethod='crop')}
+#pageMain .blurredAnswer .bc{height:140px;overflow:hidden}
+#pageMain .signUpSpace{height:0;overflow:hidden}
+#pageMain .signUpSpace .bSizeMedium{display:none}
+#pageMain .hasMouseOver .infoBody{height:130px;width:520px;overflow:hidden}
+.Firefox #pageMain .hasMouseOver .infoBody{margin-left:17px}
+.IE #pageMain .hasMouseOver .infoBody{position:relative;top:-99px}
+#pageMain .signUpSpaceVisible{height:140px;overflow:hidden}
+#pageMain .signUpSpaceVisible .subHeader{color:#fb7b00;font-weight:bold;font-size:16px;margin-top:4px;margin-bottom:7px}
+#pageMain .signUpSpaceVisible UL LI{background-image:url(/xp/images/bulletBlack.gif);padding-left:7px;margin-left:5px;font-size:12px}
+#pageMain .signUpSpaceVisible UL{margin-bottom:17px}
+#pageMain .signUpSpaceVisible .signIn, #pageMain .signUpSpaceVisible .bSizeMedium{float:left}
+#pageMain .signUpSpaceVisible .signIn{font-size:12px;margin-left:15px;line-height:24px}
+#pageMain .signUpSpaceVisible P{font-size:12px;color:#656565;margin:1em 0em 2.5em 0em}
+#pageMain .signUpSpaceVisible UL LI SPAN{font-weight:bold;color:#656565}
+#pageMain .signUpSpaceVisible .blur{display:none}
+#pageMain .blur{background:url(/xp/images/answerOverlay.png);display:block;position:absolute;margin-top:20px;height:113px;width:529px;z-index:1}
+.IE #pageMain .blur{background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/answerOverlay.png',sizingMethod='crop')}
+#pageMain .signUpSpaceVisible .magnify{float:right;width:137px;height:138px;background:url(/xp/images/magGlass.jpg)}
+#pageMain .viewSolB{margin-bottom:-10px}
+#pageMain .hrTop{margin-top:15px;margin-bottom:15px}
+#pageMain .paq .hrBottom{margin-top:11px}
+#pageMain .questionScore{margin-bottom:-15px;padding-left:120px;width:64px;height:64px;background:url(/xp/images/bgQuestionScore.gif) right top no-repeat;text-align:center}
+.IE #pageMain .questionScore, .IE7 #pageMain .questionScore{padding-left:141px}
+#pageMain .questionScore A{display:block;width:64px;height:64px;text-decoration:none}
+#pageMain .questionScore .score{padding-top:13px;font-size:32px;font-weight:bold;color:#fff}
+#pageMain .questionScore .scoreText .t2i{margin:0 auto}
+#pageMain .question .questionScore{position:relative;top:-12px}
+.Opera #pageMain .question .questionScore{left:488px}
+#pageMain #questionScoreInfo{width:525px;margin-left:100px;margin-top:-220px}
+.IE7 #pageMain #questionScoreInfo, .IE #pageMain #questionScoreInfo{margin-left:-350px}
+#pageMain #questionScoreInfo .ee, #pageMain #questionScoreInfo A{color:#ff7a00}
+#pageMain .viewSolutionLoggedInButton A{float:right}
+#pageMain .translationIcons{float:right;width:295px;margin-bottom:17px}
+.IE #pageMain .translationIcons, .IE7 #pageMain .translationIcons{margin-top:0}
+.Safari #pageMain .translationIcons{width:296px;margin-bottom:17px}
+#pageMain .asker .translationIcons{margin-top:3px}
+#pageMain .translationIcons .googleDiv{display:block;height:18px;width:116px;background:url(/xp/images/poweredByGoogle.jpg);float:right}
+#pageMain .translationIcons .translationIconsLabel{float:left;line-height:24px;color:#777}
+#pageMain .translationIcons .translationIconsLinks{float:right;width:236px;height:20px;padding:4px 0 0 6px;background:url(/xp/images/translationIconsLinks.gif) left top no-repeat}
+#pageMain .translationIcons .translationIconsLinks .translationIconsLink{display:block;float:left;width:21px;height:13px;padding:2px 0 0 2px}
+#pageMain .translationIcons .translationIconsLinks .currentTranslationIcon{background:url(/xp/images/translationIconsLink.gif) left top no-repeat}
+#pageMain .translationIcons .translationIconsLinks .translationIconsLink:hover{background:url(/xp/images/translationIconsLink.gif) left top no-repeat}
+#pageMain .translationIcons .translationIconsLinks .translationIconsLink SPAN{display:block;width:19px;height:11px;background-position:left top;background-repeat:no-repeat}
+#pageMain .translationIcons .translationIconsLinks .translationIconsLink#englishQBody SPAN{background-image:url(/xp/images/englishIcon_dim.gif)}
+#pageMain .translationIcons .translationIconsLinks .currentTranslationIcon#englishQBody SPAN{background-image:url(/xp/images/englishIcon.gif)}
+#pageMain .translationIcons .translationIconsLinks .translationIconsLink#frenchQBody SPAN{background-image:url(/xp/images/frenchIcon_dim.gif)}
+#pageMain .translationIcons .translationIconsLinks .currentTranslationIcon#frenchQBody SPAN{background-image:url(/xp/images/frenchIcon.gif)}
+#pageMain .translationIcons .translationIconsLinks .translationIconsLink#italianQBody SPAN{background-image:url(/xp/images/italianIcon_dim.gif)}
+#pageMain .translationIcons .translationIconsLinks .currentTranslationIcon#italianQBody SPAN{background-image:url(/xp/images/italianIcon.gif)}
+#pageMain .translationIcons .translationIconsLinks .translationIconsLink#spanishQBody SPAN{background-image:url(/xp/images/spanishIcon_dim.gif)}
+#pageMain .translationIcons .translationIconsLinks .currentTranslationIcon#spanishQBody SPAN{background-image:url(/xp/images/spanishIcon.gif)}
+#pageMain .translationIcons .translationIconsLinks .translationIconsLink#russianQBody SPAN{background-image:url(/xp/images/russianIcon_dim.gif)}
+#pageMain .translationIcons .translationIconsLinks .currentTranslationIcon#russianQBody SPAN{background-image:url(/xp/images/russianIcon.gif)}
+#pageMain .translationIcons .translationIconsLinks .translationIconsLink#koreanQBody SPAN{background-image:url(/xp/images/koreanIcon_dim.gif)}
+#pageMain .translationIcons .translationIconsLinks .currentTranslationIcon#koreanQBody SPAN{background-image:url(/xp/images/koreanIcon.gif)}
+#pageMain .translationIcons .translationIconsLinks .translationIconsLink#germanQBody SPAN{background-image:url(/xp/images/germanIcon_dim.gif)}
+#pageMain .translationIcons .translationIconsLinks .currentTranslationIcon#germanQBody SPAN{background-image:url(/xp/images/germanIcon.gif)}
+#pageMain .translationIcons .translationIconsLinks .translationIconsLink#arabicQBody SPAN{background-image:url(/xp/images/arabicIcon_dim.gif)}
+#pageMain .translationIcons .translationIconsLinks .currentTranslationIcon#arabicQBody SPAN{background-image:url(/xp/images/arabicIcon.gif)}
+#pageMain .translationIcons .translationIconsLinks .translationIconsLink#japaneseQBody SPAN{background-image:url(/xp/images/japaneseIcon_dim.gif)}
+#pageMain .translationIcons .translationIconsLinks .currentTranslationIcon#japaneseQBody SPAN{background-image:url(/xp/images/japaneseIcon.gif)}
+#pageMain .translationIcons .translationIconsLinks .translationIconsLink#chinese_simplifiedQBody SPAN{background-image:url(/xp/images/chineseIcon_dim.gif)}
+#pageMain .translationIcons .translationIconsLinks .currentTranslationIcon#chinese_simplifiedQBody SPAN{background-image:url(/xp/images/chineseIcon.gif)}
+#pageMain .translationIcons{width:168px}
+.Safari #pageMain .translationIcons{width:170px}
+#pageMain .translationIcons FORM{float:right;height:24px;line-height:24px}
+#pageMain .translationIcons FORM SELECT{width:115px;height:20px}
+.emailedAFriend .formRow{font-weight:bold;font-size:12px}
+.emailedAFriend .emailedHeader{color:#f81;font-size:14px;margin-bottom:10px}
+.emailedAFriend .emailedHeader .email{color:#888}
+.emailedAFriend .formRow .formName{width:76px;color:#888}
+.emailedAFriend .formRow .formValue{width:520px;margin-bottom:4px}
+.emailedAFriend .infoCol{display:none}
+.emailedAFriend .infoBody{margin-left:0;margin-top:-14px;margin-bottom:-14px}
+.emailedAFriend .emailAgainButtonContainer{width:100%;margin-bottom:-14px}
+.emailedAFriend .emailAgainButton A{margin-left:auto;margin-right:auto}
+.emailedAFriend .closeButtonTinyWithText{display:block;width:49px;height:17px;background:url(/xp/images/closeButtonTinyWithText.png);text-indent:-9999px;overflow:hidden;margin-top:5px;margin-right:-8px}
+.IE .emailedAFriend .closeButtonTinyWithText{background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/closeButtonTinyWithText.png',sizingMethod='crop');margin-right:0}
+#pageMain .qTitle .name, #pageMain .qBody .name, #pageMain .qPointsRow .name, #pageMain .qDateRow .name, #pageMain .qTagRow .name, #pageMain .qZoneRow .name, #pageMain .qAuthorRow .name, #pageMain .qAuthorRowExtra .name, #pageMain .qTimeZoneRow .name, #pageMain .qCodeSnippetRow .name, #pageMain .qExtraNotifRow .name, #pageMain .qAttachmentsRow .name, #pageMain .qRelatedRow .name{font-size:11px;line-height:18px;width:80px;font-weight:bold}
+#pageMain .qRelatedRow .name{padding-top:12px;line-height:normal}
+#pageMain .qTitle .name, #pageMain .qBody .name{font-size:15px}
+#pageMain .qTitle .value, #pageMain .qBody .value, #pageMain .qPointsRow .value, #pageMain .qDateRow .value, #pageMain .qTagRow .value, #pageMain .qZoneRow .value, #pageMain .qAuthorRow .value, #pageMain .qAuthorRowExtra .value, #pageMain .qTimeZoneRow .value, #pageMain .qCodeSnippetRow .value, #pageMain .qExtraNotifRow .value, #pageMain .qAttachmentsRow .value, #pageMain .qRelatedRow .value{margin-left:90px}
+.IE #pageMain .qTitle .value, .IE #pageMain .qBody .value, .IE #pageMain .qPointsRow .value, .IE #pageMain .qDateRow .value, .IE #pageMain .qTagRow .value, .IE #pageMain .qZoneRow .value, .IE #pageMain .qAuthorRow .value, .IE #pageMain .qAuthorRowExtra .value, .IE #pageMain .qTimeZoneRow .value, .IE #pageMain .qCodeSnippetRow .value, .IE #pageMain .qExtraNotifRow .value, .IE #pageMain .qAttachmentsRow .value, .IE #pageMain .qRelatedRow .value{margin-left:87px}
+#pageMain .qBody .value{font-size:12px}
+#pageMain A.backToTopGray{float:right;display:block;background:url(/xp/images/backToTopGray.png) top right no-repeat;text-indent:-9999px;overflow:hidden;width:64px;height:10px;margin-right:-5px}
+.IE #pageMain A.backToTopGray{margin-right:0}
+.answerRating{float:right;width:246px}
+.IE .openDiscussion .discussion, .IE7 .openDiscussion .discussion{width:602px}
+.s .s .openDiscussion .discussionComment .h TD, .s .s .openDiscussion .discussionComment .h TD.l, .s .s .openDiscussion .discussionComment .h TD.r, .s .s .openDiscussion .discussionComment .bl, .s .s .openDiscussion .discussionComment .br, .s .s .openDiscussion .discussionComment .bbg, .s .s .openDiscussion .discussionComment .f TD, .s .s .openDiscussion .discussionComment .f TD.l, .s .s .openDiscussion .discussionComment .f TD.r{background:#fff none}
+.s .s .openDiscussion .discussionComment .bc{margin:0}
+.s .s .openDiscussion .administrative .h TD{background:#fdfddb url(/xp/images/odAdminH.gif) left top repeat-x}
+.s .s .openDiscussion .administrative .h TD.l{background:#fdfddb url(/xp/images/odAdminHL.gif) left top no-repeat}
+.s .s .openDiscussion .administrative .h TD.r{background:#fdfddb url(/xp/images/odAdminHR.gif) right top no-repeat}
+.s .s .openDiscussion .administrative .bl{background:#fdfddb url(/xp/images/odAdminH.gif) left top repeat-y}
+.s .s .openDiscussion .administrative .bbg{background-color:#fdfddb}
+.s .s .openDiscussion .administrative .br{background:#fdfddb url(/xp/images/odAdminH.gif) right top repeat-y}
+.s .s .openDiscussion .administrative .f TD{background:#fdfddb url(/xp/images/odAdminH.gif) left bottom repeat-x}
+.s .s .openDiscussion .administrative .f TD.l{background:#fdfddb url(/xp/images/odAdminFL.gif) left bottom no-repeat}
+.s .s .openDiscussion .administrative .f TD.r{background:#fdfddb url(/xp/images/odAdminFR.gif) right bottom no-repeat}
+.openDiscussion .discussionComment .quoted{margin-top:0}
+.openDiscussion .administrative .quoted{margin-bottom:6px;background-image:none}
+.openDiscussion .administrative .discussionAuthor{font-weight:bold}
+.openDiscussion .answerRating{position:relative;top:-5px}
+.openDiscussion .answerRatingFirst{top:0}
+.IE .openDiscussion .answerRatingFirst, .IE7 .openDiscussion .answerRatingFirst{top:-5px}
+.IE .answerRating, .IE7 .answerRating{margin-bottom:-7px}
+.IE .openDiscussion .answerRating, .IE7 .openDiscussion .answerRating{margin-bottom:-50px}
+.answerRating .answerRatingLabel{float:left;color:#606060;padding-top:6px}
+.answerRatingButtons{width:76px;height:27px;background-image:url(/xp/images/answerRatingButtonsBG.gif);margin-left:5px;float:left}
+.answerRatingButtons A.yes, .answerRatingButtons A.no{width:34px;height:19px;display:block;float:left;text-indent:-9999px;overflow:hidden;margin-top:5px}
+.answerRatingButtons A.yes{background-image:url(/xp/images/answerRatingButtonYes.png);margin-left:5px;margin-right:1px}
+.IE .answerRatingButtons A.yes{margin-left:2px;margin-right:2px}
+.answerRatingButtons A.no{background-image:url(/xp/images/answerRatingButtonNo.png)}
+.codeSnippet{max-height:500px;overflow:auto;background-color:#fafafa;border:1px solid silver;font-size:12px}
+.IE .codeSnippetTall{height:500px}
+.codeSnippet TABLE TD{padding-left:2px;padding-right:2px;vertical-align:top}
+.codeSnippet TABLE TD.lineNumbers{border-right:1px solid silver;text-align:right}
+.qCodeSnippetRow .codeSnippet{width:571px}
+.answers .codeSnippet{width:498px;margin-top:10px;margin-bottom:5px}
+.openDiscussion .codeSnippet{width:602px}
+A.openInNewWindow{display:block;float:right;background-image:url(/xp/images/buttonOpenInNewWindow.png);width:121px;height:23px;margin-top:-6px;margin-right:5px;text-indent:-9999px;overflow:hidden}
+.IE A.openInNewWindow{margin-right:2px;background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/buttonOpenInNewWindow.png',sizingMethod='crop')}
+.answerBody A.openInNewWindow{margin-top:-2px;margin-right:6px;margin-bottom:-5px}
+.IE .answerBody A.openInNewWindow{margin-right:2px;margin-bottom:0}
+.IE7 .answerBody A.openInNewWindow{margin-left:383px}
+.openDiscussion A.openInNewWindow{margin-top:-2px;margin-right:-4px}
+.IE7 .openDiscussion A.openInNewWindow{margin-left:487px}
+#pageMain #systemDescInfoBox{width:550px}
+.IE #pageMain #systemDescInfoBox{width:570px;margin-left:-110px}
+#pageMain #systemDescInfoBox .name{width:110px}
+#pageMain #systemDescInfoBox .value{margin-left:115px;width:400px;font-weight:normal}
+#pageMain #answerRatingBox{margin-left:-330px}
+.IE #pageMain #answerRatingBox{width:500px}
+#pageMain #answerRatingBox .label{width:210px}
+#pageMain #answerRatingBox LABEL{font-size:10px}
+#pageMain #answerRatingBox .answerRatingOption, #pageMain .questionRating .questionRatingOption{width:70px}
+#pageMain .questionRating .questionRatingOptionYes{width:50px}
+#pageMain .questionRating .questionRatingOptionNo{width:40px}
+#pageMain #answerRatingBox .answerRatingBoxButtons{float:right}
+#pageMain #answerRatingBox .hr{margin-top:5px;margin-bottom:5px}
+.questionRating{width:400px;font-weight:bold;color:gray;float:right}
+.selectGrade .questionRating .bc{margin:10px}
+.questionRating .formRow{height:17px;line-height:17px}
+.questionRating #commentLabel{display:block;margin-top:5px;margin-bottom:3px;font-weight:normal;color:black;clear:left}
+.questionRating .autoHeight{height:auto;line-height:auto;overflow:visible}
+.IE .questionRating .autoHeight{margin-left:-5px;margin-right:-7px}
+.questionRating .label{width:215px}
+.questionGrade{float:left;width:217px}
+.questionGrade .grade{width:69px;height:67px;background-image:url(/xp/images/gradeBG.png);text-align:center;float:left;margin:10px 5px 10px 0}
+.questionGrade .gradeLast{margin-right:0}
+.questionGrade .grade:hover{background-image:url(/xp/images/gradeBGHover.png)}
+.questionGrade .gradeName{font-size:30px;padding-top:8px;padding-left:5px}
+.questionGrade .gradeName .gradeLetter{display:inline;cursor:pointer}
+.questionGrade .gradeName INPUT{position:relative;top:-5px}
+.Opera .questionGrade .gradeName INPUT{top:-1px}
+.questionGrade .gradeCaption{font-size:9px;text-transform:uppercase;color:gray;cursor:pointer}
+.formFactory .knowledgeBase{margin-bottom:17px}
+.selectGrade .bc{margin:17px 17px 0 17px}
+.acceptAnswerJSP .infoBox, .splitPointsJSP .infoBox{width:300px;margin-top:-20px;margin-left:-80px}
+.gradingCommentsSection{margin:7px 9px 0 9px}
+.IE .gradingCommentsSection{margin:7px 0 0 0}
+.gradingCommentsSection .bc{min-height:66px;padding-left:80px}
+.IE .gradingCommentsSection .bc{height:66px}
+.gradingCommentsSection .gradeReceivedHeader{display:none}
+.gradingCommentsSection .subHeader{font-weight:bold}
+.gradingCommentsIconA .bc{background:url(/xp/images/gradingCommentsIconA.png) 5px top no-repeat}
+.gradingCommentsIconB .bc{background:url(/xp/images/gradingCommentsIconB.png) 5px top no-repeat}
+.gradingCommentsIconC .bc{background:url(/xp/images/gradingCommentsIconC.png) 5px top no-repeat}
+.tinyReportButton, .tinyDeleteButton{float:right;display:block;height:21px;margin-bottom:5px;text-indent:-9999px;overflow:hidden}
+.tinyReportButton{width:56px;background:url(/xp/images/tinyReportButton.png) top left no-repeat}
+.IE .tinyReportButton{background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/tinyReportButton.png',sizingMethod='crop')}
+.tinyDeleteButton{width:65px;background:url(/xp/images/tinyDeleteButton.png) top left no-repeat;margin-right:5px}
+.IE .tinyDeleteButton{background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/tinyDeleteButton.png',sizingMethod='crop')}
+.questionAttachments .bc, .answers .answer .answerAttachments .bc, .discussionAttachments .bc{margin:3px 14px 9px 14px}
+.questionAttachments, .discussionAttachments{margin-bottom:5px}
+.answerAttachments{margin:7px 9px 0 9px}
+.attachment .filename{background:url(/xp/images/tinyPaperClip.png) left 2px no-repeat;width:7px;height:10px;padding-left:11px}
+DIV.adSense{margin-bottom:17px}
+A.squareSignUp{font-size:18px;color:#507ba5;font-weight:bold;display:block;margin-bottom:20px;background:url(/xp/images/buttonSquareSignUp.png) center right no-repeat;width:314px}
+A.squareSignUpWide{width:370px}
+.Firefox #pageMain .questionInvitations BUTTON{margin-bottom:10px}
+#pageMain .questionInvitations LI{padding:0;background:none;font-weight:bold;color:#f60}
+.viewQuestionJSP .neglected .neg{padding-right:25px;padding-top:5px;padding-bottom:5px;background:url(/xp/images/questionIconNeglectedQuestion.png) no-repeat right}
+.IE7 .viewQuestionJSP .neglected .neg{display:inline-block;padding-right:20px;margin-bottom:-15px;position:relative;left:5px;top:-7px}
+.IE .viewQuestionJSP .neglected .neg{background-image:none;display:inline-block;padding-right:20px;margin-bottom:-5px;position:relative;top:5px;left:5px;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/questionIconNeglectedQuestion.png',sizingMethod='crop')}
+.answers .answer .deleteNotice .infoCol .infoColIcon{background-image:url(/xp/images/successNotificationIcon.png);width:103px;height:92px;margin:0}
+.IE .answers .answer .deleteNotice .infoCol .infoColIcon{height:83px;background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/xp/images/successNotificationIcon.png',sizingMethod='crop')}
+.deleteNotice .infoBody{padding-top:10px}
+.closeNotice{background:url(/xp/images/logoWarningWh.gif) left 20px no-repeat;padding-left:64px}
+.closeNotice .eeText{margin-bottom:0}
+.postComment .eeText{margin-bottom:10px}
+#relatedSolutions20X6 .relatedSolutionsVQP24 TH.column1{width:372px}
+#relatedSolutions20X6 .relatedSolutionsVQP24 TH.column2{width:186px}
+#rsContainer TD.column1{width:364px}
+#rsContainer TD.column2{width:178px}
+#relatedSolutions20X6 .questionListNoTopMargin .questionList{margin-top:-1px}
+#relatedSolutions20X6 #rsContainer{overflow:hidden;height:155px}
+#relatedSolutions20X6 #rsThrobberContainer{margin:61px auto 78px;width:16px;height:16px;background-image:url(/xp/images/throbberOrange.gif)}
+#relatedSolutions20X6 #rsContentContainer{display:none}
+#relatedSolutions20X6 .noRelatedSolutions{padding-left:8px;padding-top:5px;color:#444}
+#relatedSolutions20X6 .relatedSolutionsKeywords{margin-top:15px;float:left;color:gray}
+#relatedSolutions20X6 .relatedSolutionsKeywords .keywordsLabel{font-weight:bold;color:#444}
+#relatedSolutions20X6 .relatedSolutionsViewMore{margin-top:15px}
+.paginatedRelated{height:36px;width:100%;background-color:white;margin-bottom:20px}
+.paginatedRelated A{color:#777;display:block;height:26px;padding-top:10px;text-decoration:underline}
+.Safari .paginatedRelated A{height:25px;padding-top:11px}
+.paginatedRelated A.left{background:url(/xp/images/pageLeft.png) top left no-repeat;padding-left:40px;float:left}
+.paginatedRelated A.right{background:url(/xp/images/pageRight.png) top right no-repeat;padding-right:40px;float:right}

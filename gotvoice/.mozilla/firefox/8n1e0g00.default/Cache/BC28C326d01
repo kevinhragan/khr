@@ -1,0 +1,560 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Virtual Users And Domains With Postfix, Courier, MySQL And SquirrelMail (Mandriva 2008.1) | HowtoForge - Linux Howtos and Tutorials</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<base href="http://www.howtoforge.com/" />
+<style type="text/css" media="all">@import "/misc/drupal.css";</style><style type="text/css">@import url(/modules/copyright/copyright.css);</style>
+
+<link rel="stylesheet" type="text/css" media="screen" href="/modules/taxonomy_dhtml/menuExpandable3.css" />
+<script type="text/javascript" src="/modules/taxonomy_dhtml/menuExpandable3.js"></script>
+
+  <style type="text/css">
+    .trip-search-form input.form-submit {
+       margin-bottom: 1em;
+    }
+    .trip-search-more-link {
+      font-weight: bold;
+      font-style: italic;
+    }
+    .trip-search-excerpt {
+      font-weight: bold;
+    }
+  </style>
+<style type="text/css" media="all">@import "/modules/userinfo/userinfo.css";</style>
+<style type="text/css" media="screen">
+  <!--
+   @import url(/themes/htf_glass/modules.css);
+   @import url(/themes/htf_glass/nav.css);
+   @import url(/themes/htf_glass/layout.css);
+  -->
+ </style>
+<style type="text/css" media="all">@import "/themes/htf_glass/style.css";</style>
+<script type="text/javascript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+<script type="text/javascript">
+<!--
+if (top.location != self.location)
+top.location = self.location;
+//-->
+</script>
+<meta name="verify-v1" content="Oq8ZMOLKw+gmUf/31qy3xciuZ2pyp2ybp5AkDpCs5eY=" />
+<script type="text/javascript" src="/jquery/jquery-latest.pack.js"></script>
+<script type="text/javascript" src="/jquery/thickbox-compressed.js"></script>
+<script type="text/javascript">
+<!--
+document.write('<style type="text/css" media="all">@import "/jquery/thickbox.css";</style>');
+//-->
+</script>
+</head>
+<body >
+<!-- closes #header-->
+<!-- START: HEADER -->
+<div id="wrapper1">
+ <div id="wrapper2">
+  <div class="header" id="header"><h1><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></h1>
+   <div class="headerpadding">
+         <div id="site-name"><a href="" title="Home"><img src="/themes/htf_glass/images/howtoforge_logo_trans.gif"  alt="HowtoForge - Linux Howtos and Tutorials Logo" /></a></div>
+    
+    
+    <ul id="primary">
+         <li><a href="linux-books">Linux Books</a></li>
+         <li><a href="subscription">Subscription</a></li>
+         <li><a href="add_howto">Contribute</a></li>
+         <li><a href="trip_search">Search</a></li>
+         <li><a href="http://lxer.com" target="_blank">News</a></li>
+         <li><a href="forums">Forums</a></li>
+         <li><a href="howtos">Howtos</a></li>
+     </ul>
+
+     <form action="/trip_search" method="post" id="search">
+      <div><input class="form-text" type="text" size="15" value="" name="keys" id="keys" style="margin-bottom:8px;" /> <input type=image src="themes/htf_glass/images/search.gif" />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="forums/register.php" rel="nofollow"><img src="themes/htf_glass/images/join_small.gif" width="40" height="24" border="0" alt="Join HowtoForge"></a>&nbsp;&nbsp;&nbsp;<a href="index.php?q=user/login" rel="nofollow"><img src="themes/htf_glass/images/login_small.gif" width="48" height="24" border="0" alt="Login"></a>
+            &nbsp;&nbsp;&nbsp;<a href="add_howto"><img src="themes/htf_glass/images/contribute_small.gif" width="84" height="24" border="0" alt="Contribute"></a>
+            &nbsp;&nbsp;&nbsp;<a href="subscription"><img src="themes/htf_glass/images/subscribe_small.gif" width="78" height="24" border="0" alt="Subscribe"></a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="feed.rss"><img src="themes/htf_glass/images/rss.gif" width="24" height="24" border="0" /></a></div>
+     </form>
+    </div>
+   </div>
+<!-- END: HEADER-->
+<hr class="hide" />
+    <div class="columns">
+            <div class="leftcolumn sidebar" id="sidebar-left">
+        <div class="leftpadding">
+            <div class="block block-sidecontent" id="block-sidecontent-0">
+<h2 style="font-size: 140%;font-weight: bold;">Options For This Howto</h2>
+<div class="content"><table width="140"><tr><td><div style="background: transparent url(themes/htf_glass/images/star_vmware_image_red.gif) no-repeat top;"><p><b>VMware Images:</b></p><ul style="padding-top: 60px;list-style-image:url(images/pointer.gif);"><li><a href="/download.php?id=3408_0" rel="nofollow">Virtual Users And Domains With Postfix, Courier, MySQL And SquirrelMail (Mandriva 2008.1)</a> (580.6 MB) (04/12/2008)</li></ul><p style="margin-top:10px;"><ul><li style="margin-bottom:5px;"><a href="/import_vmware_images">VMware Image Import Guide</a></li><li><a href="/list-of-downloadable-vmware-images">List of all VMware Images</a></li></ul></p></div>
+<hr size="1" /><ul style="list-style-image:url(images/pointer.gif);">
+<li><a href="/forums">Free Support</a><br /></li>
+<li><a target="_blank" href="http://www.projektfarm.de/contact_nav.html">Paid Support</a></li>
+</ul></td></tr></table></div>
+</div>
+<div class="block block-user" id="block-user-1">
+<h2 style="font-size: 140%;font-weight: bold;">Navigation</h2>
+<div class="content"><div class="menu">
+<ul>
+<li class="expanded"><a href="howtos" title="">Howtos</a>
+<ul>
+<li class="expanded"><a href="howtos/linux" title="">Linux</a>
+<ul>
+<li class="leaf"><a href="howtos/linux/centos">CentOS</a></li>
+<li class="leaf"><a href="howtos/linux/debian">Debian</a></li>
+<li class="leaf"><a href="howtos/linux/fedora">Fedora</a></li>
+<li class="leaf"><a href="howtos/linux/kernel">Kernel</a></li>
+<li class="leaf"><a href="howtos/linux/mandriva">Mandriva</a></li>
+<li class="leaf"><a href="howtos/linux/pclinuxos">PCLinuxOS</a></li>
+<li class="leaf"><a href="howtos/linux/suse">SuSE</a></li>
+<li class="leaf"><a href="howtos/linux/ubuntu">Ubuntu</a></li>
+
+</ul>
+</li>
+<li class="leaf"><a href="howtos/apache">Apache</a></li>
+<li class="leaf"><a href="howtos/backup">Backup</a></li>
+<li class="leaf"><a href="howtos/control-panels">Control Panels</a></li>
+<li class="leaf"><a href="howtos/dns">DNS</a></li>
+<li class="leaf"><a href="howtos/desktop">Desktop</a></li>
+<li class="expanded"><a href="howtos/email" title="">Email</a>
+<ul>
+<li class="leaf"><a href="howtos/email/antispam-antivirus">Anti-Spam/Virus</a></li>
+<li class="leaf"><a href="howtos/email/postfix">Postfix</a></li>
+<li class="leaf"><a href="howtos/email/procmail">Procmail</a></li>
+<li class="leaf"><a href="howtos/email/sendmail">Sendmail</a></li>
+
+</ul>
+</li>
+<li class="leaf"><a href="howtos/ftp">FTP</a></li>
+<li class="leaf"><a href="howtos/high-availability">High-Availability</a></li>
+<li class="leaf"><a href="howtos/monitoring">Monitoring</a></li>
+<li class="leaf"><a href="howtos/mysql">MySQL</a></li>
+<li class="expanded"><a href="howtos/programming" title="">Programming</a>
+<ul>
+<li class="leaf"><a href="howtos/programming/c-cplusplus">C/C++</a></li>
+<li class="leaf"><a href="howtos/programming/php">PHP</a></li>
+
+</ul>
+</li>
+<li class="leaf"><a href="howtos/samba">Samba</a></li>
+<li class="expanded"><a href="howtos/security" title="">Security</a>
+<ul>
+<li class="leaf"><a href="howtos/security/antispam-antivirus">Anti-Spam/Virus</a></li>
+
+</ul>
+</li>
+<li class="leaf"><a href="howtos/virtualization">Virtualization</a></li>
+<li class="leaf"><a href="howtos/other">Other</a></li>
+<li class="leaf"><a href="howtos/freebsd">FreeBSD</a></li>
+<li class="leaf"><a href="howtos/commercial">Commercial</a></li>
+
+</ul>
+</li>
+<li class="collapsed"><a href="mini-howtos" title="">Mini-Howtos</a></li>
+<li class="leaf"><a href="forums" title="">Forums</a></li>
+<li class="leaf"><a href="image" title="">Screenshots</a></li>
+<li class="leaf"><a href="aggregator/sources/1" title="">News</a></li>
+<li class="leaf"><a href="trip_search" title="">Search</a></li>
+<li class="collapsed"><a href="add_howto" title="">Contribute</a></li>
+<li class="leaf"><a href="subscription" title="">Subscription</a></li>
+<li class="leaf"><a href="linux-books" title="">Linux Books</a></li>
+<li class="leaf"><a href="user" title="">Login</a></li>
+<li class="leaf"><a href="sitemap" title="">Site Map/RSS Feeds</a></li>
+<li class="leaf"><a href="advertise" title="Advertise On HowtoForge">Advertise</a></li>
+<li class="leaf"><a href="forums/sendmessage.php" title="">Contact</a></li>
+<li class="leaf"><a href="disclaimer" title="Disclaimer">Disclaimer</a></li>
+<li class="leaf"><a href="imprint" title="Imprint">Imprint</a></li>
+
+</ul>
+</div></div>
+</div>
+<div class="block block-user" id="block-user-0">
+<h2 style="font-size: 140%;font-weight: bold;">User login</h2>
+<div class="content"><div class="user-login-block">
+
+  <form action="/index.php?q=user/login" method="post"  onsubmit="md5hash(vb_login_password,vb_login_md5password,vb_login_md5password_utf)">
+
+  <script type="text/javascript" src="/forums/clientscript/vbulletin_md5.js"></script>
+
+  <div class="user-login-block">
+
+    <div class="form-item">
+
+    <label for="edit-vb_login_username">Username:</label><br />
+
+    <input maxlength="64" class="form-text" name="vb_login_username" id="navbar_username" size="15" value="" type="text">
+
+    </div>
+
+    <div class="form-item">
+
+    <label for="edit-vb_login_password">Password:</label><br />
+
+    <input class="form-text" maxlength="64" name="vb_login_password" id="edit-vb_login_password" size="15" value="" type="password">
+
+    </div>
+
+    <div class="form-item">
+
+    <label for="cb_cookieuser_navbar"><input type="checkbox" name="cookieuser" value="1" tabindex="103" id="cb_cookieuser_navbar" accesskey="c" />Remember Me?</label>
+
+    </div>
+
+    <input class="form-submit" name="op" value="Log in" type="submit">
+
+  </div>
+
+  <input name="s" value="eb952093135307dbfe7b0591331ae8f7" type="hidden">
+
+  <input name="do" value="login" type="hidden">
+
+  <input name="forceredirect" value="1" type="hidden">
+
+  <input name="vb_login_md5password" type="hidden">
+
+  <input name="vb_login_md5password_utf" type="hidden">
+
+  <input type="hidden" name="url" value="/" />
+
+  </form>
+
+<div class="item_list">
+
+  <a href="/forums/register.php">Create a new account</a><br />
+
+  <a href="/forums/login.php?do=lostpw">Request new password</a>
+
+</div>
+
+</div></div>
+</div>
+<script type="text/javascript">
+<!--
+document.write('<div class="block" style="padding-top:15px;padding-left:5px;">');
+//-->
+</script><script type="text/javascript"><!--
+google_ad_client = "pub-3043223216276099";
+google_ad_width = 137;
+google_ad_height = 90;
+google_ad_format = "120x90_0ads_al";
+//2007-02-07: Linkblock Hauptseite Menue
+google_ad_channel = "0347912882";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "003399";
+google_color_text = "000000";
+google_color_url = "008000";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script><script type="text/javascript">
+<!--
+document.write('</div>');
+//-->
+</script><div class="block block-user" id="block-user-3">
+<h2 style="font-size: 140%;font-weight: bold;">Who's online</h2>
+<div class="content">There are currently 19 users and 2389 guests online.</div>
+</div>
+<div class="block block-vbforumblocks" id="block-vbforumblocks-1">
+<h2 style="font-size: 140%;font-weight: bold;">HowtoForge Forums</h2>
+<div class="content"><div class="item-list"><ul><li><a href="http://www.howtoforge.com/forums/showthread.php?t=22410&amp;goto=newpost" >sendmail not sending mail</a>
+</li><li><a href="http://www.howtoforge.com/forums/showthread.php?t=22408&amp;goto=newpost" >creating samba users with phpldapadmin</a>
+</li><li><a href="http://www.howtoforge.com/forums/showthread.php?t=22406&amp;goto=newpost" >Vmware on fedora 8 v 2.6.24.4-64.fc8</a>
+</li><li><a href="http://www.howtoforge.com/forums/showthread.php?t=22405&amp;goto=newpost" >Code to find Processor utilisation</a>
+</li><li><a href="http://www.howtoforge.com/forums/showthread.php?t=22403&amp;goto=newpost" >RConnect ZTE CDMA 1x Modem</a>
+</li><li><a href="http://www.howtoforge.com/forums/showthread.php?t=22401&amp;goto=newpost" >Auto backup problem</a>
+</li><li><a href="http://www.howtoforge.com/forums/showthread.php?t=22399&amp;goto=newpost" title="DNS Recyle bin not emptying, DNS named.conf not being updated">DNS Recyle bin not emptying, DNS named.conf not ...</a>
+</li><li><a href="http://www.howtoforge.com/forums/showthread.php?t=22397&amp;goto=newpost" >stuck in the middle with howtoforge and hostname</a>
+</li><li><a href="http://www.howtoforge.com/forums/showthread.php?t=22395&amp;goto=newpost" >deleting characters from many lines</a>
+</li><li><a href="http://www.howtoforge.com/forums/showthread.php?t=22393&amp;goto=newpost" >default template</a>
+</li></ul></div></div>
+</div>
+<div class="block block-aggregator" id="block-aggregator-feed-1">
+<h2 style="font-size: 140%;font-weight: bold;">News</h2>
+<div class="content"><div class="item-list"><ul><li><a href="http://lxer.com/module/newswire/ext_link.php?rid=101854" target="_blank">File Synchronization with Unison</a>
+</li><li><a href="http://lxer.com/module/newswire/ext_link.php?rid=101860" target="_blank">ATI Accelerated Driver [fglrx] freeze problem &quot;patched&quot ;</a>
+</li><li><a href="http://lxer.com/module/newswire/ext_link.php?rid=101842" target="_blank">Dell to expand Linux laptop &amp;amp; PC push</a>
+</li><li><a href="http://lxer.com/module/newswire/ext_link.php?rid=101843" target="_blank">MySQL to fortify defenses with Citadel</a>
+</li><li><a href="http://lxer.com/module/newswire/ext_link.php?rid=101862" target="_blank">Free Open Source Software Is Costing Vendors $60 Billion?</a>
+</li><li><a href="http://lxer.com/module/newswire/ext_link.php?rid=101840" target="_blank">A GNOME-based Desktop on Demand</a>
+</li><li><a href="http://lxer.com/module/newswire/ext_link.php?rid=101859" target="_blank">A year later, sales of Linux on Dell computers continue to grow</a>
+</li><li><a href="http://lxer.com/module/newswire/ext_link.php?rid=101835" target="_blank">The One Place Novell Can Beat Microsoft</a>
+</li><li><a href="http://lxer.com/module/newswire/ext_link.php?rid=101834" target="_blank">Linux XP 2008</a>
+</li><li><a href="http://lxer.com/module/newswire/ext_link.php?rid=101833" target="_blank">Canonical Announces Desktop Training Course</a>
+</li></ul></div><div class="more-link"><a href="aggregator/sources/1" title="View this feed&#039;s recent news.">more</a></div></div>
+</div>
+<div class="block block-comment" id="block-comment-0">
+<h2 style="font-size: 140%;font-weight: bold;">Recent comments</h2>
+<div class="content"><div class="item-list"><ul><li><a href="installing-openbravo-erp-on-debian-etch#comment-4240">Hi Oliver...</a><br />20 hours 53 min ago</li><li><a href="ispconfig-2.x-first-steps-p2#comment-4239">Fixed</a><br />1 day 10 hours ago</li><li><a href="reset-forgotten-mysql-root-password#comment-4238">CAUTION!!</a><br />1 day 14 hours ago</li><li><a href="enabling-mssql-php5-debian-lenny#comment-4237">Nice Tutorial !</a><br />1 day 15 hours ago</li><li><a href="ispconfig-2.x-first-steps-p2#comment-4236">Typo</a><br />1 day 23 hours ago</li><li><a href="blockhosts_debian_etch_p2#comment-4235">&amp;quot;--iptables&amp;q uot; option doesn&amp;#039;t work in newer versions</a><br />2 days 1 hour ago</li><li><a href="samba_domaincontroller_setup_ubuntu_6.10_p5#comment-4234">426 Upgrade Required</a><br />2 days 17 hours ago</li><li><a href="ubuntu_debian_lamp_server#comment-4233">First Command</a><br />2 days 19 hours ago</li><li><a href="xcache-php5-apache2-opensuse10.3#comment-4232">Xcache RPM&amp;#039;s</a><br />2 days 23 hours ago</li><li><a href="creating_dd_images_with_air#comment-4231">Creating a dd/dcfldd Image Using Automated Image &amp;amp; Restore (AIR)</a><br />3 days 3 hours ago</li></ul></div></div>
+</div>
+<div class="block block-block" id="block-block-2">
+<h2 style="font-size: 140%;font-weight: bold;">Newsletter</h2>
+<div class="content"><form method="[object HTMLInputElement]" action="http://newsletter.howtoforge.com/index.php?" name="subscribe">
+<input name="lid" value="1" type="hidden" />
+<input name="list" value="subscription" type="hidden" />
+<input name="method" value="create" type="hidden" />
+<input name="fromext" value="1" type="hidden" />
+<input name="digest" value="0" type="hidden" />
+<table border="0" cellpadding="0" cellspacing="0" width="136">
+<tr>
+<td colspan="2">
+<b>Subscribe to HowtoForge Newsletter</b><br />
+and stay informed about our latest HOWTOs and projects.
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input name="email" value="enter email address" size="17" onclick="document.subscribe.email.value = ''" type="text" style="font-size:10px;" />
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input class="form-submit" name="Submit" value="Submit" border="0" type="submit" style="margin-top: 0;" />
+</td>
+</tr>
+<tr>
+<td colspan="2">
+(To unsubscribe from our newsletter send a blank email with the subject 'unsubscribe' to:
+<br /><a href="mailto:%6e%65%77%73%6c%65%74%74%65%72%40%68%6f%77%74%6f%66%6f%72%67%65%2e%63%6f%6d?subject=unsubscribe">newsletter<br />@howtoforge.com</a>.)
+</td>
+</tr>
+</table>
+</form></div>
+</div>
+<div class="block block-node" id="block-node-0">
+<h2 style="font-size: 140%;font-weight: bold;">Syndicate</h2>
+<div class="content"><div class="xml-icon" style="border-bottom:1px;"><a href="feed.rss"><img src="themes/htf_glass/images/rss_black.gif"  alt="XML feed" title="XML feed" /></a></div><div align="center"><a href="http://apps.facebook.com/htf_feed_reader" target="_blank"><img src="http://fb.howtoforge.com/fb/htf_feed_reader/htf_fb_app_logo_126x75.gif" width="126" height="75" boder="0"></a></div><div align="center"><a href="http://apps.facebook.com/htf_feed_reader" target="_blank">HowtoForge Feed for Facebook&reg;</a></div><div style="font-size:9px;" align="center">"Facebook" is a registered trademark of Facebook, Inc. All rights reserved.</div></div>
+</div>
+<div class="block block-block" id="block-block-6">
+<h2 style="font-size: 140%;font-weight: bold;">Books</h2>
+<div class="content"><div align="center"><script type="text/javascript" src="/js/amazon.js"></script>
+<script type="text/javascript" src="http://www.assoc-amazon.com/s/asw.js"></script></div></div>
+</div>
+          </div>
+        </div>
+            
+      <hr class="hide" />
+
+      <div class="centercolumn">
+        <div class="centerpadding">
+          <div class="main-content" id="main">
+          <div id="lang" style="float: right;"><b><img src="/images/uk_flag.gif" width="20" height="10" border="0" alt="HowtoForge - Linux Howtos in English" /> English</b>|<a href="http://www.howtoforge.de/" title="HowtoForge.de - Linux-Howtos auf Deutsch"><img src="/images/de_flag.gif" width="20" height="10" alt="HowtoForge.de - Linux-Howtos auf Deutsch" /> Deutsch</a></div>
+            
+                              <div id="breadcrumbs">
+                  <div class="breadcrumb"><a href="">Home</a> &raquo; <a href="howtos" title="">Howtos</a> &raquo; <a href="howtos/linux" title="">Linux</a> &raquo; <a href="howtos/linux/mandriva">Mandriva</a></div> <span class="breadcrumb">  &raquo;  Virtual Users And Domains With Postfix, Courier, MySQL And SquirrelMail (Mandriva 2008.1)</span>
+                </div>
+                                      <script type="text/javascript">
+<!--
+document.write('<div align="center">');
+//-->
+</script>
+<!-- BEGIN NetShelter Ad Tag for HowtoForge 728x90 -->
+<script language="JavaScript" type="text/javascript">
+if (!window.netshel_ord) { netshel_ord=Math.random()*10000000000000000;
+}
+if (!window.netshel_tile) { netshel_tile=1; }
+document.write('<script language="JavaScript" src="http://ad.doubleclick.net/adj/ns.howtoforge/howtos;sz=728x90;tile='+netshel_tile+';ord=' + netshel_ord + '?" type="text/javascript"></scr' + 'ipt>');
+netshel_tile++;
+</script>
+<!-- END AD TAG --><script type="text/javascript">
+<!--
+document.write('</div>');
+//-->
+</script>
+                          <h1 id="title">Virtual Users And Domains With Postfix, Courier, MySQL And SquirrelMail (Mandriva 2008.1)</h1>
+                                                            
+            <!-- start main content -->
+            <table border="0" cellspacing="0" cellpadding="0" width="98%">
+            <tr><td>
+            <div id="content">
+            
+<script type="text/javascript">
+<!--
+document.write('<div style="float: right; margin: 0 0 10px 10px;">');
+//-->
+</script>
+<!-- BEGIN NetShelter Ad Tag for HowtoForge 120x600,160x600 -->
+<script language="JavaScript" type="text/javascript">
+if (!window.netshel_ord) { netshel_ord=Math.random()*10000000000000000;
+}
+if (!window.netshel_tile) { netshel_tile=1; }
+document.write('<script language="JavaScript" src="http://ad.doubleclick.net/adj/ns.howtoforge/howtos;sz=120x600,160x600;tile='+netshel_tile+';ord=' + netshel_ord + '?" type="text/javascript"></scr' + 'ipt>');
+netshel_tile++;
+</script>
+<!-- END AD TAG --><script type="text/javascript">
+<!--
+document.write('</div>');
+//-->
+</script>
+<div class="KonaBody"><!-- begin content --><div class="node">
+
+   
+  <div class="info">Submitted by <a href="forums/member.php?u=2" title="View user profile." rel="nofollow">falko</a> (<a href="forums/private.php?do=newpm&amp;u=2" title="Contact author." rel="nofollow">Contact Author</a>) (<a href="forums" title="Forums.">Forums</a>) on Sun, 2008-04-13 18:35.<span class="taxonomy"> :: <a href="sitemap/email/antispam-antivirus">Anti-Spam/Virus</a> | <a href="sitemap/linux/mandriva">Mandriva</a> | <a href="sitemap/email/postfix">Postfix</a></span></div>
+  <div class="content">
+  <h2>Virtual Users And Domains With Postfix, Courier, MySQL And SquirrelMail (Mandriva 2008.1)</h2>
+<p>Version 1.0 <br />
+  Author: Falko Timme &lt;ft [at] falkotimme [dot] com&gt; <br />
+Last edited 04/12/2008</p>
+<p><i>This tutorial is Copyright (c) 2008 by Falko Timme. It is derived from a tutorial from Christoph Haas which you can find at <a mce_real_href="http://workaround.org/" href="http://workaround.org/" target="_blank">http://workaround.org</a>. You are free to use this tutorial under the Creative Commons license 2.5 or any later version.</i></p>
+<p>This document describes how to install a Postfix mail server that is based on virtual users and domains, i.e. users and domains that are in a MySQL database. I'll also demonstrate the installation and configuration of Courier (Courier-POP3, Courier-IMAP), so that Courier can authenticate against the same MySQL database Postfix uses.</p>
+<p>The resulting Postfix server is capable of <b>SMTP-AUTH</b> and <b>TLS</b> and <b>quota</b> (quota is not built into Postfix by default, I'll show how to patch your Postfix appropriately). Passwords are stored in <b>encrypted</b> form in the database (most documents I found were dealing with plain text passwords which is a security risk). In addition to that, this tutorial covers the installation of <b>Amavisd</b>, <b>SpamAssassin</b> and <b>ClamAV</b> so that emails will be scanned for spam and viruses. I will also show how to install <b>SquirrelMail</b> as a webmail interface so that users can read and send emails and change their passwords. </p><script type="text/javascript">
+<!--
+document.write('<div align="center">');
+//-->
+</script><!-- BEGIN NetShelter Ad Tag for HowtoForge 300x250,336x280 -->
+<script language="JavaScript" type="text/javascript">
+if (!window.netshel_ord) { netshel_ord=Math.random()*10000000000000000;
+}
+if (!window.netshel_tile) { netshel_tile=1; }
+document.write('<script language="JavaScript" src="http://ad.doubleclick.net/adj/ns.howtoforge/howtos;sz=300x250,336x280;tile='+netshel_tile+';ord=' + netshel_ord + '?" type="text/javascript"></scr' + 'ipt>');
+netshel_tile++;
+</script>
+<!-- END AD TAG --><script type="text/javascript">
+<!--
+document.write('</div>');
+//-->
+</script>
+<p>The advantage of such a "virtual" setup (virtual users and domains in a MySQL database) is that it is far more performant than a setup that is based on "real" system users. With this virtual setup your mail server can handle thousands of domains and users. Besides, it is easier to administrate because you only have to deal with the MySQL database when you add new users/domains or edit existing ones. No more postmap commands to create db files, no more reloading of Postfix, etc. For the administration of the MySQL database you can use web based tools like phpMyAdmin which will also be installed in this howto. The third advantage is that users have an email address as user name (instead of a user name + an email address) which is easier to understand and keep in mind.</p>
+<p>This tutorial is based on Mandriva 2008.1 (i386). You should already have set up a basic Mandriva system, as described in the chapters 1 to 7 of this tutorial: <a mce_real_href="http://www.howtoforge.com/perfect-server-mandriva-2008.1" href="http://www.howtoforge.com/perfect-server-mandriva-2008.1" target="_blank">http://www.howtoforge.com/perfect-server-mandriva-2008.1</a>. <span class="highlight">Please leave out chapter 6.3 Creating An Auto-Update Script, because if there's a Postfix update, it will replace our custom-built Postfix that we will build in chapter 3!</span> </p>
+<p>This howto is meant as a practical guide; it does not cover the theoretical backgrounds. They are treated in a lot of other documents in the web.</p>
+<p>This document comes without warranty of any kind! I want to say that this is not the only way of setting up such a system. There are many ways of achieving this goal but this is the way I take. I do not issue any guarantee that this will work for you!</p>
+<p>&nbsp;</p>
+<h3>Preliminary Note</h3>
+<p> The system should have a static IP address. I use <span class="system">192.168.0.100</span> as my IP address in this tutorial and <span class="system">server1.example.com</span> as the hostname.  </p>
+<p>&nbsp;</p>
+<h3>1  Install Apache, MySQL, phpMyAdmin</h3>
+<p>This can all be installed with one single command:</p>
+<p class="command">urpmi MySQL MySQL-client libmysql15-devel phpmyadmin db4-devel html2text libsasl-devel openssl-devel openldap-devel pcre-devel postgresql-devel rpm-build</p>
+<p>&nbsp;</p>
+<h3>2 Install Courier And Saslauthd </h3>
+<p>To install Courier and saslauthd, we simply run:</p>
+<p class="command">urpmi courier-authlib courier-authlib-mysql courier-imap courier-pop cyrus-sasl libsasl2 libsasl2-devel libsasl2-plug-plain libsasl2-plug-anonymous libsasl2-plug-crammd5 libsasl2-plug-digestmd5 libsasl2-plug-gssapi libsasl2-plug-login</p>
+<p>&nbsp;</p>
+<h3>3 Apply Quota Patch To Postfix</h3>
+<p>We have to get the Postfix source rpm, patch it with the quota patch, build a new Postfix rpm package and install it.</p>
+<p class="command">cd /usr/src<br />
+  mkdir rpm<br />
+  wget ftp://wftp.tu-chemnitz.de/pub/linux/mandrakelinux/official/2008.1/SRPMS/main/release/postfix-2.5.1-2mdv2008.1.src.rpm<br />
+rpm -ivh postfix-2.5.1-2mdv2008.1.src.rpm</p>
+<p>The last command will show some warnings that you can ignore:</p>
+<p class="system">warning: user mandrake does not exist - using root<br />
+warning: group mandrake does not exist - using root</p>
+<p>Now we patch the Postfix sources with the <span class="system">postfix-2.5.1-vda-ng</span> patch (from <a mce_real_href="http://vda.sourceforge.net/" href="http://vda.sourceforge.net/" target="_blank">http://vda.sourceforge.net/</a>):</p>
+<p class="command">cd /usr/src/rpm/SOURCES<br />
+  tar xvfz postfix-2.5.1.tar.gz<br />
+  wget http://vda.sourceforge.net/VDA/postfix-2.5.1-vda-ng.patch.gz<br />
+  gunzip postfix-2.5.1-vda-ng.patch.gz<br />
+  cd postfix-2.5.1<br />
+  patch -p1 &lt; ../postfix-2.5.1-vda-ng.patch<br />
+  cd ..<br />
+  mv postfix-2.5.1.tar.gz postfix-2.5.1.tar.gz_orig<br />
+  tar -pczf postfix-2.5.1.tar.gz postfix-2.5.1/<br />
+rm -fr postfix-2.5.1/</p>
+<p>Then we build our new Postfix rpm package with quota and MySQL support:</p>
+<p class="command">cd /usr/src/rpm/SPECS/<br />
+rpmbuild -ba postfix.spec</p>
+<p>Our Postfix rpm package is created in <span class="system">/usr/src/rpm/RPMS/i586</span>, so we go there:</p>
+<p class="command">cd /usr/src/rpm/RPMS/i586</p>
+<p>The command</p>
+<p class="command">ls -l</p>
+<p>shows you the available packages:</p>
+<p class="system">[root@server1&nbsp;i586]#&nbsp;ls&nbsp;-l<br />
+total&nbsp;4712<br />
+-rw-r--r--&nbsp;1&nbsp;root&nbsp;root&nbsp;&nbsp;275303&nbsp;2008-04-11&nbsp;16:22&nbsp;libpostfix1-2.5.1-2mdv2008.1.i586.rpm<br />
+-rw-r--r--&nbsp;1&nbsp;root&nbsp;root&nbsp;1822571&nbsp;2008-04-11&nbsp;16:22&nbsp;postfix-2.5.1-2mdv2008.1.i586.rpm<br />
+-rw-r--r--&nbsp;1&nbsp;root&nbsp;root&nbsp;2608569&nbsp;2008-04-11&nbsp;16:22&nbsp;postfix-debug-2.5.1-2mdv2008.1.i586.rpm<br />
+-rw-r--r--&nbsp;1&nbsp;root&nbsp;root&nbsp;&nbsp;&nbsp;27341&nbsp;2008-04-11&nbsp;16:22&nbsp;postfix-ldap-2.5.1-2mdv2008.1.i586.rpm<br />
+-rw-r--r--&nbsp;1&nbsp;root&nbsp;root&nbsp;&nbsp;&nbsp;22208&nbsp;2008-04-11&nbsp;16:22&nbsp;postfix-mysql-2.5.1-2mdv2008.1.i586.rpm<br />
+-rw-r--r--&nbsp;1&nbsp;root&nbsp;root&nbsp;&nbsp;&nbsp;22150&nbsp;2008-04-11&nbsp;16:22&nbsp;postfix-pcre-2.5.1-2mdv2008.1.i586.rpm<br />
+-rw-r--r--&nbsp;1&nbsp;root&nbsp;root&nbsp;&nbsp;&nbsp;22266&nbsp;2008-04-11&nbsp;16:22&nbsp;postfix-pgsql-2.5.1-2mdv2008.1.i586.rpm<br />
+[root@server1&nbsp;i586]#</p>
+<p>First uninstall your current Postfix package...</p>
+<p class="command">urpme postfix</p>
+<p>...then pick the <span class="system">postfix</span> and the <span class="system">postfix-mysql</span> packages and install them like this:</p>
+<p class="command">rpm -ivh postfix-2.5.1-2mdv2008.1.i586.rpm postfix-mysql-2.5.1-2mdv2008.1.i586.rpm</p>
+<p>&nbsp;</p>
+<h3>4 Set MySQL Passwords And Configure phpMyAdmin</h3>
+<p>By default, networking is not enabled in Mandriva 2008.1's MySQL package, but networking is required by ISPConfig. We can change this by commenting out the line <span class="system">skip-networking</span> in <span class="system">/etc/my.cnf</span>:</p>
+<p class="command">vi /etc/my.cnf</p>
+<table class="" align="center" bgcolor="#cccccc" border="1" bordercolor="#000000" cellpadding="2" cellspacing="0" width="90%">
+  <tbody><tr>
+    <td class="">
+      <pre>[...]
+# Don't listen on a TCP/IP port at all. This can be a security enhancement,
+# if all processes that need to connect to mysqld run on the same host.
+# All interaction with mysqld must be made via Unix sockets or named pipes.
+# Note that using this option without enabling named pipes on Windows
+# (via the "enable-named-pipe" option) will render mysqld useless!
+#
+#skip-networking
+[...]</pre>
+    </td>
+  </tr>
+</tbody></table>
+<p>Afterwards, we create the system startup links for Apache and MySQL...</p>
+<p class="command">chkconfig mysqld on<br />
+chkconfig httpd on</p>
+<p>... and start both services:</p>
+<p class="command">/etc/init.d/mysqld start<br />
+/etc/init.d/httpd start</p>
+<p> Now check that networking is enabled. Run </p>
+<p class="command">netstat -tap | grep mysql</p>
+<p> The output should look like this: </p>
+<p class="system">[root@server1&nbsp;i586]#&nbsp;netstat&nbsp;-tap&nbsp;|&nbsp;grep&nbsp;mysql<br />
+tcp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;*:mysql-im&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*:*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LISTEN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13537/mysqlmanager<br />
+tcp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;*:mysql&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*:*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LISTEN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13545/mysqld<br />
+[root@server1&nbsp;i586]#</p>
+<p>Next, run</p>
+<p class="command">mysqladmin -u root password yourrootsqlpassword<br />
+mysqladmin -h server1.example.com -u root password yourrootsqlpassword</p>
+<p> to set a password for the user<span class="system"> root</span> (otherwise anybody can access your MySQL database!). </p>
+<p>Now you can direct your browser to <span class="system">http://server1.example.com/phpmyadmin/</span> or <span class="system">http://192.168.0.100/phpmyadmin/</span> and log in with the user name <span class="system">root</span> and your new root MySQL password.</p><div class="book"><div class="tree"><div class="menu"><ul><li class="leaf"><a href="virtual-users-domains-postfix-courier-mysql-squirrelmail-mandriva2008.1-p2">Virtual Users And Domains With Postfix, Courier, MySQL And SquirrelMail (Mandriva 2008.1) - Page 2</a></li><li class="leaf"><a href="virtual-users-domains-postfix-courier-mysql-squirrelmail-mandriva2008.1-p3">Virtual Users And Domains With Postfix, Courier, MySQL And SquirrelMail (Mandriva 2008.1) - Page 3</a></li><li class="leaf"><a href="virtual-users-domains-postfix-courier-mysql-squirrelmail-mandriva2008.1-p4">Virtual Users And Domains With Postfix, Courier, MySQL And SquirrelMail (Mandriva 2008.1) - Page 4</a></li><li class="leaf"><a href="virtual-users-domains-postfix-courier-mysql-squirrelmail-mandriva2008.1-p5">Virtual Users And Domains With Postfix, Courier, MySQL And SquirrelMail (Mandriva 2008.1) - Page 5</a></li></ul></div></div><div class="nav"> <div class="links"><div class="prev">&nbsp;</div><div class="next"><a href="virtual-users-domains-postfix-courier-mysql-squirrelmail-mandriva2008.1-p2" title="View the next page.">next</a></div></div> <div class="titles"><div class="next">Virtual Users And Domains With Postfix, Courier, MySQL And SquirrelMail (Mandriva 2008.1) - Page 2</div></div></div></div><br /><div class="copyright-footer"><div class="copyright-image"><a href="http://creativecommons.org/licenses/by/2.0/"><img src="http://creativecommons.org/images/public/somerights20.gif"  alt="[Creative Commons Attribution License]" title="Creative Commons Attribution License" /></a></div>This page is licensed under a <a href="http://creativecommons.org/licenses/by/2.0/">Creative Commons License</a>.</div>  </div>
+      <div class="links"><img src="/images/print.gif" border="0" alt=""> print: <a href="subscription" title="Print this page.">this</a> | <a href="subscription" title="Print all pages of this book.">all</a> page(s) | <a href="http://www.howtoforge.com/forums/login.php">login</a> or <a href="http://www.howtoforge.com/forums/register.php">register</a> to post comments | <a href="emailpage&amp;nid=3408" title="Email this page to a friend"><img src="/images/email.gif" border="0" alt="Email this page to a friend"></a> <a href="emailpage&amp;nid=3408" title="Email this page to a friend">email this page</a> | <a href="subscription" title="View and print node as pdf."><img src="/images/pdf.gif" border="0" alt="view as pdf"></a> <a href="subscription" title="View and print node as pdf.">view as pdf</a></div>
+  
+<div class="relatedlinks" id="relatedlinks">
+<h2 class="title"><span style="margin-top:5px;font-weight:bold">Related Tutorials</span></h2>
+<div class="content"><ul class="related-links"><li><a title="Virtual Users And Domains With Postfix, Courier And MySQL (Mandriva 2008.0)" href="/virtual-users-domains-postfix-courier-mysql-mandriva2008.0">Virtual Users And Domains With Postfix, Courier And MySQL (Mandriva 2008.0)</a></li><li><a title="Virtual Users And Domains With Postfix, Courier And MySQL (CentOS 5.1)" href="/virtual-users-and-domains-postfix-courier-mysql-centos5.1">Virtual Users And Domains With Postfix, Courier And MySQL (CentOS 5.1)</a></li><li><a title="Virtual Users And Domains With Postfix, Courier And MySQL (Ubuntu 7.10)" href="/virtual-users-and-domains-with-postfix-ubuntu-7.10">Virtual Users And Domains With Postfix, Courier And MySQL (Ubuntu 7.10)</a></li><li><a title="Virtual Users And Domains With Postfix, Courier And MySQL (Fedora 8)" href="/virtual-users-and-domains-postfix-courier-mysql-fedora8">Virtual Users And Domains With Postfix, Courier And MySQL (Fedora 8)</a></li><li><a title="Virtual Users And Domains With Postfix, Courier And MySQL (Debian Etch)" href="/virtual_users_and_domains_with_postfix_debian_etch">Virtual Users And Domains With Postfix, Courier And MySQL (Debian Etch)</a></li></ul>
+</div>
+</div>
+</div><a id="comment"></a>
+<table width="100%" style="border: 1px solid #808080; background-color: #FFF4B7;"><tr><td style="background-color: #FFF4B7; padding: 7px; padding-top: 15px; padding-left: 15px;"><img src="/images/please_note.gif" border="0" alt=""></td><td style="font-size: 12px; font-style: italic; background-color: #FFF4B7; padding-left: 7px; padding-top: 15px; padding-right: 15px; padding-bottom: 15px;">Please do not use the comment function to ask for help! If you need help, please use our forum: <a href="http://www.howtoforge.com/forums">http://www.howtoforge.com/forums</a></td></tr></table><table width="100%" style="border: 1px solid #808080; background-color: #FFF4B7;"><tr><td style="background-color: #FFF4B7; padding: 7px; padding-top: 15px; padding-left: 15px;"><img src="/images/please_note.gif" border="0" alt=""></td><td style="font-size: 12px; font-style: italic; background-color: #FFF4B7; padding-left: 7px; padding-top: 15px; padding-right: 15px; padding-bottom: 15px;">Comments will be published after administrator approval.</td></tr></table><form method="post" action="comment"><div>
+<input type="hidden" name="edit[nid]" value="3408" />
+</div></form><!-- end content --></div>            </div>
+            </td></tr></table>
+            <!-- end main content -->
+          </div><!-- main -->
+        </div>
+      </div>
+    </div>
+    <div class="clearing"></div>
+    <hr class="hide" />
+<!-- START: FOOTER-->
+    <div id="footer" class="footer">
+
+        <p><center><a href="/">Howtos</a> | <a href="http://www.howtoforge.com/mini-howtos">Mini-Howtos</a> | <a href="http://www.howtoforge.com/forums">Forums</a> | <a href="http://www.howtoforge.com/image">Screenshots</a> | <a href="http://lxer.com/" target="_blank">News</a> | <a href="http://www.howtoforge.com/trip_search">Search</a> | <a href="http://www.howtoforge.com/add_howto">Contribute</a><br><a href="http://www.howtoforge.com/subscription">Subscription</a> | <a href="http://www.howtoforge.com/advertise">Advertise</a> | <a href="/forums/sendmessage.php">Contact</a> | <a href="http://www.howtoforge.com/disclaimer">Disclaimer</a> | <a href="http://www.howtoforge.com/imprint">Imprint</a></center></p>
+
+      <br /><div class="copyright-footer">Copyright © 2008 HowtoForge - Linux Howtos and Tutorials<br />All Rights Reserved.
+</div>    </div>
+<!-- END: FOOTER -->
+        </div><!-- wrapper -->
+</div><!-- outer_wrapper -->
+
+<!--<script src="http://www.spotplex.com/send/474129/no-image.js" type="text/javascript"></script>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script><script type="text/javascript"> _uacct="UA-2155872-1";  urchinTracker(); </script>//-->
+<!-- Kontera ContentLink(TM);-->
+<script type='text/javascript'>
+var dc_AdLinkColor = '#003399' ;
+var dc_UnitID = 14 ;
+var dc_PublisherID = 40887 ;
+var dc_adprod = 'ADL' ;
+</script>
+<script type='text/javascript' src='http://kona.kontera.com/javascript/lib/KonaLibInline.js'></script>
+<!-- Kontera ContentLink(TM) -->
+</body>
+</html>

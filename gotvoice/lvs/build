@@ -1,0 +1,93 @@
+### heartbeat doc on http://www.linux-ha.org
+
+### This lvs config is for either hosts that are 1) directors and realservers
+### or 2) realservers only.  Create 2 director/realservers and add realservers
+### as needed.
+
+###do this on director/realserver only
+
+aptitude install ipvsadm ldirectord heartbeat
+
+# let heartbeat start ldirectord
+/usr/sbin/update-rc.d -f ldirectord remove
+scp butter:/etc/ha.d/conf/ldirectord.cf /etc/ha.d/conf
+vi /etc/ha.d/conf/ldirectord.cf
+
+#vi /etc/sysctl.conf to enble forwarding:
+# Enables packet forwarding
+net.ipv4.ip_forward = 1
+
+dpkg-reconfigure ipvsadm
+    ipvs daemon master/slave/none ?
+    make one heartbeat host master, "parsley" in production, and the other slave
+
+#vi /etc/ha.d/authkeys
+auth 3
+3 md5 ImBleepingAlive
+
+# chmod 600 /etc/ha.d/authkeys
+
+# vi /etc/ha.d/ha.cf:
+debugfile /var/log/ha-debug
+logfile /var/log/ha-log
+keepalive 5
+deadtime 30
+initdead 120
+udpport 694
+bcast   eth0            # Linux
+auto_failback on
+node    butter
+node    bean
+
+# vi /etc/ha.d/haresources (this is identical on both hosts):
+master-host move-ip 10.92.1.66 ldirectord    
+
+
+# vi /etc/ha.d/resource.d/move-ip
+
+# move the vip off/on the local interface
+if [ "$1" == start ]; then
+    /sbin/ifdown lo:0
+elif [ "$1" == stop ]; then
+    /sbin/ifup lo:0
+else
+    echo "either 'start' or 'stop' must be first argument"
+fi 
+
+
+chmod +x  /etc/ha.d/resource.d/move-ip
+
+# /etc/ha.d/conf/ldirectord.cf
+virtual = kvip.gotvoice.com:80
+    real = localhost:80 gate 20
+#### one line for each realserver:
+    real = HOST.gotvoice.com:80 gate 20
+    checktype = connect
+    scheduler = wrr
+ 
+
+
+### do this on director/realsever and realserver
+
+
+append to /etc/sysctl.conf to correct arp behavior:
+# Enable configuration of arp_ignore option
+net.ipv4.conf.all.arp_ignore = 1
+net.ipv4.conf.eth0.arp_ignore = 1
+# Enable configuration of arp_announce option
+net.ipv4.conf.all.arp_announce = 2
+net.ipv4.conf.eth0.arp_announce = 2
+
+vi /etc/network/interfaces:
+auto lo:0
+iface lo:0 inet static
+  address vip_ip
+  netmask 255.255.255.255
+  pre-up sysctl -p > /dev/null
+
+
+
+
+### for a standard webserver
+aptitude install apache
+

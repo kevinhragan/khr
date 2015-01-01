@@ -1,0 +1,2406 @@
+Return-Path: todd.park@twcable.com
+Received: from 10.92.1.31 (LHLO mail.gotvoice.com) (10.92.1.31) by
+ mail.gotvoice.com with LMTP; Fri, 4 Apr 2008 19:20:14 -0700 (PDT)
+Received: from localhost (localhost [127.0.0.1])
+	by mail.gotvoice.com (Postfix) with ESMTP id 209A0131C03E;
+	Fri,  4 Apr 2008 19:20:14 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at 
+X-Spam-Flag: NO
+X-Spam-Score: -3.343
+X-Spam-Level: 
+X-Spam-Status: No, score=-3.343 tagged_above=-10 required=4 tests=[AWL=-0.744,
+	BAYES_00=-2.599]
+Received: from mail.gotvoice.com ([127.0.0.1])
+	by localhost (mail.gotvoice.com [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id rYI7jbBhMYp6; Fri,  4 Apr 2008 19:20:04 -0700 (PDT)
+Received: from pblpas02.twcable.com (pblpas02.twcable.com [204.235.121.150])
+	by mail.gotvoice.com (Postfix) with ESMTP id CCF3B131C020;
+	Fri,  4 Apr 2008 19:20:02 -0700 (PDT)
+X-SENDER-IP: 10.157.247.215
+X-SENDER-REPUTATION: None
+X-IronPort-AV: E=Sophos;i="4.25,607,1199682000"; 
+   d="scan'208,217";a="188715550"
+Received: from unknown (HELO prvpmailconn5.corp.twcable.com) ([10.157.247.215])
+  by pblpas02.twcable.com with ESMTP; 04 Apr 2008 22:20:02 -0400
+Received: from PRVPVSMAIL02.corp.twcable.com ([10.157.246.211]) by prvpmailconn5.corp.twcable.com with Microsoft SMTPSVC(6.0.3790.3959);
+	 Fri, 4 Apr 2008 22:20:02 -0400
+X-MimeOLE: Produced By Microsoft Exchange V6.5
+Content-class: urn:content-classes:message
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----_=_NextPart_001_01C896C3.7C76EF81"
+Subject: RE: Security for GotVoice Server
+Date: Fri, 4 Apr 2008 22:19:33 -0400
+Message-ID: <DD543894CB52C044B430BC3A776C55B601507E02@PRVPVSMAIL02.corp.twcable.com>
+In-Reply-To: <009301c89693$3c58a360$ba015c0a@ROBERTINGMAN>
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+Thread-Topic: Security for GotVoice Server
+Thread-Index: AciLA3e1gasO2XC6Sp2pWRkKCRpW7QAcEMPgAB5wZhAB5fRvwAAGGRnwAALKWjAAH7Y6IAAvkuCwAA2agdAAAB7OQAAqFgtAAAGA2IAAMfdekAAMFH5Q
+References: <EB96DD5EC4F62A4785CA5509FFECF1E606571D40@PRVPVSMAIL02.corp.twcable.com> <EB96DD5EC4F62A4785CA5509FFECF1E609118C37@PRVPVSMAIL02.corp.twcable.com> <DD543894CB52C044B430BC3A776C55B6013C9FF7@PRVPVSMAIL02.corp.twcable.com> <009301c89693$3c58a360$ba015c0a@ROBERTINGMAN>
+From: "Park, Todd" <todd.park@twcable.com>
+To: "Robert Ingman" <roberti@gotvoice.com>,
+	"Wong, Kiman" <kiman.wong@twcable.com>
+Cc: "Kuniyuki, Noreen" <Noreen.Kuniyuki@twcable.com>,
+	"Higa, Byron" <byron.higa@twcable.com>,
+	"Sun, Chi" <chi.sun@twcable.com>,
+	"Kevin Ragan" <kevinr@gotvoice.com>
+X-OriginalArrivalTime: 05 Apr 2008 02:20:02.0384 (UTC) FILETIME=[8DEB0D00:01C896C3]
+
+This is a multi-part message in MIME format.
+
+------_=_NextPart_001_01C896C3.7C76EF81
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Robert,
+
+=20
+
+I'll call you on Monday morning.
+
+=20
+
+Todd
+
+________________________________
+
+From: Robert Ingman [mailto:roberti@gotvoice.com]=20
+Sent: Friday, April 04, 2008 10:34 AM
+To: Wong, Kiman; Park, Todd
+Cc: Kuniyuki, Noreen; Higa, Byron; Sun, Chi; 'Kevin Ragan'
+Subject: RE: Security for GotVoice Server
+
+=20
+
+Hi again,
+
+Todd, can we talk today?
+
+You can reach Kevin and me at 425-605-4100.
+
+=20
+
+Thanks,
+
+Robert
+
+=20
+
+=20
+
+________________________________
+
+From: Wong, Kiman [mailto:kiman.wong@twcable.com]=20
+Sent: Thursday, April 03, 2008 1:44 PM
+To: Robert Ingman
+Cc: Kuniyuki, Noreen; Higa, Byron; Sun, Chi; Park, Todd
+Subject: RE: Security for GotVoice Server
+
+Robert,
+
+=20
+
+See Todd's note below.  Which way would you like to handle this?
+
+=20
+
+Kiman
+
+=20
+
+Kiman K. L. Wong
+
+General Manager - Digital Phone
+
+Oceanic Time Warner Cable
+
+=20
+
+Phone: (808) 625-8335
+
+=20
+
+________________________________
+
+From: Park, Todd=20
+Sent: Thursday, April 03, 2008 10:04 AM
+To: Sun, Chi
+Cc: Wong, Kiman; Kuniyuki, Noreen; Higa, Byron
+Subject: RE: Security for GotVoice Server
+
+=20
+
+The cert request must be run on the gotVoice server.  We do not have
+access to the gotVoice server.
+
+=20
+
+The SSL cert can be purchased by anyone and should be the responsibility
+of the server administrator.  It is not tied to the administrator of the
+external ip address space.
+
+=20
+
+We can take care of the cert, but we will need the username/password as
+well as the type of web server.
+
+=20
+
+________________________________
+
+From: Sun, Chi=20
+Sent: Wednesday, April 02, 2008 1:59 PM
+To: Park, Todd
+Cc: Wong, Kiman; Kuniyuki, Noreen
+Subject: FW: Security for GotVoice Server
+
+=20
+
+Could we get the certificate and install it for gotvoice?
+
+=20
+
+Thank you,
+
+=20
+
+Chi
+
+________________________________
+
+From: Wong, Kiman=20
+Sent: Wednesday, April 02, 2008 1:52 PM
+To: Sun, Chi
+Cc: Higa, Byron
+Subject: FW: Security for GotVoice Server
+
+=20
+
+Chi,
+
+=20
+
+Are able to help GotVoice out with the digital certificate and the test
+account?
+
+=20
+
+Thanks,
+
+Kiman
+
+=20
+
+Kiman K. L. Wong
+
+General Manager - Digital Phone
+
+Oceanic Time Warner Cable
+
+=20
+
+Phone: (808) 625-8335
+
+=20
+
+________________________________
+
+From: Robert Ingman [mailto:roberti@gotvoice.com]=20
+Sent: Wednesday, April 02, 2008 7:39 AM
+To: Wong, Kiman; Higa, Byron
+Cc: 'Martin Dunsmuir'; 'Mike Webb'; 'Kevin Ragan'
+Subject: RE: Security for GotVoice Server
+
+=20
+
+Hi Kiman and Byron,
+
+in order to run the Oceanic-GotVoice sign-up and Account pages via
+HTTPS/SSL, we're going to need a digital certificate for the web server
+domain that serves those pages, i.e. for the gotvoice.oceanic.com domain
+
+However, since Time Warner (RoadRunner) owns the public IP that the
+Oceanic-GotVoice servers are associated with, 24.165.45.213, we believe
+that Time Warner must purchase this cerificate. We - GotVoice - can't do
+it.
+
+=20
+
+Web-server certificates can be purchased from a number Certificate
+Authorities (CAs) such as Verisign, Thawte, etc.
+
+Can you facilitate this? We'd be happy to help, but someone inside
+Oceanic needs to be the official purchaser of the cert.
+
+=20
+
+Also, we would like to get access to one or two Oceanic accounts that we
+can use for testing purposes.
+
+This should be accounts that work with your official portal at this URL:
+
+https://secure.oceanic.com/MyAccount/ShowLogin.do
+
+=20
+
+Ideally, we'd like access to one account that has not yet signed up for
+GotVoice functionality, and one that has.
+
+Again, can you facilitate this?
+
+=20
+
+Thanks much,
+
+Robert=20
+
+=20
+
+=20
+
+-----Original Message-----
+
+From: Kevin Ragan [mailto:kevinr@gotvoice.com
+<mailto:kevinr@gotvoice.com> ]=20
+
+Sent: Wednesday, April 02, 2008 10:03 AM
+
+To: Robert Ingman
+
+Subject: oceanic ssl cert
+
+=20
+
+My takeaway is if the URL that Oceanic-GotVoice users hit is in the
+"oceanic.com" domain, then Oceanic probably has to request/purchase the
+cert.
+
+=20
+
+From the Thawte site:
+
+=20
+
+3. What level of authentication does the certificate offer?
+
+In securing your web site with a digital certificate, your main aim is
+to provide proof of your online identity and in so doing establish a
+relationship of trust with those with whom you wish to interact online.=20
+
+This is where authentication comes into play as the most important
+element of a digital certificate.
+
+=20
+
+Authentication provides users with proof that:
+
+1. your company is a bona fide real world company.
+
+2. they are connecting to the correct server A certificate's level of
+authentication may be seen as an indication of its quality - the higher
+the level of authentication provided, the greater the quality of the
+certificate. It is therefore important to understand that the various
+digital certificates available each differ in level of authentication
+depending on the issuing CA or even the specific product.
+
+=20
+
+Some CAs perform only very basic authentication prior to issuing a
+certificate while others conduct extensive checks to ensure the identity
+of the applying organization. The following are the various
+authentication checks that are performed by CAs:
+
+* Domain lookup to confirm that applying company owns domain.
+
+* Check existence of company to confirm that it is a legally registered
+organization.
+
+* Verification of identity of individual requesting certificate to
+confirm that they are an authorized representative.
+
+=20
+
+All CAs performs one or more of these authentication checks. The result
+is a range of products of greatly differing levels of quality. It is
+important to note that the more authentication checks performed the
+better the quality of the certificate. So make sure you determine
+exactly what authentication checks are performed before purchasing.
+
+
+=20
+
+________________________________
+
+From: Wong, Kiman [mailto:kiman.wong@twcable.com]=20
+Sent: Tuesday, April 01, 2008 11:40 AM
+To: Robert Ingman
+Cc: Curt Blake; Martin Dunsmuir; Mike Webb
+Subject: RE: Security for GotVoice Server
+
+Sure.  Do you think you can get me an answer by the end of the week?
+
+=20
+
+Thanks,
+
+Kiman
+
+=20
+
+Kiman K. L. Wong
+
+General Manager - Digital Phone
+
+Oceanic Time Warner Cable
+
+=20
+
+Phone: (808) 625-8335
+
+=20
+
+________________________________
+
+From: Robert Ingman [mailto:roberti@gotvoice.com]=20
+Sent: Monday, March 31, 2008 5:33 PM
+To: Wong, Kiman
+Cc: 'Curt Blake'; 'Martin Dunsmuir'; 'Mike Webb'
+Subject: RE: Security for GotVoice Server
+
+=20
+
+Kiman, please give me just a little bit of time to brief the developer
+who's going to work on this, and then I'll get back to you with a target
+date.
+
+=20
+
+Thanks much,
+
+Robert=20
+
+=20
+
+________________________________
+
+From: Wong, Kiman [mailto:kiman.wong@twcable.com]=20
+Sent: Monday, March 31, 2008 7:13 PM
+To: Robert Ingman
+Cc: Curt Blake; Martin Dunsmuir; Mike Webb
+Subject: RE: Security for GotVoice Server
+
+Thanks for the update Robert.  Would you give me a target schedule for
+the completion of these changes so I can let our Security people know?
+
+=20
+
+Kiman
+
+=20
+
+Kiman K. L. Wong
+
+General Manager - Digital Phone
+
+Oceanic Time Warner Cable
+
+=20
+
+Phone: (808) 625-8335
+
+=20
+
+________________________________
+
+From: Robert Ingman [mailto:roberti@gotvoice.com]=20
+Sent: Monday, March 31, 2008 1:22 PM
+To: Wong, Kiman
+Cc: 'Curt Blake'; 'Martin Dunsmuir'; 'Mike Webb'
+Subject: RE: Security for GotVoice Server
+
+=20
+
+Hi again Kiman,
+
+I just returned from a sping-break trip last week, so catching up on
+email now.
+
+=20
+
+Thanks for the info below. It seems like the security concerns apply to
+both the GotVoice sign-up and account pages. And we've noted that Apache
+needs an update.
+
+We are in the process of freeing up a dev resource for Oceanic work, so
+you should see some progress on this soon, please stay tuned.
+
+=20
+
+Best regards,
+
+Robert=20
+
+=20
+
+________________________________
+
+From: Wong, Kiman [mailto:kiman.wong@twcable.com]=20
+Sent: Saturday, March 22, 2008 12:26 AM
+To: Robert Ingman
+Cc: Curt Blake; Martin Dunsmuir; Mike Webb
+Subject: RE: Security for GotVoice Server
+
+Robert,
+
+=20
+
+Thanks for getting on this.
+
+=20
+
+Yes, by using HTTPS/SSL that should protect customer's information that
+is now shown as clear text.  Actually in my discussion with Chi, it's
+even before the customer login for the first time.  Since there is a
+link from the Oceanic My Account, the GotVoice sign up page is populated
+with customer information.
+
+=20
+
+The other concern they had was the old version of Apache.
+
+=20
+
+Thanks,
+
+Kiman
+
+=20
+
+Kiman K. L. Wong
+
+General Manager - Digital Phone
+
+Oceanic Time Warner Cable
+
+=20
+
+Phone: (808) 625-8335
+
+=20
+
+________________________________
+
+From: Robert Ingman [mailto:roberti@gotvoice.com]=20
+Sent: Friday, March 21, 2008 6:55 AM
+To: Wong, Kiman
+Cc: 'Curt Blake'; 'Martin Dunsmuir'; 'Mike Webb'
+Subject: RE: Security for GotVoice Server
+
+=20
+
+Hi Kiman,
+
+we understand your concerns regarding security and the standards you
+need to follow.
+
+Is the main concern that the GotVoice account pages are not run over
+HTTPS/SSL after a user logs in?
+
+Or are there other or additional concerns?
+
+
+=20
+
+If we could some more details on the specifics then we can respond with
+a plan of action that will address your concerns the proper way.
+
+=20
+
+Thanks much,
+
+Robert
+
+=20
+
+________________________________
+
+From: Wong, Kiman [mailto:kiman.wong@twcable.com]=20
+Sent: Thursday, March 20, 2008 8:27 PM
+To: Robert Ingman; Martin Dunsmuir
+Cc: Curt Blake
+Subject: Security for GotVoice Server
+Importance: High
+
+Robert and Martin,
+
+=20
+
+We need to fix a few things on the Oceanic GotVoice servers.  Since it
+is in our network and "connected" to our Billing system, we need to have
+comply with PCI standards.  Our Security guy did a PCI scan and on
+server and found that there are clear text customer information being
+sent out.  He recommends that we implement SSL on the server so that
+this information is secure.  His scan also showed that the version of
+Apache being run is quite old and that there are known vulnerabilities.
+He recommends that this be updated as soon as possible.
+
+=20
+
+I know that we are suppose to switch over to the new server and would
+suspect the software will be more up to date but probably the SSL was
+not a new feature.  Would you let me know if we can implement these
+changes and if so when it can be done?  Luckily this was just a scan by
+our internal Security folks and not by our Corp Security...
+
+=20
+
+Thanks,
+
+Kiman
+
+=20
+
+Kiman K. L. Wong
+
+General Manager - Digital Phone
+
+Oceanic Time Warner Cable
+
+=20
+
+Phone: (808) 625-8335
+
+=20
+
+This E-mail and any of its attachments may contain Time Warner
+Cable proprietary information, which is privileged, confidential,
+or subject to copyright belonging to Time Warner Cable. This E-mail
+is intended solely for the use of the individual or entity to which
+it is addressed. If you are not the intended recipient of this
+E-mail, you are hereby notified that any dissemination,
+distribution, copying, or action taken in relation to the contents
+of and attachments to this E-mail is strictly prohibited and may be
+unlawful. If you have received this E-mail in error, please notify
+the sender immediately and permanently delete the original and any
+copy of this E-mail and any printout.
+This E-mail and any of its attachments may contain Time Warner
+Cable proprietary information, which is privileged, confidential,
+or subject to copyright belonging to Time Warner Cable. This E-mail
+is intended solely for the use of the individual or entity to which
+it is addressed. If you are not the intended recipient of this
+E-mail, you are hereby notified that any dissemination,
+distribution, copying, or action taken in relation to the contents
+of and attachments to this E-mail is strictly prohibited and may be
+unlawful. If you have received this E-mail in error, please notify
+the sender immediately and permanently delete the original and any
+copy of this E-mail and any printout.
+This E-mail and any of its attachments may contain Time Warner
+Cable proprietary information, which is privileged, confidential,
+or subject to copyright belonging to Time Warner Cable. This E-mail
+is intended solely for the use of the individual or entity to which
+it is addressed. If you are not the intended recipient of this
+E-mail, you are hereby notified that any dissemination,
+distribution, copying, or action taken in relation to the contents
+of and attachments to this E-mail is strictly prohibited and may be
+unlawful. If you have received this E-mail in error, please notify
+the sender immediately and permanently delete the original and any
+copy of this E-mail and any printout.
+This E-mail and any of its attachments may contain Time Warner
+Cable proprietary information, which is privileged, confidential,
+or subject to copyright belonging to Time Warner Cable. This E-mail
+is intended solely for the use of the individual or entity to which
+it is addressed. If you are not the intended recipient of this
+E-mail, you are hereby notified that any dissemination,
+distribution, copying, or action taken in relation to the contents
+of and attachments to this E-mail is strictly prohibited and may be
+unlawful. If you have received this E-mail in error, please notify
+the sender immediately and permanently delete the original and any
+copy of this E-mail and any printout.
+This E-mail and any of its attachments may contain Time Warner
+Cable proprietary information, which is privileged, confidential,
+or subject to copyright belonging to Time Warner Cable. This E-mail
+is intended solely for the use of the individual or entity to which
+it is addressed. If you are not the intended recipient of this
+E-mail, you are hereby notified that any dissemination,
+distribution, copying, or action taken in relation to the contents
+of and attachments to this E-mail is strictly prohibited and may be
+unlawful. If you have received this E-mail in error, please notify
+the sender immediately and permanently delete the original and any
+copy of this E-mail and any printout.
+This E-mail and any of its attachments may contain Time Warner
+Cable proprietary information, which is privileged, confidential,
+or subject to copyright belonging to Time Warner Cable. This E-mail
+is intended solely for the use of the individual or entity to which
+it is addressed. If you are not the intended recipient of this
+E-mail, you are hereby notified that any dissemination,
+distribution, copying, or action taken in relation to the contents
+of and attachments to this E-mail is strictly prohibited and may be
+unlawful. If you have received this E-mail in error, please notify
+the sender immediately and permanently delete the original and any
+copy of this E-mail and any printout.
+
+------_=_NextPart_001_01C896C3.7C76EF81
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="us-ascii"
+
+Content-Type: text/html;
+	charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" =
+xmlns:o=3D"urn:schemas-microsoft-com:office:office" =
+xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:st1=3D"urn:schemas-microsoft-com:office:smarttags" =
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<META HTTP-EQUIV=3D"Content-Type" CONTENT=3D"text/html; =
+charset=3Dus-ascii">
+<meta name=3DGenerator content=3D"Microsoft Word 11 (filtered medium)">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><o:SmartTagType
+ namespaceuri=3D"urn:schemas-microsoft-com:office:smarttags" =
+name=3D"PersonName"/>
+<!--[if !mso]>
+<style>
+st1\:*{behavior:url(#default#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+span.EmailStyle18
+	{mso-style-type:personal;
+	font-family:Arial;
+	color:windowtext;}
+span.EmailStyle19
+	{mso-style-type:personal;
+	font-family:Arial;
+	color:navy;}
+span.EmailStyle20
+	{mso-style-type:personal;
+	font-family:Arial;
+	color:navy;}
+span.EmailStyle21
+	{mso-style-type:personal;
+	font-family:Arial;
+	color:navy;}
+span.EmailStyle22
+	{mso-style-type:personal;
+	font-family:Arial;
+	color:navy;}
+span.EmailStyle23
+	{mso-style-type:personal;
+	font-family:Arial;
+	color:navy;}
+span.EmailStyle24
+	{mso-style-type:personal;
+	font-family:Arial;
+	color:navy;}
+span.EmailStyle25
+	{mso-style-type:personal;
+	font-family:Arial;
+	color:navy;}
+span.EmailStyle27
+	{mso-style-type:personal-reply;
+	font-family:Arial;
+	color:navy;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+
+</head>
+
+<body lang=3DEN-US link=3Dblue vlink=3Dpurple>
+
+<div class=3DSection1>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Robert,<o:p></o:p></span></font></p>=
+
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>I&#8217;ll call you on Monday =
+morning.<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'><o:p>&nbsp;</o:p></span></font></p>
+
+<div>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Todd</span></font><o:p></o:p></p>
+
+</div>
+
+<div>
+
+<div class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><font =
+size=3D3
+face=3D"Times New Roman"><span style=3D'font-size:12.0pt'>
+
+<hr size=3D2 width=3D"100%" align=3Dcenter tabindex=3D-1>
+
+</span></font></div>
+
+<p class=3DMsoNormal><b><font size=3D2 face=3DTahoma><span =
+style=3D'font-size:10.0pt;
+font-family:Tahoma;font-weight:bold'>From:</span></font></b><font =
+size=3D2
+face=3DTahoma><span style=3D'font-size:10.0pt;font-family:Tahoma'> =
+Robert Ingman
+[mailto:roberti@gotvoice.com] <br>
+<b><span style=3D'font-weight:bold'>Sent:</span></b> Friday, April 04, =
+2008 10:34
+AM<br>
+<b><span style=3D'font-weight:bold'>To:</span></b> <st1:PersonName =
+w:st=3D"on">Wong,
+ Kiman</st1:PersonName>; Park, Todd<br>
+<b><span style=3D'font-weight:bold'>Cc:</span></b> <st1:PersonName =
+w:st=3D"on">Kuniyuki,
+ Noreen</st1:PersonName>; <st1:PersonName w:st=3D"on">Higa, =
+Byron</st1:PersonName>;
+<st1:PersonName w:st=3D"on">Sun, Chi</st1:PersonName>; 'Kevin Ragan'<br>
+<b><span style=3D'font-weight:bold'>Subject:</span></b> RE: Security for =
+GotVoice
+Server</span></font><o:p></o:p></p>
+
+</div>
+
+<p class=3DMsoNormal><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:
+12.0pt'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>Hi =
+again,</span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>Todd, can we talk =
+today?</span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>You can reach Kevin and me at =
+425-605-4100.</span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:
+12.0pt'>&nbsp;<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>Thanks,<o:p></o:p></span></font></p>=
+
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>Robert<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>&nbsp;<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:
+12.0pt'><o:p>&nbsp;</o:p></span></font></p>
+
+<div class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><font =
+size=3D3
+face=3D"Times New Roman"><span style=3D'font-size:12.0pt'>
+
+<hr size=3D2 width=3D"100%" align=3Dcenter tabIndex=3D-1>
+
+</span></font></div>
+
+<p class=3DMsoNormal style=3D'margin-bottom:12.0pt'><b><font size=3D2 =
+face=3DTahoma><span
+style=3D'font-size:10.0pt;font-family:Tahoma;font-weight:bold'>From:</spa=
+n></font></b><font
+size=3D2 face=3DTahoma><span =
+style=3D'font-size:10.0pt;font-family:Tahoma'> <st1:PersonName
+w:st=3D"on">Wong, Kiman</st1:PersonName> [mailto:kiman.wong@twcable.com] =
+<br>
+<b><span style=3D'font-weight:bold'>Sent:</span></b> Thursday, April 03, =
+2008
+1:44 PM<br>
+<b><span style=3D'font-weight:bold'>To:</span></b> Robert Ingman<br>
+<b><span style=3D'font-weight:bold'>Cc:</span></b> <st1:PersonName =
+w:st=3D"on">Kuniyuki,
+ Noreen</st1:PersonName>; <st1:PersonName w:st=3D"on">Higa, =
+Byron</st1:PersonName>;
+<st1:PersonName w:st=3D"on">Sun, Chi</st1:PersonName>; Park, Todd<br>
+<b><span style=3D'font-weight:bold'>Subject:</span></b> RE: Security for =
+GotVoice
+Server</span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Robert,<o:p></o:p></span></font></p>=
+
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>See Todd&#8217;s note below.&nbsp; =
+Which
+way would you like to handle this?<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Kiman<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'><o:p>&nbsp;</o:p></span></font></p>
+
+<div>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Kiman K. L. Wong</span></font><font
+color=3Dnavy><span style=3D'color:navy'><o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>General Manager - Digital =
+Phone</span></font><font
+color=3Dnavy><span style=3D'color:navy'><o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Oceanic Time Warner =
+Cable</span></font><font
+color=3Dnavy><span style=3D'color:navy'><o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D3 color=3Dnavy face=3D"Times New =
+Roman"><span
+style=3D'font-size:12.0pt;color:navy'>&nbsp;<o:p></o:p></span></font></p>=
+
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Phone: (808) =
+625-8335<o:p></o:p></span></font></p>
+
+</div>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'><o:p>&nbsp;</o:p></span></font></p>
+
+<div>
+
+<div class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><font =
+size=3D3
+face=3D"Times New Roman"><span style=3D'font-size:12.0pt'>
+
+<hr size=3D2 width=3D"100%" align=3Dcenter tabIndex=3D-1>
+
+</span></font></div>
+
+<p class=3DMsoNormal><b><font size=3D2 face=3DTahoma><span =
+style=3D'font-size:10.0pt;
+font-family:Tahoma;font-weight:bold'>From:</span></font></b><font =
+size=3D2
+face=3DTahoma><span style=3D'font-size:10.0pt;font-family:Tahoma'> =
+<st1:PersonName
+w:st=3D"on">Park, Todd</st1:PersonName> <br>
+<b><span style=3D'font-weight:bold'>Sent:</span></b> Thursday, April 03, =
+2008
+10:04 AM<br>
+<b><span style=3D'font-weight:bold'>To:</span></b> <st1:PersonName =
+w:st=3D"on">Sun,
+ Chi</st1:PersonName><br>
+<b><span style=3D'font-weight:bold'>Cc:</span></b> <st1:PersonName =
+w:st=3D"on">Wong,
+ Kiman</st1:PersonName>; <st1:PersonName w:st=3D"on">Kuniyuki, =
+Noreen</st1:PersonName>;
+<st1:PersonName w:st=3D"on">Higa, Byron</st1:PersonName><br>
+<b><span style=3D'font-weight:bold'>Subject:</span></b> RE: Security for =
+GotVoice
+Server</span></font><o:p></o:p></p>
+
+</div>
+
+<p class=3DMsoNormal><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:
+12.0pt'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>The cert request must be run on the
+gotVoice server.&nbsp; We do not have access to the gotVoice =
+server.<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>The SSL cert can be purchased by =
+anyone
+and should be the responsibility of the server administrator.&nbsp; It =
+is not
+tied to the administrator of the external ip address =
+space.<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>We can take care of the cert, but =
+we will
+need the username/password as well as the type of web =
+server.<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'><o:p>&nbsp;</o:p></span></font></p>
+
+<div>
+
+<div class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><font =
+size=3D3
+face=3D"Times New Roman"><span style=3D'font-size:12.0pt'>
+
+<hr size=3D2 width=3D"100%" align=3Dcenter tabIndex=3D-1>
+
+</span></font></div>
+
+<p class=3DMsoNormal><b><font size=3D2 face=3DTahoma><span =
+style=3D'font-size:10.0pt;
+font-family:Tahoma;font-weight:bold'>From:</span></font></b><font =
+size=3D2
+face=3DTahoma><span style=3D'font-size:10.0pt;font-family:Tahoma'> =
+<st1:PersonName
+w:st=3D"on">Sun, Chi</st1:PersonName> <br>
+<b><span style=3D'font-weight:bold'>Sent:</span></b> Wednesday, April =
+02, 2008
+1:59 PM<br>
+<b><span style=3D'font-weight:bold'>To:</span></b> <st1:PersonName =
+w:st=3D"on">Park,
+ Todd</st1:PersonName><br>
+<b><span style=3D'font-weight:bold'>Cc:</span></b> <st1:PersonName =
+w:st=3D"on">Wong,
+ Kiman</st1:PersonName>; <st1:PersonName w:st=3D"on">Kuniyuki, =
+Noreen</st1:PersonName><br>
+<b><span style=3D'font-weight:bold'>Subject:</span></b> FW: Security for =
+GotVoice
+Server</span></font><o:p></o:p></p>
+
+</div>
+
+<p class=3DMsoNormal><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:
+12.0pt'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Could we get the certificate and =
+install
+it for gotvoice?<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Thank =
+you,<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'><o:p>&nbsp;</o:p></span></font></p>
+
+<div>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Chi</span></font><o:p></o:p></p>
+
+</div>
+
+<div>
+
+<div class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><font =
+size=3D3
+face=3D"Times New Roman"><span style=3D'font-size:12.0pt'>
+
+<hr size=3D2 width=3D"100%" align=3Dcenter tabIndex=3D-1>
+
+</span></font></div>
+
+<p class=3DMsoNormal><b><font size=3D2 face=3DTahoma><span =
+style=3D'font-size:10.0pt;
+font-family:Tahoma;font-weight:bold'>From:</span></font></b><font =
+size=3D2
+face=3DTahoma><span style=3D'font-size:10.0pt;font-family:Tahoma'> =
+<st1:PersonName
+w:st=3D"on">Wong, Kiman</st1:PersonName> <br>
+<b><span style=3D'font-weight:bold'>Sent:</span></b> Wednesday, April =
+02, 2008
+1:52 PM<br>
+<b><span style=3D'font-weight:bold'>To:</span></b> <st1:PersonName =
+w:st=3D"on">Sun,
+ Chi</st1:PersonName><br>
+<b><span style=3D'font-weight:bold'>Cc:</span></b> <st1:PersonName =
+w:st=3D"on">Higa,
+ Byron</st1:PersonName><br>
+<b><span style=3D'font-weight:bold'>Subject:</span></b> FW: Security for =
+GotVoice
+Server</span></font><o:p></o:p></p>
+
+</div>
+
+<p class=3DMsoNormal><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:
+12.0pt'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Chi,<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Are able to help GotVoice out with =
+the
+digital certificate and the test account?<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Thanks,<o:p></o:p></span></font></p>=
+
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Kiman<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'><o:p>&nbsp;</o:p></span></font></p>
+
+<div>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Kiman K. L. Wong</span></font><font
+color=3Dnavy><span style=3D'color:navy'><o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>General Manager - Digital =
+Phone</span></font><font
+color=3Dnavy><span style=3D'color:navy'><o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Oceanic Time Warner =
+Cable</span></font><font
+color=3Dnavy><span style=3D'color:navy'><o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D3 color=3Dnavy face=3D"Times New =
+Roman"><span
+style=3D'font-size:12.0pt;color:navy'>&nbsp;<o:p></o:p></span></font></p>=
+
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Phone: (808) =
+625-8335<o:p></o:p></span></font></p>
+
+</div>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'><o:p>&nbsp;</o:p></span></font></p>
+
+<div>
+
+<div class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><font =
+size=3D3
+face=3D"Times New Roman"><span style=3D'font-size:12.0pt'>
+
+<hr size=3D2 width=3D"100%" align=3Dcenter tabIndex=3D-1>
+
+</span></font></div>
+
+<p class=3DMsoNormal><b><font size=3D2 face=3DTahoma><span =
+style=3D'font-size:10.0pt;
+font-family:Tahoma;font-weight:bold'>From:</span></font></b><font =
+size=3D2
+face=3DTahoma><span style=3D'font-size:10.0pt;font-family:Tahoma'> =
+Robert Ingman
+[mailto:roberti@gotvoice.com] <br>
+<b><span style=3D'font-weight:bold'>Sent:</span></b> Wednesday, April =
+02, 2008
+7:39 AM<br>
+<b><span style=3D'font-weight:bold'>To:</span></b> <st1:PersonName =
+w:st=3D"on">Wong,
+ Kiman</st1:PersonName>; <st1:PersonName w:st=3D"on">Higa, =
+Byron</st1:PersonName><br>
+<b><span style=3D'font-weight:bold'>Cc:</span></b> 'Martin Dunsmuir'; =
+'Mike
+Webb'; 'Kevin Ragan'<br>
+<b><span style=3D'font-weight:bold'>Subject:</span></b> RE: Security for =
+GotVoice
+Server</span></font><o:p></o:p></p>
+
+</div>
+
+<p class=3DMsoNormal><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:
+12.0pt'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>Hi Kiman and =
+Byron,</span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>in order to run the =
+Oceanic-GotVoice
+sign-up and Account pages via HTTPS/SSL, we're going to need a digital
+certificate for the web server domain&nbsp;that serves those pages, i.e. =
+for
+the gotvoice.oceanic.com domain</span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>However, since Time Warner =
+(RoadRunner)
+owns the public IP that&nbsp;the Oceanic-GotVoice&nbsp;servers are =
+associated
+with, 24.165.45.213, we believe that Time Warner must purchase this =
+cerificate.
+We - GotVoice - can't do it.</span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:
+12.0pt'>&nbsp;<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>Web-server certificates can be =
+purchased
+from a number Certificate Authorities (CAs) such as Verisign, Thawte, =
+etc.</span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>Can you facilitate this? We'd be =
+happy to
+help, but someone inside Oceanic needs to be the official purchaser of =
+the
+cert.</span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:
+12.0pt'>&nbsp;<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>Also, we would like to get
+access&nbsp;to&nbsp;one or two&nbsp;Oceanic accounts that we can use for
+testing&nbsp;purposes.</span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>This should be accounts that work =
+with
+your official portal at this URL:</span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'><a
+href=3D"https://secure.oceanic.com/MyAccount/ShowLogin.do">https://secure=
+.oceanic.com/MyAccount/ShowLogin.do</a></span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:
+12.0pt'>&nbsp;<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>Ideally, we'd like access =
+to&nbsp;one
+account that&nbsp;has not yet signed up&nbsp;for GotVoice functionality, =
+and
+one that has.</span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>Again, can you facilitate =
+this?</span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:
+12.0pt'>&nbsp;<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>Thanks =
+much,</span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>Robert&nbsp;</span></font><o:p></o:p=
+></p>
+
+<p class=3DMsoNormal><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:
+12.0pt'>&nbsp;<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:
+12.0pt'>&nbsp;<o:p></o:p></span></font></p>
+
+<div>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>-----Original =
+Message-----</span></font><font
+size=3D2><span style=3D'font-size:10.0pt'><o:p></o:p></span></font></p>
+
+</div>
+
+<div>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>From: Kevin Ragan [</span></font><a
+href=3D"mailto:kevinr@gotvoice.com"><font size=3D2 face=3DArial><span
+style=3D'font-size:10.0pt;font-family:Arial'>mailto:kevinr@gotvoice.com</=
+span></font></a><font
+size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:10.0pt;font-family:Arial;
+color:blue'>]</span></font><font size=3D2><span =
+style=3D'font-size:10.0pt'> </span></font><o:p></o:p></p>
+
+</div>
+
+<div>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>Sent: Wednesday, April 02, 2008 =
+10:03 AM</span></font><o:p></o:p></p>
+
+</div>
+
+<div>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>To: Robert =
+Ingman</span></font><o:p></o:p></p>
+
+</div>
+
+<div>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>Subject: oceanic ssl =
+cert</span></font><o:p></o:p></p>
+
+</div>
+
+<div>
+
+<p class=3DMsoNormal><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:
+12.0pt'>&nbsp;<o:p></o:p></span></font></p>
+
+</div>
+
+<div>
+
+<div>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>My takeaway is if =
+the&nbsp;URL&nbsp;that
+Oceanic-GotVoice users&nbsp;hit is in the &quot;oceanic.com&quot; =
+domain,
+then&nbsp;Oceanic probably has to request/purchase the =
+cert.</span></font><o:p></o:p></p>
+
+</div>
+
+</div>
+
+<div>
+
+<p class=3DMsoNormal><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:
+12.0pt'>&nbsp;<o:p></o:p></span></font></p>
+
+</div>
+
+<div>
+
+<p class=3DMsoNormal><strong><b><font size=3D2 color=3Dblue =
+face=3DArial><span
+style=3D'font-size:10.0pt;font-family:Arial;color:blue'>From the Thawte =
+site:</span></font></b></strong><o:p></o:p></p>
+
+</div>
+
+<div>
+
+<p class=3DMsoNormal><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:
+12.0pt'>&nbsp;<o:p></o:p></span></font></p>
+
+</div>
+
+<div>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>3. What level of authentication =
+does the
+certificate offer?</span></font><o:p></o:p></p>
+
+</div>
+
+<div>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>In securing your web site with a =
+digital
+certificate, your main aim is to provide proof of your online identity =
+and in
+so doing establish a relationship of trust with those with whom you wish =
+to
+interact online.</span></font><font size=3D2><span =
+style=3D'font-size:10.0pt'> </span></font><o:p></o:p></p>
+
+</div>
+
+<div>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>This is where authentication comes =
+into
+play as the most important element of a digital =
+certificate.</span></font><o:p></o:p></p>
+
+</div>
+
+<div>
+
+<p class=3DMsoNormal><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:
+12.0pt'>&nbsp;<o:p></o:p></span></font></p>
+
+</div>
+
+<div>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>Authentication provides users with =
+proof
+that:</span></font><o:p></o:p></p>
+
+</div>
+
+<div>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>1. your company is a bona fide real =
+world
+company.</span></font><o:p></o:p></p>
+
+</div>
+
+<div>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>2. they are connecting to the =
+correct
+server A certificate's level of authentication may be seen as an =
+indication of
+its quality &#8211; the higher the level of authentication provided, the
+greater the quality of the certificate. It is therefore important to =
+understand
+that the various digital certificates available each differ in level of
+authentication depending on the issuing CA or even the specific =
+product.</span></font><o:p></o:p></p>
+
+</div>
+
+<div>
+
+<p class=3DMsoNormal><font size=3D2 face=3D"Times New Roman"><span =
+style=3D'font-size:
+10.0pt'>&nbsp;<o:p></o:p></span></font></p>
+
+</div>
+
+<div>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>Some CAs perform only very basic
+authentication prior to issuing a certificate while others conduct =
+extensive
+checks to ensure the identity of the applying organization. The =
+following are
+the various authentication checks that are performed by =
+CAs:</span></font><font
+size=3D2><span style=3D'font-size:10.0pt'><o:p></o:p></span></font></p>
+
+</div>
+
+<div>
+
+<p class=3DMsoNormal><strong><b><font size=3D2 color=3Dblue =
+face=3DArial><span
+style=3D'font-size:10.0pt;font-family:Arial;color:blue'>* Domain lookup =
+to
+confirm that applying company owns =
+domain.</span></font></b></strong><font
+size=3D2><span style=3D'font-size:10.0pt'><o:p></o:p></span></font></p>
+
+</div>
+
+<div>
+
+<p class=3DMsoNormal><strong><b><font size=3D2 color=3Dblue =
+face=3DArial><span
+style=3D'font-size:10.0pt;font-family:Arial;color:blue'>* Check =
+existence of
+company to confirm that it is a legally registered =
+organization.</span></font></b></strong><font
+size=3D2><span style=3D'font-size:10.0pt'><o:p></o:p></span></font></p>
+
+</div>
+
+<div>
+
+<p class=3DMsoNormal><strong><b><font size=3D2 color=3Dblue =
+face=3DArial><span
+style=3D'font-size:10.0pt;font-family:Arial;color:blue'>* Verification =
+of
+identity of individual requesting certificate to confirm that they are =
+an
+authorized representative.</span></font></b></strong><font =
+size=3D2><span
+style=3D'font-size:10.0pt'><o:p></o:p></span></font></p>
+
+</div>
+
+<div>
+
+<p class=3DMsoNormal><font size=3D2 face=3D"Times New Roman"><span =
+style=3D'font-size:
+10.0pt'>&nbsp;<o:p></o:p></span></font></p>
+
+</div>
+
+<div>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>All CAs performs one or more of =
+these
+authentication checks. The result is a range of products of greatly =
+differing
+levels of quality. It is important to note that the more authentication =
+checks
+performed the better the quality of the certificate. So make sure you =
+determine
+exactly what authentication checks are performed before =
+purchasing.</span></font><font
+size=3D2><span style=3D'font-size:10.0pt'><o:p></o:p></span></font></p>
+
+</div>
+
+<div>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'><br>
+</span></font>&nbsp;<o:p></o:p></p>
+
+</div>
+
+<div class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><font =
+size=3D3
+face=3D"Times New Roman"><span style=3D'font-size:12.0pt'>
+
+<hr size=3D2 width=3D"100%" align=3Dcenter tabIndex=3D-1>
+
+</span></font></div>
+
+<p class=3DMsoNormal style=3D'margin-bottom:12.0pt'><b><font size=3D2 =
+face=3DTahoma><span
+style=3D'font-size:10.0pt;font-family:Tahoma;font-weight:bold'>From:</spa=
+n></font></b><font
+size=3D2 face=3DTahoma><span =
+style=3D'font-size:10.0pt;font-family:Tahoma'> <st1:PersonName
+w:st=3D"on">Wong, Kiman</st1:PersonName> [mailto:kiman.wong@twcable.com] =
+<br>
+<b><span style=3D'font-weight:bold'>Sent:</span></b> Tuesday, April 01, =
+2008
+11:40 AM<br>
+<b><span style=3D'font-weight:bold'>To:</span></b> Robert Ingman<br>
+<b><span style=3D'font-weight:bold'>Cc:</span></b> Curt Blake; Martin =
+Dunsmuir;
+Mike Webb<br>
+<b><span style=3D'font-weight:bold'>Subject:</span></b> RE: Security for =
+GotVoice
+Server</span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Sure.&nbsp; Do you think you can =
+get me an
+answer by the end of the week?<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Thanks,<o:p></o:p></span></font></p>=
+
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Kiman<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'><o:p>&nbsp;</o:p></span></font></p>
+
+<div>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Kiman K. L. Wong</span></font><font
+color=3Dnavy><span style=3D'color:navy'><o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>General Manager - Digital =
+Phone</span></font><font
+color=3Dnavy><span style=3D'color:navy'><o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Oceanic Time Warner =
+Cable</span></font><font
+color=3Dnavy><span style=3D'color:navy'><o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D3 color=3Dnavy face=3D"Times New =
+Roman"><span
+style=3D'font-size:12.0pt;color:navy'>&nbsp;<o:p></o:p></span></font></p>=
+
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Phone: (808) =
+625-8335<o:p></o:p></span></font></p>
+
+</div>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'><o:p>&nbsp;</o:p></span></font></p>
+
+<div>
+
+<div class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><font =
+size=3D3
+face=3D"Times New Roman"><span style=3D'font-size:12.0pt'>
+
+<hr size=3D2 width=3D"100%" align=3Dcenter tabIndex=3D-1>
+
+</span></font></div>
+
+<p class=3DMsoNormal><b><font size=3D2 face=3DTahoma><span =
+style=3D'font-size:10.0pt;
+font-family:Tahoma;font-weight:bold'>From:</span></font></b><font =
+size=3D2
+face=3DTahoma><span style=3D'font-size:10.0pt;font-family:Tahoma'> =
+Robert Ingman
+[mailto:roberti@gotvoice.com] <br>
+<b><span style=3D'font-weight:bold'>Sent:</span></b> Monday, March 31, =
+2008 5:33
+PM<br>
+<b><span style=3D'font-weight:bold'>To:</span></b> <st1:PersonName =
+w:st=3D"on">Wong,
+ Kiman</st1:PersonName><br>
+<b><span style=3D'font-weight:bold'>Cc:</span></b> 'Curt Blake'; 'Martin
+Dunsmuir'; 'Mike Webb'<br>
+<b><span style=3D'font-weight:bold'>Subject:</span></b> RE: Security for =
+GotVoice
+Server</span></font><o:p></o:p></p>
+
+</div>
+
+<p class=3DMsoNormal><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:
+12.0pt'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>Kiman, please give me just a little =
+bit of
+time to brief the developer who's going to work on this, and then I'll =
+get back
+to you with a target date.</span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:
+12.0pt'>&nbsp;<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>Thanks =
+much,</span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>Robert</span></font>&nbsp;<o:p></o:p=
+></p>
+
+<p class=3DMsoNormal><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:
+12.0pt'><o:p>&nbsp;</o:p></span></font></p>
+
+<div class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><font =
+size=3D3
+face=3D"Times New Roman"><span style=3D'font-size:12.0pt'>
+
+<hr size=3D2 width=3D"100%" align=3Dcenter tabIndex=3D-1>
+
+</span></font></div>
+
+<p class=3DMsoNormal style=3D'margin-bottom:12.0pt'><b><font size=3D2 =
+face=3DTahoma><span
+style=3D'font-size:10.0pt;font-family:Tahoma;font-weight:bold'>From:</spa=
+n></font></b><font
+size=3D2 face=3DTahoma><span =
+style=3D'font-size:10.0pt;font-family:Tahoma'> <st1:PersonName
+w:st=3D"on">Wong, Kiman</st1:PersonName> [mailto:kiman.wong@twcable.com] =
+<br>
+<b><span style=3D'font-weight:bold'>Sent:</span></b> Monday, March 31, =
+2008 7:13
+PM<br>
+<b><span style=3D'font-weight:bold'>To:</span></b> Robert Ingman<br>
+<b><span style=3D'font-weight:bold'>Cc:</span></b> Curt Blake; Martin =
+Dunsmuir;
+Mike Webb<br>
+<b><span style=3D'font-weight:bold'>Subject:</span></b> RE: Security for =
+GotVoice
+Server</span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Thanks for the update Robert.&nbsp; =
+Would
+you give me a target schedule for the completion of these changes so I =
+can let
+our Security people know?<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Kiman<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'><o:p>&nbsp;</o:p></span></font></p>
+
+<div>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Kiman K. L. Wong</span></font><font
+color=3Dnavy><span style=3D'color:navy'><o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>General Manager - Digital =
+Phone</span></font><font
+color=3Dnavy><span style=3D'color:navy'><o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Oceanic Time Warner =
+Cable</span></font><font
+color=3Dnavy><span style=3D'color:navy'><o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D3 color=3Dnavy face=3D"Times New =
+Roman"><span
+style=3D'font-size:12.0pt;color:navy'>&nbsp;<o:p></o:p></span></font></p>=
+
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Phone: (808) =
+625-8335<o:p></o:p></span></font></p>
+
+</div>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'><o:p>&nbsp;</o:p></span></font></p>
+
+<div>
+
+<div class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><font =
+size=3D3
+face=3D"Times New Roman"><span style=3D'font-size:12.0pt'>
+
+<hr size=3D2 width=3D"100%" align=3Dcenter tabIndex=3D-1>
+
+</span></font></div>
+
+<p class=3DMsoNormal><b><font size=3D2 face=3DTahoma><span =
+style=3D'font-size:10.0pt;
+font-family:Tahoma;font-weight:bold'>From:</span></font></b><font =
+size=3D2
+face=3DTahoma><span style=3D'font-size:10.0pt;font-family:Tahoma'> =
+Robert Ingman
+[mailto:roberti@gotvoice.com] <br>
+<b><span style=3D'font-weight:bold'>Sent:</span></b> Monday, March 31, =
+2008 1:22
+PM<br>
+<b><span style=3D'font-weight:bold'>To:</span></b> <st1:PersonName =
+w:st=3D"on">Wong,
+ Kiman</st1:PersonName><br>
+<b><span style=3D'font-weight:bold'>Cc:</span></b> 'Curt Blake'; 'Martin
+Dunsmuir'; 'Mike Webb'<br>
+<b><span style=3D'font-weight:bold'>Subject:</span></b> RE: Security for =
+GotVoice
+Server</span></font><o:p></o:p></p>
+
+</div>
+
+<p class=3DMsoNormal><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:
+12.0pt'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>Hi again =
+Kiman,</span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>I just returned from a sping-break =
+trip
+last week, so catching up on email now.</span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:
+12.0pt'>&nbsp;<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>Thanks for the info below. It seems =
+like
+the security concerns apply to both the GotVoice sign-up and account =
+pages. And
+we've noted that Apache needs an update.</span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>We are in the process of freeing up =
+a dev
+resource for Oceanic work, so you should see some progress on this soon, =
+please
+stay tuned.</span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:
+12.0pt'>&nbsp;<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>Best =
+regards,</span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>Robert</span></font>&nbsp;<o:p></o:p=
+></p>
+
+<p class=3DMsoNormal><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:
+12.0pt'><o:p>&nbsp;</o:p></span></font></p>
+
+<div class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><font =
+size=3D3
+face=3D"Times New Roman"><span style=3D'font-size:12.0pt'>
+
+<hr size=3D2 width=3D"100%" align=3Dcenter tabIndex=3D-1>
+
+</span></font></div>
+
+<p class=3DMsoNormal style=3D'margin-bottom:12.0pt'><b><font size=3D2 =
+face=3DTahoma><span
+style=3D'font-size:10.0pt;font-family:Tahoma;font-weight:bold'>From:</spa=
+n></font></b><font
+size=3D2 face=3DTahoma><span =
+style=3D'font-size:10.0pt;font-family:Tahoma'> <st1:PersonName
+w:st=3D"on">Wong, Kiman</st1:PersonName> [mailto:kiman.wong@twcable.com] =
+<br>
+<b><span style=3D'font-weight:bold'>Sent:</span></b> Saturday, March 22, =
+2008
+12:26 AM<br>
+<b><span style=3D'font-weight:bold'>To:</span></b> Robert Ingman<br>
+<b><span style=3D'font-weight:bold'>Cc:</span></b> Curt Blake; Martin =
+Dunsmuir;
+Mike Webb<br>
+<b><span style=3D'font-weight:bold'>Subject:</span></b> RE: Security for =
+GotVoice
+Server</span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Robert,<o:p></o:p></span></font></p>=
+
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Thanks for getting on =
+this.<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Yes, by using HTTPS/SSL that should
+protect customer&#8217;s information that is now shown as clear =
+text.&nbsp;
+Actually in my discussion with Chi, it&#8217;s even before the customer =
+login
+for the first time.&nbsp; Since there is a link from the Oceanic My =
+Account,
+the GotVoice sign up page is populated with customer =
+information.<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>The other concern they had was the =
+old
+version of Apache.<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Thanks,<o:p></o:p></span></font></p>=
+
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Kiman<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'><o:p>&nbsp;</o:p></span></font></p>
+
+<div>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Kiman K. L. Wong</span></font><font
+color=3Dnavy><span style=3D'color:navy'><o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>General Manager - Digital =
+Phone</span></font><font
+color=3Dnavy><span style=3D'color:navy'><o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Oceanic Time Warner =
+Cable</span></font><font
+color=3Dnavy><span style=3D'color:navy'><o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D3 color=3Dnavy face=3D"Times New =
+Roman"><span
+style=3D'font-size:12.0pt;color:navy'>&nbsp;<o:p></o:p></span></font></p>=
+
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Phone: (808) =
+625-8335<o:p></o:p></span></font></p>
+
+</div>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'><o:p>&nbsp;</o:p></span></font></p>
+
+<div>
+
+<div class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><font =
+size=3D3
+face=3D"Times New Roman"><span style=3D'font-size:12.0pt'>
+
+<hr size=3D2 width=3D"100%" align=3Dcenter tabIndex=3D-1>
+
+</span></font></div>
+
+<p class=3DMsoNormal><b><font size=3D2 face=3DTahoma><span =
+style=3D'font-size:10.0pt;
+font-family:Tahoma;font-weight:bold'>From:</span></font></b><font =
+size=3D2
+face=3DTahoma><span style=3D'font-size:10.0pt;font-family:Tahoma'> =
+Robert Ingman
+[mailto:roberti@gotvoice.com] <br>
+<b><span style=3D'font-weight:bold'>Sent:</span></b> Friday, March 21, =
+2008 6:55
+AM<br>
+<b><span style=3D'font-weight:bold'>To:</span></b> <st1:PersonName =
+w:st=3D"on">Wong,
+ Kiman</st1:PersonName><br>
+<b><span style=3D'font-weight:bold'>Cc:</span></b> 'Curt Blake'; 'Martin
+Dunsmuir'; 'Mike Webb'<br>
+<b><span style=3D'font-weight:bold'>Subject:</span></b> RE: Security for =
+GotVoice
+Server</span></font><o:p></o:p></p>
+
+</div>
+
+<p class=3DMsoNormal><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:
+12.0pt'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>Hi =
+Kiman,</span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>we understand your concerns =
+regarding
+security and the standards you need to =
+follow.</span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>Is the main concern that the =
+GotVoice
+account pages are not run over HTTPS/SSL after a user logs =
+in?</span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>Or are there other or additional =
+concerns?</span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:
+12.0pt'>&nbsp;<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>If we could some more details on =
+the
+specifics then we can respond with a plan of action that will address =
+your
+concerns the proper way.</span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:
+12.0pt'>&nbsp;<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>Thanks =
+much,</span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dblue face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:blue'>Robert</span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:
+12.0pt'><o:p>&nbsp;</o:p></span></font></p>
+
+<div class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><font =
+size=3D3
+face=3D"Times New Roman"><span style=3D'font-size:12.0pt'>
+
+<hr size=3D2 width=3D"100%" align=3Dcenter tabIndex=3D-1>
+
+</span></font></div>
+
+<p class=3DMsoNormal style=3D'margin-bottom:12.0pt'><b><font size=3D2 =
+face=3DTahoma><span
+style=3D'font-size:10.0pt;font-family:Tahoma;font-weight:bold'>From:</spa=
+n></font></b><font
+size=3D2 face=3DTahoma><span =
+style=3D'font-size:10.0pt;font-family:Tahoma'> <st1:PersonName
+w:st=3D"on">Wong, Kiman</st1:PersonName> [mailto:kiman.wong@twcable.com] =
+<br>
+<b><span style=3D'font-weight:bold'>Sent:</span></b> Thursday, March 20, =
+2008
+8:27 PM<br>
+<b><span style=3D'font-weight:bold'>To:</span></b> Robert Ingman; Martin =
+Dunsmuir<br>
+<b><span style=3D'font-weight:bold'>Cc:</span></b> Curt Blake<br>
+<b><span style=3D'font-weight:bold'>Subject:</span></b> Security for =
+GotVoice
+Server<br>
+<b><span style=3D'font-weight:bold'>Importance:</span></b> =
+High</span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal><font size=3D2 face=3DArial><span =
+style=3D'font-size:10.0pt;
+font-family:Arial'>Robert and Martin,<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 face=3DArial><span =
+style=3D'font-size:10.0pt;
+font-family:Arial'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 face=3DArial><span =
+style=3D'font-size:10.0pt;
+font-family:Arial'>We need to fix a few things on the Oceanic GotVoice
+servers.&nbsp; Since it is in our network and &#8220;connected&#8221; to =
+our
+Billing system, we need to have comply with PCI standards.&nbsp; Our =
+Security
+guy did a PCI scan and on server and found that there are clear text =
+customer
+information being sent out.&nbsp; He recommends that we implement SSL on =
+the
+server so that this information is secure.&nbsp; His scan also showed =
+that the
+version of Apache being run is quite old and that there are known =
+vulnerabilities.&nbsp;
+He recommends that this be updated as soon as =
+possible.<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 face=3DArial><span =
+style=3D'font-size:10.0pt;
+font-family:Arial'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 face=3DArial><span =
+style=3D'font-size:10.0pt;
+font-family:Arial'>I know that we are suppose to switch over to the new =
+server
+and would suspect the software will be more up to date but probably the =
+SSL was
+not a new feature.&nbsp; Would you let me know if we can implement these
+changes and if so when it can be done?&nbsp; Luckily this was just a =
+scan by
+our internal Security folks and not by our Corp =
+Security&#8230;<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 face=3DArial><span =
+style=3D'font-size:10.0pt;
+font-family:Arial'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 face=3DArial><span =
+style=3D'font-size:10.0pt;
+font-family:Arial'>Thanks,<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 face=3DArial><span =
+style=3D'font-size:10.0pt;
+font-family:Arial'>Kiman<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 face=3DArial><span =
+style=3D'font-size:10.0pt;
+font-family:Arial'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 face=3DArial><span =
+style=3D'font-size:10.0pt;
+font-family:Arial'>Kiman K. L. Wong</span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal><font size=3D2 face=3DArial><span =
+style=3D'font-size:10.0pt;
+font-family:Arial'>General Manager - Digital =
+Phone</span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal><font size=3D2 face=3DArial><span =
+style=3D'font-size:10.0pt;
+font-family:Arial'>Oceanic Time Warner =
+Cable</span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:
+12.0pt'>&nbsp;<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 face=3DArial><span =
+style=3D'font-size:10.0pt;
+font-family:Arial'>Phone: (808) 625-8335<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:
+12.0pt'><o:p>&nbsp;</o:p></span></font></p>
+
+<pre><font size=3D2 face=3D"Courier New"><span =
+style=3D'font-size:10.0pt'>This E-mail and any of its attachments may =
+contain Time Warner<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>Cable =
+proprietary information, which is privileged, =
+confidential,<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>or =
+subject to copyright belonging to Time Warner Cable. This =
+E-mail<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>is =
+intended solely for the use of the individual or entity to =
+which<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>it is =
+addressed. If you are not the intended recipient of =
+this<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>E-mail, =
+you are hereby notified that any =
+dissemination,<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span =
+style=3D'font-size:10.0pt'>distribution, copying, or action taken in =
+relation to the contents<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>of and =
+attachments to this E-mail is strictly prohibited and may =
+be<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>unlawful. =
+If you have received this E-mail in error, please =
+notify<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>the =
+sender immediately and permanently delete the original and =
+any<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>copy of =
+this E-mail and any printout.<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>This =
+E-mail and any of its attachments may contain Time =
+Warner<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>Cable =
+proprietary information, which is privileged, =
+confidential,<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>or =
+subject to copyright belonging to Time Warner Cable. This =
+E-mail<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>is =
+intended solely for the use of the individual or entity to =
+which<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>it is =
+addressed. If you are not the intended recipient of =
+this<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>E-mail, =
+you are hereby notified that any =
+dissemination,<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span =
+style=3D'font-size:10.0pt'>distribution, copying, or action taken in =
+relation to the contents<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>of and =
+attachments to this E-mail is strictly prohibited and may =
+be<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>unlawful. =
+If you have received this E-mail in error, please =
+notify<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>the =
+sender immediately and permanently delete the original and =
+any<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>copy of =
+this E-mail and any printout.<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>This =
+E-mail and any of its attachments may contain Time =
+Warner<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>Cable =
+proprietary information, which is privileged, =
+confidential,<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>or =
+subject to copyright belonging to Time Warner Cable. This =
+E-mail<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>is =
+intended solely for the use of the individual or entity to =
+which<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>it is =
+addressed. If you are not the intended recipient of =
+this<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>E-mail, =
+you are hereby notified that any =
+dissemination,<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span =
+style=3D'font-size:10.0pt'>distribution, copying, or action taken in =
+relation to the contents<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>of and =
+attachments to this E-mail is strictly prohibited and may =
+be<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>unlawful. =
+If you have received this E-mail in error, please =
+notify<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>the =
+sender immediately and permanently delete the original and =
+any<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>copy of =
+this E-mail and any printout.<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>This =
+E-mail and any of its attachments may contain Time =
+Warner<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>Cable =
+proprietary information, which is privileged, =
+confidential,<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>or =
+subject to copyright belonging to Time Warner Cable. This =
+E-mail<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>is =
+intended solely for the use of the individual or entity to =
+which<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>it is =
+addressed. If you are not the intended recipient of =
+this<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>E-mail, =
+you are hereby notified that any =
+dissemination,<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span =
+style=3D'font-size:10.0pt'>distribution, copying, or action taken in =
+relation to the contents<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>of and =
+attachments to this E-mail is strictly prohibited and may =
+be<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>unlawful. =
+If you have received this E-mail in error, please =
+notify<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>the =
+sender immediately and permanently delete the original and =
+any<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>copy of =
+this E-mail and any printout.<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>This =
+E-mail and any of its attachments may contain Time =
+Warner<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>Cable =
+proprietary information, which is privileged, =
+confidential,<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>or =
+subject to copyright belonging to Time Warner Cable. This =
+E-mail<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>is =
+intended solely for the use of the individual or entity to =
+which<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>it is =
+addressed. If you are not the intended recipient of =
+this<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>E-mail, =
+you are hereby notified that any =
+dissemination,<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span =
+style=3D'font-size:10.0pt'>distribution, copying, or action taken in =
+relation to the contents<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>of and =
+attachments to this E-mail is strictly prohibited and may =
+be<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>unlawful. =
+If you have received this E-mail in error, please =
+notify<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>the =
+sender immediately and permanently delete the original and =
+any<o:p></o:p></span></font></pre><pre><font
+size=3D2 face=3D"Courier New"><span style=3D'font-size:10.0pt'>copy of =
+this E-mail and any printout.<o:p></o:p></span></font></pre></div>
+
+</body>
+
+</html>
+This E-mail and any of its attachments may contain Time Warner
+Cable proprietary information, which is privileged, confidential,
+or subject to copyright belonging to Time Warner Cable. This E-mail
+is intended solely for the use of the individual or entity to which
+it is addressed. If you are not the intended recipient of this
+E-mail, you are hereby notified that any dissemination,
+distribution, copying, or action taken in relation to the contents
+of and attachments to this E-mail is strictly prohibited and may be
+unlawful. If you have received this E-mail in error, please notify
+the sender immediately and permanently delete the original and any
+copy of this E-mail and any printout.
+
+------_=_NextPart_001_01C896C3.7C76EF81--
+

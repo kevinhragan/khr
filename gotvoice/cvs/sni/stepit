@@ -1,0 +1,6 @@
+# stepit <basis>
+for i in `ls | grep '.*.wav'`
+do
+	echo -n $i ": "
+	sngcid -l${1} $i
+done

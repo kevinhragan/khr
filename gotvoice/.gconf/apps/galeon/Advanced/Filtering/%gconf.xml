@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<gconf>
+        <entry name="java_enabled" mtime="1169592642" type="bool" value="true">
+        </entry>
+        <entry name="javascript_enabled" mtime="1169592642" type="bool" value="true">
+        </entry>
+        <entry name="allow_popups" mtime="1169592642" type="bool" value="true">
+        </entry>
+</gconf>

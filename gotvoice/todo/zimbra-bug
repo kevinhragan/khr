@@ -1,0 +1,24 @@
+ip address in smtp address
+using public always but authenicating?
+
+smtp auth failed after upgrade to 5.0 on 6 Jan
+
+saslauthd is running:
+/opt/zimbra/cyrus-sasl-2.1.22.3z/sbin/saslauthd -r -a zimbra
+
+wrong?
+zimbra@mail:~$ cat /opt/zimbra/cyrus-sasl/etc/saslauthd.conf
+zimbra@mail:~$ 
+
+exerpt from /var/log/zimbra.log
+Jan 11 11:27:00 mail saslauthd[21191]: auth_zimbra: not initialized
+Jan 11 11:27:00 mail saslauthd[21191]: do_auth         : auth failure: [user=kevinr] [service=smtp] [realm=] [mech=zimbra] [reason=auth_zimbra not initi
+ailzed]
+Jan 11 11:27:00 mail postfix/smtpd[24408]: warning: SASL authentication failure: Password verification failed
+Jan 11 11:27:00 mail postfix/smtpd[24408]: warning: bean.gotvoice.com[10.92.1.12]: SASL PLAIN authentication failed: authentication failure
+Jan 11 11:27:00 mail saslauthd[21191]: auth_zimbra: not initialized
+Jan 11 11:27:00 mail saslauthd[21191]: do_auth         : auth failure: [user=kevinr] [service=smtp] [realm=] [mech=zimbra] [reason=auth_zimbra not initi
+ailzed]
+
+
+

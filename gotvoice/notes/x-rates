@@ -1,0 +1,3 @@
+api to production via kirk:  		180 KB/s
+api to producton via time:   		10MB/s
+production to production via switch:	30MB/s

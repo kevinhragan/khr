@@ -1,0 +1,7 @@
+packages: ipsec
+
+# to make cfengine use "osiris" name to auth with cfserver, newpop2
+/etc/hosts entry: 63.211.200.106  osiris3.gotvoice.com    osiris3
+
+server in /etc/nagios/nrpe.cfg set to internal ip
+

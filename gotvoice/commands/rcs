@@ -1,0 +1,6 @@
+# to compare what is in use to latest revision
+rcsdiff <file>
+# to edit
+co -l <file>
+# to save changes
+ci -u <file>

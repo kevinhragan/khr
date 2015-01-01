@@ -1,0 +1,1 @@
+scp nut:/etc/bind/named.conf.local /etc/bind

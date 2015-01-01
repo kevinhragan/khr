@@ -1,0 +1,437 @@
+/* =================================================== 
+   HTML and AD Module Styles
+   - Common Styles
+   - Ziff Davis Modules:
+       Buy It Here, Find by Topic, Marketcells, 
+       member ratings, news, newsletter,
+	   PC MagCast, Premium Partners,
+	   Sponsors, Top Selling
+   - Google Modules:
+       Guided Nav, Marketplace, Related Ads
+   =================================================== */
+.htmlModule       { margin: 0 4px 8px 4px; padding: 0; font-size: 10px;	font-weight: normal; }
+.htmlModule h1    { margin: 0; padding: 3px 4px 4px 4px; font-family:Verdana, Arial, Helvetica, sans-serif;
+                    font-size: 12px; font-weight: bold;text-transform: lowercase;height: auto; width: auto; 
+                  }
+.htmlModule h2    { margin: 0 0 4px 0; padding: 2px 4px 4px 4px; font-family: Arial, Helvetica, sans-serif;
+                    color: #000; background-color: #fff; font-size: 12px; font-weight: bold; 
+                  }
+.htmlmodule ol    { margin: 0; padding: 0; list-style-type: decimal; list-style-position: inside; }
+.htmlModule ol li { margin: 0 10px 10px 20px; color: #000; list-style-type: decimal; line-height: 1.2em;
+                    font-size: 10px; 
+                  }
+.htmlModule ul.wBullets             { list-style-image:url(/images/small_bullet.jpg); }
+.htmlModule li.wBullets             { margin: 0 0 20px 10px;list-style-image:url(/images/small_bullet.jpg); }
+.module .htmlModule ul.woBullets    { margin: 0 0 20px 10px; padding: 0; list-style: none; }
+.htmlModule li.woBullets            { margin: 0 4px 20px 4px; }
+.htmlModule li.woBullets p.newsDate { color: #000; font-style: italic; }
+.htmlModule * a                     { font-weight: normal; font-size: 12px; text-decoration: none; }
+.htmlModule * a:hover               { text-decoration: underline; }
+.adModule                           { margin: 0 0 10px 0; padding:0 ; }
+.adModule img, .adModule * img      { border: none; }	
+
+/* ================== Z I F F  D A V I S  M O D U L E  S T Y L E S ================== */
+.html_module_container       { margin: 0 0 10px 5px; padding: 0 0 5px 0; border: none; font-size: 10px; 
+                               font-weight: normal; color: #000000; background-color: #f0f0f0;
+                             }
+.Module_BG                   { background-color: #F7F7EE; }
+.Module_Border               { margin: 2px 0; padding: 2px 0; font-family:Verdana, Arial, Helvetica, sans-serif;
+                               font-weight:bold; color: #fff; background-color: #999; font-size: 12px; 
+                               font-weight: bold; text-transform: lowercase; 
+                             }
+.Module_Content              { margin: 5px 0;padding:0;font-family: Arial, Helvetica, sans-serif; color: #000;
+                               background-color: #fff;font-size: 12px; font-weight: normal; 
+                             }
+.Module_Content a            { text-decoration: none; }
+.Module_Content a:hover      { text-decoration: underline; }
+.Breaknews_Content           { margin: 0; color: #000; font-family: Arial, Helvetica, sans-serif; 
+                               background-color: #fff; font-size: 12px; font-weight: bold; 
+                             }
+a.BreakNews_Content:link     { text-decoration: none; }
+a.BreakNews_Content:visited  { text-decoration:none; }
+a.BreakNews_Content:hover    { text-decoration: underline; }	
+.Small_Content               { font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: normal;
+                               font-size: 10px; color: #000000; 
+                             }
+a.Small_Content:link         { font-family: Verdana, arial, sans-serif; font-weight: normal;font-size: 10px; 
+                               color: #2347b3; text-decoration:underline; 
+                             }
+a.Small_Content:visited      { font-family: Verdana, arial, sans-serif; font-weight: normal; font-size: 10px;
+                               color: #2347b3; text-decoration:underline; 
+                             }
+a.Small_Content:hover        { font-family: Verdana, arial, sans-serif; font-weight: normal; font-size: 10px;
+                               color: #2347b3;text-decoration:none; 
+                             }
+
+/* ------------ BUY IT HERE TABLE ------------------- */ 
+.buy_it_here_table                  { margin: 0; padding: 0; border:1px solid #4382BE; float: left; }
+.buy_it_here_table td               { padding:10px; vertical-align:middle; }
+.buy_it_here_table td.table_header  { padding:0; background:#4382BE; text-align:left; }
+.buy_it_here_table td.col_header    { padding:10px 10px 5px 10px; height: 50px; border-bottom:1px solid #666;
+                                      text-align:center; 
+                                    }
+.buy_it_here_table td.border        { border-bottom:1px solid #CCC; }
+.buy_it_here_table td.no_border     { border: none; }
+.buy_it_here_table td.zipcode       { padding:5px; vertical-align:top; border-top:1px solid #4382BE;
+                                      background-color:#E6F8FF; 
+                                    }
+.in_stock          { font-family:Verdana,Arial,Helvetica, sans-serif;color:#4BCC00;font-weight:bold;font-size:11px; }
+.out_stock         { font-family:Verdana,Arial,Helvetica, sans-serif;color:#FF0000;font-weight:bold;font-size:11px;}
+.na_stock          { font-family:Verdana,Arial,Helvetica, sans-serif;color:#333333;font-weight:bold;font-size:11px;}
+.base_price        { font-family:Verdana,Arial,Helvetica, sans-serif;color:#333333;font-weight:bold;font-size:11px;
+                     text-decoration:none;
+                   }
+.buy_small_text    { font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10px;color:#333333;}
+.buy_large_text    { font-family:Verdana, Arial, Helvetica, sans-serif;font-size:12px;font-weight: bold;color:#333;}
+.buy_link          { font-family:Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#2024C5;font-weight:bold;}
+.buy_store         { font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10px;color:#666;}
+.buy_price         { font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10px;color:#2347b3;}
+.frmZip            { padding:0;margin:0;}
+							
+/* ------------ FIND BY TOPIC ------------------- */ 							
+.pcmagstyle1  { font-family: Verdana,Arial,Helvetica,sans-serif;font-size:12px;font-weight:bold;color: #FF6600; }
+.pcmagstyle2  { font-family: Verdana,Arial,Helvetica,sans-serif;font-size:10px;color: #2347b3;font-weight: normal; }
+
+/* ------------ MARKETCELL (FEATURED AND UTILITY OFFERS) ------------------- */ 							
+
+#mktcells          { margin: 0; padding: 0; width: auto; border: 1px solid orange;}
+td.mktcell1        { margin: 0; padding: 0; width: 48%; float: left; vertical-align:top; background-color:#ccc;
+                     border: solid 1px #666; 
+                   }
+td.featured_header { margin: 0; padding: 0; vertical-align:top; font-family:lucida sans, arial, sans-serif;
+                     background-color:#CC0000; color:#fff; font-size:13px; font-weight:bold; line-height:13px;
+                     border-bottom:solid 5px #000; white-space:nowrap; 
+                   }
+.mktstyle1         { padding:5px; }
+.featured_item     { padding-left:23px; }
+.featured_link a   { font-weight:bold!important; }
+td.mktcell2	       { margin: 0; padding: 0; float: left; width: 48%;vertical-align:top; background-color:#E5E5E5; 
+                     border: solid 1px #666; 
+                   }
+td.utility_header  { margin: 0; padding: 0; vertical-align:top; font-family:lucida sans, arial, sans-serif;
+                     background-color:#000; color:#fff; font-size:13px; font-weight:bold;line-height:13px;
+                     border-bottom:solid 5px #CC0000; 
+                   }
+.utility_attn      { margin: 0 5px; font-size:12px; font-weight:bold; text-decoration:none; }
+.mktstyle2         { padding: 5px 5px 20px 5px;vertical-align:top; font-family: Arial, Helvetica, sans-serif;
+                     font-size: 11px; color: #000; font-weight:normal; border-bottom:solid 1px #999; 
+                   }
+.mktstyle3         { padding: 5px 5px 20px 5px; vertical-align:top; font-family: Arial, Helvetica, sans-serif;
+                     font-size: 11px; color: #000; font-weight:normal; 
+                   }
+.mktstyle4         { padding: 0; vertical-align:top; font-family: Arial, Helvetica, sans-serif;font-size:11px; 
+                     color: #000; font-weight:normal; 
+                   }
+				   	
+/* ------------ MEMBER RATINGS ------------------- */ 
+#w_memberReview                         { margin: 20px 0 10px 0; padding: 0;}
+#w_memberReview table td img            { border: none; display: inline; vertical-align: middle;}
+#w_memberReview .Normal_Content         { font-family: Verdana, arial, sans-serif;font-weight: normal;
+                                          font-size: 11px;color: #000000; 
+                                        }
+#w_memberReview a.Normal_Content:link   { font-family: Verdana, arial, sans-serif; font-weight: normal;
+                                          font-size: 11px;color: #2347b3;text-decoration:underline; 
+                                        }
+#w_memberReview a.Normal_Content:visited{ font-family: Verdana, arial, sans-serif;font-weight:normal;
+                                          font-size: 11px; color: #2347b3;text-decoration:underline; 
+                                        }
+#w_memberReview a.Normal_Content:hover  { font-family: Verdana, arial, sans-serif;font-weight: normal;
+                                          font-size: 11px; color: #2347b3;text-decoration:none; 
+                                        }
+#w_memberReview .Area_Title             { font-family: Verdana, arial, sans-serif;font-weight: bold;font-size: 12px; 
+                                          color: #787880;background-color: #F3F3F3; 
+                                        }
+#w_memberReview .Editor_Rating          { font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold;
+                                          font-size: 11px;color: #000000;font-family: Verdana, arial, sans-serif; 
+                                        }
+
+/* ------------ NEWS ------------------- */ 						
+div.news_module_container             { margin: 0 0 10px 5px; padding: 0 0 5px 0; font-size: 11px; line-height:12px; 
+                                        font-family: Arial, Helvetica, sans-serif; color: #000000;
+                                        background-color: #fff; 
+                                      }
+div.news_module_header                { margin:0;padding: 2px 3px; font-family: Verdana, Arial, Helvetica, sans-serif;
+                                        background-color: #999; color: #fff; font-size: 12px; font-weight: bold;
+                                        text-transform: lowercase; 
+                                      }
+div.news_module_header p              { margin:0; padding:0; font-family: Arial, Helvetica, sans-serif;
+                                        font-weight:bold;font-size: 12px; 
+                                      }
+div.news_module_header .top_more_link { visibility:hidden; }
+div.news_module_container ul          { margin: 5px 0 20px 0;padding: 0;list-style-type: none; }
+div.news_module_container li          { margin: 0;padding: 1px 5px 10px 5px; font-family: Arial, Helvetica, sans-serif;
+                                        font-size: 11px; 
+                                      }
+div.news_module_container div.date    { margin:0;font-style: italic; }
+div.news_module_container a           { color: #4080BF; text-decoration: none; font-size: 11px;
+                                        font-family: Arial, Helvetica, sans-serif; }
+div.news_module_container a:hover     { text-decoration:underline; }
+.bottom_more_link                     { margin:0 0 3px 45px; font-size: 10px; text-align: right;
+                                        font-family: Arial, Helvetica, sans-serif;
+                                      }
+									  
+/* ------------ NEWSLETTERS ------------------- */ 
+#newsletters                          { position: relative; margin: 10px 0; width: auto; 
+										background-color: #fff; 
+										color: #000; display: block; 
+										border: 1px solid #F1F1ED;
+									  }
+#glancePg * #newsletters              { width: 466px; }
+
+#newsletters #newsletterContent       { position: relative; margin: 0; padding: 2%; 
+										font-family: Verdana, Arial, Helvetica, sans-serif;
+                                        font-size: 10px;  font-weight: normal; 
+										background-color: #F1F1ED;
+										color: #000;
+                                        border: 5px solid #fff; 
+                                      }
+#newsletters #newsletterContent h1    { margin: 0 0 1% 0; font-family: Arial, Helvetica, sans-serif;
+                                        font-size: 12px; color: #666; font-weight: bold; 
+                                      }
+#newsletters #newsletterContent form  { margin: 0; padding: 0; width: auto; }
+
+#newsletters #newsletterContent form .colText   { position: relative; margin-right: 2%; width: 23%; float: left; }
+#newsletters #newsletterContent form .colSelect { position: relative; margin-right: 0; width: 32%; float: left; }
+#newsletters #newsletterContent form .colEmail  { position: relative; width: 34%; float: left; }
+
+#newsletters #newsletterContent form .colText p      { margin: 0 0 5% 0; line-height: 1em; }
+#newsletters #newsletterContent form .colText p a    { text-decoration: underline; color: #000; }
+
+#newsletters #newsletterContent form .colSelect h2     { margin: 0; display: block; font-weight: bold; }
+#newsletters #newsletterContent form .colSelect dl     { margin: 0; }
+#newsletters #newsletterContent form .colSelect dt     { float: left; clear: left; margin: 1% 5% 0 0; }
+#newsletters #newsletterContent form .colSelect dt input { vertical-align: top; }
+#newsletters #newsletterContent form .colSelect dd     { margin: 0 0 6% 5%; line-height: normal; display: block;} 
+
+#newsletters #newsletterContent form .colEmail select   { margin: 0 0 1% 6%; display: block; }
+#newsletters #newsletterContent form .colEmail #w_email { position: relative; margin: 0; }
+#newsletters #newsletterContent form .colEmail #emailBox { margin: 0 0 0 6%; padding: 0; float: left; display: inline; }
+#newsletters #newsletterContent form .colEmail a img    { margin: 0; float: left; vertical-align: top; }
+
+
+/* ------------ PC MAG CAST ------------------- */ 
+.AdModule_Content          { font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 10px;color: #333333; }
+a.AdModule_Content:link ,   
+a.AdModule_Content:visited { font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 10px;color: #2347B3; 
+                             text-decoration:underline; 
+                           }
+a.AdModule_Content:hover   { font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 10px; color: #2347B3;
+                             text-decoration:none; 
+                           }
+						   
+/* ------------ PREMIUM PARTNERS ------------------- */ 
+.Premium_Partners                  { font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: normal;
+                                     font-size: 10px;color: #FFFFCC;
+                                   }
+a.Premium_Partners:link ,    
+a.Premium_Partners:visited         { color: #FFFFCC;text-decoration:underline; }
+a.Premium_Partners:hover           { color: #FFFFCC;text-decoration:none; }
+#Premium_Partners_Super_Container  { margin:5px 0;padding: 0;text-align:center; }
+#Premium_Partners_Container        { margin:1px 0 0 0; padding:1px 0 0 0;text-align:center;
+                                     border-top: 1px solid #D0D0D0; border-bottom:1px solid #D0D0D0;
+                                   }
+.Premium_Partners_Ad_Text          { margin:0 0 2px 0; font-family: Verdana, Arial, Helvetica, sans-serif; 
+                                     font-weight: bold;font-size: 11px;color: #666;
+                                   }
+.Premium_Partners_Ad_Link          { margin:0;padding:0 20px; }
+.Premium_Partners_Ad_Link img      { margin-right:5px; }
+.Premium_Partners_Ad_Image         { margin:0;padding:0; }
+
+/* ------------ SPONSORS ------------------- */ 
+.sponsors_container                { position: relative; width: 466px; margin:5px 0;padding:3px;display:block; border: 1px solid #EEF2F7; }
+.sponsors                          { position: relative; padding:5px 0 10px 0; background-color:#F1F1ED;}
+
+.sponsors ul                       { margin:0 0 0 9px;padding:0; }
+.sponsors ul li                    { margin: 0 0 3px 0;padding:0 0 0 3px;list-style:outside;list-style-type:none;
+                                     background-image: url(/images/pcm_arrow_blugray.gif);                                     background-repeat: no-repeat; background-position: 0 8px; vertical-align:top; 
+                                   }		
+.sponsors p                        { font-family:verdana,arial;font-size:10px; }
+.sponsors a, .sponsors a.PubFooterCopy { font-size:10px;color:#2347B3;text-decoration:underline;}
+.sponsors a:hover                  { text-decoration:none; }
+.sponsors img.left_ad_image        { margin:0 0 0 20px; display:block; }
+.sponsors img.left_ad_type_image   { margin:0 0 5px 20px; display: block;}
+.sponsors p.right_text             { float:right;margin:3px 3px 0 0;}
+.sponsors p.sponsor_text           { margin:0 0 0 8px;}
+.sponsors p.sponsor_header         { margin:0 0 2px 8px;}
+.sponsors ul.sponsor_links a       { margin:0 0 2px 8px;}
+.sponsors ul.intel_links a         { margin:0 0 2px 8px;}
+
+/* ------------ TOP SELLING ------------------- */ 
+ .topselling      { margin: 0; padding: 0; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px;
+                    font-weight: bold; color: #e6e6e6; 
+                  }
+.topselling * a   { text-decoration: none; color: #003bb0; }
+.topselling * a:link, .topselling * a:visited { text-decoration: none; }
+.topselling * a:hover, .topselling * a:active { text-decoration: underline; }				  
+.productguides    { font-family: Verdana, Arial, Helvetica, sans-serif; font-size:10px; font-weight: bold;color:#666; }
+				
+/* ================== G O O G L E  S T Y L E S ================== */
+/* ------------ GUIDED NAVIGATION ------------------- */ 
+.GS_Link                   { padding-left: 10px;font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; 
+                             color: #003BB0; text-decoration:none; 
+                           }
+
+/* .GS_Link a:hover           { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; 
+                             color: #003BB0; text-decoration:underline; 
+                           } */
+
+a.GS_Link                  { padding-left: 10px;font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; 
+                             color: #003BB0; text-decoration:none; 
+                           }
+a.GS_Link:link ,
+a.GS_Link:visited          { text-decoration:none; }
+a.GS_Link:hover ,
+a.GS_Link:active           { text-decoration:underline; 
+                           }
+.GS_Header_Table           { margin:0 0 3px 0;}
+.GS_Results_Title_Select   { font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-weight: bold; 
+                             color: #666666; 
+                           }
+.GS_Results_Sort_By        { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; }
+.GS_Results_Compare        { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; 
+                             color: #999999; 
+                           }
+.GS_Results_Date           { font-family: Arial, Helvetica, sans-serif; font-size: 11px; }
+.GS_Results_Prices         { font-family: Arial, Helvetica, sans-serif; font-size: 11px; }
+.GS_GuidedNav_TD           { margin: 0; padding: 0 0 10px 0; float: left; background-color: #EEE; } 
+.GS_GuidedNav_TD table     { margin: 0; }
+.GS_GuidedNav_Title        { color: #fff; font-family:Arial,Helvetica, sans-serif; font-size:12px;font-weight:bold; } 
+td.GS_GuidedNav_Title      { margin-left:-5px; padding:0; width: auto; height: auto; background-color: #677B8C; color: #FFF;  
+                             font-family: Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; 
+	                       } 
+.GS_GuidedNav_Search       { font-family: Arial, Helvetica, sans-serif;font-size:12px; font-weight:bold; } 
+.GS_GuidedNav_Category     { padding-left: 5px;font-family: Arial, Helvetica, sans-serif;font-size:12px; font-weight:bold;color: #333; } 
+a.GS_GuidedNav_Link        { padding-left: 8px; font-family: Arial, Helvetica, sans-serif; font-size:11px; color: #003BB0; 
+                             text-decoration:none; 
+                           } 
+a.GS_GuidedNav_Link:link   { text-decoration: none; }
+a.GS_GuidedNav_Link:visited { text-decoration:none; }
+a.GS_GuidedNav_Link:hover   { text-decoration: underline; }
+
+.GS_GuidedNav_Num          { font-family: Arial, Helvetica, sans-serif; font-size:11px; }
+.GS_GuidedNav_Selected_Item{ font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:bold;color: #FF6500; } 
+
+#w_guidedNav * a.GS_GuidedNav_Link { text-decoration: none; }
+#w_guidedNav * a.GS_GuidedNav_Link:link ,
+#w_guidedNav * a.GS_GuidedNav_Link:visited { text-decoration: none; } 
+#w_guidedNav * a.GS_GuidedNav_Link:hover ,
+#w_guidedNav * a.GS_GuidedNav_Link:active { text-decoration: underline; }
+
+/* Used by Product Guide Compare Table */			
+.GS_Results_Title_Select   { font-family:Arial,Helvetica,sans-serif;font-size:18px;font-weight: bold; color: #666; }
+.GS_Results_Sort_By        { font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight: bold; }
+.GS_Results_Compare        { font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight: bold; color: #999; }
+.GS_Results_Date           { font-family:Arial,Helvetica,sans-serif; font-size: 11px; }
+.GS_Results_Prices         { font-family:Arial,Helvetica,sans-serif; font-size: 11px; }
+.GS_GuidedNav_Selected_Item{ font-family:Arial,Helvetica,sans-serif; font-size:12px;font-weight:bold;color: #FF6500; } 
+
+/* ------------ MARKETPLACE ------------------- */ 
+#articlePg        * #marketplace,
+#glancePg         * #marketplace,
+#prodGuideNoSpons * #marketplace,
+#prodGuideSpons   * #marketplace    { margin:10px 0; width:466px; }
+
+#category2        * #marketplace,
+
+#productPg        * #marketplace,
+#videoPg          * #marketplace    { margin:10px 0; width:640px; }
+
+#eventPg         *  #marketplace    { margin:10px 0; width: 654px; }
+
+#marketplace a					    { color:#003BB0; }
+#marketplace h2					    { margin:0; padding:7px 0; font-family:Verdana, Arial, Helvetica, sans-serif; 
+									  font-weight:normal; font-size:10px; text-decoration:underline;
+		   				    		  text-align:center; color:#003BB0;
+		    					    }
+#marketplace div.hdr			    { margin:0;padding:0;background:url(/images/marketplace-hdr-bg.gif) repeat-x bottom; }
+#marketplace div.hdr h3			    { margin:0;padding:0;text-align:center;
+									  background:url(/images/marketplace-hdr.gif) no-repeat left bottom;height:23px;
+								    }
+#marketplace p.right_text a	 	    { position:relative; bottom:35px; margin:0; padding:0 10px; 
+									  float:right; font-family:Verdana, Arial, Helvetica, sans-serif; 		
+									  font-weight:normal;	font-size:10px; font-size:10px; color:#003BB0;
+									  text-decoration:underline;
+								    }
+
+/*--- MulTIPLE PARTNER liNKS ---*/
+ul#sponsor_partner				    { border:1px solid #999;margin:0px;padding:10px;	}
+ul#sponsor_partner li			    { list-style:none;margin:10px 0;padding:0;	}
+ul#sponsor_partner li p			    { margin:0;padding:0;font-size:11px; }
+ul#sponsor_partner li p.sponsor_header a		{	font-size:12px; font-family:Verdana, Arial, Helvetica, sans-serif;
+													color:#003BB0;text-decoration:underline;font-weight:bold;
+												}
+ul#sponsor_partner li p.sponsor_header a:hover	{	text-decoration:none;	}
+ul#sponsor_partner li p.sponsor_text 			{	text-decoration:none;color:#000;	}
+ul#sponsor_partner li p.sponsor_text a			{	text-decoration:none;color:#000;text-decoration:none;	}
+ul#sponsor_partner li p.sponsor_text a:hover	{	color:#000;text-decoration:none;	}
+ul#sponsor_partner li p.sponsor_footer a		{	font-size:11px;font-family:Verdana, Arial, Helvetica, sans-serif;
+													color:#008000;text-decoration:none;
+												}
+ul#sponsor_partner li p.sponsor_footer a:hover	{	text-decoration:underline;	}
+
+/*--- SINGLE PARTNER liNK ---*/
+ul#sponsor_partner_single		{	margin:0; padding:10px; border:1px solid #999;	}
+ul#sponsor_partner_single li	{	margin:50px 40px; padding:0; list-style:none;	}
+ul#sponsor_partner_single li p	{	margin:0; padding:3px 0;font-family:Verdana, Arial, Helvetica, sans-serif;
+									text-align:center; font-size:14px;
+								}
+ul#sponsor_partner_single li p.sponsor_header a			{	font-family:Verdana, Arial, Helvetica, sans-serif;		
+															color:#003BB0;text-decoration:underline;font-weight:bold;
+															font-size:20px;
+														}
+ul#sponsor_partner_single li p.sponsor_header a:hover	{	text-decoration:none;	}
+ul#sponsor_partner_single li p.sponsor_text 			{	color:#000;text-decoration:none;	}
+ul#sponsor_partner_single li p.sponsor_text a			{	color:#000;text-decoration:none;	}
+ul#sponsor_partner_single li p.sponsor_text a:hover		{	color:#000;text-decoration:none;	}
+ul#sponsor_partner_single li p.sponsor_footer a			{	font-family:Verdana, Arial,Helvetica, sans-serif;
+															color:#008000;text-decoration:none;
+														}
+ul#sponsor_partner_single li p.sponsor_footer a:hover	{	color:#008000;text-decoration:underline;	}
+
+
+/* ------------ RELATED ADS ------------------- */ 
+
+#GooSDC 						{	width: 336px; margin: 0; padding: 0 0 7px 0; /* background-color: #fff; */ text-align: left; }
+#GooSDC ul 						{	margin: 0 0 5px 0;padding: 0; font-family: Verdana,Arial, Helvetica, sans-serif;	}
+#GooSDC ul li 					{	padding:0 5px;font-weight: bold; font-size: 10px; line-height: 18px;
+									list-style-type: none;
+								}
+#GooSDC ul li a	                {	padding: 0; font-weight: bold; height: 100%;	} 
+#GooSDC ul li a:link, 
+#GooSDC ul li a:visited 		{   text-decoration: none; }
+#GooSDC ul li a:hover 			{	text-decoration: underline;}
+#GooSDC ul li.HdrGoo 			{	padding: 3px 5px; font-family: Arial, Helvetica, sans-serif;font-size: 12px;
+									font-weight: bolder;color: #000;
+									text-transform: uppercase; border: #eee; 
+								}
+
+#GooSDC ul li.HdrGoo_story 		{	height: 23px;padding: 3px 5px; font-family: Arial, Helvetica, sans-serif;font-size: 12px;
+									font-weight: bolder;  background-color: #ccc;  color: #000;
+									text-transform: uppercase; border: #eee; 
+								}
+
+
+/* =========================================================================================== */
+/* * * *     GUIDED NAVIGATION - NEW  * * * * */
+/* .GS_GuidedNav { margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif;background: url(../images/pcm_product_search_guidenav_top.gif) left top no-repeat;  width: 155px;background-color: #EEEEEE; }
+.GS_GuidedNav h1{ margin: 0;padding: 5px 10px 5px 5px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #fff; text-transform: uppercase; }
+.GS_GuidedNav h2{ padding: 0; font-size:12px; font-weight:bold; color: #333333; }
+.GS_GuidedNav .guidedNavData{ padding: 40px 10px 10px 10px; }
+.GS_GuidedNav .guidedNavData table { margin: 0; padding: 0; }
+.GS_GuidedNav .guidedNavData table td{ margin: 0; padding: 0; }
+.GS_GuidedNav .guidedNavData table td div{ padding-bottom: 10px; }
+.GS_GuidedNav .guidedNavData table td div a { margin: 0; padding: 0 5px 0 5px; font-size: 11px; font-weight: normal; color: #003BB0; }
+.GS_GuidedNav .guidedNavData table td div a:link ,
+.GS_GuidedNav .guidedNavData table td div a:visited { text-decoration: none; }
+.GS_GuidedNav .guidedNavData table td div a:hover,
+.GS_GuidedNav .guidedNavData table td div a:active { text-decoration: underline; }
+.GS_GuidedNav .guidedNavData table td div span.showMore	{ padding: 0 5px;font-size: 11px; font-weight: bold; color: #003BB0; }
+.GS_GuidedNav .guidedNavData table td div span.GS_GuidedNav_Num{ font-size:11px; }
+.GS_GuidedNav .guidedNavData table td.GS_GuidedNav_Category { font-size:12px; font-weight:bold; color: #333333; } 
+
+.GS_GuidedNav .guidedNavData table td.newSearch { font-size: 11px; font-weight: bold; }
+.GS_GuidedNav .guidedNavData table td.newSearch a:link ,
+.GS_GuidedNav .guidedNavData table td.newSearch a:visited { text-decoration: none; }
+.GS_GuidedNav .guidedNavData table td.newSearch a:hover,
+.GS_GuidedNav .guidedNavData table td.newSearch a:active { text-decoration: underline; } 
+*/

@@ -1,0 +1,21 @@
+
+apache
+copy over config
+copy over content
+
+install tomcat?
+install php; config
+
+failover
+  apache
+  tomcat?
+    
+
+done: maybe save this for future duplicates
+
+web 
+mod_ssl
+java_tomcat
+
+copy /etc/apache
+copy /var/www

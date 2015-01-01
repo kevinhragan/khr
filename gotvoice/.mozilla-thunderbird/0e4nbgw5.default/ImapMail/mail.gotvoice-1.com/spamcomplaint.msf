@@ -1,0 +1,67 @@
+// <!-- <mdb:mork:z v="1.4"/> -->
+< <(a=c)> // (f=iso-8859-1)
+  (B8=daysToKeepHdrs)(B9=numHdrsToKeep)(BA=daysToKeepBodies)
+  (BB=keepUnreadOnly)(BC=useServerDefaults)(BD=cleanupBodies)
+  (BE=LastPurgeTime)(80=ns:msg:db:row:scope:msgs:all)(81=subject)
+  (82=sender)(83=message-id)(84=references)(85=recipients)(86=date)
+  (87=size)(88=flags)(89=priority)(8A=label)(8B=statusOfset)(8C=numLines)
+  (8D=ccList)(8E=msgThreadId)(8F=threadId)(90=threadFlags)
+  (91=threadNewestMsgDate)(92=children)(93=unreadChildren)
+  (94=threadSubject)(95=numRefs)(96=msgCharSet)
+  (97=ns:msg:db:table:kind:msgs)(98=ns:msg:db:table:kind:thread)
+  (99=ns:msg:db:table:kind:allthreads)
+  (9A=ns:msg:db:row:scope:threads:all)(9B=threadParent)(9C=threadRoot)
+  (9D=msgOffset)(9E=offlineMsgSize)
+  (9F=ns:msg:db:row:scope:dbfolderinfo:all)
+  (A0=ns:msg:db:table:kind:dbfolderinfo)(A1=numMsgs)(A2=numNewMsgs)
+  (A3=folderSize)(A4=expungedBytes)(A5=folderDate)(A6=highWaterKey)
+  (A7=mailboxName)(A8=UIDValidity)(A9=totPendingMsgs)
+  (AA=unreadPendingMsgs)(AB=expiredMark)(AC=version)
+  (AD=fixedBadRefThreading)(AE=onlineName)(AF=folderName)(B0=charSet)
+  (B1=charSetOverride)(B2=imapFlags)(B3=ns:msg:db:row:scope:pending:all)
+  (B4=ns:msg:db:table:kind:pending)(B5=junkscore)(B6=junkscoreorigin)
+  (B7=retainBy)>
+
+<(80=1)(81=spamcomplaint)(84=82014)(89=2)(4FF=Thu Apr 17 06:19:29 2008)>
+{1:^9F {(k^A0:c)(s=9u)} 
+  [1(^AC=1)(^AD=1)(^AE^81)(^88^84)(^A7^81)(^A9=2)(^BE^4FF)]}
+
+<(85=20070320214511.D8BE878B46F@scanner3.l3.com)(86=100)(87=0)(88
+    =20070320214512.17DB178B44C@scanner3.l3.com)>
+{1:^B3 {(k^B4:c)(s=9)} 
+  [1(^83^85)(^B5^86)(^88=0)(^B6^86)(^89=1)]
+  [2(^83^88)(^B5^86)(^88=0)(^B6^86)(^89=1)]}
+
+@$${1{@
+{-1:^80 {(k^97:c)(s=9)} }
+{-FFFFFFFD:^9A {(k^99:c)(s=9)} }
+<(500=Thu Apr 17 14:19:31 2008)>
+[1:^9F(^BE^500)]
+@$$}1}@
+
+@$${2{@
+@$$}2}@
+
+@$${4{@
+<(501=Thu Apr 17 22:19:33 2008)>
+[1:^9F(^BE^501)]
+@$$}4}@
+
+@$${5{@
+@$$}5}@
+
+@$${7{@
+<(502=Fri Apr 18 06:19:34 2008)>
+[1:^9F(^BE^502)]
+@$$}7}@
+
+@$${8{@
+@$$}8}@
+
+@$${A{@
+<(503=Fri Apr 18 14:19:36 2008)>
+[1:^9F(^BE^503)]
+@$$}A}@
+
+@$${B{@
+@$$}B}@

@@ -1,0 +1,7 @@
+on asterisk host:
+   remove /bin/false as asterisk acount shell
+   as asterisk ssh-keygen 
+
+-> = is trusted by
+gv@web -> asterisk@asterisk
+asterisk@asterisk -> gv@spooler

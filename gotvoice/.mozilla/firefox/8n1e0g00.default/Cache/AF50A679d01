@@ -1,0 +1,2012 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- $Revision: 1.40 $ -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head><!-- Top Header End -->
+<!-- Bottom Header Start -->
+<title>
+IPSec Dead Peer Detection Periodic Message Option - Cisco Systems
+</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8"/><meta name="concept" content="Cisco IOS Software Releases 12.3 T"/><meta name="accessLevel" content="Guest"/><meta name="country" content="US"/><meta name="primaryObjectId" content="external_docbase:0900e4b180751685"/><meta name="docType" content="TSD Products Feature Guide"/><meta name="language" content="en"/><meta name="contentType" content="cisco.com#US#postSales"/><meta name="iaPath" content="cisco.com#Products#Cisco Products#Cisco IOS Software#Cisco IOS#Cisco IOS Software Release 12.3 Family#Cisco IOS Software Releases 12.3 T"/><meta name="ioContentSource" content="CCIM-TD"/><meta name="locale" content="US"/><meta name="secondaryConcept" content="Cisco IOS Software Releases 12.2 SX"/><meta name="secondaryConcept" content="Cisco IOS Software Releases 12.2 SR"/><meta name="date" content="Mon Mar 01 00:00:00 PST 2004"/><meta name="docRequest" content="/en/US/docs/ios/12_3t/12_3t7/feature/guide/gtdpmo.html"/><meta name="title" content="IPSec Dead Peer Detection Periodic Message Option"/>
+
+<script type="text/javascript" src="/swa/j/global.js"></script>
+<link rel="stylesheet" type="text/css" href="/swa/c/libra.css" />
+<link rel="stylesheet" type="text/css" media="print" href="/swa/c/global_print.css" />
+
+<!--Head Script-->
+</head>
+<body id="libra"><!--googleoff: index-->
+<!-- $Revision: 1.4 $ -->
+<div id="framework-base-banner" >
+	<div class="skiplinks">
+		<a href="/" accesskey="1">Home</a> | 
+		<a href="#content" accesskey="2">Skip to Content</a> | 
+		<a href="#search" >Skip to Search</a> | 
+		<a href="#hinav" accesskey="4">Skip to Navigation</a> | 
+		<a href="#pagefooter" accesskey="5">Skip to Footer</a> |
+	</div>
+	<div id="framework-logo">			
+		<a href="/en/US/hmpgs/index.html" name="&amp;lpos=ft_" rel="exit"><img src="/swa/i/logo.gif" width="110" border="0" alt="Cisco Systems, Inc." height="73"></a>
+	</div>
+	<div id="framework-header">
+	    <div class="nav-secondary">
+	         <span class="region-selector"><span class="region">Worldwide</span> 
+	[<a href="/en/US/swassets/sw274/sitewide_country_language_selector.html" onclick="global_openCdcPopup('/en/US/swassets/sw274/sitewide_country_language_selector.html',643,468);return false;" title="Popup: Region/Language Selector">change</a>]</span>				
+	         <a href="/cgi-bin/login" class="login">Log In</a>
+	         <span class="link-delimiter">|</span><a href="http://tools.cisco.com/RPF/register/register.do">Register</a>
+	         <span class="link-delimiter">|</span><a href="/en/US/about/index.html">About Cisco</a>
+	         
+	         
+	     </div>
+	     <span class="search-entitlement">Guest</span><div class="search"><form method="get" action="http://tools.cisco.com/search/JSP/search-results.get" name="sitewidesearch"><label id="search" name="search" accesskey="3" for="searchPhrase">Search </label><input tabindex="1" onfocus="checkClear(this,'Search ')" value="Search " id="searchPhrase" name="strQueryText" type="text"/><input tabindex="2" src="/swa/i/btn_go.gif" id="go" alt="Go" type="image"/><br/><input name="Search All cisco.com" value="cisco.com" type="hidden"/><input name="language" value="en" type="hidden"/><input name="country" value="US" type="hidden"/><input name="thissection" value="f" type="hidden"/><input name="accessLevel" value="Guest" type="hidden"/>
+</form></div>
+	</div>
+</div>
+<table id="framework-wrapper" cellspacing="0" cellpadding="0" border="0" summary="">
+<tr><td>
+	<div id="cdc-nav-module" class="cdc-rc-container">
+<span class="corner-top"><span class="corner-left"></span></span>
+<table class="nav-container" width="90%" cellspacing="0" cellpadding="0" border="0">
+<tbody>
+<tr>
+<td class="nav">
+<a href="/en/US/netsol/index.html">Solutions</a>
+</td>
+<td class="nav">
+<a href="/en/US/products/index.html">Products & Services</a>
+</td>
+<td class="nav">
+<a href="/en/US/ordering/index.shtml">Ordering</a>
+</td>
+<td class="nav">
+<a href="/en/US/support/index.html">Support</a>
+</td>
+<td class="nav">
+<a href="/en/US/learning/index.html">Training & Events</a>
+</td>
+<td class="nav">
+<a href="/en/US/partners/index.html">Partner Central</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<script type="text/javascript">cdc.util.initBackpack('cdc-nav-module');</script>
+
+
+	<table id="framework-base-main" cellspacing="0" cellpadding="0" border="0" summary="">
+	<tr>
+		<td id="framework-column-left" valign="top"><a name="hinav"></a>
+			<!-- CDC-DM: Hinav Start -->
+			<div class="hinav"><h3>Hierarchical Navigation</h3><ul class="outer"><li><a href="/en/US/hmpgs/index.html" class="parent">HOME</a><ul><li><a href="/en/US/support/index.html" class="parent">SUPPORT</a><ul><li><a href="/web/psa/products/tsd_products_support_configure.html" class="parent">PRODUCT SUPPORT</a><ul><li><a href="/web/psa/products/tsd_products_support_configure.html?c=268438303" class="parent">CISCO IOS SOFTWARE</a><ul><li><a href="/en/US/products/sw/iosswrel/ps5207/tsd_products_support_series_home.html" class="parent">CISCO IOS SOFTWARE RELEASES 12.3 T</a><ul><li><a href="/en/US/products/sw/iosswrel/ps5207/tsd_products_support_configure.html" class="parent">CONFIGURE</a><ul><li><a href="/en/US/products/sw/iosswrel/ps5207/products_feature_guides_list.html" class="parent">FEATURE GUIDES</a><ul><li><strong><a href="/en/US/docs/ios/12_3t/12_3t7/feature/guide/gtdpmo.html" class="selected">IPSec Dead Peer Detection Periodic Message Option</a></strong></li></ul></li></ul></li></ul></li></ul></li></ul></li></ul></li></ul></li></ul></div>
+			<!-- CDC-DM: Hinav End -->
+			
+			
+			
+			
+
+<!-- begin embedded feedback form -->
+<a name="anchor_to_feedback"></a> 
+
+<script type="text/javascript" src="http://www.cisco.com/public/support/feedback/js/tt/right/main_cdc.js">
+</script>
+
+<!-- end feedback form -->
+
+
+			
+			
+			
+			
+			
+		</td>
+		<td id="framework-column-center">
+			<table cellspacing="0" id="framework-base-content">
+				<tr>
+					<td id="framework-column-titles" colspan="2">
+						<div id="framework-content-titles"><!--googleon: index-->
+							 <h1 class="title-section">Cisco IOS Software Releases 12.3 T</h1>
+							 <h2 class="title-page">IPSec Dead Peer Detection Periodic Message Option</h2>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td id="framework-column-main"><a name="content"></a>
+						<div id="framework-content-main">
+						<!-- Bottom Header End -->
+						<!-- CDC-DM: Main Col Start -->
+							<!-- Start of the actual text content --><!--googleoff: index-->
+							<table id="content-right-top" align="right" border="0" cellspacing="0" cellpadding="0" summary="">
+								<tr><td valign="top" align="right"></td></tr>
+								<tr><td valign="top" align="right"><div class="module-sidebar-xsl">
+<h3 class="main-header">Downloads</h3>
+<ul>
+<li>
+<a href="/en/US/docs/ios/12_3t/12_3t7/feature/guide/gtdpmo.pdf" class="contentlink" target="_blank">IPSec Dead Peer Detection Periodic Message Option<img src="/swa/i/icon_pdf.gif" width="20" alt="" height="16" /></a>
+</li>
+</ul>
+</div>
+</td></tr>
+								<tr><td valign="top" align="right"></td></tr>
+								<tr><td valign="top" align="right"></td></tr>
+							</table><!--googleon: index-->
+							<?xml version="1.0" encoding="UTF-8"?>
+<div class="contentMargins"><span class="content">
+  <!-- WFP 1.0.0.0 Released 11/20/2006 -->
+  <!-- Added on date : 10/09/2003 Do not delete blockquotes  -->
+<MIGRATE><LINK REL="stylesheet" HREF="/swa/c/ccimr.css" TYPE="text/css" /></MIGRATE>
+<blockquote>
+    <!-- Start of Mini TOC : Added on 09/23/2003 16:38:30 PST -->
+    <h2 class="p_H_Head1">Table Of Contents</h2>
+    
+<p class="MiniTOC1"><a href="#wp1055093">IPSec Dead Peer Detection Periodic<br />Message Option</a></p>
+<p class="MiniTOC2"><a href="#wp1027171">Contents</a></p>
+<p class="MiniTOC2"><a href="#wp1043332">Prerequisites for IPSec Dead Peer Detection Periodic<br />Message Option</a></p>
+<p class="MiniTOC2"><a href="#wp1050842">Restrictions for IPSec Dead Peer Detection Periodic<br />Message Option</a></p>
+<p class="MiniTOC2"><a href="#wp1050845">Information About IPSec Dead Peer Detection<br />Periodic Message Option</a></p>
+<p class="MiniTOC3"><a href="#wp1053606">How DPD and Cisco IOS Keepalive Features Work</a></p>
+<p class="MiniTOC3"><a href="#wp1046077">Using the IPSec Dead Peer Detection Periodic Message Option</a></p>
+<p class="MiniTOC3"><a href="#wp1048995">Using DPD and Cisco IOS Keepalive Features<br />with Multiple Peers in the Crypto Map</a></p>
+<p class="MiniTOC3"><a href="#wp1053499">Using DPD in an Easy VPN Remote Configuration</a></p>
+<p class="MiniTOC2"><a href="#wp1027188">How to Configure IPSec Dead Peer Detection Periodic<br />Message Option</a></p>
+<p class="MiniTOC3"><a href="#wp1027195">Configuring a Periodic DPD Message</a></p>
+<p class="MiniTOC3"><a href="#wp1027254">Configuring DPD and Cisco IOS Keepalives with Multiple Peers<br />in the Crypto Map</a></p>
+<p class="MiniTOC3"><a href="#wp1049071">Configuring DPD for an Easy VPN Remote</a></p>
+<p class="MiniTOC3"><a href="#wp1049827">Verifying That DPD Is Enabled</a></p>
+<p class="MiniTOC2"><a href="#wp1027258">Configuration Examples for IPSec Dead Peer Detection<br />Periodic Message Option</a></p>
+<p class="MiniTOC3"><a href="#wp1051947">Site-to-Site Setup with Periodic DPD Enabled: Example</a></p>
+<p class="MiniTOC3"><a href="#wp1052316">Easy VPN Remote with DPD Enabled: Example</a></p>
+<p class="MiniTOC3"><a href="#wp1027265">Verifying DPD Configuration Using the debug crypto isakmp Command: Example</a></p>
+<p class="MiniTOC3"><a href="#wp1049577">DPD and Cisco&#160;IOS Keepalives Used in Conjunction with Multiple Peers in a Crypto Map: Example</a></p>
+<p class="MiniTOC3"><a href="#wp1052622">DPD Used in Conjunction with Multiple Peers for an Easy VPN Remote: Example</a></p>
+<p class="MiniTOC2"><a href="#wp1027269">Additional References</a></p>
+<p class="MiniTOC3"><a href="#wp1027293">Related Documents</a></p>
+<p class="MiniTOC3"><a href="#wp1032406">Standards</a></p>
+<p class="MiniTOC3"><a href="#wp1032445">MIBs</a></p>
+<p class="MiniTOC3"><a href="#wp1034865">RFCs</a></p>
+<p class="MiniTOC3"><a href="#wp1027357">Technical Assistance</a></p>
+<p class="MiniTOC2"><a href="#wp1032378">Command Reference</a></p>
+<p class="MiniTOC2"><a href="#wp1057253">crypto isakmp keepalive</a></p>
+    <br />
+    <!-- End of Mini TOC -->
+
+    <a name="wp1055093"></a><h2 class="pCT_ChapTitle">
+IPSec Dead Peer Detection Periodic<br />Message Option
+</h2>
+<hr class="Chap1" />
+<a name="wp1055681"></a><div style="font-style: normal; font-variant: normal; font-weight: bold; margin-bottom: 0pt; margin-left: 0pt; margin-right: 0pt; margin-top: 0pt; text-align: left; text-decoration: none; text-indent: 0pt" class="pDefault">
+First Published: May 1, 2004
+</div>
+<a name="wp1055682"></a><div style="font-style: normal; font-variant: normal; font-weight: bold; margin-bottom: 0pt; margin-left: 0pt; margin-right: 0pt; margin-top: 0pt; text-align: left; text-decoration: none; text-indent: 0pt" class="pDefault">
+Last Updated: August 21, 2007
+</div>
+<a name="wp1048168"></a><a name="wp1055675"></a><a name="wpmkr1054985"></a><p class="pB1_Body1">
+The IPSec Dead Peer Detection Periodic Message Option feature allows you to configure your router to query the liveliness of its Internet Key Exchange (IKE) peer at regular intervals. The benefit of this approach over the default approach (on-demand dead peer detection) is earlier detection of dead peers.
+</p>
+<a name="wp1048178"></a><p class="pBl_BlockLabel">
+History for IPSec Dead Peer Detection Periodic Message Option Feature<span style="color: Black; font-style: normal; font-weight: normal"></span></p>
+<div align="left">
+<table border="1" cellpadding="3" cellspacing="0" width="80%" bordercolor="#808080"
+ id="wp1054410table1054408">
+
+
+ <caption></caption>
+
+  <tr align="left" valign="top"><td><a name="wp1054410"></a><div class="pCH1_CellHead1">
+Release
+</div>
+</td>
+<td><a name="wp1054412"></a><div class="pCH1_CellHead1">
+Modification
+</div>
+</td>
+</tr>
+  <tr align="left" valign="top"><td><a name="wp1054414"></a><p class="pB1_Body1">
+12.3(7)T
+</p>
+</td>
+<td><a name="wp1054416"></a><p class="pB1_Body1">
+This feature was introduced.
+</p>
+</td>
+</tr>
+  <tr align="left" valign="top"><td><a name="wp1055760"></a><p class="pB1_Body1">
+12.2(33)SRA
+</p>
+</td>
+<td><a name="wp1055762"></a><p class="pB1_Body1">
+This feature was integrated into Cisco&#160;IOS Release 12.2(33)SRA.
+</p>
+</td>
+</tr>
+  <tr align="left" valign="top"><td><a name="wp1057424"></a><p class="pB1_Body1">
+12.2(33)SXH
+</p>
+</td>
+<td><a name="wp1057426"></a><p class="pB1_Body1">
+This feature was integrated into Cisco IOS Release 12.2(33)SXH.
+</p>
+</td>
+</tr>
+</table>
+</div><br />
+<p class="pBl_BlockLabel">
+<span style="color: Black; font-style: normal; font-weight: normal"></span>
+</p>
+<a name="wp1038138"></a><p class="pBl_BlockLabel">
+Finding Support Information for Platforms and Cisco IOS Software Images
+</p>
+<a name="wp1038100"></a><p class="pB1_Body1">
+Use Cisco Feature Navigator to find information about platform support and Cisco&#160;IOS software image support. Access Cisco Feature Navigator at <a href="http://www.cisco.com/go/fn">http://www.cisco.com/go/fn</a>. You must have an account on Cisco.com. If you do not have an account or have forgotten your username or password, click <b class="cBold">Cancel</b> at the login dialog box and follow the instructions that appear. 
+</p>
+<a name="Contents"> </a>
+
+<a name="wp1027171"></a><h2 class="p_H_Head1">
+Contents
+</h2>
+
+<a name="wp1027172"></a><p class="pBu1_Bullet1">
+&#8226;<img src="../../../../../../i/templates/blank.gif" width="19" alt="" height="2" border="0" /><a href="#wp1043332">Prerequisites for IPSec Dead Peer Detection Periodic Message Option</a>
+</p>
+<a name="wp1045605"></a><p class="pBu1_Bullet1">
+&#8226;<img src="../../../../../../i/templates/blank.gif" width="19" alt="" height="2" border="0" /><a href="#wp1050842">Restrictions for IPSec Dead Peer Detection Periodic Message Option</a>
+</p>
+<a name="wp1045642"></a><p class="pBu1_Bullet1">
+&#8226;<img src="../../../../../../i/templates/blank.gif" width="19" alt="" height="2" border="0" /><a href="#wp1050845">Information About IPSec Dead Peer Detection Periodic Message Option</a>
+</p>
+<a name="wp1045671"></a><p class="pBu1_Bullet1">
+&#8226;<img src="../../../../../../i/templates/blank.gif" width="19" alt="" height="2" border="0" /><a href="#wp1027188">How to Configure IPSec Dead Peer Detection Periodic Message Option</a>
+</p>
+<a name="wp1045699"></a><p class="pBu1_Bullet1">
+&#8226;<img src="../../../../../../i/templates/blank.gif" width="19" alt="" height="2" border="0" /><a href="#wp1027258">Configuration Examples for IPSec Dead Peer Detection Periodic Message Option</a>
+</p>
+<a name="wp1045732"></a><p class="pBu1_Bullet1">
+&#8226;<img src="../../../../../../i/templates/blank.gif" width="19" alt="" height="2" border="0" /><a href="#wp1027269">Additional References</a>
+</p>
+<a name="wp1045798"></a><p class="pBu1_Bullet1">
+&#8226;<img src="../../../../../../i/templates/blank.gif" width="19" alt="" height="2" border="0" /><a href="#wp1032378">Command Reference</a>
+</p>
+<a name="Prerequisites_for_IPSec_Dead_Peer_Detection_Periodic<br_/>Message_Option"> </a>
+
+<a name="wp1043332"></a><a name="wpxref41860"></a><a name="wpmkr1054986"></a><h2 class="p_H_Head1">
+Prerequisites for IPSec Dead Peer Detection Periodic<br />Message Option
+</h2>
+
+<a name="wp1043411"></a><p class="pB1_Body1">
+Before configuring the IPSec Dead Peer Detection Periodic Message Option feature, you should have the following:
+</p>
+<a name="wp1045857"></a><p class="pBu1_Bullet1">
+&#8226;<img src="../../../../../../i/templates/blank.gif" width="19" alt="" height="2" border="0" />Familiarity with configuring IP Security (IPSec).
+</p>
+<a name="wp1050782"></a><p class="pBu1_Bullet1">
+&#8226;<img src="../../../../../../i/templates/blank.gif" width="19" alt="" height="2" border="0" />An IKE peer that supports DPD (dead peer detection). Implementations that support DPD include the Cisco&#160;VPN 3000 concentrator, Cisco&#160;PIX Firewall, Cisco&#160;VPN Client, and Cisco&#160;IOS software in all modes of operation&#8212;site-to-site, Easy VPN remote, and Easy VPN server.
+</p>
+<a name="Restrictions_for_IPSec_Dead_Peer_Detection_Periodic<br_/>Message_Option"> </a>
+
+<a name="wp1050842"></a><a name="wpxref49974"></a><a name="wpmkr1054987"></a><h2 class="p_H_Head1">
+Restrictions for IPSec Dead Peer Detection Periodic<br />Message Option
+</h2>
+
+<a name="wp1050843"></a><p class="pB1_Body1">
+Using periodic DPD potentially allows the router to detect an unresponsive IKE peer with better response time when compared to on-demand DPD. However, use of periodic DPD incurs extra overhead. When communicating to large numbers of IKE peers, you should consider using on-demand DPD instead. 
+</p>
+<a name="Information_About_IPSec_Dead_Peer_Detection<br_/>Periodic_Message_Option"> </a>
+
+<a name="wp1050845"></a><a name="wpxref75023"></a><a name="wpmkr1054988"></a><h2 class="p_H_Head1">
+Information About IPSec Dead Peer Detection<br />Periodic Message Option
+</h2>
+
+<a name="wp1027178"></a><p class="pB1_Body1">
+To configure IPSec Dead Peer Detection Periodic Message Option, you should understand the following concepts:
+</p>
+<a name="wp1043449"></a><p class="pBu1_Bullet1">
+&#8226;<img src="../../../../../../i/templates/blank.gif" width="19" alt="" height="2" border="0" /><a href="#wp1053606">How DPD and Cisco IOS Keepalive Features Work</a>
+</p>
+<a name="wp1053600"></a><p class="pBu1_Bullet1">
+&#8226;<img src="../../../../../../i/templates/blank.gif" width="19" alt="" height="2" border="0" /><a href="#wp1046077">Using the IPSec Dead Peer Detection Periodic Message Option</a>
+</p>
+<a name="wp1053604"></a><p class="pBu1_Bullet1">
+&#8226;<img src="../../../../../../i/templates/blank.gif" width="19" alt="" height="2" border="0" /><a href="#wp1048995">Using DPD and Cisco IOS Keepalive Features with Multiple Peers in the Crypto Map</a>
+</p>
+<a name="wp1053623"></a><p class="pBu1_Bullet1">
+&#8226;<img src="../../../../../../i/templates/blank.gif" width="19" alt="" height="2" border="0" /><a href="#wp1053499">Using DPD in an Easy VPN Remote Configuration</a>
+</p>
+
+<a name="How_DPD_and_Cisco_IOS_Keepalive_Features_Work"> </a>
+
+<a name="wp1053606"></a><a name="wpxref35710"></a><h3 class="p_H_Head2">
+How DPD and Cisco IOS Keepalive Features Work
+</h3>
+<a name="wp1048303"></a><p class="pB1_Body1">
+DPD and Cisco IOS keepalives function on the basis of the timer. If the timer is set for 10 seconds, the router will send a &quot;hello&quot; message every 10 seconds (unless, of course, the router receives a &quot;hello&quot; message from the peer). The benefit of IOS keepalives and periodic DPD is earlier detection of dead peers. However, IOS keepalives and periodic DPD rely on periodic messages that have to be sent with considerable frequency. The result of sending frequent messages is that the communicating peers must encrypt and decrypt more packets.
+</p>
+<a name="wp1048500"></a><p class="pB1_Body1">
+DPD also has an on-demand approach. The contrasting on-demand approach is the default. With on-demand DPD, messages are sent on the basis of traffic patterns. For example, if a router has to send outbound traffic and the liveliness of the peer is questionable, the router sends a DPD message to query the status of the peer. If a router has no traffic to send, it never sends a DPD message. If a peer is dead, and the router never has any traffic to send to the peer, the router will not find out until the IKE or IPSec security association (SA) has to be rekeyed (the liveliness of the peer is unimportant if the router is not trying to communicate with the peer). On the other hand, if the router has traffic to send to the peer, and the peer does not respond, the router will initiate a DPD message to determine the state of the peer.
+</p>
+
+<a name="Using_the_IPSec_Dead_Peer_Detection_Periodic_Message_Option"> </a>
+
+<a name="wp1046077"></a><a name="wpxref65448"></a><h3 class="p_H_Head2">
+Using the IPSec Dead Peer Detection Periodic Message Option
+</h3>
+<a name="wp1046164"></a><p class="pB1_Body1">
+With the IPSec Dead Peer Detection Periodic Message Option feature, you can configure your router so that DPD messages are &quot;forced&quot; at regular intervals. This forced approach results in earlier detection of dead peers. For example, if a router has no traffic to send, a DPD message is still sent at regular intervals, and if a peer is dead, the router does not have to wait until the IKE SA times out to find out.
+</p>
+<a name="wp1046335"></a><p class="pB1_Body1">
+If you want to configure the DPD periodic message option, you should use the <b class="cBold">crypto isakmp keepalive</b> command with the <b class="cBold">periodic</b> keyword. If you do not configure the <b class="cKeyword">periodic</b> keyword, the router defaults to the on-demand approach.
+</p>
+<div class="Note1B"><img src="../../../../../../i/templates/note.gif" alt="" /></div><hr class="Cautn1table" />
+<a name="wp1048993"></a><p class="pN1_Note1">
+<b>Note	</b><img src="../../../../../../i/templates/blank.gif" width="1" alt="" height="2" border="0" />When the<b class="cBold"> crypto isakmp keepalive</b> command is configured, the Cisco&#160;IOS software negotiates the use of Cisco&#160;IOS keepalives or DPD, depending on which protocol the peer supports.
+</p>
+<hr class="Cautn1table" />
+<a name="Using_DPD_and_Cisco_IOS_Keepalive_Features<br_/>with_Multiple_Peers_in_the_Crypto_Map"> </a>
+
+<a name="wp1048995"></a><a name="wpxref72619"></a><h3 class="p_H_Head2">
+Using DPD and Cisco IOS Keepalive Features<br />with Multiple Peers in the Crypto Map
+</h3>
+<a name="wp1048996"></a><p class="pB1_Body1">
+DPD and IOS keepalive features can be used in conjunction with multiple peers in the crypto map to allow for stateless failover. DPD allows the router to detect a dead IKE peer, and when the router detects the dead state, the router deletes the IPSec and IKE SAs to the peer. If you configure multiple peers, the router will switch over to the next listed peer for a stateless failover.
+</p>
+
+<a name="Using_DPD_in_an_Easy_VPN_Remote_Configuration"> </a>
+
+<a name="wp1053499"></a><a name="wpxref73760"></a><h3 class="p_H_Head2">
+Using DPD in an Easy VPN Remote Configuration
+</h3>
+<a name="wp1053519"></a><p class="pB1_Body1">
+DPD can be used in an Easy VPN remote configuration. See the section <a href="#wp1049071">"Configuring DPD for an Easy VPN Remote" section</a>.
+</p>
+<a name="How_to_Configure_IPSec_Dead_Peer_Detection_Periodic<br_/>Message_Option"> </a>
+
+<a name="wp1027188"></a><a name="wpxref79385"></a><a name="wpmkr1054989"></a><h2 class="p_H_Head1">
+How to Configure IPSec Dead Peer Detection Periodic<br />Message Option
+</h2>
+
+<a name="wp1043602"></a><p class="pB1_Body1">
+This section contains the following prodedures:
+</p>
+<a name="wp1046512"></a><p class="pBu1_Bullet1">
+&#8226;<img src="../../../../../../i/templates/blank.gif" width="19" alt="" height="2" border="0" /><a href="#wp1027195">Configuring a Periodic DPD Message</a>
+</p>
+<a name="wp1053122"></a><p class="pBu1_Bullet1">
+&#8226;<img src="../../../../../../i/templates/blank.gif" width="19" alt="" height="2" border="0" /><a href="#wp1027254">Configuring DPD and Cisco IOS Keepalives with Multiple Peers in the Crypto Map</a>
+</p>
+<a name="wp1053167"></a><p class="pBu1_Bullet1">
+&#8226;<img src="../../../../../../i/templates/blank.gif" width="19" alt="" height="2" border="0" /><a href="#wp1049071">Configuring DPD for an Easy VPN Remote</a>
+</p>
+<a name="wp1054386"></a><p class="pBu1_Bullet1">
+&#8226;<img src="../../../../../../i/templates/blank.gif" width="19" alt="" height="2" border="0" /><a href="#wp1049827">Verifying That DPD Is Enabled</a>
+</p>
+
+<a name="Configuring_a_Periodic_DPD_Message"> </a>
+
+<a name="wp1027195"></a><a name="wpxref48799"></a><h3 class="p_H_Head2">
+Configuring a Periodic DPD Message
+</h3>
+<a name="wp1027197"></a><p class="pB1_Body1">
+To configure a periodic DPD message, perform the following steps.
+</p>
+
+<a name="SUMMARY_STEPS"> </a>
+
+<a name="wp1027204"></a><h3 class="p_H_Head4">
+SUMMARY STEPS
+</h3>
+<a name="wp1027206"></a><p class="pNF_NumFirst">
+<b>	1.	</b><img src="../../../../../../i/templates/blank.gif" width="10" alt="" height="2" border="0" /><b class="cCN_CmdName">enable</b>
+</p>
+<a name="wp1027207"></a><p class="pNN_NumNext">
+<b>	2.	</b><img src="../../../../../../i/templates/blank.gif" width="10" alt="" height="2" border="0" /><b class="cCN_CmdName">configure</b> <b class="cKeyword">terminal</b>
+</p>
+<a name="wp1027208"></a><p class="pNN_NumNext">
+<b>	3.	</b><img src="../../../../../../i/templates/blank.gif" width="10" alt="" height="2" border="0" /><b style="font-weight: bold" class="cCN_CmdName">crypto isakmp keepalive</b><em style="font-style: italic; font-weight: normal" class="cArgument"> seconds</em><span style="color: Black; font-style: normal; font-weight: bold"> </span>[<em class="cArgument">retries</em>] [<b class="cKeyword">periodic</b> | <b class="cKeyword">on-demand</b>]
+</p>
+
+<a name="DETAILED_STEPS"> </a>
+
+<a name="wp1027210"></a><h3 class="p_H_Head4">
+DETAILED STEPS
+</h3>
+<a name="wp1027253"></a><p class="pAnchor">
+</p>
+<div align="left">
+<table class="steptable" border="1" cellpadding="3" cellspacing="0" width="80%" bordercolor="#808080" id="wp1027216table1027212">
+  <caption></caption>
+  <tr align="left" valign="bottom">    <th scope="col">&#160;<a name="wp1027214"></a></th>
+    <th scope="col"><a name="wp1027216"></a><div class="pCH1_CellHead1">
+Command or Action
+</div>
+</th>
+    <th scope="col"><a name="wp1027218"></a><div class="pCH1_CellHead1">
+Purpose
+</div>
+</th>
+</tr>
+  <tr align="left" valign="top"><td><a name="wp1027220"></a><p class="pCSF_CellStepFirst">
+Step&#160;1&#160;
+</p>
+</td>
+<td><a name="wp1027222"></a><p class="pExT_ExampleTable"><b class="cCN_CmdName">enable
+</b></p><a name="wp1027224"></a><div class="pExH_ExampleHead">
+Example:
+</div>
+<a name="wp1027225"></a><p class="pExT_ExampleTable">Router&gt; enable
+</p></td>
+<td><a name="wp1027227"></a><p class="pB1_Body1">
+Enables privileged EXEC mode. 
+</p>
+<a name="wp1027228"></a><p class="pBu1_Bullet1">
+&#8226;<img src="../../../../../../i/templates/blank.gif" width="19" alt="" height="2" border="0" />Enter your password if prompted.
+</p>
+</td>
+</tr>
+  <tr align="left" valign="top"><td><a name="wp1027230"></a><p class="pCSN_CellStepnext">
+Step&#160;2&#160;
+</p>
+</td>
+<td><a name="wp1027232"></a><p class="pExT_ExampleTable"><b class="cCN_CmdName">configure</b> <b class="cKeyword">terminal
+</b></p><a name="wp1028452"></a><div class="pExH_ExampleHead">
+Example:
+</div>
+<a name="wp1027235"></a><p class="pExT_ExampleTable">Router# configure terminal
+</p></td>
+<td><a name="wp1027237"></a><p class="pB1_Body1">
+Enters global configuration mode.
+</p>
+</td>
+</tr>
+  <tr align="left" valign="top"><td><a name="wp1027239"></a><p class="pCSN_CellStepnext">
+Step&#160;3&#160;
+</p>
+</td>
+<td><a name="wp1027244"></a><p class="pExT_ExampleTable"><b class="cCN_CmdName">crypto isakmp keepalive</b> <em class="cArgument">seconds</em> [<em class="cArgument">retries</em>] 
+[<b class="cKeyword">periodic</b> | <b class="cKeyword">on-demand</b>]
+</p><a name="wp1047015"></a><div class="pExH_ExampleHead">
+Example:
+</div>
+<a name="wp1047013"></a><p class="pExT_ExampleTable">Router (config)# crypto isakmp keepalive 10 
+periodic
+</p></td>
+<td><a name="wp1027246"></a><p class="pB1_Body1">
+Allows the gateway to send DPD messages to the peer.
+</p>
+<a name="wp1046631"></a><p class="pBu1_Bullet1">
+&#8226;<img src="../../../../../../i/templates/blank.gif" width="19" alt="" height="2" border="0" /><em class="cArgument">seconds</em>&#8212;Number of seconds between DPD messages.
+</p>
+<a name="wp1046643"></a><p class="pBu1_Bullet1">
+&#8226;<img src="../../../../../../i/templates/blank.gif" width="19" alt="" height="2" border="0" /><em class="cArgument">retries</em>&#8212;(Optional) Number of seconds between DPD retries if the DPD message fails.
+</p>
+<a name="wp1046652"></a><p class="pBu1_Bullet1">
+&#8226;<img src="../../../../../../i/templates/blank.gif" width="19" alt="" height="2" border="0" /><b class="cKeyword">periodic</b>&#8212;(Optional) DPD messages are sent at regular intervals.
+</p>
+<a name="wp1046687"></a><p class="pBu1_Bullet1">
+&#8226;<img src="../../../../../../i/templates/blank.gif" width="19" alt="" height="2" border="0" /><b class="cKeyword">on-demand</b>&#8212;(Optional) DPD retries are sent on demand. This is the default behavior. 
+</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="pAnchor">
+
+</p>
+
+<a name="Configuring_DPD_and_Cisco_IOS_Keepalives_with_Multiple_Peers<br_/>in_the_Crypto_Map"> </a>
+
+<a name="wp1027254"></a><a name="wpxref84290"></a><h3 class="p_H_Head2">
+Configuring DPD and Cisco IOS Keepalives with Multiple Peers<br />in the Crypto Map
+</h3>
+<a name="wp1050098"></a><p class="pB1_Body1">
+To configure DPD and IOS keepalives to be used in conjunction with the crypto map to allow for stateless failover, perform the following steps. This configuration will cause a router to cycle through the peer list when it detects that the first peer is dead.
+</p>
+
+<a name="SUMMARY_STEPS"> </a>
+
+<a name="wp1049129"></a><h3 class="p_H_Head4">
+SUMMARY STEPS
+</h3>
+<a name="wp1049166"></a><p class="pNF_NumFirst">
+<b>	1.	</b><img src="../../../../../../i/templates/blank.gif" width="10" alt="" height="2" border="0" /><b class="cCN_CmdName">enable</b>
+</p>
+<a name="wp1049167"></a><p class="pNN_NumNext">
+<b>	2.	</b><img src="../../../../../../i/templates/blank.gif" width="10" alt="" height="2" border="0" /><b class="cCN_CmdName">configure</b> <b class="cKeyword">terminal</b>
+</p>
+<a name="wp1049168"></a><p class="pNN_NumNext">
+<b>	3.	</b><img src="../../../../../../i/templates/blank.gif" width="10" alt="" height="2" border="0" /><b class="cCN_CmdName">crypto map</b> <em class="cArgument">map-name seq-num</em> <b class="cKeyword">ipsec-isakmp</b>
+</p>
+<a name="wp1049178"></a><p class="pNN_NumNext">
+<b>	4.	</b><img src="../../../../../../i/templates/blank.gif" width="10" alt="" height="2" border="0" /><b class="cCN_CmdName">set peer</b> {<em class="cArgument">host-name</em> [<b class="cKeyword">dynamic</b>] | <em class="cArgument">ip-address</em>}
+</p>
+<a name="wp1049193"></a><p class="pNN_NumNext">
+<b>	5.	</b><img src="../../../../../../i/templates/blank.gif" width="10" alt="" height="2" border="0" /><b class="cCN_CmdName">set transform-set</b> <em class="cArgument">transform-set-name</em>
+</p>
+<a name="wp1049198"></a><p class="pNN_NumNext">
+<b>	6.	</b><img src="../../../../../../i/templates/blank.gif" width="10" alt="" height="2" border="0" /><b class="cCN_CmdName">match address</b> [<em class="cArgument">access-list-id</em> | <em class="cArgument">name</em>]
+</p>
+
+<a name="DETAILED_STEPS"> </a>
+
+<a name="wp1049149"></a><h3 class="p_H_Head4">
+DETAILED STEPS<span style="color: Black; font-style: normal; font-weight: normal"></span></h3>
+<div align="left">
+<table class="steptable" border="1" cellpadding="3" cellspacing="0" width="80%" bordercolor="#808080" id="wp1049208table1049204">
+  <caption></caption>
+  <tr align="left" valign="bottom">    <th scope="col">&#160;<a name="wp1049206"></a></th>
+    <th scope="col"><a name="wp1049208"></a><div class="pCH1_CellHead1">
+Command or Action
+</div>
+</th>
+    <th scope="col"><a name="wp1049210"></a><div class="pCH1_CellHead1">
+Purpose
+</div>
+</th>
+</tr>
+  <tr align="left" valign="top"><td><a name="wp1049212"></a><p class="pCSF_CellStepFirst">
+Step&#160;1&#160;
+</p>
+</td>
+<td><a name="wp1049214"></a><p class="pExT_ExampleTable"><b class="cCN_CmdName">enable
+</b></p><a name="wp1049215"></a><div class="pExH_ExampleHead">
+Example:
+</div>
+<a name="wp1049216"></a><p class="pExT_ExampleTable">Router&gt; enable
+</p></td>
+<td><a name="wp1049218"></a><p class="pB1_Body1">
+Enables privileged EXEC mode. 
+</p>
+<a name="wp1049219"></a><p class="pBu1_Bullet1">
+&#8226;<img src="../../../../../../i/templates/blank.gif" width="19" alt="" height="2" border="0" />Enter your password if prompted.
+</p>
+</td>
+</tr>
+  <tr align="left" valign="top"><td><a name="wp1049221"></a><p class="pCSN_CellStepnext">
+Step&#160;2&#160;
+</p>
+</td>
+<td><a name="wp1049223"></a><p class="pExT_ExampleTable"><b class="cCN_CmdName">configure</b> <b class="cKeyword">terminal
+</b></p><a name="wp1049224"></a><div class="pExH_ExampleHead">
+Example:
+</div>
+<a name="wp1049225"></a><p class="pExT_ExampleTable">Router# configure terminal
+</p></td>
+<td><a name="wp1049227"></a><p class="pB1_Body1">
+Enters global configuration mode.
+</p>
+</td>
+</tr>
+  <tr align="left" valign="top"><td><a name="wp1049229"></a><p class="pCSN_CellStepnext">
+Step&#160;3&#160;
+</p>
+</td>
+<td><a name="wp1049231"></a><p class="pExT_ExampleTable"><b class="cCN_CmdName">crypto map</b> <em class="cArgument">map-name seq-num</em> <b class="cKeyword">ipsec-isakmp
+</b></p><a name="wp1049513"></a><div class="pExH_ExampleHead">
+Example:
+</div>
+<a name="wp1049233"></a><p class="pExT_ExampleTable">Router (config)# crypto map green 1 
+ipsec-isakmp
+</p></td>
+<td><a name="wp1049239"></a><p class="pB1_Body1">
+Enters crypto map configuration mode and creates or modifies a crypto map entry.
+</p>
+<a name="wp1049394"></a><p class="pBu1_Bullet1">
+&#8226;<img src="../../../../../../i/templates/blank.gif" width="19" alt="" height="2" border="0" />The<b class="cBold"> </b><b class="cKeyword">ipsec-isakmp</b> keyword indicates that IKE will be used to establish the IPSec SAs for protecting the traffic specified by this crypto map entry.
+</p>
+</td>
+</tr>
+  <tr align="left" valign="top"><td><a name="wp1049332"></a><p class="pCSN_CellStepnext">
+Step&#160;4&#160;
+</p>
+</td>
+<td><a name="wp1049334"></a><p class="pExT_ExampleTable"><b class="cCN_CmdName">set peer</b> {<em class="cArgument">host-name</em> [<b class="cKeyword">dynamic</b>] | <em class="cArgument">ip-address</em>}
+</p><a name="wp1049549"></a><div class="pExH_ExampleHead">
+Example:
+</div>
+<a name="wp1049489"></a><p class="pExT_ExampleTable">Router (config-crypto-map)# set peer 
+10.12.12.12
+</p></td>
+<td><a name="wp1049336"></a><p class="pB1_Body1">
+Specifies an IPSec peer in a crypto map entry.
+</p>
+<a name="wp1049610"></a><p class="pBu1_Bullet1">
+&#8226;<img src="../../../../../../i/templates/blank.gif" width="19" alt="" height="2" border="0" />You can specify multiple peers by repeating this command.
+</p>
+</td>
+</tr>
+  <tr align="left" valign="top"><td><a name="wp1049326"></a><p class="pCSN_CellStepnext">
+Step&#160;5&#160;
+</p>
+</td>
+<td><a name="wp1049328"></a><p class="pExT_ExampleTable"><b class="cCN_CmdName">set transform-set</b> <em class="cArgument">transform-set-name
+</em></p><a name="wp1049624"></a><div class="pExH_ExampleHead">
+Example:
+</div>
+<a name="wp1049614"></a><p class="pExT_ExampleTable">Router (config-crypto-map)# set transform-set 
+txfm
+</p></td>
+<td><a name="wp1049330"></a><p class="pB1_Body1">
+Specifies which transform sets can be used with the crypto map entry.
+</p>
+<a name="wp1049771"></a><p class="pBu1_Bullet1">
+&#8226;<img src="../../../../../../i/templates/blank.gif" width="19" alt="" height="2" border="0" />You can specify more than one transform set name by repeating this command.
+</p>
+</td>
+</tr>
+  <tr align="left" valign="top"><td><a name="wp1049320"></a><p class="pCSN_CellStepnext">
+Step&#160;6&#160;
+</p>
+</td>
+<td><a name="wp1049322"></a><p class="pExT_ExampleTable"><b class="cCN_CmdName">match address</b> [<em class="cArgument">access-list-id</em> | <em class="cArgument">name</em>] 
+</p><a name="wp1049685"></a><div class="pExH_ExampleHead">
+Example:
+</div>
+<a name="wp1049679"></a><p class="pExT_ExampleTable">Router (config-crypto-map)# match address 101
+</p></td>
+<td><a name="wp1049324"></a><p class="pB1_Body1">
+Specifies an extended access list for a crypto map entry.
+</p>
+</td>
+</tr>
+</table>
+</div>
+<h3 class="p_H_Head4">
+<span style="color: Black; font-style: normal; font-weight: normal"></span>
+</h3>
+
+<a name="Configuring_DPD_for_an_Easy_VPN_Remote"> </a>
+
+<a name="wp1049071"></a><a name="wpxref71378"></a><h3 class="p_H_Head2">
+Configuring DPD for an Easy VPN Remote
+</h3>
+<a name="wp1049851"></a><p class="pB1_Body1">
+To configure DPD in an Easy VPN remote configuration, perform the following steps. This configuration also will cause a router to cycle through the peer list when it detects that the first peer is dead.
+</p>
+<div class="Note1B"><img src="../../../../../../i/templates/note.gif" alt="" /></div><hr class="Cautn1table" />
+<a name="wp1053391"></a><p class="pN1_Note1">
+<b>Note	</b><img src="../../../../../../i/templates/blank.gif" width="1" alt="" height="2" border="0" />IOS keepalives are not supported for Easy VPN remote configurations.
+</p>
+<hr class="Cautn1table" />
+<a name="SUMMARY_STEPS"> </a>
+
+<a name="wp1049893"></a><h3 class="p_H_Head4">
+SUMMARY STEPS
+</h3>
+<a name="wp1049935"></a><p class="pNF_NumFirst">
+<b>	1.	</b><img src="../../../../../../i/templates/blank.gif" width="10" alt="" height="2" border="0" /><b class="cCN_CmdName">enable</b>
+</p>
+<a name="wp1049936"></a><p class="pNN_NumNext">
+<b>	2.	</b><img src="../../../../../../i/templates/blank.gif" width="10" alt="" height="2" border="0" /><b class="cCN_CmdName">configure</b> <b class="cKeyword">terminal</b>
+</p>
+<a name="wp1049937"></a><p class="pNN_NumNext">
+<b>	3.	</b><img src="../../../../../../i/templates/blank.gif" width="10" alt="" height="2" border="0" /><b class="cCN_CmdName">crypto ipsec client ezvpn</b> <em class="cArgument">name</em>
+</p>
+<a name="wp1050525"></a><p class="pNN_NumNext">
+<b>	4.	</b><img src="../../../../../../i/templates/blank.gif" width="10" alt="" height="2" border="0" /><b class="cCN_CmdName">connect</b> {<b class="cKeyword">auto</b> | <b class="cKeyword">manual</b>}
+</p>
+<a name="wp1049951"></a><p class="pNN_NumNext">
+<b>	5.	</b><img src="../../../../../../i/templates/blank.gif" width="10" alt="" height="2" border="0" /><b class="cCN_CmdName">group</b> <em class="cArgument">group-name</em> <b class="cKeyword">key</b> <em class="cArgument">group-key</em>
+</p>
+<a name="wp1050642"></a><p class="pNN_NumNext">
+<b>	6.	</b><img src="../../../../../../i/templates/blank.gif" width="10" alt="" height="2" border="0" /><b class="cCN_CmdName">mode</b> {<b class="cKeyword">client</b> | <b class="cKeyword">network-extension</b>}
+</p>
+<a name="wp1050693"></a><p class="pNN_NumNext">
+<b>	7.	</b><img src="../../../../../../i/templates/blank.gif" width="10" alt="" height="2" border="0" /><b class="cCN_CmdName">peer</b> {<em class="cArgument">ipaddress</em> | <em class="cArgument">hostname</em>}
+</p>
+
+<a name="DETAILED_STEPS"> </a>
+
+<a name="wp1054644"></a><h3 class="p_H_Head4">
+DETAILED STEPS<span style="color: Black; font-style: normal; font-weight: normal"></span></h3>
+<div align="left">
+<table class="steptable" border="1" cellpadding="3" cellspacing="0" width="80%" bordercolor="#808080" id="wp1049969table1049967">
+  <caption></caption>
+  <tr align="left" valign="top"><td><a name="wp1049969"></a><p class="pCSF_CellStepFirst">
+Step&#160;1&#160;
+</p>
+</td>
+<td><a name="wp1049971"></a><p class="pExT_ExampleTable"><b class="cCN_CmdName">enable
+</b></p><a name="wp1049972"></a><div class="pExH_ExampleHead">
+Example:
+</div>
+<a name="wp1049973"></a><p class="pExT_ExampleTable">Router&gt; enable
+</p></td>
+<td><a name="wp1049975"></a><p class="pB1_Body1">
+Enables privileged EXEC mode. 
+</p>
+<a name="wp1049976"></a><p class="pBu1_Bullet1">
+&#8226;<img src="../../../../../../i/templates/blank.gif" width="19" alt="" height="2" border="0" />Enter your password if prompted.
+</p>
+</td>
+</tr>
+  <tr align="left" valign="top"><td><a name="wp1049978"></a><p class="pCSN_CellStepnext">
+Step&#160;2&#160;
+</p>
+</td>
+<td><a name="wp1049980"></a><p class="pExT_ExampleTable"><b class="cCN_CmdName">configure</b> <b class="cKeyword">terminal
+</b></p><a name="wp1049981"></a><div class="pExH_ExampleHead">
+Example:
+</div>
+<a name="wp1049982"></a><p class="pExT_ExampleTable">Router# configure terminal
+</p></td>
+<td><a name="wp1049984"></a><p class="pB1_Body1">
+Enters global configuration mode.
+</p>
+</td>
+</tr>
+  <tr align="left" valign="top"><td><a name="wp1049986"></a><p class="pCSN_CellStepnext">
+Step&#160;3&#160;
+</p>
+</td>
+<td><a name="wp1049988"></a><p class="pExT_ExampleTable"><b class="cCN_CmdName">crypto ipsec client ezvpn</b> <em class="cArgument">name
+</em></p><a name="wp1049989"></a><div class="pExH_ExampleHead">
+Example:
+</div>
+<a name="wp1049990"></a><p class="pExT_ExampleTable">Router (config)# crypto ipsec client ezvpn 
+ezvpn-config1
+</p></td>
+<td><a name="wp1049993"></a><p class="pB1_Body1">
+Creates a Cisco Easy VPN remote configuration and enters the Cisco Easy VPN Remote configuration mode.
+</p>
+</td>
+</tr>
+  <tr align="left" valign="top"><td><a name="wp1050144"></a><p class="pCSN_CellStepnext">
+Step&#160;4&#160;
+</p>
+</td>
+<td><a name="wp1050146"></a><p class="pExT_ExampleTable"><b class="cCN_CmdName">connect</b> {<b class="cKeyword">auto</b> | <b class="cKeyword">manual</b>}
+</p><a name="wp1050171"></a><div class="pExH_ExampleHead">
+Example:
+</div>
+<a name="wp1050157"></a><p class="pExT_ExampleTable">Router (config-crypto-ezvpn)# connect manual
+</p></td>
+<td><a name="wp1050148"></a><p class="pB1_Body1">
+Manually establishes and terminates an IPSec VPN tunnel on demand.
+</p>
+<a name="wp1052947"></a><p class="pBu1_Bullet1">
+&#8226;<img src="../../../../../../i/templates/blank.gif" width="19" alt="" height="2" border="0" />The <b class="cKeyword">auto</b> keyword option is the default setting.
+</p>
+</td>
+</tr>
+  <tr align="left" valign="top"><td><a name="wp1050138"></a><p class="pCSN_CellStepnext">
+Step&#160;5&#160;
+</p>
+</td>
+<td><a name="wp1050140"></a><p class="pExT_ExampleTable"><b class="cCN_CmdName">group</b> <em class="cArgument">group-name</em> <b class="cKeyword">key</b> <em class="cArgument">group-key
+</em></p><a name="wp1050231"></a><div class="pExH_ExampleHead">
+Example:
+</div>
+<a name="wp1050221"></a><p class="pExT_ExampleTable">Router (config-crypto-ezvpn)# group unity key 
+preshared
+</p></td>
+<td><a name="wp1050142"></a><p class="pB1_Body1">
+Specifies the group name and key value for the Virtual Private Network (VPN) connection.
+</p>
+</td>
+</tr>
+  <tr align="left" valign="top"><td><a name="wp1050132"></a><p class="pCSN_CellStepnext">
+Step&#160;6&#160;
+</p>
+</td>
+<td><a name="wp1050134"></a><p class="pExT_ExampleTable"><b class="cCN_CmdName">mode</b> {<b class="cKeyword">client</b> | <b class="cKeyword">network-extension</b>}
+</p><a name="wp1050355"></a><div class="pExH_ExampleHead">
+Example:
+</div>
+<a name="wp1050353"></a><p class="pExT_ExampleTable">Router (config-crypto-ezvpn)# mode client
+</p></td>
+<td><a name="wp1050136"></a><p class="pB1_Body1">
+Specifies the VPN mode of operation of the router.
+</p>
+</td>
+</tr>
+  <tr align="left" valign="top"><td><a name="wp1050364"></a><p class="pCSN_CellStepnext">
+Step&#160;7&#160;
+</p>
+</td>
+<td><a name="wp1050366"></a><p class="pExT_ExampleTable"><b class="cCN_CmdName">peer</b> {<em class="cArgument">ipaddress</em> | <em class="cArgument">hostname</em>}
+</p><a name="wp1050399"></a><div class="pExH_ExampleHead">
+Example:
+</div>
+<a name="wp1050392"></a><p class="pExT_ExampleTable">Router (config-crypto-ezvpn)# peer 10.10.10.10
+</p></td>
+<td><a name="wp1050368"></a><p class="pB1_Body1">
+Sets the peer IP address or host name for the VPN connection.
+</p>
+<a name="wp1050454"></a><p class="pBu1_Bullet1">
+&#8226;<img src="../../../../../../i/templates/blank.gif" width="19" alt="" height="2" border="0" />A hostname can be specified only when the router has a DNS server available for host-name resolution.
+</p>
+<a name="wp1052954"></a><p class="pBu1_Bullet1">
+&#8226;<img src="../../../../../../i/templates/blank.gif" width="19" alt="" height="2" border="0" />This command can be repeated multiple times.
+</p>
+</td>
+</tr>
+</table>
+</div>
+<h3 class="p_H_Head4">
+<span style="color: Black; font-style: normal; font-weight: normal"></span>
+</h3>
+
+<a name="Verifying_That_DPD_Is_Enabled"> </a>
+
+<a name="wp1049827"></a><a name="wpxref33674"></a><h3 class="p_H_Head2">
+Verifying That DPD Is Enabled
+</h3>
+<a name="wp1043765"></a><p class="pB1_Body1">
+DPD allows the router to clear the IKE state when a peer becomes unreachable. If DPD is enabled and the peer is unreachable for some time, you can use the <b class="cBold">clear crypto session</b> command to manually clear IKE and IPSec SAs.
+</p>
+<a name="wp1051304"></a><p class="pB1_Body1">
+The <b class="cBold">debug crypto isakmp</b> command can be used to verify that DPD is enabled.
+</p>
+
+<a name="SUMMARY_STEPS"> </a>
+
+<a name="wp1050929"></a><h3 class="p_H_Head4">
+SUMMARY STEPS
+</h3>
+<a name="wp1050955"></a><p class="pNF_NumFirst">
+<b>	1.	</b><img src="../../../../../../i/templates/blank.gif" width="10" alt="" height="2" border="0" /><b class="cCN_CmdName">enable</b>
+</p>
+<a name="wp1053061"></a><p class="pNN_NumNext">
+<b>	2.	</b><img src="../../../../../../i/templates/blank.gif" width="10" alt="" height="2" border="0" /><b class="cCN_CmdName">clear crypto session</b> [<b class="cKeyword">local</b> <em class="cArgument">ip-address</em> [<b class="cKeyword">port</b> <em class="cArgument">local-port</em>]] [<b class="cKeyword">remote</b> <em class="cArgument">ip-address</em> [<b class="cKeyword">port</b> <em class="cArgument">remote-port</em>]] | [<b class="cKeyword">fvrf</b> <em class="cArgument">vrf-name</em>] [<b class="cKeyword">ivrf</b> <em class="cArgument">vrf-name</em>] 
+</p>
+<a name="wp1053062"></a><p class="pNN_NumNext">
+<b>	3.	</b><img src="../../../../../../i/templates/blank.gif" width="10" alt="" height="2" border="0" /><b class="cCN_CmdName">debug crypto</b> <b class="cKeyword">isakmp</b>
+</p>
+
+<a name="DETAILED_STEPS"> </a>
+
+<a name="wp1050941"></a><h3 class="p_H_Head4">
+DETAILED STEPS<span style="color: Black; font-style: normal; font-weight: normal"></span></h3>
+<div align="left">
+<table class="steptable" border="1" cellpadding="3" cellspacing="0" width="80%" bordercolor="#808080" id="wp1050984table1050982">
+  <caption></caption>
+  <tr align="left" valign="top"><td><a name="wp1050984"></a><p class="pCSF_CellStepFirst">
+Step&#160;1&#160;
+</p>
+</td>
+<td><a name="wp1050986"></a><p class="pExT_ExampleTable"><b class="cCN_CmdName">enable
+</b></p><a name="wp1050987"></a><div class="pExH_ExampleHead">
+Example:
+</div>
+<a name="wp1050988"></a><p class="pExT_ExampleTable">Router&gt; enable
+</p></td>
+<td><a name="wp1050990"></a><p class="pB1_Body1">
+Enables privileged EXEC mode. 
+</p>
+<a name="wp1050991"></a><p class="pBu1_Bullet1">
+&#8226;<img src="../../../../../../i/templates/blank.gif" width="19" alt="" height="2" border="0" />Enter your password if prompted.
+</p>
+</td>
+</tr>
+  <tr align="left" valign="top"><td><a name="wp1051038"></a><p class="pCSN_CellStepnext">
+Step&#160;2&#160;
+</p>
+</td>
+<td><a name="wp1051040"></a><p class="pExT_ExampleTable"><b class="cCN_CmdName">clear crypto session</b> [<b class="cKeyword">local</b> <em class="cArgument">ip-address</em> [<b class="cKeyword">port</b> 
+<em class="cArgument">local-port</em>]] [<b class="cKeyword">remote</b> <em class="cArgument">ip-address</em> [<b class="cKeyword">port</b> 
+<em class="cArgument">remote-port</em>]] | [<b class="cKeyword">fvrf</b> <em class="cArgument">vrf-name</em>] [<b class="cKeyword">ivrf</b> <em class="cArgument">vrf-name</em>]
+</p><a name="wp1051080"></a><div class="pExH_ExampleHead">
+Example:
+</div>
+<a name="wp1051062"></a><p class="pExT_ExampleTable">Router# clear crypto session
+</p></td>
+<td><a name="wp1051042"></a><p class="pB1_Body1">
+Deletes crypto sessions (IPSec and IKE SAs).<span style="color: Black; font-style: normal; font-weight: normal"> </span>
+</p>
+</td>
+</tr>
+  <tr align="left" valign="top"><td><a name="wp1052560"></a><p class="pCSN_CellStepnext">
+Step&#160;3&#160;
+</p>
+</td>
+<td><a name="wp1052562"></a><p class="pExT_ExampleTable"><b class="cCN_CmdName">debug crypto</b> <b class="cKeyword">isakmp
+</b></p><a name="wp1052567"></a><div class="pExH_ExampleHead">
+Example:
+</div>
+<a name="wp1052565"></a><p class="pExT_ExampleTable">Router# debug crypto isakmp
+</p></td>
+<td><a name="wp1052564"></a><p class="pB1_Body1">
+Displays messages about IKE events.
+</p>
+</td>
+</tr>
+</table>
+</div>
+<h3 class="p_H_Head4">
+<span style="color: Black; font-style: normal; font-weight: normal"></span>
+</h3>
+<a name="Configuration_Examples_for_IPSec_Dead_Peer_Detection<br_/>Periodic_Message_Option"> </a>
+
+<a name="wp1027258"></a><a name="wpxref94261"></a><a name="wpmkr1054990"></a><h2 class="p_H_Head1">
+Configuration Examples for IPSec Dead Peer Detection<br />Periodic Message Option
+</h2>
+
+<a name="wp1046790"></a><p class="pB1_Body1">
+This section provides the following configuration examples:
+</p>
+<a name="wp1046793"></a><p class="pBu1_Bullet1">
+&#8226;<img src="../../../../../../i/templates/blank.gif" width="19" alt="" height="2" border="0" /><a href="#wp1051947">Site-to-Site Setup with Periodic DPD Enabled: Example</a>
+</p>
+<a name="wp1052485"></a><p class="pBu1_Bullet1">
+&#8226;<img src="../../../../../../i/templates/blank.gif" width="19" alt="" height="2" border="0" /><a href="#wp1052316">Easy VPN Remote with DPD Enabled: Example</a>
+</p>
+<a name="wp1052497"></a><p class="pBu1_Bullet1">
+&#8226;<img src="../../../../../../i/templates/blank.gif" width="19" alt="" height="2" border="0" /><a href="#wp1027265">Verifying DPD Configuration Using the debug crypto isakmp Command: Example</a>
+</p>
+<a name="wp1052585"></a><p class="pBu1_Bullet1">
+&#8226;<img src="../../../../../../i/templates/blank.gif" width="19" alt="" height="2" border="0" /><a href="#wp1049577">DPD and Cisco&#160;IOS Keepalives Used in Conjunction with Multiple Peers in a Crypto Map: Example</a>
+</p>
+<a name="wp1052656"></a><p class="pBu1_Bullet1">
+&#8226;<img src="../../../../../../i/templates/blank.gif" width="19" alt="" height="2" border="0" /><a href="#wp1052622">DPD Used in Conjunction with Multiple Peers for an Easy VPN Remote: Example</a>
+</p>
+
+<a name="Site-to-Site_Setup_with_Periodic_DPD_Enabled:_Example"> </a>
+
+<a name="wp1051947"></a><a name="wpxref79826"></a><h3 class="p_H_Head2">
+Site-to-Site Setup with Periodic DPD Enabled: Example
+</h3>
+<a name="wp1051951"></a><p class="pB1_Body1">
+The following configurations are for a site-to-site setup with no periodic DPD enabled. The configurations are for the IKE Phase 1 policy and for the IKE preshared key.
+</p>
+<a name="wp1052100"></a><p class="pBl_BlockLabel">
+IKE Phase 1 Policy
+</p>
+<a name="wp1051964"></a><div class="pEx1_Example1">
+<pre>crypto isakmp policy 1
+</pre>
+</div><a name="wp1051965"></a><div class="pEx1_Example1">
+<pre>  encryption 3des
+</pre>
+</div><a name="wp1051966"></a><div class="pEx1_Example1">
+<pre>  authentication pre-share
+</pre>
+</div><a name="wp1051967"></a><div class="pEx1_Example1">
+<pre>  group 2
+</pre>
+</div><a name="wp1052215"></a><div class="pEx1_Example1">
+<pre>!
+</pre>
+</div><a name="wp1051969"></a><p class="pBl_BlockLabel">
+IKE Preshared Key
+</p>
+<a name="wp1051971"></a><div class="pEx1_Example1">
+<pre>crypto isakmp key kd94j1ksldz address 10.2.80.209 255.255.255.0
+</pre>
+</div><a name="wp1052220"></a><div class="pEx1_Example1">
+<pre>crypto isakmp keepalive 10 periodic
+</pre>
+</div><a name="wp1052232"></a><div class="pEx1_Example1">
+<pre>crypto ipsec transform-set esp-3des-sha esp-3des esp-sha-hmac
+</pre>
+</div><a name="wp1052284"></a><div class="pEx1_Example1">
+<pre>crypto map test 1 ipsec-isakmp
+</pre>
+</div><a name="wp1051972"></a><div class="pEx1_Example1">
+<pre>  set peer 10.2.80.209
+</pre>
+</div><a name="wp1051973"></a><div class="pEx1_Example1">
+<pre>  set transform-set esp-3des-sha
+</pre>
+</div><a name="wp1051974"></a><div class="pEx1_Example1">
+<pre>  match address 101
+</pre>
+</div><a name="wp1051975"></a><div class="pEx1_Example1">
+<pre>!
+</pre>
+</div><a name="wp1051977"></a><div class="pEx1_Example1">
+<pre>!
+</pre>
+</div><a name="wp1051978"></a><div class="pEx1_Example1">
+<pre>interface FastEthernet0
+</pre>
+</div><a name="wp1051979"></a><div class="pEx1_Example1">
+<pre>  ip address 10.1.32.14 255.255.255.0
+</pre>
+</div><a name="wp1051980"></a><div class="pEx1_Example1">
+<pre>  speed auto
+</pre>
+</div><a name="wp1051981"></a><div class="pEx1_Example1">
+<pre>  crypto map test
+</pre>
+</div><a name="wp1051982"></a><div class="pEx1_Example1">
+<pre>!
+</pre>
+</div>
+<a name="Easy_VPN_Remote_with_DPD_Enabled:_Example"> </a>
+
+<a name="wp1052316"></a><a name="wpxref71708"></a><h3 class="p_H_Head2">
+Easy VPN Remote with DPD Enabled: Example
+</h3>
+<a name="wp1052332"></a><p class="pB1_Body1">
+The following configuration tells the router to send a periodic DPD message every 30 seconds. If the peer fails to respond to the DPD R_U_THERE message, the router will resend the message every 20 seconds (four transmissions altogether).
+</p>
+<a name="wp1052422"></a><div class="pEx1_Example1">
+<pre>crypto isakmp keepalive 30 20 periodic
+</pre>
+</div><a name="wp1052457"></a><div class="pEx1_Example1">
+<pre>crypto ipsec client ezvpn ezvpn-config
+</pre>
+</div><a name="wp1052423"></a><div class="pEx1_Example1">
+<pre>  connect auto
+</pre>
+</div><a name="wp1052424"></a><div class="pEx1_Example1">
+<pre>  group unity key preshared
+</pre>
+</div><a name="wp1052425"></a><div class="pEx1_Example1">
+<pre>  mode client
+</pre>
+</div><a name="wp1052426"></a><div class="pEx1_Example1">
+<pre>  peer 10.2.80.209
+</pre>
+</div><a name="wp1052429"></a><div class="pEx1_Example1">
+<pre>!
+</pre>
+</div><a name="wp1052430"></a><div class="pEx1_Example1">
+<pre>!
+</pre>
+</div><a name="wp1052431"></a><div class="pEx1_Example1">
+<pre>interface Ethernet0
+</pre>
+</div><a name="wp1052432"></a><div class="pEx1_Example1">
+<pre>  ip address 10.2.3.4 255.255.255.0
+</pre>
+</div><a name="wp1052433"></a><div class="pEx1_Example1">
+<pre>  half-duplex
+</pre>
+</div><a name="wp1052434"></a><div class="pEx1_Example1">
+<pre>  crypto ipsec client ezvpn ezvpn-config inside
+</pre>
+</div><a name="wp1052435"></a><div class="pEx1_Example1">
+<pre>!
+</pre>
+</div><a name="wp1052436"></a><div class="pEx1_Example1">
+<pre>interface FastEthernet0
+</pre>
+</div><a name="wp1052437"></a><div class="pEx1_Example1">
+<pre>  ip address 10.1.32.14 255.255.255.0
+</pre>
+</div><a name="wp1052438"></a><div class="pEx1_Example1">
+<pre>  speed auto
+</pre>
+</div><a name="wp1052404"></a><div class="pEx1_Example1">
+<pre>  crypto ipsec client ezvpn ezvpn-config outside
+</pre>
+</div>
+<a name="Verifying_DPD_Configuration_Using_the_debug_crypto_isakmp_Command:_Example"> </a>
+
+<a name="wp1027265"></a><a name="wpxref15642"></a><h3 class="p_H_Head2">
+Verifying DPD Configuration Using the debug crypto isakmp Command: Example
+</h3>
+<a name="wp1043811"></a><p class="pB1_Body1">
+The following sample output from the <b class="cBold">debug crypto isakmp</b> command verifies that IKE DPD is enabled:
+</p>
+<a name="wp1051409"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:17:14.131: ISAKMP:(0:1:HW:2):IKE_DPD is enabled, initializing timers
+</pre>
+</div><a name="wp1051410"></a><a name="wp1051411"></a><p class="pB1_Body1">
+To see that IKE DPD is enabled (and that the peer supports DPD): when periodic DPD is enabled, you should see the following debug messages at the interval specified by the command:
+</p>
+<a name="wp1051415"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:18:52.107: ISAKMP:(0:1:HW:2): sending packet to 10.2.80.209 my_port 
+</pre>
+</div><a name="wp1051416"></a><div class="pEx1_Example1">
+<pre>500 peer_port 500 (I) QM_IDLE
+</pre>
+</div><a name="wp1051417"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:18:52.107: ISAKMP:(0:1:HW:2):purging node 899852982 *Mar 25 15:18:52.111: 
+ISAKMP:(0:1:HW:2):Input = IKE_MESG_FROM_TIMER, 
+</pre>
+</div><a name="wp1051418"></a><div class="pEx1_Example1">
+<pre>IKE_TIMER_IM_ALIVE
+</pre>
+</div><a name="wp1051419"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:18:52.111: ISAKMP:(0:1:HW:2):Old State = IKE_P1_COMPLETE  New State = 
+</pre>
+</div><a name="wp1051420"></a><div class="pEx1_Example1">
+<pre>IKE_P1_COMPLETE
+</pre>
+</div><div class="pPreformatted"><pre class="pPreformatted">
+<a name="wp1051623"></a><br /></pre></div>
+<a name="wp1051422"></a><p class="pB1_Body1">
+The above message corresponds to sending the DPD R_U_THERE message.
+</p>
+<a name="wp1051425"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:18:52.123: ISAKMP (0:268435457): received packet from 10.2.80.209 
+</pre>
+</div><a name="wp1051426"></a><div class="pEx1_Example1">
+<pre>dport 500 sport 500 Global (I) QM_IDLE
+</pre>
+</div><a name="wp1051427"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:18:52.123: ISAKMP: set new node -443923643 to QM_IDLE *Mar 25 15:18:52.131: 
+ISAKMP:(0:1:HW:2): processing HASH payload. message ID = 
+</pre>
+</div><a name="wp1051428"></a><div class="pEx1_Example1">
+<pre>-443923643
+</pre>
+</div><a name="wp1051429"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:18:52.131: ISAKMP:(0:1:HW:2): processing NOTIFY R_U_THERE_ACK protocol 1
+</pre>
+</div><a name="wp1051430"></a><div class="pEx1_Example1">
+<pre>	spi 0, message ID = -443923643, sa = 81BA4DD4
+</pre>
+</div><a name="wp1051431"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:18:52.135: ISAKMP:(0:1:HW:2): DPD/R_U_THERE_ACK received from peer 
+</pre>
+</div><a name="wp1051432"></a><div class="pEx1_Example1">
+<pre>10.2.80.209, sequence 0x9
+</pre>
+</div><a name="wp1051433"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:18:52.135: ISAKMP:(0:1:HW:2):deleting node -443923643 error FALSE 
+</pre>
+</div><a name="wp1051434"></a><div class="pEx1_Example1">
+<pre>reason "informational (in) state 1"
+</pre>
+</div><a name="wp1051435"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:18:52.135: ISAKMP:(0:1:HW:2):Input = IKE_MESG_FROM_PEER, IKE_INFO_NOTIFY *Mar 
+25 15:18:52.135: ISAKMP:(0:1:HW:2):Old State = IKE_P1_COMPLETE  New State = 
+</pre>
+</div><a name="wp1051436"></a><div class="pEx1_Example1">
+<pre>IKE_P1_COMPLETE
+</pre>
+</div><div class="pPreformatted"><pre class="pPreformatted">
+<a name="wp1051686"></a><br /></pre></div>
+<a name="wp1051438"></a><p class="pB1_Body1">
+The above message corresponds to receiving the acknowledge (ACK) message from the peer.
+</p>
+<a name="wp1051441"></a><div class="pEx1_Example1">
+<pre>Router#
+</pre>
+</div><a name="wp1051442"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:35.335: ISAKMP: set new node -90798077 to QM_IDLE *Mar 25 15:47:35.343: 
+ISAKMP:(0:1:HW:2): sending packet to 10.2.80.209 my_port 
+</pre>
+</div><a name="wp1051443"></a><div class="pEx1_Example1">
+<pre>500 peer_port 500 (I) QM_IDLE
+</pre>
+</div><a name="wp1051444"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:35.343: ISAKMP:(0:1:HW:2):purging node -90798077 *Mar 25 15:47:35.347: 
+ISAKMP:(0:1:HW:2):Input = IKE_MESG_FROM_TIMER, 
+</pre>
+</div><a name="wp1051445"></a><div class="pEx1_Example1">
+<pre>IKE_TIMER_IM_ALIVE
+</pre>
+</div><a name="wp1051446"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:35.347: ISAKMP:(0:1:HW:2):Old State = IKE_P1_COMPLETE  New State = 
+</pre>
+</div><a name="wp1051447"></a><div class="pEx1_Example1">
+<pre>IKE_P1_COMPLETE
+</pre>
+</div><div class="pPreformatted"><pre class="pPreformatted">
+<a name="wp1051448"></a><br /></pre></div>
+<a name="wp1051449"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:36.611: ISAKMP:(0:1:HW:2):purging node 1515050537 *Mar 25 15:47:37.343: 
+ISAKMP:(0:1:HW:2):incrementing error counter on sa: 
+</pre>
+</div><a name="wp1051450"></a><div class="pEx1_Example1">
+<pre>PEERS_ALIVE_TIMER
+</pre>
+</div><a name="wp1051451"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:37.343: ISAKMP: set new node -1592471565 to QM_IDLE *Mar 25 15:47:37.351: 
+ISAKMP:(0:1:HW:2): sending packet to 10.2.80.209 my_port 
+</pre>
+</div><a name="wp1051452"></a><div class="pEx1_Example1">
+<pre>500 peer_port 500 (I) QM_IDLE
+</pre>
+</div><a name="wp1051453"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:37.351: ISAKMP:(0:1:HW:2):purging node -1592471565 *Mar 25 15:47:37.355: 
+ISAKMP:(0:1:HW:2):Input = IKE_MESG_FROM_TIMER, 
+</pre>
+</div><a name="wp1051454"></a><div class="pEx1_Example1">
+<pre>IKE_TIMER_PEERS_ALIVE
+</pre>
+</div><a name="wp1051455"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:37.355: ISAKMP:(0:1:HW:2):Old State = IKE_P1_COMPLETE  New State = 
+</pre>
+</div><a name="wp1051456"></a><div class="pEx1_Example1">
+<pre>IKE_P1_COMPLETE
+</pre>
+</div><div class="pPreformatted"><pre class="pPreformatted">
+<a name="wp1051457"></a><br /></pre></div>
+<a name="wp1051458"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:39.355: ISAKMP:(0:1:HW:2):incrementing error counter on sa: 
+</pre>
+</div><a name="wp1051459"></a><div class="pEx1_Example1">
+<pre>PEERS_ALIVE_TIMER
+</pre>
+</div><a name="wp1051460"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:39.355: ISAKMP: set new node 1758739401 to QM_IDLE *Mar 25 15:47:39.363: 
+ISAKMP:(0:1:HW:2): sending packet to 10.2.80.209 my_port 
+</pre>
+</div><a name="wp1051461"></a><div class="pEx1_Example1">
+<pre>500 peer_port 500 (I) QM_IDLE
+</pre>
+</div><a name="wp1051462"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:39.363: ISAKMP:(0:1:HW:2):purging node 1758739401 *Mar 25 15:47:39.367: 
+ISAKMP:(0:1:HW:2):Input = IKE_MESG_FROM_TIMER, 
+</pre>
+</div><a name="wp1051463"></a><div class="pEx1_Example1">
+<pre>IKE_TIMER_PEERS_ALIVE
+</pre>
+</div><a name="wp1051464"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:39.367: ISAKMP:(0:1:HW:2):Old State = IKE_P1_COMPLETE  New State = 
+</pre>
+</div><a name="wp1051465"></a><div class="pEx1_Example1">
+<pre>IKE_P1_COMPLETE
+</pre>
+</div><div class="pPreformatted"><pre class="pPreformatted">
+<a name="wp1051466"></a><br /></pre></div>
+<a name="wp1051467"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:41.367: ISAKMP:(0:1:HW:2):incrementing error counter on sa: 
+</pre>
+</div><a name="wp1051468"></a><div class="pEx1_Example1">
+<pre>PEERS_ALIVE_TIMER
+</pre>
+</div><a name="wp1051469"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:41.367: ISAKMP: set new node 320258858 to QM_IDLE *Mar 25 15:47:41.375: 
+ISAKMP:(0:1:HW:2): sending packet to 10.2.80.209 my_port 
+</pre>
+</div><a name="wp1051470"></a><div class="pEx1_Example1">
+<pre>500 peer_port 500 (I) QM_IDLE
+</pre>
+</div><a name="wp1051471"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:41.379: ISAKMP:(0:1:HW:2):purging node 320258858 *Mar 25 15:47:41.379: 
+ISAKMP:(0:1:HW:2):Input = IKE_MESG_FROM_TIMER, 
+</pre>
+</div><a name="wp1051472"></a><div class="pEx1_Example1">
+<pre>IKE_TIMER_PEERS_ALIVE
+</pre>
+</div><a name="wp1051473"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:41.379: ISAKMP:(0:1:HW:2):Old State = IKE_P1_COMPLETE  New State = 
+</pre>
+</div><a name="wp1051474"></a><div class="pEx1_Example1">
+<pre>IKE_P1_COMPLETE
+</pre>
+</div><div class="pPreformatted"><pre class="pPreformatted">
+<a name="wp1051475"></a><br /></pre></div>
+<a name="wp1051476"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:43.379: ISAKMP:(0:1:HW:2):incrementing error counter on sa: 
+</pre>
+</div><a name="wp1051477"></a><div class="pEx1_Example1">
+<pre>PEERS_ALIVE_TIMER
+</pre>
+</div><a name="wp1051478"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:43.379: ISAKMP: set new node -744493014 to QM_IDLE *Mar 25 15:47:43.387: 
+ISAKMP:(0:1:HW:2): sending packet to 10.2.80.209 my_port 
+</pre>
+</div><a name="wp1051479"></a><div class="pEx1_Example1">
+<pre>500 peer_port 500 (I) QM_IDLE
+</pre>
+</div><a name="wp1051480"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:43.387: ISAKMP:(0:1:HW:2):purging node -744493014 *Mar 25 15:47:43.391: 
+ISAKMP:(0:1:HW:2):Input = IKE_MESG_FROM_TIMER, 
+</pre>
+</div><a name="wp1051481"></a><div class="pEx1_Example1">
+<pre>IKE_TIMER_PEERS_ALIVE
+</pre>
+</div><a name="wp1051482"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:43.391: ISAKMP:(0:1:HW:2):Old State = IKE_P1_COMPLETE  New State = 
+</pre>
+</div><a name="wp1051483"></a><div class="pEx1_Example1">
+<pre>IKE_P1_COMPLETE
+</pre>
+</div><div class="pPreformatted"><pre class="pPreformatted">
+<a name="wp1051484"></a><br /></pre></div>
+<a name="wp1051485"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:45.391: ISAKMP:(0:1:HW:2):incrementing error counter on sa: 
+</pre>
+</div><a name="wp1051486"></a><div class="pEx1_Example1">
+<pre>PEERS_ALIVE_TIMER
+</pre>
+</div><a name="wp1051487"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:45.391: ISAKMP:(0:1:HW:2):peer 10.2.80.209 not responding! *Mar 25 
+15:47:45.391: ISAKMP:(0:1:HW:2):peer does not do paranoid keepalives.
+</pre>
+</div><div class="pPreformatted"><pre class="pPreformatted">
+<a name="wp1051488"></a><br /></pre></div>
+<a name="wp1051489"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:45.391: ISAKMP:(0:1:HW:2):deleting SA reason "peers alive" state 
+</pre>
+</div><a name="wp1051490"></a><div class="pEx1_Example1">
+<pre>(I) QM_IDLE       (peer 10.2.80.209) input queue 0
+</pre>
+</div><a name="wp1051491"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:45.395: ISAKMP: Unlocking IPSEC struct 0x81E5C4E8 from 
+</pre>
+</div><a name="wp1051492"></a><div class="pEx1_Example1">
+<pre>delete_siblings, count 0
+</pre>
+</div><a name="wp1051493"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:45.395: %CRYPTO-5-SESSION_STATUS: Crypto tunnel is DOWN.  Peer 
+</pre>
+</div><a name="wp1051494"></a><div class="pEx1_Example1">
+<pre>10.2.80.209:500       Id: 10.2.80.209
+</pre>
+</div><a name="wp1051495"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:45.399: ISAKMP: set new node -2061951065 to QM_IDLE *Mar 25 15:47:45.411: 
+ISAKMP:(0:1:HW:2): sending packet to 10.2.80.209 my_port 
+</pre>
+</div><a name="wp1051496"></a><div class="pEx1_Example1">
+<pre>500 peer_port 500 (I) QM_IDLE
+</pre>
+</div><a name="wp1051497"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:45.411: ISAKMP:(0:1:HW:2):purging node -2061951065 *Mar 25 15:47:45.411: 
+ISAKMP:(0:1:HW:2):Input = IKE_MESG_FROM_TIMER, 
+</pre>
+</div><a name="wp1051498"></a><div class="pEx1_Example1">
+<pre>IKE_TIMER_PEERS_ALIVE
+</pre>
+</div><a name="wp1051499"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:45.411: ISAKMP:(0:1:HW:2):Old State = IKE_P1_COMPLETE  New State = 
+</pre>
+</div><a name="wp1051500"></a><div class="pEx1_Example1">
+<pre>IKE_DEST_SA
+</pre>
+</div><div class="pPreformatted"><pre class="pPreformatted">
+<a name="wp1051501"></a><br /></pre></div>
+<a name="wp1051502"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:45.415: ISAKMP:(0:1:HW:2):deleting SA reason "peers alive" state 
+</pre>
+</div><a name="wp1051503"></a><div class="pEx1_Example1">
+<pre>(I) QM_IDLE       (peer 10.2.80.209) input queue 0
+</pre>
+</div><a name="wp1051504"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:45.415: ISAKMP: Unlocking IKE struct 0x81E5C4E8 for 
+</pre>
+</div><a name="wp1051505"></a><div class="pEx1_Example1">
+<pre>isadb_mark_sa_deleted(), count 0
+</pre>
+</div><a name="wp1051506"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:45.415: ISAKMP: Deleting peer node by peer_reap for 10.2.80.209: 
+</pre>
+</div><a name="wp1051507"></a><div class="pEx1_Example1">
+<pre>81E5C4E8
+</pre>
+</div><a name="wp1051508"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:45.415: ISAKMP:(0:1:HW:2):deleting node -1067612752 error TRUE 
+</pre>
+</div><a name="wp1051509"></a><div class="pEx1_Example1">
+<pre>reason "peers alive"
+</pre>
+</div><a name="wp1051510"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:45.415: ISAKMP:(0:1:HW:2):deleting node -114443536 error TRUE 
+</pre>
+</div><a name="wp1051511"></a><div class="pEx1_Example1">
+<pre>reason "peers alive"
+</pre>
+</div><a name="wp1051512"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:45.419: ISAKMP:(0:1:HW:2):deleting node 2116015069 error TRUE 
+</pre>
+</div><a name="wp1051513"></a><div class="pEx1_Example1">
+<pre>reason "peers alive"
+</pre>
+</div><a name="wp1051514"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:45.419: ISAKMP:(0:1:HW:2):deleting node -1981865558 error TRUE 
+</pre>
+</div><a name="wp1051515"></a><div class="pEx1_Example1">
+<pre>reason "peers alive"
+</pre>
+</div><a name="wp1051516"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:45.419: ISAKMP:(0:1:HW:2):Input = IKE_MESG_INTERNAL, IKE_PHASE1_DEL *Mar 25 
+15:47:45.419: ISAKMP:(0:1:HW:2):Old State = IKE_DEST_SA  New State = 
+</pre>
+</div><a name="wp1051517"></a><div class="pEx1_Example1">
+<pre>IKE_DEST_SA
+</pre>
+</div><div class="pPreformatted"><pre class="pPreformatted">
+<a name="wp1051518"></a><br /></pre></div>
+<a name="wp1051519"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:45.419: ISAKMP: received ke message (4/1)
+</pre>
+</div><a name="wp1051520"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:45.419: ISAKMP: received ke message (3/1)
+</pre>
+</div><a name="wp1051521"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:45.423: ISAKMP: ignoring request to send delete notify (no ISAKMP 
+</pre>
+</div><a name="wp1051522"></a><div class="pEx1_Example1">
+<pre>sa) src 10.1.32.14 dst 10.2.80.209 for SPI 0x3A7B69BF
+</pre>
+</div><a name="wp1051523"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:45.423: ISAKMP:(0:1:HW:2):deleting SA reason "" state (I) 
+</pre>
+</div><a name="wp1051524"></a><div class="pEx1_Example1">
+<pre>MM_NO_STATE (peer 10.2.80.209) input queue 0
+</pre>
+</div><a name="wp1051525"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:45.423: ISAKMP:(0:1:HW:2):deleting node -1067612752 error FALSE 
+</pre>
+</div><a name="wp1051526"></a><div class="pEx1_Example1">
+<pre>reason ""
+</pre>
+</div><a name="wp1051527"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:45.423: ISAKMP:(0:1:HW:2):deleting node -114443536 error FALSE 
+</pre>
+</div><a name="wp1051528"></a><div class="pEx1_Example1">
+<pre>reason ""
+</pre>
+</div><a name="wp1051529"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:45.423: ISAKMP:(0:1:HW:2):deleting node 2116015069 error FALSE 
+</pre>
+</div><a name="wp1051530"></a><div class="pEx1_Example1">
+<pre>reason ""
+</pre>
+</div><a name="wp1051531"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:45.427: ISAKMP:(0:1:HW:2):deleting node -1981865558 error FALSE 
+</pre>
+</div><a name="wp1051532"></a><div class="pEx1_Example1">
+<pre>reason ""
+</pre>
+</div><a name="wp1051533"></a><div class="pEx1_Example1">
+<pre>*Mar 25 15:47:45.427: ISAKMP:(0:1:HW:2):Input = IKE_MESG_FROM_PEER, IKE_MM_EXCH *Mar 25 
+15:47:45.427: ISAKMP:(0:1:HW:2):Old State = IKE_DEST_SA  New State = 
+</pre>
+</div><a name="wp1051534"></a><div class="pEx1_Example1">
+<pre>IKE_DEST_SA
+</pre>
+</div><div class="pPreformatted"><pre class="pPreformatted">
+<a name="wp1051923"></a><br /></pre></div>
+<a name="wp1051536"></a><p class="pB1_Body1">
+The above message shows what happens when the remote peer is unreachable.  The router sends one DPD R_U_THERE message and four retransmissions before it finally deletes the IPSec and IKE SAs.
+</p>
+
+<a name="DPD_and_Cisco&#160;IOS_Keepalives_Used_in_Conjunction_with_Multiple_Peers_in_a_Crypto_Map:_Example"> </a>
+
+<a name="wp1049577"></a><a name="wpxref24639"></a><h3 class="p_H_Head2">
+DPD and Cisco&#160;IOS Keepalives Used in Conjunction with Multiple Peers in a Crypto Map: Example
+</h3>
+<a name="wp1049595"></a><p class="pB1_Body1">
+The following example shows that DPD and Cisco&#160;IOS keepalives are used in conjunction with multiple peers in a crypto map configuration when IKE will be used to establish the security associations (SAs). In this example, an SA could be set up to the IPSec peer at 10.0.0.1, 10.0.0.2, or 10.0.0.3.
+</p>
+<a name="wp1052597"></a><div class="pEx1_Example1">
+<pre>crypto map green 1 ipsec-isakmp
+</pre>
+</div><a name="wp1052598"></a><div class="pEx1_Example1">
+<pre>  set peer 10.0.0.1
+</pre>
+</div><a name="wp1052599"></a><div class="pEx1_Example1">
+<pre>  set peer 10.0.0.2
+</pre>
+</div><a name="wp1052600"></a><div class="pEx1_Example1">
+<pre>  set peer 10.0.0.3
+</pre>
+</div><a name="wp1052601"></a><div class="pEx1_Example1">
+<pre>  set transform-set txfm
+</pre>
+</div><a name="wp1052590"></a><div class="pEx1_Example1">
+<pre>  match address 101
+</pre>
+</div>
+<a name="DPD_Used_in_Conjunction_with_Multiple_Peers_for_an_Easy_VPN_Remote:_Example"> </a>
+
+<a name="wp1052622"></a><a name="wpxref66007"></a><h3 class="p_H_Head2">
+DPD Used in Conjunction with Multiple Peers for an Easy VPN Remote: Example
+</h3>
+<a name="wp1052626"></a><p class="pB1_Body1">
+The following example shows that DPD is used in conjunction with multiple peers in an Easy VPN remote configuration. In this example, an SA could be set up to the IPSec peer at 10.10.10.10, 10.2.2.2, or 10.3.3.3.
+</p>
+<a name="wp1052636"></a><div class="pEx1_Example1">
+<pre>crypto ipsec client ezvpn ezvpn-config
+</pre>
+</div><a name="wp1052637"></a><div class="pEx1_Example1">
+<pre>  connect auto
+</pre>
+</div><a name="wp1052638"></a><div class="pEx1_Example1">
+<pre>  group unity key preshared
+</pre>
+</div><a name="wp1052639"></a><div class="pEx1_Example1">
+<pre>  mode client
+</pre>
+</div><a name="wp1052640"></a><div class="pEx1_Example1">
+<pre>  peer 10.10.10.10
+</pre>
+</div><a name="wp1052641"></a><div class="pEx1_Example1">
+<pre>  peer 10.2.2.2
+</pre>
+</div><a name="wp1052633"></a><div class="pEx1_Example1">
+<pre>  peer 10.3.3.3
+</pre>
+</div><a name="Additional_References"> </a>
+
+<a name="wp1027269"></a><a name="wpxref89340"></a><a name="wpxref64500"></a><a name="wpmkr1054991"></a><h2 class="p_H_Head1">
+Additional References
+</h2>
+
+<a name="wp1043859"></a><p class="pB1_Body1">
+The following sections provide references related to IPSec Dead Peer Detection Periodic Message Option.
+</p>
+
+<a name="Related_Documents"> </a>
+
+<a name="wp1027293"></a><a name="wpxref12973"></a><h3 class="p_H_Head2">
+Related Documents</h3>
+<div align="left">
+<table border="1" cellpadding="2" cellspacing="0" width="80%" bordercolor="#808080"
+ id="wp1031317table1031315">
+
+
+ <caption></caption>
+
+  <tr align="left" valign="bottom">    <th scope="col"><a name="wp1031317"></a><div class="pCH1_CellHead1">
+Related Topic
+</div>
+</th>
+    <th scope="col"><a name="wp1031319"></a><div class="pCH1_CellHead1">
+Document Title
+</div>
+</th>
+</tr>
+  <tr align="left" valign="top"><td><a name="wp1031321"></a><p class="pB1_Body1">
+Configuring IPSec
+</p>
+</td>
+<td><a name="wp1031323"></a><p class="pB1_Body1">
+<span style="color: Black; font-style: normal; font-weight: normal">&quot;</span><a href="http://www.cisco.com/univercd/cc/td/doc/product/software/ios123/123cgcr/sec_vcg.htm#999534">IP Security and Encryption</a><span style="color: Black; font-style: normal; font-weight: normal">&quot; section of </span><em class="cEmphasis">Cisco IOS Security Configuration Guide</em>
+</p>
+</td>
+</tr>
+  <tr align="left" valign="top"><td><a name="wp1031325"></a><p class="pB1_Body1">
+IPSec commands
+</p>
+</td>
+<td><a name="wp1031327"></a><p class="pB1_Body1">
+<a href="http://www.cisco.com/univercd/cc/td/doc/product/software/ios124/124tcr/tsec_r/index.htm ">Cisco IOS Security Command Reference</a><span style="color: Black; font-style: normal; font-weight: normal">, Release 12.4 T</span>
+</p>
+</td>
+</tr>
+</table>
+</div><br />
+<h3 class="p_H_Head2">
+
+</h3>
+
+<a name="Standards"> </a>
+
+<a name="wp1032406"></a><h3 class="p_H_Head2">
+Standards</h3>
+<div align="left">
+<table border="1" cellpadding="2" cellspacing="0" width="80%" bordercolor="#808080"
+ id="wp1031419table1031414">
+
+
+ <caption></caption>
+
+  <tr align="left" valign="bottom">    <th scope="col"><a name="wp1031419"></a><div class="pCH1_CellHead1">
+Standards
+</div>
+</th>
+    <th scope="col"><a name="wp1031421"></a><div class="pCH1_CellHead1">
+Title
+</div>
+</th>
+</tr>
+  <tr align="left" valign="top"><td><a name="wp1031423"></a><p class="pB1_Body1">
+No new or modified standards are supported by this feature.
+</p>
+</td>
+<td><a name="wp1031425"></a><p class="pB1_Body1">
+&#8212;
+</p>
+</td>
+</tr>
+</table>
+</div><br />
+<h3 class="p_H_Head2">
+
+</h3>
+
+<a name="MIBs"> </a>
+
+<a name="wp1032445"></a><a name="wpxref76148"></a><h3 class="p_H_Head2">
+MIBs</h3>
+<div align="left">
+<table border="1" cellpadding="2" cellspacing="0" width="80%" bordercolor="#808080"
+ id="wp1031475table1031470">
+
+
+ <caption></caption>
+
+  <tr align="left" valign="bottom">    <th scope="col"><a name="wp1031475"></a><div class="pCH1_CellHead1">
+MIBs
+</div>
+</th>
+    <th scope="col"><a name="wp1031477"></a><div class="pCH1_CellHead1">
+MIBs Link
+</div>
+</th>
+</tr>
+  <tr align="left" valign="top"><td><a name="wp1031479"></a><p class="pB1_Body1">
+No new or modified MIBs are supported by this feature.
+</p>
+</td>
+<td><a name="wp1040183"></a><p class="pB1_Body1">
+To locate and download MIBs for selected platforms, Cisco&#160;IOS releases, and feature sets, use Cisco&#160;MIB Locator found at the following URL:
+</p>
+<a name="wp1040185"></a><p class="pB1_Body1">
+<a href="http://www.cisco.com/go/mibs">http://www.cisco.com/go/mibs</a> 
+</p>
+</td>
+</tr>
+</table>
+</div><br />
+<h3 class="p_H_Head2">
+
+</h3>
+
+<a name="RFCs"> </a>
+
+<a name="wp1034865"></a><a name="wpxref36742"></a><h3 class="p_H_Head2">
+RFCs</h3>
+<div align="left">
+<table border="1" cellpadding="2" cellspacing="0" width="80%" bordercolor="#808080"
+ id="wp1032228table1032223">
+
+
+ <caption></caption>
+
+  <tr align="left" valign="bottom">    <th scope="col"><a name="wp1032228"></a><div class="pCH1_CellHead1">
+RFCs
+</div>
+</th>
+    <th scope="col"><a name="wp1032230"></a><div class="pCH1_CellHead1">
+Title
+</div>
+</th>
+</tr>
+  <tr align="left" valign="top"><td><a name="wp1032232"></a><p class="pB1_Body1">
+DPD conforms to the Internet draft &quot;draft-ietf-ipsec-dpd-04.txt,&quot; which is pending publication as an Informational RFC (a number has not yet been assigned).
+</p>
+</td>
+<td><a name="wp1032234"></a><p class="pB1_Body1">
+<em class="cEmphasis">&#8212;</em>
+</p>
+</td>
+</tr>
+</table>
+</div><br />
+<h3 class="p_H_Head2">
+
+</h3>
+
+<a name="Technical_Assistance"> </a>
+
+<a name="wp1027357"></a><a name="wpxref84887"></a><h3 class="p_H_Head2">
+Technical Assistance<span style="color: Black; font-style: normal; font-weight: normal"></span></h3>
+<div align="left">
+<table border="1" cellpadding="2" cellspacing="0" width="80%" bordercolor="#808080"
+ id="wp1033557table1033555">
+
+
+ <caption></caption>
+
+  <tr align="left" valign="bottom">    <th scope="col"><a name="wp1033557"></a><div class="pCH1_CellHead1">
+Description
+</div>
+</th>
+    <th scope="col"><a name="wp1033559"></a><div class="pCH1_CellHead1">
+Link
+</div>
+</th>
+</tr>
+  <tr align="left" valign="top"><td><a name="wp1057604"></a><p class="pB1_Body1">
+The Cisco Support website provides extensive online resources, including documentation and tools for troubleshooting and resolving technical issues with Cisco products and technologies.
+</p>
+<a name="wp1057605"></a><p class="pB1_Body1">
+To receive security and technical information about your products, you can subscribe to various services, such as the Product Alert Tool (accessed from Field Notices), the Cisco Technical Services Newsletter, and Really Simple Syndication (RSS) Feeds.
+</p>
+<a name="wp1033561"></a><p class="pB1_Body1">
+Access to most tools on the Cisco Support website requires a Cisco.com user ID and password.
+</p>
+</td>
+<td><a name="wp1033563"></a><p class="pB1_Body1">
+<a href="http://www.cisco.com/public/support/tac/home.shtml">http://www.cisco.com/techsupport </a>
+</p>
+</td>
+</tr>
+</table>
+</div><br />
+<h3 class="p_H_Head2">
+<span style="color: Black; font-style: normal; font-weight: normal"></span>
+</h3>
+<a name="Command_Reference"> </a>
+
+<a name="wp1032378"></a><a name="wpxref41010"></a><a name="wpmkr1054992"></a><h2 class="p_H_Head1">
+Command Reference
+</h2>
+
+<a name="wp1027360"></a><p class="pB1_Body1">
+This section documents only commands that are new or modified. 
+</p>
+<a name="wp1046827"></a><p class="pBu1_Bullet1">
+&#8226;<img src="../../../../../../i/templates/blank.gif" width="19" alt="" height="2" border="0" /><a href="#wp1056959"></a><a href="#wp1057253"><b class="cCN_CmdName">crypto isakmp keepalive</b></a>
+</p>
+
+<a name="crypto_isakmp_keepalive"> </a>
+<a name="wp1057253"></a><a name="wpxref37922"></a><a name="wpmkr1057251"></a><h2 class="pCRC_CmdRefCommand">
+crypto isakmp keepalive
+</h2>
+<a name="wp1057254"></a><p class="pB1_Body1">
+To allow the gateway to send dead peer detection (DPD) messages to the peer, use the <b class="cCN_CmdName">crypto isakmp keepalive </b>command in global configuration mode. To disable keepalives, use the <b class="cBold">no</b> form of this command.
+</p>
+<a name="wp1057255"></a><p class="pCENB_CmdEnv_NoBold"><b class="cCN_CmdName">crypto isakmp keepalive</b> <em class="cArgument">seconds</em> [<em class="cArgument">retries</em>] [<b class="cKeyword">periodic</b> | <b class="cKeyword">on-demand</b>]
+</p><a name="wp1057256"></a><p class="pCE_CmdEnv">no <b style="font-weight: bold" class="cCN_CmdName">crypto isakmp keepalive</b><span style="color: Black; font-style: normal; font-weight: normal"> </span><em style="font-weight: bold" class="cArgument">seconds</em><span style="color: Black; font-style: normal; font-weight: normal"> [</span><em style="font-weight: bold" class="cArgument">retries</em><span style="color: Black; font-style: normal; font-weight: normal">] [</span><b style="font-weight: bold" class="cKeyword">periodic</b><span style="color: Black; font-style: normal; font-weight: normal"> | </span><b style="font-weight: bold" class="cKeyword">on-demand</b><span style="color: Black; font-style: normal; font-weight: normal">]
+</span></p><a name="wp1057277"></a><h3 class="pCRSD_CmdRefSynDesc">
+Syntax Description</h3>
+<div align="left">
+<table border="1" cellpadding="3" cellspacing="0" width="80%" bordercolor="#808080"
+ id="wp1057259table1057257">
+
+
+ <caption></caption>
+
+  <tr align="left" valign="top"><td><a name="wp1057259"></a><p class="pB1_Body1">
+<em class="cArgument">seconds</em>
+</p>
+</td>
+<td><a name="wp1057261"></a><p class="pB1_Body1">
+When the <b class="cKeyword">periodic</b> keyword is used, this argument is the number of seconds between DPD messages; the range is from 10 to 3600 seconds.
+</p>
+<a name="wp1057262"></a><p class="pB1_Body1">
+When the <b class="cKeyword">on-demand</b> keyword is used, this argument is the number of seconds during which traffic is not received from the peer before DPDs are sent if there is data (IPSec) traffic to send; the range is from 10 to 3600 seconds. 
+</p>
+<a name="wp1057263"></a><p class="pNT_NoteTable">
+<b>Note	</b><img src="../../../../../../i/templates/blank.gif" width="1" alt="" height="2" border="0" />If you do not specify a time interval, an error message appears. 
+
+</p>
+</td>
+</tr>
+  <tr align="left" valign="top"><td><a name="wp1057265"></a><p class="pB1_Body1">
+<em class="cArgument">retries </em>
+</p>
+</td>
+<td><a name="wp1057267"></a><p class="pB1_Body1">
+(Optional) Number of seconds between DPD retries if the DPD message fails; the range is from 2 to 60 seconds. If unspecified, the default is 2&#160;seconds.
+</p>
+</td>
+</tr>
+  <tr align="left" valign="top"><td><a name="wp1057269"></a><p class="pB1_Body1">
+<b class="cKeyword">periodic</b>
+</p>
+</td>
+<td><a name="wp1057271"></a><p class="pB1_Body1">
+(Optional) DPD messages are sent at regular intervals.
+</p>
+</td>
+</tr>
+  <tr align="left" valign="top"><td><a name="wp1057273"></a><p class="pB1_Body1">
+<b class="cKeyword">on-demand</b>
+</p>
+</td>
+<td><a name="wp1057275"></a><p class="pB1_Body1">
+(Optional) The default behavior. DPD retries are sent on demand.
+</p>
+<a name="wp1057276"></a><p class="pNT_NoteTable">
+<b>Note	</b><img src="../../../../../../i/templates/blank.gif" width="1" alt="" height="2" border="0" />Because this option is the default, the <b class="cKeyword">on-demand</b> keyword does not appear in configuration output.
+
+</p>
+</td>
+</tr>
+</table>
+</div><br />
+<h3 class="pCRSD_CmdRefSynDesc">
+
+</h3>
+<a name="wp1057278"></a><h3 class="pCRCD_CmdRefCmdDefault">
+Command Default
+</h3>
+<a name="wp1057279"></a><p class="pB1_Body1">
+No DPD messages are sent. 
+</p>
+<a name="wp1057280"></a><h2 class="pCRCM_CmdRefCmdModes">
+Command Modes
+</h2>
+<a name="wp1057281"></a><p class="pB1_Body1">
+Global configuration (config)
+</p>
+<a name="wp1057303"></a><h3 class="pCRCH_CmdRefCmdHist">
+Command History</h3>
+<div align="left">
+<table border="1" cellpadding="3" cellspacing="0" width="80%" bordercolor="#808080"
+ id="wp1057284table1057282">
+
+
+ <caption></caption>
+
+  <tr align="left" valign="bottom">    <th scope="col"><a name="wp1057284"></a><div class="pCH1_CellHead1">
+Release
+</div>
+</th>
+    <th scope="col"><a name="wp1057286"></a><div class="pCH1_CellHead1">
+Modification
+</div>
+</th>
+</tr>
+  <tr align="left" valign="top"><td><a name="wp1057288"></a><p class="pB1_Body1">
+12.2(8)T
+</p>
+</td>
+<td><a name="wp1057290"></a><p class="pB1_Body1">
+This command was introduced.
+</p>
+</td>
+</tr>
+  <tr align="left" valign="top"><td><a name="wp1057292"></a><p class="pB1_Body1">
+12.3(7)T
+</p>
+</td>
+<td><a name="wp1057294"></a><p class="pB1_Body1">
+The <b class="cKeyword">periodic</b> and <b class="cKeyword">on-demand</b> keywords were added.
+</p>
+</td>
+</tr>
+  <tr align="left" valign="top"><td><a name="wp1057296"></a><p class="pB1_Body1">
+12.2(33)SRA
+</p>
+</td>
+<td><a name="wp1057298"></a><p class="pB1_Body1">
+This command was integrated into Cisco&#160;IOS Release 12.2(33)SRA.
+</p>
+</td>
+</tr>
+  <tr align="left" valign="top"><td><a name="wp1057300"></a><p class="pB1_Body1">
+12.2SX
+</p>
+</td>
+<td><a name="wp1057302"></a><p class="pB1_Body1">
+This command is supported in the Cisco 12.2SX family of releases. Support in a 12.2SX release is dependent on your feature set, platform, and platform hardware.
+</p>
+</td>
+</tr>
+</table>
+</div><br />
+<h3 class="pCRCH_CmdRefCmdHist">
+
+</h3>
+<a name="wp1057304"></a><h3 class="pCRUG_CmdRefUseGuide">
+Usage Guidelines
+</h3>
+<a name="wp1057305"></a><p class="pB1_Body1">
+Use the <span style="color: Black; font-style: normal; font-weight: bold">crypto isakmp keepalive </span>command to enable the gateway to send DPD messages to the peer. DPD is a keepalives scheme that allows the router to query the liveliness of its Internet Key Exchange (IKE) peer.
+</p>
+<a name="wp1057306"></a><p class="pB1_Body1">
+Use the <b class="cBold">periodic</b> keyword to configure your router so that DPD messages are &quot;forced&quot; at regular intervals. This forced approach results in earlier detection of dead peers than with the on-demand approach. If you do not configure the periodic option, the router defaults to the on-demand approach.
+</p>
+<div class="Note1B"><img src="../../../../../../i/templates/note.gif" alt="" /></div><hr class="Cautn1table" />
+<a name="wp1057307"></a><p class="pN1_Note1">
+<b>Note	</b><img src="../../../../../../i/templates/blank.gif" width="1" alt="" height="2" border="0" />When the<b class="cBold"> crypto isakmp keepalive</b> command is configured, the Cisco&#160;IOS software negotiates the use of Cisco&#160;IOS keepalives or DPD, depending on which protocol the peer supports.
+</p>
+<hr class="Cautn1table" /><a name="wp1057308"></a><h3 class="pCRE_CmdRefExamples">
+Examples
+</h3>
+<a name="wp1057309"></a><p class="pB1_Body1">
+The following example shows how to configure DPD messages to be sent every 60 seconds and every 5&#160;seconds between retries if the peer does not respond:
+</p>
+<a name="wp1057310"></a><div class="pEx1_Example1">
+<pre>crypto isakmp keepalive 60 5
+</pre>
+</div><div class="pPreformatted"><pre class="pPreformatted">
+<a name="wp1057311"></a><br /></pre></div>
+<a name="wp1057312"></a><p class="pB1_Body1">
+The following example shows that periodic DPD messages are to be sent at intervals of 10 seconds:
+</p>
+<a name="wp1057313"></a><div class="pEx1_Example1">
+<pre><span style="color: Black; font-style: normal; font-weight: normal">crypto isakmp keepalive 10 periodic
+</span></pre>
+</div><div class="pPreformatted"><pre class="pPreformatted">
+<a name="wp1057314"></a><br /></pre></div>
+<a name="wp1057315"></a><p class="pB1_Body1">
+The following example shows that the above periodic behavior is being disabled:
+</p>
+<a name="wp1057316"></a><div class="pEx1_Example1">
+<pre>crypto isakmp keepalive 10 on-demand
+</pre>
+</div><a name="wp1057326"></a><h3 class="pCRRC_CmdRefRelCmd">
+Related Commands</h3>
+<div align="left">
+<table border="1" cellpadding="3" cellspacing="0" width="80%" bordercolor="#808080"
+ id="wp1057319table1057317">
+
+
+ <caption></caption>
+
+  <tr align="left" valign="bottom">    <th scope="col"><a name="wp1057319"></a><div class="pCH1_CellHead1">
+Command
+</div>
+</th>
+    <th scope="col"><a name="wp1057321"></a><div class="pCH1_CellHead1">
+Description
+</div>
+</th>
+</tr>
+  <tr align="left" valign="top"><td><a name="wp1057323"></a><p class="pB1_Body1">
+<b class="cBold">acl</b>
+</p>
+</td>
+<td><a name="wp1057325"></a><p class="pB1_Body1">
+Configures split tunneling.
+</p>
+</td>
+</tr>
+</table>
+</div><br />
+<h3 class="pCRRC_CmdRefRelCmd">
+
+</h3>
+<a name="wp1056959"></a><a name="wpxref75237"></a><a name="wpxref75093"></a><p class="pB1_Body1">
+
+</p>
+<a name="wp1055025"></a><h3 class="pC_Copyright"> 
+</h3>
+<div align="left"><img src="../../../../../../i/000001-100000/65001-70000/65001-66000/65242.jpg" id="wp1056528" border="0" hspace="0" vspace="0"/></div><h3 class="pC_Copyright">
+<br />Any Internet Protocol (IP) addresses used in this document are not intended to be actual addresses. Any examples, command display output, and figures included in the document are shown for illustrative purposes only. Any use of actual IP addresses in illustrative content is unintentional and coincidental.<br /><br />© 2004-2007 Cisco Systems, Inc. All rights reserved.
+</h3>
+</blockquote>
+
+    <hr noshade />
+  </span></div><!--googleoff: index-->
+							<table id="content-right-bottom" align="right" border="0" cellspacing="0" cellpadding="0" summary="">
+								<tr><td valign="top" align="right"></td></tr>
+								<tr><td valign="top" align="right"></td></tr>
+								<tr><td valign="top" align="right"></td></tr>
+								<tr><td valign="top" align="right"></td></tr>
+							</table><!--googleon: index-->
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+        					<!-- End of the actual text content --><!--googleoff: index-->
+							<!-- CDC-DM: Main Col End -->
+							<!-- Search Start -->
+						</div>
+					</td>
+					<td id="framework-column-right">
+
+						<div id="framework-content-right">
+							<!-- Search End -->
+							<!-- CDC-DM: Right Col Start -->
+							<!-- Related Tools Start -->
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							<!-- CDC-DM: Right Col End -->
+							<!-- Related Tools End -->
+							<!-- Footer Start -->
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	</table>
+	</td>
+	</tr>
+</table>
+<!-- $Revision: 1.5 $ -->
+<a name="pagefooter"></a>
+<div id="framework-footer">
+	<div id="footer-nav">
+	
+	<a href="/web/siteassets/contacts/index.html">Contacts</a> | 
+	<a href="http://forums.cisco.com/eforum/servlet/viewsflash?cmd=showform&amp;pollid=cdcweb01!CDC_General_Feedback">Feedback</a> | 
+	<a href="/web/help/index.html">Help</a> | 
+	<a href="/web/siteassets/sitemap/index.html">Site Map</a>
+	
+	</div>
+	<div id="footer-copyright">&copy; 1992-2008 Cisco Systems, Inc. All rights reserved.</div><div id="footer-legal"><a href="/web/siteassets/legal/terms_condition.html">Terms &amp; Conditions</a> | <a href="/web/siteassets/legal/privacy.html">Privacy Statement</a> | <a href="/web/siteassets/legal/privacy.html#cookies">Cookie Policy</a> | <a href="/web/siteassets/legal/trademark.html">Trademarks of Cisco Systems, Inc.</a></div>
+	
+</div>		
+<!--googleon: index-->
+</body>
+</html>
+<!-- Footer End -->

@@ -1,0 +1,20 @@
+signature=`echo $1 | sed -e 's/.wav//'`
+for i in ${signature}_[0123456789][0123456789][0123456789].wav
+do 
+	wavetrace=`echo $i | sed -e 's/.wav//'`
+	play -v8 $i; 
+	echo -n $wavetrace ": "; 
+	read x; 
+
+	if test -z $x
+	then
+		continue;
+	fi
+
+	if test $x = "q"
+	then
+		exit;
+	else
+		snggen -o${x}_${wavetrace} $i -D0
+	fi
+done

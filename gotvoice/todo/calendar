@@ -1,0 +1,14 @@
+in zimbra 5.0.1
+http:// server.domain.com/home/username?fmt=freebusy
+
+from zimbra forum:
+to see the free/busy for other zimbra users, you need to set the IFB search url. This is set in outlook by going to
+tools->options->calendar options->free/busy options
+and setting search location to
+http(s)://<your-server>/service/pubcal/freebusy.ifb?acct=%name%@%server%
+SSL won't work unless you have a valid certificate. If outlook has errors with IFB lookups, entries are written to the event log.
+
+works:
+http://mail/zimbra/home/kevinr/calendar.ifb
+
+http://wiki.zimbra.com/index.php?title=OutlookFreeBusy

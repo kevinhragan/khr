@@ -1,0 +1,64 @@
+// <!-- <mdb:mork:z v="1.4"/> -->
+< <(a=c)> // (f=iso-8859-1)
+  (B8=ns:msg:db:table:kind:pending)(B9=folderName)
+  (BA=ns:msg:db:row:scope:ops:all)(BB=ns:msg:db:table:kind:ops)
+  (BC=retainBy)(BD=daysToKeepHdrs)(BE=numHdrsToKeep)(BF=daysToKeepBodies)
+  (C0=keepUnreadOnly)(C1=useServerDefaults)(C2=cleanupBodies)
+  (C3=imageSize)(C4=junkscore)(C5=keywords)(C6=aclFlags)(C7=current-view)
+  (80=ns:msg:db:row:scope:msgs:all)(81=subject)(82=sender)(83=message-id)
+  (84=references)(85=recipients)(86=date)(87=size)(88=flags)(89=priority)
+  (8A=label)(8B=statusOfset)(8C=numLines)(8D=ccList)(8E=msgThreadId)
+  (8F=threadId)(90=threadFlags)(91=threadNewestMsgDate)(92=children)
+  (93=unreadChildren)(94=threadSubject)(95=numRefs)(96=msgCharSet)
+  (97=ns:msg:db:table:kind:msgs)(98=ns:msg:db:table:kind:thread)
+  (99=ns:msg:db:table:kind:allthreads)
+  (9A=ns:msg:db:row:scope:threads:all)(9B=threadParent)(9C=threadRoot)
+  (9D=msgOffset)(9E=offlineMsgSize)
+  (9F=ns:msg:db:row:scope:dbfolderinfo:all)
+  (A0=ns:msg:db:table:kind:dbfolderinfo)(A1=numMsgs)(A2=numNewMsgs)
+  (A3=folderSize)(A4=expungedBytes)(A5=folderDate)(A6=highWaterKey)
+  (A7=mailboxName)(A8=UIDValidity)(A9=totPendingMsgs)
+  (AA=unreadPendingMsgs)(AB=expiredMark)(AC=version)
+  (AD=fixedBadRefThreading)(AE=onlineName)(AF=LastPurgeTime)(B0=sortType)
+  (B1=sortOrder)(B2=viewFlags)(B3=viewType)(B4=imapFlags)
+  (B5=charSetOverride)(B6=charSet)(B7=ns:msg:db:row:scope:pending:all)>
+<(8F=3fb3)(8C=461b255b)(80=1)>[1:m(^9C^8F)(^8F^8F)(^91^8C)(^92=1)]
+<(C6=4932)(C3=4665e066)>[2:m(^9C^C6)(^8F^C6)(^91^C3)(^92=1)]
+
+<(85=0)(89=admin@gotvoice.com)(8A=)(8B
+    =20070410054917.17C405D8E96@mail.gotvoice.com)(8D=4af)(8E=ffffffff)
+  (BF=security.feedback@level3.com)(C0=abuse@gotvoice.com)(C1
+    =AUP complaint: 209.245.176.14: 87101 : [SpamCop (209.245.176.14\) id:2320\
+327409]Great News for GotVoice Business Users)(C2
+    =20070605221502.D5FDB78B401@scanner3.l3.com)(C4=iso-8859-1)(C5=1a60)>
+{1:^80 {(k^97:c)(s=9)} 
+  [3FB3(^88=1)(^8B=0)(^82^89)(^85^89)(^81=)(^83^8B)(^86^8C)(^89=1)(^87^8D)
+    (^9B^8E)(^8E^8F)]
+  [4932(^88=1)(^8B=0)(^82^BF)(^85^C0)(^81^C1)(^83^C2)(^86^C3)(^89=1)
+    (^96^C4)(^87^C5)(^9B^8E)(^8E^C6)]}
+{3FB3:^80 {(k^98:c)(s=9)1:m } 3FB3 }
+{4932:^80 {(k^98:c)(s=9)2:m } 4932 }
+{FFFFFFFD:^9A {(k^99:c)(s=9)} [3FB3(^94=)]
+  [4932(^94^C1)]}
+
+<(81=spam)(324=882014)(43F=Thu Apr 17 22:24:33 2008)(84=12)(86=ee00)
+  (88=58ac)(C7=2)(323=ef)>
+{1:^9F {(k^A0:c)(s=9)} 
+  [1(^AC=1)(^AD=1)(^AE^81)(^88^324)(^A7^81)(^AF^43F)(^A9=0)(^B0=12)
+    (^B1=1)(^B2=0)(^B3=0)(^B4^86)(^A8^88)(^A1=2)(^C6=ef)]}
+
+@$${1{@
+<(440=Fri Apr 18 06:24:34 2008)>
+[1:^9F(^AF^440)]
+@$$}1}@
+
+@$${2{@
+@$$}2}@
+
+@$${4{@
+<(441=Fri Apr 18 14:24:36 2008)>
+[1:^9F(^AF^441)]
+@$$}4}@
+
+@$${5{@
+@$$}5}@

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This is a generated file. Do not alter this file!-->
+<java xmlns="http://openoffice.org/2004/java/framework/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<enabled xsi:nil="true"/>
+<userClassPath xsi:nil="true"/>
+<vmParameters xsi:nil="true"/>
+<jreLocations xsi:nil="true"/>
+<javaInfo xsi:nil="false" vendorUpdate="2004-01-30" autoSelect="true">
+<vendor>Free Software Foundation, Inc.</vendor>
+<location>file:///usr</location>
+<version>1.4.2</version>
+<features>0</features>
+<requirements>0</requirements>
+<vendorData>660069006C0065003A002F002F002F007500730072002F006C00690062002F006C0069006200670063006A002E0073006F002E003700</vendorData>
+</javaInfo>
+</java>

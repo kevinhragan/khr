@@ -1,0 +1,7 @@
+add kevinr user
+edit bigger.cfg on nagios
+setup nrpe
+install cfengine code and run
+edit cfagent.conf on cfengine: groups, backup
+add to mrtg
+

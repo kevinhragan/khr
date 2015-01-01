@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE cross-domain-policy 
+  SYSTEM "http://www.macromedia.com/xml/dtds/cross-domain-policy.dtd">
+<cross-domain-policy>
+  <allow-access-from domain="www.washingtonpost.com" />
+  <allow-access-from domain="media.washingtonpost.com" />
+  <allow-access-from domain="cdn.washingtonpost.com" />
+  <allow-access-from domain="admin.brightcove.com" />
+  <allow-access-from domain="media08.washingtonpost.com" />
+  <allow-access-from domain="blog.washingtonpost.com" />
+  <allow-access-from domain="blogs.washingtonpost.com" />
+  <allow-access-from domain="newsweek.washingtonpost.com" />
+</cross-domain-policy>

@@ -1,0 +1,9 @@
+for host   
+do     
+    echo $host
+    echo first the root passwd then kevinr passwd
+    ssh -l root $host useradd -u 1100 -g 100 -m kevinr\; passwd kevinr \; chsh -s /bin/bash kevinr
+    ssh  $host mkdir .ssh
+    scp  ~/.ssh/id_rsa.pub $host:.ssh/authorized_keys
+    scp ~/.bash_profile ~/.bashrc $host:
+done

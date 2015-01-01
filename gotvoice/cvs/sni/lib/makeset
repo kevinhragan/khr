@@ -1,0 +1,10 @@
+for i in $*
+do
+	cd $i
+	echo $i
+	for j in *.wav
+	do
+		snigen -s2000 -b0.5 -B1.00 $j -D0
+	done
+	cd ..
+done

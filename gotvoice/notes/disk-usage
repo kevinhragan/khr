@@ -1,0 +1,13 @@
+potato
+   19Mar08 2.0T  592G  1.5T  29% /srv
+
+hathor
+   19Mar08 800G  366G  435G  46% /srv
+
+
+server1 
+    20Mar08
+    /dev/sda1              75G  3.9G   71G   6% /
+    /dev/sda4              82G  697M   81G   1% /home
+    /dev/sda3              75G   24G   52G  31% /var
+

@@ -1,0 +1,76 @@
+# ra mysql login
+mysql -u root -p (hawaii)
+
+# rsync ra to web slave
+rsync -az -e ssh --bwlimit=1000 /var/gv/php_520/gvweb2/ root@parsley:/var/www 
+
+useradd -u 1100 -g 100 -m -s /bin/bash kevinr; passwd kevinr
+
+useradd -u 500 -g 100 -m -s /bin/bash gv; passwd gv
+
+# burn a cd on lagoon
+wodim  fs=20m  dev=ATA:1,0,0 filename.iso
+
+# check firewall rules
+(iptables -vn -L; iptables -t nat -vn -L)| awk '!/Chain/ { $1 = ""; $2 = "" } {print}'|diff - iptables.working
+
+# check currency of backups
+ssh atum ls -l /var/gvbackup/*/etc/motd;ssh cairo ls -l /var/gvbackup/*/etc/motd
+
+# zimbra is evil
+# train spam filter
+zmtrainsa localhost kevinr <password> spam spam
+# change zimbra postfix variable
+zmprov modifyServer mail.gotvoice.com zimbraMtaMyNetworks '127.0.0.0/8 10.92.1.0/24 71.121.210.33/32'
+
+# ibackup
+/usr/bin/rsync -rz /var/gvbackup/ gotvoice@rsync.ibackup.com::ibackup
+
+# traffic analysis with tcpdump
+tcpdump  -i ipsec0 -c 1000 |awk '{ if ($3 < $5) { print $3, $5} else { print $5, $3}}'|sort |uniq -c|sort -n
+
+# deleting files from hathor (Aaron)
+find /srv/host1/messages -type f -name "*.22050.mp3" -ctime +30 -print -exec rm {} \; >>removed_files.txt
+echo  /srv/host1/messages/*/trash/* |xargs rm
+
+
+# oldify file so cfengine copy will work
+touch -m -t 0101010101 /etc/sudoers
+
+# set var to proxy downloads thru pepper
+export http_proxy=http://pepper:3128
+
+# nrpe test
+/usr/local/nagios/libexec/check_nrpe -H host -c command
+
+# copy audio cd 
+sudo cdrdao copy --device ATA:1,0,0
+
+# nfs options
+host:/export /mountpoint nfs intr,hard,rsize=8192,wsize=8192
+
+# add backup key on localhost to backup hosts authorized list
+cat /root/.ssh/backup_key.pub |ssh atum cat '>>' .ssh/authorized_keys
+
+# decode time in seconds. python.
+import time
+time.asctime(time.localtime(seconds))
+
+# time nfs activity
+sudo umount mnt; sudo mount hathor:/srv/host1/outbox -o proto=tcp mnt;time cp mnt/greeting*  /tmp/outbox
+
+# make test call from spooler
+gvjob -cs newjob 4256054100 generic_send.sns 2065555555 outbox/gv_welcome.wav
+
+
+
+# heartbeat resource check 
+cl_status rscstatus -m
+# push heartbeated resources to the other box
+/usr/lib/heartbeat/hb_standby all
+
+# ssh tunnel example.  
+ ssh  -L 2024:server1:22 ext-osiris2
+
+hathor - potoato sync
+rsync -az --bwlimit=15000 -e "ssh -p 2222 -l root" /srv/ ext-osiris2:/srv

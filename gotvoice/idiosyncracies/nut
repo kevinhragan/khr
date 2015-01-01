@@ -1,0 +1,11 @@
+2.6.18 kernel installed
+# setting to keep e1000 driver from dropping packets
+ethtool -s eth0 speed 100 duplex half autoneg off
+
+in /etc/mysql/my.cnf:  
+server-id=77
+replicate-ignore-db=mysql
+commented out "bind_address" statement to allow network connections
+
+nagios user a member of mysql group (/etc/group) so nrpe mysql_replication
+can run

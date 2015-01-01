@@ -1,0 +1,787 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+  <title>Kernel Korner - Linux as an Ethernet Bridge</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/sites/linuxjournal.com/themes/linuxjournal/favicon.ico" type="image/x-icon" />
+  <style type="text/css" media="all">@import "/modules/aggregator/aggregator.css";</style>
+<style type="text/css" media="all">@import "/modules/book/book.css";</style>
+<style type="text/css" media="all">@import "/modules/node/node.css";</style>
+<style type="text/css" media="all">@import "/modules/poll/poll.css";</style>
+<style type="text/css" media="all">@import "/modules/system/defaults.css";</style>
+<style type="text/css" media="all">@import "/modules/system/system.css";</style>
+<style type="text/css" media="all">@import "/modules/user/user.css";</style>
+<style type="text/css" media="all">@import "/sites/linuxjournal.com/modules/cck/content.css";</style>
+<style type="text/css" media="all">@import "/sites/linuxjournal.com/modules/cck/fieldgroup.css";</style>
+<style type="text/css" media="all">@import "/sites/linuxjournal.com/modules/diggthis/diggthis.css";</style>
+<style type="text/css" media="all">@import "/modules/comment/comment.css";</style>
+<style type="text/css" media="all">@import "/sites/linuxjournal.com/themes/linuxjournal/style.css";</style>
+  <link rel="stylesheet" type="text/css" href="/sites/linuxjournal.com/themes/linuxjournal/css/pygments.css" />
+  <link rel="stylesheet" type="text/css" href="/sites/linuxjournal.com/themes/linuxjournal/css/magazine.css" />
+  <link rel="stylesheet" type="text/css" href="/sites/linuxjournal.com/themes/linuxjournal/css/forum.css" />
+
+  <!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="/sites/linuxjournal.com/themes/linuxjournal/css/ie6.css" />
+  <![endif]-->
+  <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="/sites/linuxjournal.com/themes/linuxjournal/css/ie7.css" />
+  <![endif]--> 
+
+  <script type="text/javascript" src="/misc/jquery.js"></script>
+<script type="text/javascript" src="/misc/drupal.js"></script>
+  <script src="/sites/linuxjournal.com/themes/linuxjournal/js/ljcustom.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/sites/linuxjournal.com/themes/linuxjournal/js/openads.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body class="not-logged-in ntype-xmlnode">
+  <script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+  <script type="text/javascript">_uacct = "UA-1117794-1"; urchinTracker();</script>
+
+<!-- Start Quantcast tag -->
+<script type="text/javascript"
+src="http://edge.quantserve.com/quant.js"></script>
+<script
+type="text/javascript">_qacct="p-a3K3N6enFe9wA";quantserve();</script>
+<noscript>
+<a href="http://www.quantcast.com/p-a3K3N6enFe9wA"
+target="_blank"></a>
+</noscript>
+<!-- End Quantcast tag -->
+
+
+  <div id="container">
+    <div id="innercontainer">
+
+      <!-- HEADER START ================================================== -->
+      <div id="header">
+        <h1><a href="/" title="Home"></a></h1>
+      
+        <div id="leaderboard-adblock" class="adblock leaderboard-adblock">
+<script language='JavaScript' type='text/javascript'>
+<!--
+phpads_show_ad("http://ads.linuxjournal.com", "8");
+//-->
+</script>
+</div>
+      
+        <div id="header_menubar">
+          
+<ul class="menu">
+<li class="leaf"><a href="/">Home</a></li>
+<li class="expanded"><a href="/topics">Topics</a>
+<ul class="menu">
+<li class="leaf"><a href="/taxonomy/term/28">Audio/Video</a></li>
+<li class="leaf"><a href="/taxonomy/term/18">Community</a></li>
+<li class="leaf"><a href="/taxonomy/term/25">Education</a></li>
+<li class="leaf"><a href="/taxonomy/term/27">Embedded</a></li>
+<li class="leaf"><a href="/taxonomy/term/23">Hardware</a></li>
+<li class="leaf"><a href="/taxonomy/term/19">HOWTOs</a></li>
+<li class="leaf"><a href="/taxonomy/term/30">International</a></li>
+<li class="leaf"><a href="/taxonomy/term/20">Reviews</a></li>
+<li class="leaf"><a href="/taxonomy/term/31">Security</a></li>
+<li class="leaf"><a href="/taxonomy/term/17">Software</a></li>
+<li class="leaf"><a href="/taxonomy/term/21">SysAdmin</a></li>
+<li class="leaf"><a href="/taxonomy/term/24">Webmaster</a></li>
+
+</ul>
+</li>
+<li class="leaf"><a href="/enewsletters">Newsletter</a></li>
+<li class="expanded"><a href="/xstatic/community">Community Resources</a>
+<ul class="menu">
+<li class="leaf"><a href="/xstatic/community/whatislinux">What Is Linux?</a></li>
+<li class="leaf"><a href="/getlinux">How to Get Linux</a></li>
+<li class="leaf"><a href="/supportedhardware">Supported Hardware</a></li>
+<li class="leaf"><a href="/software">Software</a></li>
+<li class="leaf"><a href="/gettinghelp">Getting Help</a></li>
+<li class="leaf"><a href="/xstatic/community/events">Industry Events</a></li>
+
+</ul>
+</li>
+<li class="leaf"><a href="/forum">Forums</a></li>
+<li class="leaf"><a href="http://www.linuxjournalshop.com">Shop</a></li>
+<li class="expanded"><a href="/magazine">Magazine</a>
+<ul class="menu">
+<li class="leaf"><a href="/magazine">Read</a></li>
+<li class="leaf"><a href="/subscriptions">Subscribe</a></li>
+<li class="leaf"><a href="https://secure.linuxjournal.com/allsubs/plj.php?action=login">Renew</a></li>
+<li class="leaf"><a href="/xstatic/subs/customer_service.html">Customer Service</a></li>
+<li class="leaf"><a href="/archivecd">Archive CD</a></li>
+<li class="leaf"><a href="/dlissue">Free Issue</a></li>
+<li class="leaf"><a href="/xstatic/aboutus/FAQ">FAQ</a></li>
+<li class="leaf"><a href="/staff">Masthead</a></li>
+<li class="leaf"><a href="/contact">Write a Letter</a></li>
+<li class="leaf"><a href="/xstatic/author/index">Write for Us</a></li>
+<li class="leaf"><a href="/advertising/">Advertise</a></li>
+
+</ul>
+</li>
+
+</ul>
+                      <a class="button" href="/user/login">Login</a>
+                    <!-- Google CSE Search Box Begins  -->
+<form action="http://www.linuxjournal.com/googlesearch" id="searchbox_014164207538395607518:w82fvojcgcu">
+  <input type="hidden" name="cx" value="014164207538395607518:w82fvojcgcu" />
+  <input type="hidden" name="cof" value="FORID:11" />
+  <input type="text" name="as_q" size="25" />
+  <input type="submit" name="sa" value="Search" />
+</form>
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=searchbox_014164207538395607518%3Aw82fvojcgcu&lang=en"></script>
+<!-- Google CSE Search Box Ends -->
+
+
+        </div>
+    
+                  <div id="header_breadcrumb"><a href="/">Home</a></div>
+              </div>
+      <!-- HEADER END ==================================================== -->
+
+
+
+      <!-- CONTENT START ================================================= -->
+      <div id="content">
+      
+        <!-- CONTENT LEFT -->
+        <div id="content_left">
+          
+          <!-- CONTENT HEADER -->
+                    <!-- END CONTENT HEADER -->
+      
+          <!-- CONTENT BODY -->
+          <div id="content_body">
+                      
+                    
+                    
+                                    <div class="node ntype-xmlnode" id="node-8172">
+  <div class="head">
+
+      <h3>Kernel Korner - Linux as an Ethernet Bridge</h3>
+  
+        <h4>May 26th, 2005 by <a href="/user/801507" title="View user profile.">Jim Robinson</a><span class="taxonomy"> in<ul class="links inline"><li class="first last taxonomy_term_24"><a href="/taxonomy/term/24" rel="tag" title="" class="taxonomy_term_24">Webmaster</a></li>
+</ul></span>    </h4>
+      </div>
+  
+  <div class="content">
+        It passes packets like a bridge and filters like a firewall. Put extra security and versatility in front of any server or device, without reconfiguring it.    <div class="diggthis_button"><script type="text/javascript">
+digg_url = 'http://www.linuxjournal.com/article/8172';
+digg_title = "Kernel Korner - Linux as an Ethernet Bridge";
+digg_bodytext = "";
+
+digg_skin = 'standard';
+</script>
+<script src="http://digg.com/tools/diggthis.js" type="text/javascript"></script></div><div class="article" lang="en"><div class="simplesect" lang="en"><div class="titlepage"><a name="N0xa50890.0xb44b18"></a></div><p>
+Have you ever been asked to secure a router over which you
+did not have administrative control? What about when you are on a
+network you don't own but want to secure the segment are you using?
+A request similar to this one is what brought me to the wonderful
+world of Bridge, the Linux Ethernet bridging project.
+</p><p>
+According to the Bridge Web site:
+</p><div class="blockquote"><blockquote class="blockquote"><p>
+Ethernet bridging is a way to connect networks
+together to form a larger network. The standard for
+bridging is ANSI/IEEE 802.1d. A bridge is a way to
+connect two separate network segments together in a
+protocol-independent way. Packets are forwarded
+based on Ethernet address, rather than IP address
+(like a router). Since forwarding is done at Layer 2,
+all protocols can go transparently through a bridge.
+</p></blockquote></div><p>
+The code currently is maintained by Stephen
+Hemminger for both the Linux 2.4 and 2.6
+kernels. Most modern distributions using the 2.6 series
+kernel have the bridging code built in. For the
+purposes of this article, we are using Fedora
+Core 3, which is built on the 2.6 kernel. If you're stuck
+with the 2.4 kernel, don't despair. Kernel patches are available on the
+Bridge site (see the on-line Resources), so you can play too.
+</p><p>
+The firewall component of the bridging firewall is
+achieved by using another related project called
+ebtables. The ebtables program is a filtering layer
+for a bridging firewall. The filtering connects
+into the Link Layer Ethernet frame field. In
+addition to filtering, you also may manipulate the
+Ethernet MAC addresses. The ebtables code
+also allows iptables rules to function in bridging mode, giving you both
+IP- and MAC-level filters for your firewall.
+</p></div><div class="simplesect" lang="en"><div class="titlepage"><a name="N0xa50890.0xb44dd8"></a>
+What Is a Bridge?</div><p>
+A bridge is a device that links two or more network
+segments that use the same network technologies. The
+topologies may differ, though, so you can go from fiber to
+copper, but the technologies must remain the same.
+In its most simple form, think of a Linux hub. Add as many ports to the box as you
+want, and they all become part of the single
+hub device. What comes in one port goes out all of
+the other ports in the hub fabric, unless you state
+otherwise in the rules. Once your hub is up, you
+can use iptables and ebtables to filter traffic as
+you would any other Linux forwarding system.
+</p></div><div class="simplesect" lang="en"><div class="titlepage"><a name="N0xa50890.0xb44ee0"></a>
+Getting Started</div><p>
+We start out simply by attempting to achieve connectivity between
+a simple two-NIC machine. When we are finished, this
+Linux box should act as a standard hub, passing
+traffic from one port to another as needed. When we
+plug one NIC in to our regular network jack and a
+laptop into the second NIC, we will be able to use
+the network from the laptop as if we were
+connected directly.
+</p><div       class="mediaobject"><img src="/files/linuxjournal.com/linuxjournal/articles/081/8172/8172f1.png" ><div class="caption"><p>
+Figure 1. In this simple network, the Linux system
+acts like an Ethernet hub, passing all traffic.
+</p></div></div><p>
+We want this bridge to be transparent to any device
+plugged in to it. Interestingly enough, beyond the
+ability to connect remotely to the bridge to
+maintain it and check logs, there is no
+requirement to give the bridge an IP address. Of
+course, in today's connected world it makes sense
+to assign an IP address and we do so here.
+</p><p>
+I started with an old box that has been waiting
+for a project such as this. It's an AMD K6-450 with
+256MB of RAM. It has a single 15GB IDE hard drive and
+a single 3Com 10/100MB Ethernet card. I also had a
+spare 3Com 10/100MB Ethernet card that works
+well with Linux, so it is added as the second interface.
+I am going to run only the bridge software, some
+simple firewall rules and perhaps Snort for intrusion
+detection. The traffic volumes are low and I don't
+expect massive amounts of Snort data, so 256MB of RAM
+should suffice. If you're going to be passing gigabit
+traffic and want to sniff live, ramp up the specs of the
+machine considerably.
+</p><p>
+Now install Fedora Core 3, selecting the extras
+you feel are needed. If you work in high-security environments, I
+recommend keeping your software options to the bare
+minimum. You always can grab extras later with YUM if you
+forget something. For now, simply get a working Linux install
+going and make sure that it finds your network cards. You need the
+kernel source and usual compile utilities to make the ebtables code,
+so add those in. Remember to stay secure and remove
+any software you don't need once you place the device
+into production. Once the install completes, reboot
+and log in as root.
+</p><p>
+Now you are ready to create a virtual network device. You can
+call it whatever you want; I went with br0&mdash;the first bridge device:
+
+<pre     class="programlisting">
+#&gt; brctl addbr br0
+</pre>
+</p><p>
+Run <tt  >ifconfig</tt>. Do you see your network interfaces (Listing 1)?
+</p></div><div class="simplesect" lang="en"><div class="titlepage"><a name="N0xa50890.0xb45408"></a></div><div class="sidebar"><p class="title"><b>
+Listing 1. Before configuring the network, check that
+both Ethernet interfaces are up.
+</b></p><pre     class="programlisting">
+#&gt; ifconfig
+
+eth0      Link encap:Ethernet  HWaddr 00:CC:D0:99:EB:26
+          inet6 addr: fe80::2b0:d0ff:fe99:eb26/64 Scope:Link
+          UP BROADCAST RUNNING PROMISC MULTICAST  MTU:1500  Metric:1
+          RX packets:86208855 errors:0 dropped:0 overruns:63 frame:0
+          TX packets:77098217 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:3871506445 (3692.1 Mb)  TX bytes:266311184 (253.9 Mb)
+          Interrupt:5 Base address:0xec00
+
+eth1      Link encap:Ethernet  HWaddr 00:CC:03:D8:3A:1A
+          inet6 addr: fe80::201:3ff:fed8:3a1a/64 Scope:Link
+          UP BROADCAST RUNNING PROMISC MULTICAST  MTU:1500  Metric:1
+          RX packets:77087614 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:85110321 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:264995582 (252.7 Mb)  TX bytes:3672580334 (3502.4 Mb)
+          Interrupt:9 Base address:0xec80
+</pre></div><p>
+In Listing 1, you can see that we have two network cards with
+no IP addresses bound to them. If you have IP addresses assigned to
+the interface, remove them for simplicity's sake. On Fedora, edit the file
+/etc/sysconfig/networking-scripts/ifcfg-X, where X is
+the card identifier. On my system, the two interfaces are eth0 and eth1.
+Delete or comment out the lines that relate to the
+IP address. It is important to make sure the cards are
+on at boot time. Listing 2 shows a basic
+configuration that should work. Don't forget to
+reinitialize networking once you've completed the
+above, using <tt  >service network reload</tt>.
+</p></div><div class="simplesect" lang="en"><div class="titlepage"><a name="N0xa50890.0xb45670"></a></div><div class="sidebar"><p class="title"><b>
+Listing 2. Two Simple Config Files for Network Cards
+with No IP Addresses
+</b></p><pre     class="programlisting">
+/etc/sysconfig/networking-scripts/ifcfg-eth0:
+
+DEVICE=eth0
+ONBOOT=yes
+BOOTPROTO=static
+
+
+/etc/sysconfig/networking-scripts/ifcfg-eth1:
+
+DEVICE=eth1
+ONBOOT=yes
+BOOTPROTO=static
+</pre></div><p>
+Next, tell the system what devices belong to this group, as shown below.
+Also, give the command that actually initializes the virtual device, as
+shown in the last line:
+
+<pre     class="programlisting">
+#&gt; brctl addif br0 eth0
+#&gt; brctl addif br0 eth1
+#&gt; ip link set br0 up
+</pre>
+</p><p>
+In its most basic form, your Linux box now is
+acting like a hub. For the keen ones, you can
+plug in the Ethernet adapters and begin to
+play. The box itself, however, currently is
+passing traffic blindly and does not have an IP
+address assigned to it. I like to be able to
+connect remotely to my devices after I install them,
+so I am going to add an IP address and some routing
+information to the virtual device br0.
+</p><p>
+To add an IP address to the bridge interface, issue:
+
+<pre     class="programlisting">
+#&gt; ip addr add 10.1.1.18/16 brd + dev br0
+</pre>
+</p><p>
+I had to state both the subnet mask (/16) and which bridge device it
+should be assigned to. This becomes important if you have more
+than one virtual device on the machine. I have only the one, but
+the syntax requires it. If you named your bridge device something
+else, you need to state that explicitly here.
+</p><p>
+The last thing to do before you can play
+with your bridge remotely is to configure the routing:
+
+<pre     class="programlisting">
+#&gt; route add default gw 10.1.1.1 dev br0
+</pre>
+</p><p>
+The usual routing rules and commands apply, and for
+all intents and purposes you can use the device
+(br0) as you would any other Linux network interface.
+</p></div><div class="simplesect" lang="en"><div class="titlepage"><a name="N0xa50890.0xb45b40"></a>
+Testing
+</div><p>
+Now that we have everything in place, let's test it
+out. First, let's confirm that all of our
+configurations have taken hold:
+
+<pre     class="programlisting">
+#&gt; brctl show
+bridge name  bridge id          STP enabled  interfaces
+br0          8000.0030843e5aa2  no           eth0
+                                             eth1
+</pre>
+</p><p>
+As you can see above, we have a single bridge
+device called br0 that uses interfaces eth0 and eth1.
+This confirms that we should be in business.
+</p></div><div class="simplesect" lang="en"><div class="titlepage"><a name="N0xa50890.0xb45cf8"></a>
+Installation</div><p>
+Now it's time to do the physical setup. Connect one network card
+to your network switch as you would normally do for
+any other computer. You should see link lights on both ends of the
+link. Connect a desktop or laptop to the other interface on your Linux
+box using a crossover cable. Wait for the link lights to
+come on, count to ten and ping another node on
+your network from your desktop or laptop. You should
+be able to use the network on the other side of
+the Linux hub as if it was attached directly.
+</p></div><div class="simplesect" lang="en"><div class="titlepage"><a name="N0xa50890.0xb45e00"></a>
+Surviving a Reboot</div><p>
+How you set up your install to survive a reboot
+is your choice. A simple way is to add
+all of the commands we have used to /etc/rc.local, which is
+processed at the end of startup. Enter the commands used above
+to this file, and your bridge is functional after startup.
+</p></div><div class="simplesect" lang="en"><div class="titlepage"><a name="N0xa50890.0xb45f08"></a>Firewalling</div><p>
+As with any Linux install that passes or
+forwards traffic, you have the ability to filter the
+stream of information as it passes by. A bridging
+firewall is no different. There are many ways to
+create and maintain firewall configurations. Below, I explain how to use
+the most basic firewall type: deny all, pass some. We want to deny
+everything passing this firewall unless we specifically state that
+something is allowed.
+</p><p>
+This firewall configuration requires you to download and install the ebtables
+user-space tools available from the ebtables Web site (see Resources).
+At the time of this writing, the latest release was
+v2.0.6. Grab a copy of this from one of the many
+mirrors. Do the usual extract and install dance
+without the initial configure step:
+
+<pre     class="programlisting">
+#&gt; tar -xzf ebtables-v2.0.6.tar.gz
+#&gt; cd ebtables-v2.0.6
+#&gt; make
+#&gt; install
+</pre>
+</p><p>
+If all goes well, you should have the ebtables
+command set at your fingertips. Test this by typing
+<tt  >ebtables</tt> at the prompt; you
+should see something similar to this:
+
+<pre     class="programlisting">
+#&gt; ebtables -V
+ebtables v2.0.6 (November 2003)
+</pre>
+</p><p>
+Let's start by making sure iptables is set to accept.
+Remember we're on Fedora Core 3, so we simply can tell
+the service to quit, which does the same thing:
+
+<pre     class="programlisting">
+#&gt; service iptables stop
+#&gt; chkconfig --level 35 iptables off
+</pre>
+</p><p>
+You can do something similar by issuing the flush
+command. List your available chains and then flush
+each of them in turn:
+
+<pre     class="programlisting">
+#&gt; iptables -L
+#&gt; iptables -F INPUT
+#&gt; iptables -F OUTPUT
+#&gt; iptables -F FORWARD
+#&gt; iptables -F RH-Firewall-1-INPUT
+</pre>
+</p><p>
+Now we want to stop all traffic from all areas of our
+network from passing through the firewall. The
+following rules are specific to the network we're
+working with for this example; you need to amend the subnets
+or hosts to reflect your specific requirements:
+
+<pre     class="programlisting">
+
+/sbin/ebtables -A FORWARD -p IPv4 \
+--ip-source 10.2.0.0/16 -j DROP
+/sbin/ebtables -A FORWARD -p IPv4 \
+--ip-source 10.7.0.0/16 -j DROP
+/sbin/ebtables -A FORWARD -p IPv4 \
+--ip-source 10.4.0.0/16 -j DROP
+/sbin/ebtables -A FORWARD -p IPv4 \
+--ip-source 10.5.0.0/16 -j DROP
+/sbin/ebtables -A FORWARD -p IPv4 \
+--ip-source 10.6.0.0/16 -j DROP
+/sbin/ebtables -A FORWARD -p IPv4 \
+--ip-source 10.1.0.0/16 -j DROP
+
+</pre>
+</p><p>
+Those of you familiar with iptables should notice that
+the syntax above is similar. We tell the
+ebtables program that when FORWARDING using the IPv4
+protocol to DROP any packets sourced from the
+10.1.0.0/16 subnet. We then tell it to repeat for the
+rest of the subnets.
+</p><p>
+The next step is to allow the device behind the
+firewall itself. If you do not allow its IP address to pass
+through, nothing works. Also, if you assign an
+IP address to the firewall itself, don't forget to
+allow it as well:
+
+<pre     class="programlisting">
+/sbin/ebtables -I FORWARD 1 -p IPv4 \
+--ip-source 10.1.1.5 -j ACCEPT
+/sbin/ebtables -I FORWARD 1 -p IPv4 \
+--ip-source 10.1.1.18 -j ACCEPT
+</pre>
+</p><p>
+Here, I add the devices on my network that are
+allowed to access my laptop:
+
+<pre     class="programlisting">
+
+/sbin/ebtables -I FORWARD 1 -p IPv4 \
+--ip-source 10.1.10.30 -j ACCEPT
+/sbin/ebtables -I FORWARD 1 -p IPv4 \
+--ip-source 10.1.10.19 -j ACCEPT
+/sbin/ebtables -I FORWARD 1 -p IPv4 \
+--ip-source 10.1.10.87 -j ACCEPT
+
+</pre>
+</p><p>
+To test this, I simply go to a machine listed in the
+ACCEPT rules above and see if I can ping my laptop
+at 10.1.1.5. Now move to a node not listed above&mdash;no
+pings for you!
+</p></div><div class="simplesect" lang="en"><div class="titlepage"><a name="N0xa50890.0xb3cf38"></a>
+Real-World Implementation</div><p>
+Recently, I was called to a customer's site to secure
+a financial server. The request was simple: we need
+a firewall in front of this system but we cannot change
+its IP address. With two NICs and a Linux OS, I was
+able to have a working firewall up and running in a
+few minutes. Installation also was a breeze. I simply used a
+crossover cable that connected the firewall to the
+server and a regular cable from the other
+network card on the firewall to the network jack.
+That was it. No redesign was necessary of any part of the
+existing IP scheme; it truly was plug-and-play. Once
+a few rules were in place to drop all packets unless they
+were from the IP addresses and ports listed as acceptable, the
+project was completed.
+</p><p>
+One of the beautiful aspects of Linux is its
+ability to run many services on one system. Take the
+above example. I quickly firewalled a sensitive
+server, but that was not the end of the project. With
+all the extra time and money we saved using Linux,
+we were able to load Snort on the firewall.
+With a quick hack to the sniffer's config file&mdash;/etc/snort.conf in
+our case&mdash;we told Snort to
+listen to interface br0, and snort immediately began
+to do its stuff on the bridging interface.
+</p><p>
+This is where the true power of the bridging code
+can be felt. Ever had a segment of the network running slow
+but you don't know why? Next time, load a Linux box with Snort and any other sleuthing
+software you like and get the bridge up and running.
+Find your trusty crossover cable and head out
+to the site. Because the bridge acts like a hub, you simply can insert
+your Linux box at any point in the network. As long as you have the
+physical connections, you can drop your box in and
+begin to sniff live in a matter of seconds. The
+latest project we have been working on included
+transparent Squid cache servers that are
+truly transparent requiring zero reconfiguration
+to the IP scheme, clients or browsers. Simply
+insert the Squid box in front of the router and
+redirect all port 80 traffic to the box
+itself and you're done.
+</p><p>
+The ability of Linux to slide transparently into
+existing network infrastructure opens a world of
+new and improved services that the penguin can
+provide. With the ability to place dissimilar
+networking devices into one virtual entity, you
+can use a single device to firewall and monitor
+any aspect of your network. You're only
+limitation is the speed of your hardware and its number of available
+slots.
+</p></div><div class="simplesect" lang="en"><div class="titlepage"><a name="N0xa50890.0xb3d148"></a>
+Acknowledgements</div><p>
+The author sends kudos to the guys and girls that
+wrote the Bridging code and for the authors of the
+ebtables command set for producing stable, usable
+tools and releasing them under the GPL.
+</p><p><span   class="bold"><b>Resources for this article:</b></span>
+<a href="/article/8261">/article/8261</a>.
+</p></div></div>
+<div class="authorblurb"><p>
+Jim Robinson is President of Linux Solutions Provider, Inc.,
+a consulting company based in Macon, Georgia. He enjoys being
+a husband and a dad, playing guitar and, of course, using Linux.
+</p></div>
+
+
+__________________________
+<br />  </div>
+  
+    <div class="links"><ul class="links inline"><li class="first comment_add"><a href="/comment/reply/8172#comment-form" title="Share your thoughts and opinions related to this posting." class="comment_add">Add new comment</a></li>
+<li class="print"><a href="/print/8172" title="Display a printer-friendly version of this page." class="print-page print">Printer-friendly version</a></li>
+<li class="service_links_delicious"><a href="http://del.icio.us/post?url=http%3A%2F%2Fwww.linuxjournal.com%2Farticle%2F8172&amp;title=Kernel+Korner+-+Linux+as+an+Ethernet+Bridge" title="Bookmark this post on del.icio.us." rel="nofollow" class="service_links_delicious"><img src="/sites/linuxjournal.com/modules/service_links/delicious.png" alt="Delicious" /> Delicious</a></li>
+<li class="service_links_digg"><a href="http://digg.com/submit?phase=2&amp;url=http%3A%2F%2Fwww.linuxjournal.com%2Farticle%2F8172&amp;title=Kernel+Korner+-+Linux+as+an+Ethernet+Bridge" title="Digg this post on digg.com." rel="nofollow" class="service_links_digg"><img src="/sites/linuxjournal.com/modules/service_links/digg.png" alt="Digg" /> Digg</a></li>
+<li class="service_links_reddit"><a href="http://reddit.com/submit?url=http%3A%2F%2Fwww.linuxjournal.com%2Farticle%2F8172&amp;title=Kernel+Korner+-+Linux+as+an+Ethernet+Bridge" title="Submit this post on reddit.com." rel="nofollow" class="service_links_reddit"><img src="/sites/linuxjournal.com/modules/service_links/reddit.png" alt="Reddit" /> Reddit</a></li>
+<li class="service_links_newsvine"><a href="http://www.newsvine.com/_tools/seed&amp;save?u=http%3A%2F%2Fwww.linuxjournal.com%2Farticle%2F8172&amp;h=Kernel+Korner+-+Linux+as+an+Ethernet+Bridge" title="Submit this post on newsvine.com." rel="nofollow" class="service_links_newsvine"><img src="/sites/linuxjournal.com/modules/service_links/newsvine.png" alt="Newsvine" /> Newsvine</a></li>
+<li class="last service_links_technorati"><a href="http://technorati.com/cosmos/search.html?url=http%3A%2F%2Fwww.linuxjournal.com%2Farticle%2F8172" title="Search Technorati for links to this post." rel="nofollow" class="service_links_technorati"><img src="/sites/linuxjournal.com/modules/service_links/technorati.png" alt="Technorati" /> Technorati</a></li>
+</ul></div>
+    </div>
+    <div class="contentad">
+    <script language='JavaScript' type='text/javascript'>
+    <!--
+    phpads_show_ad("http://ads.linuxjournal.com", "32");
+    //-->
+  </script>
+  </div>
+  <div id="comments"></div>                      </div>
+      
+          <div class="clear"></div>
+          <!-- END CONTENT BODY -->
+          
+        </div>
+        <!-- END CONTENT LEFT -->
+        
+        <!-- CONTENT RIGHT -->
+        <div id="content_right">
+          <div id="subscribe">
+            <h3>Subscribe now!</h3>
+            
+<ul class="menu">
+<li class="leaf"><a href="/subscriptions" title="Subscribe">Subscribe</a></li>
+<li class="leaf"><a href="https://secure.linuxjournal.com/allsubs/plj.php?action=login" title="Renew your subscription">Renew</a></li>
+<li class="leaf"><a href="/dlissue">Free Issue</a></li>
+<li class="leaf"><a href="/xstatic/subs/customer_service.html">Customer service</a></li>
+
+</ul>
+          </div>
+          
+          <div id="block-block-44" class="block block-block"> 
+    <div class="content">
+    <div id="bigbox-adblock" class="adblock bigbox-adblock">
+<script language='JavaScript' type='text/javascript'>
+<!--
+phpads_show_ad("http://ads.linuxjournal.com", "24");
+//-->
+</script>
+</div>  </div>  
+</div>
+<div id="block-views-breaking_news" class="block block-views"> 
+      <h3>Breaking News</h3>
+    <div class="content">
+    <div class='view view-breaking-news'><div class='view-content view-content-breaking-news'><table>
+ <thead><tr><th class="view-cell-header view-field-node-title"></th><th class="view-cell-header view-field-node-created"></th> </tr></thead>
+<tbody>
+ <tr class="odd"><td class="view-field view-field-node-title"><a href="/content/ads-down-windows-internet">Up With Ads, Down With Windows, Off With the Internet?</a></td><td class="view-field view-field-node-created"><em>17 hours 41 min</em> ago</td> </tr>
+ <tr class="even"><td class="view-field view-field-node-title"><a href="/content/one-router-rule-them-all">One Router to Rule Them All</a></td><td class="view-field view-field-node-created"><em>3 days 23 hours</em> ago</td> </tr>
+ <tr class="odd"><td class="view-field view-field-node-title"><a href="/content/more-monkey-business-microsoft-and-getting-chatty-friendly-skies">More Monkey Business at Microsoft, and Getting Chatty in the Friendly Skies</a></td><td class="view-field view-field-node-created"><em>5 days 13 hours</em> ago</td> </tr>
+ <tr class="even"><td class="view-field view-field-node-title"><a href="/content/music-joins-21st-century-adobe-cozies-linux-and-ibm-lives-sell-another-day">Music Joins the 21st Century, Adobe Cozies Up to Linux, and IBM Lives to Sell Another Day</a></td><td class="view-field view-field-node-created"><em>1 week 1 day</em> ago</td> </tr>
+</tbody></table>
+</div><div class='more-link'><a href="/breaking_news">more</a></div></div>
+  </div>  
+</div>
+<div id="block-views-tech_tip" class="block block-views"> 
+      <h3>Featured Video</h3>
+    <div class="content">
+    <div class='view view-tech-tip'><div class='view-content view-content-tech-tip'><div class="node sticky ntype-video" id="node-1006765">
+  <div class="head">
+
+      <h3><a href="/video/play-windows-games-linux">Play Windows Games on Linux</a></h3>
+  
+      </div>
+  
+  <div class="content">
+            <div class="field field-type-text field-field-small-format-video"><div class="field-items"><div class="field-item"><p><center><a href="/video/play-windows-games-linux"><img src="/images/video/winegames.png" /></a></center></p>
+</div></div></div><p><cite>Linux Journal</cite> Gadget Guy Shawn Powers walks you through how to play Windows games on Linux.</p>
+  </div>
+  
+    <div class="links"><ul class="links inline"><li class="first comment_comments"><a href="/video/play-windows-games-linux#comments" title="Jump to the first comment of this posting." class="comment_comments">4 comments</a></li>
+<li class="last node_read_more"><a href="/video/play-windows-games-linux" title="Read the rest of this posting." class="node_read_more">Read more</a></li>
+</ul></div>
+    </div>
+  </div><div class='more-link'><a href="/video">more</a></div></div>
+  </div>  
+</div>
+<div id="block-views-microblog" class="block block-views"> 
+      <h3>Live From the Field</h3>
+    <div class="content">
+    <div class='view view-microblog'><div class='view-header view-header-microblog'><p>The latest posts from the <cite>Linux Journal</cite> team</p>
+</div>
+<div class='view-content view-content-microblog'><table>
+ <thead><tr><th class="view-cell-header view-field-node-title"></th><th class="view-cell-header view-field-users-name"></th> </tr></thead>
+<tbody>
+ <tr class="odd"><td class="view-field view-field-node-title"><a href="/content/165-linux-apps-running-simultaneously">165 Linux Apps Running Simultaneously</a></td><td class="view-field view-field-users-name"><a href="/user/800391" title="View user profile.">Carlie Fairchild</a></td> </tr>
+ <tr class="even"><td class="view-field view-field-node-title"><a href="/content/revolution-through-software">Revolution Through Software</a></td><td class="view-field view-field-users-name"><a href="/user/800012" title="View user profile.">Phil Hughes</a></td> </tr>
+ <tr class="odd"><td class="view-field view-field-node-title"><a href="/content/dao-open-source-software">The Dao of Open Source Software</a></td><td class="view-field view-field-users-name"><a href="/user/800012" title="View user profile.">Phil Hughes</a></td> </tr>
+ <tr class="even"><td class="view-field view-field-node-title"><a href="/content/linux-product-insider-audiophile-device-olive">Linux Product Insider: Audiophile Device from Olive</a></td><td class="view-field view-field-users-name"><a href="/user/801200" title="View user profile.">James Gray</a></td> </tr>
+ <tr class="odd"><td class="view-field view-field-node-title"><a href="/content/open-source-new-evil">Open Source - the new evil?</a></td><td class="view-field view-field-users-name"><a href="/users/webmistress" title="View user profile.">Webmistress</a></td> </tr>
+</tbody></table>
+</div><div class='more-link'><a href="/microblog">more</a></div></div>
+  </div>  
+</div>
+<div id="block-block-45" class="block block-block"> 
+    <div class="content">
+    <div id="smallbox-adblock" class="adblock smallbox-adblock">
+<script language='JavaScript' type='text/javascript'>
+<!--
+phpads_show_ad("http://ads.linuxjournal.com", "31");
+//-->
+</script>
+</div>
+
+
+  </div>  
+</div>
+<div id="block-block-50" class="block block-block"> 
+    <div class="content">
+    <p><a href="http://www.tuxparty.com" target="_blank"><img src="/images/bannerads/tux4pres.gif" /></a></p>
+  </div>  
+</div>
+<div id="block-block-49" class="block block-block"> 
+    <div class="content">
+    <p><img src="/sites/linuxjournal.com/themes/linuxjournal/img/flickr.png" /><a href="http://www.flickr.com/groups/linuxjournal/pool/" target="_blank">Contribute to the <cite>Linux Journal</cite> Flickr Pool</a><br />
+<img src="/sites/linuxjournal.com/themes/linuxjournal/img/twitter.png" /><a href="http://twitter.com/linuxjournal" target="_blank">Follow <cite>Linux Journal</cite> on Twitter</a><br />
+<img src="/misc/feed.png" /><a href="http://www.linuxjournal.com/rss_feeds" target="_blank">Add <cite>Linux Journal</cite> to your RSS reader</a><br />
+<img src="/sites/linuxjournal.com/themes/linuxjournal/img/facebook.png" /><a href="http://www.facebook.com/pages/Houston-TX/Linux-Journal/10098036614?ref=s" target="_blank">Meet other readers on Facebook</a></p>
+  </div>  
+</div>
+<div id="block-block-41" class="block block-block"> 
+    <div class="content">
+    <div class="first">
+
+  <div class="textad">
+    <script language='JavaScript' type='text/javascript'>
+    <!--
+    openads_show_ad("http://ads.linuxjournal.com", "22");
+    //-->
+    </script>
+  </div>
+
+  <br>
+
+    
+</div>
+
+
+<div class="second">
+ 
+<div class="textad">
+    <a target="_blank" href="http://www.stronghealthmag.com">
+      <h6>Strong Health Magazine</h6>
+      <h4>Your health comes before your computer</h4>
+      <h5>www.stronghealthmag.com</h5>
+    </a>
+  </div>
+
+
+</div>
+  </div>  
+</div>
+        </div>
+        <!-- END CONTENT RIGHT -->
+      
+       <div class="clear"></div>
+      </div>
+      <!-- CONTENT END =================================================== -->
+
+
+
+      <!-- FOOTER START ================================================== -->
+      <div id="footer">
+        
+<ul class="menu">
+<li class="leaf"><a href="/subscriptions" title="Subscribe">Subscribe</a></li>
+<li class="leaf"><a href="/advertising" title="Advertise with us!">Advertise</a></li>
+<li class="leaf"><a href="/xstatic/aboutus" title="Contact us">Contact us</a></li>
+<li class="leaf"><a href="/content/privacy-statement">Privacy statement</a></li>
+<li class="leaf"><a href="mailto:webmaster@linuxjournal.com">Report problems</a></li>
+<li class="leaf"><a href="/rss_feeds">RSS Feeds</a></li>
+
+</ul>
+        <p class="copyright">Copyright &copy; 1994 - 2008 <a href="http://www.linuxjournal.com"><cite>Linux Journal</cite></a>. All rights reserved.</p>
+                <p class="message">
+</p>
+        
+              </div>
+      <!-- FOOTER END ==================================================== -->
+
+          </div>
+  </div>
+</body>
+</html>

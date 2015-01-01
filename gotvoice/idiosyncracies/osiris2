@@ -1,0 +1,5 @@
+root crontab entry:
+3 3 * * * /usr/sbin/ntpdate pool.ntp.org  >/dev/null
+
+server in /etc/nagios/nrpe.cfg set to internal ip
+

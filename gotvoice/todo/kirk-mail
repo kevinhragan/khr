@@ -1,0 +1,8 @@
+fireall sends 139 port 25 to mail server
+test that is ok
+update outside dns to send traffic in on 139
+   a record
+   mx record
+test to eskimo
+ 
+comcast update record

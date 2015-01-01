@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oor:component-data xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" oor:name="Common" oor:package="org.openoffice.Office">
+ <node oor:name="Internal">
+  <prop oor:name="CurrentTempURL" oor:type="xs:string">
+   <value/>
+  </prop>
+ </node>
+ <node oor:name="Misc">
+  <prop oor:name="FirstRun" oor:type="xs:boolean">
+   <value>false</value>
+  </prop>
+ </node>
+ <node oor:name="Filter">
+  <node oor:name="PDF">
+   <node oor:name="Export">
+    <prop oor:name="UseLosslessCompression" oor:type="xs:boolean">
+     <value>true</value>
+    </prop>
+   </node>
+  </node>
+ </node>
+ <node oor:name="History">
+  <node oor:name="List">
+   <node oor:name="h0" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Word 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>error return messages screenshot</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///tmp/error%20return%20messages%20screenshot.doc</value>
+    </prop>
+   </node>
+   <node oor:name="h1" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Word 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>time our screen shot-1</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///tmp/time%20our%20screen%20shot-1.doc</value>
+    </prop>
+   </node>
+   <node oor:name="h2" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Word 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>time our screen shot</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///tmp/time%20our%20screen%20shot.doc</value>
+    </prop>
+   </node>
+   <node oor:name="h3" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Excel 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>IPJustification-1</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///tmp/IPJustification-1.xls</value>
+    </prop>
+   </node>
+   <node oor:name="h4" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Word 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>Scale-Perf_Plan_v0.4</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///tmp/Scale-Perf_Plan_v0.4.doc</value>
+    </prop>
+   </node>
+   <node oor:name="h5" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS PowerPoint 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>My eLife - Guided Tour</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///tmp/My%20eLife%20-%20Guided%20Tour.ppt</value>
+    </prop>
+   </node>
+   <node oor:name="h6" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Word 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>GotVoice-Oceanic Press Releasefinal_gv</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///tmp/GotVoice-Oceanic%20Press%20Releasefinal_gv.doc</value>
+    </prop>
+   </node>
+   <node oor:name="h7" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Excel 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>IP Justification</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///tmp/IP%20Justification.xls</value>
+    </prop>
+   </node>
+   <node oor:name="h8" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Excel 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>expense.9July07</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///home/kevinr/admin/expense.9July07.xls</value>
+    </prop>
+   </node>
+   <node oor:name="h9" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Excel 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>expense.13Oct07</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///home/kevinr/admin/expense.13Oct07.xls</value>
+    </prop>
+   </node>
+   <node oor:name="h10" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Word 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>GotVoice, Inc._000409858_CN</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///tmp/GotVoice,%20Inc._000409858_CN.doc</value>
+    </prop>
+   </node>
+   <node oor:name="h11" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Word 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>GV Net v5.0 Account Pages Spec draft4</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///tmp/GV%20Net%20v5.0%20Account%20Pages%20Spec%20draft4.doc</value>
+    </prop>
+   </node>
+   <node oor:name="h12" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Excel 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>GV Net provider phone status</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///tmp/GV%20Net%20provider%20phone%20status.xls</value>
+    </prop>
+   </node>
+   <node oor:name="h13" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>StarOffice XML (Writer)</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>error return messages screenshot.docx</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///home/kevinr/tmp/error%20return%20messages%20screenshot.docx</value>
+    </prop>
+   </node>
+   <node oor:name="h14" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS PowerPoint 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>gvppt27</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///tmp/gvppt27.ppt</value>
+    </prop>
+   </node>
+   <node oor:name="h15" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>Text (encoded)</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>GV_networks</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///home/kevinr/download/GV_networks.pdf</value>
+    </prop>
+   </node>
+   <node oor:name="h16" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Word 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>GotVoice RIM Release_FINAL 9.28</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///tmp/GotVoice%20RIM%20Release_FINAL%209.28.doc</value>
+    </prop>
+   </node>
+   <node oor:name="h17" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Excel 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>phoneNumbersWhoTranscribe</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///tmp/phoneNumbersWhoTranscribe.xls</value>
+    </prop>
+   </node>
+   <node oor:name="h18" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Word 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>Scheduler re-design mini-spec v0.1</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///tmp/Scheduler%20re-design%20mini-spec%20v0.1.doc</value>
+    </prop>
+   </node>
+   <node oor:name="h19" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Word 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>Yahoo widget-FINAL</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///tmp/Yahoo%20widget-FINAL.doc</value>
+    </prop>
+   </node>
+   <node oor:name="h20" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Excel 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>IPJustification</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///tmp/IPJustification.xls</value>
+    </prop>
+   </node>
+   <node oor:name="h21" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Excel 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>GV Expense Report template</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///tmp/GV%20Expense%20Report%20template.xls</value>
+    </prop>
+   </node>
+   <node oor:name="h22" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Excel 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>GV Employee Contact Info</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///tmp/GV%20Employee%20Contact%20Info.xls</value>
+    </prop>
+   </node>
+   <node oor:name="h23" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Word 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>Call-forwarding_Spec_v0.7</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///tmp/Call-forwarding_Spec_v0.7.doc</value>
+    </prop>
+   </node>
+   <node oor:name="h24" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Word 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>GotVoice, Inc._29-Nov-2007_WL</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///tmp/GotVoice,%20Inc._29-Nov-2007_WL.doc</value>
+    </prop>
+   </node>
+   <node oor:name="h25" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Excel 4.0</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>phoneNumbsAndCountWhoTranscribe</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///tmp/phoneNumbsAndCountWhoTranscribe.xls</value>
+    </prop>
+   </node>
+   <node oor:name="h26" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Excel 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>GV Production Avatars</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///tmp/GV%20Production%20Avatars.xls</value>
+    </prop>
+   </node>
+   <node oor:name="h27" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Word 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>March Launch Release - GV FINAL</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///tmp/March%20Launch%20Release%20-%20GV%20FINAL.doc</value>
+    </prop>
+   </node>
+   <node oor:name="h28" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Word 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>GotVoice_Compose_and_Greeting_APIs_v1.3</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///tmp/GotVoice_Compose_and_Greeting_APIs_v1.3.doc</value>
+    </prop>
+   </node>
+   <node oor:name="h29" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Word 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>XO SIP Guidelines</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///tmp/XO%20SIP%20Guidelines.doc</value>
+    </prop>
+   </node>
+   <node oor:name="h30" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Excel 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>status1-7-2007</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///tmp/status1-7-2007.xls</value>
+    </prop>
+   </node>
+   <node oor:name="h31" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Excel 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>Dashboard 1-08-2007</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///tmp/Dashboard%201-08-2007.xls</value>
+    </prop>
+   </node>
+   <node oor:name="h32" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Excel 4.0</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>sortedPhoneNumbsAndCountWhoTranscribe</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///tmp/sortedPhoneNumbsAndCountWhoTranscribe.xls</value>
+    </prop>
+   </node>
+   <node oor:name="h33" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Excel 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>expense</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///home/kevinr/admin/expense.xls</value>
+    </prop>
+   </node>
+   <node oor:name="h34" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Word 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>Christmas 2006 Adopt a Family list</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///tmp/Christmas%202006%20Adopt%20a%20Family%20list.doc</value>
+    </prop>
+   </node>
+  </node>
+  <node oor:name="PickList">
+   <node oor:name="p0" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Word 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>error return messages screenshot</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///tmp/error%20return%20messages%20screenshot.doc</value>
+    </prop>
+   </node>
+   <node oor:name="p1" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Word 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>time our screen shot</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///tmp/time%20our%20screen%20shot.doc</value>
+    </prop>
+   </node>
+   <node oor:name="p2" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Word 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>time our screen shot-1</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///tmp/time%20our%20screen%20shot-1.doc</value>
+    </prop>
+   </node>
+   <node oor:name="p3" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>StarOffice XML (Writer)</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>error return messages screenshot.docx</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///home/kevinr/tmp/error%20return%20messages%20screenshot.docx</value>
+    </prop>
+   </node>
+   <node oor:name="p4" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Word 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>GotVoice, Inc._29-Nov-2007_WL</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///tmp/GotVoice,%20Inc._29-Nov-2007_WL.doc</value>
+    </prop>
+   </node>
+   <node oor:name="p5" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Excel 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>IP Justification.xls</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///home/kevinr/admin/IP%20Justification.xls</value>
+    </prop>
+   </node>
+   <node oor:name="p6" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Excel 4.0</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>sortedPhoneNumbsAndCountWhoTranscribe</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///tmp/sortedPhoneNumbsAndCountWhoTranscribe.xls</value>
+    </prop>
+   </node>
+   <node oor:name="p7" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Excel 4.0</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>phoneNumbsAndCountWhoTranscribe</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///tmp/phoneNumbsAndCountWhoTranscribe.xls</value>
+    </prop>
+   </node>
+   <node oor:name="p8" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Excel 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>phoneNumbersWhoTranscribe</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///tmp/phoneNumbersWhoTranscribe.xls</value>
+    </prop>
+   </node>
+   <node oor:name="p9" oor:op="replace">
+    <prop oor:name="Filter" oor:type="xs:string">
+     <value>MS Excel 97</value>
+    </prop>
+    <prop oor:name="Password" oor:type="xs:string">
+     <value/>
+    </prop>
+    <prop oor:name="Title" oor:type="xs:string">
+     <value>expense.13Oct07.xls</value>
+    </prop>
+    <prop oor:name="URL" oor:type="xs:string">
+     <value>file:///home/kevinr/admin/expense.13Oct07.xls</value>
+    </prop>
+   </node>
+  </node>
+ </node>
+ <node oor:name="Help">
+  <node oor:name="HelpAgent">
+   <node oor:name="IgnoreList">
+    <node oor:name="URL44207" oor:op="replace">
+     <prop oor:name="Counter" oor:type="xs:int">
+      <value>2</value>
+     </prop>
+     <prop oor:name="Name" oor:type="xs:string">
+      <value>vnd.sun.star.help://simpress/10087?Language=en-US&amp;System=UNIX#bm_id2566032</value>
+     </prop>
+    </node>
+    <node oor:name="URL59557" oor:op="replace">
+     <prop oor:name="Counter" oor:type="xs:int">
+      <value>2</value>
+     </prop>
+     <prop oor:name="Name" oor:type="xs:string">
+      <value>vnd.sun.star.help://scalc/34116?Language=en-US&amp;System=UNIX#bm_id3155354</value>
+     </prop>
+    </node>
+    <node oor:name="URL725" oor:op="replace">
+     <prop oor:name="Counter" oor:type="xs:int">
+      <value>1</value>
+     </prop>
+     <prop oor:name="Name" oor:type="xs:string">
+      <value>vnd.sun.star.help://scalc/34102?Language=en-US&amp;System=UNIX#bm_id3153882</value>
+     </prop>
+    </node>
+    <node oor:name="URL11368" oor:op="replace">
+     <prop oor:name="Counter" oor:type="xs:int">
+      <value>2</value>
+     </prop>
+     <prop oor:name="Name" oor:type="xs:string">
+      <value>vnd.sun.star.help://sdraw/10296?Language=en-US&amp;System=UNIX#bm_id7592030</value>
+     </prop>
+    </node>
+    <node oor:name="URL3166" oor:op="replace">
+     <prop oor:name="Counter" oor:type="xs:int">
+      <value>2</value>
+     </prop>
+     <prop oor:name="Name" oor:type="xs:string">
+      <value>vnd.sun.star.help://scalc/34116?Language=en&amp;System=UNIX</value>
+     </prop>
+    </node>
+    <node oor:name="URL44216" oor:op="replace">
+     <prop oor:name="Counter" oor:type="xs:int">
+      <value>2</value>
+     </prop>
+     <prop oor:name="Name" oor:type="xs:string">
+      <value>vnd.sun.star.help://scalc/34099?Language=en&amp;System=UNIX</value>
+     </prop>
+    </node>
+   </node>
+  </node>
+ </node>
+</oor:component-data>

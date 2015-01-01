@@ -1,0 +1,988 @@
+var xmlHttp
+
+
+
+function getMedia(pageId) {
+	xmlHttp=GetXmlHttpObject()
+	if (xmlHttp==null) {
+		alert ("Browser does not support HTTP Request")
+		return
+	} 
+	var url="loadMedia.php";
+	url=url+"?id=" + pageId;
+	url=url+"&qid="+Math.random();
+		
+	xmlHttp.onreadystatechange=stateChangedGetMedia
+	
+	xmlHttp.open("GET",url,true)
+	xmlHttp.send(null)
+}
+
+function stateChangedGetMedia() {
+	if (xmlHttp.readyState==4 || xmlHttp.readyState=="complete") {
+		window.parent.document.getElementById('MediaFormHolder').innerHTML = xmlHttp.responseText;
+	}
+}
+
+function toggleUploadDisplay(pageId) {
+	xmlHttp=GetXmlHttpObject()
+	if (xmlHttp==null) {
+		alert ("Browser does not support HTTP Request")
+		return
+	} 
+	var url="getMediaCount.php";
+	url=url+"?id=" + pageId;
+	url=url+"&qid="+Math.random();
+		
+	xmlHttp.onreadystatechange=stateChangedToggleUploadDisplay
+	
+	xmlHttp.open("GET",url,true)
+	xmlHttp.send(null)
+}
+
+function stateChangedToggleUploadDisplay() {
+	if (xmlHttp.readyState==4 || xmlHttp.readyState=="complete") {
+		var mCount = xmlHttp.responseText;
+		if (mCount == 0) {
+			window.parent.document.getElementById("uploadHolder").style.display = "block";
+		} else {
+			window.parent.document.getElementById("uploadHolder").style.display = "none";
+
+		}
+	}
+}
+
+function getProfileMedia(pageId) {
+	xmlHttp=GetXmlHttpObject()
+	if (xmlHttp==null) {
+		alert ("Browser does not support HTTP Request")
+		return
+	} 
+	var url="getProfileMedia.php";
+	url=url+"?id=" + pageId;
+	url=url+"&qid="+Math.random();
+		
+	xmlHttp.onreadystatechange=stateChangedGetProfileMedia
+	
+	xmlHttp.open("GET",url,true)
+	xmlHttp.send(null)
+}
+
+function stateChangedGetProfileMedia() {
+	if (xmlHttp.readyState==4 || xmlHttp.readyState=="complete") {
+		window.parent.document.getElementById('MediaFormHolder').innerHTML = xmlHttp.responseText;
+		var pageId = window.parent.document.getElementById("object_id").value
+		toggleUploadDisplay(pageId);
+	}
+}
+
+
+function editExistingMedia(mediaId) {
+	mediaViewDiv = document.getElementById('mediaPreviewView_' + mediaId);
+	mediaEditDiv = document.getElementById('mediaPreviewEdit_' + mediaId);
+	mediaViewDiv.style.display = "none";
+	mediaEditDiv.style.display = "block";
+}
+
+function updateExistingMedia(updateId) {
+	updateObject = document.contributing.objId.value;
+	
+	//updateTitle = document.getElementById('editMediaTitle_' + updateId).value;
+	updateCaption = document.getElementById('editMediaCaption_' + updateId).value;
+	updateCaption = updateCaption.replace(/&/g, "*AMP*");
+	updateCaption = updateCaption.replace(/#/g, "*PND*");
+	
+	
+	updateWidth = document.getElementById('editMediaWidth_' + updateId).value;
+	updateHeight = document.getElementById('editMediaHeight_' + updateId).value;
+	bg_color = document.getElementById('editMediaBgColor_' + updateId).value;
+	bgColorArray = bg_color.split('#');
+	updateBgColor = bgColorArray[(bgColorArray.length - 1)];
+	/*
+	if (document.addObjectForm["editMediaStatus_" + updateId][0].checked) {
+		updateStatus = 0;
+	} else {
+		updateStatus = 1;
+	}
+	*/
+	updateStatus = 1;
+	
+	xmlHttp=GetXmlHttpObject()
+	if (xmlHttp==null) {
+		alert ("Browser does not support HTTP Request")
+		return
+	} 
+	var url="editMedia.php";
+	url=url+"?obj="+updateObject+"&id="+updateId+"&caption="+updateCaption+"&width="+updateWidth+"&height="+updateHeight+"&bgcolor="+updateBgColor+"&status="+updateStatus;
+	url=url+"&qid="+Math.random();
+	
+	xmlHttp.onreadystatechange=stateChangedUpdateMedia
+	
+	xmlHttp.open("GET",url,true)
+	xmlHttp.send(null)
+	
+}
+
+function stateChangedUpdateMedia() {
+	if (xmlHttp.readyState==4 || xmlHttp.readyState=="complete") {
+		document.getElementById('MediaFormHolder').innerHTML = xmlHttp.responseText;
+	}
+}
+
+function removeProfileMedia(removeId) {
+	var answer = confirm("Delete This File?")
+	if (answer) {	
+		xmlHttp=GetXmlHttpObject()
+		if (xmlHttp==null) {
+			alert ("Browser does not support HTTP Request")
+			return
+		} 
+		var url="deleteMedia.php";
+		url=url+"?fileId="+removeId;
+		url=url+"&qid="+Math.random();
+		
+		xmlHttp.onreadystatechange=stateChangedRemoveProfileMedia
+		
+		xmlHttp.open("GET",url,true)
+		xmlHttp.send(null)
+	} else {
+	}
+}
+
+function stateChangedRemoveProfileMedia() {
+	if (xmlHttp.readyState==4 || xmlHttp.readyState=="complete") { 
+		var pageId = window.parent.document.getElementById("object_id").value;
+		getProfileMedia(pageId);
+	}
+}
+
+function removeExistingMedia(removeId) {
+	var answer = confirm("Delete This File?")
+	if (answer) {	
+		xmlHttp=GetXmlHttpObject()
+		if (xmlHttp==null) {
+			alert ("Browser does not support HTTP Request")
+			return
+		} 
+		var url="deleteMedia.php";
+		url=url+"?fileId="+removeId;
+		url=url+"&qid="+Math.random();
+		
+		xmlHttp.onreadystatechange=stateChangedRemoveMedia
+		
+		xmlHttp.open("GET",url,true)
+		xmlHttp.send(null)
+	} else {
+	}
+}
+
+function stateChangedRemoveMedia() {
+	if (xmlHttp.readyState==4 || xmlHttp.readyState=="complete") { 
+		/*
+		mediaId = xmlHttp.responseText
+		mediaDivId = document.getElementById('mediaPreviewView_' + mediaId);
+		mediaDivId.style.display = "none";
+		*/
+		var pageId = document.getElementById("objId").value;
+		getMedia(pageId);
+	}
+}
+
+function rankMedia(objId, dir) {
+	xmlHttp=GetXmlHttpObject()
+	if (xmlHttp==null) {
+		alert ("Browser does not support HTTP Request")
+		return
+	} 
+	var url="editRanksMedia.php";
+	url=url+"?objId="+objId+"&dir="+dir;
+	url=url+"&qid="+Math.random();
+		
+	xmlHttp.onreadystatechange=stateChangedEditMediaRanks
+		
+	xmlHttp.open("GET",url,true)
+	xmlHttp.send(null)
+}
+
+function stateChangedEditMediaRanks() {
+	if (xmlHttp.readyState==4 || xmlHttp.readyState=="complete") { 
+		objDiv = document.getElementById('MediaFormHolder');	
+		objDiv.innerHTML=xmlHttp.responseText
+	}
+}
+
+
+
+
+
+
+
+
+function upload() {
+	var errors = new Array();
+	
+	if (document.getElementById('uploadForm').media.value == "") errors.push("file");
+	
+	if (errors.length > 0) {
+		errorString = errors.join("\n");
+		errorMsg = "please fill in the following values:\n" + errorString;
+		alert(errorMsg);
+	} else {
+		document.getElementById('uploadFormHolder').style.display = "none";
+		document.getElementById('uploading').style.display = "block";
+
+		document.getElementById('uploadForm').submit();
+	}
+}
+
+
+
+
+
+
+function getFlashMovie(movieName) {
+	var isIE = navigator.appName.indexOf("Microsoft") != -1;
+	return (isIE) ? window[movieName] : document[movieName];
+}
+
+var mouseState = "OUT";
+
+function initFlashOver() {
+	mouseState = "OVER";
+	flashOver();
+}
+
+function initFlashOut() {
+	mouseState = "OUT";	
+	setTimeout('flashOver()', 2000);
+}
+
+function flashOver() {
+	/*
+	alert(getFlashMovie("commonsFlash"));
+	alert(document.getElementById("commonsFlash"));
+	getFlashMovie("commonsFlash").sendTextToFlash(mouseState);
+	*/
+	try {
+		document.getElementById("commonsFlash").sendTextToFlash(mouseState);
+	} catch(err) {
+		//flash not loaded
+	}
+}
+
+
+
+
+function selectTopic(topic) {
+	if (topic != '-') {
+		window.location.href = "topic.php?topic="+topic;
+	}
+}
+
+function selectFormat(format) {
+	if (format != '-') {
+		if (format == 'library') {
+			window.location.href = 'library.php';
+		} else {
+			window.location.href = 'format.php?format='+format;
+		}
+	}
+}
+
+function selectOtc(item) {
+	if (item == '-') {
+		window.location.href = 'index.php';
+	}
+}
+
+function toggleOTC() {
+		if (document.getElementById('menu-commons').style.display == 'block') {
+			document.getElementById('menu-commons').style.display = 'none';
+			document.getElementById('commons-triangle').src = 'images/triangle-down.gif';
+		} else {
+			document.getElementById('menu-commons').style.display = 'block';
+			document.getElementById('commons-triangle').src = 'images/triangle-up.gif';
+		}
+}
+
+
+function menuToggle(menuDIV, arrowIMG) {
+		if (document.getElementById(menuDIV).style.display == 'block') {
+			document.getElementById(menuDIV).style.display = 'none';
+			document.getElementById(arrowIMG).src = 'images/triangle-down.gif';
+		} else {
+			document.getElementById(menuDIV).style.display = 'block';
+			document.getElementById(arrowIMG).src = 'images/triangle-up.gif';
+		}
+}
+
+function menuToggle666(menuDIV, arrowIMG) {
+		if (document.getElementById(menuDIV).style.display == 'block') {
+			document.getElementById(menuDIV).style.display = 'none';
+			document.getElementById(arrowIMG).src = 'images/triangle-down666.gif';
+		} else {
+			document.getElementById(menuDIV).style.display = 'block';
+			document.getElementById(arrowIMG).src = 'images/triangle-up666.gif';
+		}
+}
+function menuTogglefff(menuDIV, arrowIMG) {
+		if (document.getElementById(menuDIV).style.display == 'block') {
+			document.getElementById(menuDIV).style.display = 'none';
+			document.getElementById(arrowIMG).src = 'images/triangle-downfff.gif';
+		} else {
+			document.getElementById(menuDIV).style.display = 'block';
+			document.getElementById(arrowIMG).src = 'images/triangle-upfff.gif';
+		}
+}
+
+
+function submitContribution() {
+	document.contributing.action = 'contribute-save.php';
+	document.contributing.submit();
+}
+function editContribution() {
+	document.contributing.action = 'contribute.php';
+	document.contributing.submit();
+}
+
+
+function contributeForm(formatValue) {
+	
+	if ( (formatValue == 'blog') || (formatValue == 'essay')) {
+		document.getElementById('contribute-title').style.display = 'block';
+		document.getElementById('contribute-title-h3').innerHTML = 'Title or Headline';
+		
+		document.getElementById('contribute-name').style.display = 'none';
+		
+		document.getElementById('contribute-organization').style.display = 'none';
+		
+		document.getElementById('contribute-user_location').style.display = 'none';
+		
+		document.getElementById('contribute-uncommon_bio').style.display = 'none';
+		
+		document.getElementById('contribute-affliations').style.display = 'none';
+		
+		document.getElementById('contribute-user_statement_or_field').style.display = 'none';
+		
+		document.getElementById('contribute-article_publication').style.display = 'none';
+		
+		document.getElementById('contribute-author').style.display = 'none';
+		
+		document.getElementById('contribute-publication_date').style.display = 'none';
+		
+		document.getElementById('contribute-citation').style.display = 'none';
+		
+		document.getElementById('contribute-url').style.display = 'none';
+		
+		document.getElementById('contribute-podcastTime').style.display = 'none';
+		
+		document.getElementById('contribute-abstract').style.display = 'block';
+		document.getElementById('contribute-abstract-h3').innerHTML = 'Subtitle (This will appear with the title on all pages)';
+		
+		document.getElementById('contribute-description').style.display = 'block';
+		document.getElementById('contribute-description-h3').innerHTML = 'Body Text';
+		
+		document.getElementById('contribute-recommended').style.display = 'none';
+		
+		document.getElementById('contribute-authorBio').style.display = 'block';
+		document.getElementById('contribute-authorBio-h3').innerHTML = 'Author\'s Bio';
+		
+		document.getElementById('contribute-topics').style.display = 'block';
+		document.getElementById('contribute-tagwords').style.display = 'block';
+		document.getElementById('submit-div').style.display = 'block';
+		
+		document.getElementById('contribute-media').style.display = 'block';
+		
+		
+		
+	
+	} else if (formatValue == 'commons_in_the_news') {
+		document.getElementById('contribute-title').style.display = 'block';
+		document.getElementById('contribute-title-h3').innerHTML = 'Title';
+		
+		document.getElementById('contribute-name').style.display = 'none';
+		
+		document.getElementById('contribute-organization').style.display = 'none';
+		
+		document.getElementById('contribute-user_location').style.display = 'none';
+		
+		document.getElementById('contribute-uncommon_bio').style.display = 'none';
+		
+		document.getElementById('contribute-affliations').style.display = 'none';
+		
+		document.getElementById('contribute-user_statement_or_field').style.display = 'none';
+		
+		document.getElementById('contribute-article_publication').style.display = 'none';
+		
+		document.getElementById('contribute-author').style.display = 'none';
+		
+		document.getElementById('contribute-publication_date').style.display = 'block';
+		
+		document.getElementById('contribute-citation').style.display = 'block';
+		
+		document.getElementById('contribute-url').style.display = 'block';
+		
+		document.getElementById('contribute-podcastTime').style.display = 'none';
+		
+		document.getElementById('contribute-abstract').style.display = 'block';
+		document.getElementById('contribute-abstract-h3').innerHTML = 'Brief Description';
+		
+		document.getElementById('contribute-description').style.display = 'none';
+		
+		document.getElementById('contribute-recommended').style.display = 'none';
+		
+		document.getElementById('contribute-authorBio').style.display = 'none';
+		
+		document.getElementById('contribute-topics').style.display = 'block';
+		document.getElementById('contribute-tagwords').style.display = 'block';
+		document.getElementById('submit-div').style.display = 'block';
+		
+		document.getElementById('contribute-media').style.display = 'block';
+		
+	} else if (formatValue == 'commons_on_the_ground') {
+		document.getElementById('contribute-title').style.display = 'block';
+		document.getElementById('contribute-title-h3').innerHTML = 'Event';
+		
+		document.getElementById('contribute-name').style.display = 'none';
+		
+		document.getElementById('contribute-organization').style.display = 'none';
+		
+		document.getElementById('contribute-user_location').style.display = 'none';
+		
+		document.getElementById('contribute-uncommon_bio').style.display = 'none';
+		
+		document.getElementById('contribute-affliations').style.display = 'none';
+		
+		document.getElementById('contribute-user_statement_or_field').style.display = 'none';
+		
+		document.getElementById('contribute-article_publication').style.display = 'none';
+		
+		document.getElementById('contribute-author').style.display = 'none';
+		
+		document.getElementById('contribute-publication_date').style.display = 'block';
+		
+		document.getElementById('contribute-citation').style.display = 'none';
+		
+		document.getElementById('contribute-url').style.display = 'block';
+		
+		document.getElementById('contribute-podcastTime').style.display = 'none';
+		
+		document.getElementById('contribute-abstract').style.display = 'block';
+		document.getElementById('contribute-abstract-h3').innerHTML = 'Brief Description';
+		
+		document.getElementById('contribute-description').style.display = 'none';
+		
+		document.getElementById('contribute-recommended').style.display = 'none';
+		
+		document.getElementById('contribute-authorBio').style.display = 'none';
+		
+		document.getElementById('contribute-topics').style.display = 'block';
+		document.getElementById('contribute-tagwords').style.display = 'block';
+		document.getElementById('submit-div').style.display = 'block';
+		
+		document.getElementById('contribute-media').style.display = 'block';
+		
+		
+	} else if (formatValue == 'library') {
+		document.getElementById('select-library-format').style.display = 'block';
+		
+		document.getElementById('contribute-title').style.display = 'none';
+		document.getElementById('contribute-name').style.display = 'none';
+		document.getElementById('contribute-organization').style.display = 'none';
+		document.getElementById('contribute-user_location').style.display = 'none';
+		document.getElementById('contribute-uncommon_bio').style.display = 'none';
+		document.getElementById('contribute-affliations').style.display = 'none';
+		document.getElementById('contribute-user_statement_or_field').style.display = 'none';
+		document.getElementById('contribute-article_publication').style.display = 'none';
+		document.getElementById('contribute-author').style.display = 'none';
+		document.getElementById('contribute-publication_date').style.display = 'none';
+		document.getElementById('contribute-citation').style.display = 'none';
+		document.getElementById('contribute-url').style.display = 'none';
+		document.getElementById('contribute-podcastTime').style.display = 'none';
+		document.getElementById('contribute-abstract').style.display = 'none';
+		document.getElementById('contribute-description').style.display = 'none';
+		document.getElementById('contribute-recommended').style.display = 'none';
+		document.getElementById('contribute-authorBio').style.display = 'none';
+		document.getElementById('contribute-topics').style.display = 'none';
+		document.getElementById('contribute-tagwords').style.display = 'none';
+		document.getElementById('submit-div').style.display = 'none';
+
+		document.getElementById('contribute-media').style.display = 'none';
+		
+	} else if (formatValue == 'book') {
+		document.getElementById('contribute-title').style.display = 'block';
+		document.getElementById('contribute-title-h3').innerHTML = 'Title';
+		
+		document.getElementById('contribute-name').style.display = 'none';
+		
+		document.getElementById('contribute-organization').style.display = 'none';
+		
+		document.getElementById('contribute-user_location').style.display = 'none';
+		
+		document.getElementById('contribute-uncommon_bio').style.display = 'none';
+		
+		document.getElementById('contribute-affliations').style.display = 'none';
+		
+		document.getElementById('contribute-user_statement_or_field').style.display = 'none';
+		
+		document.getElementById('contribute-article_publication').style.display = 'none';
+		
+		document.getElementById('contribute-author').style.display = 'block';
+		
+		document.getElementById('contribute-publication_date').style.display = 'block';
+		
+		document.getElementById('contribute-citation').style.display = 'block';
+		
+		document.getElementById('contribute-url').style.display = 'block';
+		
+		document.getElementById('contribute-podcastTime').style.display = 'none';
+		
+		document.getElementById('contribute-abstract').style.display = 'block';
+		document.getElementById('contribute-abstract-h3').innerHTML = 'Brief Description';
+		
+		document.getElementById('contribute-description').style.display = 'block';
+		document.getElementById('contribute-description-h3').innerHTML = 'Review (optional)';
+		
+		document.getElementById('contribute-recommended').style.display = 'block';
+		
+		document.getElementById('contribute-authorBio').style.display = 'none';
+		
+		document.getElementById('contribute-topics').style.display = 'block';
+		document.getElementById('contribute-tagwords').style.display = 'block';
+		document.getElementById('submit-div').style.display = 'block';
+		
+		document.getElementById('contribute-media').style.display = 'block';
+		
+	} else if (formatValue == 'article') {
+		document.getElementById('contribute-title').style.display = 'block';
+		document.getElementById('contribute-title-h3').innerHTML = 'Title of Article';
+		
+		document.getElementById('contribute-name').style.display = 'none';
+		
+		document.getElementById('contribute-organization').style.display = 'none';
+		
+		document.getElementById('contribute-user_location').style.display = 'none';
+		
+		document.getElementById('contribute-uncommon_bio').style.display = 'none';
+		
+		document.getElementById('contribute-affliations').style.display = 'none';
+		
+		document.getElementById('contribute-user_statement_or_field').style.display = 'none';
+		
+		document.getElementById('contribute-article_publication').style.display = 'block';
+		document.getElementById('contribute-article_publication-h3').innerHTML = 'Publication Article Appears In';
+		
+		document.getElementById('contribute-author').style.display = 'block';
+		
+		document.getElementById('contribute-publication_date').style.display = 'block';
+		
+		document.getElementById('contribute-citation').style.display = 'block';
+		
+		document.getElementById('contribute-url').style.display = 'block';
+		
+		document.getElementById('contribute-podcastTime').style.display = 'none';
+		
+		document.getElementById('contribute-abstract').style.display = 'block';
+		document.getElementById('contribute-abstract-h3').innerHTML = 'Brief Description';
+		
+		document.getElementById('contribute-description').style.display = 'block';
+		document.getElementById('contribute-description-h3').innerHTML = 'Review (optional)';
+		
+		document.getElementById('contribute-recommended').style.display = 'block';
+		
+		document.getElementById('contribute-authorBio').style.display = 'none';
+		
+		document.getElementById('contribute-topics').style.display = 'block';
+		document.getElementById('contribute-tagwords').style.display = 'block';
+		document.getElementById('submit-div').style.display = 'block';
+		
+		document.getElementById('contribute-media').style.display = 'block';
+	
+	
+	} else if (formatValue == 'website') {
+		document.getElementById('contribute-title').style.display = 'block';
+		document.getElementById('contribute-title-h3').innerHTML = 'Title';
+		
+		document.getElementById('contribute-name').style.display = 'none';
+		
+		document.getElementById('contribute-organization').style.display = 'none';
+		
+		document.getElementById('contribute-user_location').style.display = 'none';
+		
+		document.getElementById('contribute-uncommon_bio').style.display = 'none';
+		
+		document.getElementById('contribute-affliations').style.display = 'none';
+		
+		document.getElementById('contribute-user_statement_or_field').style.display = 'none';
+		
+		document.getElementById('contribute-article_publication').style.display = 'none';
+		
+		document.getElementById('contribute-author').style.display = 'none';
+		
+		document.getElementById('contribute-publication_date').style.display = 'none';
+		
+		document.getElementById('contribute-citation').style.display = 'none';
+		
+		document.getElementById('contribute-url').style.display = 'block';
+		
+		document.getElementById('contribute-podcastTime').style.display = 'none';
+		
+		document.getElementById('contribute-abstract').style.display = 'block';
+		document.getElementById('contribute-abstract-h3').innerHTML = 'Brief Description';
+		
+		document.getElementById('contribute-description').style.display = 'block';
+		document.getElementById('contribute-description-h3').innerHTML = 'Review (optional)';
+		
+		document.getElementById('contribute-recommended').style.display = 'block';
+		
+		document.getElementById('contribute-authorBio').style.display = 'none';
+		
+		document.getElementById('contribute-topics').style.display = 'block';
+		document.getElementById('contribute-tagwords').style.display = 'block';
+		document.getElementById('submit-div').style.display = 'block';
+
+		document.getElementById('contribute-media').style.display = 'block';
+	
+	
+	} else if (formatValue == 'podcast') {
+		document.getElementById('contribute-title').style.display = 'block';
+		document.getElementById('contribute-title-h3').innerHTML = 'Episode Title';
+		
+		document.getElementById('contribute-name').style.display = 'none';
+		
+		document.getElementById('contribute-organization').style.display = 'none';
+		
+		document.getElementById('contribute-user_location').style.display = 'none';
+		
+		document.getElementById('contribute-uncommon_bio').style.display = 'none';
+		
+		document.getElementById('contribute-affliations').style.display = 'none';
+		
+		document.getElementById('contribute-user_statement_or_field').style.display = 'none';
+		
+		document.getElementById('contribute-article_publication').style.display = 'block';
+		document.getElementById('contribute-article_publication-h3').innerHTML = 'Podcast Show/Title';
+		
+		document.getElementById('contribute-author').style.display = 'none';
+		
+		document.getElementById('contribute-publication_date').style.display = 'block';
+		document.getElementById('contribute-publication_date-h3').innerHTML = 'Date of Original Broadcast';
+		
+		document.getElementById('contribute-citation').style.display = 'none';
+		
+		document.getElementById('contribute-url').style.display = 'block';
+		
+		document.getElementById('contribute-podcastTime').style.display = 'block';
+		
+		document.getElementById('contribute-abstract').style.display = 'block';
+		document.getElementById('contribute-abstract-h3').innerHTML = 'Brief Description';
+		
+		document.getElementById('contribute-description').style.display = 'block';
+		document.getElementById('contribute-description-h3').innerHTML = 'Review (optional)';
+		
+		document.getElementById('contribute-recommended').style.display = 'block';
+		
+		document.getElementById('contribute-authorBio').style.display = 'none';
+		
+		document.getElementById('contribute-topics').style.display = 'block';
+		document.getElementById('contribute-tagwords').style.display = 'block';
+		document.getElementById('submit-div').style.display = 'block';
+		
+		document.getElementById('contribute-media').style.display = 'block';
+
+	} else if (formatValue == 'external_online_reading') {
+		document.getElementById('contribute-title').style.display = 'block';
+		document.getElementById('contribute-title-h3').innerHTML = 'Title';
+		
+		document.getElementById('contribute-name').style.display = 'none';
+		
+		document.getElementById('contribute-organization').style.display = 'none';
+		
+		document.getElementById('contribute-user_location').style.display = 'none';
+		
+		document.getElementById('contribute-uncommon_bio').style.display = 'none';
+		
+		document.getElementById('contribute-affliations').style.display = 'none';
+		
+		document.getElementById('contribute-user_statement_or_field').style.display = 'none';
+		
+		document.getElementById('contribute-article_publication').style.display = 'none';
+		
+		document.getElementById('contribute-author').style.display = 'block';
+		
+		document.getElementById('contribute-publication_date').style.display = 'block';
+		document.getElementById('contribute-publication_date-h3').innerHTML = 'Date of Publication';
+		
+		document.getElementById('contribute-citation').style.display = 'block';
+		
+		document.getElementById('contribute-url').style.display = 'block';
+		
+		document.getElementById('contribute-podcastTime').style.display = 'none';
+		
+		document.getElementById('contribute-abstract').style.display = 'block';
+		document.getElementById('contribute-abstract-h3').innerHTML = 'Brief Description';
+		
+		document.getElementById('contribute-description').style.display = 'block';
+		document.getElementById('contribute-description-h3').innerHTML = 'Review (optional)';
+		
+		document.getElementById('contribute-recommended').style.display = 'block';
+		
+		document.getElementById('contribute-authorBio').style.display = 'none';
+		
+		document.getElementById('contribute-topics').style.display = 'block';
+		document.getElementById('contribute-tagwords').style.display = 'block';
+		document.getElementById('submit-div').style.display = 'block';
+		
+		document.getElementById('contribute-media').style.display = 'block';
+	
+	
+	} else if (formatValue == 'profile_person') {
+		document.getElementById('contribute-title').style.display = 'none';
+		
+		document.getElementById('contribute-name').style.display = 'block';
+		
+		document.getElementById('contribute-organization').style.display = 'none';
+		
+		document.getElementById('contribute-user_location').style.display = 'block';
+		
+		document.getElementById('contribute-uncommon_bio').style.display = 'block';
+		
+		document.getElementById('contribute-affliations').style.display = 'block';
+		
+		document.getElementById('contribute-user_statement_or_field').style.display = 'block';
+		
+		document.getElementById('contribute-article_publication').style.display = 'none';
+		
+		document.getElementById('contribute-author').style.display = 'none';
+		
+		document.getElementById('contribute-publication_date').style.display = 'none';
+		
+		document.getElementById('contribute-citation').style.display = 'none';
+		
+		document.getElementById('contribute-url').style.display = 'block';
+		
+		document.getElementById('contribute-podcastTime').style.display = 'none';
+		
+		document.getElementById('contribute-abstract').style.display = 'none';
+		
+		document.getElementById('contribute-description').style.display = 'none';
+		
+		document.getElementById('contribute-recommended').style.display = 'none';
+		
+		document.getElementById('contribute-authorBio').style.display = 'none';
+		
+		document.getElementById('contribute-topics').style.display = 'block';
+		document.getElementById('contribute-tagwords').style.display = 'block';
+		document.getElementById('submit-div').style.display = 'block';
+		
+		document.getElementById('contribute-media').style.display = 'block';
+		
+	} else if (formatValue == 'profile_org') {
+		document.getElementById('contribute-title').style.display = 'none';
+		
+		document.getElementById('contribute-name').style.display = 'none';
+		
+		document.getElementById('contribute-organization').style.display = 'block';
+		
+		document.getElementById('contribute-user_location').style.display = 'block';
+		
+		document.getElementById('contribute-uncommon_bio').style.display = 'none';
+		
+		document.getElementById('contribute-affliations').style.display = 'block';
+		
+		document.getElementById('contribute-user_statement_or_field').style.display = 'block';
+		
+		document.getElementById('contribute-article_publication').style.display = 'none';
+		
+		document.getElementById('contribute-author').style.display = 'none';
+		
+		document.getElementById('contribute-publication_date').style.display = 'none';
+		
+		document.getElementById('contribute-citation').style.display = 'none';
+		
+		document.getElementById('contribute-url').style.display = 'block';
+		
+		document.getElementById('contribute-podcastTime').style.display = 'none';
+		
+		document.getElementById('contribute-abstract').style.display = 'none';
+		
+		document.getElementById('contribute-description').style.display = 'none';
+		
+		document.getElementById('contribute-recommended').style.display = 'none';
+		
+		document.getElementById('contribute-authorBio').style.display = 'none';
+		
+		document.getElementById('contribute-topics').style.display = 'block';
+		document.getElementById('contribute-tagwords').style.display = 'block';
+		document.getElementById('submit-div').style.display = 'block';
+
+		document.getElementById('contribute-media').style.display = 'block';
+		
+	}
+	
+}
+
+/*
+function contributeForm(showDiv) {
+	//alert(document.contributing.contribute-format[1]);
+	document.getElementById('select-library-format').style.display = 'none';
+	document.getElementById('contribute-blog').style.display = 'none';
+	document.getElementById('contribute-essay').style.display = 'none';
+	document.getElementById('contribute-news').style.display = 'none';
+	document.getElementById('contribute-ground').style.display = 'none';
+	document.getElementById('contribute-library-book').style.display = 'none';
+	document.getElementById('contribute-library-article').style.display = 'none';
+	document.getElementById('contribute-library-podcast').style.display = 'none';
+	document.getElementById('contribute-library-website').style.display = 'none';
+	document.getElementById('contribute-library-external').style.display = 'none';
+
+	if ((showDiv == 'contribute-library-book')||(showDiv == 'contribute-library-article')||(showDiv == 'contribute-library-podcast')||(showDiv == 'contribute-library-website')||(showDiv == 'contribute-library-external')) {
+		document.getElementById('select-library-format').style.display = 'block';
+	}
+	document.getElementById(showDiv).style.display = 'block';
+	document.getElementById('submit-div').style.display = 'block';
+}
+*/
+
+
+
+function GetXmlHttpObject() { 
+	var objXMLHttp=null
+	if (window.XMLHttpRequest) {
+		objXMLHttp=new XMLHttpRequest()
+	} else if (window.ActiveXObject) {
+		objXMLHttp=new ActiveXObject("Microsoft.XMLHTTP")
+	}
+	return objXMLHttp
+} 
+
+
+function sendEmail(objId,userEmail) {
+	sendto = document.getElementById('sendTo').value;
+	if ( document.getElementById('note').value != 'Personal Message...') {
+		note = document.getElementById('note').value;
+	} else {
+		note = '';
+	}
+	if ((sendto==null)||(sendto=="")||(echeck(sendto)==false)){
+		alert('please enter a valid email address');
+	} else {
+		xmlHttp=GetXmlHttpObject()
+		if (xmlHttp==null) {
+			alert ("Browser does not support HTTP Request")
+			return
+		} 
+		var url="sendEmail.php";
+		url=url+"?sendTo="+sendto+"&obj="+objId+"&userEmail="+userEmail+"&note="+note;
+		url=url+"&qid="+Math.random();
+		xmlHttp.onreadystatechange=stateChangedSendEmail
+		xmlHttp.open("GET",url,true)
+		xmlHttp.send(null)
+	}
+}
+
+function stateChangedSendEmail() {
+	if (xmlHttp.readyState==4 || xmlHttp.readyState=="complete") { 
+		document.getElementById('send-email-form').innerHTML = "Email Sent.";
+	}
+}
+
+
+
+// --------------------------------------------------------------------
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+
+
+
+function echeck(str) {
+
+		var at="@"
+		var dot="."
+		var lat=str.indexOf(at)
+		var lstr=str.length
+		var ldot=str.indexOf(dot)
+		if (str.indexOf(at)==-1){
+		   //alert("Invalid E-mail ID")
+		   return false
+		}
+
+		if (str.indexOf(at)==-1 || str.indexOf(at)==0 || str.indexOf(at)==lstr){
+		   //alert("Invalid E-mail ID")
+		   return false
+		}
+
+		if (str.indexOf(dot)==-1 || str.indexOf(dot)==0 || str.indexOf(dot)==lstr){
+		   // alert("Invalid E-mail ID")
+		    return false
+		}
+
+		 if (str.indexOf(at,(lat+1))!=-1){
+		    //alert("Invalid E-mail ID")
+		    return false
+		 }
+
+		 if (str.substring(lat-1,lat)==dot || str.substring(lat+1,lat+2)==dot){
+		    //alert("Invalid E-mail ID")
+		    return false
+		 }
+
+		 if (str.indexOf(dot,(lat+2))==-1){
+		    //alert("Invalid E-mail ID")
+		    return false
+		 }
+		
+		 if (str.indexOf(" ")!=-1){
+		    //alert("Invalid E-mail ID")
+		    return false
+		 }
+
+ 		 return true					
+	}
+
+function ValidateForm(){
+	var emailID=document.frmSample.txtEmail
+	
+	if ((emailID.value==null)||(emailID.value=="")){
+		alert("Please Enter your Email ID")
+		emailID.focus()
+		return false
+	}
+	if (echeck(emailID.value)==false){
+		emailID.value=""
+		emailID.focus()
+		return false
+	}
+	return true
+ }
+
+
+
+function changeProfiles(type, topic, keyword) {
+	window.location.href = "profile.php?sType="+type+"&sTopic="+topic+"&sKeyword="+keyword;
+}
+
+
+function toggleHideEmail() {
+	if (document.getElementById('hide-email').style.display == 'none') {
+		document.getElementById('hide-email').style.display = 'block';
+	} else {
+		document.getElementById('hide-email').style.display = 'none';
+	}
+}
+
+function commentsLogInClick() {
+	document.getElementById('comment-log-in-div').style.display = 'block';
+	document.getElementById('comment-guest-div').style.display = 'none';
+	document.getElementById('comment-comments-div').style.display = 'block';
+}
+
+function commentsGuestClick() {
+	document.getElementById('comment-log-in-div').style.display = 'none';
+	document.getElementById('comment-guest-div').style.display = 'block';
+	document.getElementById('comment-comments-div').style.display = 'block';
+}

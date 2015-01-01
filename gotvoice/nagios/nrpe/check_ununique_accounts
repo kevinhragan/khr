@@ -1,0 +1,122 @@
+#!/usr/bin/perl -w
+#
+# check_ununique_accounts.pl
+#
+# The email field in the account table is unique among active accounts.
+# This means that if the same email address appears in multiple accounts, 
+# all the other accounts have to be cancelled.
+#
+# Author: Allen Caldwell
+#
+use strict ;
+use DBI() ;
+use Getopt::Long qw(:config no_ignore_case bundling) ;
+use lib "/usr/local/nagios/libexec" ;
+use utils qw($TIMEOUT %ERRORS &print_revision &support &usage) ; # Import predefined status-codes and timeout variable
+use File::Basename ;
+
+my $row = "" ;
+my $dsn = 'DBI:mysql:gv:127.0.0.1' ;
+my $db_user_name = 'gvuser' ;
+my $db_password = 'gotvoice' ;
+
+my $prog_ver   = "1.0" ;
+my $prog_name  = basename $0 ;
+my $status = 3 ; #do we want to start with UNKNOWN???
+my $status_print = "" ;
+my $warn_val = 1 ;  # Default - override with -w arg
+my $crit_val = 5 ;  # Default - override with -c arg
+my $help_val = 0 ;  # Off unless -h arg
+my $verb_val = 0 ;  # Off unless -v arg
+my $vers_val = 0 ;  # Off unless -V arg
+
+my $count_statement = "select count(*) from
+              		(
+					select email, count(*) as qty
+					from account
+					where accountstatus <> 'cancelled'
+					group by email
+					) t1
+					where qty > 1" ;
+					
+# Gives us a way to print out verbose debug information to the screen when user
+# passes in a -v argument.
+# print_debug() should receive one parameter: a text string to print out.
+sub print_debug() {
+    my $message = shift;
+    if ($verb_val == 1) {
+        print "DEBUG: " . $message . "\n" ;
+    }
+}
+
+# Show help information
+sub show_help() {
+    print '
+
+Perl-Check the gv database for accounts that are not unique.
+
+Usage: $prog_name -w  -c  [-h] [-V] [-v]
+
+-w, --warning=INTEGER
+   Number of accounts with 2 or more active or pending status to generate a warning state (Default: 1)
+-c, --critical=INTEGER
+   Number of accounts with 2 or more active or pending status to generate a critical state (Default: 5)
+-h, --help
+   Show this help
+-V, --version
+   Output version information for the plugin
+-v, --verbose
+   Enable verbose output
+'
+}
+
+GetOptions (
+		"w=i" => \$warn_val, "warning=i" => \$warn_val,
+        "c=i" => \$crit_val, "critical=i" => \$crit_val,
+        "h" => \$help_val, "help" => \$help_val,
+        "V" => \$vers_val, "version" => \$vers_val,
+        "v" => \$verb_val, "verbose" => \$verb_val,
+) ;
+
+if ($help_val != 0) {
+    &show_help;
+    exit $ERRORS{'OK'} ;
+}
+
+if ($vers_val != 0) {
+    &print_revision($prog_name,$prog_ver);
+    exit $ERRORS{'OK'} ;
+}
+#
+#
+#  The meat of the program...
+#
+#
+#Do the database stuff...
+my $dbh = DBI->connect($dsn, $db_user_name, $db_password, { 'RaiseError' => 1 }) ;
+#See if there are any accounts in error...
+&print_debug("count statement: $count_statement" ) ;
+my $sth = $dbh->prepare( $count_statement ) ;
+$sth->execute()
+		or die "Couldn't execute query '$sth': $DBI::errstr\n" ;
+my $how_many = $sth->fetchrow_array() ;
+&print_debug("Number of un-unique accounts: $how_many." ) ;
+
+#We've got our number, now let's figure out what to return...
+#Nagios protocol requires a <= .
+if ( $how_many <= $warn_val ) { $status = $ERRORS{'OK'} ;
+								$status_print = "OK" ; }
+elsif ( $how_many > $warn_val && $how_many <= $crit_val ) { $status = $ERRORS{'WARNING'} ;
+								$status_print = "WARNING" ;}
+elsif ( $how_many > $crit_val ) { $status = $ERRORS{'CRITICAL'} ;
+								$status_print = "CRITICAL" ; }
+else { $status = $ERRORS{'UNKNOWN'} ;
+	   $status_print = "UNKNOWN" ; }
+	   
+#let's send back the stuff we need to send back...single descriptive line printed and 
+#exit value for nagios.
+print $status_print . " - " .
+         $how_many . " account(s) that are un-unique." ;
+exit $status ;
+
+

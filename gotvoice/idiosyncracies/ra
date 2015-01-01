@@ -1,0 +1,3 @@
+/etc/cron.daily/backup.sh does hotbackup of databases
+/etc/mail/trusted-users 
+mp3info install in /usr/local

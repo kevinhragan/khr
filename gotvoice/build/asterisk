@@ -1,0 +1,45 @@
+build new asterisk host Sept 2007
+
+this should get all needed packages:
+aptitude install apache libapache-mod-php5 curl
+aptitude install asterisk
+
+vi /etc/default/asterisk
+    /RUNASTERISK/s/no/yes/
+cd /etc/asterisk
+   #get gv versions of  extensions.conf iax.conf musiconhold.conf sip.conf voicemail.conf
+
+edit /etc/apache/httpd.conf so apache runs as asterisk.asterisk
+
+# for nagios; make user "nagios" loggable so check_current_calls sudo works
+vi /etc/passwd
+    /nagios/s#/bin/false##
+
+# add near top of file; solves "too many open files" errors
+vi /etc/init.d/asterisk
+    ulimit -n32768
+
+# give asterisk same password as gv
+passwd asterisk
+ 
+### callforwarding ####
+   see callForwardkingKeys
+#this makes incoming calls work
+scp $host:/usr/lib/asterisk/modules/app_gotvoice.so /usr/lib/asterisk/modules/app_gotvoice.so
+rm /usr/lib/asterisk/modules/app_voicemail.so
+cd /usr/share/asterisk/sounds
+scp $host:$PWD/vm-password-gotvoice.gsm .
+scp $host:$PWD/vm-instruction-gotvoice.gsm .
+scp $host:$PWD/vm-opts-gotvoice.gsm
+test and production:
+cd /var/spool/asterisk/
+scp $host:/$PWD/onhold_music .
+test:
+scp $host:$PWD/gv_lost_intro .
+
+# dispatch mounts; also for callforwarding 
+mkdir -p /var/gv/spool/dispatch 
+chown -R gv.users /var/gv/spool
+vi /etc/fstab
+    hathor:/srv/host1/dispatch /var/gv/spool/dispatch nfs defaults 0 0
+mount -a

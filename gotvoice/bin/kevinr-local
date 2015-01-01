@@ -1,0 +1,8 @@
+# invoke with list of hosts as arguents
+for host 
+do
+    echo $host
+    ssh  $host mkdir .ssh
+   scp  ~/.ssh/id_rsa.pub $host:.ssh/authorized_keys
+   scp ~/.bash_profile .bashrc $host:
+done 

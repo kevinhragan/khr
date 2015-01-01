@@ -1,0 +1,554 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="file:///tmp/5_0_OS_Release Notes.pdf"
+                   NC:Name="5_0_OS_Release Notes.pdf"
+                   NC:Transferred="1KB of  1KB">
+    <NC:URL RDF:resource="http://files.zimbra.com/downloads/5.0.0_GA/5_0_OS_Release%20Notes.pdf"/>
+    <NC:File RDF:resource="file:///tmp/5_0_OS_Release Notes.pdf"/>
+    <NC:DateEnded NC:parseType="Date">Thu Jan 03 10:52:11 PST 2008 +389551</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="/tmp/block-coaselott.pdf"
+                   NC:Name="block-coaselott.pdf"
+                   NC:DownloadAnimated="true"
+                   NC:Transferred="18381KB of 18391KB">
+    <NC:URL RDF:resource="http://mises.org/pdf/block-coaselott.pdf"/>
+    <NC:File RDF:resource="/tmp/block-coaselott.pdf"/>
+    <NC:DateStarted NC:parseType="Date">Mon Apr 14 11:54:05 PDT 2008 +090452</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Mon Apr 14 11:54:28 PDT 2008 +172267</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/Zimbra OS Quick Start.pdf"
+                   NC:Name="Zimbra OS Quick Start.pdf"
+                   NC:Transferred="195KB of 264KB">
+    <NC:URL RDF:resource="http://files.zimbra.com/website/docs/Zimbra%20OS%20Quick%20Start.pdf"/>
+    <NC:File RDF:resource="file:///tmp/Zimbra OS Quick Start.pdf"/>
+    <NC:DateStarted NC:parseType="Date">Wed Jan 30 12:53:08 PST 2008 +388732</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Wed Jan 30 12:53:08 PST 2008 +739926</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="/tmp/reviews.pdf"
+                   NC:Name="reviews.pdf"
+                   NC:Transferred="313KB of 313KB">
+    <NC:URL RDF:resource="http://www.usenix.org/publications/login/2006-02/openpdfs/reviews.pdf"/>
+    <NC:File RDF:resource="/tmp/reviews.pdf"/>
+    <NC:DateStarted NC:parseType="Date">Tue Mar 18 12:42:16 PDT 2008 +139789</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Tue Mar 18 12:42:16 PDT 2008 +617671</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Seq RDF:about="NC:DownloadsRoot">
+    <RDF:li RDF:resource="/tmp/block-coaselott.pdf"/>
+    <RDF:li RDF:resource="/tmp/High_Availability_NFS_Server.pdf"/>
+    <RDF:li RDF:resource="/tmp/install.en.pdf"/>
+    <RDF:li RDF:resource="/tmp/reviews.pdf"/>
+    <RDF:li RDF:resource="/tmp/anderson.pdf"/>
+    <RDF:li RDF:resource="/tmp/kanies.pdf"/>
+    <RDF:li RDF:resource="/tmp/brown.pdf"/>
+    <RDF:li RDF:resource="file:///tmp/socecol.pdf"/>
+    <RDF:li RDF:resource="file:///home/kevinr/MartinD-TO-IPCop.zip"/>
+    <RDF:li RDF:resource="file:///tmp/9.5.0_Release_Notes_Web.pdf"/>
+    <RDF:li RDF:resource="file:///home/kevinr/3DM2_CLI-Linux_x86-9.5.0.tgz"/>
+    <RDF:li RDF:resource="file:///home/kevinr/debian-40r3-i386-netinst.iso"/>
+    <RDF:li RDF:resource="file:///tmp/GV_networks.pdf"/>
+    <RDF:li RDF:resource="file:///tmp/OOoMySQL.pdf"/>
+    <RDF:li RDF:resource="file:///home/kevinr/p57s2d9d.phtml"/>
+    <RDF:li RDF:resource="file:///home/kevinr/3DM2_CLI-Linux_x86_64-9.5.0.tgz"/>
+    <RDF:li RDF:resource="file:///tmp/3DM-2.pdf"/>
+    <RDF:li RDF:resource="file:///home/kevinr/nagios-check_sip-1.01.tar.gz"/>
+    <RDF:li RDF:resource="file:///tmp/TechnicalPapers__UKUUG-WinterConf-2004-SCRAT-Paper.pdf"/>
+    <RDF:li RDF:resource="file:///tmp/TechnicalPapers__HBevolution.pdf"/>
+    <RDF:li RDF:resource="file:///tmp/Zimbra OS Quick Start.pdf"/>
+    <RDF:li RDF:resource="file:///tmp/robertson.pdf"/>
+    <RDF:li RDF:resource="file:///home/kevinr/BobLloyd-TO-IPCop.zip"/>
+    <RDF:li RDF:resource="file:///tmp/paganism_ecology.pdf"/>
+    <RDF:li RDF:resource="file:///tmp/deepeco.pdf"/>
+    <RDF:li RDF:resource="file:///home/kevinr/zcs-NETWORK-5.0.1_GA_1902.UBUNTU6.20080109201508.tgz"/>
+    <RDF:li RDF:resource="file:///home/kevinr/download/ps.monitor"/>
+    <RDF:li RDF:resource="file:///tmp/befw11s4_v2_ug.pdf"/>
+    <RDF:li RDF:resource="file:///tmp/befw11s4_v2_ds.pdf"/>
+    <RDF:li RDF:resource="file:///tmp/divintrr.pdf"/>
+    <RDF:li RDF:resource="file:///home/kevinr/calendar.ifb"/>
+    <RDF:li RDF:resource="file:///tmp/Zimbra Microsoft Outlook and the Zimbra Collaboration Suite.pdf"/>
+    <RDF:li RDF:resource="file:///home/kevinr/zcs-NETWORK-5.0.0_GA_1869.UBUNTU6.20071218190150.tgz"/>
+    <RDF:li RDF:resource="file:///tmp/Zimbra OS Admin Guide.pdf"/>
+    <RDF:li RDF:resource="file:///home/kevinr/download/lightning-0.7-icedove-i686.xpi"/>
+    <RDF:li RDF:resource="file:///home/kevinr/zcs-NETWORK-5.0.0_GA_1869.UBUNTU6.20071218190150.tgz"/>
+    <RDF:li RDF:resource="file:///home/kevinr/zcs-NETWORK-5.0.0_GA_1869.UBUNTU6.20071218190150.tgz"/>
+    <RDF:li RDF:resource="file:///tmp/calendar.ics"/>
+    <RDF:li RDF:resource="file:///home/kevinr/download/lightning-0.7-tb-linux.xpi"/>
+    <RDF:li RDF:resource="file:///home/kevinr/ipcop.gotvoice.oceanic.com-2008-01-04_16-21-10.dat"/>
+    <RDF:li RDF:resource="file:///home/kevinr/kirkfw1.gotvoice.com-2008-01-04_16-09-33.dat"/>
+    <RDF:li RDF:resource="file:///home/kevinr/zcs-NETWORK-5.0.0_GA_1869.UBUNTU6.20071218190150.tgz"/>
+    <RDF:li RDF:resource="file:///home/kevinr/zcs-NETWORK-5.0.0_GA_1869.UBUNTU6.20071218190150.tgz"/>
+    <RDF:li RDF:resource="file:///tmp/Zimbra NE 5.0 RC2 Release Notes.pdf"/>
+    <RDF:li RDF:resource="file:///tmp/5_0_OS_Release Notes.pdf"/>
+    <RDF:li RDF:resource="file:///tmp/sip_tutorial.pdf"/>
+    <RDF:li RDF:resource="file:///home/kevinr/calendar.ics"/>
+    <RDF:li RDF:resource="file:///home/kevinr/calendar(3).ics"/>
+    <RDF:li RDF:resource="file:///tmp/seruser.pdf"/>
+    <RDF:li RDF:resource="file:///tmp/SER-GettingStarted.pdf"/>
+    <RDF:li RDF:resource="file:///tmp/fosdem-2007_daniel.pocock_open-source-voip-with-debian.pdf"/>
+  </RDF:Seq>
+  <RDF:Description RDF:about="file:///home/kevinr/debian-40r3-i386-netinst.iso"
+                   NC:Name="debian-40r3-i386-netinst.iso"
+                   NC:DownloadAnimated="true"
+                   NC:Transferred="163392KB of 163392KB">
+    <NC:URL RDF:resource="http://saimei.acc.umu.se/debian-cd/4.0_r3/i386/iso-cd/debian-40r3-i386-netinst.iso"/>
+    <NC:File RDF:resource="file:///home/kevinr/debian-40r3-i386-netinst.iso"/>
+    <NC:DateStarted NC:parseType="Date">Mon Feb 25 09:09:36 PST 2008 +737626</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Mon Feb 25 09:12:02 PST 2008 +867130</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/OOoMySQL.pdf"
+                   NC:Name="OOoMySQL.pdf"
+                   NC:DownloadAnimated="true"
+                   NC:Transferred="2165KB of 2178KB">
+    <NC:URL RDF:resource="http://www.unixodbc.org/doc/OOoMySQL.pdf"/>
+    <NC:File RDF:resource="file:///tmp/OOoMySQL.pdf"/>
+    <NC:DateStarted NC:parseType="Date">Fri Feb 22 10:49:05 PST 2008 +106886</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Fri Feb 22 10:49:58 PST 2008 +007990</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/socecol.pdf"
+                   NC:Name="socecol.pdf"
+                   NC:Transferred="187KB of 187KB">
+    <NC:URL RDF:resource="http://www.dizerega.com/papers/socecol.pdf"/>
+    <NC:File RDF:resource="file:///tmp/socecol.pdf"/>
+    <NC:DateStarted NC:parseType="Date">Fri Mar 14 12:20:24 PDT 2008 +225232</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Fri Mar 14 12:20:24 PDT 2008 +238479</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/sip_tutorial.pdf"
+                   NC:Name="sip_tutorial.pdf"
+                   NC:DownloadAnimated="true"
+                   NC:Transferred="5859KB of 5859KB">
+    <NC:URL RDF:resource="http://www.iptel.org/files/sip_tutorial.pdf"/>
+    <NC:File RDF:resource="file:///tmp/sip_tutorial.pdf"/>
+    <NC:DateStarted NC:parseType="Date">Thu Dec 20 14:24:46 PST 2007 +357661</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Thu Dec 20 14:28:54 PST 2007 +773903</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/calendar.ifb"
+                   NC:Name="calendar.ifb"
+                   NC:Transferred="1KB of  1KB">
+    <NC:URL RDF:resource="http://mail/zimbra/home/kevinr/calendar.ifb?start=0d&amp;end=60d"/>
+    <NC:File RDF:resource="file:///home/kevinr/calendar.ifb"/>
+    <NC:DateStarted NC:parseType="Date">Fri Jan 11 14:31:45 PST 2008 +401837</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Fri Jan 11 14:31:45 PST 2008 +404992</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/3DM2_CLI-Linux_x86_64-9.5.0.tgz"
+                   NC:Name="3DM2_CLI-Linux_x86_64-9.5.0.tgz"
+                   NC:DownloadAnimated="true"
+                   NC:Transferred="48340KB of 48340KB">
+    <NC:URL RDF:resource="http://www.3ware.com/download/Escalade9690SA-Series/9.5.0/3DM2_CLI-Linux_x86_64-9.5.0.tgz"/>
+    <NC:File RDF:resource="file:///home/kevinr/3DM2_CLI-Linux_x86_64-9.5.0.tgz"/>
+    <NC:DateStarted NC:parseType="Date">Mon Feb 04 16:22:51 PST 2008 +374338</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Mon Feb 04 16:32:50 PST 2008 +565997</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/download/lightning-0.7-tb-linux.xpi"
+                   NC:Name="lightning-0.7-tb-linux.xpi"
+                   NC:DownloadAnimated="true"
+                   NC:Transferred="2302KB of 2302KB">
+    <NC:URL RDF:resource="https://addons.mozilla.org/en-US/thunderbird/downloads/file/20422/lightning-0.7-tb-linux.xpi"/>
+    <NC:File RDF:resource="file:///home/kevinr/download/lightning-0.7-tb-linux.xpi"/>
+    <NC:DateStarted NC:parseType="Date">Tue Jan 08 14:21:36 PST 2008 +476493</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Tue Jan 08 14:23:19 PST 2008 +345869</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="/tmp/High_Availability_NFS_Server.pdf"
+                   NC:Name="High_Availability_NFS_Server.pdf"
+                   NC:Transferred="145KB of 323KB">
+    <NC:URL RDF:resource="http://w3.linux-magazine.com/issue/33/High_Availability_NFS_Server.pdf"/>
+    <NC:File RDF:resource="/tmp/High_Availability_NFS_Server.pdf"/>
+    <NC:DateStarted NC:parseType="Date">Tue Mar 25 15:57:50 PDT 2008 +315049</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Tue Mar 25 15:57:51 PDT 2008 +094475</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/MartinD-TO-IPCop.zip"
+                   NC:Name="MartinD-TO-IPCop.zip"
+                   NC:Transferred="0KB of  0KB">
+    <NC:URL RDF:resource="https://kirkfw:445/cgi-bin/ovpnmain.cgi"/>
+    <NC:File RDF:resource="file:///home/kevinr/MartinD-TO-IPCop.zip"/>
+    <NC:DateStarted NC:parseType="Date">Tue Mar 04 13:08:42 PST 2008 +692193</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Tue Mar 04 13:08:42 PST 2008 +697921</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/Zimbra OS Admin Guide.pdf"
+                   NC:Name="Zimbra OS Admin Guide.pdf"
+                   NC:DownloadAnimated="true"
+                   NC:Transferred="725KB of 769KB">
+    <NC:URL RDF:resource="http://files.zimbra.com/website/docs/Zimbra%20OS%20Admin%20Guide.pdf"/>
+    <NC:File RDF:resource="file:///tmp/Zimbra OS Admin Guide.pdf"/>
+    <NC:DateStarted NC:parseType="Date">Thu Jan 10 13:46:02 PST 2008 +743215</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Thu Jan 10 13:46:04 PST 2008 +760045</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/3DM2_CLI-Linux_x86-9.5.0.tgz"
+                   NC:Name="3DM2_CLI-Linux_x86-9.5.0.tgz"
+                   NC:DownloadAnimated="true"
+                   NC:Transferred="52590KB of 52683KB">
+    <NC:URL RDF:resource="http://www.3ware.com/download/Escalade9690SA-Series/9.5.0/3DM2_CLI-Linux_x86-9.5.0.tgz"/>
+    <NC:File RDF:resource="file:///home/kevinr/3DM2_CLI-Linux_x86-9.5.0.tgz"/>
+    <NC:DateStarted NC:parseType="Date">Tue Feb 26 12:40:34 PST 2008 +146269</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Tue Feb 26 12:43:19 PST 2008 +233719</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/calendar(3).ics"
+                   NC:Name="calendar(3).ics"
+                   NC:Transferred="44KB of 44KB">
+    <NC:URL RDF:resource="http://mail/service/user/kevinr/calendar.ics"/>
+    <NC:File RDF:resource="file:///home/kevinr/calendar(3).ics"/>
+    <NC:DateStarted NC:parseType="Date">Mon Dec 10 08:39:47 PST 2007 +752661</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Mon Dec 10 08:39:47 PST 2007 +754034</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/divintrr.pdf"
+                   NC:Name="divintrr.pdf"
+                   NC:Transferred="28KB of 28KB">
+    <NC:URL RDF:resource="http://www.bea.gov/regional/pdf/lapi2004/divintrr.pdf"/>
+    <NC:File RDF:resource="file:///tmp/divintrr.pdf"/>
+    <NC:DateStarted NC:parseType="Date">Mon Jan 21 11:56:37 PST 2008 +247138</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Mon Jan 21 11:56:37 PST 2008 +260267</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/ipcop.gotvoice.oceanic.com-2008-01-04_16-21-10.dat"
+                   NC:Name="ipcop.gotvoice.oceanic.com-2008-01-04_16-21-10.dat"
+                   NC:Transferred="16KB of 16KB">
+    <NC:URL RDF:resource="https://10.244.51.1:445/backup/ipcop.gotvoice.oceanic.com-2008-01-04_16-21-10.dat"/>
+    <NC:File RDF:resource="file:///home/kevinr/ipcop.gotvoice.oceanic.com-2008-01-04_16-21-10.dat"/>
+    <NC:DateStarted NC:parseType="Date">Fri Jan 04 08:21:33 PST 2008 +755289</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Fri Jan 04 08:21:33 PST 2008 +858162</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/befw11s4_v2_ds.pdf"
+                   NC:Name="befw11s4_v2_ds.pdf"
+                   NC:Transferred="47KB of 47KB">
+    <NC:URL RDF:resource="http://www.linksys.com/servlet/Satellite?blobcol=urldata&amp;blobheadername1=Content-Type&amp;blobheadername2=Content-Disposition&amp;blobheadervalue1=application%2Fpdf&amp;blobheadervalue2=inline%3B+filename%3Dbefw11s4_v2_ds.pdf&amp;blobkey=id&amp;blobtable=MungoBlobs&amp;blobwhere=1193768460876&amp;ssbinary=true&amp;lid=7882878881B20"/>
+    <NC:File RDF:resource="file:///tmp/befw11s4_v2_ds.pdf"/>
+    <NC:DateStarted NC:parseType="Date">Tue Jan 22 10:51:11 PST 2008 +294354</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Tue Jan 22 10:51:11 PST 2008 +771964</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/kirkfw1.gotvoice.com-2008-01-04_16-09-33.dat"
+                   NC:Name="kirkfw1.gotvoice.com-2008-01-04_16-09-33.dat"
+                   NC:Transferred="101KB of 101KB">
+    <NC:URL RDF:resource="https://kirkfw:445/backup/kirkfw1.gotvoice.com-2008-01-04_16-09-33.dat"/>
+    <NC:File RDF:resource="file:///home/kevinr/kirkfw1.gotvoice.com-2008-01-04_16-09-33.dat"/>
+    <NC:DateStarted NC:parseType="Date">Fri Jan 04 08:14:32 PST 2008 +802066</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Fri Jan 04 08:14:32 PST 2008 +804198</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/deepeco.pdf"
+                   NC:Name="deepeco.pdf"
+                   NC:Transferred="145KB of 147KB">
+    <NC:URL RDF:resource="http://www.dizerega.com/papers/deepeco.pdf"/>
+    <NC:File RDF:resource="file:///tmp/deepeco.pdf"/>
+    <NC:DateStarted NC:parseType="Date">Fri Jan 25 12:02:58 PST 2008 +228999</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Fri Jan 25 12:02:58 PST 2008 +477875</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="/tmp/brown.pdf"
+                   NC:Name="brown.pdf"
+                   NC:Transferred="110KB of 110KB">
+    <NC:URL RDF:resource="http://www.usenix.org/publications/login/2006-02/pdfs/brown.pdf"/>
+    <NC:File RDF:resource="/tmp/brown.pdf"/>
+    <NC:DateStarted NC:parseType="Date">Tue Mar 18 12:37:47 PDT 2008 +317713</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Tue Mar 18 12:37:47 PDT 2008 +595639</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/TechnicalPapers__UKUUG-WinterConf-2004-SCRAT-Paper.pdf"
+                   NC:Name="TechnicalPapers__UKUUG-WinterConf-2004-SCRAT-Paper.pdf"
+                   NC:Transferred="64KB of 107KB">
+    <NC:URL RDF:resource="http://www.linux-ha.org/_cache/TechnicalPapers__UKUUG-WinterConf-2004-SCRAT-Paper.pdf"/>
+    <NC:File RDF:resource="file:///tmp/TechnicalPapers__UKUUG-WinterConf-2004-SCRAT-Paper.pdf"/>
+    <NC:DateStarted NC:parseType="Date">Wed Jan 30 14:30:47 PST 2008 +902497</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Wed Jan 30 14:30:48 PST 2008 +254100</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/calendar.ics"
+                   NC:Name="calendar.ics"
+                   NC:Transferred="0KB of  0KB">
+    <NC:URL RDF:resource="https://mail.gotvoice.com/home/kevinr/Calendar"/>
+    <NC:File RDF:resource="file:///tmp/calendar.ics"/>
+    <NC:DateStarted NC:parseType="Date">Tue Jan 08 15:24:22 PST 2008 +836502</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Tue Jan 08 15:24:22 PST 2008 +843184</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/tmp/debian-live-etch-i386-xfce-desktop.img"
+                   NC:DownloadAnimated="false" />
+  <RDF:Description RDF:about="file:///tmp/Zimbra NE 5.0 RC2 Release Notes.pdf"
+                   NC:Name="Zimbra NE 5.0 RC2 Release Notes.pdf"
+                   NC:Transferred="69KB of 69KB">
+    <NC:URL RDF:resource="http://files.zimbra.com/website/docs/Zimbra%20NE%205.0%20RC2%20Release%20Notes.pdf"/>
+    <NC:File RDF:resource="file:///tmp/Zimbra NE 5.0 RC2 Release Notes.pdf"/>
+    <NC:DateStarted NC:parseType="Date">Thu Jan 03 11:01:36 PST 2008 +566476</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Thu Jan 03 11:01:36 PST 2008 +660622</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/BobLloyd-TO-IPCop.zip"
+                   NC:Name="BobLloyd-TO-IPCop.zip"
+                   NC:Transferred="0KB of  0KB">
+    <NC:URL RDF:resource="https://kirkfw:445/cgi-bin/ovpnmain.cgi"/>
+    <NC:File RDF:resource="file:///home/kevinr/BobLloyd-TO-IPCop.zip"/>
+    <NC:DateStarted NC:parseType="Date">Mon Jan 28 12:52:03 PST 2008 +871675</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Mon Jan 28 12:52:03 PST 2008 +875622</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/zcs-NETWORK-5.0.1_GA_1902.UBUNTU6.20080109201508.tgz"
+                   NC:Name="zcs-NETWORK-5.0.1_GA_1902.UBUNTU6.20080109201508.tgz"
+                   NC:DownloadAnimated="true"
+                   NC:Transferred="319551KB of 319585KB">
+    <NC:URL RDF:resource="http://files.zimbra.com/downloads/5.0.1_GA/zcs-NETWORK-5.0.1_GA_1902.UBUNTU6.20080109201508.tgz"/>
+    <NC:File RDF:resource="file:///home/kevinr/zcs-NETWORK-5.0.1_GA_1902.UBUNTU6.20080109201508.tgz"/>
+    <NC:DateStarted NC:parseType="Date">Fri Jan 25 09:45:19 PST 2008 +273245</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Fri Jan 25 10:08:30 PST 2008 +318987</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/download/ps.monitor"
+                   NC:Name="ps.monitor"
+                   NC:Transferred="1KB of  1KB">
+    <NC:URL RDF:resource="http://mon.cvs.sourceforge.net/*checkout*/mon/mon-contrib/monitors/ps/ps.monitor?revision=1.1.1.1"/>
+    <NC:File RDF:resource="file:///home/kevinr/download/ps.monitor"/>
+    <NC:DateEnded NC:parseType="Date">Thu Jan 24 10:44:18 PST 2008 +825840</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/download/lightning-0.7-icedove-i686.xpi"
+                   NC:Name="lightning-0.7-icedove-i686.xpi"
+                   NC:DownloadAnimated="true"
+                   NC:Transferred="2330KB of 2333KB">
+    <NC:URL RDF:resource="http://jean-christophe.dubacq.fr/public/source/lightning-0.7-icedove-i686.xpi"/>
+    <NC:File RDF:resource="file:///home/kevinr/download/lightning-0.7-icedove-i686.xpi"/>
+    <NC:DateStarted NC:parseType="Date">Tue Jan 08 15:41:37 PST 2008 +126711</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Tue Jan 08 15:43:10 PST 2008 +641546</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="/tmp/kanies.pdf"
+                   NC:Name="kanies.pdf"
+                   NC:Transferred="82KB of 111KB">
+    <NC:URL RDF:resource="http://www.usenix.org/publications/login/2006-02/pdfs/kanies.pdf"/>
+    <NC:File RDF:resource="/tmp/kanies.pdf"/>
+    <NC:DateStarted NC:parseType="Date">Tue Mar 18 12:39:45 PDT 2008 +448280</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Tue Mar 18 12:39:45 PDT 2008 +909869</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/p57s2d9d.phtml"
+                   NC:Name="p57s2d9d.phtml"
+                   NC:Transferred="2KB of  2KB">
+    <NC:URL RDF:resource="http://nut.gotvoice.com/mrtg/"/>
+    <NC:File RDF:resource="file:///home/kevinr/p57s2d9d.phtml"/>
+    <NC:DateStarted NC:parseType="Date">Wed Feb 06 09:10:23 PST 2008 +107650</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Wed Feb 06 09:10:23 PST 2008 +112394</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/zcs-NETWORK-5.0.0_GA_1869.UBUNTU6.20071218190150.tgz"
+                   NC:Name="zcs-NETWORK-5.0.0_GA_1869.UBUNTU6.20071218190150.tgz"
+                   NC:DownloadAnimated="true">
+    <NC:Transferred>316536KB of 316536KB</NC:Transferred>
+    <NC:Transferred>0KB of  0KB</NC:Transferred>
+    <NC:Transferred>316503KB of 316536KB</NC:Transferred>
+    <NC:Transferred>316496KB of 316536KB</NC:Transferred>
+    <NC:File RDF:resource="file:///home/kevinr/zcs-NETWORK-5.0.0_GA_1869.UBUNTU6.20071218190150.tgz"/>
+    <NC:URL RDF:resource="http://files.zimbra.com/downloads/5.0.0_GA/zcs-NETWORK-5.0.0_GA_1869.UBUNTU6.20071218190150.tgz"/>
+    <NC:DateStarted NC:parseType="Date">Thu Jan 10 12:30:45 PST 2008 +980828</NC:DateStarted>
+    <NC:DateStarted NC:parseType="Date">Thu Jan 10 12:12:03 PST 2008 +899868</NC:DateStarted>
+    <NC:DateStarted NC:parseType="Date">Thu Jan 03 12:43:29 PST 2008 +922065</NC:DateStarted>
+    <NC:DateStarted NC:parseType="Date">Thu Jan 03 14:31:43 PST 2008 +547895</NC:DateStarted>
+    <NC:DateStarted NC:parseType="Date">Wed Jan 09 11:55:11 PST 2008 +618170</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Thu Jan 10 14:23:01 PST 2008 +444529</NC:DateEnded>
+    <NC:DateEnded NC:parseType="Date">Thu Jan 10 12:12:02 PST 2008 +401914</NC:DateEnded>
+    <NC:DateEnded NC:parseType="Date">Thu Jan 03 15:16:57 PST 2008 +292521</NC:DateEnded>
+    <NC:DateEnded NC:parseType="Date">Wed Jan 09 12:23:02 PST 2008 +055482</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:DownloadState NC:parseType="Integer">0</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+    <NC:ProgressPercent NC:parseType="Integer">0</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/GV_networks.pdf"
+                   NC:Name="GV_networks.pdf"
+                   NC:Transferred="1KB of  1KB">
+    <NC:URL RDF:resource="http://wiki.gotvoice.com/images/2/25/GV_networks.pdf"/>
+    <NC:File RDF:resource="file:///tmp/GV_networks.pdf"/>
+    <NC:DateEnded NC:parseType="Date">Fri Feb 22 12:35:39 PST 2008 +519106</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/SER-GettingStarted.pdf"
+                   NC:Name="SER-GettingStarted.pdf"
+                   NC:DownloadAnimated="true"
+                   NC:Transferred="909KB of 909KB">
+    <NC:URL RDF:resource="http://siprouter.onsip.org/doc/SER-GettingStarted.pdf"/>
+    <NC:File RDF:resource="file:///tmp/SER-GettingStarted.pdf"/>
+    <NC:DateStarted NC:parseType="Date">Fri Dec 07 14:30:31 PST 2007 +699315</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Fri Dec 07 14:31:09 PST 2007 +859803</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/nagios-check_sip-1.01.tar.gz"
+                   NC:Name="nagios-check_sip-1.01.tar.gz"
+                   NC:Transferred="9KB of  9KB">
+    <NC:URL RDF:resource="http://www.bashton.com/downloads/nagios-check_sip-1.01.tar.gz"/>
+    <NC:File RDF:resource="file:///home/kevinr/nagios-check_sip-1.01.tar.gz"/>
+    <NC:DateStarted NC:parseType="Date">Thu Jan 31 08:45:04 PST 2008 +880865</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Thu Jan 31 08:45:04 PST 2008 +885514</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="/tmp/install.en.pdf"
+                   NC:Name="install.en.pdf"
+                   NC:Transferred="819KB of 1027KB">
+    <NC:URL RDF:resource="http://osmirrors.cerias.purdue.edu/pub/debian/dists/sarge/main/installer-i386/current/doc/manual/en/install.en.pdf"/>
+    <NC:File RDF:resource="/tmp/install.en.pdf"/>
+    <NC:DateStarted NC:parseType="Date">Thu Mar 20 15:04:26 PDT 2008 +400280</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Thu Mar 20 15:04:27 PDT 2008 +301163</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/seruser.pdf"
+                   NC:Name="seruser.pdf"
+                   NC:DownloadAnimated="true"
+                   NC:Transferred="512KB of 520KB">
+    <NC:URL RDF:resource="http://old.iptel.org/ser/doc/seruser/seruser.pdf"/>
+    <NC:File RDF:resource="file:///tmp/seruser.pdf"/>
+    <NC:DateStarted NC:parseType="Date">Mon Dec 10 08:02:53 PST 2007 +436121</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Mon Dec 10 08:03:14 PST 2007 +832221</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/Zimbra Microsoft Outlook and the Zimbra Collaboration Suite.pdf"
+                   NC:Name="Zimbra Microsoft Outlook and the Zimbra Collaboration Suite.pdf"
+                   NC:DownloadAnimated="true"
+                   NC:Transferred="29KB of 29KB">
+    <NC:URL RDF:resource="http://files.zimbra.com/website/docs/Zimbra%20Microsoft%20Outlook%20and%20the%20Zimbra%20Collaboration%20Suite.pdf"/>
+    <NC:File RDF:resource="file:///tmp/Zimbra Microsoft Outlook and the Zimbra Collaboration Suite.pdf"/>
+    <NC:DateStarted NC:parseType="Date">Fri Jan 11 13:35:36 PST 2008 +345198</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Fri Jan 11 13:35:37 PST 2008 +660392</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/TechnicalPapers__HBevolution.pdf"
+                   NC:Name="TechnicalPapers__HBevolution.pdf"
+                   NC:DownloadAnimated="true"
+                   NC:Transferred="155KB of 155KB">
+    <NC:URL RDF:resource="http://www.linux-ha.org/_cache/TechnicalPapers__HBevolution.pdf"/>
+    <NC:File RDF:resource="file:///tmp/TechnicalPapers__HBevolution.pdf"/>
+    <NC:DateStarted NC:parseType="Date">Wed Jan 30 13:56:49 PST 2008 +496131</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Wed Jan 30 13:56:50 PST 2008 +874592</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/3DM-2.pdf"
+                   NC:Name="3DM-2.pdf"
+                   NC:DownloadAnimated="true"
+                   NC:Transferred="3231KB of 3234KB">
+    <NC:URL RDF:resource="http://www.aberdeeninc.com/ABCATG/manual/Aberdeen/3DM-2.pdf"/>
+    <NC:File RDF:resource="file:///tmp/3DM-2.pdf"/>
+    <NC:DateStarted NC:parseType="Date">Mon Feb 04 15:56:53 PST 2008 +350565</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Mon Feb 04 16:00:34 PST 2008 +016704</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/9.5.0_Release_Notes_Web.pdf"
+                   NC:Name="9.5.0_Release_Notes_Web.pdf"
+                   NC:Transferred="1KB of  1KB">
+    <NC:URL RDF:resource="http://www.3ware.com/download/Escalade9690SA-Series/9.5.0/9.5.0_Release_Notes_Web.pdf"/>
+    <NC:File RDF:resource="file:///tmp/9.5.0_Release_Notes_Web.pdf"/>
+    <NC:DateEnded NC:parseType="Date">Thu Feb 28 14:57:02 PST 2008 +498888</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/robertson.pdf"
+                   NC:Name="robertson.pdf"
+                   NC:Transferred="82KB of 85KB">
+    <NC:URL RDF:resource="http://www.linuxshowcase.org/2000/2000papers/papers/robertson/robertson.pdf"/>
+    <NC:File RDF:resource="file:///tmp/robertson.pdf"/>
+    <NC:DateStarted NC:parseType="Date">Tue Jan 29 15:10:24 PST 2008 +180289</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Tue Jan 29 15:10:24 PST 2008 +513671</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/fosdem-2007_daniel.pocock_open-source-voip-with-debian.pdf"
+                   NC:Name="fosdem-2007_daniel.pocock_open-source-voip-with-debian.pdf"
+                   NC:Transferred="123KB of 138KB">
+    <NC:URL RDF:resource="http://www.openser.org/events/2007-FOSDEM/slides/fosdem-2007_daniel.pocock_open-source-voip-with-debian.pdf"/>
+    <NC:File RDF:resource="file:///tmp/fosdem-2007_daniel.pocock_open-source-voip-with-debian.pdf"/>
+    <NC:DateStarted NC:parseType="Date">Fri Dec 07 14:10:17 PST 2007 +525081</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Fri Dec 07 14:10:18 PST 2007 +214650</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/paganism_ecology.pdf"
+                   NC:Name="paganism_ecology.pdf"
+                   NC:Transferred="143KB of 143KB">
+    <NC:URL RDF:resource="http://www.dizerega.com/papers/paganism_ecology.pdf"/>
+    <NC:File RDF:resource="file:///tmp/paganism_ecology.pdf"/>
+    <NC:DateStarted NC:parseType="Date">Mon Jan 28 11:55:19 PST 2008 +603938</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Mon Jan 28 11:55:19 PST 2008 +787514</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="/tmp/anderson.pdf"
+                   NC:Name="anderson.pdf"
+                   NC:Transferred="71KB of 119KB">
+    <NC:URL RDF:resource="http://www.usenix.org/publications/login/2006-02/openpdfs/anderson.pdf"/>
+    <NC:File RDF:resource="/tmp/anderson.pdf"/>
+    <NC:DateStarted NC:parseType="Date">Tue Mar 18 12:40:54 PDT 2008 +450738</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Tue Mar 18 12:40:54 PDT 2008 +933703</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/befw11s4_v2_ug.pdf"
+                   NC:Name="befw11s4_v2_ug.pdf"
+                   NC:DownloadAnimated="true"
+                   NC:Transferred="1969KB of 1969KB">
+    <NC:URL RDF:resource="http://www.linksys.com/servlet/Satellite?blobcol=urldata&amp;blobheadername1=Content-Type&amp;blobheadername2=Content-Disposition&amp;blobheadervalue1=application%2Fpdf&amp;blobheadervalue2=inline%3B+filename%3Dbefw11s4_v2_ug.pdf&amp;blobkey=id&amp;blobtable=MungoBlobs&amp;blobwhere=1193768460911&amp;ssbinary=true&amp;lid=7890878881B10"/>
+    <NC:File RDF:resource="file:///tmp/befw11s4_v2_ug.pdf"/>
+    <NC:DateStarted NC:parseType="Date">Tue Jan 22 10:55:11 PST 2008 +940307</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Tue Jan 22 10:56:05 PST 2008 +878514</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/calendar.ics"
+                   NC:Name="calendar.ics"
+                   NC:Transferred="0KB of  0KB">
+    <NC:URL RDF:resource="http://mail.gotvoice.com/service/home/kevinr/calendar.ics"/>
+    <NC:File RDF:resource="file:///home/kevinr/calendar.ics"/>
+    <NC:DateStarted NC:parseType="Date">Mon Dec 10 08:44:30 PST 2007 +748706</NC:DateStarted>
+    <NC:DateEnded NC:parseType="Date">Mon Dec 10 08:44:30 PST 2007 +750147</NC:DateEnded>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:ProgressPercent NC:parseType="Integer">100</NC:ProgressPercent>
+  </RDF:Description>
+</RDF:RDF>

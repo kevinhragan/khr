@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<gconf>
+        <entry name="show_statusbar" mtime="1169592687" type="bool" value="true">
+        </entry>
+        <entry name="show_bookmarks" mtime="1169592687" type="bool" value="true">
+        </entry>
+        <entry name="show_toolbars" mtime="1169592687" type="bool" value="true">
+        </entry>
+        <entry name="show_sidebar" mtime="1169592687" type="bool" value="false">
+        </entry>
+</gconf>

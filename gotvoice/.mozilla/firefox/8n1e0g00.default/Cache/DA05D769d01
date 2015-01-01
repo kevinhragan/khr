@@ -1,0 +1,1518 @@
+/* browse list CSS */
+
+#left-col {
+	width:202px;
+}
+
+	/*select pulldown replacement styles*/
+	
+	#left-col .select-list {
+		clear:both;
+		float:left;
+		height:25px;
+		padding:0;
+		margin:0;
+	}
+
+	#left-col .select-replacement {
+		position: absolute;
+		top:auto;
+		height:auto;
+		margin:0 0 0 0;
+		padding:0 0 0 0;
+	  	list-style: none;
+		height:25px;
+		z-index:auto;
+	}
+	
+	#left-col ul.select-replacement li {
+	  float:none;
+	  cursor: pointer;
+	  display: none;
+	  margin: 0 0 0 0;
+	  height:25px;
+	  width:191px;
+	  padding: 0 0 0 0;
+	}
+	
+	#left-col ul.select-replacement a {
+		display:block;
+		color: #808080;
+	  	font-size:10px;
+	  	font-family: Verdana, Arial, Helvetica, sans-serif;
+		text-decoration:none;
+		padding: 8px 0 0 14px;
+		margin:0;
+	}
+	
+	#left-col ul.selectOpen a:hover {
+		color: #fff;
+	}
+	
+	#left-col ul.selectOpen li {
+	  display: block;
+	  background: #fff;
+	}
+	
+	#left-col ul.selectOpen li:hover, #left-col ul.selectOpen li.hover  {
+		background: #b0a178;
+		color:#fff;
+	}
+	
+	#left-col ul.select-replacement li.selected {
+	  color: #808080;
+	  display: block;
+	  background: none;
+	}
+	
+	#left-col ul.selectOpen li.selected {
+	  font-weight:bold;
+	  display: block;
+	  background: #b0a178;
+	}
+
+	#left-col ul.selectOpen li.selected a {
+		color: #fff;
+	}
+
+	#left-col ul.selectOpen li.top-selected {
+	  font-weight:bold;
+	  display: block;
+	  color: #b0a178;
+	  background: url(http://images.barnesandnoble.com/presources/images/nav_left_silver.gif) top left no-repeat;
+	}
+	
+	#left-col ul.select-replacement li.top, #left-col ul.selectOpen li.top  {
+		background: url(http://images.barnesandnoble.com/presources/images/nav_left_silver.gif) top left no-repeat;
+		display: block;
+	}
+	
+	#browse {
+		padding:0;
+		margin:0;
+	}
+	
+	#left-col p {
+		clear:both;
+		color:#666;
+	}
+	
+	
+	#search-within {
+		float:left;
+		margin:3px 0 6px 0;
+		padding:0;
+	}
+	
+	#search-within form 
+	{
+		float:left;
+		padding:0;
+		margin:0;
+	}
+	
+	#search-within input {
+		float:left;
+		width:140px;
+		font-size: 11px;
+		padding:3px 0 3px 3px;
+		margin:0;
+		border:1px solid #ccc;
+		height:20px;
+		background: url(http://images.barnesandnoble.com/presources/images/search_shadow.jpg) top left no-repeat; 
+	}
+	
+	#search-within img {
+		margin:-3px 0 0 3px;
+		_margin:-3px 0 0 0;
+		padding:0;
+	}
+	
+	#left-col h3 {
+		font-size:16px;
+		margin:0 0 6px 0;
+		padding:10px 0 8px 0;
+		width:168px;
+		color: #b0a178;
+	}
+	
+	#left-col .nav 
+	{
+		padding:0;
+		margin:0;
+	}
+	
+	
+	#left-col .nav li 
+	{
+		padding:0 0 3px 10px;
+		background: url(http://images.barnesandnoble.com/presources/images/bullet.gif) no-repeat;
+		background-position: 0 1px;
+	}
+	
+	#left-col .clear-list 
+	{
+		clear:both;
+		float:left;
+		width:170px;
+		margin:0;
+		padding:0;
+	}
+	
+		#left-col .clear-list a 
+		{
+			margin-left:100px;
+			padding:0 0 0 10px;
+			background: url(http://images.barnesandnoble.com/presources/images/x_small.gif) left no-repeat;
+		}
+	
+	#recently-viewed ul {
+		width: 170px;
+	}
+	
+	#recently-viewed em {
+		display:block;
+	}
+	
+	
+/*layout changes from main page*/
+	
+#bs-center-col {
+	float:right;
+	margin:0;
+	padding:0;
+	width:788px;
+}
+
+#inner-wrap {
+	float:left;
+	margin:0;
+	padding:0;
+	width:990px;
+}
+
+#as-search-wrapper {
+	clear:both;
+	float:left;
+	width:990px;
+}
+
+#as-search {
+	clear:both;
+	float:left;
+	width:980px;
+	background: url(http://images.barnesandnoble.com/presources/images/quick_links_bg.gif) bottom left no-repeat;
+	padding:0 0 2px 0;
+	margin:0;
+}
+
+	.as-search-bg 
+	{
+		float:left;
+		width:980px;
+		padding:0 0 0 0;
+		margin:0;
+		background: url(http://images.barnesandnoble.com/presources/images/quick_links_bg.gif) top left no-repeat;
+	}
+
+	.as-left 
+	{
+		float:left;
+		width:600px;
+		margin:0;
+		padding:10px 0 10px 0;
+	}
+	
+	.as-right {
+		float:right;
+		margin:0;
+		padding:10px 0 10px 0;
+		width:200px;
+	}
+
+	#as-search p {
+		font-size:14px;
+		padding:3px 0 3px 0;
+		margin:0 10px 0 0;
+	}
+	
+	#as-search p.left {
+		float:left;
+		margin:0;
+		padding-left:12px;
+		width:600px;
+	}
+	
+	#as-search .as-left a 
+	{
+		text-decoration:underline;
+	}
+	
+	#as-search .as-left a:hover 
+	{
+		text-decoration:none;
+	}
+	
+
+	#as-search p.right {
+		float:right;
+	}
+	
+	#as-search strong 
+	{
+		color: #b0a377;
+	}
+	
+	/*intermediate artists search page*/
+	
+	#sr-ia-header {
+		clear:both;
+		float:left;
+		width:763px;
+		padding:0;
+		margin:0;
+	}
+	
+		#sr-ia-header p {
+			float:left;
+			width:100%;
+			background: url(http://images.barnesandnoble.com/presources/images/hrbt.gif) bottom left repeat-x;
+			padding:0 0 12px 0;
+			margin:0 0 12px 0;
+		}
+		
+	.sr-ia-result {
+		clear:both;
+		float:left;
+		width:100%;
+		margin:0;
+		padding:0 0 10px 0;
+	}
+	
+		.sr-ia-result p {
+			float:left;
+			clear:both;
+			width:100%;
+			padding:0;
+			margin:0;
+		}
+		
+		.sr-ia-result p.new-height 
+		{
+			line-height:18px;	
+		}
+		
+		.sr-ia-result ul {
+			clear:both;
+			float:left;
+			list-style:none;
+			margin:3px 0 0 0;
+			padding:0;
+			width:100%;
+		}
+		
+		.sr-ia-result li {
+			float:left;
+			padding: 0 6px 0 0;
+			margin:0;
+		}
+		
+		.sr-ia-result .ia-div {
+			margin:4px 0 -3px 0;
+		}
+		
+		.sr-ia-result strong {
+			color:#666;
+		}
+
+	/*top browse nav bar */
+
+	#browse-top-bar {
+		clear:both;
+		float:left;
+		margin:0;
+		padding:0 0 0 0;
+		width:788px;
+		background: url(http://images.barnesandnoble.com/presources/images/nav_bar.gif) bottom left repeat-x;
+		font-size: 11px;
+	}
+	
+	#browse-top-bar ul {
+		list-style:none;
+		float:left;
+	}
+	
+	#browse-top-bar li {
+		float:left;
+		color:#666;
+	}
+	
+	#browse-top-bar p {
+		float:left;
+		margin:0;
+		padding:0;
+	}
+	
+	#browse-next {
+		float:left;
+		background: url(http://images.barnesandnoble.com/presources/images/nav-trc.gif) top right no-repeat;
+		width:59px;
+	}
+	
+		#browse-next a {
+			display:block;
+			margin:0;
+			font-size:13px;
+		}
+		
+		#browse-next p {
+			float:left;
+			padding: 0 10px 0 0;
+			margin:0;
+		}
+	
+	#sort-by {
+		float:left;
+		width:326px;
+	}
+	
+		#sort-by li {
+			padding: 0 0 0 14px;
+		}
+		
+		#sort-by li.nav-div {
+			padding: 0 29px 0 14px;
+			background: url(http://images.barnesandnoble.com/presources/images/nav_divider.gif) right no-repeat;
+		}
+		
+		#sort-by p {
+			margin: 0 0 0 10px;
+			padding:0;
+		}
+	
+	#items-pp {
+		float:left;
+		width:169px;
+	}
+		#items-pp li {
+			padding: 0 0 0 3px;
+		}
+		
+		#items-pp li.nav-div {
+			padding: 0 29px 0 3px;
+			background: url(http://images.barnesandnoble.com/presources/images/nav_divider.gif) right no-repeat;
+		}
+		
+		#items-pp p {
+			margin: 0 0 0 0;
+			padding:0;
+		}
+	
+	#items-num {
+		float:left;
+		width:122px;
+	}
+	
+		#items-num p.nav-div  {
+			margin:0;
+			padding: 0 29px 0 0;
+			font-size:13px;
+			background: url(http://images.barnesandnoble.com/presources/images/nav_divider.gif) right no-repeat;
+		}
+	
+	#browse-nav {
+		float:left;
+		width:112px;
+	}
+	
+		#browse-nav ul {
+			margin: 0 0 0 0px;
+			padding:0;
+		}
+	
+		#browse-nav li {
+			padding: 0 0 0 2px;
+			margin:0;
+		}
+		
+		#browse-nav  li.nav-div {
+			padding: 0 29px 0 1px;
+			background: url(http://images.barnesandnoble.com/presources/images/nav_divider.gif) right no-repeat;
+			margin:0;
+		}
+		
+	/*bottom browse nav bar*/
+		
+	#bb-browse-top-bar {
+		clear:both;
+		float:left;
+		margin:0;
+		padding:0 0 0 0;
+		width:788px;
+		background: url(http://images.barnesandnoble.com/presources/images/nav_bar.gif) bottom left repeat-x;
+		font-size: 11px;
+	}
+	
+	#bb-browse-top-bar ul {
+		list-style:none;
+		float:left;
+	}
+	
+	#bb-browse-top-bar li {
+		float:left;
+		color:#666;
+	}
+	
+	#bb-browse-top-bar p {
+		float:left;
+		margin:0;
+		padding:0;
+	}
+	
+	#bb-browse-next {
+		float:left;
+		background: url(http://images.barnesandnoble.com/presources/images/nav-trc.gif) top right no-repeat;
+		width:59px;
+	}
+	
+		#bb-browse-next a {
+			display:block;
+			margin:0;
+			font-size:13px;
+		}
+		
+		#bb-browse-next p {
+			float:left;
+			padding: 0 10px 0 0;
+			margin:0;
+		}
+	
+	#bb-sort-by {
+		float:left;
+		width:326px;
+	}
+	
+		#bb-sort-by li {
+			padding: 0 0 0 14px;
+		}
+		
+		#bb-sort-by li.nav-div {
+			padding: 0 29px 0 14px;
+			background: url(http://images.barnesandnoble.com/presources/images/nav_divider.gif) right no-repeat;
+		}
+		
+		#bb-sort-by p {
+			margin: 0 0 0 10px;
+			padding:0;
+		}
+		
+		#bb-sort-by strong.sort {
+			font-size:13px;
+		}
+	
+	#bb-items-pp {
+		float:left;
+		width:169px;
+	}
+		#bb-items-pp li {
+			padding: 0 0 0 3px;
+		}
+		
+		#bb-items-pp li.nav-div {
+			padding: 0 29px 0 3px;
+			background: url(http://images.barnesandnoble.com/presources/images/nav_divider.gif) right no-repeat;
+		}
+		
+		#bb-items-pp p {
+			margin: 0 0 0 0;
+			padding:0;
+		}
+	
+	#bb-items-num {
+		float:left;
+		width:122px;
+	}
+	
+		#bb-items-num p.nav-div  {
+			margin:0;
+			padding: 0 29px 0 0;
+			font-size:13px;
+			background: url(http://images.barnesandnoble.com/presources/images/nav_divider.gif) right no-repeat;
+		}
+	
+	#bb-browse-nav {
+		float:left;
+		width:112px;
+	}
+	
+		#bb-browse-nav ul {
+			margin: 0 0 0 0px;
+			padding:0;
+		}
+	
+		#bb-browse-nav li {
+			padding: 0 0 0 2px;
+			margin:0;
+		}
+		
+		#bb-browse-nav  li.nav-div {
+			padding: 0 29px 0 1px;
+			background: url(http://images.barnesandnoble.com/presources/images/nav_divider.gif) right no-repeat;
+			margin:0;
+		}
+		
+		
+/* new sort bar/pagination styles*/
+
+.sort-by {
+	float:left;
+	padding:8px 0 10px 0;
+	margin:0;
+	width:788px;
+}
+
+	.sort-by .sort {
+		font-size:13px;
+		padding:0;
+		margin:0 0 0 14px;
+	}
+	
+	.sort-by ul {
+		margin: 0 0 0 14px;
+		padding:0;
+	}
+	
+	li.nav-div {
+		margin:0;
+		padding: 0 27px 0 0;
+		background: url(http://images.barnesandnoble.com/presources/images/nav_divider.gif) right no-repeat;
+	}
+	
+
+	
+	li.nav-div-off {
+		margin:0;
+		padding: 0 29px 0 0;
+		background:none;
+	}
+	
+.browse-items-nav {
+	clear:both;
+	float:left;
+	width:100%;
+	margin:0 0 0 0;
+	padding:0;
+}
+
+	.browse-items-nav ul {
+		list-style:none;
+		float:left;
+	}
+	
+	.browse-items-nav li {
+		float:left;
+		color:#666;
+	}
+	
+	.bin-left {
+		float:left;
+		padding:8px 0 8px 0;
+		margin:0;
+	}
+	
+		.bin-left p {
+			float:left;
+			margin:0;
+			padding:0 0 0 14px;
+		}
+		
+		.bin-left p.nm {
+			float:left;
+			margin:0;
+			padding:0;
+		}
+		
+		.bin-left ul {
+			margin:0 0 0 0;
+			padding:0;
+		}
+		
+		.bin-left li {
+			margin:0;
+			padding-left:3px;
+		}
+	
+	.bin-right {
+		float:right;
+		padding:8px 0 8px 0;
+		margin:0;
+	}
+	
+		.bin-right ul {
+			margin:0 0 0 0;
+			padding:0;
+		}
+		
+		.bin-right li {
+			margin:0;
+			padding-left:3px;
+		}
+		
+		.bin-right p {
+			float:left;
+			margin:0 14px 0 0;
+			padding:0;
+		}
+		
+		.bin-right	p.nav-div-left 
+	{
+		float:left;
+		margin:0 14px 0 0;
+		padding: 0 0 0 27px;
+		background: url(http://images.barnesandnoble.com/presources/images/nav_divider.gif) left no-repeat;		
+	}
+	
+	
+/* book info */
+
+
+
+.book-container {
+	clear:both;
+	float:left;
+	width:777px;
+	padding:12px 0 20px 0;
+	_padding:12px 0 20px 0;
+	margin:0;
+	background: url(http://images.barnesandnoble.com/presources/images/hrbt.gif) bottom left repeat-x;
+}
+
+.book-container-fi {
+	clear:both;
+	float:left;
+	width:777px;
+	padding:10px 0 20px 0;
+	_padding:12px 0 20px 0;
+	margin:0;
+	background: url(http://images.barnesandnoble.com/presources/images/hrbt.gif) bottom left repeat-x;
+}
+
+.book-container-nr {
+	clear:both;
+	float:left;
+	width:777px;
+	padding:12px 0 10px 0;
+	margin:0;
+}
+
+.bc-wrapper {
+	float:left;
+	width:572px;
+	margin:0;
+	padding:0;
+}
+
+.bc-image {
+	float:left;
+	margin:0;
+	padding:0;
+	width:185px
+}
+
+/*numbers for search results, 8/22/07*/
+
+.result-number 
+{
+	float:left;
+	padding:0;
+	margin:0;
+	width:auto;
+}
+
+.result-number p 
+{
+	float:left;
+	font-size:14px;
+	font-weight:bold;
+	padding:0 10px 0 0;
+	margin:0;
+	color: #b0a377
+}
+
+.bc-image-spec {
+	float:left;
+	margin:0;
+	padding:0;
+	width:180px
+}
+
+	.look-inside {
+		float:left;
+		position:relative;
+	}
+	
+	.look-inside img.ls {
+		position:absolute;
+		bottom:0;
+		left:10px;
+		margin:0 0 -30px 0;
+		padding:0;
+	}
+	
+	.book-image {
+	float:left;
+	margin:0;
+	padding:0;
+	width:auto;
+	}
+
+.bc-desc {
+	float:left;
+	margin:0;
+	padding:0;
+	width:382px;
+}
+
+.bc-desc-spec {
+	float:left;
+	margin:0;
+	padding:0;
+	width:387px;
+}
+
+
+	.bc-desc h2, .bc-desc-spec h2 {
+		color:#5a7d56;
+		margin:0;
+		padding: 0 0 4px 0;
+		font-size:14px;
+	}
+	
+	.bc-desc h2 em, .bc-desc-spec h2 em {
+		font-size:11px;
+		font-style: normal;
+		font-weight: normal;
+		margin:0;
+		padding:0;
+		color: #666;
+	}
+	
+	.bc-desc h2 strong, .bc-desc-spec h2 strong {
+		font-size:11px;
+		font-style: normal;
+		font-weight: normal;
+		margin:0;
+		padding:0;
+		color: #666;
+	}
+	
+	.bc-desc h2 em.nl, .bc-desc-spec h2 em.nl {
+		font-size:11px;
+		font-style: normal;
+		font-weight: normal;
+		display:block;
+	}
+	
+	.bc-des h2 a, .bc-desc-spec h2 a {
+		text-decoration:none;
+	}
+	
+	.bc-desc p, .bc-desc-spec p 
+	{
+		width:100%;
+		margin:0px 0 0px 0;
+		padding:4px 0 4px 0;
+	}
+	
+	.bc-desc .format, .bc-desc-spec .format {
+		font-size: 11px;
+		font-weight:bold;
+		color:#b0a377;
+		padding: 0 0 4px 0;
+		margin: -3px 0 0 0;
+	}
+	
+	.bc-reviews {
+		list-style:none;
+		margin:0;
+		padding:4px 0 4px 0;
+	}
+	
+	.bc-reviews li {
+		color: #666666;
+		margin:0;
+		padding:0;
+	}
+	
+	.bc-reviews li a {
+		margin:0 4px 0 0;
+	}
+	
+	.bc-meta {
+		float:left;
+		list-style:none;
+		margin:4px 0 4px 0;
+		padding:0;
+	}
+	
+	.bc-meta li {
+		float:left;
+		padding:0;
+		margin: 0 6px 0 0;
+		color: #666;
+		font-size:10px;
+	}
+	
+	.bc-meta2 {
+		float:left;
+		list-style:none;
+		margin:4px 0 15px 0;
+		padding:0;
+		width:100%;
+	}
+	
+	.bc-meta2 li {
+		padding:0;
+		margin: 0;
+		color: #666;
+		font-size:10px;
+	}
+	
+	.bc-meta3 
+	{
+		float:left;
+		list-style:none;
+		margin:4px 0 4px 0;
+		padding:0;
+		width:380px;
+	}
+	
+	.bc-meta3 li 
+	{
+		float:left;
+		width:190px;
+		padding:0;
+		margin:0;
+	} 
+	
+	.bc-meta4 {
+		float:left;
+		list-style:none;
+		margin:4px 0 15px 0;
+		padding:0;
+		width:100%;
+	}
+	
+	.bc-meta4 li {
+		padding:0;
+		margin: 0;
+		color: #666;
+	}
+	
+	.desc {
+		clear:left;
+		float:left;
+		width:100%;
+	}
+	
+	.bc-btns {
+		clear:both;
+		float:left;
+		padding:4px 0 0 0;
+		margin:0;
+		list-style:none;
+		width:100%;
+	}
+	
+	.bc-btns li {
+		float:left;
+		margin:0 8px 0 0;
+		padding:0;
+	}
+
+.bc-price {
+	float:right;
+	width:202px;
+}
+
+	.bc-price .sb-tlc 
+	{
+		margin-top: -6px;
+	}
+
+/*review rollover styles*/
+
+#review-rollover {
+	position:absolute;
+	visibility:hidden;
+	left: -999em;
+	width:376px;
+	_width:374px;
+}
+
+	.rr-bg {
+		float:right;
+		margin:0;
+		padding:0;
+		background: url(http://images.barnesandnoble.com/presources/images/review_ds.png) bottom right !important;
+		filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://images.barnesandnoble.com/presources/images/review_ds.png',sizingMethod='scale');
+		z-index:2;
+		_background:none;
+		width:333px;
+	}
+	
+	.rr-content 
+	{
+		float:right;
+		position:relative;
+		margin:0;
+		padding:0;
+		width:333px;
+		border:1px solid #86a981;
+		background: #fff;
+		min-height:130px;
+		z-index:0;
+	}
+	
+	.rr-wrap 
+	{
+		float:right;
+		margin:0;
+		padding: 0 6px 6px 0;
+	}
+	
+		.rr-content ul 
+		{
+			list-style:none;
+			margin:0 0 6px 0;
+			padding:6px 12px 12px 12px;
+		}
+		
+		.rr-content li 
+		{
+			padding:3px 0 3px 0;
+			margin:0;
+		}
+		
+		.rr-content li a 
+		{
+			font-weight:bold;
+		}
+		
+		.rr-content p 
+		{
+			padding:35px 12px 12px 12px;
+		}
+		
+		.rr-content h4 
+		{
+			color:#5a7d56;
+			font-size:11px;
+			padding:0;
+			margin:0;
+		}
+		
+		.rr-content .right 
+		{
+			margin-right:6px;
+		}
+	
+	.rr-triangle 
+	{
+		float:left;
+		position:relative;
+		width:31px;
+		z-index:6666;
+		
+	}
+	
+	#triangle {
+		position:absolute;
+		top:250px;
+		left:5px;
+		height:46px;
+		width:31px;
+		background: url(http://images.barnesandnoble.com/presources/images/review_box_arrow.png) bottom right !important;
+		filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://images.barnesandnoble.com/presources/images/review_box_arrow.png',sizingMethod='scale');
+		z-index:6666;
+		_background:none;
+	}
+
+/*check store availability styles */
+
+	#check-store {
+		position:absolute;
+		visibility:hidden;
+		width:272px;
+	}
+	
+	.cs-bg {
+		z-index:2;
+		float:left;
+		width:272px;
+		margin:0;
+		padding:0;
+		background: url(http://images.barnesandnoble.com/presources/images/checkstore_ds.png) bottom right !important;
+		filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://images.barnesandnoble.com/presources/images/checkstore_ds.png', sizingMethod='scale');
+		_background:none;
+	}
+	
+	.cs {
+	position:absolute;
+	top:15px;
+	right:0;
+	margin:0 -6px 0 0;
+	padding:0;
+}
+
+.check-store {
+	float:left;
+	width:272px;
+	margin:0;
+	padding:0;
+	border:1px solid #86a981;
+	background: #fff;
+	min-height:102px;
+}
+
+	.check-store input {
+		float:left;
+		width:90px;
+		margin:0;
+		padding:0;
+	}
+	
+	.check-store form {
+		margin:0;
+		padding:0 0 6px 0;
+	}
+	
+	.check-store img {
+		float:left;
+		margin:-4px -8px 0 3px;
+		padding:0;
+	}
+	
+	.check-store h4 {
+		float:left;
+		width:200px;
+		color:#5a7d53;
+		font-size:11px;
+		padding:9px 0 6px 0;
+		margin:0 0 6px 0;
+	}
+	
+	.check-store ul {
+		clear:both;
+		float:left;
+		list-style:none;
+		margin:0;
+		padding:8px 0 0 0;
+		width:100%;
+	}
+	
+	.check-store li {
+		margin:0;
+		padding:0 0 6px 0;
+	}
+	
+	.check-store li a {
+		display:block;
+		padding: 0 0 0 15px;
+		margin:0;
+		background: url(http://images.barnesandnoble.com/presources/images/check.gif) no-repeat;
+		background-position: 0 1px;
+	}
+	
+	.check-store li a.no-stock {
+		display:block;
+		padding: 0 0 0 15px;
+		margin:0;
+		background: url(http://images.barnesandnoble.com/presources/images/x.gif) no-repeat;
+		background-position: 0 1px;
+	}
+		
+	.check-store img.png 
+	{
+		cursor: pointer;
+	}
+	
+	#check-store .check-store-wrap 
+	{
+		float:right;
+		padding:0 6px 6px 0;
+		margin:0;
+	}
+	
+	.check-store .hrbt-r
+	{
+		margin:0 12px 0 12px;
+		_margin: 0 6px 0 6px;
+		padding:0 0 6px 0;
+	}
+	
+	#StoreAvailabilityOutput 
+	{
+		float:left;
+		padding:0 12px 12px 12px;
+		margin:0;
+	}
+	
+	#StoreAvailabilityOutput  .right 
+	{
+		padding-bottom:12px;
+	}
+
+	
+/* classes */
+
+.leftClear {
+	float:left;
+	clear:both;
+	height:25px;
+	margin:0;
+	padding:0;
+}
+
+.select-container {
+	clear:both;
+	float:left;
+	border-top:1px solid #cccccc;
+	margin: 0 0 0 1px;
+	padding:0;
+	width: 192px;
+}
+
+.left-sep {
+	clear:both;
+	float:left;
+	border-top: 1px solid #ccc;
+	margin: 0;
+	padding:0;
+	font-size:1px;
+	width: 187px;
+}
+
+.left-sep-12t {
+	clear:both;
+	float:left;
+	border-top: 1px solid #ccc;
+	margin: 12px 0 0 0;
+	padding:0;
+	font-size:1px;
+	width: 187px;
+}
+
+.bs-sep {
+	padding: 10px 0 10px 0;
+}
+
+.bn-recommends {
+	float:right;
+	margin:0 0 0 5px;
+	padding:0;
+}
+
+.nav-bg {
+	float:left;
+	background: url(http://images.barnesandnoble.com/presources/images/nav_bar.gif) bottom left repeat-x;
+}
+
+.nrs-bg {
+	float:left;
+	background: #f0eee8;
+}
+
+/*no results page styles*/
+
+	/*no-results search drop down*/
+	
+		/*header select replacement*/
+		
+		#no-results-search ul {
+			float:left;
+			margin:0;
+			padding:0;
+			list-style:none;
+		}
+		
+		#no-results-search form {
+			padding:0;
+			margin:0;
+		}
+		
+		#no-results-search li {
+			float:left;
+			margin:0;
+			padding:0;
+		}
+		
+		#no-results-search input.search-input {
+			float:left;
+			width:330px;
+			height:29px;
+			margin:0;
+			padding:6px 0 0 6px;
+			font-size:16px;
+			color:#999999;
+			border: 1px solid #ccc;
+			font-size:11px;
+			font-family:Verdana, Arial, Helvetica, sans-serif;
+		}
+				
+		
+		#no-results-search select {
+			float:left;
+			margin:0;
+			padding:0;
+		}
+
+		#no-results-search .select-replacement {
+			
+			float:left;
+			width:152px;
+			list-style: none;
+			z-index:2;
+			margin:0;
+			padding:0;
+			background: url(http://images.barnesandnoble.com/presources/images/select-bg.png) bottom right no-repeat;
+		}
+		
+		#no-results-search ul.select-replacement li {
+		  float:none;
+		  cursor: pointer;
+		  display: none;
+		  margin: 0;
+		  height:29px;
+		  padding: 0 0 0 5px;
+		}
+		
+		#no-results-search ul.select-replacement a {
+			display:block;
+			color: #808080;
+			font-size:11px;
+			font-family: Verdana, Arial, Helvetica, sans-serif;
+			text-decoration:none;
+			padding: 8px 0 0 0;
+			margin:0;
+		}
+		
+		#no-results-search ul.selectOpen a:hover {
+			text-decoration:underline;
+		}
+		
+		#no-results-search ul.selectOpen li {
+			display: block;
+			
+			
+		}
+		
+		#no-results-search ul.selectOpen li.bottom {
+			display: block;
+			
+			
+		}
+		
+		#no-results-search ul.selectOpen li:hover, #no-results-search ul.selectOpen li.hover  {
+			text-decoration:underline;
+		}
+		
+		#no-results-search ul.select-replacement li.selected {
+		  display: block;
+		  font-weight:bold;
+		}
+		
+		#no-results-search ul.selectOpen li.selected {
+		  font-weight:bold;
+		  display: block;
+		}
+	
+		#no-results-search ul.selectOpen li.top-selected {
+		  font-weight:bold;
+		  display: block;
+		  color: #b0a178;
+		  background: url(http://images.barnesandnoble.com/presources/images/search_filter.gif) top left no-repeat;
+		}
+		
+		#no-results-search ul.select-replacement li.top, #no-results-search ul.selectOpen li.top  {
+			background: url(http://images.barnesandnoble.com/presources/images/search_filter.gif) top left no-repeat;
+			display: block;
+			
+		}
+		
+		#no-results-search input { margin-left: 155px; }
+
+
+/*refine styles*/
+
+.refine 
+{
+	float:left;
+	padding:0;
+	margin:0;
+	background: #86ab7f;
+	width:187px;
+}
+
+ .refine h4 
+{
+	font-size:12px;
+	color:#fff;
+	padding:3px 0 3px 0;
+	margin:0 0 0 -6px;
+}
+
+.refine-x 
+{
+	float:left;
+	padding:0;
+	margin:1px 0 0 0;
+	background: #f1efea;
+	width:187px;
+	border-bottom: 1px solid #ccc;
+}
+
+.refine-x h4
+{
+	float:left;
+	color:#666;
+	font-size:13px;
+	padding:3px 17px 3px 20px;
+	margin:0 0 0 -6px;
+	font-weight:normal;
+}
+
+.refine-x img 
+{
+	float:right;
+	padding:0;
+	margin:3px 5px 3px 0;
+}
+
+.refine-wrap 
+{
+	float:left;
+	margin:0;
+	padding:0 0 0 1px;
+}
+
+/*header changes from main page*/
+
+#header-breadcrumbs p {
+	clear:both;
+	float:left;
+	padding:0 0 0 18px;
+	margin:0;
+	font-size: 11px;
+}
+
+
+/*new styles for video game search unique elements */
+
+.price-list-header {
+	background:#f0efea;
+	float:left;
+	width:189px;
+	padding:0;
+	margin:2px 0 0 0;
+}
+
+.bc-price .wrap2l 
+{
+	padding-left:4px;
+}
+
+	.price-list-header h4 {
+		font-size:14px;
+		margin:0 10px 0 0;
+		_margin:0 5px 0 0;
+		padding:4px 0 4px 0;
+		float:right;
+		color:#b0a178;
+	}
+	
+	.price-list-header h4 a 
+	{
+		color:#b0a178;
+	}
+	
+.price-list-header-used {
+	background:#b0a178;
+	float:left;
+	width:189px;
+	padding:0;
+	margin:2px 0 0 0;
+}
+
+	.price-list-header-used h4 {
+		font-size:14px;
+		margin:0 10px 0 0;
+		_margin:0 5px 0 0;
+		padding:4px 0 4px 0;
+		float:right;
+		color:#fff;
+	}
+	
+	.price-list-header-used h4 a 
+	{
+		color:#fff;
+	}
+	
+	/*price box shadows for search page*/
+	
+	.bc-price-ds 
+	{
+		float:right;
+		padding:0 0 9px 0;
+		margin:0;
+		background: url(http://images.barnesandnoble.com/presources/images/bc-price-bg.gif) bottom left no-repeat;
+		width:202px;
+		}
+	.bc-price-ds-bt 
+	{
+		float:right;
+		padding:0;
+		margin:0;
+		background: url(http://images.barnesandnoble.com/presources/images/bc-price-bg.gif) top left no-repeat;
+		width:202px;
+		}
+	
+	.bc-wrap 
+	{
+		float:left;
+		margin:0;
+		padding:12px 20px 12px 12px;
+	}
+	
+	.btb-dsr-tc, .btb-dsr-bc {width:788px}
+	
+	.wrap5l .btb-dsr-tc, .wrap5l .btb-dsr-bc {width:783px}
+	
+	#triangle {
+		left:13px;
+	}
+	
+	#search-within input {
+		width:95px;
+	}
+	
+	#search-within input {
+		width:140px;#
+	}
+	
+	.btb-dsr-tc, .btb-dsr-bc {width:auto}
+	
+	#triangle {
+		left:5px;
+	}
+	
+	body:first-of-type .btb-dsr-tc, body:first-of-type .btb-dsr-bc {width:788px}
+	body:first-of-type #triangle {left:13px;}
+	body:first-of-type #search-within input {
+		width:95px;
+	}
+	
+	.price-list2 .left-arrow 
+	{
+		background-position:0 4px;
+		}

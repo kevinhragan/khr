@@ -1,0 +1,10 @@
+#! /usr/bin/awk -f 
+
+BEGIN {OFS=FS=","}
+
+{  for( i=1; i<=NF; i++)
+        sub(/^ */,"", $i)
+   print $0
+}
+
+

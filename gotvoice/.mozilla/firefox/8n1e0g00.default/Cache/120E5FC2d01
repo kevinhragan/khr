@@ -1,0 +1,259 @@
+<html><head>
+<base href="http://librenix.com/">
+<LINK REL="SHORTCUT ICON" href="/favicon.ico">
+
+<style type="text/css">
+<!--
+A{COLOR: #005099;}
+A:hover{COLOR: #cc3333;TEXT-DECORATION: NONE;}
+ blockquote{margin: 1em 1em .6em 1em; font-style: italic;}
+ H1{font-size: 1.3em; font-weight: normal; margin: 0px;}
+ H2{font-size: 1.3em; font-weight: normal; margin: 0px;}
+ H3{font-size: 1em; font-style: bold; margin: 0px;}
+ body {font-family: Arial, sans-serif;}
+-->
+</STYLE>
+
+<title>Linux System Administration Portal</title>
+<META NAME="description" CONTENT="Linux Admin Portal: Linux, BSD, admin, and programming news, articles, and opinions"></head>
+
+<body bgcolor=#ffffff link=#005099 vlink=#005099 topmargin=0 leftmargin=0 rightmargin=0 marginwidth=0 marginheight=0>
+
+<center><table width=99% border=0 cellpadding=0>
+<tr><td height=15 nowrap></tr><tr><td width=15% cellpadding=0><a href=/><img src=/logo.gif border=0 alt="Librenix"></a></td>
+<td align=center width=75% cellpadding=0></table>
+
+<center>
+<table width=100% border=0 cellspacing=0 cellpadding=0>
+<tr><td bgcolor=#1166bb height=3 nowrap></tr>
+<tr><td height=12 nowrap>
+<center><font color=#cccccc>
+<a href=/last100/>Headlines</a> |
+<a href=/linux/>Linux</a> | 
+<a href=/apps/>Apps</a> | 
+<a href=/coding/>Coding</a> | 
+<a href=/bsd/>BSD</a> | 
+<a href=/admin/>Admin</a> | 
+<a href=/news/>News</a>
+</tr><tr><td bgcolor=#cccccc height=1 nowrap></tr><tr><td align=right><font color=#555555 size=2><i>Information for Linux System Administration&nbsp;</i></font></tr>
+</table>
+<table border=0 width=75% cellspacing=20><tr>
+<td width=80% valign=top>
+<table width=100% border=0 cellspacing=0><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td>
+
+<H2>Remote GNOME Desktop on Demand</H2></tr>
+
+<tr><td><table border=0 width=100% cellpadding=0 cellspacing=9><tr><td width=10% valign=center align=center><font size=2 color=#333333><a href=/voteup/?inode=11927><img src=up.gif border=0 alt="Up"></a><br>vote<br><a href=/votedown/?inode=11927><img src=down.gif border=0 alt="Down"></a></font></td><td width=1 bgcolor=#bbbbbb><br></td>
+<td width=90% valign=top></b>
+<table width=90% cellspacing=8 border=0 cellpadding=0><tr><td><font size=3>To use your DOD desktop you need the dedicated client software,  available for Linux, Mac OS X, and Windows...<br><blockquote>Desktop on Demand (DOD) is the latest contender to give users a full-fledged remote desktop instead of Web-based applications to help users to stay productive when they are on the move. Similar to Ulteo (which we reviewed not long ago), DOD gives you a full-blown remote Linux-based desktop -- but that's where the similarity ends. Unlike Ulteo, which is based on the VNC protocol and runs entirely in the browser using a Java-based applet, DOD employs the NoMachine NX technology for accessing the remote desktop.</blockquote> <a href="http://www.linux.com/feature/131661">read more...</a></font></table></table><tr><td><font size=2 color=#666666><a href="MailLink/?inode=11927">mail this link</a> | <a href="?inode=11927">permapage</a> | score:9993 | </font><font size=2> -Ray, April 16, 2008</table><table><tr><td height=8></table>
+<table width=100% border=0 cellspacing=0><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td>
+
+<H2>LInux and X11 on the PS3</H2></tr>
+
+<tr><td><table border=0 width=100% cellpadding=0 cellspacing=9><tr><td width=10% valign=center align=center><font size=2 color=#333333><a href=/voteup/?inode=11926><img src=up.gif border=0 alt="Up"></a><br>vote<br><a href=/votedown/?inode=11926><img src=down.gif border=0 alt="Down"></a></font></td><td width=1 bgcolor=#bbbbbb><br></td>
+<td width=90% valign=top></b>
+<table width=90% cellspacing=8 border=0 cellpadding=0><tr><td><font size=3>The Sony PlayStation 3 (PS3) runs Linux, but getting it to run well requires some tweaking. In the third and final article of this series on PS3 Linux Peter Seebach talks about ways to  get X11 slimmed down to fit on a smaller memory budget. <a href="http://www.ibm.com/developerworks/linux/library/l-linux-ps3-3/?ca=dgr-lnxw16LinuxOnPS3Part3&amp;S_TACT=105AGX59&amp;S_CMP=GR">read more...</a></font></table></table><tr><td><font size=2 color=#666666><a href="?inode=11926">permapage</a> | score:9993 | </font><font size=2> -Ida Momtaheni, April 16, 2008</table><table><tr><td height=8></table>
+<table width=100% border=0 cellspacing=0><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td>
+
+<H2>Book Review: Linux System Programming</H2></tr>
+
+<tr><td><table border=0 width=100% cellpadding=0 cellspacing=9><tr><td width=10% valign=center align=center><font size=2 color=#333333><a href=/voteup/?inode=11922><img src=up.gif border=0 alt="Up"></a><br>vote<br><a href=/votedown/?inode=11922><img src=down.gif border=0 alt="Down"></a></font></td><td width=1 bgcolor=#bbbbbb><br></td>
+<td width=90% valign=top></b>
+<table width=90% cellspacing=8 border=0 cellpadding=0><tr><td><font size=3><u>Linux System Programming</u> lists for about $50 US...<br><blockquote>The books stated target is for modern Linux development, a 2.6.22 kernel, gcc 4.2 and glibc 2.5. Many calls have been standardized by POSIX, and where this is so it are noted in the text, so a large portion of the content is useful on other systems. There is even the occasional mention of non-Linux system calls, the use of which is not encouraged, but shown so you know how they function if you come across them in older code. </blockquote> <a href="http://books.slashdot.org/article.pl?sid=08/04/14/1415215">read more...</a></font></table></table><tr><td><font size=2 color=#666666><a href="MailLink/?inode=11922">mail this link</a> | <a href="?inode=11922">permapage</a> | score:9985 | </font><font size=2> -Ray, April 15, 2008</table><table><tr><td height=8></table>
+<table width=100% border=0 cellspacing=0><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td>
+
+<H2>Control lock contention with Java Lock Analyzer</H2></tr>
+
+<tr><td><table border=0 width=100% cellpadding=0 cellspacing=9><tr><td width=10% valign=center align=center><font size=2 color=#333333><a href=/voteup/?inode=11917><img src=up.gif border=0 alt="Up"></a><br>vote<br><a href=/votedown/?inode=11917><img src=down.gif border=0 alt="Down"></a></font></td><td width=1 bgcolor=#bbbbbb><br></td>
+<td width=90% valign=top></b>
+<table width=90% cellspacing=8 border=0 cellpadding=0><tr><td><font size=3>Many of today's Java apps use threads to support concurrent programming; lock contention problems can be a result of how an application controls these threads. The  Lock Analyzer for Java  performs lock analysis on a live application in order to highlight threads with lock contention that could affect performance.  <a href="http://www.alphaworks.ibm.com/tech/jla?open&amp;S_TACT=105AGX59&amp;S_CMP=GRsite-lnxw16&amp;ca=dgr-lnxw16awjla">read more...</a></font></table></table><tr><td><font size=2 color=#666666><a href="?inode=11917">permapage</a> | score:9982 | </font><font size=2> -jmalasko, April 15, 2008</table><table><tr><td height=8></table>
+<table width=100% border=0 cellspacing=0><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td>
+
+<H2>Mandriva Linux 2008.1 Review</H2></tr>
+
+<tr><td><table border=0 width=100% cellpadding=0 cellspacing=9><tr><td width=10% valign=center align=center><font size=2 color=#333333><a href=/voteup/?inode=11921><img src=up.gif border=0 alt="Up"></a><br>vote<br><a href=/votedown/?inode=11921><img src=down.gif border=0 alt="Down"></a></font></td><td width=1 bgcolor=#bbbbbb><br></td>
+<td width=90% valign=top></b>
+<table width=90% cellspacing=8 border=0 cellpadding=0><tr><td><font size=3>Another look at the latest Mandriva Linux distro...<br><blockquote>On the desktop, you will have the KDE 3.5.9, GNOME 2.22.0, Xfce 4.4.2 and IceWM 1.3.1 to choose from while under the hood the system is powered by Linux kernel 2.6.24.4, gcc 4.2.3, glibc 2.7, X.Org 7.3, compiz 0.7.2, etc. Popular applications which have been bundled in this 2008 Spring edition are OpenOffice.org 2.4.0, Firefox 2.0.0.13, Gimp 2.4.5, K3b 1.0.4, Amarok 1.4.8, Pidgin 2.4.1, MPlayer 1.0rc2, etc.</blockquote> <a href="http://linuxseekers.com/index.php/component/content/article/58-mandriva-linux-20081">read more...</a></font></table></table><tr><td><font size=2 color=#666666><a href="?inode=11921">permapage</a> | score:9976 | </font><font size=2> -Ray, April 15, 2008</table><table><tr><td height=8></table>
+<table width=100% border=0 cellspacing=0><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td>
+
+<H2> Javascript development simplified</H2></tr>
+
+<tr><td><table border=0 width=100% cellpadding=0 cellspacing=9><tr><td width=10% valign=center align=center><font size=2 color=#333333><a href=/voteup/?inode=11903><img src=up.gif border=0 alt="Up"></a><br>vote<br><a href=/votedown/?inode=11903><img src=down.gif border=0 alt="Down"></a></font></td><td width=1 bgcolor=#bbbbbb><br></td>
+<td width=90% valign=top></b>
+<table width=90% cellspacing=8 border=0 cellpadding=0><tr><td><font size=3>Learn a JSP-based technique for creating JavaScript code, notably reducing the amount of code you have to write manually. The illustration provided generates  JavaScript functions for sending Ajax requests and processing responses.  <a href="http://www.ibm.com/developerworks/web/library/wa-aj-simplejava1/?ca=dgr-lnxw16wa-aj-simplejava1&amp;S_TACT=105AGX59&amp;S_CMP=GRsitelnxw16">read more...</a></font></table></table><tr><td><font size=2 color=#666666><a href="?inode=11903">permapage</a> | score:9974 | </font><font size=2> -jmalasko, April 13, 2008</table><table><tr><td height=8></table>
+<table width=100% border=0 cellspacing=0><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td>
+
+<H2>Virtual Users, Domains with Postfix, MySQL, SquirrelMail</H2></tr>
+
+<tr><td><table border=0 width=100% cellpadding=0 cellspacing=9><tr><td width=10% valign=center align=center><font size=2 color=#333333><a href=/voteup/?inode=11920><img src=up.gif border=0 alt="Up"></a><br>vote<br><a href=/votedown/?inode=11920><img src=down.gif border=0 alt="Down"></a></font></td><td width=1 bgcolor=#bbbbbb><br></td>
+<td width=90% valign=top></b>
+<table width=90% cellspacing=8 border=0 cellpadding=0><tr><td><font size=3>This document describes how to  install a Postfix mail server that is based on virtual users and domains, i.e. users and domains that are in a MySQL database. I will also demonstrate the installation and configuration of Courier (Courier-POP3, Courier-IMAP), so that Courier can authenticate against the same MySQL database Postfix uses. In addition to that, this tutorial covers the installation of Amavisd, SpamAssassin and ClamAV so that emails will be scanned for spam and viruses. I will also show how to install SquirrelMail as a webmail interface so that users can read and send emails and change their passwords. <a href="http://www.howtoforge.com/virtual-users-domains-postfix-courier-mysql-squirrelmail-mandriva2008.1">read more...</a></font></table></table><tr><td><font size=2 color=#666666><a href="MailLink/?inode=11920">mail this link</a> | <a href="?inode=11920">permapage</a> | score:9972 | </font><font size=2> -falko, April 15, 2008</table><table><tr><td height=8></table>
+<table width=100% border=0 cellspacing=0><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td>
+
+<H2>Scripting: Cursor and color control with Tput</H2></tr>
+
+<tr><td><table border=0 width=100% cellpadding=0 cellspacing=9><tr><td width=10% valign=center align=center><font size=2 color=#333333><a href=/voteup/?inode=11912><img src=up.gif border=0 alt="Up"></a><br>vote<br><a href=/votedown/?inode=11912><img src=down.gif border=0 alt="Down"></a></font></td><td width=1 bgcolor=#bbbbbb><br></td>
+<td width=90% valign=top></b>
+<table width=90% cellspacing=8 border=0 cellpadding=0><tr><td><font size=3>Many times, shell scripts evolve into menu-based scripts, and the scripter wants to display more to users than simply scrolling text.  Regardless of the complexity, scripters have always needed a way to change their output to bold, underline it, reverse the highlights, and so on.  That's where tput comes into play. <a href="http://www.ibm.com/developerworks/aix/library/au-learningtput/?ca=dgr-lnxw16unixtput&amp;S_TACT=105AGX59&amp;S_CMP=GR">read more...</a></font></table></table><tr><td><font size=2 color=#666666><a href="?inode=11912">permapage</a> | score:9971 | </font><font size=2> -BlueVoodoo, April 12, 2008</table><table><tr><td height=8></table>
+<table width=100% border=0 cellspacing=0><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td>
+
+<H2>Access Linux Partitions from Windows</H2></tr>
+
+<tr><td><table border=0 width=100% cellpadding=0 cellspacing=9><tr><td width=10% valign=center align=center><font size=2 color=#333333><a href=/voteup/?inode=11915><img src=up.gif border=0 alt="Up"></a><br>vote<br><a href=/votedown/?inode=11915><img src=down.gif border=0 alt="Down"></a></font></td><td width=1 bgcolor=#bbbbbb><br></td>
+<td width=90% valign=top></b>
+<table width=90% cellspacing=8 border=0 cellpadding=0><tr><td><font size=3>If you dual boot with Windows and Linux, and have data spread across different partitions on Linux and Windows, you should be really in for some issues.<br><br>It happens sometimes you need to access your files on Linux partitions from Windows, and you realize it isn’t possible easily. Not really, with these tools in hand - it’s very easy for you to access files on your Linux partitions from Windows. <a href="http://www.ubuntugeek.com/tools-to-access-linux-partitions-from-windows.html">read more...</a></font></table></table><tr><td><font size=2 color=#666666><a href="?inode=11915">permapage</a> | score:9970 | </font><font size=2> -gg234, April 14, 2008</table><table><tr><td height=8></table>
+<table width=100% border=0 cellspacing=0><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td>
+
+<H2>Ubuntu 8 Review</H2></tr>
+
+<tr><td><table border=0 width=100% cellpadding=0 cellspacing=9><tr><td width=10% valign=center align=center><font size=2 color=#333333><a href=/voteup/?inode=11878><img src=up.gif border=0 alt="Up"></a><br>vote<br><a href=/votedown/?inode=11878><img src=down.gif border=0 alt="Down"></a></font></td><td width=1 bgcolor=#bbbbbb><br></td>
+<td width=90% valign=top></b>
+<table width=90% cellspacing=8 border=0 cellpadding=0><tr><td><font size=3>What's new in Ubuntu 8.04...<br><blockquote>Hardy Heron has been designated as one of Ubuntu’s periodic Long Term Support – or LTS – releases, for which the company commits itself to providing three years desktop support and five years server support. This means that Hardy Heron isn’t going to go anywhere soon; it’s here for the long haul. This invariably means the designers have focused less on putting brand new stuff in but rather more stability, more robustness and more reliability.<br></blockquote> <a href="http://www.itwire.com/content/view/17380/1141/">read more...</a></font></table></table><tr><td><font size=2 color=#666666><a href="MailLink/?inode=11878">mail this link</a> | <a href="?inode=11878">permapage</a> | score:9970 | </font><font size=2> -Ray, April 3, 2008</table><table><tr><td height=8></table>
+<table width=100% border=0 cellspacing=0><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td>
+
+<H2>Set up a Mandriva 2008 Spring Free Server</H2></tr>
+
+<tr><td><table border=0 width=100% cellpadding=0 cellspacing=9><tr><td width=10% valign=center align=center><font size=2 color=#333333><a href=/voteup/?inode=11905><img src=up.gif border=0 alt="Up"></a><br>vote<br><a href=/votedown/?inode=11905><img src=down.gif border=0 alt="Down"></a></font></td><td width=1 bgcolor=#bbbbbb><br></td>
+<td width=90% valign=top></b>
+<table width=90% cellspacing=8 border=0 cellpadding=0><tr><td><font size=3>This is a detailed description about how to  set up a Mandriva 2008 Spring Free (Mandriva 2008.1) server that offers all services needed by ISPs and hosters: Apache web server (SSL-capable), Postfix mail server with SMTP-AUTH and TLS, BIND DNS server, Proftpd FTP server, MySQL server, Dovecot POP3/IMAP, Quota, Firewall, etc. This tutorial is written for the 32-bit version of Mandriva 2008.1, but should apply to the 64-bit version with very little modifications as well. <a href="http://www.howtoforge.com/perfect-server-mandriva-2008.1">read more...</a></font></table></table><tr><td><font size=2 color=#666666><a href="?inode=11905">permapage</a> | score:9968 | </font><font size=2> -falko, April 11, 2008</table><table><tr><td height=8></table>
+<table width=100% border=0 cellspacing=0><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td>
+
+<H2>PS3 Linux: Tweaking Memory Use</H2></tr>
+
+<tr><td><table border=0 width=100% cellpadding=0 cellspacing=9><tr><td width=10% valign=center align=center><font size=2 color=#333333><a href=/voteup/?inode=11893><img src=up.gif border=0 alt="Up"></a><br>vote<br><a href=/votedown/?inode=11893><img src=down.gif border=0 alt="Down"></a></font></td><td width=1 bgcolor=#bbbbbb><br></td>
+<td width=90% valign=top></b>
+<table width=90% cellspacing=8 border=0 cellpadding=0><tr><td><font size=3>The Sony PlayStation 3 (PS3) runs Linux, but getting it to run well requires some tweaking. The first part introduced features and benefits, and Part 2 takes a look at  where all the memory goes in the PS3 and how to reclaim it, along with what significant things can impact a PS3 system's performance running Linux.  <a href="http://www.ibm.com/developerworks/linux/library/l-linux-ps3-2/?ca=dgr-lnxw16LinuxOnPS3Part2&amp;S_TACT=105AGX59&amp;S_CMP=GR">read more...</a></font></table></table><tr><td><font size=2 color=#666666><a href="?inode=11893">permapage</a> | score:9967 | </font><font size=2> -Ida Momtaheni, April 14, 2008</table><table><tr><td height=8></table>
+<table width=100% border=0 cellspacing=0><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td>
+
+<H2>Set up a Linux Software Firewall with Firestarter</H2></tr>
+
+<tr><td><table border=0 width=100% cellpadding=0 cellspacing=9><tr><td width=10% valign=center align=center><font size=2 color=#333333><a href=/voteup/?inode=11723><img src=up.gif border=0 alt="Up"></a><br>vote<br><a href=/votedown/?inode=11723><img src=down.gif border=0 alt="Down"></a></font></td><td width=1 bgcolor=#bbbbbb><br></td>
+<td width=90% valign=top></b>
+<table width=90% cellspacing=8 border=0 cellpadding=0><tr><td><font size=3>How to use Firestarter to simplify IPtables firewall setup...<br><blockquote>One of the great features included in Linux is the IPtables firewall. Unfortunately, its command-line use is rather complex, and it can be intimidating for even experienced Linux users to configure it. Firestarter is a friendly graphical interface that allows you to configure a software firewall in Linux using the built-in IPtables/IPchains utilities. </blockquote></font></table></table><tr><td><font size=2 color=#666666><a href="?inode=11723">permapage</a> | score:9965 | </font><font size=2> -Ray, February 21, 2008</table><table><tr><td height=8></table>
+<table width=100% border=0 cellspacing=0><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td>
+
+<H2>Fedora 9 Preview</H2></tr>
+
+<tr><td><table border=0 width=100% cellpadding=0 cellspacing=9><tr><td width=10% valign=center align=center><font size=2 color=#333333><a href=/voteup/?inode=11855><img src=up.gif border=0 alt="Up"></a><br>vote<br><a href=/votedown/?inode=11855><img src=down.gif border=0 alt="Down"></a></font></td><td width=1 bgcolor=#bbbbbb><br></td>
+<td width=90% valign=top></b>
+<table width=90% cellspacing=8 border=0 cellpadding=0><tr><td><font size=3>This preview is based on a beta test version of the upcoming Fedora 9 release...<br><blockquote>Previous to Fedora 9 there were separate dictionaries inside OpenOffice, Firefox, Thunderbird, and Aspell. The dictionary that Fedora is turning to is Hunspell. Nearing completion but still further noticeable work left is on integrating the EXT4 file-system and adding support into the Red Hat Anaconda installer for encrypted file-system support...</blockquote> <a href="http://www.phoronix.com/scan.php?page=article&amp;item=fedora9_beta&amp;num=1">read more...</a></font></table></table><tr><td><font size=2 color=#666666><a href="?inode=11855">permapage</a> | score:9964 | </font><font size=2> -Ray, March 27, 2008</table><table><tr><td height=8></table>
+<table width=100% border=0 cellspacing=0><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td>
+
+<H2>Review: Fedora 9 Beta</H2></tr>
+
+<tr><td><table border=0 width=100% cellpadding=0 cellspacing=9><tr><td width=10% valign=center align=center><font size=2 color=#333333><a href=/voteup/?inode=11916><img src=up.gif border=0 alt="Up"></a><br>vote<br><a href=/votedown/?inode=11916><img src=down.gif border=0 alt="Down"></a></font></td><td width=1 bgcolor=#bbbbbb><br></td>
+<td width=90% valign=top></b>
+<table width=90% cellspacing=8 border=0 cellpadding=0><tr><td><font size=3>Another look at the upcoming Fedora Linux distribution...<br><blockquote>Reviewers highlighted three intriguing aspects for Fedora 9: the new desktop schemes, the new package management system, and back-end improvements to memory usage and performance.<br><br>On the desktop front, Fedora 9 Beta offers GNOME 2.22 and KDE 4.0.2 as the defaults. GNOME 2.22 in Fedora 9 has better file system performance, security improvements, and the ability to manage power right at the login screen (quite handy on a laptop). There's better Bluetooth integration, especially for Palm devices. </blockquote> <a href="http://www.crn.com/software/207200137">read more...</a></font></table></table><tr><td><font size=2 color=#666666><a href="MailLink/?inode=11916">mail this link</a> | <a href="?inode=11916">permapage</a> | score:9960 | </font><font size=2> -Ray, April 14, 2008</table><table><tr><td height=8></table>
+<table width=100% border=0 cellspacing=0><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td>
+
+<H2>Scheduled backups with Rsyncbackup</H2></tr>
+
+<tr><td><table border=0 width=100% cellpadding=0 cellspacing=9><tr><td width=10% valign=center align=center><font size=2 color=#333333><a href=/voteup/?inode=11914><img src=up.gif border=0 alt="Up"></a><br>vote<br><a href=/votedown/?inode=11914><img src=down.gif border=0 alt="Down"></a></font></td><td width=1 bgcolor=#bbbbbb><br></td>
+<td width=90% valign=top></b>
+<table width=90% cellspacing=8 border=0 cellpadding=0><tr><td><font size=3>This document describes how to set up and configure rsyncbackup on Debian Etch. Rsyncbackup is a Perl script that cooperates with rsync. It is easy to configure and able to create scheduled backups (partial and incremental backups). <a href="http://www.howtoforge.com/scheduled-backups-with-rsyncbackup-debian-etch">read more...</a></font></table></table><tr><td><font size=2 color=#666666><a href="?inode=11914">permapage</a> | score:9959 | </font><font size=2> -falko, April 13, 2008</table><table><tr><td height=8></table>
+<!-- google_ad_section_start(weight=ignore) -->
+<table width=100% border=0 cellspacing=0><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td><font size=3 color=#000000><b>More articles...</b></font>
+</table>
+
+<table border=0 width=100% cellpadding=0 cellspacing=0>
+<tr><td width=3% align=center>
+<table cellpadding=5><tr><td align=center>
+</table></td><td width=100% valign=top>
+<table width=100% cellpadding=4 border=0><tr><td>
+<ul><br><li><a href="/?nextart=16" title="Next page (older articles)">next page</a></ul></table></td></table>
+<td width=20% valign=top>
+<table width=100% border=0 cellpadding=0 cellspacing=0><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td>
+<script type="text/javascript"><!--
+google_ad_client = "pub-7178433338520521";
+google_alternate_color = "FFFFFF";
+google_ad_width = 120;
+google_ad_height = 90;
+google_ad_format = "120x90_0ads_al";
+google_ad_channel ="6697146253";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "CC3333";
+google_color_url = "005099";
+google_color_text = "000000";
+//--></script>   
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+</tr><tr><td height=20 bgcolor=#ffffff></tr><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td><font size=3 color=#000000>Selected articles</font></tr><tr><td width=100% valign=top>
+
+<font size=2><br>
+<a href="?inode=21">The short life and hard times of a Linux virus</a><p>
+<a href="?inode=2747">The Supreme Court is wrong on Copyright Case</a><p>
+<a href="?inode=6240">Space Tyrant: A threaded game server project in C</a><p>
+<a href="?inode=11001">How to install Ubuntu Linux on the decTOP SFF computer</a><p>
+<a href="?inode=4047">Tutorial: Introduction to Linux files</a><p>
+<a href="?inode=6383">Scripting: A parallel Linux backup script</a><p>
+<a href="?inode=2312">No, RMS, Linux is not GNU/Linux</a><p>
+<a href="?inode=895">Download: Linux 3D Client for Starship Traders</a><p>
+<a href="?inode=7079">Microsoft to push unlicensed users to Linux</a><p>
+<a href="?inode=3477">The Network Computer: An opportunity for Linux</a><p>
+<a href="?inode=644">Graffiti Server Download Page</a><p>
+<a href="?inode=1023">Programming Language Tradeoffs: 3GL vs 4GL</a><p>
+<a href="?inode=11723">Set up a Linux Software Firewall with Firestarter</a><p>
+<a href="?inode=2973">Closed Source Linux Distribution Launched</a><p>
+<a href="?inode=2000">Why Programmers are not Software Engineers</a><p>
+<a href="?inode=6565">Linux vs. Windows: Why Linux will win</a><p>
+<a href="?inode=3145">Hacker Haiku</a><p>
+<a href="?inode=3501">Mono-culture and the .NETwork effect</a><p>
+<a href="?inode=1059">The Real Microsoft Monopoly</a><p>
+<a href="?inode=6758">Apple to Intel move no threat to Linux</a><p>
+<a href="?inode=6692">Space Tyrant: A multiplayer network game for Linux</a><p>
+<a href="?inode=11655">Ubuntu 8.04 Preview</a><p>
+<a href="?inode=1953">Shadow.sh: A simple directory shadowing script for Linux</a><p>
+<a href="?inode=5944">Missing the point of the Mac Mini</a><p>
+<a href="?inode=4052">MiniLesson: An introduction to Linux in ten commands</a><p>
+<a href="?inode=80">Beneficial Computer Viruses</a><p>
+<a href="?inode=38">The life cycle of a programmer</a><p>
+<a href="?inode=6861">Space Tyrant: Multithreading lessons learned on SMP hardware</a><p>
+<a href="?inode=6297">Space Tyrant: A threaded C game project: First Code</a><p>
+<a href="?inode=2068">Why software sucks</a><p></ul><p>&nbsp;</table>
+<table width=100% cellspacing=0 border=0><tr><td bgcolor=#1166bb height=3></tr>
+<tr><td width=100%><font size=2><center>
+<p><a href="javascript:sidebar.addPanel('Librenix', 'http://librenix.com/moz/','');" title="Click to add Librenix headline sidebar to Firefox or Mozilla">Firefox sidebar</a><center><a href=/?inode=19 title="The structure of Librenix">Site map</a><p>
+<p><a href="/?inode=1" title="... about us, contact info, posting, Privacy, etc">Site info</a>
+<p><a href="/?inode=10" title="Put our headlines on your site">News feed</a>
+<p><a href=/features/>Features</a>
+<p><a href="Login/">Login</a><br>(to post)<p>
+<p><form action=/ method="post">Search<br><input type=text name=find size=8 maxlength=50><br><input type=submit name=submit value=find></form></table></td></table>
+<!-- google_ad_section_end -->
+ </tr><tr><td bgcolor=#ffffff height=1 nowrap></tr><tr><td>
+<script type="text/javascript"><!--
+google_ad_client = "pub-7178433338520521";
+/* 728x15, created 2/6/08 */
+google_ad_slot = "6270750380";
+google_ad_width = 728;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+ </tr><tr><td bgcolor=#ffffff height=1 nowrap></tr></font><font size=2><i><center>&nbsp;<p>
+Articles are owned by their authors. &nbsp; &copy; 2000-2008 Ray Yeargin<br>
+</body></html>

@@ -1,0 +1,1 @@
+sudoers; passwd, shadow, homedir;  hosts.allow/deny

@@ -1,0 +1,73 @@
+
+Theory of Speaker Identification
+Martin Dunsmuir
+
+February 2005.
+
+This is an experimental manual and record of my activities. The goal of these activities, is to
+create a set of tools which can: (a), be used to investiagte the problem; and (b), to provide
+the basis for productization of the feature.
+
+The manner in which I think the system will work is that we will identify common utterances between 
+a library of 'known' speakers and messages containing speech by an as yet 'unidentified' speaker.
+The library contains, for each possible speaker, a set of 'speech metric' (.sni), files, once for 
+each message known to be by that speaker. These metrics would be calculated and stored when each message
+arrived.
+
+If we have a clean library containing sufficient speech by each known speaker (and its a big if),
+then we can rank our 'unidentified' caller's speech 'metric' against all the metrics in the library.
+
+The results of these comparisons would yield a total score for each possible known caller. 
+Ultimately, depending on the scores, we would consider the caller identified as X with a confidence c. 
+If c fell below some threshold, the caller would be marked 'unknown', otherwise X and c
+would be reported. 
+
+Here are some chacteristics I give our metric:
+
+-	g(k, u)	defines some metric that compares the speech in k (known), with the speech in u (unknown).
+-	g(k, u) == g(u, k), if k == u.
+-	if k == u, then g(k, u) == 1.
+
+Now if we imagine two speech sequences K and U (ignore headers, we are talking theory here), one ten secs.
+long, and the other 40, secs. long.
+
+Now my scheme is to look for common sequences between K and U. If g were perfect, then, this would be commutative,
+i.e.:
+
+	g(K, U) = g(U, K)
+
+but in general, because the analysis is discrete:
+
+	g(K, U) != g(U, K)
+
+So our first goal is to make our metric as commutative as possible.
+
+The score S:
+
+	S(k,u) = (sum over k of g(k, U))/N(k), where N(k), where N(k) is the number of known utterances for k.
+
+Now I suppose that what is really important is the amount of known speech you have (i.e. N(k) ). We need to develop our
+concept of an utterance. To my mind, here is what happens. When you speak, especially when you leave a voicemail,
+then , you often say the same phrase and across multiple voicemails common words - names, prepositions etc., will
+be repeated.
+
+But we don't want to do any semantic analysis on the speech, so we break the speech into very small time-slices
+(20ms = 160 samples). This gives us a bandwidth (at 8000/sps) of 50Hz - 4khz, which is quite adequate.
+
+Here is the processing plan.
+
+	sniutt -D<n> -t<silence threshold>=1000 <wavefile>
+
+creates a set of wavefile snippets: <wavefile.<n>.wav etc. We can throw away any lead in sequences. manually.
+
+
+	snigen -D<n> -n<samples>=160 -q<quantum>=500 [other knobs] <wavefile> -o<outputfile>=<wavefile.namepart>.sni
+
+generates an .sni file from the utterance wave file. 
+
+	snicmp -D<n> -n<samples> -q<quantum> -m<meanfactor>=2.0 -C<threshold>=0.47 <ukknown>.sni <known>.sni <known>.sni .....
+
+compares a an unknown sni file with a set of known utterances.
+
+
+

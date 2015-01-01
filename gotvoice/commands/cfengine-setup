@@ -1,0 +1,26 @@
+HOST=thoth
+scp root@$HOST:/root/*.tar .
+tar -xf db-3.2.9.tar
+cd db-3.2.9/build_unix
+../dist/configure
+make install
+cd ../..
+tar -xf cfengine-2.1.21.tar
+cd cfengine-2.1.21
+./configure
+make install
+cfkey
+cd /var/cfengine/
+mkdir inputs
+cd ppkeys/
+scp root@$HOST:/var/cfengine/ppkeys/root-* .
+ls
+cd ../inputs
+scp root@$HOST:/var/cfengine/inputs/*.conf .
+ls
+cd
+cfagent -v --no-splay -n
+#scp localhost.pub cfengine:/var/lib/cfengine2/ppkeys/root-10.97.1.3.pub
+newaliases
+/etc/rc.d/rc.sendmail restart
+echo test |mail -s "test of root alias" root

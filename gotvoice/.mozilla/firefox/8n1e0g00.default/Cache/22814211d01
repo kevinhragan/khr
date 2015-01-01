@@ -1,0 +1,421 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<!-- || Shri Ram, Jai Ram, Jai Jai Ram || -->
+<!-- I say thanks to God for giving me second change in life :) -->
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="http://www.cyberciti.biz/tips/wp-content/themes/nixcraft/style.css" type="text/css" media="screen" />
+<title>   Configure an Apache web server for core dump on segmentation faults</title>
+<script src="/mint/?js" type="text/javascript"></script>
+<link rel="icon" href="http://www.cyberciti.biz/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="alternate" type="application/rss+xml" title="Get Updates via full nixCraft RSS Feed" href="http://feeds.cyberciti.biz/Nixcraft-LinuxFreebsdSolarisTipsTricks" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.cyberciti.biz/tips/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.cyberciti.biz/tips/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 2.5" />
+
+<style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}</style><script type='text/javascript' src='http://www.cyberciti.biz/tips/wp-includes/js/tw-sack.js?ver=1.6.1'></script>
+<script type='text/javascript' src='http://www.cyberciti.biz/tips/wp-content/plugins/email/email-js.php?ver=2.20'></script>
+<link rel="stylesheet" href="http://www.cyberciti.biz/tips/wp-content/plugins/email/email-css.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://www.cyberciti.biz/tips/wp-content/plugins/pagenavi/pagenavi-css.css" type="text/css" media="screen" />
+<script type='text/javascript' src='http://www.cyberciti.biz/tips/wp-content/plugins/polls/polls-js.php?ver=2.20'></script>
+<link rel="stylesheet" href="http://www.cyberciti.biz/tips/wp-content/plugins/polls/polls-css.css" type="text/css" media="screen" />
+<style type="text/css">
+.wp-polls .pollbar {
+	margin: 1px;
+	font-size: 6px;
+	line-height: 8px;
+	height: 8px;
+	background-image: url('http://www.cyberciti.biz/tips/wp-content/plugins/polls/images/default/pollbg.gif');
+	border: 1px solid #c8c8c8;
+}
+</style>
+<meta name="description" content="Recently I have noticed that my Apache error log file shows it is generating segmentation faults. After doing little research I came to know that there is not simple solution to find of causes of this problem. I got an error that read as follows: [Mon May 8 11:20:09 2006] [notice] Apache/2 (WebAppBETA) child pid 1256 exit signal Segmentation fault (11) [Mon May 8 11:23:12 2006] [notice] Apache/2 (WebAppBETA) child pid 1301 exit signal Segmentation fault (11) The problem is that our application development team has hacked (aka modified source code) Apache 2.0 source tree for application my company developing. ..." />
+
+<!--[if lt IE 6.0]>
+<style type="text/css">#name{height: 36px;}</style>
+<![endif]-->
+<META NAME="ROBOTS" CONTENT="NOARCHIVE" />
+</head>
+<body>
+<div id="container" >
+<div id="header">
+<div id="logo"></div>
+<div id="email1"><p>Want to read Linux tips and tricks, but don't have time to check our blog everyday? Subscribe to our weekly email newsletter to make sure you don't miss a single tip/tricks.</p><form action="http://www.feedburner.com/fb/a/emailverify" method="post" target="popupwindow" onsubmit="window.open('http://www.feedburner.com/fb/a/emailverifySubmit?feedId=96656', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"><input type="text" name="email" value="you@address.com" id="name" onclick="if (this.value=='you@address.com') {this.value=''};" onblur="if (this.value=='') {this.value='you@address.com';}" />
+<input type="hidden" value="http://feeds.feedburner.com/~e?ffid=96656" name="url"/><input type="hidden" value="nixCraft - Linux sys admin journal by Vivek about sys admin work, Linux tips & tricks, hacks" name="title"/><input type="hidden" name="loc" value="en_US"/><input style="background-repeat:none; background: url(http://www.cyberciti.biz/tips/wp-content/themes/nixcraft/img/subscribe.jpg); right: 25px; color: #fff;  width: 182px; height: 37px; border: 0px;" value=""  type="submit"></form></div>
+<div id="nav">
+<ul>
+<li><a href="/" title="Blog home page">Home</a></li>
+<li><a href="/tutorials.php" title="Linux/UNIX tutorials">Tutorials</a></li>
+<li><a href="http://bash.cyberciti.biz/" title="Linux/UNIX Shell scripts">Shell/Scripts</a></li>
+<li><a href="/faq/" title="Linux / UNIX Minit Howtos and FAQs">FAQs</a></li>
+<li><a href="/tips/about" title="Who is Vivek?">About Vivek</a></li>
+<li><a href="http://feeds.cyberciti.biz/Nixcraft-LinuxFreebsdSolarisTipsTricks" rel='nofollow' title="Get all updates via full RSS feed">RSS</a></li>
+</ul>
+<a title="Subscribe to full rss feed" href="http://feeds.cyberciti.biz/Nixcraft-LinuxFreebsdSolarisTipsTricks" rel='nofollow'><img src="http://www.cyberciti.biz/tips/wp-content/themes/nixcraft/img/rss.jpg" style="margin-top:-8px;marigh-left:-10px;float:right;border:0" alt="rss" /></a>
+</div>
+</div>
+<center>
+<!-- Begin Adify tag for "728x90 TOP" Ad Space (728x90) ID #2769907 -->
+<script type="text/javascript">
+	sr_adspace_id = 2769907;
+	sr_adspace_width = 728;
+	sr_adspace_height = 90;
+	sr_adspace_type = "graphic";
+	sr_color_back = "#FFFFFF";
+	sr_color_text = "#000000";
+	sr_color_url = "#E15F00";
+	sr_color_title = "#3F66B3";
+	sr_color_border = "#3366CC";
+	sr_color_your_ad = "#2852A3";
+	sr_color_your_adbk = "#FFDD81";
+	sr_ad_new_window = true;
+	
+</script>
+<script type="text/javascript" src="http://ad.afy11.net/srad.js?azId=2769907">
+</script>
+<!-- End Adify tag for "728x90 TOP" Ad Space (728x90) ID #2769907 -->
+</center>
+
+<div id="sidebar2">
+<script type="text/javascript"><!--
+google_ad_client = "pub-7825705102693166";
+google_ad_slot = "1397652731";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<h3>Polls</h3>
+<ul class="menublock">
+      <li><div id="polls-5" class="wp-polls">
+	<form id="polls_form_5" class="wp-polls-form" action="/tips/configure-apache-web-server-for-core-dump.html" method="post">
+		<p style="display: none;"><input type="hidden" name="poll_id" value="5" /></p>
+		<p style="text-align: center;"><strong>Your Remote Maintenance Services</strong></p><div id="polls-5-ans" class="wp-polls-ans"><ul class="wp-polls-ul">
+		<li><input type="radio" id="poll-answer-16" name="poll_5" value="16" /> <label for="poll-answer-16">SSH</label></li>
+		<li><input type="radio" id="poll-answer-17" name="poll_5" value="17" /> <label for="poll-answer-17">X Windows</label></li>
+		<li><input type="radio" id="poll-answer-18" name="poll_5" value="18" /> <label for="poll-answer-18">MS Remote Desktop</label></li>
+		<li><input type="radio" id="poll-answer-19" name="poll_5" value="19" /> <label for="poll-answer-19">VNC</label></li>
+		<li><input type="radio" id="poll-answer-20" name="poll_5" value="20" /> <label for="poll-answer-20">Citrix</label></li>
+		<li><input type="radio" id="poll-answer-21" name="poll_5" value="21" /> <label for="poll-answer-21">FreeNX</label></li>
+		</ul><p style="text-align: center;"><input type="button" name="vote" value="   Vote   " class="Buttons" onclick="poll_vote(5);" onkeypress="poll_result(5);" /></p><p style="text-align: center;"><a href="#ViewPollResults" onclick="poll_result(5); return false;" onkeypress="poll_result(5); return false;" title="View Results Of This Poll">View Results</a></p></div>
+	</form>
+</div>
+<div id="polls-5-loading" class="wp-polls-loading"><img src="http://www.cyberciti.biz/tips/wp-content/plugins/polls/images/loading.gif" width="16" height="16" alt="Loading ..." title="Loading ..." class="wp-polls-image" />&nbsp;Loading ...</div>
+</li>
+</ul>
+<ul class="menublock">
+</li><ul><li><a href="http://www.cyberciti.biz/tips/pollsarchive/">Polls Archive</a></li></ul></li>
+</ul>
+	
+
+
+<h3>Topics</h3>
+<ul class="menublock">
+  <li><a href="http://www.cyberciti.biz/tips/category/apache">Apache</a></li>
+  <li><a href="http://www.cyberciti.biz/tips/category/freebsd">FreeBSD</a></li>
+  <li><a href="http://www.cyberciti.biz/tips/category/linux">Linux</a></li>
+  <li><a href="http://www.cyberciti.biz/tips/category/troubleshooting">Troubleshooting</a></li>
+<li><a href="http://www.cyberciti.biz/tips/sections">See all topics...</a></li>
+</ul>
+</div>
+<div id="content">
+	<!-- google_ad_section_start -->
+	<h1><a href="http://www.cyberciti.biz/tips/configure-apache-web-server-for-core-dump.html" rel="bookmark" title="Permanent Link to Configure an Apache web server for core dump on segmentation faults">Configure an Apache web server for core dump on segmentation faults</a> </h1>
+
+<div style="float:left;margin-top:0px;margin-right:5px;"><script type="text/javascript"><!--
+   e9 = new Object();
+   e9.size = "336x280,300x250";
+   e9.addBlockingCategories="Adult,Alcohol,Dating,Gambling,Sweepstakes,Political,Religious,Suggestive,Tobacco,Violence,Flashing,Warning,Audio,Pop-under,Pop-up,Floating,Unicast,Full-page,Expandable,Survey";
+   e9.noAd = 1;
+//--></script>
+<script type="text/javascript" src="http://tags.expo9.exponential.com/tags/nixCraft/ROS/tags.js"></script>
+</div><div style='float:right;margin-top:0px;margin-left:5px;'><a href='http://www.cyberciti.biz/tips/category/apache' title='See all Apache Webserver related tips/articles'><img src='http://figs.cyberciti.biz/3rdparty/apachelogo.gif' border='0' /></a></div>
+<p>Recently I have noticed that my Apache error log file shows it is generating segmentation faults. After doing little research I came to know that there is not simple solution to find of causes of this problem. I got an error that read as follows:</p>
+<p><small>[Mon May  8 11:20:09 2006] [notice] Apache/2 (WebAppBETA) child pid 1256 exit signal Segmentation fault (11)<br />
+[Mon May  8 11:23:12 2006] [notice] Apache/2 (WebAppBETA) child pid 1301 <strong>exit signal Segmentation fault</strong> (11)</small></p>
+<p>The problem is that our application development team has hacked (aka modified source code) Apache 2.0 source tree for application my company developing. To get rid of this problem I was asked to configure a Linux system so that Apache can dump core files on segmentation faults.</p>
+<h2>Apache Core Dump</h2>
+<p>Apache supports CoreDumpDirectory directive. This controls the directory to which Apache attempts to switch before dumping core. So all I need to do is put line as follows in httpd.conf:</p>
+<p>Open httpd.conf:<br />
+<code># vi httpd.conf</code><br />
+Add following line main config section:<br />
+<code>CoreDumpDirectory /tmp/apache2-gdb-dump</code><br />
+Create a directory /tmp/apache2-gdb-dump:<br />
+<code># mkdir -p /tmp/apache2-gdb-dump</code><br />
+Set permission:<br />
+<code># chown httpd:appserver /tmp/apache2-gdb-dump<br />
+# chmod 0777 /tmp/apache2-gdb-dump</code></p>
+<p>Please note that we are using httpd user and group appserver. Please replace it with your actual Apache user:group combination.</p>
+<p>And restart the Apache web server:<br />
+<code># /etc/init.d/httpd restart</code><br />
+OR kill Apache PID:<br />
+<code># kill -11 14658</code><br />
+Now you should see core dumps in /tmp/apache2-gdb-dump directory:<br />
+<code># ls /tmp/apache2-gdb-dump</code></p>
+<h2>How do I read the core dump files created by Apache on Linux systems?</h2>
+<p>Well I am not a developer but they are using <strong><em>gdb</em></strong> and other techniques to analyses the core dumps.  Read man page of gdb for more information.</p>
+<p>I hope that I will get a new patched version of Apache by next week. Another interesting fact I noticed that you need to configure Core Dumps on Linux only. We are also using FreeBSD for testing and it write core dump in the ServerRoot directory.</p>
+<p>If Apache starts as root and switches to another user, the Linux kernel disables core dumps even if the directory is writable for the process. Apache (2.0.46 and later) enables core dumps on Linux 2.4 and beyond, but only if you explicitly configure a CoreDumpDirectory. <img src='http://www.cyberciti.biz/tips/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /></p>
+<!-- google_ad_section_end -->
+<p><img src="/images/sonia/strelica2.gif" width="3px" height="5px" alt="" /> Want to stay up to date with the latest Linux tips, news and announcements? Subscribe to our <b style='background:#FFFFC5;'><a href="http://www.feedburner.com/fb/a/emailverifySubmit?feedId=96656&loc=en_US" rel="nofollow" title="Read all our posts via email">free e-mail newsletter</a></b> or full <b style='background:#FFFFC5;'><a href="http://feeds.cyberciti.biz/Nixcraft-LinuxFreebsdSolarisTipsTricks" title="Subscribe to our RSS Feed" rel='nofollow'>RSS feed</a></b> to get all updates. You can 
+<b style="background:#FFFFC5;"><a href="javascript:location.href='http://www.cyberciti.biz/tips/configure-apache-web-server-for-core-dump.html/email'" title="Email to a friend" rel="nofollow">Email this page</a></b> to a friend.
+</p>
+<p><script type="text/javascript"><!--
+google_ad_client = "pub-7825705102693166";
+google_ad_slot = "1427449066";
+google_ad_output = "textlink";
+google_ad_format = "ref_text";
+google_cpa_choice = ""; // on file
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</p>
+<h3>You may also be interested in...</h3>
+<ul><li><a href="http://www.cyberciti.biz/tips/apache-httpd-active-directory-authentication.html" rel="bookmark" title="Permanent Link: Howto Setup Active Directory Authentication With Apache WebServer">Howto Setup Active Directory Authentication With Apache WebServer</a></li><li><a href="http://www.cyberciti.biz/tips/apache-becomes-the-leader-in-ssl-servers.html" rel="bookmark" title="Permanent Link: Apache becomes the Leader in SSL Servers">Apache becomes the Leader in SSL Servers</a></li><li><a href="http://www.cyberciti.biz/tips/migrating-microsoft-iis-to-red-hat-linux-apache.html" rel="bookmark" title="Permanent Link: Howto migrate from Microsoft Internet Information Server (IIS) to Apache on Linux">Howto migrate from Microsoft Internet Information Server (IIS) to Apache on Linux</a></li><li><a href="http://www.cyberciti.biz/tips/howto-apache-adding-new-modules.html" rel="bookmark" title="Permanent Link: Howto: Apache adding new modules">Howto: Apache adding new modules</a></li><li><a href="http://www.cyberciti.biz/tips/installing-apache-php-and-modules-easily-with-apachetoolbox.html" rel="bookmark" title="Permanent Link: Installing Apache Php, and modules easily with ApacheToolbox">Installing Apache Php, and modules easily with ApacheToolbox</a></li></ul>
+<script type="text/javascript"><!--
+google_ad_client = "pub-7825705102693166";
+//Cyberciti.biz-468x15_text
+google_ad_slot = "1495726267";
+google_ad_width = 468;
+google_ad_height = 15;
+//--></script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</p>
+<center><script src="http://feeds.feedburner.com/~s/Nixcraft-LinuxFreebsdSolarisTipsTricks?i=http://www.cyberciti.biz/tips/configure-apache-web-server-for-core-dump.html" type="text/javascript" charset="utf-8"></script></center>
+<!-- google_ad_section_start -->
+<p>
+<!-- You can start editing here. -->
+
+  
+
+
+   
+		<!-- If comments are open, but there are no comments. -->
+		
+	 
+
+
+<h3 id="respond">Leave a Reply</h3>
+<p>We encourage your comments, and suggestions. But please stay on topic, be polite, and avoid spam. Thank you very much for stopping by our site!</p>
+
+
+<form action="http://www.cyberciti.biz/tips/wp-comments-post.php" method="post" id="commentform">
+
+
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" />
+<label for="author"><small>Name (required)</small></label></p>
+
+<p><input type="text" name="email" id="email" value="" size="22" tabindex="2" />
+<label for="email"><small>Mail (will not be published) (required)</small></label></p>
+
+<p><input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+<label for="url"><small>Website</small></label></p>
+
+
+<p><small><strong>XHTML:</strong> You can use these tags: &lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </small></p>
+
+<p><textarea name="comment" id="comment" cols="50%" rows="10" tabindex="4"></textarea></p>
+
+			<div style="display:block;" id="secureimgdiv">
+				<p><label for="securitycode">Anti-spam word: (Required)</label><span style="color:#FF0000;">*</span><br />
+				<small>To prove you're a person (not a spam script), type the security word shown in the picture.</small><br />
+				<input type="text" name="securitycode" id="securitycode" size="30" tabindex="4" />
+				<input type="hidden" name="matchthis" value="7" />
+				<img src="http://www.cyberciti.biz/tips/wp-content/plugins/custom-anti-spam/custom_anti_spam.php?antiselect=7"
+				alt="Anti-Spam Image" style="border:1px solid #008000;vertical-align:top;height:50;width:160;" /></p>
+			</div>
+			
+
+<p><input name="submit" type="submit" id="submit" value="Submit Comment" /></p>
+
+<input type="hidden" name="comment_post_ID" value="32" />
+</p>
+
+</form>
+
+
+</p>
+<p><strong style="color: #7a7a7a;">Tags: </strong><a href="http://www.cyberciti.biz/tips/tag/apache-2" rel="tag">apache 2</a>, <a href="http://www.cyberciti.biz/tips/tag/apache-core-dump" rel="tag">apache core dump</a>, <a href="http://www.cyberciti.biz/tips/tag/apache-coredumpdirectory" rel="tag">apache CoreDumpDirectory</a>, <a href="http://www.cyberciti.biz/tips/tag/core-dumps" rel="tag">core dumps</a>, <a href="http://www.cyberciti.biz/tips/tag/core-files" rel="tag">core files</a>, <a href="http://www.cyberciti.biz/tips/tag/httpd" rel="tag">httpd</a>, <a href="http://www.cyberciti.biz/tips/tag/segmentation-faults" rel="tag">segmentation faults</a>, <a href="http://www.cyberciti.biz/tips/tag/vi_command" rel="tag">vi_command</a> ~ Last updated on: October 31, 2007<!-- google_ad_section_end -->
+		
+	
+	</div>
+
+<div id="sidebar">
+<!-- Google CSE Search Box Begins -->
+  <form id="searchbox_002165917076592449621:riwi1tlrb1m" action="http://www.cyberciti.biz/linux-search.php">
+    <input type="hidden" name="cx" value="002165917076592449621:riwi1tlrb1m" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input name="q" type="text" size="15" /><br />
+    <input type="submit" name="sa" value="Search" />
+  </form>
+  <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=searchbox_002165917076592449621%3Ariwi1tlrb1m"></script>
+<!-- Google CSE Search Box Ends -->
+<!-- Begin Adify tag for "SKY Scraper 160x600" Ad Space (160x600) ID #2627607 -->
+<script type="text/javascript">
+	sr_adspace_id = 2627607;
+	sr_adspace_width = 160;
+	sr_adspace_height = 600;
+	sr_adspace_type = "graphic";
+	sr_color_back = "#FFFFFF";
+	sr_color_text = "#000000";
+	sr_color_url = "#E15F00";
+	sr_color_title = "#3F66B3";
+	sr_color_border = "#3366CC";
+	sr_color_your_ad = "#2852A3";
+	sr_color_your_adbk = "#FFDD81";
+	sr_ad_new_window = true;
+	
+</script>
+<script type="text/javascript" src="http://ad.afy11.net/srad.js?azId=2627607">
+</script>
+<!-- End Adify tag for "SKY Scraper 160x600" Ad Space (160x600) ID #2627607 -->
+
+<h3>Would you like to...</h3>
+<ul class="menublock">  <li><img src="/images/sonia/strelica2.gif" width="3px" height="5px" alt="" /> <a href="javascript:location.href='http://www.cyberciti.biz/tips/configure-apache-web-server-for-core-dump.html/print'" title="Print this page" rel="nofollow">Print this page</a></li>
+  <li><img src="/images/sonia/strelica2.gif" width="3px" height="5px" alt="" /> <a href="javascript:location.href='http://www.cyberciti.biz/tips/configure-apache-web-server-for-core-dump.html/email'" title="Email to a friend" rel="nofollow">Email this page</a></li>
+</ul>
+<h3>Community</h3>
+<ul class="menublock">
+<li>Ask questions, share answers, and post your favorite Linux hacks, tips and tricks on the <a href="http://nixcraft.com/index.php?utm_source=cbz&utm_campaign=stips&utm_medium=link" rel="nofollow">nixCraft forum</a>.</li>
+</ul>
+
+<h3>cat /etc/motd</h3>
+<ul class="menublock">
+<li>
+If forty million people say a foolish thing it does not become a wise one, but the wise man is foolish to give them the lie.<small><p align=right>-- W. Somerset Maugham</p><p align=center><b><a href='http://www.cyberciti.biz/motd-archive.php' title='View MOTD archive collection'>Archive</a> | <a href=http://www.cyberciti.biz/motd-archive.php/469/forty-million-people/ title='Read extended message (tech only)'>Permlink</a></b></p></small></li>
+</ul>
+
+<h3>more ~/options</h3>
+<ul class="menublock">
+<li><img src='/images/sonia/strelica2.gif' width='3px' height='5px' alt='' /> <a href="/tips/most-popular">Hall of fame</a></li>
+<li><img src='/images/sonia/strelica2.gif' width='3px' height='5px' alt='' /> <a href="/tips/sections">Sections</a></li>
+<li><img src='/images/sonia/strelica2.gif' width='3px' height='5px' alt='' /> <a href="/tips/about-us" title="About us">About us</a></li>
+<li><img src='/images/sonia/strelica2.gif' width='3px' height='5px' alt='' /> <a href="/tips/testimonials" title="What people are saying...">Testimonials</a></li>
+<li><img src='/images/sonia/strelica2.gif' width='3px' height='5px' alt='' /> <a href="/tips/donate" title="Support us!">Donations</a></li>
+<li><img src='/images/sonia/strelica2.gif' width='3px' height='5px' alt='' /> <a href="/tips/linux-help">Help</a></li>
+<li><img src='/images/sonia/strelica2.gif' width='3px' height='5px' alt='' /> <a href="/tips/contact-us" title="Email us">Contact</a></li>
+</ul>
+
+<h3>Archives</h3>
+<ul class="menublock">
+<li><form id="archiveform" action="">
+<select name="archive_chrono" onchange="window.location =
+(document.forms.archiveform.archive_chrono[document.forms.archiveform.archive_chrono.selectedIndex].value);">
+<option value=''>Select Month</option>
+	<option value='http://www.cyberciti.biz/tips/2008/04'> April 2008 </option>
+	<option value='http://www.cyberciti.biz/tips/2008/03'> March 2008 </option>
+	<option value='http://www.cyberciti.biz/tips/2008/02'> February 2008 </option>
+	<option value='http://www.cyberciti.biz/tips/2008/01'> January 2008 </option>
+	<option value='http://www.cyberciti.biz/tips/2007/12'> December 2007 </option>
+	<option value='http://www.cyberciti.biz/tips/2007/11'> November 2007 </option>
+	<option value='http://www.cyberciti.biz/tips/2007/10'> October 2007 </option>
+	<option value='http://www.cyberciti.biz/tips/2007/09'> September 2007 </option>
+	<option value='http://www.cyberciti.biz/tips/2007/08'> August 2007 </option>
+	<option value='http://www.cyberciti.biz/tips/2007/07'> July 2007 </option>
+	<option value='http://www.cyberciti.biz/tips/2007/06'> June 2007 </option>
+	<option value='http://www.cyberciti.biz/tips/2007/05'> May 2007 </option>
+	<option value='http://www.cyberciti.biz/tips/2007/04'> April 2007 </option>
+	<option value='http://www.cyberciti.biz/tips/2007/03'> March 2007 </option>
+	<option value='http://www.cyberciti.biz/tips/2007/02'> February 2007 </option>
+	<option value='http://www.cyberciti.biz/tips/2007/01'> January 2007 </option>
+	<option value='http://www.cyberciti.biz/tips/2006/12'> December 2006 </option>
+	<option value='http://www.cyberciti.biz/tips/2006/11'> November 2006 </option>
+	<option value='http://www.cyberciti.biz/tips/2006/10'> October 2006 </option>
+	<option value='http://www.cyberciti.biz/tips/2006/09'> September 2006 </option>
+	<option value='http://www.cyberciti.biz/tips/2006/08'> August 2006 </option>
+	<option value='http://www.cyberciti.biz/tips/2006/07'> July 2006 </option>
+	<option value='http://www.cyberciti.biz/tips/2006/06'> June 2006 </option>
+	<option value='http://www.cyberciti.biz/tips/2006/05'> May 2006 </option>
+	<option value='http://www.cyberciti.biz/tips/2006/04'> April 2006 </option>
+	<option value='http://www.cyberciti.biz/tips/2006/03'> March 2006 </option>
+	<option value='http://www.cyberciti.biz/tips/2006/02'> February 2006 </option>
+	<option value='http://www.cyberciti.biz/tips/2006/01'> January 2006 </option>
+	<option value='http://www.cyberciti.biz/tips/2005/12'> December 2005 </option>
+	<option value='http://www.cyberciti.biz/tips/2005/11'> November 2005 </option>
+	<option value='http://www.cyberciti.biz/tips/2005/10'> October 2005 </option>
+	<option value='http://www.cyberciti.biz/tips/2005/09'> September 2005 </option>
+	<option value='http://www.cyberciti.biz/tips/2005/08'> August 2005 </option>
+	<option value='http://www.cyberciti.biz/tips/2005/07'> July 2005 </option>
+	<option value='http://www.cyberciti.biz/tips/2005/06'> June 2005 </option>
+	<option value='http://www.cyberciti.biz/tips/2005/05'> May 2005 </option>
+	<option value='http://www.cyberciti.biz/tips/2005/04'> April 2005 </option>
+	<option value='http://www.cyberciti.biz/tips/2005/03'> March 2005 </option>
+	<option value='http://www.cyberciti.biz/tips/2005/02'> February 2005 </option>
+	<option value='http://www.cyberciti.biz/tips/2005/01'> January 2005 </option>
+	<option value='http://www.cyberciti.biz/tips/2004/12'> December 2004 </option>
+	<option value='http://www.cyberciti.biz/tips/2004/11'> November 2004 </option>
+	<option value='http://www.cyberciti.biz/tips/2004/10'> October 2004 </option>
+	<option value='http://www.cyberciti.biz/tips/2004/08'> August 2004 </option>
+	<option value='http://www.cyberciti.biz/tips/2004/07'> July 2004 </option>
+	<option value='http://www.cyberciti.biz/tips/2004/06'> June 2004 </option>
+	<option value='http://www.cyberciti.biz/tips/2004/05'> May 2004 </option>
+	<option value='http://www.cyberciti.biz/tips/2004/04'> April 2004 </option>
+	<option value='http://www.cyberciti.biz/tips/2004/03'> March 2004 </option>
+</select>
+</form>
+</li>
+</ul>
+<h3>nixCraft RSS Feeds</h3>
+<p>&nbsp;&nbsp;&nbsp;<a href="http://fusion.google.com/add?source=atgs&feedurl=http%3A//feeds.feedburner.com/Nixcraft-LinuxFreebsdSolarisTipsTricks" rel="nofollow"><img src="http://buttons.googlesyndication.com/fusion/add.gif" border="0" alt="Add to Google"></a></p>
+<p>&nbsp;&nbsp;&nbsp;<a href="http://add.my.yahoo.com/content?.intl=us&url=http%3A//feeds.cyberciti.biz/Nixcraft-LinuxFreebsdSolarisTipsTricks" rel="nofollow"><img src="http://us.i1.yimg.com/us.yimg.com/i/us/my/addtomyyahoo4.gif" width="91" height="17" border="0" align=middle alt="Add to My Yahoo!"></a></p>
+<p>&nbsp;&nbsp;&nbsp;<a href="http://feeds.cyberciti.biz/Nixcraft-LinuxFreebsdSolarisTipsTricks" rel="nofollow"><img src="http://feeds.feedburner.com/~fc/Nixcraft-LinuxFreebsdSolarisTipsTricks?bg=99CCFF&amp;fg=444444&amp;anim=0" width="88" height="26" style="border:0" alt="" /></a></p>
+</div><div id="footer">
+<div id="comments">
+<h2>Recent Comments</h2>
+<ul><li><a href="http://www.cyberciti.biz/tips/linux-command-line-bittorrent-client.html#comments" title="View all comments for Linux &gt; Command line BitTorrent client">Linux &gt; Command line BitTorrent client</a><br />Today ~ 69 Comments</li>
+<li><a href="http://www.cyberciti.biz/tips/linux-unix-connect-mysql-c-api-program.html#comments" title="View all comments for Howto: Connect MySQL server using C program API under Linux or UNIX">Howto: Connect MySQL server using C program API under Linux or UNIX</a><br />Yesterday ~ 16 Comments</li>
+<li><a href="http://www.cyberciti.biz/tips/open-source-companies-to-watch.html#comments" title="View all comments for Open source companies to watch">Open source companies to watch</a><br />Yesterday ~ 2 Comments</li>
+<li><a href="http://www.cyberciti.biz/tips/debian-ubuntu-linux-configure-pinnacle-pctv-tuner.html#comments" title="View all comments for Linux Configure Pinnacle PCTV Card to Watch Television with saa7134 / saa7134-alas Driver">Linux Configure Pinnacle PCTV Card to Watch Television with saa7134 / saa7134-alas Driver</a><br />Yesterday ~ 1 Comment</li>
+<li><a href="http://www.cyberciti.biz/tips/rhel-dovecot-error-while-loading-shared-libraries.html#comments" title="View all comments for Redhat Dovecot error while loading shared libraries: libsepol.so.1: failed to map segment from shared object: Cannot allocate memory">Redhat Dovecot error while loading shared libraries: libsepol.so.1: failed to map segment from shared object: Cannot allocate memory</a><br />Yesterday ~ 18 Comments</li>
+</ul>
+</div>
+
+<div id="articles">
+<h2>Recent Articles</h2>
+<ul><li><a href="http://www.cyberciti.biz/tips/open-source-will-quietly-take-over.html" title="View post Open Source Will Quietly Take Over">Open Source Will Quietly Take Over</a></li>
+<li><a href="http://www.cyberciti.biz/tips/gdm-integrate-keystroke-dynamics-based-user-verification.html" title="View post Identify and Verify Gnome Users Based on How They Type">Identify and Verify Gnome Users Based on How They Type</a></li>
+<li><a href="http://www.cyberciti.biz/tips/who-is-writing-linux.html" title="View post Who Writes Linux - Insight Into Individual Linux Kernel Contributors">Who Writes Linux - Insight Into Individual Linux Kernel Contributors</a></li>
+<li><a href="http://www.cyberciti.biz/tips/time-is-right-for-linux-desktop-pcs-to-emerge.html" title="View post Time is Right For Linux Desktop PCs To Emerge">Time is Right For Linux Desktop PCs To Emerge</a></li>
+<li><a href="http://www.cyberciti.biz/tips/linux-samba-join-windows-domain-pdc.html" title="View post Join a Windows Domain From Linux / UNIX Computer Using Samba">Join a Windows Domain From Linux / UNIX Computer Using Samba</a></li>
+<li><a href="http://www.cyberciti.biz/tips/kvm-over-ip.html" title="View post Remote Linux / UNIX / Windows Server Management With KVM over IP">Remote Linux / UNIX / Windows Server Management With KVM over IP</a></li>
+</ul>
+</div>
+
+<div id="popular">
+<h2>Don't Miss</h2>
+<ul>
+<li><a href="http://www.cyberciti.biz/faq/how-to-find-out-what-my-dns-servers-address-is/">How to find out what my dns servers address is?</a></li>
+<li><a href="http://www.cyberciti.biz/">Linux Blog by Vivek | nixCraft</a></li>
+<li><a href="http://www.cyberciti.biz/faq/mysql-change-root-password/">MySQL change root password</a></li>
+<li><a href="http://www.cyberciti.biz/faq/howto-linux-add-user-to-group/">Howto: Linux add user to group</a></li>
+<li><a href="http://www.cyberciti.biz/faq/open-rar-file-or-extract-rar-files-under-linux-or-unix/">Open rar file or Extract rar files under Linux or UNIX</a></li>
+<li><a href="http://www.cyberciti.biz/tips/linux-setup-transparent-proxy-squid-howto.html">Linux: Setup a transparent proxy with Squid in three easy steps</a></li>
+<li><a href="/tips/most-popular" title="Hall of fame">See all...</a></li>
+</ul>
+</div>
+
+</div>
+<div id="credits"><p>Copyright &copy 2004-2008 nixCraft. All rights reserved - <a href="/tips/disclaimer" title="Disclaimer / Term Of Service">TOS/Disclaimer</a> - <a href="/tips/privacy" title="Privacy policy">Privacy policy</a> - <a href="/tips/sitemap" title="Sitemap">Sitemap</a> - Powered by <a href="/tips/open-source-software" title="We are proudly powered by Open Source software">Open source software</a>. 
+</p></div>
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write("\<script src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'>\<\/script>" );
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-108650-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>
+<!-- Dynamic Page Served (once) in 0.348 seconds -->

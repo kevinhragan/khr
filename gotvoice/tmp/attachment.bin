@@ -1,0 +1,58 @@
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Feb 15 04:40:03 2008
+        Date Range Processed: yesterday
+                              ( 2008-Feb-14 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: www
+  ################################################################## 
+ 
+ --------------------- Connections (secure-log) Begin ------------------------ 
+
+ Connections:
+    Service in.comsat [Connection(s) per day]:
+       : 1 Time(s)
+       Total Connections: 1
+ 
+ ---------------------- Connections (secure-log) End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    gv:
+       10.92.1.181 (SPONGEBOB.gotvoice.com): 3 times
+    kevinr:
+       10.92.1.12 (bean.gotvoice.com): 1 time
+    nobody:
+       10.96.1.2 (nut.gotvoice.com): 1152 times
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem            Size  Used Avail Use% Mounted on
+ /dev/md0               19G  7.5G   10G  43% /
+ /dev/md1               53G  5.7G   45G  12% /var
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ --------------------- Fortune Begin ------------------------ 
+
+ I have more humility in my little finger than you have in your whole
+ ____BODY!
+ 		-- from "Cerebus" #82
+ 
+ 
+ ---------------------- Fortune End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

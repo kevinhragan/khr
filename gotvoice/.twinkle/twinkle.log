@@ -1,0 +1,12 @@
++++ 5-12-2007 09:46:29.331783 INFO NORMAL t_log::t_log
+Twinkle 0.9, October 1 2006
+---
+
++++ 5-12-2007 09:46:29.348265 INFO NORMAL t_log::t_log
+Built with support for: ALSA, KDE, Speex, ZRTP
+---
+
++++ 5-12-2007 09:46:29.348692 INFO NORMAL ::main
+Threading implementation is NPTL.
+---
+

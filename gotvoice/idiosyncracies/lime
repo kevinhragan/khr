@@ -1,0 +1,3 @@
+apache runs as user asterisk
+asterisk account has a valid shell in /etc/passwd
+asterisk homedir has .ssh/authorized_keys with key from gv@ammut

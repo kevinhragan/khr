@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<session>
+  <window x="-4" y="-4" width="1024" height="723" role="galeon-window-2f83ccc8">
+    <embed title="IPCop - Firewall log" url="https://10.44.51.1:445/cgi-bin/logs.cgi/log.dat?4787,0,19,ipsec"/>
+  </window>
+  <window x="-4" y="-4" width="1024" height="723" role="galeon-window-53ea49f1">
+    <embed title="nut.gotvoice.com / localhost | phpMyAdmin 2.9.1.1-Debian-2" url="http://nut.gotvoice.com/phpmyadmin/index.php?lang=en-utf-8&amp;token=4426805ce86317a00dd8659d6cc737c6"/>
+  </window>
+</session>

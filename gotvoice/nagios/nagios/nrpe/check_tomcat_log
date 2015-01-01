@@ -1,0 +1,187 @@
+#!/usr/bin/perl -w
+#
+# check_tomcat_log
+# Counts how many SEVERE messages are in a tomcat log.
+# Author: Allen Caldwell
+# Date: Oct. 24, 2007
+
+use strict;
+use Getopt::Long qw(:config no_ignore_case bundling);
+
+if ( -d "/usr/lib/nagios/plugins" ){
+	use lib "/usr/lib/nagios/plugins";
+}elsif ( -d "/usr/local/nagios/libexec" ){
+	use lib "/usr/local/nagios/libexec";
+}
+
+use utils qw($TIMEOUT %ERRORS &print_revision &support &usage); # Import predefined status-codes and timeout variable
+use File::Basename;
+
+my $prog_name  = basename $0;
+my $prog_ver   = "1.5";
+my $status = 3; #do we want to start with UNKNOWN???
+my $status_print = "";
+my $warn_val = 1;  # Default - override with -w arg
+my $crit_val = 2;  # Default - override with -c arg
+my $log_file = "";
+
+if ( -d "/usr/local/tomcat/logs" ){
+	$log_file = "/usr/local/tomcat/logs/LnpLogger.log.0"; 
+}elsif ( -d "/var/log/tomcat5" ){
+	$log_file = "/var/log/tomcat5/LnpLogger.log.0"; 
+}
+
+my $help_val = 0;  # Off unless -h arg
+my $verb_val = 0;  # Off unless -v arg
+my $vers_val = 0;  # Off unless -V arg
+
+# Gives us a way to print out verbose debug information to the screen when user
+# passes in a -v argument.
+# print_debug() should receive one parameter: a text string to print out.
+sub print_debug() {
+    my $message = shift;
+    if ($verb_val == 1) {
+        print "DEBUG: " . $message . "\n";
+    }
+}
+
+# Show help information
+sub show_help() {
+    print '
+
+Perl-Monitor Tomcat logs for SEVERE messages.  A plugin for Nagios
+
+Usage: $prog_name -w  -c  -l [-h] [-V] [-v]
+
+-w, --warning=INTEGER
+   Number of revisions behind current daily.cvd to generate a warning state (Default: 1)
+-c, --critical=INTEGER
+   Number of revisions behind current daily.cvd to generate a critical state (Default: 2)
+-l, --logfile=STRING
+   The full path to the log file we want to check. This way we can use this script for multiple log files.
+-h, --help
+   Show this help
+-V, --version
+   Output version information for the plugin
+-v, --verbose
+   Enable verbose output
+'
+}
+
+GetOptions (
+        "w=i" => \$warn_val, "warning=i" => \$warn_val,
+        "c=i" => \$crit_val, "critical=i" => \$crit_val,
+        "l=s" => \$log_file, "logfile=i" => \$log_file,
+        "h" => \$help_val, "help" => \$help_val,
+        "V" => \$vers_val, "version" => \$vers_val,
+        "v" => \$verb_val, "verbose" => \$verb_val,
+);
+
+&print_debug("log_file located at $log_file");
+
+chomp $log_file;
+&print_debug("GetOptions: warning: $warn_val, critical: $crit_val, log: 
+				 $log_file, help value: $help_val, version: $vers_val");
+
+if ($help_val != 0) {
+    &show_help;
+    exit $ERRORS{'OK'};
+}
+
+if ($vers_val != 0) {
+    &print_revision($prog_name,$prog_ver);
+    exit $ERRORS{'OK'};
+}
+
+# Let's get our date...
+my $month = "unknown";
+my $am_or_pm = "AM";
+my ($sec, $min, $hour, $mday, $mon, $year, $wday, $yday, $isdst) = localtime time ;
+#format month...
+if ($mon == 0){
+	$month = "Jan";
+}elsif ($mon == 1){
+	$month = "Feb";
+}elsif ($mon == 2){
+	$month = "Mar";
+}elsif ($mon == 3){
+	$month = "Apr";
+}elsif ($mon == 4){
+	$month = "May";
+}elsif ($mon == 5){
+	$month = "Jun";
+}elsif ($mon == 6){
+	$month = "Jul";
+}elsif ($mon == 7){
+	$month = "Aug";
+}elsif ($mon == 8){
+	$month = "Sep";
+}elsif ($mon == 9){
+	$month = "Oct";
+}elsif ($mon == 10){
+	$month = "Nov";
+}elsif ($mon == 11){
+	$month = "Dec";
+}
+#format hour to 12 hour clock...
+if ($hour == 13){
+	$hour = 1;
+	$am_or_pm = "PM";
+}elsif ($hour == 14){
+	$hour = 2;
+	$am_or_pm = "PM";
+}elsif ($hour == 15){
+	$hour = 3;
+	$am_or_pm = "PM";
+}elsif ($hour == 16){
+	$hour = 4;
+	$am_or_pm = "PM";
+}elsif ($hour == 17){
+	$hour = 5;
+	$am_or_pm = "PM";
+}elsif ($hour == 18){
+	$hour = 6;
+	$am_or_pm = "PM";
+}elsif ($hour == 19){
+	$hour = 7;
+	$am_or_pm = "PM";
+}elsif ($hour == 20){
+	$hour = 8;
+	$am_or_pm = "PM";
+}elsif ($hour == 21){
+	$hour = 9;
+	$am_or_pm = "PM";
+}elsif ($hour == 22){
+	$hour = 10;
+}elsif ($hour == 23){
+	$hour = 11;
+	$am_or_pm = "PM";
+}elsif ($hour == 24){
+	$hour = 12;
+	$am_or_pm = "PM";
+}
+#format year...
+$year += 1900 ;
+my $date = $month . " " . $mday . ", " . $year . " " . $hour ;
+&print_debug("Date: $date");
+&print_debug("AM or PM: $am_or_pm");
+#Let's get the number SEVERE messages for a given log...
+my $how_many = `cat $log_file | grep -B1 SEVERE | grep "$date" | grep $am_or_pm | wc -l`;
+chomp $how_many;
+&print_debug("SEVERE messages: $how_many");
+
+#We've got our number, now let's figure out what to return...
+#Nagios protocol requires a <= .
+if ( $how_many < $warn_val ) { $status = $ERRORS{'OK'};
+                              $status_print = "OK"; }
+elsif ( $how_many >= $warn_val && $how_many <= $crit_val ) { $status = $ERRORS{'WARNING'};
+                              $status_print = "WARNING";}
+elsif ( $how_many > $crit_val ) { $status = $ERRORS{'CRITICAL'};
+                              $status_print = "CRITICAL"; }
+else { $status = $ERRORS{'UNKNOWN'} ;
+           $status_print = "UNKNOWN" ; }
+
+#let's send back the stuff we need to send back...single descriptive line printed and
+#exit value for nagios.
+print $status_print . " - " . $how_many . " SEVERE messages in $log_file during the $hour $am_or_pm hour\n" ;
+exit $status;

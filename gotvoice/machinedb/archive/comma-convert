@@ -1,0 +1,11 @@
+#!/usr/bin/awk -f
+
+BEGIN { RS = "\n\n"; FS = "\n"; OFS = ",";  }  
+
+{    for(i=1; i<NF; i++){
+        sub(".*: *","",$i)
+        printf( "%s, ", $i)
+     }
+     sub(".*: ","",$i)
+     print $i    
+}

@@ -1,0 +1,9 @@
+httpd.conf
+    User gv
+
+aptitude install libapache-mod-php5 php5 php5-mysql php5
+vi  /etc/php5/apache/php.ini
+    include_path needs to include /var/www/classes
+    session.auto_start=1
+    
+rsync -az -e ssh --bwlimit=1000 /var/gv/php_520/gvweb2/ root@slave-host:/var/www

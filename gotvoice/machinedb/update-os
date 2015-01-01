@@ -1,0 +1,14 @@
+#! /usr/bin/awk -f
+# get os from host and update; slackware and suse = "other" !
+
+BEGIN {OFS = FS = ","}
+
+NR == 1 { print }
+NR != 1{
+    version = "other"
+    sshcommand = "ssh " $1 " cat /etc/debian_version 2>/dev/null" 
+    sshcommand| getline version
+    close(sshcommand)
+    $4 = version
+    print $0
+} 

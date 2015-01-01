@@ -1,0 +1,2 @@
+syslogd listens on /chroot/named/dev/log for chrooted named
+server in /etc/nagios/nrpe.cfg set to internal ip

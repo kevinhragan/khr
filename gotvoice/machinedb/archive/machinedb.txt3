@@ -1,0 +1,39 @@
+host, serial, kernel, os, ip, ram, #proc, Hz:, #disk, disk-gb
+icecream, , 2.6.18
+mail, , 2.6.15
+seadev4, , 2.4.29
+seadev2, , 2.4.29
+kirkfw, , kernel:
+re, 27427, 2.6.16.16
+osiris, 15027, 2.6.16
+karnac, 16329, 2.4.29
+cairo, 16328, 2.6.16.16
+heket, 26473, 2.4.29
+nekhebet, 21654, 2.4.29
+nile, 15609, 2.6.18
+nut, 25742, 2.6.18
+shu, 25741, 2.4.29
+osiris3, 25794, 2.6.18
+thoth, 24791, 2.4.29
+tefnut, 24792, 2.6.16.16
+trial, 15162, 2.6.16.16
+www, 16327, 2.4.29
+anubis, 15610, 2.4.29
+ra, 15608, 2.6.16.16
+hathor, 21411, 2.6.16.13
+ammut, , 2.4.29
+fig, 26472, 2.6.18
+peach, 27426, 2.6.16.16
+horus, 23142, 2.4.29
+kale, 30558, 2.6.18
+lime, 30559, 2.6.18
+nun, 24793, 2.6.18
+osiris2, 21656, 2.6.18
+server1, 21655, 2.6.16.16
+seth, 23143, 2.4.29
+mango, 15268, 2.6.18
+isis, 15161, 2.6.16.16, slackware 10.1, , 1gb, 2, 3G, 2, 
+khufu, 15163, 2.6.16.16, slackware 10.1, , 1gb, 2 , 3G, 2, 
+ramses, 15025, 2.6.16.16, slackware 10.1, , 1gb, 2, 3G, 2, 
+spool1, 21652, 2.4.29, slackware 10.1, , 2gb, 2, 3G, 2, 
+uadjet, 21653, 2.6.16.16, slackware 10.1, , 2gb, 2, 3G, 2, , 

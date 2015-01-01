@@ -1,0 +1,549 @@
+function getDeepLinks(ancestor)
+{
+var deep_links ;
+if (ancestor == 'sports/')
+{
+  deep_links = new Array(
+	'sports,Sports',
+	'sports/capitals,Capitals',
+	'sports/colleges,Colleges',
+	'sports/colleges/american,American',
+	'sports/colleges/football,Football',
+	'sports/colleges/georgetown,Georgetown',
+	'sports/colleges/georgewashington,George Washington',
+	'sports/colleges/howard,Howard',
+	'sports/colleges/maryland,Maryland',
+	'sports/colleges/mensbasketball,Men\'s Basketball',
+	'sports/colleges/navy,Navy',
+	'sports/colleges/virginia,Virginia',
+	'sports/colleges/virginiatech,Virginia Tech',
+	'sports/colleges/womensbasketball,Women\'s Basketball',
+	'sports/dcunited,D.C. United',
+	'sports/highschools,High Schools',
+	'sports/index,Index',
+	'sports/index/autoracing,Auto Racing',
+	'sports/index/cycling,Cycling',
+	'sports/index/golf,Golf',
+	'sports/index/horseracing,Horse Racing',
+	'sports/index/mlb,MLB',
+	'sports/index/mls,MLS',
+	'sports/index/nba,NBA',
+	'sports/index/nfl,NFL',
+	'sports/index/nhl,NHL',
+	'sports/index/olympics,Olympics',
+	'sports/index/soccer,World Cup',
+	'sports/index/tennis,Tennis',
+	'sports/index/wnba,WNBA',
+	'sports/mystics,Mystics',
+	'sports/nationals,Nationals',
+	'sports/orioles,Orioles',
+	'sports/ravens,Ravens',
+	'sports/redskins,Redskins',
+	'sports/scoreboard,Scoreboard',
+	'sports/special,Special Reports',
+	'sports/special/1,One',
+	'sports/special/10,Extreme Sports',
+	'sports/special/2,Two',
+	'sports/special/3,AT&T National',
+	'sports/special/4,Super Bowl',
+	'sports/special/5,Five',
+	'sports/special/6,Six',
+	'sports/special/7,Seven',
+	'sports/special/8,Eight',
+	'sports/special/9,Nine',
+	'sports/wires,Wires',
+	'sports/wizards,Wizards');
+}
+else
+{
+deep_links = new Array(
+	'artsandliving,Arts &amp; Living',
+	'artsandliving/barsandclubs,Bars &amp; Clubs',
+	'artsandliving/books,Books',
+	'artsandliving/comics,Comics',
+	'artsandliving/crosswords,Crosswords &amp; Puzzles',
+	'artsandliving/crosswords/sudoku,Sudoku',
+	'artsandliving/dating,Dating',
+	'artsandliving/entertainmentguide,Entertainment Guide',
+	'artsandliving/entertainmentnews,Entertainment News',
+	'artsandliving/fashionandbeauty,Fashion &amp; Beauty',
+	'artsandliving/foodanddining,Food &amp; Dining',
+	'artsandliving/homeandgarden,Home &amp; Garden',
+	'artsandliving/movies,Movies',
+	'artsandliving/museums,Museums',
+	'artsandliving/music,Music',
+	'artsandliving/special,Special Reports',
+	'artsandliving/special/1,One',
+	'artsandliving/special/10,Ten',
+	'artsandliving/special/2,Michael Jackson Trial',
+	'artsandliving/special/3,Three',
+	'artsandliving/special/4,Four',
+	'artsandliving/special/5,Five',
+	'artsandliving/special/6,Six',
+	'artsandliving/special/7,Seven',
+	'artsandliving/special/8,Eight',
+	'artsandliving/special/9,Nine',
+	'artsandliving/style,Style',
+	'artsandliving/style/themobyequation,The Moby Equation',
+	'artsandliving/television,Television',
+	'artsandliving/theater,Theater',
+	'artsandliving/travel,Travel',
+	'artsandliving/travel/airtravel,Air Travel',
+	'artsandliving/travel/businesstravel,Business Travel',
+	'artsandliving/travel/escapes,Mid-Atlantic',
+	'artsandliving/travel/index,Index',
+	'artsandliving/travel/international,International',
+	'artsandliving/travel/international/caribbean,Caribbean',
+	'artsandliving/travel/international/europe,Europe',
+	'artsandliving/travel/seasonal,Beach Guide',
+	'artsandliving/travel/seasonal/ski,Ski Guide',
+	'artsandliving/travel/travelbytopic,Travel by Topic',
+	'artsandliving/travel/unitedstates,United States',
+	'artsandliving/travel/unitedstates/de,Delaware',
+	'artsandliving/travel/unitedstates/md,Maryland',
+	'artsandliving/travel/unitedstates/ny,New York',
+	'artsandliving/travel/unitedstates/pa,Pennsylvania',
+	'artsandliving/travel/unitedstates/va,Virginia',
+	'artsandliving/travel/unitedstates/wv,West Virginia',
+	'artsandliving/travel/vistorsguide,DC Visitors Guide',
+	'artsandliving/travel/webtravel,Web Travel',
+	'business,Buisiness',
+	'business/economy,U.S. Economy',
+	'business/government,Government',
+	'business/industries,Industries',
+	'business/localbusiness,Metro Business',
+	'business/markets,Market News',
+	'business/personalfinance,Personal Finance',
+	'business/portfolio,Portfolio',
+	'business/special,Special Reports',
+	'business/special/1,Struggling Airlines',
+	'business/special/10,Post 200',
+	'business/special/2,Riggs Bank',
+	'business/special/3,Oil and Gas Prices',
+	'business/special/4,Housing Market',
+	'business/special/5,Pentagon Procurement',
+	'business/special/6,Fannie Mae and Freddie Mac',
+	'business/special/7,Corporate Ethics',
+	'business/special/8,Federal Reserve',
+	'business/special/9,Indecency',
+	'business/wires,Wires',
+	'cars,Cars',
+	'cars/buy,Buy',
+	'cars/own,Own',
+	'cars/sell,Sell',
+	'education,Education',
+	'education/dc,District',
+	'education/md,Maryland',
+	'education/schoolguide,School Guide',
+	'education/special,Special Reports',
+	'education/special/1,One',
+	'education/special/2,Two',
+	'education/special/3,Three',
+	'education/special/4,Four',
+	'education/special/5,Five',
+	'education/va,Virginia',
+	'email,Email',
+	'groups, Groups',
+	'health,Health',
+	'health/childrenyouth,Children and Youth',
+	'health/conditioncenter,Condition Center',
+	'health/fitness,Fitness',
+	'health/healthcare,Health Care Issues',
+	'health/men,Men',
+	'health/seniors,Seniors',
+	'health/special,Special Reports',
+	'health/special/1,One',
+	'health/special/10,Ten',
+	'health/special/2,Two',
+	'health/special/3,Three',
+	'health/special/4,Four',
+	'health/special/5,Five',
+	'health/special/6,Six',
+	'health/special/7,Seven',
+	'health/special/8,Eight',
+	'health/special/9,Nine',
+	'health/wires,Wires',
+	'health/women,Women',
+	'jobs,Jobs',
+	'jobs/careernews,Career News',
+	'jobs/diversity,Diversity',
+	'jobs/economy,Economy',
+	'jobs/education,Education',
+	'jobs/governmentcareers,Government Careers',
+	'jobs/governmentcareers/civil,Civil Service Careers',
+	'jobs/governmentcareers/military,Military Transition',
+	'jobs/governmentcareers/security,Security Careers',
+	'jobs/healthcareers,Health Careers',
+	'jobs/nonprofits,Nonprofits',
+	'kidspost,KidsPost',
+	'liveonline,Live Discussions',
+	'liveonline/special,Special Reports',
+	'liveonline/special/1,One',
+	'liveonline/special/10,Ten',
+	'liveonline/special/2,Two',
+	'liveonline/special/3,Three',
+	'liveonline/special/4,Four',
+	'liveonline/special/5,Five',
+	'liveonline/special/6,Six',
+	'liveonline/special/7,Seven',
+	'liveonline/special/8,Eight',
+	'liveonline/special/9,Nine',
+	'locallife,Local Life',
+	'metro,Metro',
+	'metro/crime,Crime',
+	'metro/crime/crimewatch,Crimewatch Collector',
+	'metro/dc,The District',
+	'metro/lottery,Lottery',
+	'metro/md,Maryland',
+	'metro/md/calvert,Calvert',
+	'metro/md/charles,Charles',
+	'metro/md/frederick,Frederick',
+	'metro/md/howard,Howard',
+	'metro/md/montgomery,Montgomery',
+	'metro/md/princegeorges,Prince George"s',
+	'metro/md/stmarys,St Mary"s',
+	'metro/obituaries,Obituaries',
+	'metro/religion,Religion',
+	'metro/special,Special Reports',
+	'metro/special/1,Growth',
+	'metro/special/10,Virginia Tech Shootings',
+	'metro/special/2,Maryland Politics',
+	'metro/special/3,Transportation',
+	'metro/special/4,Metrorail',
+	'metro/special/5,Serial Arson',
+	'metro/special/6,Six',
+	'metro/special/7,Virginia Politics',
+	'metro/special/8,District Politics',
+	'metro/special/9,Immigration',
+	'metro/traffic,Traffic',
+	'metro/va,Virginia',
+	'metro/va/alexandria,Alexandria',
+	'metro/va/arlington,Arlington',
+	'metro/va/fairfax,Fairfax',
+	'metro/va/fallschurch,Falls Church',
+	'metro/va/fauquier,Fauquier',
+	'metro/va/loudoun,Loudoun',
+	'metro/va/princewilliam,Prince William',
+	'metro/va/stafford,Stafford',
+	'mypost,MyPost Page',
+	'nation,Nation',
+	'nation/nationalsecurity,National Security',
+	'nation/science,Science',
+	'nation/special,Special Reports',
+	'nation/special/1,Supreme Court',
+	'nation/special/10,Gulf Coast Hurricanes',
+	'nation/special/2,Homeland Security',
+	'nation/special/3,Intelligence',
+	'nation/special/4,Military',
+	'nation/special/5,Homeland Security Contracting',
+	'nation/special/6,Sept. 11 -- Five Years Later',
+	'nation/special/7,Seven',
+	'nation/special/8,Climate Change',
+	'nation/special/9,London Terror Plot',
+	'nation/wires,Wires',
+	'opinion,Opinion',
+	'opinion/columns,Columns',
+	'opinions,Opinions',
+	'opinions/columns,Columns',
+	'opinions/cartoonsandvideos,Cartoons &amp; Videos',
+	'opinions/columnsandblogs,Columns &amp; Blogs',
+	'photo,Photo',
+	'photo/dayinphotos,The Day in Photos',
+	'photo/metro,Metro',
+	'photo/special,Special Reports',
+	'photo/special/1,One',
+	'photo/special/10,Ten',
+	'photo/special/2,Two',
+	'photo/special/3,Three',
+	'photo/special/4,Four',
+	'photo/special/5,Five',
+	'photo/special/6,Six',
+	'photo/special/7,Seven',
+	'photo/special/8,Eight',
+	'photo/special/9,Nine',
+	'photo/topstory,Top Story',
+	'photo/weekinreview,The Week in Review',
+	'photo/world,World',
+	'politics,Politics',
+	'politics/administration,Bush Administration',
+	'politics/congress,In Congress',
+	'politics/elections,Elections',
+	'politics/fedpage,Federal Page',
+	'politics/polls,Polls',
+	'politics/special,Special Reports',
+	'politics/special/1,Social Security',
+	'politics/special/10,Battle Over Immigration',
+	'politics/special/2,Taxes and Spending',
+	'politics/special/3,Filibuster Fight',
+	'politics/special/4,Tom DeLay Case',
+	'politics/special/5,Stem Cell Debate',
+	'politics/special/6,Watergate',
+	'politics/special/7,Plame Investigation',
+	'politics/special/8,Abramoff Scandal',
+	'politics/special/9,Nine',
+	'print,Print Edition',
+	'print/asection,Inside the A Section',
+	'print/bookworld,Book World',
+	'print/business,Business',
+	'print/cars,Cars',
+	'print/community,The Extras',
+	'print/community/alexandriaarlington,Alexandria Arlington',
+	'print/community/annearundel,Anne Arundel',
+	'print/community/dc,District',
+	'print/community/fairfax,Fairfax',
+	'print/community/howard,Howard',
+	'print/community/loudoun,Loudoun',
+	'print/community/montgomery,Montgomery',
+	'print/community/princegeorges,Prince George\'s',
+	'print/community/princewilliam,Prince William',
+	'print/community/southernmaryland,Southern Md.',
+	'print/editorialpages,Editorial Pages',
+	'print/food,Food',
+	'print/health,Health',
+	'print/home,Home',
+	'print/metro,Metro',
+	'print/nationpolitics,Nation and Politics',
+	'print/outlook,Sunday Outlook',
+	'print/realestate,Real Estate',
+	'print/sports,Sports',
+	'print/style,Style',
+	'print/sundayarts,Sunday Arts',
+	'print/sundayjobs,Jobs',
+	'print/sundaysource,Sunday Source',
+	'print/travel,Travel',
+	'print/tvweek,TV Week',
+	'print/washpostmagazine,Washington Post Magazine',
+	'print/weekend,Weekend',
+	'print/world,World',
+	'realestate,Real Estate',
+	'realestate/apartmentliving,Apartment Living',
+	'realestate/buy,Buy a Home',
+	'realestate/dcarealiving,DC Living',
+	'realestate/homepricereports,Home Price Reports',
+	'realestate/own,Home Improvements',
+	'realestate/sell,Sell a Home',
+	'rentals,Rentals',
+	'rentals/dcarealiving,DC Living',
+	'rentals/findarental,Find',
+	'rentals/rentyourplace,Rent Your Place',
+	'smartliving,Smart Living',
+	'technology,Technology',
+	'technology/frontiers,Frontiers',
+	'technology/personaltech,Personal Tech',
+	'technology/personaltech/connected,Connected',
+	'technology/special,Special Reports',
+	'technology/special/01,One',
+	'technology/special/02,Two',
+	'technology/special/03,Three',
+	'technology/special/04,Four',
+	'technology/special/05,Five',
+	'technology/special/06,Six',
+	'technology/special/07,Video Games',
+	'technology/special/08,Eight',
+	'technology/special/09,Nine',
+	'technology/special/10,Ten',
+	'technology/techpolicy,Tech Policy',
+	'technology/washtech,Washtech',
+	'weather,Weather',
+	'world,World',
+	'world/africa,Africa',
+	'world/asia,Asia/Pacific',
+	'world/europe,Europe',
+	'world/mideast,Mideast',
+	'world/mideast/iraq,Iraq',
+	'world/northamerica,North America',
+	'world/oceania,Oceania',
+	'world/southamerica,South America',
+	'world/special,Special Reports',
+	'world/special/1,Crisis in the Middle East',
+	'world/special/10,Ariel Sharon',
+	'world/special/2,America at War',
+	'world/special/3,e-Qaeda',
+	'world/special/4,World Election Watch',
+	'world/special/5,Fidel Castro',
+	'world/special/6,Abu Ghraib',
+	'world/special/7,Zarqawi Killed',
+	'world/special/8,North Korea Standoff',
+	'world/special/9,Mexican Elections',
+	'world/wires,Wires');
+}
+return deep_links ;
+}
+
+levelA = new makeArray(
+'wp-srv/community/mypost, MyPost Page',
+'wp-srv/community/groups/front.html, Groups',
+'wp-srv/front.htm,News Home Page',
+'wp-srv/smartliving,Smart Living',
+'wp-srv/locallife,Local Life',
+'wp-dyn/content/nation,Nation',
+'wp-dyn/content/politics,Politics',
+'wp-dyn/content/world,World',
+'wp-dyn/content/metro,Metro',
+'wp-dyn/content/business,Business',
+'wp-dyn/content/technology,Technology',
+'wp-dyn/content/sports,Sports',
+'wp-dyn/content/style,Style',
+'wp-dyn/content/education,Education',
+'wp-dyn/content/travel,Travel',
+'wp-dyn/content/health,Health',
+'wp-dyn/content/kidspost,KidsPost',
+'wp-dyn/content/realestate,Real Estate',
+'wp-dyn/content/home,Home &amp; Garden',
+'wp-dyn/content/food,Food',
+'wp-dyn/content/photo,Photo',
+'wp-dyn/content/liveonline,Live Online',
+'wp-dyn/content/opinion,Opinion',
+'wp-dyn/content/opinions,Opinions',
+'wp-srv/weather,Weather',
+'wp-dyn/content/print/weekly,Weekly',
+'wp-dyn/content/digest,News Digest',
+'wp-dyn/content/admin/classifieds,Classifieds',
+'wp-dyn/content/print,Print Edition',
+'wp-dyn/content/artsandliving,Arts and Living');
+
+
+function makeBreadCrumbs(node)
+{
+	document.write('<a href="http://www.washingtonpost.com/"><font size="-2" face="verdana, ms sans serif, arial" color="#333366"><b>News</b></font></a> <font size="-2" face="arial" class="nodec" color="#333366"><b>&gt;</b></font> ');
+	var end = (node.indexOf("/") != -1) ? node.indexOf("/") : node.length;
+	var section = node.substring(0, end);
+	for(var i=0;i<levelA.length;i++)
+		{
+		if(levelA[i].indexOf(section)!=-1)
+			{
+			document.write('<a href="http://www.washingtonpost.com/');
+			document.write(levelA[i].substring(0,levelA[i].indexOf(',')));
+			document.write('/">');
+			document.write('<font size="-2" face="verdana, ms sans serif, arial" color="#333366"><b>');
+			document.write(levelA[i].substring(levelA[i].indexOf(',')+1, levelA[i].length));
+			document.write('</b></font></a>');
+			break;
+			}
+		}
+	if(node.indexOf('/')!=-1)
+		{
+		var levelB = node.substring(node.indexOf('/')+1, node.length);
+		blowout = getDeepLinks(section+'/');	
+		for(var i=0;i<blowout.length;i++)
+			if(blowout[i].indexOf(node)!=-1)
+				{
+				document.write(' <font size="-2" face="arial" class="nodec" color="#333366"><b>&gt;</b></font> ');
+				document.write('<a href="http://www.washingtonpost.com/wp-dyn/content/');
+				document.write(blowout[i].substring(0,blowout[i].indexOf(',')));
+				document.write('/">');
+				document.write('<font size="-2" face="verdana, ms sans serif, arial" color="#333366"><b>');
+				document.write(blowout[i].substring(blowout[i].indexOf(',')+1, blowout[i].length));
+				document.write('</b></font></a>');
+				break;
+				}
+		}
+}
+
+function makeBreadCrumbsUsingCss(node)
+{
+	document.write('<a href="http://www.washingtonpost.com/"><h2>washingtonpost.com</h2></a>&nbsp; &gt; &nbsp;');
+	var end = (node.indexOf("/") != -1) ? node.indexOf("/") : node.length;
+	var section = node.substring(0, end);
+	for(var i=0;i<levelA.length;i++)
+		{
+		if(levelA[i].indexOf(section)!=-1)
+			{
+			document.write('<a href="http://www.washingtonpost.com/');
+			document.write(levelA[i].substring(0,levelA[i].indexOf(',')));
+			document.write('/"><h2>');
+			document.write(levelA[i].substring(levelA[i].indexOf(',')+1, levelA[i].length));
+			document.write('</h2></a>');
+			break;
+			}
+		}
+	if(node.indexOf('/')!=-1)
+		{
+		var levelB = node.substring(node.indexOf('/')+1, node.length);
+		blowout = getDeepLinks(section+'/');	
+		for(var i=0;i<blowout.length;i++)
+			if(blowout[i].indexOf(node)!=-1)
+				{
+				document.write(' &gt; ');
+				document.write('<a href="http://www.washingtonpost.com/wp-dyn/content/');
+				document.write(blowout[i].substring(0,blowout[i].indexOf(',')));
+				document.write('/"><h2>');
+				document.write(blowout[i].substring(blowout[i].indexOf(',')+1, blowout[i].length));
+				document.write('</h2></a>');
+				break;
+				}
+		}
+}
+
+function makeArray()
+{
+  for(var count = 0; count < makeArray.arguments.length; count++)
+    this[count] = makeArray.arguments[count];
+  this.length = count;
+}
+
+
+function leapto(form)
+{
+	if (form=="topSections")
+	{
+		if (document.topSections.sections.options[document.topSections.sections.selectedIndex].value != "nope")
+		{	window.location=document.topSections.sections.options[document.topSections.sections.selectedIndex].value;	}
+		else { alert("Please make a valid selection."); }
+	}
+	if (form=="bottomSections")
+	{
+		if (document.bottomSections.sections.options[document.bottomSections.sections.selectedIndex].value != "nope")
+		{	window.location=document.bottomSections.sections.options[document.bottomSections.sections.selectedIndex].value;	}
+		else { alert("Please make a valid selection."); }
+	}
+	if (form=="nodeSections")
+	{
+		if (document.nodeSections.sections.options[document.nodeSections.sections.selectedIndex].value != "nope")
+		{	window.location=document.nodeSections.sections.options[document.nodeSections.sections.selectedIndex].value;	}
+		else { alert("Please make a valid selection."); }
+	}
+}
+
+
+
+function getSectionHeader(node)
+{
+	var end = (node.indexOf("/") != -1) ? node.indexOf("/") : node.length;
+	var section = node.substring(0, end);
+	
+	
+	
+	if(node.indexOf('/')!=-1)
+		{
+		var levelB = node.substring(node.indexOf('/')+1, node.length);
+		blowout = getDeepLinks(section+'/');	
+		for(var i=0;i<blowout.length;i++)
+			if(blowout[i].indexOf(node)!=-1)
+				{
+				document.write('<a href="http://www.washingtonpost.com/wp-dyn/content/');
+				document.write(blowout[i].substring(0,blowout[i].indexOf(',')));
+				document.write('/">');
+				document.write(blowout[i].substring(blowout[i].indexOf(',')+1, blowout[i].length));
+				document.write('</a>');
+				break;
+				}
+		}
+		else
+		{
+		
+			for(var i=0;i<levelA.length;i++)
+		{
+		if(levelA[i].indexOf(section)!=-1)
+			{
+			document.write('<a href="http://www.washingtonpost.com/');
+			document.write(levelA[i].substring(0,levelA[i].indexOf(',')));
+			document.write('/">');
+			document.write(levelA[i].substring(levelA[i].indexOf(',')+1, levelA[i].length));
+			document.write('</a>');
+			break;
+			}
+		}
+		}
+}
+

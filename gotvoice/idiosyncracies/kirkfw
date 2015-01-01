@@ -1,0 +1,4 @@
+# this setting undone by gui
+duplicate-cn in var/ipcop/ovpn/server.conf
+
+special rules in /etc/rc.d/rc.firewall_rules.local

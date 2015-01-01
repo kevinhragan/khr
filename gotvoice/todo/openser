@@ -1,0 +1,18 @@
+tcpdump how sip works now:
+   rtp traffic; does it go thru asterisk
+   sdp content
+
+openser
+   first get something working
+   firewall:
+       nathelper 
+       rtpproxy
+   later: dispatcher
+ 
+first get something working:
+	sip phone calls openser or nat-ignrant asterisk calls openser
+        openser calls sip gateway
+
+
+Think about, research: load issues of running traffic
+thru single operser box versus single asterisk

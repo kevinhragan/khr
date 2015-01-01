@@ -1,0 +1,2243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+  
+
+
+  
+  
+  
+  <title>SYSSTAT</title>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+
+
+
+  
+  
+  <meta name="description" content="Performance tools for LINUX">
+
+
+
+  
+  
+  <link media="screen" rel="stylesheet" href="Style/export.css" type="text/css">
+
+
+
+  
+  
+  <meta content="S. Godard" name="author">
+</head>
+
+
+<body style="color: rgb(255, 255, 0); background-color: rgb(0, 0, 110);" alink="#66ff99" link="#33ff33" vlink="#33cc00">
+
+
+
+<table style="width: 100%; height: 95px;" border="0" cellpadding="2" cellspacing="0">
+
+
+
+  <tbody>
+
+
+
+    <tr>
+
+
+
+      <td colspan="2" style="vertical-align: middle; text-align: center; width: 20%; background-repeat: repeat-x;" class="bandeau">
+      
+      
+      <div style="text-align: left;"><img src="bandeau11.jpg" style="width: 375px; height: 157px;" alt="bandeau1"><img src="bandeau22.jpg" style="width: 333px; height: 156px;" alt="bandeau2"></div>
+
+
+
+      </td>
+
+
+
+    </tr>
+
+
+
+    <tr>
+
+
+
+      <td id="menuhaut" colspan="2" rowspan="1"><span></span>
+      
+      
+      <hr style="height: 12px; width: 100%;">
+      
+      
+      <div style="text-align: center; font-family: Helvetica,Arial,sans-serif;"><font size="+1"><a href="index.html">News</a>&nbsp;
+      <span style="color: rgb(51, 255, 51);">| &nbsp;<a href="features.html">Features</a> &nbsp;|</span>
+&nbsp;<a href="download.html">Download</a>&nbsp;
+      <span style="color: rgb(51, 255, 51);">|</span>&nbsp;&nbsp;<a href="documentation.html">Documentation</a>&nbsp; <span style="color: rgb(51, 255, 51);">|</span>&nbsp;&nbsp;<a href="tutorial.html">Tutorial</a>&nbsp; <span style="color: rgb(51, 255, 51);">|</span>&nbsp;&nbsp;<a href="faq.html">FAQ</a>&nbsp; <span style="color: rgb(51, 255, 51);">|</span> &nbsp;<a href="mailto:sysstat%20%3Cat%3E%20orange.fr">Contact</a><span style="color: rgb(51, 255, 51);"></span></font> </div>
+
+
+
+      </td>
+
+
+
+    </tr>
+
+
+
+  
+  
+  </tbody>
+</table>
+
+
+
+<br>
+
+
+
+<table style="width: 100%; height: 100%;" border="0" cellpadding="2" cellspacing="0">
+
+
+
+  <tbody>
+
+
+
+    <tr>
+
+
+
+      <td style="text-align: left; vertical-align: top; width: 200px; background-color: rgb(0, 0, 110);" id="gauche">
+      
+      
+      <div style="font-family: Helvetica,Arial,sans-serif; text-align: left;"><small>Useful
+links:</small><br>
+
+
+
+      </div>
+
+
+
+      <a style="font-family: Helvetica,Arial,sans-serif;" href="http://freshmeat.net" target="_blank"><small>Freshmeat</small></a><br style="font-family: Helvetica,Arial,sans-serif;">
+
+
+
+      <a style="font-family: Helvetica,Arial,sans-serif;" href="http://www.icewalkers.com/" target="_blank"><small>IceWalkers</small></a><br>
+
+
+
+      <a href="http://www.ibiblio.org/pub/linux" target="_blank"><small><span style="font-family: Helvetica,Arial,sans-serif;">ibiblio
+Linux archive</span></small></a><br>
+
+
+
+      <br>
+
+
+
+      <a href="http://www.linux-foundation.org/" target="_blank"><small><span style="font-family: Helvetica,Arial,sans-serif;">The Linux
+Foundation</span></small></a><br>
+
+
+
+      <a href="http://www.kernel.org" target="_blank"><small><span style="font-family: Helvetica,Arial,sans-serif;">Linux
+Kernel Archives</span></small></a><br style="font-family: Helvetica,Arial,sans-serif;">
+
+
+
+      <a href="http://lkml.org" target="_blank"><small><span style="font-family: Helvetica,Arial,sans-serif;">Linux
+Kernel Mailing List</span></small></a><br>
+
+
+
+      <a href="http://www.linuxhq.com" target="_blank"><small><span style="font-family: Helvetica,Arial,sans-serif;">LinuxHQ</span></small></a><br>
+
+
+
+      <a href="http://tldp.org" target="_blank"><small><span style="font-family: Helvetica,Arial,sans-serif;">The Linux
+Documentation Project</span></small></a><br style="color: rgb(0, 0, 126);">
+
+
+
+      
+      
+      <hr style="width: 100%; height: 1px; color: rgb(0, 0, 126); background-color: rgb(204, 204, 255);"><font size="-2"><span style="color: rgb(0, 0, 126);"></span>&nbsp;</font><br>
+
+
+
+      
+      
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post"> <input name="cmd" value="_s-xclick" type="hidden"> <font size="-1"><span style="font-family: Helvetica,Arial,sans-serif;">Help
+support sysstat!...</span></font><br>
+
+
+
+        <input src="https://www.paypal.com/en_US/i/btn/x-click-but21.gif" name="submit" alt="Make payments with PayPal - it's fast, free and secure!" type="image">  <input name="encrypted" value="-----BEGIN PKCS7-----MIIHRwYJKoZIhvcNAQcEoIIHODCCBzQCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYAbDcDFrRP6lVWRVWV2q2PP/ZF+KotZgrVRpTFpYdHhEDYVaWTYDffC+BEHwnARSTMUcTMtFw5Nivsu6ok9eIgoFebpaL8IvC3PCc5Wx8IKb3P7rwQiHPF+dXv5aQli0A6wglL+/WYUSZTD7sUHg8WmvTaZ/uCTbjkxXF3+K7lTtzELMAkGBSsOAwIaBQAwgcQGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIm7RdDaCsAtWAgaB+lwxXAxust6a3vKZoOQaZr3/a3kOJeQXLYWyEKMrv1u65EhbeeW1uFj2dw6+ES85VTnCRGh4wVw5PA8TRb4y7fGTS4wtWEN/jkUZRlnhme2b6Tz9u38ZZawuyLp2zYGRV3K2pZve59eFr+/M1MdOdL/IFmediFqvU/GN4tQMJmZD63KgDrGKLQGlDddZFJy71l0uCJguPigMNubrEgYD/oIIDhzCCA4MwggLsoAMCAQICAQAwDQYJKoZIhvcNAQEFBQAwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMB4XDTA0MDIxMzEwMTMxNVoXDTM1MDIxMzEwMTMxNVowgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDBR07d/ETMS1ycjtkpkvjXZe9k+6CieLuLsPumsJ7QC1odNz3sJiCbs2wC0nLE0uLGaEtXynIgRqIddYCHx88pb5HTXv4SZeuv0Rqq4+axW9PLAAATU8w04qqjaSXgbGLP3NmohqM6bV9kZZwZLR/klDaQGo1u9uDb9lr4Yn+rBQIDAQABo4HuMIHrMB0GA1UdDgQWBBSWn3y7xm8XvVk/UtcKG+wQ1mSUazCBuwYDVR0jBIGzMIGwgBSWn3y7xm8XvVk/UtcKG+wQ1mSUa6GBlKSBkTCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb22CAQAwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOBgQCBXzpWmoBa5e9fo6ujionW1hUhPkOBakTr3YCDjbYfvJEiv/2P+IobhOGJr85+XHhN0v4gUkEDI8r2/rNk1m0GA8HKddvTjyGw/XqXa+LSTlDYkqI8OwR8GEYj4efEtcRpRYBxV8KxAW93YDWzFGvruKnnLbDAF6VR5w/cCMn5hzGCAZowggGWAgEBMIGUMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbQIBADAJBgUrDgMCGgUAoF0wGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAcBgkqhkiG9w0BCQUxDxcNMDcwMjI1MDc1NzUwWjAjBgkqhkiG9w0BCQQxFgQUkFHsvNkPDtnaT5k6uiNmzEPrSd4wDQYJKoZIhvcNAQEBBQAEgYBYXsw8F/YHgnwn82sYht6Q0KEqh5iIiimtLZvpaUhFJeL86hgW3G3a+tTPIMOD4EYp2Rz7EDZ/nOiQlW2POZ2taCHIdXc/2T7F8tkUuceJW0OChiDtaReaqrwnHhAv4vKgVb7greazV+KsppHounf5giHkDURd6OrOEGTu9cI3pg==-----END PKCS7-----" type="hidden"> </form>
+
+
+
+      <font size="-2">&nbsp;</font><br>
+
+
+
+      <a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-html401" style="border: 0px solid ; width: 88px; height: 31px;" alt="Valid HTML 4.01 Transitional"></a><br>
+
+
+
+      <font size="-2">&nbsp;</font><br>
+
+
+
+      <a href="http://www.nvu.com"><img src="http://www.nvu.com/images/madewithNvu80x15clear.png" style="border: 0px solid ; width: 80px; height: 15px;" alt="Document made with Nvu"></a><br>
+
+
+
+      <span style="color: rgb(0, 0, 126);" class="titregauche1"></span>
+      
+      
+      <hr style="width: 100%; height: 1px; color: rgb(0, 0, 126); background-color: rgb(204, 204, 255);">
+      
+      
+      <script type="text/javascript"><!--
+google_ad_client = "pub-2032900564560931";
+google_ad_width = 160;
+google_ad_height = 600;
+google_ad_format = "160x600_as";
+google_ad_type = "text";
+google_ad_channel = "";
+google_color_border = "00006E";
+google_color_bg = "00006E";
+google_color_link = "99CCFF";
+google_color_text = "FFFF00";
+google_color_url = "33FF33";
+//--></script>
+      
+      
+      <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+      </script><!-- Search Google -->
+      
+      
+      <form method="get" action="http://www.google.com/custom" target="_top">
+        
+        
+        <table style="width: 190px; height: 81px;" bgcolor="#00006e">
+
+
+
+          <tbody>
+
+
+
+            <tr>
+
+
+
+              <td align="left" height="32" nowrap="nowrap" valign="top"><br>
+
+
+
+              <label for="sbi" style="display: none;">Enter
+your search terms</label> <input name="q" size="15" maxlength="255" value="" id="sbi" type="text"></td>
+
+
+
+            </tr>
+
+
+
+            <tr>
+
+
+
+              <td align="left" valign="top"><label for="sbb" style="display: none;">Submit search form</label>
+              <input name="sa" value="Google Search" id="sbb" type="submit"><input name="client" value="pub-2032900564560931" type="hidden"> <input name="forid" value="1" type="hidden"><input name="ie" value="ISO-8859-1" type="hidden"> <input name="oe" value="ISO-8859-1" type="hidden"><input name="flav" value="0000" type="hidden"> <input name="sig" value="QrroYe3w468N3M7K" type="hidden"><input name="cof" value="GALT:#33FF33;GL:1;DIV:#99CCFF;VLC:33CC00;AH:center;BGC:00006E;LBGC:00006E;ALC:99CCFF;LC:99CCFF;T:FFFF00;GFNT:66FF99;GIMP:66FF99;FORID:1" type="hidden"> <input name="hl" value="en" type="hidden"></td>
+
+
+
+            </tr>
+
+
+
+          
+          
+          </tbody>
+        
+        
+        </table>
+
+
+
+      </form>
+
+
+
+      <br>
+
+
+
+      
+      
+      <script type="text/javascript"><!--
+google_ad_client = "pub-2032900564560931";
+google_ad_width = 180;
+google_ad_height = 90;
+google_ad_format = "180x90_0ads_al";
+google_ad_channel = "";
+google_color_border = "99CCFF";
+google_color_bg = "00006E";
+google_color_link = "33FF33";
+google_color_text = "FFFF00";
+google_color_url = "33FF33";
+//-->
+      </script>
+      
+      
+      <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+      </script><br>
+
+
+
+      <br>
+
+
+
+      
+      
+      <script type="text/javascript"><!--
+google_ad_client = "pub-2032900564560931";
+google_ad_width = 125;
+google_ad_height = 125;
+google_ad_format = "125x125_as_rimg";
+google_cpa_choice = "CAAQ2L-kgwIaCDjyD0S8kmVrKJDD4IEBMAA";
+google_ad_channel = "";
+//-->
+      </script>
+      
+      
+      <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+      </script><br>
+
+
+
+      <br>
+
+
+
+      
+      
+      <script type="text/javascript"><!--
+google_ad_client = "pub-2032900564560931";
+google_ad_width = 160;
+google_ad_height = 600;
+google_ad_format = "160x600_as";
+google_ad_type = "text";
+google_ad_channel = "";
+google_color_border = "00006E";
+google_color_bg = "00006E";
+google_color_link = "99CCFF";
+google_color_text = "FFFF00";
+google_color_url = "33FF33";
+//-->
+      </script>
+      
+      
+      <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+      </script><br>
+
+
+
+<!-- Search Google --> </td>
+
+
+
+      <td id="contenu">
+      
+      
+      <div style="text-align: center;"> <big style="font-weight: bold; font-style: italic; color: rgb(204, 255, 255);"><big><span style="font-family: Helvetica,Arial,sans-serif;">FAQ</span></big></big>
+      
+      
+      <hr style="width: 100%; height: 2px;">
+      
+      
+      <div style="text-align: left;">
+      
+      
+      <p style="font-weight: bold; text-decoration: underline;"><span style="font-size: 11pt; font-family: Arial; color: yellow;" lang="EN-GB"></span><span style="font-family: Helvetica,Arial,sans-serif;">This
+is sysstat's Frequently Asked
+Questions! </span></p>
+
+
+
+      <span style="font-family: Helvetica,Arial,sans-serif;">Be
+sure to read this carefully before
+asking for help... </span><br style="font-family: Helvetica,Arial,sans-serif;">
+
+
+
+      <span style="font-family: Helvetica,Arial,sans-serif;">If
+you don't find the solution to your
+problem here then send me an email (please remember to include
+sysstat's
+version number, a sample output showing the bug, and the contents of
+the
+/proc/stat and /proc/diskstats files for your system. Also tell me what
+version your kernel
+is).</span></div>
+
+
+
+      
+      
+      <div style="text-align: left; font-family: Helvetica,Arial,sans-serif;">
+      
+      
+      <p style="font-weight: bold;"><a href="#General">1.
+GENERAL QUESTIONS</a> </p>
+
+
+
+1.1. When I compile sysstat, it fails
+with the following message: "make: msgfmt: Command not found". <br>
+
+
+
+1.2. When I try to compile sysstat, it
+fails and says it cannot find some include files. <br>
+
+
+
+1.3. I don't understand why sysstat
+displays the time sometimes as HH:MM:SS and sometimes as HH:MM:SS
+AM/PM... <br>
+
+
+
+      
+      
+      <p style="font-weight: bold;"><a href="#sar">2.
+QUESTIONS RELATING TO SAR/SADC/SADF</a> </p>
+
+
+
+2.1. The sar command complains with the
+following message: "Invalid system activity file: ...". <br>
+
+
+
+2.2. The sar command complains with the
+following message: "Cannot append data to that file [...]". <br>
+
+
+
+2.3. The sar command complains with the
+following message: "Invalid data format". <br>
+
+
+
+2.4. I get the following error message
+when I try to run sar: "Cannot open /var/log/sa/sa30: No such file or
+directory". <br>
+
+
+
+2.5. Are sar daily data files fully
+compatible with Sun Solaris format sar files? <br>
+
+
+
+2.6. I have some trouble running sar on
+my SMP box. My server crashes with a kernel oops. <br>
+
+
+
+2.7. The "Average:" results
+from the sar command are just rubbish... <br>
+
+
+
+2.8. My database (e.g. MySQL) doesn't
+appear to understand the time zone displayed by 'sadf -d'... <br>
+
+
+
+2.9. I tried to use the -p option of the
+sadf command, together with the options -s and -e. Unfortunately, I
+have
+nothing displayed at all. <br>
+
+
+
+2.10. I cannot see all my disks when I
+use the sar -d command... <br>
+
+
+
+2.11. Do you know a tool which can
+graphically plot the data collected by sar? <br>
+
+
+
+2.12. When I launch sadc, I get the error
+message: "flock: Resource temporarily unavailable". <br>
+
+
+
+2.13. How should I run sysstat / sar so
+that I get a reading for 00:00:00? <br>
+
+
+
+2.14. The sar command complains with the
+following message: "Requested activities not available in file [...]". <br>
+
+
+
+2.15. Does sar need a lot of resources to
+run? <br>
+
+
+
+2.16. Are the measurements gathered by
+sadc cumulative or instantaneous? <br>
+
+
+
+2.17.
+Some fields are always displayed as
+0.00 when I use the sar -d command. <br>
+
+
+
+2.18. The sar command complains with the
+following message: "Requested activities not available".<br>
+
+
+
+2.19. How can I keep sar data for more than one month?<br>
+
+
+
+2.20. How can I load sar data into an Oracle database for performance
+analysis and capacity planning?<br>
+
+
+
+2.21. The sar command displays some weird output values...<br>
+
+
+
+2.22. What happened to sar's options -h, -H, -x and -X?
+      
+      
+      <p><a style="font-weight: bold;" href="#iostat">3.
+QUESTIONS RELATING TO IOSTAT</a> </p>
+
+
+
+3.1. I can't see all my disks when I use
+the iostat command... <br>
+
+
+
+3.2. iostat -x doesn't report disk I/O
+statistics... <br>
+
+
+
+3.3. Why can't iostat display extended
+statistics for partitions with 2.6.x kernels? <br>
+
+
+
+3.4. I don't understand the output of
+iostat. It doesn't match what I expect it to be... <br>
+
+
+
+3.5. Why values displayed by iostat are
+so different in the first report from those displayed in subsequent
+ones? <br>
+
+
+
+3.6. iostat -x displays huge numbers for
+some fields... <br>
+
+
+
+      
+      
+      <p style="font-weight: bold;"><a href="#pidstat">4.
+QUESTIONS RELATING TO PIDSTAT</a></p>
+
+
+
+4.1. pidstat -d doesn't report task I/O statistics...<br>
+
+
+
+4.2. The pidstat command complains with the following message:
+"Requested activities not available".<br>
+
+4.3. pidstat doesn't display statistics for process (task) xyz...
+      
+      
+      <hr style="width: 100%; height: 2px;"></div>
+
+
+
+      
+      
+      <div style="text-align: left; font-family: Helvetica,Arial,sans-serif;">
+      
+      
+      <p style="font-weight: bold; text-decoration: underline;"><a name="General"></a>1.
+GENERAL QUESTIONS </p>
+
+
+
+      <span style="color: rgb(153, 204, 255);">1.1. When I
+compile sysstat, it fails
+with the following message: </span><br style="color: rgb(153, 204, 255);">
+
+
+
+      <font size="-1"><span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">make:
+msgfmt: Command not found </span><br style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">make:
+***[locales] Error 127</span></font><br>
+
+
+
+      <br>
+
+
+
+The msgfmt command belongs to the GNU
+gettext package. If you don't have it on your system, just configure
+sysstat with NLS disabled like this:<br>
+
+
+
+      <br>
+
+
+
+      <font size="-1"><span style="font-family: Courier New,Courier,monospace;">$ <span style="font-weight: bold;">./configure --disable-nls</span></span></font><br>
+
+
+
+      <br>
+
+
+
+or answer 'y' (for "yes") to the question "Disable National Language
+Support (NLS)? (y/n) [--disable-nls]" if you use the Interactive
+Configuration script (iconfig), then
+compile sysstat as usual (make ; make install).<br>
+
+
+
+Please
+read the README-nls file included
+in sysstat source package to learn some more about National Language
+Support. <br>
+
+
+
+Note: With older versions of sysstat that don't have autoconf support
+(up to v7.0.4), you have instead to answer 'n' (for "no") to the
+question "Enable
+National Language Support (NLS)? [y]" during config stage (make
+config). <br>
+
+
+
+      <br>
+
+
+
+      <span style="color: rgb(153, 204, 255);">1.2. When I
+try to compile sysstat, it
+fails and says it cannot find some include files: </span><br style="color: rgb(153, 204, 255);">
+
+
+      <font size="-1"><span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">
+In
+file included from
+/usr/include/bits/errno.h:25, </span><br style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">
+
+
+      <span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+from /usr/include/errno.h:36, </span><br style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">
+
+
+      <span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+from common.c:26: </span><br style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">
+
+
+      <span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">
+/usr/include/linux/errno.h:4:
+asm/errno.h: No such file or directory </span><br style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">
+
+
+      <span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">
+&lt;SNIP&gt; </span><br style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">
+
+
+      <span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">
+common.c:
+In function `get_kb_shift': </span><br style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">
+
+
+      <span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">
+common.c:180:
+`PAGE_SIZE' undeclared
+(first use in this function) </span><br style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">
+
+
+      <span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">
+common.c:178:
+warning: `size' might be
+used uninitialized in this function </span><br style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">
+
+
+      <span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">
+make:
+*** [common.o] Error 1</span></font> <br>
+
+
+
+      <br>
+
+
+
+Make
+sure that you have the Linux kernel
+sources installed in /usr/src/linux. Also make sure that the symbolic
+link
+exists in the /usr/src/linux/include directory and points to the right
+architecture, e.g.: <br>
+
+
+
+      <br>
+
+
+
+      <small><font size="-1"><span style="font-family: Courier New,Courier,monospace;"># ll
+/usr/src/linux/include/asm </span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+      </font> <span style="font-family: Courier New,Courier,monospace;"><font size="-1">lrwxrwxrwx&nbsp;&nbsp;
+1 root&nbsp;&nbsp;&nbsp;&nbsp;
+root&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+8 May&nbsp; 5
+18:31 /usr/src/linux/include/asm -&gt; asm-i386</font> </span></small><br>
+
+
+
+      <br>
+
+
+
+In
+fact, only the Linux kernel headers
+should be necessary to be able to compile sysstat. <br>
+
+
+
+      <br>
+
+
+
+      <span style="color: rgb(153, 204, 255);">1.3. I
+don't understand why sysstat
+displays the time sometimes as HH:MM:SS and sometimes as HH:MM:SS
+AM/PM... </span><br>
+
+
+
+      <br>
+
+
+
+The
+time format used by sysstat tools
+depends on the locale of your system. The locale is defined by several
+environment variables, among which the LANG variable is perhaps the
+most widely
+used. See the following example: <br>
+
+
+
+      <br>
+
+
+
+      <font size="-1"><span style="font-family: Courier New,Courier,monospace;">$ <span style="font-weight: bold;">export LANG=en_US</span> </span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="font-family: Courier New,Courier,monospace;">$
+      <span style="font-weight: bold;">sar </span></span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="font-family: Courier New,Courier,monospace;">Linux
+2.4.9
+(brooks.seringas.fr)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+07/20/04 </span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="font-family: Courier New,Courier,monospace;">04:32:11
+PM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+LINUX
+RESTART </span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="font-family: Courier New,Courier,monospace;">05:00:00
+PM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+CPU&nbsp;&nbsp;&nbsp;&nbsp;
+%user&nbsp;&nbsp;&nbsp;&nbsp;
+%nice&nbsp;&nbsp;
+%system&nbsp;&nbsp;
+%iowait&nbsp;&nbsp;&nbsp;&nbsp;
+%idle </span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="font-family: Courier New,Courier,monospace;">05:10:00
+PM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+all&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.24&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp;&nbsp;&nbsp;
+89.64&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp;&nbsp;&nbsp;
+10.12 </span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="font-family: Courier New,Courier,monospace;">Average:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+all&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.24&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp;&nbsp;&nbsp;
+89.64&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp;&nbsp;&nbsp;
+10.12 </span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="font-family: Courier New,Courier,monospace;">$
+      <span style="font-weight: bold;">export LANG=fr_FR</span>
+      </span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="font-family: Courier New,Courier,monospace;">$
+      <span style="font-weight: bold;">sar </span></span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="font-family: Courier New,Courier,monospace;">Linux
+2.4.9
+(brooks.seringas.fr)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20.07.2004
+      </span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="font-family: Courier New,Courier,monospace;">16:32:11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LINUX
+RESTART </span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="font-family: Courier New,Courier,monospace;">17:00:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+CPU&nbsp;&nbsp;&nbsp;&nbsp;
+%user&nbsp;&nbsp;&nbsp;&nbsp;
+%nice&nbsp;&nbsp;
+%system&nbsp;&nbsp;
+%iowait&nbsp;&nbsp;&nbsp;&nbsp;
+%idle </span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="font-family: Courier New,Courier,monospace;">17:10:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+all&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0,24&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0,00&nbsp;&nbsp;&nbsp;&nbsp;
+89,64&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0,00&nbsp;&nbsp;&nbsp;&nbsp;
+10,12 </span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="font-family: Courier New,Courier,monospace;">Moyenne:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+all&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0,24&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0,00&nbsp;&nbsp;&nbsp;&nbsp;
+89,64&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0,00&nbsp;&nbsp;&nbsp;&nbsp;
+10,12 </span></font><br>
+
+
+
+      <br>
+
+
+
+As you can notice, the time format but
+also the date, the decimal point, and even some words (like
+"Average") have changed according to the specified locale.
+      
+      
+      <hr style="width: 100%; height: 2px;"></div>
+
+
+
+      
+      
+      <div style="text-align: left; font-family: Helvetica,Arial,sans-serif;">
+      
+      
+      <p style="font-weight: bold; text-decoration: underline;"><a name="sar"></a>2. QUESTIONS
+RELATING TO SAR/SADC/SADF</p>
+
+
+
+      <span style="color: rgb(153, 204, 255);">2.1. The
+sar command complains with the
+following message: </span><br style="color: rgb(153, 204, 255);">
+
+
+
+      <font size="-1"><span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">Invalid
+system activity file: ... </span></font><br>
+
+
+
+      <br>
+You are trying to use a file which is not a system activity file, or
+whose format is no longer compatible with that of files created by
+current version of sar.<br>
+If you were trying to use the standard system activity files located in
+the /var/log/sa directory then the solution is easy: Just log in as
+root and remove by hand all the files located in the /var/log/sa
+directory: <br>
+
+
+
+      <br>
+
+
+
+      <small><span style="font-family: Courier New,Courier,monospace;"><font size="-1"># <span style="font-weight: bold;">rm
+/var/log/sa/sa??</span></font> </span></small><br>
+
+
+
+      <br>
+
+
+
+      <span style="color: rgb(153, 204, 255);">2.2. The
+sar command complains with the
+following message: </span><br style="color: rgb(153, 204, 255);">
+
+
+
+      <font size="-1"><span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">Cannot
+append data to that file [...]</span></font><br>
+
+
+
+      <br>
+
+
+
+The internal structure of the data file
+does not allow sar to append data to it. The data file may come from
+another
+machine, or the components of the current box, such as the number of
+processors, may have changed. Use another data file, or delete the
+current
+daily data file, and try again. <br>
+
+
+
+      <br>
+
+
+
+      <span style="color: rgb(153, 204, 255);">2.3. The
+sar command complains with the
+following message: </span><br style="color: rgb(153, 204, 255);">
+
+
+
+      <font size="-1"><span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">Invalid
+data format</span></font><br>
+
+
+
+      <br>
+
+
+
+This
+error message means that sadc (the
+system activity data collector that sar is using) is not consistent
+with the
+sar command. In most cases this is because the sar and sadc commands do
+not
+belong to the same release of the sysstat package. Remember that sar
+may search
+for sadc in predefined directories (/usr/local/lib/sa, /usr/lib/sa,
+...) before
+looking in the current directory! <br>
+
+
+
+      <br>
+
+
+
+      <span style="color: rgb(153, 204, 255);">2.4. I get
+the following error message
+when I try to run sar: </span><br style="color: rgb(153, 204, 255);">
+
+
+
+      <font size="-1"><span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">Cannot
+open /var/log/sa/sa30: No such
+file or directory</span></font><br>
+
+
+
+      <br>
+
+
+
+Please read the sar(1) manual page! Daily
+data files are created in the /var/log/sa directory using the data
+collector
+(sadc) or using option -o with sar. Once they are created, sar can
+display
+statistics saved in those files. <br>
+
+
+
+But sar can also display statistics
+collected "on the fly": just enter the proper option on the command
+line to indicate which statistics are to be displayed, and also specify
+an
+&lt;interval&gt; and &lt;count&gt; number. <br>
+
+
+
+E.g.: <br>
+
+
+
+      <br>
+
+
+
+      <small><span style="font-family: Courier New,Courier,monospace;"># <span style="font-weight: bold;">sar 2 5</span></span></small>&nbsp;
+--&gt;
+will report CPU utilization every two
+seconds, five times. <br>
+
+
+
+      <small><span style="font-family: Courier New,Courier,monospace;"># <span style="font-weight: bold;">sar -n DEV 3 0</span></span></small>&nbsp;&nbsp;--&gt;
+will report network device utilization
+every 3 seconds, in an infinite loop.&nbsp; <br>
+
+
+
+&nbsp;<br>
+
+
+
+      <span style="color: rgb(153, 204, 255);">2.5. Are
+sar daily data files fully
+compatible with Sun Solaris format sar files?</span><br>
+
+
+
+      <br>
+
+
+
+No,
+the format of the binary data files
+created by sysstat's sar command is not compatible with formats from
+other
+Unixes, because it contains data which are closely linked to Linux. For
+the
+same reason, sysstat cannot work on platforms other than Linux... <br>
+
+
+
+&nbsp; <br>
+
+
+
+      <span style="color: rgb(153, 204, 255);">2.6. I have
+some trouble running sar on
+my SMP box. My server crashes with a kernel oops: </span><br style="color: rgb(153, 204, 255);">
+
+
+
+      <font size="-1"><span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">Feb
+17 04:05:00 bolums1 kernel: Unable
+to handle kernel paging request at virtual address fffffc1c </span><br style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">Feb
+17 04:05:00 bolums1 kernel:
+current-&gt;tss.cr3 = 19293000, %cr3 = 19293000 </span><br style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">Feb
+17 04:05:00 bolums1 kernel: *pde =
+0026b067 </span><br style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">Feb
+17 04:05:00 bolums1 kernel: *pte =
+00000000 </span><br style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">Feb
+17 04:05:00 bolums1 kernel: Oops:
+0000 </span><br style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">Feb
+17 04:05:00 bolums1 kernel:
+CPU:&nbsp;&nbsp;&nbsp; 0 </span><br style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">Feb
+17 04:05:00 bolums1 kernel: EIP: </span></font><br style="color: rgb(153, 204, 255);">
+
+
+
+      <span style="color: rgb(153, 204, 255);">&lt;...&gt;
+      </span><br>
+
+
+
+      <br>
+
+
+
+The trouble you have is triggered by a
+*Linux* kernel bug, not a sysstat one... The best solution is to
+upgrade your
+kernel to the latest stable release. <br>
+
+
+
+Also, if you cannot upgrade your box, try
+to configure sysstat with the SMP race workaround:<br>
+
+
+
+      <br>
+
+
+
+      <font size="-1"><span style="font-family: Courier New,Courier,monospace;">$&nbsp;<span style="font-weight: bold;">./configure --enable-smp-race</span></span></font><br>
+
+
+
+      <br>
+
+
+
+or answer 'y' to the question "Linux SMP race in serial driver
+workaround? (y/n) [--enable-smp-race]" if you use the Interactive
+Configuration script (iconfig). Indeed, we
+found that 2.2.x kernels (with x &lt;= 15) have an SMP race
+condition,
+which the sar command may trigger when it reads the
+/proc/tty/driver/serial file.<br>
+
+
+
+Note: With older versions of sysstat that don't have autoconf support
+(up to v7.0.4), you have to answer 'y' to the question "Linux SMP race
+in serial driver
+workaround?" at
+the config stage (make config). <br>
+
+
+
+      <br>
+
+
+
+      <span style="color: rgb(153, 204, 255);">2.7. The
+"Average:" results
+from the sar command are just rubbish... </span><br style="color: rgb(153, 204, 255);">
+
+
+
+      <span style="color: rgb(153, 204, 255);">E.g.: </span><br style="color: rgb(153, 204, 255);">
+
+
+
+      <font size="-1"><span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">&nbsp;11:00:00
+AM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+CPU&nbsp;&nbsp;&nbsp;&nbsp;
+%user&nbsp;&nbsp;&nbsp;&nbsp;
+%nice&nbsp;&nbsp;
+%system&nbsp;&nbsp;&nbsp;&nbsp;
+%idle </span><br style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">&nbsp;11:10:00
+AM&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;all&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.54&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.89&nbsp;&nbsp;&nbsp;&nbsp; 98.57 </span><br style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">&nbsp;11:20:01
+AM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+all&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+3.02&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+8.05&nbsp;&nbsp;&nbsp;&nbsp;
+22.85&nbsp;&nbsp;&nbsp;&nbsp;
+66.08 </span><br style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">&nbsp;11:30:01
+AM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+all&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+8.15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.31&nbsp;&nbsp;&nbsp;&nbsp;
+89.54 </span><br style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">&nbsp;11:40:01
+AM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+all&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+8.03&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.42&nbsp;&nbsp;&nbsp;&nbsp;
+89.55 </span><br style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">&nbsp;11:50:01
+AM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+all&nbsp;&nbsp;&nbsp;&nbsp;
+16.04&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.81&nbsp;&nbsp;&nbsp;&nbsp;
+81.16 </span><br style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">&nbsp;12:00:00
+PM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+all&nbsp;&nbsp;&nbsp;&nbsp;
+21.11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+3.23&nbsp;&nbsp;&nbsp;&nbsp;
+75.66 </span><br style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">&nbsp;03:40:01
+PM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+all&nbsp;&nbsp;&nbsp;
+100.01&nbsp;&nbsp;&nbsp;
+100.01&nbsp;&nbsp;&nbsp;
+100.01&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.00 </span><br style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">&nbsp;04:40:00
+PM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+all&nbsp;&nbsp;&nbsp;
+100.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp;&nbsp;
+100.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.00 </span><br style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">&nbsp;04:50:00
+PM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+all&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;5.87&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.26&nbsp;&nbsp;&nbsp;&nbsp; 92.87 </span><br style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">&nbsp;05:00:00
+PM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+all&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+4.70&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.48&nbsp;&nbsp;&nbsp;&nbsp;
+93.82 </span><br style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">&nbsp;05:10:00
+PM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+all&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+4.93&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.29&nbsp;&nbsp;&nbsp;&nbsp;
+93.78 </span><br style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">&nbsp;Average:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+all&nbsp;&nbsp;&nbsp;
+100.22&nbsp;&nbsp;&nbsp;
+100.20&nbsp;&nbsp;&nbsp;
+100.13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.00 </span></font><br>
+
+
+
+&nbsp;<br>
+
+
+
+Your sar command was not installed
+properly. Whenever your computer is restarted (as it is the case here
+between
+12:00:00 PM and 03:40:01 PM), the 'sysstat' shell script must be called
+by the
+system, so that the LINUX RESTART message can be inserted into the
+daily data
+file, indicating that the relevant kernel counters have been
+reinitialized... <br>
+
+
+
+You can install the 'sysstat' script by
+hand in the relevant startup directory, or you can ask sysstat to do it
+for
+you during configuration stage by entering:<br>
+
+
+
+      <br>
+
+
+
+      <font size="-1"><span style="font-family: Courier New,Courier,monospace;">$ <span style="font-weight: bold;">./configure --enable-install-cron</span></span></font><br>
+
+
+
+      <br>
+
+
+
+Or you can answer 'y' to the question "Set crontab to start sar
+automatically? (y/n) [--enable-install-cron]" if you use the
+Interactive Configuration script (iconfig). Then compile
+sysstat
+as usual and run 'make install' as the last stage.<br>
+
+
+
+Note: With older versions of sysstat that don't have autoconf support
+(up to v7.0.4), you have to answer 'y' to the question "Set crontab to
+start sar
+automatically" during config stage ('make config'). <br>
+
+
+
+&nbsp;<br>
+
+
+
+      <span style="color: rgb(153, 204, 255);">2.8. My
+database (e.g. MySQL) doesn't
+appear to understand the time zone displayed by 'sadf -d'... </span><br>
+
+
+
+      <br>
+
+
+
+The format includes the timezone detail
+in the output. This is to make sure it is communicated clearly that UTC
+is how
+the data is always converted and printed. Moreover we don't depend on
+the TZ
+environment variable and we don't have some data converted to a
+different
+timezone for any reason, known or unknown. When you deal with raw
+accounting
+data you always want it in UTC. Of course, you want it to all be the
+same when
+loading into a database. If your database can't deal with timezones,
+you should
+write a short script to strip the "UTC" characters from the data
+being loaded into the database. <br>
+
+
+
+&nbsp;<br>
+
+
+
+      <span style="color: rgb(153, 204, 255);">2.9. I
+tried to use the -p option of the
+sadf command, together with the options -s and -e. Unfortunately, I
+have
+nothing displayed at all. </span><br>
+
+
+
+      <br>
+
+
+
+This is because no data belong to the
+specified time interval! In fact, -p option makes sadf display its
+timestamp as
+a UTC value (Coordinated Universal Time), as indicated in the manual
+page. The
+UTC value may be different from the value that sar (or sadf without
+option -p)
+displays. The same remark applies to the use of -d option. <br>
+
+
+
+      <br>
+
+
+
+      <span style="color: rgb(153, 204, 255);">2.10. I
+cannot see all my disks when I
+use the sar -d command... </span><br>
+
+
+
+      <br>
+
+
+
+See question 3.1 below. <br>
+
+
+
+      <br>
+
+
+
+      <span style="color: rgb(153, 204, 255);">2.11. Do
+you know a tool which can
+graphically plot the data collected by sar? </span><br>
+
+
+
+      <br>
+
+
+
+Several such tools are lying around on
+the internet. I haven't tested all of them and there must still be some
+way for
+improvement... You can find among others: isag (a Perl script included
+in the
+sysstat package), kSar, sarvant,&nbsp;sar2gp,
+loadgraph, SysStat Charts, sarplot... I've also heard of commercial
+tools which
+use sysstat: PerfMan
+comes to mind, among others. If you find others which you think are of
+real
+interest, please let me know so that I can update this list. <br>
+
+
+
+      <br>
+
+
+
+      <span style="color: rgb(153, 204, 255);">2.12. When
+I launch sadc, I get the
+error message: </span><br style="color: rgb(153, 204, 255);">
+
+
+
+      <small><span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;"><font size="-1">flock: Resource temporarily unavailable</font>
+      </span></small><br>
+
+
+
+      <br>
+
+
+
+You are launching sadc using -L option.
+With this option, sadc tries to get an exclusive lock on the output
+file. The
+above error message indicates that another sadc process was running and
+had
+already locked the same output file. Stop all sadc instances and try
+again. <br>
+
+
+
+      <br>
+
+
+
+      <span style="color: rgb(153, 204, 255);">2.13. I
+have sysstat setup to run via
+cron: </span><br style="color: rgb(153, 204, 255);">
+
+
+
+      <font size="-1"><span style="color: rgb(153, 204, 255);"><span style="font-family: Courier New,Courier,monospace;">0 * * *
+* /usr/local/lib/sa/sa1 600 6
+&amp;</span> </span></font><br style="color: rgb(153, 204, 255);">
+
+
+
+      <span style="color: rgb(153, 204, 255);">so that I
+get an activity report every
+10 minutes. When I use sar to get my output, there is no reading for
+00:00:00.
+This means that at midnight everynight there is a spike, or dip, in the
+graphs.
+How should I run sysstat / sar so that I get a reading for 00:00:00? </span><br>
+
+
+
+      <br>
+
+
+
+Sysstat does get its data at midnight,
+but two data samples are needed to display the values. <br>
+
+
+
+When there is a "file rotation"
+(beginning of a new day), sadc writes its data at the end of the
+previous daily
+data file (/var/log/sa/sa&lt;DD&gt;) *and* at the beginning of
+the new one
+(/var/log/sa/sa&lt;DD+1&gt;). Please note that '-' must be used
+to specify the
+output file for sadc to be able to detect such a file rotation. So a
+crontab
+like the following one should enable you to get the data for midnight
+at the
+end of each daily data file:<br>
+
+
+
+&nbsp;<br>
+
+
+
+      <font size="-1"><span style="font-family: Courier New,Courier,monospace;">#
+Activity reports every 10 minutes from
+01:00:00 to 22:50:00 </span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="font-family: Courier New,Courier,monospace;">0
+1-22 * * * /usr/local/lib/sa/sa1 600 6 &amp; </span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="font-family: Courier New,Courier,monospace;">#
+Activity reports every 10 minutes from
+23:00:00 to 00:00:00 </span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="font-family: Courier New,Courier,monospace;">#
+Reporting until 00:00:00 ensures that a
+file rotation will be detected </span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="font-family: Courier New,Courier,monospace;">#
+by sadc </span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="font-family: Courier New,Courier,monospace;">0
+23 * * * /usr/local/lib/sa/sa1 600 7
+&amp; </span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="font-family: Courier New,Courier,monospace;">#
+Activity reports every 10 minutes from
+00:10:00 to 00:50:00 </span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="font-family: Courier New,Courier,monospace;">10
+0 * * * /usr/local/lib/sa/sa1 600 5 &amp; </span></font><br>
+
+
+
+&nbsp;<br>
+
+
+
+Another possible crontab would be:<br>
+
+
+
+      <br>
+
+
+
+      <font size="-1"><span style="font-family: Courier New,Courier,monospace;">*/10
+1-22 * * * /usr/lib/sa/sa1 -d 1 1</span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="font-family: Courier New,Courier,monospace;">0,10,20,30,40
+23 * * * /usr/lib/sa/sa1 -d 1 1</span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="font-family: Courier New,Courier,monospace;">50
+23 * * * /usr/lib/sa/sa1 -d 600 2</span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+      <span style="font-family: Courier New,Courier,monospace;">10,20,30,40,50
+0 * * * /usr/lib/sa/sa1 -d 1 1</span></font><br>
+
+
+
+      <br>
+
+
+
+      <span style="color: rgb(153, 204, 255);">2.14. The
+sar command complains with the
+following message: </span><br style="color: rgb(153, 204, 255);">
+
+
+
+      <font size="-1"><span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">Requested
+activities not available in
+file [...]</span><span style="font-family: Courier New,Courier,monospace;"> </span></font><br>
+
+
+
+      <br>
+
+
+
+This error message means that you are
+trying to extract non-existent activities from the data file. Usually
+sadc
+reads all the available activities from the system and stores them in
+the data
+file. However, to prevent data files from taking too much space on
+disk, some
+activities must be explicitly set on the command line to be read by
+sadc. One
+example is -I option which must be used together with sadc to be able
+to
+extract statistics for individual interrupts from the data file.
+Another
+example is -d option for disks statistics. <br>
+
+
+
+Other activities cannot be saved into a
+file at all even if you specify the relevant options on the command
+line.
+Process statistics (-x and -X options in older sysstat versions) are
+such activities. Please read
+sadc
+manual page to know exactly which activities may be extracted from a
+data file. <br>
+
+
+
+NB: If the sar command complains with the
+error message: "Requested activities not available" (without
+mentioning "in file"), it means that you are trying to display
+activities that the kernel itself is unable to provide. <br>
+
+
+
+      <br>
+
+
+
+      <span style="color: rgb(153, 204, 255);">2.15. Does
+sar need a lot of resources
+to run? </span><br>
+
+
+
+      <br>
+
+
+
+No, sar doesn't need a lot of CPU to run,
+nor does it make your system slow, contrary to what some people think.
+In the
+first place, it only runs every ten minutes by default. Secondly, when
+it does
+run, it is over and done very quickly. Try: <br>
+
+
+
+      <br>
+
+
+
+      <font size="-1"><span style="font-family: Courier New,Courier,monospace;">$ <span style="font-weight: bold;">time
+/usr/lib/sa/sa1</span> </span></font><br>
+
+
+
+      <br>
+
+
+
+to verify that for yourself. Nor do you
+have to be concerned about using up all your disk space. sar will use a
+few hundred kilobytes for a whole day's worth of data, and it normally
+only stores one week worth (this can be configured via the HISTORY
+variable in the /etc/sysconfig/sysstat file). It is entirely self
+limiting. Moreover, you can ask sar to compress its datafiles older
+than a certain number of days: see the COMPRESSAFTER parameter in the
+/etc/sysconfig/sysstat configuration file.&nbsp; <br>
+
+
+
+      <br>
+
+
+
+      <span style="color: rgb(153, 204, 255);">2.16. Are
+the measurements gathered by
+sadc cumulative or instantaneous values? </span><br>
+
+
+
+      <br>
+
+
+
+Each counter maintained by the kernel is
+cumulative since system boot. As a consequence the measurements
+gathered by
+sadc are cumulative values. Moreover all per-second statistics
+displayed by sar
+are average values on the given time interval. So the value for counter
+foo at
+time T is calculated as: <br>
+
+
+
+foo/s = [foo(T) - foo(T-dt)] / dt <br>
+
+
+
+where dt is the interval given on the
+command line. <br>
+
+
+
+      <br>
+
+
+
+      <span style="color: rgb(153, 204, 255);">2.17. Some
+fields are always displayed
+as 0.00 when I use the sar &ndash;d command. </span><br>
+
+
+
+      <br>
+
+
+
+See question 3.2 below. <br>
+
+
+
+      <br>
+
+
+
+      <span style="color: rgb(153, 204, 255);">2.18. The
+sar command complains with the
+following message: </span><br style="color: rgb(153, 204, 255);">
+
+
+
+      <font size="-1"><span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">Requested
+activities not available </span></font><br>
+
+
+
+      <br>
+
+
+
+This error message means that you are trying to display activities that
+the kernel itself &nbsp;is unable to provide.<br>
+
+
+
+When this error message is displayed while trying to save the data into
+an existing file ("sar -o datafile ..."), this may also be because the
+target file cannot accept the requested activities. In this case, just
+try to use another file or create a new one.<br>
+
+
+
+      <br>
+
+
+
+      <span style="color: rgb(153, 204, 255);">2.19. How
+can I keep sar data for more than one month?</span><br>
+
+
+
+      <br>
+
+
+
+By default sar saves its data in the standard system activity data
+file, the /var/log/sa/sa&lt;DD&gt; file, where
+&lt;DD&gt; is the
+current day in the month. To prevent sar from overwriting any existing
+files, just set the variable HISTORY in /etc/sysconfig/sysstat to the
+number of days during which data must be kept. When this variable has a
+value greater than 28, sa1 script uses a month-by-month directory
+structure; datafiles are named YYYYMM/saDD and the script maintains
+links to these datafiles to mimic the standard sar datafile structure.<br>
+
+
+
+However please note that pre-existing datafiles will be deleted as
+links will be created and replace them.<br>
+
+
+
+      <br>
+
+
+
+      <span style="color: rgb(153, 204, 255);">2.20. How
+can I load sar data into an Oracle database for performance analysis
+and capacity planning?</span><br>
+
+
+
+      <br>
+
+
+
+The simplest way for that is to use sadf (a command included in sysstat
+package) with its option -d. It displays sar data in a format that can
+easily be ingested by a relational database system (fields are
+separated by a semicolon). It should then be easy for a tool like
+SQL*Loader to load the data into the Oracle database.<br>
+
+
+
+      <br>
+
+
+
+      <span style="color: rgb(153, 204, 255);">2.21. The
+sar command displays some weird output values...</span><br>
+
+
+
+      <br>
+
+
+
+Sysstat may have met an overflow condition while reading CPU usage from
+your /proc/stat file. This condition is all the more likely to happen
+as your machine uptime is high and/or there are many processors.
+Sysstat up to version 5.0.6 uses 32-bit integer variables to store CPU
+usage. Then, beginning with version 5.1.1, sysstat has shifted to
+64-bit variables, which has fixed the problem. So try to upgrade your
+version of sysstat to the latest stable release and check that the
+problem has gone.<br>
+
+
+
+      <br>
+
+
+
+      <span style="color: rgb(153, 204, 255);">2.22. What
+happened to sar's options -h, -H, -x and -X?</span><br>
+
+
+
+      <br>
+
+
+
+These old options have been removed from sar because new commands have
+been made available. You should now use the sadf command instead of sar
+-h or sar -H, and the pidstat command instead of sar -x or sar -X.
+Please read their manual page to learn some more about their respective
+options.<br>
+
+
+
+      
+      
+      <hr style="width: 100%; height: 2px;">
+      
+      
+      <p><a style="font-weight: bold; text-decoration: underline;" name="iostat"></a><span style="font-weight: bold; text-decoration: underline;">3.
+QUESTIONS RELATING TO IOSTAT </span></p>
+
+
+
+      <span style="color: rgb(153, 204, 255);">3.1. I
+can't see all my disks when I use
+the iostat command... </span><br>
+
+
+
+      <br>
+
+
+
+Yes. This is a kernel limit. Old kernels
+(2.2.x for instance) used to maintain stats for the first four devices.
+      <br>
+
+
+
+The accounting code has changed in 2.4
+kernels, and the result may (or may not) be better for your system.
+Indeed,
+Linux 2.4 maintains the stats in a two dimensional array, with a
+maximum of 16
+devices (DK_MAX_DISK in the kernel sources). Moreover, if the device
+major
+number exceeds DK_MAX_MAJOR (whose value also defaults to 16 in the
+kernel
+sources), then stats for this device will not be collected. <br>
+
+
+
+So, a solution may be simply to change
+the values of these limits in linux/include/linux/kernel_stat.h and
+recompile
+your kernel. You should no longer have any problem with post 2.5
+kernels, since
+statistics are maintained by the kernel for all the devices. In the
+particular
+case of iostat, also be sure to use the ALL keyword on the command line
+to
+display statistical information relating to every device, including
+those that
+are defined but have never been used by the system. <br>
+
+
+
+      <br>
+
+
+
+      <span style="color: rgb(153, 204, 255);">3.2. iostat
+-x doesn't report disk I/O
+statistics... </span><br>
+
+
+
+      <br>
+
+
+
+For 'iostat -x' to be able to report
+extended disk I/O statistics, it is better to use a recent version of
+the Linux
+kernel (2.6.x). Indeed, iostat tries to read data from the
+/proc/diskstats file
+or from the sysfs filesystem for that. But iostat may also be able to
+display
+extended statistics with older kernels (e.g. 2.4.x) providing that all
+the
+necessary statistical information is available in the /proc/partitions
+file, which
+requires that a patch be applied to the kernel (this is often done on
+kernels
+included in various distros). In recent 2.4.x kernels, the
+/proc/partitions
+file has all the necessary data providing that the kernel has been
+compiled
+with CONFIG_BLK_STATS=y. <br>
+
+
+
+&nbsp; <br>
+
+
+
+      <span style="color: rgb(153, 204, 255);">3.3. Why
+can't iostat display extended
+statistics for partitions with 2.6.x kernels? </span><br>
+
+
+
+      <br>
+
+
+
+Because the kernel maintains these stats
+only for devices, and not for partitions! Here is an excerpt from the
+document
+iostats.txt written by Rick Lindsley (ricklind@us.ibm.com) and included
+in the
+kernel source documentation: <br>
+
+
+
+      <span style="font-style: italic;">"There were
+significant
+changes between 2.4 and 2.6 in the I/O subsystem. As a result, some
+statistic
+information disappeared. The translation from a disk address relative
+to a
+partition to the disk address relative to the host disk happens much
+earlier.&nbsp; All merges
+and timings now
+happen at the disk level rather than at both the disk and partition
+level as in
+2.4.&nbsp; Consequently,
+you'll see a
+different statistics output on 2.6 for partitions from that for disks."</span>
+      <br>
+
+
+
+      <br>
+
+
+
+      <span style="color: rgb(153, 204, 255);">3.4. I
+don't understand the output of
+iostat. It doesn't match what I expect it to be... </span><br>
+
+
+
+      <br>
+
+
+
+By default iostat displays I/O activity
+in blocks per second. With old kernels (i.e. older than 2.4.x) a block
+is of
+indeterminate size and therefore the displayed values are not useful. <br>
+
+
+
+With recent kernels (kernels 2.4 and
+later), iostat is now able to get disk activities from the kernel
+expressed in
+a number of sectors. If you take a look at the kernel code, the sector
+size is
+actually allowed to vary although I have never seen anything other than
+512
+bytes. <br>
+
+
+
+      <br>
+
+
+
+      <span style="color: rgb(153, 204, 255);">3.5. Why
+values displayed by iostat are
+so different in the first report from those displayed in subsequent
+ones? </span><br>
+
+
+
+      <br>
+
+
+
+Probably because, as written in the
+manual page, the first report generated by iostat concerns the time
+since
+system startup, whereas subsequent ones cover only the time since the
+previous
+report (that is to say, the interval of time entered on the command
+line). <br>
+
+
+
+      <br>
+
+
+
+      <span style="color: rgb(153, 204, 255);">3.6. iostat
+-x displays huge numbers for
+some fields... </span><br>
+
+
+
+      <br>
+
+
+
+Because of a Linux kernel bug, iostat -x
+may display huge I/O response times (svctm) and a bandwidth utilization
+(%util)
+of 100% for some devices. Indeed these devices have a value for the
+field #9
+(beginning after the device name) in /proc/{partitions,diskstats} which
+is
+always different from 0, and even negative sometimes. Yet this field
+should go
+to zero, since it gives the number of I/Os currently in progress (it is
+incremented as requests are submitted, and decremented as they finish).
+To
+(temporarily) solve the problem, you should reboot your system to reset
+the counters
+in /proc/{partitions,diskstats}.<br>
+
+
+
+      
+      
+      <hr style="width: 100%; height: 2px;">
+      
+      
+      <p><a style="font-weight: bold; text-decoration: underline;" name="pidstat"></a><span style="font-weight: bold; text-decoration: underline;">4.
+QUESTIONS RELATING TO PIDSTAT </span></p>
+
+
+
+      <span style="color: rgb(153, 204, 255);">4.1.&nbsp;
+pidstat -d doesn't report task I/O statistics...</span><br>
+
+
+
+      <br>
+
+
+
+For pidstat -d to be able to report I/O statistics for tasks, you need
+a recent Linux kernel (2.6.20 or later) with the option
+CONFIG_TASK_IO_ACCOUNTING compiled in.<br>
+
+
+
+      <br>
+
+
+
+      <span style="color: rgb(153, 204, 255);">4.2. The
+pidstat command complains with the following message:</span><br style="color: rgb(153, 204, 255);">
+
+
+
+      <font size="-1"><span style="color: rgb(153, 204, 255); font-family: Courier New,Courier,monospace;">Requested
+activities not available</span></font><br>
+
+
+
+      <br>
+
+
+
+This message is displayed when the pidstat command is unable to display
+the statistics you have requested. This may happen when you try to
+display statistics for child processes (option -T CHILD) because all
+options of pidstat don't necessarily work for child processes. Read the
+manual page to know which statistics are available for child processes.<br>
+
+      <br>
+
+      <span style="color: rgb(153, 204, 255);">4.3. pidstat doesn't display statistics for process (task) xyz...</span><br>
+
+      <br>
+
+This must be because pidstat only displays statistics for active tasks
+by default. If you don't use option -p on the command line, then
+pidstat will display only tasks with non-zero statistics. For example,
+"pidstat -u" will display only tasks that have actually used some CPU
+resources since system startup. You should enter "pidstat -u -p ALL" to
+make sure that all the processes are listed in the report.<br>
+
+
+
+&nbsp; </div>
+
+
+
+      </div>
+
+
+
+      </td>
+
+
+
+    </tr>
+
+
+
+  
+  
+  </tbody>
+</table>
+
+
+
+</body>
+</html>

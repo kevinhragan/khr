@@ -1,0 +1,1556 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Salon.com - Breaking news, opinion, politics, entertainment, sports and culture.</title>
+	<meta name="description" content="An independent online magazine, featuring lively original reporting and commentary on news, politics, culture, and life." />
+	<link rel="stylesheet" type="text/css" href="http://images.salon.com/lib/styles/hp.css?updated=20080325" media="all" />
+	<link rel="stylesheet" type="text/css" href="http://images.salon.com/lib/styles/header.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="http://images.salon.com/css/5things.css?updated=20080313" media="all" />
+	<script type="text/javascript" src="http://images.salon.com/js/prototype.js?updated=20080312"></script>
+	<script type="text/javascript" src="http://images.salon.com/js/window.js?updated=20080312"></script>
+	<link rel="alternate" type="application/rss+xml" href="http://feeds.salon.com/salon/index" title="Salon's Main RSS feed" />
+	<link rel="alternate" type="application/rss+xml" href="http://feeds.salon.com/salon/ent" title="A&amp;E RSS feed" />
+	<link rel="alternate" type="application/rss+xml" href="http://feeds.salon.com/salon/books" title="Books RSS feed" />
+	<link rel="alternate" type="application/rss+xml" href="http://feeds.salon.com/salon/mwt" title="Life RSS feed" />
+	<link rel="alternate" type="application/rss+xml" href="http://feeds.salon.com/salon/news" title="News &amp; Politics RSS feed" />
+	<link rel="alternate" type="application/rss+xml" href="http://feeds.salon.com/salon/opinion" title="Opinion RSS feed" />
+	<link rel="alternate" type="application/rss+xml" href="http://feeds.salon.com/salon/sports" title="Sports RSS feed" />
+	<link rel="alternate" type="application/rss+xml" href="http://feeds.salon.com/salon/tech" title="Tech &amp; Business RSS feed" />
+	<link rel="alternate" type="application/rss+xml" href="http://feeds.salon.com/salon/audiofile" title="Audiofile RSS feed" />
+	<link rel="alternate" type="application/rss+xml" href="http://feeds.salon.com/salon/broadsheet" title="Broadsheet RSS feed" />
+	<link rel="alternate" type="application/rss+xml" href="http://daoureport.salon.com/feeds/rss.aspx" title="Daou Report RSS feed" />
+	<link rel="alternate" type="application/rss+xml" href="http://feeds.salon.com/salon/htww" title="How the World Works RSS feed" />
+	<link rel="alternate" type="application/rss+xml" href="http://feeds.salon.com/salon/video_dog" title="Video Dog RSS feed" />
+	<link rel="alternate" type="application/rss+xml" href="http://feeds.salon.com/salon/war_room" title="War Room RSS feed" />
+	<link rel="alternate" type="application/rss+xml" href="http://feeds.salon.com/salon/wires" title="Associated Press News - Salon.com" />
+	<link rel="P3Pv1" type="text/xml" href="http://images.salon.com/w3c/p3p.xml" />
+	<meta http-equiv="P3P" content='policyref="http://images.salon.com/w3c/p3p.xml"' />
+	<script type="text/javascript" language="javascript">
+	<!--
+		var refresh_url = 'http://www.salon.com/index.html?source=refresh';
+		var refresh_time = 300000;
+
+		function salonRefresh() {
+			document.location.href = refresh_url;
+		}
+
+		var refreshTimeout = setTimeout('salonRefresh()', refresh_time);
+	//-->
+	</script>
+
+
+
+	<meta name="Pragma" content="no-cache" />
+	<meta name="robots" content="noarchive" />
+	<script type="text/javascript" src="/js/prototype.js"></script>
+	<script type="text/javascript" src="/js/window.js"></script>
+	<script type="text/javascript" src="http://images.salon.com/lib/video_dog.js"></script>
+	<script type="text/javascript">
+// Globals
+// Major version of Flash required
+var requiredMajorVersion = 8;
+// Minor version of Flash required
+var requiredMinorVersion = 0;
+// Minor version of Flash required
+var requiredRevision = 0;
+// Version check based upon the values entered above in "Globals"
+var hasReqestedVersion = DetectFlashVer(requiredMajorVersion, requiredMinorVersion, requiredRevision);
+	</script>
+
+
+</head>
+<body id="cover" >
+
+
+		<script type="text/javascript">
+	<!--
+		//configuration
+		OAS_location = 'http://judo.salon.com/RealMedia/ads/';
+		OAS_sitepage = 'www.salonmagazine.com/home.html';
+		OAS_listpos = 'TopLeft,Top,Position3,Frame1,Frame2,Middle2,Middle3,x03,x04,x05,x08,x10,x14,x15,x21,x45,x50,x70,Right,Right1,Right2,Right3,Bottom,Bottom1,Bottom2';
+		OAS_query = '';
+		OAS_target = '_top';
+		//end of configuration
+		OAS_version = 10;
+		OAS_rn = '001234567890'; OAS_rns = '1234567890';
+		OAS_rn = new String (Math.random()); OAS_rns = OAS_rn.substring (2, 11);
+
+		function OAS_NORMAL(pos) {
+			document.write('<A HREF="' + OAS_location + 'click_nx.cgi/' + OAS_sitepage 
+				+ '/1' + OAS_rns 
+				+ '@' + OAS_listpos 
+				+ '!' + pos 
+				+ '?' + OAS_query + '" TARGET=' + OAS_target + '>');
+			document.write('<IMG SRC="' + OAS_location + 'adstream_nx.cgi/' + OAS_sitepage 
+				+ '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + '?' + OAS_query + '" BORDER=0></A>');
+		}
+	//-->
+	</script>
+
+	<script language="javascript1.1" type="text/javascript">
+	<!--
+		OAS_version = 11;
+		if ((navigator.userAgent.indexOf('Mozilla/3') != -1) || (navigator.userAgent.indexOf('Mozilla/4.0 WebTV') != -1))
+			OAS_version = 10;
+		if (OAS_version >= 11)
+			document.write('<SCR' + 'IPT LANGUAGE=JavaScript1.1 SRC="' 
+				+ OAS_location + 'adstream_mjx.ads/' + OAS_sitepage 
+				+ '/1' + OAS_rns + '@' + OAS_listpos + '?' + OAS_query + '"><\/SCRIPT>');
+	//-->
+	</script>
+
+	<script type="text/javascript">
+	<!--
+		document.write('');
+		function OAS_AD(pos) {
+			if (OAS_version >= 11) {
+				OAS_RICH(pos);
+			} else {
+				OAS_NORMAL(pos);
+			}
+		}
+	//-->
+	</script>
+
+<div class="ad_content" id="topleft">
+	<script type="text/javascript" language="JavaScript1.1">
+		<!--
+		OAS_AD('TopLeft');
+		//-->
+	</script>
+	<noscript><a href="http://judo.salon.com/RealMedia/ads/click_nx.cgi/www.salonmagazine.com/home.html@TopLeft"><img src="http://judo.salon.com/RealMedia/ads/adstream_nx.cgi/home.html@TopLeft" alt="Advertisement" /></a></noscript>
+</div>
+
+
+
+
+
+	<div class="ad_content" id="x45">
+	<script type="text/javascript" language="JavaScript1.1">
+		<!--
+		OAS_AD('x45');
+		//-->
+	</script>
+	<noscript><a href="http://judo.salon.com/RealMedia/ads/click_nx.cgi/www.salonmagazine.com/home.html@x45"><img src="http://judo.salon.com/RealMedia/ads/adstream_nx.cgi/home.html@x45" alt="Advertisement" /></a></noscript>
+</div>
+
+
+
+
+<div id="header" class="clearfix">
+	<div id="header_top" class="clearfix">
+		<div id="logo">
+			<h1 class='sitepass'><a href="/"><img src="http://images.salon.com/src/cover/salonlogo_p.gif" width="129" height="113" alt="salon.com" /></a></h1>
+		</div>
+
+	<div id="header_sitepass">
+			<div id="sitepass_top_ad">
+<div class="ad_content" id="top">
+	<script type="text/javascript" language="JavaScript1.1">
+		<!--
+		OAS_AD('Top');
+		//-->
+	</script>
+	<noscript><a href="http://judo.salon.com/RealMedia/ads/click_nx.cgi/www.salonmagazine.com/home.html@Top"><img src="http://judo.salon.com/RealMedia/ads/adstream_nx.cgi/home.html@Top" alt="Advertisement" /></a></noscript>
+</div>
+
+
+			</div>
+	</div>
+	<div id="search" class="clearfix">
+			<div id="search_form">
+				<form action="http://search.salon.com/salonsearch.php" method="get" onsubmit="if(this.search.value == this.search.defaultValue &amp;&amp; this.breadth[0].checked == this.breadth[0].defaultChecked) { this.search.focus(); return false; }">
+					<div id="search_bar"><label class="hidden" for="search_top" style="display: none;">Search: </label><input type="search" name="search" id="search_top" value="Search" onfocus='if (this.value == this.defaultValue) this.value="";' onblur='if (this.value == "") this.value = this.defaultValue;' />&nbsp;&nbsp;<input type="submit" value="Go!" />&nbsp;<input type="radio" name="breadth" value="salon" id="salon_radio" checked="checked" /><label for="salon_radio">Salon</label>&nbsp;<input type="radio" name="breadth" value="all" id="web_radio" /><label for="web_radio">The Web</label>&nbsp;<img src="http://images.salon.com/src/yahoo_search.png" width="125" alt="Powered by Yahoo!" height="27" style="margin: 5px 0 -5px 20px;" /></div>
+				</form>
+			</div>
+			<div id="sitepass_sitepass">
+	<div id="sitepass_img">
+        	<script type="text/javascript">
+		<!--
+		OAS_AD('Frame2');
+		//-->
+		</script>
+		<noscript><a href="http://judo.salon.com/RealMedia/ads/click_nx.cgi/www.salonmagazine.com/politics/content/large.html@Frame2"><img src="http://judo.salon.com/RealMedia/ads/adstream_nx.cgi/www.salonmagazine.com/politics/content/large.html@Frame2" alt="" /></a></noscript>
+	</div>
+	<p>Site Presented By</p>
+</div>
+
+
+		</div>
+	</div>
+	<div id="header_bottom" class="clearfix">
+		<div id="todays_date">
+			<div id="todays_date_text"><span>Friday, Apr  4, 2008</span></div>
+		</div>
+		<div id="top_navbar">
+			<ul id="topics">
+				<li class="first"><a name="&amp;lid=cover_topnav&amp;lpos=text" href="http://dir.salon.com/topics/arts_entertainment/" title="Arts &amp; Entertainment">A&amp;E</a></li>
+				<li><a name="&amp;lid=cover_topnav&amp;lpos=text" href="http://dir.salon.com/topics/books/">Books</a></li>
+				<li><a name="&amp;lid=cover_topnav&amp;lpos=text" href="http://dir.salon.com/topics/comics/">Comics</a></li>
+				<li><a name="&amp;lid=cover_topnav&amp;lpos=text" href="/dialogue/">Community</a></li>
+				<li><a name="&amp;lid=cover_topnav&amp;lpos=text" href="http://dir.salon.com/topics/mwt/">Life</a></li>
+				<li><a name="&amp;lid=cover_topnav&amp;lpos=text" href="/ent/movies/">Movies</a></li>
+				<li><a name="&amp;lid=cover_topnav&amp;lpos=text" href="http://dir.salon.com/topics/news/">News &amp; Politics</a></li>
+				<li><a name="&amp;lid=cover_topnav&amp;lpos=text" href="http://dir.salon.com/topics/opinion/">Opinion</a></li>
+				<li><a name="&amp;lid=cover_topnav&amp;lpos=text" href="http://dir.salon.com/topics/sports/">Sports</a></li>
+				<li><a name="&amp;lid=cover_topnav&amp;lpos=text" href="http://dir.salon.com/topics/technology_business/" title="Technology &amp; Business">Tech &amp; Business</a></li>
+			</ul>
+		</div>
+		<div id="login"><a name="&amp;lid=premium_login&amp;lpos=text" href="https://sub.salon.com/login/"><span>Log in</span></a></div>
+	</div>
+</div>
+
+
+
+
+<div id="content_wrapper">
+
+        <!-- ### CONTENT ### -->
+        <div id="content">
+                <!-- COLUMN TWO -->
+                <div id="column2">
+		<!-- element_ids -->
+<div id="headline">
+	
+	<div class="main_headline">
+		<div id="headline_image"><a name="&amp;lid=cover_feature&amp;lpos=image" href="/mwt/feature/2008/04/04/mary_roach/"><img src="http://images.salon.com/mwt/feature/2008/04/04/mary_roach/cover.jpg" border="0" alt="" /></a></div>
+		<div class="headline_text">
+			<h2><a name="&amp;lid=cover_feature&amp;lpos=text" href="/mwt/feature/2008/04/04/mary_roach/">Getting it on for science</a></h2>
+			<p class="headline_description">Bonobo porn, MRI sex, female Viagra. &quot;Bonk&quot; author Mary Roach on the scientific quest to understand arousal -- and how little we still know</p>
+			<p class="byline_author">By Katharine Mieszkowski</p>
+		</div>
+
+
+
+
+	</div>
+	<div class="image_caption">
+
+</div>
+</div>
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+  
+
+
+
+<div class="ad_content" id="x70">
+	<script type="text/javascript" language="JavaScript1.1">
+		<!--
+		OAS_AD('x70');
+		//-->
+	</script>
+	<noscript><a href="http://judo.salon.com/RealMedia/ads/click_nx.cgi/www.salonmagazine.com/home.html@x70"><img src="http://judo.salon.com/RealMedia/ads/adstream_nx.cgi/home.html@x70" alt="Advertisement" /></a></noscript>
+</div>
+
+
+
+
+<h3>Friday, April 04, 2008</h3>
+<ul class='articles_day'>
+<li class='clearfix'>
+<a href="/tech/htww/?last_story=/tech/htww/2008/04/04/goolsbee_penn_trade/" class="story_thumb"><img src="http://images.salon.com/src/htww_lc.gif" width="50" height="50" alt="" /></a><div class='article_summary'>
+<h4 class='coverline_header'><a href='/tech/htww/?last_story=/tech/htww/2008/04/04/goolsbee_penn_trade/'>The trade follies of Austan Goolsbee and Mark Penn</a></h4><p class='coverline_intro'>First there was Obama&#39;s &quot;NAFTA-gate.&quot; Now comes Clinton&#39;s chief campaign strategist, lobbying for a free trade agreement. Which is worse?</p>
+</div><p class='byline_author'>By Andrew Leonard</p>
+<p class='byline_section'><a href="/tech/htww/">How the World Works</a></p>
+</li>
+<li class='clearfix'>
+<a href="http://machinist.salon.com/" class="story_thumb"><img src="http://images.salon.com/src/lc_machinist.gif" width="50" height="50" alt="" /></a><div class='article_summary'>
+<h4 class='coverline_header'><a href='http://machinist.salon.com/'>The 2010 census scraps handhelds for pen and paper</a></h4><p class='coverline_intro'>Sometimes it&#39;s best to go with the old</p>
+</div><p class='byline_author'>By Farhad Manjoo</p>
+<p class='byline_section'><a href="http://machinist.salon.com/">Machinist</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/tech/machinist/blog/2008/04/04/census/view/?show=all'>1 letter</a></p>
+</li>
+
+<li class='clearfix'>
+	<div class="embed_video">
+		<h4><a href="/ent/video_dog/comedy/2008/04/04/bateman_clintonrocky/index.html">Scott Bateman: Hillary Clinton is Rocky Balboa</a></h4>
+		<dl id="video">
+<dd class="video dek">
+	<script type="text/javascript">
+// Check to see if the version meets the requirements for playback
+if (hasReqestedVersion) {
+	AC_FL_RunContent(
+		'classid', 'clsid:d27cdb6e-ae6d-11cf-96b8-444553540000',
+		'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0',
+		'width', '336',
+		'height', '289',        
+		'wmode', 'transparent',        
+		'allowScriptAccess', 'always',
+		'movie', 'http://images.salon.com/video?id=w-62280-2004670',
+		'quality', 'high',
+		'bgcolor', '#ffffff',
+		'type', 'application/x-shockwave-flash',
+		'pluginspage', 'http://www.adobe.com/go/getflashplayer'
+	);
+} else {  // flash is too old or we can't detect the plugin
+	var alternateContent = 'This content requires the Adobe Flash Player '
+                         + 'version ' + requiredMajorVersion + '.' + requiredMinorVersion + '.' + requiredRevision + '. '
+                         + '<a href=http://www.adobe.com/go/getflash/>Get Flash</a>';
+	document.write(alternateContent);  // insert non-flash content
+}
+//-->
+	</script>
+	  
+	<noscript>
+		
+		<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="336" height="289">
+			<param name="allowScriptAccess" value="always" />
+			<param name="movie" value="http://images.salon.com/video.swf?id=w-62280-2004670" />
+			<param name="quality" value="high" />
+			<param name="bgcolor" value="#ffffff" />
+			<param name="wmode" value="transparent" />
+			<embed src="http://images.salon.com/video.swf?id=w-62280-2004670" quality="high" bgcolor="#ffffff" wmode="transparent" width="336" height="289" name="video" allowScriptAccess="always" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+		</object>
+
+	</noscript>
+</dd>
+
+
+
+
+		</dl>
+		<p class="more_videos">For more go to <a href="/ent/video_dog/">Video Dog</a></p>
+				<div class='ad_content'>
+				        <script type="text/javascript" language="JavaScript1.1">
+					<!--
+					OAS_AD('x05');
+					//-->
+				        </script>
+        <noscript><a href="http://judo.salon.com/RealMedia/ads/click_nx.cgi/www.salonmagazine.com/home.html@x05"><img src="http://judo.salon.com/RealMedia/ads/adstream_nx.cgi/www.salonmagazine.com/home.html@x05" border="0" alt="" /></a></noscript>
+		</div>
+
+
+	</div>
+</li>
+
+
+
+<li class='clearfix'>
+<a href="/politics/war_room/?last_story=/politics/war_room/feature/2008/04/04/waldman/" class="story_thumb"><img src="http://images.salon.com/src/warroom_lc.gif" width="50" height="50" alt="" /></a><div class='article_summary'>
+<h4 class='coverline_header'><a href='/politics/war_room/?last_story=/politics/war_room/feature/2008/04/04/waldman/'>A free ride for the Straight Talk Express?</a></h4><p class='coverline_intro'>An interview with Paul Waldman, a senior fellow at Media Matters who&#39;s the co-author of a new book on the relationship between John McCain and the press</p>
+</div><p class='byline_author'>By Vincent Rossmeier</p>
+<p class='byline_section'><a href="/politics/war_room/">War Room</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/politics/war_room/feature/2008/04/04/waldman/view/?show=all'>4 letters</a></p>
+</li>
+<li class='clearfix'>
+<a href="/tt/best/2008/04/04/best/" class="story_thumb"><img src="http://images.salon.com/tt/best/2008/04/04/best/lc.gif" width="50" height="50" alt="" /></a><div class='article_summary'>
+<h4 class='coverline_header'><a href='/tt/best/2008/04/04/best/'>The year that changed everything</a></h4><p class='coverline_intro'>Where were you in 1968? A member of Salon&#39;s reader community, Table Talk, shares the ways in which her memories linger</p>
+</div><p class='byline_author'></p>
+<p class='byline_section'><a href="http://tabletalk.salon.com/">Table Talk</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/tt/best/2008/04/04/best/view/?show=all'>8 letters</a></p>
+</li>
+			</ul>
+                        <div class="ad_content" id="col2_middle_ad">
+                                <script type="text/javascript" language="JavaScript1.1">
+<!--
+OAS_AD('Middle2');
+//-->
+                                </script>
+                                <noscript><a href="http://judo.salon.com/RealMedia/ads/click_nx.cgi/www.salonmagazine.com/home.html@Middle2"><img src="http://config.privoxy.org/send-banner?type=auto" border="0" title="Killed-http://judo.salon.com/RealMedia/ads/adstream_nx.cgi/www.salonmagazine.com/home.html@Middle2-by-size" width="300" height="250"></a></noscript>
+                        </div>
+			<ul class='articles_day'>
+
+
+
+
+<li class='clearfix'>
+<a href="/mwt/broadsheet/?last_story=/mwt/broadsheet/2008/04/04/vlog/" class="story_thumb"><img src="http://images.salon.com/src/broadsheet_lc.gif" width="50" height="50" alt="" /></a><div class='article_summary'>
+<h4 class='coverline_header'><a href='/mwt/broadsheet/?last_story=/mwt/broadsheet/2008/04/04/vlog/'>Choose one: Sex or respect</a></h4><p class='coverline_intro'>Abstinence advocates say men intellectually respect women only when they aren&#39;t having sex with them</p>
+</div><p class='byline_author'>By Tracy Clark-Flory</p>
+<p class='byline_section'><a href="/mwt/broadsheet/">Broadsheet</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/mwt/broadsheet/2008/04/04/vlog/view/?show=all'>16 letters</a></p>
+</li>
+<li class='clearfix'>
+<a href="/news/feature/2008/04/04/nato/" class="story_thumb"><img src="http://images.salon.com/news/feature/2008/04/04/nato/lc.gif" width="50" height="50" alt="" /></a><div class='article_summary'>
+<h4 class='coverline_header'><a href='/news/feature/2008/04/04/nato/'>Does NATO want out of Afghanistan?</a></h4><p class='coverline_intro'>Behind closed doors a paper has been circulated that may provide the beginnings of an exit strategy</p>
+</div><p class='byline_author'>By Matthias Gebauer </p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/news/">News</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/news/feature/2008/04/04/nato/view/?show=all'>1 letter</a></p>
+</li>
+	<div style="float: right; height: 0;"><!-- --></div>
+ 	<div class='ad_content'>
+		<script type="text/javascript">
+<!--
+OAS_AD('x08');
+//-->
+		</script>
+		<noscript><a href="http://judo.salon.com/RealMedia/ads/click_nx.cgi/www.salonmagazine.com/home.html@x08"><img src="http://judo.salon.com/RealMedia/ads/adstream_nx.cgi/www.salonmagazine.com/home.html@x08" width="336" height="250" border="0" alt="" /></a></noscript>
+	</div>
+	<br /><br />
+
+
+
+
+<li class='clearfix'>
+<a href="/opinion/conason/2008/04/04/diaz_gitmo/" class="story_thumb"><img src="http://images.salon.com/opinion/conason/2008/04/04/diaz_gitmo/lc.gif" width="50" height="50" alt="" /></a><div class='article_summary'>
+<h4 class='coverline_header'><a href='/opinion/conason/2008/04/04/diaz_gitmo/'>A truth teller who deserves justice</a></h4><p class='coverline_intro'>Ex-Navy officer Matthew Diaz gambled everything to uphold the rights of prisoners at Guant&aacute;namo. Now he may lose his law license</p>
+</div><p class='byline_author'>By Joe Conason</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/opinion/">Opinion</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/opinion/conason/2008/04/04/diaz_gitmo/view/?show=all'>7 letters</a></p>
+</li>
+<li class='clearfix'>
+<a href="/opinion/greenwald/2008/04/04/doj/" class="story_thumb"><img src="http://images.salon.com/src/col/greenwald/lc.gif" width="50" height="50" alt="" /></a><div class='article_summary'>
+<h4 class='coverline_header'><a href='/opinion/greenwald/2008/04/04/doj/'>The DOJ comments on the Mukasey controversy</a></h4><p class='coverline_intro'>Even Mukasey&#39;s own defense illustrates that the dishonest exploitation of 9/11 for ever-expanding unchecked government power continues to this day</p>
+</div><p class='byline_author'>By Glenn Greenwald</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/opinion/">Opinion</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/opinion/greenwald/2008/04/04/doj/view/?show=all'>66 letters</a></p>
+</li>
+<li class='clearfix'>
+<a href="http://blogreport.salon.com//" class="story_thumb"><img src="http://images.salon.com/src/blogreport_lc.gif" width="50" height="50" alt="" /></a><div class='article_summary'>
+<h4 class='coverline_header'><a href='http://blogreport.salon.com//'>The complicated history of McCain and MLK Day</a></h4><p class='coverline_intro'>The anniversary of King's death puts candidate's awkward record in the spotlight</p>
+</div><p class='byline_author'>By Steve Benen</p>
+<p class='byline_section'><a href="http://daoureport.salon.com">Blog Report</a></p>
+</li>
+<li class='clearfix'>
+<a href="/mwt/feature/2008/04/04/mary_roach/" class="story_thumb"><img src="http://images.salon.com/mwt/feature/2008/04/04/mary_roach/lc.gif" width="50" height="50" alt="" /></a><div class='article_summary'>
+<h4 class='coverline_header'><a href='/mwt/feature/2008/04/04/mary_roach/'>Getting it on for science</a></h4><p class='coverline_intro'>Bonobo porn, MRI sex, female Viagra. &quot;Bonk&quot; author Mary Roach on the scientific quest to understand arousal -- and how little we still know</p>
+</div><p class='byline_author'>By Katharine Mieszkowski</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/mwt/">Life</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/mwt/feature/2008/04/04/mary_roach/view/?show=all'>16 letters</a></p>
+</li>
+<li class='clearfix'>
+<a href="/ent/movies/review/2008/04/04/leatherheads/" class="story_thumb"><img src="http://images.salon.com/ent/movies/review/2008/04/04/leatherheads/lc.gif" width="50" height="50" alt="" /></a><div class='article_summary'>
+<h4 class='coverline_header'><a href='/ent/movies/review/2008/04/04/leatherheads/'>&quot;Leatherheads&quot;</a></h4><p class='coverline_intro'>George Clooney makes it all look easy in this breezy, affable comedy</p>
+</div><p class='byline_author'>By Stephanie Zacharek</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/arts_entertainment/">Arts &amp; Entertainment</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/ent/movies/review/2008/04/04/leatherheads/view/?show=all'>7 letters</a></p>
+</li>
+<li class='clearfix'>
+<a href="/ent/tv/review/2008/04/04/battlestar_galactica/" class="story_thumb"><img src="http://images.salon.com/ent/tv/review/2008/04/04/battlestar_galactica/lc.gif" width="50" height="50" alt="" /></a><div class='article_summary'>
+<h4 class='coverline_header'><a href='/ent/tv/review/2008/04/04/battlestar_galactica/'>Beyond belief</a></h4><p class='coverline_intro'>In the fourth and final season of Sci Fi&#39;s &quot;Battlestar 
+Galactica,&quot; Starbuck is back, but the colonists struggle to keep the 
+faith 
+
+</p>
+</div><p class='byline_author'>By Heather Havrilesky</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/arts_entertainment/">Arts &amp; Entertainment</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/ent/tv/review/2008/04/04/battlestar_galactica/view/?show=all'>15 letters</a></p>
+</li>
+<li class='clearfix'>
+<a href="/ent/movies/review/2008/04/04/shine_a_light/" class="story_thumb"><img src="http://images.salon.com/ent/movies/review/2008/04/04/shine_a_light/lc.gif" width="50" height="50" alt="" /></a><div class='article_summary'>
+<h4 class='coverline_header'><a href='/ent/movies/review/2008/04/04/shine_a_light/'>&quot;Shine a Light&quot;</a></h4><p class='coverline_intro'>Hot for the Rolling Stones? Martin Scorsese&#39;s performance documentary of Mick, Keith and the gang may still leave you cold</p>
+</div><p class='byline_author'>By Stephanie Zacharek</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/arts_entertainment/">Arts &amp; Entertainment</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/ent/movies/review/2008/04/04/shine_a_light/view/?show=all'>29 letters</a></p>
+</li>
+<li class='clearfix'>
+<a href="/ent/movies/review/2008/04/04/balloon/" class="story_thumb"><img src="http://images.salon.com/ent/movies/review/2008/04/04/balloon/lc.gif" width="50" height="50" alt="" /></a><div class='article_summary'>
+<h4 class='coverline_header'><a href='/ent/movies/review/2008/04/04/balloon/'>&quot;Flight of the Red Balloon&quot;</a></h4><p class='coverline_intro'>This quietly astonishing picture has the power to carry you outside of yourself and float you away</p>
+</div><p class='byline_author'>By Stephanie Zacharek</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/arts_entertainment/">Arts &amp; Entertainment</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/ent/movies/review/2008/04/04/balloon/view/?show=all'>4 letters</a></p>
+</li>
+<li class='clearfix'>
+<a href="/ent/movies/btm/?last_story=/ent/movies/btm/feature/2008/04/04/roundup/" class="story_thumb"><img src="http://images.salon.com/img/lc/btm.gif" width="50" height="50" alt="" /></a><div class='article_summary'>
+<h4 class='coverline_header'><a href='/ent/movies/btm/?last_story=/ent/movies/btm/feature/2008/04/04/roundup/'>Winona! Mongolia! Teen lesbian swimmers!</a></h4><p class='coverline_intro'>Indie roundup: All the women you&#39;ll ever boff -- revealed! Plus a creepy French tale of poolside teen lust and a great love story from Mongolia</p>
+</div><p class='byline_author'>By Andrew O&#39;Hehir</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/arts_entertainment/">Arts &amp; Entertainment</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/ent/movies/btm/feature/2008/04/04/roundup/view/?show=all'>3 letters</a></p>
+</li>
+<li class='clearfix'>
+<a href="/sports/col/kaufman/2008/04/04/friday/" class="story_thumb"><img src="http://images.salon.com/src/kaufman_lc.gif" width="50" height="50" alt="" /></a><div class='article_summary'>
+<h4 class='coverline_header'><a href='/sports/col/kaufman/2008/04/04/friday/'>Nothing like a brewing no-hitter</a></h4><p class='coverline_intro'>Reds rookie Johnny Cueto debuts with five electrifying perfect innings. Plus: The Final Four overdogs</p>
+</div><p class='byline_author'></p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/sports_daily/">King Kaufman's Sports Daily</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/sports/col/kaufman/2008/04/04/friday/view/?show=all'>16 letters</a></p>
+</li>
+<li class='clearfix'>
+<a href="/mwt/col/tenn/2008/04/04/christian_camp/" class="story_thumb"><img src="http://images.salon.com/src/tennis_lc.gif" width="50" height="50" alt="" /></a><div class='article_summary'>
+<h4 class='coverline_header'><a href='/mwt/col/tenn/2008/04/04/christian_camp/'>Since you asked ...</a></h4><p class='coverline_intro'>Our kids want to go to Christian summer camp</p>
+</div><p class='byline_author'>By Cary Tennis</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/mwt/">Life</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/mwt/col/tenn/2008/04/04/christian_camp/view/?show=all'>105 letters</a></p>
+</li>
+<li class='clearfix'>
+<a href="/tech/col/smith/2008/04/04/askthepilot271/" class="story_thumb"><img src="http://images.salon.com/src/askthepilot_lc.gif" width="50" height="50" alt="" /></a><div class='article_summary'>
+<h4 class='coverline_header'><a href='/tech/col/smith/2008/04/04/askthepilot271/'>Ask the pilot</a></h4><p class='coverline_intro'>From cockpit check to walkaround to stocking the galley: The Zen of preparing the &quot;Monster&quot; to fly</p>
+</div><p class='byline_author'>By Patrick Smith</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/technology_business/">Technology &amp; Business</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/tech/col/smith/2008/04/04/askthepilot271/view/?show=all'>25 letters</a></p>
+</li>
+<li class='clearfix'>
+<a href="/ent/tv/daily/2008/04/04/friday/" class="story_thumb"><img src="http://images.salon.com/src/tvdaily_lc.gif" width="50" height="50" alt="" /></a><div class='article_summary'>
+<h4 class='coverline_header'><a href='/ent/tv/daily/2008/04/04/friday/'>TV Daily</a></h4><p class='coverline_intro'>Friday/weekend: Frack yeah! The fourth and final season of &quot;Battlestar Galactica&quot; premieres Friday. Plus: What did you think of &quot;Make Me a Supermodel&quot; on Thursday?</p>
+</div><p class='byline_author'></p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/arts_entertainment/">Arts &amp; Entertainment</a></p>
+</li>
+<li class='clearfix'>
+<a href="/comics/lay/2008/04/04/lay/" class="story_thumb"><img src="http://images.salon.com/comics/lay/2008/04/04/lay/lc.gif" width="50" height="50" alt="" /></a><div class='article_summary'>
+<h4 class='coverline_header'><a href='/comics/lay/2008/04/04/lay/'>WayLay</a></h4><p class='coverline_intro'>At least he hadn&#39;t turned into a cannibal</p>
+</div><p class='byline_author'>By Carol Lay</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/comics/">Comics</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/comics/lay/2008/04/04/lay/view/?show=all'>7 letters</a></p>
+</li>
+<li class='clearfix'>
+<a href="/ent/video_dog/?last_story=/ent/video_dog/comedy/2008/04/04/bateman_clintonrocky/" class="story_thumb"><img src="http://images.salon.com/src/videodog_lc.gif" width="50" height="50" alt="" /></a><div class='article_summary'>
+<h4 class='coverline_header'><a href='/ent/video_dog/?last_story=/ent/video_dog/comedy/2008/04/04/bateman_clintonrocky/'>Scott Bateman: Hillary Clinton is Rocky Balboa</a></h4><p class='coverline_intro'>Never-before-seen footage of the candidate turned boxing legend</p>
+</div><p class='byline_author'></p>
+<p class='byline_section'><a href="/ent/video_dog/">Video Dog</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/ent/video_dog/comedy/2008/04/04/bateman_clintonrocky/view/?show=all'>1 letter</a></p>
+</li>
+</ul>
+<h3>Thursday, April 03, 2008</h3>
+<ul class='articles_day'>
+<li class='clearfix'>
+<div class='article_summary'>
+<h4 class='coverline_header'><a href='/news/feature/2008/04/03/hillary/'>Hillary&#39;s bridge back to the 20th century</a></h4><p class='coverline_intro'>With recession looming, Clinton banks on &#39;90s nostalgia, reminding Pennsylvania voters of the good old days of her husband&#39;s administration</p>
+</div><p class='byline_author'>By Mike Madden</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/news/">News</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/news/feature/2008/04/03/hillary/view/?show=all'>147 letters</a></p>
+</li>
+<li class='clearfix'>
+<div class='article_summary'>
+<h4 class='coverline_header'><a href='/ent/music/review/2008/04/03/gnarls_barkley/'>Hip-hop&#39;s biggest clowns</a></h4><p class='coverline_intro'>Are Gnarls Barkley&#39;s wacky costumes and goofy antics just a smoke screen for the massively successful duo&#39;s angst?</p>
+</div><p class='byline_author'>By Miles Marshall Lewis</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/arts_entertainment/">Arts &amp; Entertainment</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/ent/music/review/2008/04/03/gnarls_barkley/view/?show=all'>21 letters</a></p>
+</li>
+<li class='clearfix'>
+<div class='article_summary'>
+<h4 class='coverline_header'><a href='/books/int/2008/04/03/meg_wolitzer/'>Marching into the mommy wars</a></h4><p class='coverline_intro'>Everyone has an opinion about stay-at-home mothers. With her new novel, Meg Wolitzer has just one agenda -- to tell the truth about their lives</p>
+</div><p class='byline_author'>By Rebecca Traister</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/books/">Books</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/books/int/2008/04/03/meg_wolitzer/view/?show=all'>81 letters</a></p>
+</li>
+<li class='clearfix'>
+<div class='article_summary'>
+<h4 class='coverline_header'><a href='/news/feature/2008/04/03/obama/'>The Obama difference</a></h4><p class='coverline_intro'>Unlike most presidential Dems in recent memory, the Illinois senator is at ease with himself -- even while bowling gutter balls in Pennsylvania</p>
+</div><p class='byline_author'>By Walter Shapiro</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/news/">News</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/news/feature/2008/04/03/obama/view/?show=all'>146 letters</a></p>
+</li>
+<li class='clearfix'>
+<div class='article_summary'>
+<h4 class='coverline_header'><a href='/mwt/col/tenn/2008/04/03/introversion/'>Since you asked ...</a></h4><p class='coverline_intro'>I&#39;m a college student with no natural social skills</p>
+</div><p class='byline_author'>By Cary Tennis</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/mwt/">Life</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/mwt/col/tenn/2008/04/03/introversion/view/?show=all'>62 letters</a></p>
+</li>
+<li class='clearfix'>
+<div class='article_summary'>
+<h4 class='coverline_header'><a href='/comics/boll/2008/04/03/boll/'>Tom the Dancing Bug</a></h4><p class='coverline_intro'>How America was destroyed. If only we&#39;d seen the warning signs!</p>
+</div><p class='byline_author'>By Ruben Bolling</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/comics/">Comics</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/comics/boll/2008/04/03/boll/view/?show=all'>19 letters</a></p>
+</li>
+<li class='clearfix'>
+<div class='article_summary'>
+<h4 class='coverline_header'><a href='/sports/col/kaufman/2008/04/03/thursday/'>Reforming baseball&#39;s justice system</a></h4><p class='coverline_intro'>MLB court is in need of an overhaul. We have the answers. Plus: The killer timeout strikes again</p>
+</div><p class='byline_author'></p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/sports_daily/">King Kaufman's Sports Daily</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/sports/col/kaufman/2008/04/03/thursday/view/?show=all'>22 letters</a></p>
+</li>
+<li class='clearfix'>
+<div class='article_summary'>
+<h4 class='coverline_header'><a href='/ent/tv/daily/2008/04/03/thursday/'>TV Daily</a></h4><p class='coverline_intro'>Thursday: One pretty person will win the big prize on &quot;Make Me a Supermodel.&quot;  Plus: What did you think of &quot;Autism Every Day&quot; on Wednesday?</p>
+</div><p class='byline_author'></p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/arts_entertainment/">Arts &amp; Entertainment</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/ent/tv/daily/2008/04/03/thursday/view/?show=all'>2 letters</a></p>
+</li>
+</ul>
+<h3>Wednesday, April 02, 2008</h3>
+<ul class='articles_day'>
+<li class='clearfix'>
+<div class='article_summary'>
+<h4 class='coverline_header'><a href='/opinion/walsh/?last_story=/opinion/walsh/2008/04/02/elizabeth_edwards/'>Elizabeth Edwards: &quot;Obama was charming&quot;</a></h4><p class='coverline_intro'>The former candidate&#39;s wife attacks John McCain&#39;s healthcare plan, praises Hillary Clinton&#39;s and shoots down reports of an argument with Barack Obama</p>
+</div><p class='byline_author'>By Joan Walsh</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/opinion/">Opinion</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/opinion/walsh/2008/04/02/elizabeth_edwards/view/?show=all'>53 letters</a></p>
+</li>
+<li class='clearfix'>
+<div class='article_summary'>
+<h4 class='coverline_header'><a href='/sports/col/kaufman/2008/04/02/wednesday/'>American League preview</a></h4><p class='coverline_intro'>Sorry Blue Jays: Yankees and Red Sox again. Plus: Indians to win it all
+</p>
+</div><p class='byline_author'></p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/sports_daily/">King Kaufman's Sports Daily</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/sports/col/kaufman/2008/04/02/wednesday/view/?show=all'>20 letters</a></p>
+</li>
+<li class='clearfix'>
+<div class='article_summary'>
+<h4 class='coverline_header'><a href='/opinion/feature/2008/04/02/depression/'>The Great Depression: The sequel</a></h4><p class='coverline_intro'>Is it coming to a soup kitchen near you? Here&#39;s how we&#39;ll know if the current recession is turning into something much worse</p>
+</div><p class='byline_author'>By Andrew Leonard</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/opinion/">Opinion</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/opinion/feature/2008/04/02/depression/view/?show=all'>176 letters</a></p>
+</li>
+<li class='clearfix'>
+<div class='article_summary'>
+<h4 class='coverline_header'><a href='/ent/tv/feature/2008/04/02/bsg_explainer/'>Everything you were afraid to ask about &quot;Battlestar Galactica&quot; </a></h4><p class='coverline_intro'>A complete primer on the smartest sci-fi TV show ... maybe ever</p>
+</div><p class='byline_author'>By Thomas Rogers</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/arts_entertainment/">Arts &amp; Entertainment</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/ent/tv/feature/2008/04/02/bsg_explainer/view/?show=all'>78 letters</a></p>
+</li>
+<li class='clearfix'>
+<div class='article_summary'>
+<h4 class='coverline_header'><a href='/mwt/col/tenn/2008/04/02/pot_smoker/'>Since you asked ...</a></h4><p class='coverline_intro'>I&#39;m 21 and addicted to pot -- but I&#39;m doing just great!</p>
+</div><p class='byline_author'>By Cary Tennis</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/mwt/">Life</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/mwt/col/tenn/2008/04/02/pot_smoker/view/?show=all'>140 letters</a></p>
+</li>
+<li class='clearfix'>
+<div class='article_summary'>
+<h4 class='coverline_header'><a href='/news/feature/2008/04/02/geoengineering/'>The sun blotted out from the sky</a></h4><p class='coverline_intro'>Global warming demands more than do-gooder actions. It demands &quot;geoengineering&quot; -- like blocking the sun&#39;s rays with stratospheric dirt</p>
+</div><p class='byline_author'>By Elizabeth Svoboda</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/news/">News</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/news/feature/2008/04/02/geoengineering/view/?show=all'>36 letters</a></p>
+</li>
+<li class='clearfix'>
+<div class='article_summary'>
+<h4 class='coverline_header'><a href='/opinion/keillor/2008/04/02/military/'>Theirs not to reason why</a></h4><p class='coverline_intro'>What&#39;s mysterious to civilians about the  military is the Semper Fi part, the discipline to carry out  a mission about which you&#39;re deeply skeptical</p>
+</div><p class='byline_author'>By Garrison Keillor</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/opinion/">Opinion</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/opinion/keillor/2008/04/02/military/view/?show=all'>32 letters</a></p>
+</li>
+<li class='clearfix'>
+<div class='article_summary'>
+<h4 class='coverline_header'><a href='/books/review/2008/04/02/amis/'>Terror and loathing</a></h4><p class='coverline_intro'>Martin Amis may not know much about Islam and 9/11, but he knows what he hates</p>
+</div><p class='byline_author'>By Laura Miller</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/books/">Books</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/books/review/2008/04/02/amis/view/?show=all'>39 letters</a></p>
+</li>
+<li class='clearfix'>
+<div class='article_summary'>
+<h4 class='coverline_header'><a href='/mwt/feature/2008/04/02/jessica_queller/'>To cut my breasts off, or not to cut my breasts off ...</a></h4><p class='coverline_intro'>After testing positive for the &quot;breast cancer gene,&quot; &quot;Gilmore Girls&quot; writer Jessica Queller made a radical choice -- a preventive double mastectomy</p>
+</div><p class='byline_author'>By Corrie Pikul</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/mwt/">Life</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/mwt/feature/2008/04/02/jessica_queller/view/?show=all'>25 letters</a></p>
+</li>
+<li class='clearfix'>
+<div class='article_summary'>
+<h4 class='coverline_header'><a href='/ent/tv/daily/2008/04/02/wednesday/'>TV Daily</a></h4><p class='coverline_intro'>Wednesday: Sundance airs the haunting documentary &quot;Autism Every Day.&quot; Plus: What did you think of &quot;Hell&#39;s Kitchen&quot; on Tuesday?</p>
+</div><p class='byline_author'></p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/arts_entertainment/">Arts &amp; Entertainment</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/ent/tv/daily/2008/04/02/wednesday/view/?show=all'>1 letter</a></p>
+</li>
+<li class='clearfix'>
+<div class='article_summary'>
+<h4 class='coverline_header'><a href='/comics/knig/2008/04/02/knig/'>The K Chronicles</a></h4><p class='coverline_intro'>Life&#39;s little victories</p>
+</div><p class='byline_author'>By Keith Knight</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/comics/">Comics</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/comics/knig/2008/04/02/knig/view/?show=all'>11 letters</a></p>
+</li>
+</ul>
+<h3>Tuesday, April 01, 2008</h3>
+<ul class='articles_day'>
+<li class='clearfix'>
+<div class='article_summary'>
+<h4 class='coverline_header'><a href='/sports/col/kaufman/2008/04/01/tuesday/'>National League preview</a></h4><p class='coverline_intro'>As the steroid cloud starts to lift, an unjuiced look at the senior circuit</p>
+</div><p class='byline_author'></p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/sports_daily/">King Kaufman's Sports Daily</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/sports/col/kaufman/2008/04/01/tuesday/view/?show=all'>43 letters</a></p>
+</li>
+<li class='clearfix'>
+<div class='article_summary'>
+<h4 class='coverline_header'><a href='/opinion/kamiya/2008/04/01/puritanism/'>Is the Internet eroding America&#39;s Puritanism -- or making it worse?</a></h4><p class='coverline_intro'>Beneath the gawking, the online reaction to the Spitzer and Paterson revelations shows that Americans are wary of passing judgment on private sins</p>
+</div><p class='byline_author'>By Gary Kamiya</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/opinion/">Opinion</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/opinion/kamiya/2008/04/01/puritanism/view/?show=all'>51 letters</a></p>
+</li>
+<li class='clearfix'>
+<div class='article_summary'>
+<h4 class='coverline_header'><a href='/mwt/food/eat_drink/2008/04/01/gordon_ramsay/'>In memory of Gordon Ramsay</a></h4><p class='coverline_intro'>The host of &quot;Hell&#39;s Kitchen&quot; is a good chef, lost beneath his own shtick</p>
+</div><p class='byline_author'>By Alex Koppelman</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/mwt/">Life</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/mwt/food/eat_drink/2008/04/01/gordon_ramsay/view/?show=all'>61 letters</a></p>
+</li>
+<li class='clearfix'>
+<div class='article_summary'>
+<h4 class='coverline_header'><a href='/ent/tv/review/2008/04/01/clatterford/'>&quot;Ab Fab&quot; ... in church!</a></h4><p class='coverline_intro'>&quot;Clatterford,&quot; a British comedy from the &quot;Absolutely Fabulous&quot; team, brings you a new crew of hilarious nut cases to love</p>
+</div><p class='byline_author'>By Rebecca Traister</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/arts_entertainment/">Arts &amp; Entertainment</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/ent/tv/review/2008/04/01/clatterford/view/?show=all'>15 letters</a></p>
+</li>
+<li class='clearfix'>
+<div class='article_summary'>
+<h4 class='coverline_header'><a href='http://machinist.salon.com/feature/2008/04/01/igoogleforyou/'>My new start-up: I Google For You</a></h4><p class='coverline_intro'>The search engine for busy people</p>
+</div><p class='byline_author'>By Farhad Manjoo</p>
+<p class='byline_section'><a href="http://machinist.salon.com/">Machinist</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/tech/machinist/feature/2008/04/01/igoogleforyou/view/?show=all'>28 letters</a></p>
+</li>
+<li class='clearfix'>
+<div class='article_summary'>
+<h4 class='coverline_header'><a href='/opinion/feature/2008/04/01/basra/'>Why al-Maliki attacked Basra</a></h4><p class='coverline_intro'>The three reasons the Iraqi prime minister launched his ill-fated assault on the Sadrists of southern Iraq</p>
+</div><p class='byline_author'>By Juan Cole</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/opinion/">Opinion</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/opinion/feature/2008/04/01/basra/view/?show=all'>38 letters</a></p>
+</li>
+<li class='clearfix'>
+<div class='article_summary'>
+<h4 class='coverline_header'><a href='/news/feature/2008/04/01/mccain/'>McCain&#39;s Vietnam obsession</a></h4><p class='coverline_intro'>The former POW&#39;s Senate career has been marked by his outspoken determination never to repeat Vietnam mistakes. So why does he support the Iraq war?</p>
+</div><p class='byline_author'>By Mark Benjamin</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/news/">News</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/news/feature/2008/04/01/mccain/view/?show=all'>74 letters</a></p>
+</li>
+<li class='clearfix'>
+<div class='article_summary'>
+<h4 class='coverline_header'><a href='/mwt/col/tenn/2008/04/01/met_online/'>Since you asked ...</a></h4><p class='coverline_intro'>I&#39;m embarrassed to admit I met my guy online</p>
+</div><p class='byline_author'>By Cary Tennis</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/mwt/">Life</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/mwt/col/tenn/2008/04/01/met_online/view/?show=all'>96 letters</a></p>
+</li>
+<li class='clearfix'>
+<div class='article_summary'>
+<h4 class='coverline_header'><a href='/ent/tv/daily/2008/04/01/tuesday/'>TV Daily</a></h4><p class='coverline_intro'>Tuesday: Tune in for the sadistic antics of celebrity chef Gordon Ramsay on &quot;Hell&#39;s Kitchen.&quot; Plus: What did you think of &quot;Retirement Revolution&quot; on Monday?</p>
+</div><p class='byline_author'></p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/arts_entertainment/">Arts &amp; Entertainment</a></p>
+</li>
+</ul>
+<h3>Monday, March 31, 2008</h3>
+<ul class='articles_day'>
+<li class='clearfix'>
+<div class='article_summary'>
+<h4 class='coverline_header'><a href='/sports/col/kaufman/2008/03/31/monday/'>The last underdog</a></h4><p class='coverline_intro'>Davidson goes down as all four No. 1s make the Final Four. But how doggy were the Wildcats? Plus: Obama bracket clinches presidency</p>
+</div><p class='byline_author'></p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/sports_daily/">King Kaufman's Sports Daily</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/sports/col/kaufman/2008/03/31/monday/view/?show=all'>15 letters</a></p>
+</li>
+<li class='clearfix'>
+<div class='article_summary'>
+<h4 class='coverline_header'><a href='/news/feature/2008/03/31/obama/'>Barack Obama, working-class hero?</a></h4><p class='coverline_intro'>On a bus tour through Pennsylvania, Obama tries to impress blue-collar white voters. He&#39;ll need them to keep the state close in April -- or to win it in November</p>
+</div><p class='byline_author'>By Mike Madden</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/news/">News</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/news/feature/2008/03/31/obama/view/?show=all'>395 letters</a></p>
+</li>
+<li class='clearfix'>
+<div class='article_summary'>
+<h4 class='coverline_header'><a href='/mwt/mind_reader/2008/03/31/brain_games/'>Buff up your brain</a></h4><p class='coverline_intro'>Exercise improves your health. That&#39;s a no-brainer. But do the new brain-fitness programs improve your mental health?</p>
+</div><p class='byline_author'>By Robert Burton</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/mwt/">Life</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/mwt/mind_reader/2008/03/31/brain_games/view/?show=all'>50 letters</a></p>
+</li>
+<li class='clearfix'>
+<div class='article_summary'>
+<h4 class='coverline_header'><a href='/books/int/2008/03/31/Nim_Chimpsky/'>The chimp who thought he was a boy</a></h4><p class='coverline_intro'>Raised like a son by a New York City family as part of a language experiment, Nim Chimpsky was shipped away when funds ran out. A new biography tells Nim&#39;s story</p>
+</div><p class='byline_author'>By Chris Colin</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/books/">Books</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/books/int/2008/03/31/Nim_Chimpsky/view/?show=all'>69 letters</a></p>
+</li>
+<li class='clearfix'>
+<div class='article_summary'>
+<h4 class='coverline_header'><a href='/mwt/col/tenn/2008/03/31/want_to_make_babies/'>Since you asked ...</a></h4><p class='coverline_intro'>I want a baby so badly it scares me</p>
+</div><p class='byline_author'>By Cary Tennis</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/mwt/">Life</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/mwt/col/tenn/2008/03/31/want_to_make_babies/view/?show=all'>99 letters</a></p>
+</li>
+<li class='clearfix'>
+<div class='article_summary'>
+<h4 class='coverline_header'><a href='/comics/tomo/2008/03/31/tomo/'>This Modern World</a></h4><p class='coverline_intro'>Hillary Clinton&#39;s six-point strategy</p>
+</div><p class='byline_author'>By Tom Tomorrow</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/comics/">Comics</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/comics/tomo/2008/03/31/tomo/view/?show=all'>74 letters</a></p>
+</li>
+<li class='clearfix'>
+<div class='article_summary'>
+<h4 class='coverline_header'><a href='/ent/tv/daily/2008/03/31/monday/'>TV Daily</a></h4><p class='coverline_intro'>Monday: PBS&#39;s &quot;Retirement Revolution&quot; shares retirement strategies for a new generation. Plus: What did you think of &quot;Tracey Ullman&#39;s State of the Union&quot; on Sunday?</p>
+</div><p class='byline_author'></p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/arts_entertainment/">Arts &amp; Entertainment</a></p>
+</li>
+<li class='clearfix'>
+<div class='article_summary'>
+<h4 class='coverline_header'><a href='/ent/music/review/2008/03/31/destroyer/'>The music lover</a></h4><p class='coverline_intro'>Why the dark and madly poetic Destroyer is my favorite rock band in ages</p>
+</div><p class='byline_author'>By Kevin Berger</p>
+<p class='byline_section'><a href="http://dir.salon.com/topics/arts_entertainment/">Arts &amp; Entertainment</a></p>
+<p class='byline_letters'><a href='http://letters.salon.com/ent/music/review/2008/03/31/destroyer/view/?show=all'>37 letters</a></p>
+</li>
+</ul>
+		<div class='clearer'></div>
+<div id='storyfinder'>
+	<h3>Story finder (3 ways to search Salon)</h3>
+	<form action='http://search.salon.com/salonsearch.php' method='get'>
+		<div>
+			<label for='search_text' class='hidden'>Search terms:</label>
+			<input type='text' name='search' id='search_text' class='input_text' style='margin-bottom: 8px;'/>
+			<img src="http://images.salon.com/src/yahoo_search.png" width="125" alt="Powered by Yahoo! Search" height="27" style="margin-left: 5px; margin-bottom: 4px;" />
+		</div>
+		<div>
+			<input type='radio' name='breadth' value='salon' checked='checked' id='search_salon' /><label for='search_salon'>Salon</label> <input type='radio' name='breadth' value='all' id='search_web' /><label for='search_web'>the Web</label> <input type='submit' value='Go!' class='form_submit' />
+		</div>
+	</form>
+	<form action='/archives/date_archive' method='post'>
+		<div>
+			<label for='articleDate' class='red_arrow'>A list of all published articles organized by month:</label><br />
+			<select name='articleDate' id='articleDate'>
+				<option value="previous_years">Previous Years</option>
+			<option value="" selected="selected">April 2008</option>
+			<option value="200803" >March 2008</option>
+			<option value="200802" >February 2008</option>
+			<option value="200801" >January 2008</option>
+			<option value="200712" >December 2007</option>
+			<option value="200711" >November 2007</option>
+			<option value="200710" >October 2007</option>
+			<option value="200709" >September 2007</option>
+			<option value="200708" >August 2007</option>
+			<option value="200707" >July 2007</option>
+			<option value="200706" >June 2007</option>
+			<option value="200705" >May 2007</option>
+			<option value="200704" >April 2007</option>
+			<option value="200703" >March 2007</option>
+			<option value="200702" >February 2007</option>
+			<option value="200701" >January 2007</option>
+			<option value="200612" >December 2006</option>
+			<option value="200611" >November 2006</option>
+			<option value="200610" >October 2006</option>
+			<option value="200609" >September 2006</option>
+			<option value="200608" >August 2006</option>
+			<option value="200607" >July 2006</option>
+			<option value="200606" >June 2006</option>
+			<option value="200605" >May 2006</option>
+			<option value="200604" >April 2006</option>
+			<option value="200603" >March 2006</option>
+			<option value="200602" >February 2006</option>
+			<option value="200601" >January 2006</option>
+			<option value="200512" >December 2005</option>
+			<option value="200511" >November 2005</option>
+			<option value="200510" >October 2005</option>
+			<option value="200509" >September 2005</option>
+			<option value="200508" >August 2005</option>
+			<option value="200507" >July 2005</option>
+			<option value="200506" >June 2005</option>
+			<option value="200505" >May 2005</option>
+			<option value="200504" >April 2005</option>
+			<option value="200503" >March 2005</option>
+			<option value="200502" >February 2005</option>
+			<option value="200501" >January 2005</option>
+			</select>
+			<input value="Go!" type="submit" class='form_submit' />
+		</div>
+	</form>
+	<noscript>
+		<ul>
+			<li><a href="/archives/date_all.html">Previous Years</a></li>
+		<li><a href="/archives/date.html">April 2008</a></li>
+		<li><a href="/archives/2008/date03.html">March 2008</a></li>
+		<li><a href="/archives/2008/date02.html">February 2008</a></li>
+		<li><a href="/archives/2008/date01.html">January 2008</a></li>
+		<li><a href="/archives/2007/date12.html">December 2007</a></li>
+		<li><a href="/archives/2007/date11.html">November 2007</a></li>
+		<li><a href="/archives/2007/date10.html">October 2007</a></li>
+		<li><a href="/archives/2007/date09.html">September 2007</a></li>
+		<li><a href="/archives/2007/date08.html">August 2007</a></li>
+		<li><a href="/archives/2007/date07.html">July 2007</a></li>
+		<li><a href="/archives/2007/date06.html">June 2007</a></li>
+		<li><a href="/archives/2007/date05.html">May 2007</a></li>
+		<li><a href="/archives/2007/date04.html">April 2007</a></li>
+		<li><a href="/archives/2007/date03.html">March 2007</a></li>
+		<li><a href="/archives/2007/date02.html">February 2007</a></li>
+		<li><a href="/archives/2007/date01.html">January 2007</a></li>
+		<li><a href="/archives/2006/date12.html">December 2006</a></li>
+		<li><a href="/archives/2006/date11.html">November 2006</a></li>
+		<li><a href="/archives/2006/date10.html">October 2006</a></li>
+		<li><a href="/archives/2006/date09.html">September 2006</a></li>
+		<li><a href="/archives/2006/date08.html">August 2006</a></li>
+		<li><a href="/archives/2006/date07.html">July 2006</a></li>
+		<li><a href="/archives/2006/date06.html">June 2006</a></li>
+		<li><a href="/archives/2006/date05.html">May 2006</a></li>
+		<li><a href="/archives/2006/date04.html">April 2006</a></li>
+		<li><a href="/archives/2006/date03.html">March 2006</a></li>
+		<li><a href="/archives/2006/date02.html">February 2006</a></li>
+		<li><a href="/archives/2006/date01.html">January 2006</a></li>
+		<li><a href="/archives/2005/date12.html">December 2005</a></li>
+		<li><a href="/archives/2005/date11.html">November 2005</a></li>
+		<li><a href="/archives/2005/date10.html">October 2005</a></li>
+		<li><a href="/archives/2005/date09.html">September 2005</a></li>
+		<li><a href="/archives/2005/date08.html">August 2005</a></li>
+		<li><a href="/archives/2005/date07.html">July 2005</a></li>
+		<li><a href="/archives/2005/date06.html">June 2005</a></li>
+		<li><a href="/archives/2005/date05.html">May 2005</a></li>
+		<li><a href="/archives/2005/date04.html">April 2005</a></li>
+		<li><a href="/archives/2005/date03.html">March 2005</a></li>
+		<li><a href="/archives/2005/date02.html">February 2005</a></li>
+		<li><a href="/archives/2005/date01.html">January 2005</a></li>
+		</ul>
+	</noscript>
+	<p class='red_arrow' id='directory'><a href="http://dir.salon.com/">Salon Directory</a> (browse by topic)</p>
+</div>
+<!-- End Story Finder -->
+
+                </div>
+		<!-- COL 3 + COL 4 WRAPPER HACK -->
+		<div id="col3col4">
+                <!-- COLUMN THREE -->
+                <div id="column3">
+                        <!-- top stories -->
+                        <div id="top_stories" class="clearfix">
+                                <!--<h3><img src="http://images.salon.com/src/cover/top_stories.gif" width="150" height="18" alt="Top Stories" /></h3>-->
+								<ul>
+					<li>
+	<a name="&amp;lid=cover_skybox1&amp;lpos=image" href="/politics/war_room/" class="top_stories_img"><img src="http://images.salon.com/src/warroom_lc.gif" width="50" height="50" alt="" /></a><h4><a name="&amp;lid=cover_skybox1&amp;lpos=text" href="/politics/war_room/">A free ride for the Straight Talk Express?</a></h4>
+	<p>By Vincent Rossmeier</p>
+</li>
+
+
+<li>
+	<a name="&amp;lid=cover_skybox2&amp;lpos=image" href="/ent/movies/" class="top_stories_img"><img src="http://images.salon.com/ent/movies/review/2008/04/04/leatherheads/lc.gif" width="50" height="50" alt="" /></a><h4><a name="&amp;lid=cover_skybox2&amp;lpos=text" href="/ent/movies/">Movies: Jagger, Clooney and a red balloon</a></h4>
+	<p>By Stephanie Zacharek</p>
+</li>
+
+
+<li>
+	<a name="&amp;lid=cover_skybox3&amp;lpos=image" href="/opinion/conason/2008/04/04/diaz_gitmo/" class="top_stories_img"><img src="http://images.salon.com/opinion/conason/2008/04/04/diaz_gitmo/lc.gif" width="50" height="50" alt="" /></a><h4><a name="&amp;lid=cover_skybox3&amp;lpos=text" href="/opinion/conason/2008/04/04/diaz_gitmo/">Matthew Diaz: A truth teller who deserves justice</a></h4>
+	<p>By Joe Conason</p>
+</li>
+
+
+<li>
+	<a name="&amp;lid=cover_skybox4&amp;lpos=image" href="/tech/htww/2008/04/04/goolsbee_penn_trade/" class="top_stories_img"><img src="http://images.salon.com/src/htww_lc.gif" width="50" height="50" alt="" /></a><h4><a name="&amp;lid=cover_skybox4&amp;lpos=text" href="/tech/htww/2008/04/04/goolsbee_penn_trade/">The trade follies of Austan Goolsbee and Mark Penn</a></h4>
+	<p>By Andrew Leonard</p>
+</li>
+
+
+
+				</ul>
+
+
+
+
+
+
+
+
+                        </div>
+							<div class='ad_content' id="col3_ad1">
+				        <script type="text/javascript" language="JavaScript1.1">
+					<!--
+					OAS_AD('Right3');
+					//-->
+				        </script>
+        <noscript><a href="http://judo.salon.com/RealMedia/ads/click_nx.cgi/www.salonmagazine.com/home.html@Right3"><img src="http://judo.salon.com/RealMedia/ads/adstream_nx.cgi/www.salonmagazine.com/home.html@Right3" border="0" alt="" /></a></noscript>
+                        </div>
+
+				
+
+
+
+				
+<div id="most_popular">
+	<h3><img src='http://images.salon.com/main/src/cover/mostpopular.gif' width='110' alt='Most Popular' height='19' /></h3>
+      <div id="most_popular_tabs" class="clearfix">
+            <a href="#most_read_articles" onclick="return toggleMostPopular('stories')" class="stories" style="width: 75px"><img src="http://images.salon.com/main/src/cover/top_stories_r.gif" width="75" height="18" alt="Most Read" id="most_popular_stories_tab" /></a>
+            <a href="#most_active_letters" onclick="return toggleMostPopular('letters')" class="letters" style="width: 105px"><img src="http://images.salon.com/main/src/cover/active_letters_g.gif" width="105" height="18" alt="Active Letters" id="most_popular_letters_tab" /></a>
+      </div>
+      <div id="most_popular_stories" class="most_popular_list" style="display: block">
+            <ol id="most_popular_stories_list">
+	<li class="pop_1"><a href="http://www.salon.com/mwt/feature/2008/04/04/mary_roach/">Getting it on for science</a><br />By Katharine Mieszkowski</li>
+	<li class="pop_1"><a href="http://www.salon.com/ent/tv/feature/2008/04/02/bsg_explainer/">Everything you were afraid to ask about &quot;Battlestar Galactica&quot; </a><br />By Thomas Rogers</li>
+	<li class="pop_1"><a href="http://www.salon.com/books/int/2008/04/03/meg_wolitzer/">Marching into the mommy wars</a><br />By Rebecca Traister</li>
+	<li class="pop_1"><a href="http://www.salon.com/tech/col/smith/2008/04/04/askthepilot271/">Ask the pilot</a><br />By Patrick Smith</li>
+	<li class="pop_1"><a href="http://www.salon.com/ent/movies/review/2008/04/04/leatherheads/">&quot;Leatherheads&quot;</a><br />By Stephanie Zacharek</li>
+</ol>
+
+      </div>
+      <div id="most_popular_letters" class="most_popular_list" style="display: none">
+            <ol id="most_popular_letters_list">
+	<li class="pop_1"><a href="http://letters.salon.com/opinion/greenwald/2008/04/03/mukasey/view/" title="Letters about &quot;Why doesn&#39;t the 9/11 Commission know about Mukasey&#39;s 9/11 story?&quot;">Why doesn&#39;t the 9/11 Commission know about Mukasey&#39;s 9/11 story? (465)</a><br />By Glenn Greenwald</li>
+	<li class="pop_1"><a href="http://letters.salon.com/opinion/greenwald/2008/04/02/book_news/view/" title="Letters about &quot;Book news and media campaign coverage&quot;">Book news and media campaign coverage (265)</a><br />By Glenn Greenwald</li>
+	<li class="pop_1"><a href="http://letters.salon.com/opinion/greenwald/2008/04/02/yoo/view/" title="Letters about &quot;John Yoo&#39;s war crimes&quot;">John Yoo&#39;s war crimes (251)</a><br />By Glenn Greenwald</li>
+	<li class="pop_1"><a href="http://letters.salon.com/opinion/feature/2008/04/02/depression/view/" title="Letters about &quot;The Great Depression: The sequel&quot;">The Great Depression: The sequel (176)</a><br />By Andrew Leonard</li>
+	<li class="pop_1"><a href="http://letters.salon.com/news/feature/2008/04/03/hillary/view/" title="Letters about &quot;Hillary&#39;s bridge back to the 20th century&quot;">Hillary&#39;s bridge back to the 20th century (147)</a><br />By Mike Madden</li>
+</ol>
+
+          	<div class="more"><a href="http://letters.salon.com">More</a></div>
+      </div>
+      <div class="ad_content" id="most_popular_ad">
+            <script type="text/javascript" language="JavaScript1.1">
+		<!--
+		OAS_AD('x04');
+		//-->
+	    </script>
+		<noscript><a href="http://judo.salon.com/RealMedia/ads/click_nx.cgi/www.salonmagazine.com/home.html@x04"><img src="http://judo.salon.com/RealMedia/ads/adstream_nx.cgi/home.html@x04" border="0" alt="" /></a></noscript>
+      </div>
+</div>
+
+<script type="text/javascript" src="http://images.salon.com/lib/most_popular2.js"></script>
+
+
+
+                        <div id="community">
+				                                <h3><a href="http://www.salon.com/dialogue/"><img src="http://images.salon.com/src/community.gif" width="150" alt="Communities" height="18" /></a></h3>
+                                <p>Where Salon's readers gather to debate the news of the day and share the real issues of their lives.</p>
+                                <h4><a href="http://tabletalk.salon.com">Table Talk</a></h4>
+                                <ul>               
+					<li><a href="http://tabletalk.salon.com/webx?7@@.773d2d85" title="">Love you, love your books?
+</a></li>
+
+                                        <li><a href="http://tabletalk.salon.com/webx?13@@.773d2cf7" title="">Was 1968 the year that changed everything?
+</a></li>
+                                </ul>
+                                <h4><a href="http://www.well.com/">The WELL</a></h4>
+                                <ul>             
+					<li><a href="http://www.well.com/conf/inkwell.vue/topics/324/Silja-Talvi-Women-Behind-Bars-page01.html" title="Investigative journalist Silja Talvi explores the plight of women in prison in her book, Women Behind Bars ">Is there a profit motive to the U.S. prison system?</a></li>
+                                </ul>
+                        </div>
+
+<div class="clearfix" id="personals">
+	<script language="javascript" src="http://services.springstreetnetworks.com/Services/Pod/PodJavaScript.aspx?pnid=2001.subhome_col3&amp;tag=resize"></script>
+	<h3>Salon Personals</h3>
+	<div id="sp_profile">
+			<a id="pic" href="http://personals.salon.com">
+				<script type="text/javascript">SSNGetImg(120,120);</script>
+				<script type="text/javascript">SSNGetName();</script>
+			</a>
+		<p><script type="text/javascript">SSNGetQuote();</script></p>
+		<p class="online"><a href="http://personals.salon.com/"><script language="javascript" src="http://services.springstreetnetworks.com/OnLineNow/Personals.aspx"></script> people online now</a></p>
+	</div>
+	<div id="ssnqscontainer">
+		<form class="ssnqs" action="http://personals.salon.com/search.aspx" method="post" id="Form1" target="_parent">
+			<p>I am <select class="lookoption" name="14gender" id="14gender" /><option value="1">a man</option><option selected="selected" value="2">a woman</option></select> 
+			<br />seeking <select class="lookoption" name="gender" id="gender" /><option selected="selected" value="1">a man</option><option value="2">a woman</option><option value="3">either</option></select></p>
+			<p>between <input class="ageboxes" name="ageLower" value="18" type="text" maxlength="2" size="2" id="ageLower" onfocus="clearDefault(this)" /> and <input class="ageboxes" name="ageUpper" value="35" type="text" maxlength="2" size="2" id="ageUpper" onfocus="clearDefault(this)" /></p>
+			<p>within <select class="zipbox" name="miles" id="miles" /> <option value="5">5</option> <option value="10">10</option> <option value="25">25</option> <option selected="selected" value="50">50</option> <option value="100">100</option> <option value="250">250</option> </select> miles 
+			<br />of zip <input class="milesoption" name="postalcode" type="text" maxlength="7" size="5" id="postalcode" onfocus="clearDefault(this)" /> </p>
+			<p><input id="photoonly" type="checkbox" name="photoonly" value="1" checked /> <label for="photoonly">photos only</label> </p>
+			<p><input type="hidden" name="type" value="1" id="Hidden1" /><input type="submit" value="Search" /></p>
+		</form>
+	</div>
+</div>
+
+
+                </div>
+
+                <!-- COLUMN FOUR -->
+                <div id="column4">
+
+			
+<div id="fivethings_compressed" class="fivethings clearfix">
+	<h3><a href="/5things/"><img src="http://images.salon.com/img/5things/5_things.gif" width="191" alt="5 Things" height="37" /></a></h3>
+	<ol>
+		<li id="thing_1" class="clearfix"><h4><a name="&amp;lid=5things_1&amp;pos=text" onclick="return expandThing(1, '/5things/2008/04/04/woman_dragged_scream')" href="/5things/2008/04/04/woman_dragged_scream/index.html" class="lbOn ">Woman dragged screaming from <BR>Clinton event<BR></a><span class="source">PTCO</span></h4>
+		</li>
+		<li id="thing_2" class="clearfix"><h4><a name="&amp;lid=5things_2&amp;pos=text" onclick="return expandThing(2, '/5things/2008/04/03/clinton_kids_about_s')" href="/5things/2008/04/03/clinton_kids_about_s/index.html" class="lbOn video">Hillary kids about sniper fire</a><span class="source">TC</span></h4>
+		</li>
+		<li id="thing_3" class="clearfix"><h4><a name="&amp;lid=5things_3&amp;pos=text" onclick="return expandThing(3, '/5things/2008/04/03/employers_slash_in_m')" href="/5things/2008/04/03/employers_slash_in_m/index.html" class="lbOn ">80,000 jobs slashed in March </a><span class="source">AP</span></h4>
+		</li>
+		<li id="thing_4" class="clearfix"><h4><a name="&amp;lid=5things_4&amp;pos=text" onclick="return expandThing(4, '/5things/2008/04/03/stewart_slams_fox_s_')" href="/5things/2008/04/03/stewart_slams_fox_s_/index.html" class="lbOn video">Stewart slams Fox's "Obama" clock</a><span class="source">DS</span></h4>
+		</li>
+		<li id="thing_5" class="clearfix"><img src="http://images.salon.com/5things/img/lc_is_that_chardonnay_i.jpg" width="50" height="50" alt=""/><h4><a name="&amp;lid=5things_5&amp;pos=text" onclick="return expandThing(5, '/5things/2008/04/04/is_that_chardonnay_i')" href="/5things/2008/04/04/is_that_chardonnay_i/index.html" class="lbOn ">Is that chardonnay in your pimp cup?<BR></a><span class="source">AP</span></h4>
+		</li>
+		<li class="more"><a href="/5things/" name="&amp;lid=5things_more&amp;pos=text">more&#8230;</a></li>
+	</ol>
+	<div class="ad_content" id="x03">
+	<script type="text/javascript" language="JavaScript1.1">
+		<!--
+		OAS_AD('x03');
+		//-->
+	</script>
+	<noscript><a href="http://judo.salon.com/RealMedia/ads/click_nx.cgi/www.salonmagazine.com/extra/5things/content/large.html@x03"><img src="http://judo.salon.com/RealMedia/ads/adstream_nx.cgi/extra/5things/content/large.html@x03" alt="Advertisement" /></a></noscript>
+</div>
+
+
+
+</div>
+
+<script type="text/javascript">
+<!--
+
+var selected_idx = 0;
+var clicked = false;
+
+
+function detectMacXFF() {
+	var ua = navigator.userAgent.toLowerCase();
+	if ((ua.indexOf('mac') != -1 && ua.indexOf('firefox') != -1) || ua.indexOf('camino') != -1) {
+		return true;
+	}
+}
+
+
+/* Firefox on Mac wiggs out when you combine Flash and CSS Opacity. Not that I blame it. */
+/* See http://jakeo.org/blog/2007/03/16/css-opacity-and-flash-transparency-in-mac-firefox/ */
+function OMGlikeCallMe() {
+	if (detectMacXFF()) {
+		var overlay = document.getElementById('overlay_modal');
+		overlay.style.backgroundImage = "url(http://images.salon.com/img/5things/5t_bg.png)";
+		overlay.style.backgroundRepeat = "repeat";
+		overlay.style.opacity = '1';
+		overlay.style.backgroundColor = 'transparent';
+	}
+	var ad_divs = $$('.ad_content');
+	for (var i = 0; i<ad_divs.length; i++) {
+		ad_divs[i].style.visibility = 'hidden';
+	}
+
+}
+
+function expandThing(thing_index, thing_url) {
+	//WindowUtilities.initLightbox ('lighbox_loadng', 'loading', false, document.body) ;
+	if (clicked) return false;
+	clicked = true;
+	window.clearTimeout(refreshTimeout);
+
+	// register a page view if hitbox has been loaded
+	if (typeof _hbPageView == 'function') _hbPageView('comp', thing_url);
+
+	Dialog.info(
+		{url: '/mc/5things/expand.html?selected='+thing_index} ,
+		{ 
+			width: 768,
+			left: 184,
+			top: 134,
+			id: 'lightbox',
+			recenterAuto: false,
+			onShow: OMGlikeCallMe,
+			showProgress: true
+		}
+	);
+	return false;
+}
+
+function closeThing() {
+	var ad_divs = $$('.ad_content');
+	for (var i = 0; i<ad_divs.length; i++) {
+		ad_divs[i].style.visibility = 'visible';
+	}
+
+	Dialog.closeInfo(); 
+	clicked = false;
+	refreshTimeout = setTimeout('salonRefresh()', refresh_time);
+	return false;
+}
+
+function selectThing(thing_index, thing_url) {
+	if (thing_index == selected_idx) {
+		//document.getElementById('expand_thing_' + thing_index).className = '';
+		selected_idx = 0;
+	} else {
+		document.getElementById('expand_thing_1').className = '';
+		document.getElementById('expand_thing_2').className = '';
+		document.getElementById('expand_thing_3').className = '';
+		document.getElementById('expand_thing_4').className = '';
+		document.getElementById('expand_thing_5').className = '';
+		document.getElementById('expand_thing_' + thing_index).className = 'on';
+		selected_idx = thing_index;
+		if (typeof _hbPageView == 'function') _hbPageView('comp', thing_url);
+		if (typeof _hbLink == 'function') _hbLink ('5things_'+thing_index+'exp', 'text');
+		if ($("right")) $("right").src = $("right").src;
+	}
+	return false;
+}
+
+//-->
+</script>
+
+
+
+
+                        <div id="wires">
+                                <h3><a href="/wires/"><img src="http://images.salon.com/src/cover/from_the_wires.gif" width="150" height="18" alt="Wires 24/7" /></a></h3>
+					<ul>
+					<li><a href='/wires/ap/us/2008/04/04/D8VR7EKO0_council_slush_funds/index.html'>NYC Slush Funds Come Under Scrutiny</a></li>
+<li><a href='/wires/ap/us/2008/04/04/D8VR7FFO0_college_admissions/index.html'>Admissions Season Makes Colleges Sweat</a></li>
+<li><a href='/wires/ap/business/2008/04/04/D8VR7DUG0_venezuela_cement_nationalization/index.html'>Venezueala Nationalizes Cement Sector</a></li>
+<li><a href='/wires/ap/business/2008/04/04/D8VR7CR00_consumer_fear/index.html'>Consumer Fear Could Extend Malaise</a></li>
+			</ul>
+                        <div class="ad_content" style="margin-top: 1em; margin-bottom: 2em;">
+					<b>More Wires Below</b>
+					<div class='ad_content'>
+				        <script type="text/javascript" language="JavaScript1.1">
+					<!--
+					OAS_AD('Right1');
+					//-->
+				        </script>
+        <noscript><a href="http://judo.salon.com/RealMedia/ads/click_nx.cgi/www.salonmagazine.com/home.html@Right1"><img src="http://judo.salon.com/RealMedia/ads/adstream_nx.cgi/www.salonmagazine.com/home.html@Right1" border="0" alt="" /></a></noscript>
+                        		</div>
+                        </div>
+			<ul>
+
+
+<li><a href='/wires/ap/us/2008/04/04/D8VR7AN80_airports_behavior_agents/index.html'>TSA Deploys Airport Behavior Screeners</a></li>
+<li><a href='/wires/ap/us/2008/04/04/D8VR78801_olympic_torch_protest/index.html'>San Francisco Readies for Torch Protests</a></li>
+<li><a href='/wires/ap/entertainment/2008/04/04/D8VR78IG0_obit_mikl/index.html'>Austrian Artist Mikl Dies</a></li>
+<li><a href='/wires/ap/us/2008/04/04/D8VR72SG2_serial_shootings/index.html'>Man Pleads Guilty to Phoenix Shootings</a></li>
+<li><a href='/wires/ap/world/2008/04/04/D8VR72LG0_britain_severed_head/index.html'>UK Police Arrest 2 in Severed Head Case</a></li>
+<li><a href='/wires/ap/scitech/2008/04/04/D8VR72SG1_thailand_climate_conference/index.html'>UN Climate Talks Agree on Agenda</a></li>
+<li><a href='/wires/ap/business/2008/04/04/D8VR6VJO0_commodities_review/index.html'>Wheat Prices Jump on Weather Worries</a></li>
+<li><a href='/wires/ap/2008/04/04/D8VR6UV82_college_loans/index.html'>Quick Fix Ready if Student Loans Falter</a></li>
+<li><a href='/wires/ap/2008/04/04/D8VR6UT80_bkc_ap_awards/index.html'>Hansbrough, Davis Win AP Awards</a></li>
+<li><a href='/wires/ap/2008/04/04/D8VR6SGG0_fbn_bengals_henry_released/index.html'>Ex-Bengals WR Henry Out of Jail</a></li>
+<li><a href='/wires/ap/2008/04/04/D8VR6OH01_bkc_final_four_kansas_north_carolina/index.html'>Rush, Hansbrough: Talented, Experienced</a></li>
+<li><a href='/wires/ap/2008/04/04/D8VR6KVO0_us_nkorea/index.html'>US, N. Korea Returning to Nuclear Talks</a></li>
+<li><a href='/wires/ap/2008/04/04/D8VR6LR00_passports_resignation/index.html'>State Department Official Quits</a></li>
+<li><a href='/wires/ap/world/2008/04/04/D8VR6HI80_australia_wreck_mystery/index.html'>Answers Due on WWII Mystery</a></li>
+<li><a href='/wires/ap/2008/04/04/D8VR6H9O1_us_iraq/index.html'>Dems Signal Lost Hope in Ending War</a></li>
+<li><a href='/wires/ap/world/2008/04/04/D8VR6HVG0_zimbabwe_elections/index.html'>Zimbabwe Headed to Presidential Runoff</a></li>
+<li><a href='/wires/ap/2008/04/04/D8VR6G480_primary_scramble/index.html'>Mich. Democrats Say No Do-Over Primary</a></li>
+<li><a href='/wires/ap/us/2008/04/04/D8VR6F4G3_polygamist_leader_retreat/index.html'>Officials Serve Warrants at Jeffs' Ranch</a></li>
+<li><a href='/wires/ap/2008/04/04/D8VR6EIO1_primary_scramble/index.html'>Michigan Dems Say No Do-Over Primary</a></li>
+<li><a href='/wires/ap/world/2008/04/04/D8VR6BB01_nkorea_hostel/index.html'>NKorea Embassy Compound May House Hostel</a></li>
+					</ul>
+				<p class="more"><a href="/wires/">More Wires</a></p>
+			</div>
+                </div>
+
+		<div id="ad_box_colspan" class="ad_content">
+                                			<script type="text/javascript">
+							<!--
+							OAS_AD('x10');
+							//-->
+                                			</script>
+                                			<noscript><a href="http://judo.salon.com/RealMedia/ads/click_nx.cgi/www.salonmagazine.com/home.html@x10"><img src="http://judo.salon.com/RealMedia/ads/adstream_nx.cgi/www.salonmagazine.com/home.html@x10" alt="" /></a></noscript>
+               </div>
+
+
+<div class="ad_content" id="x14">
+	<script type="text/javascript" language="JavaScript1.1">
+		<!--
+		OAS_AD('x14');
+		//-->
+	</script>
+	<noscript><a href="http://judo.salon.com/RealMedia/ads/click_nx.cgi/www.salonmagazine.com/home.html@x14"><img src="http://judo.salon.com/RealMedia/ads/adstream_nx.cgi/home.html@x14" alt="Advertisement" /></a></noscript>
+</div>
+
+
+		<div class="ad_content" id="x14">
+	<script type="text/javascript" language="JavaScript1.1">
+		<!--
+		OAS_AD('x14');
+		//-->
+	</script>
+	<noscript><a href="http://judo.salon.com/RealMedia/ads/click_nx.cgi/www.salonmagazine.com/home.html@x14"><img src="http://judo.salon.com/RealMedia/ads/adstream_nx.cgi/home.html@x14" alt="Advertisement" /></a></noscript>
+</div>
+
+
+		</div>
+
+		<div class="clearfix"></div>
+        </div>
+        <!-- ### END CONTENT ### -->
+
+
+        <!-- ### COLUMN ONE ### -->
+        <div id="column1">
+		
+<div class="ad_content" id="x15">
+	<script type="text/javascript" language="JavaScript1.1">
+		<!--
+		OAS_AD('x15');
+		//-->
+	</script>
+	<noscript><a href="http://judo.salon.com/RealMedia/ads/click_nx.cgi/www.salonmagazine.com/home.html@x15"><img src="http://judo.salon.com/RealMedia/ads/adstream_nx.cgi/home.html@x15" alt="Advertisement" /></a></noscript>
+</div>
+
+
+
+		<!-- element_ids -->
+<!-- blogs and columns -->
+                <div id="blogs_columns" class="sidebar_box">
+                        <h3 style="display: none;">Blogs &amp; Columns</h3>
+                        <h4>Daily</h4>
+                        <ul>
+<li><a href="http://www.salon.com/5things/" name="&amp;lid=cover_lnav&amp;pos=text">5 Things</a></li>
+<li><a href="/ent/movies/btm/" name="&amp;lid=cover_lnav&amp;pos=text">Beyond the Multiplex</a></li>
+<li><a href="http://blogreport.salon.com/" name="&amp;lid=cover_lnav&amp;pos=text">Blog Report</a></li>
+<li><a href="/mwt/broadsheet/" name="&amp;lid=cover_lnav&amp;pos=text">Broadsheet</a></li>
+<li><a href="/ent/current_tv/" name="&amp;lid=cover_lnav&amp;pos=text">Current TV</a></li>
+<li><a href="/opinion/greenwald/" name="&amp;lid=cover_lnav&amp;pos=text">Glenn Greenwald</a></li>
+<li><a href="/tech/htww/" name="&amp;lid=cover_lnav&amp;pos=text">How the World Works</a></li>
+<li><a href="/opinion/walsh/" name="&amp;lid=cover_lnav&amp;pos=text">Joan Walsh</a></li>
+<li><a href="/sports/" name="&amp;lid=cover_lnav&amp;pos=text">King Kaufman</a></li>
+<li><a href="http://machinist.salon.com/" name="&amp;lid=cover_lnav&amp;pos=text">Machinist</a></li>
+<li><a href="/since_you_asked" name="&amp;lid=cover_lnav&amp;pos=text">Since You Asked</a></li>
+<li><a href="/tv_daily/" name="&amp;lid=cover_lnav&amp;pos=text">TV Daily</a></li>
+<li><a href="/ent/video_dog/" name="&amp;lid=cover_lnav&amp;pos=text">Video Dog</a></li>
+<li><a href="/politics/war_room/" name="&amp;lid=cover_lnav&amp;pos=text">War Room</a></li>
+                        </ul>
+                        <h4>Weekly</h4>
+                        <ul>
+<li><a href="http://dir.salon.com/topics/ask_the_pilot/" name="&amp;lid=cover_lnav&amp;pos=text">Ask the Pilot</a></li>
+<li><a href="/ent/video_dog/ifc/" name="&amp;lid=cover_lnav&amp;pos=text">Beyond the Multiplex TV</a></li>
+<li><a href="http://dir.salon.com/topics/comics/" name="&amp;lid=cover_lnav&amp;pos=text">Comics</a></li>
+<li><a href="http://dir.salon.com/topics/joe_conason/" name="&amp;lid=cover_lnav&amp;pos=text">Joe Conason</a></li>
+<li><a href="/iltw/" name="&amp;lid=cover_lnav&amp;pos=text">I Like to Watch</a></li>
+<li><a href="http://dir.salon.com/topics/gary_kamiya/" name="&amp;lid=cover_lnav&amp;pos=text">Gary Kamiya</a></li>
+<li><a href="http://dir.salon.com/topics/garrison_keillor/" name="&amp;lid=cover_lnav&amp;pos=text">Garrison Keillor</a></li>
+                        </ul>
+                        <h4>Special Features</h4>
+                        <ul>
+<li><a href="/politics/election08/" name="&amp;lid=cover_lnav&amp;pos=text">2008 Election</a></li>
+<li><a href="/news/abu_ghraib/2006/03/14/introduction/" name="&amp;lid=cover_lnav&amp;pos=text">The Abu Ghraib Files</a></li>
+<li><a href="http://dir.salon.com/topics/atoms_and_eden/" name="&amp;lid=cover_lnav&amp;pos=text">Atoms and Eden</a></li>
+<li><a href="/ent/audiofile/" name="&amp;lid=cover_lnav&amp;pos=text">Audiofile</a></li>
+<li><a href="/ent/video_dog/hometown_baghdad/" name="&amp;lid=cover_lnav&amp;pos=text">Hometown Baghdad</a></li>
+<li><a href="http://dir.salon.com/topics/eat_and_drink/" name="&amp;lid=cover_lnav&amp;pos=text">Eat &amp; Drink</a></li>
+<li><a href="/ent/movies/" name="&amp;lid=cover_lnav&amp;pos=text">The Movie Page</a></li>
+<li><a href="http://dir.salon.com/topics/camille_paglia/" name="&amp;lid=cover_lnav&amp;pos=text">Camille Paglia</a></li>
+<li><a href="http://dir.salon.com/topics/primary_sources/" name="&amp;lid=cover_lnav&amp;pos=text">Primary Sources</a></li>
+<li><a href="/opinion/feature/2008/01/05/bob_watts/" name="&amp;lid=cover_lnav&amp;pos=text">Remembering Bob Watts</a></li>
+<li><a href="/books/awards/2007/12/12/best_books" name="&amp;lid=cover_lnav&amp;pos=text">Salon Book Awards</a></li>
+<li><a href="/books/literary_guide/" name="&amp;lid=cover_lnav&amp;pos=text">Salon's Literary Guide to the World</a></li>
+                        </ul>
+
+                        <h4>Podcasts</h4>
+                        <ul>
+<li><a href="http://dir.salon.com/topics/salon_conversations/" name="&amp;lid=cover_lnav&amp;pos=text">Conversations</a></li>
+                        </ul>
+                        <h4><a href="/wires/" name="&amp;lid=cover_lnav&amp;pos=text">AP Wires</a></h4>
+                </div>
+
+
+
+<div id="corrections" class="sidebar_box">
+	<h3><a href="http://archive.salon.com/letters/corrections/" name="&amp;lid=cover_lnav&amp;pos=text">Corrections</a></h3>
+</div>
+<div id="article_finder" class="sidebar_box">
+	<h3>Article Finder</h3>
+	<ul>
+<li><a href="http://search.salon.com/" name="&amp;lid=cover_lnav&amp;pos=text">Search: All articles</a></li>
+<li><a href="http://dir.salon.com/" name="&amp;lid=cover_lnav&amp;pos=text">By Topic: Salon Directory</a></li>
+<li><a href="http://www.salon.com/archives/date.html" name="&amp;lid=cover_lnav&amp;pos=text">By Date: All articles</a></li>
+	</ul>
+</div>
+<div id="community_sidebar" class="sidebar_box">
+	<h3>Community</h3>
+	<ul>
+		<li><a href="http://letters.salon.com/" name="&amp;lid=cover_lnav&amp;pos=text">Letters to the Editor</a></li>
+		<li><a href="http://tabletalk.salon.com/" name="&amp;lid=cover_lnav&amp;pos=text">Table Talk</a></li>
+		<li><a href="http://www.well.com/" name="&amp;lid=cover_lnav&amp;pos=text">The WELL</a></li>
+	</ul>
+</div>
+<div id="premium_sidebar" class="sidebar_box">
+	<h3>Salon Premium</h3>
+	<ul>
+<li><a href="https://sub.salon.com/" name="&amp;lid=cover_lnav&amp;pos=text">What is Salon Premium </a></li>
+<li><a href="https://sub.salon.com/registration" name="&amp;lid=cover_lnav&amp;pos=text">Join </a></li>
+<li><a href="https://sub.salon.com/login/" name="&amp;lid=cover_lnav&amp;pos=text">Log In</a></li>
+<li><a href="https://sub.salon.com/editaccount/" name="&amp;lid=cover_lnav&amp;pos=text">Edit Your Account</a></li>
+<li><a href="https://sub.salon.com/renew/" name="&amp;lid=cover_lnav&amp;pos=text">Renew</a></li>
+	</ul>
+</div>
+<div id="ways_to_get" class="sidebar_box">
+	<h3>Ways to get Salon</h3>
+	<ul>
+<li><a href="https://sub.salon.com/newsletter/?newsreg&source=cover" name="&amp;lid=cover_lnav&amp;pos=text">E-mail Newsletter</a></li>
+<li><a href="http://www.salon.com/plus/rss/" name="&amp;lid=cover_lnav&amp;pos=text">RSS feeds</a></li>
+<li><a href="http://www.salon.com/plus/mobile/" name="&amp;lid=cover_lnav&amp;pos=text">Salon mobile</a></li>
+<li><a href="http://www.salon.com/premium/downloads/index.html" name="&amp;lid=cover_lnav&amp;pos=text">Download edition</a></li>
+	</ul>
+</div>
+<div id="contact_us" class="sidebar_box">
+	<h3>Contact Us</h3>
+	<ul>
+<li><a href="/help/" name="&amp;lid=cover_lnav&amp;pos=text">Customer Support</a></li>
+<li><a href="/about/letters/" name="&amp;lid=cover_lnav&amp;pos=text">E-mail the Editors</a></li>
+<li><a href="/about/staff/" name="&amp;lid=cover_lnav&amp;pos=text">Staff List</a></li>
+<li><a href="/adsales/" name="&amp;lid=cover_lnav&amp;pos=text">Advertise in Salon</a></li>
+<li><a href="/about/hiring/" name="&amp;lid=cover_lnav&amp;pos=text">Jobs at Salon</a></li>
+	</ul>
+</div>
+<div id="partners" class="sidebar_box">
+	<h3>Partners/Services</h3>
+	<ul>
+<li><a href="http://personals.salon.com/" rel="nofollow" name="&amp;lid=cover_lnav&amp;pos=text">Salon Personals</a></li>
+<li><a href="http://www.orielwines.com/salon/" rel="nofollow" name="&amp;lid=cover_lnav&amp;pos=text">Salon Wine Club</a></li>
+	</ul>
+</div>
+
+
+
+
+
+
+
+                                        <div class="ad_box">
+					<div class='ad_content'>
+				        <script type="text/javascript" language="JavaScript1.1">
+					<!--
+					OAS_AD('Right2');
+					//-->
+				        </script>
+        <noscript><a href="http://judo.salon.com/RealMedia/ads/click_nx.cgi/www.salonmagazine.com/@Right2"><img src="http://judo.salon.com/RealMedia/ads/adstream_nx.cgi/www.salonmagazine.com/@Right2" border="0" alt="" /></a></noscript>
+                        		</div>
+                        </div>
+
+                        <div class="ad_box">
+					<div class='ad_content'>
+				        <script type="text/javascript" language="JavaScript1.1">
+					<!--
+					OAS_AD('x50');
+					//-->
+				        </script>
+        <noscript><a href="http://judo.salon.com/RealMedia/ads/click_nx.cgi/www.salonmagazine.com/@x50"><img src="http://judo.salon.com/RealMedia/ads/adstream_nx.cgi/www.salonmagazine.com/@x50" border="0" alt="" /></a></noscript>
+                        		</div>
+                        </div>
+
+        </div>
+        <!-- ### END COLUMN ONE ### -->
+
+
+	<div class="clearer"></div>
+</div>
+
+
+<!-- ### FOOTER ### -->
+        	<div id="bottom_ads">
+<script type='text/javascript'>
+<!--
+if (/source=yahoo/.test(window.location.search.substring(1))==false) {
+	OAS_AD('Bottom1');
+	OAS_AD('Bottom');
+	OAS_AD('Bottom2');
+}
+//-->
+</script><noscript><a name="&amp;lid=footer&amp;pos=text" href="http://judo.salon.com/RealMedia/ads/click_nx.cgi/www.salonmagazine.com/home.html@Bottom"><img src="http://judo.salon.com/RealMedia/ads/adstream_nx.cgi/www.salonmagazine.com/home.html@Bottom" width="728" height="90" border="0" alt='' /></a></noscript>
+</div>
+
+
+
+
+<div id="footer" class="clearfix">
+	<div id="address">
+	</div>
+	<div id='fine_print'>
+		<ul>
+                        <li><a name="&amp;lid=footer&amp;pos=text" href='/'>Salon</a></li>
+                        <li><a name="&amp;lid=footer&amp;pos=text" href='/about/' rel="nofollow" >About Salon</a></li>
+                        <li><a name="&amp;lid=footer&amp;pos=text" href='/help/' rel="nofollow">Contact &amp; Help</a></li>
+                        <li><a name="&amp;lid=footer&amp;pos=text" href='/letters/corrections/'>Corrections</a></li>
+                        <li><a name="&amp;lid=footer&amp;pos=text" href='/adsales/' rel="nofollow">Advertise in Salon</a></li>
+                        <li><a name="&amp;lid=footer&amp;pos=text" href='http://personals.salon.com/' rel="nofollow">Salon Personals</a></li>
+			<li><a name="&amp;lid=footer&amp;pos=text" href="/about/hiring/">Salon Jobs</a></li>
+                        <li><a name="&amp;lid=footer&amp;pos=text" href='/plus/mobile'>Salon Mobile</a></li>
+                        <li><a name="&amp;lid=footer&amp;pos=text" href='https://sub.salon.com/newsletter/'>Salon Newsletter</a></li>
+                        <li class="last"><a name="&amp;lid=footer&amp;pos=text" href='/plus/rss'>RSS Feeds</a></li>
+		</ul>
+		<ul>
+		<li class="title">Salon Premium:</li>
+                        
+			<li><a name="&amp;lid=footer&amp;pos=text" href='https://sub.salon.com/login/?loginfrom&amp;pos=footer' rel="nofollow">Premium log in</a></li>
+			<li class="last"><a name="&amp;lid=footer&amp;pos=text" href='https://sub.salon.com/?whatis&amp;pos=footer'>What is Salon Premium?</a></li>
+		</ul>
+		<ul>
+                        <li><a name="&amp;lid=footer&amp;pos=text" href='http://dir.salon.com/topics/arts_entertainment/' title="Arts &amp; Entertainment">A &amp; E</a></li>
+                        <li><a name="&amp;lid=footer&amp;pos=text" href='http://dir.salon.com/topics/books/'>Books</a></li>
+                        <li><a name="&amp;lid=footer&amp;pos=text" href='http://dir.salon.com/topics/comics/'>Comics</a></li>
+                        <li>Community: <a name="&amp;lid=footer&amp;pos=text" href='http://tabletalk.salon.com/webx?' style="border-right: 0">Table Talk</a> &amp; <a name="&amp;lid=footer&amp;pos=text" href='http://well.com/'>The WELL</a></li>
+                        <li><a name="&amp;lid=footer&amp;pos=text" href='http://dir.salon.com/topics/mwt/'>Life</a></li>
+                        <li><a name="&amp;lid=footer&amp;pos=text" href='http://dir.salon.com/topics/news/'>News &amp; Politics</a></li>
+                        <li><a name="&amp;lid=footer&amp;pos=text" href='http://dir.salon.com/topics/opinion/'>Opinion</a></li>
+                        <li><a name="&amp;lid=footer&amp;pos=text" href='http://dir.salon.com/topics/sports/'>Sports</a></li>
+                        <li><a name="&amp;lid=footer&amp;pos=text" href='http://dir.salon.com/topics/technology_business/'>Tech &amp; Business</a></li>
+                        <li class="last"><a name="&amp;lid=footer&amp;pos=text" href="http://letters.salon.com/">Letters</a></li>
+		</ul>
+		<ul>
+                        <li><a name="&amp;lid=footer&amp;pos=text" href='/ir/' rel="nofollow">Investor Relations</a></li>
+                        <li><a name="&amp;lid=footer&amp;pos=text" href='/about/policy/' rel="nofollow">Privacy Policy</a></li>
+                        <li class="last"><a name="&amp;lid=footer&amp;pos=text" href='/about/tos/' rel="nofollow">Terms of Service</a></li>
+		</ul>
+		<p id="copyright">Copyright &copy;2008 Salon Media Group, Inc.  Reproduction of material from any Salon pages without written permission is strictly prohibited. SALON&reg; is registered in the U.S. Patent and Trademark Office as a trademark of Salon Media Group Inc.</p>
+
+	</div>
+</div>
+
+<script src="http://images.salon.com/lib/hide_blank_ads.js" type="text/javascript"></script>
+<!--WEBSIDESTORY CODE HBX1.0 (Universal)-->
+<!--COPYRIGHT 1997-2004 WEBSIDESTORY,INC. ALL RIGHTS RESERVED. U.S.PATENT No. 6,393,479B1. MORE INFO:http://websidestory.com/privacy-->
+<script type="text/javascript" language="javascript">
+
+// PARSE QUERY STRING
+var hbx_query_params = new Array;
+var hbx_query_string = window.location.search.substring(1).split("&");
+for (var i=0; i<hbx_query_string.length; i++) {
+	hbx_query_param  = hbx_query_string[i].split("=");
+	hbx_query_params[hbx_query_param[0]] = (hbx_query_param[1]) ? hbx_query_param[1] : '';
+}
+
+var _hbEC=0,_hbE=new Array;function _hbEvent(a,b){b=_hbE[_hbEC++]=new Object();b._N=a;b._C=0;return b;}
+var hbx=_hbEvent("pv");hbx.vpc="HBX0100u";hbx.gn="a.salon.com";
+
+//BEGIN EDITABLE SECTION
+//CONFIGURATION VARIABLES
+hbx.acct="DM540506EPZE38EN3";//ACCOUNT NUMBER(S)
+var hbx_pn_source = hbx_query_params['source'];
+hbx_pn_source = (hbx_pn_source && hbx_pn_source == 'refresh') ? "-" + hbx_pn_source : '';
+hbx.pn="cover" + hbx_pn_source + "";//PAGE NAME(S)
+hbx.mlc="/";//MULTI-LEVEL CONTENT CATEGORY
+hbx.pndef="title";//DEFAULT PAGE NAME
+hbx.ctdef="full";//DEFAULT CONTENT CATEGORY
+
+//OPTIONAL PAGE VARIABLES
+//ACTION SETTINGS
+hbx.fv="";//FORM VALIDATION MINIMUM ELEMENTS OR SUBMIT FUNCTION NAME
+hbx.lt="manual";//LINK TRACKING
+hbx.dlf="n";//DOWNLOAD FILTER
+hbx.dft="n";//DOWNLOAD FILE NAMING
+hbx.elf="n";//EXIT LINK FILTER
+
+//SEGMENTS AND FUNNELS
+hbx.seg="-1,-6,-2,3";//POPULATION GROUP ( SITEPASS )
+hbx.fnl="";//FUNNELS
+
+//CAMPAIGNS
+hbx.cmp="";//CAMPAIGN ID
+hbx.cmpn="";//CAMPAIGN ID IN QUERY
+hbx.dcmp="";//DYNAMIC CAMPAIGN ID
+hbx.dcmpn="";//DYNAMIC CAMPAIGN ID IN QUERY
+hbx.dcmpe="";//DYNAMIC CAMPAIGN EXPIRATION
+hbx.dcmpre="";//DYNAMIC CAMPAIGN RESPONSE EXPIRATION
+hbx.hra="";//RESPONSE ATTRIBUTE
+hbx.hqsr="";//RESPONSE ATTRIBUTE IN REFERRAL QUERY
+hbx.hqsp="";//RESPONSE ATTRIBUTE IN QUERY
+hbx.hlt="";//LEAD TRACKING
+hbx.hla="";//LEAD ATTRIBUTE
+hbx.gp="";//CAMPAIGN GOAL
+hbx.gpn="";//CAMPAIGN GOAL IN QUERY
+hbx.hcn="";//CONVERSION ATTRIBUTE
+hbx.hcv="";//CONVERSION VALUE
+hbx.cp="null";//LEGACY CAMPAIGN
+hbx.cpd="";//CAMPAIGN DOMAIN
+
+//CUSTOM VARIABLES
+hbx.ci="";//CUSTOMER ID
+hbx.hc1=(hbx_query_params['source']) ? hbx_query_params['source'] : "";//CUSTOM 1
+hbx.hc2="37";//CUSTOM 2
+hbx.hc3="";//CUSTOM 3
+hbx.hc4="";//CUSTOM 4
+hbx.hrf="";//CUSTOM REFERRER
+hbx.pec="";//ERROR CODES
+hbx.media="VideoDogPlayer";
+
+//INSERT CUSTOM EVENTS
+
+//END EDITABLE SECTION
+
+//REQUIRED SECTION. CHANGE "YOURSERVER" TO VALID LOCATION ON YOUR WEB SERVER (HTTPS IF FROM SECURE SERVER)
+	</script>
+	<script type="text/javascript" language="javascript1.1" src="http://images.salon.com/lib/hbx.js"></script>
+
+<!--END WEBSIDESTORY CODE-->
+
+
+
+
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1232497-1";
+urchinTracker();
+</script>
+
+
+
+
+
+<!-- ### END FOOTER ### -->
+
+</body>
+</html>
+
+
+
+
+
+
+

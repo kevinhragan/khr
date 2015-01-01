@@ -1,0 +1,259 @@
+<html><head>
+<base href="http://librenix.com/">
+<LINK REL="SHORTCUT ICON" href="/favicon.ico">
+
+<style type="text/css">
+<!--
+A{COLOR: #005099;}
+A:hover{COLOR: #cc3333;TEXT-DECORATION: NONE;}
+ blockquote{margin: 1em 1em .6em 1em; font-style: italic;}
+ H1{font-size: 1.3em; font-weight: normal; margin: 0px;}
+ H2{font-size: 1.3em; font-weight: normal; margin: 0px;}
+ H3{font-size: 1em; font-style: bold; margin: 0px;}
+ body {font-family: Arial, sans-serif;}
+-->
+</STYLE>
+
+<title>Linux system administration and security</title>
+<META NAME="description" CONTENT="Linux Admin Portal: Sysadmin Information"></head>
+
+<body bgcolor=#ffffff link=#005099 vlink=#005099 topmargin=0 leftmargin=0 rightmargin=0 marginwidth=0 marginheight=0>
+
+<center><table width=99% border=0 cellpadding=0>
+<tr><td height=15 nowrap></tr><tr><td width=15% cellpadding=0><a href=/><img src=/logo.gif border=0 alt="Librenix"></a></td>
+<td align=center width=75% cellpadding=0></table>
+
+<center>
+<table width=100% border=0 cellspacing=0 cellpadding=0>
+<tr><td bgcolor=#1166bb height=3 nowrap></tr>
+<tr><td height=12 nowrap>
+<center><font color=#cccccc>
+<a href=/admin100/>Headlines</a> |
+<a href=/linux/>Linux</a> | 
+<a href=/apps/>Apps</a> | 
+<a href=/coding/>Coding</a> | 
+<a href=/bsd/>BSD</a> | 
+<a href=/admin/><font color=#cc3333>Admin</font></a> | 
+<a href=/news/>News</a>
+</tr><tr><td bgcolor=#cccccc height=1 nowrap></tr><tr><td align=right><font color=#555555 size=2><i>Information for Linux System Administration&nbsp;</i></font></tr>
+</table>
+<table border=0 width=75% cellspacing=20><tr>
+<td width=80% valign=top>
+<table width=100% border=0 cellspacing=0><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td>
+
+<H2>Virtual Users, Domains with Postfix, MySQL, SquirrelMail</H2></tr>
+
+<tr><td><table border=0 width=100% cellpadding=0 cellspacing=9><tr><td width=10% valign=center align=center><font size=2 color=#333333><a href=/voteup/?inode=11920><img src=up.gif border=0 alt="Up"></a><br>vote<br><a href=/votedown/?inode=11920><img src=down.gif border=0 alt="Down"></a></font></td><td width=1 bgcolor=#bbbbbb><br></td>
+<td width=90% valign=top></b>
+<table width=90% cellspacing=8 border=0 cellpadding=0><tr><td><font size=3>This document describes how to  install a Postfix mail server that is based on virtual users and domains, i.e. users and domains that are in a MySQL database. I will also demonstrate the installation and configuration of Courier (Courier-POP3, Courier-IMAP), so that Courier can authenticate against the same MySQL database Postfix uses. In addition to that, this tutorial covers the installation of Amavisd, SpamAssassin and ClamAV so that emails will be scanned for spam and viruses. I will also show how to install SquirrelMail as a webmail interface so that users can read and send emails and change their passwords. <a href="http://www.howtoforge.com/virtual-users-domains-postfix-courier-mysql-squirrelmail-mandriva2008.1">read more...</a></font></table></table><tr><td><font size=2 color=#666666><a href="MailLink/?inode=11920">mail this link</a> | <a href="?inode=11920">permapage</a> | score:9972 | </font><font size=2> -falko, April 15, 2008</table><table><tr><td height=8></table>
+<table width=100% border=0 cellspacing=0><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td>
+
+<H2>Set up a Mandriva 2008 Spring Free Server</H2></tr>
+
+<tr><td><table border=0 width=100% cellpadding=0 cellspacing=9><tr><td width=10% valign=center align=center><font size=2 color=#333333><a href=/voteup/?inode=11905><img src=up.gif border=0 alt="Up"></a><br>vote<br><a href=/votedown/?inode=11905><img src=down.gif border=0 alt="Down"></a></font></td><td width=1 bgcolor=#bbbbbb><br></td>
+<td width=90% valign=top></b>
+<table width=90% cellspacing=8 border=0 cellpadding=0><tr><td><font size=3>This is a detailed description about how to  set up a Mandriva 2008 Spring Free (Mandriva 2008.1) server that offers all services needed by ISPs and hosters: Apache web server (SSL-capable), Postfix mail server with SMTP-AUTH and TLS, BIND DNS server, Proftpd FTP server, MySQL server, Dovecot POP3/IMAP, Quota, Firewall, etc. This tutorial is written for the 32-bit version of Mandriva 2008.1, but should apply to the 64-bit version with very little modifications as well. <a href="http://www.howtoforge.com/perfect-server-mandriva-2008.1">read more...</a></font></table></table><tr><td><font size=2 color=#666666><a href="?inode=11905">permapage</a> | score:9968 | </font><font size=2> -falko, April 11, 2008</table><table><tr><td height=8></table>
+<table width=100% border=0 cellspacing=0><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td>
+
+<H2>Set up a Linux Software Firewall with Firestarter</H2></tr>
+
+<tr><td><table border=0 width=100% cellpadding=0 cellspacing=9><tr><td width=10% valign=center align=center><font size=2 color=#333333><a href=/voteup/?inode=11723><img src=up.gif border=0 alt="Up"></a><br>vote<br><a href=/votedown/?inode=11723><img src=down.gif border=0 alt="Down"></a></font></td><td width=1 bgcolor=#bbbbbb><br></td>
+<td width=90% valign=top></b>
+<table width=90% cellspacing=8 border=0 cellpadding=0><tr><td><font size=3>How to use Firestarter to simplify IPtables firewall setup...<br><blockquote>One of the great features included in Linux is the IPtables firewall. Unfortunately, its command-line use is rather complex, and it can be intimidating for even experienced Linux users to configure it. Firestarter is a friendly graphical interface that allows you to configure a software firewall in Linux using the built-in IPtables/IPchains utilities. </blockquote></font></table></table><tr><td><font size=2 color=#666666><a href="?inode=11723">permapage</a> | score:9965 | </font><font size=2> -Ray, February 21, 2008</table><table><tr><td height=8></table>
+<table width=100% border=0 cellspacing=0><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td>
+
+<H2>Scheduled backups with Rsyncbackup</H2></tr>
+
+<tr><td><table border=0 width=100% cellpadding=0 cellspacing=9><tr><td width=10% valign=center align=center><font size=2 color=#333333><a href=/voteup/?inode=11914><img src=up.gif border=0 alt="Up"></a><br>vote<br><a href=/votedown/?inode=11914><img src=down.gif border=0 alt="Down"></a></font></td><td width=1 bgcolor=#bbbbbb><br></td>
+<td width=90% valign=top></b>
+<table width=90% cellspacing=8 border=0 cellpadding=0><tr><td><font size=3>This document describes how to set up and configure rsyncbackup on Debian Etch. Rsyncbackup is a Perl script that cooperates with rsync. It is easy to configure and able to create scheduled backups (partial and incremental backups). <a href="http://www.howtoforge.com/scheduled-backups-with-rsyncbackup-debian-etch">read more...</a></font></table></table><tr><td><font size=2 color=#666666><a href="?inode=11914">permapage</a> | score:9959 | </font><font size=2> -falko, April 13, 2008</table><table><tr><td height=8></table>
+<table width=100% border=0 cellspacing=0><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td>
+
+<H2>Tutorial: LDAP Integration and Migration</H2></tr>
+
+<tr><td><table border=0 width=100% cellpadding=0 cellspacing=9><tr><td width=10% valign=center align=center><font size=2 color=#333333><a href=/voteup/?inode=11911><img src=up.gif border=0 alt="Up"></a><br>vote<br><a href=/votedown/?inode=11911><img src=down.gif border=0 alt="Down"></a></font></td><td width=1 bgcolor=#bbbbbb><br></td>
+<td width=90% valign=top></b>
+<table width=90% cellspacing=8 border=0 cellpadding=0><tr><td><font size=3>Welcome to the next step in studying for the Linux certification exam 301 or just build your skills on Linux systems administration. In this tutorial you’ll  walk though integrating LDAP with your system's logins and applications. Also learn to integrate your server into a foreign Microsoft Active Directory. <a href="http://www.ibm.com/developerworks/linux/edu/l-dw-linux-lpic3305-i.html?S_TACT=105AGX59&amp;S_CMP=GRsite-lnxw16&amp;ca=dgr-lnxw16LPILDAPIntegrate">read more...</a></font></table></table><tr><td><font size=2 color=#666666><a href="?inode=11911">permapage</a> | score:9947 | </font><font size=2> -Ida Momtaheni, April 11, 2008</table><table><tr><td height=8></table>
+<table width=100% border=0 cellspacing=0><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td>
+
+<H2>Install SNV85 DomU at Xen 3.2 CentOS 5.1 or Ubuntu 7.10 Dom0 (64-bit) per Jurgen Keil</H2></tr>
+
+<tr><td><table border=0 width=100% cellpadding=0 cellspacing=9><tr><td width=10% valign=center align=center><font size=2 color=#333333><a href=/voteup/?inode=11910><img src=up.gif border=0 alt="Up"></a><br>vote<br><a href=/votedown/?inode=11910><img src=down.gif border=0 alt="Down"></a></font></td><td width=1 bgcolor=#bbbbbb><br></td>
+<td width=90% valign=top></b>
+<table width=90% cellspacing=8 border=0 cellpadding=0><tr><td><font size=3>Nevada build 85 is the first SNV build implementing Xen 3.1.2 bits. It's well known that straight forward attempts to install SNV85 DomU at Xen 3.2 Linux Dom0 immediately crash due to broken Xen 3.2 backward compatibility.<br><br>Recently Jurgen Keil suggested workaround for this issue providing owners of build 85 an option to load SNV85 DomU and patch DomU's kernel, turning it permanently into running shape at Xen 3.2 Linux Dom0 (64-bit). Note, that Sun patch is scheduled for build 87 and might take 3-4 weeks waiting for ISO image availibilty at sdn.com Jurgen also wrote that he didn't have Xen 3.2 Linux Dom0 (64-bit) to perform testing. That is what,actually, was done by me for CentOS 5.1 and Ubuntu 7.10 Desktop. Installations differs due to CentOS 5.1 doesn't allow to use "pygrub" and requires coping of patched kernel from DomU to Dom0. Brief descriptions for both procedures follow below. <a href="http://bderzhavets.blogspot.com/2008/04/install-snv85-domu-at-xen-3.html">read more...</a></font></table></table><tr><td><font size=2 color=#666666><a href="MailLink/?inode=11910">mail this link</a> | <a href="?inode=11910">permapage</a> | score:9945 | </font><font size=2> -Boris Derzhavets, April 11, 2008</table><table><tr><td height=8></table>
+<table width=100% border=0 cellspacing=0><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td>
+
+<H2>Debian Postfix mail server setup</H2></tr>
+
+<tr><td><table border=0 width=100% cellpadding=0 cellspacing=9><tr><td width=10% valign=center align=center><font size=2 color=#333333><a href=/voteup/?inode=11799><img src=up.gif border=0 alt="Up"></a><br>vote<br><a href=/votedown/?inode=11799><img src=down.gif border=0 alt="Down"></a></font></td><td width=1 bgcolor=#bbbbbb><br></td>
+<td width=90% valign=top></b>
+<table width=90% cellspacing=8 border=0 cellpadding=0><tr><td><font size=3>Postfix is an attempt to provide an alternative to the widely-used Sendmail program. Postfix attempts to be fast, easy to administer,and hopefully secure, while at the same time being sendmail compatible enough to not upset your users.This tutorial will explain how to setup mail server with Postfix + Dovecot + SASL + Squirrel Mail. <a href="http://www.debianadmin.com/debian-mail-server-setup-with-postfix-dovecot-sasl-squirrel-mail.html">read more...</a></font></table></table><tr><td><font size=2 color=#666666><a href="?inode=11799">permapage</a> | score:9941 | </font><font size=2> -gg234, March 14, 2008</table><table><tr><td height=8></table>
+<table width=100% border=0 cellspacing=0><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td>
+
+<H2>fio: A disk IO performance analysis tool</H2></tr>
+
+<tr><td><table border=0 width=100% cellpadding=0 cellspacing=9><tr><td width=10% valign=center align=center><font size=2 color=#333333><a href=/voteup/?inode=11901><img src=up.gif border=0 alt="Up"></a><br>vote<br><a href=/votedown/?inode=11901><img src=down.gif border=0 alt="Down"></a></font></td><td width=1 bgcolor=#bbbbbb><br></td>
+<td width=90% valign=top></b>
+<table width=90% cellspacing=8 border=0 cellpadding=0><tr><td><font size=3>fio is conveniently accessable for Fedora and Debian-based distributions...<br><blockquote>fio was created to allow benchmarking specific disk IO workloads. It can issue its IO requests using one of many synchronous and asynchronous IO APIs, and can also use various APIs which allow many IO requests to be issued with a single API call. You can also tune how large the files fio uses are, at what offsets in those files IO is to happen at, how much delay if any there is between issuing IO requests, and what if any filesystem sync calls are issued between each IO request.</blockquote> <a href="http://www.linux.com/feature/131063">read more...</a></font></table></table><tr><td><font size=2 color=#666666><a href="MailLink/?inode=11901">mail this link</a> | <a href="?inode=11901">permapage</a> | score:9937 | </font><font size=2> -Ray, April 9, 2008</table><table><tr><td height=8></table>
+<table width=100% border=0 cellspacing=0><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td>
+
+<H2>Performance tradeoffs of TCP Selective Acknowledgment</H2></tr>
+
+<tr><td><table border=0 width=100% cellpadding=0 cellspacing=9><tr><td width=10% valign=center align=center><font size=2 color=#333333><a href=/voteup/?inode=11899><img src=up.gif border=0 alt="Up"></a><br>vote<br><a href=/votedown/?inode=11899><img src=down.gif border=0 alt="Down"></a></font></td><td width=1 bgcolor=#bbbbbb><br></td>
+<td width=90% valign=top></b>
+<table width=90% cellspacing=8 border=0 cellpadding=0><tr><td><font size=3>Recently there has been significant discussion of  Linux's TCP SACK implementation, and its weakness within the Linux TCP stack. SACK is an optional feature of TCP necessary for effective use of all available bandwidth of some networks. However, processing this type of acknowledgment can be CPU intensive for the TCP sender, and thus a weakness which can be exploited by a malicious peer.  <a href="http://www.ibm.com/developerworks/linux/library/l-tcp-sack/?ca=dgr-lnxw16LinuxTCPSACK&amp;S_TACT=105AGX59&amp;S_CMP=GR">read more...</a></font></table></table><tr><td><font size=2 color=#666666><a href="?inode=11899">permapage</a> | score:9936 | </font><font size=2> -Ida Momtaheni, April 10, 2008</table><table><tr><td height=8></table>
+<table width=100% border=0 cellspacing=0><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td>
+
+<H2>Automate Fedora 8 installations with NFS and Kickstart</H2></tr>
+
+<tr><td><table border=0 width=100% cellpadding=0 cellspacing=9><tr><td width=10% valign=center align=center><font size=2 color=#333333><a href=/voteup/?inode=11895><img src=up.gif border=0 alt="Up"></a><br>vote<br><a href=/votedown/?inode=11895><img src=down.gif border=0 alt="Down"></a></font></td><td width=1 bgcolor=#bbbbbb><br></td>
+<td width=90% valign=top></b>
+<table width=90% cellspacing=8 border=0 cellpadding=0><tr><td><font size=3>This document describes how to set up an installation environment with kickstart and NFS on Fedora 8. With the resulting system you will be able run unattended Fedora 8 installations on the client systems in your LAN - additionally, you will save lots of Internet bandwidth. The whole client configuration can be included into the kickstart file (especially the post-installation script) so you, the admin, will also save a vast amount of time. <a href="http://www.howtoforge.com/unattended-fedora-installations-with-kickstart-and-nfs">read more...</a></font></table></table><tr><td><font size=2 color=#666666><a href="?inode=11895">permapage</a> | score:9934 | </font><font size=2> -falko, April 8, 2008</table><table><tr><td height=8></table>
+<table width=100% border=0 cellspacing=0><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td>
+
+<H2>Stopping cross-site scripting attacks</H2></tr>
+
+<tr><td><table border=0 width=100% cellpadding=0 cellspacing=9><tr><td width=10% valign=center align=center><font size=2 color=#333333><a href=/voteup/?inode=11891><img src=up.gif border=0 alt="Up"></a><br>vote<br><a href=/votedown/?inode=11891><img src=down.gif border=0 alt="Down"></a></font></td><td width=1 bgcolor=#bbbbbb><br></td>
+<td width=90% valign=top></b>
+<table width=90% cellspacing=8 border=0 cellpadding=0><tr><td><font size=3>Cross-site scripting (XSS) is one of the most common application-level attacks that hackers use to sneak into Web applications. Learn  how hackers launch an attack, what damage it does, how to detect them, and how to prevent your Web site and your visitors from these invasions of privacy. <a href="http://www.ibm.com/developerworks/rational/library/08/0325_segal/index.html?ca=dgr-lnxw16cross-sitescrip&amp;S_TACT=105AGX59&amp;S_CMP=GRsitelnxw16">read more...</a></font></table></table><tr><td><font size=2 color=#666666><a href="?inode=11891">permapage</a> | score:9912 | </font><font size=2> -jmalasko, April 8, 2008</table><table><tr><td height=8></table>
+<table width=100% border=0 cellspacing=0><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td>
+
+<H2>How to install Ubuntu Linux on the decTOP SFF computer</H2></tr>
+
+<tr><td><table border=0 width=100% cellpadding=0 cellspacing=9><tr><td width=10% valign=center align=center><font size=2 color=#333333><a href=/voteup/?inode=11001><img src=up.gif border=0 alt="Up"></a><br>vote<br><a href=/votedown/?inode=11001><img src=down.gif border=0 alt="Down"></a></font></td><td width=1 bgcolor=#bbbbbb><br></td>
+<td width=90% valign=top></b>
+<table width=90% cellspacing=8 border=0 cellpadding=0><tr><td><font size=3><p>I recently bought a <a href="http://www.dataevolution.com/dectop%20info%202.htm">decTOP</a> small form factor (SFF) computer.  My goal was to build a cheap, fanless, quiet, and low power consumption Linux server.  For $99 plus the cheapest available shipping, $40, my machine arrived 11 days after I placed the order.  </p><p>This is a tiny computer, about the size of a Mac Mini. But, because it has no fan, it runs a bit quieter and, with the help of a 1-watt, 366 MHz CPU, consumes only 8 watts.  For comparison, the G4 Mac Mini consumes about 20-30 watts, depending on load.</p><p>The decTOP comes with 128 MB of RAM in its sole SO-DIMM slot and a 10 GB 3.5 inch hard drive.  I understand that it's a simple matter to replace the drive and to upgrade the memory to a maximum of 512MB.</p><p>It also comes with no operating system and the ability to boot only from a USB drive.  This article details the steps I used to build the  USB boot/installation drive and install Ubuntu 6.06 on the decTOP.</p><p>There is another article -- with additional decTOP links -- <a href="http://jsco.org/dectop/">here</a> on installing Ubuntu 6.06 on the decTOP with the aid of a Windows system.  Fortunately ;), I run Mac OS X and Linux (Ubuntu 7.04), so that article didn't work for me.  I did the installation of the Ubuntu 6.06 LTS Server Edition using my Ubuntu Linux box and a 1 GB USB flash drive -- although a 512 MB USB drive should work as well.</p><ol><li> Download the Ubuntu 6.06 server ISO image from the <a href="http://www.ubuntu.com/getubuntu/download">Ubuntu download page</a>.  Depending on your plans for the decTOP, you might want to choose the desktop version.  Unless you have already upgraded your decTOP's memory, however, you'll want to stick with the 6.06 releases.<br><br><li> Install the mbr, mtools, and syslinux packages on the Linux system you'll be using to prepare the USB drive.  If you run Ubuntu or some other Debian-derived system, the following commands may do the work for you.<blockquote>apt-get  install mbr<br>apt-get install mtools<br>apt-get install syslinux</blockquote><li> Partition the USB drive with a single FAT-16 partition.  I used the fdisk 'n' command to make the new primary partition 1. The fdisk 't' command can be used to change the partition type to  FAT-16.  My device name was /dev/sda.<blockquote>fdisk /dev/sda</blockquote><li> Make the FAT-16 partition the active partition.  I used the fdisk 'a' command.<br><br><li> Install a master boot record on the USB drive.<blockquote>install-mbr /dev/sda</blockquote><li> Install syslinux on the USB drive. Note that the USB drive  should not be mounted when you do this. <blockquote>syslinux -s /dev/sda1</blockquote><li> Create a mountpoint and mount the ubuntu ISO image using the loopback device.<blockquote>mkdir /iso<br>mount -o loop -t iso9660 ubuntu.iso /iso</blockquote><li> Create a mountpoint and mount the USB flash drive.<blockquote>mkdir /usb<br>mount /dev/sda1 /usb</blockquote><li> Copy the contents of the ISO image to the USB drive.  This will take some time.<blockquote>cd /iso<br>cp -r . /usb/</blockquote><li> Copy the /usb/dists/dapper directory into a new /usb/dists/stable directory.<blockquote>cd /usb/dists/<br>cp -r dapper/* stable</blockquote><li> Copy several files from /usb/install to the /usb root directory.<blockquote>cp /usb/install/vmlinuz /usb/<br>cp /usb/install/mt86plus /usb/<br>cp /usb/install/initrd.gz /usb/</blockquote><li> Install the following text into a file named syslinux.cfg in the /usb root directory.<blockquote>default vmlinuz<br>append initrd=initrd.gz ramdisk_size=24000 root=/dev/ram rw</blockquote><li> Flush all writes, unmount, and remove the USB drive. After the sync step, wait for all of the data to be written to the USB drive.  <blockquote>sync;sync<br>umount /usb</blockquote><li> Connect the ethernet adapter to the decTOP and connect it to your network to allow automatic configuration of the network interface.  <br><br><li> Insert the USB drive into the decTOP and power it up.  The decTOP should automatically boot from the USB drive and start the Ubuntu installation.<br><br><li> Answer only the first two questions concerning language selection and go to the next step, below.<br><br><li> Press Alt-F2 (hold down the Alt key and press the F2 function key) to open a shell.  Then press enter to start the shell.<br><br><li> Create a /cdrom and a /dev/cdroms directory in the installation ramdisk<blockquote>mkdir /cdrom /dev/cdroms</blockquote><li> Go to the /dev/cdroms directory and build a symlink from /dev/sda1 (that is likely the device name of your USB boot partition) to /dev/cdroms/cdrom0.<blockquote>cd /dev/cdroms<br>ln -s ../sda1/cdrom0</blockquote><li> While still in the shell, mount the USB drive to mimic an installation CD-ROM.<blockquote>mount -t vfat /dev/cdroms/cdrom0 /cdrom</blockquote><li> Return to the installation program with Alt-F1 and continue the installation.</ol><p>From this point, the process should be identical to a routine CD-ROM installation.</p><p>For a grand total of $140 and 8 watts of power consumption, I now have a near-silent Linux server running 24/7.  You can telnet to it <a href="telnet://68.84.19.111/">here</a> and marvel at its blinding speed running a 250,000-sector <a href="http://spacetyrant.com/article-2.html">Space Tyrant</a> game.</p></font></table></table><tr><td><font size=2 color=#666666><a href="MailLink/?inode=11001">mail this link</a> | <a href="?inode=11001">permapage</a> | score:9909 | </font><font size=2> -Ray, August 16, 2007</table><table><tr><td height=8></table>
+<table width=100% border=0 cellspacing=0><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td>
+
+<H2>Tutorial: LDAP Tree Usage</H2></tr>
+
+<tr><td><table border=0 width=100% cellpadding=0 cellspacing=9><tr><td width=10% valign=center align=center><font size=2 color=#333333><a href=/voteup/?inode=11857><img src=up.gif border=0 alt="Up"></a><br>vote<br><a href=/votedown/?inode=11857><img src=down.gif border=0 alt="Down"></a></font></td><td width=1 bgcolor=#bbbbbb><br></td>
+<td width=90% valign=top></b>
+<table width=90% cellspacing=8 border=0 cellpadding=0><tr><td><font size=3>Welcome to the next step in studying for the Linux certification exam 301 or just build your skills on Linux systems administration. In this tutorial you’ll  walk though searching your LDAP tree and using the command-line tool, and learn to set up Microsoft Outlook to query your LDAP tree. <a href="http://www.ibm.com/developerworks/linux/edu/l-dw-linux-lpic3304-i.html?S_TACT=105AGX59&amp;S_CMP=GRsite-lnxw16&amp;ca=dgr-lnxw16LPILDAPUsage">read more...</a></font></table></table><tr><td><font size=2 color=#666666><a href="?inode=11857">permapage</a> | score:9905 | </font><font size=2> -Ida Momtaheni, March 28, 2008</table><table><tr><td height=8></table>
+<table width=100% border=0 cellspacing=0><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td>
+
+<H2>Install Openbravo ERP on Debian Linux</H2></tr>
+
+<tr><td><table border=0 width=100% cellpadding=0 cellspacing=9><tr><td width=10% valign=center align=center><font size=2 color=#333333><a href=/voteup/?inode=11867><img src=up.gif border=0 alt="Up"></a><br>vote<br><a href=/votedown/?inode=11867><img src=down.gif border=0 alt="Down"></a></font></td><td width=1 bgcolor=#bbbbbb><br></td>
+<td width=90% valign=top></b>
+<table width=90% cellspacing=8 border=0 cellpadding=0><tr><td><font size=3>This document describes how to  set up Openbravo ERP (enterprise management system) on Debian Etch. Taken from the Openbravo page: "Openbravo is an open source ERP solution designed specifically for the SME (small to midsize firm). Developed in a web based environment, it includes many robust functionalities which are considered part of the extended ERP: procurement and warehouse management, project and service management, production management, and financial management." <a href="http://www.howtoforge.com/installing-openbravo-erp-on-debian-etch">read more...</a></font></table></table><tr><td><font size=2 color=#666666><a href="?inode=11867">permapage</a> | score:9899 | </font><font size=2> -falko, April 1, 2008</table><table><tr><td height=8></table>
+<table width=100% border=0 cellspacing=0><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td>
+
+<H2>Integrating XCache into PHP5</H2></tr>
+
+<tr><td><table border=0 width=100% cellpadding=0 cellspacing=9><tr><td width=10% valign=center align=center><font size=2 color=#333333><a href=/voteup/?inode=11876><img src=up.gif border=0 alt="Up"></a><br>vote<br><a href=/votedown/?inode=11876><img src=down.gif border=0 alt="Down"></a></font></td><td width=1 bgcolor=#bbbbbb><br></td>
+<td width=90% valign=top></b>
+<table width=90% cellspacing=8 border=0 cellpadding=0><tr><td><font size=3>This guide explains how to  integrate XCache into PHP5 on a Debian Etch system (with Apache2). From the XCache project page: "XCache is a fast, stable PHP opcode cacher that has been tested and is now running on production servers under high load." It's similar to other PHP opcode cachers, such as eAccelerator and APC. <a href="http://www.howtoforge.com/xcache-php5-apache2-debian-etch">read more...</a></font></table></table><tr><td><font size=2 color=#666666><a href="?inode=11876">permapage</a> | score:9896 | </font><font size=2> -falko, April 3, 2008</table><table><tr><td height=8></table>
+<table width=100% border=0 cellspacing=0><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td>
+
+<H2>Manage GRUB with QGRUBEditor</H2></tr>
+
+<tr><td><table border=0 width=100% cellpadding=0 cellspacing=9><tr><td width=10% valign=center align=center><font size=2 color=#333333><a href=/voteup/?inode=11887><img src=up.gif border=0 alt="Up"></a><br>vote<br><a href=/votedown/?inode=11887><img src=down.gif border=0 alt="Down"></a></font></td><td width=1 bgcolor=#bbbbbb><br></td>
+<td width=90% valign=top></b>
+<table width=90% cellspacing=8 border=0 cellpadding=0><tr><td><font size=3>QGRUBEditor is a graphical frontend for managing the GRUB bootloader. By using QGRUBEditor, you do not have to mess around with the GRUB configuration in /boot/grub/menu.lst anymore. This article shows how to install and use QGRUBEditor on Ubuntu 7.10. <a href="http://www.howtoforge.com/managing-grub-with-qgrubeditor-on-ubuntu7.10">read more...</a></font></table></table><tr><td><font size=2 color=#666666><a href="?inode=11887">permapage</a> | score:9892 | </font><font size=2> -falko, April 6, 2008</table><table><tr><td height=8></table>
+<!-- google_ad_section_start(weight=ignore) -->
+<table width=100% border=0 cellspacing=0><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td><font size=3 color=#000000><b>More admin articles...</b></font>
+</table>
+
+<table border=0 width=100% cellpadding=0 cellspacing=0>
+<tr><td width=3% align=center>
+<table cellpadding=5><tr><td align=center>
+</table></td><td width=100% valign=top>
+<table width=100% cellpadding=4 border=0><tr><td>
+<ul><br><li><a href="admin/?nextart=16" title="Next page (older articles)">next page</a></ul></table></td></table>
+<td width=20% valign=top>
+<table width=100% border=0 cellpadding=0 cellspacing=0><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td>
+<script type="text/javascript"><!--
+google_ad_client = "pub-7178433338520521";
+google_alternate_color = "FFFFFF";
+google_ad_width = 120;
+google_ad_height = 90;
+google_ad_format = "120x90_0ads_al";
+google_ad_channel ="6697146253";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "CC3333";
+google_color_url = "005099";
+google_color_text = "000000";
+//--></script>   
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+</tr><tr><td height=20 bgcolor=#ffffff></tr><tr><td height=3 bgcolor=#1166bb></tr>
+<tr><td><font size=3 color=#000000>Selected articles</font></tr><tr><td width=100% valign=top>
+
+<font size=2><br>
+<a href="?inode=644">Graffiti Server Download Page</a><p>
+<a href="?inode=6565">Linux vs. Windows: Why Linux will win</a><p>
+<a href="?inode=6861">Space Tyrant: Multithreading lessons learned on SMP hardware</a><p>
+<a href="?inode=5944">Missing the point of the Mac Mini</a><p>
+<a href="?inode=38">The life cycle of a programmer</a><p>
+<a href="?inode=6297">Space Tyrant: A threaded C game project: First Code</a><p>
+<a href="?inode=4052">MiniLesson: An introduction to Linux in ten commands</a><p>
+<a href="?inode=2312">No, RMS, Linux is not GNU/Linux</a><p>
+<a href="?inode=2000">Why Programmers are not Software Engineers</a><p>
+<a href="?inode=2068">Why software sucks</a><p>
+<a href="?inode=6383">Scripting: A parallel Linux backup script</a><p>
+<a href="?inode=1059">The Real Microsoft Monopoly</a><p>
+<a href="?inode=11723">Set up a Linux Software Firewall with Firestarter</a><p>
+<a href="?inode=3145">Hacker Haiku</a><p>
+<a href="?inode=4047">Tutorial: Introduction to Linux files</a><p>
+<a href="?inode=3501">Mono-culture and the .NETwork effect</a><p>
+<a href="?inode=6758">Apple to Intel move no threat to Linux</a><p>
+<a href="?inode=1953">Shadow.sh: A simple directory shadowing script for Linux</a><p>
+<a href="?inode=7079">Microsoft to push unlicensed users to Linux</a><p>
+<a href="?inode=2747">The Supreme Court is wrong on Copyright Case</a><p>
+<a href="?inode=11001">How to install Ubuntu Linux on the decTOP SFF computer</a><p>
+<a href="?inode=80">Beneficial Computer Viruses</a><p>
+<a href="?inode=11655">Ubuntu 8.04 Preview</a><p>
+<a href="?inode=3477">The Network Computer: An opportunity for Linux</a><p>
+<a href="?inode=2973">Closed Source Linux Distribution Launched</a><p>
+<a href="?inode=21">The short life and hard times of a Linux virus</a><p>
+<a href="?inode=1023">Programming Language Tradeoffs: 3GL vs 4GL</a><p>
+<a href="?inode=895">Download: Linux 3D Client for Starship Traders</a><p>
+<a href="?inode=6240">Space Tyrant: A threaded game server project in C</a><p>
+<a href="?inode=6692">Space Tyrant: A multiplayer network game for Linux</a><p></ul><p>&nbsp;</table>
+<table width=100% cellspacing=0 border=0><tr><td bgcolor=#1166bb height=3></tr>
+<tr><td width=100%><font size=2><center>
+<p><a href="javascript:sidebar.addPanel('Librenix', 'http://librenix.com/moz/','');" title="Click to add Librenix headline sidebar to Firefox or Mozilla">Firefox sidebar</a><center><a href=/?inode=19 title="The structure of Librenix">Site map</a><p>
+<p><a href="/?inode=1" title="... about us, contact info, posting, Privacy, etc">Site info</a>
+<p><a href="/?inode=10" title="Put our headlines on your site">News feed</a>
+<p><a href=/features/>Features</a>
+<p><a href="Login/">Login</a><br>(to post)<p>
+<p><form action=/ method="post">Search<br><input type=text name=find size=8 maxlength=50><br><input type=submit name=submit value=find></form></table></td></table>
+<!-- google_ad_section_end -->
+ </tr><tr><td bgcolor=#ffffff height=1 nowrap></tr><tr><td>
+<script type="text/javascript"><!--
+google_ad_client = "pub-7178433338520521";
+/* 728x15, created 2/6/08 */
+google_ad_slot = "6270750380";
+google_ad_width = 728;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+ </tr><tr><td bgcolor=#ffffff height=1 nowrap></tr></font><font size=2><i><center>&nbsp;<p>
+Articles are owned by their authors. &nbsp; &copy; 2000-2008 Ray Yeargin<br>
+</body></html>

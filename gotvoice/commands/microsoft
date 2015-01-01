@@ -1,0 +1,9 @@
+script locations:
+c:/bin/curtsync.cmd
+c:/bin/mount
+
+# mount network drive
+syntax: http://www.computerhope.com/nethlp.htm
+net use Y: \\butter\curtb kevinr /USER:kevinr
+# curts use
+net use Y: \\butter\curtb [password] /USER:curtb

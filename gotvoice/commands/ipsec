@@ -1,0 +1,3 @@
+# manually add an SA
+# didn't work
+echo add ext-osiris3 ext-osiris2 esp 1111 -m tunnel -E null 0|sudo setckey -c

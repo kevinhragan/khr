@@ -1,0 +1,751 @@
+
+function getCookie(name) {
+	var cookie = " " + document.cookie;
+	var search = " " + name + "=";
+	var setStr = null;
+	var offset = 0;
+	var end = 0;
+	if (cookie.length > 0) {
+		offset = cookie.indexOf(search);
+		if (offset != -1) {
+			offset += search.length;
+			end = cookie.indexOf(";", offset)
+			if (end == -1) {
+				end = cookie.length;
+			}
+			setStr = unescape(cookie.substring(offset, end));
+		}
+	}
+	return(setStr);
+}
+
+
+document.write('<link href="http://www.washingtonpost.com/wp-srv/ssi/globalnav/css/wp_global_nav.css" rel="stylesheet" media="all"/>');
+document.write('<link href="http://www.washingtonpost.com/wp-srv/ssi/globalnav/js/channelnav_v2.css" rel="stylesheet" media="all"/>');
+document.writeln('<link rel="stylesheet" href="http://www.washingtonpost.com/wp-srv/globalnav/styles/globalNav.css"></link>');
+document.writeln('<link rel="stylesheet" href="http://www.washingtonpost.com/wp-srv/wpc/globalnav/css/wpc-global-nav.css"></link>');
+document.write('<style>#wp-nav-box, #ftr-nav {font:normal 11px arial;}</style>');
+
+// JavaScript Document
+
+// *** BEGIN JS FOR DROPDOWN NAV *** -->
+
+var agt = navigator.userAgent.toLowerCase();
+var appVer = navigator.appVersion.toLowerCase();
+var is_safari = (agt.indexOf("safari") != -1);
+var build = appVer.substring(appVer.lastIndexOf("/")+1);
+build = build.substring(0,build.indexOf("."));
+var wp_ie = navigator.appName.toLowerCase().indexOf("explorer") != -1;
+var wp_pc = navigator.userAgent.toLowerCase().indexOf("windows") != -1;
+var wp_mac = navigator.platform.toLowerCase().indexOf("macppc") != -1; 
+
+if (wp_mac && (wp_ie || (is_safari && !(build>86)))) {
+	document.write('<style type="text/css">div.nav-item:hover div.nav-block, div.over div.nav-block {display:none !important;}</style>'); 
+}else {
+	function hideSelect() {
+		if (wp_ie && wp_pc) {
+		if (formObj = document.getElementById("navright")) formObj.style.visibility = 'visible';
+		}
+	}
+	function showSelect() {
+		if (wp_ie && wp_pc) {
+		if (formObj = document.getElementById("navright")) formObj.style.visibility = 'visible';
+		}
+	}
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("navleftpad");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i];
+			if (node.nodeName=="DIV") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+					this.className=this.className.replace(" over", "");
+				}
+				node.onclick=function() {
+					this.className=this.className.replace(" over", "");
+				}
+			}
+		}
+	}
+    	if (document.all&&document.getElementById) {
+		navRoot2 = document.getElementById("navrightpad");
+		for (i=0; i<navRoot2.childNodes.length; i++) {
+			node = navRoot2.childNodes[i];
+			if (node.nodeName=="DIV") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+					this.className=this.className.replace(" over", "");
+				}
+				node.onclick=function() {
+					this.className=this.className.replace(" over", "");
+				}
+			}
+		}
+	}
+	
+}
+setTimeout("startList()",2000);
+}
+
+// *** END JS FOR DROPDOWN NAV ***
+
+function openWin(url)
+{ 
+	var navWin = window.open(url,"NewWin", "scrollbars,toolbar=false,menubar=false,resizable=false,width=740,height=595,top=0,right=1000"); 
+}
+
+var GlobalNavigation = function()
+{
+	this.channel = '';
+	this.timesThrough = 0;
+	this.components = 0;
+	this.setChannel( 'news' );
+}
+GlobalNavigation.LOGO = 1 << 0;
+GlobalNavigation.REGISTRATION = 1 << 1;
+GlobalNavigation.PRINT_EDITION = 1 << 2;
+GlobalNavigation.NAV_BAR = 1 << 3;
+GlobalNavigation.SEARCH_BAR = 1 << 4;
+GlobalNavigation.LINKS = 1 << 5;
+GlobalNavigation.COPYRIGHT = 1 << 6;
+GlobalNavigation.WIDE = 1 << 7;
+
+GlobalNavigation.prototype.setChannel = function( c )
+{
+	this.channel = c;
+	/* Jobs is its own beast */
+	if( this.channel == 'jobs' )
+	{
+		this.components = GlobalNavigation.LOGO 
+						+ GlobalNavigation.PRINT_EDITION
+						+ GlobalNavigation.NAV_BAR
+						+ GlobalNavigation.COPYRIGHT
+						;
+	}
+	else if( this.channel == 'jobs970' )
+	{
+		this.components = GlobalNavigation.LOGO 
+						+ GlobalNavigation.PRINT_EDITION
+						+ GlobalNavigation.NAV_BAR
+						+ GlobalNavigation.COPYRIGHT
+						+ GlobalNavigation.LINKS
+						+ GlobalNavigation.WIDE
+						;
+	}
+	else if( this.channel == 'realestate970' )
+	{
+		this.components = GlobalNavigation.LOGO 
+						+ GlobalNavigation.PRINT_EDITION
+						+ GlobalNavigation.NAV_BAR
+						+ GlobalNavigation.COPYRIGHT
+						+ GlobalNavigation.WIDE
+						;
+	}
+	else if( this.channel == 'article970' || this.channel == 'photo970')
+	{
+		this.components = GlobalNavigation.LOGO 
+						+ GlobalNavigation.REGISTRATION
+						+ GlobalNavigation.PRINT_EDITION
+						+ GlobalNavigation.NAV_BAR
+						+ GlobalNavigation.COPYRIGHT
+						+ GlobalNavigation.LINKS
+						+ GlobalNavigation.SEARCH_BAR
+  						+ GlobalNavigation.WIDE
+						;
+	}
+	
+	else if( this.channel == 'merchandise')
+   {
+       this.components = GlobalNavigation.LOGO
+                       + GlobalNavigation.REGISTRATION
+                       + GlobalNavigation.PRINT_EDITION
+                       + GlobalNavigation.NAV_BAR
+                       + GlobalNavigation.COPYRIGHT
+                       + GlobalNavigation.LINKS
+                         + GlobalNavigation.WIDE
+                       ;
+   } 
+	else if( this.channel == 'weather' || this.channel == 'stockpoint')
+	{
+		this.components = GlobalNavigation.LOGO 
+						+ GlobalNavigation.REGISTRATION
+						+ GlobalNavigation.PRINT_EDITION
+						+ GlobalNavigation.NAV_BAR
+						+ GlobalNavigation.COPYRIGHT
+						+ GlobalNavigation.LINKS
+						+ GlobalNavigation.SEARCH_BAR
+						;
+	}   
+	else
+	{
+		this.components = GlobalNavigation.LOGO 
+						+ GlobalNavigation.REGISTRATION
+						+ GlobalNavigation.PRINT_EDITION
+						+ GlobalNavigation.NAV_BAR
+						+ GlobalNavigation.COPYRIGHT
+						+ GlobalNavigation.LINKS
+						+ GlobalNavigation.SEARCH_BAR
+						+ GlobalNavigation.WIDE
+						;
+	}
+	/* Remove search bar from the following channels */
+	if( ( this.channel == 'cars' ) ||
+      ( this.channel == 'realestate' ) ||
+	  ( this.channel == 'jobs/search' ) ||
+      ( this.channel == 'warrenbrown' ) ||
+      ( this.channel == 'nosearch' ) ||
+      ( this.channel == 'classifieds' ) || ( this.channel == 'rentals' ) || ( this.channel == 'admin' ) || ( this.channel == 'admin/classifieds' ) || ( this.channel == 'admin/merchandise' ) || ( this.channel == 'artsandliving/entertainmentguide' ) 
+    )
+	{
+		this.components = ( this.components ^ ( GlobalNavigation.SEARCH_BAR ) );
+	}
+}
+
+GlobalNavigation.prototype.render = function()
+{
+	this.timesThrough++;
+	if( this.timesThrough == 1 )
+	{
+		return this.getTopNav();
+	}
+	else if( this.timesThrough == 2 )
+	{
+		return this.getBottomNav();
+	}
+	else
+	{
+		return "";
+	}
+}
+GlobalNavigation.prototype.getTopNav = function()
+{
+	var out = "";
+	if( ( this.components & GlobalNavigation.WIDE ) != GlobalNavigation.WIDE )
+	{
+		out += '';
+	}
+	out += '<div id="topNav" class="globalNav">';
+	out += this.getLogoBar();
+	if( ( this.components & GlobalNavigation.NAV_BAR ) == GlobalNavigation.NAV_BAR ) out += this.getNavBar();
+	if( ( this.components & GlobalNavigation.SEARCH_BAR ) == GlobalNavigation.SEARCH_BAR ) out += this.getGrayBar();
+	out += '</div>';
+	out += '<div style="clear:both"></div>';
+	return out;
+}
+GlobalNavigation.prototype.getBottomNav = function()
+{
+	doc = document.location.href
+	if (doc.indexOf("wl/jobs/JS_Login") != -1) top.window.focus();
+	var out = "";
+	out +=' <div style="clear:both"></div>';
+	out += '<div id="bottomNav" class="globalNav" style="border-bottom:0;">';
+	if( ( this.components & GlobalNavigation.SEARCH_BAR ) == GlobalNavigation.SEARCH_BAR ) out += this.getGrayBar();
+	if( ( this.components & GlobalNavigation.LINKS ) == GlobalNavigation.LINKS ) out += this.getPlethoraOfLinks();
+	if( ( this.components & GlobalNavigation.COPYRIGHT ) == GlobalNavigation.COPYRIGHT ) out += this.getBottomStrip();
+	out += '</div>';
+	return out;
+}
+GlobalNavigation.prototype.getLogoBar = function ()
+{
+	var out = "";
+	out += '	';
+	return out;
+	
+}
+GlobalNavigation.prototype.getNavBar = function ()
+{
+	var out = "";
+out += '<div id="wp-nav-box">';
+out += '<div id="navleft">';
+out += '<div id="navleftpad" onMouseOver="hideSelect();" onMouseOut="showSelect();">';
+out += '<div class="nav-item" style="width:44px; margin-right:1px;">';
+out += '<div class="nav-btn"><a href="http://www.washingtonpost.com/?nid=top_news" style="width:42px;"><span class="btn-height" style="width:42px;"><span>News</span></span></a></div>';
+out += '<div class="nav-block">';
+out += '<div style="width:440px;">';
+out += '<div class="nav-block-pad">';
+out += '<ul>';
+out += '<li><a href="http://www.washingtonpost.com/politics/?nid=roll_politics"><span>Politics</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/business/?nid=roll_business"><span>Business</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/education/?nid=roll_education"><span>Education</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/photo/?nid=roll_photovid"><span>Photos &amp; Video</span></a></li>';
+out += '</ul>';
+out += '<ul>';
+out += '<li><a href="http://www.washingtonpost.com/nation/?nid=roll_nation"><span>Nation</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/technology/?nid=roll_tech"><span>Technology</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/kidspost/?nid=roll_kidspost"><span>KidsPost</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/wp-dyn/content/liveonline/?nid=roll_discuss"><span>Discussions</span></a></li>';
+out += '</ul>';
+out += '<ul>';
+out += '<li><a href="http://www.washingtonpost.com/world/?nid=roll_world"><span>World</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/wp-dyn/content/artsandliving/entertainmentnews/?nid=roll_entertain"><span>Entertainment</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/religion/?nid=roll_religion"><span>Religion</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/wp-dyn/content/linkset/2005/04/25/LI2005042500027.html?nid=roll_corrections"><span>Corrections</span></a></li>';
+out += '</ul>';
+out += '<ul>';
+out += '<li><a href="http://www.washingtonpost.com/metro/?nid=roll_metro"><span>Metro</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/health/?nid=roll_health"><span>Health</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/magazine/?nid=roll_postmag"><span>Post Magazine</span></a></li>';
+out += '<li><a href="http://pqasb.pqarchiver.com/washingtonpost/search.html?nid=roll_archives"><span>Archives</span></a></li>';
+out += '</ul>';
+out += '<div class="clearboth"></div>';
+out += '</div>';
+out += '</div>';
+out += '</div>';
+out += '</div>';
+out += '<div class="nav-item" style="float:left; width:64px; margin-right:1px;">';
+out += '<div class="nav-btn"><a href="http://www.washingtonpost.com/politics/?nid=top_politics" style="width:62px;"><span class="btn-height" style="width:62px;"><span>Politics</span></span></a></div>';
+out += '<div class="nav-block">';
+out += '<div style="width:330px;">';
+out += '<div class="nav-block-pad">';
+out += '<ul>';
+out += '<li><a href="http://www.washingtonpost.com/politics/?nid=roll_politicsblogs"><span>Politics Blogs</span></a></li>';
+out += '<li><a href="http://projects.washingtonpost.com/congress/?nid=roll_housesenvote"><span>House/Senate Votes</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/wp-dyn/content/politics/administration/?nid=roll_whitehouse"><span>White House</span></a></li>';
+out += '</ul>';
+out += '<ul>';
+out += '<li><a href="http://www.washingtonpost.com/congress/?nid=roll_congress"><span>Congress</span></a></li>';
+out += '<li><a href="http://projects.washingtonpost.com/2008-presidential-candidates/?nid=roll_08campaign"><span>2008 Campaign</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/wp-dyn/content/politics/special/?nid=roll_indepth"><span>In Depth</span></a></li>';
+out += '</ul>';
+out += '<ul>';
+out += '<li><a href="http://www.washingtonpost.com/wp-dyn/content/politics/polls/?nid=roll_polls"><span>Polls</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/wp-dyn/content/politics/fedpage/?nid=roll_intheloop"><span>In the Loop</span></a></li>';
+out += '<li style="padding-left:5px;display:inline;"><a href="http://www.washingtonpost.com/wp-dyn/content/metro/special/8/?nid=roll_dcpolitics" style="display:inline; width:18px;">DC</a>&nbsp;|&nbsp;<a href="http://www.washingtonpost.com/wp-dyn/content/metro/special/2?nid=roll_mdpolitics" style="display:inline;width:18px;">MD</a>&nbsp;|&nbsp;<a href="http://www.washingtonpost.com/wp-dyn/content/metro/special/7?nid=roll_vapolitics" style="display:inline;width:18px;">VA</a></li>';
+out += '</ul>';
+out += '<div class="clearboth"></div>';
+out += '</div>';
+out += '</div>';
+out += '</div>';
+out += '</div>';
+out += '<div class="nav-item" style="float:left; width:64px; margin-right:1px;">';
+out += '<div class="nav-btn"><a href="http://www.washingtonpost.com/wp-dyn/content/opinions/?nid=top_opinions" style="width:62px;"><span class="btn-height" style="width:62px;"><span>Opinions</span></span></a></div>';
+out += '<div class="nav-block">';
+out += '<div style="width:220px;">';
+out += '<div class="nav-block-pad">';
+out += '<ul>';
+out += '<li><a href="http://www.washingtonpost.com/wp-dyn/content/opinions/?nid=roll_opinionsmain"><span>Opinions Main</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/wp-dyn/content/outlook/?nid=roll_outlook"><span>Sunday Outlook</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/wp-dyn/content/opinions/feedback/?nid=roll_feedback"><span>Feedback</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/wp-srv/community/groups/front.html?nid=roll_discussions"><span>Discussion Groups</span></a></li>';
+out += '</ul>';
+out += '<ul>';
+out += '<li><a href="http://www.washingtonpost.com/wp-srv/opinions/cartoonsandvideos/toles_main.html?nid=roll_toles"><span>Toles Cartoons</span></a></li>';
+out += '<li><a href="http://newsweek.washingtonpost.com/onfaith/?nid=roll_onfaith"><span>On Faith</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/wp-srv/opinions/cartoonsandvideos/telnaes/telnaes_main.html?nid=roll_telnaes"><span>Telnaes Animations</span></a></li>';
+out += '<li><a href="http://newsweek.washingtonpost.com/postglobal/?nid=roll_postglobal"><span>PostGlobal</span></a></li>';
+out += '</ul>';
+out += '<div class="clearboth"></div>';
+out += '</div>';
+out += '</div>';
+out += '</div>';
+out += '</div>';
+out += '<div class="nav-item" style="float:left; width:52px; margin-right:1px;">';
+out += '<div class="nav-btn"><a href="http://www.washingtonpost.com/metro/?nid=top_local" style="width:50px;"><span class="btn-height" style="width:50px;"><span>Local</span></span></a></div>';
+out += '<div class="nav-block">';
+out += '<div style="width:440px;">';
+out += '<div class="nav-block-pad">';
+out += '<ul>'
+out += '<li><a href="http://www.washingtonpost.com/metro/?nid=roll_metro"><span>Metro News</a></li>'
+out += '<li><a href="http://www.washingtonpost.com/weather/?nid=roll_weather"><span>Weather</a></li>'
+out += '<li><a href="http://www.washingtonpost.com/wp-srv/local-explorer/?nid=roll_localexplorer"><span>Local Explorer</span></a></li>'
+out += '<li><a href="http://www.washingtonpost.com/jobs/?nid=roll_jobs"><span>Jobs</span></a></li>'
+out += '</ul><ul style="padding-left:5px;">'
+out += '<li><a href="http://www.washingtonpost.com/wp-dyn/content/education/?nid=roll_education">Education</a></li>'
+out += '<li><a href="http://www.washingtonpost.com/wp-dyn/content/metro/traffic/index.html?nid=roll_traffic">Traffic</a></li>'
+out += '<li><a href="http://www.washingtonpost.com/wp-srv/metro/specials/theguide/?nid=roll_commguides">Community Guides</a></li>'
+out += '<li><a href="http://www.washingtonpost.com/cars/?nid=roll_cars">Cars</a></li></ul><ul>'
+out += '<li><div style="padding-left:5px;"><a href="http://www.washingtonpost.com/wp-dyn/content/metro/dc/index.html?nid=roll_dclocal" style="display:inline;width:18px;">DC</a>&nbsp;|&nbsp;<a href="http://www.washingtonpost.com/wp-dyn/content/metro/md/index.html?nid=roll_mdlocal" style="display:inline;width:18px;">MD</a>&nbsp;|&nbsp;<a href="http://www.washingtonpost.com/wp-dyn/content/metro/va/index.html?nid=roll_valocal" style="display:inline;width:18px;">VA</a></div></li>'
+out += '<li><a href="http://www.washingtonpost.com/wp-dyn/content/metro/crime/index.html?nid=roll_crime"><span>Crime</span></a></li>'
+out += '<li><a href="http://www.washingtonpost.com/wp-dyn/content/print/community/index.html?nid=roll_extras"><span>The Extras</span></a></li>'
+out += '<li><a href="http://www.washingtonpost.com/realestate/?nid=roll_realestate"><span>Real Estate</span></a></li></ul><ul>'
+out += '<li><a href="http://www.washingtonpost.com/wp-srv/metro/metro_columnists.html?nid=roll_localcolblogs"><span>Columns/Blogs</span></a></li>'
+out += '<li><a href="http://www.washingtonpost.com/wp-dyn/content/metro/obituaries/index.html/?nid=roll_obituaries"><span>Obituaries</span></a></li>'
+out += '<li><a href="http://www.washingtonpost.com/wp-dyn/content/business/localbusiness/index.html?nid=roll_localbus"><span>Local Business</span></a></li>'
+out += '<li><a href="http://yellowpages.washingtonpost.com/?nid=roll_yellowpages"><span>Yellow Pages</span></a></li></ul>'
+out += '<div class="clearboth"></div>';
+out += '</div>';
+out += '</div>';
+out += '</div>';
+out += '</div>';
+out += '<div class="nav-item" style="float:left; width:57px; margin-right:1px;">';
+out += '<div class="nav-btn"><a href="http://www.washingtonpost.com/sports/?nid=top_sports" style="width:55px;"><span class="btn-height" style="width:55px;"><span>Sports</span></span></a></div>';
+out += '<div class="nav-block" style="left:-45px;">';
+out += '<div style="width:440px;">';
+out += '<div class="nav-block-pad">';
+out += '<ul>';
+out += '<li><a href="http://www.washingtonpost.com/wp-srv/sports/redskins/longterm/2005/front/skinsindex.html?nid=roll_redskins"><span>Redskins</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/wp-dyn/content/sports/dcunited/?nid=roll_dcunited"><span>D.C. United</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/wp-srv/sports/columns-blogs/?nid=roll_sportscolblogs"><span>Columns/Blogs</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/wp-dyn/content/sports/index/nfl/index.html?nid=roll_nfl"><span>NFL</span></a></li>';
+out += '</ul>';
+out += '<ul>';
+out += '<li><a href="http://www.washingtonpost.com/nationals/?nid=roll_nats"><span>Nationals</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/capitals/?nid=roll_caps"><span>Capitals</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/wp-dyn/content/sports/colleges/football/index.html?nid=roll_college_football"><span>College Football</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/wp-dyn/content/sports/index/nhl/?nid=roll_nhl"><span>NHL</span></a></li>';
+out += '</ul>';
+out += '<ul>';
+out += '<li><a href="http://www.washingtonpost.com/wizards/?nid=roll_wiz"><span>Wizards</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/highschools/?nid=roll_hs"><span>High Schools</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/wp-dyn/content/sports/colleges/?nid=roll_localcoll"><span>Local Colleges</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/mlb/?nid=roll_mlb"><span>MLB</span></a></li>';
+out += '</ul>';
+out += '<div class="clearboth"></div>';
+out += '</div>';
+out += '</div>';
+out += '</div>';
+out += '</div>';
+out += '<div class="nav-item" style="float:left; width:93px; margin-right:1px;">';
+out += '<div class="nav-btn"><a href="http://www.washingtonpost.com/wp-dyn/content/artsandliving/?nid=top_artsliving" style="width:91px;"><span class="btn-height" style="width:91px;"><span>Arts &amp; Living</span></span></a></div>';
+out += '<div class="nav-block" style="left:-215px;">';
+out += '<div style="width:550px;">';
+out += '<div class="nav-block-pad">';
+out += '<ul>';
+out += '<li><a href="http://www.washingtonpost.com/style/?nid=roll_style"><span>Style</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/movies/?nid=roll_movies"><span>Movies</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/travel/?nid=roll_travel"><span>Travel</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/fashion/?nid=roll_fashbeauty"><span>Fashion &amp; Beauty</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/horoscopes/?nid=roll_horo"><span>Horoscopes</span></a></li>';
+out += '</ul>';
+out += '<ul>';
+out += '<li><a href="http://www.washingtonpost.com/cityguide/?nid=roll_cityguide"><span>City Guide</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/television/?nid=roll_tv"><span>Television</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/wp-dyn/content/artsandliving/books/?nid=roll_books"><span>Books</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/home/?nid=roll_homegarden"><span>Home &amp; Garden</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/comics/?nid=roll_comics"><span>Comics</span></a></li>';
+out += '</ul>';
+out += '<ul>';
+out += '<li><a href="http://www.washingtonpost.com/wp-dyn/content/artsandliving/entertainmentnews/?nid=roll_entnews"><span>Entertainment News</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/food/?nid=roll_food"><span>Food &amp; Dining</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/museums/?nid=roll_museums"><span>Museums</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/theater/?nid=roll_theaterdance"><span>Theater &amp; Dance</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/crosswords/?nid=roll_crosswords"><span>Crosswords</span></a></li>';
+out += '</ul>';
+out += '<div class="clearboth"></div>';
+out += '</div>';
+out += '</div>';
+out += '</div>';
+out += '</div>';
+out += '<div class="nav-item" style="float:left; width:76px; margin-right:1px;">';
+out += '<div class="nav-btn"><a href="http://www.washingtonpost.com/cityguide?nid=top_cityguide" style="width:74px;"><span class="btn-height" style="width:74px;"><span>City Guide</span></span></a></div>';
+out += '<div class="nav-block">';
+out += '<div style="width:230px;">';
+out += '<div class="nav-block-pad">';
+out += '<ul>';
+out += '<li><a href="http://www.washingtonpost.com/wp-srv/cityguide/dc-restaurant-guide.html?nid=roll_findrest"><span>Find Restaurants</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/wp-srv/cityguide/dc-events-activities.html?nid=roll_findlocalevent"><span>Find Local Events</span></a></li>';
+out += '</ul>';
+out += '<ul>';
+out += '<li><a href="http://www.washingtonpost.com/wp-srv/cityguide/dc-movies-theaters.html?nid=roll_findmovies"><span>Find Movies</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/wp-srv/cityguide/visitors-guide/index.html?nid=roll_visitorguide"><span>Visitors Guide</span></a></li>';
+out += '</ul>';
+out += '<ul>';
+out += '<li><a href="http://www.washingtonpost.com/wp-srv/cityguide/dc-clubs-bars.html?nid=roll_findbarclub"><span>Find Bars &amp; Clubs</span></a></li>';
+out += '<li><a href="http://blog.washingtonpost.com/goingoutgurus/?nid=roll_gurus"><span>Going Out Gurus</span></a></li>';
+out += '</ul>';
+out += '<div class="clearboth"></div>';
+out += '</div>';
+out += '</div>';
+out += '</div>';
+out += '</div>';
+out += '</div>';
+out += '</div>';
+out += '<div id="navright">';
+out += '<div id="navrightpad" onMouseOver="hideSelect();" onMouseOut="showSelect();">';
+out += '<div class="nav-item" style="width:45px; margin-right:1px;">';
+
+
+if (getCookie('WPATC') && (getCookie('WPATC').indexOf('C=0') != -1 || getCookie('WPATC').indexOf('C=2') != -1)) {
+    // see careerbuilder
+out += '<div class="nav-btn"><a href="javascript:cbIntercept.execute()" style="width:43px;"><span class="btn-height" style="width:43px;"><span>Jobs</span></span></a></div><div class="nav-block"><div style="width:330px;"><div class="nav-block-pad" style="width:330px;"><a href="javascript:cbIntercept.execute()" style="width:330px;display:inline;"><span>Search Jobs</span></a><div class="clearboth"></div></div></div></div>';
+
+ 
+} else {
+	// see local jobs
+out += '<div class="nav-btn"><a href="http://www.washingtonpost.com/wl/jobs/home/?nid=top_jobs" style="width:43px;"><span class="btn-height" style="width:43px;"><span>Jobs</span></span></a></div><div class="nav-block"><div style="width:330px;"><div class="nav-block-pad"><ul><li><a href="http://www.washingtonpost.com/wl/jobs/home?nid=roll_findajob"><span>Find a Job</span></a></li><li><a href="http://www.washingtonpost.com/wl/jobs/EU_Select?nid=roll_postajob"><span>Post a Job</span></a></li></ul><ul><li><a href="http://www.washingtonpost.com/wl/jobs/Content?Content=/Career_Advice/experts.htm&nav=jobstop"><span>Get Expert Advice</span></a></li><li><a href="http://www.washingtonpost.com/wl/jobs/EU_Login?nid=roll_emplogin"><span>Employer Login</span></a></li></ul><div class="clearboth"></div></div></div></div>'; 
+
+
+	}
+	
+
+out += '</div>';
+out += '<div class="nav-item" style="float:left; width:45px; margin-right:1px;">';
+out += '<div class="nav-btn"><a href="http://www.washingtonpost.com/wp-dyn/content/cars/?nid=top_cars" style="width:43px;"><span class="btn-height" style="width:43px;"><span>Cars</span></span></a></div>';
+out += '<div class="nav-block" style="left:-46px;">';
+out += '<div style="width:330px;">';
+out += '<div class="nav-block-pad">';
+out += '<ul>';
+out += '<li><a href="http://www.washingtonpost.com/wp-dyn/content/cars/buy/?nid=roll_buyacar"><span>Buy a Car</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/wp-dyn/content/cars/sell/?nid=roll_sellacar"><span>Sell a Car</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/wp-dyn/content/cars/experts/?nid=roll_expertadvice"><span>Experts &amp; Advice</span></a></li>';
+out += '</ul>';
+out += '<ul>';
+out += '<li><a href="http://www.washingtonpost.com/wp-srv/cars/buy/usedcarspecials.html?nid=roll_dealerspecial"><span>Dealer Specials</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/wp-dyn/content/cars/coupons/?nid=roll_coupon"><span>Coupons</span></a></li>';
+out += '</ul>';
+out += '<div class="clearboth"></div>';
+out += '</div>';
+out += '</div>';
+out += '</div>';
+out += '</div>';
+out += '<div class="nav-item" style="float:left; width:87px; margin-right:1px;">';
+out += '<div class="nav-btn"><a href="http://www.washingtonpost.com/wp-dyn/content/realestate/?nid=top_realestate" style="width:85px;"><span class="btn-height" style="width:85px;"><span>Real Estate</span></span></a></div>';
+out += '<div class="nav-block" style="left:-92px;">';
+out += '<div style="width:330px;">';
+out += '<div class="nav-block-pad">';
+out += '<ul>';
+out += '<li><a href="http://www.washingtonpost.com/wp-dyn/content/realestate/buy/?nid=roll_buyhome"><span>Buy a Home</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/wp-dyn/content/realestate/sell/?nid=roll_sellhome"><span>Sell a Home</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/ac2/wp-dyn/admin/homepricereports?includePage=/jsp/hsales/html/advancedSearch.jsp?nid=roll_propvalues"><span>Property Values</span></a></li>';
+out += '</ul>';
+out += '<div class="clearboth"></div>';
+out += '</div>';
+out += '</div>';
+out += '</div>';
+out += '</div>';
+out += '	<div class="nav-item" style="float:left; width:64px; margin-right:1px;">';
+out += '<div class="nav-btn"><a href="http://www.washingtonpost.com/wp-dyn/content/rentals/?nid=top_rentals" style="width:62px;"><span class="btn-height" style="width:62px;"><span>Rentals</span></span></a></div>';
+out += '<div class="nav-block" style="left:-180px;">';
+out += '<div style="width:330px;">';
+out += '<div class="nav-block-pad">';
+out += '<ul>';
+out += '<li><a href="http://www.washingtonpost.com/wp-dyn/content/rentals/findarental/?nid=roll_findrental"><span>Find a Rental</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/wp-dyn/content/rentals/rentyourplace/?nid=roll_rentplace"><span>Rent Your Place</span></a></li>';
+out += '</ul>';
+out += '<div class="clearboth"></div>';
+out += '</div>';
+out += '</div>';
+out += '</div>';
+out += '</div>';
+out += '<div class="nav-item" style="float:left; width:83px; margin-right:1px;">';
+out += '<div class="nav-btn"><a href="http://www.washingtonpost.com/wp-adv/shopping/front.html?nid=top_shopping?nid=top_shopping" style="width:83px;"><span class="btn-height" style="width:83px;"><span>Shopping</span></span></a></div>';
+out += '<div class="nav-block" style="left:-245px;">';
+out += '<div style="width:330px;">';
+out += '<ul>';
+out += '<li><a href=" http://www.washingtonpost.com/wp-adv/shopping/front.html?nid=roll_shopnew"><span>Shop New</span></a></li>';
+out += '<li><a href="http://www.washingtonpost.com/wp-srv/dealsdiscount/index.html?nid=roll_dealsdiscounts"><span>Deals &amp; Discounts</span></a></li>';
+out += '<li><a href="http://blog.washingtonpost.com/shoptoit/?nid=roll_shopperblog"><span>Shopper Blog</span></a></li>';
+out += '</ul>';
+out += '<ul>';
+out += '<li><a href="http://www.washingtonpost.com/wp-adv/shopping/used/front.html?nid=roll_shopused"><span>Shop Used</span></a></li>';
+out += '<li><a href="http://commerce.washingtonpost.com/wp-adv/shopping/shoppingAdEntry.html?nid=roll_sellstuff"><span>Sell Your Stuff</span></a></li>';
+out += '<li><a href="http://commerce.washingtonpost.com/wp-adv/classifieds/search/petsForm.html?nid=roll_pets"><span>Pets</span></a></li>';
+out += '</ul>';
+out += '<div class="clearboth"></div>';
+out += '</div>';
+out += '</div>';
+out += '</div>';
+out += '</div>';
+out += '</div>';
+out += '</div>';
+out += '</div>';
+	return out;
+};
+GlobalNavigation.prototype.getWPLogo = function ()
+{
+	var out = "";
+	out += '		<div class="logo"><a href="http://www.washingtonpost.com/?nav=globaltop"><img src="http://media.washingtonpost.com/wp-srv/article/pieces/wpLogo.gif" width="250" height="42" border="0" alt="" /></a></div>';
+	return out;
+}
+GlobalNavigation.prototype.getRegistration = function ()
+{
+	if( typeof Registration == 'undefined' )
+	{
+		return '<div class="registrationFiller"><b></b></div><div class="registration"><b></b></div>';
+	}
+	var reg = new Registration();
+	var out = "";
+	out += '		<div class="registrationFiller"><b></b></div>';
+	out += '		<div class="registration">';
+	if( reg.isSignedIn() )
+	{
+		out += '			<div id="signedIn">';
+		out += '				<div class="greeting">';
+		out += '					Hello ' + reg.getUserName() ;
+		out += '				</div>';
+		out += '				<div class="link">';
+		out += '					<a href="http://www.washingtonpost.com/ac2/wp-dyn?node=admin/registration/manage&destination=manage&nextstep=gather">Edit Profile</a>';
+		out += '					|';
+		out += '					<a href="http://www.washingtonpost.com/ac2/wp-dyn?node=admin/registration/login&destination=logout&nextstep=confirm">Sign Out</a>';
+		out += '				</div>';
+		out += '			</div>';
+	}
+	else
+	{
+		out += '			<div id="signedOut">';
+		out += '				<div style="float:left;"></div>';
+		out += '				<div class="signIn">';
+		out += '				<b><a href="http://www.washingtonpost.com/ac2/wp-dyn?node=admin/registration/register&destination=login&nextstep=gather&application=reg30-globalnav&applicationURL=http://www.washingtonpost.com">Sign In</a></b>';
+		out += '				|';
+		out += '				<a href="http://www.washingtonpost.com/ac2/wp-dyn?node=admin/registration/register&destination=register&nextstep=gather&application=reg30-globalnav&applicationURL=http://www.washingtonpost.com">Register Now</a>';
+		out += '				</div>';
+		out += '			</div>';
+	}
+	out += '		</div>';
+	return out;
+}
+GlobalNavigation.prototype.getPrintEdition = function ()
+{
+	var out = "";
+	out += '		<div class="printEdition">';
+	out += '			<a href="http://www.washingtonpost.com/wp-dyn/content/print/?nav=globetop">PRINT EDITION</a> | <a href="http://washpost.com/wpnihomepage?nav=globetop">Subscribe to</a> | <a href="http://www.washingtonpost.com/wp-srv/registration/postpoints/">PostPoints</a>';
+	out += '			<a href="http://washpost.com/wpnihomepage?nav=globetop"><img src="http://media.washingtonpost.com/wp-srv/article/pieces/twpLogo_125x20.gif" width="125" height="20" alt="The Washington Post" border="0" style="position:relative;top:4px;"/></a>';
+	out += '		</div>';
+	return out;
+}
+GlobalNavigation.prototype.getChannels = function ()
+{
+	var out = "";
+	out += '		<div class="channels">';
+	out += '		</div>';
+	return out;
+}
+GlobalNavigation.prototype.getFeatures = function ()
+{
+	var out = "";
+	out += '		<div class="features">';
+	out += '		</div>';
+	return out;
+}
+GlobalNavigation.prototype.getClassifieds = function()
+{
+	var out = "";
+	out += '		<div class="classifieds">';
+
+	out += '		</div>';
+	return out;
+}
+
+function clearGlobalNavSearchField(formName) {
+	var searchTextField = eval("document."+formName+".keywords");
+	if (searchTextField.value == "Try Our New Search")
+		{
+		searchTextField.value = "";
+		}
+	searchTextField.className = '.wp-input-black';
+}
+
+GlobalNavigation.prototype.getGrayBar = function()
+{	
+
+	var out = "";
+	typeof alreadyCalled == 'undefined'? out+='' : out+='<div style="width:970px; height:1px; overflow:hidden; font-size:0; background:#000;"></div>' ;
+	var formName = "";
+	typeof alreadyCalled == 'undefined'?formName = "searchform1":formName ="searchform2";
+	alreadyCalled = true;
+	var ie = document.getElementById?true:false;
+	ie ? formSize=27 : formSize=24 ;
+	out += '	<div class="grayBar" style="border-top:0;">';
+
+	out += '<div class="wp_header_container">' ;
+	out += '<div class="wp_generic_search">' ;
+	out += '<div class="searchlabel">SEARCH:</div>' ;
+	out += '<form name="'+formName+'" action="http://www.washingtonpost.com/cgi-bin/search99.pl" method="post">' ;
+	out += '<input type="hidden" value="news" name="searchsection">' ;
+	out += '<div class="radio1"><input type="radio" name="searchdatabase" value="news" style="width:13px; height:13px; padding:0; margin:0;" checked></div>' ;
+	out += '<div class="radio1txt">washingtonpost.com</div>' ;
+	out += '<div class="radio2" style="left:425px;"><input type="radio" name="searchdatabase" value="websearch" style="width:13px; height:13px; padding:0; margin:0;"></div>' ;
+	out += '<div class="radio2txt" style="left:441px; padding-left:1px;">Web</div>' ;
+	var clearFormName = "clearGlobalNavSearchField('"+formName+"');";
+	out += '<div class="keywords"><input type="text" style="width:205px;" name="keywords" value="Try Our New Search" onfocus="'+clearFormName+'" class="wp-input-gray"></div>' ;
+	out += '<div class="gobtn"><input type="image" width="24" height="26" alt="Go" src="http://media.washingtonpost.com/wp-srv/ssi/globalnav/gr/go_btn.gif" border="0" valign="bottom"></div>' ;
+	// out += '<div class="sponsor"><img src="http://www.washingtonpost.com/wp-srv/yahoo/articleIcon_yahoo_165x15.gif" width="202" border="0" height="15" alt="Powered by Yahoo! Search"/></div>' ;
+	out += '<div class="sponsor" style="top:5px; left:466px;"><img src="http://media.washingtonpost.com/wp-srv/google/google-nav-search-127x22.gif" border="0" width="127" height="22" alt="Powered by Google"/></div>' ;
+	out += '</form>' ;
+	out += '<div class="top20" style="left:600px;"><span style="padding:0 6px;">|</span> <a href="http://pqasb.pqarchiver.com/washingtonpost/search.html">Search Archives</a></div>' ;
+	out += '</div>' ;
+	out += '</div>' ;
+
+	out += '	</div>';
+	return out;
+}
+
+GlobalNavigation.prototype.getPlethoraOfLinks = function()
+{
+	var out = "";
+		out += '<div id="ftr-nav">';
+			out += '<div id="ftr-nav-pad">';
+				out += '<div class="lft">';
+					out += '<a href="http://www.washingtonpost.com?hpid=bottomnav">News</a> | <a href="http://www.washingtonpost.com/wp-dyn/content/politics/?hpid=bottomnav">Politics</a> | <a href="http://www.washingtonpost.com/wp-dyn/content/opinions/?hpid=bottomnav">Opinions</a> | <a href="http://www.washingtonpost.com/wp-dyn/content/metro/?hpid=bottomnav">Local</a> | <a href="http://www.washingtonpost.com/wp-dyn/content/sports/?hpid=bottomnav">Sports</a> | <a href="http://www.washingtonpost.com/wp-dyn/content/artsandliving/?hpid=bottomnav">Arts &amp; Living</a> | <a href="http://www.washingtonpost.com/wp-srv/cityguide/?hpid=bottomnav">City Guide</a>';
+				out += '</div>';
+				out += '<div class="rt">';
+					out += '<a href="http://www.washingtonpost.com/wl/jobs/home?hpid=bottomnav">Jobs</a> | <a href="http://www.washingtonpost.com/wp-dyn/content/cars/?hpid=bottomnav">Cars</a> | <a href="http://www.washingtonpost.com/wp-dyn/content/realestate/?hpid=bottomnav">Real Estate</a> | <a href="http://www.washingtonpost.com/wp-dyn/content/rentals/?hpid=bottomnav">Rentals</a> | <a href="http://www.washingtonpost.com/wp-adv/shopping/front.html?hpid=bottomnav">Shopping</a>';
+				out += '</div>';
+				out += '<div class="clearbothplus"></div>';
+			out += '</div>';
+		out += '</div>';
+out+='	<div id="wp_footer_container">';
+out+='		<p id="wp_sitelinks">'; 
+out+='			<span class="title"><a href="http://www.washingtonpost.com">washingtonpost.com:</a></span>'; 
+out+='			<a href="http://www.washingtonpost.com/wp-adv/mediacenter/html/about_welcome.html">About Us</a> <span class="wp_pipe">|</span>'; 
+out+='			<a href="http://www.washingtonpost.com/wl/jobs/JobSearchServlet?featuredemployer=53">Work for Us</a> <span class="wp_pipe">|</span>'; 
+out+='			<a href="http://www.washingtonpost.com/wp-adv/mediakit/adinfo/">Advertisers</a> <span class="wp_pipe">|</span>'; 
+out+='			<a href="http://www.washingtonpost.com/wp-srv/contents/">Site Map</a> <span class="wp_pipe">|</span>';
+out+='			<a href="http://www.washingtonpost.com/ac2/wp-dyn/nsStatic">Search Terms</a> <span class="wp_pipe">|</span>';
+out+='			<a href="http://www.washingtonpost.com/wp-srv/topicpages/">Topics Index</a> <span class="wp_pipe">|</span>';
+out+='			<a href="http://www.washingtonpost.com/wp-srv/guide/setashome.htm">Make Us Your Home Page</a> <span class="wp_pipe">|</span>'; 
+out+='			<a href="http://www.mywashingtonpost.com/">mywashingtonpost.com</a> <span class="wp_pipe">|</span>';
+out+='			<a href="http://www.washingtonpost.com/wp-srv/contents/devices.htm">Mobile</a> <span class="wp_pipe">|</span>';
+out+='			<a href="http://www.washingtonpost.com/wp-dyn/rss/index.html">RSS</a> <span class="wp_pipe">|</span>';
+out+='			<a href="http://www.washingtonpost.com/widgets/">Widgets</a><br>';
+out+='			<span class="title">The Washington Post:</span>'; 
+out+='			<a href="http://washpost.com/wpnihomepage"><b>Subscribe</b></a> <span class="wp_pipe">|</span>'; 
+out+='			<a href="http://www.washingtonpost.com/subscriberservices">Subscriber Services</a> <span class="wp_pipe">|</span>'; 
+out+='			<a href="http://adsite.washpost.com/">Advertisers</a> <span class="wp_pipe">|</span>'; 
+out+='			<a href="http://thewashingtonpost.newspaperdirect.com">Electronic Edition</a> <span class="wp_pipe">|</span>'; 
+out+='			<a href="http://www.washingtonpost.com/buyphotos">Online Photo Store</a> <span class="wp_pipe">|</span>'; 
+out+='			<a href="http://washingtonpoststore.com/">The Washington Post Store</a> <span class="wp_pipe">|</span>'; 
+out+='			<a href="http://www.washingtonpost.com/wp-srv/post/natweekly/">National Weekly</a><br>'; 
+out+='			<span class="title">The Washington Post Company:</span>'; 
+out+='			<a href="http://www.washpostco.com/index.htm">Information and Other Post Co. Websites</a>'; 
+out+='		</p>';
+	return out;
+}
+
+GlobalNavigation.prototype.getBottomStrip = function()
+{
+	var nowDate = new Date();
+	var thisYear = nowDate.getFullYear();
+	var out = "";
+	
+out+='		<p id="wp_copyright" style="padding-left:0; padding-right:0;">';
+out+='			<span style="padding-left:10px;"><a href="http://www.washingtonpost.com/wp-srv/interact/longterm/talk/copy.htm?nav=globebot">&copy; Copyright</a> 1996-'+thisYear ; 
+out+='				The Washington Post Company <span class="wp_pipe">|</span>';
+out+='			<a href="http://www.washingtonpost.com/wp-srv/interact/longterm/talk/members.htm?nav=globebot">User Agreement and Privacy Policy</a> <span class="wp_pipe">|</span>'; 
+out+='			<a href="http://www.washingtonpost.com/wp-srv/contents/permissions.htm?nav=globebot">Rights and Permissions</a></span>';
+out+='		</p>';
+out+='	</div>';
+	return out;
+}
+
+var _gnpost = new GlobalNavigation();
+function placeChannelNav(channel)
+{
+	if( channel != null ) _gnpost.setChannel( channel );
+	document.writeln( _gnpost.render() );
+}
+
+// THE FOLLOWING CODE PLACES A UNIVERSAL PERSISTENT COOKIE RESIDENT ON USERS' MACHINES
+var upc_url = new String(document.location.href) ;
+
+// if (upc_url.indexOf(".washingtonpost.com") > -1)
+if (upc_url.indexOf(".washingtonpost.com") > -1)
+{
+  c = document.cookie; 
+  var pos = c.indexOf("WPNIUCID"); 
+  if (pos == -1) 
+  {
+    d = new Date(); 
+    i = "WPNI"+ d.getTime() +"."+ Math.round(Math.random()*10000); 
+    d.setTime(d.getTime() + 31104000000); 
+    document.cookie = "WPNIUCID="+ i + 
+                      "; expires="+ d.toGMTString() + 
+                      "; path=/"+ 
+                      "; domain=.washingtonpost.com";
+  }
+}

@@ -1,0 +1,17 @@
+# constructed partly from memory; please edit in any steps missed
+
+echo "net.ipv4.conf.default.forwarding=1" >> /etc/sysctl.conf
+shutdown extra ports by removing packages:
+lpr, nfs-common, portmap, pidentd
+remove root login over ssh
+add extra user accounts
+install sudo
+# linux ipsec howto good guide
+aptitude install racoon ipsec-tools ethtool
+edit /etc/racoon/racoon.conf /etc/racoon/psk.txt
+edit /etc/ipsec-tools.conf
+edit /etc/network/interfaces to hard set interface settings:
+    iface eth0 inet static
+        pre-up /usr/sbin/ethtool -s eth0 duplex full speed 100 autoneg off
+        address 209.245.176.14
+

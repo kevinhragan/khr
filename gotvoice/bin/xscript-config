@@ -1,0 +1,32 @@
+echo nagios stanzas:
+echo 
+
+for i
+do 
+    # put the "-wb" where it belongs   
+#    wb=$(echo $i |sed 's/\([^-]*\)\(.*\)/\1-wb\2/')
+    wb=$(echo $i |sed 's/\(.*\)\(-.*\)/\1-wb\2/')
+    echo "define service{
+        use                             transcription           
+        service_description             ${i}_queue
+        check_command                   check_nrpe!${wb}_queue
+}"
+    echo
+    echo "define service{
+        use                             transcription           
+        service_description             ${i}_timeout
+        check_command                   check_nrpe!${wb}_timeout
+}"
+
+done
+
+echo slackware commands for /etc/nrpe.cfg 
+for i
+do
+    # put the "-wb" where it belongs   
+#	wb=$(echo $i |sed 's/\([^-]*\)\(.*\)/\1-wb\2/')
+    wb=$(echo $i |sed 's/\(.*\)\(-.*\)/\1-wb\2/')
+    echo "command[${wb}_queue]=/usr/local/nagios/libexec/check_transcription_vendor.sh -v $wb
+command[${wb}_timeout]=/usr/local/nagios/libexec/check_transcription_vendor_timeouts.sh -v $wb"
+    echo
+done

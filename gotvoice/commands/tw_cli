@@ -1,0 +1,20 @@
+# lingo: unit = logical drive, port = physical drive
+
+maint remove c0 px
+
+info c0 
+
+/c0/p0 export
+
+/c0 rescan
+
+# if new drive gets added into new unit
+/c0/ux del
+
+# this adds it into existing raid unit
+maint rebuild c0 u0 px
+
+
+
+# create a unit from new drive (why?)
+/c0 add type=single disk=3

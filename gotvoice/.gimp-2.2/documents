@@ -1,0 +1,12 @@
+# GIMP documents
+# 
+# This file will be entirely rewritten every time you quit the gimp.
+
+(document "file:///tmp/image001.jpg")
+(document "file:///tmp/image002.jpg")
+(document "file:///tmp/widget_comment_no_1.JPG")
+(document "file:///tmp/Outlook.jpg")
+(document "file:///tmp/image003.jpg")
+(document "file:///tmp/ole0.bmp")
+
+# end of documents

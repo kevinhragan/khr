@@ -1,0 +1,989 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <script type="text/javascript">
+  var eeTimerStart = new Date().getTime();
+  var eeTimerCnt = 0;
+  var eeAdsLoaded = 0;
+  var ourMs = 0;
+  var adMs = 0;
+  
+  function eeEncode(str)
+  {
+     str = escape(str);
+     str = str.replace('+', '%2B');
+     str = str.replace('%20', '+');
+     str = str.replace('*', '%2A');
+     str = str.replace('/', '%2F');
+     str = str.replace('@', '%40');
+     return str;
+  }
+  
+
+  function endEETimer()
+  {
+      if (++eeTimerCnt == 4) {
+         ourMs = (new Date().getTime() - eeTimerStart);
+         eeTimerStart = new Date().getTime();
+      
+      } 
+      if (eeTimerCnt == 5 && eeAdsLoaded == 1) {
+         adMs = (new Date().getTime() - eeTimerStart);
+         eeTimerStart = new Date().getTime();
+      }
+      if (eeTimerCnt == 6) {
+         var omnitureMs = (new Date().getTime() - eeTimerStart);
+         var img = document.createElement("img");
+         img.src="/pageLoaded.jsp?url=" + eeEncode(document.location.href) + 
+                 "&isNew=0" +
+                 "&adMs=" + adMs + "&ourMs=" + ourMs + "&omnitureMs=" + omnitureMs + 
+                 "&isVS=1" + 
+                 "&isUsingOptVS1=0" + 
+                 "&isUsingCDN=0"; 
+         
+
+         document.body.appendChild(img)
+
+      }
+  }
+  
+  </script>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="shortcut icon" href="/images/ee.ico" type="image/x-icon" />
+
+<!-- import the base ee.css -->
+<style type="text/css" media="all">@import "http://css.experts-exchange.com/css/base_8820cdaacc5fee136635a98f39a29802.css";</style>
+<style type="text/css" media="all">@import "http://css.experts-exchange.com/xp/css/base_a4dfea14576db5ea44d8cdaadd8d3826.css";</style>
+<style type="text/css" media="all">@import "http://css.experts-exchange.com/css/component_94663622cff046e1dd8f2d34a1271fe2.css";</style>
+<style type="text/css" media="all">@import "http://css.experts-exchange.com/xp/css/component_97335dd7baec9ae29fceb1eace14c99c.css";</style>
+<style type="text/css" media="all">@import "http://css.experts-exchange.com/css/formFactory_fd807e85939eecc0475e5624114754d4.css";</style>
+<style type="text/css" media="all">@import "http://css.experts-exchange.com/xp/css/formFactory_88f4cae93b40140e2f2866a5a35f0e0e.css";</style>
+<style type="text/css" media="all">@import "http://css.experts-exchange.com/xp/css/button_0a5330f610c5f605b5e15c2c4078c156.css";</style>
+<style type="text/css" media="all">@import "http://css.experts-exchange.com/xp/css/jsp/viewQuestion_ab978944588aa418ff9ab325dd77c3da.css";</style>
+<style type="text/css" media="all">@import "http://css.experts-exchange.com/xp/css/include/infoBox_225b77325534d5688d38edee6857379b.css";</style>
+<style type="text/css" media="all">@import "http://css.experts-exchange.com/css/include/suggestedResults_1f5fab52b739848a08bf5b630e689bd8.css";</style>
+<style type="text/css" media="all">@import "http://css.experts-exchange.com/xp/css/include/zoneHeader_7b1ad65143a14063adda39b747a9ab9f.css";</style>
+<style type="text/css" media="all">@import "http://css.experts-exchange.com/css/include/question_62437b7baafb78046f73eb7cf2e3250e.css";</style>
+<style type="text/css" media="all">@import "http://css.experts-exchange.com/xp/css/include/question_54cfa15cc2a3b875442e28edb44aae9c.css";</style>
+<style type="text/css" media="all">@import "http://css.experts-exchange.com/css/include/collapsibleList2_ab8c62260c0d032423295bd2aeaa5d7d.css";</style>
+<style type="text/css" media="all">@import "http://css.experts-exchange.com/xp/css/include/collapsibleList2_30e10e4c2d5915e2f70ab51a8ebee6c5.css";</style>
+<style type="text/css" media="all">@import "http://css.experts-exchange.com/xp/css/include/allZones_c5aa7823ac42e88d6baef0c4ae3fb6e4.css";</style>
+<style type="text/css" media="all">@import "http://css.experts-exchange.com/xp/css/include/rootTAHeader_f36cbbb574be3d5e40dcbf3b963d354f.css";</style>
+<style type="text/css" media="all">@import "http://css.experts-exchange.com/css/include/questionList_d077ed0a21f2f6cb71178c6cd61058b7.css";</style>
+<style type="text/css" media="all">@import "http://css.experts-exchange.com/xp/css/include/questionList_70dc28d6ede1290a93a23843aed59469.css";</style>
+<style type="text/css" media="all">@import "http://css.experts-exchange.com/xp/css/include/searchForAnswers_e4bb067ef169425724e0ddb26ea9211c.css";</style>
+<style type="text/css" media="all">@import "http://css.experts-exchange.com/xp/css/include/topSearchAskExplore_704c588c04e71624f60984d3783f8700.css";</style>
+<style type="text/css" media="all">@import "http://css.experts-exchange.com/css/include/viewSolution_ec47eac07f18c243b05f2209480f77df.css";</style>
+<style type="text/css" media="all">@import "http://css.experts-exchange.com/xp/css/include/viewSolution_22d456e8d7820cf1c5ff415075b858d5.css";</style>
+<style type="text/css" media="all">@import "http://css.experts-exchange.com/xp/css/include/ranks_f3cef96018d8568c6f7762824a67e957.css";</style>
+<style type="text/css" media="all">@import "http://css.experts-exchange.com/css/include/zoneAd2_0af1f074c8c42ff316c295385fb643a1.css";</style>
+<style type="text/css" media="all">@import "http://css.experts-exchange.com/css/include/eeAd_1a43e781c9dbfd72a1637275a0020417.css";</style>
+<style type="text/css" media="all">@import "http://css.experts-exchange.com/css/include/outsideBookmarks_831b511b8c2818736ca3f225ef90d9a4.css";</style>
+<style type="text/css" media="all">@import "http://css.experts-exchange.com/xp/css/include/outsideBookmarks_7ad9948b2e800a9d03a06a7e160525c1.css";</style>
+<style type="text/css" media="all">@import "http://css.experts-exchange.com/xp/css/include/viewQuestionPage20_190818b5c2bcd1ebfff8734d6bb401c6.css";</style>
+<style type="text/css" media="all">@import "http://css.experts-exchange.com/xp/css/include/questionStats_1d8d262b25768fffc301ca981744d7e5.css";</style>
+<script src="http://js.experts-exchange.com/scripts/eeSubs_3707194eaf57b2b402b059387600e967.js" type="text/javascript"></script>
+  <script src="http://js.experts-exchange.com/scripts/translationOptions_8785c99bf0f5c87580a9ebc38754cd0b.js" type="text/javascript"></script>
+<title>'SetEnv', perhaps mis-spelled or defined by a module not included in the server configuration : module, apache, defined, configuration, included </title>
+</head>
+
+<script src="http://js.experts-exchange.com/scripts/s_code_14738493f31e9bd92f18a9e16b6c4097.js" type="text/javascript"></script> <body class="">
+
+<iframe src="about:blank" style="display: none;" id="minimizeFrame"></iframe>
+ <script type="text/javascript">
+  function minimize(id, minimize) {
+     document.getElementById("minimizeFrame").src = "/minimize.jsp?id=" + id + "&minimize=" + minimize;
+     document.getElementById(id).style.display = minimize ? "none" : "block";
+     document.getElementById(id + "_MIN").style.display = minimize ? "block" : "none";
+  }
+ </script>
+<div id="minWidth"></div>
+ <div class="outerBodyWrap viewQuestionJSP">
+  <div class="bodyWrap">
+  <div id="outerWrap">
+    <div class="innerWrap">
+<div class="ontopBanner">
+  <div id="headerAdvertisementDivNoJump">
+<div id="headerAdvertisementDiv">
+  <script type="text/javascript">
+    document.write('<p>loading advertisement ...</p>');
+  </script>
+  </div>
+</div>
+  <p>Advertisement</p>
+</div>
+<div id="pageHeader">
+        <!-- top options -->
+        <span id="compDt">April 15, 2008 11:02am pdt</span>
+<div id="compPgHrLo"><a href="/"  style="background-image:url(/xp/images/pageHeaderLogo3.gif);">Experts Exchange</a></div>
+<div id="compPgHrL"><ul><li><a href="/"><div class="t2i" style="background: url(http://t2i.experts-exchange.com/t/43-50.png) no-repeat;width:23px;height:5px;"></div></a></li>
+<li><a href="/support.jsp"><div class="t2i" style="background: url(http://t2i.experts-exchange.com/t/44-50.png) no-repeat;width:42px;height:5px;"></div></a></li>
+<li><a href="/help.jsp"><div class="t2i" style="background: url(http://t2i.experts-exchange.com/t/291002-50.png) no-repeat;width:22px;height:7px;"></div></a></li>
+<li><a href="login.jsp?redirectURL=%2FSoftware%2FServer_Software%2FWeb_Servers%2FApache%2FQ_22010802.html"><div class="t2i" style="background: url(http://t2i.experts-exchange.com/t/45-50.png) no-repeat;width:25px;height:5px;"></div></a></li></ul>
+</div><div style=".clear"></div>
+<div id="compPgHrNav"><ul class="ulloggedOut">
+<li class="compPgHrNavHm" id="compPgHrNavC"><a href="/" ><span>Home</span></a></li>
+<li class="compPgHrNavWIW"><a href="/whyItWorks.jsp"><span>Why It Works</span></a></li>
+<li class="compPgHrNavAZ"><a href="/allTopics.jsp"><span>All Zones</span></a></li>
+<li class="compPgHrNavT"><a href="/testimonials.jsp"><span>Testimonials</span></a></li><div class="clearLeft"></div>
+</ul><div class="compPgHrNavBm"></div></div>
+<!-- zones navigation would be a change to the components spreadsheet.  For now, including the personas file. -->
+<div id="compZnNav"><a id="compZnNavCont" class="next" onmouseup="zoneScroller.toggle()"></a><div id="compZnNavCl"><ul id="compZnNavF">
+<li class="firstChild" id="r5297"><div class="root5297"><a href="/Microsoft/"><span>Microsoft</span></a></div></li>
+<li class="nCur" id="r5349"><div class="root5349"><a href="/Apple/"><span>Apple</span></a></div></li>
+<li class="nCur" id="r5374"><div class="root5374"><a href="/Internet/"><span>Internet</span></a></div></li>
+<li class="nCur" id="r5624"><div class="root5624"><a href="/Gamers/"><span>Gamers</span></a></div></li>
+<li class="nCur" id="r5375"><div class="root5375"><a href="/Digital_Living/"><span>Digital Living</span></a></div></li>
+<li class="nCur" id="r5377"><div class="root5377"><a href="/Virus_and_Spyware/"><span>Virus &amp; Spyware</span></a></div></li>
+<li class="nCur" id="r5625"><div class="root5625"><a href="/Hardware/"><span>Hardware</span></a></div></li>
+<li class="current" id="r3062"><div class="root3062"><a href="/Software/"><span>Software</span></a></div></li>
+<li class="nCur" id="r5379"><div class="root5379"><a href="/ITPro/"><span>ITPro</span></a></div></li>
+<li class="nCur" id="r5380"><div class="root5380"><a href="/Developer/"><span>Developer</span></a></div></li>
+</ul><ul id="compZnNavL"><li class="nCur" id="r5381"><div class="root5381"><a href="/Storage/"><span>Storage</span></a></div></li>
+<li class="nCur" id="r5382"><div class="root5382"><a href="/OS/"><span>OS</span></a></div></li>
+<li class="nCur" id="r5383"><div class="root5383"><a href="/Database/"><span>Database</span></a></div></li>
+<li class="nCur" id="r5384"><div class="root5384"><a href="/Security/"><span>Security</span></a></div></li>
+<li class="nCur" id="r5628"><div class="root5628"><a href="/Programming/"><span>Programming</span></a></div></li>
+<li class="nCur" id="r5385"><div class="root5385"><a href="/Web_Development/"><span>Web Development</span></a></div></li>
+<li class="nCur" id="r5626"><div class="root5626"><a href="/Networking/"><span>Networking</span></a></div></li>
+<li class="nCur" id="r5627"><div class="root5627"><a href="/Other/"><span>Other</span></a></div></li>
+</ul></div></div>
+<script type="text/javascript">jsImport('com.ee.list.ScrollableList');</script><script type="text/javascript">var zoneScroller = new ScrollableList('compZnNav', 1,50 );</script>
+<div id="compPgHrSrch" class="">
+     <form class="formFactory" action="http://search.experts-exchange.com/simpleSearch.jsp" method="get" id="topSearchbox" onsubmit="postAsycOmnitureGoogleSearch('topSearch1');">
+     <input type="text" name="q" value="Enter Your Search Terms" class="textInput" id="gsearchBox" onfocus="clearSearchBox(gsearchBox, 'Enter Your Search Terms');" />
+<input type="hidden" name="searchSubmit" value="1"/><div class="bTypeButton bSizeSmall bXPColorSmallDefault"><button class="bTextFIND" type="submit"><div class="t2i" style="background: url(http://t2i.experts-exchange.com/t/46-50.png) no-repeat;width:22px;height:14px;"></div></button></div><div class="clear"></div>
+      <input type="hidden" name="cid" value="315" />
+<input type="hidden" name="redirectURL" value="/" />
+<input type="radio" id="topSearch1" name="gSearch" value="1" checked="checked" class="radio"/>
+<label for="topSearch1">Google Search</label>
+<input type="radio" id="topSearch0" name="gSearch" value="0" class="radio"/>
+<label for="topSearch0">EE Search</label>
+</form>
+     <div class="advancedSearchLink"><a href="http://search.experts-exchange.com/advancedSearch.jsp" rel="nofollow"><div class="t2i" style="background: url(http://t2i.experts-exchange.com/t/287006-50.png) no-repeat;width:47px;height:7px;"></div></a></div>
+   </div><a href="/Community_Support/Announcements/#browseZones" id="compAnnounce">Announcements</a>
+        <a href="/contactUs.jsp?department=5#onlineCustomerService" id="compFeedback">Feedback</a>
+</div>
+      
+<div id="breadCrumb">
+        <ul>
+<li><a href="/">Home</a></li>
+<li><a href="/Software/">Software</a></li>
+<li><a href="/Software/Server_Software/">Server Software</a></li>
+<li><a href="/Software/Server_Software/Web_Servers/">Web Servers</a></li>
+<li><a href="/Software/Server_Software/Web_Servers/Apache/">Apache</a></li>
+<li class="currentPage">'SetEnv', perhaps mis-spelled or defined by a module not included i...</li>
+</ul>
+</div>
+<div id="pageRight"><div class="c cb cF5 compLgnBoxNormal" id="compLgnBox">
+<table class="h"><tr><td class="l"></td><td><span class="mlb"></span>
+       <div class="t2i" style="background: url(http://t2i.experts-exchange.com/t/313246-50.png) no-repeat;width:93px;height:20px;"></div></td><td class="r"></td></tr></table><div class="bc"><div class="b">
+<form method="post" action="/login.jsp" onsubmit="return submitOnce();"><label for="componentmsuLoginName">Username or Email</label><input type="text" id="componentmsuLoginName" name="msuLoginName" value="" />
+<label for="componentmsuPassword">Password</label><input type="password" id="componentmsuPassword" name="msuPassword" value="" />
+<div id="submit"><div class="rememberMe"><label for="componentmsuRememberMe">Remember Me</label>
+<input type="checkbox" id="componentmsuRememberMe" name="msuRememberMe" class="checkbox" /></div>
+<input type="hidden" name="redirectURL" value="/Software/Server_Software/Web_Servers/Apache/Q_22010802.html" />
+<input type="hidden" name="msuLoginSubmit" value="1"/><div class="bTypeButton bSizeSmall bXPColorSmallDefault"><button class="bTextLOGIN" type="submit"><div class="t2i" style="background: url(http://t2i.experts-exchange.com/t/64-50.png) no-repeat;width:28px;height:14px;"></div></button></div></div></form>
+<ul>
+<li><a rel="nofollow" href="https://secure.experts-exchange.com/register.jsp?rsid=30&srid=YLDawvvfvBW5FwAe28WIbA%3D%3D&redirectURL=%2FSoftware%2FServer_Software%2FWeb_Servers%2FApache%2FQ_22010802.html&cid=343&qpid=38">Sign Up</a></li>
+<li><a href="/forgotPassword.jsp">Forgot Password?</a></li>
+</ul>
+</div></div><table class="f"><tr><td class="l"></td><td>&nbsp;</td><td class="r"></td></tr></table>
+</div>
+<div id="compNwQst"><a class="newQuestionWizardButton" href="newQuestionWizard.jsp"></a></div>
+<div id="compStartFreeTrial"><a href="https://secure.experts-exchange.com/register.jsp?rsid=130&srid=YLDawvvfvBW5FwAe28WIbA%3D%3D&redirectURL=%2FSoftware%2FServer_Software%2FWeb_Servers%2FApache%2FQ_22010802.html&cid=372&qpid=38">Sign Up Now</a></div>
+<div id="componentTileBAdDivContainer"><div id="componentTileBAdDiv"></div></div>
+<div class="c cb cF5 cnh" id="compSky">
+<table class="h"><tr><td class="l"></td><td>&nbsp;</td><td class="r"></td></tr></table><div class="bc"><div class="b">
+<p>Advertisement</p>
+<div id="componentSkyScraperAdDiv"></div></script>
+</div></div><table class="f"><tr><td class="l"></td><td>&nbsp;</td><td class="r"></td></tr></table>
+</div>
+<div class="c" id="compTE">
+<table class="h"><tr><td class="l"></td><td><span class="TEg"></span>
+       <div class="t2i" style="background: url(http://t2i.experts-exchange.com/t/18217-50.png) no-repeat;width:77px;height:19px;"></div></td><td class="r"></td></tr></table><div class="bc"><div class="b">
+<div class="timeframe yearly">
+    <div class="t2i" style="background: url(http://t2i.experts-exchange.com/t/67-50.png) no-repeat;width:29px;height:12px;"></div></div>
+<ol>
+<li><div class="summary"><span class="name lo">1. ravenpl&nbsp;</span><span class="rank ">132,904</span></div></li>
+<li><div class="summary"><span class="name lo">2. giltjr&nbsp;</span><span class="rank ">37,087</span></div></li>
+<li><div class="summary"><span class="name lo">3. hernst42&nbsp;</span><span class="rank ">29,700</span></div></li>
+<li><div class="summary"><span class="name lo">4. routinet&nbsp;</span><span class="rank ">27,286</span></div></li>
+<li><div class="summary"><span class="name lo">5. Nopius&nbsp;</span><span class="rank ">20,750</span></div></li>
+<li><div class="summary"><span class="name lo">6. ahoffmann&nbsp;</span><span class="rank ">17,849</span></div></li>
+<li><div class="summary"><span class="name lo">7. shakoush...&nbsp;</span><span class="rank ">17,075</span></div></li>
+<li><div class="summary"><span class="name lo">8. hielo&nbsp;</span><span class="rank ">14,650</span></div></li>
+<li><div class="summary"><span class="name lo">9. nplib&nbsp;</span><span class="rank ">11,500</span></div></li>
+<li><div class="summary"><span class="name lo">10. ramazanyich&nbsp;</span><span class="rank ">10,880</span></div></li>
+<li><div class="summary"><span class="name lo">11. Squinky&nbsp;</span><span class="rank ">10,750</span></div></li>
+<li><div class="summary"><span class="name lo">12. jasonsbytes&nbsp;</span><span class="rank ">10,180</span></div></li>
+<li><div class="summary"><span class="name lo">13. PeturIng...&nbsp;</span><span class="rank ">9,730</span></div></li>
+<li><div class="summary"><span class="name lo">14. RQuadling&nbsp;</span><span class="rank  rankup">9,445</span></div></li>
+<li><div class="summary"><span class="name lo">15. samri&nbsp;</span><span class="rank  rankdown">9,332</span></div></li>
+</ol>
+<div class="bTypeA bSizeMedium bXPColorMediumDefault"><a class="bTextHallOfFame" href="/hallOfFame.jsp"><div class="t2i" style="background: url(http://t2i.experts-exchange.com/t/66-50.png) no-repeat;width:72px;height:16px;"></div></a></div><div class="timeframe overall">
+    <div class="t2i" style="background: url(http://t2i.experts-exchange.com/t/65-50.png) no-repeat;width:34px;height:12px;"></div></div>
+<ol>
+<li><div class="summary"><span class="name lo">1. caterham...&nbsp;</span><span class="rank ">548,833</span></div></li>
+<li><div class="summary"><span class="name lo">2. ravenpl&nbsp;</span><span class="rank ">463,028</span></div></li>
+<li><div class="summary"><span class="name lo">3. ahoffmann&nbsp;</span><span class="rank ">378,952</span></div></li>
+<li><div class="summary"><span class="name lo">4. samri&nbsp;</span><span class="rank ">307,949</span></div></li>
+<li><div class="summary"><span class="name lo">5. hernst42&nbsp;</span><span class="rank ">187,052</span></div></li>
+<li><div class="summary"><span class="name lo">6. giltjr&nbsp;</span><span class="rank ">180,672</span></div></li>
+<li><div class="summary"><span class="name lo">7. yuzh&nbsp;</span><span class="rank ">177,513</span></div></li>
+<li><div class="summary"><span class="name lo">8. ramazanyich&nbsp;</span><span class="rank ">177,377</span></div></li>
+<li><div class="summary"><span class="name lo">9. periwinkle&nbsp;</span><span class="rank ">159,257</span></div></li>
+<li><div class="summary"><span class="name lo">10. sleep_fu...&nbsp;</span><span class="rank ">131,179</span></div></li>
+<li><div class="summary"><span class="name lo">11. Nopius&nbsp;</span><span class="rank ">117,853</span></div></li>
+<li><div class="summary"><span class="name lo">12. BigRat&nbsp;</span><span class="rank ">104,171</span></div></li>
+<li><div class="summary"><span class="name lo">13. HackneyCab&nbsp;</span><span class="rank ">98,318</span></div></li>
+<li><div class="summary"><span class="name lo">14. rhickmott&nbsp;</span><span class="rank ">96,447</span></div></li>
+<li><div class="summary"><span class="name lo">15. routinet&nbsp;</span><span class="rank ">83,542</span></div></li>
+</ol>
+<div class="bTypeA bSizeMedium bXPColorMediumDefault"><a class="bTextHallOfFame" href="/hallOfFame.jsp"><div class="t2i" style="background: url(http://t2i.experts-exchange.com/t/66-50.png) no-repeat;width:72px;height:16px;"></div></a></div></div></div><table class="f"><tr><td class="l"></td><td>&nbsp;</td><td class="r"></td></tr></table>
+</div>
+</div><div id="pageMain">
+        <div id="minWidthMain"></div>
+
+<a name="questionTop"></a>
+<div class="question">
+<div class="s shFFF5 sgray expGray sectionTwo question sQuestion"><table class="h rootH hQuestion"><tr><td class="l lQuestion"></td><td><span class="sectionHeaderExtra sectionHeaderExtraQuestion">10.02.2006 at 11:35PM PDT, ID: 22010802</span><div class="t2i" style="background: url(http://t2i.experts-exchange.com/t/49-50.png) no-repeat;width:59px;height:19px;"></div></td><td class="r"></td></tr></table><div class="bl blQuestion"><div class="br brQuestion"><div class="bbg bbgQuestion"><div class="empty"></div><div class="bc bcQuestion"><div class="infoBox eeText infoBoxRight" id="questionScoreInfo">
+  <table>
+    <tr>
+      <td class="infoBoxUL"></td>
+      <td class="infoBoxUM">
+        <a class="closeButtonTiny" href="javascript:void(0);" onClick="hideInfoBox('questionScoreInfo');">[x]</a>
+        <div class="title">The Solution Rating System</div>
+      </td>
+      <td class="infoBoxUR"></td>
+    </tr>
+    <tr>
+      <td class="infoBoxML"></td><td class="infoBoxMM eeText">
+        <p>With so many solutions, how can you tell which solutions are most likely to help you and which ones are not?  To provide you with a tool to use, we rate our solutions based on various elements that most accurately determine if a solution is a quality solution.  To explain what factors affect the solution rating, here are the elements we take into consideration when formulating our solution rating.</p><ul>  <li>The Grade of the Solution</li>  <li>The Zone Rank of the Expert Providing the Solution</li>  <li>The Number of Author and Expert Comments</li>  <li>The Number of Experts Contributing</li>  <li>The Feedback of the Community</li></ul><p>Your Input Matters<br />Because of the way the system is set up, the most important variable in this equation is you.  As a member of <span class="ee">Experts Exchange</span>, you are able to cast your vote on the quality of the solutions in regard to how complete, accurate, helpful and easy to understand each solution is.  When you provide your feedback, each rating is adjusted accordingly.  So, if you see a solution that has a poor rating that you think is a good solution, let us know by rating it.  As you do, the rating will be adjusted and will become more accurate for other members of our site.</p><p>If you have any suggestions that you would like to make for our rating system, please ask a question in the <a href="/Community_Support/Suggestions/">Suggestions</a> Zone of Community Support.</p><p>Thank you!</p></td>
+      <td class="infoBoxMR"></td>
+    </tr>
+    <tr>
+      <td class="infoBoxBL"></td>
+      <td class="infoBoxBM"></td>
+      <td class="infoBoxBR"></td>
+    </tr>
+  </table>
+</div>
+<div class="questionScore">
+<a href="javascript:void(0);" onClick="toggleElementVisibility('questionScoreInfo');">
+<div class="score">8.8</div>
+    <div class="scoreText">
+<div class="t2i" style="background: url(http://t2i.experts-exchange.com/t/397683-50.png) no-repeat;width:50px;height:7px;"></div></div>
+</a>
+</div>
+<script type="text/javascript">
+   toggleElementVisibility('questionScoreInfo',false);
+</script>
+<div class="qTitle loggedOutQTitle">
+    'SetEnv', perhaps mis-spelled or defined by a module not included in the server configuration</div>
+<div class="qZoneRow zoneWithScore">
+         <span class="name">Zones:</span>
+         <span class="value"><a href ="/Software/Server_Software/Web_Servers/Apache/">Apache Web Server</a>, <a href ="/Web_Development/Web_Languages-Standards/SSI/">Server Side Includes (SSI)</a></span>
+         </div>
+<div class="qTagRow">
+            <span class="name">Tags:</span>
+            <span class="value">module, apache, defined, configuration, included </span>
+      </div>
+   <div class="clear"></div>
+<div class="qBody" id="EchoTopic">
+Im trying to configure mod_python with apache, and i also activated the mod_python module using <br /><br />LoadModule python_module modules/mod_python.so<br /><br />and these are the lines i entered in the http.conf file<br /><br />&lt;Location &quot;/MySite/&quot;&gt;<br />&nbsp; &nbsp; SetHandler python-program<br />&nbsp; &nbsp; PythonHandler django.core.handlers.modpython<br />&nbsp; &nbsp; SetEnv DJANGO_SETTINGS_MODULE MySite.settings<br />&nbsp; &nbsp; PythonPath &quot;['/var/MySite'] + sys.path&quot;<br />&nbsp; &nbsp; PythonDebug On<br />&lt;/Location&gt;<br /><br /><br />but when &nbsp;tried to restart the server, its giving me this error.<br /><br />'SetEnv', perhaps mis-spelled or defined by a module not included in the server configuration<br /><br /><br />wat should i do? &nbsp;thanks in advance</div>
+
+<a class="squareSignUp squareSignUpWide" href="https://secure.experts-exchange.com/register.jsp?rsid=20&srid=YLDawvvfvBW5FwAe28WIbA%3D%3D&redirectURL=%2FSoftware%2FServer_Software%2FWeb_Servers%2FApache%2FQ_22010802.html&qpid=38&cid=552">Start your free trial to view this solution</a>
+<div class="qStats">
+   <div class="questionStats">
+      <div class="qStatHeader">
+         Question Stats
+      </div>
+      <div class="hr"></div>
+      <div class="statRow">
+         <span class="statName">Zone:</span>
+         <span class="statValue"> Software</span>
+      </div>
+      <div class="statRow">
+         <span class="statName">Question Asked By:</span>
+         <span class="statValue"> jyotishb</span>
+      </div>
+      <div class="statRow">
+            <span class="statName">Solution Provided By:</span>
+            <span class="statValue">ravenpl</span>
+         </div>
+      <div class="statRow">
+         <span class="statName">Participating Experts:</span>
+         <span class="statValue">2</span>
+      </div>
+      <div class="statRow">
+            <span class="statName">Solution Grade:</span>
+            <span class="statValue">A</span>
+         </div>
+      <div class="statRow">
+         <span class="statName">Views:</span>
+         <span class="statValue">4</span>
+      </div>
+<div class="statRow">
+             <span class="statName">Translate:</span>
+             <span class="statValue">
+                <form method="get" action="/translate.jsp" onsubmit="return submitOnce();">
+    <select id="translationLanguagesQStats" name="language" onchange="this.form.submit();">
+    </select>
+<input type="hidden" name="url" value="/Software/Server_Software/Web_Servers/Apache/Q_22010802.html" />
+</form>
+  <script type="text/javascript">appendTranslationOptions('translationLanguagesQStats', 'null');</script>
+</span>
+         </div>
+         <div class="googleDiv"> </div>
+<div class="largeZoneIcon" id="large_taid_3062"></div> 
+   </div>
+
+   <div class="zoneAdDivider"></div>
+     <div id="vqAdDiv"><div id="vqAdDivInner">Loading Advertisement...</div></div>
+<div class="clear"></div>
+</div>
+
+<a href="https://secure.experts-exchange.com/register.jsp?rsid=20&srid=YLDawvvfvBW5FwAe28WIbA%3D%3D&redirectURL=%2FSoftware%2FServer_Software%2FWeb_Servers%2FApache%2FQ_22010802.html&qpid=38&cid=554" rel="nofollow">
+   <div class="lightImage light20 freePAQ"> </div>
+</a><div class="clear"></div>
+
+<div id="relatedSolutions20X6">
+<script type="text/javascript" src="http://js.experts-exchange.com/scripts/asyncInclude.js"></script>
+      <script type="text/javascript">
+         new AsyncInclude('/shared/async/relatedSolutions.jsp?qid=22010802&redirectURL=%2FSoftware%2FServer_Software%2FWeb_Servers%2FApache%2FQ_22010802.html&uniq=1208282525534', 'relatedSolutions20X6');
+      </script>
+      <noscript>
+        JavaScript is required to view Related Solutions
+      </noscript>
+</div>
+<div class="answers">
+
+<div class="hasMouseOver" onmouseover="showSignUp(17649627)" onmouseout="removeSignUp(17649627)"><a id="17649627"></a>
+       <a id="a17649627"></a>
+
+<div class="s shF5FF sb expDarkGrey sectionTwo answer answerHeader blurredAnswer"><table class="h"><tr><td class="l"></td><td><span class="sectionHeaderExtra">10.02.2006 at 11:51PM PDT,<span class="answerID"> ID: 17649627</span></span><div class="t2i" style="background: url(http://t2i.experts-exchange.com/t/59-50.png) no-repeat;width:108px;height:19px;"></div></td><td class="r"></td></tr></table><div class="bl"><div class="br"><div class="bbg"><div class="empty"></div><div class="bc"><div class="infoColHeader"></div><div class="infoColContainer male maleWizard"><div class="infoCol"><a href="/M_3553664.html" class="infoColIcon"></a><p>Rank: <span>Wizard</span></p></div>
+  <div class="infoBody">
+<div class="answerer"><a href="/M_3553664.html">ravenpl</a>:</div>
+       <div class="answerBody quoted">
+
+<p class="seComment">All comments and solutions are available to <b>Premium Service</b> Members only.  
+</p><p class="seComment"> Start your <b>7 day</b> free trial and see for yourself why <b>Experts Exchange</b> is the easiest and most proven technology resource in the world.  <a href="https://secure.experts-exchange.com/register.jsp?rsid=20&srid=YLDawvvfvBW5FwAe28WIbA%3D%3D&redirectURL=%2FSoftware%2FServer_Software%2FWeb_Servers%2FApache%2FQ_22010802.html&qpid=38&cid=553" rel="nofollow">Get Started</a></p>
+<p class="seComment">Already a member?  <a href="login.jsp?redirectURL=%2FSoftware%2FServer_Software%2FWeb_Servers%2FApache%2FQ_22010802.html&cid=&cid=555" rel="nofollow">Login</a> to view this solution.</p>
+</div>
+
+<div class="clear"></div>
+      </div>
+</div>
+<div class="infoColFooter"></div>
+</div><div class="empty"></div></div></div></div><table class="f"><tr><td class="l"></td><td>&nbsp;</td><td class="r"></td></tr></table>
+      </div>
+</div>
+<div class="hasMouseOver" onmouseover="showSignUp(17649663)" onmouseout="removeSignUp(17649663)"><a id="17649663"></a>
+       <a id="a17649663"></a>
+
+<div class="s shF5FF sgray expGray sectionTwo answer askerHeader blurredAnswer"><table class="h"><tr><td class="l"></td><td><span class="sectionHeaderExtra">10.03.2006 at 12:01AM PDT,<span class="answerID"> ID: 17649663</span></span><div class="t2i" style="background: url(http://t2i.experts-exchange.com/t/60-50.png) no-repeat;width:111px;height:19px;"></div></td><td class="r"></td></tr></table><div class="bl"><div class="br"><div class="bbg"><div class="empty"></div><div class="bc"><div class="infoColHeader"></div><div class="infoColContainer male male"><div class="infoCol"><a href="/M_3625612.html" class="infoColIcon"></a></div>
+  <div class="infoBody">
+<div class="answerer"><a href="/M_3625612.html">jyotishb</a>:</div>
+       <div class="answerBody quoted">
+
+<p class="seComment">All comments and solutions are available to <b>Premium Service</b> Members only.  
+</p><p class="seComment"> Start your <b>7 day</b> free trial and see for yourself why <b>Experts Exchange</b> is the easiest and most proven technology resource in the world.  <a href="https://secure.experts-exchange.com/register.jsp?rsid=20&srid=YLDawvvfvBW5FwAe28WIbA%3D%3D&redirectURL=%2FSoftware%2FServer_Software%2FWeb_Servers%2FApache%2FQ_22010802.html&qpid=38&cid=553" rel="nofollow">Get Started</a></p>
+<p class="seComment">Already a member?  <a href="login.jsp?redirectURL=%2FSoftware%2FServer_Software%2FWeb_Servers%2FApache%2FQ_22010802.html&cid=&cid=555" rel="nofollow">Login</a> to view this solution.</p>
+</div>
+
+<div class="clear"></div>
+      </div>
+</div>
+<div class="infoColFooter"></div>
+</div><div class="empty"></div></div></div></div><table class="f"><tr><td class="l"></td><td>&nbsp;</td><td class="r"></td></tr></table>
+      </div>
+</div>
+<div class="hasMouseOver" onmouseover="showSignUp(17649669)" onmouseout="removeSignUp(17649669)"><a id="17649669"></a>
+       <a id="a17649669"></a>
+
+<div class="s shF5FF sg expBlue sectionTwo answer acceptedHeader blurredAnswer"><table class="h"><tr><td class="l"></td><td><span class="sectionHeaderExtra">10.03.2006 at 12:04AM PDT,<span class="answerID"> ID: 17649669</span></span><div class="t2i" style="background: url(http://t2i.experts-exchange.com/t/61-50.png) no-repeat;width:118px;height:19px;"></div></td><td class="r"></td></tr></table><div class="bl"><div class="br"><div class="bbg"><div class="empty"></div><div class="bc"><div class="infoColHeader"></div><div class="infoColContainer male maleWizard"><div class="infoCol"><a href="/M_3553664.html" class="infoColIcon"></a><p>Rank: <span>Wizard</span></p></div>
+  <div class="infoBody">
+<div class="answerer"><a href="/M_3553664.html">ravenpl</a>:</div>
+       <div class="answerBody quoted">
+
+<p class="seComment">All comments and solutions are available to <b>Premium Service</b> Members only.  
+</p><p class="seComment"> Start your <b>7 day</b> free trial and see for yourself why <b>Experts Exchange</b> is the easiest and most proven technology resource in the world.  <a href="https://secure.experts-exchange.com/register.jsp?rsid=20&srid=YLDawvvfvBW5FwAe28WIbA%3D%3D&redirectURL=%2FSoftware%2FServer_Software%2FWeb_Servers%2FApache%2FQ_22010802.html&qpid=38&cid=553" rel="nofollow">Get Started</a></p>
+<p class="seComment">Already a member?  <a href="login.jsp?redirectURL=%2FSoftware%2FServer_Software%2FWeb_Servers%2FApache%2FQ_22010802.html&cid=&cid=555" rel="nofollow">Login</a> to view this solution.</p>
+</div>
+
+<div class="clear"></div>
+      </div>
+</div>
+<div class="infoColFooter"></div>
+</div><div class="empty"></div></div></div></div><table class="f"><tr><td class="l"></td><td>&nbsp;</td><td class="r"></td></tr></table>
+      </div>
+</div>
+<div class="hasMouseOver" onmouseover="showSignUp(17650349)" onmouseout="removeSignUp(17650349)"><a id="17650349"></a>
+       <a id="a17650349"></a>
+
+<div class="s shF5FF sb expDarkGrey sectionTwo answer answerHeader blurredAnswer"><table class="h"><tr><td class="l"></td><td><span class="sectionHeaderExtra">10.03.2006 at 03:25AM PDT,<span class="answerID"> ID: 17650349</span></span><div class="t2i" style="background: url(http://t2i.experts-exchange.com/t/59-50.png) no-repeat;width:108px;height:19px;"></div></td><td class="r"></td></tr></table><div class="bl"><div class="br"><div class="bbg"><div class="empty"></div><div class="bc"><div class="infoColHeader"></div><div class="infoColContainer male maleSage"><div class="infoCol"><a href="/M_3444057.html" class="infoColIcon"></a><p>Rank: <span>Sage</span></p></div>
+  <div class="infoBody">
+<div class="answerer"><a href="/M_3444057.html">caterham_www</a>:</div>
+       <div class="answerBody quoted">
+
+<p class="seComment">All comments and solutions are available to <b>Premium Service</b> Members only.  
+</p><p class="seComment"> Start your <b>7 day</b> free trial and see for yourself why <b>Experts Exchange</b> is the easiest and most proven technology resource in the world.  <a href="https://secure.experts-exchange.com/register.jsp?rsid=20&srid=YLDawvvfvBW5FwAe28WIbA%3D%3D&redirectURL=%2FSoftware%2FServer_Software%2FWeb_Servers%2FApache%2FQ_22010802.html&qpid=38&cid=553" rel="nofollow">Get Started</a></p>
+<p class="seComment">Already a member?  <a href="login.jsp?redirectURL=%2FSoftware%2FServer_Software%2FWeb_Servers%2FApache%2FQ_22010802.html&cid=&cid=555" rel="nofollow">Login</a> to view this solution.</p>
+</div>
+
+<div class="clear"></div>
+      </div>
+</div>
+<div class="infoColFooter"></div>
+</div><div class="empty"></div></div></div></div><table class="f"><tr><td class="l"></td><td>&nbsp;</td><td class="r"></td></tr></table>
+      </div>
+</div>
+<div class="hasMouseOver" onmouseover="showSignUp(17803622)" onmouseout="removeSignUp(17803622)"><a id="17803622"></a>
+       <a id="a17803622"></a>
+
+<div class="s shF5FF so expDarkBlue sectionTwo answer adminHeader blurredAnswer"><table class="h"><tr><td class="l"></td><td><span class="sectionHeaderExtra">10.25.2006 at 07:29AM PDT,<span class="answerID"> ID: 17803622</span></span><div class="t2i" style="background: url(http://t2i.experts-exchange.com/t/63-50.png) no-repeat;width:161px;height:19px;"></div></td><td class="r"></td></tr></table><div class="bl"><div class="br"><div class="bbg"><div class="empty"></div><div class="bc"><div class="infoColHeader"></div><div class="infoColContainer male maleGuru"><div class="infoCol"><a href="/M_395098.html" class="infoColIcon"></a><p>Rank: <span>Guru</span></p></div>
+  <div class="infoBody">
+<div class="answerer"><a href="/M_395098.html">periwinkle</a>:</div>
+       <div class="answerBody quoted">
+
+<p class="seComment">All comments and solutions are available to <b>Premium Service</b> Members only.  
+</p><p class="seComment"> Start your <b>7 day</b> free trial and see for yourself why <b>Experts Exchange</b> is the easiest and most proven technology resource in the world.  <a href="https://secure.experts-exchange.com/register.jsp?rsid=20&srid=YLDawvvfvBW5FwAe28WIbA%3D%3D&redirectURL=%2FSoftware%2FServer_Software%2FWeb_Servers%2FApache%2FQ_22010802.html&qpid=38&cid=553" rel="nofollow">Get Started</a></p>
+<p class="seComment">Already a member?  <a href="login.jsp?redirectURL=%2FSoftware%2FServer_Software%2FWeb_Servers%2FApache%2FQ_22010802.html&cid=&cid=555" rel="nofollow">Login</a> to view this solution.</p>
+</div>
+
+<div class="clear"></div>
+      </div>
+</div>
+<div class="infoColFooter"></div>
+</div><div class="empty"></div></div></div></div><table class="f"><tr><td class="l"></td><td>&nbsp;</td><td class="r"></td></tr></table>
+      </div>
+</div>
+<div class="hasMouseOver" onmouseover="showSignUp(17831379)" onmouseout="removeSignUp(17831379)"><a id="17831379"></a>
+       <a id="a17831379"></a>
+
+<div class="s shF5FF so expDarkBlue sectionTwo answer adminHeader blurredAnswer"><table class="h"><tr><td class="l"></td><td><span class="sectionHeaderExtra">10.29.2006 at 06:32PM PST,<span class="answerID"> ID: 17831379</span></span><div class="t2i" style="background: url(http://t2i.experts-exchange.com/t/63-50.png) no-repeat;width:161px;height:19px;"></div></td><td class="r"></td></tr></table><div class="bl"><div class="br"><div class="bbg"><div class="empty"></div><div class="bc"><div class="infoColHeader"></div><div class="infoColContainer male male"><div class="infoCol"><a href="/M_621261.html" class="infoColIcon"></a></div>
+  <div class="infoBody">
+<div class="answerer"><a href="/M_621261.html">Computer101</a>:</div>
+       <div class="answerBody quoted">
+
+<p class="seComment">All comments and solutions are available to <b>Premium Service</b> Members only.  
+</p><p class="seComment"> Start your <b>7 day</b> free trial and see for yourself why <b>Experts Exchange</b> is the easiest and most proven technology resource in the world.  <a href="https://secure.experts-exchange.com/register.jsp?rsid=20&srid=YLDawvvfvBW5FwAe28WIbA%3D%3D&redirectURL=%2FSoftware%2FServer_Software%2FWeb_Servers%2FApache%2FQ_22010802.html&qpid=38&cid=553" rel="nofollow">Get Started</a></p>
+<p class="seComment">Already a member?  <a href="login.jsp?redirectURL=%2FSoftware%2FServer_Software%2FWeb_Servers%2FApache%2FQ_22010802.html&cid=&cid=555" rel="nofollow">Login</a> to view this solution.</p>
+</div>
+
+<div class="clear"></div>
+      </div>
+</div>
+<div class="infoColFooter"></div>
+</div><div class="empty"></div></div></div></div><table class="f"><tr><td class="l"></td><td>&nbsp;</td><td class="r"></td></tr></table>
+      </div>
+</div>
+</div>
+<script type="text/javascript">
+ function showSignUp(id)
+ {
+    var select = document.getElementById("answer"+id);
+    if (select != null)
+       select.className = 'signUpSpaceVisible';
+ }
+ 
+ function removeSignUp(id)
+ {
+    var select = document.getElementById("answer"+id);
+    if (select != null)
+       select.className = 'signUpSpace';
+ }
+</script>
+</div><div class="empty"></div></div></div></div><table class="f"><tr><td class="l"></td><td>&nbsp;</td><td class="r"></td></tr></table>
+      </div>
+</div>
+<div class="adSense">
+<script type="text/javascript">
+   e9 = new Object();
+   e9.size = "728x90";
+   e9.noAd = 1;
+</script>
+<script type="text/javascript" src="http://tags.expo9.exponential.com/tags/ExpertsExchange/BottomGoogle728x90/tags.js"></script>
+</div>
+<script type="text/javascript">jsImport("com.ee.list.CollapsibleList")</script>
+
+  <div class="s sectionFour shFFF5 sgray expGray allZonesMain taSearchRow"><table class="h"><tr><td class="l"></td><td><div class="t2i" style="background: url(http://t2i.experts-exchange.com/t/56-50.png) no-repeat;width:157px;height:19px;"></div></td><td class="r"></td></tr></table><div class="bl"><div class="br"><div class="bbg"><div class="empty"></div><div class="bc"><div class="allZones">
+    <form method="post" action="/taSearch.jsp?cid=324" class="formFactory">
+    <div class="formRow rightEdgeButton">
+      <label for="q">Find Zone Areas:</label>
+<input type="text" id="q" name="q" value="enter keywords" class="text" style="width: 386px; height: 16px;" onClick="q.focus();" onFocus="clearSearchBox(q, 'enter keywords');" />
+<input type="hidden" name="taSearchSubmit" value="1"/><div class="bTypeButton bSizeSmall bXPColorSmallDefault"><button class="bTextFINDZONEAREA" type="submit"><div class="t2i" style="background: url(http://t2i.experts-exchange.com/t/227939-50.png) no-repeat;width:73px;height:14px;"></div></button></div></div>
+  </form>
+  <div class="hr"></div>
+<table class="rootHeaderNoImage"><tr><td class="left"></td><td class="middle"><a href="/Microsoft/" class="headerLink">Microsoft</a></td><td class="right"></td></tr></table>
+<div class="noLinkTree"><ul>
+<li>Internet Protocols</li><li>Applications</li></ul><ul>
+<li>Development</li><li>OS</li></ul><ul>
+<li>Hardware</li><li>Windows Security</li></ul></div><div class="clearLeft"></div><table class="rootHeaderNoImage"><tr><td class="left"></td><td class="middle"><a href="/Apple/" class="headerLink">Apple</a></td><td class="right"></td></tr></table>
+<div class="noLinkTree"><ul>
+<li>Operating Systems</li><li>Hardware</li></ul><ul>
+<li>Programming</li><li>Networking</li></ul><ul>
+<li>Software</li></ul></div><div class="clearLeft"></div><table class="rootHeaderNoImage"><tr><td class="left"></td><td class="middle"><a href="/Internet/" class="headerLink">Internet</a></td><td class="right"></td></tr></table>
+<div class="noLinkTree"><ul>
+<li>Search Engines</li><li>File Sharing</li><li>WebTrends / Stats</li><li>Spy / Ad Blockers</li></ul><ul>
+<li>Web Browsers</li><li>New Net Users</li><li>Web Development</li><li>Chat / IM</li></ul><ul>
+<li>Anti Spam</li><li>Web Servers</li><li>Anti-Virus</li><li>Email Clients</li></ul></div><div class="clearLeft"></div><table class="rootHeaderNoImage"><tr><td class="left"></td><td class="middle"><a href="/Gamers/" class="headerLink">Gamers</a></td><td class="right"></td></tr></table>
+<div class="noLinkTree"><ul>
+<li>Tips</li><li>Online / MMORPG</li><li>Puzzle</li><li>Emulators</li></ul><ul>
+<li>Action / Adventure</li><li>Role Playing</li><li>Consoles</li><li>Game Programming</li></ul><ul>
+<li>Strategy</li><li>Sports</li><li>Misc</li><li>Computer Games</li></ul></div><div class="clearLeft"></div><table class="rootHeaderNoImage"><tr><td class="left"></td><td class="middle"><a href="/Digital_Living/" class="headerLink">Digital Living</a></td><td class="right"></td></tr></table>
+<div class="noLinkTree"><ul>
+<li>Hardware</li><li>New Net Users</li><li>New Users</li></ul><ul>
+<li>Software</li><li>Digital Music</li><li>Gaming World</li></ul><ul>
+<li>Home Security</li><li>Apple</li><li>Networking Hardware</li></ul></div><div class="clearLeft"></div><table class="rootHeaderNoImage"><tr><td class="left"></td><td class="middle"><a href="/Virus_and_Spyware/" class="headerLink">Virus & Spyware</a></td><td class="right"></td></tr></table>
+<div class="noLinkTree"><ul>
+<li>Vulnerabilities</li><li>IDS</li><li>Encryption</li><li>Anti-Virus</li></ul><ul>
+<li>Operating Systems Security</li><li>Software Firewalls</li><li>WebApplications</li><li>Cell Phones</li></ul><ul>
+<li>Operating Systems</li><li>Internet</li><li>Hardware Firewalls</li></ul></div><div class="clearLeft"></div><table class="rootHeaderNoImage"><tr><td class="left"></td><td class="middle"><a href="/Hardware/" class="headerLink">Hardware</a></td><td class="right"></td></tr></table>
+<div class="noLinkTree"><ul>
+<li>Handhelds / PDAs</li><li>Displays / Monitors</li><li>Components</li><li>Networking Hardware</li></ul><ul>
+<li>Peripherals</li><li>Laptops/Notebooks</li><li>Storage</li><li>Servers</li></ul><ul>
+<li>Desktops</li><li>New Users</li><li>Misc</li><li>Apple</li></ul></div><div class="clearLeft"></div><table class="rootHeaderNoImage"><tr><td class="left"></td><td class="middle"><a href="/Software/" class="headerLink">Software</a></td><td class="right"></td></tr></table>
+<div class="noLinkTree"><ul>
+<li>System Utilities</li><li>Industry Specific</li><li>Network Management</li><li>Photos / Graphics</li><li>Page Layout</li><li>VMWare</li><li>Misc</li><li>Web Development</li></ul><ul>
+<li>OS</li><li>CYGWIN</li><li>Voice Recognition</li><li>Message Queue</li><li>Quality Assurance</li><li>Security</li><li>Firewalls</li><li>MultiMedia Applications</li></ul><ul>
+<li>Development</li><li>Database</li><li>Office / Productivity</li><li>Business Management</li><li>OS/2 Apps</li><li>Server Software</li><li>Internet / Email</li></ul></div><div class="clearLeft"></div><table class="rootHeaderNoImage"><tr><td class="left"></td><td class="middle"><a href="/ITPro/" class="headerLink">ITPro</a></td><td class="right"></td></tr></table>
+<div class="noLinkTree"><ul>
+<li>OS</li><li>Storage</li><li>Encryption</li><li>Operating Systems Security</li><li>Apple Hardware</li><li>Laptops & Notebooks</li><li>Servers</li><li>Networking Hardware</li><li>Peripherals</li></ul><ul>
+<li>Devices</li><li>Displays / Monitors</li><li>WebTrends / Stats</li><li>Search Engines</li><li>Firewalls</li><li>WebApplications</li><li>IDS</li><li>Vulnerabilities</li><li>Email Clients</li></ul><ul>
+<li>File Sharing</li><li>Spy / Ad Blockers</li><li>Web Browsers</li><li>Web Servers</li><li>Networking</li><li>Anti-Virus</li><li>Chat / IM</li><li>Anti Spam</li></ul></div><div class="clearLeft"></div><table class="rootHeaderNoImage"><tr><td class="left"></td><td class="middle"><a href="/Developer/" class="headerLink">Developer</a></td><td class="right"></td></tr></table>
+<div class="noLinkTree"><ul>
+<li>Web Servers</li><li>Web Browsers</li><li>Game Programming</li><li>Dev Tools</li><li>Industry Specific</li><li>Office / Productivity</li></ul><ul>
+<li>Database</li><li>CYGWIN</li><li>Web Development</li><li>Search Engines</li><li>File Sharing</li><li>WebTrends / Stats</li></ul><ul>
+<li>Programming</li><li>Content Management</li><li>Application Servers</li><li>Protocols</li></ul></div><div class="clearLeft"></div><table class="rootHeaderNoImage"><tr><td class="left"></td><td class="middle"><a href="/Storage/" class="headerLink">Storage</a></td><td class="right"></td></tr></table>
+<div class="noLinkTree"><ul>
+<li>Removable Backup Media</li><li>Storage Technology</li><li>Servers</li></ul><ul>
+<li>Grid</li><li>Remote Access</li><li>Backup / Restore</li></ul><ul>
+<li>Misc</li><li>Hard Drives</li></ul></div><div class="clearLeft"></div><table class="rootHeaderNoImage"><tr><td class="left"></td><td class="middle"><a href="/OS/" class="headerLink">OS</a></td><td class="right"></td></tr></table>
+<div class="noLinkTree"><ul>
+<li>Miscellaneous</li><li>Security</li><li>Development</li><li>Linux</li><li>VMWare</li></ul><ul>
+<li>MainFrame OS</li><li>Unix</li><li>Apple</li><li>OS / 2</li><li>AS / 400</li></ul><ul>
+<li>BeOS</li><li>Microsoft</li><li>VMS / OpenVMS</li></ul></div><div class="clearLeft"></div><table class="rootHeaderNoImage"><tr><td class="left"></td><td class="middle"><a href="/Database/" class="headerLink">Database</a></td><td class="right"></td></tr></table>
+<div class="noLinkTree"><ul>
+<li>Oracle</li><li>Miscellaneous</li><li>MySQL</li><li>Software</li><li>Sybase</li><li>Contact Management</li><li>PostgreSQL</li><li>Data Manipulation</li><li>Clarion</li><li>InterSystems Cache</li></ul><ul>
+<li>Siebel</li><li>MUMPS</li><li>OLAP</li><li>SQLBase</li><li>SAS</li><li>GIS & GPS</li><li>4GL</li><li>Berkeley DB</li><li>DB2</li><li>Informix</li></ul><ul>
+<li>Interbase / Firebird</li><li>FoxPro</li><li>Reporting </li><li>LDAP</li><li>Filemaker Pro</li><li>MS SQL Server</li><li>dBase</li><li>MS Access</li></ul></div><div class="clearLeft"></div><table class="rootHeaderNoImage"><tr><td class="left"></td><td class="middle"><a href="/Security/" class="headerLink">Security</a></td><td class="right"></td></tr></table>
+<div class="noLinkTree"><ul>
+<li>Misc</li><li>Web Browsers</li><li>Software Firewalls</li><li>Operating Systems Security</li><li>File Sharing</li></ul><ul>
+<li>Spy / Ad Blockers</li><li>Vulnerabilities</li><li>WebApplications</li><li>IDS</li><li>Anti-Virus</li></ul><ul>
+<li>Encryption</li><li>Anti Spam</li><li>Email Clients</li><li>VPN</li><li>Chat / IM</li></ul></div><div class="clearLeft"></div><table class="rootHeaderNoImage"><tr><td class="left"></td><td class="middle"><a href="/Programming/" class="headerLink">Programming</a></td><td class="right"></td></tr></table>
+<div class="noLinkTree"><ul>
+<li>Editors IDEs</li><li>Installation</li><li>Handhelds / PDAs</li><li>Multimedia Programming</li><li>System / Kernel</li></ul><ul>
+<li>Algorithms</li><li>Game</li><li>Signal Processing</li><li>Project Management</li><li>Open Source</li></ul><ul>
+<li>Database</li><li>Misc</li><li>Languages</li><li>Processor Platforms</li><li>Theory</li></ul></div><div class="clearLeft"></div><table class="rootHeaderNoImage"><tr><td class="left"></td><td class="middle"><a href="/Web_Development/" class="headerLink">Web Development</a></td><td class="right"></td></tr></table>
+<div class="noLinkTree"><ul>
+<li>Scripting</li><li>Blogs</li><li>Web Servers</li><li>Software</li><li>Search Engines</li><li>Web Graphics</li><li>Images</li></ul><ul>
+<li>Internet Marketing</li><li>Images and Photos</li><li>Components</li><li>Document Imaging</li><li>Web Languages/Standards</li><li>Illustration</li><li>WebApplications</li></ul><ul>
+<li>Fonts</li><li>WebTrends / Stats</li><li>Authoring</li><li>Digital Camera Software</li><li>Miscellaneous</li></ul></div><div class="clearLeft"></div><table class="rootHeaderNoImage"><tr><td class="left"></td><td class="middle"><a href="/Networking/" class="headerLink">Networking</a></td><td class="right"></td></tr></table>
+<div class="noLinkTree"><ul>
+<li>Protocols</li><li>Apple Networking</li><li>Network Management</li><li>Message Queue</li><li>Application Servers</li><li>Content Management</li><li>File Servers</li><li>Email Servers</li><li>Misc</li><li>Java Editors & IDEs</li></ul><ul>
+<li>Wireless</li><li>Networking Hardware</li><li>Backup / Restore</li><li>System Utilities</li><li>ISPs & Hosting</li><li>Web Servers</li><li>Storage Technology</li><li>Removable Backup Media</li><li>Servers</li><li>Broadband</li></ul><ul>
+<li>Grid</li><li>OS / 2</li><li>Novell Netware</li><li>Unix Networking</li><li>Windows Networking</li><li>Security</li><li>Telecommunications</li><li>Operating Systems</li><li>Linux Networking</li></ul></div><div class="clearLeft"></div><table class="rootHeaderNoImage"><tr><td class="left"></td><td class="middle"><a href="/Other/" class="headerLink">Other</a></td><td class="right"></td></tr></table>
+<div class="noLinkTree"><ul>
+<li>Community Advisor</li><li>Lounge</li><li>Community Support</li><li>New Net Users</li></ul><ul>
+<li>Philosophy / Religion</li><li>Math / Science</li><li>Miscellaneous</li><li>URLs</li></ul><ul>
+<li>Expert Lounge</li><li>Politics</li><li>Puzzles / Riddles</li></ul></div><div class="clearLeft"></div><table class="rootHeaderNoImage"><tr><td class="left"></td><td class="middle"><a href="/Community_Support/" class="headerLink">Community Support</a></td><td class="right"></td></tr></table>
+<div class="noLinkTree"><ul>
+<li>Suggestions</li><li>New to EE</li><li>New Topics</li><li>Community Advisor</li></ul><ul>
+<li>CleanUp</li><li>Announcements</li><li>General</li></ul><ul>
+<li>Feedback</li><li>Input</li><li>EE Bugs</li></ul></div><div class="clearLeft"></div></div>
+      <div class="clear"></div>
+
+  </div><div class="empty"></div></div></div></div><table class="f"><tr><td class="l"></td><td>&nbsp;</td><td class="r"></td></tr></table>
+      </div>
+<div class="s shFFF5 sgray expGray sectionTwo"><table class="h"><tr><td class="l"></td><td><div class="t2i" style="background: url(http://t2i.experts-exchange.com/t/57-50.png) no-repeat;width:56px;height:19px;"></div></td><td class="r"></td></tr></table><div class="bl"><div class="br"><div class="bbg"><div class="empty"></div><div class="bc"><div class="answers">
+
+<a id="17649627"></a>
+       <a id="a17649627"></a>
+
+<div class="s shF5FF sb expDarkGrey sectionTwo answer answerHeader"><table class="h"><tr><td class="l"></td><td><span class="sectionHeaderExtra">10.02.2006 at 11:51PM PDT,<span class="answerID"> ID: 17649627</span></span><div class="t2i" style="background: url(http://t2i.experts-exchange.com/t/59-50.png) no-repeat;width:108px;height:19px;"></div></td><td class="r"></td></tr></table><div class="bl"><div class="br"><div class="bbg"><div class="empty"></div><div class="bc"><div class="infoColHeader"></div><div class="infoColContainer male maleWizard"><div class="infoCol"><a href="/M_3553664.html" class="infoColIcon"></a><p>Rank: <span>Wizard</span></p></div>
+  <div class="infoBody">
+<div class="answerer"><a href="/M_3553664.html">ravenpl</a>:</div>
+       <div class="answerBody quoted" id="EchoTopic">
+
+SetEnv requires mod_env to be enabled. Is it loaded with LoadModule or compiled into apache? /path/to/httpd -l<br /></div>
+
+<div class="clear"></div>
+<div class="clear"></div>
+      </div>
+</div>
+<div class="infoColFooter"></div>
+</div><div class="empty"></div></div></div></div><table class="f"><tr><td class="l"></td><td>&nbsp;</td><td class="r"></td></tr></table>
+      </div>
+<a id="17649663"></a>
+       <a id="a17649663"></a>
+
+<div class="s shF5FF sgray expGray sectionTwo answer askerHeader"><table class="h"><tr><td class="l"></td><td><span class="sectionHeaderExtra">10.03.2006 at 12:01AM PDT,<span class="answerID"> ID: 17649663</span></span><div class="t2i" style="background: url(http://t2i.experts-exchange.com/t/60-50.png) no-repeat;width:111px;height:19px;"></div></td><td class="r"></td></tr></table><div class="bl"><div class="br"><div class="bbg"><div class="empty"></div><div class="bc"><div class="infoColHeader"></div><div class="infoColContainer male male"><div class="infoCol"><a href="/M_3625612.html" class="infoColIcon"></a></div>
+  <div class="infoBody">
+<div class="answerer"><a href="/M_3625612.html">jyotishb</a>:</div>
+       <div class="answerBody quoted" id="EchoTopic">
+
+its compiled in to apache, cos when i add the Loadmodule line, it says, python_module, already loaded, </div>
+
+<div class="clear"></div>
+<div class="clear"></div>
+      </div>
+</div>
+<div class="infoColFooter"></div>
+</div><div class="empty"></div></div></div></div><table class="f"><tr><td class="l"></td><td>&nbsp;</td><td class="r"></td></tr></table>
+      </div>
+<a id="17649669"></a>
+       <a id="a17649669"></a>
+
+<div class="s shF5FF sg expBlue sectionTwo answer acceptedHeader"><table class="h"><tr><td class="l"></td><td><span class="sectionHeaderExtra">10.03.2006 at 12:04AM PDT,<span class="answerID"> ID: 17649669</span></span><div class="t2i" style="background: url(http://t2i.experts-exchange.com/t/61-50.png) no-repeat;width:118px;height:19px;"></div></td><td class="r"></td></tr></table><div class="bl"><div class="br"><div class="bbg"><div class="empty"></div><div class="bc"><div class="infoColHeader"></div><div class="infoColContainer male maleWizard"><div class="infoCol"><a href="/M_3553664.html" class="infoColIcon"></a><p>Rank: <span>Wizard</span></p></div>
+  <div class="infoBody">
+<div class="answerer"><a href="/M_3553664.html">ravenpl</a>:</div>
+       <div class="answerBody quoted" id="EchoTopic">
+
+According to <a rel="nofollow" href="http://httpd.apache.org/docs/2.0/mod/mod_env.html#setenv" target="_blank">http://httpd.apache.org/docs/2.0/mod<wbr />/mod_env.h<wbr />tml#setenv<wbr /></a><br />You can use it in: server config, virtual host, directory, .htaccess<br />&lt;Location&gt; is not on the list :(<br /></div>
+
+<div class="footnote">Accepted Solution</div>
+<div class="clear"></div>
+<div class="clear"></div>
+      </div>
+</div>
+<div class="infoColFooter"></div>
+</div><div class="empty"></div></div></div></div><table class="f"><tr><td class="l"></td><td>&nbsp;</td><td class="r"></td></tr></table>
+      </div>
+<a id="17650349"></a>
+       <a id="a17650349"></a>
+
+<div class="s shF5FF sb expDarkGrey sectionTwo answer answerHeader"><table class="h"><tr><td class="l"></td><td><span class="sectionHeaderExtra">10.03.2006 at 03:25AM PDT,<span class="answerID"> ID: 17650349</span></span><div class="t2i" style="background: url(http://t2i.experts-exchange.com/t/59-50.png) no-repeat;width:108px;height:19px;"></div></td><td class="r"></td></tr></table><div class="bl"><div class="br"><div class="bbg"><div class="empty"></div><div class="bc"><div class="infoColHeader"></div><div class="infoColContainer male maleSage"><div class="infoCol"><a href="/M_3444057.html" class="infoColIcon"></a><p>Rank: <span>Sage</span></p></div>
+  <div class="infoBody">
+<div class="answerer"><a href="/M_3444057.html">caterham_www</a>:</div>
+       <div class="answerBody quoted" id="EchoTopic">
+
+&gt; You can use it in: server config, virtual host, directory, .htaccess<br />&gt; &lt;Location&gt; is not on the list :(<br /><br />&lt;Location&gt; is directory context.</div>
+
+<div class="clear"></div>
+<div class="clear"></div>
+      </div>
+</div>
+<div class="infoColFooter"></div>
+</div><div class="empty"></div></div></div></div><table class="f"><tr><td class="l"></td><td>&nbsp;</td><td class="r"></td></tr></table>
+      </div>
+<a id="17803622"></a>
+       <a id="a17803622"></a>
+
+<div class="s shF5FF so expDarkBlue sectionTwo answer adminHeader"><table class="h"><tr><td class="l"></td><td><span class="sectionHeaderExtra">10.25.2006 at 07:29AM PDT,<span class="answerID"> ID: 17803622</span></span><div class="t2i" style="background: url(http://t2i.experts-exchange.com/t/63-50.png) no-repeat;width:161px;height:19px;"></div></td><td class="r"></td></tr></table><div class="bl"><div class="br"><div class="bbg"><div class="empty"></div><div class="bc"><div class="infoColHeader"></div><div class="infoColContainer male maleGuru"><div class="infoCol"><a href="/M_395098.html" class="infoColIcon"></a><p>Rank: <span>Guru</span></p></div>
+  <div class="infoBody">
+<div class="answerer"><a href="/M_395098.html">periwinkle</a>:</div>
+       <div class="answerBody quoted" id="EchoTopic">
+
+No comment has been added to this question in more than 21 days, so it is now classified as abandoned.<br /><br />I will leave the following recommendation for this question in the Cleanup topic area:<br />&nbsp; &nbsp;Accept: ravenpl {<a rel="nofollow" href="http:#17649669">http:#17649669</a>}<br /><br />Any objections should be posted here in the next 4 days. After that time, the question will be closed. <br /><br />periwinkle<br />EE Cleanup Volunteer</div>
+
+<div class="clear"></div>
+<div class="clear"></div>
+      </div>
+</div>
+<div class="infoColFooter"></div>
+</div><div class="empty"></div></div></div></div><table class="f"><tr><td class="l"></td><td>&nbsp;</td><td class="r"></td></tr></table>
+      </div>
+<a id="17831379"></a>
+       <a id="a17831379"></a>
+
+<div class="s shF5FF so expDarkBlue sectionTwo answer adminHeader"><table class="h"><tr><td class="l"></td><td><span class="sectionHeaderExtra">10.29.2006 at 06:32PM PST,<span class="answerID"> ID: 17831379</span></span><div class="t2i" style="background: url(http://t2i.experts-exchange.com/t/63-50.png) no-repeat;width:161px;height:19px;"></div></td><td class="r"></td></tr></table><div class="bl"><div class="br"><div class="bbg"><div class="empty"></div><div class="bc"><div class="infoColHeader"></div><div class="infoColContainer male male"><div class="infoCol"><a href="/M_621261.html" class="infoColIcon"></a></div>
+  <div class="infoBody">
+<div class="answerer"><a href="/M_621261.html">Computer101</a>:</div>
+       <div class="answerBody quoted" id="EchoTopic">
+
+Forced accept.<br /><br />Computer101<br />EE Admin</div>
+
+<div class="clear"></div>
+<div class="clear"></div>
+      </div>
+</div>
+<div class="infoColFooter"></div>
+</div><div class="empty"></div></div></div></div><table class="f"><tr><td class="l"></td><td>&nbsp;</td><td class="r"></td></tr></table>
+      </div>
+</div>
+<script type="text/javascript">
+ function showSignUp(id)
+ {
+    var select = document.getElementById("answer"+id);
+    if (select != null)
+       select.className = 'signUpSpaceVisible';
+ }
+ 
+ function removeSignUp(id)
+ {
+    var select = document.getElementById("answer"+id);
+    if (select != null)
+       select.className = 'signUpSpace';
+ }
+</script>
+<div class="hr"></div>
+  <div class="bTypeA bSizeMedium bXPColorMediumDefault"><a class="bTextRelatedSolutions" href="http://search.experts-exchange.com/simpleSearch.jsp?q=setenv+OR+spell+OR+python+OR+apach+OR+loadmodul+OR+sethandl+OR+setenv&searchSubmit=true"><div class="t2i" style="background: url(http://t2i.experts-exchange.com/t/62-50.png) no-repeat;width:98px;height:16px;"></div></a></div><div class="clear"></div>
+  </div><div class="empty"></div></div></div></div><table class="f"><tr><td class="l"></td><td>&nbsp;</td><td class="r"></td></tr></table>
+      </div>
+<div class="qwID">
+20080206-EE-VQP-25</div>
+<!-- close the body column -->
+      </div>
+<div id="pageFooter">
+<div class="translationFooter">
+        <form method="get" action="/translate.jsp" onsubmit="return submitOnce();">
+          <select id="translationLanguages_footer" name="language" onchange="this.form.submit();">
+          </select>
+          <input type="hidden" name="url" value="/Software/Server_Software/Web_Servers/Apache/Q_22010802.html">
+        </form>
+        <script type="text/javascript">appendTranslationOptions('translationLanguages_footer', 'null');</script>
+      </div>
+<ul id="compFL">
+  <li><a href="/aboutUs.jsp">About Us</a>|</li>
+  <li><a href="/contactUs.jsp">Contact Us</a>|</li>
+  <li><a href="/memberAgreement.jsp">Member Agreement</a>|</li>
+<li><a href="http://www.alexa.com/data/details/main?q=experts-exchange.com&amp;url=http://www.experts-exchange.com/" title="Internet Rank" onclick="void(window.open(this.href,'','')); return false;">Internet Rank</a>|</li>
+  <li><a href="/privacyPolicy.jsp">Privacy Policy</a>|</li>
+  <li class="lastInList"><a href="/siteMap.jsp">Site Map</a></li>
+</ul>
+<div id="compCpyr"><span class="noWrap"> &copy; Copyright Experts Exchange LLC 2008.</span> <span class="noWrap">All rights reserved.</span></div>
+</div></div></div></div></div><script type="text/javascript">eeAdsLoaded = 1</script>
+<script type="text/javascript" src="http://css.experts-exchange.com/timer/timer1.js"></script>
+<script type="text/javascript" src="http://css.experts-exchange.com/timer/timer2.js"></script>
+<script type="text/javascript" src="http://css.experts-exchange.com/timer/timer3.js"></script>
+<script type="text/javascript" src="http://css.experts-exchange.com/timer/timer4.js"></script>
+<img src="/timer/timer1.gif" onload="endEETimer()">
+<img src="/timer/timer2.gif" onload="endEETimer()">
+<img src="/timer/timer3.gif" onload="endEETimer()">
+<img src="/timer/timer4.gif" onload="endEETimer()">
+
+<script type="text/javascript">
+  var fakeLocations = new Array();
+  var realLocations = new Array();
+</script>
+<div id="headerAdvertisementDivTemp" style="display: none;">
+    <script type="text/javascript">
+      fakeLocations[fakeLocations.length] = 'headerAdvertisementDivTemp';
+      realLocations[realLocations.length] = 'headerAdvertisementDiv';
+      document.write('<scr'+'ipt type="text/javascript"><!--'+"\n"+' e9 = new Object();'+"\n"+' e9.size = "728x90,468x60";'+"\n"+' //--></scri'+'pt>'+"\n"+'<scr'+'ipt type="text/javascript" src="http://tags.expo9.exponential.com/tags/ExpertsExchangecom/Software/tags.js"></scr'+'ipt>');
+    </script>
+  </div>
+
+<div id="componentTileBAdDivTemp" style="display: none;">
+    <script type="text/javascript">
+      fakeLocations[fakeLocations.length] = 'componentTileBAdDivTemp';
+      realLocations[realLocations.length] = 'componentTileBAdDiv';
+      document.write('<scr'+'ipt type="text/javascript"><!--'+"\n"+' e9 = new Object();'+"\n"+' e9.size = "88x31";'+"\n"+' //--></scri'+'pt>'+"\n"+'<scr'+'ipt type="text/javascript" src="http://tags.expo9.exponential.com/tags/ExpertsExchangecom/Software/tags.js"></scr'+'ipt>');
+    </script>
+  </div>
+
+<div id="componentSkyScraperAdDivTemp" style="display: none;">
+    <script type="text/javascript">
+      fakeLocations[fakeLocations.length] = 'componentSkyScraperAdDivTemp';
+      realLocations[realLocations.length] = 'componentSkyScraperAdDiv';
+      document.write('<scr'+'ipt type="text/javascript"><!--'+"\n"+' e9 = new Object();'+"\n"+' e9.size = "160x600,120x600";'+"\n"+' //--></scri'+'pt>'+"\n"+'<scr'+'ipt type="text/javascript" src="http://tags.expo9.exponential.com/tags/ExpertsExchangecom/Software/tags.js"></scr'+'ipt>');
+    </script>
+  </div>
+
+<div id="vqAdDivTemp" style="display: none;">
+    <script type="text/javascript">
+      fakeLocations[fakeLocations.length] = 'vqAdDivTemp';
+      realLocations[realLocations.length] = 'vqAdDiv';
+      document.write('<scr'+'ipt type="text/javascript"><!--'+"\n"+' e9 = new Object();'+"\n"+' e9.size = "300x250";'+"\n"+' //--></scri'+'pt>'+"\n"+'<scr'+'ipt type="text/javascript" src="http://tags.expo9.exponential.com/tags/ExpertsExchangecom/Software/tags.js"></scr'+'ipt>');
+    </script>
+  </div>
+
+<script type="text/javascript">
+for (var i=0; i<fakeLocations.length; i++)
+{
+   var fakeLocation = document.getElementById(fakeLocations[i]);
+   var realLocation = document.getElementById(realLocations[i]);
+
+   for (index = fakeLocation.childNodes.length - 1; index >= 0; index--)
+   {
+      var element = fakeLocation.childNodes[index];
+      if ((element.nodeName == 'SCRIPT') || (element.nodeName == 'NOSCRIPT'))
+         fakeLocation.removeChild(element);
+   }
+
+   fakeLocation.parentNode.removeChild(fakeLocation);
+   realLocation.parentNode.replaceChild(fakeLocation, realLocation);
+   fakeLocation.style.display = 'block';
+}
+</script>
+
+<!-- Begin Tribal Fusion Text Links -->	
+<LINK href="http://ctxt.tribalfusion.com/ctxt/textlinks.css" type="text/css" rel="stylesheet">
+	<SCRIPT>
+		var tf_pubSiteId=2;
+		var tf_maxKeywords=7;
+	</SCRIPT>
+	<SCRIPT src="http://ctxt.tribalfusion.com/ctxt/textlinks.js" type="text/javascript"></SCRIPT>
+<!-- _End_ Tribal Fusion Text Links -->	
+<img src="/timer/timer5.gif" onload="endEETimer()">
+<!-- SiteCatalyst code version: H.7.
+Copyright 1997-2006 Omniture, Inc. More info available at
+http://www.omniture.com -->
+<script language="JavaScript"><!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+var s = setUpOmnitureVariable();
+s.pageName="LO-20080206-EE-VQP-25"
+s.server="www2.experts-exchange.com"
+s.channel="Software/Server_Software/Web_Servers/Apache"
+s.pageType=""
+s.prop1=document.title
+s.prop2=""
+s.prop3=""
+s.prop4="Header Ad,Skyscraper Ad"
+s.prop5=""
+s.prop8=""
+s.prop9=""
+s.prop10=""
+s.prop14=""
+s.prop15="50"
+s.prop16=""
+s.prop17=""
+s.prop18=""
+s.prop19=""
+s.prop20=""
+s.prop21=""
+s.prop22=""
+s.prop23=""
+s.prop24=""
+s.prop25=""
+s.prop26=""
+s.prop27=""
+s.prop28=""
+s.prop29=""
+s.prop30="en|en"
+s.prop31=""
+s.prop32=""
+s.prop33=""
+s.prop34=""
+s.prop35=""
+s.prop36=""
+s.prop37=""
+s.prop38=""
+s.prop39=""
+s.prop42=""
+s.prop43=""
+s.prop44=""
+s.prop45=""
+s.prop46=""
+s.prop47=""
+s.prop48=""
+s.prop49=""
+s.prop50=""
+/* E-commerce Variables */
+s.campaign=""
+s.events="event4"
+s.products=""
+s.state=""
+s.zip=""
+s.purchaseID=""
+s.eVar1=document.title
+s.eVar2=""
+s.eVar3=""
+s.eVar4=""
+s.eVar5=""
+s.eVar6="Guest"
+s.eVar7=""
+s.eVar8=""
+s.eVar9=""
+s.eVar10=""
+s.eVar14=""
+s.eVar15=""
+s.eVar17=""
+s.eVar18=""
+s.eVar19=""
+s.eVar20=""
+s.eVar21=""
+s.eVar22=""
+s.eVar23=""
+s.eVar24=""
+s.eVar25=""
+s.eVar26=""
+s.eVar27=""
+s.eVar28=""
+s.eVar29="11AM"
+s.eVar30="Tuesday"
+s.eVar31="74.93.110.137"
+s.eVar32=""
+s.eVar33="Software/Server_Software/Web_Servers/Apache"
+s.eVar34="5"
+s.eVar35="20080206-EE-VQP-25-FREE-TRIAL"
+s.eVar36="No Pop-Under Ad"
+s.eVar37="en|en"
+s.eVar39=""
+s.eVar40=""
+s.eVar41=""
+s.eVar42="22010802"
+s.eVar43=""
+s.eVar44=""
+s.eVar45="No CDN"
+
+
+/* Hierarchy Variables */
+s.hier1="Software/Server_Software/Web_Servers/Apache"
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.7. -->
+<script language="JavaScript">
+   function getOmnitureFunction()
+   {
+       var s2 = setUpOmnitureVariable();
+       s2.pageName="LO-20080206-EE-VQP-25"
+       s2.server="www2.experts-exchange.com"
+       s2.channel="Software/Server_Software/Web_Servers/Apache"
+       s2.pageType=""
+       s2.prop1=document.title
+       s2.prop2=""
+       s2.prop15="50"
+       s2.prop31="View Solution 1"
+       /* E-commerce Variables */
+       s2.campaign=""
+       s2.events=""
+       s2.eVar1=document.title
+       s2.eVar3=""
+       s2.eVar6="Guest"
+       s2.eVar7=""
+       s2.eVar20=""
+       s2.eVar26=""
+       s2.eVar29="11AM"
+       s2.eVar30="Tuesday"
+       s2.eVar31="74.93.110.137"
+       s2.eVar33="Software/Server_Software/Web_Servers/Apache"
+       s2.eVar34="5"
+       s2.eVar35="20080206-EE-VQP-25-FREE-TRIAL"
+       s2.eVar36="Exchange Skin"
+       s2.eVar45="No CDN"
+       
+       return s2;
+   }
+   
+   function postToOmniture(s2)
+   {
+       /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+       var s_code=s2.t();
+   }
+
+
+   function postAsycOmnitureGoogleSearch(elementID)
+   {
+      var googleRadionButton = document.getElementById(elementID);
+      if (googleRadionButton.checked)
+      {
+         var s2=getOmnitureFunction();
+         s2.prop39='Google Search';
+         postToOmniture(s2);
+      }
+   }
+
+</script>
+<img src="/timer/timer6.gif" onload="endEETimer()">
+
+</body>
+</html>
+
+<!-- www2.experts-exchange.com:80 -->

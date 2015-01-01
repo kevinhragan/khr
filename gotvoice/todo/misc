@@ -1,0 +1,64 @@
+check how hosts are doing using nut as ntp server
+fix fig 
+tweak x settings
+xscribe sendmail errors on ra
+update cfengine on wiki
+read proc man page
+hathor logwatch outpu
+go thru gv wiki
+update asterisk
+    nile - replaced lib issue
+build khufu as firewall
+document domain registration; add to cert info
+add kale disk to mrtg
+
+Pending:
+check lagoon time syncs since 25 Tues
+
+Low priority:
+build machinedb for web display
+man pages misprint; localhost, remote (?)
+try rebuilding database with backed up files
+build ipcop host
+improve debian auto-build
+build an external dns server in kirkland
+try nfs mount across firewall; trace packets for big ping sea -> hawaii; ibackup failure
+fix funky mrtg midnight messages
+cfengine config sysconfig.conf (?)
+fix lagoon menu so right kind of xterm starts
+firewall doc on wiki; build?
+document ipcop backup
+fix/document manual rules for hawaii ipcop after upgrade
+a secondary mail server for gotvoice.com
+check stats on dns machines
+
+Later:
+Nov: solve saving log files
+replace osiris with khufu
+move test network
+on call sunday: upgrade zimbra, upgrade ipcop
+Aarons crontab question; update crontab dist sys - get rid of msn files
+mango mrtg, nagios config as spooler
+put /usr/local mounts in /etc/fstab
+checkinstall install on slackware (?)
+write script to generate MRTG conf
+script to add remote access to ipmi hosts/fix arp requests for bogus ips
+config log file rotation on 808 and other hawaii hosts
+
+Longterm:
+get rid of all 192.168 address's
+setup ipmi on all capable servers
+
+Maybe:
+put oceanic under cfengine
+
+Study:
+    Network book I bought.
+    Linux admin book
+    RFCs:
+    performance tuning
+    asterisk
+    linux lvm
+    linux howtos
+    nagios doc
+    man bash

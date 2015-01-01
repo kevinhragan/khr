@@ -1,0 +1,5 @@
+  511  cd ../bison
+  512  (cd ,,/sni; sngcid -X -Brec -Eam,pm timedate/tmobile/i0998025914_000.wav timedate/*.sng) | tmo
+  513  ls ../sni
+  514  (cd ../sni; sngcid -X -Brec -Eam,pm timedate/tmobile/i0998025914_000.wav timedate/*.sng) | tmo
+  515  history | tail -5 >history

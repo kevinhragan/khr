@@ -1,0 +1,23 @@
+2007-12-05T09:46:26 Checking update-file '/usr/share/apps/kconf_update/kcookiescfg.upd' for new updates
+2007-12-05T09:46:26 kcookiescfg.upd: Found new update 'kde2.2/b1'
+2007-12-05T09:46:26 kcookiescfg.upd: Found new update 'kde3.1/cvs'
+2007-12-05T09:46:27 Checking update-file '/usr/share/apps/kconf_update/kded.upd' for new updates
+2007-12-05T09:46:27 kded.upd: Found new update 'kde3.0'
+2007-12-05T09:46:27 Checking update-file '/usr/share/apps/kconf_update/kio_help.upd' for new updates
+2007-12-05T09:46:27 kio_help.upd: Found new update 'kde3_2'
+2007-12-05T09:46:27 kio_help.upd: Running script 'move_kio_help_cache.sh'
+2007-12-05T09:46:27 [Script] mv: cannot stat `/home/kevinr/.kde/share/apps/kio_help/cache': No such file or directory
+2007-12-05T09:46:27 [Script] rmdir: /home/kevinr/.kde/share/apps/kio_help: No such file or directory
+2007-12-05T09:46:27 Checking update-file '/usr/share/apps/kconf_update/kdeprintrc.upd' for new updates
+2007-12-05T09:46:27 kdeprintrc.upd: Found new update 'kde-3.1-toolbar'
+2007-12-05T09:46:27 kdeprintrc.upd: Skipping kdeprintrc:General:ViewMenuBar, already exists.
+2007-12-05T09:46:27 kdeprintrc.upd: RemoveKey removes kdeprintrc:General:ViewToolBar
+2007-12-05T09:46:27 Checking update-file '/usr/share/apps/kconf_update/kioslave.upd' for new updates
+2007-12-05T09:46:27 kioslave.upd: Found new update 'kde2.2/r1'
+2007-12-05T09:46:27 kioslave.upd: Skipping update 'kde2.2/r1'
+2007-12-05T09:46:27 kioslave.upd: Found new update 'kde2.2/r2'
+2007-12-05T09:46:27 kioslave.upd: Running script 'useragent.pl'
+2007-12-05T09:46:27 kioslave.upd: Script removes kioslaverc:UserAgent:EntriesCount
+2007-12-05T09:46:27 kioslave.upd: Found new update 'kde2.2/r3'
+2007-12-05T09:46:27 kioslave.upd: Running script 'proxytype.pl'
+2007-12-05T09:46:27 kioslave.upd: Script removes kioslaverc:Proxy Settings:UseProxy

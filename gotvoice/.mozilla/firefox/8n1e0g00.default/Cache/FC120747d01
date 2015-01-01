@@ -1,0 +1,2636 @@
+/* Copyright (c) 2006, 2007 Lev Walkin <vlm@lionet.info>. All rights reserved.
+ * You may copy and modify this script as long as the above copyright notice,
+ * this condition and the following disclaimer is left intact.
+ * This software is provided by the author "AS IS" and no warranties are
+ * implied, including fitness for a particular purpose. In no event shall
+ * the author be liable for any damages arising in any way out of the use
+ * of this software, even if advised of the possibility of such damage.
+ * $Id: comments.js 4324 2008-04-17 12:02:27Z jskit $
+ */
+
+if(!window.$JCA) {
+  var $JCA = [];
+  var $JCLT = {
+	leaveComment: 'Leave a comment',
+	nameLabel: 'Your name:',
+	emailLabel: 'Send replies to email:',
+	emailNote: '(if provided, email will not be displayed or shared)',
+	ratingLabel: 'Rating:',
+	commentLabel: 'Comment:',
+	submit: 'Submit comment',
+	cancel: 'Cancel',
+	tooShort: 'Your message is too short',
+	tooLong: 'Message size should not exceed 3000 bytes',
+	junkCtl: 'Junk control',
+	byVotes: 'by',
+	selectedAvatar: 'Selected Avatar',
+	uploadAvatar: 'Upload new avatar:',
+	removeAvatar: 'Remove Avatar',
+	removeAvatarConfirm: 'Remove this avatar?',
+	isJunkVote: 'Is this inappropriate junk or SPAM message?'
+  };
+  var $JCL = window.JSCC_Translate || function(t) {
+	return (window.$JCLTL ? $JCLTL[t] : false) || $JCLT[t] || t;
+  }
+}
+
+if(!window.JSKitLib) JSKitLib = {};
+
+JSKitLib.isPreIE7 = function() {
+	if (document.body.filters && parseInt(navigator.appVersion.split("MSIE") [1]) < 7)
+		return true;
+}
+
+JSKitLib.stopEventPropagation = function(e) {
+  if (!e) var e = window.event;
+  e.cancelBubble = true;
+  if (e.stopPropagation) e.stopPropagation();
+}
+
+JSKitLib.preventDefaultEvent = function(e) {
+  if (!e) var e = window.event;
+  e.returnValue = false;
+  if (e.preventDefault) e.preventDefault();
+}
+
+JSKitLib.addPNG = function(node, imageURL) {
+        if (JSKitLib.isIE()) {
+                node.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + imageURL + "', sizingMethod='crop')"
+        } else {
+                node.style.backgroundImage = 'url(' + imageURL + ')';
+                node.style.backgroundRepeat = 'no-repeat';        
+        }
+        return node;
+}
+
+JSKitLib.getOuterHTML = function(node) {
+    var clone = node.cloneNode(true);
+    var parent = document.createElement('div');
+    parent.appendChild(clone);
+    var ihtml = parent.innerHTML;
+
+    // ff converts sp characters inside of href to hex ascii
+    var ihtmlHref = ihtml.match(/href\s*=\s*"[^"]*(%7B|%7D)[^"]*"/g) || [];
+    for (var i=0; i< ihtmlHref.length; i++) {
+      var a = ihtmlHref[i];
+      var b = a.replace(/%7B/g, '{');
+      b = b.replace(/%7D/g, '}');
+      ihtml = ihtml.replace(a, b);
+    }
+    return ihtml;
+};
+
+JSKitLib.getElementsByClass = function(node, searchClass, tag) {
+    var classElements = [];
+    node = node || document;
+    tag = tag || '*';
+    var tagElements = node.getElementsByTagName(tag);
+    var regex = new RegExp("(^|\\s)" + searchClass + "(\\s|$)");
+    for (var i=0, j=0; i < tagElements.length; i++) {
+      if (regex.test(tagElements[i].className)) {
+        classElements[j] = tagElements[i];
+        j++;
+      }
+    }
+    return classElements;
+};
+
+JSKitLib.preloadImg = function(imgURL) { 
+
+  if (!JSKitLib.preloadImgList) JSKitLib.preloadImgList = {};
+
+  if (!JSKitLib.preloadImgList[imgURL]) {
+    (new Image()).src = imgURL; 
+    JSKitLib.preloadImgList[imgURL] = true;
+  }
+};
+
+JSKitLib.isIE = function() {
+        if (document.body.filters && navigator.appVersion.match(/MSIE/))
+                return true;
+}
+
+var JSKitGlobal = function() {
+
+  this._appAvailable = {};
+  this._appObjects = {};  // Specific objects of an application type 
+  this._appObjectActions = {}; // app.object.actions
+
+  this._isAppAvailable = function(app) {
+    return (this._appAvailable[app]) ? true : false;
+  }
+    
+  this.isRatingsAppAvailable = function() {
+    return this._isAppAvailable('ratings');
+  }
+
+  this.isCommentsAppAvailable = function() {
+    return this._isAppAvailable('comments');
+  }
+
+  this._setAppAvailable = function(app) {
+    this._appAvailable[app] = true;
+    /* index this app */
+    this.indexAppObjects(app);
+    /* execute any queued actions */
+    this.executeAppObjectActions(app);
+  }
+
+  this.setRatingsAppAvailable = function() {
+    this._setAppAvailable('ratings');
+  }
+  this.setCommentsAppAvailable = function() {
+    this._setAppAvailable('comments');
+  }
+
+  this.indexAppObjects = function(app) {
+
+    if (app == 'ratings') {
+      var appArray = $JRA;
+    } else if (app == 'comments') {
+      var appArray = $JCA;
+    } else {
+      alert('Attempt to index invalid app type');
+      return;
+    }
+
+    for (var i=0; i < appArray.length; i++) {
+      // Check that it's not standalone
+      if (appArray[i].isStandalone()) {
+        continue;
+      }
+      var uniq = appArray[i].uniq;
+      if ( ! this._appObjects[uniq] ) {
+        this._appObjects[uniq] = {};
+      }
+      if ( ! this._appObjects[uniq][app]) {
+        this._appObjects[uniq][app] = [];
+      }
+      this._appObjects[uniq][app].push(appArray[i]);
+    }
+  }
+
+  this.executeAppObjectActions = function(app) {
+    if (this._appObjectActions[app]) {
+      for (var i=0; i < this._appObjectActions[app].length; i++) {
+        var uniq = this._appObjectActions[app][i].uniq;
+        if (this._getAppObject(app, uniq)) {
+          this._appObjectActions[app][i].action();
+        }
+      }
+    }
+  }
+
+  this._getAppObject = function(app, uniq) {
+    if (this._appObjects[uniq] && this._appObjects[uniq][app]) {
+      return this._appObjects[uniq][app][0];  // Return only the first
+    }
+    return null;
+  }
+
+  this.getCommentsAppObject = function(uniq) {
+    return this._getAppObject('comments', uniq);
+  }
+
+  /* Returns a Ratings Object */
+  this.getRatingsAppObject = function(uniq) {
+    return this._getAppObject('ratings', uniq);
+  }
+
+  this.copyRatingsAppObject = function(uniq, node) {
+    if ( ! this.isRatingsAppAvailable()) {
+      return;
+    }
+
+    var oldObj = this.getRatingsAppObject(uniq);
+    var newObj = oldObj.clone(node, { 'view':'user', 'commentprompt':'no', 'menu':'no'  } );
+
+    return newObj;
+  }
+
+  this._tryAppObjectAction = function(app, uniq, action) {
+    if (this._isAppAvailable(app)) {
+      if (this._getAppObject(app, uniq)) {
+        action();
+      }
+    } else {
+
+      if ( ! this._appObjectActions[app]) {
+        this._appObjectActions[app] = [];
+      }
+      this._appObjectActions[app].push( { 'uniq' : uniq, 'action' : action } );
+    }
+  }
+
+  this.tryRatingsAppObjectAction = function(uniq, action) {
+    this._tryAppObjectAction('ratings', uniq, action);
+  }
+
+  this.tryCommentsAppObjectAction = function(uniq, action) {
+    this._tryAppObjectAction('comments', uniq, action);
+  }
+
+}
+
+/* Singleton-like handler */
+JSKitGlobal.getInstance = function() {
+  if ( ! window.JSKitGlobalInstance) {
+    JSKitGlobalInstance = new JSKitGlobal();
+  }
+  return JSKitGlobalInstance;
+}
+
+/* JSKitGlobal  object */
+$JSKitGlobal = JSKitGlobal.getInstance();
+
+/* JavaScript Comment Class */
+new JSCC(); 
+
+/* JSKitGlobal : App is ready */
+$JSKitGlobal.setCommentsAppAvailable();
+
+
+function JSCC() {
+	/* Find the target DIV for all the blog comments */
+	this.jcaIndex = $JCA.length;
+	$JCA.push(this);
+	this.get = function(id) { return document.getElementById(id); }
+	this.cr = function(tag) { return document.createElement(tag); }
+	var wl = window.location;
+	this.uriDomain = (wl.protocol.substr(0, 4) != 'http' ? 'http:' : '')
+				+ '//js-kit.com';
+	this.uri = this.uriDomain + '/comment';
+	this.fieldDfl = {};
+	this.TC = {};
+	this.tmpID = 0;
+	this.pathOverride = "";
+	this.uniq = wl.pathname;
+	this.cmtById = {};
+	this.objById = {};
+	this.utmpl={};
+	this.config = {};
+	this.gen = 0;
+	this.ctag = null;
+	this.czidx = 300;
+
+	this.isStandalone = function() {
+		return (this.config.standalone == 'yes');
+	}
+
+	this.scoringEnabled = function() {
+		return ((this.config.scoring != 'no') && (this.serverOptions.scoring));
+	}
+
+	var idName = "js-kit-comments";
+
+	var target = arguments.length ? arguments[0] : this.get(idName);
+
+	if(target) {
+		this.labelHTML = target.getAttribute("label");
+		var path = target.getAttribute("path");
+		if(path) {
+			path = String(path);
+			var ar = path.match(/^https?:\/\/[^\/]+(.*)/);
+			if(ar) this.pathOverride = ar[1];
+			else this.pathOverride = path.replace(/^([^\/]+)/,
+					wl.pathname + "/$1");
+			path = this.pathOverride;
+		} else { path=wl.pathname; }
+		this.uniq = target.getAttribute("uniq") || path;
+
+		var cn = target.childNodes;
+		for(var n=0;n < cn.length;n++)
+			this.utmpl[cn[n].className] = JSKitLib.getOuterHTML(cn[n]);
+		if(cn.length) target.innerHTML = "";
+		target.style.display = "block";
+		target.style.visibility = "visible";
+		var utsc = this.utmpl['js-singleComment'];
+		if(utsc) this.dtComment = utsc;
+
+		// Override
+		var jovs = window.JSKit$Override;
+		if(jovs) {
+		  for(var i = jovs.length-1; i>=0; i--) {
+			var fName = jovs[i][0];
+			var func = jovs[i][1];
+			this[fName] = func;
+		  }
+		}
+	} else {
+		if(!document.body)
+			alert("Enclose the script in a <BODY></BODY> tag!");
+		var els = document.body.getElementsByTagName(idName);
+		var oWay = false;
+		if(els && els.length) oWay = true;
+		else els = document.body.getElementsByTagName("div");
+		if(els && els.length) {
+			$JCA.shift();
+			for(var i=0; i < els.length;i++)
+			  if(oWay || els[i].className.match(/js-kit-comments/))
+				new JSCC(els[i]);
+			if($JCA.length) return;
+			$JCA.push(this);
+		}
+		document.write('<div id="'+idName+'"></div>');
+		target = this.get(idName);
+	}
+	target.className = idName;
+	target.id = "";
+
+	// Handling user configuration settings
+	this.config = (function() {
+		var cf = {};
+		for(var i = 0; i < arguments.length; i++) {
+			var arg = arguments[i];
+			if(typeof(arg) == 'string') arg = [arg];
+			var name = arg[0];
+			var value = target.getAttribute(name);
+			if(arg.length > 1) {
+				if(typeof(arg[1]) == 'number') {
+				    if(value) {
+					var n = parseInt(value);
+					if(isNaN(n) || n < 0) {
+						if(value == "no")
+							value = 0;
+						else
+							value = arg[1];
+					} else {
+						value = n;
+					}
+				    } else
+					value = arg[1];
+				} else if(typeof(arg[1]) == 'object') {
+					for(var j=arg[1].length; j; j--)
+						if(arg[1][j-1] == value)
+							break;
+					if(!j) value = arg[1][j];
+				} else {
+					if(!value) value = arg[1];
+				}
+			}
+			cf[name] = value;
+		}
+		return cf;
+	})(
+		['avatars', 'yes'],
+		['standalone', 'no'],
+		['scoring', 'yes'],
+		['paginate', 50],
+		['backwards', 'no'],
+		['domain', wl.host],
+		['sort', ['date','karma','name','status','rating']],
+		['thread', ['yes','no']],
+		'adminBgColor',
+		'moderate',
+		'permalink'
+	);
+	this.config.permalink = encodeURIComponent(target.getAttribute('permalink') || '');
+	this.config.domain = this.config.moderate || this.config.domain;
+	if(this.config.paginate <= 0) this.config.paginate = 200;
+	if(target.getAttribute('backwards'))
+		this.backwards = (this.config.backwards == 'yes');
+	else if(target.getAttribute('paginate'))
+		this.backwards = !!this.config.paginate;
+	else
+		this.backwards = false;
+	this.preq = {
+		srt:this.config.sort,
+		ord:(this.backwards?'desc':'asc'),
+		thr:this.config.thread,
+		sp: 1, pn: 5, ps: this.config.paginate };
+	if(!this.preq.ps) this.preq.ps = 100;
+	this.preq.pn = Math.round(50 / this.preq.ps);
+	if(this.preq.pn < 2) this.preq.pn = 2;
+
+	var self = this;
+	self.target = target;
+
+	this.runscr = function(url, args) {
+		var sc = this.cr("script");
+		sc.setAttribute("charset", "utf-8");
+		sc.src = url + (args?"?"+args:"");
+		this.target.appendChild(sc);
+		return false;
+	}
+	this.server = function(ext, data, postdata) {
+		// ensure window.location is current (re:blogspot)
+		var wl = window.location;
+		var ref = wl.protocol + '//'
+			+ encodeURIComponent(
+				this.pathOverride
+				? (this.config.domain.replace(/\/.*/, '')
+					+ this.pathOverride)
+				: (this.config.domain + wl.pathname));
+		if(postdata) {
+			var i = this.TC['js-CommentsArea'];
+
+			var d = this.cr('div');				
+			var tgt = 'jsk-ifrmpost-' + this.jcaIndex + Math.random();
+			d.innerHTML = '<iframe id="' + tgt + '" name="' + tgt + '" src="about:blank" width=0 height=0 style="border: none"></iframe>';
+			i.appendChild(d);
+			var ifrpost = d.firstChild;
+			var getFrame = function(FrameName, Parent) {
+				var tp = Parent ? getFrameDoc(Parent) : document;
+				var fr = tp.getElementById(FrameName).contentWindow;
+				return fr;
+			}
+			var getFrameDoc = function(FrameName, Parent) {
+				var FEl = getFrame(FrameName, Parent);
+				return FEl.contentDocument ? FEl.contentDocument : FEl.document;
+			}
+
+			ifrpost.onreadystatechange = function() {
+				if((ifrpost.readyState) && (ifrpost.readyState != 'complete')){
+					return;
+				}
+				var iDOC = getFrameDoc(tgt);
+				var td = iDOC.createElement('div');
+				var tgtch = 'jsk-ifrmpostch-' + self.jcaIndex + Math.random();
+				td.innerHTML = '<iframe id="' + tgtch + '" name="' + tgtch + '" src="" width=0 height=0 style="border: none"></iframe>';
+				iDOC.body.appendChild(td);
+				var pfr = td.firstChild;
+
+				pfr.onreadystatechange = function() {
+					if((pfr.readyState) && (pfr.readyState != 'complete')){
+						return;
+					}
+					var iDOC = getFrameDoc(tgtch, tgt);
+
+					var frm = iDOC.createElement('form');
+					frm.method = 'post';
+					frm.action = wl.protocol + self.uri + ext;
+					postdata.push({'Name': 'ref', 'Value': ref});
+					if(self.config.moderate) {
+						postdata.push({'Name': 'mod', 'Value': ''});
+					}
+					if(JSKitLib.isIE()){
+						postdata.push({'Name': 'IE', 'Value': ''});
+					}
+					if(navigator.userAgent.indexOf("Opera") != -1){
+						postdata.push({'Name': 'Opera', 'Value': ''});
+					}
+					if(navigator.userAgent.indexOf("Safari") != -1){
+						postdata.push({'Name': 'Safari', 'Value': ''});
+					}
+					var plen = postdata.length;
+					for(var j=0; j<plen; j++){
+						var frmel = iDOC.createElement("input");
+						frmel.type = "hidden";
+						frmel.name = postdata[j].Name;
+						frmel.value = postdata[j].Value;
+						frm.appendChild(frmel);
+					}
+					iDOC.body.appendChild(frm);
+					var getFrameLocation = function(FrameName, Parent) {
+						var fr = getFrameDoc(FrameName, Parent);
+						return decodeURIComponent(fr.location.href);
+					};
+					var processpfronload = function () {
+						if((pfr.readyState) && (pfr.readyState != 'complete')){
+							return;
+						}
+						var js;
+						if(JSKitLib.isIE()){
+							var curfr=getFrame(tgt);
+							js=decodeURIComponent(curfr.document.title);
+						} else if(navigator.userAgent.indexOf("Opera") != -1){
+							js=decodeURIComponent(this.location.hash).substr(1);
+						} else if(navigator.userAgent.indexOf("Safari") != -1){
+							js=decodeURIComponent(frames[tgt].frames[tgtch].location.hash).substr(1);
+						} else {
+							js=getFrameLocation(tgt).substr(12);
+						}
+						if(js){
+							var sc=self.cr('script');
+							sc.text=js;
+							self.target.appendChild(sc);
+						}
+					};
+					pfr.onreadystatechange = processpfronload;
+					pfr.onload = processpfronload;
+					frm.submit();
+				};
+				pfr.onload = pfr.onreadystatechange;
+				if(!JSKitLib.isIE()){
+					pfr.onload();
+				}
+			};
+			ifrpost.onload = ifrpost.onreadystatechange;
+			if(!JSKitLib.isIE()){
+				ifrpost.onload();
+			}
+		} else {
+			var requrl =
+				"ref=" + ref
+				+ (this.config.moderate?'&mod':'')
+				+ "&" + data;
+			return this.runscr(this.uri + ext, requrl);
+		}
+	}
+
+	this.getpages = function(sp, ap) {
+		var preq = self.preq;
+		if(!sp) sp = preq.sp;
+		self.loading = (new Date()).valueOf();
+		self.server("s-data.js", "jx="+self.jcaIndex
+			+ "&gen=" + self.gen
+			+ "&srt=" + preq.srt
+			+ "&ord=" + preq.ord
+			+ (preq.thr=='yes'?'':"&prs=flat")
+			+ "&sp="+ sp + "&pn="+ preq.pn + "&ps="+ preq.ps
+			+ (ap?ap:''));
+	}
+	this.getpages();
+}
+
+document.write('<style type="text/css">'
++ ".js-OldComments { margin-bottom: 1px; }"
++ ".js-LeaveComment { margin: 3pt 0; }"
++ ".js-CreateComment { display: none; }"
++ ".js-CCMore { padding-left: 3px }"
++ ".js-CreateCommentBg { margin: 1em; padding: 0.5em; border: solid 1px #c0c0c0; text-align: left; float: left; }"
++ ".js-PageNavTop { margin-bottom: 3px; } "
++ ".js-PageNavBottom { margin-top: 3px; } "
++ ".js-commentFieldSubject { font-weight: bold; margin-bottom: 5px; }"
++ ".js-commentFieldLabel { margin-top: 5px; }"
++ ".js-commentFieldNote { font-family: Verdana; font-size: 7pt; color: #808080; }"
++ ".js-siteAdmin { font-weight: bold; }"
++ ".js-singleComment { font-size: 8pt; font-family: Verdana, Helvetica; border: solid 1px #c0c0c0; text-align: left; margin-bottom: -1px; }"
++ ".js-singleCommentBg { padding: 0.3em; position: relative; }"
++ ".js-singleCommentINFO { color: #808080; float: right; padding: 3px; margin-left: 2em; text-align: right;}"
++ ".js-singleCommentAvatar { margin-right: 1px; margin-left: 0.5em; float: right; }"
++ ".js-singleCommentDate { font-size: 7pt; }"
++ ".js-singleCommentOrigin { position: absolute; bottom: 0.3em; font-size: 7pt; color: #808080; }"
++ ".js-singleCommentKarmaComMod { clear: both; }"
++ ".js-singleCommentKarma { float: left; font-size: 7pt; color: #808080; margin-right: 2em; padding-top: 3px; }"
++ ".js-singleCommentKarmaScore { display: none; }"
++ ".js-singleCommentComMod { white-space: nowrap; float: left; font-size: 7pt; color: #808080; display: none; padding-top: 3px; margin-right: 3em; }"
++ ".js-singleCommentCtls { float: right; white-space: nowrap; }"
++ ".js-singleCommentComModMark {}"
++ ".js-commentControl { float: left; margin-right: 2em; }"
++ ".js-CmtButton { margin-right: 0.5em }"
++ ".js-CCButtons { margin: 0.3em 0 0.5em 0 }"
++ ".js-poweredBy { margin-top: 2pt; margin-right: 2pt; color: #808080; font-size: 7pt; font-family: Verdana, Helvetica; }"
++ ".js-poweredBy A { text-decoration: none; color: #8080a0 }"
++ ".js-antispamBy { text-align: right; }"
++ ".js-Progress { position: absolute; visibility: hidden; right: 5px; top: 5px; width: 15px; height: 15px; }"
++ ".js-SettingsWindow { position: absolute; margin: 2px; padding: 0.3em; border: solid 1px #cccccc; color: #404040; white-space: normal;}"
++ ".js-ControlBlockText, .js-ControlBlockTextDisabled {font-size: 8pt; text-align: left;}"
++ ".js-ControlBlockButton {font-size: 8pt;}"
++ ".js-ControlBlockTextDisabled {color: #808080}"
++ "</style>");
+(function(v){v=parseFloat(v.split("MSIE")[1]);
+if(v>=5.5)document.write('<style>.js-singleComment{zoom:1} .js-singleCommentBg{zoom:1}</style>');})
+(navigator.appVersion);
+if(navigator.userAgent.indexOf("Opera")>=0)
+document.write("<style>wbr:after{content:\"\\00200B\"}</style>");
+else
+document.write("<style>.js-singleCommentTEXT{word-wrap:break-word}</style>");
+
+
+JSCC.prototype.setDefaultField = function(name,value){this.fieldDfl[name]=value}
+JSCC.prototype.addChild = function(to, what) {
+
+
+	if (typeof(to) != 'object')
+		return;
+
+	if(arguments.length == 3 && arguments[2])
+		to.insertBefore(what, to.firstChild);
+	else
+		to.appendChild(what);
+}
+JSCC.prototype.html = function(text) {
+	var div = this.cr("div");
+	div.innerHTML = text;
+	var ch = div.firstChild;
+	div = null;
+	return ch;
+}
+JSCC.prototype.a = function() {
+	var a = this.cr("a");
+	a.href = "javascript:void(0);";
+	for(var text = '', i = 0; i < arguments.length; i++)
+		text += arguments[i];
+	a.innerHTML += text;
+	return a;
+}
+JSCC.prototype.text = function(div, text) {
+	while(div.hasChildNodes()) div.removeChild(div.firstChild);
+	div.appendChild(document.createTextNode(text));
+	return div;
+}
+
+JSCC.prototype.div = function(id) {
+	var div = this.cr("div");
+	for(var i = 1; i < arguments.length; i++) {
+		var arg = arguments[i];
+		switch(typeof(arg)) {
+		case "string":
+			this.addChild(div, document.createTextNode(arg));
+			break;
+		case "undefined":
+			break;
+		default:
+		case "object":
+			if(!arg) break;
+			this.addChild(div, arg);
+			break;
+		}
+	}
+	if(id) {
+		div.className = id;
+		var idText = String(id);
+		if(idText.charCodeAt(3) < 91)
+			this.TC[idText] = div;
+	}
+	return div;
+}
+
+JSCC.prototype.dtComment
+ = '<div class="js-singleComment">'
+ + '<div class="js-singleCommentBg">'
+ + '<div class="js-singleCommentAvatar"></div>'
+ + '<div class="js-singleCommentINFO">'
+   + '<div class="js-singleCommentName" style="clear:both">{Name}</div>'
+   + '<div class="js-singleCommentDate">{Date}</div>'
+ + '</div>'
+ + '<div class="js-singleCommentRating" style="display:none;"></div>'
+ + '<div class="js-singleCommentText">{Text}</div>'
+ + '<div class="js-singleCommentKarmaComMod">'
+     + '<div class="js-singleCommentKarma">{Label:Like this comment?}'
+         + ' [<a class="js-singleCommentKarmaY">{Label:yes}</a>]'
+         + ' [<a class="js-singleCommentKarmaN">{Label:no}</a>]'
+     + ' <span class="js-singleCommentKarmaScore">({Label:Score}:'
+     + ' <span class="js-singleCommentKarmaValue">0</span> {Label:byVotes}'
+     + ' <span class="js-singleCommentKarmaVoters">0</span>)'
+     + '</span>'
+     + '</div>'
+     + '<div class="js-singleCommentComMod">'
+         + '{Label:Mark as} <a class="js-singleCommentComModMark">{Label:offensive}</a>'
+     + '</div>'
+   + '<div class="js-singleCommentCtls">'
+     + '<span class="js-singleCommentReplyable">[<a class="js-singleCommentReply">{Label:reply}</a>]</span>'
+     + '<span class="js-singleCommentDeletable"> [<a class="js-singleCommentDelete">{Label:delete}</a>]</span>'
+     + '<span class="js-singleCommentModeratable"> [<a class="js-singleCommentModerate">{Label:moderate}</a>]</span>'
+   + '</div>'
+ + '</div>'
+ + '<br clear="all" />'
+ + '</div>'
+ + '</div>'
+;
+
+JSCC.prototype.dtCreate
+ = '<div class="js-CreateComment">'
+ + '<div class="js-CreateCommentBg">'
+ + '<div class="js-commentFieldSubject">{Label:leaveComment}</div>'
+ + '<div class="js-commentFieldLabel">{Label:nameLabel}</div>'
+ + '<div><input name="js-CmtName" SIZE=32 /></div>'
+ + '<div class="js-commentInputEmail">'
+ + '<div class="js-commentFieldLabel">{Label:emailLabel}'
+   + '<div class="js-commentFieldNote">{Label:emailNote}</div>'
+ + '</div>'
+ + '<div><input name="js-CmtEmail" type="email" SIZE=32 /></div>'
+ + '</div>'
+ + '<div class="js-commentFieldLabel js-commentRatingDisplay">{Label:ratingLabel}</div>'
+ + '<div class="js-commentFieldRating js-commentRatingDisplay"></div>'
+ + '<div class="js-commentFieldLabel">{Label:commentLabel}</div>'
+ + '<div><textarea name="js-CmtText" ROWS=4 COLS=32></textarea></div>'
+ + '<div class="js-commentAvatarArea"></div>'
+ + '<div class="js-CCButtons"><input type="submit" name="js-Cmtsubmit" class="js-CmtButton" VALUE="{Label:submit}">'
+ +  '<input type="reset" name="js-Cmtcancel" class="js-CmtButton" VALUE="{Label:cancel}">'
+ +  '<span class="js-CCMore">[<a class="js-commentAddAvatar">+</a>]</span>'
+ +  '</div>'
+ + '<div class="js-poweredBy js-antispamBy">(<a href="http://js-kit.com/comments?wow">Powered by JS-kit</a>)</div>'
+ + '<div class="js-poweredBy js-antispamBy">(Spam filtering by <a href="http://akismet.com/">Akismet</a>)</div>'
+ + '</div><br clear="all" /></div>'
+;
+
+JSCC.prototype.mapComments = function(cmts) {
+	var cn = cmts.childNodes;
+	if(cn) {
+		var clen = cn.length;
+		var cmt, id, obj;
+		for(var i = 0; i < clen; i++) {
+			cmt = cn[i];
+			id = cmt.id;
+			if(id && (obj = this.objById[id])) {
+				this.fixComment(cmt, obj);
+			} else {
+				this.mapComments(cmt);
+			}
+		}
+	}
+}
+
+JSCC.prototype.mapClass2Object = function(ctl, e) {
+
+	var cName = e.className;
+	if (cName && (cName.indexOf('js-') != -1)) {
+		if(cName.indexOf(' ') > -1) {
+			var classes = cName.match(/\S+/g);
+			for (var i=0; i < classes.length; i++) { 
+				ctl[classes[i]] = e;
+			}
+		} else {
+			ctl[cName] = e;
+		}
+	}
+   
+	if(e.name) ctl[e.name] = e;
+	var cn = e.childNodes;
+	if(cn) {
+		var clen = cn.length;
+		for(var i = 0; i < clen; i++)
+			this.mapClass2Object(ctl, cn[i]);
+	}
+	return ctl;
+}
+
+JSCC.prototype.localDate = function(t) {
+	if(!t) return "";
+	var d = new Date(t * 1000);
+	return d.toLocaleDateString();
+}
+JSCC.prototype.localTime = function(t) {
+	if(!t) return "";
+	var d = new Date(t * 1000);
+	return d.toLocaleTimeString();
+}
+JSCC.prototype.gtmpl = function(t, mObj) {
+	var lowercase = function(a, m) { return String(m).toLowerCase(); }
+	t = t.replace(/^[^<]*(<.*>)[^>]*$/m, "$1");
+	t = t.replace(/(<[\/]?[A-Z]+)/g, lowercase);
+	if(mObj) t = t.replace(/(<[a-z]+)/, '$1 id="' + mObj.ID + '"');
+	t = t.replace(/{Label:([^}]*)}/g,function(a,m){return $JCL(m);});
+	return t;
+}
+JSCC.prototype.tmpl = function(t, obj, dontPutId) {
+	var self = this;
+	t = self.gtmpl(t, dontPutId ? false : obj);
+	t = t.replace(/{Date}/g, self.localDate(obj.TS));
+	t = t.replace(/{Time}/g, self.localTime(obj.TS));
+	var text = String(obj.Text);
+	if (obj.status == 'M' || obj.status == 'H') {
+		text += (this.serverOptions.mtext || '');
+	}
+	text = text.replace(/^[ \s]+|[ \s]+$/, '');
+	text = text.replace(/\n\n+/g, '\n\n');
+	text = text.replace(/\n/g, '&nbsp;<br />');
+	if(text.indexOf('<') == -1)
+	text = text.replace(/([^&<>\s]{12})([^&<>\s]{12})/g, '$1<wbr></wbr>$2');
+	text = text.replace(/{/g, '&#123;');
+	t = t.replace(/{Text}/g, text);
+	t = t.replace(/{([A-Za-z0-9]+)}/g,function(a,m){return obj[m]||'';});
+	return t;
+}
+
+JSCC.prototype.FRef = function(cmt, tgt, funcName) {
+	if(!cmt || !tgt) return;
+
+	var self = this;
+	var args = arguments;
+
+	tgt.href = "";
+	tgt.onclick = function() {
+	  try {
+		var arr = [];
+		if(cmt) arr.push(cmt.id);
+		for(var i = 3; i < args.length; i++) arr.push(args[i]);
+		self[funcName].apply(self, arr);
+	  } catch(e) { ; }
+		return false;
+	}
+}
+
+JSCC.prototype.cmtSetSpamStatus = function(cmt, s) {
+	cmt.cobj.status = s ? 'S' : 'A';
+	if(s) {
+		cmt.style.background = '#ffffe0 url(' + this.uriDomain + '/images/bio-hazard.gif) bottom right repeat-x';
+		cmt.style.color = '#404040';
+	} else {
+		cmt.style.backgroundColor = "";
+		cmt.style.backgroundImage = "";
+		cmt.style.color = '';
+	}
+	if(cmt.domINFO) cmt.domINFO.style.backgroundColor = s ? '#ffffe0' : "";
+}
+
+JSCC.prototype.cmtSetOffensiveStatus = function(cmt, s) {
+	cmt.cobj.status = s ? 'O' : 'A';
+	if(s) {
+		cmt.style.background = '#ffffe0 url(' + this.uriDomain + '/images/bio-hazard.gif) bottom right repeat-x';
+		cmt.style.color = '#404040';
+	} else {
+		cmt.style.backgroundColor = "";
+		cmt.style.backgroundImage = "";
+		cmt.style.color = '';
+	}
+	if(cmt.domINFO) cmt.domINFO.style.backgroundColor = s ? '#ffffe0' : "";
+}
+
+JSCC.prototype.blockAction = function(action) {
+	var s = this;
+	var cid = s.ctBlock.forId;
+	var cmt = s.cmtById[cid];
+	s.hideSettingsWindow('ctBlock');
+	switch(action) {
+	case "approve":
+		s.cmtApprove(cid);
+		break;
+	case "approveuser":
+		s.cmtApproveUser(cid);
+		break;
+	case "delete":
+		s.cmtDelete(cid, 'delete');
+		break;
+	case "spam":
+		s.cmtSetSpamStatus(cmt, true);
+		if(s.config.moderate)
+			s.pathOverride = cmt.cobj.path;
+		s.server('.jnk','id='+cid+"&junk=yes");
+		setTimeout(function() { // screen del
+			s.cmtDelete(cid, 'ignore');
+		}, 1000);
+		break;
+	case "ip":
+	case "user":
+		if(s.config.moderate)
+			s.pathOverride = cmt.cobj.path;
+		s.server('.blk','id='+cid+"&by="+action);
+		s.cmtDelete(cid, 'delete');
+		break;
+	}
+}
+
+JSCC.prototype.cmtBlock = function(cid) {
+	var s = this;
+	var cmt = s.cmtById[cid];
+	var status = cmt.cobj.status;
+	if(s.ctBlock) { s.hideSettingsWindow('ctBlock'); return; }
+	if(!s.blockDom) { s.blockDom = {}; }
+	if(!s.blockDom[status]) { var jca = '$JCA[' + s.jcaIndex + '].blockAction';
+	var cb = function(a, d) {
+		return '" class="js-ControlBlockButton" '+(d ? 'disabled="on"' : '')+'" onclick="'+jca+"('"+a+'\');return false;" /></span></td></tr>';}
+	var trth =  '<tr><td style="font-size: 9pt; background-color: #8192a2; color: #ffffff;"align=left><nobr>';
+	var trtd = '</nobr></td></tr><tr><td class="js-ControlBlockText">';
+	var trtdd = '</nobr></td></tr><tr><td class="js-ControlBlockTextDisabled">';
+	var tinp = '<span style="float:right"><input type=submit value="';
+
+	var mtrt = trtd, aumsg, ammsg;
+	switch(status) {
+	case 'A':
+		mtrt = trtdd;
+		aumsg = "This user has a trusted status";
+		ammsg = "The message is not blocked";
+		break;
+	case 'S':
+		aumsg = "Approve this and future messages from this user";
+		ammsg = "This message is not spam or junk";
+		break;
+	case 'O':
+		aumsg = "Approve this message";
+		ammsg = "This message is not spam or junk";
+	default: // M/H
+		aumsg = "Approve future messages from this user";
+		ammsg = "Accept this message as good";
+	}
+
+	s.blockDom[status] = s.html("<table border=0 cellpadding=4 cellspacing=0>"
+	+ (s.serverOptions.mmode != 'onhold' ? '' : (
+		trth + 'Approve user' + trtd + aumsg
+		+ tinp + 'Approve user' + cb('approveuser', status == 'A')))
+	+ trth + 'Approve message'
+	+ mtrt + ammsg
+	+ tinp + 'Approve message' + cb('approve', status == 'A')
+	+ trth + 'Delete unwanted comment'
+	+ trtd + 'Get rid of comment without prejudice'
+	+ tinp + 'Delete' + cb('delete')
+	+ trth + 'Flag as Spam or Junk'
+	+ trtd + 'Train <a href="http://akismet.com">Akismet</a> to flag similar comments in the future'
+	+ tinp + 'Spam/Junk' + cb('spam')
+	+ trth + 'Block this commenter'
+	+ trtd + 'Make comments from this user invisible to other users'
+	+ tinp + 'Block User'+cb('user')
+	+ trth + 'Block commenter\'s IP'
+	+ trtd + 'Make comments from this IP invisible to other users'
+	+ tinp + 'Block IP'+cb('ip')
+	+ "</table>");
+	}
+	s.settingsWindow('ctBlock', cmt.ctlsINFO || cmt.domINFO, s.blockDom[status]);
+	s.ctBlock.forId = cid;
+}
+JSCC.prototype.cmtApprove = function(cid) {
+	var cmt = this.cmtById[cid];
+	if(cmt.cobj.status == 'S') {
+		this.cmtSetSpamStatus(cmt, false);
+		cmt.cobj.status = 'S'; // cmtDelete's deal
+	}
+	if(cmt.cobj.status == 'O') {
+		this.cmtSetOffensiveStatus(cmt, false);
+		cmt.cobj.status = 'O';
+	}
+	this.cmtDelete(cid, 'message');
+}
+
+JSCC.prototype.cmtApproveUser = function(cid) {
+	var cmt = this.cmtById[cid];
+	if(cmt.cobj.status == 'S') {
+		this.cmtSetSpamStatus(cmt, false);
+		cmt.cobj.status = 'S'; // cmtDelete's deal
+	}
+	this.cmtDelete(cid, 'user');
+}
+
+JSCC.prototype.cmtDelete = function(cid, approvalMode) {
+	var cmt = this.cmtById[cid];
+
+	if(arguments.length == 1) approvalMode = 'delete';
+
+	var oldStatus = cmt.cobj.status;
+    
+	if(this.config.moderate)
+		this.pathOverride = cmt.cobj.path;
+	switch(approvalMode) {
+	case 'message':
+		if (!this.inlineModeration) {
+			this.preHandlerDelete(cmt);
+		}
+		if(oldStatus == 'S') {
+			this.server('.jnk', 'id=' + cid + '&junk=no');
+		} else if(oldStatus == 'O') {
+			this.server('-appr.cgi', 'id=' + cid);
+		} else {
+			this.server('.del', 'id=' + cid + '&apr=message');
+		}
+		if (this.inlineModeration) {
+			this.postHandlerModerate(cid);
+		} else {
+			this.postHandlerDelete();
+		}
+		break;
+	case 'user':
+		if (!this.inlineModeration) {
+			this.preHandlerDelete(cmt);
+		}
+		this.server('.del', 'id=' + cid + '&apr=user'
+			+ (oldStatus == 'S' ? '&junk=no' : ''));
+		if (this.inlineModeration) {
+			this.postHandlerModerate(cid);
+		} else {
+			this.postHandlerDelete();
+		}
+		break;
+	case 'delete':
+		this.preHandlerDelete(cmt);
+		this.server('.del', 'id=' + cid);
+		this.postHandlerDelete();
+		break;
+	case 'ignore':
+		/* Just delete from screen */
+	default:
+		this.preHandlerDelete(cmt);
+		this.postHandlerDelete();
+	}
+}
+
+JSCC.prototype.preHandlerDelete = function(cmt) {
+
+	cmt.cobj.status = 'D';
+	cmt.style.display = "none";
+
+	var flushSS = false;
+
+	// Shift the comments one to the left.
+	for(var cp = this.curPage - 1; cp < this.pages.length; cp++) {
+		var npage = this.pages[cp];
+		if((cp + 1) == this.pages.length)
+			npage.items--;
+		if(cp < this.curPage)
+			continue;
+
+		// Propagate "get from the server side" status.
+		if(npage.ss) {
+			this.pages[cp - 1].ss = true;
+			flushSS = true;
+			continue;
+		} else if(flushSS) {
+			npage.ss = true;
+			continue;
+		}
+
+		npage.rmdiv();
+
+		// Move first comment to the previous page.
+		while(npage.oarr[0].status == 'D') {
+			npage.oarr.shift();
+			npage.harr.shift();
+		}
+		var nobj = npage.oarr.shift();
+		var nhtm = npage.harr.shift();
+		var ppage = this.pages[cp - 1];
+		ppage.oarr.push(nobj);
+		ppage.harr.push(nhtm);
+		if(ppage.div) {
+			var ncmt = this.createSingleComment(nobj);
+			ppage.div.appendChild(ncmt);
+		}
+	}
+
+	if(this.pages.length > 1 && !this.pages[this.pages.length-1].items) {
+		this.pages.pop();
+		this.displayPage(this.curPage);
+	}
+}
+
+JSCC.prototype.postHandlerDelete = function() {
+
+	var p = this.pages[this.curPage - 1];
+	if(p.ss) {
+		this.ctag = null;
+		this.czidx = 300;
+		var pageNo = this.curPage;
+		this.curPage = 0;
+		this.displayPage(pageNo);
+	}
+}
+
+JSCC.prototype.postHandlerModerate = function(cid) {
+	var cmt = this.cmtById[cid];
+	cmt.cobj.status = 'A';
+	this.objRerender(cmt.cobj, cmt);
+}
+
+JSCC.prototype.createCommentAsHTML = function(obj) {
+	if(obj.status == 'D') return '';
+	if(this.objppc) this.objppc(obj);
+	return this.tmpl(this.dtComment, obj);
+}
+
+JSCC.prototype.createSingleComment = function(obj) {
+	if(!obj.ID || !obj.Text) return undefined;
+
+	if(obj.status == 'D') {
+		var cmt = this.cr("div");
+		cmt.style.display = "none";
+	} else {
+		var cmt = this.html(this.createCommentAsHTML(obj));
+	}
+
+	cmt.id = obj.ID;
+	this.fixComment(cmt, obj);
+
+	return cmt;
+}
+
+JSCC.prototype.markOffensive = function(cid) {
+	var p = confirm($JCL("isJunkVote"));
+	if(p) {
+		if ((this.adminMode) && (!this.inlineModeration)) {
+			this.cmtDelete(cid);
+		} else {
+			this.server('-mark.off','id='+cid);
+		}
+	}
+}
+
+JSCC.prototype.fixComment = function(cmt, obj) {
+	var self = this;
+
+	self.cmtById[obj.ID] = cmt;
+
+	if(obj.depth) {
+		cmt.style.marginLeft = this.level4margin(obj.depth)
+	} else {
+		obj.depth = 0;
+	}
+
+	var ctls = this.mapClass2Object({}, cmt);
+	cmt.ctls = ctls;
+	cmt.cobj = obj;
+	var jsc = function(t){return ctls['js-singleComment'+t]}
+
+	jsc('').className += " js-singleCommentDepth" + (obj.depth || 0);
+
+	/* Handle avatars */
+	self.placeAvatar(obj, jsc('Avatar'));
+
+	/* Handle if ratings are present */
+	if (obj.Rating > 0 && ( ! this.isStandalone()) ) {
+		var self = this;
+		var action = function() {
+			if (jsc('Rating')) {
+				jsc('Rating').appendChild(self.createMiniStarObject(obj.Rating, 10));
+				jsc('Rating').style.display = '';
+				var clear = document.createElement('div');
+				clear.style.clear = 'left';
+				jsc('Rating').appendChild(clear);
+			}
+		}
+		$JSKitGlobal.tryRatingsAppObjectAction(this.uniq, action);
+	} else {
+		if (jsc('Rating')) {
+			jsc('Rating').style.display = 'none';
+		}
+	}
+
+	if(obj.isEmbryonic) {
+		/* Waiting for permanent ID */
+		cmt.domCtls = jsc('Controls');
+		if(cmt.domCtls) cmt.domCtls.style.visibility = "hidden";
+	}
+
+	if(obj.admin) {
+		var sa = jsc("Name");
+		if(sa) sa.className = sa.className + " js-siteAdmin";
+	}
+
+	if(!this.scoringEnabled()
+	|| obj.yours || !obj.karma) {
+		var kA = jsc("Karma");
+		if(kA) kA.style.display = "none";
+	}
+	var kS = jsc("KarmaScore");
+	if(kS && obj.karma) {
+		var kVal = jsc("KarmaValue");
+		var kVot = jsc("KarmaVoters");
+		if(obj.karma.votes) {
+			self.text(kVal, obj.karma.score);
+			self.text(kVot, obj.karma.votesText);
+			kS.style.display = "inline";
+		}
+		var kY = jsc("KarmaY");
+		if(kY) {
+			kY.href = "";
+			kY.onclick = function() {
+				obj.karma.recomputeScore(1);
+				self.text(kVal, obj.karma.score);
+				self.text(kVot, obj.karma.votesText);
+				kS.style.display = "inline";
+				this.blur();
+				return false;
+			}
+		}
+		var kN = jsc("KarmaN");
+		if(kN) {
+			kN.href = "";
+			kN.onclick = function() {
+				obj.karma.recomputeScore(-1);
+				self.text(kVal, obj.karma.score);
+				self.text(kVot, obj.karma.votesText);
+				kS.style.display = "inline";
+				this.blur();
+				return false;
+			}
+		}
+	}
+	if(this.serverOptions.commod){
+		var cmO = jsc("ComMod");
+		if(cmO){
+			cmO.style.display = "inline";
+			cmM = jsc("ComModMark");
+			if(cmM) {
+				cmM.href = "";
+				cmM.onclick = function() {
+					self.markOffensive(obj.ID);
+					return false;
+				}
+			}
+		}
+	}
+
+    /* FIXME(?) Lev, this.serverOptions are not defined in moderation mode
+       but the result is likely as desired, i.e. admin can still reply */
+	if (this.serverOptions.mmode == "pause") {
+		var rb = jsc("Replyable");
+		if(rb) rb.style.display = "none";
+	}
+
+	this.FRef(cmt, jsc("Reply"), "ShowCommentDialog");
+	this.FRef(cmt, jsc("Delete"), "cmtDelete");
+	this.FRef(cmt, jsc("Block"), "cmtBlock");
+	this.FRef(cmt, jsc("Moderate"), "cmtBlock");
+	this.FRef(cmt, jsc("Approve"), "cmtApprove");
+	this.FRef(cmt, jsc("ApproveUser"), "cmtApproveUser");
+
+	var au = jsc("ApproveUser");
+	if (au && this.serverOptions.mmode != "onhold")
+		au.style.display = "none";
+
+	var hideCtl = jsc("Deletable");
+	if(hideCtl && (!obj.yours || this.adminMode))
+		hideCtl.style.display = "none";
+
+	var hideCtl = jsc("Moderatable");
+	if(hideCtl && !this.adminMode)
+		hideCtl.style.display = "none";
+
+	cmt.bg = jsc('Bg');
+	if(this.czidx < 10) this.czidx = 300; else this.czidx--;
+	cmt.bg.style.zIndex = this.czidx;
+	var cinfo = jsc('INFO');
+	cmt.domINFO = cinfo;
+	var ctlsinfo = jsc('Ctls');
+	cmt.ctlsINFO = ctlsinfo;
+
+	if(obj.status == 'S')
+		this.cmtSetSpamStatus(cmt, true);
+
+	if(obj.status == 'O')
+		this.cmtSetOffensiveStatus(cmt, true);
+
+	if(obj.admin && this.config.adminBgColor) {
+		cmt.style.backgroundColor = this.config.adminBgColor;
+	}
+
+}
+
+JSCC.prototype.level2margin = function(level) {
+	if(level < 20) return "10px";
+	if(level < 40) return "4px";
+	return "0px";
+}
+JSCC.prototype.level4margin = function(level) {
+	if(level <= 20) return (10 * level) + 'px';
+	if(level <= 40) return (200 + 4 * level) + 'px';
+	return '280px';
+}
+JSCC.prototype.cmtInDiv = function(div, obj, fincb) {
+  var cmt = this.createSingleComment(obj);
+  if(!cmt) return null;
+
+  if(obj.ParentID) {
+	var prn = this.objById[obj.ParentID];
+	var td = prn ? prn.depth : 0;
+	if(prn) {
+		obj.depth = 1 + td;
+		cmt.style.marginLeft = this.level4margin(obj.depth)
+
+		this.replyPlacement(obj.ParentID, true, function(immed, apl) {
+			if(apl) apl[0].insertBefore(cmt, apl[1]);
+			prn.thread.push([obj, '-']);
+			var page = this.pages[this.curPage-1];
+			page.oarr.splice(apl[2], 0, obj)
+			page.harr.splice(apl[2], 0, this.createCommentAsHTML(obj));
+			page.items++;
+			try { this.czidx = 300;
+				for(var i = 0; i < page.oarr.length; i++) {
+				var sbl = this.cmtById[page.oarr[i].ID];
+				sbl.bg.style.zIndex = this.czidx--;
+				}
+			} catch(e){;}
+			fincb.apply(this, [cmt]);
+		});
+		return;
+	}
+  }
+
+  // Fixme! create additional pages as necessary.
+  if(this.preq.ord == 'desc') {
+	this.displayPage(1, function(immed) {
+		var page = this.pages[0];
+		page.oarr.unshift(obj);
+		page.harr.unshift(this.createCommentAsHTML(obj))
+  		this.addChild(page.div, cmt, true);
+	  	page.items++;
+		fincb.apply(this, [cmt]);
+	});
+  } else {
+	this.displayPage(this.pages.length, function(immed) {
+		var page = this.pages[this.curPage - 1];
+		page.oarr.push(obj);
+		page.harr.push(this.createCommentAsHTML(obj));
+  		this.addChild(page.div, cmt, false);
+	  	page.items++;
+		fincb.apply(this, [cmt]);
+	});
+  }
+}
+
+JSCC.prototype.setOpacity = function(div, val) {
+	if(div) {
+		div.style.opacity = val;
+		div.style.filter = 'alpha(opacity: ' + Math.round(val * 100) + ')';
+	} else {
+		if(document.body.filters)
+			return 'zoom:1;filter:progid:DXImageTransform.Microsoft.Alpha(opacity=' + Math.round(val * 100) + ');';
+		else
+			return 'opacity: ' + val + ';';
+	}
+}
+
+JSCC.prototype.flash = function(cmt) {
+	if(!cmt) return;
+
+	var self = this;
+	var bg = cmt.bg;
+
+	try {
+		bg.style.backgroundColor = "#ffff00";
+		self.setOpacity(bg, 0);
+	} catch(e) { return; }
+
+	cmt.cntDown = 3.14 / 2;
+	cmt.cntMode = 0;
+
+	cmt.intvl = setInterval(function() {
+		cmt.cntDown -= cmt.cntMode ? 0.5 : 0.3;
+		if(cmt.cntDown > 0) {
+			if(cmt.cntMode)
+				var c = Math.sin(cmt.cntDown);
+			else
+				var c = Math.cos(cmt.cntDown);
+			self.setOpacity(bg, c);
+		} else if(cmt.cntMode) {
+			clearInterval(cmt.intvl);
+			cmt.intvl = null;
+			bg.style.backgroundColor = "";
+			self.setOpacity(bg, 1);
+		} else {
+			cmt.cntMode = 1;
+			cmt.cntDown = 3.14 / 2;
+		}
+	}, 100);
+}
+
+JSCC.prototype.foldInputFields = function(e, acc, f) {
+  if(e.getAttribute) {
+	var name = e.getAttribute('NAME');
+	if(name && (name.substr(0, 6) == 'js-Cmt')
+	&& name.charCodeAt(6) < 97) {
+		var shortName = name.substr(6);
+		acc = f.call(this, e, acc, shortName) || acc;
+	}
+  }
+  var cn = e.childNodes;
+  if(cn) {
+	var clen = cn.length;
+	for(var i = 0; i < clen; i++)
+		acc = this.foldInputFields(cn[i], acc, f);
+  }
+  return acc;
+}
+
+JSCC.prototype.inputFieldsMsg = function(ctl, cmtObj) {
+	return this.foldInputFields(ctl, [], function(e, a, name){
+		var text = e.value;
+		a.push("js-Cmt" + name + "=" + encodeURIComponent(text));
+		if(name == 'Text' && this.serverOptions.htmlMode)
+			text = text.replace(/<[\/]?[a-z]{1,3}(\s+(href|src)=[^>]+)?>/g, '');
+		text = text.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+		cmtObj[name] = text;
+	}).join('&');
+}
+
+JSCC.prototype.inputFieldsMsgPost = function(ctl, cmtObj) {
+	return this.foldInputFields(ctl, [], function(e, a, name){
+		var text = e.value;
+		a.push({"Name": "js-Cmt" + name, "Value": text});
+		if(name == 'Text' && this.serverOptions.htmlMode)
+			text = text.replace(/<[\/]?[a-z]{1,3}(\s+(href|src)=[^>]+)?>/g, '');
+		text = text.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+		cmtObj[name] = text;
+	});
+}
+
+JSCC.prototype.cmtInPlace = function(cobj, fincb) {
+	var div = this.TC["js-OldComments"];
+	this.tmpID++;
+	cobj.ID = "jst-" + this.tmpID;
+	cobj.isEmbryonic = true;
+	cobj.status = 'A';
+	if(this.chosenAvatar) {
+		var a = this.chosenAvatar[0];
+		cobj.avatar = a.name;
+		cobj.avatarWidth = a.width;
+		cobj.avatarHeight = a.height;
+	}
+	cobj.thread = [];
+	cobj.depth = 0;
+	cobj.jcaIndex = this.jcaIndex;
+	cobj.admin = this.adminMode;
+	var d = new Date();
+	cobj.TS = Math.round(d.valueOf() / 1000);
+	this.cmtInDiv(div, cobj, function(cmt) {
+		if(cmt) this.flash(cmt);
+		fincb.apply(this, [cmt]);
+	});
+}
+
+JSCC.prototype.pageShiftLastItem = function() {
+	// Find the last non-deleted item on this page;
+	var page = this.pages[this.curPage - 1];
+	var pli;
+	for(var li = page.div.lastChild; li; li = pli) {
+		pli = li.previousSibling;
+		if(li.cobj) {
+			li.parentNode.removeChild(li);
+			if(li.cobj.status != 'D')
+				break;
+		}
+	}
+	this.pageShiftItemDescription(this.curPage);
+}
+
+JSCC.prototype.pageShiftItemDescription = function(pageNo, flush) {
+	if(pageNo >= this.pages.length) return;
+	var page = this.pages[pageNo - 1];
+	var npage = this.pages[pageNo];
+	npage.rmdiv();
+	var obj;
+
+	if(flush) {
+		npage.ss = 0;
+		npage.rmdiv();
+		npage.items = 0;
+		return this.pageShiftItemDescription(pageNo + 1, flush);
+	}
+
+	while(obj = page.oarr.pop()) {
+		var html = page.harr.pop();
+		if(npage.ss) {
+			flush = true;
+		} else {
+			npage.harr.unshift(html);
+			npage.oarr.unshift(obj);
+		}
+		if(obj.status != 'D') {
+			page.items--;
+			if(!flush) npage.items++;
+			break;
+		}
+	}
+	this.pageShiftItemDescription(pageNo + 1, flush);
+}
+
+// Search for a proper place for a reply
+JSCC.prototype.replyPlacement = function(msgId, finalPlace, plcb) {
+	if(!msgId) { plcb.apply(this, [true, null]); }
+	var pobj = this.objById[msgId];
+	if(!pobj) return null;
+
+	var shiftF = function(imm, cmt, arridx, cb) {
+		if(this.pages[this.curPage - 1].items >= this.config.paginate) {
+			if(this.curPage == this.pages.length)
+				this.pages.push(this.pages.empty());
+			// Find first non-deleted comment on this page
+			for(var ndc = cmt.nextSibling; ndc && ndc.cobj.status == 'D'; ndc = ndc.parentNode);
+			if(ndc) {
+				// Move the last comment off the page.
+				this.pageShiftLastItem();
+			} else {
+				this.displayPage(this.curPage + 1, function(immed) {
+					var pdiv = this.pages[this.curPage - 1].div;
+					var r = [pdiv, pdiv.firstChild, 0];
+					cb.apply(this, [immed, r]);
+				});
+				return;
+			}
+		}
+		/* Reply's place is right beside the entry */
+		var r = [cmt.parentNode, cmt.nextSibling, arridx];
+		cb.apply(this, [imm, r]);
+	}
+
+	// Find the last reply to this comment
+	var lreplyObj = null;
+	while(pobj.thread.length) {
+		lreplyObj = pobj.thread[pobj.thread.length-1][0];
+		if(lreplyObj && lreplyObj.status == 'D') {
+			pobj.thread.pop();
+			lreplyObj = null;
+		} else break;
+	}
+	if(!lreplyObj) lreplyObj = pobj;
+
+	// Find the reply object's page
+	var idx;
+	for(var pdx = this.curPage - 1; pdx < this.pages.length; pdx++) {
+		var page = this.pages[pdx];
+		var oarr = page.oarr;
+		var oal = oarr.length;
+		for(idx = 0; idx < oal; idx++)
+			if(oarr[idx].ID == lreplyObj.ID) break;
+		if(idx < oarr.length) break;
+	}
+	if(pdx == this.pages.length) {
+		var pcmt = this.get(msgId);
+		return plcb.apply(this, [true, [pcmt.parentNode, pcmt.nextSibling, 0]]);
+	}
+
+	// Show the page corresponding to that page index
+	this.displayPage(pdx+1, function(immed) {
+		// Insert right before the last recorded reply
+		var prevReply = this.get(lreplyObj.ID);
+		if(finalPlace)
+			shiftF.apply(this, [immed, prevReply, idx + 1, plcb]);
+		else
+			plcb.apply(this, [immed, [prevReply.parentNode, prevReply.nextSibling]]);
+	});
+}
+
+JSCC.prototype.ShowCommentDialog = function(msgId) {
+	this.forMsg = this.objById[msgId||''];
+
+	var isReply = msgId ? true : false;
+	var cct = this.TC["js-LeaveComment"];
+	var ccd = this.TC["js-CreateComment"];
+
+	/* Remove dialog from sight */
+	this.CommentCancelled();
+
+	this.replyPlacement(msgId, false, function(immediate, apl) {
+		if(apl) apl[0].insertBefore(ccd, apl[1]);
+
+		if(this.backwards && msgId)
+			cct.style.visibility = "hidden";
+		else
+			cct.style.display = "none";
+		ccd.style.display = "block";
+		try {
+			var sub = this.TC["js-Cmtsubmit"];
+			var can = this.TC["js-Cmtcancel"];
+			var text = this.TC["js-CmtText"];
+			var prev = function(e){JSKitLib.stopEventPropagation(e); JSKitLib.preventDefaultEvent(e); return false;}
+
+			if(navigator.appName=='Opera') {
+				var onkey = function(){};
+			} else if(JSKitLib.isIE()) {
+				var onkey = function(d,f){d.onkeydown=f};
+			} else {
+				var onkey = function(d,f){d.onkeypress=f};
+			}
+
+			/* combined ratings */
+			var commentRatingElements = JSKitLib.getElementsByClass(ccd, "js-commentRatingDisplay");
+			var commentRatingDisplay = 'none';
+			this.submitRating = false;
+			if (this.hasRatingsAppObject() && ( ! isReply)) {
+				if (this.TC["js-commentFieldRating"]) {
+					this.embedRatingsAppObject(this.TC["js-commentFieldRating"]);
+					commentRatingDisplay = '';
+					this.submitRating = true;
+				}
+			}
+			for (var i=0; i < commentRatingElements.length; i++) {
+				commentRatingElements[i].style.display = commentRatingDisplay;
+			}
+
+			/* TinyMCE support (A) */
+			if(!text.id) text.id = "js-CmtText-" + this.jcaIndex;
+			if(!text.richEditor
+			&& window.tinyMCE && this.serverOptions.wysiwyg
+			&& tinyMCE.getInstanceById(text.id) == null) try {
+				tinyMCE.execCommand('mceAddControl',
+					false, text.id);
+				text.richEditor = true;
+			} catch(e) {}
+
+			var flds = this.foldInputFields(ccd, [],
+			function(e, a, name) {
+				var dfl = this.fieldDfl[name];
+				if(dfl) {
+					if(e.jsk$setdfl)
+						e.jsk$setdfl(dfl);
+					else if(!e.value)
+						e.value = dfl;
+				}
+				var aclen = a.length;
+				if(e.richEditor) {
+					var o = { focus: function() {
+		var setupFocusing = function(ed) {
+			var focus = function(){tinyMCE.execCommand('mceFocus',false,text.id);};
+			var delayFocus = function(){setTimeout(focus, 10)};
+			if(ed.initialized) focus();
+			else ed.onInit.add(delayFocus);
+			var keyHandler = function(ed, e) { 
+				if(e.keyCode != 9) return true;
+				window.focus();
+				a[aclen+(e.shiftKey?-1:1)].focus();
+				return prev(e);
+			};
+			if (JSKitLib.isIE()) ed.onKeyDown.add(keyHandler); else ed.onKeyPress.add(keyHandler);
+		}
+		var ed = tinyMCE.getInstanceById(text.id);
+		if(ed) {
+			setupFocusing(ed);
+		} else {
+			var t = setInterval(function() {
+				var ed = tinyMCE.getInstanceById(text.id);
+				if(ed) { clearInterval(t); setupFocusing(ed); }
+			}, 100);
+		}
+	} };
+					if(aclen) onkey(a[aclen-1], function(e) { 
+						e = e || window.event; 
+						if(e.keyCode == 9 && !e.shiftKey) { 
+							this.blur();
+							o.focus(); 
+							return prev(e); 
+						}
+					});
+					a.push(o);
+				} else {
+					a.push(e);
+				}
+			});
+
+			flds.push(sub);
+			flds.push(can);
+
+			var okd = function(offset) { return function(e) {
+				e = e || window.event;
+				if(e.keyCode != 9) return true;
+				this.blur();
+				flds[offset+(e.shiftKey?(flds.length-2):0)].focus();
+				return prev(e);
+			} }
+
+			onkey(flds[flds.length-1], okd(0));
+			onkey(flds[0], okd(1));
+
+			// Place initial focus.
+			for(var i = 0; i < flds.length; i++)
+				if(!flds[i].value || flds[i].type == 'submit') {
+					flds[i].focus();
+					break;
+				}
+
+		} catch(e) { }
+	});
+	return false;
+}
+
+JSCC.prototype.CommentCancelled = function() {
+	var cct = this.TC["js-LeaveComment"];
+	var ccd = this.TC["js-CreateComment"];
+	var car = this.TC["js-CommentsArea"];
+	cct.style.visibility = "";
+	cct.style.display = "";
+	ccd.style.display = "";
+	var text = this.TC["js-CmtText"];
+	if(text.richEditor) {
+		tinyMCE.execCommand('mceRemoveControl', false, text.id);
+		text.richEditor = false;
+	}
+	if(car && ccd.parentNode != car) {
+		ccd.parentNode.removeChild(ccd);
+		this.addChild(car, ccd, this.backwards);
+	}
+	return false;
+}
+
+JSCC.prototype.CommentSubmitted = function() {
+
+	/* TinyMCE support (B) */
+	var text = this.TC["js-CmtText"];
+	if(text.richEditor) {
+		tinyMCE.triggerSave(false, false);
+		text.value = String(text.value).
+				replace(/<p>/g, '\n').replace(/<\/p>/g, '');
+	}
+	var textMsg = encodeURIComponent(text.value);
+
+	if(!textMsg || !textMsg.length) {
+		alert($JCL("tooShort"));
+		return false;
+	}
+	if(text.value.length > 3000) {
+		alert($JCL("tooLong"));
+		return false;
+	}
+
+	var usepost = (textMsg.length>1700) ? 1 : 0;
+
+	var form = this.TC["js-CreateComment"];
+	var cmtObj = {};
+	cmtObj.yours = true;
+
+	/* combined ratings */
+	if (this.submitRating) {
+		var rating = this.getRatingsAppObject().userRating;
+		message += '&js-CmtRating=' + rating;
+		cmtObj.Rating = rating;
+	}
+	var prn = this.forMsg;
+	if(prn) {
+		cmtObj.ParentID = prn.ID;
+		cmtObj.path = prn.path;
+	}
+	this.CommentCancelled();
+	var message;
+	if(usepost) {
+		message = this.inputFieldsMsgPost(form, cmtObj);
+	} else {
+		message = this.inputFieldsMsg(form, cmtObj);
+	}
+	/* Attach message */
+	this.cmtInPlace(cmtObj, function() {
+		this.reZIndex(cmtObj);
+		this.controls.reveal();
+		/* Kick in message submission */
+		var noavt = this.noAvatar;
+		var avt = this.chosenAvatar ? this.chosenAvatar[0] : null;
+		if(this.config.moderate)
+			this.pathOverride = this.forMsg.path;
+		if(usepost) {
+			if (this.submitRating) {
+				message.push({'Name': 'js-CmtRating', 'Value': rating});
+			}
+			message.push({'Name': 'tid', 'Value': cmtObj.ID});
+			if(cmtObj.ParentID) {
+				message.push({'Name': 'js-CmtParentID', 'Value': cmtObj.ParentID});
+			}
+			if(this.config.permalink) {
+				message.push({'Name': 'permalink', 'Value': encodeURIComponent(this.config.permalink)});
+			}
+			if(noavt) {
+				message.push({'Name': 'avatar', 'Value': 'no'});
+			}
+			if(avt) {
+				message.push({'Name': 'avatar', 'Value': encodeURIComponent(avt.name)});
+			}
+			return this.server('.put', '', message);
+		} else {
+			if (this.submitRating) {
+				message += '&js-CmtRating=' + rating;
+			}
+			var puturl = message + '&tid=' + cmtObj.ID
+			  + (cmtObj.ParentID ? ('&js-CmtParentID=' + cmtObj.ParentID) : '')
+			  + (this.config.permalink ? ('&permalink=' + encodeURIComponent(this.config.permalink)) : '')
+			  + (noavt ? '&avatar=no' : '')
+			  + (avt ? ('&avatar=' + encodeURIComponent(avt.name)) : '');
+			return this.server('.put', puturl);
+		}
+	});
+}
+
+JSCC.prototype.reZIndex = function(cmtObj) {
+	var m=[];
+	for(var cmtId in this.cmtById) {
+		if((cmtObj.ID!=cmtId) && (this.cmtById[cmtId].bg)){
+			m.push({id: cmtId, zi: this.cmtById[cmtId].bg.style.zIndex});
+		}
+	}
+	var curZ = this.preq.ord == 'desc' ? 300 : 1;
+	var d=this.preq.ord == 'desc' ? -1 : 1;
+	m.sort(function(x,y){ return d*(x.zi-y.zi); });
+	if(!cmtObj.ParentID) {
+		this.cmtById[cmtObj.ID].bg.style.zIndex = curZ;
+		curZ += d;
+	}
+	for(var i=0; i<m.length; i++){
+		if(cmtObj.ParentID && cmtObj.ParentID == m[i].id){
+			if(d == -1) {
+				this.cmtById[m[i].id].bg.style.zIndex = curZ;
+				curZ += d;
+				this.cmtById[cmtObj.ID].bg.style.zIndex = curZ;
+				curZ += d;
+			} else {
+				this.cmtById[cmtObj.ID].bg.style.zIndex = curZ;
+				curZ += d;
+				this.cmtById[m[i].id].bg.style.zIndex = curZ;
+				curZ += d;
+			}
+		} else {
+			this.cmtById[m[i].id].bg.style.zIndex = curZ;
+			curZ += d;
+		}
+	}
+	this.czidx = curZ;
+}
+
+JSCC.prototype.getRatingsAppObject = function() {
+	if (this.isStandalone()) {
+		return null;
+	} else {
+		return $JSKitGlobal.getRatingsAppObject(this.uniq);
+	}
+}
+
+JSCC.prototype.hasRatingsAppObject = function() {
+	return this.getRatingsAppObject() ? true : false;
+}
+
+JSCC.prototype.embedRatingsAppObject = function(node) {
+	// One time
+	if ( ! this.embedRatingsAppObjectCompleted) {
+		$JSKitGlobal.copyRatingsAppObject(this.uniq, node);
+		this.embedRatingsAppObjectCompleted = true;
+	}
+}
+
+JSCC.prototype.createMiniStarObject = function(rating, scale) {
+
+	var rao = this.getRatingsAppObject();
+	var fullStar = rao.miniFullStar['user'];
+	var emptyStar = rao.miniEmptyStar['user'];
+	var starWidth = rao.miniStarWidth + 'px';
+	var starHeight = rao.miniStarHeight + 'px';
+
+	var setImage = function(star, imageURL) {
+		if(star.imageURL == imageURL)
+			return; // Already set and we know it
+
+		star.imageURL = imageURL;
+
+		if(document.body.filters) {
+			star.runtimeStyle.filter
+				= "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"
+				+ imageURL + "', sizingMethod='crop')"
+		} else {
+			star.style.backgroundImage = 'url(' + imageURL + ')';
+		}
+	}
+
+	var obj = document.createElement('div');
+
+	/* Increment by Full Star Ratings */
+	for (var i=2; i <= scale; i += 2) {
+
+		var star = this.cr('div');
+
+		star.style.cssFloat   = 'left';
+		star.style.styleFloat = 'left';
+		star.style.width    = starWidth;
+		star.style.height   = starHeight;
+
+		if (rating >= i) {
+			setImage(star, fullStar);
+		} else {
+			setImage(star, emptyStar);
+		}
+
+		obj.appendChild(star);
+	}
+
+	return obj;
+}
+
+function JSReplyMSGId(tmpid, msgId) {
+	try {
+		var cmt = document.getElementById(tmpid);
+		var cobj = cmt.cobj;
+		var self = $JCA[cobj.jcaIndex];
+		delete self.cmtById[cmt.id];
+		delete cobj.isEmbryonic;
+		cobj.ID = msgId;
+		cmt.id = msgId;
+		self.cmtById[msgId] = cmt;
+		self.objById[msgId] = cobj;
+		var need_obj_rerender = false;
+		var aux = arguments.length > 2 ? arguments[2] : {};
+		var props = {'Text': cobj, 'status': cobj,
+			'mtext': self.serverOptions,
+			'mmode': self.serverOptions};
+		for(var pname in props) {
+			if(aux.hasOwnProperty(pname)) {
+				props[pname][pname] = aux[pname];
+				need_obj_rerender = true;
+			}
+		}
+		if (need_obj_rerender) {
+			self.objRerender(cobj, cmt);
+		}
+		if(aux.avatar) {
+			cobj.avatar = aux.avatar;
+			cobj.avatarWidth = aux.avatarWidth;
+			cobj.avatarHeight = aux.avatarHeight;
+			self.placeAvatar(cobj);
+		}
+		cmt.domCtls.style.visibility = "";
+	} catch(e) { ; }
+}
+
+function JSCCKarma(kObj, cObj, self) {
+	if(!kObj) var kObj = { p: 0, n: 0 };
+	this.score = kObj.p - kObj.n;
+	this.votes = kObj.p + kObj.n;
+	this.cObj = cObj;
+	this.self = self;
+	this.vote2text();
+	return this;
+}
+JSCCKarma.prototype.vote2text = function() {
+	this.votesText = this.votes + ' '
+			+ ((this.votes == 1) ? $JCL("vote") : $JCL("votes"));
+}
+
+JSCCKarma.prototype.recomputeScore = function(scoreAdjustment) {
+	var now = new Date();
+	if(this.votedAlready) {
+		this.score -= this.myVote;
+	} else {
+		this.votes += 1;
+		this.votedAlready = true;
+		var kObj = this;
+		setTimeout(function() {
+			kObj.self.server('-karma.prg', 'id=' + kObj.cObj.ID
+				+ '&action=' + (kObj.myVote > 0 ? '+' : '-'));
+			}, 2000);
+	}
+	this.score += scoreAdjustment;
+	this.myVote = scoreAdjustment;
+	this.vote2text();
+}
+
+JSCC.prototype.divPages = function(so, items_ho) {
+	var srv = so.pages;
+	var cpp = this.preq.ps;
+	var hitems = items_ho[0];
+	var oitems = items_ho[1];
+	var replace = (this.ctag != so.tag);
+	this.curPage = 0;
+
+	var f = function() {
+		var div = this.div;
+		if(div) {
+			this.div = null;
+			if(div.parentNode) div.parentNode.removeChild(div);
+		}
+	}
+
+	if(this.pages) {
+		if(replace) {
+			for(var i = this.pages.length; i; i--) {
+				var p = this.pages[i-1];
+				p.rmdiv();
+			}
+			this.pages = [];
+		}
+	} else {
+		this.pages = [];
+		replace = true;
+	}
+	this.pages.empty = function(sv) {
+		return {ss:(sv?true:false),harr:[],oarr:[],items:0,div:null,rmdiv:f}};
+
+	if(replace) {
+		for(var i = srv.sp; i > 1; i--)
+			this.pages.push(this.pages.empty(true));
+	}
+	var i = srv.sp - 1;
+	for(var start = 0; start < hitems.length; start += cpp, i++) {
+		var cnt = (start + cpp > hitems.length)
+				? hitems.length - start : cpp;
+		var page = {
+			harr: hitems.slice(start, start + cnt),
+			oarr: oitems.slice(start, start + cnt),
+			items: cnt, div: null, rmdiv: f };
+		if(replace) {
+			this.pages.push(page);
+		} else {
+			var p = this.pages[i];
+			p.rmdiv();
+			p.harr = page.harr;
+			p.oarr = page.oarr;
+			p.items = page.items;
+			p.ss = false;
+		}
+	}
+	var togo = srv.tp - (srv.sp + srv.pn - 1);
+	if(replace) {
+		for(var i = togo; i > 0; i--)
+			this.pages.push(this.pages.empty(true));
+	}
+	if(this.pages.length == 0)
+		this.pages.push(this.pages.empty());
+}
+
+JSCC.prototype.htmlPaginate = function(thread) {
+	this.icount = 0;	/* Page item count */
+	return this.htmlPaginator(thread, [], []);
+}
+
+JSCC.prototype.htmlPaginator = function(thread, harr, oarr) {
+	var tl = thread.length;
+	for(var i = 0; i < tl; i++) {
+		var thr = thread[i];
+		var obj = thr[0];
+		var html = thr[1];
+		var present = (obj.status == 'D') ? 0 : 1;
+		if(present) {
+			oarr.push(obj);
+			harr.push(html);
+		}
+		this.htmlPaginator(obj.thread, harr, oarr);
+	}
+	return [harr,oarr];
+}
+
+// Part of externally useable API
+JSCC.prototype.rerender = function() {
+	var pageToDisplay = this.curPage;
+	this.curPage = 0;
+	this.pages[pageToDisplay - 1].ss = true;
+	this.displayPage(pageToDisplay);
+}
+
+JSCC.prototype.setPath = function(path) {
+	this.pathOverride = path;    
+}
+
+JSCC.prototype.displayPage = function(pageNo, cb) {
+
+	if(this.loading && !cb) {
+		var nt = (new Date()).valueOf();
+		if((nt - this.loading) > 5000) {
+			this.gen++;
+		} else  {
+			return;
+		}
+	}
+
+	if(pageNo < 1)
+		return;
+
+	if(pageNo > this.pages.length)
+		pageNo = this.pages.length;
+
+	var immediate = true;
+
+	if(this.curPage != pageNo) {
+		try { this.pages[this.curPage - 1].div.style.display = 'none';
+		} catch(e) { }
+		this.curPage = pageNo;
+		var page = this.pages[this.curPage - 1];
+		if(page.ss) page.rmdiv();
+		if(page.div) {
+			page.div.style.display = '';
+		} else {
+			var oc = this.TC["js-OldComments"];
+			page.div = this.cr('div');
+			if(page.ss) {
+				this.text(page.div, $JCL("Loading..."));
+				immediate = false;
+				this.dataLoader = function() {
+					this.curPage = 0;
+					this.displayPage(pageNo);
+					if(cb) cb.apply(this, [immediate]);
+				}
+				if(this.preq.pn < 10)
+					this.preq.pn += 5;
+				this.getpages(pageNo - Math.ceil(this.preq.pn / 2));
+			} else {
+				page.div.innerHTML = page.harr.join('');
+				this.mapComments(page.div);
+			}
+			oc.appendChild(page.div);
+		}
+	} else {
+		var page = this.pages[this.curPage - 1];
+	}
+
+	var nav = '';
+	if(this.pages.length > 1)
+		nav = this.pageNavigator(this.pages.length, this.curPage);
+	var nvs = ['Top','Bottom'];
+	for(var i = 0; i < nvs.length; i++) {
+		var bar = this.TC['js-PageNav' + nvs[i]];
+		bar.innerHTML = nav;
+		bar.onselectstart = function() { return false; }
+		if(i) bar.style.display = (page.items <= 5 ? 'none' : '');
+	}
+	if(immediate && cb) cb.apply(this, [immediate]);
+}
+
+JSCC.prototype.pageNavigator = function(pages, cur) {
+	var self = this;
+	var arr = [$JCL('Page: ')];
+	var f = function(i, txt, cmt, css) {
+		return '<a href="#'+cmt+'" onclick="$JCA['+self.jcaIndex+'].displayPage('+i+'); return false;" onmouseover="window.status='+"'"+cmt+"'"+'; return false;" onmouseout="window.status=\'\'; return true;" style="text-decoration:none; ' + (css?css:'') + '">' + txt + '</a> ';
+	}
+	arr.push(f(cur - 1, '&larr;', $JCL('Previous page'),
+		cur == 1 ? this.setOpacity(null, 0.3) : ''));
+	for(var i = 1; i <= pages; i++) {
+		if((i == 4 || i == 3) && (cur - i) > 3) {
+			i = Math.floor((cur - i) / 2 + i);
+			arr.push(f(i, '&hellip;', 'Page-' + i));
+			if(pages - cur > 3 || cur == pages)
+				i = cur - 2;
+			else
+				i = cur - 1;
+		}
+		if((i == cur + 3) && (pages - cur) > 4) {
+			i = Math.floor((pages - cur) / 2 + cur);
+			arr.push(f(i, '&hellip;', 'Page-' + i));
+			i = pages - 1;
+		}
+		if(i == cur) {
+			arr.push('<strong>' + i + '</strong> ');
+		} else {
+			arr.push(f(i, i, 'Page-' + i));
+		}
+	}
+	arr.push(f(cur + 1, '&rarr;', $JCL('Next page'),
+		pages == cur ? this.setOpacity(null, 0.3) : ''));
+	return arr.join('');
+}
+
+JSCC.prototype.hideSettingsWindow = function(wname) {
+	if(this[wname]) this.settingsWindow(wname);
+}
+
+JSCC.prototype.showProgress = function(wname, on) {
+	if(this[wname]) this[wname].showProgress(on);
+}
+
+JSCC.prototype.settingsWindow = function(wname, atDiv, html) {
+	var s = this;
+	if(s[wname]) {
+		if(!s.sWHideable) return;
+		s[wname].parentNode.removeChild(s[wname]);
+		delete s[wname];
+		return;
+	}
+	var nohide = function() {
+		s.sWHideable = false;
+		if(s.swsHidt) clearTimeout(s.swsHidt);
+		s.swsHidt = setTimeout(function(){s.sWHideable=true}, 100);
+	}
+	var div = this.cr("div");
+	div.className = "js-SettingsWindow"
+	div.style.background = '#FFFFFF url('+this.uriDomain
+				+'/images/bg-header-gray.png) bottom repeat-x';
+	div.onclick = nohide;
+	div.onselectstart = function() { return false; }
+	div.style.zIndex = 400;
+	if(typeof(html) == 'string') {
+		div.innerHTML = html;
+	} else {
+		div.style.width = '20em';
+		div.appendChild(html);
+	}
+
+	var pgr = this.cr('div');
+	pgr.className = "js-Progress";
+	pgr.style.backgroundImage = 'url('+this.uriDomain+'/images/progress-wg.png)';
+	div.appendChild(pgr);
+	div.showProgress = function(on) {
+		if(!on) {
+			if(div.pIntvl) clearInterval(div.pIntvl);
+			div.pIntvl = null;
+			pgr.style.visibility  = 'hidden';
+			return;
+		} else if(div.pIntvl) return;
+		var f = function() {
+			pgr.vison = !pgr.vison;
+			pgr.style.visibility = pgr.vison
+				? 'visible' : 'hidden';
+		}
+		f();
+		div.pIntvl = setInterval(f, 500);
+	}
+
+	s[wname] = div;
+	atDiv.appendChild(div);
+	try {
+		var coord = (function(el) {
+			var top = 0, left = 0;
+			while(el) {
+				top  += el.offsetTop;
+				left += el.offsetLeft;
+				el = el.offsetParent;
+			}
+			return {left: left, top: top};
+		})(div);
+		if (document.body.clientWidth < coord.left + div.offsetWidth)
+			div.style.right = '0px';
+	} catch(e) {;}
+	nohide();
+}
+
+JSCC.prototype.viewControl = function(sel) {
+	var s = this;
+	switch(sel.name) {
+	case "jss-srt":
+		var newSortBy = sel.options[sel.selectedIndex].value;
+		if(newSortBy == s.preq.srt) return true;
+		s.preq.srt = newSortBy;
+		break;
+	case "jss-rev":
+		var newOrder = sel.selectedIndex?'desc':'asc';
+		if(s.preq.ord == newOrder) return true;
+		s.preq.ord = newOrder;
+		break;
+	case "jss-prs":
+		var newPrs = sel.options[sel.selectedIndex].value;
+		if(newPrs == s.preq.thr) return true;
+		s.preq.thr = newPrs;
+		break;
+	default: return false;
+	}
+	s.showProgress('ctWnd', true);
+	s.dataLoader = function() {
+		this.showProgress('ctWnd', false);
+		this.curPage = 0;
+		this.displayPage(1); }
+	s.ctag = null;
+	s.czidx = 300;
+	s.getpages(0, '&usr=yes');
+	return true;
+}
+
+JSCC.prototype.refreshAvatars = function(area) {
+	this.avatarArea = area;
+	this.server('s-data.js', "avt=true&jx=" + this.jcaIndex
+		+ "&rnd=" + Math.random());
+}
+
+JSCC.prototype.calcAvatarDim = function (Width, Height, Avatar) {
+	if(this.serverOptions.avatardim){
+		var re = /(\d+)x(\d+)/;
+		var vl=re.exec(this.serverOptions.avatardim);
+		var MW=parseInt(vl[1]);
+		var MH=parseInt(vl[2]);
+		if((MW==96)&&(MH==96)&&(Width<=100)&&(Height<=100)){
+			return {'width': Width,'height': Height,'name': Avatar};
+		} else if((MW<Width)||(MH<Height)){
+			var DW = (MW<Width) ? MW/Width : 1;
+			var DH = MH<Height ? MH/Height : 1;
+			var D = DW < DH ? DW : DH;
+			DW = Math.round(Width*D+0.000001);
+			DH = Math.round(Height*D+0.000001);
+			Name = Avatar.substr(0,Avatar.length-4)+'-'+DW.toString()+'x'+DH.toString()+Avatar.substr(Avatar.length-4);
+			return {'width': DW, 'height': DH,'name': Name};
+		} else {
+			return {'width': Width,'height': Height,'name': Avatar};
+		}
+	} else {
+		return {'width': Width,'height': Height,'name': Avatar};
+	}
+}
+
+JSCC.prototype.placeAvatar = function(obj, div) {
+	if(this.config.avatars != 'yes') return;
+	div = div || obj.avatarPlace;
+	if(!div) return;
+	if(!obj.avatar) {
+		obj.avatarPlace = div;
+		return;
+	}
+	var img = this.cr('img');
+	img.style.visibility = 'hidden';
+	var WH = this.calcAvatarDim(obj.avatarWidth,obj.avatarHeight,obj.avatar);
+	img.style.width = WH['width'] + 'px';
+	img.style.height = WH['height'] + 'px';
+	img.src = this.uriDomain + '/avatar/' + WH['name'];
+	JSKitLib.addPNG(div, this.uriDomain + '/avatar/' + WH['name']);
+	while(div.hasChildNodes()) div.removeChild(div.firstChild);
+	div.style.width = WH['width'] + 'px';
+	div.appendChild(img);
+}
+
+JSCC.prototype.replaceAvatars = function(avatars) {
+	var s = this;
+	var bc = "#A0A0A0";
+	var mkAvatar = function(avatar) {
+		var outer = s.cr('div');
+		try{outer.style.display = "-moz-inline-stack";}catch(e){};
+		outer.style.display = "inline-block";
+		outer.onselectstart = function() {return false;}
+		outer.style.margin = "2px";
+		outer.style.border = "ridge 2px transparent";
+//		var WH = s.calcAvatarDim(avatar.width,avatar.height,avatar.name);
+		var WH = {'width': avatar.width,'height': avatar.height,'name':avatar.name};
+		outer.style.width = (4 + parseInt(WH['width'])) + 'px';
+		var div = s.cr('div');
+		div.style.margin = "2px";
+		div.style.width = WH['width'] + 'px';
+		var img = s.cr('img');
+		img.style.visibility = 'hidden';
+		img.style.width = WH['width'] + 'px';
+		img.style.height = WH['height'] + 'px';
+		img.src = s.uriDomain + '/avatar/' + WH['name'];
+		JSKitLib.addPNG(div, s.uriDomain + '/avatar/' + WH['name']);
+		var sub = s.cr('div');
+		sub.style.padding = "2px 5px 0px 5px";
+		sub.style.fontFamily = "Helvetica, Verdana";
+		sub.style.fontSize = "8pt";
+		var sel = s.cr('div'); s.text(sel, $JCL('selectedAvatar'));
+		sel.style.visibility = 'hidden';
+		var rem = s.cr('div'); s.text(rem, $JCL('removeAvatar'));
+		rem.style.position = 'absolute';
+		rem.style.display = 'none';
+		rem.style.textDecoration = 'underline';
+		rem.style.cursor = 'pointer';
+		sub.onmousemove = function() {
+			rem.style.display = '';
+			sel.style.visibility = 'hidden';
+		}
+		sub.onmouseout = function() {
+			rem.style.display = 'none';
+			if(s.chosenAvatar && s.chosenAvatar[1] == outer)
+				sel.style.visibility = '';
+		}
+		rem.onmousedown = function() {
+			if(confirm($JCL('removeAvatarConfirm'))) {
+				outer.parentNode.removeChild(outer);
+				s.runscr(s.uriDomain + "/avatar/remove?avrm=" + encodeURIComponent(avatar.name));
+			}
+		}
+		sub.appendChild(rem);
+		sub.appendChild(sel);
+		div.appendChild(img);
+		div.appendChild(sub);
+		outer.appendChild(div);
+		outer.onmousedown = function() {
+			if(s.chosenAvatar) {
+				s.chosenAvatar[1].style.borderColor = "transparent";
+				s.chosenAvatar[2].style.visibility = 'hidden';
+				s.chosenAvatar[3].style.display = 'none';
+			}
+			if(s.chosenAvatar && s.chosenAvatar[1] == outer) {
+				s.noAvatar = true;
+				s.chosenAvatar = null;
+			} else {
+				outer.style.borderColor = bc;
+				s.chosenAvatar = [avatar, outer, sel, rem];
+				s.noAvatar = false;
+				sel.style.visibility = '';
+				rem.style.display = 'none';
+			}
+			return 0;
+		}
+		if(avatar.chosen) outer.onmousedown();
+		return outer;
+	}
+	var area = s.avatarArea;
+	if(s.oldAvatars && s.oldAvatars.length
+	&& (s.oldAvatars.length + 1) == avatars.length) {
+		var a1 = s.oldAvatars.pop();
+		var a2 = avatars[avatars.length-2];
+		if(a1.name === a2.name) {
+			var a = mkAvatar(avatars[avatars.length-1]);
+			area.insertBefore(a, area.firstChild);
+			s.oldAvatars = avatars;
+			return;
+		}
+	}
+	s.oldAvatars = avatars;
+	while(area.hasChildNodes()) area.removeChild(area.firstChild);
+	for(var i = avatars.length - 1; i >= 0; i--)
+		area.appendChild(mkAvatar(avatars[i]));
+}
+
+JSCC.prototype.dataLoader = function(so, nc) {
+	var s = this;
+	var tc = s.TC;
+	var d=function(){return s.div.apply(s,arguments);}
+
+	var cc = s.html(s.gtmpl(s.utmpl['js-CreateComment'] || s.dtCreate));
+	s.mapClass2Object(tc, cc);
+	var ac = function(name, cb) {
+		var o = tc['js-'+name];
+		if(!o) return;
+		o.style.cursor = 'pointer';
+		o.onselectstart = function() { return false; }
+		o.onclick = cb;
+	}
+
+	ac('Cmtsubmit', function() { return s.CommentSubmitted(); });
+	ac('Cmtcancel', function() { if(s.onCancel) s.onCancel(); return s.CommentCancelled(); });
+	var o = tc['js-CmtEmail'];
+	if(o) {
+		o.style.color = '#808080';
+		o.value = $JCL('email is ' + (s.adminMode ? 'mandatory for you (admin)' : 'optional'));
+		o.jsk$setdfl = function(val) {
+			o.style.color = '';
+			o.jsk$setdfl = false;
+			o.value = val || '';
+		}
+		o.onfocus = function() { if(o.jsk$setdfl) o.jsk$setdfl(); }
+	}
+	if(s.config.avatars != 'yes') {
+		var m = tc['js-CCMore'];
+		if(m) m.style.display = 'none';
+	}
+
+	ac('commentAddAvatar', function() {
+		var adiv = tc['js-commentAvatarArea'];
+		adiv.ashown = !adiv.ashown;
+		adiv.style.display = adiv.ashown ? '' : 'none';
+		s.text(this, adiv.ashown ? '-' : '+');
+		if(!adiv.ashown) return false;
+		if(!adiv.ifr) {
+			adiv.style.maxWidth = '250px';
+			var tgt = 'js-ifrm-'+s.jcaIndex + Math.random();
+			adiv.innerHTML = '<iframe name="'+tgt+'" width=0 height=0 style="border: none"></iframe>';
+			var ifr = adiv.firstChild;
+
+			var aarea = s.cr('div');
+			adiv.appendChild(aarea);
+			setTimeout(function(){s.refreshAvatars(aarea)}, 10);
+
+			var frm = s.cr('form');
+			frm.method = 'post';
+			frm.encoding = 'multipart/form-data';
+			frm.action = s.uriDomain + '/avatar/add.cgi';
+			frm.target = tgt;
+			var lbl = s.cr('div');
+			lbl.style.paddingTop = "5px";
+			var lblChange = function(mode) {
+				while(lbl.hasChildNodes())
+					lbl.removeChild(lbl.firstChild);
+				lbl.appendChild(document.createTextNode(
+					mode ? $JCL("Loading...")
+					     : $JCL('uploadAvatar')));
+			}
+			lblChange(0);
+			frm.appendChild(lbl);
+			var upf = s.cr('input');
+			upf.type = 'file';
+			upf.name = 'image';
+			upf.onchange = function() {
+					lblChange(1); frm.submit()
+					var sub = s.TC["js-Cmtsubmit"];
+					sub.disabled = 'true';
+					upf.disabled = 'true';
+				};
+			frm.appendChild(upf);
+			adiv.appendChild(frm);
+			s.onCancel = function() {
+				var sub = s.TC["js-Cmtsubmit"];
+				sub.disabled = '';
+				upf.disabled = '';
+				lblChange(0); frm.reset();
+			}
+			var f = function() { s.onCancel();
+					s.refreshAvatars(aarea); }
+			ifr.onreadystatechange = function() {
+				if(ifr.readyState == 'complete') f();
+			}
+			ifr.onload = f;
+			adiv.ifr = ifr;
+		}
+		return false;
+	});
+
+	var labelHTML = s.labelHTML || $JCL('leaveComment');
+
+	if(so.mmode == "pause") {
+		var lca = null;
+	} else {
+		var lca = d('js-commentControl', s.a($JCL(labelHTML)));
+		lca.onclick = function() { return s.ShowCommentDialog(); };
+	}
+
+	var jmg = d('js-commentControl js-commentTool', s.html('<font face="Webdings">&#64;&nbsp;</font>'), s.a($JCL("Controls")));
+	jmg.onclick = function() {
+		var srt = ["date", "name"];
+		if(!s.config.moderate) srt.push("karma");
+		if(s.adminMode) srt.push("status");
+		/* s.submitRating check is not good for all the cases */
+		if ( $JSKitGlobal.isRatingsAppAvailable() ) srt.push("rating");
+		var srtOpts = [];
+		for(var i = 0; i < srt.length; i++) {
+			srtOpts.push('<option value="'+srt[i] + '"'
+				+ (srt[i]==s.preq.srt?" selected":"")+'>'
+				+$JCL(srt[i])+'</option>');
+		}
+		var bkw = ["ascending", "descending"]
+		var bkwOpts = [];
+		for(var i = 0; i < bkw.length; i++) {
+			bkwOpts.push('<option value="'+bkw[i]+'"'
+				+ ((!!i) == (s.preq.ord=='desc')?" selected":"")+'>'
+				+$JCL(bkw[i])+'</option>');
+		}
+		var prs = ["on (threaded)", "off (flat)"]
+		var prsMap = {'on (threaded)':'yes','off (flat)':'no'}
+		var prsOpts = [];
+		for(var i = 0; i < prs.length; i++) {
+			prsOpts.push('<option value="'+prsMap[prs[i]]+'"'
+				+ (prsMap[prs[i]] == s.preq.thr?" selected":"")+'>'
+				+$JCL(prs[i])+'</option>');
+		}
+		s.settingsWindow('ctWnd', this,
+			"<table border=0 cellpadding=4>"
+			+ "<tr><td align=right>" + $JCL("Sort by") + '</td><td align=left><select name="jss-srt" onchange="$JCA['+s.jcaIndex+'].viewControl(this);return true;">'
+			+ srtOpts.join("")
+			+ "</select></td></tr>"
+			+ "<tr><td align=right>" + $JCL("Order") + '</td><td align=left><select name="jss-rev" onchange="$JCA['+s.jcaIndex+'].viewControl(this);return true;">'
+			+ bkwOpts.join("")
+			+ "</select></td></tr>"
+			+ "<tr><td align=right>" + $JCL("Threading") + '</td><td align=left><select name="jss-prs" onchange="$JCA['+s.jcaIndex+'].viewControl(this);return true;">'
+			+ prsOpts.join("")
+			+ "</select></td></tr>"
+			+ (s.adminMode && !s.config.moderate?('<tr><td align=center colspan=2><a href="'+s.uriDomain+'/moderate/'+s.config.domain+'" onclick="window.location.href = this.href; return true;">Moderate whole site</a></td></tr>'):'')
+			+ "</table>"
+		);
+		return false;
+	}
+	s.controls = jmg;
+	if(nc || s.config.moderate) {
+		s.controls.reveal = function(){};
+	} else {
+		s.controls.style.display = 'none';
+		s.controls.reveal = function(){s.controls.style.display=''}
+	}
+
+	if(so.subs || so.noJunk) {
+		var pb = "";
+	} else {
+		var propLink = s.html('<a href="http://js-kit.com/comments?wow">Powered by JS-Kit</a>');
+		var prop = d('', "(", propLink, ")");
+		prop.style.position = 'relative';
+		var pb = d("js-commentControl js-poweredBy", prop);
+	}
+
+	var ca = d("js-CommentsArea",
+		d("js-LeaveComment", s.config.moderate?null:lca, jmg, pb,
+			s.html('<br clear="all"/>')),
+		tc["js-CreateComment"]);
+	s.addChild(ca, d(null, d('js-PageNavTop'), d("js-OldComments"), d('js-PageNavBottom')), !s.backwards);
+	s.displayPage(so.pages.sp);
+	ca.onclick = function() {
+		s.hideSettingsWindow('ctWnd');
+		s.hideSettingsWindow('ctBlock');
+	}
+	s.addChild(s.target, ca);
+}
+
+JSCC.prototype.objRerender = function(obj, cmt) {
+	cmt.ctls['js-singleCommentText'].innerHTML =
+		this.tmpl("{Text}", obj, true);
+}
+
+/* Must be last to support Opera */
+JSCC.prototype.newData = function(arr, so) {
+	var s = this;
+	s.serverOptions = so;
+	s.adminMode = !!so.adminMode;
+	s.inlineModeration = (s.adminMode && !s.config.moderate);
+
+	if(so.req) {
+		s.preq.srt = so.req.srt;
+		s.preq.ord = so.req.ord;
+		s.preq.thr = ((so.req.prs == 'flat') ? 'no' : 'yes');
+	}
+
+	s.gen++;
+	s.loading = false;
+
+	if(s.ctag != so.tag) {
+		s.objById = {};
+		s.cmtById = {};
+	}
+
+	var flat = s.preq.thr != 'yes';
+
+	var ttt = []; // top level thread
+	var nc = 0;
+	for(var i = 0; i < arr.length; i++) {
+		var obj = arr[i];
+		if(!obj.ID || !obj.Text) continue;
+		if(flat) {
+			delete(obj.ParentID);
+			delete(obj.depth);
+		}
+		s.objById[obj.ID] = obj;
+		obj.thread = [];
+		obj.karma = new JSCCKarma(obj.votes, obj, this);
+		if(obj.status != 'D') nc++;
+		var cmtHTML = s.createCommentAsHTML(obj);
+		var prn = s.objById[obj.ParentID];
+		if(prn) {
+			prn.thread.push([obj, cmtHTML]);
+		} else {
+			ttt.push([obj, cmtHTML]);
+		}
+	}
+	s.divPages(so, s.htmlPaginate(ttt));
+
+	s.ctag = so.tag;
+	s.dataLoader(so, nc);
+	if(so.wysiwyg && !window.tinyMCE) {
+		so.wysiwyg = false;
+		var inittmce = function() {
+			tinyMCE.init({
+			mode: "none",
+			plugins: "inlinepopups" + (so.media?",youtube":""),
+			theme: "advanced",
+			theme_advanced_buttons1: 
+				"bold,italic,underline,|,undo,redo,link,unlink"
+				+ (so.media?",youtube":""),
+			theme_advanced_buttons2: "",
+			theme_advanced_buttons3: "",
+			theme_advanced_toolbar_location: "top",
+			theme_advanced_toolbar_align: "left",
+			extended_valid_elements:
+				"a[href],b,i,u,em,strong,sup,sub"
+				+ (so.media?",object[classid|codebase|width|height|align],param[name|value],embed[quality|type|pluginspage|width|height|src|align]":""),
+			strict_loading_mode: true
+			});
+			so.wysiwyg = true;
+		}
+		var oldcb = window.jsk$tmcecb;
+		if(oldcb) {
+			jsk$tmcecb = function() { if(oldcb) oldcb(); so.wysiwyg = true; };
+		} else {
+			jsk$tmcecb = inittmce;
+			s.runscr(s.uriDomain + '/extra/tiny_mce/tmce.js');
+		}
+	}
+}
+
+

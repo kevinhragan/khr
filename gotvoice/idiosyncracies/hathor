@@ -1,0 +1,5 @@
+/etc/nagios/nrpe.cfg entry for check_disk on /srv
+set # nfsd's to 32 in /etc/sysconfig/nfsserver
+
+ this crontab entry:
+0 1 * * * find /srv/host1/messages -type f -name "*.22050.mp3" -atime +30 -print -exec rm {} \; >> /root/removed_files.txt

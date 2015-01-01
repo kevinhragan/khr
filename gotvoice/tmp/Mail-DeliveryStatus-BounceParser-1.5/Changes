@@ -1,0 +1,10 @@
+Revision history for Perl extension Mail::DeliveryStatus::BounceParser.
+
+1.5   Sun Mar 13 13:25:02 2005
+        - new co-maintainer Aaron Crane <arc@cpan.org>
+        - several improvements to 1.4's accuracy and speed
+
+0.01  Wed Feb 12 13:28:03 2003
+	- original version; created by h2xs 1.22 with options
+		-b 5.5.3 -A -X -n Mail::DeliveryStatus::BounceParser
+

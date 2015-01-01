@@ -1,0 +1,21 @@
+load balancing instead of failover?
+
+use new ip for service
+build on backup host
+   heartbeat
+   www service
+   tomcat ?
+build www
+   heartbeat
+   neww www service
+   new tomcat service ?
+
+switch firewall to point to new service(?)
+
+add new host to mrtg and nagios
+mod how nagios, mrtg monitors (?)
+
+heartbeat or heartbeat2
+clusterip or lvs or no load balance
+
+alert on failure of standby host

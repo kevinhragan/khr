@@ -1,0 +1,3 @@
+nptq localhost
+ntpq> peers
+# look for value in when, nonzero values in succeeding fields

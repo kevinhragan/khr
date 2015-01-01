@@ -1,0 +1,2 @@
+example rename file:
+for f in cairo[!_]*; do echo mv $f $(echo $f |sed 's/cairo/cairo-eth0/'); done

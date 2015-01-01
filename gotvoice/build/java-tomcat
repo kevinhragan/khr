@@ -1,0 +1,11 @@
+# on etch 
+add non-free to /etc/apt/sources.list
+aptitude install  sun-java5-jdk 
+#update-java-alternatives --jre java-1.5.0-sun
+update-java-alternatives --set java-1.5.0-sun
+#update-java-alternatives --auto
+
+
+#tomcat
+aptitude install tomcat5 libapache-mod-jk
+    

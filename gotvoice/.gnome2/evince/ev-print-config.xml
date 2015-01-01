@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<GnomePrintConfig Version="2.1" LibgnomeprintVersion="2.12.1" SelectedSettings="SetIdFromCups">
+  <Settings Id="SetIdFromCups" Model="Cups-unknown-unknown" Printer="laserjet5">
+    <Name>Default</Name>
+    <Key Id="Transport">
+      <Key Id="Backend" Value="CUPS">
+        <Key Id="Module" Value="libgnomeprintcups.so"/>
+      </Key>
+    </Key>
+    <Key Id="Output">
+      <Key Id="Media">
+        <Key Id="PhysicalSize" Value="USLetter">
+          <Key Id="Width" Value="8.5in"/>
+          <Key Id="Height" Value="11in"/>
+        </Key>
+        <Key Id="PhysicalOrientation" Value="R0">
+          <Key Id="Paper2PrinterTransform" Value="matrix(1 0 0 1 0 0)"/>
+        </Key>
+        <Key Id="Margins">
+          <Key Id="Left" Value="0"/>
+          <Key Id="Right" Value="0"/>
+          <Key Id="Top" Value="0"/>
+          <Key Id="Bottom" Value="0"/>
+        </Key>
+      </Key>
+      <Key Id="Job">
+        <Key Id="Hold" Value="no-hold"/>
+        <Key Id="NumCopies" Value="1"/>
+        <Key Id="NonCollatedCopiesHW" Value="true"/>
+        <Key Id="CollatedCopiesHW" Value="false"/>
+        <Key Id="Collate" Value="false"/>
+        <Key Id="Duplex" Value="true"/>
+        <Key Id="Tumble" Value="false"/>
+        <Key Id="PrintToFile" Value="false"/>
+        <Key Id="FileName" Value="output.ps"/>
+      </Key>
+    </Key>
+    <Key Id="Document">
+      <Key Id="Name" Value=""/>
+      <Key Id="PreferedUnit" Value="cm"/>
+      <Key Id="Page">
+        <Key Id="LogicalOrientation" Value="R0">
+          <Key Id="Page2LayoutTransform" Value="matrix(1 0 0 1 0 0)"/>
+        </Key>
+        <Key Id="Margins">
+          <Key Id="Bottom" Value="3 cm"/>
+          <Key Id="Top" Value="3 cm"/>
+          <Key Id="Right" Value="2 cm"/>
+          <Key Id="Left" Value="2 cm"/>
+        </Key>
+        <Key Id="Layout" Value="Plain">
+          <Key Id="ValidPhysicalSizes" Value="All"/>
+          <Key Id="LogicalPages" Value="1"/>
+          <Key Id="PhysicalPages" Value="1"/>
+          <Key Id="Width" Value="1"/>
+          <Key Id="Height" Value="1"/>
+          <Key Id="Pages" Value="LP0">
+            <Key Id="LP0" Value="transform(1 0 0 1 0 0)"/>
+          </Key>
+        </Key>
+      </Key>
+    </Key>
+    <Key Id="Application"/>
+  </Settings>
+</GnomePrintConfig>

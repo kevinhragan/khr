@@ -1,0 +1,27 @@
+# migrate hw firewall to 4.79.104.122/29
+# level3 1-877-453-8353 case #1975677
+
+
+install new switch Monday afternoon
+X day or two before change: update dns to need more frequent refresh - 4hourly
+Monday evening: update dns to refresh minutely
+Tuesday home:
+    down hw_gatewy in nagios
+Tuesday colo:
+    have level3 switch ips on their side
+    verify autoneg is on hw side; turn on autoneg on 
+    change ip on osiris2; verify internet connectivtiy
+    reboot osiris2 (new kernel) verify all good
+    switch in new dns a address for serve1  
+    verify can connect in to osiris2 on external ip
+    switch dns timeouts back to a day
+Tuesday office:
+	re-establish vpn
+        update ext-osiris2
+
+
+
+reconfig kirkfw ipsec tunnel
+
+after change: change back to daily
+make sure hw is autoneg

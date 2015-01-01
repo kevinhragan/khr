@@ -1,0 +1,8 @@
+spooler=nekhebet
+scp -r root@$spooler:/usr/local/nagios /usr/local
+scp root@$spooler:/usr/sbin/nrpe /usr/sbin
+
+echo '/usr/sbin/nrpe -c /etc/nrpe.cfg -d' >> /etc/rc.d/rc.local
+
+/usr/sbin/nrpe -c /etc/nrpe.cfg -d
+

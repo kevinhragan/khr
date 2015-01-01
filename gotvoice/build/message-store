@@ -1,0 +1,12 @@
+aptitude install nfs-kernel-server
+mkdir -p /var/gv/messages
+mkdir -p /var/gv/outbox
+mkdir -p /var/gv/dispatch
+chown -R gv.users /var/gv
+
+
+#vi /etc/exports
+    /var/gv/messages 10.x.1.0/16(rw,sync,no_root_squash)
+    /var/gv/outbox 10.x.1.0/16(rw,sync,no_root_squash)
+    /var/gv/dispatch 10.x.1.0/16(rw,sync,no_root_squash)
+

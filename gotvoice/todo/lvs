@@ -1,0 +1,19 @@
+ 
+
+# to do it all on two hosts:
+X director on one host    
+    and realserver on another
+X add realserver to director
+    directory detects and handles realserver failure
+add heartbeat and lvsched to director
+X  hearbeats occuring
+X  successul changeover of vip
+X  lvs works
+X  ldirectord works
+duplicate on second director
+   failover works
+   add sync
+
+more: modify ldirectord method to check text on reals
+      add second method for heartbeat: serial or ethernet crossover
+

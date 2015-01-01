@@ -1,0 +1,63 @@
+for i in $*; do cat $i | awk '{printf "'$i' %s %s %d %d %d \n", $1, $2, ($7*2*$12)/3, $7, $12}' | sed -e 's/\.sni//g
+s/_/	/
+s/x/	/g
+s/ /	/g
+s/rb//
+s/\.\.\/sigs\///'; done | awk '
+{
+	if( NR == 1 )
+	{
+		mid = $6;
+		printf("%s %s %s %s %s %s ", $1, $2, $3, $4, $5, $6);
+		who = $5;
+		record[$7] = $8;
+
+		next;
+	}
+
+	if( $6 != mid )
+	{
+		max = 0;
+
+		for( sig in record )
+		{
+			if( record[sig] > max )
+			{
+				max = record[sig];
+				best = sig;
+			}
+			printf("%s %s ", sig, record[sig]);
+		}
+
+		if( best == who )
+			printf("1 %s %d\n", best, record[best]);
+		else
+			printf("0 %s %d\n", best, record[best]);
+		
+		mid = $6;
+		printf("%s %s %s %s %s %s ", $1, $2, $3, $4, $5, $6);
+		who = $5;
+	}
+
+	record[$7] = $8;
+}
+END {
+	max = 0;
+
+	for( sig in record )
+	{
+		if( record[sig] > max )
+		{
+			max = record[sig];
+			best = sig;
+		}
+		printf("%s %s ", sig, record[sig]);
+	}
+
+	if( best == who )
+		printf("1 %s %d\n", best, record[best]);
+	else
+		printf("0 %s %d\n", best, record[best]);
+}
+'
+rm -f /tmp/xr$$

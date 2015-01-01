@@ -1,0 +1,10 @@
+what files to save/flush on server1
+
+save to potato?
+/tmp/J2*mp3 /tmp/J2*wav
+/var/gv/temp
+
+flush after timeout?
+other mp3s in /tmp
+/var/gv/workbench/*mp3
+     

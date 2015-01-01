@@ -1,0 +1,63 @@
+# see ~/build/asterisk
+# see ~build/failover 
+
+edit ips in sip.conf, iax.conf to match cluster-ip
+
+
+create new asterisk cluster ip as needed in dns 
+and create nat and forward rules in firewall
+
+vi /etc/asterisk/sip.conf
+     ;;;;;;; GV Setting ;;;;
+     bindaddr=test-asterisk1.gotvoice.com
+
+     externip=<???>
+
+vi /etc/asterisk/iax.conf
+     ;;;;;;; GV Setting ;;;;
+     bindaddr=test-asterisk1.gotvoice.com
+
+
+##### call forwarding #######
+# you don't need this if asterisk is not call forwarding
+
+# hack rsync startup so recovering server will sync off presumed master
+# before starting rysnc daemon.     
+
+# vi /etc/init.d/rsync
+TWIN=otherhost
+echo
+echo attempting to sync with asterisk cluster partner: $TWIN
+sudo su -lc "rsync   -az --delete --password-file=/var/lib/asterisk/rsync.password  $TWIN::voicemail /var/spool/asterisk/voicemail/default/" asterisk
+
+# vi /etc/rsyncd.conf
+[voicemail]
+path=/var/spool/asterisk/voicemail/default
+auth users = asterisk
+secrets file = /etc/rsyncd.secrets
+hosts allow = 10.0.0.0/8
+uid = asterisk
+gid = asterisk
+
+#vi /etc/rsyncd.secrets
+asterisk:&&nn()!we
+
+chmod 600 /etc/rsyncd.secrets
+
+#vi /var/lib/asterisk/rsync.password 
+&&nn()!we
+
+HOST=lime
+scp -p $HOST:/etc/rsyncd.conf /etc
+scp -p $HOST:/etc/rsyncd.secrets /etc
+
+
+chown asterisk.asterisk /var/lib/asterisk/rsync.password
+chmod 400 /var/lib/asterisk/rsync.password
+
+# vi /etc/default/rsync
+%s/false/true/c
+
+# to get rsync commands to work
+# vi /etc/passwd
+/asterisk/s\/bin/\false//

@@ -1,0 +1,3086 @@
+/**
+ * SWFObject v1.5: Flash Player detection and embed - http://blog.deconcept.com/swfobject/
+ *
+ * SWFObject is (c) 2007 Geoff Stearns and is released under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ */
+if(typeof deconcept == "undefined") var deconcept = new Object();
+if(typeof deconcept.util == "undefined") deconcept.util = new Object();
+if(typeof deconcept.SWFObjectUtil == "undefined") deconcept.SWFObjectUtil = new Object();
+deconcept.SWFObject = function(swf, id, w, h, ver, c, quality, xiRedirectUrl, redirectUrl, detectKey) {
+	if (!document.getElementById) { return; }
+	this.DETECT_KEY = detectKey ? detectKey : 'detectflash';
+	this.skipDetect = deconcept.util.getRequestParameter(this.DETECT_KEY);
+	this.params = new Object();
+	this.variables = new Object();
+	this.attributes = new Array();
+	if(swf) { this.setAttribute('swf', swf); }
+	if(id) { this.setAttribute('id', id); }
+	if(w) { this.setAttribute('width', w); }
+	if(h) { this.setAttribute('height', h); }
+	if(ver) { this.setAttribute('version', new deconcept.PlayerVersion(ver.toString().split("."))); }
+	this.installedVer = deconcept.SWFObjectUtil.getPlayerVersion();
+	if (!window.opera && document.all && this.installedVer.major > 7) {
+		// only add the onunload cleanup if the Flash Player version supports External Interface and we are in IE
+		deconcept.SWFObject.doPrepUnload = true;
+	}
+	if(c) { this.addParam('bgcolor', c); }
+	var q = quality ? quality : 'high';
+	this.addParam('quality', q);
+	this.setAttribute('useExpressInstall', false);
+	this.setAttribute('doExpressInstall', false);
+	var xir = (xiRedirectUrl) ? xiRedirectUrl : window.location;
+	this.setAttribute('xiRedirectUrl', xir);
+	this.setAttribute('redirectUrl', '');
+	if(redirectUrl) { this.setAttribute('redirectUrl', redirectUrl); }
+}
+deconcept.SWFObject.prototype = {
+	useExpressInstall: function(path) {
+		this.xiSWFPath = !path ? "expressinstall.swf" : path;
+		this.setAttribute('useExpressInstall', true);
+	},
+	setAttribute: function(name, value){
+		this.attributes[name] = value;
+	},
+	getAttribute: function(name){
+		return this.attributes[name];
+	},
+	addParam: function(name, value){
+		this.params[name] = value;
+	},
+	getParams: function(){
+		return this.params;
+	},
+	addVariable: function(name, value){
+		this.variables[name] = value;
+	},
+	getVariable: function(name){
+		return this.variables[name];
+	},
+	getVariables: function(){
+		return this.variables;
+	},
+	getVariablePairs: function(){
+		var variablePairs = new Array();
+		var key;
+		var variables = this.getVariables();
+		for(key in variables){
+			variablePairs[variablePairs.length] = key +"="+ variables[key];
+		}
+		return variablePairs;
+	},
+	getSWFHTML: function() {
+		var swfNode = "";
+		if (navigator.plugins && navigator.mimeTypes && navigator.mimeTypes.length) { // netscape plugin architecture
+			if (this.getAttribute("doExpressInstall")) {
+				this.addVariable("MMplayerType", "PlugIn");
+				this.setAttribute('swf', this.xiSWFPath);
+			}
+			swfNode = '<embed type="application/x-shockwave-flash" src="'+ this.getAttribute('swf') +'" width="'+ this.getAttribute('width') +'" height="'+ this.getAttribute('height') +'" style="'+ this.getAttribute('style') +'"';
+			swfNode += ' id="'+ this.getAttribute('id') +'" name="'+ this.getAttribute('id') +'" ';
+			var params = this.getParams();
+			 for(var key in params){ swfNode += [key] +'="'+ params[key] +'" '; }
+			var pairs = this.getVariablePairs().join("&");
+			 if (pairs.length > 0){ swfNode += 'flashvars="'+ pairs +'"'; }
+			swfNode += '/>';
+		} else { // PC IE
+			if (this.getAttribute("doExpressInstall")) {
+				this.addVariable("MMplayerType", "ActiveX");
+				this.setAttribute('swf', this.xiSWFPath);
+			}
+			swfNode = '<object id="'+ this.getAttribute('id') +'" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="'+ this.getAttribute('width') +'" height="'+ this.getAttribute('height') +'" style="'+ this.getAttribute('style') +'">';
+			swfNode += '<param name="movie" value="'+ this.getAttribute('swf') +'" />';
+			var params = this.getParams();
+			for(var key in params) {
+			 swfNode += '<param name="'+ key +'" value="'+ params[key] +'" />';
+			}
+			var pairs = this.getVariablePairs().join("&");
+			if(pairs.length > 0) {swfNode += '<param name="flashvars" value="'+ pairs +'" />';}
+			swfNode += "</object>";
+		}
+		return swfNode;
+	},
+	write: function(elementId){
+		if(this.getAttribute('useExpressInstall')) {
+			// check to see if we need to do an express install
+			var expressInstallReqVer = new deconcept.PlayerVersion([6,0,65]);
+			if (this.installedVer.versionIsValid(expressInstallReqVer) && !this.installedVer.versionIsValid(this.getAttribute('version'))) {
+				this.setAttribute('doExpressInstall', true);
+				this.addVariable("MMredirectURL", escape(this.getAttribute('xiRedirectUrl')));
+				document.title = document.title.slice(0, 47) + " - Flash Player Installation";
+				this.addVariable("MMdoctitle", document.title);
+			}
+		}
+		if(this.skipDetect || this.getAttribute('doExpressInstall') || this.installedVer.versionIsValid(this.getAttribute('version'))){
+			var n = (typeof elementId == 'string') ? document.getElementById(elementId) : elementId;
+			n.innerHTML = this.getSWFHTML();
+			return true;
+		}else{
+			if(this.getAttribute('redirectUrl') != "") {
+				document.location.replace(this.getAttribute('redirectUrl'));
+			}
+		}
+		return false;
+	}
+}
+
+/* ---- detection functions ---- */
+deconcept.SWFObjectUtil.getPlayerVersion = function(){
+	var PlayerVersion = new deconcept.PlayerVersion([0,0,0]);
+	if(navigator.plugins && navigator.mimeTypes.length){
+		var x = navigator.plugins["Shockwave Flash"];
+		if(x && x.description) {
+			PlayerVersion = new deconcept.PlayerVersion(x.description.replace(/([a-zA-Z]|\s)+/, "").replace(/(\s+r|\s+b[0-9]+)/, ".").split("."));
+		}
+	}else if (navigator.userAgent && navigator.userAgent.indexOf("Windows CE") >= 0){ // if Windows CE
+		var axo = 1;
+		var counter = 3;
+		while(axo) {
+			try {
+				counter++;
+				axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash."+ counter);
+//				document.write("player v: "+ counter);
+				PlayerVersion = new deconcept.PlayerVersion([counter,0,0]);
+			} catch (e) {
+				axo = null;
+			}
+		}
+	} else { // Win IE (non mobile)
+		// do minor version lookup in IE, but avoid fp6 crashing issues
+		// see http://blog.deconcept.com/2006/01/11/getvariable-setvariable-crash-internet-explorer-flash-6/
+		try{
+			var axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.7");
+		}catch(e){
+			try {
+				var axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.6");
+				PlayerVersion = new deconcept.PlayerVersion([6,0,21]);
+				axo.AllowScriptAccess = "always"; // error if player version < 6.0.47 (thanks to Michael Williams @ Adobe for this code)
+			} catch(e) {
+				if (PlayerVersion.major == 6) {
+					return PlayerVersion;
+				}
+			}
+			try {
+				axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash");
+			} catch(e) {}
+		}
+		if (axo != null) {
+			PlayerVersion = new deconcept.PlayerVersion(axo.GetVariable("$version").split(" ")[1].split(","));
+		}
+	}
+	return PlayerVersion;
+}
+deconcept.PlayerVersion = function(arrVersion){
+	this.major = arrVersion[0] != null ? parseInt(arrVersion[0]) : 0;
+	this.minor = arrVersion[1] != null ? parseInt(arrVersion[1]) : 0;
+	this.rev = arrVersion[2] != null ? parseInt(arrVersion[2]) : 0;
+}
+deconcept.PlayerVersion.prototype.versionIsValid = function(fv){
+	if(this.major < fv.major) return false;
+	if(this.major > fv.major) return true;
+	if(this.minor < fv.minor) return false;
+	if(this.minor > fv.minor) return true;
+	if(this.rev < fv.rev) return false;
+	return true;
+}
+/* ---- get value of query string param ---- */
+deconcept.util = {
+	getRequestParameter: function(param) {
+		var q = document.location.search || document.location.hash;
+		if (param == null) { return q; }
+		if(q) {
+			var pairs = q.substring(1).split("&");
+			for (var i=0; i < pairs.length; i++) {
+				if (pairs[i].substring(0, pairs[i].indexOf("=")) == param) {
+					return pairs[i].substring((pairs[i].indexOf("=")+1));
+				}
+			}
+		}
+		return "";
+	}
+}
+/* fix for video streaming bug */
+deconcept.SWFObjectUtil.cleanupSWFs = function() {
+	var objects = document.getElementsByTagName("OBJECT");
+	for (var i = objects.length - 1; i >= 0; i--) {
+		objects[i].style.display = 'none';
+		for (var x in objects[i]) {
+			if (typeof objects[i][x] == 'function') {
+				objects[i][x] = function(){};
+			}
+		}
+	}
+}
+// fixes bug in some fp9 versions see http://blog.deconcept.com/2006/07/28/swfobject-143-released/
+if (deconcept.SWFObject.doPrepUnload) {
+	if (!deconcept.unloadSet) {
+		deconcept.SWFObjectUtil.prepUnload = function() {
+			__flash_unloadHandler = function(){};
+			__flash_savedUnloadHandler = function(){};
+			window.attachEvent("onunload", deconcept.SWFObjectUtil.cleanupSWFs);
+		}
+		window.attachEvent("onbeforeunload", deconcept.SWFObjectUtil.prepUnload);
+		deconcept.unloadSet = true;
+	}
+}
+/* add document.getElementById if needed (mobile IE < 5) */
+if (!document.getElementById && document.all) { document.getElementById = function(id) { return document.all[id]; }}
+
+/* add some aliases for ease of use/backwards compatibility */
+var getQueryParamValue = deconcept.util.getRequestParameter;
+var FlashObject = deconcept.SWFObject; // for legacy support
+var SWFObject = deconcept.SWFObject;
+/**
+ * SWFAddress 2.1: Deep linking for Flash and Ajax - http://www.asual.com/swfaddress/
+ *
+ * SWFAddress is (c) 2006-2007 Rostislav Hristov and is released under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ */
+
+if (typeof com == "undefined") var com = {};
+if (typeof com.asual == "undefined") com.asual = {};
+if (typeof com.asual.util == "undefined") com.asual.util = {};
+   
+/**
+ * @class Utility class that provides detailed browser information.
+ * @static
+ * @ignore
+ */
+com.asual.util.Browser = new function() {
+
+    var _supported = false;
+    var _version = -1;
+
+    var _agent = navigator.userAgent;
+    var _ie = false;
+    var _camino = false;
+    var _safari = false;
+    var _opera = false;
+    var _mozilla = false;
+
+    if (/MSIE/.test(_agent)) {
+        _ie = true;
+        _version = parseFloat(_agent.substring(_agent.indexOf('MSIE') + 4));
+        _supported = _version >= 6;
+    } else if (/AppleWebKit/.test(_agent)) {
+        _safari = true;
+        _version = parseFloat(_agent.substring(_agent.indexOf('Safari') + 7));
+        _supported = _version >= 312;
+    } else if (/Opera/.test(_agent)) {
+        _opera = true;
+        _version = parseFloat(navigator.appVersion);
+        _supported = _version >= 9.02;
+    } else if (/Camino/.test(_agent)) {
+        _camino = true;
+        _version = parseFloat(_agent.substring(_agent.indexOf('Camino') + 7));
+        _supported = _version >= 1;
+    } else if (/Firefox/.test(_agent)) {
+        _mozilla = true;
+        _version = parseFloat(_agent.substring(_agent.indexOf('Firefox') + 8));
+        _supported = _version >= 1;
+    } else if (/Netscape/.test(_agent)) {
+        _mozilla = true;
+        _version = parseFloat(_agent.substring(_agent.indexOf('Netscape') + 9));
+        _supported = _version >= 8;
+    } else if (/Mozilla/.test(_agent) && /rv:/.test(_agent)) {
+        _mozilla = true;
+        _version = parseFloat(_agent.substring(_agent.indexOf('rv:') + 3));
+        _supported = _version >= 1.8;
+    }
+
+    /**
+     * Detects if the browser is supported.
+     * @return {Boolean}
+     * @static
+     */
+    this.isSupported = function() {
+        return _supported;
+    }
+
+    /**
+     * Detects the version of the browser.
+     * @return {Number}
+     * @static
+     */
+    this.getVersion = function() {
+        return _version;
+    }
+
+    /**
+     * Detects if the browser is Internet Explorer.
+     * @return {Boolean}
+     * @static
+     */
+    this.isIE = function() {
+        return _ie;
+    }
+
+    /**
+     * Detects if the browser is Safari.
+     * @return {Boolean}
+     * @static
+     */
+    this.isSafari = function() {
+        return _safari;
+    }
+
+    /**
+     * Detects if the browser is Opera.
+     * @return {Boolean}
+     * @static
+     */
+    this.isOpera = function() {
+        return _opera;
+    }
+
+    /**
+     * Detects if the browser is Camino.
+     * @return {Boolean}
+     * @static
+     */
+    this.isCamino = function() {
+        return _camino;
+    }
+
+    /**
+     * Detects if the browser is Mozilla.
+     * @return {Boolean}
+     * @static
+     */
+    this.isMozilla = function() {
+        return _mozilla;
+    }
+}
+
+/**
+ * @class Utility class that provides event helpers.
+ * @static
+ * @ignore
+ */
+com.asual.util.Events = new function() {
+
+    var _cache = [];
+    var _browser = com.asual.util.Browser;
+    var _dcl = 'DOMContentLoaded';
+
+    if (_browser.isIE() || _browser.isSafari()) {
+        (function(){
+            try {
+                if (_browser.isIE() || !/loaded|complete/.test(document.readyState))
+                    document.documentElement.doScroll('left');
+            } catch(e) {
+                return setTimeout(arguments.callee, 0);
+            }
+            for (var i = 0, e; e = _cache[i]; i++) {
+                if (e.t == _dcl) e.l.call(null);
+            }
+        })();
+    }
+
+    /**
+     * Adds an event listener to an object.
+     * @param {Object} obj The object that provides events.
+     * @param {String} type The type of the event.
+     * @param {Function} listener The event listener function.
+     * @return {void}
+     * @static
+     */
+    this.addListener = function(obj, type, listener) {
+        _cache.push({o: obj, t: type, l: listener});
+        if (type == _dcl && (_browser.isIE() || _browser.isSafari()))
+            return;
+        if (obj.addEventListener){
+            obj.addEventListener(type, listener, false);
+        } else if (obj.attachEvent){
+            obj.attachEvent('on' + type, listener);
+        }
+    }
+
+    /**
+     * Removes an event listener from an object.
+     * @param {Object} obj The object that provides events.
+     * @param {String} type The type of the event.
+     * @param {Function} listener The event listener function.
+     * @return {void}     
+     * @static
+     */
+    this.removeListener = function(obj, type, listener) {
+        for (var i = 0, e; e = _cache[i]; i++) {
+            if (e.o == obj && e.t == type && e.l == listener) {
+                _cache.splice(i, 1);
+                break;
+            }
+        }
+        if (type == _dcl && (_browser.isIE() || _browser.isSafari()))
+            return;
+        if (obj.removeEventListener){
+            obj.removeEventListener(type, listener, false);
+        } else if (obj.detachEvent){
+            obj.detachEvent('on' + type, listener);
+        }
+    }
+
+    var _unload = function() {
+        for (var i = 0, evt; evt = _cache[i]; i++) {
+            if (evt.t != _dcl)
+                com.asual.util.Events.removeListener(evt.o, evt.t, evt.l);
+        }
+    }
+
+    this.addListener(window, 'unload', _unload);
+}
+
+/**
+ * Creates a new SWFAddress event.
+ * @class Event class for SWFAddress.
+ * @param {String} type Type of the event.
+ */
+SWFAddressEvent = function(type) {
+    
+    /**
+     * String representation of this object.
+     * @ignore
+     */
+    this.toString = function() {
+        return '[object SWFAddressEvent]';
+    }
+
+    /**
+     * The type of this event.
+     * @type String
+     */
+    this.type = type;
+
+    /**
+     * The target of this event.
+     * @type Function
+     */
+    this.target = [SWFAddress][0];
+
+    /**
+     * The value of this event.
+     * @type String
+     */
+    this.value = SWFAddress.getValue();
+
+    /**
+     * The path of this event.
+     * @type String
+     */
+    this.path = SWFAddress.getPath();
+    
+    /**
+     * The pseudo folders in the deep linking path of this event.
+     * @type Array
+     */
+    this.pathNames = SWFAddress.getPathNames();
+
+    /**
+     * The parameters of this event.
+     * @type Object
+     */
+    this.parameters = {};
+
+    var _parameterNames = SWFAddress.getParameterNames();
+    for (var i = 0, n; n = _parameterNames[i]; i++) {
+        this.parameters[n] = SWFAddress.getParameter(n);
+    }
+    
+    /**
+     * The parameters names of this event.
+     * @type Array     
+     */
+     this.parameterNames = SWFAddress.getParameterNames();
+}
+
+/**
+ * Init event.
+ * @type String
+ * @memberOf SWFAddressEvent
+ * @static
+ */
+SWFAddressEvent.INIT = 'init';
+
+/**
+ * Change event.
+ * @type String
+ * @memberOf SWFAddressEvent
+ * @static 
+ */
+SWFAddressEvent.CHANGE = 'change';
+
+/**
+ * @class The SWFAddress class can be configured with query parameters using the following format:
+ * swfaddress.js?html=false&history=1&tracker=pageTracker._trackPageview&strict=1.<br /> 
+ * The list of supported options include:<br /><br />
+ * <code>history:Boolean</code> - Enables or disables the creation of history entries.<br />
+ * <code>html:Boolean</code> - Enables or disables the usage of swfaddress.html.<br />
+ * <code>strict:Boolean</code> - Enables or disables the strict mode.<br />
+ * <code>tracker:String</code> - Sets a function for page view tracking.<br />
+ * @static 
+ */ 
+SWFAddress = new function() {
+    var _browser = com.asual.util.Browser;
+    var _supported = _browser.isSupported();
+
+	//Added by DE to allow working withing an iframe on different domains 2008-02-08
+  
+
+	try {
+		var _d = top.document;
+		var _h = top.history;
+		var _l = top.location;
+	} catch (err) {
+		var _d = window.document;
+		var _h = window.history;
+		var _l = window.location;
+	}
+
+	try {
+		var titleIFrameTest = _d.title;
+		var historyIFrameTest = _h.length;
+		var locationIFrameText = _l.href;
+	} catch (err) {
+		return
+	}
+    var _iframe, _form, _url;
+    var _title = _d.title;
+    var _length = _h.length;
+    var _silent = false;
+    var _listeners = {};
+    var _stack = [];
+    var _ids = [];
+    var _opts = [];
+    _opts['history'] = true;
+    _opts['html'] = false;
+    _opts['strict'] = true;
+    _opts['tracker'] = '_trackDefault';
+    
+    if ((!_supported && _l.href.indexOf('#') != -1) || 
+        (_browser.isSafari() && _browser.getVersion() < 412 && _l.href.indexOf('#') != -1 && _l.search != '')){
+        _d.open();
+        _d.write('<html><head><meta http-equiv="refresh" content="0;url=' + 
+            _l.href.substr(0, _l.href.indexOf('#')) + '" /></head></html>');
+        _d.close();
+    }
+
+    var _getHash = function() {
+        var index = _l.href.indexOf('#');
+        if (index != -1)
+            return _l.href.substring(index).replace(/^#/g, '');
+        return '';
+    }
+
+    var _value = _getHash();
+
+    var _strictCheck = function(value, force) {
+        if (_opts['strict']) {
+            if (force) {
+                if (value.substr(0, 1) != '/') 
+                    value = '/' + value;
+            } else {
+                if (value == '') value = '/';
+            }
+        }
+        return value;
+    }
+
+    var _searchScript = function(el) {
+        if (el.src && /big\.js(\?.*)?$/.test(el.src)) return el;
+        for (var i = 0, c; c = el.childNodes[i]; i++) {
+            if (s = _searchScript(c)) return s;
+        }
+    }
+    
+    var _titleCheck = function() {
+        if (_browser.isIE() && _d.title != _title) {
+            SWFAddress.setTitle(_title);
+        }
+    }
+
+    var _listen = function() {
+        if (!_silent) {
+            if (_browser.isIE()) {
+                if (_value != _getHash()) {
+                    if (_browser.getVersion() < 7) {
+                        _l.reload();
+                    } else {
+                        SWFAddress.setValue(_getHash());
+                    }
+                }
+            } else if (_browser.isSafari() && _browser.getVersion() < 523) {
+                if (_length != _h.length) {
+                    _length = _h.length;
+                    if (typeof _stack[_length - 1] != 'undefined') {
+                        _value = _stack[_length - 1];
+                    }
+                    _update();
+                }
+            } else if (_value != _getHash()) {
+                _value = _getHash();
+                _update();
+            }
+            _titleCheck();
+        }
+    }
+
+    var _jsDispatch = function(type) {
+        if (SWFAddress.hasEventListener(type)) {
+            SWFAddress.dispatchEvent(new SWFAddressEvent(type));
+        }
+        type = type.substr(0, 1).toUpperCase() + type.substring(1);
+        if(typeof SWFAddress['on' + type] == 'function') {
+            SWFAddress['on' + type]();
+        }
+    }
+
+    var _jsInit = function() {
+        _jsDispatch('init');
+    }
+
+    var _jsChange = function() {
+        _jsDispatch('change');
+    }
+
+    var _swfChange = function() {
+        for (var i = 0, id; id = _ids[i]; i++) {
+            var obj = document.getElementById(id);
+            if (obj) {
+                if (obj.parentNode && typeof obj.parentNode.so != 'undefined') {
+                    obj.parentNode.so.call('setSWFAddressValue', SWFAddress.getValue());
+                } else {
+                    obj = (obj && typeof obj.setSWFAddressValue != 'undefined') ? 
+                        obj : ((obj.getElementsByTagName('object')[0] && 
+                        typeof obj.getElementsByTagName('object')[0].setSWFAddressValue != 'undefined') ? 
+                        obj.getElementsByTagName('object')[0] : ((obj.getElementsByTagName('embed')[0] && 
+                        typeof obj.getElementsByTagName('embed')[0].setSWFAddressValue != 'undefined') ? 
+                        obj.getElementsByTagName('embed')[0] : null));
+                    if (obj) {
+                        obj.setSWFAddressValue(SWFAddress.getValue());
+                    }
+                }
+            }
+        }
+    }
+
+    var _update = function() {
+        _swfChange();
+        _jsChange();
+        setTimeout(_track, 10);
+    }
+
+    var _trackDefault = function(value) {
+        if (typeof urchinTracker == 'function')
+            urchinTracker(value);
+        if (typeof pageTracker != 'undefined' && 
+            typeof pageTracker._trackPageview == 'function')
+            pageTracker._trackPageview(value);            
+    }
+
+    var _track = function() {
+        if (typeof _opts['tracker'] != 'undefined' && eval('typeof ' + _opts['tracker'] + ' != "undefined"')){
+            var fn = eval(_opts['tracker']);
+            if (typeof fn == 'function') {
+                fn((_l.pathname + SWFAddress.getValue()).replace(/\/\//, '/').replace(/^\/$/, ''));
+            }
+        }
+    }
+    
+    var _htmlWrite = function() {
+        var doc = _iframe.contentWindow.document;
+        doc.open();
+        doc.write('<script>var swfaddress = "' + _getHash() + '";</script>');
+        doc.close();
+    }
+
+    var _htmlLoad = function() {
+        if (_opts['html']) {
+            var src = _iframe.contentWindow.location.href;
+            _value = (src.indexOf('?') > -1) ? 
+                src.substring(src.indexOf('?') + 1) : '';
+        } else {
+            _value = (typeof _iframe.contentWindow.swfaddress != 'undefined') ? 
+                _iframe.contentWindow.swfaddress : '';
+        }
+        _iframe.contentWindow.document.title = _d.title;
+        if (_value != _getHash()) {
+            _update();
+            _l.hash = _value;
+        }
+    }
+
+    var _load = function() {
+        var attr = 'id="swfaddress" style="position:absolute;top:-9999px;"';
+        if (_browser.isIE()) {
+            document.body.appendChild(document.createElement('div')).innerHTML = '<iframe ' + attr + ' src="' + 
+                (_opts['html'] ? _url.replace(/\.js(\?.*)?$/, '.html') + '?' + _getHash() : 'javascript:false;') + 
+                '"></iframe>';
+            _iframe = document.getElementById('swfaddress');
+            setTimeout(function() {
+                if (!_opts['html'] && typeof _iframe.contentWindow.swfaddress == 'undefined') _htmlWrite();
+                com.asual.util.Events.addListener(_iframe, 'load', _htmlLoad);
+            }, 10);
+        } else if (_browser.isSafari()) {
+            if (_browser.getVersion() < 412) {
+                document.body.innerHTML += '<form ' + attr + ' method="get"></form>';
+                _form = document.getElementById('swfaddress');
+            }
+            if (typeof _l.swfaddress == 'undefined') _l.swfaddress = {};
+            if (typeof _l.swfaddress[_l.pathname] != 'undefined') _stack = _l.swfaddress[_l.pathname].split(',');
+        } else if (_browser.isOpera() && _ids.length == 0 && typeof navigator.plugins['Shockwave Flash'] == 'object') {
+            document.body.innerHTML += '<embed ' + attr + ' src="' + _url.replace(/\.js(\?.*)?$/, '.swf') + 
+                '" type="application/x-shockwave-flash" />';
+        }
+        setTimeout(_jsInit, 1);
+        setTimeout(_jsChange, 2);
+        setTimeout(_track, 10);
+        setInterval(_listen, 50);
+    }
+
+    /**
+     * Init event.
+     * @type Function
+     * @event
+     * @static
+     */
+    this.onInit = null;
+    
+    /**
+     * Change event.
+     * @type Function
+     * @event
+     * @static
+     */
+    this.onChange = null;
+    
+    /**
+     * String representation of this class.
+     * @ignore
+     */
+    this.toString = function() {
+        return '[class SWFAddress]';
+    }
+
+    /**
+     * Loads the previous URL in the history list.
+     * @return {void}
+     * @static
+     */
+    this.back = function() {
+        _h.back();
+    }
+
+    /**
+     * Loads the next URL in the history list.
+     * @return {void}
+     * @static
+     */
+    this.forward = function() {
+        _h.forward();
+    }
+
+    /**
+     * Loads a URL from the history list.
+     * @param {Number} delta An integer representing a relative position in the history list.
+     * @return {void}
+     * @static
+     */
+    this.go = function(delta) {
+        _h.go(delta);
+    }
+
+    /**
+     * Opens a new URL in the browser. 
+     * @param {String} url The resource to be opened.
+     * @param {String} target Target window.
+     * @return {void}
+     * @static
+     */
+    this.href = function(url, target) {
+        target = typeof target != 'undefined' ? target : '_self';     
+        switch(target) {
+            case '_self': 
+                self.location.href = url; 
+                break;
+            case '_top': 
+                _l.href = url; 
+                break;                
+            case '_blank':
+                window.open(url); 
+                break; 
+            default:
+                top.frames[target].location.href = url; 
+                break; 
+        }
+    }
+
+    /**
+     * Opens a browser popup window. 
+     * @param {String} url Resource location.
+     * @param {String} name Name of the popup window.
+     * @param {String} options Options which get evaluted and passed to the window.open() method.
+     * @param {String} handler Optional JavaScript code for popup handling.    
+     * @return {void}
+     * @static
+     */
+    this.popup = function(url, name, options, handler) {
+        var popup = window.open(url, name, eval(options));
+        eval(handler);
+    }
+
+    /**
+     * Registers an event listener..
+     * @param {String} type Event type.
+     * @param {Function} listener Event listener.
+     * @return {void}
+     * @static
+     */
+    this.addEventListener = function(type, listener) {
+        if (typeof _listeners[type] == 'undefined') {
+            _listeners[type] = [];
+        }
+        _listeners[type].push(listener);
+    }
+
+    /**
+     * Removes an event listener.
+     * @param {String} type Event type.
+     * @param {Function} listener Event listener.
+     * @return {void}
+     * @static     
+     */
+    this.removeEventListener = function(type, listener) {
+        if (typeof _listeners[type] != 'undefined') {
+            for (var i = 0, l; l = _listeners[type][i]; i++) {
+                if (l == listener) break;
+            }
+            _listeners[type].splice(i, 1);
+        }
+    }
+
+    /**
+     * Dispatches an event to all the registered listeners. 
+     * @param {Object} event Event object.
+     * @return {Boolean}
+     * @static
+     */
+    this.dispatchEvent = function(event) {
+		try {
+			if (typeof _listeners[event.type] != 'undefined' && _listeners[event.type].length) {
+				event.target = this;
+				for (var i = 0, l; l = _listeners[event.type][i]; i++) {
+					l(event);
+				}
+				return true;           
+			}
+			return false;
+		} catch (err) {
+			return false
+		}
+    }
+
+    /**
+     * Checks the existance of any listeners registered for a specific type of event. 
+     * @param {String} event Event type.
+     * @return {Boolean}
+     * @static
+     */
+    this.hasEventListener = function(type) {
+        return (typeof _listeners[type] != 'undefined' && _listeners[type].length > 0);
+    }
+    
+    /**
+     * Provides the base address of the document. 
+     * @return {String}
+     * @static
+     */
+    this.getBaseURL = function() {
+        var url = _l.href;
+        if (url.indexOf('#') != -1)
+            url = url.substr(0, url.indexOf('#'));
+        if (url.substr(url.length - 1) == '/')
+            url = url.substr(0, url.length - 1);
+        return url;
+    }
+
+    /**
+     * Provides the state of the strict mode setting. 
+     * @return {Boolean}
+     * @static
+     */
+    this.getStrict = function() {
+        return _opts['strict'];
+    }
+
+    /**
+     * Enables or disables the strict mode.
+     * @param {Boolean} strict Strict mode state.
+     * @return {void}
+     * @static
+     */
+    this.setStrict = function(strict) {
+        _opts['strict'] = enabled;
+    }
+
+    /**
+     * Provides the state of the history setting. 
+     * @return {Boolean}
+     * @static
+     */
+    this.getHistory = function() {
+        return _opts['history'];
+    }
+
+    /**
+     * Enables or disables the creation of history entries.
+     * @param {Boolean} history History state.
+     * @return {void}
+     * @static
+     */
+    this.setHistory = function(history) {
+        _opts['history'] = history;
+    }
+
+    /**
+     * Provides the tracker function.
+     * @return {String}
+     * @static
+     */
+    this.getTracker = function() {
+        return _opts['tracker'];
+    }
+
+    /**
+     * Sets a function for page view tracking. The default value is 'urchinTracker'.
+     * @param {String} tracker Tracker function.
+     * @return {void}
+     * @static
+     */
+    this.setTracker = function(tracker) {
+        _opts['tracker'] = tracker;
+    }
+
+    /**
+     * Provides a list of all the Flash objects registered. 
+     * @return {Array}
+     * @static
+     */
+    this.getIds = function() {
+        return _ids;
+    }
+
+    /**
+     * Provides the id the first and probably the only Flash object registered. 
+     * @return {String}
+     * @static
+     */
+    this.getId = function(index) {
+        return _ids[0];
+    }
+
+    /**
+     * Sets the id of a single Flash object which will be registered for deep linking.
+     * @param {String} id ID of the object.
+     * @return {void}
+     * @static
+     */
+    this.setId = function(id) {
+        _ids[0] = id;
+    }
+
+    /**
+     * Adds an id to the list of Flash object registered for deep linking.
+     * @param {String} id ID of the object.
+     * @return {void}
+     * @static
+     */
+    this.addId = function(id) {
+        this.removeId(id);
+        _ids.push(id);
+    }
+
+    /**
+     * Removes an id from the list of Flash object registered for deep linking.
+     * @param {String} id ID of the object.
+     * @return {void}
+     * @static
+     */
+    this.removeId = function(id) {
+        for (var i = 0, swfid; swfid = _ids[i]; i++) {
+            if (id == swfid) {
+                _ids.splice(i, 1);
+                break;
+            }
+        }
+    }
+
+    /**
+     * Provides the title of the HTML document.
+     * @return {String}
+     * @static
+     */
+    this.getTitle = function() {
+        return _d.title;
+    }
+
+    /**
+     * Sets the title of the HTML document.
+     * @param {String} title Title value.
+     * @return {void}
+     * @static
+     */
+    this.setTitle = function(title) {
+        if (!_supported) return null;
+        if (typeof title == 'undefined') return;
+        if (title == 'null') title = '';
+        _title = _d.title = title;
+        if (_iframe && _iframe.contentWindow)
+            _iframe.contentWindow.document.title = title;
+    }
+
+    /**
+     * Provides the status of the browser window.
+     * @return {String}
+     * @static
+     */
+    this.getStatus = function() {
+        return top.status;
+    }
+
+    /**
+     * Sets the status of the browser window.
+     * @param {String} status Status value.
+     * @return {void}
+     * @static
+     */
+    this.setStatus = function(status) {
+        if (!_supported) return null;
+        if (typeof status == 'undefined') return;
+        if (!_browser.isSafari()) {
+            if (status == 'null') status = '';
+            status = _strictCheck(status, true);
+            if (status == '/') status = '';
+            if (!(/http(s)?:\/\//.test(status))) {
+                var index = _l.href.indexOf('#');
+                status = (index == -1 ? _l.href : _l.href.substr(0, index)) + '#' + status;
+            }
+            top.status = status;
+        }
+    }
+
+    /**
+     * Resets the status of the browser window.
+     * @return {void}
+     * @static
+     */
+    this.resetStatus = function() {
+        top.status = '';
+    }
+
+    /**
+     * Provides the current deep linking value.
+     * @return {String}
+     * @static
+     */
+    this.getValue = function() {
+        if (!_supported) return null;
+        return _strictCheck(_value, false);
+    }
+
+    /**
+     * Sets the current deep linking value.
+     * @param {String} value A value which will be appended to the base link of the HTML document.
+     * @return {void}
+     * @static
+     */
+    this.setValue = function(value) {
+        if (!_supported) return null;
+        if (typeof value == 'undefined') return;
+        if (value == 'null') value = ''
+        value = _strictCheck(value, true);
+        if (value == '/') value = '';
+        if (_value == value) return;
+        _value = value;
+        _silent = true;
+        _update();
+        _stack[_h.length] = _value;
+        if (_browser.isSafari()) {
+            if (_opts['history']) {
+                _l.swfaddress[_l.pathname] = _stack.toString();
+                _length = _h.length + 1;
+                if (_browser.getVersion() < 412) {
+                    if (_l.search == '') {
+                        _form.action = '#' + _value;
+                        _form.submit();
+                    }
+                } else {
+                    var evt = document.createEvent('MouseEvents');
+                    evt.initEvent('click', true, true);
+                    var anchor = document.createElement('a');
+                    anchor.href = '#' + _value;
+                    anchor.dispatchEvent(evt);
+                }
+            } else {
+                _l.replace('#' + _value);
+            }
+        } else if (_value != _getHash()) {
+            if (_opts['history']) {
+                _l.hash = '#' + _value;
+            } else {
+                _l.replace('#' + _value);
+            }
+        }
+        if (_browser.isIE() && _opts['history']) {
+            if (_opts['html']) {
+                _iframe.contentWindow.location.assign(_iframe.contentWindow.location.pathname + 
+                    '?' + _getHash());
+            } else {
+                _htmlWrite();
+            }
+        }
+        _silent = false;
+    }
+
+    /**
+     * Provides the deep linking value without the query string.
+     * @return {String}
+     * @static
+     */
+    this.getPath = function() {
+        var value = this.getValue();
+        if (value.indexOf('?') != -1) {
+            return value.split('?')[0];
+        } else {
+            return value;   
+        }
+    }
+
+    /**
+     * Provides a list of all the pseudo folders in the deep linking path.
+     * @return {Array}
+     * @static
+     */
+    this.getPathNames = function() {
+        var path = SWFAddress.getPath();
+        var names = path.split('/');
+        if (path.substr(0, 1) == '/')
+            names.splice(0, 1);
+        if (path.substr(path.length - 1, 1) == '/')
+            names.splice(names.length - 1, 1);
+        return names;
+    }
+
+    /**
+     * Provides the query string part of the deep linking value.
+     * @return {String}
+     * @static
+     */
+    this.getQueryString = function() {
+        var value = this.getValue();
+        var index = value.indexOf('?');
+        if (index != -1 && index < value.length) {
+            return value.substr(index + 1);
+        }
+        return '';
+    }
+
+    /**
+     * Provides the value of a specific query parameter.
+     * @param {String} param Parameter name.
+     * @return {String}
+     * @static
+     */
+    this.getParameter = function(param) {
+        var value = this.getValue();
+        var index = value.indexOf('?');
+        if (index != -1) {
+            value = value.substr(index + 1);
+            var params = value.split('&');
+            var p, i = params.length;
+            while(i--) {
+                p = params[i].split('=');
+                if (p[0] == param) {
+                    return p[1];
+                }
+            }
+        }
+        return '';
+    }
+
+    /**
+     * Provides a list of all the query parameter names.
+     * @return {Array}
+     * @static
+     */
+    this.getParameterNames = function() {
+        var value = this.getValue();
+        var index = value.indexOf('?');
+        var names = [];
+        if (index != -1) {
+            value = value.substr(index + 1);
+            if (value != '' && value.indexOf('=') != -1) {
+                var params = value.split('&');
+                var i = 0;
+                while(i < params.length) {
+                    names.push(params[i].split('=')[0]);
+                    i++;
+                }
+            }
+        }
+        return names;
+    }
+
+    if (!_supported) return;
+    
+    for (var i = 1; i < _length; i++) {
+        _stack.push('');
+    }
+    _stack.push(_l.hash.replace(/^#/g, ''));
+
+    if (_browser.isIE() && _l.hash != _getHash()) {
+        _l.hash = '#' + _getHash();
+    }
+
+    try {
+        _url = String(_searchScript(document).src);
+        if (_url && (qi = _url.indexOf('?')) > -1) {
+            var param, params = _url.substr(qi + 1).split('&');
+            for (var j = 0, p; p = params[j]; j++) {
+                param = p.split('=');
+                if (/^(history|html|strict)$/.test(param[0])) {
+                    _opts[param[0]] = (isNaN(param[1]) ? eval(param[1]) : (parseFloat(param[1]) > 0));
+                }
+                if (/^tracker$/.test(param[0])) {
+                    _opts[param[0]] = param[1];
+                }
+            }
+        }
+    } catch(e) {}
+    if (/file:\/\//.test(_l.href)) _opts['html'] = false;
+
+    _titleCheck();
+    com.asual.util.Events.addListener(document, 'DOMContentLoaded', _load);
+}
+
+/* Flash embedding hooks */
+if (typeof swfobject != 'undefined') SWFObject = swfobject;
+if (typeof FlashObject != 'undefined') SWFObject = FlashObject;
+if (typeof SWFObject != 'undefined') {
+    if (SWFObject.prototype && SWFObject.prototype.write) {
+        com.asual.SWFObjectWrite = SWFObject.prototype.write;
+        /**
+         * @ignore
+         */
+        SWFObject.prototype.write = function() {
+            if (this.getAttribute('version').major < 8) {
+                this.addVariable('$swfaddress', SWFAddress.getValue());
+                ((typeof arguments[0] == 'string') ? 
+                    document.getElementById(arguments[0]) : arguments[0]).so = this;
+            }
+            if (success = com.asual.SWFObjectWrite.apply(this, arguments))
+                SWFAddress.addId(this.getAttribute('id'));
+            return success;
+        }
+    } else {
+        com.asual.SWFObjectRegisterObject = SWFObject.registerObject;
+        SWFObject.registerObject = function() {
+            com.asual.SWFObjectRegisterObject.apply(this, arguments);
+            SWFAddress.addId(arguments[0]);            
+        }
+        com.asual.SWFObjectCreateSWF = SWFObject.createSWF;
+        SWFObject.createSWF = function() {
+            com.asual.SWFObjectCreateSWF.apply(this, arguments);
+            SWFAddress.addId(arguments[0].id);            
+        }
+        com.asual.SWFObjectEmbedSWF = SWFObject.embedSWF;
+        SWFObject.embedSWF = function() {
+            com.asual.SWFObjectEmbedSWF.apply(this, arguments);
+            SWFAddress.addId(arguments[8].id);            
+        }
+    }
+}
+if (typeof UFO != 'undefined') {
+    com.asual.UFOCreate = UFO.create;
+    UFO.create = function() {
+        com.asual.UFOCreate.apply(this, arguments);
+        SWFAddress.addId(arguments[0].id);        
+    }
+}
+if (typeof AC_FL_RunContent != 'undefined') {
+    com.asual.AC_FL_RunContent = AC_FL_RunContent;
+    AC_FL_RunContent = function() {
+        com.asual.AC_FL_RunContent.apply(this, arguments);
+        for (var i = 0, a; a = arguments[i]; i++) {
+            if (a == 'id') {
+                SWFAddress.addId(arguments[i+1]);
+                break;
+            }
+        }
+    }
+}
+// Developed by Robert Nyman, code/licensing: http://code.google.com/p/domassistant/, documentation: http://www.robertnyman.com/domassistant
+var DOMAssistant = function () {
+	var methodsToAdd = [];
+	var baseMethodsToAdd = [
+		"elmsByClass",
+		"elmsByAttribute",
+		"elmsByTag",
+		"each",
+		"end",
+		"setPrevious"
+	];
+	var HTMLArray = function (prevSet) {
+		// Constructor
+	};
+	var HTMLArrayBaseMethods = {
+		elmsByClass : function (className, tag) {
+			var elmsWithClass = new HTMLArray();
+			elmsWithClass.setPrevious(this);
+			var elms;
+			for (var i=0, il=this.length; i<il; i++) {
+				elms = this.DOM.elmsByClass.call(this[i], className, tag);
+				for (var j=0, jl=elms.length; j<jl; j++) {
+					elmsWithClass.push(elms[j]);
+				}
+			}
+			return elmsWithClass;
+		},
+		elmsByAttribute : function (attr, attrVal, tag, substrMatchSelector) {
+			var elmsWithAttr = new HTMLArray();
+			elmsWithAttr.setPrevious(this);
+			var elms;
+			for (var i=0, il=this.length; i<il; i++) {
+				elms = this.DOM.elmsByAttribute.call(this[i], attr, attrVal, tag, substrMatchSelector);
+				for (var j=0, jl=elms.length; j<jl; j++) {
+					elmsWithAttr.push(elms[j]);
+				}
+			}
+			return elmsWithAttr;
+		},
+		elmsByTag : function (tag) {
+			var elmsWithTag = new HTMLArray();
+			elmsWithTag.setPrevious(this);
+			var elms;
+			for (var i=0, il=this.length; i<il; i++) {
+				elms = this.DOM.elmsByTag.call(this[i], tag);
+				for (var j=0, jl=elms.length; j<jl; j++) {
+					elmsWithTag.push(elms[j]);
+				}
+			}
+			return elmsWithTag;
+		},
+		each : function (functionCall) {
+			for (var i=0, il=this.length; i<il; i++) {
+				functionCall.call(this[i]);
+			}
+			return this;
+		},
+		end : function () {
+			return this.previousSet;
+		},
+		setPrevious : function (prevSet) {
+			this.previousSet = prevSet;
+		}
+	};
+	var isOpera = /Opera/i.test(navigator.userAgent); // Hopefully temporary till Opera fixes the XPath implementation
+	
+	return {
+		init : function () {
+			this.applyMethod.call(window, "$", this.$);
+			window.DOMAssistant = this;
+			if (window.ActiveXObject && document.all) {
+				HTMLArray = Array;
+			}
+			HTMLArray.prototype = [];
+			HTMLArray.prototype.DOM = this;
+			var current;
+			for (var i=0, il=baseMethodsToAdd.length; i<il; i++) {
+				current = baseMethodsToAdd[i];
+				methodsToAdd.push([current, this[current]]);
+				HTMLArray.prototype[current] = HTMLArrayBaseMethods[current];
+			}
+		},
+		
+		createHTMLArray : function() {
+			return new HTMLArray();
+		},
+		
+		addMethod : function (method) {
+			methodsToAdd.push(method);
+		},
+		
+		addHTMLArrayPrototype : function (key, method) {
+			HTMLArray.prototype[key] = method;
+		},
+	
+		applyMethod : function (method, func) {
+			if (typeof this[method] !== "function") {
+				this[method] = func;
+			}
+		},
+	
+		addMethods : function (elm) {
+			if (elm) {
+				var elms = (elm.constructor === Array)? elm : [elm];
+				for (var i=0, il=elms.length; i<il; i++) {	
+					for (var j=0, jl=methodsToAdd.length; j<jl; j++) {
+						this.applyMethod.call(elms[i], methodsToAdd[j][0], methodsToAdd[j][1]);
+		            }
+				}
+			}
+		},
+	
+		$ : function () {
+			var elm = null;
+			if (document.getElementById) {
+				var arg = arguments[0];
+				if (typeof arg === "string" && /[\*>\+#\.\[\s\:]/.test(arg)) {
+					elm = DOMAssistant.cssSelection(arg);
+				}
+				else {
+					elm = (arguments.length > 1)? new HTMLArray() : null;
+					var current;
+					for (var u=0, ul=arguments.length; u<ul; u++) {
+						current = arguments[u];
+						if (typeof current !== "object") {
+							current = document.getElementById(current);
+						}
+						if (arguments.length > 1) {
+							elm.push(current);
+						}
+						else {
+							elm = current;
+						}
+					}
+				}
+				DOMAssistant.addMethods(elm);
+			}
+			return elm;
+	    },
+	
+		cssSelection : function  (cssRule) {
+			if (document.evaluate && !isOpera) {
+				DOMAssistant.cssSelection = function (cssRule) {
+					var cssRules = cssRule.replace(/\s*(,)\s*/, "$1").split(",");
+					var elm = new HTMLArray();
+					var cssSelectors, xPathExpression, cssSelector, splitRule, nextTag, followingElm;
+					for (var i=0, il=cssRules.length; i<il; i++) {						
+						cssSelectors = cssRules[i].split(" ");
+						xPathExpression = ".";
+						for (var j=0, jl=cssSelectors.length; j<jl; j++) {
+							cssSelector = /^(\w+)?(#[\w\-_]+|\*)?((\.[\w\-_]+)*)?((\[\w+(\^|\$|\*)?=?[\w\-\_]+\]+)*)?(((:\w+[\w\-]*)(\((odd|even|\d+n?((\+|\-)\d+)?|\w+|((\w*\.[\w\-_]+)*)?|(\[#?\w+(\^|\$|\*)?=?[\w\-\_]+\]+))\))?)*)?(>|\+|~)?/.exec(cssSelectors[j]);
+							splitRule = {
+								tag : (!cssSelector[1] || cssSelector[2] === "*")? "*" : cssSelector[1],
+								id : (cssSelector[2] !== "*")?  cssSelector[2] : null,
+								allClasses : cssSelector[3],
+								allAttr : cssSelector[5],
+								pseudoClass : cssSelector[10],
+								pseudoValue : cssSelector[12],
+								tagRelation : cssSelector[19]
+							};
+							if (splitRule.tagRelation) {
+								switch (splitRule.tagRelation) {
+									case ">":
+										xPathExpression += "/child::";
+										break;
+									case "+":
+										xPathExpression += "/following-sibling::*[1]/self::";
+										break;
+									case "~":
+										xPathExpression += "/following-sibling::";
+										break;
+								}
+							}
+							else {
+								xPathExpression += (j > 0 && /(>|\+|~)/.test(cssSelectors[j-1]))? splitRule.tag : ("//" + splitRule.tag);
+							}
+							if (splitRule.id) {
+								xPathExpression += "[@id = '" + splitRule.id.replace(/^#/, "") + "']";
+							}
+							if (splitRule.allClasses) {
+								xPathExpression += splitRule.allClasses.replace(/\.([\w\-_]+)/g, "[contains(concat(' ', @class, ' '), ' $1 ')]");
+							}
+							if (splitRule.allAttr) {
+								xPathExpression += splitRule.allAttr.replace(/(\w+)(\^|\$|\*)?=?([\w\-_]+)?/g, function (match, p1, p2, p3, p4) {
+									var regExpReturn = match;
+									switch (p2) {
+										case "^":
+											regExpReturn = "starts-with(@" + p1 + ", '" + p3 + "')";
+											break;
+										case "$":
+											regExpReturn = "substring(@" + p1 + ", (string-length(@" + p1 + ") - " + (p3.length - 1) + "), 6) = '" + p3 + "'";
+											break;
+										case "*":
+											regExpReturn = "contains(concat(' ', @" + p1 + ", ' '), '" + p3 + "')";
+											break;
+										default :
+											regExpReturn = "@" + p1 + ((p3)? "='" + p3 + "'" : "");
+									}
+									return regExpReturn;
+								});
+							}
+							if (splitRule.pseudoClass) {
+								var pseudoValue = splitRule.pseudoValue;
+								switch (splitRule.pseudoClass.replace(/^:/, "")) {
+									case "first-child":
+										xPathExpression += "[1 and not(preceding-sibling::*)]";
+										break;
+									case "first-of-type":
+										xPathExpression += "[1]";
+										break;
+									case "last-child":
+										xPathExpression += "[last() and not(following-sibling::*)]";
+										break;
+									case "last-of-type":
+										xPathExpression += "[last()]";
+										break;
+									case "only-child":
+										xPathExpression += "[1 and not(preceding-sibling::*) and not(following-sibling::*)]";
+										break;
+									case "only-of-type":
+										xPathExpression += "[count(preceding-sibling::" + splitRule.tag + ") = 0 and position() = last()]";
+										break;		
+									case "nth-of-type":
+										xPathExpression += "[" + pseudoValue + "]";
+										break;
+									case "nth-last-of-type":
+										xPathExpression += "[last() - " + pseudoValue + "]";
+										break;
+									case "empty":
+										xPathExpression += "[count(child::*) = 0 and string-length(text()) = 0]";
+										break;
+									case "enabled":
+										xPathExpression += "[not(@disabled)]";
+										break;
+									case "disabled":
+										xPathExpression += "[@disabled]";
+										break;
+									case "checked":
+										xPathExpression += "[@checked='checked']"; // Doesn't work in Opera 9.24
+										break;
+									case "nth-child":
+										var pseudoSelection = "/child::*[position()";
+										if (/^\d+$/.test(pseudoValue)) {
+											pseudoSelection += " = " + pseudoValue;
+										}
+										else if (/^odd|even$/.test(pseudoValue)) {
+											pseudoSelection += " mod 2 = " + ((pseudoValue === "odd")? 1 : 0);
+										}
+										else{
+											var pseudoSelector = /^(\d+)n((\+|\-)(\d+))?$/.exec(pseudoValue);
+											var nthSelector = parseInt(pseudoSelector[1], 10);
+											var nOperatorVal = 0;
+											if (pseudoSelector[3] && pseudoSelector[4]) {
+												nOperatorVal = parseInt((pseudoSelector[3] + pseudoSelector[4]), 10);
+												if (nOperatorVal < 0) {
+													nOperatorVal = nthSelector + nOperatorVal;
+												}
+												pseudoSelection += " = " + nOperatorVal + " or ";
+											}
+											if (nthSelector < nOperatorVal) {
+												var nOperatorDiff = ((nOperatorVal - nthSelector) % 2 === 0)? 0 : 1;
+												pseudoSelection += ((pseudoSelector[3])? " position()" : "") + " mod " + nthSelector + " = " + nOperatorDiff + " and position() > " + nOperatorVal;
+											}
+											else if (nOperatorVal === nthSelector) {
+												pseudoSelection += ((pseudoSelector[3])? " position()" : "") + " mod " + nthSelector + " = 0";
+											}
+											else {
+												pseudoSelection += ((pseudoSelector[3])? " position()" : "") + " mod " + nthSelector + " = " + nOperatorVal;
+											}
+										}
+										pseudoSelection += "]";
+										xPathExpression += pseudoSelection;
+										break;	
+									case "not":
+										pseudoValue = pseudoValue.replace(/^\[#([\w\-\_]+)\]$/, "[id=$1]");
+										var notSelector = pseudoValue.replace(/^(\w+)/, "self::$1");
+										notSelector = notSelector.replace(/\.([\w\-_]+)/g, "contains(concat(' ', @class, ' '), ' $1 ')");
+										notSelector = notSelector.replace(/\[(\w+)(\^|\$|\*)?=?([\w\-_]+)?\]/g, function (match, p1, p2, p3, p4) {
+											var regExpReturn = match;
+											switch (p2) {
+												case "^":
+													regExpReturn = "starts-with(@" + p1 + ", '" + p3 + "')";
+													break;
+												case "$":
+													regExpReturn = "substring(@" + p1 + ", (string-length(@" + p1 + ") - " + (p3.length - 1) + "), 6) = '" + p3 + "'";
+													break;
+												case "*":
+													regExpReturn = "contains(concat(' ', @" + p1 + ", ' '), '" + p3 + "')";
+													break;
+												default :
+													regExpReturn = "@" + p1 + ((p3)? "='" + p3 + "'" : "");
+											}
+											return regExpReturn;
+										});
+										xPathExpression += "[not(" + notSelector + ")]";
+										break;
+								}
+							}	
+						}
+						var xPathNodes = document.evaluate(xPathExpression, document, null, 0, null);
+						var node = xPathNodes.iterateNext();
+						while(node) {
+							elm.push(node);
+							node = xPathNodes.iterateNext();
+						}
+					}
+					return elm;
+				};
+			}
+			else {				
+				DOMAssistant.cssSelection = function (cssRule) {
+					var cssRules = cssRule.replace(/\s*(,)\s*/, "$1").split(",");
+					var elm = new HTMLArray();
+					var prevElm = new HTMLArray();
+					var matchingElms = new HTMLArray();
+					var cssSelectors, childOrSiblingRef, nextTag, nextRegExp, refSeparator, refPrevElm, nextSib, refPrevElmFound;
+					function addToMatchingElms (item) {
+						var exists = false;
+						for (var b=0, bl=matchingElms.length; b<bl; b++) {
+							if (matchingElms[b] === item) {
+								exists = true;
+								break;
+							}
+						}
+						if (!exists) {
+							matchingElms.push(item);
+						}
+					}
+					function addToPrevElm (item) {
+						var exists = false;
+						for (var b=0, bl=prevElm.length; b<bl; b++) {
+							if (prevElm[b] === item) {
+								exists = true;
+								break;
+							}
+						}
+						if (!exists) {
+							prevElm.push(item);
+						}
+					}
+					function emptyMatchingElms () {
+						for (var c=(matchingElms.length-1); c>=0; c--) {
+							matchingElms[c] = null;
+						}
+						matchingElms = new HTMLArray();
+					}
+					function emptyPrevElm () {
+						for (var c=(prevElm.length-1); c>=0; c--) {
+							prevElm[c] = null;
+						}
+						prevElm = new HTMLArray();
+					}
+					function emptyPrevElmAndAddMatching () {
+						if (prevElm !== matchingElms) {
+							emptyPrevElm();
+							for (var d=0, dl=matchingElms.length; d<dl; d++) {
+								addToPrevElm(matchingElms[d]);
+							}
+							emptyMatchingElms();
+						}
+					}
+					for (var a=0, al=cssRules.length; a<al; a++) {
+						cssSelectors = cssRules[a].split(" ");
+						emptyPrevElm();
+						prevElm.push(DOMAssistant.$(document));
+						for (var i=0, il=cssSelectors.length; i<il; i++) {
+							var rule = cssSelectors[i];
+							childOrSiblingRef = /^(>|\+|~)$/.exec(rule);
+							if (childOrSiblingRef) {
+								nextTag = /^\w+/.exec(cssSelectors[i+1]);
+								if (nextTag) {
+									nextRegExp = new RegExp("(^|\\s)" + nextTag + "(\\s|$)", "i");
+									refSeparator = childOrSiblingRef[0];
+									for (var j=0, jl=prevElm.length, children; j<jl; j++) {
+										refPrevElm = prevElm[j];
+										if (/\+/.test(refSeparator)) {
+											nextSib = refPrevElm.nextSibling;
+											if (nextSib) {
+												while(nextSib && nextSib.nodeType !== 1 && nextSib.nextSibling) {
+													nextSib = nextSib.nextSibling;
+												}
+												if (nextRegExp.test(nextSib.nodeName)) {
+													addToMatchingElms(nextSib);
+												}
+											}
+										}
+										else {
+											if (/>/.test(refSeparator)) {
+												children = refPrevElm.childNodes;
+												refPrevElmFound = true;
+											}
+											else {
+												children = refPrevElm.parentNode.childNodes;
+												refPrevElmFound = false;
+											}
+											for (var k=0, kl=children.length, refChild; k<kl; k++) {
+												refChild = children[k];
+												if (refChild === refPrevElm) {
+													refPrevElmFound = true;
+													continue;
+												}
+												if (refPrevElmFound && refChild.nodeType === 1 && nextRegExp.test(refChild.nodeName)) {
+													addToMatchingElms(refChild);
+												}
+											}
+										}	
+									}
+									emptyPrevElmAndAddMatching();
+								}
+							}
+							else {
+								var cssSelector = /^(\w+)?(#[\w\-_]+|\*)?((\.[\w\-_]+)*)?((\[\w+(\^|\$|\*)?=?[\w\-\_]+\]+)*)?(((:\w+[\w\-]*)(\((odd|even|\d+n?((\+|\-)\d+)?|\w+|((\w*\.[\w\-_]+)*)?|(\[#?\w+(\^|\$|\*)?=?[\w\-\_]+\]+))\))?)*)?/.exec(rule);
+								var splitRule = {
+									tag : (!cssSelector[1] || cssSelector[2] === "*")? "*" : cssSelector[1],
+									id : (cssSelector[2] !== "*")?  cssSelector[2] : null,
+									allClasses : cssSelector[3],
+									allAttr : cssSelector[5],
+									pseudoClass : cssSelector[10],
+									pseudoValue : cssSelector[12]
+								};
+								var values = "";
+								if (i > 0 && /(>|\+|~)/.test(cssSelectors[i - 1])) {
+									emptyMatchingElms();
+									matchingElms = prevElm;
+								}
+								else if (splitRule.tag && !splitRule.id) {
+									emptyMatchingElms();
+									matchingElms = prevElm.elmsByTag(splitRule.tag);
+								}
+								if (splitRule.id) {
+									var idElm = DOMAssistant.$(splitRule.id.replace(/^#/, ""));
+									emptyMatchingElms();
+									if (idElm) {
+										addToMatchingElms(idElm);
+									}
+								}
+								if (splitRule.allClasses) {
+									splitRule.allClasses = splitRule.allClasses.replace(/^\./, "").split(".");
+									var classTag = (matchingElms.length > 0)? matchingElms : null;
+									for (var n=0, nl=splitRule.allClasses.length, matchingClassElms; n<nl; n++) {
+										matchingClassElms = prevElm.elmsByClass(splitRule.allClasses[n], classTag);
+										if (matchingClassElms.length === 0) {
+											break;
+										}
+									}
+									emptyMatchingElms();
+									matchingElms = matchingClassElms;									
+								}
+								if (splitRule.allAttr) {
+									splitRule.allAttr = splitRule.allAttr.replace(/(\])(\[)/, "$1 $2").split(" ");
+									var attrElms = (matchingElms.length > 0)? matchingElms : null;
+									for (var p=0, pl=splitRule.allAttr.length, matchingAttributeElms, attributeMatch, attribute, attrVal, tag, substrMatchSelector; p<pl; p++) {
+										matchingAttributeElms = new HTMLArray();
+										attributeMatch = /(\w+)(\^|\$|\*)?=?([\w\-_]+)?/.exec(splitRule.allAttr[p]);
+										attribute = attributeMatch[1];
+										attrVal = attributeMatch[3] || "*";
+										tag = (attrElms)? attrElms : null;
+										substrMatchSelector = attributeMatch[2] || null;
+										matchingAttributeElms = prevElm.elmsByAttribute(attribute, attrVal, tag, substrMatchSelector);
+										if (matchingAttributeElms.length === 0) {
+											break;
+										}
+									}
+									emptyMatchingElms();
+									matchingElms = matchingAttributeElms;
+								}
+								if (splitRule.pseudoClass) {
+									var pseudoClass = splitRule.pseudoClass;
+									var pseudoValue = splitRule.pseudoValue;
+									var previousMatch = matchingElms;
+									matchingElms = new HTMLArray();
+									if (/^:not$/.test(pseudoClass)) {
+										pseudoValue = pseudoValue.replace(/^\[#([\w\-\_]+)\]$/, "[id=$1]");
+										var notTag = /^(\w+)/.exec(pseudoValue);
+										var notClass = /\.([\w\-_]+)/.exec(pseudoValue);
+										var notAttr = /\[(\w+)(\^|\$|\*)?=?([\w\-_]+)?\]/.exec(pseudoValue);
+										var notRegExp = new RegExp("(^|\\s)" + ((notTag)? notTag[1] : (notClass)? notClass[1] : "") + "(\\s|$)", "i");
+										if (notAttr) {
+											var notMatchingAttr = ("(^|\\s)" + notAttr[1] + "(\\s|$)");
+											var notMatchingAttrVal = notAttr[3];
+											var substrNoMatchSelector = notAttr[2];
+											if (typeof substrNoMatchSelector === "string") {
+												switch (substrNoMatchSelector) {
+													case "^":
+														notMatchingAttrVal = ("^" + notMatchingAttrVal);
+														break;
+													case "$":
+														notMatchingAttrVal = (notMatchingAttrVal + "$");
+														break;
+													case "*":
+														notMatchingAttrVal = (notMatchingAttrVal);
+														break;	
+												}
+											}
+											notRegExp = new RegExp(notMatchingAttrVal, "i");
+										}
+										for (var r=0, rl=previousMatch.length, notElm, addElm; r<rl; r++) {
+											notElm = previousMatch[r];
+											addElm = null;
+											if (notTag && !notRegExp.test(notElm.nodeName)) {
+												addElm = notElm;
+											}		
+											else if (notClass && !notRegExp.test(notElm.className)) {
+												addElm = notElm;
+											}
+											else if (notAttr) {
+												if (!notElm.getAttribute(notAttr[1]) || !notRegExp.test(notElm.getAttribute(notAttr[1]))) {
+													addElm = notElm;
+												}
+											}
+											if (addElm) {
+												addToMatchingElms(addElm);
+											}
+										}
+									}
+									else {
+										for (var s=0, sl=previousMatch.length, previous, switchMatch, firstLastOnly, nthOfType, childrenNodes, childNodes, elmType, nthPos; s<sl; s++) {
+											previous = previousMatch[s];
+											if (/enabled|disabled|checked/.test(pseudoClass)) {
+												if ((/enabled/.test(pseudoClass) && !previous.disabled) || (/disabled/.test(pseudoClass) && previous.disabled) || (/checked/.test(pseudoClass) && previous.checked)) {
+													addToMatchingElms(previous);
+												}
+												continue;
+											}
+											firstLastOnly = /:(first|last|only)-(child|of-type)/.test(pseudoClass);
+											nthOfType = /nth-(last-)?of-type/.test(pseudoClass);
+											childrenNodes = (firstLastOnly || nthOfType)? previous.parentNode.childNodes : previous.childNodes;
+											if (/empty/.test(pseudoClass) && childrenNodes.length === 0) {
+												addToMatchingElms(previous);
+												continue;
+											}
+											childNodes = [];
+											elmType = new RegExp((("of-type")? ("(^|\\s)" + splitRule.tag + "(\\s|$)") : "."), "i");
+											for (var t=0, tl=childrenNodes.length, currentChild; t<tl; t++) {
+												currentChild = childrenNodes[t];
+												if (currentChild.nodeType === 1 && elmType.test(currentChild.nodeName)) {
+													childNodes.push(currentChild);
+												}
+											}
+											if (childNodes.length > 0) {
+												if (firstLastOnly) {
+													if ((/first-(child|of-type)/.test(pseudoClass) && previous === childNodes[0]) || (/last-(child|of-type)/.test(pseudoClass) && previous === childNodes[childNodes.length - 1]) || (/only-(child|of-type)/.test(pseudoClass) && childNodes.length === 1)) {
+														var isRightElm = true;
+														if (/(first|last|only)-child/.test(pseudoClass)) {
+															var childNode = (/first/.test(pseudoClass))? childNodes[0] : childNodes[childNodes.length - 1];
+															var sibling;
+															if (/first/.test(pseudoClass)) {
+																sibling = childNode.previousSibling;
+																while (sibling) {
+																	if (sibling.nodeType === 1) {
+																		isRightElm = false;
+																		break;
+																	}
+																	sibling = sibling.previousSibling;
+																}
+															}
+															else if (/last/.test(pseudoClass)) {
+																sibling = childNode.nextSibling;
+																while (sibling) {
+																	if (sibling.nodeType === 1) {
+																		isRightElm = false;
+																		break;
+																	}
+																	sibling = sibling.nextSibling;
+																}
+															}
+															else {
+																sibling = childNode.previousSibling;
+																while (sibling) {
+																	if (sibling.nodeType === 1) {
+																		isRightElm = false;
+																		break;
+																	}
+																	sibling = sibling.previousSibling;
+																}
+																if (isRightElm) {
+																	sibling = childNode.nextSibling;
+																	while (sibling) {
+																		if (sibling.nodeType === 1) {
+																			isRightElm = false;
+																			break;
+																		}
+																		sibling = sibling.nextSibling;
+																	}
+																}
+															}
+														}
+														if (isRightElm) {
+															addToMatchingElms(previous);
+														}
+													}
+													continue;
+												}
+												if (nthOfType) {
+													nthPos = (/last/i.test(pseudoClass))? ((childNodes.length-1) - pseudoValue) : (pseudoValue - 1);
+													if (childNodes[nthPos]) {
+														addToMatchingElms(childNodes[nthPos]);
+													}
+												}
+												if (/nth-child/.test(pseudoClass)) {
+													var pseudoSelector = /^(odd|even)|(\d+)n((\+|\-)(\d+))?$/.exec(pseudoValue);
+													if (/^\d+$/.test(pseudoValue)) {
+														addToMatchingElms(childNodes[pseudoValue-1]);
+													}
+													else if (pseudoSelector) {
+														var iteratorStart = (pseudoSelector[1] === "even")? 1 : 0;
+														var iteratorAdd = 2;
+														var nRepeat = parseInt(pseudoSelector[2], 10);
+														if (nRepeat > 0) {
+															iteratorAdd = nRepeat;
+															var nOperatorVal = parseInt((pseudoSelector[4] + pseudoSelector[5]), 10);
+															if (nOperatorVal !== 0) {
+																iteratorStart = nOperatorVal - 1;
+															}
+														}
+														for (var u=iteratorStart, ul=childNodes.length; u<ul; u=u+iteratorAdd) {
+															if (u < 0) {
+																continue;
+															}
+															addToMatchingElms(childNodes[u]);
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+								emptyPrevElmAndAddMatching();
+							}
+						}
+						for (var v=0, vl=prevElm.length; v<vl; v++) {
+							elm.push(prevElm[v]);
+						}
+					}
+					return elm;
+				};		
+			}
+			return DOMAssistant.cssSelection.call(this, cssRule); 
+		},
+	
+		elmsByClass : function (className, tag) {
+			if (document.evaluate && !isOpera) {
+				DOMAssistant.elmsByClass = function (className, tag) {
+					var returnElms = new HTMLArray();
+					var xPathNodes = document.evaluate(".//" + ((typeof tag === "string")? tag : "*") + "[contains(concat(' ', @class, ' '), ' " + className + " ')]", this, null, 0, null);
+					var node = xPathNodes.iterateNext();
+					while(node) {
+						returnElms.push(node);
+						node = xPathNodes.iterateNext();
+					}
+					return returnElms;
+				};
+			}
+			else {
+				DOMAssistant.elmsByClass = function (className, tag) {
+					var returnElms = new HTMLArray();
+					var elms;
+					if (tag && typeof tag === "object") {
+						elms = (tag.constructor === Array)? tag : [tag];
+					}
+					else {
+						elms = this.getElementsByTagName(tag || "*");
+					}
+					var regExp = new RegExp("(^|\\s)" + className + "(\\s|$)");
+					for (var i=0,elm,il=elms.length; i<il; i++) {
+						elm = elms[i];		
+						if (regExp.test(elm.className)) {
+							returnElms.push(elm);
+						}
+					}
+					return returnElms;
+				};
+			}
+			return DOMAssistant.elmsByClass.call(this, className, tag);
+		},
+	
+		elmsByAttribute : function (attr, attrVal, tag, substrMatchSelector) {
+			if (document.evaluate && !isOpera) {
+				DOMAssistant.elmsByAttribute = function (attr, attrVal, tag, substrMatchSelector) {
+					var returnElms = new HTMLArray();
+					var attribute = "@" + attr + ((typeof attrVal === "undefined" || attrVal === "*")? "" : " = '" + attrVal + "'");
+					if (typeof substrMatchSelector === "string") {
+						switch (substrMatchSelector) {
+							case "^":
+								attribute = "starts-with(@" + attr + ", '" + attrVal + "')";
+								break;
+							case "$":
+								attribute = "substring(@" + attr + ", (string-length(@" + attr + ") - " + (attrVal.length - 1) + "), 6) = '" + attrVal + "'";
+								break;
+							case "*":
+								attribute = "contains(concat(' ', @" + attr + ", ' '), '" + attrVal + "')";
+								break;	
+						}
+					}
+					var xPathNodes = document.evaluate(".//" + ((typeof tag === "string")? tag : "*") + "[" + attribute + "]", this, null, 0, null);
+					var node = xPathNodes.iterateNext();
+					while(node) {
+						returnElms.push(node);
+						node = xPathNodes.iterateNext();
+					}
+					return returnElms;
+				};
+			}
+			else {
+				DOMAssistant.elmsByAttribute = function (attr, attrVal, tag, substrMatchSelector) {
+					var returnElms = new HTMLArray();
+					var attribute = (typeof attrVal === "undefined")? null : ("(^|\\s)" + attrVal + "(\\s|$)");
+					if (typeof substrMatchSelector === "string") {
+						switch (substrMatchSelector) {
+							case "^":
+								attribute = ("^" + attrVal);
+								break;
+							case "$":
+								attribute = (attrVal + "$");
+								break;
+							case "*":
+								attribute = (attrVal);
+								break;	
+						}
+					}
+					var attributeRegExp = new RegExp(attribute);
+					var elms;
+					if (tag && typeof tag === "object") {
+						elms = (tag.constructor === Array)? tag : [tag];
+					}
+					else {
+						elms = this.getElementsByTagName(tag || "*");
+					}
+					for (var i=0,il=elms.length,current,currentAttr; i<il; i++) {
+				        current = elms[i];
+				        currentAttr = current.getAttribute(attr, 2);
+				        if (typeof currentAttr === "string" && currentAttr.length > 0) {
+				            if (!attributeRegExp || typeof attributeRegExp === "undefined" || (attributeRegExp && attributeRegExp.test(currentAttr))) {
+								returnElms.push(current);
+				            }
+				        }
+				    }
+					return returnElms;
+				};
+			}
+		    return DOMAssistant.elmsByAttribute.call(this, attr, attrVal, tag, substrMatchSelector);
+		},
+	
+		elmsByTag : function (tag) {
+			if (document.evaluate && !isOpera) {
+				DOMAssistant.elmsByTag = function (tag) {
+					var returnElms = new HTMLArray();
+					var xPathNodes = document.evaluate(".//" + ((typeof tag === "string")? tag : "*"), this, null, 0, null);
+					var node = xPathNodes.iterateNext();
+					while(node) {
+						returnElms.push(node);
+						node = xPathNodes.iterateNext();
+					}
+					return returnElms;
+				};
+			}
+			else {			
+				DOMAssistant.elmsByTag = function (tag) {
+					var returnElms = new HTMLArray();
+					var elmsWithTag = this.getElementsByTagName(tag);
+					for (var i=0, il=elmsWithTag.length; i<il; i++) {
+						returnElms.push(elmsWithTag[i]);
+					}
+					return returnElms;
+				};
+			}
+			return DOMAssistant.elmsByTag.call(this, tag);
+		},
+		
+		each : function (functionCall) {
+			functionCall.call(this);
+			return this;
+		}
+	};	
+}();
+DOMAssistant.init();
+// Developed by Robert Nyman, code/licensing: http://code.google.com/p/domassistant/, documentation: http://www.robertnyman.com/domassistant. Module inspiration by Dean Edwards, Matthias Miller, and John Resig: http://dean.edwards.name/weblog/2006/06/again/
+/*extern DOMAssistant */
+DOMAssistant.DOMLoad = function () {
+	var DOMLoaded = false;
+	var DOMLoadTimer = null;
+	var functionsToCall = [];
+	var execFunctions = function () {
+		if (DOMLoaded) {
+			clearInterval(DOMLoadTimer);
+		}
+		for (var i=0, il=functionsToCall.length; i<il; i++) {
+			try{
+				functionsToCall[i]();
+			}
+			catch(e) {
+				// Optional: handle error here
+			}
+		}
+	};
+	var DOMHasLoaded = function () {
+		if (DOMLoaded) {
+			return;
+		}
+		DOMLoaded = true;
+		execFunctions();
+	};
+	/* Internet Explorer */
+	/*@cc_on @*/
+	/*@if (@_win32)
+		if (document.getElementById) {
+			document.write("<script id=\"ieScriptLoad\" defer src=\"//:\"><\/script>");
+		    document.getElementById("ieScriptLoad").onreadystatechange = function() {
+		        if (this.readyState === "complete") {
+		            DOMHasLoaded();
+		        }
+		    };
+		}
+	/*@end @*/
+	/* Mozilla/Opera 9 */
+	if (document.addEventListener) {
+		document.addEventListener("DOMContentLoaded", DOMHasLoaded, false);
+	}
+	/* Safari */
+	if (navigator.userAgent.search(/WebKit/i) !== -1) {
+	    DOMLoadTimer = setInterval(function () {
+			if (document.readyState.search(/loaded|complete/i) !== -1) {
+				var loaded = new DOMHasLoaded();
+			}
+		}, 10);
+	}
+	/* Other web browsers */
+	window.onload = DOMHasLoaded;
+	
+	return {
+		DOMReady : function () {
+			for (var i=0, il=arguments.length, func, callFunc; i<il; i++) {
+				func = arguments[i];
+				callFunc = (typeof func === "function")? func : new Function(func);
+				functionsToCall.push(callFunc);
+			}
+		}
+	};
+}();
+DOMAssistant.DOMReady = DOMAssistant.DOMLoad.DOMReady;
+// Developed by Robert Nyman, code/licensing: http://code.google.com/p/domassistant/, documentation: http://www.robertnyman.com/domassistant
+/*extern DOMAssistant */
+DOMAssistant.Events = function () {
+	var baseMethodsToAdd = [
+		"addEvent",
+		"removeEvent",
+		"preventDefault",
+		"cancelBubble"
+	];
+	var HTMLArrayEventMethods = {
+		addEvent : function (evt, func) {
+			for (var i=0, il=this.length; i<il; i++) {
+				this.Events.addEvent.call(this[i], evt, func);
+			}
+			return this;
+		},
+		removeEvent : function (evt, func) {
+			for (var i=0, il=this.length; i<il; i++) {
+				this.Events.removeEvent.call(this[i], evt, func);
+			}
+			return this;
+		},
+		preventDefault : function (evt) {
+			for (var i=0, il=this.length; i<il; i++) {
+				this.Events.preventDefault.call(this[i], evt);
+			}
+			return this;
+		},
+		cancelBubble : function (evt) {
+			for (var i=0, il=this.length; i<il; i++) {
+				this.Events.cancelBubble.call(this[i], evt);
+			}
+			return this;
+		}
+	};
+	return {
+		init : function () {
+			DOMAssistant.addHTMLArrayPrototype("Events", this);
+			DOMAssistant.preventDefault = this.preventDefault;
+			DOMAssistant.cancelBubble = this.cancelBubble;
+			for (var i=0, il=baseMethodsToAdd.length, current; i<il; i++) {
+				current = baseMethodsToAdd[i];
+				DOMAssistant.addMethod([current, this[current]]);
+				DOMAssistant.addHTMLArrayPrototype(current, HTMLArrayEventMethods[current]);
+			}
+		},
+
+		addEvent : function (evt, func) {
+			if (!this.events) {
+				this.events = {};
+			}
+			if (!this.events[evt]) {
+				this.events[evt] = [];
+			}							
+			this.events[evt].push(func);
+			this["on" + evt] = DOMAssistant.Events.handleEvent;
+			if (typeof this.window === "object") {
+				this.window["on" + evt] = DOMAssistant.Events.handleEvent;
+			}
+			return this;
+		},
+
+		handleEvent : function (evt) {
+			var currentEvt = evt || event;
+			var currentTarget = currentEvt.target || currentEvt.srcElement || document;
+			while (currentTarget.nodeType !== 1 && currentTarget.parentNode) {
+				currentTarget = currentTarget.parentNode;
+			}			
+			currentEvt.eventTarget = currentTarget;
+			var eventType = currentEvt.type;
+			var eventColl = this.events[eventType];
+			var eventCollLength = eventColl.length;
+			var eventReturn;
+			for (var i=0; i<eventCollLength; i++) {
+				eventReturn = eventColl[i].call(this, currentEvt);
+				if (i === (eventCollLength - 1)) {
+					return eventReturn;
+				}
+			}
+		},
+
+		removeEvent : function (evt, func) {
+			var eventColl = this.events[evt];
+			for (var i=0; i<eventColl.length; i++) {
+				if (eventColl[i] === func) {
+					delete eventColl[i];
+					eventColl.splice(i, 1);
+				}
+			}
+			return this;
+		},
+
+		preventDefault : function (evt) {
+			if (evt && evt.preventDefault) {
+				DOMAssistant.Events.preventDefault = function (evt) {
+					evt.preventDefault();
+				};
+			}
+			else{
+				DOMAssistant.Events.preventDefault = function (evt) {
+					event.returnValue = false;
+				};
+			}
+			return DOMAssistant.Events.preventDefault(evt);
+		},
+
+		cancelBubble : function (evt) {
+			if (evt && evt.stopPropagation) {
+				DOMAssistant.Events.cancelBubble = function (evt) {
+					evt.stopPropagation();
+				};
+			}
+			else{
+				DOMAssistant.Events.cancelBubble = function (evt) {
+					event.cancelBubble = true;
+				};
+			}
+			return DOMAssistant.Events.cancelBubble(evt);
+		}
+	};
+}();
+DOMAssistant.Events.init();
+/**
+ * @fileoverview SiteMaker Javascript Library
+ * @author dan@moonfruit.com, ian@moonfruit.com
+ */
+
+// handle accidental console statements
+if (!window.console) {
+	console={};
+	console.log = function(msg) {};
+	console.debug = function(msg) {};
+}
+
+if(self.top!=self){
+	var u = navigator.userAgent;
+	if((u.indexOf("Windows NT 5.0")!=-1) && (u.indexOf("MSIE")!=-1)){
+		self.top.location.replace(self.location);
+	}
+}
+SM = {
+	Consts: {
+		BUILD_NUMBER : "8913",
+		BYPASS_COOKIE : 'bypassFlashDetection',
+		REACTIVATE_LINK_ID : 'reactivateFlashLink',
+		GET_FLASH_ID: 'getFlash',
+		FLASH_CONTAINER: 'flash_content',
+		PAGEID_PATTERN: new RegExp(/[a-zA-Z0-9]+\/(\d+)/),  //new RegExp(/\d{6,11}(?!.*\d{6,11}.*)/), //find last occurance of 9-11 digits
+		CONTAINER_OFFSET: Consts.main.offset,
+		LCID: function(){ 
+			return ("xkcd" + (new Date).getTime()) 
+			}(),
+		BASE_TAG_PRESENT: function() {
+			try {	
+				if ( document.getElementsByTagName('BASE').length ) var baseTag = true; 
+			} catch (err) {	
+				var baseTag = false; 
+			}	
+			return baseTag
+			}()
+	},
+	pageId: Consts.initialPageId,
+	uid: ("xkcd" + (new Date).getTime()),
+	Init: function(){
+		if (SM.Consts.BUILD_NUMBER != Consts.buildNumber && !SM.Consts.BASE_TAG_PRESENT ) {
+			alert("We have detected a caching problem. We recommend you clear your cache and reload the page (pressing ctrl+f5 will usually do the trick)");
+		}
+		if(SM.initialised) return;
+		SM.initialised = true;
+		window.onhelp = function(){return false;};
+		SM.SWFAddress.currentPage(Consts.initialPageId); //can't use init handler, adding event too late
+		try {
+			SWFAddress.addEventListener(SWFAddressEvent.CHANGE, SM.SWFAddress.changeHandler);
+		} catch (err) {
+			var add_event_err = err;
+		}
+		if ( com.asual.util.Browser.isIE() && SM.Consts.BASE_TAG_PRESENT ) {
+			SM.valign = SM._valignQuirksMode;
+		}
+	},
+	/**
+	 * Set the initial page to be loaded into flash container
+	 */
+	setInitialPage: function() {	
+		var pageId;
+		//Try getting it from the hash (SWFAddress)
+		try {
+			pageId = SM.SWFAddress.getPageIdFromPath(location.hash);
+		} catch (err) {
+			pageId = null;
+		}
+		if (pageId) {
+			Consts.main.flashvars += "&amp;pageId=" + pageId;
+		} else {
+			//if not try getting it from the var set in the XHTML
+			Consts.main.flashvars += "&amp;pageId=" + Consts.initialPageId;
+			pageId = Consts.initialPageId;
+		}
+		SM.SWFAddress.currentPage(pageId);
+	},
+	Navigate: function(shortName, pageId, pageHeight){
+		if (pageId == SM.pageId || !pageId ) return;
+		var loc = window.location.href + "";
+		var pos = loc.indexOf("/",7);
+		var base = loc.substring(0,pos!=-1?pos:loc.length);
+		var path = "/" + shortName + "/" + pageId;
+		var saPath = shortName + "/" + pageId;
+		SM.SWFAddress.setPath(saPath, pageId);
+		if (!SM.SWFAddress.alreadyAtPage()) scrollTo(0,0);
+		SM.refreshAds(base + path);
+		if (pageHeight) SM.resizePage(pageHeight);
+	},
+	/**
+	 * Sets the containers mode
+	 * @params mode {String} Mode to set. Valid values are 'view' and 'edit'
+	 */
+	setMode: function(mode) {
+		//clean flashvars
+		//TODO Change code so we can cleanFlashVars('varname') (regexp does varname=.*^(&|&amp;) type thing)
+		Consts.main.flashvars = Consts.main.flashvars.replace(/(&|&amp;)?edit=true/, '');
+		Consts.main.flashvars =	Consts.main.flashvars.replace(/(&|&amp;)?view=(A|B|true)+/,'');
+		Consts.main.flashvars = Consts.main.flashvars.replace(/(&|&amp;)?pageId=\d*/,'');
+		Consts.main.flashvars = Consts.main.flashvars.replace(/(&|&amp;)?from_wizard=Y/, '');
+		if (mode == 'view') {
+			Consts.main.flashvars += '&amp;view=true';
+			Consts.main.flashvars += '&amp;from_wizard=Y';
+		} else if (mode == 'edit') {
+			Consts.main.flashvars += '&amp;view=' + Consts.toolbar;
+			Consts.main.flashvars += '&amp;edit=true';
+			Consts.main.flashvars += '&amp;from_wizard=Y';
+		}
+		Consts.main.flashvars += '&amp;pageId=' + SM.pageId;
+		//get height from existing container
+		var fc = document.getElementById('flash_content');
+		var ch = fc.style.height;
+		SM._purge(fc);
+		setTimeout(SM.Replacements.main('100%', '100%'),10);
+
+	},
+	/** 
+	 * Set the browser title.
+	 * @param title URI encoded title string
+	*/
+	setTitle: function(title) {
+			dTitle = ( decodeURIComponent ) ? decodeURIComponent(title) : unescape(title);
+		try {
+			SWFAddress.setTitle(dTitle);
+		} catch (err) {
+			var error = err;
+		}
+	},
+	resizePage: function(height){
+		SM.postInitContainer(Consts.container);
+		SM.pageHeight=height;
+		var flashNode = document.getElementById("flash_content");
+		var flashObjNode = document.getElementById("flash_content_swfo");
+		var heightPix = height+"px";
+		flashNode.style.height=heightPix;
+		flashObjNode.setAttribute('height', height);
+		setTimeout("SM.valign()",0);
+	},
+	/**
+	* Refresh Google Ads with each 'page' changes
+	* @param {String} url to direct google ads to
+	*/
+	refreshAds: function(url){
+		if(SM.initialised){
+			function replaceParam(src, name, value){
+				value = typeof(encodeURIComponent)=="function" ? encodeURIComponent(value) : escape(value);
+				var myregexp = new RegExp("([&;]"+name+"=)[^&]*", "i");
+				src = src.replace(myregexp, "$1" + value);
+				return src;
+			}
+			function refreshDiv(div, url){
+				var i1 = div.getElementsByTagName("iframe")[0];
+				var i2 = i1.cloneNode(true);
+				var src = i2.src;
+				src = replaceParam(src,"url",url);
+				i2.src = src;
+				div.removeChild(i1);
+				div.appendChild(i2);
+			}
+			if(document.getElementById && document.getElementsByTagName){
+				var pos = ["header","left","footer","right"];
+				for(var p=0;p<pos.length;p++){
+					var gads = document.getElementById("gads_"+pos[p]);
+					if(gads){
+						refreshDiv(gads, url);
+					}
+				}
+			}
+		}
+	},
+	/**
+	 *
+	 */
+	addSwf: function(swf, id, width, height, bgcolour, flashVars) {
+		var flashDomId = id+"_swfo";
+		var so = new SWFObject(swf, flashDomId, width, height, "8", bgcolour);
+		so.addParam("allowScriptAccess","always");
+		so.addParam("quality","best");
+		var loc;
+	
+		try {
+			var b = document.getElementsByTagName("BASE");
+			if ( b && b[0].getAttribute("HREF") || b[0].getAttribute("href") ) {
+				loc = b[0].getAttribute("HREF") || b[0].getAttribute('href');
+			} else {
+				loc = window.location.href + "";
+			}
+		} catch (err) {
+			loc = window.location.href + ""; // yum, repetition
+		}
+		var pos = loc.indexOf("/",7);
+		var base = loc.substring(0,pos!=-1?pos:loc.length);
+		so.addParam("base",base + "/_app/8913/resources/");
+		flashVars = flashVars.split(/&amp;|&/);
+		so.setAttribute("style", ";");
+		for(var i=0;i<flashVars.length;i++){
+			var pair = flashVars[i].split("=");
+			so.addVariable(pair[0],pair[1]);
+		}
+		so.addVariable('lcid', SM.Consts.LCID);
+		so.addVariable('domId', flashDomId);
+		so.write(id);
+	},
+	popup: function(url, name, options) {
+		var popup = window.open(url, name, eval(options));
+		popup.focus();
+	},
+	getUseFlash: function() {
+		return SM.getCookie(SM.Consts.BYPASS_COOKIE);
+	},
+	setUseFlash: function(minutes) {
+		SM.setCookie(SM.Consts.BYPASS_COOKIE, 'true', minutes);
+	},
+	removeUseFlash: function() {
+		var textLink = document.getElementById(SM.Consts.REACTIVATE_LINK_ID);
+		textLink.innerHTML = 'Loading...';
+		SM.setCookie(SM.Consts.BYPASS_COOKIE, 'true', 0);
+		//TODO the reload is only needed cause cookie is set to NOW instead of a while in the past.
+		location.reload(true); //technically not needed, but makes Opera consistent (sometimes failed to follow href)
+	},
+	/**
+	* a replacement for deconcept.util.getRequestParameter that uses
+	* cookie detection. Delegates back to deconcept original function if
+	* alternate param is used (only works for 'detectflash')
+	* 
+	* @param {String} param Query string param. if equals <kbd>detectFlash</kbd> then we'll look at cookie instead
+	*/
+	getRequestParameter: function(param){
+		if ( param != 'detectflash' ) {
+			return deconcept.util.getRequestParameter( param );
+		} 
+		var useFlash = SM.getUseFlash();
+		if ( useFlash == 'true' ) {
+			SM.insertReactivateLink(SM.Consts.FLASH_CONTAINER);
+		}
+		return useFlash;
+	},
+	decorateGRP: function() {
+		deconcept.util._getRequestParameter = deconcept.util.getRequestParameter;
+		deconcept.util.getRequestParameter = SM.getRequestParameter;
+	},
+	getCookie: function(name){
+		var allCookies = document.cookie;
+		var pos = allCookies.indexOf( name + "=" );
+		if ( pos != -1 ) {
+			var start = pos + name.length + 1; //accounts for the = sign
+			var end = allCookies.indexOf( ';' , start ) 
+			if ( end == -1 ) end = allCookies.length;
+			var value = allCookies.substring( start , end );
+			return decodeURIComponent( value );
+		}
+		return "";
+	},
+	/**
+	* @param {String} key  		Cookie key
+	* @param {String} value 	Value of key
+	* @param {Integer} expires 	Minutes from now to expire.
+	*/
+	setCookie: function(key,value,expires) {
+		document.cookie = key + "=" + value + "; " + SM.expires(expires);
+	},
+	expires: function(minutes) {
+		var date = new Date();
+		if (minutes < 1) {
+			date.setTime(date.getTime() - 24*60*60*1000);
+		} else {
+			date.setTime(date.getTime()+(minutes*60*1000));
+		}
+		var expires = "; expires="+date.toGMTString();
+		return expires;
+	},
+	/**
+	* Inserts a link to the text version of the site by removing the 
+	* flash detection override 
+	* 
+	* @param {String} containerId The ID of the containing element we want to place the link before. 
+	*/
+	insertReactivateLink: function(containerId) {
+		var b = document.createElement('a');
+		b.setAttribute('href','/');
+		b.setAttribute('title','Reactivate flash detection');
+		b.setAttribute('id',SM.Consts.REACTIVATE_LINK_ID);
+		b.style.color = '#111111';
+		b.style.backgroundColor = '#eeeeee';
+		b.style.fontFamily = 'sans-serif';
+		b.style.fontSize = 'medium';
+		b.style.display = 'block';
+		b.style.textAlign = 'center';
+		b.style.padding = '2px';
+		b.onclick = SM.removeUseFlash;
+		b.appendChild(document.createTextNode('Reactivate Flash Detection'));
+		var e = document.getElementById(containerId);
+		if (e != null) e.parentNode.insertBefore(b,e);
+	},
+	insertOverrideLink: function() {
+		var a = document.createElement('a');
+		a.setAttribute('href', '/');
+		a.setAttribute('title','Bypass Flash detection');
+		a.setAttribute('id', 'overrideLink');
+		a.onclick = function(){SM.setUseFlash(2419200)}; //28 days in seconds
+		var i = document.createElement('img');
+		i.setAttribute('src','/_app/8913/images/bypassFDetect.gif');
+		i.setAttribute('alt','Click to bypass plugin detection and view Flash version of site');
+		i.setAttribute('title',"If you are certain you have Flash installed but can see this text click here to bypass Flash Detection.");
+		i.setAttribute('border', '0');
+		a.appendChild(i);
+		var e = document.getElementById(SM.Consts.GET_FLASH_ID);
+		if (e != null) e.parentNode.insertBefore(a,e.nextSibling);
+	},
+	/**
+	* Once the pageContent element's loaded this seems to be faster than killing the whole div.
+	* Trying to cut down on number of requests/data transfer.
+	*/
+	wipeImages: function(container) {
+		images = document.getElementById(container).getElementsByTagName('img');
+		for (i=0; i<images.length; i++) {
+			images[i].src = Consts.respath + "../images/sitebutton.gif";
+		}
+	},
+	/**
+	* We need to make room for the topbar if it's being displayed.
+	* We'll calculate the delta by getting the offsetTop size and subtracting it
+	* from height of topbar, but only if the gap is smaller than the topbar.
+	*/
+	topbarDeltaAdjust: function(tb) {
+		var topbar = tb;
+		if (topbar > 0) {
+
+			var e = document.getElementById('page-wrapper');
+			var s = document.getElementById('skip-links');
+
+			var offset = e.offsetTop;
+
+			if ( offset < Consts.topbarHeight) {
+				s.style.height = Consts.topbarHeight + 'px';
+				s.style.marginTop = '0px';
+			}
+		}
+	},
+	valign: function() {
+		valign = Consts.valign;
+		var a = SM.Viewport.getVPHeight() - SM.Viewport.getContentHeight();
+		var skipLinks;
+		if (!(skipLinks = document.getElementById('skip-links'))) return;
+		skipLinks.style.display = "block";
+		var top = SM._makeNegative(a) ;
+		//problem if a is 0
+		var cen = SM._makeNegative(a/2) ;
+		var bot = 0;
+
+		//Need to see if topbarDeltaAdjust is gonna override anyway.
+		//or maybe combine the two functions
+		if ( a > 0 ) {
+			skipLinks.style.height = a + 'px';
+			if ( Consts.valign == 'centre' || Consts.valign == 'center') { 
+				skipLinks.style.marginTop = cen + 'px';
+			} else if (Consts.valign == 'top') {
+				skipLinks.style.marginTop = top + 'px';
+			} else if (Consts.valign == 'bottom') {
+				skipLinks.style.marginTop = bot + 'px';	
+			}
+		} else {
+			skipLinks.style.marginTop = top + 'px';
+			skipLinks.style.height = 0;
+		}	
+
+		setTimeout("SM.topbarDeltaAdjust(Consts.topbar)",0);	
+
+	},	
+	preInitContainer: function(container) {
+		var e = document.getElementById(container);
+		if (e) e.className = e.className + ' cheight';
+	},
+	postInitContainer: function(container) {
+		if(SM.postInitDone) return;
+		SM.postInitDone = false;
+		window.onhelp = function(){return false;};
+		var e = document.getElementById(container);
+		if (e) {
+			var cn = e.className;
+			if (cn.indexOf('cheight') != -1) e.className = cn.replace(/cheight/,'');
+		}
+		SM.postInitDone = true;
+	},
+	/**
+	 * @returns success {Boolean} Returns true if base tag was handled, returns false if conditions were not met or exception thrown.
+	 */
+	_valignQuirksMode: function() {
+		try {
+			
+			document.getElementById('non-flash').style.display = 'none';
+			
+			var flashContent = document.getElementById('flash_content');
+			flashContent.style.display = 'block';
+			flashContent.zIndex = 2;
+			
+			if ( Consts.main.halign == 'center' ) { 
+				flashContent.style.left = '50%';
+				flashContent.style.marginLeft = '-' + ( ( flashContent.clientWidth + parseInt(Consts.margins.left) + parseInt(Consts.margins.right) ) / 2 + parseInt( Consts.main.border ) )  + 'px';
+			}
+			
+			document.getElementById('flash_content_swfo').style.display = 'block';
+			document.getElementById('content-wrapper').style.left = (-1 * SM.Consts.CONTAINER_OFFSET) + 'px';
+			
+		} catch (err) {
+
+		}
+	},
+	_makeNegative: function(number) {
+		return ( number > 0 ) ? -1 * number : number;
+	},
+	/**
+	 * Purges a DOM Element of all it's functions before removal to avoid memory leaks in IE
+	 * @param d {Element} The DOM Element to be purged 
+	 */
+	_purge: function(d) {
+		try {
+			var a = d.attributes, i, l, n;
+			if (a) {
+				l = a.length;
+				for (i = 0; i < l; i += 1) {
+					n = a[i].name;
+					if (typeof d[n] === 'function') d[n] = null;
+				}
+			}
+			a = d.childNodes;
+			if (a) {
+				l = a.length;
+				for (i = 0; i < l; i += 1) this._purge(d.childNodes[i]);
+			}
+		} catch (err) {
+			//yay! amazing error recovery
+			//at this point we just crap out and accept the shocking memory 
+		}
+	}
+};
+if (typeof SM == 'undefined') SM = {};
+
+SM.Replacements = {
+	topbar: function(){
+		if ( Consts.topbar.show > 0 ) {
+			SM.addSwf(Consts.topbar.path,
+				Consts.topbar.container,
+				Consts.topbar.width+"px",
+				Consts.topbar.height+"px",
+				"#ffffff",
+				Consts.topbar.flashvars + "&amp;elementId=" + Consts.topbar.container + "_swfo"
+			);
+		}
+	},
+	main: function( height, width ) {
+		setTimeout( SM.valign, 0 );
+		var height = height || '0px';
+		SM.addSwf(Consts.main.path,
+			Consts.main.container,
+			width,
+			height,
+			Consts.bgcolor,
+			Consts.main.flashvars
+		);
+	},
+	moreover: function() {
+		SM.addSwf(Consts.moreover.path,
+			Consts.moreover.container,
+			"180px",
+			"800px",
+			Consts.bgcolor,
+			Consts.moreover.flashvars
+		);
+	}
+}
+if (typeof SM == 'undefined') SM = {};
+
+/**
+ * Module dealing with browser viewport interaction and information
+ */
+SM.Viewport = {
+	FLASH_ELEMENT: 'flash_content_swfo',
+	observers: [],
+	/** 
+	* Get the dimensions of the viewport
+	* @return {Object&lt;x:Number, y:Number&gt;} Dimensions of the viewport as an object with fields x and y
+	*/
+	getVPDimensions: function() {
+		var xSize,ySize;
+		if ( document.documentElement && document.documentElement.clientHeight )	{
+			// Explorer 6 Strict Mode, Mozilla etc
+			xSize = document.documentElement.clientWidth;
+			ySize = document.documentElement.clientHeight;
+		}	else if ( document.body ) {
+			xSize = document.body.clientWidth;
+			ySize = document.body.clientHeight;
+		} else if (self.innerHeight) {
+			//ultra standards browser that doesn't support clientWidth
+			//alas scroll bars are no accounted for
+			xSize = self.innerWidth;
+			ySize = self.innerHeight;
+		}
+		return {x: xSize,y: ySize}
+	},
+	/**
+	* Get the viewport height
+	* @return {Number} Viewport pixel height as a number 
+
+	*/
+	getVPHeight: function() {
+		var o = this.getVPDimensions();
+		return o.y
+	},
+	/**
+	* Get the viewport width
+	* @return {Number} Viewport pixel width as a number
+	*/
+	getVPWidth: function() {
+		var o = this.getVPDimensions();
+		return o.x
+	},
+	/**
+	 * Get the viewport scroll offset
+	 * @return {Object&lt;x:Number, y:Number&gt;} Viewport Scroll offset in relation to the page origin
+	 */
+	getVPScroll: function() {
+		var xScroll,yScroll;
+		if (self.pageYOffset) {
+			// all except Explorer
+			xScroll = self.pageXOffset;
+			yScroll = self.pageYOffset;
+		}
+		else if (document.documentElement && document.documentElement.scrollTop) {
+			// Explorer 6 Strict
+			xScroll = document.documentElement.scrollLeft;
+			yScroll = document.documentElement.scrollTop;
+		} else if (document.body) {
+			// all other Explorers
+			xScroll = document.body.scrollLeft;
+			yScroll = document.body.scrollTop;
+		}
+		return {x: xScroll, y: yScroll}
+	},
+	/**
+	 * Calculates the origin point for the visible area of the flash container 
+	 * @return {Object&lt;x:Number, y:Number&gt;} Origin point for visible area of flash
+	 */
+	getVisibleOrigin: function(swfId) {
+		var fo = this.getSWFPageOffset(swfId);
+		var vo = this.getVPScroll();
+		var xOffset = fo.xPos - vo.xScroll;
+		var yOffset = fo.yPos - vo.yScroll;
+		
+		xOffset = (xOffset > 0 ) ? 0 : xOffset * -1;
+		yOffset = (yOffset > 0 ) ? 0 : yOffset * -1; 
+		
+		return { x: xOffset, y: yOffset }
+	},
+	/**
+	 * Gets the offset of the main flash object related to the page
+	 * @param id {String} The element Id of the flash container
+	 * @return {Object&lt;x:Number, y:Number&gt;} Page offset of the flash container.
+	 */
+	getSWFPageOffset: function(id) {
+		var fe = document.getElementById(id);
+		return this._findPos(fe)
+	},
+	getContentHeight: function() {
+		var contentHeight = document.getElementById('content-wrapper').clientHeight;
+		return contentHeight;
+	},
+	/**
+	 * Register your interest in recieving viewport information
+	 * @param id String of elements id
+	 */
+	register: function(id) {
+		//if id isn't already in list then add this new one
+		var obs = this.observers;
+		for (o in obs) if ( obs[o] == id) return
+		obs.push(id);
+	},
+	/**
+	 * Un-Register your interest in recieving viewport information
+	 * @ignore not finished yet
+	 */
+	unregister: function(id) {
+		//you can't unregister yet
+	},
+	/**
+	 * Dispatches viewport information to all registered observers
+	 */
+	dispatchInfo: function() {
+		if (!this.observers.length) return
+		for (var o=0; o < this.observers.length; o++) {
+			try {
+				if (this.observers[o]) document.getElementById( this.observers[o] ).recieveViewport( this._prepareInfo( this.observers[o] ) );
+			} catch (err) {
+				console.debug("Error: failed to execute, have you implimented and exposed recieveViewport on the ExternalInterface?\nmessage: " + err);
+			}
+		}
+	},
+	/**
+	 * prepare the info to be dispatched by agregating #getVPDimensions, #getVPScroll, #getSWFPageOffset
+	 * @param elId {String} The element Id of the flash container  
+	 * @returns {Object&lt;id:Number, vDimensions:Object, vScrollOffset:Object, offset:Object&gt;} Packaged information for dispatch
+	 */
+	_prepareInfo: function(elId) {
+		var vpd = this.getVPDimensions();
+		var vps = this.getVPScroll();
+	   var fpo = this.getSWFPageOffset(elId);	
+		var info = {
+			id: elId,
+			vDimensions: vpd,
+			vScrollOffset: vps,
+			offset: fpo
+		}
+		return info
+	},
+	/** 
+	 * Find the position of any HTML element
+	 * @params el {Element} Element to find position of 
+	 * @return {Object&lf;x:Number, y:Number&gt;} Returns the position of any HTML element relative to the page origin
+	 */ 
+	_findPos: function(el) {
+		var curleft = curtop = 0;
+		if (el.offsetParent) {
+			do {
+				curleft += el.offsetLeft;
+				curtop += el.offsetTop;
+			} while (el = el.offsetParent);
+		}
+		return {x: curleft, y: curtop};
+	},
+	/**
+	 * Scrolls the browser to the absolute point x,y with origin point starting at top left of browser
+	 * @param x {Number} Horizontal position to scroll to
+	 * @param y {Number} Vertical position to scroll to
+	 */
+	scrollTo: function(x,y) {
+		scrollTo(x,y);
+	},
+	/**
+	 * Scrolls the browser window by the vector specified, working from the top left
+	 * @param x {Number} Horizontal scroll vector
+	 * @param y {Number} Vertical scroll vector
+	 */
+	scrollBy: function(coords) {
+		var n_coords = this._normalizeScroll(coords);
+		scrollBy(n_coords.x,n_coords.y);
+	},
+	_normalizeScroll: function(coords) {
+		//see if the scroll we're proposing would take us further than the flash boundries and return a corrected matrix
+		
+		//work out if we are scrolling up or down, left or right
+		
+		//work out how far we can scroll
+		
+		//if coords > maxScroll then return maxScroll instead
+	},
+	/**
+	 * Setup Viewport module. Register event listeners 
+	 * TODO: add checks for minimum requirements
+	 */
+	init: function() {
+		DOMAssistant.DOMReady( function(){ $(window).addEvent( 'scroll', function() {SM.Viewport.dispatchInfo()} ) },
+		function(){ $(window).addEvent( 'resize', function() {SM.Viewport.dispatchInfo()} ) } );
+	}()
+}
+if (typeof SM == 'undefined') SM = {};
+
+/**     
+* Module for handling the addressing via the deconcept SWFAddress library
+*/
+SM.SWFAddress = {
+	changeHandler: function(e){
+		SM.SWFAddress.Routing.routeHandler();
+		var pageId;
+		try {
+			pageId = SM.SWFAddress.getPageIdFromPath(e.value);
+		} catch(err) {
+			pageId = false;
+		}
+		if (pageId) {
+			SM.SWFAddress.navigateTo(pageId);
+		} else {
+			SM.SWFAddress.navigateTo(Consts.initialPageId);
+		}
+	},
+	/**
+	* Sets the path. includes handling of the root page
+	* @param path {String} Full path for the page
+	* @param pageId {Number} ID of the page
+	*/
+	setPath: function(path,pageId) {
+		try {
+			if (path == "/" || path == "" || pageId == Consts.initialPageId ) { //these are the root path conditions
+				SWFAddress.setValue('');
+			} else {
+				SWFAddress.setValue(path);	
+			}
+		} catch (err){
+			var set_path_err = err;
+		}
+	},
+	/** 
+	* Tell flash container to navigate to page with id = pageId
+	* @param pageId {Number} pageId to navigate to
+	*/
+	navigateTo: function(pageId){
+		if ( SM.SWFAddress.alreadyAtPage(pageId) ) return;
+		flashMovie = document.getElementById('flash_content_swfo');
+		if (flashMovie && flashMovie.loadPageJS) {
+			SM.SWFAddress.currentPage(pageId);
+			flashMovie.loadPageJS(pageId);
+		}
+	},
+	resetToRootPath: function(pageId) {
+		//prevent redirect stuff from happening
+		var l = location;
+		if ( !SM.SWFAddress.isRedirectExcluded() ) {
+			//if we have a pagename/pageid in the path then we'll move it to the hash for a redirect
+			var page = l.pathname.match(/[a-zA-Z0-9]+\/\d+/);
+			var hash = ( !l.hash && page ) ? "#/" + page : l.hash;
+			l.replace( l.protocol + "//" + l.host + l.search + hash )
+		}
+	},
+	currentPage: function(pageId){
+		if (pageId) SM.pageId = pageId;
+		return SM.pageId
+	},
+	alreadyAtPage: function(pageId) {
+		return pageId == SM.pageId;
+	},
+	/**
+	* Obtain the pageId from a string but looking for the format pagename/pageId in the string
+	* The path should be only the path portion of the URI.
+	* @param path {String} String to extract pageId from
+	*/
+	getPageIdFromPath: function(path) {
+		var re = new RegExp(/[a-zA-Z0-9]+\/(\d+)/);
+		try {
+			return re.exec(path)[1];
+		} catch (err) {
+			return null
+		}
+	},
+	isRedirectExcluded: function() {
+		var l = location;
+		var baseTag = SM.Consts.BASE_TAG_PRESENT;	
+		var noRedirect = ( location.search.indexOf('noRedirect=Y') > -1 ) ? true : false;
+		//TODO: break out logic from if statement	i want a shopping list
+		if (  l.pathname == "" || 
+		l.pathname == "\/" || 
+		l.pathname.indexOf('\/login') != -1 || 
+		l.pathname.match(/\/site\/\D/) ||
+		baseTag ||
+		noRedirect ) {
+			return true;
+		} else {
+			return false;
+		}	
+	},
+	Routing: {
+		/**	
+		* Container for Routing handlers. Handler is executed as SM.SWFAddress.Routing.c.<HANDLER>
+		*/
+		handlers: {
+			loginHandler: function() {	
+				var l = location;
+				//redirect to site.com/login and remove login from URI fragment
+				l.replace( l.protocol + "//" + l.host + "/login" + l.search + l.hash.replace(/\/login/, '') );
+			}
+		},
+		/**
+		* Container mapping actions to handlers, @see SM.SWFAddress.Routing.handlers
+		*/
+		routes: {
+			login: 'loginHandler'
+		},
+		/** 
+		* handles routing requests via the URI fragment. Actions must appear at the end of the fragment
+		*/
+		routeHandler: function() {
+			var l = location;
+			var action = /\/(\w+)$/.exec(location.hash); // last word(s) preceeded by a /
+			if (!action) return
+			//if action is a key of this.routes then execute it's handler
+			for (var i=0; i < action.length; i++) {
+				for (var key in this.routes) {
+					if (key == action[i]) eval('SM.SWFAddress.Routing.handlers.' + this.routes[key] + '()');
+				}
+			}
+			return
+		}
+	},
+	tracker: function(path) {
+		//path is just a dummy, we just wanna feed in getPath
+		if (typeof pageTracker == 'undefined') return;
+		try {
+			if (typeof pageTracker._trackPageview == 'function') pageTracker._trackPageview(SWFAddress.getPath());
+		} catch (err) {
+			if (typeof pageTracker._trackPageview == 'function') pageTracker._trackPageview(path);
+		}
+	}
+}

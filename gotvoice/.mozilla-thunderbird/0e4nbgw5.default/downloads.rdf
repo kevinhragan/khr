@@ -1,0 +1,826 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Seq RDF:about="NC:DownloadsRoot">
+    <RDF:li RDF:resource="file:///tmp/GV Employee Contact Info.xls"/>
+    <RDF:li RDF:resource="file:///tmp/hyslop.200606.ps"/>
+    <RDF:li RDF:resource="file:///tmp/GV Net provider phone status.xls"/>
+    <RDF:li RDF:resource="file:///tmp/3Voice_Termination_Order_Worksheet_v2_04 - GotVoice 2006-08-10.xls"/>
+    <RDF:li RDF:resource="file:///tmp/GV Employee Contact Info.xls"/>
+    <RDF:li RDF:resource="file:///tmp/gvppt27.ppt"/>
+    <RDF:li RDF:resource="file:///tmp/IMAGE_002.jpg"/>
+    <RDF:li RDF:resource="file:///tmp/IMAGE_003.jpg"/>
+    <RDF:li RDF:resource="file:///tmp/IMAGE_004.jpg"/>
+    <RDF:li RDF:resource="file:///tmp/dsn_status"/>
+    <RDF:li RDF:resource="file:///tmp/C&amp;H_Daily.bmp"/>
+    <RDF:li RDF:resource="file:///tmp/Part 1.2"/>
+    <RDF:li RDF:resource="file:///tmp/GV Net v5.0 Account Pages Spec draft4.doc"/>
+    <RDF:li RDF:resource="file:///tmp/Part 1.2"/>
+    <RDF:li RDF:resource="file:///tmp/Part 1.3"/>
+    <RDF:li RDF:resource="file:///tmp/netstat -rn.bmp"/>
+    <RDF:li RDF:resource="file:///tmp/Christmas 2006 Adopt a Family list.doc"/>
+    <RDF:li RDF:resource="file:///tmp/Part 1.3"/>
+    <RDF:li RDF:resource="file:///tmp/Dashboard 1-08-2007.xls"/>
+    <RDF:li RDF:resource="file:///tmp/status1-7-2007.xls"/>
+    <RDF:li RDF:resource="file:///tmp/image001.jpg"/>
+    <RDF:li RDF:resource="file:///tmp/connection.pdf"/>
+    <RDF:li RDF:resource="file:///tmp/XO SIP Guidelines.doc"/>
+    <RDF:li RDF:resource="file:///tmp/ole0.bmp"/>
+    <RDF:li RDF:resource="file:///tmp/image003.jpg"/>
+    <RDF:li RDF:resource="file:///tmp/bears-vs-colts.pdf"/>
+    <RDF:li RDF:resource="file:///tmp/moz-screenshot.jpg"/>
+    <RDF:li RDF:resource="file:///home/kevinr/cfagent.conf"/>
+    <RDF:li RDF:resource="file:///tmp/0263715.pdf"/>
+    <RDF:li RDF:resource="file:///tmp/0263715.pdf"/>
+    <RDF:li RDF:resource="file:///home/kevinr/ZCSLicense.xml"/>
+    <RDF:li RDF:resource="file:///home/kevinr/tmp/R121Mod.txt"/>
+    <RDF:li RDF:resource="file:///tmp/March Launch Release - GV FINAL.doc"/>
+    <RDF:li RDF:resource="file:///home/kevinr/tmp/access.log.3.gz"/>
+    <RDF:li RDF:resource="file:///home/kevinr/tmp/access.log.2.gz"/>
+    <RDF:li RDF:resource="file:///home/kevinr/tmp/access.log.1.gz"/>
+    <RDF:li RDF:resource="file:///home/kevinr/tmp/BD4WO1.htm"/>
+    <RDF:li RDF:resource="file:///tmp/loading google map.tiff"/>
+    <RDF:li RDF:resource="file:///tmp/Part 1.3"/>
+    <RDF:li RDF:resource="file:///home/kevinr/tmp/Part 1.3"/>
+    <RDF:li RDF:resource="file:///tmp/Kevin Ragan - Gotvoice - Without Mobile.pdf"/>
+    <RDF:li RDF:resource="file:///tmp/Kevin Ragan - Gotvoice.pdf"/>
+    <RDF:li RDF:resource="file:///tmp/Outlook.jpg"/>
+    <RDF:li RDF:resource="file:///tmp/Invoice # 1238.PDF"/>
+    <RDF:li RDF:resource="file:///tmp/Zimbra Network Subscription.doc"/>
+    <RDF:li RDF:resource="file:///home/kevinr/zimbra/network-ZCSLicense.xml"/>
+    <RDF:li RDF:resource="file:///tmp/initrd.img-2.6.15-1-486.bak"/>
+    <RDF:li RDF:resource="file:///tmp/GV Expense Report template.xls"/>
+    <RDF:li RDF:resource="file:///tmp/image001.jpg"/>
+    <RDF:li RDF:resource="file:///tmp/Part 1.1"/>
+    <RDF:li RDF:resource="file:///home/kevinr/bin/bounce-delete.py"/>
+    <RDF:li RDF:resource="file:///tmp/IPJustification.xls"/>
+    <RDF:li RDF:resource="file:///tmp/Part 1.2"/>
+    <RDF:li RDF:resource="file:///home/kevinr/tmp/Part 1.2"/>
+    <RDF:li RDF:resource="file:///home/kevinr/tmp/file:---C|-DOCUME%7E1-BOB-LOCALS%7E1-TEMP-nsmail-145.tmp"/>
+    <RDF:li RDF:resource="file:///home/kevinr/tmp/hamp.Jun07"/>
+    <RDF:li RDF:resource="file:///tmp/Yahoo widget-FINAL.doc"/>
+    <RDF:li RDF:resource="file:///tmp/image001.jpg"/>
+    <RDF:li RDF:resource="file:///tmp/GotVoice, Inc._000409858_CN.doc"/>
+    <RDF:li RDF:resource="file:///home/kevinr/tmp/schilling.Feb07"/>
+    <RDF:li RDF:resource="file:///tmp/widget_comment_no_1.JPG"/>
+    <RDF:li RDF:resource="file:///home/kevinr/tmp/winmail.dat"/>
+    <RDF:li RDF:resource="file:///tmp/image002.jpg"/>
+    <RDF:li RDF:resource="file:///tmp/image001.jpg"/>
+    <RDF:li RDF:resource="file:///tmp/image001.jpg"/>
+    <RDF:li RDF:resource="file:///home/kevinr/tmp/hyslop.Aug07"/>
+    <RDF:li RDF:resource="file:///home/kevinr/tmp/0702079098.mp3"/>
+    <RDF:li RDF:resource="file:///home/kevinr/tmp/0703900339.mp3"/>
+    <RDF:li RDF:resource="file:///tmp/My eLife - Guided Tour.ppt"/>
+    <RDF:li RDF:resource="file:///tmp/Scheduler re-design mini-spec v0.1.doc"/>
+    <RDF:li RDF:resource="file:///tmp/image001.jpg"/>
+    <RDF:li RDF:resource="file:///tmp/GotVoice-Oceanic Press Releasefinal_gv.doc"/>
+    <RDF:li RDF:resource="file:///tmp/GotVoice RIM Release_FINAL 9.28.doc"/>
+    <RDF:li RDF:resource="file:///home/kevinr/tmp/gotvoiceSPFSID09302007.zip"/>
+    <RDF:li RDF:resource="file:///tmp/GV Production Avatars.xls"/>
+    <RDF:li RDF:resource="file:///tmp/image003.jpg"/>
+    <RDF:li RDF:resource="file:///tmp/image002.jpg"/>
+    <RDF:li RDF:resource="file:///tmp/moz-screenshot-33.jpg"/>
+    <RDF:li RDF:resource="file:///tmp/image002.jpg"/>
+    <RDF:li RDF:resource="file:///tmp/image001.jpg"/>
+    <RDF:li RDF:resource="file:///tmp/lexicon_v4b.JPG"/>
+    <RDF:li RDF:resource="file:///tmp/14.pdf"/>
+    <RDF:li RDF:resource="file:///tmp/image007.jpg"/>
+    <RDF:li RDF:resource="file:///tmp/image003.jpg"/>
+    <RDF:li RDF:resource="file:///tmp/image004.jpg"/>
+    <RDF:li RDF:resource="file:///home/kevinr/tmp/spooler.txt"/>
+    <RDF:li RDF:resource="file:///tmp/image002.jpg"/>
+    <RDF:li RDF:resource="file:///tmp/phoneNumbersWhoTranscribe.xls"/>
+    <RDF:li RDF:resource="file:///tmp/phoneNumbsAndCountWhoTranscribe.xls"/>
+    <RDF:li RDF:resource="file:///tmp/sortedPhoneNumbsAndCountWhoTranscribe.xls"/>
+    <RDF:li RDF:resource="file:///tmp/image001.jpg"/>
+    <RDF:li RDF:resource="file:///tmp/image001.jpg"/>
+    <RDF:li RDF:resource="file:///tmp/image002.jpg"/>
+    <RDF:li RDF:resource="file:///tmp/Session Border Controller.doc"/>
+    <RDF:li RDF:resource="file:///tmp/What is a Session Border Controller.doc"/>
+    <RDF:li RDF:resource="file:///tmp/XO SIP Guidelines.doc"/>
+    <RDF:li RDF:resource="file:///home/kevinr/tmp/2100-1039_3-6217001.url"/>
+    <RDF:li RDF:resource="file:///tmp/image001.jpg"/>
+    <RDF:li RDF:resource="file:///tmp/ATT00182.jpg"/>
+    <RDF:li RDF:resource="file:///tmp/image001.gif"/>
+    <RDF:li RDF:resource="file:///tmp/image.jpg"/>
+    <RDF:li RDF:resource="file:///tmp/image014.jpg"/>
+    <RDF:li RDF:resource="file:///tmp/image019.jpg"/>
+    <RDF:li RDF:resource="file:///tmp/image020.gif"/>
+    <RDF:li RDF:resource="file:///tmp/IP Justification.xls"/>
+    <RDF:li RDF:resource="file:///tmp/Quote_398064734.html"/>
+    <RDF:li RDF:resource="file:///tmp/GotVoice, Inc._29-Nov-2007_WL.doc"/>
+    <RDF:li RDF:resource="file:///tmp/image001.gif"/>
+    <RDF:li RDF:resource="file:///tmp/image001.jpg"/>
+    <RDF:li RDF:resource="file:///tmp/zcs_no_worky.JPG"/>
+    <RDF:li RDF:resource="file:///home/kevinr/tmp/error return messages screenshot.docx"/>
+    <RDF:li RDF:resource="file:///tmp/time our screen shot.doc"/>
+    <RDF:li RDF:resource="file:///tmp/screen shot.bmp"/>
+    <RDF:li RDF:resource="file:///tmp/error return messages screenshot.doc"/>
+    <RDF:li RDF:resource="file:///tmp/image001.jpg"/>
+    <RDF:li RDF:resource="file:///tmp/image001.jpg"/>
+    <RDF:li RDF:resource="file:///tmp/image001.png"/>
+    <RDF:li RDF:resource="file:///home/kevinr/tmp/image001.png"/>
+    <RDF:li RDF:resource="file:///home/kevinr/tmp/image002.png"/>
+    <RDF:li RDF:resource="file:///home/kevinr/tmp/attachment.bin"/>
+    <RDF:li RDF:resource="file:///tmp/ZCSLicense.xml"/>
+    <RDF:li RDF:resource="file:///home/kevinr/tmp/ZCSLicense.xml"/>
+    <RDF:li RDF:resource="file:///tmp/Gotvoice_1yr.pdf"/>
+    <RDF:li RDF:resource="file:///tmp/skytap whitepaper v5 draft march.pdf"/>
+    <RDF:li RDF:resource="/home/kevinr/tmp/ZCSLicense.xml"/>
+  </RDF:Seq>
+  <RDF:Description RDF:about="file:///tmp/Dashboard 1-08-2007.xls"
+                   NC:Name="Dashboard 1-08-2007.xls"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E10898?part=1.2&amp;type=application/vnd.ms-excel&amp;filename=Dashboard%201-08-2007.xls"/>
+    <NC:File RDF:resource="file:///tmp/Dashboard 1-08-2007.xls"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/moz-screenshot.jpg"
+                   NC:Name="moz-screenshot.jpg"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E11897?part=1.1.2&amp;type=image/jpeg&amp;filename=moz-screenshot.jpg"/>
+    <NC:File RDF:resource="file:///tmp/moz-screenshot.jpg"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/image002.jpg"
+                   NC:Name="image002.jpg"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E24618?part=1.3&amp;type=image/jpeg&amp;filename=image002.jpg"/>
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E24520?part=1.2&amp;type=image/jpeg&amp;filename=image002.jpg"/>
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E21820?part=1.2&amp;type=image/jpeg&amp;filename=image002.jpg"/>
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E23387?part=1.2&amp;type=image/jpeg&amp;filename=image002.jpg"/>
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E24007?part=1.3&amp;type=image/jpeg&amp;filename=image002.jpg"/>
+    <NC:File RDF:resource="file:///tmp/image002.jpg"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/sortedPhoneNumbsAndCountWhoTranscribe.xls"
+                   NC:Name="sortedPhoneNumbsAndCountWhoTranscribe.xls"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E24546?section=2?part=1.2&amp;type=application/msexcell&amp;filename=sortedPhoneNumbsAndCountWhoTranscribe.xls"/>
+    <NC:File RDF:resource="file:///tmp/sortedPhoneNumbsAndCountWhoTranscribe.xls"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/XO SIP Guidelines.doc"
+                   NC:Name="XO SIP Guidelines.doc"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E25072?section=3?part=1.3&amp;type=application/msword&amp;filename=XO%20SIP%20Guidelines.doc"/>
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E11429?part=1.2&amp;type=application/msword&amp;filename=XO%20SIP%20Guidelines.doc"/>
+    <NC:File RDF:resource="file:///tmp/XO SIP Guidelines.doc"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/cfagent.conf"
+                   NC:Name="cfagent.conf"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E12019?part=1.2&amp;type=application/octet-stream&amp;filename=cfagent.conf"/>
+    <NC:File RDF:resource="file:///home/kevinr/cfagent.conf"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/zcs_no_worky.JPG"
+                   NC:Name="zcs_no_worky.JPG"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E28453?part=1.2&amp;type=image/jpeg&amp;filename=zcs_no_worky.JPG"/>
+    <NC:File RDF:resource="file:///tmp/zcs_no_worky.JPG"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/tmp/access.log.2.gz"
+                   NC:Name="access.log.2.gz"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://admin@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E89937?part=1&amp;type=application/octet-stream&amp;filename=attachment.bin"/>
+    <NC:File RDF:resource="file:///home/kevinr/tmp/access.log.2.gz"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/image003.jpg"
+                   NC:Name="image003.jpg"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E11582?part=1.2&amp;type=image/jpeg&amp;filename=image003.jpg"/>
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E23387?part=1.3&amp;type=image/jpeg&amp;filename=image003.jpg"/>
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E24347?part=1.2&amp;type=image/jpeg&amp;filename=image003.jpg"/>
+    <NC:File RDF:resource="file:///tmp/image003.jpg"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/Kevin Ragan - Gotvoice - Without Mobile.pdf"
+                   NC:Name="Kevin Ragan - Gotvoice - Without Mobile.pdf"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E16484?section=2?part=1.2&amp;type=application/pdf&amp;filename=Kevin%20Ragan%20-%20Gotvoice%20-%20Without%20Mobile.pdf"/>
+    <NC:File RDF:resource="file:///tmp/Kevin Ragan - Gotvoice - Without Mobile.pdf"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/image007.jpg"
+                   NC:Name="image007.jpg">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E24292?part=1.2.1.4&amp;type=image/jpeg&amp;filename=image007.jpg"/>
+    <NC:File RDF:resource="file:///tmp/image007.jpg"/>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/0263715.pdf"
+                   NC:Name="0263715.pdf"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E12925?part=1.2&amp;type=application/pdf&amp;filename=0263715.pdf"/>
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E12928?part=1.2.1.2&amp;type=application/pdf&amp;filename=0263715.pdf"/>
+    <NC:File RDF:resource="file:///tmp/0263715.pdf"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/March Launch Release - GV FINAL.doc"
+                   NC:Name="March Launch Release - GV FINAL.doc">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E14403?part=1.2&amp;type=application/msword&amp;filename=March%20Launch%20Release%20-%20GV%20FINAL.doc"/>
+    <NC:File RDF:resource="file:///tmp/March Launch Release - GV FINAL.doc"/>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/GotVoice RIM Release_FINAL 9.28.doc"
+                   NC:Name="GotVoice RIM Release_FINAL 9.28.doc"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E23282?section=3?part=1.3&amp;type=application/msword&amp;filename=GotVoice%20RIM%20Release_FINAL%209.28.doc"/>
+    <NC:File RDF:resource="file:///tmp/GotVoice RIM Release_FINAL 9.28.doc"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/Quote_398064734.html"
+                   NC:Name="Quote_398064734.html"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E25893?part=1.2&amp;type=text/html&amp;filename=Quote_398064734.html"/>
+    <NC:File RDF:resource="file:///tmp/Quote_398064734.html"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/tmp/winmail.dat"
+                   NC:Name="winmail.dat">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E21486?part=1.2&amp;type=application/ms-tnef&amp;filename=winmail.dat"/>
+    <NC:File RDF:resource="file:///home/kevinr/tmp/winmail.dat"/>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/IMAGE_002.jpg"
+                   NC:Name="IMAGE_002.jpg">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:143/fetch%3EUID%3E/INBOX%3E7256?part=1.2&amp;type=image/jpeg&amp;filename=IMAGE_002.jpg"/>
+    <NC:File RDF:resource="file:///tmp/IMAGE_002.jpg"/>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/3Voice_Termination_Order_Worksheet_v2_04 - GotVoice 2006-08-10.xls"
+                   NC:Name="3Voice_Termination_Order_Worksheet_v2_04 - GotVoice 2006-08-10.xls">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:143/fetch%3EUID%3E/INBOX%3E1790?part=1.2&amp;type=application/vnd.ms-excel&amp;filename=3Voice_Termination_Order_Worksheet_v2_04%20-%20GotVoice%202006-08-10.xls"/>
+    <NC:File RDF:resource="file:///tmp/3Voice_Termination_Order_Worksheet_v2_04 - GotVoice 2006-08-10.xls"/>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/tmp/schilling.Feb07"
+                   NC:Name="schilling.Feb07"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E20089?part=1.2&amp;type=text/plain&amp;filename=schilling.Feb07"/>
+    <NC:File RDF:resource="file:///home/kevinr/tmp/schilling.Feb07"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/IPJustification.xls"
+                   NC:Name="IPJustification.xls"
+                   NC:ProgressMode="none">
+    <NC:File RDF:resource="file:///tmp/IPJustification.xls"/>
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E18488?part=1.3&amp;type=application/vnd.ms-excel&amp;filename=IPJustification.xls"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/GV Net v5.0 Account Pages Spec draft4.doc"
+                   NC:Name="GV Net v5.0 Account Pages Spec draft4.doc"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E8884?part=1.2&amp;type=application/msword&amp;filename=GV%20Net%20v5.0%20Account%20Pages%20Spec%20draft4.doc"/>
+    <NC:File RDF:resource="file:///tmp/GV Net v5.0 Account Pages Spec draft4.doc"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/image020.gif"
+                   NC:Name="image020.gif"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E25526?part=1.21&amp;type=image/gif&amp;filename=image020.gif"/>
+    <NC:File RDF:resource="file:///tmp/image020.gif"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/tmp/hyslop.Aug07"
+                   NC:Name="hyslop.Aug07"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E22857?part=1.2&amp;type=text/plain&amp;filename=hyslop.Aug07"/>
+    <NC:File RDF:resource="file:///home/kevinr/tmp/hyslop.Aug07"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/tmp/image002.png"
+                   NC:Name="image002.png">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E32403?part=1.3&amp;type=image/png&amp;filename=image002.png"/>
+    <NC:File RDF:resource="file:///home/kevinr/tmp/image002.png"/>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/Scheduler re-design mini-spec v0.1.doc"
+                   NC:Name="Scheduler re-design mini-spec v0.1.doc">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E22695?section=2?part=1.2&amp;type=application/msword&amp;filename=Scheduler%20re-design%20mini-spec%20v0.1.doc"/>
+    <NC:File RDF:resource="file:///tmp/Scheduler re-design mini-spec v0.1.doc"/>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/14.pdf"
+                   NC:Name="14.pdf"
+                   NC:ProgressMode="none">
+    <NC:File RDF:resource="file:///tmp/14.pdf"/>
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E23912?section=2?part=1.2&amp;type=application/pdf&amp;filename=14.pdf"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/ZCSLicense.xml"
+                   NC:Name="ZCSLicense.xml">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E13102?part=1.2&amp;type=text/xml&amp;filename=ZCSLicense.xml"/>
+    <NC:File RDF:resource="file:///home/kevinr/ZCSLicense.xml"/>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/tmp/file:---C|-DOCUME%7E1-BOB-LOCALS%7E1-TEMP-nsmail-145.tmp"
+                   NC:Name="file:---C|-DOCUME%7E1-BOB-LOCALS%7E1-TEMP-nsmail-145.tmp">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E18961?part=1.2&amp;type=message/delivery-status&amp;filename=file%3A%2F%2F%2FC%7C%2FDOCUME%257E1%2FBOB%2FLOCALS%257E1%2FTEMP%2Fnsmail-145.tmp"/>
+    <NC:File RDF:resource="file:///home/kevinr/tmp/file:---C|-DOCUME%7E1-BOB-LOCALS%7E1-TEMP-nsmail-145.tmp"/>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/image014.jpg"
+                   NC:Name="image014.jpg"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E25526?part=1.15&amp;type=image/jpeg&amp;filename=image014.jpg"/>
+    <NC:File RDF:resource="file:///tmp/image014.jpg"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/screen shot.bmp"
+                   NC:Name="screen shot.bmp">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E28897?part=1.2&amp;type=image/bmp&amp;filename=screen%20shot.bmp"/>
+    <NC:File RDF:resource="file:///tmp/screen shot.bmp"/>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/Christmas 2006 Adopt a Family list.doc"
+                   NC:Name="Christmas 2006 Adopt a Family list.doc">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E9844?part=1.2&amp;type=application/msword&amp;filename=Christmas%202006%20Adopt%20a%20Family%20list.doc"/>
+    <NC:File RDF:resource="file:///tmp/Christmas 2006 Adopt a Family list.doc"/>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/tmp/attachment.bin"
+                   NC:Name="attachment.bin"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://admin@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E140093?part=1&amp;type=application/octet-stream&amp;filename=attachment.bin"/>
+    <NC:File RDF:resource="file:///home/kevinr/tmp/attachment.bin"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/GV Net provider phone status.xls"
+                   NC:Name="GV Net provider phone status.xls">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:143/fetch%3EUID%3E/INBOX%3E490?part=1.2&amp;type=application/vnd.ms-excel&amp;filename=GV%20Net%20provider%20phone%20status.xls"/>
+    <NC:File RDF:resource="file:///tmp/GV Net provider phone status.xls"/>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/image001.gif"
+                   NC:Name="image001.gif"
+                   NC:ProgressMode="none">
+    <NC:File RDF:resource="file:///tmp/image001.gif"/>
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E25526?part=1.2&amp;type=image/gif&amp;filename=image001.gif"/>
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E27487?part=1.2&amp;type=image/gif&amp;filename=image001.gif"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/error return messages screenshot.doc"
+                   NC:Name="error return messages screenshot.doc">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E29002?section=2?part=1.2&amp;type=application/msword&amp;filename=error%20return%20messages%20screenshot.doc"/>
+    <NC:File RDF:resource="file:///tmp/error return messages screenshot.doc"/>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/widget_comment_no_1.JPG"
+                   NC:Name="widget_comment_no_1.JPG"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E20313?part=1.2&amp;type=image/jpeg&amp;filename=widget_comment_no_1.JPG"/>
+    <NC:File RDF:resource="file:///tmp/widget_comment_no_1.JPG"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/skytap whitepaper v5 draft march.pdf"
+                   NC:Name="skytap whitepaper v5 draft march.pdf">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E35880?section=2?part=1.2&amp;type=application/pdf&amp;filename=skytap%20whitepaper%20v5%20draft%20march.pdf"/>
+    <NC:File RDF:resource="file:///tmp/skytap whitepaper v5 draft march.pdf"/>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/Session Border Controller.doc"
+                   NC:Name="Session Border Controller.doc"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E25072?section=2?part=1.2&amp;type=application/msword&amp;filename=Session%20Border%20Controller.doc"/>
+    <NC:File RDF:resource="file:///tmp/Session Border Controller.doc"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/tmp/2100-1039_3-6217001.url"
+                   NC:Name="2100-1039_3-6217001.url">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E25085?part=1.2&amp;type=application/octet-stream&amp;filename=2100-1039_3-6217001.url"/>
+    <NC:File RDF:resource="file:///home/kevinr/tmp/2100-1039_3-6217001.url"/>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/netstat -rn.bmp"
+                   NC:Name="netstat -rn.bmp">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E9114?part=1.2&amp;type=image/bmp&amp;filename=netstat%20-rn.bmp"/>
+    <NC:File RDF:resource="file:///tmp/netstat -rn.bmp"/>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/Zimbra Network Subscription.doc"
+                   NC:Name="Zimbra Network Subscription.doc">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E16698?part=1.3&amp;type=application/msword&amp;filename=Zimbra%20Network%20Subscription.doc"/>
+    <NC:File RDF:resource="file:///tmp/Zimbra Network Subscription.doc"/>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/GotVoice, Inc._29-Nov-2007_WL.doc"
+                   NC:Name="GotVoice, Inc._29-Nov-2007_WL.doc">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E26328?section=2?part=1.2&amp;type=application/octet-stream&amp;filename=GotVoice%2C%20Inc._29-Nov-2007_WL.doc"/>
+    <NC:File RDF:resource="file:///tmp/GotVoice, Inc._29-Nov-2007_WL.doc"/>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/loading google map.tiff"
+                   NC:Name="loading google map.tiff"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E15845?part=1.2&amp;type=image/tiff&amp;filename=loading%20google%20map.tiff"/>
+    <NC:File RDF:resource="file:///tmp/loading google map.tiff"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/GotVoice-Oceanic Press Releasefinal_gv.doc"
+                   NC:Name="GotVoice-Oceanic Press Releasefinal_gv.doc"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E23282?section=2?part=1.2&amp;type=application/msword&amp;filename=GotVoice-Oceanic%20Press%20Releasefinal_gv.doc"/>
+    <NC:File RDF:resource="file:///tmp/GotVoice-Oceanic Press Releasefinal_gv.doc"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/IP Justification.xls"
+                   NC:Name="IP Justification.xls"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E25544?part=1.2&amp;type=application/vnd.ms-excel&amp;filename=IP%20Justification.xls"/>
+    <NC:File RDF:resource="file:///tmp/IP Justification.xls"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/What is a Session Border Controller.doc"
+                   NC:Name="What is a Session Border Controller.doc"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E25072?section=4?part=1.4&amp;type=application/msword&amp;filename=What%20is%20a%20Session%20Border%20Controller.doc"/>
+    <NC:File RDF:resource="file:///tmp/What is a Session Border Controller.doc"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/tmp/access.log.3.gz"
+                   NC:Name="access.log.3.gz"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://admin@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E89933?part=1&amp;type=application/octet-stream&amp;filename=attachment.bin"/>
+    <NC:File RDF:resource="file:///home/kevinr/tmp/access.log.3.gz"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/image.jpg"
+                   NC:Name="image.jpg"
+                   NC:ProgressMode="none">
+    <NC:File RDF:resource="file:///tmp/image.jpg"/>
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E25473?part=1.6&amp;type=image/jpeg&amp;filename=image.jpg"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/Part 1.3"
+                   NC:Name="Part 1.3"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://admin@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E76354?part=1.3&amp;type=text/rfc822-headers&amp;filename=Part%201.3"/>
+    <NC:URL RDF:resource="imap://admin@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E82392?part=1.3&amp;type=text/rfc822-headers&amp;filename=Part%201.3"/>
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E15845?part=1.3&amp;type=text/plain&amp;filename=Part%201.3"/>
+    <NC:File RDF:resource="file:///tmp/Part 1.3"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/ole0.bmp"
+                   NC:Name="ole0.bmp"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E11561?part=1.2&amp;type=image/bmp&amp;filename=ole0.bmp"/>
+    <NC:File RDF:resource="file:///tmp/ole0.bmp"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/Kevin Ragan - Gotvoice.pdf"
+                   NC:ProgressMode="none"
+                   NC:Name="Kevin Ragan - Gotvoice.pdf">
+    <NC:File RDF:resource="file:///tmp/Kevin Ragan - Gotvoice.pdf"/>
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E16484?section=3?part=1.3&amp;type=application/pdf&amp;filename=Kevin%20Ragan%20-%20Gotvoice.pdf"/>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/Part 1.1"
+                   NC:Name="Part 1.1"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E17477?part=1.1&amp;type=text/calendar&amp;filename=Part%201.1"/>
+    <NC:File RDF:resource="file:///tmp/Part 1.1"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/ATT00182.jpg"
+                   NC:ProgressMode="none"
+                   NC:Name="ATT00182.jpg">
+    <NC:File RDF:resource="file:///tmp/ATT00182.jpg"/>
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E25366?part=1.2&amp;type=image/jpeg&amp;filename=ATT00182.jpg"/>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/tmp/BD4WO1.htm"
+                   NC:Name="BD4WO1.htm">
+    <NC:URL RDF:resource="http://info1.networksolutions.com/h/B5IGD/B5IUN/OS/BD4WO1?a1=DEME&amp;a2=B5IUN&amp;a3=WKZ1O2&amp;a4=ZC86NI&amp;a5=1"/>
+    <NC:File RDF:resource="file:///home/kevinr/tmp/BD4WO1.htm"/>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/bears-vs-colts.pdf"
+                   NC:Name="bears-vs-colts.pdf"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E11902?part=1.2&amp;type=application/pdf&amp;filename=bears-vs-colts.pdf"/>
+    <NC:File RDF:resource="file:///tmp/bears-vs-colts.pdf"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/Yahoo widget-FINAL.doc"
+                   NC:Name="Yahoo widget-FINAL.doc"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E19529?section=2?part=1.2&amp;type=application/msword&amp;filename=Yahoo%20widget-FINAL.doc"/>
+    <NC:File RDF:resource="file:///tmp/Yahoo widget-FINAL.doc"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/tmp/Part 1.3"
+                   NC:Name="Part 1.3">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E15845?part=1.3&amp;type=text/plain&amp;filename=Part%201.3"/>
+    <NC:File RDF:resource="file:///home/kevinr/tmp/Part 1.3"/>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/dsn_status"
+                   NC:Name="dsn_status"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://admin@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E71254?part=1.2&amp;type=message/delivery-status&amp;filename=dsn_status"/>
+    <NC:File RDF:resource="file:///tmp/dsn_status"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/image001.jpg"
+                   NC:Name="image001.jpg"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E30571?part=1.2&amp;type=image/jpeg&amp;filename=image001.jpg"/>
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E25180?part=1.2&amp;type=image/jpeg&amp;filename=image001.jpg"/>
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E24618?part=1.2&amp;type=image/jpeg&amp;filename=image001.jpg"/>
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E24598?part=1.2&amp;type=image/jpeg&amp;filename=image001.jpg"/>
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E23257?part=1.2&amp;type=image/jpeg&amp;filename=image001.jpg"/>
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E21842?part=1.2&amp;type=image/jpeg&amp;filename=image001.jpg"/>
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E20270?part=1.2&amp;type=image/jpeg&amp;filename=image001.jpg"/>
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E17407?part=1.2&amp;type=image/jpeg&amp;filename=image001.jpg"/>
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E11188?part=1.2&amp;type=image/jpeg&amp;filename=image001.jpg"/>
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E22611?part=1.2&amp;type=image/jpeg&amp;filename=image001.jpg"/>
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E24114?part=1.2&amp;type=image/jpeg&amp;filename=image001.jpg"/>
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E28393?part=1.2&amp;type=image/jpeg&amp;filename=image001.jpg"/>
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E30218?part=1.2&amp;type=image/jpeg&amp;filename=image001.jpg"/>
+    <NC:File RDF:resource="file:///tmp/image001.jpg"/>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/tmp/error return messages screenshot.docx"
+                   NC:Name="error return messages screenshot.docx"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E28830?section=2?part=1.2&amp;type=application/octet-stream&amp;filename=error%20return%20messages%20screenshot.docx"/>
+    <NC:File RDF:resource="file:///home/kevinr/tmp/error return messages screenshot.docx"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/image019.jpg"
+                   NC:Name="image019.jpg">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E25526?part=1.20&amp;type=image/jpeg&amp;filename=image019.jpg"/>
+    <NC:File RDF:resource="file:///tmp/image019.jpg"/>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/Gotvoice_1yr.pdf"
+                   NC:Name="Gotvoice_1yr.pdf"
+                   NC:ProgressMode="none">
+    <NC:File RDF:resource="file:///tmp/Gotvoice_1yr.pdf"/>
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E35593?section=2?part=1.2&amp;type=application/pdf&amp;filename=Gotvoice_1yr.pdf"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/Part 1.2"
+                   NC:Name="Part 1.2"
+                   NC:ProgressMode="none">
+    <NC:File RDF:resource="file:///tmp/Part 1.2"/>
+    <NC:URL RDF:resource="imap://admin@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E76354?part=1.2&amp;type=message/delivery-status&amp;filename=Part%201.2"/>
+    <NC:URL RDF:resource="imap://admin@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E75368?part=1.2&amp;type=message/delivery-status&amp;filename=Part%201.2"/>
+    <NC:URL RDF:resource="imap://admin@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E95619?part=1.2&amp;type=message/delivery-status&amp;filename=Part%201.2"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+    <NC:DownloadState NC:parseType="Integer">2</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/GV Production Avatars.xls"
+                   NC:Name="GV Production Avatars.xls"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E23384?section=2?part=1.2&amp;type=application/vnd.ms-excel&amp;filename=GV%20Production%20Avatars.xls"/>
+    <NC:File RDF:resource="file:///tmp/GV Production Avatars.xls"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/GV Expense Report template.xls"
+                   NC:Name="GV Expense Report template.xls"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E17293?section=2?part=1.2&amp;type=application/vnd.ms-excel&amp;filename=GV%20Expense%20Report%20template.xls"/>
+    <NC:File RDF:resource="file:///tmp/GV Expense Report template.xls"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/image004.jpg"
+                   NC:Name="image004.jpg"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E24347?part=1.3&amp;type=image/jpeg&amp;filename=image004.jpg"/>
+    <NC:File RDF:resource="file:///tmp/image004.jpg"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/IMAGE_004.jpg"
+                   NC:Name="IMAGE_004.jpg"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E7454?part=1.2&amp;type=image/jpeg&amp;filename=IMAGE_004.jpg"/>
+    <NC:File RDF:resource="file:///tmp/IMAGE_004.jpg"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/initrd.img-2.6.15-1-486.bak"
+                   NC:Name="initrd.img-2.6.15-1-486.bak">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E17060?section=2?part=1.2&amp;type=application/x-trash&amp;filename=initrd.img-2.6.15-1-486.bak"/>
+    <NC:File RDF:resource="file:///tmp/initrd.img-2.6.15-1-486.bak"/>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/status1-7-2007.xls"
+                   NC:Name="status1-7-2007.xls"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E10898?part=1.3&amp;type=application/vnd.ms-excel&amp;filename=status1-7-2007.xls"/>
+    <NC:File RDF:resource="file:///tmp/status1-7-2007.xls"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/phoneNumbersWhoTranscribe.xls"
+                   NC:Name="phoneNumbersWhoTranscribe.xls"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E24526?section=2?part=1.2&amp;type=application/msexcell&amp;filename=phoneNumbersWhoTranscribe.xls"/>
+    <NC:File RDF:resource="file:///tmp/phoneNumbersWhoTranscribe.xls"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/tmp/0702079098.mp3"
+                   NC:Name="0702079098.mp3"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E22903?part=1.2&amp;type=audio/mp3&amp;filename=0702079098.mp3"/>
+    <NC:File RDF:resource="file:///home/kevinr/tmp/0702079098.mp3"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/image001.png"
+                   NC:Name="image001.png"
+                   NC:ProgressMode="none">
+    <NC:File RDF:resource="file:///tmp/image001.png"/>
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E32403?part=1.2&amp;type=image/png&amp;filename=image001.png"/>
+    <NC:DownloadState NC:parseType="Integer">2</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/tmp/hamp.Jun07"
+                   NC:Name="hamp.Jun07"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E19464?part=1.2&amp;type=text/plain&amp;filename=hamp.Jun07"/>
+    <NC:File RDF:resource="file:///home/kevinr/tmp/hamp.Jun07"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/GV Employee Contact Info.xls"
+                   NC:Name="GV Employee Contact Info.xls">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:143/fetch%3EUID%3E/INBOX%3E322?part=1.2&amp;type=application/vnd.ms-excel&amp;filename=GV%20Employee%20Contact%20Info.xls"/>
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:143/fetch%3EUID%3E/INBOX%3E303?part=1.2&amp;type=application/vnd.ms-excel&amp;filename=GV%20Employee%20Contact%20Info.xls"/>
+    <NC:File RDF:resource="file:///tmp/GV Employee Contact Info.xls"/>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/zimbra/network-ZCSLicense.xml"
+                   NC:Name="network-ZCSLicense.xml">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E16725?part=1.2&amp;type=text/xml&amp;filename=ZCSLicense.xml"/>
+    <NC:File RDF:resource="file:///home/kevinr/zimbra/network-ZCSLicense.xml"/>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/phoneNumbsAndCountWhoTranscribe.xls"
+                   NC:Name="phoneNumbsAndCountWhoTranscribe.xls"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E24535?section=2?part=1.2&amp;type=application/msexcell&amp;filename=phoneNumbsAndCountWhoTranscribe.xls"/>
+    <NC:File RDF:resource="file:///tmp/phoneNumbsAndCountWhoTranscribe.xls"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/tmp/image001.png"
+                   NC:Name="image001.png"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E32403?part=1.2&amp;type=image/png&amp;filename=image001.png"/>
+    <NC:File RDF:resource="file:///home/kevinr/tmp/image001.png"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/GotVoice, Inc._000409858_CN.doc"
+                   NC:Name="GotVoice, Inc._000409858_CN.doc"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E20042?section=2?part=1.2&amp;type=application/octet-stream&amp;filename=GotVoice%2C%20Inc._000409858_CN.doc"/>
+    <NC:File RDF:resource="file:///tmp/GotVoice, Inc._000409858_CN.doc"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/IMAGE_003.jpg"
+                   NC:Name="IMAGE_003.jpg"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E7400?part=1.2&amp;type=image/jpeg&amp;filename=IMAGE_003.jpg"/>
+    <NC:File RDF:resource="file:///tmp/IMAGE_003.jpg"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/ZCSLicense.xml"
+                   NC:Name="ZCSLicense.xml"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E13102?part=1.2&amp;type=text/xml&amp;filename=ZCSLicense.xml"/>
+    <NC:File RDF:resource="file:///tmp/ZCSLicense.xml"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/bin/bounce-delete.py"
+                   NC:Name="bounce-delete.py">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E17631?part=1.2&amp;type=text/x-python&amp;filename=bounce-delete.py"/>
+    <NC:File RDF:resource="file:///home/kevinr/bin/bounce-delete.py"/>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/Invoice # 1238.PDF"
+                   NC:Name="Invoice # 1238.PDF"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E16698?part=1.2&amp;type=application/pdf&amp;filename=Invoice%20%23%201238.PDF"/>
+    <NC:File RDF:resource="file:///tmp/Invoice # 1238.PDF"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/gvppt27.ppt"
+                   NC:Name="gvppt27.ppt">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:143/fetch%3EUID%3E/INBOX%3E465?part=1.2&amp;type=application/vnd.ms-powerpoint&amp;filename=gvppt27.ppt"/>
+    <NC:File RDF:resource="file:///tmp/gvppt27.ppt"/>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/My eLife - Guided Tour.ppt"
+                   NC:Name="My eLife - Guided Tour.ppt"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E22618?section=2?part=1.2&amp;type=application/vnd.ms-powerpoint&amp;filename=My%20eLife%20-%20Guided%20Tour.ppt"/>
+    <NC:File RDF:resource="file:///tmp/My eLife - Guided Tour.ppt"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/tmp/access.log.1.gz"
+                   NC:Name="access.log.1.gz"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://admin@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E89938?part=1&amp;type=application/octet-stream&amp;filename=attachment.bin"/>
+    <NC:File RDF:resource="file:///home/kevinr/tmp/access.log.1.gz"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="/home/kevinr/tmp/ZCSLicense.xml"
+                   NC:Name="ZCSLicense.xml">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E35698?part=1.2&amp;type=text/xml&amp;filename=ZCSLicense.xml"/>
+    <NC:File RDF:resource="/home/kevinr/tmp/ZCSLicense.xml"/>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/moz-screenshot-33.jpg"
+                   NC:ProgressMode="none"
+                   NC:Name="moz-screenshot-33.jpg">
+    <NC:File RDF:resource="file:///tmp/moz-screenshot-33.jpg"/>
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E23446?part=1.1.2&amp;type=image/jpeg&amp;filename=moz-screenshot-33.jpg"/>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/tmp/0703900339.mp3"
+                   NC:Name="0703900339.mp3">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E22905?part=1.2&amp;type=audio/mp3&amp;filename=0703900339.mp3"/>
+    <NC:File RDF:resource="file:///home/kevinr/tmp/0703900339.mp3"/>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/tmp/ZCSLicense.xml"
+                   NC:Name="ZCSLicense.xml"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E13102?part=1.2&amp;type=text/xml&amp;filename=ZCSLicense.xml"/>
+    <NC:File RDF:resource="file:///home/kevinr/tmp/ZCSLicense.xml"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/tmp/R121Mod.txt"
+                   NC:Name="R121Mod.txt"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E12576?part=1.2&amp;type=text/plain&amp;filename=R121Mod.txt"/>
+    <NC:File RDF:resource="file:///home/kevinr/tmp/R121Mod.txt"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/Outlook.jpg"
+                   NC:Name="Outlook.jpg">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E16606?part=1.2&amp;type=image/jpeg&amp;filename=Outlook.jpg"/>
+    <NC:File RDF:resource="file:///tmp/Outlook.jpg"/>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/connection.pdf"
+                   NC:Name="connection.pdf"
+                   NC:ProgressMode="none">
+    <NC:File RDF:resource="file:///tmp/connection.pdf"/>
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E11383?part=1.2&amp;type=application/pdf&amp;filename=connection.pdf"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/time our screen shot.doc"
+                   NC:ProgressMode="none"
+                   NC:Name="time our screen shot.doc">
+    <NC:File RDF:resource="file:///tmp/time our screen shot.doc"/>
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E28840?section=2?part=1.2&amp;type=application/msword&amp;filename=time%20our%20screen%20shot.doc"/>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/tmp/Part 1.2"
+                   NC:Name="Part 1.2"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://admin@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E95619?part=1.2&amp;type=message/delivery-status&amp;filename=Part%201.2"/>
+    <NC:File RDF:resource="file:///home/kevinr/tmp/Part 1.2"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/tmp/spooler.txt"
+                   NC:Name="spooler.txt">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E24407?part=1.2&amp;type=text/plain&amp;filename=how%20to%20build%20a%20spooler.txt"/>
+    <NC:File RDF:resource="file:///home/kevinr/tmp/spooler.txt"/>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/lexicon_v4b.JPG"
+                   NC:Name="lexicon_v4b.JPG"
+                   NC:ProgressMode="none">
+    <NC:File RDF:resource="file:///tmp/lexicon_v4b.JPG"/>
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E22104?part=1.2&amp;type=image/jpeg&amp;filename=lexicon_v4b.JPG"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/C&amp;H_Daily.bmp"
+                   NC:Name="C&amp;H_Daily.bmp">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E7724?part=1.2&amp;type=image/bmp&amp;filename=C%26H_Daily.bmp"/>
+    <NC:File RDF:resource="file:///tmp/C&amp;H_Daily.bmp"/>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///tmp/hyslop.200606.ps"
+                   NC:Name="hyslop.200606.ps"
+                   NC:ProgressMode="none">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:143/fetch%3EUID%3E/INBOX%3E466?part=1.2&amp;type=application/postscript&amp;filename=hyslop.200606.ps"/>
+    <NC:File RDF:resource="file:///tmp/hyslop.200606.ps"/>
+    <NC:DownloadState NC:parseType="Integer">1</NC:DownloadState>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///home/kevinr/tmp/gotvoiceSPFSID09302007.zip"
+                   NC:Name="gotvoiceSPFSID09302007.zip">
+    <NC:URL RDF:resource="imap://kevinr@mail.gotvoice.com:993/fetch%3EUID%3E/INBOX%3E23307?section=2?part=1.2"/>
+    <NC:File RDF:resource="file:///home/kevinr/tmp/gotvoiceSPFSID09302007.zip"/>
+    <NC:DownloadState NC:parseType="Integer">-1</NC:DownloadState>
+  </RDF:Description>
+</RDF:RDF>

@@ -1,0 +1,42 @@
+// <!-- <mdb:mork:z v="1.4"/> -->
+< <(a=c)> // (f=iso-8859-1)
+  (B8=retainBy)(B9=daysToKeepHdrs)(BA=numHdrsToKeep)(BB=daysToKeepBodies)
+  (BC=keepUnreadOnly)(BD=useServerDefaults)(BE=cleanupBodies)
+  (BF=ns:msg:db:row:scope:ops:all)(C0=ns:msg:db:table:kind:ops)
+  (C1=current-view)(80=ns:msg:db:row:scope:msgs:all)(81=subject)
+  (82=sender)(83=message-id)(84=references)(85=recipients)(86=date)
+  (87=size)(88=flags)(89=priority)(8A=label)(8B=statusOfset)(8C=numLines)
+  (8D=ccList)(8E=msgThreadId)(8F=threadId)(90=threadFlags)
+  (91=threadNewestMsgDate)(92=children)(93=unreadChildren)
+  (94=threadSubject)(95=numRefs)(96=msgCharSet)
+  (97=ns:msg:db:table:kind:msgs)(98=ns:msg:db:table:kind:thread)
+  (99=ns:msg:db:table:kind:allthreads)
+  (9A=ns:msg:db:row:scope:threads:all)(9B=threadParent)(9C=threadRoot)
+  (9D=msgOffset)(9E=offlineMsgSize)
+  (9F=ns:msg:db:row:scope:dbfolderinfo:all)
+  (A0=ns:msg:db:table:kind:dbfolderinfo)(A1=numMsgs)(A2=numNewMsgs)
+  (A3=folderSize)(A4=expungedBytes)(A5=folderDate)(A6=highWaterKey)
+  (A7=mailboxName)(A8=UIDValidity)(A9=totPendingMsgs)
+  (AA=unreadPendingMsgs)(AB=expiredMark)(AC=version)
+  (AD=fixedBadRefThreading)(AE=onlineName)(AF=folderName)(B0=charSet)
+  (B1=LastPurgeTime)(B2=sortType)(B3=sortOrder)(B4=viewFlags)
+  (B5=viewType)(B6=imapFlags)(B7=charSetOverride)>
+
+<(80=1)(81=Trash)(4D0=Thu Apr 17 22:24:33 2008)(2D7=2)(83=0)(84=12)
+  (85=ee00)>
+{1:^9F {(k^A0:c)(s=9)} 
+  [1(^AC=1)(^AD=1)(^AE^81)(^A7^81)(^B1^4D0)(^A9=2)(^AA=0)(^B2=12)(^B3=1)
+    (^B4=0)(^B5=0)(^B6^85)(^A8=1)(^A1=0)(^A2=0)]}
+
+@$${CA{@
+<(4D1=Fri Apr 18 06:24:34 2008)>
+[1:^9F(^B1^4D1)]
+@$$}CA}@
+
+@$${CB{@
+<(4D2=Fri Apr 18 14:24:36 2008)>
+[1:^9F(^B1^4D2)]
+@$$}CB}@
+
+@$${CC{@
+@$$}CC}@

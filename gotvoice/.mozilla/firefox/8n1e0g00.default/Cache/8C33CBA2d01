@@ -1,0 +1,555 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Scheduled Backups With Rsyncbackup On Debian Etch | HowtoForge - Linux Howtos and Tutorials</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<base href="http://www.howtoforge.com/" />
+<style type="text/css" media="all">@import "/misc/drupal.css";</style><style type="text/css">@import url(/modules/copyright/copyright.css);</style>
+
+<link rel="stylesheet" type="text/css" media="screen" href="/modules/taxonomy_dhtml/menuExpandable3.css" />
+<script type="text/javascript" src="/modules/taxonomy_dhtml/menuExpandable3.js"></script>
+
+  <style type="text/css">
+    .trip-search-form input.form-submit {
+       margin-bottom: 1em;
+    }
+    .trip-search-more-link {
+      font-weight: bold;
+      font-style: italic;
+    }
+    .trip-search-excerpt {
+      font-weight: bold;
+    }
+  </style>
+<style type="text/css" media="all">@import "/modules/userinfo/userinfo.css";</style>
+<style type="text/css" media="screen">
+  <!--
+   @import url(/themes/htf_glass/modules.css);
+   @import url(/themes/htf_glass/nav.css);
+   @import url(/themes/htf_glass/layout.css);
+  -->
+ </style>
+<style type="text/css" media="all">@import "/themes/htf_glass/style.css";</style>
+<script type="text/javascript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+<script type="text/javascript">
+<!--
+if (top.location != self.location)
+top.location = self.location;
+//-->
+</script>
+<meta name="verify-v1" content="Oq8ZMOLKw+gmUf/31qy3xciuZ2pyp2ybp5AkDpCs5eY=" />
+<script type="text/javascript" src="/jquery/jquery-latest.pack.js"></script>
+<script type="text/javascript" src="/jquery/thickbox-compressed.js"></script>
+<script type="text/javascript">
+<!--
+document.write('<style type="text/css" media="all">@import "/jquery/thickbox.css";</style>');
+//-->
+</script>
+</head>
+<body >
+<!-- closes #header-->
+<!-- START: HEADER -->
+<div id="wrapper1">
+ <div id="wrapper2">
+  <div class="header" id="header"><h1><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></h1>
+   <div class="headerpadding">
+         <div id="site-name"><a href="" title="Home"><img src="/themes/htf_glass/images/howtoforge_logo_trans.gif"  alt="HowtoForge - Linux Howtos and Tutorials Logo" /></a></div>
+    
+    
+    <ul id="primary">
+         <li><a href="linux-books">Linux Books</a></li>
+         <li><a href="subscription">Subscription</a></li>
+         <li><a href="add_howto">Contribute</a></li>
+         <li><a href="trip_search">Search</a></li>
+         <li><a href="http://lxer.com" target="_blank">News</a></li>
+         <li><a href="forums">Forums</a></li>
+         <li><a href="howtos">Howtos</a></li>
+     </ul>
+
+     <form action="/trip_search" method="post" id="search">
+      <div><input class="form-text" type="text" size="15" value="" name="keys" id="keys" style="margin-bottom:8px;" /> <input type=image src="themes/htf_glass/images/search.gif" />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="forums/register.php" rel="nofollow"><img src="themes/htf_glass/images/join_small.gif" width="40" height="24" border="0" alt="Join HowtoForge"></a>&nbsp;&nbsp;&nbsp;<a href="index.php?q=user/login" rel="nofollow"><img src="themes/htf_glass/images/login_small.gif" width="48" height="24" border="0" alt="Login"></a>
+            &nbsp;&nbsp;&nbsp;<a href="add_howto"><img src="themes/htf_glass/images/contribute_small.gif" width="84" height="24" border="0" alt="Contribute"></a>
+            &nbsp;&nbsp;&nbsp;<a href="subscription"><img src="themes/htf_glass/images/subscribe_small.gif" width="78" height="24" border="0" alt="Subscribe"></a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="feed.rss"><img src="themes/htf_glass/images/rss.gif" width="24" height="24" border="0" /></a></div>
+     </form>
+    </div>
+   </div>
+<!-- END: HEADER-->
+<hr class="hide" />
+    <div class="columns">
+            <div class="leftcolumn sidebar" id="sidebar-left">
+        <div class="leftpadding">
+            <div class="block block-sidecontent" id="block-sidecontent-0">
+<h2 style="font-size: 140%;font-weight: bold;">Options For This Howto</h2>
+<div class="content"><table width="140"><tr><td><div style="background: transparent url(themes/htf_glass/images/star_vmware_image_red.gif) no-repeat top;"><p><b>VMware Images:</b></p><ul style="padding-top: 60px;list-style-image:url(images/pointer.gif);"><li><a href="/download.php?id=3401_0" rel="nofollow">Rsyncbackup - Main Server</a> (750.4 MB) (03/27/2008)</li><li><a href="/download.php?id=3401_1" rel="nofollow">Rsyncbackup - Backup Server</a> (672.8 MB) (03/27/2008)</li></ul><p style="margin-top:10px;"><ul><li style="margin-bottom:5px;"><a href="/import_vmware_images">VMware Image Import Guide</a></li><li><a href="/list-of-downloadable-vmware-images">List of all VMware Images</a></li></ul></p></div>
+<hr size="1" /><ul style="list-style-image:url(images/pointer.gif);">
+<li><a href="/forums">Free Support</a><br /></li>
+<li><a target="_blank" href="http://www.projektfarm.de/contact_nav.html">Paid Support</a></li>
+</ul></td></tr></table></div>
+</div>
+<div class="block block-user" id="block-user-1">
+<h2 style="font-size: 140%;font-weight: bold;">Navigation</h2>
+<div class="content"><div class="menu">
+<ul>
+<li class="expanded"><a href="howtos" title="">Howtos</a>
+<ul>
+<li class="expanded"><a href="howtos/linux" title="">Linux</a>
+<ul>
+<li class="leaf"><a href="howtos/linux/centos">CentOS</a></li>
+<li class="leaf"><a href="howtos/linux/debian">Debian</a></li>
+<li class="leaf"><a href="howtos/linux/fedora">Fedora</a></li>
+<li class="leaf"><a href="howtos/linux/kernel">Kernel</a></li>
+<li class="leaf"><a href="howtos/linux/mandriva">Mandriva</a></li>
+<li class="leaf"><a href="howtos/linux/pclinuxos">PCLinuxOS</a></li>
+<li class="leaf"><a href="howtos/linux/suse">SuSE</a></li>
+<li class="leaf"><a href="howtos/linux/ubuntu">Ubuntu</a></li>
+
+</ul>
+</li>
+<li class="leaf"><a href="howtos/apache">Apache</a></li>
+<li class="leaf"><a href="howtos/backup">Backup</a></li>
+<li class="leaf"><a href="howtos/control-panels">Control Panels</a></li>
+<li class="leaf"><a href="howtos/dns">DNS</a></li>
+<li class="leaf"><a href="howtos/desktop">Desktop</a></li>
+<li class="expanded"><a href="howtos/email" title="">Email</a>
+<ul>
+<li class="leaf"><a href="howtos/email/antispam-antivirus">Anti-Spam/Virus</a></li>
+<li class="leaf"><a href="howtos/email/postfix">Postfix</a></li>
+<li class="leaf"><a href="howtos/email/procmail">Procmail</a></li>
+<li class="leaf"><a href="howtos/email/sendmail">Sendmail</a></li>
+
+</ul>
+</li>
+<li class="leaf"><a href="howtos/ftp">FTP</a></li>
+<li class="leaf"><a href="howtos/high-availability">High-Availability</a></li>
+<li class="leaf"><a href="howtos/monitoring">Monitoring</a></li>
+<li class="leaf"><a href="howtos/mysql">MySQL</a></li>
+<li class="expanded"><a href="howtos/programming" title="">Programming</a>
+<ul>
+<li class="leaf"><a href="howtos/programming/c-cplusplus">C/C++</a></li>
+<li class="leaf"><a href="howtos/programming/php">PHP</a></li>
+
+</ul>
+</li>
+<li class="leaf"><a href="howtos/samba">Samba</a></li>
+<li class="expanded"><a href="howtos/security" title="">Security</a>
+<ul>
+<li class="leaf"><a href="howtos/security/antispam-antivirus">Anti-Spam/Virus</a></li>
+
+</ul>
+</li>
+<li class="leaf"><a href="howtos/virtualization">Virtualization</a></li>
+<li class="leaf"><a href="howtos/other">Other</a></li>
+<li class="leaf"><a href="howtos/freebsd">FreeBSD</a></li>
+<li class="leaf"><a href="howtos/commercial">Commercial</a></li>
+
+</ul>
+</li>
+<li class="collapsed"><a href="mini-howtos" title="">Mini-Howtos</a></li>
+<li class="leaf"><a href="forums" title="">Forums</a></li>
+<li class="leaf"><a href="image" title="">Screenshots</a></li>
+<li class="leaf"><a href="aggregator/sources/1" title="">News</a></li>
+<li class="leaf"><a href="trip_search" title="">Search</a></li>
+<li class="collapsed"><a href="add_howto" title="">Contribute</a></li>
+<li class="leaf"><a href="subscription" title="">Subscription</a></li>
+<li class="leaf"><a href="linux-books" title="">Linux Books</a></li>
+<li class="leaf"><a href="user" title="">Login</a></li>
+<li class="leaf"><a href="sitemap" title="">Site Map/RSS Feeds</a></li>
+<li class="leaf"><a href="advertise" title="Advertise On HowtoForge">Advertise</a></li>
+<li class="leaf"><a href="forums/sendmessage.php" title="">Contact</a></li>
+<li class="leaf"><a href="disclaimer" title="Disclaimer">Disclaimer</a></li>
+<li class="leaf"><a href="imprint" title="Imprint">Imprint</a></li>
+
+</ul>
+</div></div>
+</div>
+<div class="block block-user" id="block-user-0">
+<h2 style="font-size: 140%;font-weight: bold;">User login</h2>
+<div class="content"><div class="user-login-block">
+
+  <form action="/index.php?q=user/login" method="post"  onsubmit="md5hash(vb_login_password,vb_login_md5password,vb_login_md5password_utf)">
+
+  <script type="text/javascript" src="/forums/clientscript/vbulletin_md5.js"></script>
+
+  <div class="user-login-block">
+
+    <div class="form-item">
+
+    <label for="edit-vb_login_username">Username:</label><br />
+
+    <input maxlength="64" class="form-text" name="vb_login_username" id="navbar_username" size="15" value="" type="text">
+
+    </div>
+
+    <div class="form-item">
+
+    <label for="edit-vb_login_password">Password:</label><br />
+
+    <input class="form-text" maxlength="64" name="vb_login_password" id="edit-vb_login_password" size="15" value="" type="password">
+
+    </div>
+
+    <div class="form-item">
+
+    <label for="cb_cookieuser_navbar"><input type="checkbox" name="cookieuser" value="1" tabindex="103" id="cb_cookieuser_navbar" accesskey="c" />Remember Me?</label>
+
+    </div>
+
+    <input class="form-submit" name="op" value="Log in" type="submit">
+
+  </div>
+
+  <input name="s" value="" type="hidden">
+
+  <input name="do" value="login" type="hidden">
+
+  <input name="forceredirect" value="1" type="hidden">
+
+  <input name="vb_login_md5password" type="hidden">
+
+  <input name="vb_login_md5password_utf" type="hidden">
+
+  <input type="hidden" name="url" value="/" />
+
+  </form>
+
+<div class="item_list">
+
+  <a href="/forums/register.php">Create a new account</a><br />
+
+  <a href="/forums/login.php?do=lostpw">Request new password</a>
+
+</div>
+
+</div></div>
+</div>
+<script type="text/javascript">
+<!--
+document.write('<div class="block" style="padding-top:15px;padding-left:5px;">');
+//-->
+</script><script type="text/javascript"><!--
+google_ad_client = "pub-3043223216276099";
+google_ad_width = 137;
+google_ad_height = 90;
+google_ad_format = "120x90_0ads_al";
+//2007-02-07: Linkblock Hauptseite Menue
+google_ad_channel = "0347912882";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "003399";
+google_color_text = "000000";
+google_color_url = "008000";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script><script type="text/javascript">
+<!--
+document.write('</div>');
+//-->
+</script><div class="block block-user" id="block-user-3">
+<h2 style="font-size: 140%;font-weight: bold;">Who's online</h2>
+<div class="content">There are currently 18 users and 2230 guests online.</div>
+</div>
+<div class="block block-vbforumblocks" id="block-vbforumblocks-1">
+<h2 style="font-size: 140%;font-weight: bold;">HowtoForge Forums</h2>
+<div class="content"><div class="item-list"><ul><li><a href="http://www.howtoforge.com/forums/showthread.php?t=22322&amp;goto=newpost" >to take the backup</a>
+</li><li><a href="http://www.howtoforge.com/forums/showthread.php?t=22320&amp;goto=newpost" >KDE Desktop and installing a program</a>
+</li><li><a href="http://www.howtoforge.com/forums/showthread.php?t=22318&amp;goto=newpost" >I bought a book Linux admin from o'reily</a>
+</li><li><a href="http://www.howtoforge.com/forums/showthread.php?t=22317&amp;goto=newpost" >mysql master to master replication question</a>
+</li><li><a href="http://www.howtoforge.com/forums/showthread.php?t=22315&amp;goto=newpost" >IPTables and passive FTP</a>
+</li><li><a href="http://www.howtoforge.com/forums/showthread.php?t=22313&amp;goto=newpost" >RHE 4 Hangs when Loading SCSI Driver</a>
+</li><li><a href="http://www.howtoforge.com/forums/showthread.php?t=22312&amp;goto=newpost" >PHP not upgraded to 5.2.5 ???</a>
+</li><li><a href="http://www.howtoforge.com/forums/showthread.php?t=22310&amp;goto=newpost" >Corrupt Partition Boot Record</a>
+</li><li><a href="http://www.howtoforge.com/forums/showthread.php?t=22308&amp;goto=newpost" >ns1.faultrocks.com pings but.....</a>
+</li><li><a href="http://www.howtoforge.com/forums/showthread.php?t=22307&amp;goto=newpost" >TXT record in DNS</a>
+</li></ul></div></div>
+</div>
+<div class="block block-aggregator" id="block-aggregator-feed-1">
+<h2 style="font-size: 140%;font-weight: bold;">News</h2>
+<div class="content"><div class="item-list"><ul><li><a href="http://lxer.com/module/newswire/ext_link.php?rid=101753" target="_blank">ECS A780GM-A v1.0 On Linux</a>
+</li><li><a href="http://lxer.com/module/newswire/ext_link.php?rid=101729" target="_blank">The OSS Cure for What Ails Hospital IT</a>
+</li><li><a href="http://lxer.com/module/newswire/ext_link.php?rid=101760" target="_blank">Review: A New Spin on the Xfce Window Manager</a>
+</li><li><a href="http://lxer.com/module/newswire/ext_link.php?rid=101744" target="_blank">Customize your Firefox browser with Personas</a>
+</li><li><a href="http://lxer.com/module/newswire/ext_link.php?rid=101745" target="_blank">The missing five-minute Linux manual for morons</a>
+</li><li><a href="http://lxer.com/module/newswire/ext_link.php?rid=101740" target="_blank">Scribus - Desktop Publishing for Penguins</a>
+</li><li><a href="http://lxer.com/module/newswire/ext_link.php?rid=101758" target="_blank">Open Source programmers earn more and combat trade deficit</a>
+</li><li><a href="http://lxer.com/module/newswire/ext_link.php?rid=101733" target="_blank">All about Linux</a>
+</li><li><a href="http://lxer.com/module/newswire/ext_link.php?rid=101756" target="_blank">DistroWatch Weekly: Testing distributions, Mandriva 2008.1, gOS Space</a>
+</li><li><a href="http://lxer.com/module/newswire/ext_link.php?rid=101736" target="_blank">Ubuntu Weekly Newsletter Issue 86</a>
+</li></ul></div><div class="more-link"><a href="aggregator/sources/1" title="View this feed&#039;s recent news.">more</a></div></div>
+</div>
+<div class="block block-comment" id="block-comment-0">
+<h2 style="font-size: 140%;font-weight: bold;">Recent comments</h2>
+<div class="content"><div class="item-list"><ul><li><a href="samba_domaincontroller_setup_ubuntu_6.10_p5#comment-4234">426 Upgrade Required</a><br />17 hours 13 min ago</li><li><a href="ubuntu_debian_lamp_server#comment-4233">First Command</a><br />18 hours 48 min ago</li><li><a href="xcache-php5-apache2-opensuse10.3#comment-4232">Xcache RPM&amp;#039;s</a><br />22 hours 32 min ago</li><li><a href="creating_dd_images_with_air#comment-4231">Creating a dd/dcfldd Image Using Automated Image &amp;amp; Restore (AIR)</a><br />1 day 2 hours ago</li><li><a href="creating_dd_images_with_air#comment-4230">Creating a dd/dcfldd Image Using Automated Image &amp;amp; Restore (AIR)</a><br />1 day 2 hours ago</li><li><a href="creating_dd_images_with_air#comment-4229">Creating dd images with AIR on Ubuntu 7.10</a><br />1 day 2 hours ago</li><li><a href="placing-forced-ads-on-websites-with-htaccess-ispconfig#comment-4228">evil?</a><br />2 days 5 hours ago</li><li><a href="placing-forced-ads-on-websites-with-htaccess-ispconfig#comment-4227">evil!</a><br />3 days 3 hours ago</li><li><a href="vmware-server-1.0.4-fedora8-kernel-2.6.24#comment-4226">1.05</a><br />4 days 9 hours ago</li><li><a href="ispconfig-2.x-first-steps#comment-4225">Usefull howto</a><br />4 days 22 hours ago</li></ul></div></div>
+</div>
+<div class="block block-block" id="block-block-2">
+<h2 style="font-size: 140%;font-weight: bold;">Newsletter</h2>
+<div class="content"><form method="[object HTMLInputElement]" action="http://newsletter.howtoforge.com/index.php?" name="subscribe">
+<input name="lid" value="1" type="hidden" />
+<input name="list" value="subscription" type="hidden" />
+<input name="method" value="create" type="hidden" />
+<input name="fromext" value="1" type="hidden" />
+<input name="digest" value="0" type="hidden" />
+<table border="0" cellpadding="0" cellspacing="0" width="136">
+<tr>
+<td colspan="2">
+<b>Subscribe to HowtoForge Newsletter</b><br />
+and stay informed about our latest HOWTOs and projects.
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input name="email" value="enter email address" size="17" onclick="document.subscribe.email.value = ''" type="text" style="font-size:10px;" />
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input class="form-submit" name="Submit" value="Submit" border="0" type="submit" style="margin-top: 0;" />
+</td>
+</tr>
+<tr>
+<td colspan="2">
+(To unsubscribe from our newsletter send a blank email with the subject 'unsubscribe' to:
+<br /><a href="mailto:%6e%65%77%73%6c%65%74%74%65%72%40%68%6f%77%74%6f%66%6f%72%67%65%2e%63%6f%6d?subject=unsubscribe">newsletter<br />@howtoforge.com</a>.)
+</td>
+</tr>
+</table>
+</form></div>
+</div>
+<div class="block block-node" id="block-node-0">
+<h2 style="font-size: 140%;font-weight: bold;">Syndicate</h2>
+<div class="content"><div class="xml-icon" style="border-bottom:1px;"><a href="feed.rss"><img src="themes/htf_glass/images/rss_black.gif"  alt="XML feed" title="XML feed" /></a></div><div align="center"><a href="http://apps.facebook.com/htf_feed_reader" target="_blank"><img src="http://fb.howtoforge.com/fb/htf_feed_reader/htf_fb_app_logo_126x75.gif" width="126" height="75" boder="0"></a></div><div align="center"><a href="http://apps.facebook.com/htf_feed_reader" target="_blank">HowtoForge Feed for Facebook&reg;</a></div><div style="font-size:9px;" align="center">"Facebook" is a registered trademark of Facebook, Inc. All rights reserved.</div></div>
+</div>
+<div class="block block-block" id="block-block-6">
+<h2 style="font-size: 140%;font-weight: bold;">Books</h2>
+<div class="content"><div align="center"><script type="text/javascript" src="/js/amazon.js"></script>
+<script type="text/javascript" src="http://www.assoc-amazon.com/s/asw.js"></script></div></div>
+</div>
+          </div>
+        </div>
+            
+      <hr class="hide" />
+
+      <div class="centercolumn">
+        <div class="centerpadding">
+          <div class="main-content" id="main">
+          <div id="lang" style="float: right;"><b><img src="/images/uk_flag.gif" width="20" height="10" border="0" alt="HowtoForge - Linux Howtos in English" /> English</b>|<a href="http://www.howtoforge.de/" title="HowtoForge.de - Linux-Howtos auf Deutsch"><img src="/images/de_flag.gif" width="20" height="10" alt="HowtoForge.de - Linux-Howtos auf Deutsch" /> Deutsch</a></div>
+            
+                              <div id="breadcrumbs">
+                  <div class="breadcrumb"><a href="">Home</a> &raquo; <a href="howtos" title="">Howtos</a> &raquo; <a href="howtos/linux" title="">Linux</a> &raquo; <a href="howtos/linux/debian">Debian</a></div> <span class="breadcrumb">  &raquo;  Scheduled Backups With Rsyncbackup On Debian Etch</span>
+                </div>
+                                      <script type="text/javascript">
+<!--
+document.write('<div align="center">');
+//-->
+</script>
+<!-- BEGIN NetShelter Ad Tag for HowtoForge 728x90 -->
+<script language="JavaScript" type="text/javascript">
+if (!window.netshel_ord) { netshel_ord=Math.random()*10000000000000000;
+}
+if (!window.netshel_tile) { netshel_tile=1; }
+document.write('<script language="JavaScript" src="http://ad.doubleclick.net/adj/ns.howtoforge/howtos;sz=728x90;tile='+netshel_tile+';ord=' + netshel_ord + '?" type="text/javascript"></scr' + 'ipt>');
+netshel_tile++;
+</script>
+<!-- END AD TAG --><script type="text/javascript">
+<!--
+document.write('</div>');
+//-->
+</script>
+                          <h1 id="title">Scheduled Backups With Rsyncbackup On Debian Etch</h1>
+                                                            
+            <!-- start main content -->
+            <table border="0" cellspacing="0" cellpadding="0" width="98%">
+            <tr><td>
+            <div id="content">
+            
+<script type="text/javascript">
+<!--
+document.write('<div style="float: right; margin: 0 0 10px 10px;">');
+//-->
+</script>
+<!-- BEGIN NetShelter Ad Tag for HowtoForge 120x600,160x600 -->
+<script language="JavaScript" type="text/javascript">
+if (!window.netshel_ord) { netshel_ord=Math.random()*10000000000000000;
+}
+if (!window.netshel_tile) { netshel_tile=1; }
+document.write('<script language="JavaScript" src="http://ad.doubleclick.net/adj/ns.howtoforge/howtos;sz=120x600,160x600;tile='+netshel_tile+';ord=' + netshel_ord + '?" type="text/javascript"></scr' + 'ipt>');
+netshel_tile++;
+</script>
+<!-- END AD TAG --><script type="text/javascript">
+<!--
+document.write('</div>');
+//-->
+</script>
+<div class="KonaBody"><!-- begin content --><div class="node">
+
+   
+  <div class="info">Submitted by <a href="forums/member.php?u=19557" title="View user profile." rel="nofollow">o.meyer</a> (<a href="forums/private.php?do=newpm&amp;u=19557" title="Contact author." rel="nofollow">Contact Author</a>) (<a href="forums" title="Forums.">Forums</a>) on Thu, 2008-04-10 18:07.<span class="taxonomy"> :: <a href="sitemap/linux/debian">Debian</a> | <a href="sitemap/backup">Backup</a></span></div>
+  <div class="content">
+  <h2>Scheduled Backups With Rsyncbackup On Debian Etch</h2>
+<p>Version 1.0<br />
+Author: Oliver Meyer &lt;o [dot] meyer [at] projektfarm [dot] de&gt;<br />
+Last edited 03/26/2008</p>
+
+<p>This document describes how to set up and configure rsyncbackup on Debian Etch. Rsyncbackup is a Perl script that cooperates with rsync. It's easy to configure and able to create scheduled backups (partial and incremental backups).</p><script type="text/javascript">
+<!--
+document.write('<div align="center">');
+//-->
+</script><!-- BEGIN NetShelter Ad Tag for HowtoForge 300x250,336x280 -->
+<script language="JavaScript" type="text/javascript">
+if (!window.netshel_ord) { netshel_ord=Math.random()*10000000000000000;
+}
+if (!window.netshel_tile) { netshel_tile=1; }
+document.write('<script language="JavaScript" src="http://ad.doubleclick.net/adj/ns.howtoforge/howtos;sz=300x250,336x280;tile='+netshel_tile+';ord=' + netshel_ord + '?" type="text/javascript"></scr' + 'ipt>');
+netshel_tile++;
+</script>
+<!-- END AD TAG --><script type="text/javascript">
+<!--
+document.write('</div>');
+//-->
+</script>
+
+<p>This howto is a practical guide without any warranty - it doesn't cover the theoretical backgrounds. There are many ways to set up such a system - this is the way I chose.</p>
+
+<p>&nbsp;</p>
+
+<h3>1 Preliminary Note</h3>
+<p>I used two standard Debian systems for this howto. The first system is the main server (<span class="system">192.168.0.101</span>), the second system is the backup server (<span class="system">192.168.0.102</span>) where the backups will be stored.</p>
+
+<p>&nbsp;</p>
+
+<h3>2 Needed Packages</h3>
+<h4>2.1 Main Server</h4>
+<p class="command">apt-get install openssh-client openssh-server rsync unzip</p>
+
+<p>&nbsp;</p>
+
+<h4>2.2 Backup Server</h4>
+<p class="command">apt-get install openssh-client openssh-server rsync</p>
+
+<p>&nbsp;</p>
+
+<h3>3 SSH Keyfiles</h3>
+<p>Now let's generate SSH keyfiles that we'll later use in conjunction with rsyncbackup to authenticate against the backup server. Please note that it's also possible to generate the keyfiles with the rsyncbackup script (<span class="system">rsyncbackup -r</span>) - I chose this way.</p>
+
+<p>&nbsp;</p>
+
+<h4>3.1 Backup Server</h4>
+<p>Create the keyfiles - hit enter if you're asked to enter a passphrase.</p>
+
+<p class="command">ssh-keygen -b 4096 -t rsa -C "Backup Key Comment"</p>
+
+<p>The output should look like this:</p>
+
+<p class="system">Enter file in which to save the key (/root/.ssh/id_rsa):<br />
+Created directory '/root/.ssh'.<br />
+Enter passphrase (empty for no passphrase):<br />
+Enter same passphrase again:<br />
+Your identification has been saved in /root/.ssh/id_rsa.<br />
+Your public key has been saved in /root/.ssh/id_rsa.pub.<br />
+The key fingerprint is:<br />
+23:e5:b2:2e:86:2f:e9:bc:76:56:83:6a:8d:f0:d6:23 Backup Key Comment</p>
+
+<p>Now we have to add the public key to the list of authorized keys.</p>
+
+<p class="command">cat /root/.ssh/id_rsa.pub &gt;&gt; /root/.ssh/authorized_keys</p>
+
+<p>After that we copy the private key to the main server.</p>
+
+<p class="command">scp /root/.ssh/id_rsa root@192.168.0.101:/root/.ssh/</p>
+
+<p>As a last resort we create folders for the backups.</p>
+
+<p class="command">mkdir -p /backups/configs/<br />
+mkdir /backups/logs/ /backups/manual/</p>
+
+<p>&nbsp;</p>
+
+<h4>3.2 Main Server</h4>
+<p>Now let's test if all went well. You should be able to log in to the backup server via:</p>
+
+<p class="command">ssh -i /root/.ssh/id_rsa root@192.168.0.102</p>
+
+<p>Afterwards log out.</p>
+
+<p class="command">exit</p>
+
+<p>&nbsp;</p>
+
+<h3>4 Rsyncbackup On The Main Server</h3>
+<h4>4.1 Get It</h4>
+<p class="command">cd /tmp/<br />
+wget http://rsync-backup.googlecode.com/files/rsyncbackup.zip<br />
+unzip -d rsyncbackup rsyncbackup.zip</p>
+
+<p>&nbsp;</p>
+
+<h4>4.2 Script &amp; Configuration Files</h4>
+<p>Now we have to copy the rsyncbackup script to the right place ...</p>
+
+<p class="command">cp /tmp/rsyncbackup/rsyncbackup/rsyncbackup /usr/local/bin/<br />
+chmod 700 /usr/local/bin/rsyncbackup</p>
+
+<p>... before we create the configuration files.</p>
+
+<p class="command">mkdir /etc/rsyncbackup/<br />
+mkdir /var/log/rsyncbackup/<br />
+touch /etc/rsyncbackup/config.conf /etc/rsyncbackup/destinations.conf \<br />
+/etc/rsyncbackup/sources.conf /etc/rsyncbackup/backupset.conf<br />
+ln -s /var/log/rsyncbackup/ /etc/rsyncbackup/logs</p>
+<div class="book"><div class="tree"><div class="menu"><ul><li class="leaf"><a href="scheduled-backups-with-rsyncbackup-debian-etch-p2">Scheduled Backups With Rsyncbackup On Debian Etch - Page 2</a></li></ul></div></div><div class="nav"> <div class="links"><div class="prev">&nbsp;</div><div class="next"><a href="scheduled-backups-with-rsyncbackup-debian-etch-p2" title="View the next page.">next</a></div></div> <div class="titles"><div class="next">Scheduled Backups With Rsyncbackup On Debian Etch - Page 2</div></div></div></div><br /><div class="copyright-footer">Copyright © 2008 Oliver Meyer<br />All Rights Reserved.
+</div>  </div>
+      <div class="links"><img src="/images/print.gif" border="0" alt=""> print: <a href="subscription" title="Print this page.">this</a> | <a href="subscription" title="Print all pages of this book.">all</a> page(s) | <a href="http://www.howtoforge.com/forums/login.php">login</a> or <a href="http://www.howtoforge.com/forums/register.php">register</a> to post comments | <a href="emailpage&amp;nid=3401" title="Email this page to a friend"><img src="/images/email.gif" border="0" alt="Email this page to a friend"></a> <a href="emailpage&amp;nid=3401" title="Email this page to a friend">email this page</a> | <a href="subscription" title="View and print node as pdf."><img src="/images/pdf.gif" border="0" alt="view as pdf"></a> <a href="subscription" title="View and print node as pdf.">view as pdf</a></div>
+  
+<div class="relatedlinks" id="relatedlinks">
+<h2 class="title"><span style="margin-top:5px;font-weight:bold">Related Tutorials</span></h2>
+<div class="content"><ul class="related-links"><li><a mce_real_href="/ftp-backups-with-duplicity-ftplicity-debian-etch" title="Creating Encrypted FTP Backups With duplicity And ftplicity On Debian Etch" href="/ftp-backups-with-duplicity-ftplicity-debian-etch">Creating Encrypted FTP Backups With duplicity And ftplicity On Debian Etch</a></li><li><a mce_real_href="/linux_backuppc" title="Back Up Linux And Windows Systems With BackupPC" href="/linux_backuppc">Back Up Linux And Windows Systems With BackupPC</a></li><li><a mce_real_href="/rsync_incremental_snapshot_backups" title="Create Incremental Snapshot-style Backups With rSync And SSH" href="/rsync_incremental_snapshot_backups">Create Incremental Snapshot-style Backups With rSync And SSH</a></li><li><a mce_real_href="/mirroring_with_rsync" title="Mirror Your Web Site With rsync" href="/mirroring_with_rsync">Mirror Your Web Site With rsync</a></li><li><a mce_real_href="/linux_rdiff_backup" title="Automated Backups With rdiff-backup" href="/linux_rdiff_backup">Automated Backups With rdiff-backup</a></li></ul>
+</div>
+</div>
+</div><a id="comment"></a>
+<table width="100%" style="border: 1px solid #808080; background-color: #FFF4B7;"><tr><td style="background-color: #FFF4B7; padding: 7px; padding-top: 15px; padding-left: 15px;"><img src="/images/please_note.gif" border="0" alt=""></td><td style="font-size: 12px; font-style: italic; background-color: #FFF4B7; padding-left: 7px; padding-top: 15px; padding-right: 15px; padding-bottom: 15px;">Please do not use the comment function to ask for help! If you need help, please use our forum: <a href="http://www.howtoforge.com/forums">http://www.howtoforge.com/forums</a></td></tr></table><table width="100%" style="border: 1px solid #808080; background-color: #FFF4B7;"><tr><td style="background-color: #FFF4B7; padding: 7px; padding-top: 15px; padding-left: 15px;"><img src="/images/please_note.gif" border="0" alt=""></td><td style="font-size: 12px; font-style: italic; background-color: #FFF4B7; padding-left: 7px; padding-top: 15px; padding-right: 15px; padding-bottom: 15px;">Comments will be published after administrator approval.</td></tr></table><form method="post" action="comment"><div>
+<input type="hidden" name="edit[nid]" value="3401" />
+</div></form><!-- end content --></div>            </div>
+            </td></tr></table>
+            <!-- end main content -->
+          </div><!-- main -->
+        </div>
+      </div>
+    </div>
+    <div class="clearing"></div>
+    <hr class="hide" />
+<!-- START: FOOTER-->
+    <div id="footer" class="footer">
+
+        <p><center><a href="/">Howtos</a> | <a href="http://www.howtoforge.com/mini-howtos">Mini-Howtos</a> | <a href="http://www.howtoforge.com/forums">Forums</a> | <a href="http://www.howtoforge.com/image">Screenshots</a> | <a href="http://lxer.com/" target="_blank">News</a> | <a href="http://www.howtoforge.com/trip_search">Search</a> | <a href="http://www.howtoforge.com/add_howto">Contribute</a><br><a href="http://www.howtoforge.com/subscription">Subscription</a> | <a href="http://www.howtoforge.com/advertise">Advertise</a> | <a href="/forums/sendmessage.php">Contact</a> | <a href="http://www.howtoforge.com/disclaimer">Disclaimer</a> | <a href="http://www.howtoforge.com/imprint">Imprint</a></center></p>
+
+      <br /><div class="copyright-footer">Copyright © 2008 HowtoForge - Linux Howtos and Tutorials<br />All Rights Reserved.
+</div>    </div>
+<!-- END: FOOTER -->
+        </div><!-- wrapper -->
+</div><!-- outer_wrapper -->
+
+<!--<script src="http://www.spotplex.com/send/474129/no-image.js" type="text/javascript"></script>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script><script type="text/javascript"> _uacct="UA-2155872-1";  urchinTracker(); </script>//-->
+<!-- Kontera ContentLink(TM);-->
+<script type='text/javascript'>
+var dc_AdLinkColor = '#003399' ;
+var dc_UnitID = 14 ;
+var dc_PublisherID = 40887 ;
+var dc_adprod = 'ADL' ;
+</script>
+<script type='text/javascript' src='http://kona.kontera.com/javascript/lib/KonaLibInline.js'></script>
+<!-- Kontera ContentLink(TM) -->
+</body>
+</html>

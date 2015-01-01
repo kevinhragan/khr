@@ -1,0 +1,5 @@
+tested 443
+firewall entries for port 80, 443
+update nagios ips
+update internal dns for www
+

@@ -1,0 +1,54 @@
+debug dedup
+flip over asterisk to use new mon
+wack old files on asterisk
+reorganize, wiki-ize files
+logwatch on mail
+setup third name server
+document firewall setup
+update asterisk
+    nile - replaced lib issue
+fix khufu networking; build khufu as firewall
+replace osiris with khufu
+document domain registration; add to cert info
+
+Pending:
+research mysql failover/loadsharing
+turn on nagios alerts for horus
+change icecream mysql backup to synced backup
+
+After funding:
+handle Tom's connection to kirkland firewall
+
+Low priority:
+backup ra homedirs (?)
+fix gvadmin mail program
+figure out/document procedure for mysql failure
+sound on my pc
+make perl mail bounce script work
+wireshark on asterisk box; ipsec?
+document nagios errors and handlers
+augment/enhance machinedb
+clean up error messages on kirkland ipcop
+check into shared data for hb use
+update cfengine on wiki
+man pages misprint; localhost, remote (?)
+try rebuilding database with backed up files
+try nfs mount across firewall; trace packets for big ping sea -> hawaii; ibackup failure
+fix funky mrtg midnight messages
+fix lagoon menu so right kind of xterm starts
+document ipcop backup
+a secondary mail server for gotvoice.com
+check stats on dns machines
+make mail accept mail for mail.gotvoice.com
+
+Later:
+verify group ownership of log files in cherry|fig|yam:/var/log/apache
+fix 3dm2 startup script on potato
+get more zimbra licenses
+mango mrtg, nagios config as spooler
+write script to generate MRTG conf
+script to add remote access to ipmi hosts/fix arp requests for bogus ips
+
+Longterm:
+get rid of all 192.168 address's
+setup ipmi on all capable servers

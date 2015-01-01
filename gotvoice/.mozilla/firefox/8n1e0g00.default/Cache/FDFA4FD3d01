@@ -1,0 +1,4697 @@
+
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html>
+		<head>
+		<link rev="x-refresh" href="/cgi-bin/findweather/getForecast?query=seattle&MR=1" />
+		<meta name="ICBM" content="47.61167908, -122.33325958" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="pics-label" content='(pics-1.1 "http://www.icra.org/ratingsv02.html" comment "ICRAonline v2.0" l gen true for "http://www.wunderground.com" r (nz 0 vz 0 lz 0 oz 0 cz 0) "http://www.rsac.org/ratingsv01.html" l gen true for "http://www.wunderground.com"  r (n 0 s 0 v 0 l 0))' />
+  <title>Seattle, Washington (98101) Conditions &amp; Forecast : Weather Underground</title>
+		<link rel="alternate" type="application/rss+xml" title="Seattle, Washington RSS" href="http://www.wunderground.com/auto/rss_full/WA/Seattle.xml" />
+		<link rel="stylesheet" type="text/css" href="http://icons-pe.wxug.com/css/wu2_base.css?v=2008033101" />
+		<link rel="stylesheet" type="text/css" href="http://icons-pe.wxug.com/css/wu2_print.css?v=2008030602" media="print" />
+		<link rel="stylesheet" type="text/css" href="http://icons-pe.wxug.com/css/wu2_conditions.css?v=2008022701" />
+	<link rel="search" href="/scripts/opensearchdescription.xml" type="application/opensearchdescription+xml" title="Weather Underground" />
+		<script type="text/javascript" src="/stationmaps/WeatherValueDisplay.js"></script>
+		<script type="text/javascript" src="/stationmaps/rtupdate.js"></script>
+		<script type="text/javascript" src="/stationmaps/ootimer.js"></script>
+		<script type="text/javascript" src="/stationmaps/windanimation.js"></script>
+		<script type="text/javascript" src="/scripts/swfobject.js"></script>
+		<script type="text/javascript" src="/scripts/addtofavorites.js"></script>
+		<script type="text/javascript" src="/scripts/mootools-wu-1.11.js"></script>
+	<script language="javascript" type="text/javascript">
+		<!--
+			function bodyOnLoad()
+			{
+			
+				GetUpdateConds();
+			
+			}
+		//-->
+	</script>
+		<script language="javascript" type="text/javascript" src="http://icons-pe.wxug.com/scripts/tablesort.js"></script>
+		<!-- PUT THIS TAG IN THE head SECTION -->
+		<script type="text/javascript" src="http://partner.googleadservices.com/gampad/google_service.js">
+		</script>
+		<script type="text/javascript">
+  GS_googleAddAdSenseService("ca-pub-0983527230240367");
+  GS_googleEnableAllServices();
+		</script>
+		<script type="text/javascript">
+  GA_googleAddSlot("ca-pub-0983527230240367", "300x250_ROS");
+		</script>
+		<script type="text/javascript">
+  GA_googleFetchAds();
+		</script>
+		<!-- END OF TAG FOR head SECTION -->
+</head>
+<!-- Iterate ad calls
+	
+		CAMPAIGN - CNTW-00154  - 
+	
+		CAMPAIGN - CNTW-00151 RightTower - 
+	
+		CAMPAIGN -  popup - 
+	
+		CAMPAIGN -  SecondRightTower - 
+	
+		CAMPAIGN - CNTW-00153 Box - 
+	
+		CAMPAIGN -   - 
+	
+		CAMPAIGN - CNTW-00154 468x60_0 - 
+	
+		CAMPAIGN - CNTW-00151 RightTower_0 - 
+	
+		CAMPAIGN - CNTW-00153 Box_0 - 
+	
+--->
+<body onload="bodyOnLoad()">
+<a name="top"></a>
+<table cellpadding="0" cellspacing="0" class="full" id="topNav">
+	<tr>
+		<td class="vaT taC">
+		<div class="leftBar">
+		<div><a href="/"><img src="http://icons-pe.wxug.com/graphics/smash/wunderTransparent3.gif" width="120" height="70" alt="Weather Underground" /></a></div>
+		<div class="sm"><a href="http://m.wund.com/">Mobile</a> - <a href="http://i.wund.com/">iPhone</a></div>
+		</div>
+		</td>
+		<td class="vaM">
+		<form action=/cgi-bin/findweather/getForecast name="wxsearch">
+		<div class="taJ">Find the Weather for any <b>City</b>, <b>State</b> or <b>ZIP Code</b>, or <b>Airport Code</b> or <b>Country</b></div>
+		<table cellspacing="2" cellpadding="0">
+		<tr>
+		<td><input type="text" name="query" id="wxQuery" /></td>
+		<td>
+		<a href="javascript: document.wxsearch.submit();"><img src="http://icons-pe.wxug.com/graphics/smash/blue_search.gif" width="22" alt="Fast Forecast" height="22" /></a>
+		<noscript>
+		<input type="submit" value="Fast Forecast" />
+		</noscript>
+		</td>
+		</tr>
+		</table>
+		</form>
+		</td>
+		<td class="vaM taR full">
+		<script language="javascript" type="text/javascript">
+		if (screen.width >= 1024)
+		{
+		document.write('<a href="/wximage/viewsingleimage.html?mode=singleimage&handle=ronty&number=139&gallery=CURRWEATHER"><img src="http://icons-pe.wxug.com/data/wximagenew/r/ronty/139-banner.jpg" width="640" height="80" alt="View More Weather Photos" /></a>');
+		}
+		else
+		{
+		document.write('&nbsp;');
+		}
+		</script>
+		</td>
+	</tr>
+</table>
+<table cellpadding="0" cellspacing="0" class="full" id="wrapperTable">
+	<tr>
+		<td>
+		<div class="taC leftBar">
+		<a href="/members/signup.asp"><img src="http://icons-pe.wxug.com/graphics/wu2/signup.png" width="100" height="30" alt="Signup" /></a>
+		</div>
+		</td>
+		<td colspan="2" class="full" id="featuresBar">
+		<table cellpadding="0" cellspacing="0">
+	<tr>
+		<td class="topLeft"><div></div></td>
+		<td class="b">Features:</td>
+		<td class="topDiv"><div></div></td>
+		<td class="topLink"><a href="/wximage/viewimages.html">Wunder Photos</a></td>
+		<td class="topSep"><div></div></td>
+		<td class="topLink"><a href="/radar/map.asp">NEXRAD Radar</a></td>
+		<td class="topSep"><div></div></td>
+		<td class="topLink"><a href="/radar/mosaic.asp">Regional Radar</a></td>
+		<td class="topSep"><div></div></td>
+		<td class="topLink"><a href="/satellite/vis/1k/US.html">Zoom Satellite</a></td>
+		<td class="topSep"><div></div></td>
+		<td class="topLink"><a href="/US/Region/Northwest/Temperature.html">Maps</a></td>
+		<td class="topSep"><div></div></td>
+		<td class="topLink"><a href="/tripplanner/index.asp">Trip Planner</a></td>
+		<td class="topSep"><div></div></td>
+		<td class="topLink"><a href="/history/">History</a></td>
+		<td class="topSep"><div></div></td>
+		<td class="topLink"><a href="/download/index.asp">Downloads</a></td>
+		<td class="topSep"><div></div></td>
+		<td class="topLink"><a href="/sports/">Sports</a></td>
+		<td class="topSep"><div></div></td>
+		<td class="topLink"><a href="/tornado/">Tornadoes</a></td>
+		<td class="topRight"><div></div></td>
+	</tr>
+	<tr>
+		<td class="midDiv" colspan="23"><img src="http://icons-pe.wxug.com/graphics/smash/r3c1.gif" width="27" height="1" alt="" /></td>
+	</tr>
+</table>
+<table cellpadding="0" cellspacing="0">
+	<tr class="taC">
+		<td class="botLeft"><div></div></td>
+		<td class="bgG"><a href="/tropical/">Tropical / Hurricane</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/MAR/">Marine</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/severe.asp">Severe</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/sky/index.asp">Astronomy</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/ski/">Ski</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/education/education.asp">Education</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/webcams/index.html">Web Cams</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/blog/index.html?range=updated">Blogs</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/climate/">Climate Change</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/favorites/edit.html">Favorites</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/weatherstation/">Personal Weather Stations</a></td>
+		<td class="botRight"><div></div></td>
+	</tr>
+	<tr>
+		<td class="lowLeft"><img src="http://icons-pe.wxug.com/graphics/smash/r5c1.gif" width="27" height="2" alt="" /></td>
+		<td class="lowRight" colspan="22"><img src="http://icons-pe.wxug.com/graphics/smash/r5c5.gif" width="18" height="2" alt="" /></td>
+	</tr>
+</table>
+		</td>
+	</tr>
+	<tr>
+		<td class="vaT">
+		<div class="leftBar">
+		<div class="none taC"><a href="/members/signup.asp"><img src="http://icons-pe.wxug.com/graphics/sign-up10.gif" width="110" height="75" alt="Sign Up" /></a></div>
+		<form action="/login/submitlogin.php" method="post" class="bm10">
+		<input type="hidden" name="referer" value="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=seattle" />
+		<div class="smB">Email:</div>
+		<div class="taC"><input type="text" name="email" autocomplete="on" value="" style="width: 120px;" /></div>
+		<div class="smB">Password:</div>
+		<div class="taC"><input type="password" autocomplete="off" name="password" onchange="this.form.submit()" style="width: 120px;" /></div>
+		<div class="taC"><input type="submit" value="Sign In" /></div>
+		</form>
+	<div class="leftButton">
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td><a href="/help/"><img src="http://icons-pe.wxug.com/graphics/smash/blue_help.gif" width="22" height="22" alt="Help & Support"></a></td>
+		<td class="full"><a href="/help/">Help & Support</a></td>
+		</tr>
+		</table>
+	</div>
+	<div class="leftButton">
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td><a href="/member/membersettings.html"><img src="http://icons-pe.wxug.com/graphics/smash/blue_M.gif" width="22" height="22" alt="Preferences"></a></td>
+		<td class="full"><a href="/member/membersettings.html">Preferences</a></td>
+		</tr>
+		</table>
+	</div>
+	<div class="leftButton">
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td><a href="http://printer.wunderground.com/cgi-bin/findweather/getForecast?query=seattle"><img src="http://icons-pe.wxug.com/graphics/smash/blue_printer.gif" width="22" height="22" alt="Print This Page"></a></td>
+		<td class="full"><a href="http://printer.wunderground.com/cgi-bin/findweather/getForecast?query=seattle">Print This Page</a></td>
+		</tr>
+		</table>
+	</div>
+	<div class="leftButton">
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td><a href="/wxradio/index.html"><img src="http://icons-pe.wxug.com/graphics/smash/blue_radio.gif" width="22" height="22" alt="Weather Radio"></a></td>
+		<td class="full"><a href="/wxradio/index.html">Weather Radio</a></td>
+		</tr>
+		</table>
+	</div>
+	<div class="leftButton">
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td><a href="/printer/cityforecast.asp?zip=98101"><img src="http://icons-pe.wxug.com/graphics/smash/blue_forecastFlyer.gif" width="22" height="22" alt="Forecast Flyer"></a></td>
+		<td class="full"><a href="/printer/cityforecast.asp?zip=98101">Forecast Flyer</a></td>
+		</tr>
+		</table>
+	</div>
+<h2>Wunder Photos</h2>
+<div class="taC"><a href="/wximage/viewsingleimage.html?mode=singleimage&handle=ronty&number=139&thumbstart=5&gallery=CURRWEATHER"><img src="http://icons-pe.wunderground.com/data/wximagenew/r/ronty/139-thumb.jpg" width="120" height="72" alt="" style="border: 1px solid #000; margin: 5px 0;" /></a></div>
+<div class="p5 bgW" style="border-top: 1px dotted #CCC;">
+	<div>View More Photos:</div>
+	<ul>
+		<li><a href="/wximage/imagesearch.html?citybox=on&city=Seattle&statebox=on&state=WA&submit=go">Seattle</a></li>
+		<li><a href="/wximage/imagesearch.html?statebox=on&state=WA&submit=go">Washington</a></li>
+	</ul>
+</div>
+	<h2>Favorites</h2>
+	<table cellspacing="0" cellpadding="1" class="full bgW">
+		<tr class="rowG">
+		<td colspan="2" class="sm">
+		<a href="/cgi-bin/findweather/getForecast?query=80014" class="nu b">Denver, CO</a>
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/cgi-bin/findweather/getForecast?query=80014"><img src="http://icons-pe.wxug.com/i/c/a/partlycloudy.gif" width="25" alt="Scattered Clouds" height="25" class="condIcon" /></a>
+		</td>
+		<td class="full vaM">
+		<div>
+  <nobr><b>52.3</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>11.3</b>&nbsp;&#176;C</nobr>
+</div>
+		<div>Scattered Clouds</div>
+		</td>
+		</tr>
+		<tr class="rowG">
+		<td colspan="2" class="sm">
+		<a href="/cgi-bin/findweather/getForecast?query=10001" class="nu b">New York, NY</a>
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/cgi-bin/findweather/getForecast?query=10001"><img src="http://icons-pe.wxug.com/i/c/a/clear.gif" width="25" alt="Clear" height="25" class="condIcon" /></a>
+		</td>
+		<td class="full vaM">
+		<div>
+  <nobr><b>58.0</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>14.4</b>&nbsp;&#176;C</nobr>
+</div>
+		<div>Clear</div>
+		</td>
+		</tr>
+		<tr class="rowG">
+		<td colspan="2" class="sm">
+		<a href="/cgi-bin/findweather/getForecast?query=94101" class="nu b">San Francisco, CA</a>
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/cgi-bin/findweather/getForecast?query=94101"><img src="http://icons-pe.wxug.com/i/c/a/partlycloudy.gif" width="25" alt="Scattered Clouds" height="25" class="condIcon" /></a>
+		</td>
+		<td class="full vaM">
+		<div>
+  <nobr><b>52.7</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>11.5</b>&nbsp;&#176;C</nobr>
+</div>
+		<div>Scattered Clouds</div>
+		</td>
+		</tr>
+	</table>
+	<p class="sm taC bgG tm10 bm10"><a href="/favorites/edit.html" class="leftLink">Edit My Favorites</a></p>
+		<a name="PPREFS"></a>
+<h2>Page Preferences</h2>
+<form action="post">
+	<table cellspacing="0" cellpadding="1" class="full bgW">
+		<tr class="rowG">
+		<td colspan="3">Language: <span class="b">English</span></td>
+		</tr>
+		<tr>
+		<td colspan="3" class="p5 sm">&raquo; <a href="/SwitchLanguage.asp">Select Language</a></td>
+		</tr>
+		<tr class="rowG">
+		<td colspan="3">Timezone: <span class="b">GMT</span></td>
+		</tr>
+		<tr>
+		<td colspan="3" class="p5 sm">&raquo; <a href="/picktimezone.asp?tz=America/Los_Angeles">Set My Timezone</a></td>
+		</tr>
+		<tr class="rowG">
+		<td colspan="3">
+		Units:
+		<span class="b">
+		Both
+		</span>
+		</td>
+		</tr>
+		<tr>
+		<td colspan="3" class="p5 sm taC">
+		<a href="/cgi-bin/findweather/getForecast?setunits=metric">Metric</a> | <a href="/cgi-bin/findweather/getForecast?setunits=english">English</a>
+		</td>
+		</tr>
+		<tr class="rowG">
+		<td class="b">Show</td>
+		<td class="taC b">Yes</td>
+		<td class="taC b">No</td>
+		</tr>
+		<tr>
+		<td class="vaT" style="border-bottom: 1px solid #EEE;">
+		Favorites
+		</td>
+		<td style="border-bottom: 1px solid #EEE;"><input type="radio" name="0&value" value="1" checked="checked" onclick="location.href='/cgi-bin/findweather/getForecast?setpref=FAVS&value=1&referer=%2fcgi%2dbin%2ffindweather%2fgetForecast%3fquery%3dseattle';" /></td>
+		<td style="border-bottom: 1px solid #EEE;"><input type="radio" name="0&value" value="0" onclick="location.href='/cgi-bin/findweather/getForecast?setpref=FAVS&value=0&referer=%2fcgi%2dbin%2ffindweather%2fgetForecast%3fquery%3dseattle';" /></td>
+		</tr>
+		<tr>
+		<td class="vaT" style="border-bottom: 1px solid #EEE;">
+		Wunder Photos
+		</td>
+		<td style="border-bottom: 1px solid #EEE;"><input type="radio" name="10&value" value="1" checked="checked" onclick="location.href='/cgi-bin/findweather/getForecast?setpref=WPHO&value=1&referer=%2fcgi%2dbin%2ffindweather%2fgetForecast%3fquery%3dseattle';" /></td>
+		<td style="border-bottom: 1px solid #EEE;"><input type="radio" name="10&value" value="0" onclick="location.href='/cgi-bin/findweather/getForecast?setpref=WPHO&value=0&referer=%2fcgi%2dbin%2ffindweather%2fgetForecast%3fquery%3dseattle';" /></td>
+		</tr>
+		<tr>
+		<td class="vaT" style="border-bottom: 1px solid #EEE;">
+		Top Photo Banner
+		</td>
+		<td style="border-bottom: 1px solid #EEE;"><input type="radio" name="11&value" value="1" checked="checked" onclick="location.href='/cgi-bin/findweather/getForecast?setpref=PHOT&value=1&referer=%2fcgi%2dbin%2ffindweather%2fgetForecast%3fquery%3dseattle';" /></td>
+		<td style="border-bottom: 1px solid #EEE;"><input type="radio" name="11&value" value="0" onclick="location.href='/cgi-bin/findweather/getForecast?setpref=PHOT&value=0&referer=%2fcgi%2dbin%2ffindweather%2fgetForecast%3fquery%3dseattle';" /></td>
+		</tr>
+		<tr>
+		<td class="vaT" style="border-bottom: 1px solid #EEE;">
+		Gift Promo
+		</td>
+		<td style="border-bottom: 1px solid #EEE;"><input type="radio" name="12&value" value="1" checked="checked" onclick="location.href='/cgi-bin/findweather/getForecast?setpref=GIFT&value=1&referer=%2fcgi%2dbin%2ffindweather%2fgetForecast%3fquery%3dseattle';" /></td>
+		<td style="border-bottom: 1px solid #EEE;"><input type="radio" name="12&value" value="0" onclick="location.href='/cgi-bin/findweather/getForecast?setpref=GIFT&value=0&referer=%2fcgi%2dbin%2ffindweather%2fgetForecast%3fquery%3dseattle';" /></td>
+		</tr>
+		<tr>
+		<td class="vaT" style="border-bottom: 1px solid #EEE;">
+		Use PWS Conditions
+		</td>
+		<td style="border-bottom: 1px solid #EEE;"><input type="radio" name="2&value" value="1" checked="checked" onclick="location.href='/cgi-bin/findweather/getForecast?setpref=PWSOBS&value=1&referer=%2fcgi%2dbin%2ffindweather%2fgetForecast%3fquery%3dseattle';" /></td>
+		<td style="border-bottom: 1px solid #EEE;"><input type="radio" name="2&value" value="0" onclick="location.href='/cgi-bin/findweather/getForecast?setpref=PWSOBS&value=0&referer=%2fcgi%2dbin%2ffindweather%2fgetForecast%3fquery%3dseattle';" /></td>
+		</tr>
+	</table>
+</form>
+<h2>Maps</h2>
+	<ul class="leftList">
+		<li><a href="/US/Region/Northwest/Temperature.html">Temperature</a></li>
+		<li><a href="/US/Region/Northwest/HeatIndex.html">Heat Index</a></li>
+		<li><a href="/US/Region/Northwest/WindChill.html">Windchill</a></li>
+		<li><a href="/US/Region/Northwest/Humidity.html">Humidity</a></li>
+		<li><a href="/US/Region/Northwest/Radar.html">Radar</a></li>
+		<li><a href="/US/Region/Northwest/Dewpoint.html">Dew Point</a></li>
+		<li><a href="/US/Region/Northwest/WindSpeed.html">Wind</a></li>
+		<li><a href="/US/Region/Northwest/Visibility.html">Visibility</a></li>
+		<li><a href="/US/Region/Northwest/VisSatellite.html">Visible Satellite</a></li>
+		<li><a href="/US/Region/Northwest/IRSatellite.html">Satellite</a></li>
+		<li><a href="/US/Region/Northwest/Fronts.html">Fronts</a></li>
+		<li><a href="/US/Region/Northwest/SnowDepth.html">Snow Depth</a></li>
+		<li><a href="/US/Region/Northwest/Precip.html">Precipitation</a></li>
+		<li><a href="/US/Region/Northwest/JetStream.html">Jet Stream</a></li>
+		<li><a href="/US/Region/Northwest/Flight.html">Flight Rules</a></li>
+	</ul>
+  <div class="b bgG p3">Health Maps</div>
+	<ul class="leftList">
+		<li><a href="/US/Region/Northwest/UVForecast.html">UV Forecast</a></li>
+		<li><a href="/US/Region/Northwest/AirQuality.html">Air Quality</a></li>
+		<li><a href="/US/Region/Northwest/MaxAQI.html">Peak Air Quality Index</a></li>
+	</ul>
+<div class="b bgG p3">International</div>
+<ul class="leftList">
+	<li><a href="/US/Region/US/Temperature.html">United States</a></li>
+	<li><a href="/global/Region/CN/Temperature.html">Canada</a></li>
+	<li><a href="/global/Region/CA/Temperature.html">Mexico</a></li>
+	<li><a href="/global/Region/CA/Temperature.html">Central America</a></li>
+	<li><a href="/global/Region/SA/Temperature.html">South America</a></li>
+	<li><a href="/global/Region/AS/Temperature.html">Northern Asia</a></li>
+	<li><a href="/global/Region/A2/Temperature.html">Southern Asia</a></li>
+	<li><a href="/global/Region/EU/Temperature.html">Europe</a></li>
+	<li><a href="/global/Region/AU/Temperature.html">Australia</a></li>
+	<li><a href="/global/Region/AF/Temperature.html">Africa</a></li>
+	<li><a href="/global/IS_ST_Index.html">Islands</a></li>
+	<li><a href="/global/Region/AN/Temperature.html">Antarctica</a></li>
+</ul>
+<h2>Information</h2>
+<ul class="leftList">
+	<li><a href="/help/">Need Help?</a></li>
+	<li><a href="/about/faq/faq.asp">Link to Us</a></li>
+	<li><a href="/about/contact.asp">About Us</a></li>
+	<li><a href="/autobrand/">Custom Weather</a></li>
+	<li><a href="/newspaper/">Newspaper Weather</a></li>
+	<li><a href="/about/adinfo.asp">Advertising</a></li>
+	<li><a href="http://www.cafepress.com/wunderground" target="new">Online WunderStore</a></li>
+</ul>
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class=smalltable>
+<!-- ADPL-00032 -->
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Vacation Deals</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<center>
+<a href="http://www.redweek.com">
+<img src="http://icons.wunderground.com/ads/images/ADPL-00032-Redweek_logo2.jpg" width=100 height=25 border=0></a></center>
+<li><a href="http://www.redweek.com">Save On Vacation Condo Rentals</a></li>
+<li><a href="http://www.redweek.com">Save money with Timeshare rentals</a></li>
+</td></tr>
+</table>
+</td></tr>
+<!-- CNDO-00002 -->
+<tr><td bgcolor="#000080" align=center class=leftadhead><font face="Arial,Helvetica" color="FFFFFF"><b>Seattle</b></font> <a href="http://www.condocompany.com/"><font face="Arial,Helvetica" color="FFFFFF"><b>Condos</b></font></a><font face="Arial,Helvetica" color="FFFFFF"><b> and Vacations</b>
+</font></td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<a href="http://www.condocompany.com/"><center><img src="http://icons.wunderground.com/ads/images/CONDO-cclogo.jpg" width="100" alt="Condominiums for sale, for rent, and vacation rentals" height="25" border="0"></center></a>
+<li><a href="http://miami.condocompany.com">Miami Condos</a></li>
+<li><a href="http://seattle.condocompany.com/">Seattle Condos</a></li>
+<li><a href="http://www.beachstore.com/">Beach Chairs
+</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Seattle Tickets and Technology</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.xpandercommunications.com/">VOIP Phone Systems</a></li>
+<li><a href="http://www.dwtickets.com/">Disney Tickets</a></li>
+<li><a href="http://www.premiumseatsusa.com/">Event and Concert Tickets</a></li>
+<li><a href="http://www.orlandofuntickets.com/">Cheap Disney Tickets</a></li>
+</td></tr>
+</table>
+</td></tr><!-- UGEN-00003 -->
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Real Estate Guide</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.50stateshomesforsale.com">Seattle Homes For Sale</a></li>
+<li><a href="http://www.jbriggsrealty.com">Seattle Real Estate Agents</a></li>
+<li><a href="http://www.icomjh.com">Seattle Investment Property</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Hot Travel Savings</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.vacationpackages.bz">Seattle Vacation Packages</a></li>
+<li><a href="http://www.rentalcars.bz">Seattle Car Rentals</a></li>
+<li><a href="http://www.findhotels.cc">Seattle Hotels</a></li>
+<li><a href="http://www.airlinetickets.vc">Seattle Airline Tickets</a></li>
+<li><a href="http://www.internetproviders.cc">Seattle Internet Providers</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Great Vacation Ideas</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.funvacationscheap.com">Seattle Cheap Vacations</a></li>
+<li><a href="http://www.bedandbreakfastideas.net">Seattle Bed and Breakfast</a></li>
+<li><a href="http://www.vacationideas.biz">Seattle Vacation</a></li>
+<li><a href="http://www.4lasvegasvacation.org">Las Vegas Travel Deals</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Real Estate</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.us-homes-for-sale.com">Seattle Homes For Sale</a></li>
+<li><a href="http://www.foreclosures.bz">Seattle Foreclosures</a></li>
+<li><a href="http://www.homeownersinsurance.cc">Washington Homeowners Insurance</a></li>
+<li><a href="http://www.1st-nationwide-mortgage-loans.com">Seattle Real Estate</a></li>
+<li><a href="http://www.fasthighspeedinternetaccess.com">Seattle High Speed Internet</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Fantastic Rental Deals</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.4vacationrentals.info">Seattle Vacation Rentals</a></li>
+<li><a href="http://www.timeshares.la">Seattle Timeshares</a></li>
+<li><a href="http://www.apartmentsforrent.bz">Seattle Apartments</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Cosmetic Surgery</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://tummytuck.esurgery.us">Seattle Tummy Tuck</a></li>
+<li><a href="http://cosmetic.esurgery.us">Cosmetic Surgery Seattle</a></li>
+<li><a href="http://www.lapbandsurgeryanswers.com">Seattle Lap Band Surgery</a></li>
+<li><a href="http://bariatric.esurgery.us">Seattle Bariatric Surgery</a></li>
+<li><a href="http://liposuction.esurgery.us">Liposuction Seattle</a></li>
+<li><a href="http://www.plasticsurgeonstat.com">Seattle Plastic Surgeon</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Financial Advice on...</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.foreclosure.vc">Seattle Foreclosure</a></li>
+<li><a href="http://www.personalinjuryattorney.bz">Seattle Personal Injury Attorney</a></li>
+<li><a href="http://www.bankruptcy.vc">Washington Bankruptcy</a></li>
+<li><a href="http://www.jobs411.biz">Seattle Jobs</a></li>
+<li><a href="http://www.broadband-service-providers.com">Seattle Broadband Service Providers</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Detailed Information on...</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.taxpreparation.la">Seattle Tax Preparation</a></li>
+<li><a href="http://www.workathomejobslisting.com">Work at Home Jobs</a></li>
+<li><a href="http://www.singlesnearyou.org">Seattle Singles - Online Dating</a></li>
+<li><a href="http://www.tummytuckanswers.com">Seattle Tummy Tucks</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>How To Save Money On...</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.carinsurance.vc">Seattle Car Insurance</a></li>
+<li><a href="http://www.cheapflightsto.info">Seattle Cheap Flights</a></li>
+<li><a href="http://www.usedcars.vc">Seattle Used Cars</a></li>
+<li><a href="http://www.4traveldeals.org">Seattle Travel Deals</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Industrial Magnets</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.magnetsinc.com">Magnets</a></li>
+</td></tr>
+</table>
+</td></tr><!-- HMKY-00002 -->
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF">
+<a href="http://www.homekeys.net/" target="_blank"><font color="#FFFFFF"><b>Real Estate</b></font></a>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.byownerhomes.com" "target="_blank">
+For Sale By Owner <br>Flat Fee MLS Listing<br></a></li>
+<li><a href="http://www.reversemortgageloansusa.net" "target="_blank">Reverse Mortgages
+<br>Mortgage Loans</a></li>
+</td></tr>
+</table>
+</td></tr><!-- ATDC-00001 -->
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Tickets and Worldwide Attractions</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.attraction-tickets-direct.co.uk">Disney Tickets</a></li>
+<li><a href="http://www.dosomethingdifferent.com">Tours and Tickets</a></li>
+</td></tr>
+</table>
+</td></tr><!-- RXCA-00007 -->
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Canadian Pharmacy</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<li><a href="http://www.rxcarecanada.com">Canada Pharmacy</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Cheap Hotels</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.hoteldealsandmore.com">Cheap Hotel</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Find Jobs In Your City</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.mployd.com">Seattle Jobs </a></li>
+</td></tr>
+</table>
+</td></tr><!-- ONMP-00001 -->
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Condos for Sale</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.prodigynetwork.com">Condos for Sale</a></li>
+<li><a href="http://www.mareazul.com">Playa del Carmen Condos</a></li>
+<li><a href="http://www.theflowerexchange.com">Wholesale Flowers</a></li>
+</td></tr>
+</table>
+</td></tr><!-- GREE-00006 -->
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>College Students</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.greek101.com/">Fraternity</a></li>
+<li><a href="http://www.greek101.com/">Sorority</a></li>
+<li><a href="http://puertorealestate.com">Puerto Escondido</a></li>
+</td></tr>
+</table>
+</td></tr>
+<!-- goog-00015 -->
+<tr><td bgcolor="000080" align=center class=leftadhead><font face="Arial,Helvetica"
+color="#ffffff">
+<b>Google Search
+</b></font>
+</td></tr>
+<tr>
+<td bgcolor=#ffffff class=leftadbody>
+<form action=http://www.google.com/custom>
+Search the Net!<br>
+<input type=text name=q size=14>
+<INPUT type=hidden name=cof VALUE="LW:440;L:http://www.wunderground.com/graphics/WUIlogo.gif;LH:55;AH:center;AWFID:1351276b545b1450;">
+<table><tr><td><input type=submit value="Search"><input type=hidden name=start value=0></td></tr></table>
+<a href="http://www.google.com">Powered by Google</a>
+<br>
+</form>
+</td>
+</tr>
+</table>
+<div class="sm" style="color: #EEE;">
+	<!-- SERVERHOSTNAME -->
+	l3a18<br />
+	Apr 8 2008 14:45:57<br />
+</div>
+		</div>
+		</td>
+		<td id="gutter"><div></div></td>
+		<td class="full vaT" id="content">
+		<a name="a_topad"></a>
+		<div class="taC tm10">
+		<? # ---- Special Case Marine Ad for Marine Pages --- ?>
+  <!-- Campaign=CNTW-00154 Views=1 Caps=[86400,1207761520] -->
+
+<script  src="http://tag.contextweb.com/TagPublish/getjs.aspx?action=VIEWAD&cwrun=200&cwadformat=728X90&cwpid=501711&cwwidth=728&cwheight=90&cwpnet=1&cwtagid=16203"></script>
+		</div>
+		<div class="tm10">
+<table cellspacing="0" cellpadding="0" class="full" id="cityTable">
+	<tr>
+		<td class="nobr full">
+		<h1>Seattle, Washington </h1>
+		</td>
+		<td class="extraText">
+		<span><a href="/php/editfavs.php?addfav=98101.1" onClick="return !make_ajax_request('/favorites/submit.html?action=addfavorite&place=98101.1', this.parentNode);">Add to My Favorites</a></span>
+		</td>
+		<td class="extraText">
+		</td>
+		<td class="nobr none">
+		<ul class="rssdrop" id="RSS" name="RSS" style="padding: 0; margin: 0; top: 0px; list-style: none;">
+		<li style="position: relative; list-style: none; padding: 0; margin: 0;">
+		<a href="http://rss.wunderground.com/auto/rss_full/WA/Seattle.xml?units=both"><img src="http://icons-pe.wxug.com/graphics/rss/rssmini.gif" width="36" alt="RSS" height="14" /></a>
+		<ul style="padding: 0; margin: 0; margin-left: 15px; list-style: none; border-style: solid; border-color: #666; border: 1px;">
+		<li style="float: left; position: relative; list-style: none;"><a href="http://rss.wunderground.com/auto/rss_full/WA/Seattle.xml?units=both"><img src="http://icons-pe.wxug.com/graphics/rss/rss.gif" width="91" alt="RSS" height="14" border="0" style="vertical-align: bottom;" /></a></li>
+		<li style="float: left; position: relative; list-style: none;"><a href="http://www.addtoany.com/?sitename=Weather%20Underground&siteurl=http://www.wunderground.com/&linkname=Seattle%2C%20Washington%20Weather&linkurl=http://rss.wunderground.com/auto/rss_full/WA/Seattle.xml%3Funits=both&type=feed"><img src="http://icons-pe.wxug.com/graphics/rss/anyadd.gif" width="91" alt="Add to Any!" height="17" border="0" style="vertical-align: bottom;" /></a></li>
+		</ul>
+		</li>
+		</ul>
+		</td>
+		<td class="extraText">-</td>
+		<td class="extraIcon"><a href="http://ical.wunderground.com/auto/ical/WA/Seattle.ics?units=both"><img src="http://icons-pe.wxug.com/graphics/ical.gif" width="36" height="14" alt="iCal Feed" /></a></td>
+		<td class="extraIcon"><a href="http://rss.wunderground.com/auto/rss_full/WA/Seattle.xml?units=both"><img src="http://icons-pe.wxug.com/graphics/rss/rssmini.gif" width="36" alt="RSS" height="14" /></a></td>
+	</tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="full" id="titleBar">
+	<tr>
+		<td class="full">
+		Local Time:
+		<span class="b">10:18 AM PDT</span>
+		&mdash; <a href="/picktimezone.asp?tz=America/Los_Angeles">Set My Timezone</a>
+		</td>
+		<td class="nobr">Lat/Lon: <span class="b">47.6&#176; N 122.3&#176; W</span> (<a href="http://maps.google.com/maps?q=47.61167908,-122.33325958" target="new">Google Map</a>)</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+		</td>
+	</tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="full">
+	<tr>
+		<td class="vaT">
+		<div class="bm15">
+<iframe width="0" height="0" border="0" src="http://stationdata.wunderground.com/xmlrequest.html" id="condscript"></iframe>
+<script type="text/javascript" >
+//
+// put in some code to disable rtupdate in older safari's
+//
+var disablertupdate=0;
+disablertupdate = CheckBrowserDisable();
+  window.wind_animate=new Array();
+	if (getWUIDomain)
+	{
+  var url='http://stationdata.'+getWUIDomain()+'/cgi-bin/stationlookup?station=';
+	}
+	else
+	{
+  var url='http://stationdata.wunderground.com/cgi-bin/stationlookup?station=';
+	}
+  //var timeout=1000*60*15; // 15 minutes
+  var timeout=5; // 15 minutes
+  url=url+'MSEAOL,'
+  url=url+'MEBSW1,'
+  url=url+'KWASEATT92,'
+  url=url+'MUWASH,'
+  url=url+'MSEABE,'
+  url=url+'KWASEATT55,'
+  url=url+'MC5960,'
+  url=url+'MSEADU,'
+  url=url+'KWASEATT57,'
+  url=url+'KWASEATT75,'
+  url=url+'KWASEATT17,'
+  url=url+'KWASEATT98,'
+  url=url+'KWASEATT67,'
+  url=url+'KWASEATT96,'
+  url=url+'KWASEATT81,'
+  url=url+'KWASEATT12,'
+  url=url+'KWASEATT73,'
+  url=url+'KWASEATT45,'
+  url=url+'KWASEATT59,'
+  url=url+'KWASEATT95,'
+  url=url+'KWASEATT40,'
+  url=url+'KWASEATT79,'
+  url=url+'KWASEATT52,'
+  url=url+'MC7758,'
+  url=url+'MC3186,'
+  url=url+'KWASEATT42,'
+  url=url+'MC8717,'
+  url=url+'MTFAUN,'
+  url=url+'KWAKIRKL3,'
+  url=url+'KWASEATT50,'
+  url=url+'KWASEATT84,'
+  url=url+'KWASEATT74,'
+  url=url+'KWASEATT87,'
+  url=url+'MT130T,'
+  timeout = 2.5 ;
+  if (timeout < 5)
+	timeout = 5;
+
+  url=url+'&format=js&maxage='+ (2*timeout);
+
+  timeout*=1000;
+  //alert('timeout:'+timeout);
+
+
+  
+    
+		if (disablertupdate==0)
+      		SetUpdateURL(url,timeout);
+    
+  
+
+window.addEvent('domready', function(){
+	if('/cgi-bin/findweather/getForecast?query=seattle'.contains('?')){var separator = '&';}else{var separator = '?';}
+	var condsboxurl = "/cgi-bin/findweather/getForecast?query=seattle"+separator+"responder=1&request=conditions";
+	var imgSrcPrefix = "http://icons-pe.wxug.com/graphics/";
+
+	var stationselector = $('stationselector'), curcondload = $('curcondload'), condsFader = new Fx.Style('curcondbox', 'opacity' ,{duration: 400});
+	stationselector.addEvent('change', function(e){
+		e = new Event(e).stop();
+		var x = stationselector.selectedIndex;
+		var value = document.getElementsByTagName("option")[x].value;
+		new Ajax(value, { method: 'get', onComplete: function(){
+			curcondload.setStyle('background', 'url('+imgSrcPrefix+'arrow-loading-white.gif) no-repeat center;');
+			condsFader.start(1,0).chain(function(){
+				new Ajax(condsboxurl, { method: 'get', update: 'curcondbox', evalScripts: 'yes', onComplete: function(){
+						condsFader.start(0,1).chain(function(){
+							curcondload.setStyle('background','');
+						});
+					}
+				}).request();
+			});
+			}
+		}).request();
+	});
+});
+</script>
+	<table cellspacing="0" cellpadding="0" class="blueTop">
+		<tr>
+		<td class="hLeft"><img src="http://icons-pe.wxug.com/graphics/wu2/headerBlue-left.gif" width="20" height="20" alt="" /></td>
+		<td class="hCenter">Current Conditions <span id="curcondload">&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+		<td class="hRight"><img src="http://icons-pe.wxug.com/graphics/wu2/headerBlue-right.gif" width="20" height="20" alt="" /></td>
+		</tr>
+		<tr>
+		<td class="sLeft"><img src="http://icons-pe.wxug.com/graphics/wu2/subBlue-left.gif" width="20" height="6" alt="" /></td>
+		<td class="sCenter">&nbsp;</td>
+		<td class="sRight"><img src="http://icons-pe.wxug.com/graphics/wu2/subBlue-right.gif" width="20" height="6" alt="" /></td>
+		</tr>
+	</table>
+	<div class="blueBox">
+	<div id="curcondbox">
+		<div class="subG b">Queen Anne - Toddster weather, Seattle, Washington (PWS)</div>
+		<div class="bm10">Updated: <span class="pwsrt" pwsid="KWASEATT92" pwsunit="both" pwsvariable="lu" value="1207761518">10:18 AM PDT on April 09, 2008</span></div>
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td class="vaT full">
+		<table cellspacing="0" cellpadding="5" class="full">
+		<tr>
+		<td class="vaM taC"><img src="http://icons-pe.wxug.com/i/c/a/partlycloudy.gif" width="42" height="42" alt="Scattered Clouds" class="condIcon" /></td>
+		<td class="vaM taC full">
+		<div style="font-size: 17px;"><span class="pwsrt" pwsid="KWASEATT92" pwsunit="both" pwsvariable="tempf" english="&deg;F" metric="&deg;C" value="44.1">
+  <nobr><b>44.1</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>6.7</b>&nbsp;&#176;C</nobr>
+</span></div>
+		<div class="b" style="font-size: 14px;">Scattered Clouds</div>
+		</td>
+		</tr>
+		</table>
+		<table cellspacing="0" cellpadding="0" class="dataTable">
+		<tbody>
+		<tr>
+		<td>Windchill:</td>
+		<td>
+  <nobr><b>44</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>7</b>&nbsp;&#176;C</nobr>
+</td>
+		</tr>
+		<tr>
+		<td>Humidity:</td>
+		<td class="full b"><span class="pwsrt" pwsid="KWASEATT92" pwsunit="both" pwsvariable="humidity" english="" metric="" value="66"><nobr>66%</nobr></span></td>
+		</tr>
+		<tr>
+		<td class="nobr">Dew Point:</td>
+		<td class="full b"><span  class="pwsrt" pwsid="KWASEATT92" pwsunit="both" pwsvariable="dewptf"  english="&deg;F" metric="&deg;C" value="34">
+  <nobr><b>34</b>&nbsp;&deg;F</nobr>
+  /
+  <nobr><b>1</b>&nbsp;&deg;C</nobr>
+</span></td>
+		</tr>
+		<tr>
+		<td>Wind:</td>
+		<td class="full b">
+		<span class="pwsrt" pwsid="KWASEATT92" pwsunit="both" pwsvariable="windspeedmph" english="mph" metric="km/h">
+  <nobr><b>3.0</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>4.8</b>&nbsp;km/h</nobr> / <nobr><b>1.3</b>&nbsp;m/s</nobr>
+		</span>
+		<span class="nb"> from the </span>
+		<span class="pwsrt" pwssetobject="window.wind_animate['CONDBOXWIND']" pwsid="KWASEATT92" pwsunit="both" pwsvariable="winddir" english="" metric="" value="WSW">
+		WSW
+		</span>
+		<div id="condboxWindDiv">
+		<img src="http://icons-pe.wxug.com/graphics/360arrows_blue.gif" alt="" id="condboxArrowDiv" />
+		</div>
+		<script type="text/javascript">
+		window.wind_animate['CONDBOXWIND']=new WindRotate("condboxArrowDiv",14,245);
+		</script>
+		</td>
+		</tr>
+		<tr>
+		<td class="nobr">Wind Gust:</td>
+		<td class="full b"><span class="pwsrt" pwsid="KWASEATT92" pwsunit="both" pwsvariable="windgustmph" english="mph" metric="km/h">
+  <nobr><b>7.0</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>11.3</b>&nbsp;km/h</nobr>
+</span></td>
+		</tr>
+		<tr>
+		<td>Pressure:</td>
+		<td class="full b">
+		<span class="pwsrt" pwsid="KWASEATT92" pwsunit="both" pwsvariable="baromin" english="in" metric="hPa" value="30.08">
+  <b>30.08</b>&nbsp;in
+  /
+  <b>1018.5</b>&nbsp;hPa
+</span>
+		(Steady)
+		</td>
+		</tr>
+		<tr>
+		<td>Visibility:</td>
+		<td class="b">
+  <nobr><b>10.0</b>&nbsp;miles</nobr>
+  /
+  <nobr><b>16.1</b>&nbsp;kilometers</nobr>
+</td>
+		</tr>
+		<tr>
+		<td>UV:</td>
+		<td class="b">3 <span class="nb">out of 16</span></td>
+		</tr>
+		<tr>
+		<td class="vaT">Clouds:</td>
+		<td class="b">
+		<div>
+<b>Scattered Clouds</b>
+<!--(SCT)-->
+		<span class="nb">
+  <nobr><b>1800</b>&nbsp;ft</nobr>
+  /
+  <nobr><b>548</b>&nbsp;m</nobr>
+</span>
+		</div>
+		<div class="nb">(Above Ground Level)</div>
+		</td>
+		</tr>
+		</tr>
+		<td>Elevation:</td>
+		<td>
+  <nobr><b>338</b>&nbsp;ft</nobr>
+  /
+  <nobr><b>103</b>&nbsp;m</nobr>
+</td>
+		</tr>
+		</tbody>
+		</table>
+		<form>
+		<table cellspacing="0" cellpadding="1" class="full">
+		<tr>
+		<td colspan="4"><div class="subG b">Rapid Fire Updates:</div></td>
+		</tr>
+		<tr>
+		<td><input type="radio" name="rapid" onclick="window.open(this.value,'_self')" value="/cgi-bin/findweather/getForecast?setpref=PWSRT&value=1&referer=%2fcgi%2dbin%2ffindweather%2fgetForecast%3fquery%3dseattle" checked="checked" /></td>
+		<td>Enable</td>
+		<td><input type="radio" name="rapid" onclick="window.open(this.value,'_self')" value="/cgi-bin/findweather/getForecast?setpref=PWSRT&value=0&referer=%2fcgi%2dbin%2ffindweather%2fgetForecast%3fquery%3dseattle"  /></td>
+		<td>Disable</td>
+		</tr>
+		<tr>
+		<td colspan="4"><div class="tm10 subG b">Source for Current Conditions:</div></td>
+		</tr>
+		<tr>
+		<td><input type="radio" name="obsource" onclick="window.open(this.value,'_self')" value="/cgi-bin/findweather/getForecast?setpref=PWSOBS&value=1&referer=%2fcgi%2dbin%2ffindweather%2fgetForecast%3fquery%3dseattle" checked="checked" /></td>
+		<td>PWS &amp; Airport</td>
+		<td><input type="radio" name="obsource" onclick="window.open(this.value,'_self')" value="/cgi-bin/findweather/getForecast?setpref=PWSOBS&value=0&referer=%2fcgi%2dbin%2ffindweather%2fgetForecast%3fquery%3dseattle"  /></td>
+		<td>Airport Only</td>
+		</tr>
+		</table>
+		</form>
+		<p>&raquo; <a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT92">Weather History for This Location</a></p>
+		</td>
+		<td class="vaT">
+		<table cellspacing="0" cellpadding="1" id="radarTable">
+		<tr>
+		<td colspan="2">
+	<script type="text/javascript">
+window.addEvent('domready', function(){
+	if('/cgi-bin/findweather/getForecast?query=seattle'.contains('?')){var separator = '&';}else{var separator = '?';}
+	var imgSrcPrefix = "http://icons-pe.wxug.com/graphics/";
+	var radarurl = "/cgi-bin/findweather/getForecast?query=seattle"+separator+"responder=1&request=radarbox";
+	var camurl = "/cgi-bin/findweather/getForecast?query=seattle"+separator+"responder=1&request=cambox";
+	var metarboxurl = "/cgi-bin/findweather/getForecast?query=seattle"+separator+"responder=1&request=metarbox";
+	var condsboxurl = "/cgi-bin/findweather/getForecast?query=seattle"+separator+"responder=1&request=conditions";
+	var hasradar = 1
+	var hascams = 1
+	var active = "radar"
+	eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('P(T==1){L x=3 Y.X(\'W\',\'V\',{S:Q})}L p=3 Y.X(\'I\',\'V\',{S:Q});L 6=$(\'17\'),M=$(\'W\'),o=$(\'o\'),i=$(\'i\'),n=$(\'n\'),h=$(\'h\'),g=$(\'g\'),R=$(\'R\');P(T==1){n.w(\'v\',2(e){e=3 t(e).r();6.d(\'c\',\'s(\'+H+\'E-F-G.D) C-B A;\');3 b(\'/?a.0.z=U&a.0.y=13\',{8:\'9\'}).f();n.m().4(\'K\');o.m().4(\'J\');n.m().5(\'J\');o.m().5(\'K\');x.7(1,0).u(2(){3 b(12,{8:\'9\',q:M,l:2(){6.d(\'c\',\'\');x.7(0,1)}}).f()})});o.w(\'v\',2(e){e=3 t(e).r();6.d(\'c\',\'s(\'+H+\'E-F-G.D) C-B A;\');3 b(\'/?a.0.z=U&a.0.y=11\',{8:\'9\'}).f();o.m().4(\'K\');n.m().4(\'J\');o.m().5(\'J\');n.m().5(\'K\');x.7(1,0).u(2(){3 b(10,{8:\'9\',q:M,Z:1a,l:2(){6.d(\'c\',\'\');P(19==1){18()}x.7(0,1)}}).f()})})}i.w(\'v\',2(e){e=3 t(e).r();6.d(\'c\',\'s(\'+H+\'E-F-G.D) C-B A;\');3 b(\'/?a.0.z=N&a.0.y=16\',{8:\'9\',l:2(){i.4(\'k\');h.4(\'j\');g.4(\'j\');i.5(\'j\');h.5(\'k\');g.5(\'k\');p.7(1,0).u(2(){3 b(O,{8:\'9\',q:\'I\',l:2(){6.d(\'c\',\'\');p.7(0,1)}}).f()})}}).f()});h.w(\'v\',2(e){e=3 t(e).r();3 b(\'/?a.0.z=N&a.0.y=15\',{8:\'9\',l:2(){h.4(\'k\');i.4(\'j\');g.4(\'j\');h.5(\'j\');i.5(\'k\');g.5(\'k\');p.7(1,0).u(2(){6.d(\'c\',\'s(\'+H+\'E-F-G.D) C-B A;\');3 b(O,{8:\'9\',q:\'I\',l:2(){6.d(\'c\',\'\');p.7(0,1)}}).f()})}}).f()});g.w(\'v\',2(e){e=3 t(e).r();3 b(\'/?a.0.z=N&a.0.y=14\',{8:\'9\',l:2(){g.4(\'k\');h.4(\'j\');i.4(\'j\');g.5(\'j\');h.5(\'k\');i.5(\'k\');p.7(1,0).u(2(){6.d(\'c\',\'s(\'+H+\'E-F-G.D) C-B A;\');3 b(O,{8:\'9\',q:\'I\',Z:\'1b\',l:2(){6.d(\'c\',\'\');p.7(0,1)}}).f()})}}).f()});',62,74,'||function|new|addClass|removeClass|curload|start|method|get|setprefs|Ajax|background|setStyle||request|showradio|showaviation|showmetar|inactiveTab|activeTab|onComplete|getParent|showradar|showcam|metarFade|update|stop|url|Event|chain|click|addEvent|radarcamFade|val|key|center|repeat|no|gif|arrow|loading|white|imgSrcPrefix|metarbox|inactive|active|var|radarcambox|SHOWMETAR|metarboxurl|if|400|playerbox|duration|hasradar|RADARBOX|opacity|radarcamBox|Style|Fx|evalScripts|camurl|WEBCAM|radarurl|RADAR|WXRADIO|AVIATION|METAR|curcondload|LoadCams|hascams|true|yes'.split('|'),0,{}))
+});
+</script>
+		<table cellspacing="0" cellpadding="0" class="full" id="radarTab">
+		<tr>
+		<td class="sm taC active"><a id="showradar" href="">Radar</a></td>
+		<td class="sm taC inactive"><a id="showcam" href="/cgi-bin/findweather/getForecast?setpref=RADARBOX&value=WEBCAM">Webcam</a></td>
+		</tr>
+		</table>
+		<div id="radarcamBox">
+		<div><a href="/radar/radblast.asp?ID=ATX&region=a1&lat=47.61167908&lon=-122.33325958&label=Seattle%2c%20WA"><img src="http://icons.wunderground.com/data/nids/ATX19_thumb_t.jpg" width="140" height="140" alt="Local Radar" /></a></div>
+  <div class="taC sm">Click Radar to Enlarge</div>
+		</div>
+		<div id="camBox"></div>
+		</td>
+		</tr>
+		<tr>
+		<td><a href="/radar/radblast.asp?ID=ATX&region=a1&lat=47.61167908&lon=-122.33325958&label=Seattle%2c%20WA"><img src="http://icons-pe.wxug.com/graphics/smash/blue_localRadar.gif" width="22" alt="Local Radar" height="22" alt="" /></a></td>
+		<td><a href="/radar/radblast.asp?ID=ATX&region=a1&lat=47.61167908&lon=-122.33325958&label=Seattle%2c%20WA">Local Radar</a></td>
+		</tr>
+		<tr>
+		<td><a href="/stationmaps/gmap.asp?lat=47.61167908&lon=-122.33325958&zoom=10"><img src="http://icons-pe.wxug.com/graphics/smash/blue_globe.gif" width="22" alt="" height="22" alt="" /></a></td>
+		<td><a href="/stationmaps/gmap.asp?lat=47.61167908&lon=-122.33325958&zoom=10">WunderMap</a> <span class="new">new!</span></td>
+		</tr>
+		<tr>
+		<td><a href="/radar/mixedcomposite.asp?region=a1&size=2x&ID=ATX19"><img src="http://icons-pe.wxug.com/graphics/smash/blue_radar.gif" width="22" alt="Regional Radar" height="22" /></a></td>
+		<td><a href="/radar/mixedcomposite.asp?region=a1&size=2x&ID=ATX19">Regional Radar</a></td>
+		</tr>
+		<tr>
+		<td><a href="/satellite/vis/1k/US/WA/Seattle.html"><img src="http://icons-pe.wxug.com/graphics/smash/blue_satellite.gif" width="22" alt="Local Satellite" height="22" /></a></td>
+		<td><a href="/satellite/vis/1k/US/WA/Seattle.html">Local Satellite</a></td>
+		</tr>
+		<tr>
+		<td><a href="/MAR/PZ/135.html"><img src="http://icons-pe.wxug.com/graphics/smash/blue_marine.gif" width="22" alt="Marine Forecast" height="22" /></a></td>
+		<td><a href="/MAR/PZ/135.html">Marine Forecast</a></td>
+		</tr>
+		<tr>
+		<td><a href="/ski/WA/"><img src="http://icons-pe.wxug.com/graphics/smash/blue_ski.gif" width="22" alt="Ski Conditions" height="22" /></a></td>
+		<td><a href="/ski/WA/">Ski Conditions</td>
+		</tr>
+		<tr>
+		<td><a href="/StateSnowDepth.asp?state=WA"><img src="http://icons-pe.wxug.com/graphics/smash/blue_snowDepth.gif" width="22" alt="Snow Depth" height="22" /></a></td>
+		<td><a href="/StateSnowDepth.asp?state=WA">Snow Depth</a></td>
+		</tr>
+		<tr>
+		<td><a href="/history/airport/KBFI/1972/4/9/PlannerHistory.html"><img src="http://icons-pe.wxug.com/graphics/smash/blue_tripPlanner.gif" width="22" alt="Trip Planner" height="22" /></a></td>
+		<td><a href="/history/airport/KBFI/1972/4/9/PlannerHistory.html">Trip Planner</a></td>
+		</tr>
+		<tr>
+		<td><a href="#PWS"><img src="http://icons-pe.wxug.com/graphics/smash/blue_weatherStation.gif" width="22" alt="Weather Stations" height="22" /></a></td>
+		<td><a href="#PWS">Weather Stations</a></td>
+		</tr>
+		</table>
+		</td>
+		</tr>
+		</table>
+	</div>
+<div class="taC" id="sourceSelect">
+	<div class="taL">Select a source for your current conditions:</div>
+	<select id="stationselector">
+		<optgroup label="Select an Airport:">
+		<option value="/?setprefs.0.key=98101199999WS&setprefs.0.val=KBFI">Seattle Boeing, WA (KBFI)</option>
+		<option value="/?setprefs.0.key=98101199999WS&setprefs.0.val=KRNT">Renton, WA (KRNT)</option>
+		<option value="/?setprefs.0.key=98101199999WS&setprefs.0.val=KSEA">Seattle, WA (KSEA)</option>
+		<option value="/?setprefs.0.key=98101199999WS&setprefs.0.val=KPAE">Everett, WA (KPAE)</option>
+		</optgroup>
+		<optgroup label="Select a PWS:">
+		<option value="/?setprefs.0.key=98101199999WS&setprefs.0.val=MSEAOL">MesoWest SEATTLE - OLIVE AND BOREN WA US WAAQ</option>
+		<option value="/?setprefs.0.key=98101199999WS&setprefs.0.val=MEBSW1">NOS_NWLON Seattle, WA</option>
+		<option selected="selected" value="/?setprefs.0.key=98101199999WS&setprefs.0.val=KWASEATT92">Queen Anne - Toddster weather</option>
+		<option value="/?setprefs.0.key=98101199999WS&setprefs.0.val=MUWASH">MesoWest UNIVERSITY OF WASHINGTON WA US WAAQ</option>
+		<option value="/?setprefs.0.key=98101199999WS&setprefs.0.val=MSEABE">MesoWest SEATTLE BEACON HILL RESERVOIR WA US WAAQ</option>
+		<option value="/?setprefs.0.key=98101199999WS&setprefs.0.val=KWASEATT55">Hamilton International Middle School</option>
+		<option value="/?setprefs.0.key=98101199999WS&setprefs.0.val=MC5960">APRSWXNET Seattle WA US</option>
+		<option value="/?setprefs.0.key=98101199999WS&setprefs.0.val=MSEADU">MesoWest SEATTLE DUWAMISH EAST MARGINAL WA US WAAQ</option>
+		<option value="/?setprefs.0.key=98101199999WS&setprefs.0.val=KWASEATT57">Ballard</option>
+		<option value="/?setprefs.0.key=98101199999WS&setprefs.0.val=KWASEATT75">Magnolia</option>
+		<option value="/?setprefs.0.key=98101199999WS&setprefs.0.val=KWASEATT17">Phinney Ridge</option>
+		<option value="/?setprefs.0.key=98101199999WS&setprefs.0.val=KWASEATT98">Beacon Hill</option>
+		<option value="/?setprefs.0.key=98101199999WS&setprefs.0.val=KWASEATT67">University</option>
+		<option value="/?setprefs.0.key=98101199999WS&setprefs.0.val=KWASEATT96">Ballard</option>
+		<option value="/?setprefs.0.key=98101199999WS&setprefs.0.val=KWASEATT81">Hawthorne Hills</option>
+		<option value="/?setprefs.0.key=98101199999WS&setprefs.0.val=KWASEATT12">Bryant</option>
+		<option value="/?setprefs.0.key=98101199999WS&setprefs.0.val=KWASEATT73">Beach Drive - West Seattle</option>
+		<option value="/?setprefs.0.key=98101199999WS&setprefs.0.val=KWASEATT45">Roosevelt</option>
+		<option value="/?setprefs.0.key=98101199999WS&setprefs.0.val=KWASEATT59">Magnolia</option>
+		<option value="/?setprefs.0.key=98101199999WS&setprefs.0.val=KWASEATT95">Greenwood</option>
+		<option value="/?setprefs.0.key=98101199999WS&setprefs.0.val=KWASEATT40">West Seatte</option>
+		<option value="/?setprefs.0.key=98101199999WS&setprefs.0.val=KWASEATT79">Highland Park</option>
+		<option value="/?setprefs.0.key=98101199999WS&setprefs.0.val=KWASEATT52">Maple Leaf</option>
+		<option value="/?setprefs.0.key=98101199999WS&setprefs.0.val=MC7758">APRSWXNET Clyde Hill WA US</option>
+		<option value="/?setprefs.0.key=98101199999WS&setprefs.0.val=MC3186">APRSWXNET Seattle WA US</option>
+		<option value="/?setprefs.0.key=98101199999WS&setprefs.0.val=KWASEATT42">Maple Leaf ( North )</option>
+		<option value="/?setprefs.0.key=98101199999WS&setprefs.0.val=MC8717">APRSWXNET Seattle WA US</option>
+		<option value="/?setprefs.0.key=98101199999WS&setprefs.0.val=MTFAUN">MesoWest Fauntleroy WA US WA DOT</option>
+		<option value="/?setprefs.0.key=98101199999WS&setprefs.0.val=KWAKIRKL3">Yarrow Bay</option>
+		<option value="/?setprefs.0.key=98101199999WS&setprefs.0.val=KWASEATT50">North Beach</option>
+		<option value="/?setprefs.0.key=98101199999WS&setprefs.0.val=KWASEATT84">Pritchard Island Lake Washington</option>
+		<option value="/?setprefs.0.key=98101199999WS&setprefs.0.val=KWASEATT74">White Center</option>
+		<option value="/?setprefs.0.key=98101199999WS&setprefs.0.val=KWASEATT87">Arbor Heights</option>
+		<option value="/?setprefs.0.key=98101199999WS&setprefs.0.val=MT130T">MesoWest 130th Street WA US WA DOT</option>
+		</optgroup>
+	</select>
+</div>
+<div class="selectorBox tm10">
+	<table cellspacing="0" cellpadding="0" id="typeTable" style="width: 363px;">
+		<tr>
+		<td id="showmetar" class="inactiveTab"><a href="/cgi-bin/findweather/getForecast?setpref=SHOWMETAR&value=METAR">Raw METAR</a></td>
+		<td id="showaviation" class="activeTab"><a href="/cgi-bin/findweather/getForecast?setpref=SHOWMETAR&value=AVIATION">Aviation</a></td>
+		<td id="showradio" class="inactiveTab"><a href="/cgi-bin/findweather/getForecast?setpref=SHOWMETAR&value=WXRADIO">Weather Radio</a></td>
+		</tr>
+	</table>
+</div>
+<div id="metarbox">
+	<table cellspacing="0" cellpadding="0" class="dataTable" style="width: 363px;">
+		<tbody>
+		<tr>
+		<td>Flight Rule:</td>
+		<td><span class="b">VFR</span> (KBFI)</td>
+		</tr>
+		<tr>
+		<td>Wind Speed:</td>
+		<td>
+  <nobr><b>3.0</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>4.8</b>&nbsp;km/h</nobr> / <nobr><b>1.3</b>&nbsp;m/s</nobr>
+</td>
+		</tr>
+		<tr>
+		<td>Wind Dir:</td>
+		<td><span class="b">245&deg;</span> (WSW)</td>
+		</tr>
+		<tr>
+		<td>Ceiling:</td>
+		<td>Unlimited</td>
+		</tr>
+		</tbody>
+		<tr class="gHover">
+		<td colspan="2" class="dataFooter taC">
+		<a href="/Aviation/index.html?query=KBFI#METAR">Full Report</a>
+		&mdash;
+		<a href="/Aviation_Maps/">Pilot Maps</a>
+		</td>
+		</tr>
+	</table>
+</div>
+		<div class="noGap">&nbsp;</div>
+	</div>
+	<table cellspacing="0" cellpadding="0" class="blueBottom">
+		<tr>
+		<td class="bLeft"><div></div></td>
+		<td class="bCenter full"><div></div></td>
+		<td class="bRight"><div></div></td>
+		</tr>
+	</table>
+</div>
+		<div class="bm15"><center>
+	<div style="text-align: left; width: 300px; height: 75px; background: url(http://icons-pe.wxug.com/graphics/statefarm_bg.gif) no-repeat;">
+		<a href="http://www.statefarm.com/apps/agentLoc/SearchResults.asp?search=zip&zip=98101" style="display: block; width: 300px; height: 75px;">
+		<div style="padding-top: 15px;">
+		<div style="margin-left: 75px;">Talk to State Farm agents near you:</div>
+		<div style="margin-left: 75px;"><img src="http://banners.wunderground.com/cgi-bin/statefarmbanner?zip=98101&width=150" width="150" height="20" alt="" /></div>
+		</div>
+		</a>
+	</div>
+</center>
+</div>
+		<div class="bm15">
+	<div class="mainB">Nearby Airports</div>
+	<table cellspacing="0" cellpadding="0" class="dataTable">
+		<thead>
+		<tr>
+		<td colspan="2">City:</td>
+		<td>Temp.:</td>
+		<td>Conditions:</td>
+		<td>Updated:</td>
+		</tr>
+		</thead>
+		<tbody>
+		<tr class="vaT">
+		<td>&nbsp;</td>
+		<td><a href="/US/WA/Seattle/KBFI.html">Seattle Boeing</a></td>
+		<td>
+  <nobr><b>43</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>6</b>&nbsp;&#176;C</nobr>
+</td>
+		<td>Scattered Clouds</td>
+		<td>9:53 AM PDT</td>
+		</tr>
+		<tr class="vaT">
+		<td>&nbsp;</td>
+		<td><a href="/US/WA/Seattle/KRNT.html">Renton</a></td>
+		<td>
+  <nobr><b>44</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>7</b>&nbsp;&#176;C</nobr>
+</td>
+		<td>Scattered Clouds</td>
+		<td>9:53 AM PDT</td>
+		</tr>
+		<tr class="vaT">
+		<td>&nbsp;</td>
+		<td><a href="/US/WA/Seattle/KSEA.html">Seattle</a></td>
+		<td>
+  <nobr><b>42</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>6</b>&nbsp;&#176;C</nobr>
+</td>
+		<td>Mostly Cloudy</td>
+		<td>9:53 AM PDT</td>
+		</tr>
+		<tr class="vaT">
+		<td>&nbsp;</td>
+		<td><a href="/US/WA/Seattle/KPAE.html">Everett</a></td>
+		<td>
+  <nobr><b>41</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>5</b>&nbsp;&#176;C</nobr>
+</td>
+		<td>Mostly Cloudy</td>
+		<td>9:53 AM PDT</td>
+		</tr>
+		</tbody>
+	</table>
+</div>
+		<div class="bm15">
+	<a name="History"></a>
+	<div class="modBox">
+		<script type="text/javascript">
+		window.addEvent('domready', function(){
+		var imgSrcPrefix = "http://icons-pe.wxug.com/graphics/wu2/";
+		var jsname ="history";
+		var localslider = new Fx.Slide(jsname + '_contain');
+		var closeurl = "/?setprefs.0.key=History&setprefs.0.val=0";
+		var openurl = "/?setprefs.0.key=History&setprefs.0.val=1";
+		var iswxstn = 0;
+		$(jsname+'_control').addEvent('click',function(e){
+		e=new Event(e);
+		if(localslider.wrapper.offsetHeight!=0&&localslider.wrapper.offsetWidth!=0){
+		if(iswxstn){$$('img.windvane').addClass('none');}
+		}
+		localslider.toggle().chain(function(){
+		if(localslider.wrapper.offsetHeight==0||localslider.wrapper.offsetWidth==0){
+		$(jsname+'_bar').addClass('close');
+		$(jsname+'_bar').removeClass('open');
+		$(jsname+'_image').setProperty('src',imgSrcPrefix+'ico_down.gif');
+		new Ajax(closeurl,{method:'get'}).request();
+		}else{
+		$(jsname+'_bar').addClass('open');
+		$(jsname+'_bar').removeClass('close');
+		$(jsname+'_image').setProperty('src',imgSrcPrefix+'ico_up.gif');
+		new Ajax(openurl,{method:'get'}).request();
+		if(iswxstn){$$('img.windvane').removeClass('none');}
+		}
+		});
+		e.stop();
+		});
+		});
+		</script>
+		<table id="history_bar" cellspacing="0" cellpadding="2" class="full open">
+		<tr>
+		<td class="full">History & Almanac</td>
+		<td><a id="history_control" href="/cgi-bin/findweather/getForecast?setpref=History&value=0"><img src="http://icons-pe.wxug.com/graphics/wu2/ico_up.gif" id="history_image" alt="Hide" /></a></td>
+		</tr>
+		</table>
+	</div>
+		<div id="history_contain">
+		<table cellspacing="0" cellpadding="0" class="dataTable">
+		<thead>
+		<tr>
+		<td>&nbsp;</td>
+		<td class="nobr">Max Temperature:</td>
+		<td class="nobr">Min Temperature:</td>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+		<td>Normal (KBFI)</td>
+		<td>
+  <nobr><b>56</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>13</b>&nbsp;&#176;C</nobr>
+</td>
+		<td>
+  <nobr><b>41</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>4</b>&nbsp;&#176;C</nobr>
+</td>
+		</tr>
+		<tr>
+		<td>Record (KBFI)</td>
+		<td>
+  <nobr><b>73</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>22</b>&nbsp;&#176;C</nobr>
+ (1959)</td>
+		<td>
+  <nobr><b>34</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>1</b>&nbsp;&#176;C</nobr>
+ (1953)</td>
+		</tr>
+		<tr>
+		<td>Yesterday </td>
+		<td>
+  <nobr><b>48.1</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>8.9</b>&nbsp;&#176;C</nobr>
+ </td>
+		<td>
+  <nobr><b>36.6</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>2.6</b>&nbsp;&#176;C</nobr>
+ </td>
+		</tr>
+		<tr>
+		<td colspan="3" style="background-color: #F5F5F5;">
+	<div class="b">Detailed History and Climate (KBFI)</div>
+	<form action="/cgi-bin/findweather/getForecast">
+		<input type=hidden value=KBFI name=code> <input type=hidden value=airport name=airportorwmo> <input type=hidden value=DailyHistory name=historytype>
+		<table cellpadding="0" cellspacing="0" class="center" id="dateSelector">
+		<tr class="vaM">
+		<td>
+		<select name="month">
+		<option  value="1" >January</option>
+		<option  value="2" >February</option>
+		<option  value="3" >March</option>
+		<option SELECTED  value="4" >April</option>
+		<option   value="5" >May</option>
+		<option   value="6" >June</option>
+		<option   value="7" >July</option>
+		<option   value="8" >August</option>
+		<option   value="9" >September</option>
+		<option   value="10" >October</option>
+		<option   value="11" >November</option>
+		<option   value="12" >December</option>
+		</select>
+		</td>
+		<td>
+		<select name="day">
+		<option >1</option>
+		<option >2</option>
+		<option >3</option>
+		<option >4</option>
+		<option >5</option>
+		<option >6</option>
+		<option >7</option>
+		<option >8</option>
+		<option selected>9</option>
+		<option >10</option>
+		<option >11</option>
+		<option >12</option>
+		<option >13</option>
+		<option >14</option>
+		<option >15</option>
+		<option >16</option>
+		<option >17</option>
+		<option >18</option>
+		<option >19</option>
+		<option >20</option>
+		<option >21</option>
+		<option >22</option>
+		<option >23</option>
+		<option >24</option>
+		<option >25</option>
+		<option >26</option>
+		<option >27</option>
+		<option >28</option>
+		<option >29</option>
+		<option >30</option>
+		<option >31</option>
+		</select>
+		</td>
+		<td>
+		<select name="year">
+		<option selected>2008</option>
+		<option >2007</option>
+		<option >2006</option>
+		<option >2005</option>
+		<option >2004</option>
+		<option >2003</option>
+		<option >2002</option>
+		<option >2001</option>
+		<option >2000</option>
+		<option >1999</option>
+		<option >1998</option>
+		<option >1997</option>
+		<option >1996</option>
+		<option >1995</option>
+		<option >1994</option>
+		<option >1993</option>
+		<option >1992</option>
+		<option >1991</option>
+		<option >1990</option>
+		<option >1989</option>
+		<option >1988</option>
+		<option >1987</option>
+		<option >1986</option>
+		<option >1985</option>
+		<option >1984</option>
+		<option >1983</option>
+		<option >1982</option>
+		<option >1981</option>
+		<option >1980</option>
+		<option >1979</option>
+		<option >1978</option>
+		<option >1977</option>
+		<option >1976</option>
+		<option >1975</option>
+		<option >1974</option>
+		<option >1973</option>
+		<option >1972</option>
+		<option >1971</option>
+		<option >1970</option>
+		</select>
+		</td>
+		<td><input type="submit" value="View" /></td>
+		</tr>
+		</table>
+	</form>
+		</td>
+		</tr>
+		<tr class="wHover">
+		<td colspan="3">
+		<ul>
+		<li><a href="/history/airport/KBFI/2008/4/9/MonthlyHistory.html#calendar">April Calendar View (KBFI)</a></li>
+		<li><a href="/cgi-bin/findweather/getForecast?query=ICAO:KSEA&almanac=1">Yesterday's Official Weather and Almanac</a></li>
+		<li><a href="/NORMS/DisplayNORMS.asp?AirportCode=KBFI&SafeCityName=Seattle&StateCode=WA&Units=none&IATA=SEA">Seasonal Weather Averages</a></li>
+		</ul>
+		</td>
+		</tr>
+		</tbody>
+		</table>
+		</div>
+</div>
+		<table cellspacing="0" cellpadding="0" class="full">
+		<tr>
+		<td class="taC" style="width: 50%; padding-bottom: 10px;">
+		<table bgcolor=#DDDDDD cellspacing=2 cellpadding=1 width=125 border=0>
+		<tr>
+		<td align=center valign=middle>
+		<a href="http://www12.virtualtourist.com/North_America/USA/Washington/Seattle/?s=wu">
+		<img src="http://ads.wunderground.com/ads/images/wu-17.jpg" width=44 height=60 border=1></a>
+</td>
+<td nowrap align=center valign=middle><font face="arial narrow,sans" color="red" size=3><b>Meet<br>Locals</b></font>
+		</td>
+</tr><tr>
+<td bgcolor="#ffffff" colspan=2 align=center>
+		<a href="http://www12.virtualtourist.com/North_America/USA/Washington/Seattle/?s=wu"><font size=-1 face="arial narrow,sans">read their Hotel Tips<br>and Travel Guides for<br><b>Seattle, WA</b></font></a>
+		</td>
+		</tr>
+		</table>
+		</td>
+		<td class="taC" style="width: 50%; padding-bottom: 10px;">
+		<table cellpadding=0 cellspacing=0>
+<tr>
+<td valign=middle><a href="http://www.tripadvisor.com/Tourism-g187147-Paris_Ile_de_France-Vacations-m10665-m10886.html" rel="nofollow"><img src="http://icons-pe.wunderground.com/ads/images/Trip-Paris.gif" width=10 height=105 border=0></a></td>
+<td>
+<table border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+  <td width="10" height="54"><img src="http://icons-pe.wunderground.com/ads/images/TripAdvisor-TL.gif" width="10" height="54"></td>
+  <td align="left" background="http://icons-pe.wunderground.com/ads/images/TripAdvisor-T.gif">
+  <a href="http://www.tripadvisor.com/ZipFinder-z98101-m10886.html" rel="nofollow"><img src="http://icons-pe.wunderground.com/ads/images/TripAdvisor-Blinky.gif" width="105" height="54" alt="TripAdvisor - Hotels and Vacation Packages" border=0></a></td>
+  <td width="10" height="54"><img src="http://icons-pe.wunderground.com/ads/images/TripAdvisor-TR.gif" width="10" height="54"></td>
+  </tr>
+  <tr>
+  <td background="http://icons-pe.wunderground.com/ads/images/TAanimatedL.gif"><img src="http://icons-pe.wunderground.com/ads/images/TAanimatedL.gif" width="10" height="48"></td>
+  <td align="center" width="105">
+ <font size=-1 face="arial narrow">
+  <a href="http://www.tripadvisor.com/ZipFinder-z98101-m10886.html" rel="nofollow">Unbiased reviews<br>and advice for <br><b>Seattle</b><!--<br> hotels and other cities--></a>
+  </font>
+</td>
+  <td background="http://icons-pe.wunderground.com/ads/images/TAanimatedR.gif"><img src="http://icons-pe.wunderground.com/ads/images/TAanimatedR.gif" width="10" height="48"></td>
+  </tr>
+  <tr>
+  <td width="10" height="10"><img src="http://icons-pe.wunderground.com/ads/images/TAanimatedBL.gif" width="10" height="23"></td>
+  <td width="105"><a href="http://www.tripadvisor.com/ZipFinder-z98101-m10886.html" rel="nofollow"><img src="http://icons-pe.wunderground.com/ads/images/TAanimatedB.gif" width="105" height="23" border="0"></a></td>
+  <td width="10" height="10"><img src="http://icons-pe.wunderground.com/ads/images/TAanimatedBR.gif" width="10" height="23"></td>
+  </tr>
+</table>
+</td>
+<td valign=middle><a href="http://las-vegas-hotels.tripadvisor.com/Tourism-g45963-Las_Vegas_Nevada-Vacations-m10665-m10886.html" rel="nofollow"><img src="http://icons-pe.wunderground.com/ads/images/Trip-Vegas.gif" width=12 height=105 border=0></a></td>
+</tr>
+</table>
+		</td>
+		</tr>
+		</table>
+		<div class="bm15">
+<a name="Extremes"></a>
+	<div class="modBox">
+		<script type="text/javascript">
+		window.addEvent('domready', function(){
+		var imgSrcPrefix = "http://icons-pe.wxug.com/graphics/wu2/";
+		var jsname ="extreme";
+		var localslider = new Fx.Slide(jsname + '_contain');
+		var closeurl = "/?setprefs.0.key=Extremes&setprefs.0.val=0";
+		var openurl = "/?setprefs.0.key=Extremes&setprefs.0.val=1";
+		var iswxstn = 0;
+		$(jsname+'_control').addEvent('click',function(e){
+		e=new Event(e);
+		if(localslider.wrapper.offsetHeight!=0&&localslider.wrapper.offsetWidth!=0){
+		if(iswxstn){$$('img.windvane').addClass('none');}
+		}
+		localslider.toggle().chain(function(){
+		if(localslider.wrapper.offsetHeight==0||localslider.wrapper.offsetWidth==0){
+		$(jsname+'_bar').addClass('close');
+		$(jsname+'_bar').removeClass('open');
+		$(jsname+'_image').setProperty('src',imgSrcPrefix+'ico_down.gif');
+		new Ajax(closeurl,{method:'get'}).request();
+		}else{
+		$(jsname+'_bar').addClass('open');
+		$(jsname+'_bar').removeClass('close');
+		$(jsname+'_image').setProperty('src',imgSrcPrefix+'ico_up.gif');
+		new Ajax(openurl,{method:'get'}).request();
+		if(iswxstn){$$('img.windvane').removeClass('none');}
+		}
+		});
+		e.stop();
+		});
+		});
+		</script>
+		<table id="extreme_bar" cellspacing="0" cellpadding="2" class="full open">
+		<tr>
+		<td class="full">Today's State Extremes</td>
+		<td><a id="extreme_control" href="/cgi-bin/findweather/getForecast?setpref=Extremes&value=0"><img src="http://icons-pe.wxug.com/graphics/wu2/ico_up.gif" id="extreme_image" alt="Hide" /></a></td>
+		</tr>
+		</table>
+	</div>
+	<div id="extreme_contain">
+	<table cellspacing="0" cellpadding="0" class="full">
+		<tr class="vaT">
+		<td>
+		<table cellspacing="0" cellpadding="0" class="dataTable">
+		<thead>
+		<tr>
+		<td colspan="2">State Highs:</td>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+		<td><a href="/history/airport/KPSC/2008/04/09/DailyHistory.html">Pasco</a></td>
+		<td><span class="b">48&deg;</span>F / <span class="b">9&deg;</span>C</td>
+		</tr>
+		<tr>
+		<td><a href="/history/airport/KELN/2008/04/09/DailyHistory.html">Ellensburg</a></td>
+		<td><span class="b">46&deg;</span>F / <span class="b">8&deg;</span>C</td>
+		</tr>
+		<tr>
+		<td><a href="/history/airport/KALW/2008/04/09/DailyHistory.html">Walla Walla</a></td>
+		<td><span class="b">45&deg;</span>F / <span class="b">7&deg;</span>C</td>
+		</tr>
+		<tr>
+		<td><a href="/history/airport/KEPH/2008/04/09/DailyHistory.html">Ephrata</a></td>
+		<td><span class="b">45&deg;</span>F / <span class="b">7&deg;</span>C</td>
+		</tr>
+		<tr>
+		<td><a href="/history/airport/KYKM/2008/04/09/DailyHistory.html">Yakima</a></td>
+		<td><span class="b">45&deg;</span>F / <span class="b">7&deg;</span>C</td>
+		</tr>
+		</tbody>
+		</table>
+		</td>
+		<td>
+		<table cellspacing="0" cellpadding="0" class="dataTable">
+		<thead>
+		<tr>
+		<td colspan="2">State Lows:</td>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+		<td><a href="/history/airport/KYKM/2008/04/09/DailyHistory.html">Yakima</a></td>
+		<td><span class="b">21&deg;</span>F / <span class="b">-6&deg;</span>C</td>
+		</tr>
+		<tr>
+		<td><a href="/history/airport/KPWT/2008/04/09/DailyHistory.html">Bremerton</a></td>
+		<td><span class="b">26&deg;</span>F / <span class="b">-3&deg;</span>C</td>
+		</tr>
+		<tr>
+		<td><a href="/history/airport/KOMK/2008/04/09/DailyHistory.html">Omak</a></td>
+		<td><span class="b">27&deg;</span>F / <span class="b">-3&deg;</span>C</td>
+		</tr>
+		<tr>
+		<td><a href="/history/airport/KEPH/2008/04/09/DailyHistory.html">Ephrata</a></td>
+		<td><span class="b">28&deg;</span>F / <span class="b">-2&deg;</span>C</td>
+		</tr>
+		<tr>
+		<td><a href="/history/airport/KMWH/2008/04/09/DailyHistory.html">Moses Lake</a></td>
+		<td><span class="b">28&deg;</span>F / <span class="b">-2&deg;</span>C</td>
+		</tr>
+		</tbody>
+		</table>
+		</td>
+		</tr>
+	</table>
+	</div>
+</div>
+		<div class="bm15">
+	<div class="modBox">
+		<script type="text/javascript">
+		window.addEvent('domready', function(){
+		var imgSrcPrefix = "http://icons-pe.wxug.com/graphics/wu2/";
+		var jsname ="astro";
+		var localslider = new Fx.Slide(jsname + '_contain');
+		var closeurl = "/?setprefs.0.key=Sky&setprefs.0.val=0";
+		var openurl = "/?setprefs.0.key=Sky&setprefs.0.val=1";
+		var iswxstn = 0;
+		$(jsname+'_control').addEvent('click',function(e){
+		e=new Event(e);
+		if(localslider.wrapper.offsetHeight!=0&&localslider.wrapper.offsetWidth!=0){
+		if(iswxstn){$$('img.windvane').addClass('none');}
+		}
+		localslider.toggle().chain(function(){
+		if(localslider.wrapper.offsetHeight==0||localslider.wrapper.offsetWidth==0){
+		$(jsname+'_bar').addClass('close');
+		$(jsname+'_bar').removeClass('open');
+		$(jsname+'_image').setProperty('src',imgSrcPrefix+'ico_down.gif');
+		new Ajax(closeurl,{method:'get'}).request();
+		}else{
+		$(jsname+'_bar').addClass('open');
+		$(jsname+'_bar').removeClass('close');
+		$(jsname+'_image').setProperty('src',imgSrcPrefix+'ico_up.gif');
+		new Ajax(openurl,{method:'get'}).request();
+		if(iswxstn){$$('img.windvane').removeClass('none');}
+		}
+		});
+		e.stop();
+		});
+		});
+		</script>
+		<table id="astro_bar" cellspacing="0" cellpadding="2" class="full open">
+		<tr>
+		<td class="full">Astronomy</td>
+		<td><a id="astro_control" href="/cgi-bin/findweather/getForecast?setpref=Sky&value=0"><img src="http://icons-pe.wxug.com/graphics/wu2/ico_up.gif" id="astro_image" alt="Hide" /></a></td>
+		</tr>
+		</table>
+	</div>
+<div id="astro_contain">
+	<table cellspacing="0" cellpadding="0" class="dataTable">
+		<thead>
+		<tr>
+		<td>April 9, 2008</td>
+		<td>Rise:</td>
+		<td>Set:</td>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+		<td>Actual Time</td>
+		<td>6:30 AM PDT</td>
+		<td>7:51 PM PDT</td>
+		</tr>
+		<tr>
+		<td>Civil Twilight</td>
+		<td>5:59 AM PDT</td>
+		<td>8:23 PM PDT</td>
+		</tr>
+		<tr>
+		<td>Nautical Twilight</td>
+		<td>5:20 AM PDT</td>
+		<td>9:01 PM PDT</td>
+		</tr>
+		<tr>
+		<td>Astronomical Twilight</td>
+		<td>4:39 AM PDT</td>
+		<td>9:43 PM PDT</td>
+		</tr>
+		<tr>
+		<td>Moon</td>
+		<td>8:07 AM PDT</td>
+		<td>12:06 AM PDT</td>
+		</tr>
+		<tr>
+		<td>Length Of Visible Light:</td>
+		<td colspan="2">14h 24m</td>
+		</tr>
+		<tr>
+		<td>Length of Day</td>
+		<td colspan="2">
+		<div>13h 20m</div>
+		<div>Tomorrow will be <span class="b">3m 21s longer</span>.</div>
+		</td>
+		</tr>
+		<tr class="wHover">
+		<td colspan="3">
+		<p class="taC"><a href="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=seattle&MR=0&extendedsun=sunon" class="subLink">Extended View</a></p>
+		</td>
+		</tr>
+		<tr class="wHover">
+		<td colspan="3">
+		<div class="b">Waxing Crescent, 18% of the Moon is Illuminated</div>
+		<table cellspacing="0" cellpadding="0" class="full" id="moonTable">
+		<tr>
+		<td><img src="http://icons-pe.wxug.com/graphics/moonpictsnew/moon4.gif" width="48" height="48" alt="" /></td>
+		<td><img src="http://icons-pe.wxug.com/graphics/moonpictsnew/moon8.gif" width="48" height="48" alt="" /></td>
+		<td><img src="http://icons-pe.wxug.com/graphics/moonpictsnew/moon16.gif" width="48" height="48" alt="" /></td>
+		<td><img src="http://icons-pe.wxug.com/graphics/moonpictsnew/moon23.gif" width="48" height="48" alt="" /></td>
+		<td><img src="http://icons-pe.wxug.com/graphics/moonpictsnew/moon1.gif" width="48" height="48" alt="" /></td>
+		</tr>
+		<tr>
+		<td class="b">
+		Today
+		</td>
+		<td>
+		<div class="b">4 / 12</div>
+		<div class="sm">First Quarter</div>
+		</td>
+		<td>
+		<div class="b">4 / 20</div>
+		<div class="sm">Full</div>
+		</td>
+		<td>
+		<div class="b">4 / 28</div>
+		<div class="sm">Last Quarter</div>
+		</td>
+		<td>
+		<div class="b">5 / 5</div>
+		<div class="sm">New</div>
+		</td>
+		</tr>
+		</table>
+		<p>For more information about the solar system:</p>
+		<ul>
+		<li><a href="/sky/ShowSky.asp?TheLat=47.61167908&TheLon=-122.33325958&TimeZoneName=America/Los_Angeles">View the Full Star Chart!</a></li>
+		<li><a href="/about/faq/twilights.asp">Definitions of Astronomy Terms</a></li>
+		</ul>
+		</td>
+		</tr>
+		</tbody>
+	</table>
+</div>
+</div>
+		<div class="bm15"><div class="mainB">Free Weather Stickers&reg; for Your Homepage!</div>
+<table cellspacing="0" cellpadding="10" class="full" id="promoTable">
+	<tr class="vaT">
+		<td>
+		<div class="bm10">We've cooked up some fun dynamic images for you to put on your homepage.</div>
+		<ul>
+		<li>18 <span class="b red">NEW</span> Stickers!</li>
+		<li>Multiple Styles to Choose From</li>
+		<li>Display Current conditions</li>
+		</ul>
+		<p class="taC"><a href="/geo/BannerPromo/US/WA/Seattle.html" class="subLink">Get Your Weather Sticker!</a></p>
+		</td>
+  <td>
+		<div class="taC" id="stickerBox" onclick=window.location="/geo/BannerPromo/US/WA/Seattle.html">
+		<div class="smB">
+		Seattle,
+		WA
+		</div>
+		<div class="smB">
+		<div>
+  <nobr><b>44.1</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>6.7</b>&nbsp;&#176;C</nobr>
+</div>
+		<div>Scattered Clouds</div>
+		<div>at 10:18 AM PDT</div>
+		</div>
+		<p class="nobr sm">(Click for forecast)</p>
+		<div class="tm10"><img src="http://icons-pe.wxug.com/graphics/wu2/logo_footer.gif" width="53" height="25" alt="" /></div>
+		</div>
+		</td>
+	</tr>
+</table>
+</div>
+		<div style="width: 375px;"></div>
+		</td>
+		<td><div class="w10"></div></td>
+		<td class="vaT full">
+		<div class="bm15">
+	<div class="mainB">
+		<table cellspacing="0" cellpadding="0" class="full">
+		<tr>
+		<td class="full">
+		5-Day Forecast
+		for
+		ZIP Code 98101
+		</td>
+		<td class="nobr"><a href="/member/membersettings.html?page=icons" id="iconsLink">Customize Your Icons!</a></td>
+		</tr>
+		</table>
+	</div>
+	<table cellspacing="0" cellpadding="0" class="dataTable">
+		<thead>
+		<tr>
+		<td class="taC" style="width: 20%;">Wednesday</td>
+		<td class="taC" style="width: 20%;">Thursday</td>
+		<td class="taC" style="width: 20%;">Friday</td>
+		<td class="taC" style="width: 20%;">Saturday</td>
+		<td class="taC" style="width: 20%;">Sunday</td>
+		</tr>
+		</thead>
+		<tbody>
+		<tr class="wHover noBorder">
+		<td class="taC" >
+		<div><img src="http://icons-pe.wxug.com/i/c/a/rain.gif" width="42" alt="Rain Showers" height="42" class="condIcon" /></div>
+		<div class="b nobr">
+		<span style="color: #900;">50&deg; F</span>
+		<span style="font-weight: normal; color: #999;">|</span>
+		<span style="color: #009;">40&deg; F</span>
+		<br />
+		<span style="color: #900;">10&deg; C</span>
+		<span style="font-weight: normal; color: #999;">|</span>
+		<span style="color: #009;">4&deg; C</span>
+		</div>
+		</td>
+		<td class="taC" >
+		<div><img src="http://icons-pe.wxug.com/i/c/a/chancerain.gif" width="42" alt="Chance of Rain" height="42" class="condIcon" /></div>
+		<div class="b nobr">
+		<span style="color: #900;">52&deg; F</span>
+		<span style="font-weight: normal; color: #999;">|</span>
+		<span style="color: #009;">40&deg; F</span>
+		<br />
+		<span style="color: #900;">11&deg; C</span>
+		<span style="font-weight: normal; color: #999;">|</span>
+		<span style="color: #009;">4&deg; C</span>
+		</div>
+		</td>
+		<td class="taC" >
+		<div><img src="http://icons-pe.wxug.com/i/c/a/partlycloudy.gif" width="42" alt="Partly Cloudy" height="42" class="condIcon" /></div>
+		<div class="b nobr">
+		<span style="color: #900;">61&deg; F</span>
+		<span style="font-weight: normal; color: #999;">|</span>
+		<span style="color: #009;">43&deg; F</span>
+		<br />
+		<span style="color: #900;">16&deg; C</span>
+		<span style="font-weight: normal; color: #999;">|</span>
+		<span style="color: #009;">6&deg; C</span>
+		</div>
+		</td>
+		<td class="taC" >
+		<div><img src="http://icons-pe.wxug.com/i/c/a/partlycloudy.gif" width="42" alt="Partly Cloudy" height="42" class="condIcon" /></div>
+		<div class="b nobr">
+		<span style="color: #900;">68&deg; F</span>
+		<span style="font-weight: normal; color: #999;">|</span>
+		<span style="color: #009;">47&deg; F</span>
+		<br />
+		<span style="color: #900;">20&deg; C</span>
+		<span style="font-weight: normal; color: #999;">|</span>
+		<span style="color: #009;">8&deg; C</span>
+		</div>
+		</td>
+		<td class="taC" >
+		<div><img src="http://icons-pe.wxug.com/i/c/a/chancerain.gif" width="42" alt="Chance of Rain" height="42" class="condIcon" /></div>
+		<div class="b nobr">
+		<span style="color: #900;">59&deg; F</span>
+		<span style="font-weight: normal; color: #999;">|</span>
+		<span style="color: #009;">40&deg; F</span>
+		<br />
+		<span style="color: #900;">15&deg; C</span>
+		<span style="font-weight: normal; color: #999;">|</span>
+		<span style="color: #009;">4&deg; C</span>
+		</div>
+		</td>
+		</tr>
+		<tr class="wHover noBorder">
+		<td class="taC" >
+		Rain Showers
+		<div>
+		<span class="b green">40%</span> chance of precipitation
+		</div>
+		</td>
+		<td class="taC" >
+		Chance of Rain
+		<div>
+		<span class="b green">40%</span> chance of precipitation
+		</div>
+		</td>
+		<td class="taC" >
+		Partly Cloudy
+		</td>
+		<td class="taC" >
+		Partly Cloudy
+		</td>
+		<td class="taC" >
+		Chance of Rain
+		<div>
+		<span class="b green">30%</span> chance of precipitation
+		</div>
+		</td>
+		</tr>
+		<tr class="wHover noBorder">
+		<td class="taC">
+		<div><a href="/cgi-bin/findweather/getForecast?query=98101&hourly=1&yday=99&weekday=Wednesday">Hourly</a></div>
+		</td>
+		<td class="taC">
+		<div><a href="/cgi-bin/findweather/getForecast?query=98101&hourly=1&yday=100&weekday=Thursday">Hourly</a></div>
+		</td>
+		<td class="taC">
+		<div><a href="/cgi-bin/findweather/getForecast?query=98101&hourly=1&yday=101&weekday=Friday">Hourly</a></div>
+		</td>
+		<td class="taC">
+		<div><a href="/cgi-bin/findweather/getForecast?query=98101&hourly=1&yday=102&weekday=Saturday">Hourly</a></div>
+		</td>
+		<td class="taC">
+		<div><a href="/cgi-bin/findweather/getForecast?query=98101&hourly=1&yday=103&weekday=Sunday">Hourly</a></div>
+		</td>
+		</tr>
+		</tbody>
+		<tr>
+		<td colspan="5" class="taC dataFooter" style="border-top: 1px dotted #CCC;">
+  <div>Today is forecast to be <span class="b" style="color: #000;">nearly the same</span> temperature as yesterday.</div>
+		</td>
+		</tr>
+	</table>
+</div>
+		<table cellspacing="0" cellpadding="0" class="full">
+		<tr>
+		<td class="full vaT">
+		<div class="taC bm15">
+  <!-- Campaign=CNTW-00153 Views=2 Caps=[86400,1207761420,1207761520] -->
+
+<script  src="http://tag.contextweb.com/TagPublish/getjs.aspx?action=VIEWAD&cwrun=200&cwadformat=300X250&cwpid=501711&cwwidth=300&cwheight=250&cwpnet=1&cwtagid=16202"></script>
+</div>
+		<div class="bm15">
+	<div class="modBox">
+		<script type="text/javascript">
+		window.addEvent('domready', function(){
+		var imgSrcPrefix = "http://icons-pe.wxug.com/graphics/wu2/";
+		var jsname ="forecast";
+		var localslider = new Fx.Slide(jsname + '_contain');
+		var closeurl = "/?setprefs.0.key=DETFCT&setprefs.0.val=0";
+		var openurl = "/?setprefs.0.key=DETFCT&setprefs.0.val=1";
+		var iswxstn = 0;
+		$(jsname+'_control').addEvent('click',function(e){
+		e=new Event(e);
+		if(localslider.wrapper.offsetHeight!=0&&localslider.wrapper.offsetWidth!=0){
+		if(iswxstn){$$('img.windvane').addClass('none');}
+		}
+		localslider.toggle().chain(function(){
+		if(localslider.wrapper.offsetHeight==0||localslider.wrapper.offsetWidth==0){
+		$(jsname+'_bar').addClass('close');
+		$(jsname+'_bar').removeClass('open');
+		$(jsname+'_image').setProperty('src',imgSrcPrefix+'ico_down.gif');
+		new Ajax(closeurl,{method:'get'}).request();
+		}else{
+		$(jsname+'_bar').addClass('open');
+		$(jsname+'_bar').removeClass('close');
+		$(jsname+'_image').setProperty('src',imgSrcPrefix+'ico_up.gif');
+		new Ajax(openurl,{method:'get'}).request();
+		if(iswxstn){$$('img.windvane').removeClass('none');}
+		}
+		});
+		e.stop();
+		});
+		});
+		</script>
+		<table id="forecast_bar" cellspacing="0" cellpadding="2" class="full open">
+		<tr>
+		<td class="full">Forecast for Seattle/Bremerton Area</td>
+		<td><a id="forecast_control" href="/cgi-bin/findweather/getForecast?setpref=DETFCT&value=0"><img src="http://icons-pe.wxug.com/graphics/wu2/ico_up.gif" id="forecast_image" alt="Hide" /></a></td>
+		</tr>
+		</table>
+	</div>
+<div id="forecast_contain">
+	<table cellspacing="0" cellpadding="0" class="dataTable">
+		<thead>
+		<tr>
+		<td colspan="2">Updated: 4:45 am PDT on April 9, 2008</td>
+		</tr>
+		</thead>
+		<tbody>
+	<tr class="wHover">
+  <td colspan="2">
+  <table cellspacing="0" cellpadding="0" id="noticeForecast">
+		<tr class="vaM">
+		<td><img src="http://icons-pe.wxug.com/graphics/smash/blue_Warning.gif" width="22" height="22" alt="" /></td>
+		<td class="full">
+		Active Notice:
+		<nobr> <a href="/US/WA/508.html#REC">Record Report</a></nobr>
+		&nbsp;(<a href="/severe.asp" class="nobr sm">US Severe Weather</a>)
+		</td>
+		</tr>
+		</table>
+		</td>
+	</tr>
+		<tr class="wHover">
+		<td><img src="http://icons-pe.wxug.com/i/c/a/cloudy.gif" width="42" alt="cloudy" height="42" class="condIcon" /></td>
+		<td class="full">
+		<div class="b">Today</div>
+		<div>Mostly cloudy with a chance of showers. Patchy morning fog mainly south of Seattle. Highs in the lower to mid 50s. Light wind becoming south around 10 mph this afternoon. </div>
+		<div>
+		&raquo; <a href="/cgi-bin/findweather/getForecast?query=98101&hourly=1&yday=99&weekday=Wednesday">ZIP Code Detail</a>
+</div>
+		</td>
+		</tr>
+		<tr class="wHover">
+		<td><img src="http://icons-pe.wxug.com/i/c/a/nt_rain.gif" width="42" alt="nt_rain" height="42" class="condIcon" /></td>
+		<td class="full">
+		<div class="b">Tonight</div>
+		<div>Showers likely. Lows near 40. Southwest wind 10 to 15 mph. </div>
+		<div>
+</div>
+		</td>
+		</tr>
+		<tr class="wHover">
+		<td><img src="http://icons-pe.wxug.com/i/c/a/cloudy.gif" width="42" alt="cloudy" height="42" class="condIcon" /></td>
+		<td class="full">
+		<div class="b">Thursday</div>
+		<div>Morning clouds...becoming partly sunny. A chance of showers. Highs in the 50s. Southwest wind 10 to 15 mph. </div>
+		<div>
+		&raquo; <a href="/cgi-bin/findweather/getForecast?query=98101&hourly=1&yday=100&weekday=Thursday">ZIP Code Detail</a>
+</div>
+		</td>
+		</tr>
+		<tr class="wHover">
+		<td><img src="http://icons-pe.wxug.com/i/c/a/nt_partlycloudy.gif" width="42" alt="nt_partlycloudy" height="42" class="condIcon" /></td>
+		<td class="full">
+		<div class="b">Thursday Night</div>
+		<div>Partly cloudy. Lows in the mid 30s to lower 40s. Northwest wind 10 to 15 mph in the evening becoming light. </div>
+		<div>
+</div>
+		</td>
+		</tr>
+		<tr class="wHover">
+		<td><img src="http://icons-pe.wxug.com/i/c/a/partlycloudy.gif" width="42" alt="partlycloudy" height="42" class="condIcon" /></td>
+		<td class="full">
+		<div class="b">Friday</div>
+		<div>Mostly sunny. Highs in the upper 50s to mid 60s. Light wind. </div>
+		<div>
+		&raquo; <a href="/cgi-bin/findweather/getForecast?query=98101&hourly=1&yday=101&weekday=Friday">ZIP Code Detail</a>
+</div>
+		</td>
+		</tr>
+		<tr class="wHover">
+		<td><img src="http://icons-pe.wxug.com/i/c/a/nt_sunny.gif" width="42" alt="nt_sunny" height="42" class="condIcon" /></td>
+		<td class="full">
+		<div class="b">Friday Night</div>
+		<div>Mostly clear. Lows in the lower 40s. </div>
+		<div>
+</div>
+		</td>
+		</tr>
+		<tr class="wHover">
+		<td><img src="http://icons-pe.wxug.com/i/c/a/partlycloudy.gif" width="42" alt="partlycloudy" height="42" class="condIcon" /></td>
+		<td class="full">
+		<div class="b">Saturday</div>
+		<div>Mostly sunny. Highs in the upper 60s. </div>
+		<div>
+</div>
+		</td>
+		</tr>
+		<tr class="wHover">
+		<td><img src="http://icons-pe.wxug.com/i/c/a/nt_cloudy.gif" width="42" alt="nt_cloudy" height="42" class="condIcon" /></td>
+		<td class="full">
+		<div class="b">Saturday Night</div>
+		<div>Mostly cloudy. Lows in the mid 40s. </div>
+		<div>
+</div>
+		</td>
+		</tr>
+		<tr class="wHover">
+		<td><img src="http://icons-pe.wxug.com/i/c/a/cloudy.gif" width="42" alt="cloudy" height="42" class="condIcon" /></td>
+		<td class="full">
+		<div class="b">Sunday through Tuesday</div>
+		<div>Mostly cloudy with a chance of showers. Highs in the upper 50s. Lows in the upper 30s to mid 40s. </div>
+		<div>
+</div>
+		</td>
+		</tr>
+		<tr class="wHover">
+		<td colspan="2" class="taC">Alternate Computer Forecast: <a href=/MOS/DisplayMOS.asp?AirportCode=KBFI&SafeCityName=Seattle&StateCode=WA>AVN MOS Weather Graph</a></td>
+		</tr>
+		</tbody>
+		<tr>
+		<td colspan="2" class="taC dataFooter"><a href="/DisplayDisc.asp?DiscussionCode=SEW&StateCode=WA&SafeCityName=Seattle">Scientific Forecaster Discussion (NWS)</a></td>
+		</tr>
+	</table>
+</div>
+</div>
+		<div class="bm15">
+</div>
+		<div class="bm15">
+	<div class="modBox">
+		<script type="text/javascript">
+		window.addEvent('domready', function(){
+		var imgSrcPrefix = "http://icons-pe.wxug.com/graphics/wu2/";
+		var jsname ="precip";
+		var localslider = new Fx.Slide(jsname + '_contain');
+		var closeurl = "/?setprefs.0.key=Precip&setprefs.0.val=0";
+		var openurl = "/?setprefs.0.key=Precip&setprefs.0.val=1";
+		var iswxstn = 0;
+		$(jsname+'_control').addEvent('click',function(e){
+		e=new Event(e);
+		if(localslider.wrapper.offsetHeight!=0&&localslider.wrapper.offsetWidth!=0){
+		if(iswxstn){$$('img.windvane').addClass('none');}
+		}
+		localslider.toggle().chain(function(){
+		if(localslider.wrapper.offsetHeight==0||localslider.wrapper.offsetWidth==0){
+		$(jsname+'_bar').addClass('close');
+		$(jsname+'_bar').removeClass('open');
+		$(jsname+'_image').setProperty('src',imgSrcPrefix+'ico_down.gif');
+		new Ajax(closeurl,{method:'get'}).request();
+		}else{
+		$(jsname+'_bar').addClass('open');
+		$(jsname+'_bar').removeClass('close');
+		$(jsname+'_image').setProperty('src',imgSrcPrefix+'ico_up.gif');
+		new Ajax(openurl,{method:'get'}).request();
+		if(iswxstn){$$('img.windvane').removeClass('none');}
+		}
+		});
+		e.stop();
+		});
+		});
+		</script>
+		<table id="precip_bar" cellspacing="0" cellpadding="2" class="full open">
+		<tr>
+		<td class="full">Forecasted Temperature &amp; Probability of Precipitation</td>
+		<td><a id="precip_control" href="/cgi-bin/findweather/getForecast?setpref=Precip&value=0"><img src="http://icons-pe.wxug.com/graphics/wu2/ico_up.gif" id="precip_image" alt="Hide" /></a></td>
+		</tr>
+		</table>
+	</div>
+		<div id="precip_contain">
+		<table cellspacing="0" cellpadding="0" class="dataTable">
+		<thead>
+		<tr>
+		<td>Place:</td>
+		<td colspan="2" class="taC">Today:</td>
+		<td colspan="2" class="taC">Tonight:</td>
+		<td colspan="2" class="taC">Thursday:</td>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+		<td>Puyallup</td>
+		<td class="taC">54&deg;F</td>
+		<td class="taC dataBlue">40%</td>
+		<td class="taC">40&deg;F</td>
+		<td class="taC dataBlue">70%</td>
+		<td class="taC">56&deg;F</td>
+		<td class="taC dataBlue">40%</td>
+		</tr>
+		<tr>
+		<td>Tacoma</td>
+		<td class="taC">52&deg;F</td>
+		<td class="taC dataBlue">40%</td>
+		<td class="taC">38&deg;F</td>
+		<td class="taC dataBlue">70%</td>
+		<td class="taC">56&deg;F</td>
+		<td class="taC dataBlue">40%</td>
+		</tr>
+		<tr>
+		<td>Seattle</td>
+		<td class="taC">53&deg;F</td>
+		<td class="taC dataBlue">40%</td>
+		<td class="taC">40&deg;F</td>
+		<td class="taC dataBlue">60%</td>
+		<td class="taC">55&deg;F</td>
+		<td class="taC dataBlue">40%</td>
+		</tr>
+		<tr>
+		<td>Bremerton</td>
+		<td class="taC">51&deg;F</td>
+		<td class="taC dataBlue">40%</td>
+		<td class="taC">38&deg;F</td>
+		<td class="taC dataBlue">70%</td>
+		<td class="taC">52&deg;F</td>
+		<td class="taC dataBlue">40%</td>
+		</tr>
+		<tr>
+		<td>Edmonds</td>
+		<td class="taC">52&deg;F</td>
+		<td class="taC dataBlue">40%</td>
+		<td class="taC">40&deg;F</td>
+		<td class="taC dataBlue">70%</td>
+		<td class="taC">52&deg;F</td>
+		<td class="taC dataBlue">40%</td>
+		</tr>
+		<tr>
+		<td>Everett</td>
+		<td class="taC">50&deg;F</td>
+		<td class="taC dataBlue">40%</td>
+		<td class="taC">39&deg;F</td>
+		<td class="taC dataBlue">70%</td>
+		<td class="taC">51&deg;F</td>
+		<td class="taC dataBlue">40%</td>
+		</tr>
+		</tbody>
+		</table>
+		<div class="taR" style="padding: 5px;"><img src="http://icons-pe.wxug.com/graphics/bluesquare.gif" width="15" height="15" align="absbottom" alt="" /> = Probability of Precipitation</div>
+		</div>
+</div>
+		<div class="bm15">
+	<div class="modBox">
+		<script type="text/javascript">
+		window.addEvent('domready', function(){
+		var imgSrcPrefix = "http://icons-pe.wxug.com/graphics/wu2/";
+		var jsname ="sports";
+		var localslider = new Fx.Slide(jsname + '_contain');
+		var closeurl = "/?setprefs.0.key=FOOTBALL&setprefs.0.val=0";
+		var openurl = "/?setprefs.0.key=FOOTBALL&setprefs.0.val=1";
+		var iswxstn = 0;
+		$(jsname+'_control').addEvent('click',function(e){
+		e=new Event(e);
+		if(localslider.wrapper.offsetHeight!=0&&localslider.wrapper.offsetWidth!=0){
+		if(iswxstn){$$('img.windvane').addClass('none');}
+		}
+		localslider.toggle().chain(function(){
+		if(localslider.wrapper.offsetHeight==0||localslider.wrapper.offsetWidth==0){
+		$(jsname+'_bar').addClass('close');
+		$(jsname+'_bar').removeClass('open');
+		$(jsname+'_image').setProperty('src',imgSrcPrefix+'ico_down.gif');
+		new Ajax(closeurl,{method:'get'}).request();
+		}else{
+		$(jsname+'_bar').addClass('open');
+		$(jsname+'_bar').removeClass('close');
+		$(jsname+'_image').setProperty('src',imgSrcPrefix+'ico_up.gif');
+		new Ajax(openurl,{method:'get'}).request();
+		if(iswxstn){$$('img.windvane').removeClass('none');}
+		}
+		});
+		e.stop();
+		});
+		});
+		</script>
+		<table id="sports_bar" cellspacing="0" cellpadding="2" class="full open">
+		<tr>
+		<td class="full">Sports Weather</td>
+		<td><a id="sports_control" href="/cgi-bin/findweather/getForecast?setpref=FOOTBALL&value=0"><img src="http://icons-pe.wxug.com/graphics/wu2/ico_up.gif" id="sports_image" alt="Hide" /></a></td>
+		</tr>
+		</table>
+	</div>
+		<div id="sports_contain">
+		<table cellspacing="0" cellpadding="0" class="dataTable">
+		<tbody>
+		</tbody>
+		<thead>
+		<tr>
+		<td>College Football:</td>
+		<td>Date:</td>
+		<td>Forecast:</td>
+		</tr>
+		</thead>
+		<tbody>
+	<tr>
+		<td><a href="/sports/CFB_1/hometeam/Ball_State:Cardinals.html?st=1219924800">Huskies vs. Cardinals</a></td>
+		<td>12:00 PM EDT on August 28, 2008</td>
+		<td>Average High 83&deg; F/ 28&deg; C</td>
+	</tr>
+	<tr>
+		<td><a href="/sports/CFB_1/hometeam/Buffalo:Bulls.html?st=1219924800">Miners vs. Bulls</a></td>
+		<td>12:00 PM EDT on August 28, 2008</td>
+		<td>Average High 76&deg; F/ 24&deg; C</td>
+	</tr>
+		</tbody>
+		<thead>
+		<tr>
+		<td>MLB:</td>
+		<td>Date:</td>
+		<td>Forecast:</td>
+		</tr>
+		</thead>
+		<tbody>
+	<tr>
+		<td><a href="/sports/MLB/hometeam/Seattle:Mariners.html?st=1207951800">Angels vs. <b>Mariners</b></a></td>
+		<td>7:10 PM PDT on April 11, 2008</td>
+		<td>Clear,
+  <nobr><b>45</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>7</b>&nbsp;&#176;C</nobr>
+</td>
+	</tr>
+	<tr>
+		<td><a href="/sports/MLB/hometeam/Seattle:Mariners.html?st=1208034600">Angels vs. <b>Mariners</b></a></td>
+		<td>6:10 PM PDT on April 12, 2008</td>
+		<td>Partly Cloudy,
+  <nobr><b>70</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>21</b>&nbsp;&#176;C</nobr>
+</td>
+	</tr>
+		</tbody>
+		<thead>
+		<tr>
+		<td>Football (Soccer):</td>
+		<td>Date:</td>
+		<td>Forecast:</td>
+		</tr>
+		</thead>
+		<tbody>
+	<tr>
+		<td><a href="/sports/IFB_Fran/hometeam/:Paris_SG.html?st=1207740600">Strasbourg vs. Paris SG</a></td>
+		<td>5:30 PM CEST on April 09, 2008</td>
+		<td>Scattered Clouds, High 48&deg; F/ 9&deg; C</td>
+	</tr>
+	<tr>
+		<td><a href="/sports/IFB_Fran/hometeam/:St._Etienne.html?st=1207744200">Lens vs. St. Etienne</a></td>
+		<td>6:30 PM CEST on April 09, 2008</td>
+		<td>Chance of Rain, High 59&deg; F/ 15&deg; C</td>
+	</tr>
+		</tbody>
+		<thead>
+		<tr>
+		<td>NASCAR:</td>
+		<td>Date:</td>
+		<td>Forecast:</td>
+		</tr>
+		</thead>
+		<tbody>
+	<tr>
+		<td><a href="/sports/NAS/stadium/16:NAS?st=1208033100">Subway Fresh Fit 500</a></td>
+		<td>5:45 PM MST on April 12, 2008</td>
+		<td>Clear,
+  <nobr><b>92</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>33</b>&nbsp;&#176;C</nobr>
+</td>
+	</tr>
+	<tr>
+		<td><a href="/sports/NAS/stadium/15:NAS?st=1209306000">Aaron's 499</a></td>
+		<td>1:20 PM CDT on April 27, 2008</td>
+		<td>Average High 76&deg; F/ 24&deg; C</td>
+	</tr>
+		</tbody>
+		<thead>
+		<tr>
+		<td>PGA Golf:</td>
+		<td>Date:</td>
+		<td>Forecast:</td>
+		</tr>
+		</thead>
+		<tbody>
+	<tr>
+		<td><a href="/sports/GLF/stadium/15:GLF?st=1207816200">The Masters</a></td>
+		<td>8:30 AM EDT on April 10, 2008</td>
+		<td>Partly Cloudy,
+  <nobr><b>54</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>12</b>&nbsp;&#176;C</nobr>
+</td>
+	</tr>
+	<tr>
+		<td><a href="/sports/GLF/stadium/15:GLF?st=1207902600">The Masters</a></td>
+		<td>8:30 AM EDT on April 11, 2008</td>
+		<td>Partly Cloudy,
+  <nobr><b>59</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>15</b>&nbsp;&#176;C</nobr>
+</td>
+	</tr>
+		</tbody>
+		<tr>
+		<td colspan="3" class="taC dataFooter">
+		View Schedules:
+		<a href="/sports/CFB/">CFB</a> |
+		<a href="/sports/MLB/">MLB</a> |
+		<a href="/sports/IFB/">IFB</a> |
+		<a href="/sports/NAS/">NASCAR</a>
+		<a href="/sports/GLF/">PGA Golf</a>
+		</td>
+		</tr>
+		</table>
+		</div>
+</div>
+		<div class="bm15">
+	<div class="modBox">
+		<script type="text/javascript">
+		window.addEvent('domready', function(){
+		var imgSrcPrefix = "http://icons-pe.wxug.com/graphics/wu2/";
+		var jsname ="localblog";
+		var localslider = new Fx.Slide(jsname + '_contain');
+		var closeurl = "/?setprefs.0.key=BLOGS&setprefs.0.val=0";
+		var openurl = "/?setprefs.0.key=BLOGS&setprefs.0.val=1";
+		var iswxstn = 0;
+		$(jsname+'_control').addEvent('click',function(e){
+		e=new Event(e);
+		if(localslider.wrapper.offsetHeight!=0&&localslider.wrapper.offsetWidth!=0){
+		if(iswxstn){$$('img.windvane').addClass('none');}
+		}
+		localslider.toggle().chain(function(){
+		if(localslider.wrapper.offsetHeight==0||localslider.wrapper.offsetWidth==0){
+		$(jsname+'_bar').addClass('close');
+		$(jsname+'_bar').removeClass('open');
+		$(jsname+'_image').setProperty('src',imgSrcPrefix+'ico_down.gif');
+		new Ajax(closeurl,{method:'get'}).request();
+		}else{
+		$(jsname+'_bar').addClass('open');
+		$(jsname+'_bar').removeClass('close');
+		$(jsname+'_image').setProperty('src',imgSrcPrefix+'ico_up.gif');
+		new Ajax(openurl,{method:'get'}).request();
+		if(iswxstn){$$('img.windvane').removeClass('none');}
+		}
+		});
+		e.stop();
+		});
+		});
+		</script>
+		<table id="localblog_bar" cellspacing="0" cellpadding="2" class="full open">
+		<tr>
+		<td class="full">Blogs in This Area</td>
+		<td><a id="localblog_control" href="/cgi-bin/findweather/getForecast?setpref=BLOGS&value=0"><img src="http://icons-pe.wxug.com/graphics/wu2/ico_up.gif" id="localblog_image" alt="Hide" /></a></td>
+		</tr>
+		</table>
+	</div>
+		<div id="localblog_contain">
+		<table cellspacing="0" cellpadding="0" class="dataTable">
+		<thead>
+		<tr>
+		<td>City:</td>
+		<td>Member:</td>
+		<td>Title:</td>
+		<td>Last Activity:</td>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+		<td>Seattle</td>
+		<td><a href="/blog/MrMichael/show.html">MrMichael</a></td>
+		<td>MrMichael's Wunder Blog</td>
+		<td>8 days ago</td>
+		</tr>
+		<tr>
+		<td>Tukwila</td>
+		<td><a href="/blog/TukwilaCathy/show.html">TukwilaCathy</a></td>
+		<td>TukwilaCathy's Wunder Blog</td>
+		<td>3 hours ago</td>
+		</tr>
+		<tr>
+		<td>Vashon</td>
+		<td><a href="/blog/PaddleVashon/show.html">PaddleVashon</a></td>
+		<td>PaddleVashon's Wunder Blog</td>
+		<td>11 days ago</td>
+		</tr>
+		<tr>
+		<td>Snohomish</td>
+		<td><a href="/blog/chantpa/show.html">chantpa</a></td>
+		<td>chantpa's Wunder Blog</td>
+		<td>1 day ago</td>
+		</tr>
+		</tbody>
+		<tr>
+		<td colspan="4" class="taC dataFooter">Blogs for people who love weather and the outdoors! <a href="/blog/">View All Blogs &raquo;</a></td>
+		</tr>
+		</table>
+		</div>
+</div>
+		</td>
+		<td class="vaT taC" style="padding-left: 5px;">
+		<div class="bm15">
+  <!-- Campaign=CNTW-00151 Views=2 Caps=[86400,1207761420,1207761520] -->
+
+<script  src="http://tag.contextweb.com/TagPublish/getjs.aspx?action=VIEWAD&cwrun=200&cwadformat=120X600&cwpid=501711&cwwidth=120&cwheight=600&cwpnet=1&cwtagid=16200"></script>
+</div>
+		<div>
+</div>
+		</td>
+		</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+<div class="pageTop"><span class="noPrint">: <a href="#">Top of Page</a> :</span></div>
+<a name="PWS"></a>
+	<div class="modBox">
+		<script type="text/javascript">
+		window.addEvent('domready', function(){
+		var imgSrcPrefix = "http://icons-pe.wxug.com/graphics/wu2/";
+		var jsname ="wxstn";
+		var localslider = new Fx.Slide(jsname + '_contain');
+		var closeurl = "/?setprefs.0.key=WXSN&setprefs.0.val=0";
+		var openurl = "/?setprefs.0.key=WXSN&setprefs.0.val=1";
+		var iswxstn = 1;
+		$(jsname+'_control').addEvent('click',function(e){
+		e=new Event(e);
+		if(localslider.wrapper.offsetHeight!=0&&localslider.wrapper.offsetWidth!=0){
+		if(iswxstn){$$('img.windvane').addClass('none');}
+		}
+		localslider.toggle().chain(function(){
+		if(localslider.wrapper.offsetHeight==0||localslider.wrapper.offsetWidth==0){
+		$(jsname+'_bar').addClass('close');
+		$(jsname+'_bar').removeClass('open');
+		$(jsname+'_image').setProperty('src',imgSrcPrefix+'ico_down.gif');
+		new Ajax(closeurl,{method:'get'}).request();
+		}else{
+		$(jsname+'_bar').addClass('open');
+		$(jsname+'_bar').removeClass('close');
+		$(jsname+'_image').setProperty('src',imgSrcPrefix+'ico_up.gif');
+		new Ajax(openurl,{method:'get'}).request();
+		if(iswxstn){$$('img.windvane').removeClass('none');}
+		}
+		});
+		e.stop();
+		});
+		});
+		</script>
+		<table id="wxstn_bar" cellspacing="0" cellpadding="2" class="full open">
+		<tr>
+		<td class="full">Weather Stations</td>
+		<td><a id="wxstn_control" href="/cgi-bin/findweather/getForecast?setpref=WXSN&value=0"><img src="http://icons-pe.wxug.com/graphics/wu2/ico_up.gif" id="wxstn_image" alt="Hide" /></a></td>
+		</tr>
+		</table>
+	</div>
+<div id="wxstn_contain">
+<div class="selectorBox">
+	<table cellspacing="0" cellpadding="0" class="full" id="typeTable">
+		<tr>
+		<td id="allwxstn" class="activeTab"><a href="/cgi-bin/findweather/getForecast?setpref=WSLIST&value=ALLWS#PWS">All Weather Stations</a></td>
+		<td id="pwsonly" class="inactiveTab"><a href="/cgi-bin/findweather/getForecast?setpref=WSLIST&value=WUPWS#PWS">Personal Weather Stations</a></td>
+		<td id="madisonly" class="inactiveTab"><a href="/cgi-bin/findweather/getForecast?setpref=WSLIST&value=MADIS#PWS">MADIS Weather Stations</a></td>
+		<td class="inactiveTab"><a href="/stationmaps/gmap.asp?lat=47.61167908&lon=-122.33325958&zoom=10">Weather Stations WunderMap</a> <span class="new">new!</span></td>
+		</tr>
+	</table>
+</div>
+<div id="wxstnbox">
+		<table cellspacing="0" cellpadding="0" class="dataTable tm10" onclick="sortColumn(event)">
+		<thead>
+		<tr>
+		<td class="sortH nobr">Station Location</td>
+		<td class="sortH nobr">Temp.</td>
+		<td class="sortH nobr">Dew Point</td>
+		<td class="sortH nobr">Humidity</td>
+		<td class="sortH nobr">Wind</td>
+		<td class="sortH nobr">Pressure</td>
+		<td class="sortH nobr">Precipitation</td>
+		<td class="sortH nobr">Windchill</td>
+		<td class="sortH nobr">Elevation</td>
+		<td class="sortH nobr">Updated</td>
+		<td class="sortH nobr">Type</td>
+		<td class="sortH nobr">&nbsp;</td>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+		<td>
+		<a href="/weatherstation/WXDailyHistory.asp?ID=MSEAOL">MesoWest SEATTLE - OLIVE AND BOREN , Seattle, WA</a>
+		<div class="none">
+		<a href="http://madis.noaa.gov">Meteorological Assimilation Data Ingest System</a>,
+		<a href="/cgi-bin/findweather/getForecast?setpref=98101199999WS&value=MSEAOL">Set as Default Current Conditions</a>,
+		<a href="/weatherstation/WXDailyHistory.asp?ID=MSEAOL">Historical Data &amp; Charts</a>
+		</div>
+		</td>
+		<td><span class="pwsrt" pwsid="MSEAOL" pwsunit="both" pwsvariable="tempf" english="&deg;F" metric="&deg;C" value="44">
+  <nobr><b>44</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>6.7</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td><span class="pwsrt" pwsid="MSEAOL" pwsunit="both" pwsvariable="dewptf" english="&deg;F" metric="&deg;C" value="37">
+  <nobr><b>37</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>3</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td class="b"><span class="pwsrt" pwsid="MSEAOL" pwsunit="both" pwsvariable="humidity" english="" metric="" value="75">75%</span></td>
+		<td>
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td style="border: 0; padding: 0;">
+		<div id="1WindDiv" style="position:relative; top:1px;left:1px; width:14px; height:14px; overflow:hidden; "><img src="http://icons-pe.wxug.com/graphics/360arrows_blue.gif" id="1ArrowDiv" class="windvane" style="left:0px;position:relative; overflow: hidden;"></div>
+		<script type="text/javascript">
+		window.wind_animate['1WIND']=new WindRotate("1ArrowDiv",14,154);
+		</script>
+		</td>
+		<td style="border: 0; padding: 0;">
+		<span class="pwsrt" pwsid="MSEAOL" pwssetobject="window.wind_animate['1WIND']" pwsunit="both" pwsvariable="winddir" english="" metric="" value="SSE">
+		SSE
+		</span>
+		&nbsp;at&nbsp;
+		<span class="pwsrt" pwsid="MSEAOL" pwsunit="both" pwsvariable="windspeedmph" english="mph" metric="km/h" value="3">
+  <nobr><b>3</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>4.8</b>&nbsp;km/h</nobr> / <nobr><b>1.3</b>&nbsp;m/s</nobr>
+		</span>
+		</td>
+		</tr>
+		</table>
+		</td>
+		<td><span class="pwsrt" pwsid="MSEAOL" pwsunit="both" pwsvariable="baromin" english="in" metric="hPa" value="">
+  -
+</span></td>
+		<td>
+  <nobr><b>0.00</b>&nbsp;in</nobr>
+  /
+  <nobr><b> 0</b>&nbsp;mm</nobr>
+/ hr</td>
+		<td>
+  <nobr><b>44</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>7</b>&nbsp;&#176;C</nobr>
+</td>
+		<td class="nobr">24 ft</td>
+		<td><span class="pwsrt" pwsid="MSEAOL" pwsunit="both" pwsvariable="lu" value="1207756800">9:00 AM PDT</span></td>
+		<td class="nobr">MADIS</td>
+		<td><a href="http://madis.noaa.gov">Website</a></td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/weatherstation/WXDailyHistory.asp?ID=MEBSW1">NOS_NWLON Seattle, WA, Seattle, WA</a>
+		<div class="none">
+		<a href="http://madis.noaa.gov">Meteorological Assimilation Data Ingest System</a>,
+		<a href="/cgi-bin/findweather/getForecast?setpref=98101199999WS&value=MEBSW1">Set as Default Current Conditions</a>,
+		<a href="/weatherstation/WXDailyHistory.asp?ID=MEBSW1">Historical Data &amp; Charts</a>
+		</div>
+		</td>
+		<td><span class="pwsrt" pwsid="MEBSW1" pwsunit="both" pwsvariable="tempf" english="&deg;F" metric="&deg;C" value="43">
+  <nobr><b>43</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>6.1</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td><span class="pwsrt" pwsid="MEBSW1" pwsunit="both" pwsvariable="dewptf" english="&deg;F" metric="&deg;C" value="">
+  -
+</span></td>
+		<td>-</td>
+		<td>
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td style="border: 0; padding: 0;">
+		<div id="2WindDiv" style="position:relative; top:1px;left:1px; width:14px; height:14px; overflow:hidden; "><img src="http://icons-pe.wxug.com/graphics/360arrows_blue.gif" id="2ArrowDiv" class="windvane" style="left:0px;position:relative; overflow: hidden;"></div>
+		<script type="text/javascript">
+		window.wind_animate['2WIND']=new WindRotate("2ArrowDiv",14,216);
+		</script>
+		</td>
+		<td style="border: 0; padding: 0;">
+		<span class="pwsrt" pwsid="MEBSW1" pwssetobject="window.wind_animate['2WIND']" pwsunit="both" pwsvariable="winddir" english="" metric="" value="SW">
+		SW
+		</span>
+		&nbsp;at&nbsp;
+		<span class="pwsrt" pwsid="MEBSW1" pwsunit="both" pwsvariable="windspeedmph" english="mph" metric="km/h" value="1">
+  <nobr><b>1</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>1.6</b>&nbsp;km/h</nobr> / <nobr><b>0.4</b>&nbsp;m/s</nobr>
+		</span>
+		</td>
+		</tr>
+		</table>
+		</td>
+		<td><span class="pwsrt" pwsid="MEBSW1" pwsunit="both" pwsvariable="baromin" english="in" metric="hPa" value="30.04">
+  <nobr><b>30.04</b>&nbsp;in</nobr>
+  /
+  <nobr><b>1017.2</b>&nbsp;hPa</nobr>
+</span></td>
+		<td>
+  <nobr><b>0.00</b>&nbsp;in</nobr>
+  /
+  <nobr><b> 0</b>&nbsp;mm</nobr>
+/ hr</td>
+		<td>
+  <nobr><b>43</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>6</b>&nbsp;&#176;C</nobr>
+</td>
+		<td class="nobr">0 ft</td>
+		<td><span class="pwsrt" pwsid="MEBSW1" pwsunit="both" pwsvariable="lu" value="1207759680">9:48 AM PDT</span></td>
+		<td class="nobr">MADIS</td>
+		<td><a href="http://madis.noaa.gov">Website</a></td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT92">Queen Anne - Toddster weather, Seattle, WA</a>
+		<div class="none">
+		<a href="/cgi-bin/findweather/getForecast?setpref=98101199999WS&value=KWASEATT92">Set as Default Current Conditions</a>,
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT92">Historical Data &amp; Charts</a>
+		</div>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT92" pwsunit="both" pwsvariable="tempf" english="&deg;F" metric="&deg;C" value="44.1">
+  <nobr><b>44.1</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>6.7</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td><span class="pwsrt" pwsid="KWASEATT92" pwsunit="both" pwsvariable="dewptf" english="&deg;F" metric="&deg;C" value="34">
+  <nobr><b>34</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>1</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td class="b"><span class="pwsrt" pwsid="KWASEATT92" pwsunit="both" pwsvariable="humidity" english="" metric="" value="66">66%</span></td>
+		<td>
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td style="border: 0; padding: 0;">
+		<div id="3WindDiv" style="position:relative; top:1px;left:1px; width:14px; height:14px; overflow:hidden; "><img src="http://icons-pe.wxug.com/graphics/360arrows_blue.gif" id="3ArrowDiv" class="windvane" style="left:0px;position:relative; overflow: hidden;"></div>
+		<script type="text/javascript">
+		window.wind_animate['3WIND']=new WindRotate("3ArrowDiv",14,245);
+		</script>
+		</td>
+		<td style="border: 0; padding: 0;">
+		<span class="pwsrt" pwsid="KWASEATT92" pwssetobject="window.wind_animate['3WIND']" pwsunit="both" pwsvariable="winddir" english="" metric="" value="WSW">
+		WSW
+		</span>
+		&nbsp;at&nbsp;
+		<span class="pwsrt" pwsid="KWASEATT92" pwsunit="both" pwsvariable="windspeedmph" english="mph" metric="km/h" value="3.0">
+  <nobr><b>3.0</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>4.8</b>&nbsp;km/h</nobr> / <nobr><b>1.3</b>&nbsp;m/s</nobr>
+		</span>
+		</td>
+		</tr>
+		</table>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT92" pwsunit="both" pwsvariable="baromin" english="in" metric="hPa" value="30.08">
+  <nobr><b>30.08</b>&nbsp;in</nobr>
+  /
+  <nobr><b>1018.5</b>&nbsp;hPa</nobr>
+</span></td>
+		<td>
+  <nobr><b>0.00</b>&nbsp;in</nobr>
+  /
+  <nobr><b> 0</b>&nbsp;mm</nobr>
+/ hr</td>
+		<td>
+  <nobr><b>44</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>7</b>&nbsp;&#176;C</nobr>
+</td>
+		<td class="nobr">338 ft</td>
+		<td><span class="pwsrt" pwsid="KWASEATT92" pwsunit="both" pwsvariable="lu" value="1207761518">10:18 AM PDT</span></td>
+		<td class="nobr"><span class="green">Rapid Fire</span></td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/weatherstation/WXDailyHistory.asp?ID=MUWASH">MesoWest UNIVERSITY OF WASHINGTON , Seattle, WA</a>
+		<div class="none">
+		<a href="http://madis.noaa.gov">Meteorological Assimilation Data Ingest System</a>,
+		<a href="/cgi-bin/findweather/getForecast?setpref=98101199999WS&value=MUWASH">Set as Default Current Conditions</a>,
+		<a href="/weatherstation/WXDailyHistory.asp?ID=MUWASH">Historical Data &amp; Charts</a>
+		</div>
+		</td>
+		<td><span class="pwsrt" pwsid="MUWASH" pwsunit="both" pwsvariable="tempf" english="&deg;F" metric="&deg;C" value="42">
+  <nobr><b>42</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>5.6</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td><span class="pwsrt" pwsid="MUWASH" pwsunit="both" pwsvariable="dewptf" english="&deg;F" metric="&deg;C" value="39">
+  <nobr><b>39</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>4</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td class="b"><span class="pwsrt" pwsid="MUWASH" pwsunit="both" pwsvariable="humidity" english="" metric="" value="89">89%</span></td>
+		<td>
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td style="border: 0; padding: 0;">
+		<div id="4WindDiv" style="position:relative; top:1px;left:1px; width:14px; height:14px; overflow:hidden; "><img src="http://icons-pe.wxug.com/graphics/360arrows_blue.gif" id="4ArrowDiv" class="windvane" style="left:0px;position:relative; overflow: hidden;"></div>
+		<script type="text/javascript">
+		window.wind_animate['4WIND']=new WindRotate("4ArrowDiv",14,64);
+		</script>
+		</td>
+		<td style="border: 0; padding: 0;">
+		<span class="pwsrt" pwsid="MUWASH" pwssetobject="window.wind_animate['4WIND']" pwsunit="both" pwsvariable="winddir" english="" metric="" value="ENE">
+		ENE
+		</span>
+		&nbsp;at&nbsp;
+		<span class="pwsrt" pwsid="MUWASH" pwsunit="both" pwsvariable="windspeedmph" english="mph" metric="km/h" value="3">
+  <nobr><b>3</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>4.8</b>&nbsp;km/h</nobr> / <nobr><b>1.3</b>&nbsp;m/s</nobr>
+		</span>
+		</td>
+		</tr>
+		</table>
+		</td>
+		<td><span class="pwsrt" pwsid="MUWASH" pwsunit="both" pwsvariable="baromin" english="in" metric="hPa" value="">
+  -
+</span></td>
+		<td>
+  <nobr><b>0.00</b>&nbsp;in</nobr>
+  /
+  <nobr><b> 0</b>&nbsp;mm</nobr>
+/ hr</td>
+		<td>
+  <nobr><b>42</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>6</b>&nbsp;&#176;C</nobr>
+</td>
+		<td class="nobr">189 ft</td>
+		<td><span class="pwsrt" pwsid="MUWASH" pwsunit="both" pwsvariable="lu" value="1207756500">8:55 AM PDT</span></td>
+		<td class="nobr">MADIS</td>
+		<td><a href="http://madis.noaa.gov">Website</a></td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/weatherstation/WXDailyHistory.asp?ID=MSEABE">MesoWest SEATTLE BEACON HILL RESERVOIR , Seattle, WA</a>
+		<div class="none">
+		<a href="http://madis.noaa.gov">Meteorological Assimilation Data Ingest System</a>,
+		<a href="/cgi-bin/findweather/getForecast?setpref=98101199999WS&value=MSEABE">Set as Default Current Conditions</a>,
+		<a href="/weatherstation/WXDailyHistory.asp?ID=MSEABE">Historical Data &amp; Charts</a>
+		</div>
+		</td>
+		<td><span class="pwsrt" pwsid="MSEABE" pwsunit="both" pwsvariable="tempf" english="&deg;F" metric="&deg;C" value="42">
+  <nobr><b>42</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>5.6</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td><span class="pwsrt" pwsid="MSEABE" pwsunit="both" pwsvariable="dewptf" english="&deg;F" metric="&deg;C" value="">
+  -
+</span></td>
+		<td>-</td>
+		<td>
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td style="border: 0; padding: 0;">
+		<div id="5WindDiv" style="position:relative; top:1px;left:1px; width:14px; height:14px; overflow:hidden; "><img src="http://icons-pe.wxug.com/graphics/360arrows_blue.gif" id="5ArrowDiv" class="windvane" style="left:0px;position:relative; overflow: hidden;"></div>
+		<script type="text/javascript">
+		window.wind_animate['5WIND']=new WindRotate("5ArrowDiv",14,148);
+		</script>
+		</td>
+		<td style="border: 0; padding: 0;">
+		<span class="pwsrt" pwsid="MSEABE" pwssetobject="window.wind_animate['5WIND']" pwsunit="both" pwsvariable="winddir" english="" metric="" value="SSE">
+		SSE
+		</span>
+		&nbsp;at&nbsp;
+		<span class="pwsrt" pwsid="MSEABE" pwsunit="both" pwsvariable="windspeedmph" english="mph" metric="km/h" value="3">
+  <nobr><b>3</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>4.8</b>&nbsp;km/h</nobr> / <nobr><b>1.3</b>&nbsp;m/s</nobr>
+		</span>
+		</td>
+		</tr>
+		</table>
+		</td>
+		<td><span class="pwsrt" pwsid="MSEABE" pwsunit="both" pwsvariable="baromin" english="in" metric="hPa" value="">
+  -
+</span></td>
+		<td>
+  <nobr><b>0.00</b>&nbsp;in</nobr>
+  /
+  <nobr><b> 0</b>&nbsp;mm</nobr>
+/ hr</td>
+		<td>
+  <nobr><b>42</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>6</b>&nbsp;&#176;C</nobr>
+</td>
+		<td class="nobr">298 ft</td>
+		<td><span class="pwsrt" pwsid="MSEABE" pwsunit="both" pwsvariable="lu" value="1207756800">9:00 AM PDT</span></td>
+		<td class="nobr">MADIS</td>
+		<td><a href="http://madis.noaa.gov">Website</a></td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT55">Hamilton International Middle School, Seattle, WA</a>
+		<div class="none">
+		<a href="/cgi-bin/findweather/getForecast?setpref=98101199999WS&value=KWASEATT55">Set as Default Current Conditions</a>,
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT55">Historical Data &amp; Charts</a>
+		</div>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT55" pwsunit="both" pwsvariable="tempf" english="&deg;F" metric="&deg;C" value="59.0">
+  <nobr><b>59.0</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>15.0</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td><span class="pwsrt" pwsid="KWASEATT55" pwsunit="both" pwsvariable="dewptf" english="&deg;F" metric="&deg;C" value="14">
+  <nobr><b>14</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>-10</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td class="b"><span class="pwsrt" pwsid="KWASEATT55" pwsunit="both" pwsvariable="humidity" english="" metric="" value="17">17%</span></td>
+		<td>
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td style="border: 0; padding: 0;">
+		<div id="6WindDiv" style="position:relative; top:1px;left:1px; width:14px; height:14px; overflow:hidden; "><img src="http://icons-pe.wxug.com/graphics/360arrows_blue.gif" id="6ArrowDiv" class="windvane" style="left:0px;position:relative; overflow: hidden;"></div>
+		<script type="text/javascript">
+		window.wind_animate['6WIND']=new WindRotate("6ArrowDiv",14,156);
+		</script>
+		</td>
+		<td style="border: 0; padding: 0;">
+		<span class="pwsrt" pwsid="KWASEATT55" pwssetobject="window.wind_animate['6WIND']" pwsunit="both" pwsvariable="winddir" english="" metric="" value="SSE">
+		SSE
+		</span>
+		&nbsp;at&nbsp;
+		<span class="pwsrt" pwsid="KWASEATT55" pwsunit="both" pwsvariable="windspeedmph" english="mph" metric="km/h" value="3.1">
+  <nobr><b>3.1</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>5.0</b>&nbsp;km/h</nobr> / <nobr><b>1.4</b>&nbsp;m/s</nobr>
+		</span>
+		</td>
+		</tr>
+		</table>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT55" pwsunit="both" pwsvariable="baromin" english="in" metric="hPa" value="29.74">
+  <nobr><b>29.74</b>&nbsp;in</nobr>
+  /
+  <nobr><b>1007.0</b>&nbsp;hPa</nobr>
+</span></td>
+		<td>
+  <nobr><b>0.00</b>&nbsp;in</nobr>
+  /
+  <nobr><b> 0</b>&nbsp;mm</nobr>
+/ hr</td>
+		<td>-</td>
+		<td class="nobr">135 ft</td>
+		<td><span class="pwsrt" pwsid="KWASEATT55" pwsunit="both" pwsvariable="lu" value="1207761518">10:18 AM PDT</span></td>
+		<td class="nobr"><span class="green">Rapid Fire</span></td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/weatherstation/WXDailyHistory.asp?ID=MC5960">APRSWXNET Seattle WA , Seattle, WA</a>
+		<div class="none">
+		<a href="http://madis.noaa.gov">Meteorological Assimilation Data Ingest System</a>,
+		<a href="/cgi-bin/findweather/getForecast?setpref=98101199999WS&value=MC5960">Set as Default Current Conditions</a>,
+		<a href="/weatherstation/WXDailyHistory.asp?ID=MC5960">Historical Data &amp; Charts</a>
+		</div>
+		</td>
+		<td><span class="pwsrt" pwsid="MC5960" pwsunit="both" pwsvariable="tempf" english="&deg;F" metric="&deg;C" value="45">
+  <nobr><b>45</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>7.2</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td><span class="pwsrt" pwsid="MC5960" pwsunit="both" pwsvariable="dewptf" english="&deg;F" metric="&deg;C" value="38">
+  <nobr><b>38</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>3</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td class="b"><span class="pwsrt" pwsid="MC5960" pwsunit="both" pwsvariable="humidity" english="" metric="" value="76">76%</span></td>
+		<td>
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td style="border: 0; padding: 0;">
+		<div id="7WindDiv" style="position:relative; top:1px;left:1px; width:14px; height:14px; overflow:hidden; "><img src="http://icons-pe.wxug.com/graphics/360arrows_blue.gif" id="7ArrowDiv" class="windvane" style="left:0px;position:relative; overflow: hidden;"></div>
+		<script type="text/javascript">
+		window.wind_animate['7WIND']=new WindRotate("7ArrowDiv",14,195);
+		</script>
+		</td>
+		<td style="border: 0; padding: 0;">
+		<span class="pwsrt" pwsid="MC5960" pwssetobject="window.wind_animate['7WIND']" pwsunit="both" pwsvariable="winddir" english="" metric="" value="SSW">
+		SSW
+		</span>
+		&nbsp;at&nbsp;
+		<span class="pwsrt" pwsid="MC5960" pwsunit="both" pwsvariable="windspeedmph" english="mph" metric="km/h" value="0">
+  <nobr><b>0</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>0.0</b>&nbsp;km/h</nobr> / <nobr><b>0.0</b>&nbsp;m/s</nobr>
+		</span>
+		</td>
+		</tr>
+		</table>
+		</td>
+		<td><span class="pwsrt" pwsid="MC5960" pwsunit="both" pwsvariable="baromin" english="in" metric="hPa" value="30.01">
+  <nobr><b>30.01</b>&nbsp;in</nobr>
+  /
+  <nobr><b>1016.1</b>&nbsp;hPa</nobr>
+</span></td>
+		<td>
+  <nobr><b>0.00</b>&nbsp;in</nobr>
+  /
+  <nobr><b> 0</b>&nbsp;mm</nobr>
+/ hr</td>
+		<td>
+  <nobr><b>45</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>7</b>&nbsp;&#176;C</nobr>
+</td>
+		<td class="nobr">173 ft</td>
+		<td><span class="pwsrt" pwsid="MC5960" pwsunit="both" pwsvariable="lu" value="1207760640">10:04 AM PDT</span></td>
+		<td class="nobr">MADIS</td>
+		<td><a href="http://madis.noaa.gov">Website</a></td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/weatherstation/WXDailyHistory.asp?ID=MSEADU">MesoWest SEATTLE DUWAMISH EAST MARGINAL , Seattle, WA</a>
+		<div class="none">
+		<a href="http://madis.noaa.gov">Meteorological Assimilation Data Ingest System</a>,
+		<a href="/cgi-bin/findweather/getForecast?setpref=98101199999WS&value=MSEADU">Set as Default Current Conditions</a>,
+		<a href="/weatherstation/WXDailyHistory.asp?ID=MSEADU">Historical Data &amp; Charts</a>
+		</div>
+		</td>
+		<td><span class="pwsrt" pwsid="MSEADU" pwsunit="both" pwsvariable="tempf" english="&deg;F" metric="&deg;C" value="42">
+  <nobr><b>42</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>5.6</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td><span class="pwsrt" pwsid="MSEADU" pwsunit="both" pwsvariable="dewptf" english="&deg;F" metric="&deg;C" value="37">
+  <nobr><b>37</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>3</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td class="b"><span class="pwsrt" pwsid="MSEADU" pwsunit="both" pwsvariable="humidity" english="" metric="" value="83">83%</span></td>
+		<td>
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td style="border: 0; padding: 0;">
+		<div id="8WindDiv" style="position:relative; top:1px;left:1px; width:14px; height:14px; overflow:hidden; "><img src="http://icons-pe.wxug.com/graphics/360arrows_blue.gif" id="8ArrowDiv" class="windvane" style="left:0px;position:relative; overflow: hidden;"></div>
+		<script type="text/javascript">
+		window.wind_animate['8WIND']=new WindRotate("8ArrowDiv",14,154);
+		</script>
+		</td>
+		<td style="border: 0; padding: 0;">
+		<span class="pwsrt" pwsid="MSEADU" pwssetobject="window.wind_animate['8WIND']" pwsunit="both" pwsvariable="winddir" english="" metric="" value="SSE">
+		SSE
+		</span>
+		&nbsp;at&nbsp;
+		<span class="pwsrt" pwsid="MSEADU" pwsunit="both" pwsvariable="windspeedmph" english="mph" metric="km/h" value="3">
+  <nobr><b>3</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>4.8</b>&nbsp;km/h</nobr> / <nobr><b>1.3</b>&nbsp;m/s</nobr>
+		</span>
+		</td>
+		</tr>
+		</table>
+		</td>
+		<td><span class="pwsrt" pwsid="MSEADU" pwsunit="both" pwsvariable="baromin" english="in" metric="hPa" value="">
+  -
+</span></td>
+		<td>
+  <nobr><b>0.00</b>&nbsp;in</nobr>
+  /
+  <nobr><b> 0</b>&nbsp;mm</nobr>
+/ hr</td>
+		<td>
+  <nobr><b>42</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>6</b>&nbsp;&#176;C</nobr>
+</td>
+		<td class="nobr">48 ft</td>
+		<td><span class="pwsrt" pwsid="MSEADU" pwsunit="both" pwsvariable="lu" value="1207756800">9:00 AM PDT</span></td>
+		<td class="nobr">MADIS</td>
+		<td><a href="http://madis.noaa.gov">Website</a></td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT57">Ballard, Seattle, WA</a>
+		<div class="none">
+		<a href="/cgi-bin/findweather/getForecast?setpref=98101199999WS&value=KWASEATT57">Set as Default Current Conditions</a>,
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT57">Historical Data &amp; Charts</a>
+		</div>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT57" pwsunit="both" pwsvariable="tempf" english="&deg;F" metric="&deg;C" value="46.1">
+  <nobr><b>46.1</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>7.8</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td><span class="pwsrt" pwsid="KWASEATT57" pwsunit="both" pwsvariable="dewptf" english="&deg;F" metric="&deg;C" value="39">
+  <nobr><b>39</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>4</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td class="b"><span class="pwsrt" pwsid="KWASEATT57" pwsunit="both" pwsvariable="humidity" english="" metric="" value="75">75%</span></td>
+		<td>
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td style="border: 0; padding: 0;">
+		<div id="9WindDiv" style="position:relative; top:1px;left:1px; width:14px; height:14px; overflow:hidden; "><img src="http://icons-pe.wxug.com/graphics/360arrows_blue.gif" id="9ArrowDiv" class="windvane" style="left:0px;position:relative; overflow: hidden;"></div>
+		<script type="text/javascript">
+		window.wind_animate['9WIND']=new WindRotate("9ArrowDiv",14,231);
+		</script>
+		</td>
+		<td style="border: 0; padding: 0;">
+		<span class="pwsrt" pwsid="KWASEATT57" pwssetobject="window.wind_animate['9WIND']" pwsunit="both" pwsvariable="winddir" english="" metric="" value="SW">
+		SW
+		</span>
+		&nbsp;at&nbsp;
+		<span class="pwsrt" pwsid="KWASEATT57" pwsunit="both" pwsvariable="windspeedmph" english="mph" metric="km/h" value="1.0">
+  <nobr><b>1.0</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>1.6</b>&nbsp;km/h</nobr> / <nobr><b>0.4</b>&nbsp;m/s</nobr>
+		</span>
+		</td>
+		</tr>
+		</table>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT57" pwsunit="both" pwsvariable="baromin" english="in" metric="hPa" value="30.01">
+  <nobr><b>30.01</b>&nbsp;in</nobr>
+  /
+  <nobr><b>1016.1</b>&nbsp;hPa</nobr>
+</span></td>
+		<td>
+  <nobr><b>0.00</b>&nbsp;in</nobr>
+  /
+  <nobr><b> 0</b>&nbsp;mm</nobr>
+/ hr</td>
+		<td>
+  <nobr><b>46</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>8</b>&nbsp;&#176;C</nobr>
+</td>
+		<td class="nobr">77 ft</td>
+		<td><span class="pwsrt" pwsid="KWASEATT57" pwsunit="both" pwsvariable="lu" value="1207761429">10:17 AM PDT</span></td>
+		<td>Normal</td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT75">Magnolia, Seattle, WA</a>
+		<div class="none">
+		<a href="http://briangregory.com/wx.html">Seattle - Magnolia</a>,
+		<a href="/cgi-bin/findweather/getForecast?setpref=98101199999WS&value=KWASEATT75">Set as Default Current Conditions</a>,
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT75">Historical Data &amp; Charts</a>
+		</div>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT75" pwsunit="both" pwsvariable="tempf" english="&deg;F" metric="&deg;C" value="55.0">
+  <nobr><b>55.0</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>12.8</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td><span class="pwsrt" pwsid="KWASEATT75" pwsunit="both" pwsvariable="dewptf" english="&deg;F" metric="&deg;C" value="41">
+  <nobr><b>41</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>5</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td class="b"><span class="pwsrt" pwsid="KWASEATT75" pwsunit="both" pwsvariable="humidity" english="" metric="" value="59">59%</span></td>
+		<td>
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td style="border: 0; padding: 0;">
+		<div id="10WindDiv" style="position:relative; top:1px;left:1px; width:14px; height:14px; overflow:hidden; "><img src="http://icons-pe.wxug.com/graphics/360arrows_blue.gif" id="10ArrowDiv" class="windvane" style="left:0px;position:relative; overflow: hidden;"></div>
+		<script type="text/javascript">
+		window.wind_animate['10WIND']=new WindRotate("10ArrowDiv",14,248);
+		</script>
+		</td>
+		<td style="border: 0; padding: 0;">
+		<span class="pwsrt" pwsid="KWASEATT75" pwssetobject="window.wind_animate['10WIND']" pwsunit="both" pwsvariable="winddir" english="" metric="" value="WSW">
+		WSW
+		</span>
+		&nbsp;at&nbsp;
+		<span class="pwsrt" pwsid="KWASEATT75" pwsunit="both" pwsvariable="windspeedmph" english="mph" metric="km/h" value="0.0">
+  <nobr><b>0.0</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>0.0</b>&nbsp;km/h</nobr> / <nobr><b>0.0</b>&nbsp;m/s</nobr>
+		</span>
+		</td>
+		</tr>
+		</table>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT75" pwsunit="both" pwsvariable="baromin" english="in" metric="hPa" value="29.68">
+  <nobr><b>29.68</b>&nbsp;in</nobr>
+  /
+  <nobr><b>1005.0</b>&nbsp;hPa</nobr>
+</span></td>
+		<td>
+  <nobr><b>0.00</b>&nbsp;in</nobr>
+  /
+  <nobr><b> 0</b>&nbsp;mm</nobr>
+/ hr</td>
+		<td>-</td>
+		<td class="nobr">317 ft</td>
+		<td><span class="pwsrt" pwsid="KWASEATT75" pwsunit="both" pwsvariable="lu" value="1207761343">10:15 AM PDT</span></td>
+		<td>Normal</td>
+		<td><a href="http://briangregory.com/wx.html">Website</a></td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT17">Phinney Ridge, Seattle, WA</a>
+		<div class="none">
+		<a href="http://www.theflees.com/weather/wx.php">The Flees Weather Station - Seattle, WA</a>,
+		<a href="/cgi-bin/findweather/getForecast?setpref=98101199999WS&value=KWASEATT17">Set as Default Current Conditions</a>,
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT17">Historical Data &amp; Charts</a>
+		</div>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT17" pwsunit="both" pwsvariable="tempf" english="&deg;F" metric="&deg;C" value="49.3">
+  <nobr><b>49.3</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>9.6</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td><span class="pwsrt" pwsid="KWASEATT17" pwsunit="both" pwsvariable="dewptf" english="&deg;F" metric="&deg;C" value="32">
+  <nobr><b>32</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>-0</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td class="b"><span class="pwsrt" pwsid="KWASEATT17" pwsunit="both" pwsvariable="humidity" english="" metric="" value="51">51%</span></td>
+		<td>
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td style="border: 0; padding: 0;">
+		<div id="11WindDiv" style="position:relative; top:1px;left:1px; width:14px; height:14px; overflow:hidden; "><img src="http://icons-pe.wxug.com/graphics/360arrows_blue.gif" id="11ArrowDiv" class="windvane" style="left:0px;position:relative; overflow: hidden;"></div>
+		<script type="text/javascript">
+		window.wind_animate['11WIND']=new WindRotate("11ArrowDiv",14,160);
+		</script>
+		</td>
+		<td style="border: 0; padding: 0;">
+		<span class="pwsrt" pwsid="KWASEATT17" pwssetobject="window.wind_animate['11WIND']" pwsunit="both" pwsvariable="winddir" english="" metric="" value="SSE">
+		SSE
+		</span>
+		&nbsp;at&nbsp;
+		<span class="pwsrt" pwsid="KWASEATT17" pwsunit="both" pwsvariable="windspeedmph" english="mph" metric="km/h" value="0.0">
+  <nobr><b>0.0</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>0.0</b>&nbsp;km/h</nobr> / <nobr><b>0.0</b>&nbsp;m/s</nobr>
+		</span>
+		</td>
+		</tr>
+		</table>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT17" pwsunit="both" pwsvariable="baromin" english="in" metric="hPa" value="29.71">
+  <nobr><b>29.71</b>&nbsp;in</nobr>
+  /
+  <nobr><b>1006.0</b>&nbsp;hPa</nobr>
+</span></td>
+		<td>
+  <nobr><b>0.00</b>&nbsp;in</nobr>
+  /
+  <nobr><b> 0</b>&nbsp;mm</nobr>
+/ hr</td>
+		<td>
+  <nobr><b>49</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>10</b>&nbsp;&#176;C</nobr>
+</td>
+		<td class="nobr">200 ft</td>
+		<td><span class="pwsrt" pwsid="KWASEATT17" pwsunit="both" pwsvariable="lu" value="1207761471">10:17 AM PDT</span></td>
+		<td>Normal</td>
+		<td><a href="http://www.theflees.com/weather/wx.php">Website</a></td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT98">Beacon Hill, Seattle, WA</a>
+		<div class="none">
+		<a href="/cgi-bin/findweather/getForecast?setpref=98101199999WS&value=KWASEATT98">Set as Default Current Conditions</a>,
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT98">Historical Data &amp; Charts</a>
+		</div>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT98" pwsunit="both" pwsvariable="tempf" english="&deg;F" metric="&deg;C" value="46.2">
+  <nobr><b>46.2</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>7.9</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td><span class="pwsrt" pwsid="KWASEATT98" pwsunit="both" pwsvariable="dewptf" english="&deg;F" metric="&deg;C" value="40">
+  <nobr><b>40</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>4</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td class="b"><span class="pwsrt" pwsid="KWASEATT98" pwsunit="both" pwsvariable="humidity" english="" metric="" value="79">79%</span></td>
+		<td>
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td style="border: 0; padding: 0;">
+		<div id="12WindDiv" style="position:relative; top:1px;left:1px; width:14px; height:14px; overflow:hidden; "><img src="http://icons-pe.wxug.com/graphics/360arrows_blue.gif" id="12ArrowDiv" class="windvane" style="left:0px;position:relative; overflow: hidden;"></div>
+		<script type="text/javascript">
+		window.wind_animate['12WIND']=new WindRotate("12ArrowDiv",14,112);
+		</script>
+		</td>
+		<td style="border: 0; padding: 0;">
+		<span class="pwsrt" pwsid="KWASEATT98" pwssetobject="window.wind_animate['12WIND']" pwsunit="both" pwsvariable="winddir" english="" metric="" value="ESE">
+		ESE
+		</span>
+		&nbsp;at&nbsp;
+		<span class="pwsrt" pwsid="KWASEATT98" pwsunit="both" pwsvariable="windspeedmph" english="mph" metric="km/h" value="0.0">
+  <nobr><b>0.0</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>0.0</b>&nbsp;km/h</nobr> / <nobr><b>0.0</b>&nbsp;m/s</nobr>
+		</span>
+		</td>
+		</tr>
+		</table>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT98" pwsunit="both" pwsvariable="baromin" english="in" metric="hPa" value="30.06">
+  <nobr><b>30.06</b>&nbsp;in</nobr>
+  /
+  <nobr><b>1017.8</b>&nbsp;hPa</nobr>
+</span></td>
+		<td>
+  <nobr><b>0.00</b>&nbsp;in</nobr>
+  /
+  <nobr><b> 0</b>&nbsp;mm</nobr>
+/ hr</td>
+		<td>
+  <nobr><b>46</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>8</b>&nbsp;&#176;C</nobr>
+</td>
+		<td class="nobr">273 ft</td>
+		<td><span class="pwsrt" pwsid="KWASEATT98" pwsunit="both" pwsvariable="lu" value="1207761516">10:18 AM PDT</span></td>
+		<td class="nobr"><span class="green">Rapid Fire</span></td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT67">University, Seattle, WA</a>
+		<div class="none">
+		<a href="/cgi-bin/findweather/getForecast?setpref=98101199999WS&value=KWASEATT67">Set as Default Current Conditions</a>,
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT67">Historical Data &amp; Charts</a>
+		</div>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT67" pwsunit="both" pwsvariable="tempf" english="&deg;F" metric="&deg;C" value="48.0">
+  <nobr><b>48.0</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>8.9</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td><span class="pwsrt" pwsid="KWASEATT67" pwsunit="both" pwsvariable="dewptf" english="&deg;F" metric="&deg;C" value="40">
+  <nobr><b>40</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>5</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td class="b"><span class="pwsrt" pwsid="KWASEATT67" pwsunit="both" pwsvariable="humidity" english="" metric="" value="75">75%</span></td>
+		<td>
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td style="border: 0; padding: 0;">
+		<div id="13WindDiv" style="position:relative; top:1px;left:1px; width:14px; height:14px; overflow:hidden; "><img src="http://icons-pe.wxug.com/graphics/360arrows_blue.gif" id="13ArrowDiv" class="windvane" style="left:0px;position:relative; overflow: hidden;"></div>
+		<script type="text/javascript">
+		window.wind_animate['13WIND']=new WindRotate("13ArrowDiv",14,67);
+		</script>
+		</td>
+		<td style="border: 0; padding: 0;">
+		<span class="pwsrt" pwsid="KWASEATT67" pwssetobject="window.wind_animate['13WIND']" pwsunit="both" pwsvariable="winddir" english="" metric="" value="ENE">
+		ENE
+		</span>
+		&nbsp;at&nbsp;
+		<span class="pwsrt" pwsid="KWASEATT67" pwsunit="both" pwsvariable="windspeedmph" english="mph" metric="km/h" value="0.0">
+  <nobr><b>0.0</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>0.0</b>&nbsp;km/h</nobr> / <nobr><b>0.0</b>&nbsp;m/s</nobr>
+		</span>
+		</td>
+		</tr>
+		</table>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT67" pwsunit="both" pwsvariable="baromin" english="in" metric="hPa" value="29.86">
+  <nobr><b>29.86</b>&nbsp;in</nobr>
+  /
+  <nobr><b>1011.1</b>&nbsp;hPa</nobr>
+</span></td>
+		<td>
+  <nobr><b>0.00</b>&nbsp;in</nobr>
+  /
+  <nobr><b> 0</b>&nbsp;mm</nobr>
+/ hr</td>
+		<td>
+  <nobr><b>48</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>9</b>&nbsp;&#176;C</nobr>
+</td>
+		<td class="nobr">-</td>
+		<td><span class="pwsrt" pwsid="KWASEATT67" pwsunit="both" pwsvariable="lu" value="1207760267">9:57 AM PDT</span></td>
+		<td>Normal</td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT96">Ballard, Seattle, WA</a>
+		<div class="none">
+		<a href="/cgi-bin/findweather/getForecast?setpref=98101199999WS&value=KWASEATT96">Set as Default Current Conditions</a>,
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT96">Historical Data &amp; Charts</a>
+		</div>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT96" pwsunit="both" pwsvariable="tempf" english="&deg;F" metric="&deg;C" value="42.1">
+  <nobr><b>42.1</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>5.6</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td><span class="pwsrt" pwsid="KWASEATT96" pwsunit="both" pwsvariable="dewptf" english="&deg;F" metric="&deg;C" value="39">
+  <nobr><b>39</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>4</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td class="b"><span class="pwsrt" pwsid="KWASEATT96" pwsunit="both" pwsvariable="humidity" english="" metric="" value="90">90%</span></td>
+		<td>
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td style="border: 0; padding: 0;">
+		<div id="14WindDiv" style="position:relative; top:1px;left:1px; width:14px; height:14px; overflow:hidden; "><img src="http://icons-pe.wxug.com/graphics/360arrows_blue.gif" id="14ArrowDiv" class="windvane" style="left:0px;position:relative; overflow: hidden;"></div>
+		<script type="text/javascript">
+		window.wind_animate['14WIND']=new WindRotate("14ArrowDiv",14,225);
+		</script>
+		</td>
+		<td style="border: 0; padding: 0;">
+		<span class="pwsrt" pwsid="KWASEATT96" pwssetobject="window.wind_animate['14WIND']" pwsunit="both" pwsvariable="winddir" english="" metric="" value="SW">
+		SW
+		</span>
+		&nbsp;at&nbsp;
+		<span class="pwsrt" pwsid="KWASEATT96" pwsunit="both" pwsvariable="windspeedmph" english="mph" metric="km/h" value="0.0">
+  <nobr><b>0.0</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>0.0</b>&nbsp;km/h</nobr> / <nobr><b>0.0</b>&nbsp;m/s</nobr>
+		</span>
+		</td>
+		</tr>
+		</table>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT96" pwsunit="both" pwsvariable="baromin" english="in" metric="hPa" value="30.02">
+  <nobr><b>30.02</b>&nbsp;in</nobr>
+  /
+  <nobr><b>1016.5</b>&nbsp;hPa</nobr>
+</span></td>
+		<td>
+  <nobr><b>0.00</b>&nbsp;in</nobr>
+  /
+  <nobr><b> 0</b>&nbsp;mm</nobr>
+/ hr</td>
+		<td>
+  <nobr><b>42</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>6</b>&nbsp;&#176;C</nobr>
+</td>
+		<td class="nobr">55 ft</td>
+		<td><span class="pwsrt" pwsid="KWASEATT96" pwsunit="both" pwsvariable="lu" value="1207761437">10:17 AM PDT</span></td>
+		<td class="nobr"><span class="green">Rapid Fire</span></td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT81">Hawthorne Hills, Seattle, WA</a>
+		<div class="none">
+		<a href="/cgi-bin/findweather/getForecast?setpref=98101199999WS&value=KWASEATT81">Set as Default Current Conditions</a>,
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT81">Historical Data &amp; Charts</a>
+		</div>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT81" pwsunit="both" pwsvariable="tempf" english="&deg;F" metric="&deg;C" value="45.7">
+  <nobr><b>45.7</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>7.6</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td><span class="pwsrt" pwsid="KWASEATT81" pwsunit="both" pwsvariable="dewptf" english="&deg;F" metric="&deg;C" value="41">
+  <nobr><b>41</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>5</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td>-</td>
+		<td>
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td style="border: 0; padding: 0;">
+		<div id="15WindDiv" style="position:relative; top:1px;left:1px; width:14px; height:14px; overflow:hidden; "><img src="http://icons-pe.wxug.com/graphics/360arrows_blue.gif" id="15ArrowDiv" class="windvane" style="left:0px;position:relative; overflow: hidden;"></div>
+		<script type="text/javascript">
+		window.wind_animate['15WIND']=new WindRotate("15ArrowDiv",14,-999);
+		</script>
+		</td>
+		<td style="border: 0; padding: 0;">
+		<span class="pwsrt" pwsid="KWASEATT81" pwssetobject="window.wind_animate['15WIND']" pwsunit="both" pwsvariable="winddir" english="" metric="" value="North">
+		North
+		</span>
+		&nbsp;at&nbsp;
+		<span class="pwsrt" pwsid="KWASEATT81" pwsunit="both" pwsvariable="windspeedmph" english="mph" metric="km/h" value="-999.0">
+  -
+		</span>
+		</td>
+		</tr>
+		</table>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT81" pwsunit="both" pwsvariable="baromin" english="in" metric="hPa" value="30.02">
+  <nobr><b>30.02</b>&nbsp;in</nobr>
+  /
+  <nobr><b>1016.5</b>&nbsp;hPa</nobr>
+</span></td>
+		<td>
+  -
+/ hr</td>
+		<td>
+  <nobr><b>46</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>8</b>&nbsp;&#176;C</nobr>
+</td>
+		<td class="nobr">140 ft</td>
+		<td><span class="pwsrt" pwsid="KWASEATT81" pwsunit="both" pwsvariable="lu" value="1207761462">10:17 AM PDT</span></td>
+		<td>Normal</td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT12">Bryant, Seattle, WA</a>
+		<div class="none">
+		<a href="http://www.erikmoldstad.com/Weather/index.htm">Bryant Weather Page</a>,
+		<a href="/cgi-bin/findweather/getForecast?setpref=98101199999WS&value=KWASEATT12">Set as Default Current Conditions</a>,
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT12">Historical Data &amp; Charts</a>
+		</div>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT12" pwsunit="both" pwsvariable="tempf" english="&deg;F" metric="&deg;C" value="44.5">
+  <nobr><b>44.5</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>6.9</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td><span class="pwsrt" pwsid="KWASEATT12" pwsunit="both" pwsvariable="dewptf" english="&deg;F" metric="&deg;C" value="38">
+  <nobr><b>38</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>3</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td class="b"><span class="pwsrt" pwsid="KWASEATT12" pwsunit="both" pwsvariable="humidity" english="" metric="" value="78">78%</span></td>
+		<td>
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td style="border: 0; padding: 0;">
+		<div id="16WindDiv" style="position:relative; top:1px;left:1px; width:14px; height:14px; overflow:hidden; "><img src="http://icons-pe.wxug.com/graphics/360arrows_blue.gif" id="16ArrowDiv" class="windvane" style="left:0px;position:relative; overflow: hidden;"></div>
+		<script type="text/javascript">
+		window.wind_animate['16WIND']=new WindRotate("16ArrowDiv",14,196);
+		</script>
+		</td>
+		<td style="border: 0; padding: 0;">
+		<span class="pwsrt" pwsid="KWASEATT12" pwssetobject="window.wind_animate['16WIND']" pwsunit="both" pwsvariable="winddir" english="" metric="" value="SSW">
+		SSW
+		</span>
+		&nbsp;at&nbsp;
+		<span class="pwsrt" pwsid="KWASEATT12" pwsunit="both" pwsvariable="windspeedmph" english="mph" metric="km/h" value="2.0">
+  <nobr><b>2.0</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>3.2</b>&nbsp;km/h</nobr> / <nobr><b>0.9</b>&nbsp;m/s</nobr>
+		</span>
+		</td>
+		</tr>
+		</table>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT12" pwsunit="both" pwsvariable="baromin" english="in" metric="hPa" value="30.03">
+  <nobr><b>30.03</b>&nbsp;in</nobr>
+  /
+  <nobr><b>1016.8</b>&nbsp;hPa</nobr>
+</span></td>
+		<td>
+  <nobr><b>0.00</b>&nbsp;in</nobr>
+  /
+  <nobr><b> 0</b>&nbsp;mm</nobr>
+/ hr</td>
+		<td>
+  <nobr><b>44</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>7</b>&nbsp;&#176;C</nobr>
+</td>
+		<td class="nobr">240 ft</td>
+		<td><span class="pwsrt" pwsid="KWASEATT12" pwsunit="both" pwsvariable="lu" value="1207761028">10:10 AM PDT</span></td>
+		<td>Normal</td>
+		<td><a href="http://www.erikmoldstad.com/Weather/index.htm">Website</a></td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT73">Beach Drive - West Seattle, Seattle, WA</a>
+		<div class="none">
+		<a href="/cgi-bin/findweather/getForecast?setpref=98101199999WS&value=KWASEATT73">Set as Default Current Conditions</a>,
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT73">Historical Data &amp; Charts</a>
+		</div>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT73" pwsunit="both" pwsvariable="tempf" english="&deg;F" metric="&deg;C" value="41.8">
+  <nobr><b>41.8</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>5.4</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td><span class="pwsrt" pwsid="KWASEATT73" pwsunit="both" pwsvariable="dewptf" english="&deg;F" metric="&deg;C" value="37">
+  <nobr><b>37</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>3</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td class="b"><span class="pwsrt" pwsid="KWASEATT73" pwsunit="both" pwsvariable="humidity" english="" metric="" value="83">83%</span></td>
+		<td>
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td style="border: 0; padding: 0;">
+		<div id="17WindDiv" style="position:relative; top:1px;left:1px; width:14px; height:14px; overflow:hidden; "><img src="http://icons-pe.wxug.com/graphics/360arrows_blue.gif" id="17ArrowDiv" class="windvane" style="left:0px;position:relative; overflow: hidden;"></div>
+		<script type="text/javascript">
+		window.wind_animate['17WIND']=new WindRotate("17ArrowDiv",14,203);
+		</script>
+		</td>
+		<td style="border: 0; padding: 0;">
+		<span class="pwsrt" pwsid="KWASEATT73" pwssetobject="window.wind_animate['17WIND']" pwsunit="both" pwsvariable="winddir" english="" metric="" value="SSW">
+		SSW
+		</span>
+		&nbsp;at&nbsp;
+		<span class="pwsrt" pwsid="KWASEATT73" pwsunit="both" pwsvariable="windspeedmph" english="mph" metric="km/h" value="2.0">
+  <nobr><b>2.0</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>3.2</b>&nbsp;km/h</nobr> / <nobr><b>0.9</b>&nbsp;m/s</nobr>
+		</span>
+		</td>
+		</tr>
+		</table>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT73" pwsunit="both" pwsvariable="baromin" english="in" metric="hPa" value="30.07">
+  <nobr><b>30.07</b>&nbsp;in</nobr>
+  /
+  <nobr><b>1018.2</b>&nbsp;hPa</nobr>
+</span></td>
+		<td>
+  <nobr><b>0.00</b>&nbsp;in</nobr>
+  /
+  <nobr><b> 0</b>&nbsp;mm</nobr>
+/ hr</td>
+		<td>
+  <nobr><b>42</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>5</b>&nbsp;&#176;C</nobr>
+</td>
+		<td class="nobr">30 ft</td>
+		<td><span class="pwsrt" pwsid="KWASEATT73" pwsunit="both" pwsvariable="lu" value="1207761518">10:18 AM PDT</span></td>
+		<td class="nobr"><span class="green">Rapid Fire</span></td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT45">Roosevelt, Seattle, WA</a>
+		<div class="none">
+		<a href="/cgi-bin/findweather/getForecast?setpref=98101199999WS&value=KWASEATT45">Set as Default Current Conditions</a>,
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT45">Historical Data &amp; Charts</a>
+		</div>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT45" pwsunit="both" pwsvariable="tempf" english="&deg;F" metric="&deg;C" value="45.6">
+  <nobr><b>45.6</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>7.6</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td><span class="pwsrt" pwsid="KWASEATT45" pwsunit="both" pwsvariable="dewptf" english="&deg;F" metric="&deg;C" value="37">
+  <nobr><b>37</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>3</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td class="b"><span class="pwsrt" pwsid="KWASEATT45" pwsunit="both" pwsvariable="humidity" english="" metric="" value="73">73%</span></td>
+		<td>
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td style="border: 0; padding: 0;">
+		<div id="18WindDiv" style="position:relative; top:1px;left:1px; width:14px; height:14px; overflow:hidden; "><img src="http://icons-pe.wxug.com/graphics/360arrows_blue.gif" id="18ArrowDiv" class="windvane" style="left:0px;position:relative; overflow: hidden;"></div>
+		<script type="text/javascript">
+		window.wind_animate['18WIND']=new WindRotate("18ArrowDiv",14,145);
+		</script>
+		</td>
+		<td style="border: 0; padding: 0;">
+		<span class="pwsrt" pwsid="KWASEATT45" pwssetobject="window.wind_animate['18WIND']" pwsunit="both" pwsvariable="winddir" english="" metric="" value="SE">
+		SE
+		</span>
+		&nbsp;at&nbsp;
+		<span class="pwsrt" pwsid="KWASEATT45" pwsunit="both" pwsvariable="windspeedmph" english="mph" metric="km/h" value="0.0">
+  <nobr><b>0.0</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>0.0</b>&nbsp;km/h</nobr> / <nobr><b>0.0</b>&nbsp;m/s</nobr>
+		</span>
+		</td>
+		</tr>
+		</table>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT45" pwsunit="both" pwsvariable="baromin" english="in" metric="hPa" value="30.03">
+  <nobr><b>30.03</b>&nbsp;in</nobr>
+  /
+  <nobr><b>1016.8</b>&nbsp;hPa</nobr>
+</span></td>
+		<td>
+  <nobr><b>0.00</b>&nbsp;in</nobr>
+  /
+  <nobr><b> 0</b>&nbsp;mm</nobr>
+/ hr</td>
+		<td>
+  <nobr><b>46</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>8</b>&nbsp;&#176;C</nobr>
+</td>
+		<td class="nobr">375 ft</td>
+		<td><span class="pwsrt" pwsid="KWASEATT45" pwsunit="both" pwsvariable="lu" value="1207761403">10:16 AM PDT</span></td>
+		<td>Normal</td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT59">Magnolia, Seattle, WA</a>
+		<div class="none">
+		<a href="/cgi-bin/findweather/getForecast?setpref=98101199999WS&value=KWASEATT59">Set as Default Current Conditions</a>,
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT59">Historical Data &amp; Charts</a>
+		</div>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT59" pwsunit="both" pwsvariable="tempf" english="&deg;F" metric="&deg;C" value="42.8">
+  <nobr><b>42.8</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>6.0</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td><span class="pwsrt" pwsid="KWASEATT59" pwsunit="both" pwsvariable="dewptf" english="&deg;F" metric="&deg;C" value="36">
+  <nobr><b>36</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>2</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td class="b"><span class="pwsrt" pwsid="KWASEATT59" pwsunit="both" pwsvariable="humidity" english="" metric="" value="78">78%</span></td>
+		<td>
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td style="border: 0; padding: 0;">
+		<div id="19WindDiv" style="position:relative; top:1px;left:1px; width:14px; height:14px; overflow:hidden; "><img src="http://icons-pe.wxug.com/graphics/360arrows_blue.gif" id="19ArrowDiv" class="windvane" style="left:0px;position:relative; overflow: hidden;"></div>
+		<script type="text/javascript">
+		window.wind_animate['19WIND']=new WindRotate("19ArrowDiv",14,174);
+		</script>
+		</td>
+		<td style="border: 0; padding: 0;">
+		<span class="pwsrt" pwsid="KWASEATT59" pwssetobject="window.wind_animate['19WIND']" pwsunit="both" pwsvariable="winddir" english="" metric="" value="South">
+		South
+		</span>
+		&nbsp;at&nbsp;
+		<span class="pwsrt" pwsid="KWASEATT59" pwsunit="both" pwsvariable="windspeedmph" english="mph" metric="km/h" value="0.0">
+  <nobr><b>0.0</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>0.0</b>&nbsp;km/h</nobr> / <nobr><b>0.0</b>&nbsp;m/s</nobr>
+		</span>
+		</td>
+		</tr>
+		</table>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT59" pwsunit="both" pwsvariable="baromin" english="in" metric="hPa" value="29.95">
+  <nobr><b>29.95</b>&nbsp;in</nobr>
+  /
+  <nobr><b>1014.1</b>&nbsp;hPa</nobr>
+</span></td>
+		<td>
+  <nobr><b>0.00</b>&nbsp;in</nobr>
+  /
+  <nobr><b> 0</b>&nbsp;mm</nobr>
+/ hr</td>
+		<td>
+  <nobr><b>43</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>6</b>&nbsp;&#176;C</nobr>
+</td>
+		<td class="nobr">-</td>
+		<td><span class="pwsrt" pwsid="KWASEATT59" pwsunit="both" pwsvariable="lu" value="1207761400">10:16 AM PDT</span></td>
+		<td>Normal</td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT95">Greenwood, Seattle, WA</a>
+		<div class="none">
+		<a href="/cgi-bin/findweather/getForecast?setpref=98101199999WS&value=KWASEATT95">Set as Default Current Conditions</a>,
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT95">Historical Data &amp; Charts</a>
+		</div>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT95" pwsunit="both" pwsvariable="tempf" english="&deg;F" metric="&deg;C" value="71.8">
+  <nobr><b>71.8</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>22.1</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td><span class="pwsrt" pwsid="KWASEATT95" pwsunit="both" pwsvariable="dewptf" english="&deg;F" metric="&deg;C" value="45">
+  <nobr><b>45</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>7</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td class="b"><span class="pwsrt" pwsid="KWASEATT95" pwsunit="both" pwsvariable="humidity" english="" metric="" value="39">39%</span></td>
+		<td>
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td style="border: 0; padding: 0;">
+		<div id="20WindDiv" style="position:relative; top:1px;left:1px; width:14px; height:14px; overflow:hidden; "><img src="http://icons-pe.wxug.com/graphics/360arrows_blue.gif" id="20ArrowDiv" class="windvane" style="left:0px;position:relative; overflow: hidden;"></div>
+		<script type="text/javascript">
+		window.wind_animate['20WIND']=new WindRotate("20ArrowDiv",14,247);
+		</script>
+		</td>
+		<td style="border: 0; padding: 0;">
+		<span class="pwsrt" pwsid="KWASEATT95" pwssetobject="window.wind_animate['20WIND']" pwsunit="both" pwsvariable="winddir" english="" metric="" value="WSW">
+		WSW
+		</span>
+		&nbsp;at&nbsp;
+		<span class="pwsrt" pwsid="KWASEATT95" pwsunit="both" pwsvariable="windspeedmph" english="mph" metric="km/h" value="2.2">
+  <nobr><b>2.2</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>3.5</b>&nbsp;km/h</nobr> / <nobr><b>1.0</b>&nbsp;m/s</nobr>
+		</span>
+		</td>
+		</tr>
+		</table>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT95" pwsunit="both" pwsvariable="baromin" english="in" metric="hPa" value="30.04">
+  <nobr><b>30.04</b>&nbsp;in</nobr>
+  /
+  <nobr><b>1017.2</b>&nbsp;hPa</nobr>
+</span></td>
+		<td>
+  <nobr><b>0.00</b>&nbsp;in</nobr>
+  /
+  <nobr><b> 0</b>&nbsp;mm</nobr>
+/ hr</td>
+		<td>-</td>
+		<td class="nobr">210 ft</td>
+		<td><span class="pwsrt" pwsid="KWASEATT95" pwsunit="both" pwsvariable="lu" value="1207761504">10:18 AM PDT</span></td>
+		<td class="nobr"><span class="green">Rapid Fire</span></td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT40">West Seatte, Seattle, WA</a>
+		<div class="none">
+		<a href="http://www.hoffmeisters.com/weather">Weather at the Hoffmeister's</a>,
+		<a href="/cgi-bin/findweather/getForecast?setpref=98101199999WS&value=KWASEATT40">Set as Default Current Conditions</a>,
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT40">Historical Data &amp; Charts</a>
+		</div>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT40" pwsunit="both" pwsvariable="tempf" english="&deg;F" metric="&deg;C" value="50.4">
+  <nobr><b>50.4</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>10.2</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td><span class="pwsrt" pwsid="KWASEATT40" pwsunit="both" pwsvariable="dewptf" english="&deg;F" metric="&deg;C" value="29">
+  <nobr><b>29</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>-2</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td class="b"><span class="pwsrt" pwsid="KWASEATT40" pwsunit="both" pwsvariable="humidity" english="" metric="" value="44">44%</span></td>
+		<td>
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td style="border: 0; padding: 0;">
+		<div id="21WindDiv" style="position:relative; top:1px;left:1px; width:14px; height:14px; overflow:hidden; "><img src="http://icons-pe.wxug.com/graphics/360arrows_blue.gif" id="21ArrowDiv" class="windvane" style="left:0px;position:relative; overflow: hidden;"></div>
+		<script type="text/javascript">
+		window.wind_animate['21WIND']=new WindRotate("21ArrowDiv",14,20);
+		</script>
+		</td>
+		<td style="border: 0; padding: 0;">
+		<span class="pwsrt" pwsid="KWASEATT40" pwssetobject="window.wind_animate['21WIND']" pwsunit="both" pwsvariable="winddir" english="" metric="" value="NNE">
+		NNE
+		</span>
+		&nbsp;at&nbsp;
+		<span class="pwsrt" pwsid="KWASEATT40" pwsunit="both" pwsvariable="windspeedmph" english="mph" metric="km/h" value="0.0">
+  <nobr><b>0.0</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>0.0</b>&nbsp;km/h</nobr> / <nobr><b>0.0</b>&nbsp;m/s</nobr>
+		</span>
+		</td>
+		</tr>
+		</table>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT40" pwsunit="both" pwsvariable="baromin" english="in" metric="hPa" value="29.83">
+  <nobr><b>29.83</b>&nbsp;in</nobr>
+  /
+  <nobr><b>1010.0</b>&nbsp;hPa</nobr>
+</span></td>
+		<td>
+  <nobr><b>0.00</b>&nbsp;in</nobr>
+  /
+  <nobr><b> 0</b>&nbsp;mm</nobr>
+/ hr</td>
+		<td>-</td>
+		<td class="nobr">0 ft</td>
+		<td><span class="pwsrt" pwsid="KWASEATT40" pwsunit="both" pwsvariable="lu" value="1207761513">10:18 AM PDT</span></td>
+		<td class="nobr"><span class="green">Rapid Fire</span></td>
+		<td><a href="http://www.hoffmeisters.com/weather">Website</a></td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT79">Highland Park, Seattle, WA</a>
+		<div class="none">
+		<a href="http://walternet.us">Kjellberg House</a>,
+		<a href="/cgi-bin/findweather/getForecast?setpref=98101199999WS&value=KWASEATT79">Set as Default Current Conditions</a>,
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT79">Historical Data &amp; Charts</a>
+		</div>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT79" pwsunit="both" pwsvariable="tempf" english="&deg;F" metric="&deg;C" value="48.4">
+  <nobr><b>48.4</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>9.1</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td><span class="pwsrt" pwsid="KWASEATT79" pwsunit="both" pwsvariable="dewptf" english="&deg;F" metric="&deg;C" value="41">
+  <nobr><b>41</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>5</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td class="b"><span class="pwsrt" pwsid="KWASEATT79" pwsunit="both" pwsvariable="humidity" english="" metric="" value="76">76%</span></td>
+		<td>
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td style="border: 0; padding: 0;">
+		<div id="22WindDiv" style="position:relative; top:1px;left:1px; width:14px; height:14px; overflow:hidden; "><img src="http://icons-pe.wxug.com/graphics/360arrows_blue.gif" id="22ArrowDiv" class="windvane" style="left:0px;position:relative; overflow: hidden;"></div>
+		<script type="text/javascript">
+		window.wind_animate['22WIND']=new WindRotate("22ArrowDiv",14,135);
+		</script>
+		</td>
+		<td style="border: 0; padding: 0;">
+		<span class="pwsrt" pwsid="KWASEATT79" pwssetobject="window.wind_animate['22WIND']" pwsunit="both" pwsvariable="winddir" english="" metric="" value="SE">
+		SE
+		</span>
+		&nbsp;at&nbsp;
+		<span class="pwsrt" pwsid="KWASEATT79" pwsunit="both" pwsvariable="windspeedmph" english="mph" metric="km/h" value="0.0">
+  <nobr><b>0.0</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>0.0</b>&nbsp;km/h</nobr> / <nobr><b>0.0</b>&nbsp;m/s</nobr>
+		</span>
+		</td>
+		</tr>
+		</table>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT79" pwsunit="both" pwsvariable="baromin" english="in" metric="hPa" value="29.86">
+  <nobr><b>29.86</b>&nbsp;in</nobr>
+  /
+  <nobr><b>1011.1</b>&nbsp;hPa</nobr>
+</span></td>
+		<td>
+  <nobr><b>0.00</b>&nbsp;in</nobr>
+  /
+  <nobr><b> 0</b>&nbsp;mm</nobr>
+/ hr</td>
+		<td>
+  <nobr><b>48</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>9</b>&nbsp;&#176;C</nobr>
+</td>
+		<td class="nobr">406 ft</td>
+		<td><span class="pwsrt" pwsid="KWASEATT79" pwsunit="both" pwsvariable="lu" value="1207761497">10:18 AM PDT</span></td>
+		<td>Normal</td>
+		<td><a href="http://walternet.us">Website</a></td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT52">Maple Leaf, Seattle, WA</a>
+		<div class="none">
+		<a href="http://www.hotjazzpie.com/wx/">Al's Weather Wizardry</a>,
+		<a href="/cgi-bin/findweather/getForecast?setpref=98101199999WS&value=KWASEATT52">Set as Default Current Conditions</a>,
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT52">Historical Data &amp; Charts</a>
+		</div>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT52" pwsunit="both" pwsvariable="tempf" english="&deg;F" metric="&deg;C" value="43.5">
+  <nobr><b>43.5</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>6.4</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td><span class="pwsrt" pwsid="KWASEATT52" pwsunit="both" pwsvariable="dewptf" english="&deg;F" metric="&deg;C" value="37">
+  <nobr><b>37</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>3</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td class="b"><span class="pwsrt" pwsid="KWASEATT52" pwsunit="both" pwsvariable="humidity" english="" metric="" value="77">77%</span></td>
+		<td>
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td style="border: 0; padding: 0;">
+		<div id="23WindDiv" style="position:relative; top:1px;left:1px; width:14px; height:14px; overflow:hidden; "><img src="http://icons-pe.wxug.com/graphics/360arrows_blue.gif" id="23ArrowDiv" class="windvane" style="left:0px;position:relative; overflow: hidden;"></div>
+		<script type="text/javascript">
+		window.wind_animate['23WIND']=new WindRotate("23ArrowDiv",14,128);
+		</script>
+		</td>
+		<td style="border: 0; padding: 0;">
+		<span class="pwsrt" pwsid="KWASEATT52" pwssetobject="window.wind_animate['23WIND']" pwsunit="both" pwsvariable="winddir" english="" metric="" value="SE">
+		SE
+		</span>
+		&nbsp;at&nbsp;
+		<span class="pwsrt" pwsid="KWASEATT52" pwsunit="both" pwsvariable="windspeedmph" english="mph" metric="km/h" value="0.0">
+  <nobr><b>0.0</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>0.0</b>&nbsp;km/h</nobr> / <nobr><b>0.0</b>&nbsp;m/s</nobr>
+		</span>
+		</td>
+		</tr>
+		</table>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT52" pwsunit="both" pwsvariable="baromin" english="in" metric="hPa" value="30.07">
+  <nobr><b>30.07</b>&nbsp;in</nobr>
+  /
+  <nobr><b>1018.2</b>&nbsp;hPa</nobr>
+</span></td>
+		<td>
+  <nobr><b>0.00</b>&nbsp;in</nobr>
+  /
+  <nobr><b> 0</b>&nbsp;mm</nobr>
+/ hr</td>
+		<td>
+  <nobr><b>44</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>6</b>&nbsp;&#176;C</nobr>
+</td>
+		<td class="nobr">460 ft</td>
+		<td><span class="pwsrt" pwsid="KWASEATT52" pwsunit="both" pwsvariable="lu" value="1207761309">10:15 AM PDT</span></td>
+		<td>Normal</td>
+		<td><a href="http://www.hotjazzpie.com/wx/">Website</a></td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/weatherstation/WXDailyHistory.asp?ID=MC7758">APRSWXNET Clyde Hill WA , Bellevue, WA</a>
+		<div class="none">
+		<a href="http://madis.noaa.gov">Meteorological Assimilation Data Ingest System</a>,
+		<a href="/cgi-bin/findweather/getForecast?setpref=98101199999WS&value=MC7758">Set as Default Current Conditions</a>,
+		<a href="/weatherstation/WXDailyHistory.asp?ID=MC7758">Historical Data &amp; Charts</a>
+		</div>
+		</td>
+		<td><span class="pwsrt" pwsid="MC7758" pwsunit="both" pwsvariable="tempf" english="&deg;F" metric="&deg;C" value="43">
+  <nobr><b>43</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>6.1</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td><span class="pwsrt" pwsid="MC7758" pwsunit="both" pwsvariable="dewptf" english="&deg;F" metric="&deg;C" value="37">
+  <nobr><b>37</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>3</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td class="b"><span class="pwsrt" pwsid="MC7758" pwsunit="both" pwsvariable="humidity" english="" metric="" value="78">78%</span></td>
+		<td>
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td style="border: 0; padding: 0;">
+		<div id="24WindDiv" style="position:relative; top:1px;left:1px; width:14px; height:14px; overflow:hidden; "><img src="http://icons-pe.wxug.com/graphics/360arrows_blue.gif" id="24ArrowDiv" class="windvane" style="left:0px;position:relative; overflow: hidden;"></div>
+		<script type="text/javascript">
+		window.wind_animate['24WIND']=new WindRotate("24ArrowDiv",14,119);
+		</script>
+		</td>
+		<td style="border: 0; padding: 0;">
+		<span class="pwsrt" pwsid="MC7758" pwssetobject="window.wind_animate['24WIND']" pwsunit="both" pwsvariable="winddir" english="" metric="" value="ESE">
+		ESE
+		</span>
+		&nbsp;at&nbsp;
+		<span class="pwsrt" pwsid="MC7758" pwsunit="both" pwsvariable="windspeedmph" english="mph" metric="km/h" value="1">
+  <nobr><b>1</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>1.6</b>&nbsp;km/h</nobr> / <nobr><b>0.4</b>&nbsp;m/s</nobr>
+		</span>
+		</td>
+		</tr>
+		</table>
+		</td>
+		<td><span class="pwsrt" pwsid="MC7758" pwsunit="both" pwsvariable="baromin" english="in" metric="hPa" value="30.00">
+  <nobr><b>30.00</b>&nbsp;in</nobr>
+  /
+  <nobr><b>1015.8</b>&nbsp;hPa</nobr>
+</span></td>
+		<td>
+  <nobr><b>0.00</b>&nbsp;in</nobr>
+  /
+  <nobr><b> 0</b>&nbsp;mm</nobr>
+/ hr</td>
+		<td>
+  <nobr><b>43</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>6</b>&nbsp;&#176;C</nobr>
+</td>
+		<td class="nobr">350 ft</td>
+		<td><span class="pwsrt" pwsid="MC7758" pwsunit="both" pwsvariable="lu" value="1207759800">9:50 AM PDT</span></td>
+		<td class="nobr">MADIS</td>
+		<td><a href="http://madis.noaa.gov">Website</a></td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/weatherstation/WXDailyHistory.asp?ID=MC3186">APRSWXNET Seattle WA , Seattle, WA</a>
+		<div class="none">
+		<a href="http://madis.noaa.gov">Meteorological Assimilation Data Ingest System</a>,
+		<a href="/cgi-bin/findweather/getForecast?setpref=98101199999WS&value=MC3186">Set as Default Current Conditions</a>,
+		<a href="/weatherstation/WXDailyHistory.asp?ID=MC3186">Historical Data &amp; Charts</a>
+		</div>
+		</td>
+		<td><span class="pwsrt" pwsid="MC3186" pwsunit="both" pwsvariable="tempf" english="&deg;F" metric="&deg;C" value="43">
+  <nobr><b>43</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>6.1</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td><span class="pwsrt" pwsid="MC3186" pwsunit="both" pwsvariable="dewptf" english="&deg;F" metric="&deg;C" value="38">
+  <nobr><b>38</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>3</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td class="b"><span class="pwsrt" pwsid="MC3186" pwsunit="both" pwsvariable="humidity" english="" metric="" value="81">81%</span></td>
+		<td>
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td style="border: 0; padding: 0;">
+		<div id="25WindDiv" style="position:relative; top:1px;left:1px; width:14px; height:14px; overflow:hidden; "><img src="http://icons-pe.wxug.com/graphics/360arrows_blue.gif" id="25ArrowDiv" class="windvane" style="left:0px;position:relative; overflow: hidden;"></div>
+		<script type="text/javascript">
+		window.wind_animate['25WIND']=new WindRotate("25ArrowDiv",14,55);
+		</script>
+		</td>
+		<td style="border: 0; padding: 0;">
+		<span class="pwsrt" pwsid="MC3186" pwssetobject="window.wind_animate['25WIND']" pwsunit="both" pwsvariable="winddir" english="" metric="" value="NE">
+		NE
+		</span>
+		&nbsp;at&nbsp;
+		<span class="pwsrt" pwsid="MC3186" pwsunit="both" pwsvariable="windspeedmph" english="mph" metric="km/h" value="5">
+  <nobr><b>5</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>8.0</b>&nbsp;km/h</nobr> / <nobr><b>2.2</b>&nbsp;m/s</nobr>
+		</span>
+		</td>
+		</tr>
+		</table>
+		</td>
+		<td><span class="pwsrt" pwsid="MC3186" pwsunit="both" pwsvariable="baromin" english="in" metric="hPa" value="30.03">
+  <nobr><b>30.03</b>&nbsp;in</nobr>
+  /
+  <nobr><b>1016.8</b>&nbsp;hPa</nobr>
+</span></td>
+		<td>
+  <nobr><b>0.00</b>&nbsp;in</nobr>
+  /
+  <nobr><b> 0</b>&nbsp;mm</nobr>
+/ hr</td>
+		<td>
+  <nobr><b>40</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>4</b>&nbsp;&#176;C</nobr>
+</td>
+		<td class="nobr">307 ft</td>
+		<td><span class="pwsrt" pwsid="MC3186" pwsunit="both" pwsvariable="lu" value="1207760160">9:56 AM PDT</span></td>
+		<td class="nobr">MADIS</td>
+		<td><a href="http://madis.noaa.gov">Website</a></td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT42">Maple Leaf ( North ), Seattle, WA</a>
+		<div class="none">
+		<a href="/cgi-bin/findweather/getForecast?setpref=98101199999WS&value=KWASEATT42">Set as Default Current Conditions</a>,
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT42">Historical Data &amp; Charts</a>
+		</div>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT42" pwsunit="both" pwsvariable="tempf" english="&deg;F" metric="&deg;C" value="45.3">
+  <nobr><b>45.3</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>7.4</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td><span class="pwsrt" pwsid="KWASEATT42" pwsunit="both" pwsvariable="dewptf" english="&deg;F" metric="&deg;C" value="36">
+  <nobr><b>36</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>2</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td class="b"><span class="pwsrt" pwsid="KWASEATT42" pwsunit="both" pwsvariable="humidity" english="" metric="" value="70">70%</span></td>
+		<td>
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td style="border: 0; padding: 0;">
+		<div id="26WindDiv" style="position:relative; top:1px;left:1px; width:14px; height:14px; overflow:hidden; "><img src="http://icons-pe.wxug.com/graphics/360arrows_blue.gif" id="26ArrowDiv" class="windvane" style="left:0px;position:relative; overflow: hidden;"></div>
+		<script type="text/javascript">
+		window.wind_animate['26WIND']=new WindRotate("26ArrowDiv",14,202);
+		</script>
+		</td>
+		<td style="border: 0; padding: 0;">
+		<span class="pwsrt" pwsid="KWASEATT42" pwssetobject="window.wind_animate['26WIND']" pwsunit="both" pwsvariable="winddir" english="" metric="" value="SSW">
+		SSW
+		</span>
+		&nbsp;at&nbsp;
+		<span class="pwsrt" pwsid="KWASEATT42" pwsunit="both" pwsvariable="windspeedmph" english="mph" metric="km/h" value="1.6">
+  <nobr><b>1.6</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>2.6</b>&nbsp;km/h</nobr> / <nobr><b>0.7</b>&nbsp;m/s</nobr>
+		</span>
+		</td>
+		</tr>
+		</table>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT42" pwsunit="both" pwsvariable="baromin" english="in" metric="hPa" value="30.04">
+  <nobr><b>30.04</b>&nbsp;in</nobr>
+  /
+  <nobr><b>1017.2</b>&nbsp;hPa</nobr>
+</span></td>
+		<td>
+  <nobr><b>0.00</b>&nbsp;in</nobr>
+  /
+  <nobr><b> 0</b>&nbsp;mm</nobr>
+/ hr</td>
+		<td>
+  <nobr><b>45</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>7</b>&nbsp;&#176;C</nobr>
+</td>
+		<td class="nobr">423 ft</td>
+		<td><span class="pwsrt" pwsid="KWASEATT42" pwsunit="both" pwsvariable="lu" value="1207761323">10:15 AM PDT</span></td>
+		<td>Normal</td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/weatherstation/WXDailyHistory.asp?ID=MC8717">APRSWXNET Seattle WA , Seattle, WA</a>
+		<div class="none">
+		<a href="http://madis.noaa.gov">Meteorological Assimilation Data Ingest System</a>,
+		<a href="/cgi-bin/findweather/getForecast?setpref=98101199999WS&value=MC8717">Set as Default Current Conditions</a>,
+		<a href="/weatherstation/WXDailyHistory.asp?ID=MC8717">Historical Data &amp; Charts</a>
+		</div>
+		</td>
+		<td><span class="pwsrt" pwsid="MC8717" pwsunit="both" pwsvariable="tempf" english="&deg;F" metric="&deg;C" value="45">
+  <nobr><b>45</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>7.2</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td><span class="pwsrt" pwsid="MC8717" pwsunit="both" pwsvariable="dewptf" english="&deg;F" metric="&deg;C" value="37">
+  <nobr><b>37</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>3</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td class="b"><span class="pwsrt" pwsid="MC8717" pwsunit="both" pwsvariable="humidity" english="" metric="" value="74">74%</span></td>
+		<td>
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td style="border: 0; padding: 0;">
+		<div id="27WindDiv" style="position:relative; top:1px;left:1px; width:14px; height:14px; overflow:hidden; "><img src="http://icons-pe.wxug.com/graphics/360arrows_blue.gif" id="27ArrowDiv" class="windvane" style="left:0px;position:relative; overflow: hidden;"></div>
+		<script type="text/javascript">
+		window.wind_animate['27WIND']=new WindRotate("27ArrowDiv",14,160);
+		</script>
+		</td>
+		<td style="border: 0; padding: 0;">
+		<span class="pwsrt" pwsid="MC8717" pwssetobject="window.wind_animate['27WIND']" pwsunit="both" pwsvariable="winddir" english="" metric="" value="SSE">
+		SSE
+		</span>
+		&nbsp;at&nbsp;
+		<span class="pwsrt" pwsid="MC8717" pwsunit="both" pwsvariable="windspeedmph" english="mph" metric="km/h" value="4">
+  <nobr><b>4</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>6.4</b>&nbsp;km/h</nobr> / <nobr><b>1.8</b>&nbsp;m/s</nobr>
+		</span>
+		</td>
+		</tr>
+		</table>
+		</td>
+		<td><span class="pwsrt" pwsid="MC8717" pwsunit="both" pwsvariable="baromin" english="in" metric="hPa" value="30.04">
+  <nobr><b>30.04</b>&nbsp;in</nobr>
+  /
+  <nobr><b>1017.2</b>&nbsp;hPa</nobr>
+</span></td>
+		<td>
+  <nobr><b>0.00</b>&nbsp;in</nobr>
+  /
+  <nobr><b> 0</b>&nbsp;mm</nobr>
+/ hr</td>
+		<td>
+  <nobr><b>43</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>6</b>&nbsp;&#176;C</nobr>
+</td>
+		<td class="nobr">11 ft</td>
+		<td><span class="pwsrt" pwsid="MC8717" pwsunit="both" pwsvariable="lu" value="1207760580">10:03 AM PDT</span></td>
+		<td class="nobr">MADIS</td>
+		<td><a href="http://madis.noaa.gov">Website</a></td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/weatherstation/WXDailyHistory.asp?ID=MTFAUN">MesoWest Fauntleroy , Seattle, WA</a>
+		<div class="none">
+		<a href="http://madis.noaa.gov">Meteorological Assimilation Data Ingest System</a>,
+		<a href="/cgi-bin/findweather/getForecast?setpref=98101199999WS&value=MTFAUN">Set as Default Current Conditions</a>,
+		<a href="/weatherstation/WXDailyHistory.asp?ID=MTFAUN">Historical Data &amp; Charts</a>
+		</div>
+		</td>
+		<td><span class="pwsrt" pwsid="MTFAUN" pwsunit="both" pwsvariable="tempf" english="&deg;F" metric="&deg;C" value="42">
+  <nobr><b>42</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>5.6</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td><span class="pwsrt" pwsid="MTFAUN" pwsunit="both" pwsvariable="dewptf" english="&deg;F" metric="&deg;C" value="">
+  -
+</span></td>
+		<td>-</td>
+		<td>
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td style="border: 0; padding: 0;">
+		<div id="28WindDiv" style="position:relative; top:1px;left:1px; width:14px; height:14px; overflow:hidden; "><img src="http://icons-pe.wxug.com/graphics/360arrows_blue.gif" id="28ArrowDiv" class="windvane" style="left:0px;position:relative; overflow: hidden;"></div>
+		<script type="text/javascript">
+		window.wind_animate['28WIND']=new WindRotate("28ArrowDiv",14,162);
+		</script>
+		</td>
+		<td style="border: 0; padding: 0;">
+		<span class="pwsrt" pwsid="MTFAUN" pwssetobject="window.wind_animate['28WIND']" pwsunit="both" pwsvariable="winddir" english="" metric="" value="SSE">
+		SSE
+		</span>
+		&nbsp;at&nbsp;
+		<span class="pwsrt" pwsid="MTFAUN" pwsunit="both" pwsvariable="windspeedmph" english="mph" metric="km/h" value="5">
+  <nobr><b>5</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>8.0</b>&nbsp;km/h</nobr> / <nobr><b>2.2</b>&nbsp;m/s</nobr>
+		</span>
+		</td>
+		</tr>
+		</table>
+		</td>
+		<td><span class="pwsrt" pwsid="MTFAUN" pwsunit="both" pwsvariable="baromin" english="in" metric="hPa" value="">
+  -
+</span></td>
+		<td>
+  <nobr><b>0.00</b>&nbsp;in</nobr>
+  /
+  <nobr><b> 0</b>&nbsp;mm</nobr>
+/ hr</td>
+		<td>
+  <nobr><b>39</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>4</b>&nbsp;&#176;C</nobr>
+</td>
+		<td class="nobr">15 ft</td>
+		<td><span class="pwsrt" pwsid="MTFAUN" pwsunit="both" pwsvariable="lu" value="1207757700">9:15 AM PDT</span></td>
+		<td class="nobr">MADIS</td>
+		<td><a href="http://madis.noaa.gov">Website</a></td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWAKIRKL3">Yarrow Bay, Kirkland, WA</a>
+		<div class="none">
+		<a href="http://home.attbi.com/~craigbowe/">Look at Seattle</a>,
+		<a href="/cgi-bin/findweather/getForecast?setpref=98101199999WS&value=KWAKIRKL3">Set as Default Current Conditions</a>,
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWAKIRKL3">Historical Data &amp; Charts</a>
+		</div>
+		</td>
+		<td><span class="pwsrt" pwsid="KWAKIRKL3" pwsunit="both" pwsvariable="tempf" english="&deg;F" metric="&deg;C" value="44.4">
+  <nobr><b>44.4</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>6.9</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td><span class="pwsrt" pwsid="KWAKIRKL3" pwsunit="both" pwsvariable="dewptf" english="&deg;F" metric="&deg;C" value="36">
+  <nobr><b>36</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>2</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td class="b"><span class="pwsrt" pwsid="KWAKIRKL3" pwsunit="both" pwsvariable="humidity" english="" metric="" value="71">71%</span></td>
+		<td>
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td style="border: 0; padding: 0;">
+		<div id="29WindDiv" style="position:relative; top:1px;left:1px; width:14px; height:14px; overflow:hidden; "><img src="http://icons-pe.wxug.com/graphics/360arrows_blue.gif" id="29ArrowDiv" class="windvane" style="left:0px;position:relative; overflow: hidden;"></div>
+		<script type="text/javascript">
+		window.wind_animate['29WIND']=new WindRotate("29ArrowDiv",14,0);
+		</script>
+		</td>
+		<td style="border: 0; padding: 0;">
+		<span class="pwsrt" pwsid="KWAKIRKL3" pwssetobject="window.wind_animate['29WIND']" pwsunit="both" pwsvariable="winddir" english="" metric="" value="North">
+		North
+		</span>
+		&nbsp;at&nbsp;
+		<span class="pwsrt" pwsid="KWAKIRKL3" pwsunit="both" pwsvariable="windspeedmph" english="mph" metric="km/h" value="0.0">
+  <nobr><b>0.0</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>0.0</b>&nbsp;km/h</nobr> / <nobr><b>0.0</b>&nbsp;m/s</nobr>
+		</span>
+		</td>
+		</tr>
+		</table>
+		</td>
+		<td><span class="pwsrt" pwsid="KWAKIRKL3" pwsunit="both" pwsvariable="baromin" english="in" metric="hPa" value="29.47">
+  <nobr><b>29.47</b>&nbsp;in</nobr>
+  /
+  <nobr><b>997.9</b>&nbsp;hPa</nobr>
+</span></td>
+		<td>
+  <nobr><b>0.00</b>&nbsp;in</nobr>
+  /
+  <nobr><b> 0</b>&nbsp;mm</nobr>
+/ hr</td>
+		<td>
+  <nobr><b>44</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>7</b>&nbsp;&#176;C</nobr>
+</td>
+		<td class="nobr">-</td>
+		<td><span class="pwsrt" pwsid="KWAKIRKL3" pwsunit="both" pwsvariable="lu" value="1207760412">10:00 AM PDT</span></td>
+		<td>Normal</td>
+		<td><a href="http://home.attbi.com/~craigbowe/">Website</a></td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT50">North Beach, Seattle, WA</a>
+		<div class="none">
+		<a href="/cgi-bin/findweather/getForecast?setpref=98101199999WS&value=KWASEATT50">Set as Default Current Conditions</a>,
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT50">Historical Data &amp; Charts</a>
+		</div>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT50" pwsunit="both" pwsvariable="tempf" english="&deg;F" metric="&deg;C" value="48.0">
+  <nobr><b>48.0</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>8.9</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td><span class="pwsrt" pwsid="KWASEATT50" pwsunit="both" pwsvariable="dewptf" english="&deg;F" metric="&deg;C" value="35">
+  <nobr><b>35</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>2</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td class="b"><span class="pwsrt" pwsid="KWASEATT50" pwsunit="both" pwsvariable="humidity" english="" metric="" value="63">63%</span></td>
+		<td>
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td style="border: 0; padding: 0;">
+		<div id="30WindDiv" style="position:relative; top:1px;left:1px; width:14px; height:14px; overflow:hidden; "><img src="http://icons-pe.wxug.com/graphics/360arrows_blue.gif" id="30ArrowDiv" class="windvane" style="left:0px;position:relative; overflow: hidden;"></div>
+		<script type="text/javascript">
+		window.wind_animate['30WIND']=new WindRotate("30ArrowDiv",14,311);
+		</script>
+		</td>
+		<td style="border: 0; padding: 0;">
+		<span class="pwsrt" pwsid="KWASEATT50" pwssetobject="window.wind_animate['30WIND']" pwsunit="both" pwsvariable="winddir" english="" metric="" value="NW">
+		NW
+		</span>
+		&nbsp;at&nbsp;
+		<span class="pwsrt" pwsid="KWASEATT50" pwsunit="both" pwsvariable="windspeedmph" english="mph" metric="km/h" value="0.0">
+  <nobr><b>0.0</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>0.0</b>&nbsp;km/h</nobr> / <nobr><b>0.0</b>&nbsp;m/s</nobr>
+		</span>
+		</td>
+		</tr>
+		</table>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT50" pwsunit="both" pwsvariable="baromin" english="in" metric="hPa" value="">
+  -
+</span></td>
+		<td>
+  <nobr><b>0.00</b>&nbsp;in</nobr>
+  /
+  <nobr><b> 0</b>&nbsp;mm</nobr>
+/ hr</td>
+		<td>
+  <nobr><b>48</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>9</b>&nbsp;&#176;C</nobr>
+</td>
+		<td class="nobr">200 ft</td>
+		<td><span class="pwsrt" pwsid="KWASEATT50" pwsunit="both" pwsvariable="lu" value="1207761301">10:15 AM PDT</span></td>
+		<td>Normal</td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT84">Pritchard Island Lake Washington, Seattle, WA</a>
+		<div class="none">
+		<a href="/cgi-bin/findweather/getForecast?setpref=98101199999WS&value=KWASEATT84">Set as Default Current Conditions</a>,
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT84">Historical Data &amp; Charts</a>
+		</div>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT84" pwsunit="both" pwsvariable="tempf" english="&deg;F" metric="&deg;C" value="55.6">
+  <nobr><b>55.6</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>13.1</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td><span class="pwsrt" pwsid="KWASEATT84" pwsunit="both" pwsvariable="dewptf" english="&deg;F" metric="&deg;C" value="44">
+  <nobr><b>44</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>7</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td class="b"><span class="pwsrt" pwsid="KWASEATT84" pwsunit="both" pwsvariable="humidity" english="" metric="" value="67">67%</span></td>
+		<td>
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td style="border: 0; padding: 0;">
+		<div id="31WindDiv" style="position:relative; top:1px;left:1px; width:14px; height:14px; overflow:hidden; "><img src="http://icons-pe.wxug.com/graphics/360arrows_blue.gif" id="31ArrowDiv" class="windvane" style="left:0px;position:relative; overflow: hidden;"></div>
+		<script type="text/javascript">
+		window.wind_animate['31WIND']=new WindRotate("31ArrowDiv",14,67);
+		</script>
+		</td>
+		<td style="border: 0; padding: 0;">
+		<span class="pwsrt" pwsid="KWASEATT84" pwssetobject="window.wind_animate['31WIND']" pwsunit="both" pwsvariable="winddir" english="" metric="" value="ENE">
+		ENE
+		</span>
+		&nbsp;at&nbsp;
+		<span class="pwsrt" pwsid="KWASEATT84" pwsunit="both" pwsvariable="windspeedmph" english="mph" metric="km/h" value="0.0">
+  <nobr><b>0.0</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>0.0</b>&nbsp;km/h</nobr> / <nobr><b>0.0</b>&nbsp;m/s</nobr>
+		</span>
+		</td>
+		</tr>
+		</table>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT84" pwsunit="both" pwsvariable="baromin" english="in" metric="hPa" value="30.05">
+  <nobr><b>30.05</b>&nbsp;in</nobr>
+  /
+  <nobr><b>1017.5</b>&nbsp;hPa</nobr>
+</span></td>
+		<td>
+  <nobr><b>0.00</b>&nbsp;in</nobr>
+  /
+  <nobr><b> 0</b>&nbsp;mm</nobr>
+/ hr</td>
+		<td>-</td>
+		<td class="nobr">60 ft</td>
+		<td><span class="pwsrt" pwsid="KWASEATT84" pwsunit="both" pwsvariable="lu" value="1207761455">10:17 AM PDT</span></td>
+		<td class="nobr"><span class="green">Rapid Fire</span></td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT74">White Center, Seattle, WA</a>
+		<div class="none">
+		<a href="/cgi-bin/findweather/getForecast?setpref=98101199999WS&value=KWASEATT74">Set as Default Current Conditions</a>,
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT74">Historical Data &amp; Charts</a>
+		</div>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT74" pwsunit="both" pwsvariable="tempf" english="&deg;F" metric="&deg;C" value="40.8">
+  <nobr><b>40.8</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>4.9</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td><span class="pwsrt" pwsid="KWASEATT74" pwsunit="both" pwsvariable="dewptf" english="&deg;F" metric="&deg;C" value="40">
+  <nobr><b>40</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>4</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td class="b"><span class="pwsrt" pwsid="KWASEATT74" pwsunit="both" pwsvariable="humidity" english="" metric="" value="96">96%</span></td>
+		<td>
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td style="border: 0; padding: 0;">
+		<div id="32WindDiv" style="position:relative; top:1px;left:1px; width:14px; height:14px; overflow:hidden; "><img src="http://icons-pe.wxug.com/graphics/360arrows_blue.gif" id="32ArrowDiv" class="windvane" style="left:0px;position:relative; overflow: hidden;"></div>
+		<script type="text/javascript">
+		window.wind_animate['32WIND']=new WindRotate("32ArrowDiv",14,146);
+		</script>
+		</td>
+		<td style="border: 0; padding: 0;">
+		<span class="pwsrt" pwsid="KWASEATT74" pwssetobject="window.wind_animate['32WIND']" pwsunit="both" pwsvariable="winddir" english="" metric="" value="SE">
+		SE
+		</span>
+		&nbsp;at&nbsp;
+		<span class="pwsrt" pwsid="KWASEATT74" pwsunit="both" pwsvariable="windspeedmph" english="mph" metric="km/h" value="2.0">
+  <nobr><b>2.0</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>3.2</b>&nbsp;km/h</nobr> / <nobr><b>0.9</b>&nbsp;m/s</nobr>
+		</span>
+		</td>
+		</tr>
+		</table>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT74" pwsunit="both" pwsvariable="baromin" english="in" metric="hPa" value="30.00">
+  <nobr><b>30.00</b>&nbsp;in</nobr>
+  /
+  <nobr><b>1015.8</b>&nbsp;hPa</nobr>
+</span></td>
+		<td>
+  <nobr><b>0.00</b>&nbsp;in</nobr>
+  /
+  <nobr><b> 0</b>&nbsp;mm</nobr>
+/ hr</td>
+		<td>
+  <nobr><b>41</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>5</b>&nbsp;&#176;C</nobr>
+</td>
+		<td class="nobr">400 ft</td>
+		<td><span class="pwsrt" pwsid="KWASEATT74" pwsunit="both" pwsvariable="lu" value="1207761080">10:11 AM PDT</span></td>
+		<td>Normal</td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT87">Arbor Heights, Seattle, WA</a>
+		<div class="none">
+		<a href="/cgi-bin/findweather/getForecast?setpref=98101199999WS&value=KWASEATT87">Set as Default Current Conditions</a>,
+		<a href="/weatherstation/WXDailyHistory.asp?ID=KWASEATT87">Historical Data &amp; Charts</a>
+		</div>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT87" pwsunit="both" pwsvariable="tempf" english="&deg;F" metric="&deg;C" value="42.8">
+  <nobr><b>42.8</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>6.0</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td><span class="pwsrt" pwsid="KWASEATT87" pwsunit="both" pwsvariable="dewptf" english="&deg;F" metric="&deg;C" value="40">
+  <nobr><b>40</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>4</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td class="b"><span class="pwsrt" pwsid="KWASEATT87" pwsunit="both" pwsvariable="humidity" english="" metric="" value="89">89%</span></td>
+		<td>
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td style="border: 0; padding: 0;">
+		<div id="33WindDiv" style="position:relative; top:1px;left:1px; width:14px; height:14px; overflow:hidden; "><img src="http://icons-pe.wxug.com/graphics/360arrows_blue.gif" id="33ArrowDiv" class="windvane" style="left:0px;position:relative; overflow: hidden;"></div>
+		<script type="text/javascript">
+		window.wind_animate['33WIND']=new WindRotate("33ArrowDiv",14,158);
+		</script>
+		</td>
+		<td style="border: 0; padding: 0;">
+		<span class="pwsrt" pwsid="KWASEATT87" pwssetobject="window.wind_animate['33WIND']" pwsunit="both" pwsvariable="winddir" english="" metric="" value="SSE">
+		SSE
+		</span>
+		&nbsp;at&nbsp;
+		<span class="pwsrt" pwsid="KWASEATT87" pwsunit="both" pwsvariable="windspeedmph" english="mph" metric="km/h" value="0.0">
+  <nobr><b>0.0</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>0.0</b>&nbsp;km/h</nobr> / <nobr><b>0.0</b>&nbsp;m/s</nobr>
+		</span>
+		</td>
+		</tr>
+		</table>
+		</td>
+		<td><span class="pwsrt" pwsid="KWASEATT87" pwsunit="both" pwsvariable="baromin" english="in" metric="hPa" value="30.07">
+  <nobr><b>30.07</b>&nbsp;in</nobr>
+  /
+  <nobr><b>1018.2</b>&nbsp;hPa</nobr>
+</span></td>
+		<td>
+  <nobr><b>0.00</b>&nbsp;in</nobr>
+  /
+  <nobr><b> 0</b>&nbsp;mm</nobr>
+/ hr</td>
+		<td>
+  <nobr><b>43</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>6</b>&nbsp;&#176;C</nobr>
+</td>
+		<td class="nobr">390 ft</td>
+		<td><span class="pwsrt" pwsid="KWASEATT87" pwsunit="both" pwsvariable="lu" value="1207761507">10:18 AM PDT</span></td>
+		<td class="nobr"><span class="green">Rapid Fire</span></td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/weatherstation/WXDailyHistory.asp?ID=MT130T">MesoWest 130th Street , Seattle, WA</a>
+		<div class="none">
+		<a href="http://madis.noaa.gov">Meteorological Assimilation Data Ingest System</a>,
+		<a href="/cgi-bin/findweather/getForecast?setpref=98101199999WS&value=MT130T">Set as Default Current Conditions</a>,
+		<a href="/weatherstation/WXDailyHistory.asp?ID=MT130T">Historical Data &amp; Charts</a>
+		</div>
+		</td>
+		<td><span class="pwsrt" pwsid="MT130T" pwsunit="both" pwsvariable="tempf" english="&deg;F" metric="&deg;C" value="43">
+  <nobr><b>43</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>6.1</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td><span class="pwsrt" pwsid="MT130T" pwsunit="both" pwsvariable="dewptf" english="&deg;F" metric="&deg;C" value="40">
+  <nobr><b>40</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>4</b>&nbsp;&#176;C</nobr>
+</span></td>
+		<td class="b"><span class="pwsrt" pwsid="MT130T" pwsunit="both" pwsvariable="humidity" english="" metric="" value="89">89%</span></td>
+		<td>
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td style="border: 0; padding: 0;">
+		<div id="34WindDiv" style="position:relative; top:1px;left:1px; width:14px; height:14px; overflow:hidden; "><img src="http://icons-pe.wxug.com/graphics/360arrows_blue.gif" id="34ArrowDiv" class="windvane" style="left:0px;position:relative; overflow: hidden;"></div>
+		<script type="text/javascript">
+		window.wind_animate['34WIND']=new WindRotate("34ArrowDiv",14,0);
+		</script>
+		</td>
+		<td style="border: 0; padding: 0;">
+		<span class="pwsrt" pwsid="MT130T" pwssetobject="window.wind_animate['34WIND']" pwsunit="both" pwsvariable="winddir" english="" metric="" value="North">
+		North
+		</span>
+		&nbsp;at&nbsp;
+		<span class="pwsrt" pwsid="MT130T" pwsunit="both" pwsvariable="windspeedmph" english="mph" metric="km/h" value="3">
+  <nobr><b>3</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>4.8</b>&nbsp;km/h</nobr> / <nobr><b>1.3</b>&nbsp;m/s</nobr>
+		</span>
+		</td>
+		</tr>
+		</table>
+		</td>
+		<td><span class="pwsrt" pwsid="MT130T" pwsunit="both" pwsvariable="baromin" english="in" metric="hPa" value="">
+  -
+</span></td>
+		<td>
+  <nobr><b>0.00</b>&nbsp;in</nobr>
+  /
+  <nobr><b> 0</b>&nbsp;mm</nobr>
+/ hr</td>
+		<td>
+  <nobr><b>43</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>6</b>&nbsp;&#176;C</nobr>
+</td>
+		<td class="nobr">354 ft</td>
+		<td><span class="pwsrt" pwsid="MT130T" pwsunit="both" pwsvariable="lu" value="1207757700">9:15 AM PDT</span></td>
+		<td class="nobr">MADIS</td>
+		<td><a href="http://madis.noaa.gov">Website</a></td>
+		</tr>
+		</tbody>
+	</table>
+</div>
+<p class="taC b">Would you like to share your weather data with the rest of the world?</p>
+<p class="taC"><a href="/weatherstation/index.asp" class="subLink">Add Your Weather Station!</a></p>
+<script type="text/javascript">
+window.addEvent('domready', function(){
+	if('/cgi-bin/findweather/getForecast?query=seattle'.contains('?')){var separator = '&';}else{var separator = '?';}
+	var imgSrcPrefix = "http://icons-pe.wxug.com/graphics/";
+	var wxstnboxurl = "/cgi-bin/findweather/getForecast?query=seattle"+separator+"responder=1&request=wxstnbox";
+eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('H b=6 E.B(\'n\',\'G\',{F:D}),8=$(\'8\'),7=$(\'7\'),9=$(\'9\');8.u(\'r\',2(e){6 z(e).y();8.3(\'a\');7.3(\'5\');9.3(\'5\');8.4(\'5\');7.4(\'a\');9.4(\'a\');6 g(\'/?f.0.v=t&f.0.s=A\',{d:\'l\',q:2(){$$(\'m.i\').3(\'k\');b.j(1,0).c(2(){6 g(x,{d:\'l\',w:\'n\',o:\'p\',q:2(){b.j(0,1).c(2(){$$(\'m.i\').4(\'k\')})}}).h()})}}).h()});7.u(\'r\',2(e){6 z(e).y();6 g(\'/?f.0.v=t&f.0.s=C\',{d:\'l\'}).h();7.3(\'a\');8.3(\'5\');7.3(\'5\');9.3(\'5\');7.4(\'5\');8.4(\'a\');9.4(\'a\');$$(\'m.i\').3(\'k\');b.j(1,0).c(2(){6 g(x,{d:\'l\',w:\'n\',o:\'p\',q:2(){b.j(0,1).c(2(){;$$(\'m.i\').4(\'k\')})}}).h()})});9.u(\'r\',2(e){6 z(e).y();6 g(\'/?f.0.v=t&f.0.s=I\',{d:\'l\'}).h();9.3(\'a\');8.3(\'5\');7.3(\'5\');9.4(\'5\');8.4(\'a\');7.4(\'a\');$$(\'m.i\').3(\'k\');b.j(1,0).c(2(){6 g(x,{d:\'l\',w:\'n\',o:\'p\',o:\'p\',q:2(){b.j(0,1).c(2(){$$(\'m.i\').4(\'k\')})}}).h()})});',45,45,'||function|addClass|removeClass|inactiveTab|new|pwsonly|allwxstn|madisonly|activeTab|wxstnFade|chain|method||setprefs|Ajax|request|windvane|start|none|get|img|wxstnbox|evalScripts|yes|onComplete|click|val|WSLIST|addEvent|key|update|wxstnboxurl|stop|Event|ALLWS|Style|WUPWS|900|Fx|duration|opacity|var|MADIS'.split('|'),0,{}))
+});
+</script>
+</div>
+	<div class="pageTop"><span class="noPrint">: <a href="#">Top of Page</a> :</span></div>
+	<div class="mainB">Warnings and Notices</div>
+		<p class="taC">There are currently no warnings or advisories for this location.</p>
+		<a name="REC"></a>
+		<table cellspacing="0" cellpadding="0" class="warnTable">
+		<thead>
+		<tr>
+		<td style="width: 50%; text-align: right;"><img src="http://icons-pe.wxug.com/graphics/REC.gif" width="17" height="17"></td>
+		<td class="nobr taC">Record Report</td>
+		<td style="width: 50%; text-align: left;"><img src="http://icons-pe.wxug.com/graphics/REC.gif" width="17" height="17"></td>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+		<td colspan="3">
+		<p class="taC b">Statement as of 1:31 am PDT on April 09, 2008</p>
+		<div class="taL" style="width: 410px; margin: 0 auto 0 auto;">
+		<br />... Record low temperature tied at Seattle WFO yesterday... <br /><br /> a record low temperature of 35 degrees was tied at Seattle WFO on <br />Apr 8th. The old record of 35 set was last set in 1992.<br /><br /><br /><br />
+		</div>
+		</td>
+		</tr>
+		</tbody>
+		</table>
+		</div>
+		<div class="pageTop"><span class="noPrint">: <a href="#">Top of Page</a> :</span></div>
+		<div id="bottomAds">
+		<!-- blue credits bar -->
+		<!-- serial # 041801-1 -->
+		<h3>Please Visit Our Sponsors:</h3>
+		<!-- ads -->
+	<div style="background-color: #EEEEEE;">
+		<div style="clear: both;">&nbsp;</div>
+		<div class="ad125">
+		<!-- VDON-00058 3 -->
+		<a href="http://server.as5000.com/AS5000/adserver/click?ID=VDON-00058&C=3"><img src="http://config.privoxy.org/send-banner?type=auto" border="0" title="Killed-http://icons.wunderground.com/ads/images/VDON_VTG_creative.gif-by-size" width=125 height=125></a>
+		</div>
+		<div class="ad125">
+		<!-- CLSM-00018 3 -->
+		<a href="http://server.as5000.com/AS5000/adserver/click?ID=CLSM-00018&C=3"><img src="http://config.privoxy.org/send-banner?type=auto" border="0" title="Killed-http://icons.wunderground.com/ads/images/CLSM-00014-cmbwpics3_nl_s_125x125.gif-by-size" width=125 height=125></a>
+		</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<br>
+		</div>
+  <div class="taC">
+		<!-- Start Quantcast tag -->
+		<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+		<script type="text/javascript">_qacct="p-01lvMKu--eLQE";quantserve();</script>
+		<noscript></noscript>
+		<!-- End Quantcast tag -->
+<table class="taC tm20 center">
+	<tr>
+		<td><img src="http://icons-pe.wxug.com/graphics/wu2/logo_footer.gif" width="53" height="25" alt="" /></td>
+		<td>Copyright &copy; 2008 <a href="/about/background.asp">The Weather Underground, Inc.</a></td>
+	</tr>
+</table>
+<div class="taC noPrint"><a href="/about/employment.asp">Employment</a> | <a href="/about/contact.asp">Contact Us</a> | <a href="/help/">Help</a> | <a href="/members/tos.asp">Terms of Service</a> | <a href="/about/adinfo.asp">Advertise Here</a></div>
+</div>
+		</td>
+	</tr>
+</table>
+</body>
+	</html>
+  <div id="debug">
+	<!--  WUICATEGORY:CityPage:ZipForecast -->
+<!-- 0.318:0 -->

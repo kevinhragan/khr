@@ -1,0 +1,11 @@
+scp spool1:/root/buildscripts/php/php-4.3.10.tar.gz .
+tar xzf php-4.3.10.tar.gz
+cd php-4.3.10
+./configure --with-apxs --with-curl --with-mysql=/usr/local/mysql --with-config-file-path=/etc/apache/php.ini --with-mysql-stock=/var/run/mysql/mysql.sock
+make
+make install
+vi /etc/apache/httpd.conf
+  inserted "AddType application/x-httpd-php .php"
+/etc/rc.d/rc.httpd restart
+
+

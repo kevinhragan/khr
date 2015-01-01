@@ -1,0 +1,3467 @@
+
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html>
+		<head>
+		<link rev="x-refresh" href="/history/airport/KPDT/2008/4/14/MonthlyHistory.html?MR=1" />
+		<meta name="ICBM" content="45.68999863, -118.83999634" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="pics-label" content='(pics-1.1 "http://www.icra.org/ratingsv02.html" comment "ICRAonline v2.0" l gen true for "http://www.wunderground.com" r (nz 0 vz 0 lz 0 oz 0 cz 0) "http://www.rsac.org/ratingsv01.html" l gen true for "http://www.wunderground.com"  r (n 0 s 0 v 0 l 0))' />
+  <title>History : Weather Underground</title>
+		<link rel="stylesheet" type="text/css" href="http://icons-pe.wxug.com/css/wu2_base.css?v=2008033101" />
+		<link rel="stylesheet" type="text/css" href="http://icons-pe.wxug.com/css/wu2_print.css?v=2008030602" media="print" />
+		<link rel="stylesheet" type="text/css" href="http://icons-pe.wxug.com/css/wu2_history.css?v=2007092102" />
+	<link rel="search" href="/scripts/opensearchdescription.xml" type="application/opensearchdescription+xml" title="Weather Underground" />
+		<script type="text/javascript" src="/scripts/prototype.js"></script>
+		<script type="text/javascript" src="/scripts/scriptaculous.js?load=effects"></script>
+		<script type="text/javascript" src="/scripts/lightbox.js"></script>
+		<link rel="stylesheet" type="text/css" href="http://icons-aa.wunderground.com/css/lightbox.css" />
+		<link rel="stylesheet" type="text/css" href="http://icons-pe.wunderground.com/css/wu_history.css" />
+	<script language="javascript" type="text/javascript">
+		<!--
+			function bodyOnLoad()
+			{
+			
+				initLightbox();
+			
+			}
+		//-->
+	</script>
+		<script language="javascript" type="text/javascript" src="http://icons-pe.wxug.com/scripts/tablesort.js"></script>
+		<!-- PUT THIS TAG IN THE head SECTION -->
+		<script type="text/javascript" src="http://partner.googleadservices.com/gampad/google_service.js">
+		</script>
+		<script type="text/javascript">
+  GS_googleAddAdSenseService("ca-pub-0983527230240367");
+  GS_googleEnableAllServices();
+		</script>
+		<script type="text/javascript">
+  GA_googleAddSlot("ca-pub-0983527230240367", "300x250_ROS");
+		</script>
+		<script type="text/javascript">
+  GA_googleFetchAds();
+		</script>
+		<!-- END OF TAG FOR head SECTION -->
+</head>
+<!-- Iterate ad calls
+	
+		CAMPAIGN - TREM-00007  - 
+	
+		CAMPAIGN -   - 
+	
+		CAMPAIGN -  popup - 
+	
+		CAMPAIGN - CNTW-00153 Box - 
+	
+		CAMPAIGN -   - 
+	
+		CAMPAIGN - TREM-00007 468x60_0 - 
+	
+		CAMPAIGN - CNTW-00153 Box_0 - 
+	
+--->
+<body onload="bodyOnLoad()">
+<a name="top"></a>
+<table cellpadding="0" cellspacing="0" class="full" id="topNav">
+	<tr>
+		<td class="vaT taC">
+		<div class="leftBar">
+		<div><a href="/"><img src="http://icons-pe.wxug.com/graphics/smash/wunderTransparent3.gif" width="120" height="70" alt="Weather Underground" /></a></div>
+		<div class="sm"><a href="http://m.wund.com/">Mobile</a> - <a href="http://i.wund.com/">iPhone</a></div>
+		</div>
+		</td>
+		<td class="vaM">
+		<form action=/cgi-bin/findweather/getForecast name="wxsearch">
+		<div class="taJ">Find the Weather for any <b>City</b>, <b>State</b> or <b>ZIP Code</b>, or <b>Airport Code</b> or <b>Country</b></div>
+		<table cellspacing="2" cellpadding="0">
+		<tr>
+		<td><input type="text" name="query" id="wxQuery" /></td>
+		<td>
+		<a href="javascript: document.wxsearch.submit();"><img src="http://icons-pe.wxug.com/graphics/smash/blue_search.gif" width="22" alt="Fast Forecast" height="22" /></a>
+		<noscript>
+		<input type="submit" value="Fast Forecast" />
+		</noscript>
+		</td>
+		</tr>
+		</table>
+		</form>
+		</td>
+		<td class="vaM taR full">
+		<script language="javascript" type="text/javascript">
+		if (screen.width >= 1024)
+		{
+		document.write('<a href="/wximage/viewsingleimage.html?mode=singleimage&handle=Snapdragon&number=168&gallery=CURRWEATHER"><img src="http://icons-pe.wxug.com/data/wximagenew/s/Snapdragon/168-banner.jpg" width="640" height="80" alt="View More Weather Photos" /></a>');
+		}
+		else
+		{
+		document.write('&nbsp;');
+		}
+		</script>
+		</td>
+	</tr>
+</table>
+<table cellpadding="0" cellspacing="0" class="full" id="wrapperTable">
+	<tr>
+		<td>
+		<div class="taC leftBar">
+		<a href="/members/signup.asp"><img src="http://icons-pe.wxug.com/graphics/wu2/signup.png" width="100" height="30" alt="Signup" /></a>
+		</div>
+		</td>
+		<td colspan="2" class="full" id="featuresBar">
+		<table cellpadding="0" cellspacing="0">
+	<tr>
+		<td class="topLeft"><div></div></td>
+		<td class="b">Features:</td>
+		<td class="topDiv"><div></div></td>
+		<td class="topLink"><a href="/wximage/viewimages.html">Wunder Photos</a></td>
+		<td class="topSep"><div></div></td>
+		<td class="topLink"><a href="/radar/map.asp">NEXRAD Radar</a></td>
+		<td class="topSep"><div></div></td>
+		<td class="topLink"><a href="/radar/mosaic.asp">Regional Radar</a></td>
+		<td class="topSep"><div></div></td>
+		<td class="topLink"><a href="/satellite/vis/1k/US.html">Zoom Satellite</a></td>
+		<td class="topSep"><div></div></td>
+		<td class="topLink"><a href="/US/Region/US/2xTemperature.html">Maps</a></td>
+		<td class="topSep"><div></div></td>
+		<td class="topLink"><a href="/tripplanner/index.asp">Trip Planner</a></td>
+		<td class="topSep"><div></div></td>
+		<td class="topLink"><a href="/history/">History</a></td>
+		<td class="topSep"><div></div></td>
+		<td class="topLink"><a href="/download/index.asp">Downloads</a></td>
+		<td class="topSep"><div></div></td>
+		<td class="topLink"><a href="/sports/">Sports</a></td>
+		<td class="topSep"><div></div></td>
+		<td class="topLink"><a href="/tornado/">Tornadoes</a></td>
+		<td class="topRight"><div></div></td>
+	</tr>
+	<tr>
+		<td class="midDiv" colspan="23"><img src="http://icons-pe.wxug.com/graphics/smash/r3c1.gif" width="27" height="1" alt="" /></td>
+	</tr>
+</table>
+<table cellpadding="0" cellspacing="0">
+	<tr class="taC">
+		<td class="botLeft"><div></div></td>
+		<td class="bgG"><a href="/tropical/">Tropical / Hurricane</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/MAR/">Marine</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/severe.asp">Severe</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/sky/index.asp">Astronomy</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/ski/">Ski</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/education/education.asp">Education</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/webcams/index.html">Web Cams</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/blog/index.html?range=updated">Blogs</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/climate/">Climate Change</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/favorites/edit.html">Favorites</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/weatherstation/">Personal Weather Stations</a></td>
+		<td class="botRight"><div></div></td>
+	</tr>
+	<tr>
+		<td class="lowLeft"><img src="http://icons-pe.wxug.com/graphics/smash/r5c1.gif" width="27" height="2" alt="" /></td>
+		<td class="lowRight" colspan="22"><img src="http://icons-pe.wxug.com/graphics/smash/r5c5.gif" width="18" height="2" alt="" /></td>
+	</tr>
+</table>
+		</td>
+	</tr>
+	<tr>
+		<td class="vaT">
+		<div class="leftBar">
+		<div class="none taC"><a href="/members/signup.asp"><img src="http://icons-pe.wxug.com/graphics/sign-up10.gif" width="110" height="75" alt="Sign Up" /></a></div>
+		<form action="/login/submitlogin.php" method="post" class="bm10">
+		<input type="hidden" name="referer" value="http://www.wunderground.com/history/airport/KPDT/2008/4/14/MonthlyHistory.html" />
+		<div class="smB">Email:</div>
+		<div class="taC"><input type="text" name="email" autocomplete="on" value="" style="width: 120px;" /></div>
+		<div class="smB">Password:</div>
+		<div class="taC"><input type="password" autocomplete="off" name="password" onchange="this.form.submit()" style="width: 120px;" /></div>
+		<div class="taC"><input type="submit" value="Sign In" /></div>
+		</form>
+	<div class="leftButton">
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td><a href="/help/"><img src="http://icons-pe.wxug.com/graphics/smash/blue_help.gif" width="22" height="22" alt="Help & Support"></a></td>
+		<td class="full"><a href="/help/">Help & Support</a></td>
+		</tr>
+		</table>
+	</div>
+	<div class="leftButton">
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td><a href="/member/membersettings.html"><img src="http://icons-pe.wxug.com/graphics/smash/blue_M.gif" width="22" height="22" alt="Preferences"></a></td>
+		<td class="full"><a href="/member/membersettings.html">Preferences</a></td>
+		</tr>
+		</table>
+	</div>
+	<div class="leftButton">
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td><a href="http://printer.wunderground.com/history/airport/KPDT/2008/4/14/MonthlyHistory.html"><img src="http://icons-pe.wxug.com/graphics/smash/blue_printer.gif" width="22" height="22" alt="Print This Page"></a></td>
+		<td class="full"><a href="http://printer.wunderground.com/history/airport/KPDT/2008/4/14/MonthlyHistory.html">Print This Page</a></td>
+		</tr>
+		</table>
+	</div>
+	<div class="leftButton">
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td><a href="/wxradio/index.html"><img src="http://icons-pe.wxug.com/graphics/smash/blue_radio.gif" width="22" height="22" alt="Weather Radio"></a></td>
+		<td class="full"><a href="/wxradio/index.html">Weather Radio</a></td>
+		</tr>
+		</table>
+	</div>
+	<div class="leftButton">
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td><a href="/printer/cityforecast.asp?wmo=72688"><img src="http://icons-pe.wxug.com/graphics/smash/blue_forecastFlyer.gif" width="22" height="22" alt="Forecast Flyer"></a></td>
+		<td class="full"><a href="/printer/cityforecast.asp?wmo=72688">Forecast Flyer</a></td>
+		</tr>
+		</table>
+	</div>
+	<h2>Favorites</h2>
+	<table cellspacing="0" cellpadding="1" class="full bgW">
+		<tr class="rowG">
+		<td colspan="2" class="sm">
+		<a href="/cgi-bin/findweather/getForecast?query=80014" class="nu b">Denver, CO</a>
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/cgi-bin/findweather/getForecast?query=80014"><img src="http://icons-pe.wxug.com/i/c/a/clear.gif" width="25" alt="Clear" height="25" class="condIcon" /></a>
+		</td>
+		<td class="full vaM">
+		<div>
+  <nobr><b>50.3</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>10.2</b>&nbsp;&#176;C</nobr>
+</div>
+		<div>Clear</div>
+		</td>
+		</tr>
+		<tr class="rowG">
+		<td colspan="2" class="sm">
+		<a href="/cgi-bin/findweather/getForecast?query=10001" class="nu b">New York, NY</a>
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/cgi-bin/findweather/getForecast?query=10001"><img src="http://icons-pe.wxug.com/i/c/a/clear.gif" width="25" alt="Clear" height="25" class="condIcon" /></a>
+		</td>
+		<td class="full vaM">
+		<div>
+  <nobr><b>53.0</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>11.7</b>&nbsp;&#176;C</nobr>
+</div>
+		<div>Clear</div>
+		</td>
+		</tr>
+		<tr class="rowG">
+		<td colspan="2" class="sm">
+		<a href="/cgi-bin/findweather/getForecast?query=94101" class="nu b">San Francisco, CA</a>
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/cgi-bin/findweather/getForecast?query=94101"><img src="http://icons-pe.wxug.com/i/c/a/cloudy.gif" width="25" alt="Overcast" height="25" class="condIcon" /></a>
+		</td>
+		<td class="full vaM">
+		<div>
+  <nobr><b>50.1</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>10.1</b>&nbsp;&#176;C</nobr>
+</div>
+		<div>Overcast</div>
+		</td>
+		</tr>
+	</table>
+	<p class="sm taC bgG tm10 bm10"><a href="/favorites/edit.html" class="leftLink">Edit My Favorites</a></p>
+		<a name="PPREFS"></a>
+<h2>Page Preferences</h2>
+<form action="post">
+	<table cellspacing="0" cellpadding="1" class="full bgW">
+		<tr class="rowG">
+		<td colspan="3">Language: <span class="b">English</span></td>
+		</tr>
+		<tr>
+		<td colspan="3" class="p5 sm">&raquo; <a href="/SwitchLanguage.asp">Select Language</a></td>
+		</tr>
+		<tr class="rowG">
+		<td colspan="3">Timezone: <span class="b">GMT</span></td>
+		</tr>
+		<tr>
+		<td colspan="3" class="p5 sm">&raquo; <a href="/picktimezone.asp?tz=America/Los_Angeles">Set My Timezone</a></td>
+		</tr>
+		<tr class="rowG">
+		<td colspan="3">
+		Units:
+		<span class="b">
+		Both
+		</span>
+		</td>
+		</tr>
+		<tr>
+		<td colspan="3" class="p5 sm taC">
+		<a href="/cgi-bin/findweather/getForecast?setunits=metric">Metric</a> | <a href="/cgi-bin/findweather/getForecast?setunits=english">English</a>
+		</td>
+		</tr>
+		<tr class="rowG">
+		<td class="b">Show</td>
+		<td class="taC b">Yes</td>
+		<td class="taC b">No</td>
+		</tr>
+		<tr>
+		<td class="vaT" style="border-bottom: 1px solid #EEE;">
+		Favorites
+		</td>
+		<td style="border-bottom: 1px solid #EEE;"><input type="radio" name="0&value" value="1" checked="checked" onclick="location.href='/cgi-bin/findweather/getForecast?setpref=FAVS&value=1&referer=%2fhistory%2fairport%2fKPDT%2f2008%2f4%2f14%2fMonthlyHistory%2ehtml';" /></td>
+		<td style="border-bottom: 1px solid #EEE;"><input type="radio" name="0&value" value="0" onclick="location.href='/cgi-bin/findweather/getForecast?setpref=FAVS&value=0&referer=%2fhistory%2fairport%2fKPDT%2f2008%2f4%2f14%2fMonthlyHistory%2ehtml';" /></td>
+		</tr>
+		<tr>
+		<td class="vaT" style="border-bottom: 1px solid #EEE;">
+		Wunder Photos
+		</td>
+		<td style="border-bottom: 1px solid #EEE;"><input type="radio" name="10&value" value="1" checked="checked" onclick="location.href='/cgi-bin/findweather/getForecast?setpref=WPHO&value=1&referer=%2fhistory%2fairport%2fKPDT%2f2008%2f4%2f14%2fMonthlyHistory%2ehtml';" /></td>
+		<td style="border-bottom: 1px solid #EEE;"><input type="radio" name="10&value" value="0" onclick="location.href='/cgi-bin/findweather/getForecast?setpref=WPHO&value=0&referer=%2fhistory%2fairport%2fKPDT%2f2008%2f4%2f14%2fMonthlyHistory%2ehtml';" /></td>
+		</tr>
+		<tr>
+		<td class="vaT" style="border-bottom: 1px solid #EEE;">
+		Top Photo Banner
+		</td>
+		<td style="border-bottom: 1px solid #EEE;"><input type="radio" name="11&value" value="1" checked="checked" onclick="location.href='/cgi-bin/findweather/getForecast?setpref=PHOT&value=1&referer=%2fhistory%2fairport%2fKPDT%2f2008%2f4%2f14%2fMonthlyHistory%2ehtml';" /></td>
+		<td style="border-bottom: 1px solid #EEE;"><input type="radio" name="11&value" value="0" onclick="location.href='/cgi-bin/findweather/getForecast?setpref=PHOT&value=0&referer=%2fhistory%2fairport%2fKPDT%2f2008%2f4%2f14%2fMonthlyHistory%2ehtml';" /></td>
+		</tr>
+		<tr>
+		<td class="vaT" style="border-bottom: 1px solid #EEE;">
+		Gift Promo
+		</td>
+		<td style="border-bottom: 1px solid #EEE;"><input type="radio" name="12&value" value="1" checked="checked" onclick="location.href='/cgi-bin/findweather/getForecast?setpref=GIFT&value=1&referer=%2fhistory%2fairport%2fKPDT%2f2008%2f4%2f14%2fMonthlyHistory%2ehtml';" /></td>
+		<td style="border-bottom: 1px solid #EEE;"><input type="radio" name="12&value" value="0" onclick="location.href='/cgi-bin/findweather/getForecast?setpref=GIFT&value=0&referer=%2fhistory%2fairport%2fKPDT%2f2008%2f4%2f14%2fMonthlyHistory%2ehtml';" /></td>
+		</tr>
+	</table>
+</form>
+<h2>Maps</h2>
+<div class="b bgG p3">International</div>
+<ul class="leftList">
+	<li><a href="/US/Region/US/Temperature.html">United States</a></li>
+	<li><a href="/global/Region/CN/Temperature.html">Canada</a></li>
+	<li><a href="/global/Region/CA/Temperature.html">Mexico</a></li>
+	<li><a href="/global/Region/CA/Temperature.html">Central America</a></li>
+	<li><a href="/global/Region/SA/Temperature.html">South America</a></li>
+	<li><a href="/global/Region/AS/Temperature.html">Northern Asia</a></li>
+	<li><a href="/global/Region/A2/Temperature.html">Southern Asia</a></li>
+	<li><a href="/global/Region/EU/Temperature.html">Europe</a></li>
+	<li><a href="/global/Region/AU/Temperature.html">Australia</a></li>
+	<li><a href="/global/Region/AF/Temperature.html">Africa</a></li>
+	<li><a href="/global/IS_ST_Index.html">Islands</a></li>
+	<li><a href="/global/Region/AN/Temperature.html">Antarctica</a></li>
+</ul>
+<h2>Information</h2>
+<ul class="leftList">
+	<li><a href="/help/">Need Help?</a></li>
+	<li><a href="/about/faq/faq.asp">Link to Us</a></li>
+	<li><a href="/about/contact.asp">About Us</a></li>
+	<li><a href="/autobrand/">Custom Weather</a></li>
+	<li><a href="/newspaper/">Newspaper Weather</a></li>
+	<li><a href="/about/adinfo.asp">Advertising</a></li>
+	<li><a href="http://www.cafepress.com/wunderground" target="new">Online WunderStore</a></li>
+</ul>
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class=smalltable>
+<!-- ADPL-00032 -->
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Vacation Deals</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<center>
+<a href="http://www.redweek.com">
+<img src="http://icons.wunderground.com/ads/images/ADPL-00032-Redweek_logo2.jpg" width=100 height=25 border=0></a></center>
+<li><a href="http://www.redweek.com">Save On Vacation Condo Rentals</a></li>
+<li><a href="http://www.redweek.com">Save money with Timeshare rentals</a></li>
+</td></tr>
+</table>
+</td></tr>
+<!-- CNDO-00002 -->
+<tr><td bgcolor="#000080" align=center class=leftadhead><font face="Arial,Helvetica" color="FFFFFF"><b>Pendleton</b></font> <a href="http://www.condocompany.com/"><font face="Arial,Helvetica" color="FFFFFF"><b>Condos</b></font></a><font face="Arial,Helvetica" color="FFFFFF"><b> and Vacations</b>
+</font></td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<a href="http://www.condocompany.com/"><center><img src="http://icons.wunderground.com/ads/images/CONDO-cclogo.jpg" width="100" alt="Condominiums for sale, for rent, and vacation rentals" height="25" border="0"></center></a>
+<li><a href="http://miami.condocompany.com">Miami Condos</a></li>
+<li><a href="http://www.condocompany.com">Pendleton Condos</a></li>
+<li><a href="http://www.beachstore.com/">Beach Umbrellas</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Pendleton Tickets and Technology</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.xpandercommunications.com/">VOIP Phone Systems</a></li>
+<li><a href="http://www.dwtickets.com/">Disney Tickets</a></li>
+<li><a href="http://www.premiumseatsusa.com/">Event and Concert Tickets</a></li>
+<li><a href="http://www.orlandofuntickets.com/">Cheap Disney Tickets</a></li>
+</td></tr>
+</table>
+</td></tr><!-- UGEN-00003 -->
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Real Estate Guide</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.50stateshomesforsale.com">Pendleton Homes For Sale</a></li>
+<li><a href="http://www.armmortgagerefinancingoptions.com">Pendleton Mortgage Refinancing Options</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Hot Travel Savings</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.vacationpackages.bz">Pendleton Vacation Packages</a></li>
+<li><a href="http://www.rentalcars.bz">Pendleton Car Rentals</a></li>
+<li><a href="http://www.findhotels.cc">Pendleton Hotels</a></li>
+<li><a href="http://www.airlinetickets.vc">Pendleton Airline Tickets</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Great Vacation Ideas</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.funvacationscheap.com">Pendleton Cheap Vacations</a></li>
+<li><a href="http://www.bedandbreakfastideas.net">Pendleton Bed and Breakfast</a></li>
+<li><a href="http://www.vacationideas.biz">Pendleton Vacation</a></li>
+<li><a href="http://www.4lasvegasvacation.org">Las Vegas Travel Deals</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Real Estate</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.us-homes-for-sale.com">Pendleton Homes For Sale</a></li>
+<li><a href="http://www.foreclosures.bz">Pendleton Foreclosures</a></li>
+<li><a href="http://www.homeownersinsurance.cc"> Homeowners Insurance</a></li>
+<li><a href="http://www.1st-nationwide-mortgage-loans.com">Pendleton Real Estate</a></li>
+<li><a href="http://www.fasthighspeedinternetaccess.com">Pendleton High Speed Internet</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Fantastic Rental Deals</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.4vacationrentals.info">Pendleton Vacation Rentals</a></li>
+<li><a href="http://www.4timeshares.org">Pendleton Timeshares</a></li>
+<li><a href="http://www.apartmentsforrent.bz">Pendleton Apartments</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Cosmetic Surgery</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.liposuctionanswers.org">Pendleton Liposuction</a></li>
+<li><a href="http://www.lasereyesurgery.bz">Pendleton Laser Eye Surgery</a></li>
+<li><a href="http://www.lapbandsurgeryanswers.com">Pendleton Lap Band Surgery</a></li>
+<li><a href="http://www.bariatricsurgeryanswers.com">Pendleton Bariatric Surgery</a></li>
+<li><a href="http://www.tummytuckanswers.com">Pendleton Tummy Tucks</a></li>
+<li><a href="http://www.blepharoplastyanswers.com">Pendleton Eyelid Surgery</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Financial Advice on...</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.foreclosure.vc">Pendleton Foreclosure</a></li>
+<li><a href="http://www.bankruptcy.vc"> Bankruptcy</a></li>
+<li><a href="http://www.jobs411.biz">Pendleton Jobs</a></li>
+<li><a href="http://www.applyingforcreditcards.net">Best Credit Cards</li>
+<li><a href="http://www.4healthinsurancequotes.info"> Health Insurance Quotes</li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Detailed Information on...</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.www.sagabyte.com">Pendleton Stories/a></li>
+<li><a href="http://www.workathomejobslisting.com">Work at Home Jobs</a></li>
+<li><a href="http://www.singlesnearyou.org">Pendleton Singles - Online Dating</a></li>
+<li><a href="http://www.consolidationloan.bz">Debt Consolidation Loan</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>How To Save Money On...</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.homefurnishingsonline.org">Pendleton Furniture</a></li>
+<li><a href="http://www.weddingplanningchecklist.org">Pendleton Wedding</a></li>
+<li><a href="http://www.carinsurance.vc">Pendleton Car Insurance</a></li>
+<li><a href="http://www.usedcars.vc">Pendleton Used Cars</a></li>
+<li><a href="http://www.4traveldeals.org">Pendleton Travel Deals</a></li>
+<li><a href="http://www.paydayloan.bz">Pendleton Payday Loans</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Industrial Magnets</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.magnetsinc.com">Magnets</a></li>
+</td></tr>
+</table>
+</td></tr><!-- HMKY-00002 -->
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF">
+<a href="http://www.homekeys.net/" target="_blank"><font color="#FFFFFF"><b>Real Estate</b></font></a>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.byownerhomes.com" "target="_blank">
+For Sale By Owner <br>Flat Fee MLS Listing<br></a></li>
+<li><a href="http://www.reversemortgageloansusa.net" "target="_blank">Reverse Mortgages
+<br>Mortgage Loans</a></li>
+</td></tr>
+</table>
+</td></tr><!-- ATDC-00001 -->
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Tickets and Worldwide Attractions</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.attraction-tickets-direct.co.uk">Disney Tickets</a></li>
+<li><a href="http://www.dosomethingdifferent.com">Tours and Tickets</a></li>
+</td></tr>
+</table>
+</td></tr><!-- RXCA-00007 -->
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Canadian Pharmacy</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<li><a href="http://www.rxcarecanada.com">Canada Pharmacy</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Cheap Hotels</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.hoteldealsandmore.com">Cheap Hotel</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Find Jobs In Your City</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.mployd.com">Pendleton Jobs </a></li>
+</td></tr>
+</table>
+</td></tr><!-- ONMP-00001 -->
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Condos for Sale</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.prodigynetwork.com">Condos for Sale</a></li>
+<li><a href="http://www.mareazul.com">Playa del Carmen Condos</a></li>
+<li><a href="http://www.theflowerexchange.com">Wholesale Flowers</a></li>
+</td></tr>
+</table>
+</td></tr><!-- GREE-00006 -->
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>College Students</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.greek101.com/">Fraternity</a></li>
+<li><a href="http://www.greek101.com/">Sorority</a></li>
+<li><a href="http://puertorealestate.com">Puerto Escondido</a></li>
+</td></tr>
+</table>
+</td></tr>
+<!-- goog-00015 -->
+<tr><td bgcolor="000080" align=center class=leftadhead><font face="Arial,Helvetica"
+color="#ffffff">
+<b>Google Search
+</b></font>
+</td></tr>
+<tr>
+<td bgcolor=#ffffff class=leftadbody>
+<form action=http://www.google.com/custom>
+Search the Net!<br>
+<input type=text name=q size=14>
+<INPUT type=hidden name=cof VALUE="LW:440;L:http://www.wunderground.com/graphics/WUIlogo.gif;LH:55;AH:center;AWFID:1351276b545b1450;">
+<table><tr><td><input type=submit value="Search"><input type=hidden name=start value=0></td></tr></table>
+<a href="http://www.google.com">Powered by Google</a>
+<br>
+</form>
+</td>
+</tr>
+</table>
+<div class="sm" style="color: #EEE;">
+	<!-- SERVERHOSTNAME -->
+	l3a4<br />
+	Apr 8 2008 14:45:57<br />
+</div>
+		</div>
+		</td>
+		<td id="gutter"><div></div></td>
+		<td class="full vaT" id="content">
+		<a name="a_topad"></a>
+		<div class="taC tm10">
+		<? # ---- Special Case Marine Ad for Marine Pages --- ?>
+  <!-- Campaign=TREM-00007 Views=1 Caps=[86400,1208183669] -->
+
+<SCRIPT TYPE="text/javascript" LANGUAGE="JavaScript">
+<!-- Hide from old browsers
+// Modify to reflect site specifics
+
+adserver = "http://tremor.adbureau.net";
+target = "/site=WeatherUnderground/aamsz=728x90";
+
+// Cache-busting and pageid values
+
+random = Math.round(Math.random() * 10000000000);
+
+if (!pageNum) var pageNum = Math.round(Math.random() * 10000000000);
+
+
+document.write('<IFRAME SRC="'+adserver+'/hserver/acc_random='+ random + target + '/pageid=' + pageNum + '"');
+document.write(' NORESIZE SCROLLING=NO HSPACE=0 VSPACE=0 FRAMEBORDER=0 MARGINHEIGHT=0 MARGINWIDTH=0 WIDTH=728 HEIGHT=90 allowTransparency="true">');
+document.write('</IFRAME>');
+// End Hide -->
+</SCRIPT>
+		</div>
+		<div class="tm10">
+<script type="text/javascript">
+	function validateAPT(field) {
+	var valid = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
+	var hyphencount = 0;
+	if (field.length<3) {
+	alert("Airport codes must be 3 or 4 characters long.");
+	return false;
+	}
+		return true;
+	}
+</script>
+	<h1>History for Pendleton, OR</h1>
+		<div id="titleBar">Month of April, 2008 <span class="noPrint">&mdash; <a href="/cgi-bin/findweather/getForecast?query=45.68999863,-118.83999634">View Current Conditions</a></span></div>
+	<table cellspacing="0" cellpadding="0" class="full">
+	<tr class="vaT">
+		<td class="full">
+		<table cellspacing="0" cellpadding="0" class="blueTop">
+		<tr>
+		<td class="hLeft"><img src="http://icons-pe.wunderground.com/graphics/wu2/headerBlue-left.gif" width="20" height="20" alt="" /></td>
+		<td class="hCenter">Monthly Summary</td>
+		<td class="hRight"><img src="http://icons-pe.wunderground.com/graphics/wu2/headerBlue-right.gif" width="20" height="20" alt="" /></td>
+		</tr>
+		<tr>
+		<td class="sLeft"><img src="http://icons-pe.wunderground.com/graphics/wu2/subBlue-left.gif" width="20" height="6" alt="" /></td>
+		<td class="sCenter">&nbsp;</td>
+		<td class="sRight"><img src="http://icons-pe.wunderground.com/graphics/wu2/subBlue-right.gif" width="20" height="6" alt="" /></td>
+		</tr>
+		</table>
+		<div class="blueBox">
+		<div class="gap1">&nbsp;</div>
+		<div class="selectorBox noPrint">
+		<table cellspacing="0" cellpadding="0" class="full dateTable">
+		<tr>
+		<td class="nobr"><a href="/history/airport/KPDT/2008/3/14/MonthlyHistory.html">&laquo; Previous Month</a></td>
+		<td class="taC full">
+	<form action="/cgi-bin/findweather/getForecast">
+		<input type=hidden value=KPDT name=code /> <input type=hidden value=airport name=airportorwmo /> <input type=hidden value=MonthlyHistory name=historytype />
+		<table cellpadding="0" cellspacing="0" class="center" id="dateSelector">
+		<tr class="vaM">
+		<td>
+		<select name="month">
+		<option  value="1" >January</option>
+		<option  value="2" >February</option>
+		<option  value="3" >March</option>
+		<option SELECTED  value="4" >April</option>
+		<option   value="5" >May</option>
+		<option   value="6" >June</option>
+		<option   value="7" >July</option>
+		<option   value="8" >August</option>
+		<option   value="9" >September</option>
+		<option   value="10" >October</option>
+		<option   value="11" >November</option>
+		<option   value="12" >December</option>
+		</select>
+		</td>
+		<td>
+		<select name="day">
+		<option >1</option>
+		<option >2</option>
+		<option >3</option>
+		<option >4</option>
+		<option >5</option>
+		<option >6</option>
+		<option >7</option>
+		<option >8</option>
+		<option >9</option>
+		<option >10</option>
+		<option >11</option>
+		<option >12</option>
+		<option >13</option>
+		<option selected>14</option>
+		<option >15</option>
+		<option >16</option>
+		<option >17</option>
+		<option >18</option>
+		<option >19</option>
+		<option >20</option>
+		<option >21</option>
+		<option >22</option>
+		<option >23</option>
+		<option >24</option>
+		<option >25</option>
+		<option >26</option>
+		<option >27</option>
+		<option >28</option>
+		<option >29</option>
+		<option >30</option>
+		<option >31</option>
+		</select>
+		</td>
+		<td>
+		<select name="year">
+		<option selected>2008</option>
+		<option >2007</option>
+		<option >2006</option>
+		<option >2005</option>
+		<option >2004</option>
+		<option >2003</option>
+		<option >2002</option>
+		<option >2001</option>
+		<option >2000</option>
+		<option >1999</option>
+		<option >1998</option>
+		<option >1997</option>
+		<option >1996</option>
+		<option >1995</option>
+		<option >1994</option>
+		<option >1993</option>
+		<option >1992</option>
+		<option >1991</option>
+		<option >1990</option>
+		<option >1989</option>
+		<option >1988</option>
+		<option >1987</option>
+		<option >1986</option>
+		<option >1985</option>
+		<option >1984</option>
+		<option >1983</option>
+		<option >1982</option>
+		<option >1981</option>
+		<option >1980</option>
+		<option >1979</option>
+		<option >1978</option>
+		<option >1977</option>
+		<option >1976</option>
+		<option >1975</option>
+		<option >1974</option>
+		<option >1973</option>
+		<option >1972</option>
+		<option >1971</option>
+		<option >1970</option>
+		<option >1969</option>
+		<option >1968</option>
+		<option >1967</option>
+		<option >1966</option>
+		<option >1965</option>
+		<option >1964</option>
+		<option >1963</option>
+		<option >1962</option>
+		<option >1961</option>
+		<option >1960</option>
+		<option >1959</option>
+		<option >1958</option>
+		<option >1957</option>
+		<option >1956</option>
+		<option >1955</option>
+		<option >1954</option>
+		<option >1953</option>
+		<option >1952</option>
+		<option >1951</option>
+		<option >1950</option>
+		<option >1949</option>
+		<option >1948</option>
+		<option >1947</option>
+		<option >1946</option>
+		<option >1945</option>
+		<option >1944</option>
+		<option >1943</option>
+		<option >1942</option>
+		<option >1941</option>
+		<option >1940</option>
+		<option >1939</option>
+		<option >1938</option>
+		<option >1937</option>
+		<option >1936</option>
+		<option >1935</option>
+		<option >1934</option>
+		<option >1933</option>
+		<option >1932</option>
+		<option >1931</option>
+		<option >1930</option>
+		<option >1929</option>
+		<option >1928</option>
+		</select>
+		</td>
+		<td><input type="submit" value="View" /></td>
+		</tr>
+		</table>
+	</form>
+		</td>
+		<td class="nobr"><a href="/history/airport/KPDT/2008/5/14/MonthlyHistory.html">Next Month &raquo;</a></td>
+		</tr>
+		</table>
+		<table cellspacing="0" cellpadding="0" class="full" id="typeTable">
+		<tr>
+		<td class="inactiveTab"><a href="/history/airport/KPDT/2008/4/14/DailyHistory.html">Daily</a></td>
+		<td class="inactiveTab"><a href="/history/airport/KPDT/2008/4/14/WeeklyHistory.html">Weekly</a></td>
+		<td class="activeTab">Monthly</td>
+		<td class="inactiveTab"><a href="/history/airport/KPDT/2008/4/14/CustomHistory.html">Custom</a></td>
+		<td class="inactiveTab">&nbsp;</td>
+		</tr>
+		</table>
+</div>
+	<table cellspacing="0" cellpadding="0" class="dataTable tm10">
+		<thead>
+		<tr>
+		<td>&nbsp;</td>
+		<td>Max:</td>
+		<td>Avg:</td>
+		<td>Min:</td>
+		<td>Sum:</td>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+		<td colspan="5" class="b" style="background-color: #FFF;">Temperature:</td>
+		</tr>
+		<tr>
+		<td class="indent"><span>Max Temperature</span></td>
+		<td>
+  <nobr><b>78</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>25</b>&nbsp;&#176;C</nobr>
+</td>
+		<td>
+  <nobr><b>58</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>14</b>&nbsp;&#176;C</nobr>
+</td>
+		<td colspan="2">
+  <nobr><b>47</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>8</b>&nbsp;&#176;C</nobr>
+</td>
+		</tr>
+		<tr>
+		<td class="indent"><span>Mean Temperature</span></td>
+		<td>
+  <nobr><b>61</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>16</b>&nbsp;&#176;C</nobr>
+</td>
+		<td>
+  <nobr><b>46</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>7</b>&nbsp;&#176;C</nobr>
+</td>
+		<td colspan="2">
+  <nobr><b>37</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>2</b>&nbsp;&#176;C</nobr>
+</td>
+		</tr>
+		<tr>
+		<td class="indent"><span>Min Temperature</span></td>
+		<td>
+  <nobr><b>44</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>6</b>&nbsp;&#176;C</nobr>
+</td>
+		<td>
+  <nobr><b>34</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>1</b>&nbsp;&#176;C</nobr>
+</td>
+		<td colspan="2">
+  <nobr><b>24</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>-4</b>&nbsp;&#176;C</nobr>
+</td>
+		</tr>
+		<tr>
+		<td colspan="5" class="b" style="background-color: #FFF;">Degree Days:</td>
+		</tr>
+		<tr>
+		<td class="indent"><span>Heating Degree Days (base 65)</span></td>
+		<td>28</td>
+		<td>19</td>
+		<td>4</td>
+		<td>263</td>
+		</tr>
+		<tr>
+		<td class="indent"><span>Cooling Degree Days (base 65)</span></td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		</tr>
+		<tr>
+		<td class="indent"><span>Growing Degree Days (base 50)</span></td>
+		<td>10</td>
+		<td>1</td>
+		<td>0</td>
+		<td>16</td>
+		</tr>
+		<tr>
+		<td colspan="5" class="b" style="background-color: #FFF;">Dew Point:</td>
+		</tr>
+		<tr>
+		<td class="indent"><span>Dew Point</span></td>
+		<td>
+  <nobr><b>44</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>6</b>&nbsp;&#176;C</nobr>
+</td>
+		<td>
+  <nobr><b>30</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>-1</b>&nbsp;&#176;C</nobr>
+</td>
+		<td colspan="2">
+  <nobr><b>13</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>-10</b>&nbsp;&#176;C</nobr>
+</td>
+		</tr>
+		<tr>
+		<td colspan="5" class="b" style="background-color: #FFF;">Precipitation:</td>
+		</tr>
+		<tr>
+		<td class="indent"><span>Precipitation</span></td>
+		<td>
+  <nobr><b>0.04</b>&nbsp;in</nobr>
+  /
+  <nobr><b>0.1</b>&nbsp;cm</nobr>
+</td>
+		<td>
+  <nobr><b>0.01</b>&nbsp;in</nobr>
+  /
+  <nobr><b>0.0</b>&nbsp;cm</nobr>
+</td>
+		<td>
+  <nobr><b>0.00</b>&nbsp;in</nobr>
+  /
+  <nobr><b>0.0</b>&nbsp;cm</nobr>
+</td>
+		<td>
+  <nobr><b>0.06</b>&nbsp;in</nobr>
+  /
+  <nobr><b>0.16</b>&nbsp;cm</nobr>
+</td>
+		</tr>
+		<tr>
+		<td class="indent"><span>Snowdepth</span></td>
+		<td>
+  <nobr><b>0.0</b>&nbsp;in</nobr>
+  /
+  <nobr><b>0</b>&nbsp;cm</nobr>
+</td>
+		<td>
+  <nobr><b>0.0</b>&nbsp;in</nobr>
+  /
+  <nobr><b>0</b>&nbsp;cm</nobr>
+</td>
+		<td>
+  <nobr><b>0.0</b>&nbsp;in</nobr>
+  /
+  <nobr><b>0</b>&nbsp;cm</nobr>
+</td>
+		<td>-</td>
+		</tr>
+		<tr>
+		<td colspan="5" class="b" style="background-color: #FFF;">Wind:</td>
+		</tr>
+		<tr>
+		<td class="indent"><span>Wind</span></td>
+		<td>
+  <nobr><b>44</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>71</b>&nbsp;km/h</nobr>
+</td>
+		<td>
+  <nobr><b>9</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>15</b>&nbsp;km/h</nobr>
+</td>
+		<td colspan="2">
+  <nobr><b>0</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>0</b>&nbsp;km/h</nobr>
+</td>
+		</tr>
+		<tr>
+		<td class="indent"><span>Gust Wind</span></td>
+		<td>
+  <nobr><b>54</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>87</b>&nbsp;km/h</nobr>
+</td>
+		<td>
+  <nobr><b>25</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>40</b>&nbsp;km/h</nobr>
+</td>
+		<td colspan="2">
+  <nobr><b>18</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>29</b>&nbsp;km/h</nobr>
+</td>
+		</tr>
+		<tr>
+		<td colspan="5" class="b" style="background-color: #FFF;">Sea Level Pressure:</td>
+		</tr>
+		<tr>
+		<td class="indent"><span>Sea Level Pressure</span></td>
+		<td>
+  <nobr><b>30.46</b>&nbsp;in</nobr>
+  /
+  <nobr><b>1031</b>&nbsp;hPa</nobr>
+</td>
+		<td>
+  <nobr><b>30.06</b>&nbsp;in</nobr>
+  /
+  <nobr><b>1018</b>&nbsp;hPa</nobr>
+</td>
+		<td colspan="2">
+  <nobr><b>29.78</b>&nbsp;in</nobr>
+  /
+  <nobr><b>1008</b>&nbsp;hPa</nobr>
+</td>
+		</tr>
+		</tbody>
+	</table>
+		<div id="graph"><img src="/cgi-bin/histGraphAll?day=14&year=2008&month=4&ID=KPDT&type=1&width=500" width="500" height="480" alt="Monthly Graph" /></div>
+		</div>
+		<table cellspacing="0" cellpadding="0" class="blueBottom">
+		<tr>
+		<td class="bLeft"><div></div></td>
+		<td class="bCenter full"><div></div></td>
+		<td class="bRight"><div></div></td>
+		</tr>
+		</table>
+		</td>
+		<td class="noPrint">
+	<div class="rightCol">
+		<div class="taC bm10">
+  <!-- Campaign=CNTW-00153 Views=2 Caps=[86400,1208183621,1208183669] -->
+
+<script  src="http://tag.contextweb.com/TagPublish/getjs.aspx?action=VIEWAD&cwrun=200&cwadformat=300X250&cwpid=501711&cwwidth=300&cwheight=250&cwpnet=1&cwtagid=16202"></script>
+</div>
+		<div><img src="http://icons-pe.wxug.com/graphics/wu2/topBlue-300.gif" width="300" height="10" alt="" /></div>
+		<div class="contentBox">
+		<div class="headerText">Change Location:</div>
+<form action="/cgi-bin/findweather/getForecast" onsubmit="return validateAPT(this.code.value)" id="placePick">
+	<input type="hidden" value="airport" name="airportorwmo" />
+	<input type="hidden" value="MonthlyHistory" name="historytype" />
+	<input type="hidden" value="2008" name="year" />
+	<input type="hidden" value="4" name="month" />
+	<input type="hidden" value="14" name="day" />
+	<table cellspacing="0" cellpadding="5" class="full">
+		<tr>
+		<td class="placeText"><div>Airport:</div></td>
+		<td class="placeField"><input type="text" value="KPDT" name="code" maxlength="300" /></td>
+		</tr>
+		<tr>
+		<td class="placeText"><div>Recent:</div></td>
+		<td class="placeField">
+		<a href="/history/airport/KALW/2008/4/14/MonthlyHistory.html" class="sm">KALW</a>
+		,
+		<a href="/history/airport/KCLM/2008/4/14/MonthlyHistory.html" class="sm">KCLM</a>
+		,
+		<a href="/history/airport/KTTD/2008/4/14/MonthlyHistory.html" class="sm">KTTD</a>
+		,
+		<a href="/history/airport/KBFI/2008/4/14/MonthlyHistory.html" class="sm">KBFI</a>
+		,
+		<a href="/history/airport/KPDT/2008/4/14/MonthlyHistory.html" class="sm">KPDT</a>
+		</td>
+		</tr>
+		<tr>
+		<td>&nbsp;</td>
+		<td class="placeSubmit"><input type="submit" value="Submit" /></td>
+		</tr>
+	</table>
+</form>
+<div>&nbsp;</div>
+		<div class="headerText">Trip Planner:</div>
+	<p>Search our historical database for the weather conditions in past years. The results will help you decide how hot, cold, wet, or windy it will be!</p>
+		<p class="taC"><a href="/history/airport/KPDT/2008/4/14/PlannerHistory.html" class="subLink">Go To The Trip Planner</a></p>
+<br class="clear" />
+		<div class="headerText">Local Photos:</div>
+<table cellspacing="0" cellpadding="5" class="full" id="localPhotos">
+		<tr>
+		<td colspan="2"><p>There were no photos found matching this date and location.</p></td>
+		</tr>
+</table>
+<p class="taC"><a href="/wximage/" class="subLink">View More WunderPhotos</a></p>
+<div>&nbsp;</div>
+<div class="headerText">Astronomy for April 14, 2008:</div>
+<table cellspacing="0" cellpadding="0" class="sm" id="astroTable">
+	<thead>
+		<tr>
+		<td>&nbsp;</td>
+		<td>Rise:</td>
+		<td>Set:</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+		<td>Actual Time:</td>
+		<td>6:10 AM PDT</td>
+		<td>7:41 PM PDT</td>
+		</tr>
+		<tr>
+		<td>Civil Twilight:</td>
+		<td>5:39 AM PDT</td>
+		<td>8:12 PM PDT</td>
+		</tr>
+		<tr>
+		<td>Nautical Twilight:</td>
+		<td>5:01 AM PDT</td>
+		<td>8:50 PM PDT</td>
+		</tr>
+		<tr>
+		<td>Astronomical Twilight:</td>
+		<td>4:21 AM PDT</td>
+		<td>9:30 PM PDT</td>
+		</tr>
+		<tr>
+		<td>Moon:</td>
+		<td>1:54 PM PDT</td>
+		<td>3:49 AM PDT</td>
+		</tr>
+		<tr>
+		<td>Length Of Visible Light:</td>
+		<td colspan="2">14h 33m</td>
+		</tr>
+		<tr>
+		<td>Length of Day:</td>
+		<td colspan="2">
+		<div>13h 30m</div>
+		</td>
+		</tr>
+	</tbody>
+</table>
+<table cellspacing="0" cellpadding="0" id="moonTable">
+	<tr>
+		<td colspan="5" class="taC smB" style="color: #FFF;">Waxing Gibbous, 71% Moon Illumination</td>
+	</tr>
+	<tr class="taC" style="background-color: #000; color: #FFF;">
+		<td style="width: 20%;"><img src="http://icons-pe.wxug.com/graphics/moonpictsnew/moon9.gif" width="48" height="48" alt="" /></td>
+		<td style="width: 20%;"><img src="http://icons-pe.wxug.com/graphics/moonpictsnew/moon16.gif" width="48" height="48"></td>
+		<td style="width: 20%;"><img src="http://icons-pe.wxug.com/graphics/moonpictsnew/moon23.gif" width="48" height="48"></td>
+		<td style="width: 20%;"><img src="http://icons-pe.wxug.com/graphics/moonpictsnew/moon1.gif" width="48" height="48"></td>
+		<td style="width: 20%;"><img src="http://icons-pe.wxug.com/graphics/moonpictsnew/moon8.gif" width="48" height="48"></td>
+	</tr>
+	<tr class="vaT taC" style="background-color: #000; color: #FFF;">
+		<td class="b">
+		4 / 14
+		</td>
+		<td>
+		<div class="b">4 / 20</div>
+		<div class="sm">Full</div>
+		</td>
+		<td>
+		<div class="b">4 / 28</div>
+		<div class="sm">Last Quarter</div>
+		</td>
+		<td>
+		<div class="b">5 / 5</div>
+		<div class="sm">New</div>
+		</td>
+		<td>
+		<div class="b">5 / 11</div>
+		<div class="sm">First Quarter</div>
+		</td>
+	</tr>
+</table>
+<table cellspacing="0" cellpadding="5" class="full">
+	<tr>
+		<td><img src="http://icons-pe.wxug.com/graphics/Astro.gif" width="30" height="31" alt="Distant Suns" /></td>
+		<td class="full">
+		<div>
+		For more information about the solar system,
+		<a href="/sky/ShowSky.asp?TheLat=45.68999863&TheLon=-118.83999634&TimeZoneName=America/Los_Angeles">view the complete star chart!</a>
+		</div>
+		</td>
+	</tr>
+</table>
+<p class="taC"><a href="/about/faq/twilights.asp" class="subLink">Definitions of Astronomy Terms</a></p>
+<div>&nbsp;</div>
+		</div>
+		<div><img src="http://icons-pe.wxug.com/graphics/wu2/botBlue-300.gif" width="300" height="10" alt="" /></div>
+	</div>
+</td>
+  </tr>
+</table>
+<div class="pageTop"><span class="noPrint">: <a href="#">Top of Page</a> :</span></div>
+<a name="calendar"></a>
+<table cellspacing="0" cellpadding="0" class="blueTop">
+	<tr>
+		<td class="hLeft"><img src="http://icons-pe.wunderground.com/graphics/wu2/headerBlue-left.gif" width="20" height="20" alt="" /></td>
+		<td class="hCenter">Monthly Calendar Overview</td>
+		<td class="hRight"><img src="http://icons-pe.wunderground.com/graphics/wu2/headerBlue-right.gif" width="20" height="20" alt="" /></td>
+	</tr>
+	<tr>
+		<td class="sLeft"><img src="http://icons-pe.wunderground.com/graphics/wu2/subBlue-left.gif" width="20" height="6" alt="" /></td>
+		<td class="sCenter">&nbsp;</td>
+		<td class="sRight"><img src="http://icons-pe.wunderground.com/graphics/wu2/subBlue-right.gif" width="20" height="6" alt="" /></td>
+	</tr>
+</table>
+<div class="blueBox">
+	<div class="gap">&nbsp;</div>
+	<div class="selectorBox">
+		<table cellspacing="0" cellpadding="0" class="dateTable">
+		<tr>
+		<td><span><a href="/history/airport/KPDT/2008/3/14/MonthlyHistory.html#calendar">&laquo; Previous Month</a></span></td>
+		<td><span><a href="/history/airport/KPDT/2007/4/14/MonthlyHistory.html#calendar">&laquo; 2007</a></span></td>
+		<td class="full taC b" style="vertical-align: middle;">April</a> 2008</td>
+		<td><span><a href="/history/airport/KPDT/2009/4/14/MonthlyHistory.html#calendar">2009 &raquo;</a></span></td>
+		<td><span><a href="/history/airport/KPDT/2008/5/14/MonthlyHistory.html#calendar">Next Month &raquo;</a></span></td>
+		</tr>
+		</table>
+	</div>
+	<table cellspacing="0" cellpadding="0" id="calTable">
+		<thead>
+		<tr id="calDays">
+		<td>Sunday</td>
+		<td>Monday</td>
+		<td>Tuesday</td>
+		<td>Wednesday</td>
+		<td>Thursday</td>
+		<td>Friday</td>
+		<td>Saturday</td>
+		</tr>
+		</thead>
+		<tbody>
+		<tr class="vaT">
+		<td colspan="2" style="background-color: #F5F5F5; border-bottom: 1px solid #FFF; border-right: 1px solid #FFF;">&nbsp;</td>
+		<td valign="top" style="padding: 3px; border-bottom: 1px solid #FFF; border-left: 1px solid #FFF; background-color: #ceff00">
+		<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" class="dayTable">
+		<tr>
+		<td style="vertical-align: middle;"><a href="/history/airport/KPDT/2008/4/1/DailyHistory.html">1</a></td>
+		<td style="height: 30px; width: 60px; text-align: right;">
+		<img src="http://icons-pe.wunderground.com/graphics/conds/smash/clear.gif" alt="Clear" />
+		</td>
+		</tr>
+		<tr>
+		<td><b>Actual:</b></td>
+		<td><font color=#990000>
+  50
+</font><b> | </b><font color=#000099>
+  24
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.00
+</td>
+		</tr>
+		<tr>
+		<td><b>Average:</b> </td>
+		<td><font color=#990000>
+  59
+</font><b> | </b><font color=#000099>
+  37
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.04
+</td>
+		</tr>
+		</table>
+		</td>
+		<td valign="top" style="padding: 3px; border-bottom: 1px solid #FFF; border-left: 1px solid #FFF; background-color: #ceff00">
+		<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" class="dayTable">
+		<tr>
+		<td style="vertical-align: middle;"><a href="/history/airport/KPDT/2008/4/2/DailyHistory.html">2</a></td>
+		<td style="height: 30px; width: 60px; text-align: right;">
+		<img src="http://icons-pe.wunderground.com/graphics/conds/smash/partlycloudy.gif" alt="Partly Cloudy" />
+		</td>
+		</tr>
+		<tr>
+		<td><b>Actual:</b></td>
+		<td><font color=#990000>
+  53
+</font><b> | </b><font color=#000099>
+  28
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.00
+</td>
+		</tr>
+		<tr>
+		<td><b>Average:</b> </td>
+		<td><font color=#990000>
+  59
+</font><b> | </b><font color=#000099>
+  38
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.04
+</td>
+		</tr>
+		</table>
+		</td>
+		<td valign="top" style="padding: 3px; border-bottom: 1px solid #FFF; border-left: 1px solid #FFF; background-color: #ffe600">
+		<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" class="dayTable">
+		<tr>
+		<td style="vertical-align: middle;"><a href="/history/airport/KPDT/2008/4/3/DailyHistory.html">3</a></td>
+		<td style="height: 30px; width: 60px; text-align: right;">
+		<img src="http://icons-pe.wunderground.com/graphics/conds/smash/clear.gif" alt="Clear" />
+		</td>
+		</tr>
+		<tr>
+		<td><b>Actual:</b></td>
+		<td><font color=#990000>
+  62
+</font><b> | </b><font color=#000099>
+  27
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.00
+</td>
+		</tr>
+		<tr>
+		<td><b>Average:</b> </td>
+		<td><font color=#990000>
+  59
+</font><b> | </b><font color=#000099>
+  38
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.04
+</td>
+		</tr>
+		</table>
+		</td>
+		<td valign="top" style="padding: 3px; border-bottom: 1px solid #FFF; border-left: 1px solid #FFF; background-color: #ceff00">
+		<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" class="dayTable">
+		<tr>
+		<td style="vertical-align: middle;"><a href="/history/airport/KPDT/2008/4/4/DailyHistory.html">4</a></td>
+		<td style="height: 30px; width: 60px; text-align: right;">
+		<img src="http://icons-pe.wunderground.com/graphics/conds/smash/rain.gif" alt="Rain" />
+		</td>
+		</tr>
+		<tr>
+		<td><b>Actual:</b></td>
+		<td><font color=#990000>
+  53
+</font><b> | </b><font color=#000099>
+  33
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  T
+</td>
+		</tr>
+		<tr>
+		<td><b>Average:</b> </td>
+		<td><font color=#990000>
+  59
+</font><b> | </b><font color=#000099>
+  38
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.04
+</td>
+		</tr>
+		</table>
+		</td>
+		<td valign="top" style="padding: 3px; border-bottom: 1px solid #FFF; border-left: 1px solid #FFF; background-color: #ceff00">
+		<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" class="dayTable">
+		<tr>
+		<td style="vertical-align: middle;"><a href="/history/airport/KPDT/2008/4/5/DailyHistory.html">5</a></td>
+		<td style="height: 30px; width: 60px; text-align: right;">
+		<img src="http://icons-pe.wunderground.com/graphics/conds/smash/rain.gif" alt="Rain" />
+		</td>
+		</tr>
+		<tr>
+		<td><b>Actual:</b></td>
+		<td><font color=#990000>
+  53
+</font><b> | </b><font color=#000099>
+  31
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.01
+</td>
+		</tr>
+		<tr>
+		<td><b>Average:</b> </td>
+		<td><font color=#990000>
+  60
+</font><b> | </b><font color=#000099>
+  38
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.04
+</td>
+		</tr>
+		</table>
+		</td>
+		</tr>
+		<tr bgcolor="#FFFFFF">
+		<td valign="top" style="padding: 3px; border-bottom: 1px solid #FFF; border-left: 1px solid #FFF; background-color: #ceff00">
+		<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" class="dayTable">
+		<tr>
+		<td style="vertical-align: middle;"><a href="/history/airport/KPDT/2008/4/6/DailyHistory.html">6</a></td>
+		<td style="height: 30px; width: 60px; text-align: right;">
+		<img src="http://icons-pe.wunderground.com/graphics/conds/smash/rain.gif" alt="Rain" />
+		</td>
+		</tr>
+		<tr>
+		<td><b>Actual:</b></td>
+		<td><font color=#990000>
+  54
+</font><b> | </b><font color=#000099>
+  37
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.04
+</td>
+		</tr>
+		<tr>
+		<td><b>Average:</b> </td>
+		<td><font color=#990000>
+  60
+</font><b> | </b><font color=#000099>
+  38
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.04
+</td>
+		</tr>
+		</table>
+		</td>
+		<td valign="top" style="padding: 3px; border-bottom: 1px solid #FFF; border-left: 1px solid #FFF; background-color: #ceff00">
+		<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" class="dayTable">
+		<tr>
+		<td style="vertical-align: middle;"><a href="/history/airport/KPDT/2008/4/7/DailyHistory.html">7</a></td>
+		<td style="height: 30px; width: 60px; text-align: right;">
+		<img src="http://icons-pe.wunderground.com/graphics/conds/smash/partlysunny.gif" alt="Partly Cloudy" />
+		</td>
+		</tr>
+		<tr>
+		<td><b>Actual:</b></td>
+		<td><font color=#990000>
+  52
+</font><b> | </b><font color=#000099>
+  33
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.00
+</td>
+		</tr>
+		<tr>
+		<td><b>Average:</b> </td>
+		<td><font color=#990000>
+  60
+</font><b> | </b><font color=#000099>
+  38
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.04
+</td>
+		</tr>
+		</table>
+		</td>
+		<td valign="top" style="padding: 3px; border-bottom: 1px solid #FFF; border-left: 1px solid #FFF; background-color: #00ffb3">
+		<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" class="dayTable">
+		<tr>
+		<td style="vertical-align: middle;"><a href="/history/airport/KPDT/2008/4/8/DailyHistory.html">8</a></td>
+		<td style="height: 30px; width: 60px; text-align: right;">
+		<img src="http://icons-pe.wunderground.com/graphics/conds/smash/rain.gif" alt="Rain" />
+		</td>
+		</tr>
+		<tr>
+		<td><b>Actual:</b></td>
+		<td><font color=#990000>
+  47
+</font><b> | </b><font color=#000099>
+  34
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  T
+</td>
+		</tr>
+		<tr>
+		<td><b>Average:</b> </td>
+		<td><font color=#990000>
+  60
+</font><b> | </b><font color=#000099>
+  38
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.04
+</td>
+		</tr>
+		</table>
+		</td>
+		<td valign="top" style="padding: 3px; border-bottom: 1px solid #FFF; border-left: 1px solid #FFF; background-color: #ceff00">
+		<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" class="dayTable">
+		<tr>
+		<td style="vertical-align: middle;"><a href="/history/airport/KPDT/2008/4/9/DailyHistory.html">9</a></td>
+		<td style="height: 30px; width: 60px; text-align: right;">
+		</td>
+		</tr>
+		<tr>
+		<td><b>Actual:</b></td>
+		<td><font color=#990000>
+  54
+</font><b> | </b><font color=#000099>
+  33
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  T
+</td>
+		</tr>
+		<tr>
+		<td><b>Average:</b> </td>
+		<td><font color=#990000>
+  61
+</font><b> | </b><font color=#000099>
+  39
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.04
+</td>
+		</tr>
+		</table>
+		</td>
+		<td valign="top" style="padding: 3px; border-bottom: 1px solid #FFF; border-left: 1px solid #FFF; background-color: #ceff00">
+		<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" class="dayTable">
+		<tr>
+		<td style="vertical-align: middle;"><a href="/history/airport/KPDT/2008/4/10/DailyHistory.html">10</a></td>
+		<td style="height: 30px; width: 60px; text-align: right;">
+		<img src="http://icons-pe.wunderground.com/graphics/conds/smash/mostlycloudy.gif" alt="Mostly Cloudy" />
+		</td>
+		</tr>
+		<tr>
+		<td><b>Actual:</b></td>
+		<td><font color=#990000>
+  58
+</font><b> | </b><font color=#000099>
+  40
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  T
+</td>
+		</tr>
+		<tr>
+		<td><b>Average:</b> </td>
+		<td><font color=#990000>
+  61
+</font><b> | </b><font color=#000099>
+  39
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.03
+</td>
+		</tr>
+		</table>
+		</td>
+		<td valign="top" style="padding: 3px; border-bottom: 1px solid #FFF; border-left: 1px solid #FFF; background-color: #ffe600">
+		<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" class="dayTable">
+		<tr>
+		<td style="vertical-align: middle;"><a href="/history/airport/KPDT/2008/4/11/DailyHistory.html">11</a></td>
+		<td style="height: 30px; width: 60px; text-align: right;">
+		<img src="http://icons-pe.wunderground.com/graphics/conds/smash/clear.gif" alt="Clear" />
+		</td>
+		</tr>
+		<tr>
+		<td><b>Actual:</b></td>
+		<td><font color=#990000>
+  65
+</font><b> | </b><font color=#000099>
+  30
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.00
+</td>
+		</tr>
+		<tr>
+		<td><b>Average:</b> </td>
+		<td><font color=#990000>
+  61
+</font><b> | </b><font color=#000099>
+  39
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.03
+</td>
+		</tr>
+		</table>
+		</td>
+		<td valign="top" style="padding: 3px; border-bottom: 1px solid #FFF; border-left: 1px solid #FFF; background-color: #ffae00">
+		<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" class="dayTable">
+		<tr>
+		<td style="vertical-align: middle;"><a href="/history/airport/KPDT/2008/4/12/DailyHistory.html">12</a></td>
+		<td style="height: 30px; width: 60px; text-align: right;">
+		<img src="http://icons-pe.wunderground.com/graphics/conds/smash/clear.gif" alt="Clear" />
+		</td>
+		</tr>
+		<tr>
+		<td><b>Actual:</b></td>
+		<td><font color=#990000>
+  77
+</font><b> | </b><font color=#000099>
+  38
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.00
+</td>
+		</tr>
+		<tr>
+		<td><b>Average:</b> </td>
+		<td><font color=#990000>
+  61
+</font><b> | </b><font color=#000099>
+  39
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.03
+</td>
+		</tr>
+		</table>
+		</td>
+		</tr>
+		<tr bgcolor="#FFFFFF">
+		<td valign="top" style="padding: 3px; border-bottom: 1px solid #FFF; border-left: 1px solid #FFF; background-color: #ffae00">
+		<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" class="dayTable">
+		<tr>
+		<td style="vertical-align: middle;"><a href="/history/airport/KPDT/2008/4/13/DailyHistory.html">13</a></td>
+		<td style="height: 30px; width: 60px; text-align: right;">
+		<img src="http://icons-pe.wunderground.com/graphics/conds/smash/clear.gif" alt="Clear" />
+		</td>
+		</tr>
+		<tr>
+		<td><b>Actual:</b></td>
+		<td><font color=#990000>
+  78
+</font><b> | </b><font color=#000099>
+  44
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.00
+</td>
+		</tr>
+		<tr>
+		<td><b>Average:</b> </td>
+		<td><font color=#990000>
+  61
+</font><b> | </b><font color=#000099>
+  39
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.03
+</td>
+		</tr>
+		</table>
+		</td>
+		<td valign="top" style="padding: 3px; border-bottom: 1px solid #FFF; border-left: 1px solid #FFF; background-color: #ceff00">
+		<table bgcolor="#EEEEEE" width="100%" cellpadding="0" cellspacing="0" class="dayTable">
+		<tr>
+		<td style="vertical-align: middle;"><a href="/history/airport/KPDT/2008/4/14/DailyHistory.html">14</a></td>
+		<td style="height: 30px; width: 60px; text-align: right;">
+		<img src="http://icons-pe.wunderground.com/graphics/conds/smash/rain.gif" alt="Rain" />
+		</td>
+		</tr>
+		<tr>
+		<td><b>Actual:</b></td>
+		<td><font color=#990000>
+  55
+</font><b> | </b><font color=#000099>
+  42
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.01
+</td>
+		</tr>
+		<tr>
+		<td><b>Average:</b> </td>
+		<td><font color=#990000>
+  61
+</font><b> | </b><font color=#000099>
+  39
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.03
+</td>
+		</tr>
+		</table>
+		</td>
+		<td valign="top" style="padding: 3px; border-bottom: 1px solid #FFF; border-left: 1px solid #FFF; background-color: #ceff00">
+		<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" class="dayTable">
+		<tr>
+		<td style="vertical-align: middle;"><a href="/history/airport/KPDT/2008/4/15/DailyHistory.html">15</a></td>
+		<td style="height: 30px; text-align: right;"><img src="http://icons-pe.wunderground.com/graphics/conds/smash/partlycloudy.gif" alt="Partly Cloudy" /></td>
+		</tr>
+		<tr>
+		<td>Forecast:</td>
+		<td><font color=#990000>
+  52
+</font><b> | </b><font color=#000099>
+  32
+</font></td>
+		</tr>
+		<tr>
+		<td colspan="2">Partly Cloudy</td>
+		</tr>
+		<tr>
+		<td><b>Average:</b></td>
+		<td><font color=#990000>
+  62
+</font><b> | </b><font color=#000099>
+  39
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.03
+</td>
+		</tr>
+		</table>
+		</td>
+		<td valign="top" style="padding: 3px; border-bottom: 1px solid #FFF; border-left: 1px solid #FFF; background-color: #ffe600">
+		<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" class="dayTable">
+		<tr>
+		<td style="vertical-align: middle;"><a href="/history/airport/KPDT/2008/4/16/DailyHistory.html">16</a></td>
+		<td style="height: 30px; text-align: right;"><img src="http://icons-pe.wunderground.com/graphics/conds/smash/partlycloudy.gif" alt="Partly Cloudy" /></td>
+		</tr>
+		<tr>
+		<td>Forecast:</td>
+		<td><font color=#990000>
+  61
+</font><b> | </b><font color=#000099>
+  36
+</font></td>
+		</tr>
+		<tr>
+		<td colspan="2">Partly Cloudy</td>
+		</tr>
+		<tr>
+		<td><b>Average:</b></td>
+		<td><font color=#990000>
+  62
+</font><b> | </b><font color=#000099>
+  40
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.03
+</td>
+		</tr>
+		</table>
+		</td>
+		<td valign="top" style="padding: 3px; border-bottom: 1px solid #FFF; border-left: 1px solid #FFF; background-color: #ffe600">
+		<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" class="dayTable">
+		<tr>
+		<td style="vertical-align: middle;"><a href="/history/airport/KPDT/2008/4/17/DailyHistory.html">17</a></td>
+		<td style="height: 30px; text-align: right;"><img src="http://icons-pe.wunderground.com/graphics/conds/smash/partlycloudy.gif" alt="Partly Cloudy" /></td>
+		</tr>
+		<tr>
+		<td>Forecast:</td>
+		<td><font color=#990000>
+  63
+</font><b> | </b><font color=#000099>
+  36
+</font></td>
+		</tr>
+		<tr>
+		<td colspan="2">Partly Cloudy</td>
+		</tr>
+		<tr>
+		<td><b>Average:</b></td>
+		<td><font color=#990000>
+  62
+</font><b> | </b><font color=#000099>
+  40
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.04
+</td>
+		</tr>
+		</table>
+		</td>
+		<td valign="top" style="padding: 3px; border-bottom: 1px solid #FFF; border-left: 1px solid #FFF; background-color: #ceff00">
+		<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" class="dayTable">
+		<tr>
+		<td style="vertical-align: middle;"><a href="/history/airport/KPDT/2008/4/18/DailyHistory.html">18</a></td>
+		<td style="height: 30px; text-align: right;"><img src="http://icons-pe.wunderground.com/graphics/conds/smash/partlycloudy.gif" alt="Partly Cloudy" /></td>
+		</tr>
+		<tr>
+		<td>Forecast:</td>
+		<td><font color=#990000>
+  59
+</font><b> | </b><font color=#000099>
+  36
+</font></td>
+		</tr>
+		<tr>
+		<td colspan="2">Partly Cloudy</td>
+		</tr>
+		<tr>
+		<td><b>Average:</b></td>
+		<td><font color=#990000>
+  63
+</font><b> | </b><font color=#000099>
+  40
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.04
+</td>
+		</tr>
+		</table>
+		</td>
+		<td valign="top" style="padding: 3px; border-bottom: 1px solid #FFF; border-left: 1px solid #FFF; background-color: #ceff00">
+		<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" class="dayTable">
+		<tr>
+		<td style="vertical-align: middle;"><a href="/history/airport/KPDT/2008/4/19/DailyHistory.html">19</a></td>
+		<td style="height: 30px; text-align: right;"><img src="http://icons-pe.wunderground.com/graphics/conds/smash/chancerain.gif" alt="Chance of Rain" /></td>
+		</tr>
+		<tr>
+		<td>Forecast:</td>
+		<td><font color=#990000>
+  56
+</font><b> | </b><font color=#000099>
+  34
+</font></td>
+		</tr>
+		<tr>
+		<td colspan="2">Chance of Rain</td>
+		</tr>
+		<tr>
+		<td><b>Average:</b></td>
+		<td><font color=#990000>
+  63
+</font><b> | </b><font color=#000099>
+  40
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.04
+</td>
+		</tr>
+		</table>
+		</td>
+		</tr>
+		<tr bgcolor="#FFFFFF">
+		<td valign="top" style="padding: 3px; border-bottom: 1px solid #FFF; border-left: 1px solid #FFF; background-color: #ceff00">
+		<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" class="dayTable">
+		<tr>
+		<td style="vertical-align: middle;"><a href="/history/airport/KPDT/2008/4/20/DailyHistory.html">20</a></td>
+		<td style="height: 30px; text-align: right;"><img src="http://icons-pe.wunderground.com/graphics/conds/smash/chancerain.gif" alt="Chance of Rain" /></td>
+		</tr>
+		<tr>
+		<td>Forecast:</td>
+		<td><font color=#990000>
+  56
+</font><b> | </b><font color=#000099>
+  -
+</font></td>
+		</tr>
+		<tr>
+		<td colspan="2">Chance of Rain</td>
+		</tr>
+		<tr>
+		<td><b>Average:</b></td>
+		<td><font color=#990000>
+  63
+</font><b> | </b><font color=#000099>
+  40
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.04
+</td>
+		</tr>
+		</table>
+		</td>
+		<td valign="top" style="padding: 3px; border-bottom: 1px solid #FFF; border-left: 1px solid #FFF; background-color: #dddddd">
+		<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" class="dayTable">
+		<tr>
+		<td style="vertical-align: middle;"><a href="/history/airport/KPDT/2008/4/21/DailyHistory.html">21</a></td>
+		<td><img src="http://icons-pe.wunderground.com/graphics/clear.gif" width="1" height="30" alt="" /></td>
+		</tr>
+		<tr>
+		<td>Record:</td>
+		<td><font color=#990000>
+  83
+</font><b> | </b><font color=#000099>
+  26
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  1.03
+</td>
+		</tr>
+		<tr>
+		<td><b>Average:</b></td>
+		<td><font color=#990000>
+  64
+</font><b> | </b><font color=#000099>
+  41
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.04
+</td>
+		</tr>
+		</table>
+		</td>
+		<td valign="top" style="padding: 3px; border-bottom: 1px solid #FFF; border-left: 1px solid #FFF; background-color: #dddddd">
+		<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" class="dayTable">
+		<tr>
+		<td style="vertical-align: middle;"><a href="/history/airport/KPDT/2008/4/22/DailyHistory.html">22</a></td>
+		<td><img src="http://icons-pe.wunderground.com/graphics/clear.gif" width="1" height="30" alt="" /></td>
+		</tr>
+		<tr>
+		<td>Record:</td>
+		<td><font color=#990000>
+  82
+</font><b> | </b><font color=#000099>
+  29
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.38
+</td>
+		</tr>
+		<tr>
+		<td><b>Average:</b></td>
+		<td><font color=#990000>
+  64
+</font><b> | </b><font color=#000099>
+  41
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.04
+</td>
+		</tr>
+		</table>
+		</td>
+		<td valign="top" style="padding: 3px; border-bottom: 1px solid #FFF; border-left: 1px solid #FFF; background-color: #dddddd">
+		<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" class="dayTable">
+		<tr>
+		<td style="vertical-align: middle;"><a href="/history/airport/KPDT/2008/4/23/DailyHistory.html">23</a></td>
+		<td><img src="http://icons-pe.wunderground.com/graphics/clear.gif" width="1" height="30" alt="" /></td>
+		</tr>
+		<tr>
+		<td>Record:</td>
+		<td><font color=#990000>
+  87
+</font><b> | </b><font color=#000099>
+  31
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.85
+</td>
+		</tr>
+		<tr>
+		<td><b>Average:</b></td>
+		<td><font color=#990000>
+  64
+</font><b> | </b><font color=#000099>
+  41
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.04
+</td>
+		</tr>
+		</table>
+		</td>
+		<td valign="top" style="padding: 3px; border-bottom: 1px solid #FFF; border-left: 1px solid #FFF; background-color: #dddddd">
+		<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" class="dayTable">
+		<tr>
+		<td style="vertical-align: middle;"><a href="/history/airport/KPDT/2008/4/24/DailyHistory.html">24</a></td>
+		<td><img src="http://icons-pe.wunderground.com/graphics/clear.gif" width="1" height="30" alt="" /></td>
+		</tr>
+		<tr>
+		<td>Record:</td>
+		<td><font color=#990000>
+  91
+</font><b> | </b><font color=#000099>
+  26
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.49
+</td>
+		</tr>
+		<tr>
+		<td><b>Average:</b></td>
+		<td><font color=#990000>
+  64
+</font><b> | </b><font color=#000099>
+  41
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.04
+</td>
+		</tr>
+		</table>
+		</td>
+		<td valign="top" style="padding: 3px; border-bottom: 1px solid #FFF; border-left: 1px solid #FFF; background-color: #dddddd">
+		<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" class="dayTable">
+		<tr>
+		<td style="vertical-align: middle;"><a href="/history/airport/KPDT/2008/4/25/DailyHistory.html">25</a></td>
+		<td><img src="http://icons-pe.wunderground.com/graphics/clear.gif" width="1" height="30" alt="" /></td>
+		</tr>
+		<tr>
+		<td>Record:</td>
+		<td><font color=#990000>
+  89
+</font><b> | </b><font color=#000099>
+  30
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.98
+</td>
+		</tr>
+		<tr>
+		<td><b>Average:</b></td>
+		<td><font color=#990000>
+  65
+</font><b> | </b><font color=#000099>
+  41
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.04
+</td>
+		</tr>
+		</table>
+		</td>
+		<td valign="top" style="padding: 3px; border-bottom: 1px solid #FFF; border-left: 1px solid #FFF; background-color: #dddddd">
+		<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" class="dayTable">
+		<tr>
+		<td style="vertical-align: middle;"><a href="/history/airport/KPDT/2008/4/26/DailyHistory.html">26</a></td>
+		<td><img src="http://icons-pe.wunderground.com/graphics/clear.gif" width="1" height="30" alt="" /></td>
+		</tr>
+		<tr>
+		<td>Record:</td>
+		<td><font color=#990000>
+  80
+</font><b> | </b><font color=#000099>
+  30
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.37
+</td>
+		</tr>
+		<tr>
+		<td><b>Average:</b></td>
+		<td><font color=#990000>
+  65
+</font><b> | </b><font color=#000099>
+  42
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.04
+</td>
+		</tr>
+		</table>
+		</td>
+		</tr>
+		<tr bgcolor="#FFFFFF">
+		<td valign="top" style="padding: 3px; border-bottom: 1px solid #FFF; border-left: 1px solid #FFF; background-color: #dddddd">
+		<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" class="dayTable">
+		<tr>
+		<td style="vertical-align: middle;"><a href="/history/airport/KPDT/2008/4/27/DailyHistory.html">27</a></td>
+		<td><img src="http://icons-pe.wunderground.com/graphics/clear.gif" width="1" height="30" alt="" /></td>
+		</tr>
+		<tr>
+		<td>Record:</td>
+		<td><font color=#990000>
+  84
+</font><b> | </b><font color=#000099>
+  29
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  1.24
+</td>
+		</tr>
+		<tr>
+		<td><b>Average:</b></td>
+		<td><font color=#990000>
+  65
+</font><b> | </b><font color=#000099>
+  42
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.04
+</td>
+		</tr>
+		</table>
+		</td>
+		<td valign="top" style="padding: 3px; border-bottom: 1px solid #FFF; border-left: 1px solid #FFF; background-color: #dddddd">
+		<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" class="dayTable">
+		<tr>
+		<td style="vertical-align: middle;"><a href="/history/airport/KPDT/2008/4/28/DailyHistory.html">28</a></td>
+		<td><img src="http://icons-pe.wunderground.com/graphics/clear.gif" width="1" height="30" alt="" /></td>
+		</tr>
+		<tr>
+		<td>Record:</td>
+		<td><font color=#990000>
+  86
+</font><b> | </b><font color=#000099>
+  26
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.81
+</td>
+		</tr>
+		<tr>
+		<td><b>Average:</b></td>
+		<td><font color=#990000>
+  65
+</font><b> | </b><font color=#000099>
+  42
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.04
+</td>
+		</tr>
+		</table>
+		</td>
+		<td valign="top" style="padding: 3px; border-bottom: 1px solid #FFF; border-left: 1px solid #FFF; background-color: #dddddd">
+		<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" class="dayTable">
+		<tr>
+		<td style="vertical-align: middle;"><a href="/history/airport/KPDT/2008/4/29/DailyHistory.html">29</a></td>
+		<td><img src="http://icons-pe.wunderground.com/graphics/clear.gif" width="1" height="30" alt="" /></td>
+		</tr>
+		<tr>
+		<td>Record:</td>
+		<td><font color=#990000>
+  88
+</font><b> | </b><font color=#000099>
+  32
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.37
+</td>
+		</tr>
+		<tr>
+		<td><b>Average:</b></td>
+		<td><font color=#990000>
+  66
+</font><b> | </b><font color=#000099>
+  42
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.04
+</td>
+		</tr>
+		</table>
+		</td>
+		<td valign="top" style="padding: 3px; border-bottom: 1px solid #FFF; border-left: 1px solid #FFF; background-color: #dddddd">
+		<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" class="dayTable">
+		<tr>
+		<td style="vertical-align: middle;"><a href="/history/airport/KPDT/2008/4/30/DailyHistory.html">30</a></td>
+		<td><img src="http://icons-pe.wunderground.com/graphics/clear.gif" width="1" height="30" alt="" /></td>
+		</tr>
+		<tr>
+		<td>Record:</td>
+		<td><font color=#990000>
+  87
+</font><b> | </b><font color=#000099>
+  30
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.83
+</td>
+		</tr>
+		<tr>
+		<td><b>Average:</b></td>
+		<td><font color=#990000>
+  66
+</font><b> | </b><font color=#000099>
+  42
+</font></td>
+		</tr>
+		<tr>
+		<td>Precip:</td>
+		<td>
+  0.04
+</td>
+		</tr>
+		</table>
+		</td>
+		<td colspan="3" style="background-color: #F5F5F5; border-top: 1px solid #FFF; border-left: 1px solid #FFF;">&nbsp;</td>
+		</tr>
+		</tbody>
+	</table>
+	<div class="selectorBox" style="border-bottom: 1px solid #CCC;">
+		<table cellspacing="0" cellpadding="0" class="dateTable">
+		<tr>
+		<td><span><a href="/history/airport/KPDT/2008/3/14/MonthlyHistory.html#calendar">&laquo; Previous Month</a></span></td>
+		<td><span><a href="/history/airport/KPDT/2007/4/14/MonthlyHistory.html#calendar">&laquo; 2007</a></span></td>
+		<td class="full taC" style="vertical-align: middle;">
+		<strong>Precip:</strong>
+		To date: <strong>0.06</strong>
+		Normal to date: <strong>0.34</strong>
+		Normal month total: <strong>1.13</strong>
+		</td>
+		<td><span><a href="/history/airport/KPDT/2009/4/14/MonthlyHistory.html#calendar">2009 &raquo;</a></span></td>
+		<td><span><a href="/history/airport/KPDT/2008/5/14/MonthlyHistory.html#calendar">Next Month &raquo;</a></span></td>
+		</tr>
+		</table>
+	</div>
+	<p class="b">Calendar Key:</p>
+	<table cellpadding="0" cellspacing="0" class="full">
+		<tr class="vaT">
+		<td>
+		<table cellpadding="2" cellspacing="1" class="full">
+		<tr class="vaT">
+		<td><img src="http://icons-pe.wunderground.com/graphics/conds/smash/sunny.gif" width="50" height="30" align="left"><font size="-2"> Sunny<br> Clear</font></td>
+		<td><img src="http://icons-pe.wunderground.com/graphics/conds/smash/partlysunny.gif" width="50" height="30" align="left"><font size="-2"> Mostly Cloudy<br> Partly Sunny</font></td>
+		<td><img src="http://icons-pe.wunderground.com/graphics/conds/smash/partlycloudy.gif" width="50" height="30" align="left"><font size="-2"> Partly Cloudy<br> Mostly Sunny</font></td>
+		<td><img src="http://icons-pe.wunderground.com/graphics/conds/smash/cloudy.gif" width="50" height="30" align="left"><font size="-2"> Cloudy</font></td>
+		<td><img src="http://icons-pe.wunderground.com/graphics/conds/smash/rain.gif" width="50" height="30" align="left"><font size="-2"> Rain</font></td>
+		<td><img src="http://icons-pe.wunderground.com/graphics/conds/smash/snow_6.gif" width="50" height="30" align="left"><font size="-2"> Snow</font></td>
+		</tr>
+		<tr class="vaT">
+		<td><img src="http://icons-pe.wunderground.com/graphics/conds/smash/hail.gif" width="50" height="30" align="left"><font size="-2"> Hail<br> Flurries</font></td>
+		<td><img src="http://icons-pe.wunderground.com/graphics/conds/smash/tstorms.gif" width="50" height="30" align="left"><font size="-2"> Thunderstorms</font></td>
+		<td><img src="http://icons-pe.wunderground.com/graphics/conds/smash/hazy.gif" width="50" height="30" align="left"><font size="-2"> Hazy<br> Fog</font></td>
+		<td><img src="http://icons-pe.wunderground.com/graphics/conds/smash/sleet.gif" width="50" height="30" align="left"><font size="-2"> Sleet</font></td>
+		<td><img src="http://icons-pe.wunderground.com/graphics/conds/smash/chancerain.gif" width="50" height="30" align="left"><font size="-2"> '?' denotes<br> 'chance of'</font></td>
+		<td><img src="http://icons-pe.wunderground.com/graphics/conds/smash/unknown.gif" width="50" height="30" align="left"><font size="-2"> Unknown</font></td>
+		</tr>
+		</table>
+		</td>
+		<td>
+		<div><img src="http://icons-pe.wunderground.com/graphics/CalendarKey_inches.gif" width="236" height="100"></div>
+		</td>
+		</tr>
+	</table>
+	<div class="taC"><a href="http://printer.wunderground.com/history/airport/KPDT/2008/4/14/MonthlyHistory.html?printfeature=calendar" target="_new" class="subLink">Print This Calendar</a></div>
+	<div class="gap">&nbsp;</div>
+</div>
+<table cellspacing="0" cellpadding="0" class="blueBottom">
+	<tr>
+		<td class="bLeft"><div></div></td>
+		<td class="bCenter full"><div></div></td>
+		<td class="bRight"><div></div></td>
+	</tr>
+</table>
+<div class="pageTop"><span class="noPrint">: <a href="#">Top of Page</a> :</span></div>
+		<table cellspacing="0" cellpadding="0" class="blueTop">
+		<tr>
+		<td class="hLeft"><img src="http://icons-pe.wunderground.com/graphics/wu2/headerBlue-left.gif" width="20" height="20" alt="" /></td>
+		<td class="hCenter">Daily Observations</td>
+		<td class="hRight"><img src="http://icons-pe.wunderground.com/graphics/wu2/headerBlue-right.gif" width="20" height="20" alt="" /></td>
+		</tr>
+		<tr>
+		<td class="sLeft"><img src="http://icons-pe.wunderground.com/graphics/wu2/subBlue-left.gif" width="20" height="6" alt="" /></td>
+		<td class="sCenter">&nbsp;</td>
+		<td class="sRight"><img src="http://icons-pe.wunderground.com/graphics/wu2/subBlue-right.gif" width="20" height="6" alt="" /></td>
+		</tr>
+		</table>
+		<div class="blueBox">
+		<div class="gap1">&nbsp;</div>
+	<table cellspacing="0" cellpadding="0" class="dataTable obsTable">
+		<thead>
+		<tr>
+		<td class="nobr">2008</td>
+		<td colspan="3" class="nobr">Temp. <span style="font-weight: normal;">(&deg;F)</span></td>
+		<td colspan="3" class="nobr">Dew Point <span style="font-weight: normal;">(&deg;F)</span></td>
+		<td colspan="3" class="nobr">Humidity <span style="font-weight: normal;">(%)</span></td>
+		<td colspan="3" class="nobr">Sea Level Pressure <span style="font-weight: normal;">(in)</span></td>
+		<td colspan="3" class="nobr">Visibility <span style="font-weight: normal;">(mi)</span></td>
+		<td colspan="2" class="nobr">Wind <span style="font-weight: normal;">(mph)</span></td>
+		<td class="nobr">Gust Speed <span style="font-weight: normal;">(mph)</span></td>
+		<td class="nobr">Precip <span style="font-weight: normal;">(in)</span></td>
+		<td>Events</td>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+		<td class="b" style="border-bottom: 2px solid #CCC;">April</td>
+		<td class="b taC" style="border-bottom: 2px solid #CCC; background-color: #F5F5F5; border-left: 1px solid #CCC;">high</td>
+		<td class="b taC" style="border-bottom: 2px solid #CCC; background-color: #F5F5F5;">avg</td>
+		<td class="b taC" style="border-bottom: 2px solid #CCC; background-color: #F5F5F5; border-right: 1px solid #CCC;">low</td>
+		<td class="b taC" style="border-bottom: 2px solid #CCC;">high</td>
+		<td class="b taC" style="border-bottom: 2px solid #CCC;">avg</td>
+		<td class="b taC" style="border-bottom: 2px solid #CCC;">low</td>
+		<td class="b taC" style="border-bottom: 2px solid #CCC; background-color: #F5F5F5; border-left: 1px solid #CCC;">high</td>
+		<td class="b taC" style="border-bottom: 2px solid #CCC; background-color: #F5F5F5;">avg</td>
+		<td class="b taC" style="border-bottom: 2px solid #CCC; background-color: #F5F5F5; border-right: 1px solid #CCC;">low</td>
+		<td class="b taC" style="border-bottom: 2px solid #CCC;">high</td>
+		<td class="b taC" style="border-bottom: 2px solid #CCC;">avg</td>
+		<td class="b taC" style="border-bottom: 2px solid #CCC;">low</td>
+		<td class="b taC" style="border-bottom: 2px solid #CCC; background-color: #F5F5F5; border-left: 1px solid #CCC;">high</td>
+		<td class="b taC" style="border-bottom: 2px solid #CCC; background-color: #F5F5F5;">avg</td>
+		<td class="b taC" style="border-bottom: 2px solid #CCC; background-color: #F5F5F5; border-right: 1px solid #CCC;">low</td>
+		<td class="b taC" style="border-bottom: 2px solid #CCC;">high</td>
+		<td class="b taC" style="border-bottom: 2px solid #CCC;">avg</td>
+		<td class="b taC" style="border-bottom: 2px solid #CCC; background-color: #F5F5F5; border-left: 1px solid #CCC; border-right: 1px solid #CCC;">high</td>
+		<td class="b taC" style="border-bottom: 2px solid #CCC;">sum</td>
+		<td class="b" style="border-bottom: 2px solid #CCC; background-color: #F5F5F5; border-left: 1px solid #CCC;">&nbsp;</td>
+		</tr>
+		</tbody>
+		<tbody>
+		<tr>
+		<td><a href="/history/airport/KPDT/2008/4/1/DailyHistory.html">1</a></td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  50
+</td>
+		<td style="background-color: #F5F5F5;">
+  37
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  24
+</td>
+		<td>
+  24
+</td>
+		<td>
+  20
+</td>
+		<td>
+  13
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  81
+</td>
+		<td style="background-color: #F5F5F5;">
+  52
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  23
+</td>
+		<td>
+  30.26
+</td>
+		<td>
+  30.20
+</td>
+		<td>
+  30.11
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  10
+</td>
+		<td style="background-color: #F5F5F5;">
+  10
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  10
+</td>
+		<td>
+  12
+</td>
+		<td>
+  5
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC; border-right: 1px solid #CCC;">
+  14
+</td>
+		<td>
+  0.00
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+	&nbsp;
+</td>
+		</tr>
+		</tbody>
+		<tbody>
+		<tr>
+		<td><a href="/history/airport/KPDT/2008/4/2/DailyHistory.html">2</a></td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  53
+</td>
+		<td style="background-color: #F5F5F5;">
+  41
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  28
+</td>
+		<td>
+  26
+</td>
+		<td>
+  22
+</td>
+		<td>
+  19
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  78
+</td>
+		<td style="background-color: #F5F5F5;">
+  53
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  28
+</td>
+		<td>
+  30.18
+</td>
+		<td>
+  30.12
+</td>
+		<td>
+  30.09
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  10
+</td>
+		<td style="background-color: #F5F5F5;">
+  10
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  10
+</td>
+		<td>
+  12
+</td>
+		<td>
+  4
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC; border-right: 1px solid #CCC;">
+  17
+</td>
+		<td>
+  0.00
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+	&nbsp;
+</td>
+		</tr>
+		</tbody>
+		<tbody>
+		<tr>
+		<td><a href="/history/airport/KPDT/2008/4/3/DailyHistory.html">3</a></td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  62
+</td>
+		<td style="background-color: #F5F5F5;">
+  45
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  27
+</td>
+		<td>
+  33
+</td>
+		<td>
+  24
+</td>
+		<td>
+  21
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  75
+</td>
+		<td style="background-color: #F5F5F5;">
+  50
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  24
+</td>
+		<td>
+  30.21
+</td>
+		<td>
+  30.13
+</td>
+		<td>
+  30.02
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  10
+</td>
+		<td style="background-color: #F5F5F5;">
+  10
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  10
+</td>
+		<td>
+  13
+</td>
+		<td>
+  6
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC; border-right: 1px solid #CCC;">
+  18
+</td>
+		<td>
+  0.00
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+	&nbsp;
+</td>
+		</tr>
+		</tbody>
+		<tbody>
+		<tr>
+		<td><a href="/history/airport/KPDT/2008/4/4/DailyHistory.html">4</a></td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  53
+</td>
+		<td style="background-color: #F5F5F5;">
+  43
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  33
+</td>
+		<td>
+  36
+</td>
+		<td>
+  29
+</td>
+		<td>
+  25
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  70
+</td>
+		<td style="background-color: #F5F5F5;">
+  56
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  42
+</td>
+		<td>
+  29.99
+</td>
+		<td>
+  29.93
+</td>
+		<td>
+  29.86
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  10
+</td>
+		<td style="background-color: #F5F5F5;">
+  10
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  6
+</td>
+		<td>
+  44
+</td>
+		<td>
+  13
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC; border-right: 1px solid #CCC;">
+  54
+</td>
+		<td>
+  T
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+Rain
+</td>
+		</tr>
+		</tbody>
+		<tbody>
+		<tr>
+		<td><a href="/history/airport/KPDT/2008/4/5/DailyHistory.html">5</a></td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  53
+</td>
+		<td style="background-color: #F5F5F5;">
+  42
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  31
+</td>
+		<td>
+  32
+</td>
+		<td>
+  26
+</td>
+		<td>
+  25
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  75
+</td>
+		<td style="background-color: #F5F5F5;">
+  55
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  35
+</td>
+		<td>
+  29.96
+</td>
+		<td>
+  29.92
+</td>
+		<td>
+  29.84
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  10
+</td>
+		<td style="background-color: #F5F5F5;">
+  10
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  10
+</td>
+		<td>
+  17
+</td>
+		<td>
+  8
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC; border-right: 1px solid #CCC;">
+  22
+</td>
+		<td>
+  0.01
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+Rain
+</td>
+		</tr>
+		</tbody>
+		<tbody>
+		<tr>
+		<td><a href="/history/airport/KPDT/2008/4/6/DailyHistory.html">6</a></td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  54
+</td>
+		<td style="background-color: #F5F5F5;">
+  46
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  37
+</td>
+		<td>
+  37
+</td>
+		<td>
+  36
+</td>
+		<td>
+  29
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  85
+</td>
+		<td style="background-color: #F5F5F5;">
+  63
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  41
+</td>
+		<td>
+  30.01
+</td>
+		<td>
+  29.89
+</td>
+		<td>
+  29.84
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  10
+</td>
+		<td style="background-color: #F5F5F5;">
+  10
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  10
+</td>
+		<td>
+  28
+</td>
+		<td>
+  9
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC; border-right: 1px solid #CCC;">
+  32
+</td>
+		<td>
+  0.04
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+Rain
+</td>
+		</tr>
+		</tbody>
+		<tbody>
+		<tr>
+		<td><a href="/history/airport/KPDT/2008/4/7/DailyHistory.html">7</a></td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  52
+</td>
+		<td style="background-color: #F5F5F5;">
+  43
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  33
+</td>
+		<td>
+  30
+</td>
+		<td>
+  28
+</td>
+		<td>
+  24
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  82
+</td>
+		<td style="background-color: #F5F5F5;">
+  60
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  38
+</td>
+		<td>
+  30.10
+</td>
+		<td>
+  30.06
+</td>
+		<td>
+  30.03
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  10
+</td>
+		<td style="background-color: #F5F5F5;">
+  10
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  10
+</td>
+		<td>
+  25
+</td>
+		<td>
+  11
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC; border-right: 1px solid #CCC;">
+  30
+</td>
+		<td>
+  0.00
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+	&nbsp;
+</td>
+		</tr>
+		</tbody>
+		<tbody>
+		<tr>
+		<td><a href="/history/airport/KPDT/2008/4/8/DailyHistory.html">8</a></td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  47
+</td>
+		<td style="background-color: #F5F5F5;">
+  41
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  34
+</td>
+		<td>
+  36
+</td>
+		<td>
+  30
+</td>
+		<td>
+  28
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  82
+</td>
+		<td style="background-color: #F5F5F5;">
+  68
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  53
+</td>
+		<td>
+  30.06
+</td>
+		<td>
+  29.99
+</td>
+		<td>
+  29.90
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  10
+</td>
+		<td style="background-color: #F5F5F5;">
+  10
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  10
+</td>
+		<td>
+  17
+</td>
+		<td>
+  9
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC; border-right: 1px solid #CCC;">
+  21
+</td>
+		<td>
+  T
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+Rain
+</td>
+		</tr>
+		</tbody>
+		<tbody>
+		<tr>
+		<td><a href="/history/airport/KPDT/2008/4/9/DailyHistory.html">9</a></td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  54
+</td>
+		<td style="background-color: #F5F5F5;">
+  44
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  33
+</td>
+		<td>
+  33
+</td>
+		<td>
+  28
+</td>
+		<td>
+  22
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  75
+</td>
+		<td style="background-color: #F5F5F5;">
+  52
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  28
+</td>
+		<td>
+  30.06
+</td>
+		<td>
+  29.96
+</td>
+		<td>
+  29.93
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  10
+</td>
+		<td style="background-color: #F5F5F5;">
+  10
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  10
+</td>
+		<td>
+  26
+</td>
+		<td>
+  11
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC; border-right: 1px solid #CCC;">
+  32
+</td>
+		<td>
+  T
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+	&nbsp;
+</td>
+		</tr>
+		</tbody>
+		<tbody>
+		<tr>
+		<td><a href="/history/airport/KPDT/2008/4/10/DailyHistory.html">10</a></td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  58
+</td>
+		<td style="background-color: #F5F5F5;">
+  49
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  40
+</td>
+		<td>
+  33
+</td>
+		<td>
+  32
+</td>
+		<td>
+  25
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  70
+</td>
+		<td style="background-color: #F5F5F5;">
+  50
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  30
+</td>
+		<td>
+  30.36
+</td>
+		<td>
+  30.21
+</td>
+		<td>
+  30.07
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  10
+</td>
+		<td style="background-color: #F5F5F5;">
+  10
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  10
+</td>
+		<td>
+  26
+</td>
+		<td>
+  17
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC; border-right: 1px solid #CCC;">
+  32
+</td>
+		<td>
+  T
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+	&nbsp;
+</td>
+		</tr>
+		</tbody>
+		<tbody>
+		<tr>
+		<td><a href="/history/airport/KPDT/2008/4/11/DailyHistory.html">11</a></td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  65
+</td>
+		<td style="background-color: #F5F5F5;">
+  48
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  30
+</td>
+		<td>
+  34
+</td>
+		<td>
+  29
+</td>
+		<td>
+  25
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  82
+</td>
+		<td style="background-color: #F5F5F5;">
+  53
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  24
+</td>
+		<td>
+  30.46
+</td>
+		<td>
+  30.43
+</td>
+		<td>
+  30.35
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  10
+</td>
+		<td style="background-color: #F5F5F5;">
+  10
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  10
+</td>
+		<td>
+  13
+</td>
+		<td>
+  6
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC; border-right: 1px solid #CCC;">
+  18
+</td>
+		<td>
+  0.00
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+	&nbsp;
+</td>
+		</tr>
+		</tbody>
+		<tbody>
+		<tr>
+		<td><a href="/history/airport/KPDT/2008/4/12/DailyHistory.html">12</a></td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  77
+</td>
+		<td style="background-color: #F5F5F5;">
+  58
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  38
+</td>
+		<td>
+  44
+</td>
+		<td>
+  35
+</td>
+		<td>
+  30
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  76
+</td>
+		<td style="background-color: #F5F5F5;">
+  51
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  25
+</td>
+		<td>
+  30.34
+</td>
+		<td>
+  30.21
+</td>
+		<td>
+  30.08
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  10
+</td>
+		<td style="background-color: #F5F5F5;">
+  10
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  10
+</td>
+		<td>
+  15
+</td>
+		<td>
+  7
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC; border-right: 1px solid #CCC;">
+  21
+</td>
+		<td>
+  0.00
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+	&nbsp;
+</td>
+		</tr>
+		</tbody>
+		<tbody>
+		<tr>
+		<td><a href="/history/airport/KPDT/2008/4/13/DailyHistory.html">13</a></td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  78
+</td>
+		<td style="background-color: #F5F5F5;">
+  61
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  44
+</td>
+		<td>
+  44
+</td>
+		<td>
+  39
+</td>
+		<td>
+  36
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  70
+</td>
+		<td style="background-color: #F5F5F5;">
+  49
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  28
+</td>
+		<td>
+  30.06
+</td>
+		<td>
+  29.90
+</td>
+		<td>
+  29.78
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  10
+</td>
+		<td style="background-color: #F5F5F5;">
+  10
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  10
+</td>
+		<td>
+  18
+</td>
+		<td>
+  8
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC; border-right: 1px solid #CCC;">
+  22
+</td>
+		<td>
+  0.00
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+	&nbsp;
+</td>
+		</tr>
+		</tbody>
+		<tbody>
+		<tr>
+		<td><a href="/history/airport/KPDT/2008/4/14/DailyHistory.html">14</a></td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  55
+</td>
+		<td style="background-color: #F5F5F5;">
+  48
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  42
+</td>
+		<td>
+  41
+</td>
+		<td>
+  38
+</td>
+		<td>
+  34
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  87
+</td>
+		<td style="background-color: #F5F5F5;">
+  71
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  59
+</td>
+		<td>
+  29.88
+</td>
+		<td>
+  29.84
+</td>
+		<td>
+  29.80
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+  10
+</td>
+		<td style="background-color: #F5F5F5;">
+  10
+</td>
+		<td style="background-color: #F5F5F5; border-right: 1px solid #CCC;">
+  8
+</td>
+		<td>
+  23
+</td>
+		<td>
+  15
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC; border-right: 1px solid #CCC;">
+  32
+</td>
+		<td>
+  0.01
+</td>
+		<td style="background-color: #F5F5F5; border-left: 1px solid #CCC;">
+Rain
+</td>
+		</tr>
+		</tbody>
+	</table>
+		<div class="taC tm10 noPrint"><a href="/history/airport/KPDT/2008/4/14/MonthlyHistory.html?format=1" target="_new" class="subLink">Comma Delimited File</a></div>
+		<div class="gap">&nbsp;</div>
+		</div>
+		<table cellspacing="0" cellpadding="0" class="blueBottom">
+		<tr>
+		<td class="bLeft"><div></div></td>
+		<td class="bCenter full"><div></div></td>
+		<td class="bRight"><div></div></td>
+		</tr>
+		</table>
+		</div>
+		<div class="pageTop"><span class="noPrint">: <a href="#">Top of Page</a> :</span></div>
+		<div id="bottomAds">
+		<!-- blue credits bar -->
+		<!-- serial # 041801-1 -->
+		<h3>Please Visit Our Sponsors:</h3>
+		<!-- ads -->
+	<div style="background-color: #EEEEEE;">
+		<div style="clear: both;">&nbsp;</div>
+		<div class="ad125">
+		<!-- VDON-00058 3 -->
+		<a href="http://server.as5000.com/AS5000/adserver/click?ID=VDON-00058&C=3"><img src="http://config.privoxy.org/send-banner?type=auto" border="0" title="Killed-http://icons.wunderground.com/ads/images/VDON_VTG_creative.gif-by-size" width=125 height=125></a>
+		</div>
+		<div class="ad125">
+		<!-- CLSM-00018 1 -->
+		<a href="http://server.as5000.com/AS5000/adserver/click?ID=CLSM-00018&C=1"><img src="http://config.privoxy.org/send-banner?type=auto" border="0" title="Killed-http://icons.wunderground.com/ads/images/CLSM-00014-cmb71_125x125.gif-by-size" width=125 height=125></a>
+		</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<br>
+		</div>
+  <div class="taC">
+		<!-- Start Quantcast tag -->
+		<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+		<script type="text/javascript">_qacct="p-01lvMKu--eLQE";quantserve();</script>
+		<noscript></noscript>
+		<!-- End Quantcast tag -->
+<table class="taC tm20 center">
+	<tr>
+		<td><img src="http://icons-pe.wxug.com/graphics/wu2/logo_footer.gif" width="53" height="25" alt="" /></td>
+		<td>Copyright &copy; 2008 <a href="/about/background.asp">The Weather Underground, Inc.</a></td>
+	</tr>
+</table>
+<div class="taC noPrint"><a href="/about/employment.asp">Employment</a> | <a href="/about/contact.asp">Contact Us</a> | <a href="/help/">Help</a> | <a href="/members/tos.asp">Terms of Service</a> | <a href="/about/adinfo.asp">Advertise Here</a></div>
+</div>
+		</td>
+	</tr>
+</table>
+</body>
+	</html>
+  <div id="debug">
+	<!--  WUICATEGORY:History:History -->
+<!-- 0.523:0 -->

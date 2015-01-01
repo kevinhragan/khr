@@ -1,0 +1,6 @@
+ps aux |grep <mountpoint>
+#kill processes listed
+
+umount -lk </mountpoint>
+
+

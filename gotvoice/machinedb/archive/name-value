@@ -1,0 +1,15 @@
+#! /usr/bin/awk -f    
+# one-timer: convert tab separated format to name: value format
+
+BEGIN { FS="\t" }
+
+NR==1 {
+    for (i=1; i<=NF; i++)
+        name[i]=$i
+}
+NR>1{
+    for (i=1; i<=NF; i++)
+        print name[i] ": " $i
+    print "\n"
+} 
+

@@ -1,0 +1,23 @@
+local_out=/home/kevinr/tmp
+cd $local_out
+
+#upload named file or all files in upload directory 
+if [ $# -eq  0 ]; then
+    files=$(ls)
+#    [ "$files" == '*' ] && exit 
+elif [ $# -eq 1 ]; then
+    files=$1
+else 
+    echo "Usage: $0 [filename]"
+fi
+
+for file in $files
+do
+    if
+        curl -k --ftp-ssl -s -T $file -u gotvoice:gv10512\$ ftp://70.150.66.250:1234/test/
+    then
+        rm $file
+    else 
+        echo "Error code $? from curl on file: $file" >&2
+    fi
+done

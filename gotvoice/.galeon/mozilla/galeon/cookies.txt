@@ -1,0 +1,19 @@
+# HTTP Cookie File
+# http://www.netscape.com/newsref/std/cookie_spec.html
+# This is a generated file!  Do not edit.
+# To delete cookies, use the Cookie Manager.
+
+nut.gotvoice.com	FALSE	/phpmyadmin/	FALSE	1172185106	pma_cookie_username-1	Z6xF8b3cZSICw5HmuyIfstCRCbH4PeUV
+nut.gotvoice.com	FALSE	/phpmyadmin/	FALSE	1172185060	pma_collation_connection	utf8_unicode_ci
+nut.gotvoice.com	FALSE	/phpmyadmin/	FALSE	1172185060	pma_charset	iso-8859-1
+nut.gotvoice.com	FALSE	/phpmyadmin/	FALSE	1172185060	pma_lang	en-utf-8
+nut.gotvoice.com	FALSE	/phpmyadmin/	FALSE	1172185033	pma_mcrypt_iv	tFd7a1RsmH0%3D
+.google.com	TRUE	/	FALSE	2147368446	PREF	ID=c3cd48191e3eb778:TM=1169592516:LM=1169592516:S=pLU2-gx0XLsqSQSY
+.groups.google.com	TRUE	/	FALSE	2147385600	__utma	118165087.280738807.1169592518.1169592518.1169592518.1
+groups.google.com	FALSE	/	FALSE	1704067201	GTZ	480
+.groups.google.com	TRUE	/	FALSE	1185360517	__utmz	118165087.1169592518.1.1.utmccn=(direct)|utmcsr=(direct)|utmcmd=(none)
+.groups.google.com	TRUE	/	FALSE	1169594317	__utmb	118165087
+.intel.com	TRUE	/	FALSE	1177356526	SiteID	39860969111871169580526881
+.intel.com	TRUE	/	FALSE	1327260532	s_vi	[CS]v1|45B661F4000060A4-A000B6200004478[CE]
+.intel.com	TRUE	/	FALSE	1201116528	wa_visitId	%7B4bfdc723-b6e4-fcce-2f8b-d7e27bd9fd04%7D
+.intel.com	TRUE	/	FALSE	1177356526	onSite	intel

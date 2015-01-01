@@ -1,0 +1,2 @@
+find . -name "*mp3" -type f -exec ls -s {} \; >/var/tmp/mp-list
+awk '{ sum += $1 }; END {print "sum is " sum "K" }' /var/tmp/mp-list

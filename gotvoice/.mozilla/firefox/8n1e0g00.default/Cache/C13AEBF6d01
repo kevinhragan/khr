@@ -1,0 +1,4872 @@
+/*------------------------------------------------------------------
+TED /  interior.css
+
+Author:			Christopher Berry	<chris@form-studios.com>
+
+Methods: 		1. 	CSS FILES ORGANISATION 
+					global.css			->	 	global rules
+						fontsizes/*.css		->		main measurements files
+					interior.css		->		rules for interior pages
+					admin.css			->		rules for admin pages
+					ie.css				->		rules for ie only
+					safari.css			->		rules for safari only
+
+				2.	IN THIS CSS FILE:
+					#local
+						#sublocalnav
+						#local elements
+					#maincontent
+						#maincontent elements
+					.userTemplate
+						-Styles that apply to all text templates
+						.textTemplate
+						.textTemplate2
+						.textTempalte3 (hotels)
+						.textTemplate4
+						.textTemplate5
+						.textTemplate7
+						.textTemplate8
+						.textTemplate_footer
+					.viewTemplate (view speakers)
+						.viewTemplate #speakerscontent
+						.viewTemplate .blogposts
+						.viewTemplate #contextual
+					#video (video player)
+					.viewTalks
+						.viewTalks #options_banner
+						.viewTemplate #discussion
+					.viewThemes
+						.viewThemes #contextual
+						.viewTemplate #contextual .advert
+						.viewThemes #maincontent .speakers
+					.viewMember
+						.viewMember #maincontent
+						.viewMember #more
+						.viewMember #contextual
+					.subpage (view member - sub pages)
+						.subpage #maincontent .fullbio
+						.subpage #maincontent .memberphotos
+						.subpage #maincontent .comments
+						.subpage #maincontent .favorites
+					.register (registration form)
+						.register #contextual
+					.contact (contact page)
+						.contact #contextual
+					.myaccount (my account main page)
+					.management (communication management page)
+					.sign_in
+					.createprofile
+					.browseTemplate (browse pages)
+						.browseTemplate .home_link (home page)
+						.browseTemplate .moreFeatures (home page)
+						.browseTemplate .moreThemes (browse themes)
+						.browseTemplate .moreTalks (browse talks)
+						.browseList {browse speakers}
+						.browseMembers
+					.tagsTemplate (tags pages)
+					.subtag (sub tag page)
+					.pagination
+					.tedconferences
+					.pastteds
+					.ted2006
+					.nominate (nomiate a speaker form)
+						.nominate_form
+						.nominate_speaker
+					.searchTemplate
+					.template (backend styles)
+					.templateSample1 (backend styles)
+					.templateSample2 (backend styles)					
+--------------------------------------------------------------------*/
+
+/* #maincontent elements
+--------------------------------*/
+/*
+#maincontent ul, 
+#maincontent ol {
+	padding:			0 0 0 1.6em;
+	list-style-position:outside;
+	margin:				1em 0;
+}
+*/
+
+/* USER TEMPLATE STYLES
+--------------------------------*/
+div#body.userTemplate h1 {
+	height:			65px;
+}
+div.userTemplate h4 {
+	font-size:		1.6em;
+	line-height:	1.4em;
+	color:			#777;
+	margin-bottom:	10px;
+}
+div.userTemplate #local #sublocalnav {
+	margin:			15px 7px 0 7px;
+}
+div.userTemplate #local #sublocalnav ul {
+	list-style:		none;
+	padding-bottom: 14px;
+}
+div.userTemplate #local #sublocalnav ul li {
+	font-size:		1.1em;
+	line-height:	1.6em;
+	margin-bottom:	1px;
+}
+div.userTemplate #local #sublocalnav ul li.bullet a {
+	padding-left:	14px;
+	background:		url(../images/localnav_bullet.gif) no-repeat 7px 5px;
+}
+div.userTemplate #local #sublocalnav ul li a {
+	padding:		0 7px;
+	height:			1%;
+	color:			#545454;
+	text-decoration:none;
+}
+
+div.userTemplate #local #sublocalnav ul li a.selected,
+div.userTemplate #local #sublocalnav ul li a:hover {
+	display:		block;
+	background:		#dfdfdf;
+}
+div.userTemplate #local #sublocalnav ul li.bullet a.selected,
+div.userTemplate #local #sublocalnav ul li.bullet a:hover {
+	display:		block;
+	background:		#dfdfdf url(../images/localnav_bullet.gif) no-repeat 7px 7px;
+}
+div.userTemplate #local div.medallions {
+	margin:			0 14px 0 14px;
+	padding:		22px 0 0 0;
+	background:		url(../images/border_dotted.gif) repeat-x top left;
+}
+div.userTemplate #local div.medallion {
+	padding:		0 5px 0 0;
+	margin:			0 0 1px 0;
+	background:		#dfdfdf;
+}
+div.userTemplate #local div.medallion h3 {
+	margin:			0 0 4px 0;
+	padding:		7px 0 0 0;
+	font-size:		1.1em;
+}
+div.userTemplate #local div.medallion img {
+	float:			left;
+	margin:			0 8px 0 0;
+}
+div.userTemplate #local div.medallion p {
+	margin:			0;
+}
+div.userTemplate #local div.medallion a {
+	font-size:		1.1em;
+}
+div.userTemplate #maincontent div.columnContainer div.leftColumn {
+	float: 			left;
+	display:		inline;
+	width:			260px;
+	margin-right:	15px;
+}
+div.userTemplate #maincontent div.columnContainer div.rightColumn {
+	float: 			left;
+	display:		inline;
+	width:			260px;
+}
+/* Sub nav */
+div.userTemplate #maincontent div.subnav {
+	margin-bottom:	45px;
+}
+div.userTemplate #maincontent div.subnav ul {
+	margin:			0;
+	padding:		0;
+}
+div.userTemplate #maincontent div.subnav ul li {
+	display:		inline;
+	padding:		0 6px 0 0;
+	color:			#545454;
+	background:		none;
+}
+div.userTemplate #maincontent div.subnav ul li a {
+	padding:		0 6px 0 0;
+	color:			#545454;
+}
+div.userTemplate #maincontent div.subnav ul li a.selected,
+div.userTemplate #maincontent div.subnav ul li a:hover {
+	color:			#000;
+}
+/* USER TEMPLATE: TEXT TEMPLATES - GENERAL STYLES
+--------------------------------*/
+div.textTemplate #maincontent ul,
+div.textTemplate2 #maincontent ul,
+div.textTemplate3 #maincontent ul,
+div.textTemplate4 #maincontent ul,
+div.textTemplate5 #maincontent ul,
+div.textTemplate7 #maincontent ul,
+div.textTemplate8 #maincontent ul {
+	list-style:		none;
+	padding:		0 0 0 14px;
+	margin:			0;
+}
+div.textTemplate #maincontent ul li,
+div.textTemplate2 #maincontent ul li,
+div.textTemplate3 #maincontent ul li,
+div.textTemplate4 #maincontent ul li,
+div.textTemplate5 #maincontent ul li,
+div.textTemplate7 #maincontent ul li,
+div.textTemplate8 #maincontent ul li {
+	font-size:		1.2em;
+	line-height:	1.4em;
+	padding-bottom: 8px;
+	padding-left:	8px;
+	color:			#323232;
+	background:		url(../images/bullet_nominate.gif) no-repeat left 6px;
+}
+
+
+
+/* USER TEMPLATE:TEXT TEMPLATE 1
+--------------------------------*/
+
+div.textTemplate #maincontent div.contentArea1 {
+	width:			572px;
+	background:		url(../images/border_dotted.gif) repeat-x bottom left;
+	padding-bottom: 1px;/*20px*/
+	margin-bottom:	20px;
+}
+
+div.textTemplate #maincontent div.contentArea1 p {
+	color:			#777;
+	font-size:		1.6em;
+	line-height:	1.4em;
+}
+
+div.textTemplate #maincontent div.contentArea2 h3,
+div.textTemplate #maincontent div.contentArea3 h3 {
+	font-size:		1.1em;
+	color:			#000;
+	margin-bottom:	15px;
+}
+
+div.textTemplate #maincontent  div.contentArea2 p,
+div.textTemplate #maincontent  div.contentArea3 p {
+	font-size:		1.1em;
+	line-height:	1.363em;
+	color:			#777;
+	margin-bottom:	15px;
+}
+
+div.textTemplate #maincontent div.contentArea3 ul {
+	list-style:		none;
+	padding:		0;
+	margin:			0;
+	color:			#ff2a06;
+}
+div.textTemplate #maincontent div.contentArea3 ul li {
+	margin-bottom:	15px;
+	padding-left:	10px;
+	font-size:		1.1em;
+	line-height:	1.363em;
+	color:			#777;
+	background:		url(../images/bg_ul_textTemplate1.gif) no-repeat 0 .4em;
+}
+div.textTemplate #maincontent div.contentArea3 p {
+	padding-left:	10px;
+}
+/* Registration for TED pages - Modifies textTemplate */
+div.registration #maincontent ul {
+	padding-bottom:	28px;
+}
+div.registration #maincontent ul li {
+	background:		none;
+}
+div.registration #maincontent div.contentArea1 p {
+	font-size:		1.4em;
+}
+
+/* USER TEMPLATE:TEXT TEMPLATE 2
+--------------------------------*/
+
+div.textTemplate2 #maincontent div.contentArea1 {
+	width:			572px;
+	background:		url(../images/border_dotted.gif) repeat-x bottom left;
+	padding-bottom: 1px;/*20px*/
+	margin-bottom:	20px;
+}
+
+div.textTemplate2 #maincontent div.contentArea1 h2 {
+	font-size:		1.6em;
+	line-height:	1.4em;
+	color:			#545454;
+	margin-bottom:	20px;
+}
+div.textTemplate2 #maincontent div.contentArea1 p {
+	font-size:		1.6em;
+	line-height:	1.4em;
+	color:			#777;
+}
+div.textTemplate2 #maincontent div.contentArea2 {
+	width:			425px;
+}
+div.textTemplate2 #maincontent div.contentArea2 h3 {
+	font-size:		1.1em;
+	color:			#000;
+	margin-bottom:	15px;
+}
+div.textTemplate2 #maincontent div.contentArea2 p {
+	font-size:		1.2em;
+	line-height:	1.4em;
+	color:			#323232;
+	margin-bottom:	15px;
+}
+
+/* USER TEMPLATE:TEXT TEMPLATE 3 (Hotels)
+--------------------------------*/
+div.textTemplate3 div.wrap {
+	margin-bottom:	6px;
+	background-color:#f2f2f2;
+}
+div.textTemplate3 #maincontent div.contentArea1 {
+	width:			593px;
+	padding:		0 0 0 81px;
+	margin:			0 0 0 -81px;
+	background-color:#f2f2f2;
+}
+div.textTemplate3 #maincontent div.contentArea1 p {
+	margin:			0;
+	padding:		13px 20px 0 0;
+	font-size:		1.6em;
+	line-height:	1.4em;
+	color:			#777;
+}
+div.textTemplate3 #local #sublocalnav ul {
+	padding-bottom:	10px;
+}
+div.textTemplate3 table.grid {
+	margin-bottom:	6px;
+	width:			901px;
+	border-spacing:	0;
+	border-collapse:collapse;
+}
+div.textTemplate3 table.grid tbody tr {
+	background-color:#f2f2f2;
+}
+div.textTemplate3 table.grid tbody tr td {
+	width:			88px;
+	height:			27px;
+	padding:		0 6px;
+	border:			1px solid #fff;
+	font-size:		1.1em;
+	color:			#777;
+}
+div.textTemplate3 table.grid tbody tr td.row_label {
+	font-weight:	bold;
+	padding:		0 6px;
+	width:			164px; /* 88px */
+	font-size:		1.0em;
+	color:			#000;
+}
+div.textTemplate3 table.grid thead tr {
+	background-color:#e2e2e2;
+}
+div.textTemplate3 table.grid thead tr td a {
+	font-weight:	bold;
+}
+div.textTemplate3 table.grid thead tr td {
+	height:			38px;
+	padding:		0 6px;
+	border:			1px solid #fff;
+}
+div.textTemplate3 div.hotels div.divider {
+	background-color:#f2f2f2;
+	border-bottom:	6px solid #fff;
+}
+div.textTemplate3 div.hotels h4 {
+	padding:		14px 0 0 14px;
+}
+div.textTemplate3 div.hotels p {
+	font-size:		1.1em;
+	line-height:	1.363em;
+	color:			#777;
+}
+div.textTemplate3 div.hotels p.filled {
+	color:			#323232;
+	font-weight:	bold;
+	font-style:		italic;
+}
+div.textTemplate3 div.hotels div.divider {
+	width:			900px;
+}
+div.textTemplate3 div.hotels div.divider div.clearfix div {
+	padding:		0 14px 0 14px;
+	width:			640px;
+	float:			left;
+}
+div.textTemplate3 div.hotels div.divider div.clearfix div.image {
+	padding:		0 0 14px 0;
+	width:			218px;
+}
+
+/* USER TEMPLATE:TEXT TEMPLATE 4
+--------------------------------*/
+
+div.textTemplate4 #maincontent div.contentArea1 {
+	width:			594px;
+	background:		url(../images/border_dotted.gif) repeat-x bottom left;
+	padding-bottom: 1px;
+	margin-bottom:	16px;
+}
+div.textTemplate4 #maincontent div.contentArea1 div {
+	margin-bottom:	7px;
+}
+div.textTemplate4 #maincontent div.contentArea1 img {
+	float:			left;
+	margin-right:	1px;
+}
+div.textTemplate4 #maincontent div.contentArea1 img.col3 {
+	margin-right:	0;
+}
+div.textTemplate4 #maincontent div.contentArea1 p {
+	margin:			0;
+	font-size:		1.1em;
+	color:			#999;
+	padding:		8px 0 24px 0;
+}
+div.textTemplate4 #maincontent div.contentArea2 {
+	width:			572px;
+	padding-bottom: 1px;
+	margin-bottom:	20px;
+}
+div.textTemplate4 #maincontent div.contentArea2 p {
+	color:			#323232;
+	font-size:		1.2em;
+	line-height:	1.4em;
+}
+div.textTemplate4 #maincontent div.contentArea2 div.larger_display_type p {
+	font-size:		1.6em;
+	color:			#777;
+}
+div.textTemplate4 #maincontent div.contentArea2 div.col1,
+div.textTemplate4 #maincontent div.contentArea2 div.col2 {
+	float:			left;
+	width:			279px;
+}
+div.textTemplate4 #maincontent div.contentArea2 div.col1 p,
+div.textTemplate4 #maincontent div.contentArea2 div.col2 p {
+	font-size:		1.2em;
+	line-height:	1.4em;
+	color:			#323232;
+	padding:		0 16px 0 0;
+}
+div.textTemplate4 #maincontent div.contentArea2 div.col2 p {
+	padding:		0 16px 0 0;
+}
+div.textTemplate4 #maincontent div.contentArea2 ul {
+	list-style:		none;
+	padding:		0 0 0 14px;
+	margin:			0;
+}
+
+/* USER TEMPLATE:TEXT TEMPLATE 5
+--------------------------------*/
+
+div.textTemplate5 #maincontent div.contentArea1 {
+	float:			left;
+	width:			355px;
+	padding-bottom: 1px;
+	margin-bottom:	20px;
+}
+div.userTemplate #maincontent h3 {
+	font-size:		1.6em;
+	line-height:	1.4em;
+	color:			#777;
+	margin-bottom:	10px;
+}
+div.textTemplate5 #maincontent div.contentArea1 p {
+	font-size:		1.2em;
+	line-height:	1.4em;
+	color:			#323232;
+	margin-bottom:	15px;
+}
+div.textTemplate5 #maincontent div.contentArea2 {
+	margin:			0;
+	padding:		0;
+	float:			right;
+	width:			220px;
+}
+div.textTemplate5 #maincontent div.contentArea1 p {
+	font-size:		1.2em;
+	line-height:	1.4em;
+}
+/* Image Overlay */
+div.textTemplate5 #maincontent div.contentArea2 div.wrap {
+	position:		relative;
+}
+div.textTemplate5 #maincontent div.contentArea2 div.wrap div.trans {
+	position:		absolute;
+	bottom:			0;
+	z-index:		100;
+	height:			44px;
+	width:			220px;
+	background-color:#000;
+	opacity:		0.75;
+	-moz-opacity:	0.75;
+	filter:			alpha(opacity=75);
+
+}
+div.textTemplate5 #maincontent div.contentArea2 div.wrap p {
+	position:		absolute;
+	bottom:			0;
+	z-index:		101;
+	margin:			0 0 9px 9px;
+	padding:		0 80px 0 0;
+	font-size:		1.1em;
+	color:			#fff;
+	font-weight:	bold;
+}
+
+/* USER TEMPLATE:TEXT TEMPLATE 7
+--------------------------------*/
+div.textTemplate7 #maincontent div.contentArea1 {
+
+}
+div.textTemplate7 #maincontent div.contentArea1 p {
+	font-size:		1.2em;
+	line-height:	1.4em;
+	color:			#323232;
+	margin-bottom:	15px;
+}
+div.textTemplate7 #maincontent ul {
+	margin:			0;
+	padding:		0;
+	list-style:		none;
+	
+}
+
+/* USER TEMPLATE:TEXT TEMPLATE 8
+--------------------------------*/
+div.textTemplate8 #maincontent div.contentArea1 {
+	float:			left;
+	/*width:			304px;*/
+	width:			281px;
+	padding:		0 0 0 0;
+}
+div.textTemplate8 #maincontent div.contentArea2 {
+	float:			left;
+	width:			311px;
+	width:			288px;
+	padding:		0 0 0 14px;
+}
+div.textTemplate8 #maincontent div.contentArea1 p,
+div.textTemplate8 #maincontent div.contentArea2 p {
+	font-size:		1.1em;
+	line-height:	1.363em;
+	color:			#777;
+	margin-bottom:	15px;
+}
+div.textTemplate8 #maincontent ul {
+	margin:			0;
+	padding:		0;
+	list-style:		none;	
+}
+
+/* USER TEMPLATE: TEXT TEMPLATE - FOOTER
+--------------------------------*/
+div#body.textTemplate_footer h1 {
+	height: 65px;
+}
+div#body.textTemplate_footer #maincontent {
+	background:		none;
+	padding-left:	340px;	
+}
+div#body.popup #maincontent {
+	padding-left:	0;
+}
+div.textTemplate_footer #maincontent div.contentArea1 {
+	width:			560px;
+	padding-bottom: 1px;
+	margin-bottom:	20px;
+}
+div.popup #maincontent div.contentArea1 {
+	width:			560px;
+	padding-left:	20px;
+}
+div.textTemplate_footer #maincontent div.contentArea1 p {
+	color:			#777;
+	font-size:		1.2em;
+	line-height:	1.4em;
+}
+div.textTemplate_footer #maincontent div.contentArea1 p strong {
+	color:			#000;
+}
+div.textTemplate_footer #maincontent div.contentArea1 p strong.help {
+	color:			#999;
+}
+div.textTemplate_footer #maincontent div.contentArea1 div.col1,
+div.textTemplate_footer #maincontent div.contentArea1 div.col2 {
+	float:			left;
+	width:			372px;
+}
+div.textTemplate_footer #maincontent div.contentArea1 div.col1 p,
+div.textTemplate_footer #maincontent div.contentArea1 div.col2 p {
+	font-size:		1.1em;
+	line-height:	1.45em;
+	color:			#999;
+	padding:		0 16px 0 0;
+}
+div.textTemplate_footer #maincontent div.contentArea1 div.col1 p.border,
+div.textTemplate_footer #maincontent div.contentArea1 div.col2 p.border {
+	font-size:		1.1em;
+	line-height:	1.45em;
+	color:			#999;
+	padding:		0 16px 10px 0;
+	border-bottom: 	1px solid #999;
+}
+
+/* Text Template Footer - List Styles */
+div.textTemplate_footer #maincontent div.contentArea1 ul {
+	list-style:		none;
+}
+div.textTemplate_footer #maincontent div.contentArea1 ul.help {
+	list-style:		disc;
+}
+div.textTemplate_footer #maincontent div.contentArea1 ul li {
+	padding-bottom:	10px;
+}
+div.textTemplate_footer #maincontent div.contentArea1 ul.help li {
+	padding-bottom:	2px;
+}
+div.textTemplate_footer #maincontent div.contentArea1 ul li p {
+	font-size:		1.2em;
+	font-weight:	bold;
+	margin:			0;
+	padding:		0;
+}
+div.textTemplate_footer #maincontent div.contentArea1 ul.help li p {
+	font-size:		1.1em;
+	font-weight:	normal;
+	margin:			0;
+	padding:		0;
+}
+/* IE 7 ONLY fix */
+*:first-child+html div.textTemplate_footer #maincontent div.contentArea1 ul li p {
+	margin-top:		-17px;
+}
+div.textTemplate_footer #maincontent div.contentArea1 ul li span {
+	
+	position:		absolute;
+	margin-left:	-24px;
+	font-size:		1.2em;
+	font-weight:	bold;
+	line-height:	1.4em;
+	color:			#777;
+	text-align:		left;
+}
+
+/* VIEW TEMPLATE
+--------------------------------*/
+div#body.viewTemplate #maincontent {
+	width:			562px;
+	padding:		0;
+	margin:			0;
+	background:		#fff;
+}
+div#body.viewTemplate #contextual {
+	width:			332px;
+	margin-left:	6px;
+	background:		#fff;
+}
+div.viewTemplate div.wrap {
+	margin-bottom:	6px;
+	padding-bottom:	30px;
+	background:		url(../images/bg_wrap_viewtemplate.gif) repeat-y left top;
+}
+div.viewTemplate li {
+	color:			#777;
+}
+
+/* VIEW SPEAKERS
+--------------------------------*/
+div.viewTemplate #maincontent #speakerscontent {
+	margin-bottom:	6px;
+	background-color:#a31919;
+}
+div.viewTemplate #maincontent #speakerscontent img {
+	float:			left;
+	border-right:	1px solid #fff;
+}
+div.viewTemplate #maincontent #speakerscontent p {
+	float:			right;
+	width:			274px;
+	padding:		7px 20px 0 13px;
+	font-size:		1.6em;
+	font-weight:	normal;
+	line-height:	1.3em;
+	color:			#fff;
+}
+div.viewTemplate #maincontent #speakerscontent div.why {
+	padding:		0 15px 0 14px;
+	border-top:		1px solid #fff;
+	background-color:#ece6df;
+}
+div.viewTemplate #maincontent #speakerscontent div.why .title {
+	background:		url(../images/border_dotted.gif) repeat-x left bottom;
+}
+div.viewTemplate #maincontent #speakerscontent div.why h3 {
+	float:			left;
+	padding:		22px 0 7px 0;
+	font-size:		1.4em;
+	color:			#000;
+	font-weight:	normal;
+}
+div.viewTemplate #maincontent #speakerscontent div.why span {
+	float:			right;
+	margin-top:		23px;
+}
+div.viewTemplate #maincontent #speakerscontent div.why span a {
+	font-size:		1.1em;
+}
+div.viewTemplate #maincontent #speakerscontent div.why p a span {
+	float:			none;
+	margin-top:		0;
+}
+div.viewTemplate #maincontent #speakerscontent div.why p {
+	float:			none;
+	padding:		7px 0 5px 0;
+	margin:			0 0 0 0;
+	width:			516px;
+	font-size:		1.2em;
+	line-height:	1.25em;
+	color:			#545454;
+}
+div.viewTemplate #maincontent #speakerscontent div.why blockquote {
+	font-size:		1.1em;
+	color:			#000;
+	padding:		20px 0 0 0;
+}
+div.viewTemplate #maincontent #speakerscontent div.why cite {
+	display:		block;
+	margin:			0 0 15px 36px;
+	padding:		0 0 0 14px;
+	font-size:		1.1em;
+	font-style:		italic;
+	background:		url(../images/cite_dash.gif) no-repeat 0 6px;
+}
+/* Blog Posts / Comments */
+div.viewTemplate #maincontent div.blogcontainer {
+	border-top:		3px solid #ff2b06;
+}
+div.viewTemplate #maincontent div.blogposts {
+	margin-top:		6px;
+	background-color:#f2f2f2;
+}
+div.viewTemplate #maincontent div.blogposts h3 {
+	float:			left;
+	padding:		22px 0 0 19px;
+	font-size:		1.4em;
+	font-weight:	normal;
+	color:			#000;
+}
+div.viewTemplate #maincontent div.blogposts p.link {
+	float:			right;
+	margin:			25px 13px 0 0;
+}
+div.viewTemplate #maincontent div.blogposts ul {
+	margin-bottom:  -6px;
+	list-style:		none;
+}
+div.viewTemplate #maincontent div.blogposts ul li.divide {
+	margin:			0 13px 0 0;
+	background:		url(../images/border_dotted.gif) repeat-x left top;
+}
+div.viewTemplate #maincontent div.blogposts ul li.divide h4 {
+	padding:		10px 0 7px 0;
+	color:			#929292;
+	font-size:		1.1em;
+}
+div.viewTemplate #maincontent div.blogposts ul li.divide h4 a {
+	padding-left:	14px;
+	background:		url(../images/blog_talk_bub.gif) no-repeat 0;
+}
+div.viewTemplate #maincontent div.blogposts ul li.divide p {
+	margin:			0;
+	padding:		6px 72px 6px 0;
+	color:			#777;
+	font-size:		1.1em;
+	line-height:	1.36em;
+}
+div.viewTemplate #maincontent div.blogposts ul li.divide ul {
+	list-style:		none;
+	margin:			0 0 0 -4px;
+	padding:		0 0 20px 0;
+}
+div.viewTemplate #maincontent div.blogposts ul li.divide ul li {
+	display:		inline;
+	color:			#777;
+}
+div.viewTemplate #maincontent div.blogposts ul li.divide ul li a {
+	padding:		0 4px 0 4px;
+	font-size:		1.1em;
+}
+/* Contextual Menu */
+div#body.viewTemplate #contextual {
+	background-color:#f2f2f2;
+}
+div.viewTemplate #contextual dl.box dt div.overlay {
+	width:			100%;
+	height:			100%;
+	background-color:#ff2a06;
+}
+div.viewTemplate #contextual dl.box {
+	position:		relative;
+	border-bottom:	1px solid #fff;
+	padding-left:	0;
+}
+div.viewTemplate #contextual dl.box dt {
+	position:		relative;
+	float:			left;
+	padding:		5px 0 5px 6px;
+	width:			113px;
+	height:			8.5em;
+}
+div.viewTemplate #contextual dl.box dd {
+	width:			213px;
+	float:			right;
+}
+div.viewTemplate #contextual dl.box dd ul {
+	padding:		7px 0 0 7px;
+	list-style:		none;
+}
+div.viewTemplate #contextual dl.box dd ul li {
+	padding:		0 40px 0 0;
+	line-height:	1.5em;
+}
+div.viewTemplate #contextual dl.box dd ul li.bottom {
+	position:		absolute;
+	bottom:			5px;
+}
+div.viewTemplate #contextual dl.box dd ul li h4 {
+	padding:		4px 0 2px 0;
+	font-size:		1.0909em; /* 1.1em * 1.0909 = 1.2em */
+	font-weight:	bold;
+	color:			#191818;
+}
+div.viewTemplate #contextual dl.box dd ul li h4 a{
+	color:			black;
+}
+div.viewTemplate #contextual dl.box dd ul li a {
+	font-size:		1.1em;
+}
+div.viewTemplate #contextual dl.box dd ul li em {
+	display:		block;
+	padding:		2px 0 0 0;
+	font-size:		1.1em;
+	color:			#6c6c6c;
+}
+div.viewTemplate dl.no_favorites ul {
+	list-style:		none;
+	padding-left:	14px;
+}
+div.viewTemplate ul li.empty,
+div.viewTemplate ul li span.empty {
+	font-size:		1.1em;
+	line-height:	1.363em !important;
+	width:			auto !important;
+}
+div.viewTemplate dl.box dd ul li.empty {
+	margin-left:	-126px;
+}
+div.viewMember #contextual dl.box dd li a {
+	font-weight:	bold;
+	color:			#000;
+}
+div.viewMember #contextual dl.box dd li a.remove {
+	font-weight:	normal;
+	font-style:		italic;
+	color:			#ff2b06;
+}
+div.viewMember #contextual dl.box dd li p {
+	padding:		0;
+	margin:			0;
+	font-size:		1.1em;
+}
+/* Contextual / Categories */
+div.viewTemplate #contextual dl.categories {
+	padding:		0 0 0 14px;
+}
+div.viewTemplate #contextual dl.categories h3 {
+	margin:			19px 14px 7px 0;
+	padding-bottom:	9px;
+	font-size:		1.4em;
+	font-weight:	normal;
+	background:		url(../images/border_dotted.gif) repeat-x left bottom;
+}
+div.viewTemplate #contextual dl.categories ul {
+	margin:			0;
+	list-style:		none;
+	float:			left;
+}
+div.viewTemplate #contextual dl.categories ul.links {
+	width:			155px;
+}
+div.viewTemplate #contextual dl.categories ul li {
+	line-height:	1.5em;
+}
+div.viewTemplate #contextual dl.categories ul.relatedThemes {
+	width:			auto;
+}
+div.viewTemplate #contextual dl.categories ul li a {
+	font-size:		1.1em;
+}
+div.viewTemplate #contextual dl.categories ul li a.remove {
+	font-style:		italic;
+}
+div.viewTemplate #contextual dl.categories dd.tags ul {
+	float:			left;
+	width:			100px;
+}
+div.viewTemplate #contextual dl.categories ul.relatedTalks {
+	width:			284px;
+	margin:			-6px 0 0 0;
+}
+div.viewTemplate #contextual dl.categories ul.relatedTalks li {
+	margin:			0 0 0 10px;
+	padding:		8px 0 8px 0;
+	border-bottom:	1px solid #fff;
+}
+div.viewTemplate #contextual dl.categories ul.relatedTalks h5 {
+	margin:			0 0 0 -10px;
+	padding:		0 0 0 10px;
+	font-size:		1.1em;
+	color:			#000;
+	background:		url(../images/icon_related_talks.gif) no-repeat 1px 4px;
+}
+div.viewTemplate #contextual dl.categories ul.relatedTalks p {
+	margin: 		0;
+	padding:		10px 0 0 0;
+	font-size:		1.1em;
+	color:			#000;
+}
+div.viewTemplate #contextual dl.categories ul.relatedTalks a {
+	font-size:		1.1em;
+}
+div.viewTemplate #contextual dl.categories ul.relatedTalks a.black {
+	color: #000;
+}
+div.viewTemplate #contextual div.heading {
+	padding:		0 14px;
+	border-bottom:	1px solid #fff;
+}
+div.viewTemplate #contextual div.heading h3 {
+	float:			left;
+	margin:			19px 14px -3px 0;
+	padding:		0 0 9px 0;
+	font-size:		1.4em;
+	font-weight:	normal;
+}
+div.viewTemplate #contextual div.heading a {
+	float:			right;
+	padding:		21px 0 0 0;
+}
+
+/* Video */
+#body div.mediacontainer {
+	float:			left;
+	display:		inline;
+	width:			534px; /*562px - 28px padding*/
+	padding:		12px 14px;
+}
+#body div.mediacontainer #video {
+	position:		static;
+}
+#video {
+	position:		absolute;
+	padding:		0 7px 7px 7px;
+	background:		#fff;
+	z-index: 		999;
+}
+#video div.heading {
+	padding-top:	7px;
+}
+#video #video_close {
+	display:		block;
+	width:			19px;
+	height:			17px;
+	text-indent:	-9999px;
+}
+#video.make_larger #video_close {
+	background:		url(../images/icon_video_large.gif) no-repeat center center;
+}
+#video.make_smaller #video_close {
+	background:		url(../images/icon_video_small.gif) no-repeat center center;
+}
+div#video h2 {
+	float:			left;
+	margin:			-1px 0 0 0;
+	padding:		0 0 8px 0;
+	font-size:		1.1em;
+	font-weight:	normal;
+	color:			#545454;
+}
+div#video div.icons {
+	margin-top:		-2px;
+	float:			right;
+}
+div#video div.icons img {
+	float:			left;
+}
+div#video div.icons img.divider {
+	margin:			0 6px;
+}
+
+#videoPlayerSwf {
+	position:		relative;
+	z-index:		998;
+}
+#videoPlayerSwf p {
+	margin:			1em 0;
+	font-size:		1.1em;
+}
+
+#ratingsContainer {
+	position:		relative;
+	top:			-7px;
+	height:			1%;
+	z-index:		999;
+	background:		url(../images/bg_ratings_4x3_full_max.gif) repeat-y 2px 0;
+}
+#ratingsContainer div.topcap {
+	height:			10px;
+	font-size:		1px;/*ie6*/
+	padding:		0 8px;
+	margin:			0 2px;
+}
+#ratingsContainer div.botcap {
+	height:			17px;
+	margin:			0 2px;
+}
+
+	
+/******* 
+4 : 3 Aspect Ratio
+IE 6 doesn't respect multiple classes so we need to use long classnames
+*******/
+#ratingsContainer.fourXthree.min,
+#ratingsContainer.fourXthree_min {
+	background:		url(../images/bg_ratings_4x3_full_min.gif) repeat-y 2px 0;
+}
+#ratingsContainer.fourXthree.min div.topcap, 
+#ratingsContainer.fourXthree_min div.topcap {
+	background:		url(../images/bg_ratings_4x3_top_cap.gif) no-repeat 9px -10px;
+}
+#ratingsContainer.fourXthree.min div.botcap,
+#ratingsContainer.fourXthree_min div.botcap {
+	background:		url(../images/bg_ratings_4x3_bot_cap.gif) no-repeat 0 -17px;
+}
+#ratingsContainer.fourXthree.max,
+#ratingsContainer.fourXthree_max div.botcap {
+	background:		url(../images/bg_ratings_4x3_full_max.gif) repeat-y 2px 0;
+}
+#ratingsContainer.fourXthree.max div.topcap,
+#ratingsContainer.fourXthree_max div.topcap {
+	background:		url(../images/bg_ratings_4x3_top_cap.gif) no-repeat 9px 0;
+}
+#ratingsContainer.fourXthree.max div.botcap,
+#ratingsContainer.fourXthree_max div.botcap {
+	background:		url(../images/bg_ratings_4x3_bot_cap.gif) no-repeat 0 0;
+}
+
+
+#ratingsContainer.sixteenXnine.min,
+#ratingsContainer.sixteenXnine_min {
+	background:		url(../images/bg_ratings_16x9_full_min.gif) repeat-y 2px 0;
+}
+#ratingsContainer.sixteenXnine.min div.topcap,
+#ratingsContainer.sixteenXnine_min div.topcap {
+	background:		url(../images/bg_ratings_16x9_top_cap.gif) repeat-y 9px -10px;
+}
+#ratingsContainer.sixteenXnine.min div.botcap,
+#ratingsContainer.sixteenXnine_min div.botcap {
+	background:		url(../images/bg_ratings_16x9_bot_cap.gif) repeat-y 0 -17px;
+}
+#ratingsContainer.sixteenXnine.max,
+#ratingsContainer.sixteenXnine_max {
+	background:		url(../images/bg_ratings_16x9_full_max.gif) repeat-y 2px 0;
+}
+#ratingsContainer.sixteenXnine.max div.topcap,
+#ratingsContainer.sixteenXnine_max div.topcap {
+	background:		url(../images/bg_ratings_16x9_top_cap.gif) no-repeat 9px 0;
+}
+#ratingsContainer.sixteenXnine.max div.botcap,
+#ratingsContainer.sixteenXnine_max div.botcap {
+	background:		url(../images/bg_ratings_16x9_bot_cap.gif) no-repeat 0 0;
+}
+
+
+div#video div.ratings {
+	height:			1%;
+	margin:			0 11px 0 11px;
+	padding:		0 8px;
+	border:			1px solid #aeaeae;
+	border-bottom:	none;
+	border-top:		none;
+	background:		#d5d4d2;
+}
+div#video div.ratings h3 {
+	font-size:		1.8em;
+	font-weight:	normal;
+	color:			#555;
+}	 
+div#video div.ratings ul {
+	list-style:		none;
+	margin:			10px 0 0 0;
+	padding:		0;
+	background:		#d5d4d2;
+}
+div#video div.ratings ul li {
+	padding:		0;
+	width:			211px;
+	margin-bottom:	3px;
+}
+div#video div.ratings ul.options li {
+	display:		inline;
+	font-size:		1.1em;
+	color:			#555555;
+}
+div#video div.ratings ul.options li a.selected {
+	color:			#555555;
+	text-decoration:none;
+}
+
+div#video #ratethis {
+	padding-top:	10px;
+}
+div#video #ratethis p {
+	font-size: 		1.1em;
+	word-spacing:	normal;
+	line-height:	normal;
+}
+div#video #ratethis ul li {
+	display:		inline;
+	float:			left;
+	font-size:		1.1em;
+	width:			134px; 
+	margin-right:	35px;
+	text-indent:	none;
+	height:			1%;
+}
+div#video #ratethis ul span {
+	display:		inline;
+	float:			left;
+}
+div#video #ratethis ul li a {
+	float:			left;
+	display:		inline;
+	height:			13px;
+	width:			13px;
+	text-indent:	-9999px;
+	margin-right:	3px;
+	background:		url(../images/icon_ratings_checkbox.gif) no-repeat -13px 0;
+}
+div#video #ratethis ul li a:hover {
+	background:		url(../images/icon_ratings_checkbox.gif) no-repeat -26px 0;
+}
+div#video #ratethis ul li a.selected {
+	background:		url(../images/icon_ratings_checkbox.gif) no-repeat -39px 0;
+}
+div#video #ratethis ul li a.selected:hover {
+	background:		url(../images/icon_ratings_checkbox.gif) no-repeat -52px 0;
+}
+div#video #ratethis ul li a.disabled {
+	background:		url(../images/icon_ratings_checkbox.gif) no-repeat 0 0;	
+}
+
+div#video #ratethis a.rate {
+	display:		block;
+	float:			right;
+	display:		inline;
+	width:			90px;
+	height:			24px;
+	text-indent:	-9999px;
+	cursor:			pointer;
+	background:		url(../images/button_rate.gif) no-repeat 0 0;	
+}
+div#video #ratethis div.bottom {
+	margin-top:		12px;
+	padding-top:	10px;
+	background:		url(../images/bg_ratings_dotted.gif) repeat-x 0 0;
+}
+div#video #ratingsheading {
+	padding-bottom:	10px;
+	background:		#d5d4d2 url(../images/bg_ratings_dotted.gif) repeat-x bottom left;
+}
+
+/* Transparency */
+div.transparent {
+	position:		absolute;
+	top:			0;
+	left:			0;
+	z-index:		998;
+	background: none;
+	/*ie 5+ only*/
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader (src="/images/overlay.png",sizingMethod="scale");
+}
+
+/*other browsers*/
+html>body div.transparent {
+	background:		url(../images/overlay.png) repeat top left;
+}
+
+/* VIEW TALKS
+--------------------------------*/
+div#body.viewTalks #maincontent {
+	display:		block;
+	float:			none;
+	width:			900px;
+	background:		url(../images/bg_wrap_viewtalks_maincontent.gif) repeat-y left top;
+}
+div#body.viewTalks h1 {
+	width:			497px;
+	margin-bottom:	5px;
+}
+
+div.viewTalks #maincontent div.about {
+	float:			right;
+	width:			332px;
+	border-left:	6px solid #fff;
+}
+div.viewTalks #maincontent div.about h3 {
+	margin:			18px 14px 10px 14px;
+	padding:		0 0 8px 0;
+	font-size:		1.4em;
+	font-weight:	normal;
+	color:			#000;
+	background:		url(../images/border_dotted.gif) repeat-x left bottom;
+}
+div.viewTalks #maincontent div.about p {
+	padding:		0 16px 0 14px;
+	font-size:		1.1em;
+	line-height:	1.36em;
+	color:			#777;
+}
+div.viewTalks #maincontent div.about div.advert {
+}
+div.advert img {
+	margin:			14px 0 14px 14px;
+}
+/* View Talks Options Banner */
+div.viewTalks #options_banner_container {
+	padding:		6px 0 6px 0;
+	background-color:#fff;
+}
+div.viewTalks #options_banner {
+	border-top:		3px solid #ff2a06;
+	border-bottom:	3px solid #ff2a06;
+}
+div.viewTalks #options_banner dl {
+	float:			left;
+}
+div.viewTalks #options_banner dl dt {
+	margin:			11px 0 0 14px;
+	padding:		0 0 7px 0;
+	width:			165px;
+	font-size:		1.2em;
+	color:			#000;
+	background:		url(../images/border_dotted.gif) repeat-x left bottom;
+}
+div.viewTalks #options_banner dl ul {
+	margin:			8px 0 20px 14px;
+	list-style:		none;
+}
+div.viewTalks #options_banner dl ul li {
+	line-height:	1.5em;
+}
+div.viewTalks #options_banner dl ul li a {
+	font-size:		1.1em;
+}
+div.viewTalks #options_banner dl.blog_video {
+	display:		inline;
+	float:			right;
+	margin-right:	14px;
+	width:			305px;
+	/*margin:		0;*/
+}
+div.viewTalks #options_banner dl.blog_video dt {
+	width:			305px;
+	margin-left:	0;
+}
+div.viewTalks #options_banner div.copy_paste_code {
+	margin:			8px 0 0 0;
+}
+div.viewTalks #options_banner div.copy_paste_code p {
+	margin:			0 0 10px 0;
+}
+div.viewTalks #options_banner div.copy_paste_code p a {
+	font-size:		1.1em;
+}
+div.viewTalks #options_banner div.copy_paste_code label {
+	display:		inline;
+	float:			left;
+	margin:			0 0 5px 0;
+	font-size:		1.1em;
+	line-height:	1.7em;
+	color:			#777;
+}
+div.viewTalks #options_banner div.copy_paste_code input {
+	float:			right;
+	height:			16px;
+	width:			197px;
+	margin:			0 0 10px 0;
+	padding:		2px 4px 0 4px;
+	font-size:		1.1em;
+	color:			#ff2a06;
+	border:			1px solid #dcdcdc;
+}
+/* View Talks Discussion */
+div.viewTemplate #discussion {
+	float:			left;
+	width:			562px;
+}
+div.viewTemplate #discussion h3 {
+	/*float:			left;
+	display:		inline;*/
+	margin:			20px 0 0 14px;
+	padding:		0 0 7px 0;
+	font-size:		1.4em;
+	font-weight:	normal;
+	color:			#000;
+}
+div.viewTemplate #discussion p.link {
+	margin:			22px 14px 10px 0;
+	float:			right;
+}
+div.viewTemplate #discussion p.signin {
+	font-size:		1.1em;
+	margin-left:	14px;
+}
+div.viewTemplate #discussion div.add_comment {
+	margin:			0 14px 0 14px;
+	background:		url(../images/border_dotted.gif) repeat-x left top;
+}
+div.viewTemplate #discussion div.add_comment p {
+	margin:			0;
+	padding:		10px 0 5px 0;
+	font-size:		1.1em;
+	font-weight:	bold;
+	color:			#595959;
+}
+div.viewTemplate #discussion div.add_comment p em {
+	margin:			0;
+	padding:		0;
+	font-weight:	normal;
+	font-style:		italic;
+}
+div.viewTemplate #discussion div.add_comment form {
+	text-align:		right;
+}
+div.viewTemplate #discussion div.add_comment textarea {
+	width:			524px;
+	padding:		4px;
+	height:			88px;
+	font-size:		1.1em;
+	border:			1px solid #dcdcdc;
+	color:			#777;
+}
+div.viewTemplate #discussion ul {
+	margin:			7px 0 0 0;
+	padding: 0;
+	list-style:		none;
+}
+div.viewTemplate #discussion ul li.edit_comment {
+	margin-bottom:	7px;
+}
+div.viewTemplate #discussion ul li.divide {
+	margin:			0 13px 0 14px;
+	background:		url(../images/border_dotted.gif) repeat-x left top;
+}
+div.viewTemplate #discussion ul li h4 {
+	float:			left;
+	padding:		7px 0 6px 16px;
+	font-size:		1.1em;
+	font-weight:	bold;
+	background:		url(../images/blog_talk_bub.gif) no-repeat 1px 9px;
+}
+div.viewTemplate #discussion ul li h4 a {
+	color:			#000;
+}
+div.viewTemplate #discussion ul li h4 span {
+	font-weight:	normal;
+}
+div.viewTemplate #discussion ul li p {
+	margin:			0 0 7px 0;
+	padding:		0 70px 0 0;
+	font-size:		1.1em;
+	line-height:	1.36em;
+	color:			#777;
+}
+div.viewTemplate #discussion ul li ul.actions {
+	float:			right;
+}
+div.viewTemplate #discussion ul li ul.actions li {
+	display:		inline;
+	color:			#ff2b06;
+	font-size:		1.1em;
+}
+div.viewTemplate #discussion ul li ul.actions li.flag {
+	padding:		0 0 0 20px;
+}
+
+/* VIEW THEMES
+--------------------------------*/
+div.viewThemes div.wrap {
+	background:		url(../images/bg_wrap_viewthemes.gif) repeat-y left top;
+}
+/* Contextual Menu */
+div#body.viewThemes #contextual {
+	margin-left:	0;
+	background-color:#ece6df;
+}
+div.viewThemes #contextual dl.categories dd ul {
+	float:			none;
+	width:			auto;
+}
+div.viewThemes #contextual dl.categories h3 {
+	margin-top:		25px;
+}
+div.viewThemes #contextual div.about h4 {
+	margin:			18px 21px 5px 14px;
+	padding:		0 0 9px 0;
+	font-size:		1.4em;
+	font-weight:	normal;
+	color:			#000;
+	background:		url(../images/border_dotted.gif) repeat-x left bottom;
+}
+div.viewThemes #contextual div.about p {
+	margin:			0;
+	padding:		4px 20px 10px 14px;
+	font-size:		1.3em;
+	line-height:	1.3em;
+	color:			#777;
+}
+div.viewThemes #contextual div.about a {
+	font-size:		1em;
+}
+div.viewTemplate #contextual dl.advert {
+	margin:			23px 7px 0 7px;
+	padding:		10px 0 10px 8px;
+	background:		#fff;
+}
+div.viewTemplate #contextual dl.advert dt  {
+	float:			left;
+	width:			200px;
+}
+div.viewTemplate #contextual dl.advert dt h5 {
+	padding:		0 0 7px 0;
+	font-size:		1em;
+}
+div.viewTemplate #contextual dl.advert dt h5 a {
+	padding:		0;
+	font-size:		1.1em;
+	color:			#000;
+}
+div.viewTemplate #contextual dl.advert dt p {
+	padding:		0;
+	font-size:		1.1em;
+	color:			#777;
+}
+div.viewTemplate #contextual dl.advert dd {
+	float:			right;
+}
+div.viewTemplate #contextual dl.advert dd img {
+	padding:		0;
+	margin:			8px 15px 0 0;
+}
+/* View Themes Maincontent - Speakers */
+div#body.viewThemes #maincontent {
+	margin-left:	6px;
+	background-color:#f2f2f2;
+}
+div.viewThemes #maincontent div.speakers {
+	background-color:#fff;
+}
+div.viewThemes #maincontent div.speakers div.modules {
+	border-bottom:	6px solid #fff;
+}
+div.viewThemes #maincontent div.speakers dl {
+	position:		relative;
+	float:			left;
+	width:			280px;
+	height:			9.4em;
+	border-bottom:  1px solid #fff;
+	border-right:	1px solid #fff;
+	background-color:#f2f2f2;
+}
+div.viewThemes #maincontent div.speakers dl.col2 {
+	border-right:	none;
+}
+div.viewThemes #maincontent div.speakers dl dt {
+	position:		relative;
+	float:			left;
+	padding:		5px 0 5px 6px;
+	width:			113px;
+}
+img.play_icon {
+	position:		absolute;
+	z-index:		1;
+	top:			9px;
+	left:			10px;
+	background:		url(../images/play_icon.gif) no-repeat left top;
+}
+div.viewThemes #maincontent div.speakers dl dd {
+	width:			161px;
+	float:			right;
+}
+div.viewThemes #maincontent div.speakers dl dd ul {
+	margin:			8px 0 0 0;
+	padding:		0 0 0 7px;
+	list-style:		none;
+}
+div.viewThemes #maincontent div.speakers dl dd ul li {
+	margin:			0;
+	padding:		0;
+	height:			auto;
+	line-height:	1.4em;
+}
+div.viewThemes #maincontent div.speakers dl dd ul li.bottom {
+	position:		absolute;
+	bottom:			5px;
+}
+div.viewThemes #maincontent div.speakers dl dd ul li h4 {
+	padding:		0 12px 6px 0;
+	font-size:		1.2em;
+	font-weight:	bold;
+	color:			#191818;
+}
+div.viewThemes #maincontent div.speakers dl dd ul li h4 a {
+	padding:		0;
+	font-size:		1em;
+	color:			#191818;
+}
+div.viewThemes #maincontent div.speakers dl dd ul li a {
+	height:			1%;
+	margin:			0;
+	display:		block;
+	padding:		0 0 4px 0;
+	font-size:		1.1em;
+}
+div.viewThemes #maincontent div.speakers dl dd ul li em {
+	font-size:		1.1em;
+	color:			#6c6c6c;
+}
+div.viewThemes #maincontent div.speakers dl dd ul li span {
+	font-size:		1.1em;
+}
+div.viewThemes #discussion {
+	border-top:		3px solid #ff2b06;
+}
+div.viewThemes #discussion div.white_border {
+	border-top:		6px solid #fff;
+}
+div.viewThemes #discussion ul li.divide {
+	margin-left:	14px;
+}
+
+/* VIEW MEMBER
+--------------------------------*/
+div#body.viewMember #maincontent {
+	display:		block;
+	float:			none;
+	margin-bottom:	6px;
+	width:			900px;
+	background:		url(../images/bg_maincontent_viewmember.gif) repeat-y left top;
+}
+div#body.viewMember h1 {
+	width:			497px;
+	margin-bottom:	5px;
+}
+div.viewMember div.subnav {
+	height:			1.5em;
+	margin-top:		-27px;
+	margin-bottom:	6px;
+}
+div.viewMember div.subnav ul {
+	margin-left:	7px;
+	position:		absolute;
+	float:			left;
+	list-style:		none;
+}
+div.viewMember div.subnav ul li {
+	display:		inline;
+	font-size:		1.1em;
+	font-weight:	bold;
+	padding:		0 4px 0 0;
+	color:			#b9b9b9;
+}
+div.viewMember div.subnav ul li span {
+	padding:		0 4px 0 0;
+}
+div.viewMember div.subnav ul li a {
+	padding:		0 4px 0 0;
+	color:			#545454;
+}
+div.viewMember div.subnav ul li a:hover,
+div.viewMember div.subnav ul li a.selected {
+	color:			#000;
+}
+div#body.viewMember div.subnav p {
+	margin:			0;
+	float:			right;
+}
+div.viewMember div.subnav p a {
+	font-size:		1.1em;
+}
+div.viewMember #maincontent div.about {
+	float:			left;
+	width:			533px;
+	margin:			0 6px 0 0;
+	padding:		12px 14px 14px 13px;
+	background-color:#dadada;
+}
+div.viewMember #maincontent div.about h2 {
+	margin:			0 0 7px 7px;
+	padding:		10px 0 9px 0;
+	font-size:		1.4em;
+	font-weight:	normal;
+	background:		url(../images/border_dotted.gif) repeat-x left bottom;
+}
+div.viewMember #maincontent div.about p {
+	margin:			0 0 12px 0;
+	padding:		0 0 0 7px;
+	font-size:		1.8em;
+	line-height:	1.22em;
+	color:			#777;
+}
+div.viewMember #maincontent div.about p a {
+	font-size:		0.61em;
+}
+div.viewMember #maincontent div.about div {
+	background-color:#fff;
+	padding:		0 7px 6px 7px;
+}
+div.viewMember #maincontent div.about div div.details {
+	padding:		0;
+	background-color:#f2f2f2;
+}
+div.viewMember #maincontent div.about div div.details ul {
+	float:			left;
+	width:			252px;
+	padding:		0;
+	margin: 		10px 0 1px 0;
+	list-style:		none;
+}
+div.viewMember #maincontent div.about div div.details ul li {
+	padding:		0 0 4px 11px;
+}
+div.viewMember #maincontent div.about div div.details ul li p {
+	padding:		0 0 4px 0;
+	margin:			0;
+	font-size:		1.1em;
+	font-weight:	bold;
+	color:			#000;
+}
+div.viewMember #maincontent div.about div div.details ul li span {
+	padding:		0 0 4px 0;
+	margin:			0;
+	font-size:		1.1em;
+	font-weight:	normal;
+	color:			#777;
+}
+div.viewMember #maincontent div.about div div.details ul li a {
+	font-size:		1.1em;
+	line-height:	1.36em;
+}
+div.viewMember #maincontent div.photos {
+	float:			right;
+	width:			305px;
+	padding:		12px 14px 14px 14px;
+	background-color:#dadada;
+}
+div.viewMember #maincontent div.photos div {
+	padding:		7px;
+	background-color:#fff;
+}
+div.viewMember #maincontent div.photos p {
+	margin:			0;
+	padding:		6px 0 3px 7px;
+	background-color:#f3f3f3;
+}
+div.viewMember #maincontent div.photos p a {
+	font-size:		1.1em;
+}
+div.viewMember #maincontent img.top {
+	margin-top:		1px;
+}
+div.viewMember #maincontent img.bottom {
+	margin-bottom:	1px;
+}
+div.viewMember #maincontent img.left {
+	margin-left:	1px;
+}
+div.viewMember #maincontent img.right {
+	margin-right:	1px;
+}
+div.viewMember div.more_favorites_wrap {
+	border-top:		3px solid #ff2a06;
+}
+div.viewMember div.more_favorites {
+	margin-bottom:	6px;
+	border-top:		6px solid #fff;
+	padding-bottom:	33px;
+	background:		url(../images/bg_morefavorites_viewmember.gif) repeat-y left top;
+}
+div.viewMember #more {
+	float:			left;
+	width:			561px;
+	margin:			0 6px 0 0;
+	padding:		0 0 14px 0;
+	background-color:#f2f2f2;
+}
+div.viewMember #more h3 {
+	float:			left;
+	margin:			18px 0 0 0;
+	padding:		0 0 7px 0;
+	font-size:		1.4em;
+	font-weight:	normal;
+	color:			#000;
+}
+div.viewMember #more p.link {
+	float:			right;
+	margin:			20px 0 0 0;
+	font-size:		1.1em;
+}
+div.viewMember #more ul {
+	padding:		0 14px 0 14px;
+	list-style:		none;
+}
+div.viewMember #more .comments ul {
+	padding-bottom:	10px;
+	border-bottom:	6px solid #fff;
+}
+div.viewMember #more ul.comments {
+	padding-bottom:	25px;
+	border-bottom:	6px solid #fff;
+}
+div.viewMember #more ul li.divider {
+	margin:			0 0 7px 0;
+	padding:		4px 0 0 0;
+	background:		url(../images/border_dotted.gif) repeat-x left top;
+}
+div.viewMember #more ul li.divider p {
+	margin:			0;
+	padding:		5px 78px 0 0;
+	font-size:		1.1em;
+	line-height:	1.36em;
+	color:			#777;
+}
+div.viewMember #more ul li.divider p strong {
+	color:			#000;
+}
+div.viewMember #more ul li h4 {
+	padding:		7px 0 0px 16px;
+	font-size:		1.1em;
+	font-weight:	bold;
+	background:		url(../images/blog_talk_bub.gif) no-repeat 1px 9px;
+}
+div.viewMember #more ul li h4 a {
+	color:			#000;
+}
+div.viewMember #more ul li h4 span {
+	font-weight:	normal;
+}
+div.viewMember #more div.other_container {
+	border-top:		3px solid #ff2a06;
+}
+div.viewMember #more div.other {
+	padding-top:	27px;
+	border-top:		6px solid #fff;
+}
+div.viewMember #more div.other dl {
+	float:			left;
+	width:			160px;
+	margin:			0 8px 0 12px;
+}
+div.viewMember #more div.other dl dt {
+	padding:		0 0 7px 0;
+	font-size:		1.2em;
+	font-weight:	bold;
+	color:			#000;
+	background:		url(../images/border_dotted.gif) repeat-x left bottom;
+}
+div.viewMember #more div.other dl dd ul {
+	list-style:		none;
+	padding:		8px 0 0 0;
+	margin:			0;
+}
+div.viewMember #more div.other dl dd li {
+	font-size:		1.1em;
+	line-height:	1.3em;
+}
+div#body.viewMember #contextual {
+	float:			right;
+	width:			333px;
+	margin:			0;
+	padding:		0;
+	background-color:#f2f2f2;
+}
+div.viewMember #contextual dl.categories dt {
+	margin:			17px 14px 7px 0;
+	background:		url(../images/border_dotted.gif) repeat-x left bottom;
+}
+div.viewMember #contextual dl.categories dt span {
+	float:			left;
+	margin:			0;
+	padding-bottom:	9px;
+	font-size:		1.4em;
+	font-weight:	normal;
+}
+div.viewMember #contextual dl.categories dt a {
+	float:			right;
+}
+div.viewMember #contextual dl.categories dt a span {
+	float:			none;
+	padding:		0;
+	font-size:		1em;
+}
+/* View Member - Sub Page */
+div#body.subpage #maincontent {
+	padding:		8px 0 0 0;
+	background:		url(../images/border_dotted.gif) repeat-x left top;
+}
+div.subpage #maincontent div.local {
+	float:			left;
+	margin:			14px 14px 0 0;
+	width:			291px;
+}
+div.subpage #maincontent div.content {
+	padding:		14px 7px 51px 14px;
+	width:			574px;
+	float:			left;
+	background-color:#f8f8f8;
+}
+/* View Member - Full Bio */
+div.subpage #maincontent div.fullbio div.content h3 {
+	padding-bottom:	21px;
+	font-size:		1.6em;
+	line-height:	1.375em;
+	color:			#545454;
+}
+div.subpage #maincontent div.fullbio div.content p {
+	margin:			0;
+	padding:		0 21px 13px 0;
+	font-size:		1.6em;
+	line-height:	1.375em;
+	color:			#777;
+}
+/* View Member - Photos */
+div.subpage #maincontent div.memberphotos div.local h3 {
+	font-size:		1.6em;
+	line-height:	1.375em;
+	color:			#545454;
+}
+div.subpage #maincontent div.memberphotos div.content img {
+	float:			left;
+}
+/* View Member - Comments */
+div.subpage #maincontent div.comments div.content h3 {
+	font-size:		1.6em;
+	color:			#545454;
+}
+div.subpage #maincontent div.comments div.content div.divider {
+	margin:			8px 0 0 0;
+	padding:		9px 0 0 0;
+	background:		url(../images/border_dotted.gif) repeat-x left top;
+}
+div.subpage #maincontent div.comments div.content div.divider h4 {
+	float:			left;
+	padding:		0 0 6px 16px;
+	font-size:		1.1em;
+	font-weight:	bold;
+	background:		url(../images/blog_talk_bub.gif) no-repeat 1px 2px;
+}
+div.subpage #maincontent div.comments div.content div.divider h4 a {
+	float:			none;
+	color:			#000;
+}
+div.subpage #maincontent div.comments div.content div.divider h4 span {
+	font-weight:	normal;
+	color:			#929292;
+}
+div.subpage #maincontent div.comments div.content div.divider a {
+	/*float:			right;*/
+	font-size:		1.1em;
+}
+div.subpage #maincontent div.comments div.content div.divider ul.actions {
+	float:			right;
+	margin:			0;
+	list-style:		none;
+}
+div.subpage #maincontent div.comments div.content div.divider ul.actions li {
+	display:		inline;
+	color:			#ff2b06;
+}
+div.subpage #maincontent div.comments div.content div.divider ul.actions li a {
+	cursor:			pointer;
+}
+div.subpage #maincontent div.comments div.content div.divider form.edit_comment {
+	text-align:		right;
+}
+div.subpage #maincontent div.comments div.content div.divider form.edit_comment textarea {
+	padding:		4px;
+	font-size:		1.1em;
+	width:			562px;
+	height:			88px;
+	color:			#777;
+}
+div.subpage #maincontent div.comments div.content div.divider div.add_comment p {
+	color:			#595959;
+	padding:		10px 0 5px 0;
+}	
+div.subpage #maincontent div.comments div.content div.divider p {
+	margin:			0;
+	padding:		0 95px 0 0;
+	font-size:		1.1em;
+	line-height:	1.363em;
+	color:			#777;
+}
+div.subpage #maincontent div.comments div.content div.divider p a {
+	float:			none;
+}
+/* View Member - Favorites */
+div.subpage #maincontent div.divider {
+	margin:			18px 0 0 0;
+	padding:		10px 0 0 0;
+	background:		url(../images/border_dotted.gif) repeat-x left top;
+}
+div.subpage #maincontent div.favoritetalks {
+	margin:			0;
+	padding:		0;
+	background:		none;
+}
+div.subpage #maincontent div.favorites {
+	padding-bottom:	30px;
+}
+div.subpage #maincontent div.favorites h3 {
+	float:			left;
+	width:			221px;
+	padding:		11px 0 0 7px;
+	font-size:		1.6em;
+	color:			#949494;
+}
+div.subpage #maincontent div.favorites div.medallions {
+	float:			left;
+	width:			670px;
+}
+div.subpage #maincontent div.favorites div.medallions ul {
+	list-style:		none;
+	padding:		0;
+	margin:			11px 0 0 0;
+}
+div.subpage #maincontent div.favorites div.medallions ul li {
+	font-size:		1.1em;
+}
+div.subpage #maincontent div.favorites div.favorite_themes div.medallions dl.box dd ul li em {
+	padding-top:	0;
+	padding-bottom:	4px;
+}
+div.subpage #maincontent div.favorites dl.box {
+	position:		relative;
+	float:			left;
+	margin:			0 1px 1px 0;
+	width:			334px;
+	height:			9.5em;
+	background-color:#f2f2f2;
+}
+div.subpage #maincontent div.favorites dl.box dt {
+	position:		relative;
+	float:			left;
+	padding:		5px 0 5px 6px;
+	width:			113px;
+}
+div.subpage #maincontent div.favorites dl.box dd {
+	width:			213px;
+	float:			right;
+}
+div.subpage #maincontent div.favorites dl.box dd ul {
+	padding:		0 0 0 7px;
+	margin:			3px 0 0 0;
+	list-style:		none;
+}
+div.subpage #maincontent div.favorites dl.box dd ul li {
+	padding:		0 40px 0 0;
+	font-size:		1.1em;
+	line-height:	1.36em;
+	color:			#6c6c6c;
+}
+div.subpage #maincontent div.favorites dl.box dd ul li.bottom {
+	position:		absolute;
+	bottom:			5px;
+}
+div.subpage #maincontent div.favorites div.talks dl.box dd ul li {
+	padding:		0;
+}
+div.subpage #maincontent div.favorites div.talks dl.box dd ul li span {
+	color:			#000;
+}
+div.subpage #maincontent div.favorites div.talks dl.box dd ul li p {
+	margin:			0;
+	padding:		0 0 4px 0;
+}
+div.subpage #maincontent div.favorites div.talks dl.box dd ul li h4 {
+	padding:		6px 0 1px 0;
+}
+div.subpage #maincontent div.favorites div.talks dl.box dd ul li a {
+	margin-top:		6px;
+}
+div.subpage #maincontent div.favorites dl.box dd ul li h4 {
+	padding:		6px 0 3px 0;
+	font-size:		1.091em;
+	font-weight:	bold;
+	color:			#191818;
+}
+div.subpage #maincontent div.favorites dl.box dd ul li h4 a {
+	color:			#191818;
+}
+div.subpage #maincontent div.favorites dl.box dd ul li em {
+	display:		block;
+	padding:		4px 0 0 0;
+	color:			#6c6c6c;
+}
+
+/* REGISTER PAGE
+--------------------------------*/
+div#body.register p {
+	margin:			0;
+}
+div.register div.callout {
+	width:			900px;
+	background-color:#dbdbdb;
+}
+div.register div.callout div.col1 {
+	float:			left;
+	width:			561px;
+	border-right:	6px solid #fff;
+	padding-bottom:	10px;
+}
+div.register div.callout div.col2 {
+	float:			left;
+	width:			327px;
+	border-left:	6px solid #fff;
+	margin-left:	-6px;
+}
+div.register div.callout p {
+	margin:			0;
+	padding:		14px 24px 14px 14px;
+	font-size:		1.8em;
+	line-height:	1.333em;
+	color:			#777;
+}
+div.register div.wrap {
+	margin:			5px 0 6px 0;
+	background:		url(../images/bg_wrap_register.gif) repeat-y left top;
+}
+div#body.register #maincontent {
+	margin:			6px 6px 0 0;
+	padding:		0;
+	width:			561px;
+	background:		#e7e2da;
+}
+div#body.myaccount #maincontent {
+	background:		#f2f2f2;
+}
+div.register #maincontent div.heading {
+	margin:			0 14px;
+}
+div.register #maincontent h2,
+div.register #contextual h2 {
+	margin:			0 0 7px 0;
+	padding:		17px 0 8px 0;
+	font-size:		1.4em;
+	font-weight:	normal;
+	background:		url(../images/border_dotted.gif) repeat-x left bottom;
+}
+div.myaccount #maincontent h2 {
+	margin-bottom:	-1px;
+}
+div.register #maincontent h2 p {
+	display:		none;
+}
+div.register #maincontent p,
+div.register #contextual p {
+	margin:			0;
+	padding:		0 0 17px 0;
+	font-size:		1.1em;
+	line-height:	1.363em;
+	color:			#777;
+}
+div.register #contextual p.forgot_password {
+	padding-bottom:	10px;
+}
+div.register span.asterisk {
+	color:			#ff2b06;
+}
+div.register #maincontent p em {
+	display:		block;
+}
+div.register form fieldset {
+	border:			none;
+}
+div.register form fieldset legend {
+	display:		none;
+}
+div.register form div.divider {
+	padding:		11px 0 0 0;
+	margin:			0 14px 0 14px;
+	background:		url(../images/border_dotted.gif) repeat-x left top;
+}
+div.register form div.submit {
+	padding:		7px 13px 0 0;
+	margin:			9px 0 0 0;
+	border-top:		6px solid #fff;
+	background:		none;
+}
+div.register form div.divider div {
+	float:			left;
+}
+div.register form div.checkboxes div {
+	margin:			0 0 12px 0;
+	float:			none;
+}
+div.register form div.divider div label {
+	margin:			0 0 6px 0;
+	display:		block;
+	font-size:		1.1em;
+	font-weight:	bold;
+	color:			#545454;
+}
+div.register form div.divider div input.text {
+	margin:			0 14px 14px 0;
+	padding:		2px 4px 0 4px;
+	width:			249px;
+	height:			1.454em;
+	font-size:		1.1em;
+	border:			1px solid #dcdcdc;
+	color:			#777;
+}
+div.register form div.divider div.col2 input.col2 {
+	margin-right:	0;
+}
+div.register form div.divider div.col2 input.text {
+	margin-right:	0;
+}
+div.register form div.divider div select {
+	margin:			0 17px 12px 0;
+	padding:		1px 0 0 0;
+	width:			256px;
+	height:			1.6em;
+	font-size:		1.1em;
+	border:			1px solid #dcdcdc;
+}
+div.register form div.divider div input.zipcode {
+	width:			56px;
+}
+div.register form div.divider div input.city {
+	margin-right:	0;
+	width:			168px;
+}
+div.register form div.divider div input.password {
+	width:			112px;
+}
+div.register form div.divider div input.checkbox {
+	float:			left;
+	margin:			0 7px 0 0;
+	padding:		0;
+	width:			13px;
+	height:			13px;
+}
+div.register form div.checkboxes div {
+	margin:			0 0 6px 0;
+}
+div.register form div.checkboxes div label {
+	margin:			0;
+	float:			left;
+	font-weight:	normal;
+}
+div.register form div.field_information {
+	margin:			0 14px 10px 14px;
+}
+div.register form div.field_information div {
+	margin-top:		0;
+	padding:		0 10px 0 0;
+	float:			left;
+	width:			263px;
+}
+div.register form div.field_information div.col2 {
+	padding:		0;
+	width:			250px;
+}
+div.register #maincontent form div.field_information div p {
+	width:			249px;
+	margin:			0;
+	padding:		0;
+}
+div.register form img.ajax_loader{
+	float:			right;
+	margin:			6px 0 16px 0;
+}
+div.register form input.submit {
+	margin-bottom:	10px;
+}
+/* Verify old accounts */
+div#body.register #contextual {
+	margin:			6px 0 0 0;
+	padding:		0;
+	width:			333px;
+	background:		#f2f2f2;
+}
+div.register #contextual div.heading {
+	padding:		0 14px;
+}
+div.register #contextual form div.divider div {
+	float:			none;
+}
+div.register #contextual form {
+	margin:			7px 0 0 0;
+}
+div.register #contextual form input.text {
+	width:			295px;
+	margin-right:	0;
+}
+div.register #contextual div.other_links {
+	padding:		0 14px;
+}
+div.register #contextual div.other_links h2 {
+	margin:			0 0 11px 0;
+}
+div.register #contextual div.other_links dl {
+	margin:			0 0 1px 0;
+	background-color:#dfdfdf;
+}
+div.register #contextual div.other_links dl dt {
+	float:			left;
+}
+div.register #contextual div.other_links dl dd {
+	float:			left;
+}
+div.register #contextual div.other_links dl dd ul {
+	margin:			5px 0 0 8px;
+	list-style:		none;
+}
+div.register #contextual div.other_links dl dd ul li {
+	font-size:		1.1em;
+	line-height:	1.363em;
+	font-weight:	bold;
+}
+div.register #contextual div.other_links dl dd ul li a {
+	font-weight:	normal;
+}
+
+#registercode input.submit {
+	float:	none;
+	vertical-align: middle;
+	margin:	0px 0px 3px 0px;
+}
+
+/* Contact */
+div#body.contact #contextual {
+	margin-top:		0;
+}
+div.contact #contextual div.address {
+	padding:		6px 0 34px 0;
+	border-bottom:	6px solid #fff;
+	background-color:#e7e3da;
+}
+div.contact #contextual h3 {
+	padding:		0 0 0 14px;
+	font-size:		1.2em;
+	color:			#545454;
+}
+div.contact #contextual div.address ul {
+	display:		inline;
+	float:			left;
+	margin:			10px 79px 0 14px;
+	padding:		0;
+	list-style:		none;
+}
+div.contact #contextual div.address ul.last {
+	margin-right:	0;
+	margin-left:	0;
+}
+div.contact #contextual div.address ul li {
+	display:		inline;
+	font-size:		1.1em;
+	line-height:	1.363em;
+	color:			#545454;
+}
+div.contact #contextual p {
+	padding:		10px 27px 8px 14px;
+}
+div.contact #contextual div.link a {
+	display:		block;
+	padding:		0 0 20px 14px;
+	font-size:		1.1em;
+}
+div.contact textarea#message {
+	width:			523px;
+	padding:		0 4px 0 4px;
+	margin:			0 0 14px 0;
+	height:			12.1em;
+	font-size:		1.1em;
+	border:			1px solid #dcdcdc;
+	color:			#777;
+}
+div.contact form div.divider div.checkbox label {
+	font-weight:	normal;
+}
+div.contact form select {
+	color:			#545454;
+}
+div.contact form select option {
+	padding:		2px 0;
+}
+/* My Account */
+div.myaccount div.subnav {
+	margin:			-21px 0 6px 14px;
+}
+div.myaccount div.subnav a:link,
+div.myaccount div.subnav a {
+	font-size:		1.1em;
+	font-weight:	bold;
+	color:			#545454;
+}
+div.myaccount div.subnav a:hover {
+	color:			#000;
+	text-decoration:underline;
+}
+div.myaccount div.subnav a.selected {
+	color:			#000;
+	font-weight:	bold;
+}
+div.myaccount div.wrap {
+	margin-top:		0;
+	background:		none;
+}
+div.myaccount div.callout div.heading {
+	margin:			0 14px 11px 14px;
+	padding:		18px 0 7px 0;
+	background:		url(../images/border_dotted.gif) repeat-x left bottom;
+}
+div.myaccount div.callout div.heading h2 {
+	float:			left;
+	font-size:		1.4em;
+	font-weight:	normal;
+}
+div.myaccount div.callout div.heading a {
+	float:			right;
+	padding:		2px 0 0 0;
+	font-size:		1.1em;
+}
+div.myaccount div.callout div.col1 div.clearfix div.column {
+	float:			left;
+	display:		inline;
+}
+div.myaccount div.callout div.col1 ul {
+	float:			left;
+	margin:			0;
+	padding:		0;
+	list-style:		none;
+}
+div.myaccount div.callout div.col1 ul li {
+	padding:		0 15px;
+}
+div.myaccount div.callout div.col1 ul li dl {
+	/*display:		inline;*/
+	margin:			0;
+	padding:		0;
+	font-size:		1.1em;
+	line-height:	1.636em;
+}
+div.myaccount div.callout div.col1 ul li dl dt {
+	float:			left;
+	width:			105px;
+	color:			#000;
+}
+div.myaccount div.callout div.col1 ul li dl dd {
+	float:			left;
+	color:			#545454;
+	width:			400px;
+}
+div.myaccount div.callout div.col2 p {
+	font-size:		1.1em;
+	padding:		0 14px 13px 14px;
+	margin:			0;
+}
+div.myaccount form input.save,
+div.myaccount form input.save_account {
+	float:			right;
+}
+div.myaccount form div.submit {
+	padding:		16px 14px 16px 0;
+}
+/* Communication Management */
+div.management div.wrap {
+	background:		url(../images/bg_wrap_comm_mgmt.gif) repeat-y left top;
+}
+div#body.management #maincontent {
+	width:			668px;
+}
+div.management #maincontent p {
+	margin:			0;
+	padding:		10px 14px 0 14px;
+}
+div.management #maincontent ul {
+	margin:			0 0 1px 0;
+	padding:		0;
+	background-color:#e8e8e8;
+	list-style:		none;
+}
+div.management #maincontent ul.title {
+	margin-top:		17px;
+}
+div.management #maincontent ul li {
+	float:			left;
+	font-size:		1.1em;
+	line-height:	4.455em;
+	color:			#545454;
+}
+div.management #maincontent ul.title li {
+	line-height:	3.455em;
+	color:			#313131;
+}
+div.management #maincontent ul li.number {
+	padding:		0 0 0 14px;
+	width:			37px;
+	color:			#313131;
+	font-weight:	bold;
+}
+div.management #maincontent ul li.member {
+	width:			178px;
+}
+div.management #maincontent ul li.email {
+	width:			326px;
+}
+div.management #maincontent ul li.email a {
+	color:			#545454;
+}
+div.management #maincontent ul li.actions {
+	width:			113px;
+}
+div.management #maincontent div.tried_contact {
+	border-top:		6px solid #fff;
+}
+div.management #maincontent div.tried_contact ul li.email {
+	width:			439px;
+}
+/* Sign In */
+div.sign_in #maincontent form div.divider p {
+	float:			left;
+	padding-top:	5px;
+}
+div.sign_in #maincontent form div.divider input.submit {
+	float:			right;
+	margin-top:		0;
+}
+div.sign_in #maincontent form div.divider p.checkbox input {
+	float:			left;
+	height:			15px;
+	width:			15px;
+	margin-left:	-11px;
+}
+div.sign_in #maincontent form div.divider p.checkbox label {
+	float:			left;
+	margin-left:	5px;
+	font-weight:	normal;
+}
+div.sign_in #maincontent form div.divider p {
+	padding-left:	10px;
+	float:			left;
+}
+div.sign_in #contextual div.go p {
+	float:			left;
+	width:			240px;
+	padding-top:	7px;
+}
+
+div.sign_in #contextual div.go input.go {
+	margin-top:		4px;
+}
+
+/* CREATE PROFILE
+--------------------------------*/
+div#body.createprofile #maincontent {
+	padding:		0;
+	margin:			0;
+	width:			900px;
+	background:		none;
+}
+div.createprofile h3 {
+	margin:			0 0 8px 0;
+	padding:		19px 0 7px 0;
+	color:			#000;
+	font-size:		1.4em;
+	font-weight:	normal;
+	background:		url(../images/border_dotted.gif) repeat-x left bottom;
+}
+div.createprofile {
+	margin: 		0;
+	padding:		0;	
+}
+/*dojo autocomplete*/
+div.createprofile #maincontent input.dojoComboBox {
+	font-size:		1.1em!important;
+	margin:			0!important;
+	height:			1.6em!important;
+	color:			#545454!important;	
+	padding:		0px 4px 0 4px!important;
+}
+div.createprofile #maincontent img.dojoComboBox {
+	border:			1px solid #dcdcdc;
+	border-top:		none;
+	border-left:	none;	
+	display:none !important;
+}
+div.dojoComboBoxItem {
+	text-align:		left;
+	font-size:		1.1em;
+}
+div.createprofile #maincontent ul {
+	margin:			0;
+	list-style:		none;
+}
+div.createprofile #maincontent div.wrap1 {
+	background:		url(../images/bg_createprofile_wrap1.gif) repeat-y left top;
+}
+div.createprofile #maincontent div.wrap2 {
+	background:		url(../images/bg_createprofile_wrap2.gif) repeat-y left top;
+}
+div.createprofile #maincontent div.divider {
+	padding-bottom:	12px;
+	background:		url(../images/border_dotted.gif) repeat-x left bottom;
+}
+/* Account Information */
+div.createprofile #maincontent div.accountinfo {
+	float:			left;
+	width:			305px;
+	margin-right:	6px;
+	padding:		0 14px;
+	background-color:#e8e8e8;
+}
+div.createprofile #maincontent div.accountinfo dl dt {
+	/*float:			left;*/
+	font-size:		1.1em;
+	line-height:	1.636em;
+	color:			#000;
+}
+div.createprofile #maincontent div.accountinfo dl dd {
+	float:			left;
+}
+div.createprofile #maincontent div.accountinfo dl dd ul {
+	padding:		6px 0 0 0;
+}
+div.createprofile #maincontent div.accountinfo dl dd ul li {
+	font-size:		1.1em;
+	line-height:	1.636em;
+	color:			#545454;
+}
+/* Preferences */
+div.createprofile #maincontent div.preferences {
+	float:			right;
+	width:			533px;
+	padding:		0 14px 12px 14px;
+	background-color:#e8e8e8;
+}
+div.createprofile #maincontent div.preferences dl.col1 {
+	margin-right:	30px;
+}
+div.createprofile #maincontent div.preferences dl {
+	float:			left;
+	font-size:		1.1em;
+	line-height:	1.36em;
+}
+div.createprofile #maincontent div.preferences dl dt {
+	width:			124px;
+	float:			left;
+	font-weight:	bold;
+	color:			#000;
+}
+div.createprofile #maincontent div.preferences dl dd {
+	float:			left;
+	width:			127px;
+}
+div.createprofile #maincontent div.preferences dl dd ul {
+	margin-top:		-2px;
+}
+div.createprofile #maincontent div.preferences dl dd ul li {
+	margin-bottom:	2px;
+	
+}
+div.createprofile #maincontent div.preferences dl dd ul li input {
+	position:		relative;
+	top:			2px;
+	height:			13px;
+	width:			13px;
+	float:			left;
+}
+div.createprofile #maincontent div.preferences dl dd ul li label {
+	color:			#545454;
+	display:		block;
+	width:			93px;
+	float:			left;
+	padding:		2px 0 0 3px;
+	display:		inline;
+}
+/* Upload Photos */
+div.createprofile #maincontent div.uploadphoto {
+	margin:			6px 0;
+	padding:		0 14px;
+	background-color:#f2f2f2;
+}
+div.createprofile #maincontent div.uploadphoto div.uploadInstructions {
+	margin:			0 30px 0 0;
+	width:			307px;
+	float:			left;
+}
+
+div.createprofile #maincontent div.uploadphoto div.photoWidget {
+	width: 533px;
+	float: right;
+}
+/* Career Information */
+div.createprofile #maincontent div.career {
+	float:			left;
+	width:			305px;
+	margin-right:	6px;
+	padding:		0 14px;
+	background-color:#f2f2f2;
+}
+div.createprofile #maincontent div.career label {
+	font-size:		1.1em;
+	font-weight:	bold;
+	color:			#777;
+}
+div.createprofile #maincontent div.career select {
+	font-size:		1.1em;
+	color:			#777;	
+	margin:			1px 6px 0 0;
+	padding:		1px 0 0 0;
+	width:			262px;
+	height:			1.6em;
+	font-size:		1.1em;
+	border:			1px solid #dcdcdc;
+}
+div.createprofile #maincontent div.career div.divider {
+	margin-bottom:	10px;
+}
+div.createprofile #maincontent div.career div.divider div.clearfix div {
+	float:			left;
+}
+div.createprofile #maincontent div.career div.divider span.additional_instructions {
+	font-size:		1.1em;
+	color:			#777;
+}
+div.createprofile #maincontent div.career div label {
+	display:		block;
+	margin:			0 0 5px 0;
+	color:			#545454;
+}
+div.createprofile #maincontent div.career div label span {
+	font-weight:	normal;
+}
+div.createprofile #maincontent div.career div.country input#zip {
+	margin:			0;
+	width:			42px;
+}
+div.createprofile #maincontent div.career div.selectcity,
+div.createprofile #maincontent div.career div#selectzipcode {
+	margin-top:		10px;
+}
+div.createprofile #maincontent div.career input.text {
+	margin-right:	3px;
+	width:			252px;
+	float:			left;
+}
+div.createprofile #maincontent div.career input.zipcode {
+	float:			none;
+}
+div.createprofile #maincontent div.career input.add {
+	float:			left;
+}
+div.createprofile #maincontent div.career ul {
+	margin:			7px 0 0 0;
+	padding:		0;
+}
+
+div.createprofile #maincontent div.career ul li.selected {
+	font-size:1.4em;
+	font-weight:bold;
+}
+
+div.createprofile #maincontent div.career ul li {
+	margin:			0;
+	padding:		0;
+	font-size:		1.1em;
+	line-height:	1.363em;
+	text-indent:	0;
+	color:			#777;
+}
+div.createprofile #maincontent div.career div.list {
+	margin:			7px 0 0 0;
+}
+div.createprofile #maincontent p {
+	margin:			0;
+	font-size:		1.1em;
+	line-height:	1.363em;
+	color:			#777;
+}
+div.createprofile #maincontent a.edit {
+	padding:		0 0 0 10px;
+}
+div.createprofile #maincontent div.career div.summary ul li {
+	display:		inline;
+}
+div.createprofile #maincontent div.career div.attributes {
+	padding:		0 4px 0 5px;
+	margin:			10px 0 0 0;
+	background-color:#fff;
+}
+div.createprofile #maincontent div.career div.attributes ul {
+	float:			left;
+	width:			141px;
+	list-style:		none;
+	margin:			9px 14px 14px 0;
+	padding:		0;
+}
+div.createprofile #maincontent div.career div.attributes ul.col2 {
+	margin-right:	0;
+}
+div.createprofile #maincontent div.career div.attributes ul li {
+	padding:		0;
+	margin-bottom:	3px;
+}
+div.createprofile #maincontent div.career div.attributes ul li a {
+	display:		block;
+	height:			1.2em;
+	line-height:	1.2em;
+	padding:		0 0 0 18px;
+	color:			#545454;
+}
+div.createprofile #maincontent div.career div.attributes ul li a.selected {
+	background:		#e8e8e8 url(../images/icon_attribute_over.gif) no-repeat 3px 50%;
+	text-decoration:none;
+}
+div.createprofile #maincontent div.career div.attributes ul li a:hover{
+	background-color:#e8e8e8;
+	text-decoration:none;
+}
+div.createprofile #maincontent div.career div.divider div.websitelink {
+	margin-bottom:	13px;
+}
+/* About Me */
+div.createprofile #maincontent div.aboutme {
+	float:			right;
+	width:			533px;
+	padding:		0 14px 2px 14px;;
+	background-color:#f2f2f2;
+}
+div.createprofile #maincontent div.aboutme ul {
+	padding:		0;
+}
+div.createprofile #maincontent div.aboutme ul li {
+	display:		inline;
+	margin-right:	33px;
+	font-size:		1.1em;
+	color:			#545454;
+}
+div.createprofile #maincontent div.aboutme ul li.title {
+	margin-right:	107px;
+}
+div.createprofile #maincontent div.aboutme ul li input {
+	position:		relative;
+	top:			2px;
+	margin:			0 5px 0 0;
+	width: 			13px;
+}
+div.createprofile #maincontent div.aboutme h4 {
+	margin:			11px 0 7px 0;
+	padding:		0 0 0 14px;
+	font-size:		1.1em;
+	color:			#545454;
+	background:		url(../images/blog_talk_bub.gif) no-repeat left 1px;
+}
+div.createprofile #maincontent div.aboutme h4 span {
+	font-weight:	normal;
+}
+/*
+div.createprofile #maincontent div.aboutme input.text {
+	padding:		4px 4px 0 4px;
+	margin:			0;
+	font-size:		1.2em;
+	height:			1.7em;
+}
+
+div.createprofile #maincontent div.aboutme input.text {
+	font-size:		1.1em;
+	height:			1.65em;
+	padding:		2px 4px 0 4px;
+}
+*/
+div.createprofile #maincontent div.aboutme input.text {
+	margin-top: 0pt;
+	margin-right: 14px;
+	margin-bottom: 14px;
+	margin-left: 0pt;
+	padding-top: 2px;
+	padding-right: 4px;
+	padding-bottom: 0pt;
+	padding-left: 4px;
+	width: 249px;
+	height: 1.454em;
+	font-size: 1.1em;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #dcdcdc;
+	color: #777777;
+}
+
+div.createprofile #maincontent div.aboutme textarea {
+	padding:		4px 4px 0 4px;
+	margin:			0;
+	font-size:		1.2em;
+	height:			12.9em;
+	width:			523px;
+	border:			1px solid #dcdcdc;
+	color:			#777;
+}
+div.createprofile #maincontent div.aboutme textarea.short{
+	padding:		4px 4px 0 4px;
+	margin:			0;
+	font-size:		1.2em;
+	height:			5em;
+	width:			523px;
+	border:			1px solid #dcdcdc;
+	color:			#777;
+}
+div.createprofile #maincontent div.aboutme select {
+	font-size:		1.1em;
+	height:			1.8em;
+}
+div.createprofile #maincontent div.aboutme ul.gender {
+	margin-top:		10px;
+}
+div.createprofile #maincontent div.bottom {
+
+	background:		none;
+}
+/* Save Profile */
+div.createprofile #maincontent div.saveprofile {
+	margin:			0 0 6px 0;
+	padding:		15px 13px 12px 0;
+	background:		#f2f2f2;
+	border-top:		6px solid #fff;
+}
+div.createprofile #maincontent div.saveprofile input {
+	float:			right;
+}
+
+/* Photo Selection Module */
+div.createprofile #maincontent ul.photomanager li {
+	float:			left;
+	position:		relative;
+	margin-right:	10px;
+}
+div.createprofile #maincontent ul.photomanager li img {
+    height:			63px;
+}
+div.createprofile #maincontent ul.photomanager li.selected img {
+    height: 		127px;
+}
+div.createprofile #maincontent ul.photomanager li div.actions {
+	position:		absolute;
+	top:			1px;/*1px*/
+	right:			1px;/*1px*/
+	width:			37px;
+	height:			16px;
+	padding:		0 3px;
+}
+
+/* This is the dragging object */
+li.photoasset {
+	list-style: 		none;
+}
+
+li.photoasset div.actions{
+	display:			none;
+}
+
+div.createprofile #maincontent ul.photomanager li div.actions {
+	display:			block;
+}
+
+div.createprofile #maincontent ul.photomanager li div.actions a {
+	text-indent:	-99999px;
+}	
+div.createprofile #maincontent ul.photomanager li div.actions a.delete {
+	display:		none;
+	position:		absolute;
+	top:			0;
+	right:			3px;
+	width:			16px;
+	height:			16px;
+	background:		url(../images/icon_remove.gif) no-repeat 0 0;
+}	
+
+div.createprofile #maincontent ul.photomanager li.hover div.actions a.delete {
+	display:		block;
+}
+
+/* BROWSE PAGES
+--------------------------------*/
+div#body.browseTemplate #maincontent {
+	float:			none;
+	display:		block;
+	padding:		0;
+	margin:			0 0 0 0;
+	width:			900px;
+	background:		none;
+}
+div#body.browseTemplate #maincontent {
+	border-bottom:	3px solid #8e8e8e;
+	background:		url(../images/bg_browse_grad_left.jpg) no-repeat left bottom;
+}
+div#body.homepage #maincontent {
+	border-bottom:	3px solid #ff2b06;
+}
+div#body.homepage h1 {
+	min-height:		0;
+}
+div.homepage #maincontent div.container p.explore {
+	margin-left:	7px;
+	font-size:		1.2em;
+	color:			#777;
+}
+div.browseTemplate h3 {
+	margin:			12px 0 22px 0;
+	font-size:		1.8em;
+	font-weight:	normal;
+	color:			#404040;
+}
+div#body.browseTemplate #maincontent div.container {
+	padding:		0;
+	margin:			0;
+	border-bottom:	2px solid #fff;
+	background:		url(../images/bg_browse_grad_right.jpg) no-repeat right top;
+}
+div.browseTemplate #maincontent div.local {
+	display:		inline;
+	float:			left;
+	width:			148px;
+	margin:			0 0 0 6px;
+	padding:		0 0 50px 0;
+}
+div.browseTemplate #maincontent div.local p {
+	margin:			-11px 0 9px 0;
+	padding:		0;
+	font-size:		1.1em;
+	color:			#777;
+}
+div.browseTemplate #maincontent div.local p.link{
+	margin:			4px 0 0 0;
+	padding:		0;
+	font-size:		1.1em;
+	color:			#777;
+}
+div.browseTemplate #maincontent div.local p.deselect{
+	margin:			-5px 0 8px 0;
+	padding:		0;
+	font-size:		1.1em;
+	color:			#777;
+}
+
+div.browseTemplate #maincontent div.local p.listlink{
+	margin:			-15px 0 25px 0;
+	padding:		0;
+	font-size:		1.1em;
+	color:			#777;
+}
+
+div.browseTemplate #maincontent div.local p.view {
+	margin:			0;
+	font-size:		1em;
+}
+div.browseTemplate #maincontent div.local h3 {
+	margin-bottom:	11px;
+	font-size:		1.4em;
+	font-weight:	normal;
+	color:			#000;
+}
+div.browseTemplate #maincontent div.local ul {
+	list-style:		none;
+	margin:			0 0 25px 0;
+	padding:		0;
+}
+div.browseTemplate #maincontent div.local ul li {
+	padding:		0 0 0 0;
+	margin-bottom:	3px;
+}
+div.browseTemplate #maincontent div.local ul li a {
+	display:		block;
+	height:			13px;
+	padding:		0 0 0 18px;
+	font-size:		1.1em;
+	color:			#545454;
+	background:		url(../images/icon_filter.gif) no-repeat 1px 1px;
+}
+div.browseTemplate #maincontent div.local ul li a.selected {
+	background:		#eaeaea url(../images/icon_filter_over.gif) no-repeat left 1px;
+	text-decoration:none;
+}
+div.browseTemplate #maincontent div.local ul li a:hover {
+	background-color:#eaeaea;
+	text-decoration:none;
+}
+div.browseTemplate #maincontent div.local input.go {
+	display:		block;
+	float:			none;
+	margin:			4px 0 4px 0;
+}
+div.browseTemplate #maincontent div.local p {
+	margin-top:		10px;
+}
+div.browseTemplate #maincontent div.local div.summary ul {
+	margin-left:	14px;
+}
+div.browseTemplate #maincontent div.local div.summary ul li {
+	display:		inline;
+	color:			#777;
+	font-size:		1.1em;
+	line-height:	1.6em;
+}
+
+div.browseTemplate #maincontent div.local div.attributes {
+	padding:		0 0 0 14px;
+	margin:			0 0 0 0;
+}
+div.browseTemplate #maincontent div.local div.attributes ul {
+	float:			left;
+	width:			141px;
+	list-style:		none;
+	margin:			0 14px 14px 0;
+	padding:		0;
+}
+div.browseTemplate #maincontent div.local div.attributes ul.col2 {
+	margin-right:	0;
+}
+div.browseTemplate #maincontent div.local div.attributes ul li {
+	padding:		0;
+	margin-bottom:	3px;
+}
+div.browseTemplate #maincontent div.local div.attributes ul li a {
+	display:		block;
+	height:			1.2em;
+	line-height:	1.2em;
+	padding:		0 0 0 18px;
+	color:			#545454;
+}
+div.browseTemplate #maincontent div.local div.attributes ul li a.selected {
+	background:		#e8e8e8 url(../images/icon_filter_over.gif) no-repeat 1px 1px;
+	text-decoration:none;
+}
+div.browseTemplate #maincontent div.local div.attributes ul li a:hover{
+	background-color:#e8e8e8;
+	text-decoration:none;
+}
+div.browseTemplate #maincontent div.themes_links {
+	position:		relative;
+	bottom:			5px;
+	left:			-4px;
+	margin-left:	10px;
+}
+div.browseTemplate #maincontent div.themes_links a {
+	font-size:		1.1em;
+	line-height:	1.363em;
+}
+div.browseTemplate #maincontent div.browser {
+	float:			right;
+	width:			743px;
+	min-height:		400px;
+}
+div.browseTemplate #maincontent div.browser div.heading {
+	margin:			0 0 6px 0;
+	padding:		0 0 5px 0;
+	background:		url(../images/border_dotted.gif) repeat-x left bottom;
+}
+div.browseTemplate #maincontent div.browser h2 {
+	font-size:		1.1em;
+	line-height:	1.8em;
+	font-weight:	normal;
+	color:			#777;
+}
+div.sortby {
+	float:			right;	
+}
+div.sortby form {
+	margin:			0;
+	padding:		5px 0 0 0;
+}
+div.sortby label {
+	float:			left;
+	font-size:		1.1em;
+	color:			#5b5b5b;
+	line-height:	1.8em;
+}
+div.sortby select {
+	float:			left;
+	border:			1px solid #dcdcdc;
+	width:			164px;
+	height:			1.5em;
+	margin:			0 0 10px 9px;
+	padding:		1px 0 0 0;
+	font-size:		1.1em;
+	color:			#cecece;
+}
+div.browseTemplate #maincontent div.browser dl {
+	float:			left;
+	display:		inline;
+	width:			330px;
+	height:			10.9em;
+	margin:			2px;
+	background-color:#f2f2f2;
+}
+div.browseTemplate #maincontent div.browser dl dt {
+	position:		relative;
+	float:			left;
+	padding:		5px 0 5px 6px;
+	width:			133px;
+}
+div.browseTemplate #maincontent div.browser dl dd {
+	width:			184px;
+	float:			left;
+}
+div.browseTemplate #maincontent div.browser dl dd ul {
+	margin:			7px 0 0 0;
+	padding:		0 0 0 7px;
+	list-style:		none;
+}
+div.browseTemplate #maincontent div.browser dl dd ul li {
+	font-size:		1.1em;
+	line-height:	1.363em;
+}
+div.browseTemplate #maincontent div.browser dl dd ul li h4 {
+	font-size:		1.09em;
+	font-weight:	bold;
+	color:			#191818;
+}
+div.browseTemplate #maincontent div.browser dl dd ul li h4 a {
+	color:			#191818;
+	width:			150px;
+}
+div.browseTemplate #maincontent div.browser dl dd ul li img.new {
+	display:		inline;
+	float:			right;
+	margin:			0 0 0 5px;
+}
+div.browseTemplate #maincontent div.browser dl dd ul li div {
+	padding:		4px 0;
+}
+div.browseTemplate #maincontent div.browser dl dd ul li em {
+	color:			#8C8C8C;
+}
+/* HOME PAGE
+--------------------------------*/
+div.browseTemplate #maincontent div.home_links {
+	position:		relative;
+	bottom:			5px;
+	margin:			75px 0 0 5px;
+}
+div.browseTemplate #maincontent div.home_links div {
+	margin:			0 20px 0 0;
+	font-size:		1.1em;
+	line-height:	1.363em;
+	color:			#777;
+}
+div.browseTemplate div.moreFeatures{
+	margin:			0 0 20px 0;
+}
+
+div.browseTemplate div.moreFeatures ul {
+	float:			left;
+	display:		inline;
+	width:			192px;
+	margin:			21px 33px 0 0;
+	padding:		0;
+	list-style:		none;
+}
+div.browseTemplate div.moreFeatures ul p {
+	font-size:		1.1em;
+}
+div.browseTemplate div.moreFeatures ul.wide {
+	float:			left;
+	display:		inline;
+	width:			422px;
+	margin:			21px 26px 0 7px;
+	padding:		0;
+	list-style:		none;
+}
+div.browseTemplate div.moreFeatures ul.sponsor {
+	background-color:#f2f2f2;
+	margin:			13px 0 0 -9px;
+	padding:		8px 17px 20px 9px;
+	width:			202px;
+}
+div.browseTemplate div.moreFeatures ul li {
+	display:		inline;
+	line-height:	1.6em;
+}
+
+div.browseTemplate div.moreFeatures ul li img {
+	margin:			8px 0 15px 0;
+}
+div.browseTemplate div.moreFeatures ul li h4 {
+	font-size:		1.4em;
+	font-weight:	normal;
+	color:			#000;
+	padding:		0 0 1px 0;
+	margin: 		0;
+}
+
+div.browseTemplate div.moreFeatures ul li h4.bottomborder {
+	font-size:		1.4em;
+	font-weight:	normal;
+	color:			#000;
+	padding:		0 0 10px 0;
+	background:		url('/images/dottedborder_grey.gif') repeat-x bottom left;
+}
+
+div#body.browseTemplate div.moreFeatures ul li p {
+	display:		block;
+	margin:			0;
+	padding:		0;
+	color:			#777;
+}
+div.browseTemplate div.moreFeatures ul li p em,
+div.browseTemplate div.moreFeatures ul li p strong {
+	color:			#000;
+}
+
+div.browseTemplate div.moreFeatures ul.wide li dl.latest{
+	display: 		inline;
+	float: 			left;
+	width:			192px;
+	margin:			0 0 19px 0;
+}
+div.browseTemplate div.moreFeatures ul.wide li dl.marginleft{
+	margin:			0 0 0 30px;
+}
+
+div.browseTemplate div.moreFeatures ul.wide li dl.latest dt{
+	font-size:		1.1em;
+	font-weight:	bold;
+	margin:			9px 0 3px 5px;
+	width:			191px;
+}
+div.browseTemplate div.moreFeatures ul.wide li dl.latest dd{
+	width:			196px;
+}
+
+div.browseTemplate div.moreFeatures ul.wide li dl.latest ul.talks{
+	margin:			0 0 0 0;
+}
+
+div.browseTemplate div.moreFeatures ul.wide li dl.latest ul.talks li{
+	width:			186px;
+	height:			52px;
+	background:		#F5F5F5;
+	float: 			left;
+	display: 		block;
+	margin:			0 0 5px 0;
+	padding:		5px 5px 5px 0;
+	color:			#777;
+}
+div.browseTemplate div.moreFeatures ul.wide li dl.latest ul.talks li p{
+	float:			left;
+	display:		inline;
+	width:			100px;
+}
+div.browseTemplate div.moreFeatures ul.wide li dl.latest ul.talks li p a,
+div.browseTemplate div.moreFeatures ul.wide li dl.latest ul.talks li p a:hover{
+	color:			#000;
+}
+
+div.browseTemplate div.moreFeatures ul.wide li dl.latest ul.talks li p span.black{
+	color:			#191818;
+	font-size:		1em;
+	font-weight:	bold;
+}
+div.browseTemplate div.moreFeatures ul.wide li dl.latest ul.talks li p em{
+	color:			#6C6C6C;
+}
+div.browseTemplate div.moreFeatures ul.wide li dl.latest ul.comments,
+div.browseTemplate div.moreFeatures ul.wide li dl.latest ul.blog{
+	margin: 		0 0 10px 5px;
+	padding:		0;
+}
+/* IE7 Only */
+*+html div.browseTemplate div.moreFeatures ul.wide li dl.latest ul.comments,
+*+html div.browseTemplate div.moreFeatures ul.wide li dl.latest ul.blog{
+	margin-left:	-11px;
+}
+div.browseTemplate div.moreFeatures ul.wide li dl.latest ul.comments li,
+div.browseTemplate div.moreFeatures ul.wide li dl.latest ul.blog li{
+	width:			196px;
+	display: 		block;
+	margin:			0 0 2px 0;
+	color:			#777;
+	font-size:		1.1em;
+}
+
+div.browseTemplate div.moreFeatures ul.wide li dl.latest ul.blog li span.black{
+	color:			#000;
+}
+
+div.browseTemplate div.moreFeatures ul li dl.latest ul.talks li img{
+	float:			left;
+	display:		inline;
+	margin:			0 5px 0 5px;
+}
+div.browseTemplate div.moreFeatures ul li dl.latest ul.talks li img.play_icon {
+	position:		relative;
+	top:			4px;
+	left:			15px;
+	background:		url(../images/play_icon.gif) no-repeat left top;
+}
+
+
+/* BROWSE THEMES
+--------------------------------*/
+div.browseTemplate div.moreThemes {
+	padding:		0 0 15px 10px;
+}
+div.browseTemplate div.moreThemes ul {
+	float:			left;
+	width:			220px;
+	margin:			0 0 0 2px;
+	list-style:		none;
+}
+div.browseTemplate div.moreThemes ul li {
+	font-size:		1.1em;
+	line-height:	1.454em;
+}
+/* Browse Talks */
+div.browseTemplate div.moreTalks {
+	padding:		0 0 30px 10px;
+}
+div.browseTemplate div.moreTalks h3 {
+	margin-bottom:	16px;
+}
+div.browseTemplate div.moreTalks dl {
+	float:			left;
+	display:		inline;
+	margin-left:	2px;
+	width:			220px;
+	font-size:		1.1em;
+}
+div.browseTemplate div.moreTalks dl dt {
+	line-height:	1.36em;
+	padding-bottom:	1px;
+}
+div.browseTemplate div.moreTalks dl dd {
+	padding-bottom:	7px;
+	padding-right:	11px;
+	line-height:	1.36em;
+}
+/* Browse Speakers */
+div#body.browseList #maincontent,
+div#body.browseList #maincontent div.container,
+div#body.browseMembers #maincontent,
+div#body.browseMembers #maincontent div.container {
+	background:		none;
+	border:			0;
+}
+div.browseList #maincontent div.browser,
+div.browseMembers #maincontent div.browser {
+	width:			672px;
+}
+div.browseTemplate #maincontent div.pagination {
+	position:		relative;
+	margin-right:	7px;
+}
+div#body.browseList #maincontent {
+	border-bottom:	none;
+}
+div.browseList #maincontent div.themes_links {
+	float:			left;
+	position:		relative;
+	bottom:			20px;
+	margin:			-15px 0 0 10px;
+}
+
+div.browseList #maincontent div.browser dl dd ul {
+	position:		relative;
+	height: 8.5em;
+}
+
+div.browseList #maincontent div.browser dl dd ul li.border {
+	height:			5px;
+	margin:			0 0 7px 0;
+	background:		url(../images/border_dotted.gif) repeat-x left bottom;
+}
+div.browseList #maincontent div.browser dl dd ul li p{
+	font-size:		1em;
+	line-height:	1.4em;
+	color:			#7E7E7E;
+	margin:			0 0 2px 0;
+}
+div.browseList #maincontent div.browser dl dt img{
+	height:			98px;
+}
+div.browseList #maincontent div.browser dl dt img.play_icon{
+	height:			auto;
+}
+
+div.browseList #maincontent div.browser dl dd ul li p span.size10{
+	font-size:		1em;
+	color:			#000;
+}
+div.browseList #maincontent div.browser dl dd ul li p span.size9{
+	font-size:		1em;
+	color:			#000;
+}
+div.browseList #maincontent div.browser dl dd ul li p span.size8{
+	font-size:		1em;
+	color:			#000;
+}
+div.browseList #maincontent div.browser dl dd ul li p span.size7{
+	font-size:		1em;
+	color:			#000;
+}
+div.browseList #maincontent div.browser dl dd ul li p span.size6{
+	font-size:		1em;
+	color:			#5A5A5A;
+}
+div.browseList #maincontent div.browser dl dd ul li p span.size5{
+	font-size:		1em;
+	color:			#9F9F9F;
+}
+div.browseList #maincontent div.browser dl dd ul li p span.size4{
+	font-size:		1em;
+	color:			#9F9F9F;
+}
+div.browseList #maincontent div.browser dl dd ul li p span.size3{
+	font-size:		1em;
+	color:			#9F9F9F;
+}
+div.browseList #maincontent div.browser dl dd ul li p span.size2{
+	font-size:		1em;
+	color:			#A7A7A7;
+}
+div.browseList #maincontent div.browser dl dd ul li p span.size1{
+	font-size:		1em;
+	color:			#A7A7A7;
+}
+
+div.browseList #maincontent div.browser dl dd ul li p span.first{
+	color:			#000;
+	font-weight:	bold;
+}
+
+div.browseList #maincontent div.browser dl dd ul li p span.last{
+	color:			#A7A7A7;
+}
+
+div.browseList #maincontent div.browser dl dd ul li {
+	line-height:	1.273em;
+}
+div.browseList #maincontent div.browser dl dd ul {
+	height:			98px;
+}
+
+div.browseList #maincontent div.browser dl dd ul li.bottom {
+	position:		absolute;
+	bottom:			0;
+}
+div.browseList #maincontent div.local a {
+	font-size:		1em;
+}
+div.browseList #maincontent div.local p.link {
+	margin-top:		16px;
+}
+div.browseList #maincontent div.browser h2 {
+	padding-bottom:	5px;
+	margin-bottom:	8px;
+	background:		url(../images/border_dotted.gif) repeat-x left bottom;
+}
+/* Browse Members */
+div.browseMembers #maincontent div.heading {
+	margin-bottom:	12px;
+}
+div.browseMembers #maincontent div.heading h2 {
+	float:			left;
+	font-size:		1.1em;
+	font-weight:	normal;
+	line-height:	1.8em;
+	color:			#777;
+}
+div.browseMembers #maincontent div.heading p.create_profile {
+	float:			left;
+	display:		inline;
+	width:			231px;
+	margin:		 	0 0 0 7px;
+	font-size:		1.1em;
+	line-height:	1.8em;
+	background:		#fff;
+}
+/*dojo autocomplete*/
+div.browseMembers #maincontent input.dojoComboBox {
+	font-size:		1.1em!important;
+	margin:			0 0 0 14px !important;
+	height:			1.5em!important;
+	color:			#545454!important;	
+	padding:		2px 4px 0 4px!important;
+}
+div.browseMembers #maincontent img.dojoComboBox {
+	border:			1px solid #dcdcdc;
+	border-top:		none;
+	border-left:	none;
+	display:		none !important;
+}
+div.browseMembers #maincontent div.heading div.browser_heading {
+	float:			left;
+	display:		inline;
+	width:			657px;
+	margin:			0;
+	padding:		0 0 5px 0;
+	background:		url(../images/border_dotted.gif) repeat-x left bottom;
+}
+div.browseMembers #maincontent div.wrap {
+	background:		url(../images/bg_wrap_browsemembers.gif) repeat-y left top;
+}
+div.browseMembers #maincontent div.browser {
+	display:		inline;
+	margin:			0 -2px -2px -4px;
+	border-left:	4px solid #fff;
+}
+div.browseMembers #maincontent div.browser dl {
+	width:			333px;
+	margin:			0;
+	border-bottom:	2px solid #fff;
+	border-right:	2px solid #fff;
+	background:		#f2f2f2;
+}
+div.browseMembers #maincontent div.browser dl dd ul li {
+	color:			#3f3f3f;
+	line-height:	1.273em;
+}
+div.browseMembers #maincontent div.browser dl dd ul li h4 {
+	padding-bottom:	4px;
+	color:			#191818;
+}
+div.browseMembers #maincontent div.browser dl dd ul li div {
+	padding:		0 0 4px 0;
+}
+div.browseMembers #maincontent div.browser dl dd ul li span {
+	color:			#8d8d8d;
+}
+div.browseMembers #maincontent div.pagination {
+	float:			right;
+	margin-top:		12px;
+	margin-bottom:	20px;
+	width:			650px;
+}
+div.browseMembers #maincontent div.local {
+	display:		inline;
+	padding:		0;
+	margin:			-2px 0 0 0;
+	border-right:	4px solid #fff;
+	width:			226px;
+}
+div.browseMembers #maincontent div.local h2 {
+	margin:			21px 14px 15px 14px;
+	padding:		0 0 8px 0;
+	font-size:		1.4em;
+	font-weight:	normal;
+	color:			#000;
+	background:		url(../images/border_dotted.gif) repeat-x left bottom;
+}
+div.browseMembers #maincontent div.local fieldset.filter {
+	margin-top:		-9px;
+}
+div.browseMembers #maincontent div.local p {
+	padding:		0 0 0 14px;
+	margin:			0;
+	font-size:		1.1em;
+	line-height:	1.6em;
+}
+div.browseMembers #maincontent div.local p.attributes {
+	padding-bottom: 10px;
+}
+div.browseMembers #maincontent div.local p strong {
+	color:			#545454;
+}
+div.browseMembers #maincontent div.local p a {
+	font-size:		1em;
+}
+div.browseMembers #maincontent div.local fieldset.search {
+	border-top: 	1px solid #f2f2f2;
+	border-bottom:	6px solid #fff;
+	padding:		0 14px 7px 14px;
+}
+div.browseMembers #maincontent div.local fieldset.search input.text {
+	padding:		2px 5px 0 5px;
+	float:			left;
+	height:			15px;
+	width:			159px;
+	border:			1px solid #d8d8d8;
+	border-right:	none;
+	color:			#cecece;
+	font-size:		11px;
+	font-weight:	bold;
+}
+div.browseMembers #maincontent div.local fieldset.search input.button {
+	float:			left;
+}
+div.browseMembers #maincontent div.local select {
+	border:			1px solid #dcdcdc;
+	width:			189px;
+	height:			1.8em;
+	margin:			9px 0 9px 14px;
+	padding:		2px 0 0 0;
+	font-size:		1.1em;
+	font-weight:	bold;
+	color:			#cecece;
+}
+div.browseMembers #maincontent div.local fieldset.filter input.text {
+	border:			1px solid #dcdcdc;
+	width:			179px;
+	height:			1.6em;
+	margin:			0 0 9px 14px;
+	padding:		3px 4px 0 4px;
+	font-size:		1.1em;
+	font-weight:	bold;
+	color:			#545454;
+}
+div.browseMembers #maincontent div.local div.showonly {
+	margin:			18px 14px 0 14px;
+	padding-bottom:	13px;
+	background:		url(../images/border_dotted.gif) repeat-x left bottom;
+}
+div.browseMembers #maincontent div.local div.showonly input {
+	float:			left;
+	margin:			0;
+	width:			13px;
+	height:			13px;
+}
+div.browseMembers #maincontent div.local div.showonly label {
+	float:			left;
+	width:			158px;
+	margin-left:	9px;
+	font-size:		1.1em;
+	color:			#777;
+}
+div.browseMembers #maincontent div.local fieldset.filter input.go {
+	float:			right;
+	margin:			11px 14px 11px 0;
+}
+
+/* TAGS TEMPLATE
+--------------------------------*/
+div#body.tagsTemplate #maincontent {
+	float:			right;
+	width:			662px;
+	margin:			0 4px 0 0;
+	padding:		0;
+	background:		none;
+}
+div#body.tagsTemplate #local {
+	float:			left;
+	width:			214px;
+	margin:			0 0 0 7px;
+	background:		none;
+}
+div.tagsTemplate #local p {
+	margin:			0;
+	padding:		0;
+	font-size:		1.1em;
+	color:			#777;
+}
+div.tagsTemplate #maincontent h2 {
+	margin:			0 0 13px 0;
+	padding:		0 0 7px 0;
+	font-size:		1.1em;
+	font-weight:	normal;
+	color:			#777;
+	background:		url(../images/border_dotted.gif) repeat-x left bottom;
+}
+div.tagsTemplate #maincontent div.letter {
+	float:			none;
+	margin:			0 0 6px 0;
+	padding:		0 0 8px 0;
+	background:		url(../images/border_dotted_tags.gif) no-repeat left bottom;
+}
+div.tagsTemplate #maincontent div.bottom {
+	background:		none;
+}
+div.tagsTemplate #maincontent div.column {
+	float:			left;
+	width:			220px;
+}
+div.tagsTemplate #maincontent div.letter ul {
+	margin:			0;
+	padding:		23px 0 0 0;
+	list-style:		none;
+}
+div.tagsTemplate #maincontent div.letter ul li {
+	padding:		0 11px 0 9px;
+	font-size:		1.1em;
+	line-height:	1.36em;
+	background:		url(../images/bullet_nominate.gif) no-repeat left 5px;
+}
+div.tagsThemes #maincontent div.talks_atoz div.letter ul li {
+	padding-bottom:	7px;
+}
+div.tagsTemplate #maincontent div.letter h3 {
+	position:		absolute;
+	font-size:		1.8em;
+	font-weight:	normal;
+}
+/* Sub tag */
+
+div#body.subtag #maincontent {
+	float:			none;
+	display:		block;
+	margin:			0 0 0 7px;
+	width:			884px;
+}
+div.tagsTemplate #maincontent h2 {
+	margin:			0 0 6px 0;
+}
+div.subtag #maincontent dl {
+	display:		inline;
+	float:			left;
+	width:			419px;
+	height:			12.1em;
+	margin:			2px;
+	padding:		6px 10px 6px 7px;
+	background-color:#f2f2f2;
+}
+div.subtag #maincontent dl dt {
+	position:		relative;
+	float:			left;
+	width:			161px;
+	height:			12em;
+	margin-right:	11px;
+}
+div.subtag #maincontent dl dd ul {
+	margin:			0;
+	list-style:		none;
+}
+div.subtag #maincontent dl dd ul li {
+	font-size:		1.1em;
+	line-height:	1.363em;
+}
+div.subtag #maincontent dl dd ul li h3 {
+	margin:			0;
+	font-size:		1.09em;
+	color:			#191818;
+}
+div.subtag #maincontent dl dd ul li h3 a {
+	color:			#191818;
+}
+div.subtag #maincontent dl dd ul li div {
+	padding:		3px 0;
+}
+div.subtag #maincontent dl dd ul li em {
+	color:			#6c6c6c;
+}
+
+
+/* COMMENTS TEMPLATE
+--------------------------------*/
+div#body.commentsTemplate #maincontent {
+	float:			left;
+	width:			533px;
+	margin:			-8px 18px 0 10px;
+	padding:		0;
+	background:		none;
+}
+div#body.commentsTemplate #local {
+	float:			right;
+	width:			333px;
+	margin:			-8px 0 0 0;
+	padding:		0;
+	background:		none;
+}
+
+div.commentsTemplate #maincontent ul#commentmenu{
+	list-style:		none;
+	height:			22px;
+	margin:			0 0 14px 0;
+	padding:		0 0 0 0;
+	width:			100%;
+	background:		url('/images/dottedborder_grey.gif') repeat-x bottom left;
+}
+
+div.commentsTemplate #maincontent ul#commentmenu li{
+	display: 		inline;
+	float: 			left;
+	font-size:		1.4em;
+	padding:		0 10px 0 10px;
+	margin:			0;
+}
+div.commentsTemplate #maincontent ul#commentmenu li a.black,
+div.commentsTemplate #maincontent ul#commentmenu li a.black:visited,
+div.commentsTemplate #maincontent ul#commentmenu li a.black:hover{
+	color:				#000;
+	text-decoration:	none;
+}
+
+div.commentsTemplate #maincontent ul#commentmenu li.first{
+	padding:		0 10px 0 0;
+	margin:			0;
+}
+
+div.commentsTemplate #maincontent ul#commentmenu li.separator{
+	color:			#808080;
+	font-size:		1.2em;
+	padding:		0;
+	margin:			0;
+}
+
+div.commentsTemplate #maincontent div.content{
+
+}
+
+div.commentsTemplate #maincontent div.content div.comments{
+	margin:			20px 0 27px 0;
+}
+div.commentsTemplate #maincontent div.content div.comments dl{
+	margin:			10px 0 10px 0;
+}
+div.commentsTemplate #maincontent div.content div.comments dl dt{
+	margin: 		0 0 4px 0;
+}
+
+div.commentsTemplate #maincontent div.content div.comments dl dt p{
+	margin:			0;
+}
+div.commentsTemplate #maincontent div.content div.comments dl dt p a,
+div.commentsTemplate #maincontent div.content div.comments dl dt p a:hover{
+	color:			#000;
+	text-decoration: none;
+}
+
+div.commentsTemplate #maincontent div.content div.comments dl dd p{
+	margin: 		0;
+	color:			#808080;
+}
+div.commentsTemplate #maincontent div.content div.comments dl dd p span.date{
+	color:			#777;
+}
+
+div.commentsTemplate #maincontent div.content div.comments dl dt p img{
+	float:			left;
+	display:		inline;
+	margin:			2px 5px 0 0;
+}
+
+div.commentsTemplate #maincontent div.content p{
+	font-size:		1.1em;
+	line-height:	1.4em;
+}
+
+div.commentsTemplate #local h3{
+	width:			100%;
+	font-size:		1.4em;
+	font-weight:	normal;
+	margin:			0 0 14px 0;
+	padding:		0 0 6px 0;
+	background:		url('/images/dottedborder_grey.gif') repeat-x bottom left;
+}
+
+div.commentsTemplate #local div.themes{
+	margin:			0 0 15px 0;
+}
+
+div.commentsTemplate #local div.themes dl{
+	background:		#F5F5F5;
+	padding:		5px;
+	height:			99px;
+	margin:			0 0 5px 0;
+}
+div.commentsTemplate #local div.themes dl dt{
+	float:			left;
+	display:		inline;
+	position:		relative;
+	width:			132px;
+}
+
+div.commentsTemplate #local div.themes dl dd{
+	float:			left;
+	display:		inline;
+	width:			169px;
+	margin:			0 0 0 10px;
+}
+
+div.commentsTemplate #local div.themes dl dd p{
+	font-size:		1.1em;
+	line-height:	1.4em;
+	color:			#000;
+	margin:			0 0 5px 0;
+}
+
+div.commentsTemplate #local div.themes dl dd p a,
+div.commentsTemplate #local div.themes dl dd p a:hover,
+div.commentsTemplate #local div.themes dl dd p a:visited{
+	color:			#000;
+}
+
+div.commentsTemplate #local div.themes dl dd p em{
+	color:			#6C6C6C;
+}
+
+div.commentsTemplate #local div.talks{
+	margin:			0 0 15px 0;
+}
+
+div.commentsTemplate #local div.talks dl{
+	background:		#F5F5F5;
+	padding:		5px;
+	height:			99px;
+	margin:			0 0 5px 0;
+}
+div.commentsTemplate #local div.talks dl dt{
+	float:			left;
+	display:		inline;
+	position:		relative;
+	width:			132px;
+}
+
+div.commentsTemplate #local div.talks dl dd{
+	float:			left;
+	display:		inline;
+	width:			174px;
+	margin:			0 0 0 10px;
+}
+
+div.commentsTemplate #local div.talks dl dd p{
+	font-size:		1.1em;
+	line-height:	1.4em;
+	color:			#000;
+	margin:			0 0 2px 0;
+}
+div.commentsTemplate #local div.talks dl dd img.new{
+	display:		inline;
+	float:			right;
+	margin:			0 0 0 5px;
+}
+div.commentsTemplate #local div.talks dl dd p.border{
+	height:			5px;
+	margin:			0 0 7px 0;
+	background:		url(../images/border_dotted.gif) repeat-x left bottom;
+}
+
+div.commentsTemplate #local div.talks dl dd p span.size10{
+	font-size:		1em;
+	color:			#000;
+}
+div.commentsTemplate #local div.talks dl dd p span.size9{
+	font-size:		1em;
+	color:			#000;
+}
+div.commentsTemplate #local div.talks dl dd p span.size8{
+	font-size:		1em;
+	color:			#5A5A5A;
+}
+div.commentsTemplate #local div.talks dl dd p span.size7{
+	font-size:		1em;
+	color:			#5A5A5A;
+}
+div.commentsTemplate #local div.talks dl dd p span.size6{
+	font-size:		1em;
+	color:			#5A5A5A;
+}
+div.commentsTemplate #local div.talks dl dd p span.size5{
+	font-size:		1em;
+	color:			#9F9F9F;
+}
+div.commentsTemplate #local div.talks dl dd p span.size4{
+	font-size:		1em;
+	color:			#9F9F9F;
+}
+div.commentsTemplate #local div.talks dl dd p span.size3{
+	font-size:		1em;
+	color:			#9F9F9F;
+}
+div.commentsTemplate #local div.talks dl dd p span.size2{
+	font-size:		1em;
+	color:			#A7A7A7;
+}
+div.commentsTemplate #local div.talks dl dd p span.size1{
+	font-size:		1em;
+	color:			#A7A7A7;
+}
+
+div.commentsTemplate #local div.talks dl dd p span.first{
+	color:			#000;
+	font-weight:	bold;
+}
+
+div.commentsTemplate #local div.talks dl dd p span.last{
+	color:			#A7A7A7;
+}
+
+
+div.commentsTemplate #local div.talks dl dd p em.date{
+	color:			#9D9D9D;
+}
+
+div.commentsTemplate #local div.talks dl dd p a,
+div.commentsTemplate #local div.talks dl dd p a:hover,
+div.commentsTemplate #local div.talks dl dd p a:visited{
+	color:			#000;
+}
+
+div.commentsTemplate #local div.talks dl dd p em{
+	color:			#6C6C6C;
+}
+
+
+
+
+/* 404 ERROR
+-------------------------------*/
+div#body.fourohfour #maincontent {
+	float:			none;
+	display:		block;
+	padding:		0;
+	margin:			0 0 0 0;
+	width:			463px;
+	background:		none;
+}
+div.fourohfour #maincontent p,
+div.fourohfour #maincontent h2,
+div.fourohfour #maincontent h3 {
+	margin:			0 0 0 14px;
+}
+div.fourohfour #maincontent h2 {
+	font-size:		1.5em;
+}
+div.fourohfour #maincontent h3 {
+	padding:		14px 0 6px 0;
+	font-size:		1.3em;
+	color:			#545454;
+}
+div.fourohfour #maincontent p {
+	font-size:		1.1em;
+	line-height:	1.363em;
+	color:			#777;
+}
+div.fourohfour #maincontent ul {
+	margin:			0 0 14px 0;
+	padding:		0 0 0 14px;
+	list-style:		none;
+}
+div.fourohfour #maincontent ul li {
+	font-size:		1.1em;
+	line-height:	1.363em;
+}
+
+
+/* PAGINATION
+--------------------------------*/
+#maincontent div.pagination {
+	margin:			7px 0 0 0;
+	padding:		11px 0 20px 0;
+	background:		url(../images/border_dotted.gif) repeat-x left top;
+}
+#maincontent div.pagination p {
+	float:			left;
+	padding:		0;
+	margin:			0;
+	font-size:		1.1em;
+	color:			#777;
+}
+#maincontent div.pagination ul {
+	float:			right;
+	margin:			0;
+	padding:		0;
+}
+#maincontent div.pagination ul li {
+	display:		inline;
+	font-size:		1.1em;
+	color:			#777;
+	padding:		0;
+}
+#maincontent div.pagination ul li a {
+	padding:		0 4px 0 4px;
+}
+#maincontent div.pagination ul li a.selected {
+	color:			#777;
+}
+
+/* TED CONFERENCES
+--------------------------------*/
+div.tedconferences #maincontent div.divider {
+	margin-bottom:	22px;
+	padding-bottom:	15px;
+	background:		url(../images/border_dotted.gif) repeat-x left bottom;
+}
+div.tedconferences #maincontent p {
+	margin:			0;
+	font-size:		1.6em;
+	line-height:	1.375em;
+	color:			#777;
+}
+div.tedconferences #maincontent dl {
+	margin-bottom:	4px;
+	background-color:#f2f2f2;
+}
+div.tedconferences #maincontent dl dt {
+	float:			left;
+	width:			260px;
+}
+div.tedconferences #maincontent div.conf_modules dl dt {
+	padding-top:	14px;
+	padding-left:   15px;
+}
+div.tedconferences #maincontent dl dd {
+	width:			299px;
+	padding:		14px 0 0 15px;
+	float:			left;
+}
+div.tedconferences #maincontent dl dd h2,
+div.tedconferences #maincontent dl dd h3 {
+	padding:		0 0 4px 0;
+	font-size:		1.2em;
+	color:			#191818;
+}
+div.tedconferences #maincontent dl dd h2 a,
+div.tedconferences #maincontent dl dd h3 a {
+	color:			#191818;
+}
+div.tedconferences #maincontent dl dd h3 {
+	padding-bottom:	0;
+}
+div.tedconferences #maincontent dl dd p {
+	padding:		5px 28px 5px 0;
+	font-size:		1.1em;
+	line-height:	1.273em;
+}
+div.tedconferences #maincontent dl dd ul {
+	margin:			4px 0 0 0;
+	padding:		0;
+	list-style:		none;
+}
+div.tedconferences #maincontent dl dd ul li {
+	font-size:		1.1em;
+	line-height:	1.363em;
+}
+/* Past TEDs */
+div.pastteds #maincontent dl dt {
+	width:			220px;
+}
+div.pastteds #maincontent dl dd {
+	padding:		9px 0 0 15px;
+	width:			356px
+}
+div.pastteds #maincontent dl dd h2 {
+	padding-bottom:	2px;
+}
+div.pastteds #maincontent dl dd p {
+	padding:		3px 28px 3px 0;
+}
+div.pastteds #maincontent dl dd ul li {
+	padding:		0 0 0 2px;
+	display:		inline;
+	color:			#777;
+}
+div.pastteds #maincontent dl dd ul li a {
+	padding:		0 2px 0 0;
+	background:		none;
+}
+/* TED2006 */
+div.ted2006 #maincontent div.divider {
+	margin:			0 0 17px 0;
+	padding:		0 0 16px 0;
+}
+div.ted2006 #maincontent div.divider h2 {
+	font-size:		2.4em;
+	color:			#000;
+	margin-top:		38px;
+}
+div.ted2006 #maincontent p {
+	width:			350px;
+	padding-bottom:	20px;
+}
+div.ted2006 #maincontent p.link {
+	font-size:		1em;
+}
+div.ted2006 #maincontent p.link a {
+	font-size:		1.1em;
+}
+div.ted2006 #maincontent div.clearfix div {
+	float:			left;
+}
+div.ted2006 #maincontent img {
+	float:			right;
+}
+
+/* NOMINATE STYLES
+--------------------------------*/
+div.nominate div.wrap_nominate {
+	margin-bottom:	6px;
+	background:		url(../images/bg_wrap_nominate.gif) repeat-y left top;
+}
+div.nominate div.wrap_nominate h2 {
+	margin:			0 0 0 14px;
+	padding:		17px 0 0 0;
+	font-size:		1.4em;
+	font-weight:	normal;
+}
+div.nominate #local #sublocalnav {
+	margin:			15px 7px 0 7px;
+}
+div.nominate #local #sublocalnav ul {
+	list-style:		none;
+	padding-bottom: 14px;
+}
+div.nominate #local #sublocalnav ul li {
+	font-size:		1.1em;
+	line-height:	1.6em;
+	margin-bottom:	1px;
+}
+div.nominate #local #sublocalnav ul li a {
+	padding:		0 7px;
+	height:			1%;
+	color:			#545454;
+	text-decoration:none;
+}
+div.nominate #local #sublocalnav ul li a.selected,
+div.nominate #local #sublocalnav ul li a:hover {
+	display:		block;
+	background:		#dfdfdf;
+}
+div#body.nominate #maincontent {
+	width:			663px;
+	padding:		0 0 0 237px;
+	margin:			0;
+}
+div.nominate h2 {
+	font-size:		1.1em;
+	color:			#000;
+	padding:		0 0 7px 14px;
+}
+div.nominate h2 span {
+	font-weight:	normal;
+	color:			#777;
+}
+div.nominate #maincontent div.contentArea1 {
+	float:			left;
+	width:			304px;
+	padding:		15px 0 0 9px;
+}
+div.nominate #maincontent div.contentArea2 {
+	float:			left;
+	width:			311px;
+	padding:		15px 0 0 14px;
+}
+div.nominate #maincontent div.contentArea3 {
+	
+}
+div.nominate #maincontent div.contentArea3 div.border{
+	height:			6px;
+	background:		#fff;
+	width:			100%;
+}
+
+div.nominate #maincontent div.contentArea3 p {
+	font-size:		1.1em;
+	padding:		0 0 7px 0;
+	margin:			0;
+}
+
+div.nominate #maincontent div.contentArea3 p.header {
+	font-size:		1.4em;
+	padding:		7px 14px 7px 14px;
+	margin:			0;
+}
+
+div.nominate #maincontent div.contentArea3 p.black {
+	font-size:		1.1em;
+	padding:		0 14px 7px 14px;
+	margin:			0;
+	color:			#000;
+}
+
+div.nominate #maincontent div.contentArea3 p.padding {
+	font-size:		1.1em;
+	padding:		0 14px 7px 14px;
+	margin:			0;
+}
+
+
+div.nominate #maincontent div.contentArea3 p strong {
+	font-weight:	normal;
+	color:			#000;
+}
+
+div.nominate #maincontent div.contentArea3 p.note {
+	font-size:		1em;
+	font-style:		italic;
+	padding:		7px 14px 7px 14px;
+}
+
+div.nominate #maincontent div.contentArea3 p.notice {
+	font-size:		1.1em;
+	padding:		7px 14px 7px 14px;
+}
+div.nominate #maincontent p {
+	margin:			0 0 14px 0;
+	padding:		0;
+	font-size:		1.1em;
+	line-height:	1.273em;
+	color:			#777;
+}
+
+div.nominate #maincontent h3 {
+	padding:		0 0 16px 0;
+	font-size:		1.2em;
+	color:			#474747;
+}
+div.nominate #maincontent h4 {
+	padding:		0 0 4px 8px;
+	background:		url(../images/bullet_nominate.gif) no-repeat left 6px;
+	font-size:		1.2em;
+	color:			#474747;
+}
+div.nominate #maincontent h5 {
+	padding:		0 0 4px 14px;
+	font-size:		1.1em;
+	font-weight:	normal;
+	color:			#474747;
+}
+div.nominate #maincontent ul {
+	margin:			0;
+	padding:		0;
+	list-style:		none;
+	
+}
+/* Nominate Form */
+div.nominate_form div.wrap_nominate {
+	background:		url(../images/bg_wrap_nominate_form.gif) repeat-y left top;
+}
+div#body.nominate_form #maincontent {
+	padding:		0 0 0 232px;
+	width:			665px;
+}
+
+div#body.nominate_form #local {
+	margin-left:	-897px;
+}
+div.nominate_form #maincontent h2,
+div.nominate_form #maincontent h3 {
+	margin:			10px 26px 8px 14px;
+	padding:		0;
+	font-size:		1.4em;
+	font-weight:	normal;
+	color:			#545454;
+}
+div.nominate_form #maincontent h2 span,
+div.nominate_form #maincontent h3 span {
+	color:			#000;
+}
+div.nominate_form #maincontent h2.blackerror{
+	font-size:		1.1em;
+	padding:		0 28px 0 0;
+}
+
+div.nominate_form #maincontent #form_signin,
+div.nominate_form #maincontent #form_verify {
+	padding:		0 0 10px 0;
+}
+
+div.nominate_form #maincontent p{
+	margin:			3px 26px 10px 14px;
+}
+
+div.nominate_form #maincontent span.asterisk {
+	color:			#ff2b06;
+}
+div.nominate_form #maincontent em {
+	display:		block;
+	margin:			3px 0 9px 0;
+	padding:		0;
+	font-size:		1.1em;
+	line-height:	1.363em;
+	color:			#777;
+}
+div.nominate_form #maincontent div.divider {
+	margin:			0 26px 0 14px;
+	padding:		10px 0 0 0;
+	background:		url(../images/border_dotted.gif) repeat-x left top;
+}
+
+div.nominate_form #maincontent div.padding{
+	padding-bottom:	15px;
+}
+
+div.nominate_form #maincontent div.paddingtop{
+	padding:		10px 0 10px 0;
+}
+
+div.nominate_form #maincontent div.divider p {
+	width:			297px;
+}
+
+div.nominate_form #maincontent div.divider p.long {
+	width:			642px;
+}
+
+div.nominate_form #maincontent div.divider2 {
+	margin:			0;
+	padding:		10px 0 0 14px;
+	border-top:		1px solid #fff;
+}
+div.nominate_form #maincontent div.part2_wrap {
+	margin-bottom:	16px;
+	border-bottom:	1px solid #fff;
+	background-color:#dedad1;
+}
+div.nominate_form #maincontent form div.divider div,
+div.nominate_form #maincontent form div.divider2 div {
+	float:			left;
+}
+div.nominate_form #maincontent form div label {
+	margin:			0 0 6px 0;
+	display:		block;
+	font-size:		1.1em;
+	font-weight:	bold;
+	color:			#545454;
+}
+div.nominate_form #maincontent form div div.textarea_label label {
+	display:		inline;
+}
+div.nominate_form #maincontent form div div.textarea_label {
+	float:			none;
+	width:			297px;
+	height:			3.3em;
+}
+div.nominate_form #maincontent form div.checkboxes {
+	margin:			0 26px 0 14px;
+}
+div.nominate_form #maincontent form div.checkboxes div {
+	margin:			0 0 6px 0;
+}
+div.nominate_form #maincontent form div.checkboxes div input {
+	width:			13px;
+	height:			13px;
+	float:			left;
+	padding:		0 10px 0 0;
+}
+div.nominate_form #maincontent form div.checkboxes div label {
+	float:			left;
+	margin:			0;
+	padding:		0 0 10px 10px;
+	display:		block;
+	font-weight:	normal;
+}
+div.nominate_form #maincontent form div.checkboxes div label.wrap {
+	float:			left;
+	padding:		0 0 10px 10px;
+	width:			590px;
+	display:		block;
+}
+div.nominate_form #maincontent form div div.large {
+	height:			4.45em;
+}
+div.nominate_form #maincontent form div textarea,
+div.nominate_form #maincontent form div input.text {
+	margin:			0 14px 14px 0;
+	padding:		2px 4px 0 4px;
+	width:			295px;
+	height:			1.454em;
+	font-size:		1.1em;
+	border:			1px solid #dcdcdc;
+	color:			#777;
+}
+
+div.nominate_form #maincontent form div input.inlinesubmit {
+	margin:			20px 0 0 258px;
+	float:			none;
+}
+div.nominate_form #maincontent form div input.upsubmit {
+	margin:			-26px 0 0 0;
+}
+
+div.nominate_form #maincontent form div select.dropdown{
+	margin:			0 14px 14px 0;
+}
+div.nominate_form #maincontent form div textarea {
+	height:			6.727em; /* ~74px = 10px * (6.727em * 1.1em) */
+}
+div.nominate_form #maincontent form div textarea.notasbig {
+	height:			3.35em;
+}
+div.nominate_form #maincontent form div.wide textarea {
+	width:			618px;
+}
+div.nominate_form #maincontent form div.wide div.textarea_label {
+	width:			440px;
+}
+
+div.nominate_form #maincontent form div.wide div ul {
+	margin-top:		-2px;
+}
+div.nominate_form #maincontent form div.wide div ul li {
+	margin-bottom:	2px;
+	
+}
+div.nominate_form #maincontent form div.wide div ul li input {
+	position:		relative;
+	top:			2px;
+	height:			13px;
+	width:			13px;
+	float:			left;
+}
+div.nominate_form #maincontent form div.wide div ul li label {
+	color:			#545454;
+	display:		block;
+	float:			left;
+	padding:		2px 0 0 3px;
+	display:		inline;
+}
+
+
+
+
+
+
+
+
+div.nominate_form #maincontent form div.col2 input.col2 {
+	margin-right:	0;
+}
+div.nominate_form #maincontent form div.col2 textarea,
+div.nominate_form #maincontent form div.col2 input.text {
+	margin-right:	0;
+}
+div.nominate_form #maincontent form div select {
+	padding:		0 0 0 4px;
+	width:			305px;
+	font-size:		1.1em;
+	height:			1.6em;
+	border:			1px solid #dcdcdc;
+}
+div.nominate_form #maincontent form div div.state_zipcode input#state,
+div.nominate_form #maincontent form div div.state_zipcode input#billing_state,
+div.nominate_form #maincontent form div div.state_zipcode input#bookclub_state {
+	width:			66px;
+	margin-right:	12px;
+}
+div.nominate_form #maincontent form div div.state_zipcode input#zipcode,
+div.nominate_form #maincontent form div div.state_zipcode input#billing_zipcode,
+div.nominate_form #maincontent form div div.state_zipcode input#bookclub_zipcode {
+	width:			205px;
+}
+div.nominate_form #maincontent form fieldset.part1,
+div.nominate_form #maincontent form fieldset.part2,
+div.nominate_form #maincontent form fieldset.part3 {
+	margin-top:		12px;
+	border-top:		0 solid #e7e3da; /* set to 0 with a color to fix border showing in ie */
+}
+div.nominate_form #maincontent form fieldset.part1,
+div.nominate_form #maincontent form fieldset.part2,
+div.nominate_form #maincontent form fieldset.part3 {
+	border-bottom:	6px solid #fff;
+}
+div.nominate_form #maincontent form fieldset.part2 {
+	margin-top:		12px;
+}
+div.nominate_form #maincontent form div.submit {
+	height:			5em;
+}
+div.nominate_form #maincontent form div.submit p {
+	float:			right;
+	padding:		18px 28px 0 0;
+	margin-left:	-21px;
+}
+div.nominate_form #maincontent form div.submit input.submit {
+	margin:			14px 28px 0 0;
+}
+
+div.nominate_form #maincontent div.siginbox{
+	width:			287px;
+	height:			240px;
+	background-color:#eee;
+	border:			#ccc solid 1px;
+	margin:			0 0 10px 15px;
+	float:			right;
+	display:		inline;
+}
+
+div.nominate_form #maincontent #signinform{
+	width:			287px;
+	position:		relative;
+	top:			-492px;
+	left:			350px;
+	height:			0;
+	margin:			0;
+	padding:		0;
+}
+
+div.nominate_form #maincontent #signinform fieldset{
+	width:			287px;
+	height:			0;
+	margin:			0;
+	padding:		0;
+}
+
+div.nominate_form #maincontent #signinform p{
+	width:			255px;
+	margin:			-3px 14px 10px 14px;
+	padding:		0;
+	font-size:		1.1em;
+}
+
+div.nominate_form #maincontent #signinform form{
+	height:			0;
+	margin:			0;
+	padding:		0;
+}
+
+div.nominate_form #maincontent #signinform form input.submit{
+	position:		relative;
+	left:			-6px;
+	top:			-5px;
+}
+
+div.nominate_form #maincontent #signinform input{
+	width:			240px;
+}
+
+/* Nominate Speaker */
+div#body.nominate_speaker #maincontent {
+	padding-left:	0;
+	background:		none;
+}
+div.nominate_speaker div.wrap_nominate {
+	background:		url(../images/bg_wrap_nominate_speaker.gif) repeat-y left top;
+}
+div.nominate_speaker #maincontent div.suggest {
+	padding:		17px 240px 15px 14px;
+	border-bottom:	6px solid #fff;
+	background-color:#dbdbdb;
+}
+div.nominate_speaker #maincontent div.suggest p {
+	margin:			0;
+	padding:		0;
+	font-size:		1.8em;
+	color:			#777;
+}
+div.nominate_speaker #maincontent form div.divider {
+	margin-left:	14px;
+}
+
+/* SEARCH TEMPLATE
+--------------------------------*/
+div#body.searchTemplate #maincontent {
+	width:			562px;
+	padding:		0;
+	margin:			0;
+	background:		none;
+}
+div#body.searchTemplate #contextual {
+	width:			332px;
+	margin-left:	6px;
+	background:		#fff;
+}
+div.searchTemplate div.wrap {
+	margin-bottom:	6px;
+	padding-bottom:	30px;
+	padding:		10px 0 30px 14px;
+	background:		url(../images/bg_wrap_viewtemplate.gif) repeat-y left top;
+}
+div.searchTemplate h2 {
+	width:			534px;
+	padding:		0 0 6px 0;
+	margin:			0 0 10px 0;
+	font-size:		1.1em;
+	font-weight:	normal;
+	color:			#777;
+	background:		url(../images/border_dotted.gif) repeat-x left bottom;
+}
+div.searchTemplate #maincontent dl dt {
+	padding:		0 0 3px 0;
+}
+div.searchTemplate #maincontent dl dt a {
+	font-size:		1.2em;
+	font-weight:	bold;
+	color:			#000;
+}
+div.searchTemplate #maincontent dl dd ul {
+	margin:			0 0 10px 0;
+	padding:		0;
+	list-style:		none;
+}
+div.searchTemplate #maincontent dl dd li {
+	padding:		0 20px 0 0;
+	color:			#777;
+	font-size:		1.1em;
+	line-height:	1.363em;
+}
+
+/* BACKEND STYLES
+--------------------------------*/
+div.template {
+	position:		relative;
+	display:		block;
+	height:			450px; 
+	width:			450px;
+}
+div.template a {
+	display:		block;
+	font-size:		1.6em;
+	font-weight:	bold;
+	color:			#666666;
+	background:		#93c7d4;
+	text-align:		center;
+}
+div.template a:hover {
+	background:		#ffffcc;
+}
+div.templateSample1 {
+	background: 	url(../images/templateSample1.jpg) no-repeat top left;
+}
+div.templateSample1 a.area1 {
+	position:		absolute;
+	top:			98px;
+	left:			154px;
+	height:			74px; 
+	width:			297px; 
+}
+div.templateSample1 a.area2 {
+	position:		absolute;
+	top:			193px;
+	left:			154px;
+	height:			134px; 
+	width:			297px;
+}
+div.templateSample2 {
+	background: 	url(../images/templateSample1.jpg) no-repeat top left;
+}
+div.templateSample2 a.area1 {
+	position:		absolute;
+	top:			98px;
+	left:			154px;
+	height:			74px; 
+	width:			297px; 
+}
+div.templateSample2 a.area2 {
+	position:		absolute;
+	top:			193px;
+	left:			154px;
+	height:			200px; 
+	width:			145px; 
+}
+div.templateSample2 a.area3 {
+	position:		absolute;
+	top:			193px;
+	left:			306px;
+	height:			200px; 
+	width:			145px; 
+}
+
+/* form controls */
+label.formItemLabel {
+	margin-top: 0pt;
+	margin-right: 0pt;
+	margin-bottom: 6px;
+	margin-left: 0pt;
+/*	display: block; */
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #545454;	
+}
+input.formTextInput {
+	margin-top: 0pt;
+	margin-right: 14px;
+	margin-bottom: 14px;
+	margin-left: 0pt;
+	padding-top: 2px;
+	padding-right: 4px;
+	padding-bottom: 0pt;
+	padding-left: 4px;
+	width: 249px;
+	height: 1.454em;
+	font-size: 1.1em;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #dcdcdc;
+	border-right-color: #dcdcdc;
+	border-bottom-color: #dcdcdc;
+	border-left-color: #dcdcdc;
+	color: #777777;
+}
+span.errorMessage {
+	color: #ff0000;
+}
+
+div.hr {
+		margin-top: 10px;
+		height: 15px;
+		background-color: transparent;
+		background-image: url(../images/border_dotted.gif);
+		background-repeat: repeat-x;
+		background-attachment: scroll;
+}
+div.hr hr {
+	display: none;
+}
+
+div.vr {
+	width: 6px; 
+	float:left;
+}
+
+div#signinHolder { 
+	height: 500px;
+}
+
+div.columnInMain_3 {
+	 width: 217px; 
+	 height: 100%; 
+	 float: left; 	
+	 background-color: #e8e8e8;
+}
+
+div.box {
+	clear: both;
+	background-color: #e8e8e8;
+}
+
+div.boxContent {
+	padding: 15px 10px 15px 10px;
+}
+
+
+div#selectcountry select {
+	margin: 0pt 17px 12px 0pt;
+	padding: 1px;
+	width: 256px;
+	height: 1.6em;
+	font-size: 1.1em;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #dcdcdc;
+}
+div#selectcountry label, div#selectcity label, div#selectzipcode label {
+	margin: 0pt 0pt 6px 0pt;
+	display: block;
+	font-weight: bold;
+	color: #545454;
+}

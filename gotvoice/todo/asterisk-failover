@@ -1,0 +1,5 @@
+verify call ins work on isis and lime
+netork/asterisk issue(s)
+   understand effect of firewall rules on incoming and outgoing packets
+   sniff asterisk conversation
+verify asterisk failover is bad    

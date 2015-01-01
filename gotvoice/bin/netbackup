@@ -1,0 +1,7 @@
+for host
+do echo $host
+[ -d $host ] || mkdir $host
+cd $host
+ssh -l root $host tar -C / -czf - etc usr/local >$host.tgz   
+cd ..
+done

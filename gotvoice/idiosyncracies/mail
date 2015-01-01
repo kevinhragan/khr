@@ -1,0 +1,2 @@
+add MANPATH /opt/zimba/*/man to /etc/man.conf
+need alias for zimbra in /etc/aliases (?)

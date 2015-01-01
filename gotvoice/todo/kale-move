@@ -1,0 +1,9 @@
+update dns
+update hosts network config
+cable to correct switch
+reconfig virtual ip config on kale
+    /etc/ha.d/ha.cf
+    /etc/ha.d/haresources
+    /etc/ha.d/conf/ldirectord.cf
+
+reconfig virtual ip config on peach

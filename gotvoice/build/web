@@ -1,0 +1,17 @@
+aptitude install apache libapache-mod-php5 php5 php5-mysql php5-curl
+vi /etc/apache/httpd.conf
+    change User to 'gv'
+
+php:
+vi /etc/php5/apache/php.ini
+contol:     /magic_quotes_gpc/s/On/Off/
+
+
+add lame
+
+# NFS ( this is for spoolers only?  Why in web build )
+mkdir -p spool/<spooler>
+chown -R spool gv.users
+vi /etc/fstab
+    <spooler1>:/var/gv/spool/logs /var/gv/spool/<spooler1> nfs defaults 0 0
+

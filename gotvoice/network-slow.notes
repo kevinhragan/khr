@@ -1,0 +1,8 @@
+bug shows up on scp test to hawaii:
+tefnut:~$ scp 1M makahalr:
+
+ok hawaii -> test
+ok test -> production
+ok production -> test
+ok test -> hw
+ok hw -> test

@@ -1,0 +1,30 @@
+# add ipsec rules to bypass kirkland
+
+     
+created edited versions of racoon.conf and ipsec-tools.conf on
+osiris and osiris2
+add RCS dirs in /etc and /etc/racoon; checkin originals
+
+at magic hour: 
+turn off nagios (?)
+on osiris:
+  mv /etc/racoon/racoon.conf.new; /etc/init.d/racoon restart
+  tail -50 /var/log/deamon.log
+  setkey -D
+  setkey -DP
+dup above on osiris2
+another restart on osiris?
+
+
+mv /etc/ipsec-tools.conf.new /etc/ipsec-tools.conf; /etc/init.d/ipsec restart
+ping times
+turn on nagios
+
+try no encryptian algorithm, 'null_enc'
+return test network/kirkland to normal
+
+osiris2 4.79.104.122
+osiris 209.245.176.14
+
+
+

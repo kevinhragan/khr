@@ -1,0 +1,190 @@
+host: icecream
+serial:
+kernel: 2.6.18
+
+host: mail
+serial:
+kernel: 2.6.15
+
+host: seadev4
+serial:
+kernel: 2.4.29
+
+host: seadev2
+serial:
+kernel: 2.4.29
+
+host: kirkfw
+serial:
+kernel:
+
+host: re
+serial: 27427
+kernel: 2.6.16.16
+
+host: osiris
+serial: 15027
+kernel: 2.6.16
+
+host: karnac
+serial: 16329
+kernel: 2.4.29
+
+host: cairo
+serial: 16328
+kernel: 2.6.16.16
+
+host: heket
+serial: 26473
+kernel: 2.4.29
+
+host: nekhebet
+serial: 21654
+kernel: 2.4.29
+
+host:  nile
+serial: 15609
+kernel: 2.6.18
+
+host: nut
+serial: 25742
+kernel: 2.6.18
+
+host: shu
+serial: 25741
+kernel: 2.4.29
+
+host: osiris3
+serial: 25794
+kernel: 2.6.18
+
+host: thoth
+serial: 24791
+kernel: 2.4.29
+
+host: tefnut
+serial: 24792
+kernel: 2.6.16.16
+
+host: ramses
+serial: 15025
+kernel: 2.4.29
+
+host: trial
+serial: 15162
+kernel: 2.6.16.16
+
+host: www
+serial: 16327
+kernel: 2.4.29
+
+host: anubis
+serial: 15610
+kernel: 2.4.29
+
+host: ra
+serial: 15608
+kernel: 2.6.16.16
+
+host: hathor
+serial: 21411
+kernel: 2.6.16.13
+
+host: ammut
+serial: 
+kernel: 2.4.29
+
+host: fig
+serial: 26472
+kernel: 2.6.18
+
+host: peach
+serial: 27426
+kernel: 2.6.16.16
+
+host: horus
+serial: 23142
+kernel: 2.4.29
+
+host: kale
+serial: 30558
+kernel: 2.6.18
+
+host: lime
+serial: 30559
+kernel: 2.6.18
+
+host: nun
+serial: 24793
+kernel: 2.6.18
+
+host: osiris2
+serial: 21656
+kernel: 2.6.18
+
+host: server1
+serial: 21655
+kernel: 2.6.16.16
+
+host: seth
+serial: 23143
+kernel: 2.4.29
+
+host: mango
+serial: 15268
+kernel: 2.6.18
+
+host: isis
+serial: 15161
+kernel: 2.6.16.16
+os: slackware 10.1
+ip: 
+ram: 1gb
+#proc: 2
+Hz: 3G
+#disk: 2
+disk-gb: 
+
+host: khufu
+serial: 15163
+kernel: 2.6.16.16
+os: slackware 10.1
+ip: 
+ram: 1gb
+#proc: 2 
+Hz: 3G
+#disk: 2
+disk-gb: 
+
+host: ramses
+serial: 15025
+kernel: 2.6.16.16
+os: slackware 10.1
+ip: 
+ram: 1gb
+#proc: 2
+Hz: 3G
+#disk: 2
+disk-gb: 
+
+host: spool1
+serial: 21652
+kernel: 2.4.29
+os: slackware 10.1
+ip: 
+ram: 2gb
+#proc: 2
+Hz: 3G
+#disk: 2
+disk-gb: 
+
+host: uadjet
+serial: 21653
+kernel: 2.6.16.16
+os: slackware 10.1
+ip: 
+ram: 2gb
+#proc: 2
+Hz: 3G
+#disk: 2
+disk-gb: 

@@ -1,0 +1,1262 @@
+<!-- Vignette V6 Wed Mar 26 19:08:19 2008 -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><!--"http://www.w3.org/TR/html4/loose.dtd"-->
+<head>
+<!--WEB 11--><!--CONFIG_TYPE: Live--><!--CachedPage: True--><script type="text/javascript" language="javascript">var BIDARTORD = 5569879413;</script><link rel="alternate" type="application/rss+xml" title="PC Magazine: New Product Reviews" href="http://rssnewsapps.ziffdavis.com/pcmag.xml" />
+<script language="JavaScript" type="text/javascript" src="http://common.ziffdavisinternet.com/js/common_util_js.js"></script>
+	
+<script language="javascript">
+	var jBreadcrumbTitle;
+	jBreadcrumbTitle = "Apache HTTP Server 1.3";
+</script>
+
+
+<!-- START Yahoo AdManager --><!-- PCMAG.COM RunOfSite TAG --><!-- BEGIN Yahoo Yieldmanager - Advertiser 'Ziff Davis', Include user in conversion 'Ziff Davis - PCMag.com' - ROS --><script src="http://ad.yieldmanager.com/pixel?id=70017&t=1"></script><!-- END Yahoo Yieldmanager -->
+
+<title>Server's Advantage - Apache HTTP Server 1.3 - Reviews by PC Magazine</title>
+ 	
+
+
+<!--OMNITURE--><!--  SiteCatalyst code version: G.9.Copyright 1997-2004 Omniture, Inc. More info available at http://www.omniture.com -->
+<script language="JavaScript" type="text/javascript">
+var userCookie = document.cookie;var userType = "Unregistered";if (userCookie != undefined){if (userCookie.indexOf("zm%5Fuser") > -1){	userType = "Registered";	}}
+var s_pageName="Apache HTTP Server 1.3-Page001-19779";var s_server="";var s_channel="PC Magazine Home>Product Guides>Servers>Web";var s_pageType="";var s_prop1="Apache HTTP Server 1.3";
+var s_prop2="Server&39;s Advantage";var s_prop3="John Clyman";var s_prop4="Review";
+var s_prop5="Print Article";var s_prop6="Article Page";var s_prop7=userType;var s_prop8="";
+var s_prop9="";var s_prop11="2005-03";var s_prop12="pcm.dart/pg/servers";var s_prop13="";
+var s_campaign="";var s_state="";var s_zip="";var s_events="event4";var s_products="";var s_purchaseID="";var s_eVar1="";var s_eVar2="";
+var s_eVar3="";var s_eVar4="";var s_eVar5="";var s_hier1="PC Magazine Home>Product Guides>Servers>Web>Apache HTTP Server 1.3";var s_account="ziffdavisglobal,ziffdavisenthusiastglobal,ziffdavispcmag";</script>
+<script language="JavaScript" src="http://common.ziffdavisinternet.com/js/s_code_remote.js"></script>
+<script language="JavaScript" type="text/javascript">
+function sendAnalyticsEvent(accnt) {s_prop13 += " | " + getBrowserURL();accnt=accnt?accnt:s_account;void(s_gs(accnt));}
+function getBrowserURL(){urlelements = document.location.href.split("/");returnvalue = "";for (var i = 2;i<urlelements.length;i++) {
+if (i>1){subelements = urlelements[i].split(".");for (var u=0;u<subelements.length;u++){if (subelements[u]!="www"){returnvalue += subelements[u];if (u<subelements.length-1){returnvalue += ".";}
+}}if (i<urlelements.length-1){returnvalue += "/";}}}return returnvalue;}
+function sendLinkEvent(accnt,lnkname,type){accnt=accnt?accnt:s_account;s_linkType=type?type:"o";s_lnk=true;s_linkName=lnkname?lnkname:s_linkName?s_linkName:"Flash Link Event";void(s_gs(accnt))}</script>
+<!--/OMNITURE-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="expires" content="Thu, 01 Dec 1994 16:00:00 GMT" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta name="keywords" content="Review,Apache HTTP Server 1.3 Internet/Web server software, Internet server operating systems, Internet server software, Internet servers, Servers,Apache HTTP Server 1.3" lang="en-us" />
+<meta name="title" content="Server's Advantage - Apache HTTP Server 1.3 - Reviews by PC Magazine" lang="en-us" />
+<meta name="description" content="The venerable Apache HTTP Server is an open-source success story that&#39;s still behind more than half of all Web sites, according to the latest Netcraft survey numbers. " lang="en-us" />
+
+<link rel="stylesheet" href="/css/pgConfig.css" type="text/css" />
+<link rel="SHORTCUT ICON" href="/favicon.ico">
+<style type="text/css">
+@import url(/css/common_1024.css);
+@import url(/css/module_styles.css);
+@import url(/css/article_styles.css);
+</style>
+
+<script language="javascript" type="text/javascript">
+function displayPopUnder(){var cookieExist = getCookie("PC Magazine");if (document.referrer&&document.referrer.indexOf('altavista')==-1){
+if (document.referrer.indexOf('google')==-1){if (cookieExist == null){setCookie("PC Magazine","PC Magazine");
+var promopopup = window.open("http://www.zdmcirc.com/zdmcirc/popups/pcmpop.html","promopopup","width=336,height=280");self.focus();}}}}</script>
+
+</head>
+<body onUnload="displayPopUnder();" id="articlePg" class="articleBase">
+<div id="wrapperPage">
+	<div id="w_header">
+<!-- Vignette V6 Fri Apr 11 08:51:21 2008 -->
+<!--WEB 11-->
+<!-- Begin T4463 --> 
+
+<!-- End T4463 --> 
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="86" background="/images/pcm_15_topbg.gif" bgcolor="ebecee" valign="top">
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="80" rowspan="2" valign="top">
+<div align="center"><a href="http://www.pcmag.com/" target="_top"><img src=/images/pcm_15_header.gif width="65" height="78" border="0"></div></td>
+<td colspan="2">
+<div id="review_finder">
+<ul>
+<li><a href=http://www.pcmag.com/category2/0,2806,5,00.asp>DIGITAL CAMERAS</a></li>
+<li><a href=http://www.pcmag.com/category2/0,2806,9,00.asp>LAPTOPS</a></li>
+<li><a href=http://www.pcmag.com/category2/0,2806,2359,00.asp>MP3 PLAYERS</a></li>
+<li><a href=http://www.pcmag.com/category2/0,2806,2357,00.asp>CELL PHONES</a></li>
+<li><a href=http://www.pcmag.com/category2/0,2806,10,00.asp>PRINTERS</a></li>
+<li><a href=http://www.pcmag.com/category2/0,2806,4,00.asp>DESKTOPS</a></li>
+<li><a href=http://www.pcmag.com/category2/0,2806,1638887,00.asp>HDTVs</a></li>
+<li><a href=http://www.pcmag.com/category2/0,2806,2201,00.asp>Software</a></li>
+<li><a href=http://www.pcmag.com/category2/0,2806,13,00.asp onMouseOver="HeaderMoreLink_showAd()"  onMouseOut="HeaderMoreLink_hideAdSpace()" >MORE &gt;</a></li>
+</ul>
+</div>
+<div id="product_guide_link"><a href=http://www.pcmag.com/category2/0,2806,13,00.asp><i>GuideBG</i></a><br clear="left" /></div></td></tr>
+<tr>
+<td><a href=http://www.pcmag.com target="_top"><img src=/images/pcm_15_tagline.gif width=246 class="tagline" height=50 border="0"></a></td>
+<td valign="top">
+<div class="profile">
+	<script language="javascript">
+		var isMemberCookie = getCookie("zm%5Fuser");
+		var signInUrl = "http://www.pcmag.com/join/0,1213,,00.asp" + "?success_page=" + getCookie("successpage");
+		var signOutUrl = "http://www.pcmag.com/data_process_log_out/0,1263,s=1611&a=19779,00.asp" + "?success_page=" + getCookie("successpage");
+		var registerUrl = "http://www.pcmag.com/join/0,1213,,00.asp" + "?success_page=" + getCookie("successpage");
+		var myAccountURL = "http://www.pcmag.com/view_profile/0,1890,,00.asp";
+		if (isMemberCookie != null) {
+			var memberName = getMemberName(isMemberCookie);
+			document.write("Signed in as: <span class=\"profile_user\">" +  memberName + "</span>");
+			document.write(" | <a href=\"" + signOutUrl + "\" target=\"_top\">Sign Out</a>");
+			document.write(" | <a href=\"" + myAccountURL + "\" target=\"_top\">My Account</a>");
+		} else {
+			document.write("<a href=\"" + signInUrl + "\" target=\"_top\">Sign In</a>");
+			document.write(" | <a href=\"" + registerUrl + "\" target=\"_top\">Register</a>");
+			document.write(" | <a href=\"" + myAccountURL + "\" target=\"_top\">My Account</a>");
+		}
+	</script> 
+
+</div>
+<div id="networkImg"><a href="http://www.pcmagnetwork.com"><img src=/images/pcm_15_network.gif width="63" height="23" alt="" /></a></div></td></tr></table></td></tr></table>
+
+<table class="leaderboard"><tr><td>
+<iframe src="http://ad.doubleclick.net/adi/pcm.dart/pg/servers;pos=top;dcopt=ist;zdid=a19779;zdtype=standardreview;zdproduct=apachehttpserver13;zdcompany=theapachesoftwarefoundation;pagetype=article2;zdtopic2=opsys;zdtopic3=bizapps;tile=1;sz=728x90;ord=5569879413?" width="728" height="90" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" hspace="0"><a href="http://ad.doubleclick.net/jump/pcm.dart/pg/servers;abr=!ie;pos=top;dcopt=ist;zdid=a19779;zdtype=standardreview;zdproduct=apachehttpserver13;zdcompany=theapachesoftwarefoundation;pagetype=article2;zdtopic2=opsys;zdtopic3=bizapps;tile=1;sz=728x90;ord=5569879413? target="_top"><img src="http://ad.doubleclick.net/ad/pcm.dart/pg/servers;abr=!ie;pos=top;dcopt=ist;zdid=a19779;zdtype=standardreview;zdproduct=apachehttpserver13;zdcompany=theapachesoftwarefoundation;pagetype=article2;zdtopic2=opsys;zdtopic3=bizapps;tile=1;sz=728x90;ord=5569879413? border="0" height="90" width="728" hspace="" /></a></iframe>			<a href="https://www.zdmcirc.com/zdmcirc/default.asp?LK=covertop&I=ibmp" target="_top"><img src="http://common.ziffdavisinternet.com/util_get_image/20/0,1425,i=205654,00.gif" border="0" alt="Subscribe!" ></a>				
+</td></tr></table>
+<!-- Vignette V6 Wed Feb 20 10:45:21 2008 -->
+<!--WEB 11-->
+<!-- Begin T4463 --> 
+
+<!-- End T4463 --> 
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td><div id="header"><ul>
+<li><div><a href="http://www.pcmag.com">HOME</a></div></li>
+<li><div><a href="http://www.pcmag.com/category2/0,2806,13,00.asp">REVIEWS</a></div></li>
+<li><div><a href="http://www.pcmag.com/category2/0,2806,23,00.asp">DOWNLOADS</a></div></li>
+<li><div><a href="http://www.pcmag.com/category2/0,2806,28,00.asp">EXPERT HELP</a></div></li>
+<li><div><a href="http://www.pcmag.com/category2/0,2806,24,00.asp">NEWS</a></div></li>
+<li><div><a href="http://www.pcmag.com/category2/0,2806,30,00.asp">COLUMNS</a></div></li>
+<li><div><a href="http://www.pcmag.com/category2/0,2806,37,00.asp">COMPARE PRICES</a></div></li>
+<li><div><a href="http://discuss.pcmag.com">DISCUSS</a></div></li>
+<li><div><a href="http://www.pcmag.com/category2/0,2806,1882122,00.asp">@WORK</a></div></li>
+<li><div><a href="http://blogs.pcmag.com">BLOGS</a></div></li>
+<li><div><a href="http://www.pcmag.com/category2/0,2806,1896903,00.asp">VIDEO</a></div></li>
+<li><div><a href="https://www.zdmcirc.com/zdmcirc/default.asp?LK=pcmagdefault&I=ibmp">SUBSCRIBE</a></div></li>
+</ul>
+</div>
+</td></tr>
+<tr><td>
+<form name="form1" method="get" action="/search_redirect/" style="padding:0; margin:0;">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr><td nowrap class="searchtext">
+<div id="searchbox">
+<div align="left"><span class="searchtextbold"> &nbsp; Search</span>
+<input type="radio" name="searchSection" value="0" checked>
+PCMAG.COM<input type="radio" name="searchSection" value="1473">
+REVIEWS<input name="site" type="hidden" value="3">
+<input name="qry" type="text" id="search" size="20">
+<input type="image" src=/images/pcm_15_button_search.gif width="82" height="32" border="0" align="absmiddle">
+</div></div></td>
+<td bgcolor="f9f9f9"><div id="main_menu">
+<span class="cannedsearch">PC Magazine:</span>
+<ul><li><a href="http://www.pcmag.com/current_issue/">Current Issue</a></li>
+<li><a href="http://www.pcmag.com/previous_issues/">Previous Issue</a></li></ul>
+</div></td></tr></table></form></td></tr></table>
+
+<div nowrap id="HeaderMoreLink_AdSpace" class="more" onMouseOver="HeaderMoreLink_resetAdTimer()" onMouseOut="HeaderMoreLink_hideAdSpace()" >
+<div>Product Guides<br>
+<table cellspacing="0">
+	<tr><td><a href="http://www.pcmag.com/category2/0,2806,1639157,00.asp">Antispyware Software</a></td><td><a href="http://www.pcmag.com/category2/0,2806,1375129,00.asp">Media Centers</a></td></tr>
+	<tr><td><a href="http://www.pcmag.com/category2/0,2806,4796,00.asp">Antivirus Software</a></td><td><a href="http://www.pcmag.com/products/0,,qn=All+Multi+Function+Printers,00.asp">Multi-Function Printers</a></td></tr>
+	<tr><td><a href="http://www.pcmag.com/category2/0,2806,1995378,00.asp">Apple Coverage</a></td><td><a href="http://www.pcmag.com/category2/0,2806,1638916,00.asp">PDAs</a></td></tr>
+	<tr><td><a href="http://www.pcmag.com/category2/0,2806,4798,00.asp">Backup Software</a></td><td><a href="http://www.pcmag.com/products/0,,qn=All+Photo+Printers,00.asp">Photo Printers</a></td></tr>
+	<tr><td><a href="http://www.pcmag.com/category2/0,2806,1916935,00.asp">Cars</a></td><td><a href="http://www.pcmag.com/products/0,,qn=All+Plasmas,00.asp">Plasma Displays</a></td></tr>
+	<tr><td><a href="http://www.pcmag.com/category2/0,2806,1638429,00.asp">Computer & Console Gaming</a></td><td><a href="http://www.pcmag.com/category2/0,2806,7496,00.asp">Projectors</a></td></tr>
+	<tr><td><a href="http://www.pcmag.com/category2/0,2806,2347,00.asp">Digital Camcorders</a></td><td><a href="http://www.pcmag.com/category2/0,2806,28396,00.asp">Robots</a></td></tr>
+	<tr><td><a href="http://www.pcmag.com/category2/0,2806,4440,00.asp">Digital Imaging Software</a></td><td><a href="http://www.pcmag.com/category2/0,2806,7497,00.asp">Scanners</a></td></tr>
+	<tr><td><a href="http://www.pcmag.com/category2/0,2806,582756,00.asp">DVD Authoring Software</a></td><td><a href="http://www.pcmag.com/category2/0,2806,4829,00.asp">Security Software</a></td></tr>
+	<tr><td><a href="http://www.pcmag.com/category2/0,2806,4642,00.asp">External Hard Drives</a></td><td><a href="http://www.pcmag.com/category2/0,2806,1882122,00.asp">Small Business</a></td></tr>
+	<tr><td><a href="http://www.pcmag.com/category2/0,2806,1809871,00.asp">Firefox</a></td><td><a href="http://www.pcmag.com/category2/0,2806,2201,00.asp">Software</a></td></tr>
+	<tr><td><a href="http://www.pcmag.com/category2/0,2806,1060059,00.asp">Flash Drives</a></td><td><a href="http://www.pcmag.com/category2/0,2806,7498,00.asp">Speakers</a></td></tr>
+	<tr><td><a href="http://www.pcmag.com/category2/0,2806,2937,00.asp">GPS</a></td><td><a href="http://www.pcmag.com/category2/0,2806,4833,00.asp">Utilities</a></td></tr>
+	<tr><td><a href="http://www.pcmag.com/category2/0,2806,1966506,00.asp">High-Definition Players</a></td><td><a href="http://www.pcmag.com/category2/0,2806,4835,00.asp">Video Editing Software</a></td></tr>
+	<tr><td><a href="http://www.pcmag.com/products/0,,qn=All+HDTVs,00.asp">HDTVs</a></td><td><a href="http://www.pcmag.com/category2/0,2806,2356,00.asp">VoIP</a></td></tr>
+	<tr><td><a href="http://www.pcmag.com/products/0,,qn=All+Ink+Jet+Printers,00.asp">Ink Jet Printers</a></td><td><a href="http://www.pcmag.com/category2/0,2806,1786052,00.asp">Windows Vista</a></td></tr>
+	<tr><td><a href="http://www.pcmag.com/products/0,,qn=All+Laser+Printers,00.asp">Laser Printers</a></td><td><a href="http://www.pcmag.com/category2/0,2806,2878,00.asp">Windows XP</a></td></tr>
+	<tr><td><a href="http://www.pcmag.com/products/0,,qn=All+LCDs,00.asp">LCDs</a></td><td><a href="http://www.pcmag.com/category2/0,2806,4236,00.asp">Wireless Networking</a></td></tr>
+
+	<tr>
+    	<td class="viewall" colspan="2"><a href="http://www.pcmag.com/category2/0,2806,13,00.asp">View All ></a></td>
+    </tr>
+</table>
+  </div>
+</div>
+
+	</div><!--/w_header-->
+
+
+   			<div id="w_contentGroup"> 
+		<!--RenderBreadcrumb-->
+		<div id="w_breadcrumb">
+			<ul>
+				<li><a href="http://www.pcmag.com">Home</a><span class="bcSpacer">&gt;</span></li><li><a href="http://www.pcmag.com/category2/0,2806,13,00.asp">Product Guides</a><span class="bcSpacer">&gt;</span></li><li><a href="http://www.pcmag.com/category2/0,2806,2373,00.asp">Servers</a><span class="bcSpacer">&gt;</span></li><li><a href="http://www.pcmag.com/category2/0,2806,8592,00.asp">Web</a><span class="bcSpacer">&gt;</span></li><li class="thisPage">Apache HTTP Server 1.3</li>
+			</ul>
+		</div>
+
+		<!--RenderSubHead-->
+		<div id="w_subHead">
+		   <div id="subHeadBkgd">
+			<h1>Web</h1> 
+		   </div>
+		   <div id="subHeadFade"></div>	
+		</div>
+
+		<!--RenderModuleColumn-->
+		<div id="w_contentCol1" class="bkBlueGray">
+		
+	<!-- Vignette V6 Mon Feb 04 17:54:38 2008 -->
+<!--WEB 11-->
+<!-- Begin T4463 --> 
+
+<!-- End T4463 --> 
+
+
+<!-- This is the code for the TOC listed below -->
+
+	<div id="toc">
+		<h1><img src="/images/table_of_contents_hed.gif" width="139" height="21" alt="table of contents" /></h1>
+
+				<ul class="tocHead"><li class="tocHead">Server's Advantage</li></ul>
+<ul class="level1">
+					</ul>  <!-- </span> -->
+				   	<ul class="level1">
+							<!-- k11 -->				
+							<li class="level1"><a href="http://www.pcmag.com/article2/0,1895,11530,00.asp">Server's Advantage</a></li>
+				
+							<!-- k10 -->
+							<li class="level1"><a href="http://www.pcmag.com/article2/0,1895,11531,00.asp">Editors' Choice</a></li>
+
+				
+					<!-- k7 -->
+					<li class="level1"><span class="tocCurrent">Apache HTTP Server 1.3</span></li>
+				    <!--<li class="level1">Apache HTTP Server 1.3</li>-->
+					
+</ul><ul class="level2"></UL></li>
+					</ul>  <!-- </span> -->
+				   	<ul class="level1">
+							<!-- k11 -->				
+							<li class="level1"><a href="http://www.pcmag.com/article2/0,1895,11533,00.asp">Internet Information Services 5.0</a></li>
+				
+					</ul>  <!-- </span> -->
+				   	<ul class="level1">
+							<!-- k11 -->				
+							<li class="level1"><a href="http://www.pcmag.com/article2/0,1895,11534,00.asp">iPlanet Web Server Enterprise Edition 6.0</a></li>
+				
+					</ul>  <!-- </span> -->
+				   	<ul class="level1">
+							<!-- k11 -->				
+							<li class="level1"><a href="http://www.pcmag.com/article2/0,1895,11535,00.asp">Roxen WebServer 2.2</a></li>
+				
+					</ul>  <!-- </span> -->
+				   	<ul class="level1">
+							<!-- k11 -->				
+							<li class="level1"><a href="http://www.pcmag.com/article2/0,1895,11536,00.asp">Zeus Web Server 4.0</a></li>
+				
+					</ul>  <!-- </span> -->
+				   	<ul class="level1">
+							<!-- k11 -->				
+							<li class="level1"><a href="http://www.pcmag.com/article2/0,1895,11537,00.asp">Scorecard</a></li>
+				
+					</ul>  <!-- </span> -->
+				   	<ul class="level1">
+							<!-- k11 -->				
+							<li class="level1"><a href="http://www.pcmag.com/article2/0,1895,11538,00.asp">Performance Tests</a></li>
+				
+					</ul>  <!-- </span> -->
+				   	<ul class="level1">
+							<!-- k11 -->				
+							<li class="level1"><a href="http://www.pcmag.com/article2/0,1895,11528,00.asp">Summary of Features</a></li>
+				
+					</ul>  <!-- </span> -->
+				   	<ul class="level1">
+							<!-- k11 -->				
+							<li class="level1"><a href="http://www.pcmag.com/article2/0,1895,11525,00.asp">Web Server Security Best Practices</a></li>
+				
+
+</ul>	
+</div>
+<img src="/images/toc_box_bottom.gif" id="tocBoxBottom" alt=""  />	
+
+
+
+<!-- END TABLE OF CONTENTS -->
+
+<!-- Vignette V6 Fri Apr 11 08:51:23 2008 -->
+<!--WEB 11-->
+<!-- Begin T4463 --> 
+
+<!-- End T4463 --> 
+
+<!-- RELATED LINKS -->
+
+								<div id="relLink">
+								<h1><img src="/images/more_on_this_hed.gif" width="155" height="16" alt="More On This" /></h1>
+								<h2><span>Related</span> Links</h2>
+<ul>
+<li><a href="http://www.pcmag.com/article2/0,1759,34284,00.asp">Where to Host FrontPage                           </a></li>
+<li><a href="http://www.pcmag.com/article2/0,1759,92927,00.asp">Server's Advantage                                                                                                                                                                                                                                        </a></li>
+<li><a href="http://www.pcmag.com/article2/0,1759,575556,00.asp">Apple Scores with Able Server Hardware a...</a></li>
+</ul>
+<h2><span>Related</span> Topics</h2>
+<ul>
+<li><a href="/topic/0,2944,t=Server Software,00.asp">Server Software</a></li>
+<li><a href="/topic/0,2944,t=Unix,00.asp">Unix</a></li>
+<li><a href="/topic/0,2944,t=Apple Mac OS X,00.asp">Apple Mac OS X</a></li>
+</ul>
+
+		<img src="/images/inform_logo.gif" width="94" id="informLogo" height="23" alt="Powered by Inform"> </img>
+		</div> <!--#relLink-->
+<!-- Vignette V6 Thu Apr 10 16:45:46 2008 -->
+<!--WEB 11-->
+<!-- Begin T4463 --> 
+
+<!-- End T4463 --> 
+
+						<div class="html_module_container" style="WIDTH:145px;">
+							<!-- HTML Module ID 1173 --><style type="text/css">
+.prod_guide {border-right: 1px #a7a7a0 solid; border-bottom: 1px #a7a7a0 solid; border-left: 1px #a7a7a0 solid; background-color:#e4e4dc; padding:5px;}
+.prod_guide a {display:block; padding-bottom:3px; font-family: verdana, sans-serif; font-size: 10px; font-weight: bold; text-decoration:none;}
+.prod_guide a:hover {text-decoration:underline;}
+div.bestselling table td {background-color:#fff; font-family:arial, sans-serif; font-size:12px; padding-bottom:10px;}
+td.bestselling {background-color:#fff; font-family: arial, sans-serif; font-size:12px; padding-right:3px; padding-left:3px;}
+a.bestselling {font-family:arial; font-size:12px; text-decoration:none;}
+a.bestselling:hover {text-decoration:underline;}
+</style>
+
+<!-- Top Sellers Module -->
+
+<div class="news_module_header">top sellers</div>
+<div class="bestselling">
+<div style="background-color:#fff; padding:3px; font-size:12px; line-height:12px; font-family:arial, sans-serif; color:000; font-weight:bold;">Compare Store Deals</div>
+
+<!-- ziffbestselling start //-->
+<table border="0" cellpadding="0">
+<tr>
+<td align="left" valign="top" class="bestselling" >1. </td>
+<td align="left"><a href="http://shop.pcmag.com/shop/product/Sharp+LC-42D64U+42+in.+HDTV+LCD+TV/45299080.aspx" class="bestselling" >Sharp LC-42D64U 42 in. HDTV LCD TV</a><br></td>
+</tr>
+<tr>
+<td align="left" valign="top" class="bestselling" >2. </td>
+<td align="left"><a href="http://shop.pcmag.com/shop/product/Sharp+Aquos+LC-42D62U+42+in.+HDTV+LCD+TV/36741328.aspx" class="bestselling" >Sharp Aquos LC-42D62U 42 in. HDTV LCD TV</a><br></td>
+</tr>
+<tr>
+<td align="left" valign="top" class="bestselling" >3. </td>
+<td align="left"><a href="http://shop.pcmag.com/shop/product/Sony+KDL-46XBR4+46+in.+LCD+TV+TVDVD+Combo/45299112.aspx" class="bestselling" >Sony KDL-46XBR4 46 in. LCD TV TV/DVD Combo</a><br></td>
+</tr>
+<tr>
+<td align="left" valign="top" class="bestselling" >4. </td>
+<td align="left"><a href="http://shop.pcmag.com/shop/product/Samsung+LNT5265F+52+in.+HDTV+LCD+TV/43616981.aspx" class="bestselling" >Samsung LNT5265F 52 in. HDTV LCD TV</a><br></td>
+</tr>
+<tr>
+<td align="left" valign="top" class="bestselling" >5. </td>
+<td align="left"><a href="http://shop.pcmag.com/shop/product/Sony+BRAVIA+KDL-40V3000+40+in.+HDTV+LCD+TV/44393609.aspx" class="bestselling" >Sony BRAVIA KDL-40V3000 40 in. HDTV LCD TV</a><br></td>
+</tr>
+<tr>
+<td class="bestselling" >&nbsp;</td>
+<td align="left"><a href=http://shop.pcmag.com/shop/result/Flat+Panel+Televisions/188.aspx class="bestselling" >more &gt;</a><br></td>
+</tr></table>
+<!-- end ziffbestselling //-->
+
+</div>
+
+<div style="clear:left; height:15px; line-height:15px;"></div>
+
+<!-- Product Guides Module -->
+
+
+<!-- start ziffimage //--><img src="http://common.ziffdavisinternet.com/util_get_image/9/0,1425,i=95341,00.gif" width="145" height="39" border="0" alt="Product Guides"><!-- end ziffimage //-->
+<div class="prod_guide">
+ <!-- start ziffsection //--><a href="http://www.pcmag.com/category2/0,2806,4,00.asp" class="productguides">Desktops</a><!-- end ziffsection //-->
+ <!-- start ziffsection //--><a href="http://www.pcmag.com/category2/0,2806,5,00.asp" class="productguides">Digital Cameras</a><!-- end ziffsection //-->
+ <!-- start ziffsection //--><a href="http://www.pcmag.com/category2/0,2806,652761,00.asp" class="productguides">DVD Creation</a><!-- end ziffsection //-->
+ <!-- start ziffsection //--><a href="http://www.pcmag.com/category2/0,2806,7,00.asp" class="productguides">Handhelds</a><!-- end ziffsection //-->
+ <!-- start ziffsection //--><a href="http://www.pcmag.com/category2/0,2806,9,00.asp" class="productguides">Laptops</a><!-- end ziffsection //-->
+ <!-- start ziffsection //--><a href="http://www.pcmag.com/category2/0,2806,1409036,00.asp" class="productguides">LCDs</a><!-- end ziffsection //-->
+ <!-- start ziffsection //--><a href="http://www.pcmag.com/category2/0,2806,2359,00.asp" class="productguides">MP3 Players</a><!-- end ziffsection //-->
+ <!-- start ziffsection //--><a href="http://www.pcmag.com/category2/0,2806,7,00.asp" class="productguides">PDAs &amp; Phones</a><!-- end ziffsection //-->
+ <!-- start ziffsection //--><a href="http://www.pcmag.com/category2/0,2806,10,00.asp" class="productguides">Printers</a><!-- end ziffsection //-->
+ <!-- start ziffsection //--><a href="http://www.pcmag.com/category2/0,2806,2356,00.asp" class="productguides">VoIP</a><!-- end ziffsection //-->
+ <!-- start ziffsection //--><a href="http://www.pcmag.com/category2/0,2806,2878,00.asp" class="productguides">Windows XP</a><!-- end ziffsection //-->
+ <!-- start ziffsection //--><a href="http://www.pcmag.com/category2/0,2806,4236,00.asp" class="productguides">Wireless Networks</a><!-- end ziffsection //-->
+ <!-- start ziffsection //--><a href="http://www.pcmag.com/category2/0,2806,13,00.asp" class="productguides">All categories</a><!-- end ziffsection //-->
+</div><!-- End HTML Module ID 1173 -->
+						<div class="clearL"></div>
+						</div>
+					
+						<div class="html_module_container" style="WIDTH:145px;">
+							<!-- HTML Module ID 1007 --><script language="javascript">
+function dtsearch() {
+    sendflag = "false";    
+    
+    if (document.frmGSRequest.keyword.value == '') {
+        alert('Please enter a keyword.');
+        return;
+    } else {    
+        if (document.frmGSRequest.keyword.value != '') { 
+            location.href='http://shop.pcmag.com/pages/shop_search_results.aspx?keyword='+ document.frmGSRequest.keyword.value +'&befid='+ document.frmGSRequest.nParentFormID.value                    }
+    }
+}
+</script>
+
+
+<!-- START GS-BOX -->
+
+<table width="145" cellpadding="0" cellspacing="0" border="0" class="Module_BG">
+<tr>
+<td colspan="2" class="Module_Border" width="4"><img src="/images/pcm_spacer.gif" width="4" height="18"></td>
+<td align="left" valign="center" class="Module_Border" width="137">
+shop now
+</td>
+<td colspan="2" class="Module_Border" width="4"><img src="/images/pcm_spacer.gif" width="4" height="18"></td>
+</tr>
+<tr>
+<td class="Module_Border" width="1"></td>
+<td width="3"><img src="/images/pcm_spacer.gif" width="3" height="1"></td>
+<td align="left" valign="top" class="Module_Content">
+<br>
+Find great products<br>
+and great deals.
+<form name="frmGSRequest" method="get" action="javascript:dtsearch();">    
+<b>Shop for:</b>
+<br>
+<input type="text" id="text1" name="keyword" size="15" value="" maxlength="100" STYLE="font-size:11px;font-family:monospace;">
+<input type="image" src="/images/pcm_arrow_go.gif" border="0" alt="Go"><input type="hidden" name="mode" value=""><br>(enter product name<br>or keywords)
+<br><b>in:</b><br>
+<select name="nParentFormID" style="font-family:arial; font-size:10px">
+<option value=0>All Categories</option>
+<option value=451>Desktops</option>
+<option value=9007>Notebooks</option>
+<option value=6>Printers</option>
+<option value=9>Handhelds</option>
+<option value=7185>Digital Cameras</option>
+<option value=410>Camcorders</option>
+<option value=89>MP3 Players</option>
+<option value=455>Networking</option>
+<option value=1696>Keyboards</option>
+<option value=96265>Mice</option>
+<option value=1722>Graphics Cards</option>
+<option value=368>Software</option>
+</select>
+</form>
+</td>
+<td width="3"><img src="/images/pcm_spacer.gif" width="3" height="1"></td>
+<td class="Module_Border" width="1"></td>
+</tr>	
+<tr>
+<td colspan="5" class="Module_Border"></td>
+</tr>
+</table>
+<!-- End HTML Module ID 1007 -->
+						<div class="clearL"></div>
+						</div>
+					<!-- Vignette V6 Fri Apr 11 15:19:29 2008 -->
+<!--WEB 11-->
+<!-- Begin T4463 --> 
+
+<!-- End T4463 --> 
+<div class="news_module_container" style="WIDTH:143px;"><div class="news_module_header">news</div><ul><li><a href="http://www.pcmag.com/article2/0,2817,2283054,00.asp">LG: Demand for Small LCDs is High</a></li><li><a href="http://www.pcmag.com/article2/0,2817,2283048,00.asp">Consumers Uneasy Giving Personal Details to Sites</a></li><li><a href="http://www.pcmag.com/article2/0,2817,2283021,00.asp">Gateway Unleashes Updated Laptops</a></li><li><a href="http://www.pcmag.com/article2/0,2817,2282964,00.asp">Google Heading Toward Mobile Offline Docs Access</a></li><li><a href="http://www.pcmag.com/article2/0,2817,2282963,00.asp">FCC Fines Retailers for Selling Analog TVs</a></li></ul><span class="bottom_more_link"><a href="http://www.pcmag.com/category2/0,2806,24,00.asp">View All</a></span></div><!-- Vignette V6 Fri Apr 11 00:24:23 2008 -->
+<!--WEB 11-->
+<!-- Begin T4463 --> 
+
+<!-- End T4463 --> 
+<div class="news_module_container" style="WIDTH:143px;"><div class="news_module_header">columns</div><ul><li><a href="http://www.pcmag.com/article2/0,2817,2257245,00.asp">Microsoft is Stupid, Apple is Not</a></li><li><a href="http://www.pcmag.com/article2/0,2817,2246845,00.asp">Draft-N Doesn't Play Nice </a></li><li><a href="http://www.pcmag.com/article2/0,2817,2223921,00.asp">Leopard is the New Vista, and It's Pissing Me Off</a></li><li><a href="http://www.pcmag.com/article2/0,2817,2164137,00.asp">PCMagVote.com Launches!</a></li><li><a href="http://www.pcmag.com/article2/0,2817,2156443,00.asp">Faster, Tinier Processors Coming From Taiwan</a></li></ul><span class="bottom_more_link"><a href="http://www.pcmag.com/category2/0,2806,30,00.asp">View All</a></span></div>
+			<div class="clearl"></div>
+		</div> <!-- /w_contentCol1 -->
+ 
+			<div id="w_contentCol2">			
+		
+		<!--RenderArticleContent-->
+	<!-- Vignette V6 Wed Mar 26 19:08:19 2008 -->
+<!--WEB 11-->
+<!-- Begin T4463 --> 
+
+<!-- End T4463 --> 
+
+
+<div id="articleContent">
+
+				<h1 class="articleTitle"> Apache HTTP Server 1.3 </h1>
+		
+	
+		<div id="summaryData" class="pgArticle">
+		
+				<p class="articleDate">
+		
+				<span class="articleDateLabel">REVIEW DATE:</span>&nbsp;
+		01.15.02
+		</p>	
+		
+				<div id="downloadSpecs"><p><li>Price: Free
+<li>Company Info: Apache Software Foundation, www.apache.org<br>
+<br><b>Plus</b>: Free; open-source; expandable through modules
+<br><b>Minus</b>: Limited support; base version lacks SSL; requires expertise; mediocre performance</p></div>
+		
+						<p><img src="/images/editor_rating_icon.gif" width="97" border="0" height="19">&nbsp;<img src="/images/pcm_product_search_er_3.gif" id="img_edScore" class="icon" alt="3.0 out of 5.0"></p>
+				<!-- Vignette V6 Fri Apr 11 08:51:23 2008 -->
+<!--WEB 11-->
+<!-- Begin T4463 --> 
+
+<!-- End T4463 --> 
+						
+		</div> <!--summaryData-->	  
+		
+		
+				<p class="byline"><span class="bylineBy">by </span> <a href="#"><span class="authorsource">John Clyman</span></a></p>
+		
+	<div class="articleCopy"><span id="intellitxt"><p>The venerable <a title="Apache HTTP Server" href="/topic/0,2944,t=Apache HTTP Server,00.asp" >Apache HTTP Server </a> is an open-source success story that's still behind more than half of all Web sites, according to the latest <a title="Netcraft Ltd." href="/topic/0,2944,t=Netcraft Ltd,00.asp" >Netcraft </a> survey numbers. This success results partly from Apache's longtime popularity among Web-hosting companies and ISPs. Apache runs on a wide variety of platforms: It's available as a precompiled binary for Windows, <a title="Apple Mac OS X" href="/topic/0,2944,t=Apple Mac OS X,00.asp" >Mac OS X </a>, and many Unix flavors, as well as in source-code form, should you wish to compile it yourself or adapt it for use on other platforms. Apache's modular design means you can snap new features in easily, without major changes to the core.</p>
+<p>You can download the basic Apache server free from www.apache.org, but its feature set is limited. If you want capabilities like SSL, you'll need to hunt down add-on modules, which vary in sophistication and maturity, or purchase a commercial Apache version such as Red Hat's Stronghold Secure Web Server 3 ($995, www.redhat.com). One advantage of this modular design is that you plug in only the components you need, making the server less complex and arguably more reliable, secure, and manageable. Another advantage is that you can choose from a wide variety of modules produced both by the open-source community and by commercial vendors: Modules are available for everything from enabling FrontPage Extensions to performing sophisticated rules-based redirection. You can even extend the server with your own custom-written modules.</p>
+<p>Web servers are almost always extensible via third-party components, so we looked solely at the basic HTTP server from Apache Software Foundation for this review. Despite its heritage and the flourishing growth in plug-in modules, Apache is beginning to show its age. The server has largely remained static, while competing products have gained more features and better performance.</p>
+<p>Configuring Apache requires editing directives in text files. This approach is convenient for administrators who want to configure programmatically, but less so for those who prefer a GUI or browser-based interface. Still, we found the settings to be well documented, and tasks like setting up a new virtual server, changing IP-address access restrictions, and adding MIME types were straightforward. (Plug-in GUIs, such as Comanche, are available for Apache configuration.) Apache doesn't support dynamic reconfiguration, however, so changing its settings requires manually restarting the server.</p>
+<p>Authentication and security options in the basic Apache server are limited. User authentication and access control are managed primarily via .htaccess files; support for LDAP is available only through an add-on module, and secure transaction capability is not provided.</p>
+<p>The basic Apache program also lacks bandwidth throttling, dynamic log rotation, and support for virtual server classes and clustering&#151;desiderata for large enterprise and hosting sites.</p>
+<p>As a platform for development, Apache directly supports CGI scripts and server-side includes, and its wide variety of modules provide plug-in support for Perl, PHP, emulated ASP, and other page-generation and Web-scripting languages. NSAPI and Java servlet support also require add-on modules.</p>
+<p>Apache's performance on our benchmark tests was in the middle of the pack. It did moderately better running on Linux than on Windows on our Static Page Serving test.</p>
+<p><!-- start ziffarticle //--><a href="http://www.pcmag.com/article2/0,2817,15329,00.asp" >Apache 2.0</a><!-- end ziffarticle //-->, currently in testing with no release date set (and previewed in our issue of July 1, 2001), will be built atop a new portable runtime layer that its developers claim will, among other things, improve performance and stability on Windows. In the meantime, Apache 1.3 remains a solid choice as a free Web server on Unix, especially for site builders who want to take advantage of its modular extendability.</p></span><!--/#intellitxt--></div>
+			<script type="text/javascript" src="http://pcmag.us.intellitxt.com/intellitxt/front.asp?ipid=5279"></script>
+			
+</div> <!--div articlecontent end-->
+
+		
+			<div id="underArticleLinks">	
+			    <div class="articleNav"> 
+				
+							<p class="next"><span class="back"><a href="http://www.pcmag.com/article2/0,2817,11531,00.asp">&lt; Back</a></span>
+				
+					   		<a href="http://www.pcmag.com/article2/0,2817,11533,00.asp">Next &gt;</a></p>
+						
+				
+			    </div><!--/articleNav-->
+			
+				<!-- Print / Email / Etc. spacer width: 10px -->
+				<div id="articleOptions">
+				
+<script language="JavaScript">
+function OpenSaveArticleWindow(querystring)
+{
+LeftPosition = (screen.width) ? (screen.width)/10 : 0;
+TopPosition = (screen.height) ? (screen.height)/10 : 0;
+settings = 'menubar=no,height=400,width=500'
+hWin = window.open("/save_article/" + querystring, "SaveArticle", settings, false);
+hWin.focus();
+if (hWin.opener == null) hWin.opener = self;
+}
+
+function OpenEmailArticleWindow(querystring)
+{
+	LeftPosition = (screen.width) ? (screen.width)/10 : 0;
+	TopPosition = (screen.height) ? (screen.height)/10 : 0;
+	settings = 'menubar=no,height=575,width=365,resizable=yes,scrollbars=yes'
+	hWin = window.open("/email_article/" + querystring, "SaveArticle", settings, true);
+	hWin.focus();
+	if (hWin.opener == null) hWin.opener = self;
+}
+
+
+
+</script>
+
+
+	<form id="article_icons" 
+			action="http://www.pcmag.com/print_article2/0,1217,a%253D19779,00.asp" 
+			method="POST" 
+			name="article_icons">
+		<input type="hidden" name="hidPrint" value="true">
+		<input type="image" src="/images/print_icon.gif" alt="Print">
+			<a href="JavaScript:OpenEmailArticleWindow('?a=19779&s=1611&c=/');"><img src="/images/email_icon.gif" alt="Email"></a>
+		   
+			<!-- <a href="http://www.pcmag.com/sign_up/0,1213,,00.asp?success_page=http%3A%2F%2Fwww%2Epcmag%2Ecom%2Farticle2%2F0,2817,11532,00%2Easp?save=1&success_title=Article&failure_page=http%3A%2F%2Fwww%2Epcmag%2Ecom%2Farticle2%2F0,2817,11532,00%2Easp"><img src="/images/save_icon.gif" alt="Save"></a> -->
+			<a href="http://www.pcmag.com/sign_up/0,1213,,00.asp?success_page=http%3A%2F%2Fwww%2Epcmag%2Ecom%2Farticle2%2F0,2817,11532,00%2Easp?save=1&success_title=Article&failure_page=http%3A%2F%2Fwww%2Epcmag%2Ecom%2Farticle2%2F0,2817,11532,00%2Easp"><img src="/images/save_icon.gif" alt="Save"></a>
+			
+				 <a href="http://www.pcmag.com/review_article/0,1875,ss%253D0%2526s%253D1611%2526a%253D19779,00.asp"><img src="/images/rateit_icon.gif" alt="Rate It"></a> 
+			
+
+	<!--Reprint Links-->
+<a href='http://license.icopyright.net/3.50?icx_id=19779&icx_pricing=print' onclick="window.open(this.href,'Reprints','width=565,height=650,resizable=yes,scrollbars=yes');return false;" class='link6'><img src='/images/reprint_icon.gif' alt='Order Reprints of this Article.' border='0'></a>
+	</form>
+
+				</div> <!--/articleOptions-->
+			
+				<!--RenderCommunityLinks-->
+				<div id="communityShare">
+					<img src="/images/icon_digg.gif" width="16" height="14" alt="Digg This" /><a href="http://www.digg.com" onclick="window.open('http://digg.com/submit?phase=2&url=http%3A%2F%2Fwww%2Epcmag%2Ecom%2Farticle2%2F0%2C2817%2C11532%2C00%2Easp&title=Apache+HTTP+Server+1%2E3&kc=PCMDIGPOST','digg','toolbar=yes,resizable=yes,width=1000,height=700,scrollbars=yes'); return false;">Digg this</a>
+					<img src="/images/icon_delicious.gif" width="18" height="18" alt="delicious" /><a href="http://del.icio.us/post" onclick="window.open('http://del.icio.us/post?v=4&partner=pcmag&noui&jump=close&url=http%3A%2F%2Fwww%2Epcmag%2Ecom%2Farticle2%2F0%2C2817%2C11532%2C00%2Easp&title=Apache+HTTP+Server+1%2E3&kc=PCMDELPOST','delicious','toolbar=yes,resizable=yes,width=700,height=400'); return false;"></a><a href="http://del.icio.us/post" onclick="window.open('http://del.icio.us/post?v=4&partner=pcmag&noui&jump=close&url=http%3A%2F%2Fwww%2Epcmag%2Ecom%2Farticle2%2F0%2C2817%2C11532%2C00%2Easp&title=Apache+HTTP+Server+1%2E3&kc=PCMDELPOST','delicious','toolbar=yes,resizable=yes,width=700,height=400'); return false;">Post to del.icio.us</a>
+					<img src="/images/icon_slashdot.png" width="16" height="16" alt="slashdot" /><a href="http://slashdot.org/bookmark.pl" onclick="window.open('http://slashdot.org/bookmark.pl?url=http%3A%2F%2Fwww%2Epcmag%2Ecom%2Farticle2%2F0%2C2817%2C11532%2C00%2Easp&title=Apache+HTTP+Server+1%2E3&kc=PCMSDTPOST','slashdot','toolbar=yes,resizable=yes,width=1000,height=700,scrollbars=yes'); return false;">Post to Slashdot</a>
+				</div><!--/communityShare-->
+<!--Begin T5938-->
+
+					
+				<div id="rssOptions">
+						<p><a href="http://rssnewsapps.ziffdavis.com/pcmag.xml"><img src="/images/xml_orange.gif" width="36" height="14" border="0" alt="PC Magazine: New Product Reviews"/></a>
+						Add <a href="http://rssnewsapps.ziffdavis.com/pcmag.xml">PC Magazine: New Product Reviews</a> RSS feed to your feed reader so that you don't miss another headline!</p>
+				
+					<ul class="rssReaders">
+						<li class="rssReaders">
+							<a href="http://add.my.yahoo.com/rss?url=http://rssnewsapps.ziffdavis.com/PCMAG_commentary.xml"><img src="/common/images/icon_my_yahoo.gif" width="91" height="17" border="0" alt="Add to My Yahoo!"/></a>
+						</li>
+						<li class="rssReaders">
+							<a href="http://fusion.google.com/add?feedurl=http://rssnewsapps.ziffdavis.com/pcmag.xml"><img src="/common/images/icon_google.gif" width="104" height="17" border="0" alt="Add to Google"/></a>
+						</li>
+						<li class="rssReaders">
+							<a href="http://my.msn.com/addtomymsn.armx?id=rss&ut=http://rssnewsapps.ziffdavis.com/pcmag.xml"><img src="/common/images/icon_my_msn.gif" width="71" height="14" border="0" alt="Add to My MSN"/></a>
+						</li>
+						<li class="rssReaders">			
+							<form name="jumpRSS">
+								<select name="myjumpbox" OnChange="location.href=jumpRSS.myjumpbox.options[selectedIndex].value">
+									<option selected>More Readers</option>
+						    		<option value="http://www.bloglines.com/sub/http://rssnewsapps.ziffdavis.com/pcmag.xml">Bloglines</option>
+					     			<option value="http://www.rojo.com/add-subscription/?resource=http://rssnewsapps.ziffdavis.com/pcmag.xml">Rojo</option>
+					     			<option value="http://www.newsgator.com/ngs/subscriber/subext.aspx?url=http://rssnewsapps.ziffdavis.com/pcmag.xml">Newsgator</option>
+					        		<option value="http://client.pluck.com/pluckit/prompt.aspx?GCID=C12286x053&amp;a=http://rssnewsapps.ziffdavis.com/pcmag.xml">Pluck</option>
+							</select>
+							</form>
+						</li>
+					</ul>
+					<ul class="rssInfo">
+						<li class="rssInfo">
+							<a href="http://www.pcmag.com/article2/0,1895,1329778,00.asp">What is this?</a>
+						</li>
+						<li class="rssInfo">
+							<a href="http://www.pcmag.com/article2/0,4149,816548,00.asp#3">See all tech RSS feeds</a>
+						</li>
+					</ul>
+					
+				</div> <!-- /rssOptions -->
+				
+<!--End T5938-->
+				</div> <!-- /underArticleLinks -->
+		
+		<!--RenderMemberReviewContent-->
+	<!-- Vignette V6 Fri Apr 11 16:58:03 2008 -->
+ 
+<!-- No member reviews to display -->
+
+<script language="JavaScript">  
+<!--
+
+function google_ad_request_done(google_ads) 
+{  
+	var i;  
+	var number_google_ads = google_ads.length;
+	
+	if (google_ads.length > 0)
+	{
+		document.write('<div id="marketplace">');
+		
+		document.write('<div class="hdr">');
+		document.write('<h3>&nbsp;  </h3>');
+		document.write('</div>');
+		
+		if ( number_google_ads <=1 ) 
+		{
+			document.write('<ul id="sponsor_partner_single">');
+		}
+		else
+		{
+			document.write('<ul id="sponsor_partner">');
+		}
+		
+		for(i = 0; i < google_ads.length; ++i) 
+		{    
+			tempvar = google_ads[i].line1; 
+			
+			document.write('<li>');
+			document.write('<p class="sponsor_header"><a href="' + google_ads[i].url + '" onMouseOver="return GOOGLEShowStatusInfo(\'' + escape(google_ads[i].visible_url) + '\')">' +
+					google_ads[i].line1 + '</a></p>');
+
+					document.write('<p class="sponsor_text">' +  google_ads[i].line2 + ' ' + google_ads[i].line3 +  '</p>');
+					document.write('<p class="sponsor_footer"><a href="' +  google_ads[i].url + '" onMouseOver="return GOOGLEShowStatusInfo(\'' + escape(google_ads[i].visible_url) + '\')">' + google_ads[i].visible_url +  '</a></p>');
+			document.write('</li>');				
+		}
+	
+		document.write('</ul>');
+		document.write('<p class="right_text"><a href="http://www.google.com/ads_by_google.html"> Ads by Google </a></p>');				
+		document.write('</div>');
+	}
+}	
+// -->
+</script>
+
+
+		
+		<!-- d_page_location: marketplace -->		
+	<script language="JavaScript"><!--
+		function GOOGLEShowStatusInfo(w){
+			setTimeout("window.status = \'" + unescape(w) + "\';", 0);		
+			return true;
+		}	
+		google_ad_client = 'ca-ziffdavis_consumer_js';         
+		google_ad_channel = 'pcmag';			 
+		google_ad_output = 'js';      			    
+			
+		google_max_num_ads = '5';                 
+		google_ad_width = 300;
+		google_ad_height = 250;
+		google_ad_format = "300x250_as";
+		google_ad_type = "text_image";
+		//2007-11-28: eweek
+		google_color_border = "FFFFFF";
+		google_color_bg = "FFFFFF";
+		google_color_link = "003bb0";
+		google_color_text = "000000";
+		google_color_url = "003bb0";
+					 
+		google_safe = 'high';
+		-->
+	</script><!--marketplace-->
+	<script language="JavaScript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+
+
+<div id="newsletters">	
+	<div id="newsletterContent">
+	<h1>newsletters</h1>
+	<form action="/data_process_newsletter_manage/" name="newslettersForm" method="get">
+	<div class="colText">
+		<p>Get PCMag.com's <b>FREE</b> email newsletters delivered to your inbox.</p>
+		<p>It's easy, just follow the steps.</p>		
+		<p>Want more? Check out our other newsletters 
+			<a href="http://www.pcmag.com/newsletter_manage/0,1887,,00.asp">here</a>.</p>
+		<p> Manage your newsletter 
+			subscriptions <a href="http://www.pcmag.com/newsletter_manage/0,1887,,00.asp">here</a>.
+		</p>
+		<input type="hidden" name="hidSource" value=" Newsletter Module">		
+		<div class="clearl"></div> 
+	</div>		
+	<div class="colSelect">
+			<h2>1. Make your selections:</h2>
+			<dl>
+				<dt><input type="checkbox" name="31" value="1" checked></dt><dd>Daily News Alert</dd>
+		   
+				<dt><input type="checkbox" name="1" value="1" checked></dt><dd>Inside PCMag.com</dd>
+		   
+				<dt><input type="checkbox" name="75" value="1" checked></dt><dd>PCMag.com Small Business Update</dd>
+		   
+				<dt><input type="checkbox" name="133" value="1" checked></dt><dd>PCMagCast Update</dd>
+		   
+				<dt><input type="checkbox" name="2" value="1" checked></dt><dd>Productwire: First Looks Update</dd>
+		   
+				<dt><input type="checkbox" name="71" value="1" checked></dt><dd>Security Watch</dd>
+		   
+				<dt><input type="checkbox" name="46" value="1" checked></dt><dd>Tech Saver</dd>
+		   
+				<dt><input type="checkbox" name="39" value="1" checked></dt><dd>Tip of the Day</dd>
+		   
+				<dt><input type="checkbox" name="69" value="1" checked></dt><dd>Utility Library Update</dd>
+		   
+				<dt><input type="checkbox" name="45" value="1" checked></dt><dd>What's New Now</dd>
+		   
+				<dt><input type="checkbox" name="143" value="1" checked></dt><dd>PCMag Announcements</dd>
+		   			</dl>
+		    <div class="clearl"></div>
+		</div>
+		<div class="colEmail">		
+			<h2>2. Select email format:</h2>
+			<SELECT name="SelFormat"><OPTION value="1" selected> HTML </OPTION><OPTION value="2">Text only</OPTION></SELECT>			
+			<div id="w_emailBox">
+				<h2>3. Enter email address:</h2>
+				<input id="emailBox" type="text" size="15" name="email" maxlength="64">
+				<a href="JavaScript: document.newslettersForm.submit();"><img src="/images/newsletter_arrow.gif" alt="" border="0"></a>
+				<div class="clearl"></div>
+			</div> <!-- /#w_emailBox -->	
+			<div class="clearl"></div>
+		</div>
+	</form>
+	<div class="clearl"></div>	
+	</div>
+</div>
+
+ 		<!--RenderGraveyardContent-->
+		<div id="graveyard">
+
+	<!-- Vignette V6 Fri Apr 11 09:23:53 2008 -->
+<!--WEB 11-->
+<!-- Begin T4463 --> 
+
+<!-- End T4463 --> 
+
+<!-- Begin Common Ad HTML Module Group -->
+
+<div class="graveyardModule"><!--0-->
+<!-- BEGIN Subscription Module 2427 --> 
+<div style="height:10px; line-height:10px;"></div>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="border: solid 1px #000;"> 
+ <tr style="background-color:#ffffff;"> 
+  <td align="center"><a style="display:block; height:100%; width:100%;" href="https://www.zdmcirc.com/zdmcirc/default.asp?LK=banbttm&I=ibmp"><!-- start ziffimage //--><img src="http://common.ziffdavisinternet.com/util_get_image/20/0,1425,i=205655,00.gif" width="440" height="56" border="0" alt="Subscribe to PC Mag"><!-- end ziffimage //--></a></td>
+ </tr>
+</table>
+
+<table width="95%" border="0" cellspacing="0" cellpadding="0"> 
+ <tr> 
+  <td align="center" valign="top" style="font-size:10px;"><a style="color:red;" href="http://go.pcmag.com/subscriberservices">Subscription Help</a> | 
+<!--<a style="color:red;" href="http://www.neodata.com/ITPS2.cgi?ordertype=Reply+Only&ItemCode=IBMP&iResponse=IBMP.2FOR1">-->
+<a style="color:red;" href="https://www.neodata.com/ITPS2.cgi?ItemCode=IBMP&OrderType=Reply+Only&iResponse=IBMP.INQUIRY">
+Renew</a> | <a style="color:red;" href="https://www.zdmcirc.com/zdmcirc/default.asp?LK=GIVE&I=IBMP">Give a Gift</a></td>
+ </tr> 
+</table>
+
+<div style="height:15px; line-height:15px;"></div>
+<!-- END Subscription Module 2427 -->
+</div><!--/graveyardModule 0-->
+
+<div class="graveyardModule"><!--1-->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" style="border: 1px solid black">
+<tr class="AdModule_BG"><td colspan="2" bgcolor="#D11B1B"><!-- start ziffsection //--><a href="http://www.pcmag.com/category2/0,2806,1937275,00.asp" ><!-- start ziffimage //--><img src="http://common.ziffdavisinternet.com/util_get_image/16/0,1425,i=162962,00.gif" width="429" height="32" border="0" alt="PCMagCast"><!-- end ziffimage //--></a><!-- end ziffsection //--></td></tr>
+<tr><td width="" valign="top" bordercolor="#000000" bgcolor="#eeeeee" style="padding:4px;">
+<div style="; border-right: thin solid silver;">
+<div class="AdModule_Content">
+
+<em>PC Magazine's live, online events make you more productive at work, home, and on the go. Best of all, they're FREE!</em><br />
+<br />
+
+<strong>Featured Event:</strong><br />
+<br />
+<strong><a href="http://vts.inxpo.com/scripts/Lightning.dll?LASCmd=AI:4;F:QS!10100&ShowKey=1116&AffiliateKey=512&AffiliateData=admodule">Green Technology Online Expo
+</a></strong><br>
+On demand now. Attend today!
+<br>
+This free expo is a one-stop shop for information on technologies that can help save the environment, companies working on Green initiatives, and groups that are making a difference. Editorial panel discussions will include specific advice on how businesses can help with the Green effort.
+<a href="http://vts.inxpo.com/scripts/Lightning.dll?LASCmd=AI:4;F:QS!10100&ShowKey=1116&AffiliateKey=512&AffiliateData=admodule"><strong>Register today</strong></a>.
+
+ 
+<br /> 
+<br />
+<strong><!-- start ziffsection //--><a href="http://www.pcmag.com/category2/0,2806,1937275,00.asp" >See all PCMagCasts >></a><!-- end ziffsection //--></strong>
+
+<br />&nbsp;<br />
+
+</td>
+
+<td width="50%" valign="top" bgcolor="#eeeeee" style="padding:4px;">
+                                
+<div class="AdModule_Content">
+<b>More Free PCMagCasts:</b><br><br>
+<strong><a href="http://www.pcmag.com/article2/0,2817,2276038,00.asp">VoIP Phone Systems for Today's Small and Medium Sized Business
+</a></strong><br>
+Thursday, April 24, 2008 - 11am PT / 2pm ET <em>Sponsored by Dell SB360</em><br>
+Learn more about VoIP phone systems and how they can help you address your business challenges.
+<a href="http://event.on24.com/eventRegistration/prereg/register.jsp?eventid=106340&sessionid=1&key=74FF75AA6FF7EAEE24FA93D3B6BB9A2F&partnerref=admodule"><strong>Register today</strong></a>.
+
+ <Br>
+ <Br>
+<strong><a href="http://www.dell.com/content/topics/global.aspx/bizportal/en/courses/2008_03_11_course4?c=us&cs=04&l=en&s=bsd&~ref=crss">As Your Business Grows, So Will Your Data: Are You Prepared?
+</a></strong><br>
+Begin this Learning Center course now. <em>Sponsored by Dell SB360</em><br>
+We provide you with the information you need to know to move your data and your storage processes to the right kinds of solutions
+<a href="http://www.dell.com/content/topics/global.aspx/bizportal/en/courses/2008_03_11_course4?c=us&cs=04&l=en&s=bsd&~ref=crss"><strong>Attend today</strong></a>.
+
+
+<br />
+&nbsp;<br />
+
+
+
+
+
+
+</td>
+</tr>
+</table><br>
+</div><!--/graveyardModule 1-->
+
+<!-- End Common Ad HTML Module Group -->
+
+	   
+		<!-- Begin Sponsor Links -->
+	<!-- Vignette V6 Fri Apr 11 09:23:53 2008 -->
+<!--WEB 11-->
+<!-- Begin T4463 --> 
+
+<!-- End T4463 --> 
+
+<!-- Begin Common Ad HTML Module Group -->
+
+<div class="graveyardModule"><!--0-->
+<div class="sponsors_container">
+<div class="sponsors"><img src="/images/pcm_sponsors_header.gif" class="left_ad_type_image">				
+<ul class="sponsor_links">
+
+
+<!--Sling--4/15/08--Rosenberg-->
+<li><A HREF="http://ad.doubleclick.net/clk;191591221;13401844;v?http://www.slingmedia.com/go/Q108ads?ci_tag=pcm_text"
+>Slingbox - Watch your home TV from anywhere
+</a><br>
+
+<!--Samsung--6/30/08--Millington-->
+<li><A HREF="http://ad.doubleclick.net/clk;197376249;25754568;d"
+>Samsung 225UW Monitor. Front end solution for Unified Communications.
+
+</a><br>
+
+
+<!--HP Commercial Marketing--4/30/08--Mueters-->
+<li><A HREF="http://ad.doubleclick.net/clk;192490051;13401844;v?http://ad.doubleclick.net/clk;192018327;24975571;m?http://internet.ziffdavis.com/hp/test/hp.html"
+>Find the lowest cost per page with HP Multifunction Print Calculator 
+</a><br>
+
+
+<!--Techsmith Camtasia Ads--4/30/08--Christensen-->
+<li><A HREF="http://ad.doubleclick.net/clk;197945159;13401844;o?http://www.techsmith.com/featured/2007/camtasia/domore/?cmp=PCM%20CS3"> Camtasia Studio: Create stunning PC videos with ease.
+ </a><br>
+
+
+<!--Newegg Shopping IO--5/31/08--Clemetson-->
+<li><A HREF="http://ad.doubleclick.net/clk;117347363;13401844;z?http://www.newegg.com/Product/Product.aspx?Item=N82E16834115361&CMP=OTC-PcmagShowcase&ATT=N82E16834115361
+">Acer Aspire AMD Turion Notebook - Now available at Newegg.com!</a><br>
+
+
+<!--Toshiba (Enterprise)--4/30/08--Clemetson-->
+<li><A HREF="http://ad.doubleclick.net/clk;193055752;13401844;b?http://www.toshibabusiness.ziffdavisenterprise.com/">Learn how Toshiba can drive dramatic results for your business
+</a><br>
+
+
+<!--Moneual--9/3/08--Narta-->
+<li><A HREF="http://ad.doubleclick.net/clk;189559364;13401844;o?http://www.moneual.com">Find the most entertaining Home Theater PC at Moneual.com! </a><br>
+
+<!--Lexmark SMB Color Laser--4/27/08--Davenport-->
+<li><A HREF="http://ad.doubleclick.net/clk;189826609;13401844;n?http://clk.atdmt.com/DNR/go/zffdvlxk0160000035dnr/direct/01/">Save 25% on select Lexmark color laser printers.
+</a><br>
+
+
+<!--Symantec--6/30/08--Marketing Traffic Drivers-->
+<li><A HREF="http://ad.doubleclick.net/clk;198256886;13401844;r?http://www.pcmag.com/category2/0,2806,2249651,00.asp
+">Norton Internet Security&trade; 2008 delivers award-winning protection. Learn more at Norton Protection Center
+</a><br>
+
+<!--Brother--4/30/08--Jarratt-->
+<li><A HREF="http://ad.doubleclick.net/clk;197054778;25787855;i?http://www.brother-usa.com/planb/">Fast, affordable Color Laser Printing from Brother
+</a><br>
+
+
+<!--Techsmith Snag it Ad--4/30/08---->
+<li><A HREF="http://ad.doubleclick.net/clk;196927043;13401844;f?http://www.techsmith.com/snagit.asp?cmp=PCMgS05 ">Capture, edit and share your PC screen!&nbsp; 
+</a><br>
+
+<!--Dell--4/3/08--Boudinot-->
+<li><A HREF="http://ad.doubleclick.net/clk;196774684;13401844;q?http://www.dell.com/content/topics/topic.aspx/global/learn/main/index?c=us&cs=19&l=en&s=dhs&~ck=mn">Explore & Learn with Dell, and get FREE tips!
+</a><br>
+
+<!--Seagate--5/31/08--Mueters-->
+<li><A HREF="http://ad.doubleclick.net/clk;160018001;13401844;h?http://storagezone.ziffdavisinternet.com
+">Find out how to keep your important documents safe and sound at the Storage Solution Zone
+</a><br>
+
+<!--Hitwise--4/30/08--Crystal-->
+<li><A HREF="http://ad.doubleclick.net/clk;198745798;13401844;w?http://www.hitwise.com/registration-page/us-social-networking-report.php?utm_source=Ziff_Davis&utm_medium=banner&utm_campaign=Ziff_Davis_banner">The Impact of Social Networking &#150; download the report now!
+
+</a><br>
+
+
+<!--Small Dog--5/1/08--Altieri-->
+<li><A HREF="http://ad.doubleclick.net/clk;197058824;13401844;i?http://www.smalldog.com/category/x/x/MacBook/MacBook/wag140/wag10040/at_pcworld">Save over $300 on select MacBooks &&nbsp;MacBook bundles!
+</a><br>
+
+
+
+
+
+
+
+
+
+</ul>
+</div>	
+</div>
+</div><!--/graveyardModule 0-->
+
+<!-- End Common Ad HTML Module Group -->
+			
+		<!-- End Sponsor Links -->
+			<div class="clearl"></div>
+		</div><!--/graveyard-->  
+ 	
+				<div class="clearr"></div>
+				</div><!--/w_contentCol2 | /videoCol-->
+			<br clear="left" />
+		</div><!-- /w_contentGroup -->
+		
+		<!--RenderAdColumn-->
+		<div id="w_adModule">
+	
+			<div class="adModule">
+<iframe src="http://ad.doubleclick.net/adi/pcm.dart/pg/servers;pos=top;zdid=a19779;zdtype=standardreview;zdproduct=apachehttpserver13;zdcompany=theapachesoftwarefoundation;pagetype=article2;zdtopic2=opsys;zdtopic3=bizapps;tile=2;sz=336x76;ord=5569879413?" width="336" height="76" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" hspace="0"><a href="http://ad.doubleclick.net/jump/pcm.dart/pg/servers;abr=!ie;pos=top;zdid=a19779;zdtype=standardreview;zdproduct=apachehttpserver13;zdcompany=theapachesoftwarefoundation;pagetype=article2;zdtopic2=opsys;zdtopic3=bizapps;tile=2;sz=336x76;ord=5569879413? target="_top"><img src="http://ad.doubleclick.net/ad/pcm.dart/pg/servers;abr=!ie;pos=top;zdid=a19779;zdtype=standardreview;zdproduct=apachehttpserver13;zdcompany=theapachesoftwarefoundation;pagetype=article2;zdtopic2=opsys;zdtopic3=bizapps;tile=2;sz=336x76;ord=5569879413? border="0" height="76" width="336" hspace="" /></a></iframe>
+			</div>
+
+			<div class="adModule">
+<iframe src="http://ad.doubleclick.net/adi/pcm.dart/pg/servers;pos=top;zdid=a19779;zdtype=standardreview;zdproduct=apachehttpserver13;zdcompany=theapachesoftwarefoundation;pagetype=article2;zdtopic2=opsys;zdtopic3=bizapps;tile=3;sz=336x280;ord=5569879413?" width="336" height="280" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" hspace="0"><a href="http://ad.doubleclick.net/jump/pcm.dart/pg/servers;abr=!ie;pos=top;zdid=a19779;zdtype=standardreview;zdproduct=apachehttpserver13;zdcompany=theapachesoftwarefoundation;pagetype=article2;zdtopic2=opsys;zdtopic3=bizapps;tile=3;sz=336x280;ord=5569879413? target="_top"><img src="http://ad.doubleclick.net/ad/pcm.dart/pg/servers;abr=!ie;pos=top;zdid=a19779;zdtype=standardreview;zdproduct=apachehttpserver13;zdcompany=theapachesoftwarefoundation;pagetype=article2;zdtopic2=opsys;zdtopic3=bizapps;tile=3;sz=336x280;ord=5569879413? border="0" height="280" width="336" hspace="" /></a></iframe>
+			</div>
+<!-- Vignette V6 Fri Apr 11 09:23:53 2008 -->
+<!--WEB 11-->
+<!-- Begin T4463 --> 
+
+<!-- End T4463 --> 
+
+<!-- Begin Common Ad HTML Module Group -->
+
+<div class="graveyardModule"><!--0-->
+<style type="text/css">
+div.spotlightlinks div {padding: 3px 0px 3px 7px; background-image:url('http://common.ziffdavisinternet.com/util_get_image/19/0,,i=198309,00.gif'); background-repeat:no-repeat; background-position:0 9; line-height:13px;}
+div.spotlightlinks div a {font-size:12px; font-family:arial, sans-serif; text-decoration:none;}
+div.spotlightlinks div a:hover {text-decoration:underline;}
+div.spotlight_hdr {padding-bottom:3px; border-bottom:1px solid #000;}
+div.spotlight_hdr_plus {margin-top:3px; height:2px; line-height:2px; background-image:url('http://common.ziffdavisinternet.com/util_get_image/19/0,,i=198313,00.gif'); background-repeat:repeat-x;}
+</style>
+
+<div style="height:15px; line-height:15px;"></div>
+
+<div class="spotlight_hdr"><!-- start ziffimage //--><img src="http://common.ziffdavisinternet.com/util_get_image/19/0,1425,i=198310,00.gif" width="99" height="13" border="0" alt="Info Centers" align="None"><!-- end ziffimage //--></div>
+<div class="spotlight_hdr_plus">&nbsp;</div>
+<div class="spotlightlinks">
+
+<div><a href="http://ad.doubleclick.net/clk;165558844;13401844;k?http://storagezone.ziffdavisinternet.com"><b>Storage Solution Zone:</b> Seagate/Maxtor</a></div>
+<div><a href="http://ad.doubleclick.net/clk;165560383;13401844;b?http://www.pcmag.com/category2/0,2705,2230112,00.asp"><b>Lenovo Notebook Zone:</b> Lenovo</a></div>
+<div><a href="http://ad.doubleclick.net/clk;165562781;13401844;f?http://hpstorage.ziffdavisinternet.com/"><b>HP Storage Solution Center:</b> Hewlett Packard</a></div>
+
+<div><a href="http://ad.doubleclick.net/clk;179621458;5913751;r?http://www.pcmag.com/category2/0,2806,2249651,00.asp"><b>Norton Protection Center:  Norton</b></a>	</div>
+<div><a href="http://www.pcmag.com/category2/0,2806,2183290,00.asp"><b>Cooling and Power Info Center: APC by Schneider Electric </b></a>	</div>
+
+</div>
+
+<div style="height:10px; line-height:10px;">&nbsp;</div>
+
+<div><!-- start ziffimage //--><img src="http://common.ziffdavisinternet.com/util_get_image/19/0,1425,i=198311,00.gif" width="94" height="13" border="0" alt="Special Offers" align="None"><!-- end ziffimage //--></div>
+<div class="spotlight_hdr_plus">&nbsp;</div>
+<div class="spotlightlinks">
+<div><a href="http://www.infohub.ziffdavis.com/survey/0,,surveyId=462,00.asp">CEO restores   company website via online backup</a></div>
+
+<div><a href="http://ad.doubleclick.net/clk;194516180;13401844;z?http://internet.ziffdavis.com/techbriefs/intel/intel-apr08-web.pdf">The Surprising Element at the Heart of Your Next Notebook.</a></div>
+
+<div><a href="http://ad.doubleclick.net/clk;197540110;13401844;s?http://ad.doubleclick.net/clk;197424203;25867146;k?http://mozy.com/small-business?ref=7e1a5bd4&utm_source=pcmag&utm_medium=text&utm_campaign=pcmagazine">Protect Your Business With Award-Winning MozyPro Online Backup</a>	</div>
+
+<div><a href="http://www.infohub.ziffdavis.com/survey/0,,surveyId=464,00.asp">The Secret to Effective, No-Hassle Performance Reviews</a>	</div>
+
+<div><a href="http://www.infohub.ziffdavis.com/survey/0,,surveyId=465,00.asp">Changing the Game: 4 Ways to Unlock Your Employees' Performance Potential </a>	</div>
+
+<div><a href="http://ad.doubleclick.net/clk;192490027;13401844;y?http://ad.doubleclick.net/clk;192018327;24975574;p?http://internet.ziffdavis.com/hp/test/hp.html"> See how HP Multifunction products compare with a quick Print Calculator</a></div>
+<div><a href="http://www.pcmag.com/article2/0,2704,2271618,00.asp">Find out how to Avoid Costs From Oversizing Data Center & Network Rooms </a></div>
+<div><a href="http://ad.doubleclick.net/clk;99781934;13401844;s?http://infohub.ziffdavis.com/survey/0,,surveyId=247,00.asp">Looking to stand out above your competition? </a></div>
+<div><a href="http://ad.doubleclick.net/clk;82285167;13401844;h?http://infohub.ziffdavis.com/survey/0,,surveyId=426,00.asp">Keeping Your SQL Server&trade; Databases Defragmented </a></div>
+ 
+ <div><a href="http://ad.doubleclick.net/clk;179620872;5913751;q?http://www.pcmag.com/category2/0,2806,2249651,00.asp ">Norton starts, scans and runs faster than ever.
+
+ </a>	</div>
+  <div><a href="http://www.infohub.ziffdavis.com/survey/0,,surveyId=463,00.asp">CTO saves   thousands through switch to online backup</a>	</div>
+ 
+<script type="text/javascript" src="http://dinclinx.com/?t=28&f=javascript"></script>
+
+</div>
+
+<div style="height:10px; line-height:10px;"></div>
+</div><!--/graveyardModule 0-->
+
+<div class="graveyardModule"><!--1-->
+<!-- BEGIN Yahoo Yieldmanager - Advertiser 'Ziff Davis', Include user in conversion 'Ziff Davis - PCMag.com' - ROS -->
+<script src="http://ad.yieldmanager.com/pixel?id=70017&t=1"></script>
+<!-- END Yahoo Yieldmanager -->
+</div><!--/graveyardModule 1-->
+
+<!-- End Common Ad HTML Module Group -->
+
+			<div class="adModule">
+	
+
+	 <script language="JavaScript" type="text/javascript"><!--	
+	  function google_radlink_request_done(radlinks) {
+		if (radlinks.length > 0) {
+			document.write('<div id="GooSDC">');
+			document.write('<ul>');
+			document.write('<li class="HdrGoo_story">RELATED ADS</li>');
+										
+	   		for(i = 0; i < radlinks.length; ++i) {
+	   			document.write('<li><a target="_top" href="/ad_links/0,,,00.asp?google_kw=' + escape(radlinks[i].term) + 
+	   			'&google_page_url=' + escape(window.location) + '" onMouseOver="return GOOGLEShowStatusInfo(\'' + escape(radlinks[i].term) + '\')">' + radlinks[i].term + '</a></li>');
+	   		}
+			document.write('</ul>');
+			document.write('</div>');		
+		}
+	  }
+	  // -->	  
+	  </script>
+	  
+	  <!-- d_page_location: related_ads -->		
+	<script language="JavaScript"><!--
+		function GOOGLEShowStatusInfo(w){
+			setTimeout("window.status = \'" + unescape(w) + "\';", 0);		
+			return true;
+		}	
+		google_ad_client = 'ca-ziffdavis_radlinks_consumer_js';         
+		google_ad_channel = 'pcmag';			 
+		google_ad_output = 'js';      			    
+					 
+		google_num_radlinks = '7';
+		google_max_num_ads = '0';  			 
+					 
+		google_safe = 'high';
+		-->
+	</script><!--related_ads-->
+	<script language="JavaScript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+
+			</div>			
+	<!-- PCMag White papers -->		
+	
+<script type="text/javascript" src="http://jlinks.industrybrains.com/jsct?sid=42&ct=PCMAG_WP_ROS&num=4&layt=9&fmt=simp"></script>	
+
+
+
+		</div> <!-- /w_adModule -->
+		
+
+		
+	<div class="clearb"></div>
+	<div id="w_footer">
+	
+	<!-- =========================================== -->
+<!-- Vignette V6 Wed Mar 26 14:31:20 2008 -->
+<!--WEB 11-->
+<!-- Begin T4463 --> 
+
+<!-- End T4463 --> 
+<!-- being pcm footer module 405 -->
+
+<table border="0" cellpadding="0" cellspacing="0" width="">
+ <tr bgcolor="#92907D" align="left" valign="middle">
+  <td><img src="/images/pcm_footer_pcmag.gif" width="86" height="26"></td>
+  <td><p class="Footer_Pub">
+   <a href="http://www.pcmag.com/previous_issues/" class="Footer_Pub">Issue Index</a> | 
+   <!-- start ziffarticle //--><a href="http://www.pcmag.com/article2/0,2817,1329747,00.asp" class="Footer_Pub">Contact Us</a><!-- end ziffarticle //--> | 
+   <!-- start ziffarticle //--><a href="http://www.pcmag.com/article2/0,2817,1329743,00.asp" class="Footer_Pub">About</a><!-- end ziffarticle //--> | 
+   <a href="http://www.pcmagnetwork.com" class="Footer_Pub">Advertise</a> | 
+   <a href="http://www.pcmag.com/site_map" class="Footer_Pub">Site Map</a> | 
+   <a href="http://go.pcmag.com/subscriberservices" class="Footer_Pub">Magazine Customer Service</a></p></td>
+ </tr>
+ 
+ <!-- PCMag.com Quick Links -->
+ <tr align="left" valign="top" bgcolor="#ffffff">
+  <td valign="middle"><p class="Footer_Text"><a href="http://www.pcmag.com" name="PC Magazine" class="Footer_ZD"><!-- start ziffimage //--><img src="http://common.ziffdavisinternet.com/util_get_image/11/0,1425,i=110181,00.gif" width="129" height="16" border="0" alt="Quick Links" align="left"><!-- end ziffimage //--></a></td>
+  <td align="left"><p class="Footer_Text" style="margin:5 0 5 0;">
+   <a href="http://www.pcmag.com/category2/0,1874,4,00.asp" class="Footer_ZD">Desktop Reviews</a>&nbsp;| 
+   <a href="http://www.pcmag.com/products/0,,qn=Laptops+Notebooks+Less+than+%241000,00.asp" class="Footer_ZD">Cheap Laptops</a>&nbsp;| 
+   <!-- start ziffsection //--><a href="http://www.pcmag.com/category2/0,2806,4236,00.asp" class="Footer_ZD">Wireless Networking</a><!-- end ziffsection //-->&nbsp;| 
+   <a href="http://www.pcmag.com/products/0,,qn=Desktops+Media,00.asp" class="Footer_ZD">Media Desktops</a>&nbsp;| 
+   <!-- start ziffsection //--><a href="http://www.pcmag.com/category2/0,2806,1639039,00.asp" class="Footer_ZD">Laser Printers</a><!-- end ziffsection //-->&nbsp;| 
+   <!-- start ziffsection //--><a href="http://www.pcmag.com/category2/0,2806,1638938,00.asp" class="Footer_ZD">InkJet Printers</a><!-- end ziffsection //-->&nbsp;| 
+   <!-- start ziffsection //--><a href="http://www.pcmag.com/category2/0,2806,2359,00.asp" class="Footer_ZD">MP3 Players</a><!-- end ziffsection //-->&nbsp;| 
+   <!-- start ziffsection //--><a href="http://www.pcmag.com/category2/0,2806,2347,00.asp" class="Footer_ZD">Digital Camcorders</a><!-- end ziffsection //-->&nbsp;| 
+   <a href="http://www.pcmag.com/products/0,,qn=HDTVs+Plasma,00.asp" class="Footer_ZD">Plasma HDTVs</a>&nbsp;| 
+   <a href="http://www.pcmag.com/products/0,,qn=LCDs+Monitor,00.asp" class="Footer_ZD">LCD Monitors</a>&nbsp;| 
+   <a href="http://www.pcmag.com/products/0,,qn=Scanners+Flatbed,00.asp" class="Footer_ZD">Flatbed Scanners</a>&nbsp;| 
+   <a href="http://www.pcmag.com/products/0,,qn=Phones+Bluetooth,00.asp" class="Footer_ZD">Bluetooth Phones</a>&nbsp;| 
+   <a href="http://www.pcmag.com/products/0,,qn=PDAs+Palm,00.asp" class="Footer_ZD">Palm PDAs</a>&nbsp;| 
+   <a href="http://www.pcmag.com/products/0,,qn=Digital+Cameras+Under+%24250,00.asp" class="Footer_ZD">Cheap Digital Cameras</a>&nbsp;| 
+   <!-- start ziffsection //--><a href="http://www.pcmag.com/category2/0,2806,4796,00.asp" class="Footer_ZD">Virus Software</a><!-- end ziffsection //-->&nbsp;| 
+   <a href="http://www.pcmag.com/category2/0,1874,1882122,00.asp">Small Business Solutions</a></p></td>
+ </tr>
+
+ <!-- Ziff Davis Media Links -->
+ <tr valign="top" bgcolor="#ffffff">
+  <td valign="middle" align="center"><p class="Footer_Text"><a href="http://www.ziffdavis.com" name="Ziff Davis Media Inc." class="Footer_ZD"><!-- start ziffimage //--><img src="http://common.ziffdavisinternet.com/util_get_image/18/0,1425,i=186329,00.gif" width="108" height="15" border="0" alt="Ziff Davis Media"><!-- end ziffimage //--></a></td>
+  <td align="left"><p class="Footer_Text" style="margin:5 0 5 ;"><!-- BEGIN 2817 - CSB Contact Us Module for Footer -->
+<style type="text/css">
+p.Footer_Text a {white-space:nowrap;}
+</style>
+<a href="http://www.ziffdavis.com/" title="Ziff Davis Home">Ziff Davis Home</a>&nbsp;| 
+<a href="http://www.ziffdavis.com/about/contact" title="Contact Us">Contact Us</a>&nbsp;| 
+<a href="http://www.pcmagnetwork.com" title="Advertise">Advertise</a>&nbsp;| 
+<a href="http://www.ziffdavis.com/about/link-to-us" title="Link to Us">Link to Us</a>&nbsp;| 
+<a href="http://www.ziffdavis.com/about/contact" title="Reprints">Reprints</a>&nbsp;| 
+<a href="http://www.zdmcirc.com/index.html" title="Magazine Subscriptions">Magazine Subscriptions</a>&nbsp;| 
+<a href="/newsletter_manage/" title="Newsletters">Newsletters</a>&nbsp;|
+<a href="http://www.pcmag.com/article2/0,1895,1329778,00.asp" title="RSS Feeds">RSS Feeds</a>&nbsp;|
+<a href="http://shop.pcmag.com" title="Tech Shop">Tech Shop</a>&nbsp;|
+<a href="http://www.pcmag.com/encyclopedia_index/" title="Tech Encyclopedia">Tech Encyclopedia</a>&nbsp;| 
+<a href="http://www.pcmag.com/category2/0,4148,2130,00.asp" title="PC Downloads">PC Downloads</a>&nbsp;| 
+<!-- <a href="http://ad.doubleclick.net/clk;63339091;15971719;r?http://seeker.dice.com/jobsearch/genthree/index.jsp" title="Tech Jobs">Tech Jobs</a>&nbsp;| -->
+<a href="http://www.pcmagcasts.com" title="Tech Webcasts">Tech Webcasts</a>&nbsp;|
+<a href="http://www.pcmag.com/category2/0,1874,2007098,00.asp" title="Tech Podcasts">Tech Podcasts</a>&nbsp;|
+<a href="http://www.pcmag.com/category2/0,1874,1896903,00.asp" title="Tech Video">Tech Video</a>&nbsp;|
+<a href="http://whitepapers.pcmag.com" title="White Papers">White Papers</a>&nbsp;|
+<a href="http://www.ziffdavisinternational.com">Ziff Davis Media International</a>
+<!-- END 2817 - CSB Contact Us Module for Footer--></ziffhtml></p></td>
+ </tr>
+
+ <tr align="left" valign="top" bgcolor="#ffffff">
+  <td><p class="Footer_Text"><img src="/images/pcm_spacer.gif" width="108" border="0"></td>
+  <td><p class="Footer_Text" style="margin:5 0 5 0;"><!-- BEGIN 2816 - CSB Publication Module -->
+<a href="http://www.1up.com">1UP</a>&nbsp;| 
+<a href="http://www.appscout.com">AppScout</a>&nbsp;|
+<a href="http://www.crankygeeks.com">Cranky Geeks</a>&nbsp;| 
+<a href="http://www.digitallife.com">DigitalLife</a>&nbsp;| 
+<a href="http://www.digitallifetv.com">DL.TV</a>&nbsp;| 
+<a href="http://www.extremetech.com">ExtremeTech</a>&nbsp;| 
+<a href="http://www.filefront.com">Filefront</a>&nbsp;| 
+<a href="http://www.gamevideos.com">GameVideos</a>&nbsp;| 
+<a href="http://www.gearlog.com">GearLog</a>&nbsp;|
+<a href="http://www.goodcleantech.com">GoodCleanTech</a>&nbsp;| 
+<a href="http://www.mycheats.com">My Cheats</a>&nbsp;| 
+<a href="http://www.pcmag.com">PC Magazine</a>&nbsp;| 
+<a href="http://www.pcmagcasts.com">PCMagCasts</a>&nbsp;| 
+<a href="http://blogs.pcmag.com/securitywatch">Security Watch</a>&nbsp;| 
+<a href="http://www.smartdevicecentral.com">Smart Device Central</a>&nbsp;| 
+<a href="http://www.technoride.com">TechnoRide</a>&nbsp;| 
+<a href="http://www.whatsnewnow.com">What's New Now</a><br>
+<br>
+<a href="http://mobile.appscout.com">AppScout Mobile</a>&nbsp;| 
+<a href="http://mobile.gearlog.com">Gearlog Mobile</a>&nbsp;| 
+<a href="http://mobile.goodcleantech.com">GoodCleanTech Mobile</a>&nbsp;| 
+<a href="http://mobile.pcmag.com">PC Magazine Mobile</a>
+<br>
+<br>
+Use of this site is governed by our <a href="http://www.ziffdavis.com/about/terms">Terms of Use</a> and <a href="http://www.ziffdavis.com/about/privacy">Privacy Policy</a><br>
+Copyright &copy; 
+<!-- END 2816 - CSB Publication Module --></ziffhtml> 1996-2008 <a href="http://www.ziffdavis.com" name="Ziff Davis Publishing Holdings Inc." class="Footer_ZD">Ziff Davis Publishing Holdings Inc.</a> All Rights Reserved. PC Magazine is a registered trademark of Ziff Davis Publishing Holdings Inc. Reproduction in whole or in part in any form or medium without express written permission of Ziff Davis Media Inc. is prohibited.</p></td>
+ </tr>
+ </table>
+
+<!-- BEGIN CSB Footer Additions -->
+<!-- BEGIN CSB Common Footer Additions - Module 3058 -->
+<!-- BEGIN Module 3346 -->
+<!-- Start Quantcast tag -->
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<script type="text/javascript">_qacct="p-04uRKu2hEQDsw";quantserve();</script>
+<noscript>
+<a href="http://www.quantcast.com/p-04uRKu2hEQDsw" target="_blank"></a>
+</noscript>
+<!-- End Quantcast tag -->
+<!-- END Module 3346 -->
+<!-- END CSB Common Footer Additions - Module 3058 -->
+<!-- END CSB Footer Additions -->
+
+<!-- BEGIN PCMag Footer Additions -->
+<!-- BEGIN Module 3347 PCM Only Footer Additions -->
+<!-- BEGIN Module 3360 Tacoda Insight ROS -->
+<SCRIPT LANGUAGE="JavaScript">var tcdacmd="dt";</SCRIPT>
+<SCRIPT SRC="http://an.tacoda.net/an/11797/slf.js" LANGUAGE="JavaScript"></SCRIPT>
+<!-- END Module 3360 Tacoda Insight ROS -->
+<!-- BEGIN Module 3368 PCM Google Analytics Tag -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3705233-1");
+pageTracker._setDomainName("pcmag.com");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+<!-- END Module 3368 PCM Google Analytics Tag -->
+
+<style type="text/css">
+div.articleCopy table {overflow:hidden;}
+div.articleCopy table td {font-family:verdana; font-size:12px;}
+div.articleCopy table td a img {display:block!important;}
+</style>
+
+<!-- END Module 3347 PCM Only Footer Additions -->
+<!-- END PCMag Footer Additions -->
+
+<!-- end pcm footer module 405 -->
+	</div> <!-- /w_footer -->
+</div><!-- /wrapperPage-->
+
+</body>
+</html>

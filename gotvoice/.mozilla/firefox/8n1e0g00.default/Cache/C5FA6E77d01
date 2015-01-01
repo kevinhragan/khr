@@ -1,0 +1,352 @@
+/* =================================================== 
+   Common Styles:
+  - header
+  - breadcrumb
+  - subhead
+  - footer
+  - most popular
+   =================================================== */
+/* ------------ PC MAG STYLE GUIDE ------------------- */ 
+div{margin: 0; padding: 0; }			
+
+/* ------------ TEXT DEFAULTS ------------------- */ 
+body 						 { font-family:Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #000; 
+                               background-color: #fff; line-height: 1.3em; 
+							 }
+p, textarea, blockquote, pre { margin: 0; padding: 0; }
+address, cite, code, dfn, 
+em, strong, var				 { font-style: normal; font-weight: normal; }
+q:before,q:after			 { content:''; }
+abbr,acronym 				 { border:0; }
+ul, ol, li, dl, dt, dd		 { margin: 0; padding: 0; }
+ul, ol	 					 { list-style: none; }
+h1, h2, h3, h4, h5, h6		 { margin: 0; padding: 0; font-size:100%;font-weight:normal; }	
+
+p, table, li { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;} 
+
+/* --------- @color BACKGROUND COLORS -------------------- */
+.bkWhite     { background-color: #fff; }
+.bkBlueGray  { background-color: #f0f0f0; }
+.bkBlueGray2 { background-color: #F1F1ED; } /* newsletter background */
+.bkCream     { background-color: #FFFFCC; } /* need real color */
+.bkGray999   { background-color: #999; }
+
+	
+/* ------------ LINK DEFAULTS ------------------- */ 
+/* Link defaults:  links are always underlined in article copy.
+   Lists or links in html modules tend to underline only on hover.
+   Some links are never underlined.
+*/
+* a						  { color: #003bb0; }	
+a:link , 
+a:visited , 
+a:hover , 
+a:active                 { text-decoration: underline; }
+
+#summaryData p a:link    { text-decoration: none;}
+#summaryData p a:visited { text-decoration: none; }
+#summaryData p a:hover   { text-decoration: underline; color: red; }
+
+#underArticleLinks * a:link , 
+#underArticleLinks * a:visited  { text-decoration: none; }
+#underArticleLinks * a:hover , 
+#underArticleLinks * a:active   { text-decoration: underline; }
+
+
+/* ------------ IMAGE DEFAULTS ------------------- */ 
+img	        { margin: 0; padding: 0; border: 0; }
+
+/* ------------ TABLE DEFAULTS ------------------- */ 
+table       { border-collapse:collapse; border-spacing:0; }
+th,td       { margin: 0; padding: 0; }
+caption, th { text-align: left; font-style:normal;font-weight:normal; }
+
+/* ------------ FORM DEFAULTS ------------------- */ 
+form, fieldset, input { margin: 0; padding: 0; }
+fieldset              { border: 0; }
+
+/* ------------ CLEARING DIVS ------------------- */ 
+* .clearl    { clear: left; line-height: 0.01em;}
+* .clearr    { clear: right; line-height: 0.01em; }
+* .clearb    { clear: both; line-height: 0.01em; }
+ 
+/* ------------ HOLLY HACK ------------------- */ 
+/* use to overcome IE floating text not rendering bug */
+/* hides from IE5-mac \*/
+* html .fixme {height: 1%;}
+
+/* ------------- SITE HEADER ----------------------- */
+/* w_header is given a z-index of 500 to ensure that the "more" dropdown will have precedence of
+   the subhead teal bars
+*/
+#w_header                   { z-index: 500; margin: 0; padding: 0;}
+#w_header table             { width: 1004px; }
+#w_header .more             { position:absolute; visibility: hidden; z-index:100; left: 365px; top: 23px; 
+                              background-color: #FFFFFF; border: 1px solid #6E8192; width: 410px; height: auto; 
+                              filter: Alpha(Opacity=93); font-family: Arial, Helvetica, sans-serif; 
+                              font-size: 12px; color: #717171; font-weight: bold; padding: 5px; display:none; 
+                            }
+#w_header .more table       { border: 0; float: right; clear: both; width: 350px; }
+#w_header .more .viewall    { text-align: right; font-weight: bold; }
+#w_header .more .viewall a  { font-size: 11px; }
+#w_header .more a           { font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #003BB0; 
+                              text-decoration: none; 
+                            }
+#w_header .more a:link , #w_header .more a:visited  { color: #003BB0; text-decoration: none; }
+#w_header .more a:hover ,#w_header .more a:active   { color: #003BB0; text-decoration: underline; }
+#w_header #review_finder    { float:left; width:100%; height:26px; background-color: #730101; 
+                              background-image:url(../images/pcm_15_guidesbg.gif); background-repeat: no-repeat;
+                              background-position:left top; overflow:hidden; 
+                            }	
+#w_header #review_finder ul { margin:0 0 0 62px; padding:0; list-style:none; } 
+#w_header #review_finder li { margin:0; padding:0; float:left; 
+                              background: url(../images/pcm_15_rf_left.gif) no-repeat left top; 
+                            }
+#w_header #review_finder li a      { padding:5px; float:left; display:block; font-family: Arial, Helvetica, sans-serif; 									 font-size:11px; text-decoration: none; color:#FFF; font-weight: bold; 
+                                     text-transform:uppercase; line-height:normal;
+                                     background: url(../images/pcm_15_rf_right.gif) no-repeat right top; 
+                                   }
+#w_header #review_finder li a:link ,  
+#w_header #review_finder li a:visited { color:#FFFFFF; }
+#w_header #review_finder li a:hover   { color:#FFFFFF; background-image: none; background-color: #730101; }
+#w_header #review_finder li a:active  { color:#FFFFFF; }
+
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#w_header #review_finder a          { float:none; }
+					
+/*link that sits on top of the product guide background image*/
+#w_header #product_guide_link       { text-decoration: none;position:absolute;top:5px;left:86px; z-index:2; }
+
+/*hide the link text - but keep the link active*/
+#w_header #product_guide_link a i   { visibility:hidden; }
+#w_header .tagline                  { margin-top: 0; vertical-align: top; }
+#w_header .profile                  { width: auto; height:50px;  float: right; clear: right; vertical-align: top;  
+                                      font-family: Arial, Helvetica, sans-serif; color:#666666;font-size:11px; 
+                                      white-space:nowrap; 
+								    }
+#w_header .profile_user             { margin-right: 6px; font-family: Arial, Helvetica, sans-serif; color:#000; 
+                                      font-size:11px; font-weight:bold; white-space:nowrap; 
+                                    }	
+#w_header .profile a                { margin: 0 6px; color:#0279CD; text-decoration:none; white-space:nowrap; }																	
+#w_header .profile a:hover          { text-decoration:underline; }								  
+
+#w_header #networkImg               { margin-top: -25px; height:auto; float: right; clear: right; vertical-align:top; }
+#w_header #networkImg img           { text-align: center; vertical-align: top; }
+#w_header table.leaderboard td      { padding-top: 5px; }
+#w_header table.leaderboard td iframe  { margin-right: 10px; }
+#w_header iframe                    { position: relative; margin: 0; padding: 0;  }
+
+/* @tab Tabbed Navigation */
+#w_header #header                   { padding: 0; clear: both; float:left; width:100%; 
+                                      background: url(../images/pcm_15_bg2.gif) repeat-x bottom; 
+                                    }
+#w_header #header ul                { margin:0; padding: 5px 0 0 4px; list-style-type: none; height: 24px; }
+#w_header #header li                { margin-right: 0; padding-left: 6px; float: left; display: block; 
+                                      background: url(../images/pcm_15_left.gif) no-repeat; 
+                                      border-bottom: 1px solid black; 
+                                    }
+#w_header #header li div            { margin: 0; padding-right: 5px; float: left; display: block;
+                                      background: url(../images/pcm_15_right.gif) no-repeat right top; 
+									}
+#w_header #header li a              { margin: 0; padding: 5px 7px 4px 7px; font-family: Arial, Helvetica, sans-serif;
+                                      float: left; display: block; white-space: nowrap; font-size:11px; 
+                                      font-weight: bold; color: #003bb0; text-decoration: none; line-height:normal; 
+                                    }
+#w_header #header li a:link ,									
+#w_header #header li a:visited 	    { color: #003bb0; text-decoration: none }
+#w_header #header li a:hover ,
+#w_header #header li a:active  	    { color: #003bb0; text-decoration: underline }
+#w_header #header li.on             { margin: 0 2px; padding-left: 6px; border-bottom: 1px solid #d2dce4; 
+                                      background: #f2f3f5 url(/images/pcm_15_left_on.gif) no-repeat; 
+                                    }
+#w_header #header li.on div         { padding-right: 6px; background: url(/images/pcm_15_right_on.gif) no-repeat 
+                                      right top; 
+                                    }
+#w_header #header li.on a           { color: #000000; text-decoration: none; }
+#w_header #header li.on a:visited   { color: #000000; text-decoration: none; }
+#w_header #header li.on a:hover     { color: #000000; text-decoration: none; }
+#w_header #header .zdlogo           { margin: 4px 10px 0 0; padding: 0; float:right;vertical-align: bottom; 
+                                      background:none; 
+									}
+#w_header #tab_subnav               { padding:0; font-family: Arial, Helvetica, sans-serif; width:100%; clear:both;
+                                      font-size: 11px; font-weight:bold; line-height:20px;
+                                      border-bottom: 1px solid black; background-color: #DFDED2; 
+                                    }
+#w_header #tab_subnav a             { color: #003bb0; text-decoration:none; padding: 0 10px; }
+#w_header #tab_subnav a:link , 
+#w_header #tab_subnav a:visited	    { color: #003bb0; text-decoration:none; }
+#w_header #tab_subnav a:hover       { color: #545454; }
+#w_header #tab_subnav div           { color: #003bb0; }
+
+/* Commented Backslash Hack - hides rule from IE5-Mac \*/
+#w_header #header a                 { float:none; }
+
+/* @srch SEARCH*/	   
+#w_header .searchtextbold           { color:#000000; font-family: Arial, Helvetica, sans-serif; 
+									  font-size:11px; font-weight:bold; text-transform: uppercase; 
+                                    }
+#w_header .searchtext               { color:#000000; font-family: Arial, Helvetica, sans-serif;	font-size:11px;
+                                      background-color: #F2F1E8; 
+                                    }
+#w_header .searchtext input         { margin-left:5px; font-family: Arial, Helvetica, sans-serif; font-size:11px; }
+#w_header #searchbox                { border-right: 1px solid #E2E2E2; width:100%; text-align:center; }
+	
+	/* Search Current or Previous Issue */	 
+#w_header #main_menu                { width: 100%; padding-left: 15px; }
+#w_header #main_menu ul             { margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif;
+                                      font-size: 11px; color: #727272; white-space: nowrap; display: inline; 
+                                    } 
+#w_header #main_menu li             { display: inline; background-image: url(../images/pcm_15_menubullet.gif); 
+                                      list-style-type: none; 
+                                    }
+#w_header #main_menu li a           { margin-right: 12px; padding-left: 12px; text-decoration: none; color: #0279CD; }
+#w_header #main_menu li a:link      { color: #0279CD; }
+#w_header #main_menu li a:visited   { color: #0279CD; }
+#w_header #main_menu li a:hover     { color: #336699; }
+#w_header .cannedsearch             { margin-right: 10px; font-family: Arial, Helvetica, sans-serif; font-size:11px;
+                                      font-weight:bold; color: #727272; white-space: nowrap; display: inline; 
+                                    }			
+/* ------------ @bread BREADCRUMB ----------------- */
+#w_breadcrumb                       { font-family: Arial, Helvetica, sans-serif; font-size:11px; 
+                                      font-weight: bold; border: 1px solid #ccc; display: block; height: 22px; 
+                                    }
+#w_breadcrumb ul                    { margin: 3px 0 0 8px; padding: 0; list-style: none; font-weight: bold; }
+#w_breadcrumb li                    { margin: 0; padding: 0;list-style-image: none; display: inline; 
+                                      font-weight: normal;
+                                    }
+#w_breadcrumb li span.bcSpacer      { margin: 0; padding: 0 0.5em; color: #003BB0; font-weight: normal; }	   
+#w_breadcrumb li a                  { text-decoration: none; font-family: Arial, Helvetica, sans-serif;
+                                      font-size: 11px; font-weight: normal; color: #003BB0; display: inline; }
+#w_breadcrumb li a:hover            { text-decoration: underline; }
+#w_breadcrumb li.thisPage           { padding-top: 5px; font-size: 11px; font-weight: bold; color: #000; 
+                                      font-family: Arial, Helvetica, sans-serif; 
+                                    }
+
+/* ------------ @subhead SUB HEADER ----------------- */
+#w_subHead          { position: relative; width: auto; margin: 10px 0 12px 5px; padding: 0; 
+                      height: 20px; 
+                    }
+/* #subHeadBkgd width is set to < 100% so that the background image doesn't extend past the fade in IE 6 and 7 */
+#subHeadBkgd 	    { position: absolute; z-index: 10; width: 90%; height: 17px;
+                      background-image:url(../images/sub_hed_teal_bars.gif);
+                      background-position: left top; background-repeat: repeat-x; 
+                    }
+#subHeadFade        { position: absolute; top: 0; right: 0; z-index: 30; height: 17px; width: 151px; 
+                      background-image: url(../images/sub_hed_teal_fade.gif); background-repeat: no-repeat; 
+                      background-position: right top; 
+                    }
+#subHeadBkgd h1     { position: absolute; left: 0; top: 0; width: auto; margin: 0; padding: 2px 20px 0 20px;
+                      font-family: Arial, Helvetica, sans-serif;font-size: 16px; background-color: #fff;
+                      color:#666; font-weight: bold;background-color: #fff;z-index: 50;background-position: left top;
+                      background-image: url(../images/sub_hed_teal_bars_left.gif); background-repeat: no-repeat;
+                    }
+
+/* ------------ @footer  FOOTER -------------------- */
+#w_footer                          { margin: 10px 0 0 -5px; padding: 0; color: #666; clear: both; }
+#w_footer a.Footer_Pub:link        { color:#FFFFFF;text-decoration:underline;font-weight:bold; }
+#w_footer a.Footer_Pub:visited     { color:#FFFFFF;text-decoration:underline;font-weight:bold; }
+#w_footer a.Footer_Pub:hover       { color:#FFFFFF;text-decoration: none; }
+#w_footer .Footer_Pub              { font-family:verdana;font-size:10px;color:#FFF; }
+#w_footer .Footer_ZD               { padding-right: 10px; }
+#w_footer a.Footer_ZD:link         { color:#666666;text-decoration:underline;font-weight:bold; }
+#w_footer a.Footer_ZD:visited      { color:#666666;text-decoration:underline;font-weight:bold; }
+#w_footer a.Footer_ZD:hover        { color:#666666;text-decoration: none; }
+#w_footer .Footer_Text             { font-family:verdana;font-size:10px;color:#666; }
+#w_footer p.Footer_Text a, 
+p.Footer_Text a:visited	           { color:#666;text-decoration:underline;font-weight:bold; }
+#w_footer p.Footer_Text a:hover    { color:#666666;text-decoration: none; }
+
+/* ------------ MOST POPULAR STYLES -------------------- */
+#w_most              { margin: 10px 0 20px 0; padding: 0;width: 450px; }
+#Most                { width: 95%; margin:0; padding:0; font:11px Arial, Helvetica, sans-serif; }
+#Most a              { outline: none;}
+#headerMost          { font: bold 11px Arial, Helvetica, sans-serif; width:100%; }
+#headerMost ul       { margin:0; padding:0; list-style:none; float:left; position:relative;bottom:0; }
+#headerMost ul li    { float:left; background:url(/images/tab_left_off.gif) no-repeat left top;
+                       margin:0; padding:0px 0 0 4px; border-bottom:1px solid #999;
+                     }
+#headerMost ul li a  { float:left; display:block;  background:url(/images/tab_right_off.gif) no-repeat right top;
+                       padding:6px 8px 2px 4px; text-decoration:none; font-weight:bold; color:#666;
+                     }  
+#headerMost a:hover  { color:#000; }
+#headerMost ul li.current   { background-image:url(/images/tab_left_on.gif); border-bottom:1px solid #fff;
+                              padding-left:3px;
+                            }
+#headerMost ul li.current a { background-image:url(/images/tab_right_on.gif);color:#000;padding:6px 8px 2px 4px; }
+#headerMost li.arrow        { padding:0px 2px 0px 0px;font-size:12px; color:#600; text-transform: uppercase;
+                              font-weight:bold; background:url(/images/sm_arrow.gif) no-repeat right 65%;
+                            }
+#headerMost li.arrow a      { background-image:none; color:#600;padding:7px 12px 0px 6px; }
+#MostPopularHeader          { position:relative;margin-left:5px;margin-bottom:5px;bottom:0; color: #000000;
+                              font-weight: bold; font-size: 11px; list-style-type: none; 
+                            }  
+#MostEmailedHeader          { position:relative;margin-left:5px; margin-bottom:5px;bottom:0;color: #000000;
+                              font-weight: bold;font-size: 11px; list-style-type: none;
+                            }  
+#MostDiscussedHeader        { position:relative;margin-left:5px; margin-bottom:5px;bottom:0;color: #000000;
+                              font-weight: bold; font-size: 11px; list-style-type: none;
+                            }  
+#MostPopular                { float:left; margin:-1px 0 0 0; padding:10px; clear:both; width:100%;
+                              border:1px solid #999; display:block;
+                            }
+#MostPopular ul             { margin:0; padding:0; float:left; color: #000000; line-height: 1.7em; 
+                              list-style-type: disc; list-style-position: inside;  
+                            }
+#MostPopular div.section    { margin:0; clear:both;color: #000000; line-height: 1.7em; }  
+ 
+.Section                    { position:relative;margin-left:0;margin-bottom:5px;bottom:0; font-weight: bold;
+                              font-size: 12px; list-style-type: none;
+                            }	
+#MostEmailed                { float:left; margin:-1px 0 0 0; padding:10px; clear:both; width:100%;
+                              border:1px solid #999; display:none;
+                            }
+#MostEmailed ul             { position:relative;float:left; margin:0; padding:0;bottom:0;color: #000000;
+                              line-height: 1.7em; list-style-type: disc; list-style-position: inside;  
+                            }
+#MostDiscussed              { float:left; margin:-1px 0 0 0; padding:10px; clear:both; width:100%;
+                              border:1px solid #999; display:none;
+                            }
+.MostDivImage               { padding-left:12px; padding-bottom:7px; font-size: 11px; line-height:12px;
+                              background-image:url(/images/bullet_list_item.gif);	background-position:1px 2px; 
+                              background-repeat:no-repeat; 
+                            }
+.MostDivLink                { padding:0 12px 0 4px; font-size: 11px; vertical-align:top; }
+.MostDivLink a:link, .MostDivLink a:visited { text-decoration: none; }
+.MostDivLink a:hover, .MostDivLink a:active { text-decoration: underline; } 
+#Most p                     { margin:0; padding:0; }
+#Most p.morePopular a       { float:right; margin:0 5px; padding:0;font-weight:bold; font-size: 11px; clear:both; }
+#Most p.morePopular a:link,
+#Most p.morePopular a:visited { text-decoration: none; }
+#Most p.morePopular a:hover,
+#Most p.morePopular a:active  { text-decoration: underline; }  
+#Most p.getRSS a            { float:left; margin:0; padding:10px 0 0 0; clear:both; }
+  
+#Most p.getRSS a img        { float:left; border:none; margin:3px 10px 2px 0; padding:0; }
+/*************************************************
+* Random Background Colors
+***************************************************/
+.BorderBG		{BACKGROUND-COLOR: #E6E6DE;}
+.bgcolor1		{BACKGROUND-COLOR: #000000;}
+.Skyscraper_BG		{BACKGROUND-COLOR: #F1F1ED;}
+.Section_Header_BG	{BACKGROUND-COLOR: #d1ceeb;}
+.bgcolor8			{BACKGROUND-COLOR: #ecebf9}
+.bgcolor9		{BACKGROUND-COLOR: #e8edd9;}
+.bgcolor12		{BACKGROUND-COLOR: #ffffff;}
+.bgcolor3		{BACKGROUND-COLOR: #6278aa;}
+.ltgrey			{BACKGROUND-COLOR: #ebebec;}
+.Highlights_BG			{BACKGROUND-COLOR: #4080bf;}
+.Newsletter_BG		{BACKGROUND-COLOR: #F1F1ED;}
+.Sponsor_BG		{BACKGROUND-COLOR:EEF2F7;}
+.Module_BG			{BACKGROUND-COLOR:#F7F7EE;}
+.Module_BG2			{BACKGROUND-COLOR:#F7F7EE; }
+.Module_BG3			{BACKGROUND-COLOR: #4080bf;}
+.PGModule_BG	{BACKGROUND-COLOR: #F3F3F3;}
+.BestSelling_BG		{BACKGROUND-COLOR: #4382be;}
+.BestSelling_BG2				{BACKGROUND-COLOR: #FFFFFF;}
+.Category_Search_BG		{BACKGROUND-COLOR: #e8edd9;}
+.DiscussBG			{BACKGROUND-COLOR: #333333;}
+.prospero_BG		{BACKGROUND-COLOR: #cccccc;}
+.prospero_BG1		{BACKGROUND-COLOR: #336699;}
+.SearchBar_BG			{BACKGROUND-COLOR: #666666;}
+
+td.content10 { FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Verdana, arial, san; }

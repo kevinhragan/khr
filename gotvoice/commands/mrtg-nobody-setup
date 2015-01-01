@@ -1,0 +1,10 @@
+mkdir -p /home/nobody/.ssh
+#for hosts that have had access via root account already
+wc -l /root/.ssh/authorized_keys
+mv /root/.ssh/authorized_keys /home/nobody/.ssh
+# for new hosts
+scp nut:/root/.ssh/mrtg_key.pub /home/nobody/.ssh/authorized_keys
+chown -R nobody.nogroup /home/nobody
+vi /etc/passwd
+# think need to do first connection from root@www here: ssh nobody@host hostname
+ssh -i ~root/.ssh/mrtg_key nobody@<host>

@@ -1,0 +1,2 @@
+edits to /etc/my.conf
+link to make nrpe check_mysql work: cd /var/run/mysql; ln -s /tmp/mysql.sock .

@@ -1,0 +1,2480 @@
+var keywordsServer = "http://ctxtad.tribalfusion.com/ctxtad";
+var keywordsServerOnFly = "http://ctxtad.tribalfusion.com/ctxtad";
+var textlinksServer = "http://ctxt.tribalfusion.com/ctxt";
+var mode = "prod";
+var clickmode = "direct";
+
+var head_node = document.getElementsByTagName("head")[0];
+
+var tf_version = 4;
+var tf_textLinkMarkers = ["pagecontent", "KonaBody", "intelliTxt", "intelliTXT", "EchoTopic", "contentpaneopen", "postbody", "realText", "newscontent", "content", "contentbody", "posttext", "news_content", "storycontent", "post", "eba_article", "PostContent", "postmsg", "entry", "pageContent", "conText", "contentBody", "konabody"];
+var tf_blockedContentMarkers = ["nointellitxt", "noechotopic"];
+if(tf_pubSiteId) {
+	if (tf_pubSiteId==90 || tf_pubSiteId==125 || tf_pubSiteId==170){
+	tf_textLinkMarkers = ["EchoTopic"];
+	} else if (tf_pubSiteId==150) {
+		tf_textLinkMarkers = ["EchoTopic", "contentpaneopen"];
+	}
+}
+
+var tf_textLinkMarkersRegex = [/^post_message_/, /^pid_/, /^post-/];
+var tf_digitOnly_Regex = /^\d+$/;
+var tf_advObjects = new Array();
+var tf_pubObj;
+var tf_expIndexArray = new Array();
+var enableOTFFullMatching = true;
+var maxTotalPackets = 3;
+var tf_docURL;
+var tf_test;
+var tf_timeoutCount = 0;
+var tf_ads;
+var tf_zip;
+var tf_city;
+var tf_state;
+var tf_pub_attributes;
+var tf_partner_attributes;
+var TD_ID = 115;
+var SH_ID = 116;
+var SS_ID = 501;
+var ASK_ID = 202;
+var tf_on_fly_flag;
+var images;
+var cssFileName = textlinksServer+'/textlinks.css';
+var tf_flash_adNum;
+var diceAdNumber = 0;
+var tf_clear_flash = "clear";
+var tf_flash_hidden = true;
+var flashLoaded = false;
+var nodeSrc;
+var tf_flashDiv_width = 400;
+var tf_flashDiv_height = 600;
+var tf_flash_topBorder = 20;
+var tf_flash_load_counter =0;
+var tf_css_key = 0;
+var tf_flash_key = 1;
+var tf_current_flash_name = 'widget_v1';
+var tf_flash_object;
+var tf_adjustPos = true;
+var tf_started = false;
+var tf_onload = null;
+var tf_reject_id = 'tf_reject_node';
+var ToolMan_group;
+var tf_ActiveXObject;
+var tf_ActiveXObject1;
+var tf_ActiveXObject2;
+
+var searchState = "Web";
+var thisBrowser = navigator.userAgent;
+
+var CLICK_TAG_WEB = "http://search.live.com/results.aspx?q=";
+var CLICK_TAG_IMAGE = "http://search.live.com/images/results.aspx?q=";
+var CLICK_TAG_MAPS = "http://maps.live.com/?q=";
+var CLICK_TAG_QNA = "http://qna.live.com/AskQuestion.aspx?q=";
+
+var ASK_CLICK_TAG_WEB = "http://www.ask.com/web?q=";
+var ASK_CLICK_TAG_IMAGE = "http://images.ask.com/pictures?q=";
+var ASK_CLICK_TAG_BLOGS = "http://www.ask.com/blogsearch?q=";
+var ASK_CLICK_TAG_NEWS = "http://news.ask.com/news?q=";
+var COMP_SRCH = "comp_search";
+var COMPUTING_SEARCH = "http://www.computing.net/cgi-bin/AT-search.cgi?mode=concept&search=";
+var PG_SEARCH = "http://echotopic.pgpartner.com/search.php?form_keyword=";
+var SH_SEARCH = "http://www0.shopping.com/xFS?KW=";
+var Dice_SEARCH_prefix = "http://ad.doubleclick.net/clk;68656006;19323463;l?http://seeker.dice.com/jobsearch/servlet/JobSearch?op=300&rel_code=1102&N=0&Hf=0&NUM_PER_PAGE=30&Ntk=JobSearchRanking&Ntx=mode+matchall&QUICK=1&RADIUS=64.37376&TRAVEL=0&TAXTERM=0&SORTSPEC=0&FRMT=0&DAYSBACK=30&LOCATION_OPTION=2&FREE_TEXT=";
+var Dice_SEARCH_append = "&WHERE=";
+var Dice_SEARCH_suffix = "&SEARCH.x=37&SEARCH.y=8";
+
+var DICE_DOUBLE_CLICK_PREFIX = "http://ad.doubleclick.net/clk;68656006;19323463;l?";
+var DICE_SALARY_B = "http://seeker.dice.com/profman/salaryWizard.jsp";
+var DICE_SALARY_DIRECT_MATCH_prefix = "http://dice.salary.com/salarywizard/layoutscripts/swzl_keywordtitleselect.asp?narrowdesc=&searchtextvalue=";
+var DICE_LOCATION_TYPE_ID = "&locationtypeid=ZIP&zipcode=";
+var DICE_SALARY_DIRECT_MATCH_Suffix = "&metrocode=&x=18&y=8";
+var DICE_LOCAL_TOP_LEVEL = "http://career-resources.dice.com/it-job-market/quarterly_reports.shtml";
+var DICE_LOCAL_DIRECT_MATCH = "http://career-resources.dice.com/it-job-market/Q3-2007/reports.shtml";
+var DICE_DEFAULT_INPUT = "<Field>";
+var MAJORGEEKS_SRCH_PRFX = 'http://majorgeeks.com/google_search.html?domains=MajorGeeks.com&q=';
+var MAJORGEEKS_SRCH_SUFFIX = '&sitesearch=MajorGeeks.com&client=pub-6960825562757852&forid=1&channel=6517887233&ie=ISO-8859-1&oe=ISO-8859-1&cof=GALT%3A%23003300%3BGL%3A1%3BDIV%3A%23665522%3BVLC%3A78B749%3BAH%3Acenter%3BBGC%3Acccc99%3BLBGC%3A336699%3BALC%3A11593C%3BLC%3A11593C%3BT%3A000000%3BGFNT%3A940F04%3BGIMP%3A940F04%3BLH%3A0%3BLW%3A0%3BL%3Ahttp%3A%2F%2Fmajorgeeks.com%2FEric%2F404.gif%3BS%3Ahttp%3A%2F%2Fmajorgeeks.com%3BLP%3A1%3BFORID%3A11&hl=en';
+var HP_DISPLAY_URL = "hp.com";
+var MSN_DISPLAY_URL = "microsoft.com";
+
+var searchButton = textlinksServer + "/images/srch-button.gif";
+var tf_homePage = 'http://www.echotopic.com';
+var pg_click_url_array = new Array();
+var sh_click_url_array = new Array();
+var ITEM_MATCH = '1';
+var pgTrackPrms = '&merchantClick=';
+if (window.onload)
+    tf_onload = window.onload;
+
+var tf_marked_content_array = new Array();
+var tf_page_keywords = new Array();
+var tf_page_words = '';
+var tf_page_keywords_count = new Array();
+var tf_page_keywords_ext_comp = false;
+var tf_page_keywords_ext_count = 0;
+window.onload = addTextLinksStart;
+window.setTimeout("addTextLinksStart();", 20000);
+
+function tf_PubObject(textlinkColor, enableSoundEffect, colorSchemeId, enableOptOut, enableHeaderTextlink, adspacing, forcedspacing) {
+	this.textlinkColor = textlinkColor;
+	this.enableSoundEffect = enableSoundEffect;
+	this.colorSchemeId = colorSchemeId;
+	this.enableOptOut = enableOptOut;
+	this.enableHeaderTextlink = enableHeaderTextlink;
+	this.adspacing = adspacing;
+	this.forcedspacing = forcedspacing;
+}
+
+function tf_getUserLocation(){
+    var location = '';
+        if(tf_city){
+           location = tf_city;
+        }
+        if(tf_state){
+           location += (location.length > 0 ? ',': '') + tf_state;
+        }
+        if(tf_zip){
+           location += ' '+tf_zip;
+        }
+    return location;
+}
+
+function tf_AdvObject(keyword, sitehost, title, desc, clickURL, logo, image, video, adData, pubSiteId, topicKeyword, topic, partnerId, impressionTrackUrl, imprintPixelUrl, bannerURL) {
+    this.found = false;
+    this.keyword = keyword;
+    this.sitehost = tf_trim_string(sitehost.replace(/\n/g, ""));
+    this.title = tf_trim_string(title.replace(/\n/g, ""));
+    this.desc = tf_trim_string(desc.replace(/\n/g, ""));
+    this.adData = adData;
+    this.clickURL = tf_trim_string(clickURL.replace(/\n/g, ""));
+    if(partnerId == 110) {
+	this.clickURL = unescape(clickURL);
+    }
+    var prms = "?link=" + tf_docURL + "&adData=" + adData;
+    this.expansionURL = keywordsServer + "/Expansion" + prms;
+    this.trackURL = keywordsServer + "/Send" + prms;
+    this.notFoundURL = keywordsServer + "/NotFound?link=" + tf_docURL + "&adData=" + adData;
+    this.logo = logo;
+    this.image = image;
+    this.video = video;
+    this.pubSiteId = pubSiteId;
+    this.topicKeyword = topicKeyword;
+    this.topic = topic;
+    this.partnerId = partnerId;
+    this.impressionTrackUrl = impressionTrackUrl;
+    this.imprintPixelUrl = imprintPixelUrl;
+    this.bannerURL = bannerURL;
+    loadScript(partnerId);
+}
+
+function loadScript(partnerId) {
+    if(partnerId && tf_partner_attributes && tf_partner_attributes[partnerId]) {
+	var partnerAttribute = tf_partner_attributes[partnerId];
+	var scriptUrl = partnerAttribute[0];
+	if(scriptUrl && scriptUrl.length > 0) {
+		var script = document.createElement("script");
+		script.type = "text/javascript";
+		script.src = scriptUrl;
+		if(head_node){
+		    head_node.appendChild(script);
+		}else{
+				document.body.appendChild(script);
+    }
+}
+    }
+}
+
+function tf_calculateOffsetLeft(fld) {
+    var offset = 0;
+    while (fld) {
+        if (fld.offsetParent) {
+            offset += (fld.offsetLeft - fld.scrollLeft);
+        } else {
+            offset += fld.offsetLeft;
+        }
+        fld = fld.offsetParent
+    }
+    return offset;
+}
+
+function tf_calculateOffsetTop(fld) {
+    var offset = 0;
+    while (fld) {
+        if (fld.offsetParent) {
+            offset += (fld.offsetTop - fld.scrollTop);
+        } else {
+            offset += fld.offsetTop;
+        }
+        fld = fld.offsetParent;
+    }
+    return offset;
+}
+
+function tf_bannerShow(event, source, index, type) {
+    source.style.borderBottomWidth = '2px';
+    nodeSrc = source;
+    tf_advertBannerShow(event, source, index);
+}
+
+function submitPGClickIndex(index){
+    var i = parseInt(index);
+    var clickURL = pg_click_url_array[i];
+    var trackURL = pg_click_url_array[i+1];
+    tf_submitClick(tf_flash_adNum, clickURL, trackURL);
+}
+function submitSHClickIndex(index){
+    var i = parseInt(index);
+    var clickURL = sh_click_url_array[i];
+    var trackURL = sh_click_url_array[i+1];
+    tf_submitClick(tf_flash_adNum, clickURL, trackURL);
+}
+
+function submitClickIndex(index){
+    var i = parseInt(index);
+    var adv = tf_advObjects[i-1];
+    if (adv == null) return;
+    tf_submitClick(index, adv.clickURL, adv.trackURL);
+}
+
+function submitLinkClick(index){
+    var i = parseInt(index);
+    var adv = tf_advObjects[i-1];
+    if (adv == null) return;
+    tf_submitClick(index, adv.clickURL, adv.trackURL, true);
+}
+
+function tf_askSearch(url){ // called by flash hardcoded
+	var adv = tf_advObjects[tf_flash_adNum-1];
+	tf_submitClick(tf_flash_adNum, url, adv.trackURL);
+}
+
+function tf_submitClick(index, clickUrl, trackUrl, performClick) {
+    var handle;
+    if(tf_flash_key == 1 || performClick == true){
+        if(clickmode != 'test') {
+        handle = window.open(clickUrl);
+        } else {
+        handle = window.open(tf_homePage);
+        }
+        if(typeof handle != 'undefined' && handle) {
+        var img	= new Image();
+        img.src = trackUrl;
+        }
+    }else{
+       var img	= new Image();
+       img.src = trackUrl; 
+    }
+    var i = parseInt(index);
+    var adv = tf_advObjects[i-1];
+    if(adv.partnerId == '501' || adv.partnerId == ASK_ID) {
+	if(adv.imprintPixelUrl && adv.imprintPixelUrl.length > 0) {
+		var now = new Date();
+		var requestId = ((now.getTime() % 2147483648) + Math.random());
+		var img1 = new Image();
+		img1.src = adv.imprintPixelUrl + (adv.imprintPixelUrl.indexOf('?') == -1 ? '?' : '&' ) + requestId;
+	}
+
+    }
+	if(adv.partnerId && tf_partner_attributes && tf_partner_attributes[adv.partnerId]) {
+	var partnerAttribute = tf_partner_attributes[adv.partnerId];
+	var clickTrackUrl = partnerAttribute[2];
+	if(clickTrackUrl && clickTrackUrl.length > 0) {
+		var now = new Date();
+		var img1 = new Image();
+		clickTrackUrl = clickTrackUrl.replace('(timestamp)', now.getTime());
+		img1.src = clickTrackUrl;
+	}
+    }
+
+}
+
+function tf_dragWidget(myX,myY){
+    var AdvertBanner = document.getElementById("tf_AdDiv");
+    var nowX=AdvertBanner.style.left;
+    var nowY=AdvertBanner.style.top;
+    nowX = (parseInt(nowX.split('px')[0])+parseInt(myX));
+    nowY = (parseInt(nowY.split('px')[0])+parseInt(myY));
+
+    AdvertBanner.style.left = nowX+'px';
+    AdvertBanner.style.top = nowY+'px';
+}
+
+var firstAdView = true;
+var isVideoAd = false;
+var EVENT_CLIENT_X = 0;
+var EVENT_CLIENT_Y = 0;
+var EVENT_PAGE_X = 0;
+var EVENT_PAGE_Y = 0;
+
+function tf_advertBannerShow(event, source, index) {
+		if(!tf_flash_hidden && tf_flash_adNum == index+1){
+			tf_advertBannerOver();
+			tf_showAd();
+			return;
+		}
+    tf_flash_adNum = index+1;
+    tf_adjustPos = true;
+    var AdvertBanner = document.getElementById("tf_AdDiv");
+//    if(tf_flash_key ==2 && firstAdView){
+//        tf_showAd();
+//    }
+    sendAdNum();
+    if(tf_flash_key ==1 || (tf_flash_key ==2 && !firstAdView)){
+        tf_hideAd();
+    }
+    firstAdView = false;
+    var adv = tf_advObjects[index];
+    if (adv == null) return;
+    tf_advertBannerOver();
+
+    isVideoAd = (adv.video!=null);
+         EVENT_CLIENT_X = event.clientX;
+         EVENT_CLIENT_Y = event.clientY;
+    if(!isIE){
+         EVENT_PAGE_X = event.pageX;
+         EVENT_PAGE_Y = event.pageY;
+    }
+//    tf_setBannerPosition(source,0,0);
+
+    if(tf_flash_key ==2 && !isIE){
+        tf_setBannerPosition(source,0,0);
+    }
+    if(isIE){
+        AdvertBanner.style.top = -8000+'px';
+        AdvertBanner.style.left = -8000+'px';
+    }
+
+    if (navigator.appName.indexOf("Microsoft Internet")!=-1) {
+        window.setTimeout("tf_showAd();", 100);
+    }
+    window.status = adv.title;
+    var flag = false;
+    for (var m = 0; m < tf_expIndexArray.length ; m++) {
+	if(tf_expIndexArray[m] == index) {
+		flag = true;
+	}
+     }
+
+     if(flag == false) {
+	tf_expIndexArray[tf_expIndexArray.length] = index;
+
+	if(adv.partnerId == '501' || adv.partnerId == ASK_ID) {
+		var now = new Date();
+		var requestId = ((now.getTime() % 2147483648) + Math.random());
+		var img1 = new Image();
+		img1.src = adv.expansionURL + (adv.expansionURL.indexOf('?') == -1 ? '?' : '&' ) + requestId;
+		if(adv.impressionTrackUrl  && adv.impressionTrackUrl.length > 0) {
+			var impTrackUrl = adv.impressionTrackUrl.replace('(timestamp)]', now.getTime());
+			var img2 = new Image();
+			img2.src = impTrackUrl;
+		}
+	}
+    
+	if(adv.partnerId && tf_partner_attributes && tf_partner_attributes[adv.partnerId]) {
+		var partnerAttribute = tf_partner_attributes[adv.partnerId];
+		var impTrackUrl = partnerAttribute[1];
+		if(impTrackUrl && impTrackUrl.length > 0) {
+			var now = new Date();
+			var img1 = new Image();
+			impTrackUrl = impTrackUrl.replace('(timestamp)', now.getTime());
+			img1.src = impTrackUrl;
+		}
+	}
+    }
+
+    var banner_code = '';
+    if (tf_pubObj && tf_pubObj.enableSoundEffect) {
+    	    banner_code += '<div id="swfcontainer" style="position:absolute; top:-800px; left:-800px; visibility:hidden"><object id="viewer" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"';
+	    banner_code += '	codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0"';
+	    banner_code += '	width="1" height="1">';
+	    banner_code += '	<param name="movie" value="' + textlinksServer + '/images/sound.swf"/>';
+	    banner_code += '	<embed name="viewer" src="' + textlinksServer + '/images/sound.swf"';
+	    banner_code += '			width="1" height="1" wmode="window" type="application/x-shockwave-flash"';
+	    banner_code += '			pluginspage="http://www.macromedia.com/go/getflashplayer"/>';
+	    banner_code += '	</object>';
+	    banner_code += '</div>';
+		var soundDiv = document.createElement("div");
+		soundDiv.innerHTML = banner_code;
+		document.body.appendChild(soundDiv);
+    }
+}
+function tf_setBannerPosition(source, rightClip , bottomClip){
+    var AdvertBanner = document.getElementById("tf_AdDiv");
+    var topSpace = EVENT_CLIENT_Y;
+    var bottomSpace = ((isIE)?document.documentElement.offsetHeight:window.innerHeight) - topSpace;
+    var leftSpace = EVENT_CLIENT_X;
+    var rightSapce = ((isIE)?document.documentElement.offsetWidth:window.innerWidth) - leftSpace;
+
+    var scrollTop = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+    var scrollLeft = Math.max(document.body.scrollLeft, document.documentElement.scrollLeft);
+
+    if(topSpace > bottomSpace){
+				AdvertBanner.style.top = ((isIE)?EVENT_CLIENT_Y+scrollTop-5:EVENT_PAGE_Y) - AdvertBanner.offsetHeight + 'px';
+    }else{
+				AdvertBanner.style.top = ((isIE)?EVENT_CLIENT_Y+scrollTop+ source.offsetHeight -10:EVENT_PAGE_Y) +'px';
+    }
+
+    if(leftSpace > rightSapce){
+				AdvertBanner.style.left = ((isIE)?EVENT_CLIENT_X+scrollLeft:EVENT_PAGE_X) - AdvertBanner.offsetWidth  +'px';
+    }else{
+				AdvertBanner.style.left = ((isIE)?EVENT_CLIENT_X+scrollLeft:EVENT_PAGE_X)  +'px';
+    }
+}
+
+function Dice_Click(index){
+    Dice_Srch();
+}
+function Dice_Srch_Click(index, dice_skill, dice_location){
+        var clickURL = '';
+        var i = parseInt(tf_flash_adNum);
+        var adv = tf_advObjects[i-1];
+        clickURL = Dice_SEARCH_prefix + URLEncode(dice_skill) + Dice_SEARCH_append + URLEncode(dice_location) + Dice_SEARCH_suffix;
+        tf_submitClick(i, clickURL, adv.trackURL);
+}
+function Dice_Srch(dice_skill, dice_location) {
+    var clickURL = '';
+    var i = parseInt(tf_flash_adNum);
+    var adv = tf_advObjects[i-1];
+    var jobTitle = adv.desc.split('-||-')[0];
+    var location = '';
+    location = tf_getUserLocation();
+
+    if(diceAdNumber==0){
+        Dice_Srch_Click(i, dice_skill, dice_location);
+    }else if(diceAdNumber == 1){
+        if(dice_skill=='' || dice_skill==DICE_DEFAULT_INPUT){
+            dice_skill = jobTitle;
+        }
+        dice_location = location;
+        Dice_Srch_Click(i, dice_skill, dice_location);
+    }else if(diceAdNumber == 2){
+        dice_location = dice_skill; //flash always sends data in 1st field.
+        if(dice_location=='' || dice_location==DICE_DEFAULT_INPUT){
+            dice_location = location;
+        }
+        dice_skill = jobTitle;
+        Dice_Srch_Click(i, dice_skill, dice_location);
+    }else if(diceAdNumber == 3 || diceAdNumber == 4){
+        dice_skill = jobTitle;
+        dice_location = location;
+        Dice_Srch_Click(i, dice_skill, dice_location);
+    }else if(diceAdNumber == 5){
+        if(dice_skill=='' || dice_skill==DICE_DEFAULT_INPUT){
+            dice_skill = jobTitle;
+        }
+        if(dice_location=='' || dice_location==DICE_DEFAULT_INPUT){
+            dice_location = location;
+        }
+        Dice_Srch_Click(i, dice_skill, dice_location);
+    }else if(diceAdNumber==6){
+       clickURL = DICE_DOUBLE_CLICK_PREFIX + DICE_LOCAL_DIRECT_MATCH;
+       tf_submitClick(i, clickURL, adv.trackURL);
+    }else if(diceAdNumber==7 || diceAdNumber==8){
+       clickURL = DICE_DOUBLE_CLICK_PREFIX + DICE_LOCAL_TOP_LEVEL;
+       tf_submitClick(i, clickURL, adv.trackURL);
+    }else if(diceAdNumber==9){
+        var dice_location_Strings = dice_location.split(" ");
+        var dice_zip = dice_location_Strings[dice_location_Strings.length-1];
+        if(dice_zip.match(tf_digitOnly_Regex)){
+            clickURL = DICE_DOUBLE_CLICK_PREFIX + DICE_SALARY_DIRECT_MATCH_prefix + URLEncode(dice_skill) + DICE_LOCATION_TYPE_ID + URLEncode(dice_zip) + DICE_SALARY_DIRECT_MATCH_Suffix;
+        }else{
+            clickURL = DICE_DOUBLE_CLICK_PREFIX + DICE_SALARY_B;
+        }
+        tf_submitClick(i, clickURL, adv.trackURL);
+    }else if(diceAdNumber==10){
+        clickURL = DICE_DOUBLE_CLICK_PREFIX + DICE_SALARY_DIRECT_MATCH_prefix + URLEncode(jobTitle) + DICE_LOCATION_TYPE_ID + URLEncode(tf_zip) + DICE_SALARY_DIRECT_MATCH_Suffix;
+        tf_submitClick(i, clickURL, adv.trackURL);
+    }
+}
+
+function tf_searchButtonOver(){
+    searchButton = textlinksServer + "/images/srch-button-onMouse.gif";
+    document.getElementById('searchButton').setAttribute('src', searchButton);
+}
+function tf_searchButtonOut(){
+    searchButton = textlinksServer + "/images/srch-button.gif";
+    document.getElementById('searchButton').setAttribute('src', searchButton);
+}
+function PG_Srch(adKeyword) {
+    var index = tf_flash_adNum;
+    if(tf_advObjects[index-1].partnerId == SH_ID){
+        SH_Srch(adKeyword);
+    }else{
+        var clickURL = '';
+        clickURL = PG_SEARCH + escape(adKeyword) + '&topcat_id=&Search=Search';
+        var trackURL = tf_advObjects[index-1].trackURL + pgTrackPrms+'0';
+        tf_submitClick(tf_flash_adNum, clickURL, trackURL);
+    }
+}
+function SH_Srch(adKeyword) {
+    var clickURL = '';
+    clickURL = SH_SEARCH + escape(adKeyword) + '&CLT=SCH';
+    var index = tf_flash_adNum;
+    var trackURL = tf_advObjects[index-1].trackURL;
+    tf_submitClick(tf_flash_adNum, clickURL, trackURL);
+}
+
+function videoClick(index) {
+	if (navigator.appName.indexOf("Microsoft Internet")!=-1) {
+		var adv = tf_advObjects[index];
+		if (adv == null) return;
+		tf_submitClick(index, adv.clickURL, adv.trackURL);
+	}
+}
+var trackUrl_onclickFunction = '';
+function tf_disableOnclick(){
+   trackUrl_onclickFunction = document.getElementById('adBanner').getAttribute('onclick');
+   document.getElementById('adBanner').setAttribute('onclick', '');
+}
+function tf_enableOnClick(){
+   document.getElementById('adBanner').setAttribute('onclick', trackUrl_onclickFunction);
+}
+
+function tf_disableBannerOnclick() {
+    searchButton = textlinksServer + "/images/srch-button-onMouse.gif";
+    document.getElementById('searchButton').setAttribute('src', searchButton);
+    tf_disableOnclick();
+}
+function tf_enableBannerOnClick(adv_trackURL) {
+    searchButton = textlinksServer + "/images/srch-button.gif";
+    document.getElementById('searchButton').setAttribute('src', searchButton);
+    tf_enableOnClick();
+}
+ //not used anymore
+//function Computing_Srch(adKeyword) {
+//    var clickURL = '';
+//    clickURL = COMPUTING_SEARCH + escape(adKeyword) + '&forum=' + getForumLoc();
+//    window.open(clickURL, '_blank');
+//}
+
+var tf_showAdvertBanner;
+function tf_advertBannerOver() {
+    tf_showAdvertBanner = true;
+    tf_flash_hidden = false;
+}
+
+function tf_closeAdWidget(){
+    tf_showAdvertBanner = false;
+    tf_advertBannerHide(true);
+}
+function tf_advertBannerOut() {
+	if(nodeSrc!=undefined){
+		nodeSrc.style.borderBottomWidth = "1px";
+	}
+    tf_showAdvertBanner = false;
+    setTimeout('tf_advertBannerHide('+isVideoAd+')', 2000);
+}
+
+function tf_advertBannerHide(hideFlash) {
+    if (!tf_showAdvertBanner) {
+        tf_flash_hidden = true;
+        if(hideFlash){
+            sendAdNumClear();
+        }
+        tf_hideAd();
+        window.status = "";
+    }
+}
+
+function tf_html2str(str) {
+    return str.replace(/\&\#39\;/gi, "'");
+}
+
+function tf_KeywordObject(keyword, index, left, right) {
+    this.keyword = tf_html2str(keyword).toLowerCase();
+    this.leftPos = left;
+    this.rightPos = right;
+    this.index = index;
+}
+
+function tf_findKeywords(text) {
+    foundKeywords = new Array();
+    for (var i = 0; i < tf_advObjects.length; i++) {
+        if (tf_advObjects[i].found || tf_advObjects[i].keyword.length == 0)
+            continue;
+        var klen;
+		var regex = new RegExp('\\b' + tf_advObjects[i].keyword.replace(/\+/g, '\\+') + '\\b', 'gim');
+        var fnd = false;
+        var matches, rpoint, lpoint;
+        var restOfText = text;
+        while (matches = regex.exec(restOfText)) {
+            rpoint = (typeof(matches.lastIndex) == 'undefined'
+                    ? regex.lastIndex
+                    : matches.lastIndex
+                    );
+            klen = matches[0].length;
+            lpoint = rpoint - klen;
+
+            var lchr = restOfText.substring(lpoint - 1, lpoint);
+            var rchr = restOfText.substring(rpoint, rpoint + 1);
+
+	    fnd = !((lchr == '-') || (lchr == '.') || (rchr == '-'));
+
+            if (fnd) {
+                lpoint += (text.length - restOfText.length);
+                var instanceAlreadyUsed = false;
+                for (var j = 0; j < foundKeywords.length; j++) {
+                    if (lpoint >= foundKeywords[j].leftPos && lpoint < foundKeywords[j].rightPos) {
+                        instanceAlreadyUsed = true;
+                        break;
+                    }
+                }
+                if (!instanceAlreadyUsed) {
+                    break;
+                }
+                else {
+                    fnd = false;
+                }
+            }
+            restOfText = restOfText.substring(rpoint);
+            regex.lastIndex = 0;
+        }
+        if (fnd) {
+            ko = new tf_KeywordObject(tf_advObjects[i].keyword, i, lpoint, lpoint + klen);
+            tf_advObjects[i].found = true;
+            foundKeywords[foundKeywords.length] = ko;
+        }
+    }
+    return foundKeywords;
+}
+
+function tf_insertPGTextLinkClick(keywordNode, adv, index){
+    var advDesc = adv.desc;
+    var advDescriptionTokens = advDesc.split("-##-");
+    var pGmode = advDescriptionTokens[0];
+    var srchData = advDescriptionTokens[1];
+    if (pGmode != ITEM_MATCH) {
+       keywordNode.onclick = new Function('PG_Srch("' + srchData + '");');
+    }else{
+       keywordNode.onclick = new Function('submitLinkClick("' + (index+1) + '");');
+    }
+}
+
+function findWordsInText(text){
+    var numberOfWords = text.split(" ");
+    return numberOfWords.length;
+}
+function tf_insertTextLinks(text) {
+    var retNodes = new Array();
+    var node;
+
+    var rpos = 0;
+    var adSpacing = 0;
+		if(tf_pubObj){
+			adSpacing = tf_pubObj.adspacing;
+		}
+    var foundKeywords = tf_findKeywords(text);
+    foundKeywords.sort(new Function("kwrd1, kwrd2", "return (kwrd1.leftPos - kwrd2.leftPos + 0.01*(kwrd2.rightPos - kwrd1.rightPos));"));
+    for (var i = 0; i < foundKeywords.length; i++) {
+
+        if (foundKeywords[i].leftPos < rpos) {
+            tf_advObjects[foundKeywords[i].index].found = false;
+            continue;
+        }
+
+        var advIndex = foundKeywords[i].index;
+				var rejectionOccured = false;
+				if(i != 0 && foundKeywords[i] != undefined && tf_pubObj && tf_pubObj.forcedspacing) {
+					if(findWordsInText(text.substring(foundKeywords[i-1].rightPos, foundKeywords[i].leftPos)) < adSpacing) {
+						tf_advObjects[foundKeywords[i].index].found = false;
+						rejectionOccured = true;
+						//continue;
+					}
+				}
+
+        var textNode = document.createTextNode(text.substring(rpos, foundKeywords[i].leftPos));
+        if(!rejectionOccured){
+        var nobrNode = document.createElement("NOBR");
+        var keywordNode = document.createElement("A");
+	keywordNode.href='javascript:void(0)';
+        if(tf_advObjects[advIndex].partnerId == '111'){
+            tf_insertPGTextLinkClick(keywordNode,tf_advObjects[advIndex],advIndex);
+        }else{
+            keywordNode.onclick = new Function('if(typeof submitLinkClick != \'undefined\') submitLinkClick("' + (advIndex+1) + '");');
+        }
+        keywordNode.oncontextmenu = new Function('return false;');
+        keywordNode.className = 'tfTextLink';
+		keywordNode.style.color = '#991616';
+		keywordNode.style.textDecoration = 'underline';
+		keywordNode.style.borderBottom = '1px solid #991616';
+		keywordNode.style.display = 'inline';
+		keywordNode.style.paddingBottom = '1px';
+		if(typeof tf_pubSiteId != 'undefined' && tf_pubSiteId && (tf_pubSiteId==134 || tf_pubSiteId==155 || tf_pubSiteId==61)){
+				keywordNode.style.lineHeight = '1.5em';
+		}
+	if(typeof tf_pubSiteTxColor != 'undefined' && tf_pubSiteTxColor != null  && tf_pubSiteTxColor.length > 0) {
+		keywordNode.style.color = tf_pubSiteTxColor;
+		keywordNode.style.borderBottomColor = tf_pubSiteTxColor;
+	} else if(tf_pubObj && tf_pubObj.textlinkColor && tf_pubObj.textlinkColor.length > 0) {
+		keywordNode.style.color = tf_pubObj.textlinkColor;
+		keywordNode.style.borderBottomColor = tf_pubObj.textlinkColor;
+	}
+
+       
+        if(isIE){
+            keywordNode.onmouseover = new Function('if(typeof tf_bannerShow != \'undefined\') tf_bannerShow(event, this, ' + advIndex + '); return true;');
+        }else{
+            var mouseOverFunction = new Function('event','if(typeof tf_bannerShow != \'undefined\') tf_bannerShow(event, this, ' + advIndex + '); return true;');
+            keywordNode.onmouseover = mouseOverFunction;
+        }
+        keywordNode.onmouseout = new Function('if(typeof tf_advertBannerOut != \'undefined\') tf_advertBannerOut();');
+
+        rpos = foundKeywords[i].rightPos;
+        keywordNode.appendChild(document.createTextNode(text.substring(foundKeywords[i].leftPos, rpos)));
+        nobrNode.appendChild(keywordNode);
+
+        retNodes[retNodes.length] = textNode;
+        retNodes[retNodes.length] = nobrNode;
+      }else{
+      	 var rejectNode = document.createElement("span");
+         rejectNode.id = tf_reject_id;
+         rpos = foundKeywords[i].rightPos;
+         rejectNode.appendChild(document.createTextNode(text.substring(foundKeywords[i].leftPos, rpos)));
+      	 retNodes[retNodes.length] = textNode;
+         retNodes[retNodes.length] = rejectNode;
+      }
+
+    }
+    if (retNodes.length > 0) {
+        var textNode = document.createTextNode(text.substring(rpos, text.length));
+        retNodes[retNodes.length] = textNode;
+    }
+
+    return retNodes;
+}
+
+function tf_findTextNodes(node) {
+		if(node.id == tf_reject_id){
+			return;
+		}
+    if (node.nodeType == 3) {
+        var newNodes = tf_insertTextLinks(node.data);
+        var parentNode = node.parentNode;
+        if (newNodes.length > 0) {
+            for (var i = 0; i < newNodes.length; i++)
+                parentNode.insertBefore(newNodes[i], node);
+            parentNode.removeChild(node);
+        }
+
+        return;
+    }
+    if (node.tagName == "A" || node.tagName == "SCRIPT" || node.tagName == "OPTION" || node.tagName == "TEXTAREA"
+            || node.tagName == "IFRAME" || node.tagName == "OBJECT")
+	return;
+
+    if(tf_pubObj && !tf_pubObj.enableHeaderTextlink && (node.tagName == "CODE" || node.tagName == "H1" || node.tagName == "H2" || node.tagName == "H3"
+            || node.tagName == "H4" || node.tagName == "H5" || node.tagName == "H6"))
+	return;
+
+    if (node.hasChildNodes()) {
+        var children = new Array();
+        /* 'clone' the array */
+        for (var i = 0; i < node.childNodes.length; i++)
+            children[children.length] = node.childNodes[i];
+        for (var i = 0; i < children.length; i++){
+        	if((children[i].tagName=="DIV" || children[i].tagName=="SPAN" || children[i].tagName=="TABLE")){
+		        	if(!tf_isNodeContentMarked(children[i]) && !tf_isNodeContentBlockedMarked(children[i])){
+		        			tf_findTextNodes(children[i]);
+		        	}
+	        }else{
+            tf_findTextNodes(children[i]);
+    }
+}
+    }
+}
+
+function displayTextLinks(){
+   flashLoaded = true;
+   displayTextLinkAds();
+}
+
+function displayTextLinkAds(){         //called by flash NDWidget_V1
+    if(tf_flash_key == 2){
+        tf_hideAd();
+    }
+    var bodyNode = document.body;
+
+//    tf_css_key = 1;
+//    if(tf_pubObj && tf_pubObj.colorSchemeId) {
+//			tf_css_key = tf_pubObj.colorSchemeId
+//    }
+//
+//    if(tf_css_key > 2){
+//    	tf_flash_key = 2;
+//    	tf_current_flash_name = 'NDwidget_v1';
+//    	cssFileName = textlinksServer+'/textlinks'+tf_css_key+'.css';
+//    }
+
+    var divs = document.getElementsByTagName("DIV");
+    var spans = document.getElementsByTagName("SPAN");
+    var tables = document.getElementsByTagName("TABLE");
+    var all = new Array();
+    for (var i = 0; i < divs.length; i++)
+        all[all.length] = divs[i];
+    for (var i = 0; i < spans.length; i++)
+        all[all.length] = spans[i];
+    for (var i = 0; i < tables.length; i++)
+        all[all.length] = tables[i];
+    for (var i = 0; i < all.length; i++){
+        if(tf_isNodeContentMarked(all[i]) && !tf_isNodeContentBlockedMarked(all[i])){
+                tf_findTextNodes(all[i]);
+        }
+    }
+    for (var i = 0; i < tf_advObjects.length; i++) {
+        if (!tf_advObjects[i].found) {
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = tf_advObjects[i].notFoundURL;
+            document.body.appendChild(script);
+        }
+    }
+
+}
+
+function tf_isNodeContentMarked(node){
+		for (var j = 0; j < tf_textLinkMarkers.length; j++){
+      if ((node.getAttribute("id") == tf_textLinkMarkers[j]) || (node.className && node.className == tf_textLinkMarkers[j]) || (node.getAttribute("name") && node.getAttribute("name") == tf_textLinkMarkers[j]))
+         return true;
+        }
+
+    for (var j = 0; j < tf_textLinkMarkersRegex.length; j++){
+            if ((node.getAttribute("id") && node.getAttribute("id").match(tf_textLinkMarkersRegex[j]) ) || (node.className && node.className.match(tf_textLinkMarkersRegex[j])) || (node.getAttribute("name") && node.getAttribute("name").match(tf_textLinkMarkersRegex[j])))
+         return true;
+        }
+    return false;
+
+}
+function tf_isNodeContentBlockedMarked(node){
+		for (var j = 0; j < tf_blockedContentMarkers.length; j++){
+	     if ((node.getAttribute("id") == tf_blockedContentMarkers[j]) || (node.className && node.className == tf_blockedContentMarkers[j]) || (node.getAttribute("name") && node.getAttribute("name") == tf_blockedContentMarkers[j]))
+	     			return true;
+    }
+    return false;
+}
+
+function getAdsOnTheFly() {
+    if (!tf_page_keywords_ext_comp) {
+        if (++tf_page_keywords_ext_count < 20)
+            window.setTimeout("getAdsOnTheFly()", 200);
+        return;
+    }
+
+    if(tf_page_words.length < 15){
+        return;
+    }
+
+    tf_page_keywords_ext_count = 0;
+    var bodyNode = document.body;
+    tf_docURL = escape(tf_url);
+    var adType = "textLinks";
+
+    var prms = "";
+    if (mode == 'test' && typeof testIP != 'undefined' && testIP != null) {
+        prms = '&testIP=' + testIP;
+    }
+
+    tf_page_words = tf_remove_unwanted_chars_for_OTF(tf_page_words);
+	tf_page_words = tf_page_words.replace(/\t+/g,';');
+	tf_page_words = tf_page_words.replace(/ +/g,' ');
+	tf_page_words = tf_page_words.replace(/[;]+/g,';');
+	tf_page_words = tf_page_words.replace(/[.]+/g,'.');
+    var now = new Date();
+    var requestId = ((now.getTime() % 2147483648) + Math.random());
+    var OTFurl = "OTFurl="+keywordsServerOnFly + "/Keywords&ads=" + tf_maxKeywords + "&link=" + tf_docURL +
+                          "&mode=" + mode + "&serveMode=OnFly"+"&type=" + adType + prms
+						  + '&rq=' + requestId + '&kw=' + escape(tf_page_words);
+    var tf_otfDiv = tf_createDiv("tf_OTFDiv", -6000);
+    tf_loadFlash('OTF_sender','window', tf_otfDiv, OTFurl);
+    var p = document.createElement("p");
+    p.innerHTML = tf_ActiveXObject;
+    tf_otfDiv.appendChild(p);
+
+}
+
+function tf_sendRequest(tf_src_link){
+	var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = tf_src_link;
+    document.body.appendChild(script);
+
+}
+
+function tf_show_fly_ads(tf_fly_ads){
+    tf_ads = tf_fly_ads;
+    tf_on_fly_flag = null;
+    tf_adsTimeoutCount = 0;
+    tf_getAds();
+}
+
+function tf_OTF_flashResponse(value){//called by OTF flash
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+	script.text = unescape(unescape(value));
+	document.body.appendChild(script);
+}
+
+function tf_getAds() {
+    if (tf_ads == null) {
+        if (++tf_adsTimeoutCount < 20)
+            window.setTimeout("tf_getAds()", 500);
+        return;
+    }
+    if (tf_on_fly_flag != null && tf_on_fly_flag >= 1) {
+        getAdsOnTheFly();
+        return;
+    }
+    tf_good_ads = new Array();
+    var tf_good_ads_ix = 0;
+    for (var tf_ads_ix = 0; tf_ads_ix < tf_ads.length; tf_ads_ix++) {
+        var zSr = tf_ads[tf_ads_ix];
+
+        var tfct = 0;
+        if (zSr != null && tfct < zSr.length) {
+            var kw = zSr[tfct++];
+            var sitehost = zSr[tfct++];
+            var title = zSr[tfct++];
+            var desc = zSr[tfct++];
+            var clickURL = zSr[tfct++];
+            var logo = zSr[tfct++];
+            if (logo != null && logo.length != 0) {
+                var httpIndex = logo.indexOf('http://');
+                var httpsIndex = logo.indexOf('https://');
+                if(httpIndex != 0 && httpsIndex != 0) {
+                   logo = textlinksServer + "/logoimages/" + logo;
+                }
+            } else {
+                logo = null;
+            }
+            var image = zSr[tfct++];
+            if (image != null && image!='null' && image.length != 0) {
+                var httpIndex = image.indexOf('http://');
+                var httpsIndex = image.indexOf('https://');
+                if(httpIndex != 0 && httpsIndex != 0) {
+                   image = textlinksServer + "/logoimages/" + image;
+                }
+            } else {
+                image = null;
+            }
+            var adData = zSr[tfct++];
+            var pubSiteId = zSr[tfct++];
+	    var video = zSr[tfct++];
+	    if(video != null && video.length != 0){
+		var httpIndex = video.indexOf('http://');
+		var httpsIndex = video.indexOf('https://');
+		if(httpIndex != 0 && httpsIndex != 0) {
+			video = textlinksServer + "/videos/" + video;
+		}
+	    }else{
+		video = null;
+	    }
+	    var keyword = zSr[tfct++];
+	    var topic = zSr[tfct++];
+	    var partnerId = zSr[tfct++];
+	    var impressionTrackUrl = zSr[tfct++];
+	    var imprintPixelUrl = zSr[tfct++];
+        var bannerURL = zSr[tfct++];
+        if (bannerURL != null && bannerURL.length != 0) {
+            var httpIndex = bannerURL.indexOf('http://');
+            var httpsIndex = bannerURL.indexOf('https://');
+            if(httpIndex != 0 && httpsIndex != 0) {
+               bannerURL = textlinksServer + "/videos/" + bannerURL;
+            }
+        } else {
+            bannerURL = null;
+        }
+            if(partnerId == SS_ID){ 
+            	if(sitehost == HP_DISPLAY_URL){
+			        		bannerURL = textlinksServer + "/videos/hp.swf";
+	                clickURL = "http://ad.doubleclick.net/clk;185807196;24433596;u?http://www.hp.com/sbso/special/instantsavings.html?jumpid=ex_R295_link/kimipgsmb/2Q08LJ/OJ-BDM/printingimaging/instantsavings/TribalFusion";
+	            }else if(sitehost == MSN_DISPLAY_URL){
+	            		bannerURL = textlinksServer + "/videos/msn.swf";
+	            }
+            }
+            tf_good_ads[tf_good_ads_ix] = tf_ads[tf_ads_ix];
+
+            tf_advObjects[tf_advObjects.length] =
+				new tf_AdvObject(kw, sitehost, title, desc, clickURL, logo, image, video, adData, pubSiteId, keyword, topic, partnerId, impressionTrackUrl, imprintPixelUrl, bannerURL);
+            tf_good_ads_ix++;
+        }
+    }
+    tf_ads = tf_good_ads;
+
+    if(tf_pub_attributes) {
+			tf_pubObj = new tf_PubObject(tf_pub_attributes[0], tf_pub_attributes[1], tf_pub_attributes[2], tf_pub_attributes[3], tf_pub_attributes[4], tf_pub_attributes[7], tf_pub_attributes[8]);
+    }
+
+    displayFlashAds();
+    if(tf_flash_key == 1){
+        //displayTextLinkAds();
+    }
+
+    if(mode == 'test') {
+    	var ad_list = '<table  border="1" bgcolor="yellow" style="font-family:verdana;font-size:10px">';
+      ad_list += '<tr><td><nobr>Textlink </nobr></td>';
+    	ad_list += '<td><nobr>Url</nobr></td>';
+    	ad_list += '<td><nobr>Title </nobr></td>';
+    	ad_list += '<td><nobr>Description </nobr></td>';
+    	ad_list += '<td><nobr>Patner Id </nobr></td>';
+    	ad_list += '<td><nobr>Ad Keyword </nobr></td>';
+    	ad_list += '<td><nobr>Topic </nobr></td>';
+    	ad_list += '</tr>' ;
+
+    	for (var tf_ads_ix = 0; tf_ads_ix < tf_ads.length; tf_ads_ix++) {
+    	  	var zSr = tf_ads[tf_ads_ix];
+        	var tfct = 0;
+         	var kw = zSr[tfct++];
+         	var sitehost = zSr[tfct++];
+         	var title = zSr[tfct++];
+        	var desc = zSr[tfct++];
+        	tfct += 6;
+		    	var keyword = zSr[tfct++];
+	    		var topic = zSr[tfct++];
+	   	 		var partnerId = zSr[tfct++];
+  				ad_list += '<tr><td> '+ kw+'</td>';
+		    	ad_list += '<td>'+sitehost+'</td>';
+    			ad_list += '<td>'+title +'</td>';
+    			ad_list += '<td> '+desc +'</td>';
+    			ad_list += '<td> '+partnerId +'</td>';
+    			ad_list += '<td> '+keyword +'</td>';
+    			ad_list += '<td> '+topic +'</td>';
+    			ad_list += '</tr>' ;
+    	}
+  	  ad_list += '</table>' ;
+	  if(document.getElementById('tf_ad_div')) {
+		document.getElementById('tf_ad_div').innerHTML = ad_list;
+	  }
+  	}
+
+}
+
+function loadImages() {
+    images = new Array();
+    images[0] = new Image();
+    images[0].src = textlinksServer + "/images/corner1.gif";
+    images[1] = new Image();
+    images[1].src = textlinksServer + "/images/corner2.gif";
+    images[2] = new Image();
+    images[2].src = textlinksServer + "/images/corner3.gif";
+    images[3] = new Image();
+    images[3].src = textlinksServer + "/images/corner4.gif";
+    images[4] = new Image();
+    images[4].src = textlinksServer + "/images/header.gif";
+    images[5] = new Image();
+    images[5].src = textlinksServer + "/images/footer.gif";
+    images[6] = new Image();
+    images[6].src = textlinksServer + "/images/button.gif";
+    images[7] = new Image();
+    images[7].src = textlinksServer + "/images/header.gif";
+    images[8] = new Image();
+    images[8].src = textlinksServer + "/images/leftEdge.gif";
+    images[9] = new Image();
+    images[9].src = textlinksServer + "/images/rightEdge.gif";
+    images[10] = new Image();
+    images[10].src = textlinksServer + "/images/sponsored.gif";
+    images[11] = new Image();
+    images[11].src = textlinksServer + "/images/whatsThis.gif";
+    images[12] = new Image();
+    images[12].src = textlinksServer + "/images/srch-button.gif";
+    images[13] = new Image();
+    images[13].src = textlinksServer + "/images/srch-button-onMouse.gif";
+    images[14] = new Image();
+    images[14].src = textlinksServer + "/images/cross.gif";
+}
+
+var tf_adsTimeoutCount = 0;
+function tf_cssLoader(u){
+		try{
+			if(navigator.appVersion.indexOf('MSIE')>=0 && ('uninitialized'==document.readyState||'interactive'==document.readyState||'loading'==document.readyState)){
+			document.write('<l' + 'ink href="'+u+'" rel="stylesheet" type="text/css" />');
+			}else{
+				var l=document.createElement("link");
+                l.setAttribute("type","text/css");
+                l.setAttribute("rel","stylesheet");
+                l.setAttribute("href",u);
+                l.setAttribute("media","screen");
+                document.getElementsByTagName("head")[0].appendChild(l);
+			}
+		}catch(e){}
+}
+
+function addTextLinksStart() {
+    if (tf_started)
+        return;
+    tf_started = true;
+
+    if (tf_onload) {
+        tf_onload();
+    }
+//    var tf_otfDiv = tf_createDiv("tf_OTFDiv");
+//    tf_loadFlash('OTF_sender','window', AdvertBanner);
+//    var p = document.createElement("p");
+//    p.innerHTML = tf_ActiveXObject;
+//    tf_otfDiv.appendChild(p);
+
+    var AdvertBanner = tf_createDiv("tf_AdDiv", -8000);
+
+    tf_loadFlash('widget_v1','window', AdvertBanner);
+    tf_ActiveXObject1 = tf_ActiveXObject;
+    
+    tf_loadFlash('NDwidget_v1','transparent', AdvertBanner);
+    tf_ActiveXObject2 = tf_ActiveXObject;
+    
+    var divFound = false;
+    for (var i = 0; i < tf_textLinkMarkers.length; i++) {
+        if (null != document.getElementById(tf_textLinkMarkers[i])) {
+            divFound = true;
+            break;
+        }
+    }
+
+    if (!divFound) {
+        var divs = document.getElementsByTagName('div');
+        if (divs) {
+            for (var i = 0; i < divs.length; i++) {
+                for (var j = 0; j < tf_textLinkMarkers.length; j++) {
+                    if (divs[i].className == tf_textLinkMarkers[j] || divs[i].getAttribute("name") == tf_textLinkMarkers[j]) {
+                        divFound = true;
+                        break;
+                    }
+                }
+
+                for (var j = 0; j < tf_textLinkMarkersRegex.length; j++) {
+                    if ((divs[i].getAttribute("id") && divs[i].getAttribute("id").match(tf_textLinkMarkersRegex[j]) ) || (divs[i].className && divs[i].className.match(tf_textLinkMarkersRegex[j])) || (divs[i].getAttribute("name") && divs[i].getAttribute("name").match(tf_textLinkMarkersRegex[j]))){
+                        divFound = true;
+                        break;
+                    }
+                }
+
+                if (divFound) {
+                    break;
+                }
+            }
+        }
+    }
+
+    if (!divFound) {
+        var spans = document.getElementsByTagName('span');
+        if (spans) {
+            for (var i = 0; i < spans.length; i++) {
+                for (var j = 0; j < tf_textLinkMarkers.length; j++) {
+                    if (spans[i].className == tf_textLinkMarkers[j] || spans[i].getAttribute("name") == tf_textLinkMarkers[j]) {
+                        divFound = true;
+                        break;
+                    }
+                }
+                for (var j = 0; j < tf_textLinkMarkersRegex.length; j++) {
+                    if ((spans[i].getAttribute("id") && spans[i].getAttribute("id").match(tf_textLinkMarkersRegex[j]) ) || (spans[i].className && spans[i].className.match(tf_textLinkMarkersRegex[j])) || (spans[i].getAttribute("name") && spans[i].getAttribute("name").match(tf_textLinkMarkersRegex[j]))){
+                        divFound = true;
+                        break;
+                    }
+                }
+                if (divFound) {
+                    break;
+                }
+            }
+        }
+    }
+
+    if (!divFound) {
+        var tables = document.getElementsByTagName('table');
+        if (tables) {
+            for (var i = 0; i < tables.length; i++) {
+                for (var j = 0; j < tf_textLinkMarkers.length; j++) {
+                    if (tables[i].className == tf_textLinkMarkers[j]) {
+                        divFound = true;
+                        break;
+                    }
+                }
+                for (var j = 0; j < tf_textLinkMarkersRegex.length; j++) {
+                    if ((tables[i].getAttribute("id") && tables[i].getAttribute("id").match(tf_textLinkMarkersRegex[j]) ) || (tables[i].className && tables[i].className.match(tf_textLinkMarkersRegex[j])) || (tables[i].getAttribute("name") && tables[i].getAttribute("name").match(tf_textLinkMarkersRegex[j]))){
+                        divFound = true;
+                        break;
+                    }
+                }
+                if (divFound) {
+                    break;
+                }
+            }
+        }
+    }
+
+    if (!divFound) {
+        return;
+    }
+
+    var bodyNode = document.body;
+
+    if (typeof(tf_url) == 'undefined') {
+        tf_url = document.referrer;
+        if (window.top.location == document.location) {
+            tf_url = document.location;
+        }
+    }
+
+    if (typeof(tf_maxKeywords) == 'undefined') {
+        tf_maxKeywords = 6;
+    }
+
+    if (tf_ads == null) {
+        tf_docURL = escape(tf_url);
+        var adType = "textLinks";
+
+        var prms = "";
+        if (mode == 'test' && typeof testIP != 'undefined' && testIP != null) {
+            prms = '&testIP=' + testIP;
+        }
+	var now = new Date();
+	var requestId = ((now.getTime() % 2147483648) + Math.random());
+        var tf_src_link = keywordsServer + "/Keywords?ads=" + tf_maxKeywords + "&link=" + tf_docURL +
+                          "&mode=" + mode + "&serveMode=Normal"+"&type=" + adType + prms + '&rq=' + requestId;
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = tf_src_link;
+        bodyNode.appendChild(script);
+    }
+
+    window.setTimeout("extractContent()", 50);
+    if (tf_ads != null) {
+        tf_getAds();
+    } else {
+        tf_adsTimeoutCount = 0;
+        window.setTimeout("tf_getAds()", 250);
+    }
+}
+
+function extractContent() {
+    tf_page_keywords_ext_comp = false;
+    tf_extractMrkdContent();
+    tf_page_keywords_ext_comp = true;
+}
+
+function tf_extractMetaTagContent() {
+    var metaElements = document.getElementsByTagName("meta");
+    var metaKeywords = "";
+    for (var m = 0; m < metaElements.length; m++) {
+        if (metaElements[m].name == "keywords" || metaElements[m].name == 'KEYWORDS') {
+            metaKeywords = metaElements[m].content;
+            break;
+        }
+    }
+    regstrMarkdContnt(metaKeywords);
+}
+function tf_extractMrkdContent() {
+
+    var divs = document.getElementsByTagName("DIV");
+    var spans = document.getElementsByTagName("SPAN");
+    var tables = document.getElementsByTagName("TABLE");
+    var all = new Array();
+    for (var i = 0; i < divs.length; i++)
+        all[all.length] = divs[i];
+    for (var i = 0; i < spans.length; i++)
+        all[all.length] = spans[i];
+    for (var i = 0; i < tables.length; i++)
+        all[all.length] = tables[i];
+    for (var i = 0; i < all.length; i++){
+            if (tf_page_keywords.length >= 1000)
+                return;
+        if(tf_isNodeContentMarked(all[i]) && !tf_isNodeContentBlockedMarked(all[i])){
+                tf_findTextNodesForOntheFly(all[i], true);
+        }
+    }
+
+}
+
+function tf_findTextNodesForOntheFly(node, skipMarkCheck) {
+    if (node.nodeType == 1 && !skipMarkCheck) {
+    	if(tf_isNodeContentBlockedMarked(node)){
+    		return;
+    	}
+	if ((node.getAttribute("id") && node.getAttribute("id").tagName && node.getAttribute("id").tagName == "INPUT")) {
+		return;
+	}
+
+	for (var j = 0; j < tf_textLinkMarkers.length; j++) {
+            if ((node.getAttribute("id") && node.getAttribute("id") == tf_textLinkMarkers[j]) || (node.className && node.className == tf_textLinkMarkers[j]) || (node.getAttribute("name") && node.getAttribute("name") == tf_textLinkMarkers[j])) {
+		return;
+	    }
+	}
+	for (var j = 0; j < tf_textLinkMarkersRegex.length; j++) {
+	    if ((node.getAttribute("id") && node.getAttribute("id").match(tf_textLinkMarkersRegex[j])) || (node.className && node.className.match(tf_textLinkMarkersRegex[j])) || (node.getAttribute("name") && node.getAttribute("name").match(tf_textLinkMarkersRegex[j]))) {
+		return;
+	    }
+	}
+    }
+    if (node.nodeType == 3) {
+        regstrMarkdContent(node.data);
+        return;
+    }
+
+    if (node.tagName == "A" || node.tagName == "SCRIPT" || node.tagName == "OPTION" || node.tagName == "TEXTAREA"
+            || node.tagName == "IFRAME" || node.tagName == "OBJECT")
+	return;
+
+    if(tf_pubObj && !tf_pubObj.enableHeaderTextlink && (node.tagName == "CODE" || node.tagName == "H1" || node.tagName == "H2" || node.tagName == "H3"
+            || node.tagName == "H4" || node.tagName == "H5" || node.tagName == "H6"))
+	return;
+
+    if (node.hasChildNodes()) {
+        var children = new Array();
+        /* 'clone' the array */
+        for (var i = 0; i < node.childNodes.length; i++)
+            children[children.length] = node.childNodes[i];
+        for (var i = 0; i < children.length; i++)
+            tf_findTextNodesForOntheFly(children[i], (children[i].tagName!="DIV" && children[i].tagName!="SPAN" && children[i].tagName!="TABLE"));
+    }
+
+}
+
+function regstrMarkdContent(text) {
+    if(tf_page_words.length >= 3500) {
+        return;
+    }
+    if (text) {
+        tf_page_words += ' ' + text;
+    }
+}
+
+function tf_remove_unwanted_chars(text){
+    text = text.replace(/[.;:?!,\"\/~`@#$%^*()_=+\[{\]}\|<>\n\r]/g,'');
+    text = text.replace('&amp;','').replace('&lt;','').replace('&gt;','');
+    return tf_trim_string(text);
+}
+
+function tf_remove_unwanted_chars_for_collector(text){
+    text = text.replace(/[\"\/~`@#$%^*()_=+\[{\]}\|<>\n\r]/g,' ');
+    text = text.replace('&amp;',' ').replace('&lt;',' ').replace('&gt;',' ');
+    return tf_trim_string(text);
+}
+
+function tf_remove_unwanted_chars_for_OTF(text){
+    text = text.replace(/[\"\/~`?@#$%^*()_=+\[{\]}\|<>]/g,';');
+    text = text.replace(/[\n\r]/g,'.');
+    text = text.replace(/[]/g,';');
+    text = text.replace('&amp;',';').replace('&lt;',';').replace('&gt;',';');
+    return tf_trim_string(text);
+}
+
+function tf_trim_string(text) {
+    return text.replace(/^\s+|\s+$/g,"");
+}
+
+function getForumLoc() {
+    var forum_loc = "WindowsXP";
+    if (tf_url) {
+        tf_url = tf_url + "";
+        if (tf_url.search("windows2000") != -1) {
+            forum_loc = "Windows2000";
+        } else if (tf_url.search("windows95") != -1) {
+            forum_loc = "Windows9x";
+        } else if (tf_url.search("windows2003") != -1) {
+            forum_loc = "Windows2003";
+        } else if (tf_url.search("office") != -1) {
+            forum_loc = "Office";
+        } else if (tf_url.search("digitalhome") != -1) {
+            forum_loc = "DigitalHome";
+        } else if (tf_url.search("windowsnt") != -1) {
+            forum_loc = "WindowsNT";
+        } else if (tf_url.search("windowsme") != -1) {
+            forum_loc = "WindowsMe";
+        } else if (tf_url.search("drivers") != -1) {
+            forum_loc = "Drivers";
+        } else if (tf_url.search("windows31") != -1) {
+            forum_loc = "Windows31";
+        } else if (tf_url.search("hardware") != -1) {
+            forum_loc = "Hardware";
+        } else if (tf_url.search("beos") != -1) {
+            forum_loc = "BeOS";
+        } else if (tf_url.search("dos") != -1) {
+            forum_loc = "DOS";
+        } else if (tf_url.search("linux") != -1) {
+            forum_loc = "Linux";
+        } else if (tf_url.search("mac") != -1) {
+            forum_loc = "Mac";
+        } else if (tf_url.search("netware") != -1) {
+            forum_loc = "Netware";
+        } else if (tf_url.search("networking") != -1) {
+            forum_loc = "Networking";
+        } else if (tf_url.search("dbase") != -1) {
+            forum_loc = "Database";
+        } else if (tf_url.search("os2") != -1) {
+            forum_loc = "OS2";
+        } else if (tf_url.search("solaris") != -1) {
+            forum_loc = "Solaris";
+        } else if (tf_url.search("cpus") != -1) {
+            forum_loc = "CPUs";
+        } else if (tf_url.search("gaming") != -1) {
+            forum_loc = "Gaming";
+        } else if (tf_url.search("unix") != -1) {
+            forum_loc = "Unix";
+        } else if (tf_url.search("pda") != -1) {
+            forum_loc = "PDAs";
+        } else if (tf_url.search("programming") != -1) {
+            forum_loc = "Programming";
+        } else if (tf_url.search("security") != -1) {
+            forum_loc = "Security";
+        } else if (tf_url.search("webdevel") != -1) {
+            forum_loc = "WebDevelopment";
+        } else if (tf_url.search("digitalphoto") != -1) {
+            forum_loc = "DigitalPhoto";
+        } else if (tf_url.search("windowsvista") != -1) {
+            forum_loc = "WindowsVista";
+        } else if (tf_url.search("openvms") != -1) {
+            forum_loc = "OpenVMS";
+        }
+    }
+    return forum_loc;
+}
+function tf_createDiv(divId, pos){
+    var bodyNode = document.body;
+    var divElement = document.getElementById(divId);
+        if (document.getElementById(divId) == null) {
+            divElement = document.createElement("div");
+            divElement.id = divId;
+            divElement.style.visibility = "visible";
+            divElement.style.top = pos+'px';
+            divElement.style.left = pos+'px';
+            divElement.style.position = "absolute";
+            divElement.style.border = "none";
+            divElement.style.background="none";
+            divElement.style.zIndex = 200000;
+            divElement.style.height = 10+'px';
+            divElement.style.width = 10+'px';
+            divElement.style.padding = 10+'px';
+            divElement.onmouseover = tf_advertBannerOver;
+            divElement.onmouseout = tf_advertBannerOut;
+            bodyNode.appendChild(divElement);
+         }
+    return  divElement
+}
+function tf_loadFlash(flashFile, flashWMode, AdvertBanner, otfUrl) {
+    var bodyNode = document.body;
+	var falshCode = '';
+	falshCode+= 'if (AC_TF_FL_RunContent == 0) {';
+		falshCode+= 'alert("This page requires AC_TF_RunActiveContent.js.");';
+	falshCode+= '} else {';
+		falshCode+= 'tf_str = AC_TF_FL_RunContent(';
+		falshCode+= '\'codebase\', \'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0\',';
+		falshCode+= '\'width\', \'10\',';
+		falshCode+= '\'height\', \'10\',';
+		//falshCode+= '\'src\', \''+textlinksServer+'/videos/widget_v1\',';
+		falshCode+= '\'src\', \''+textlinksServer+'/videos/'+flashFile+'\',';
+		falshCode+= '\'quality\', \'high\',';
+		falshCode+= '\'pluginspage\', \'http://www.macromedia.com/go/getflashplayer\',';
+		falshCode+= '\'align\', \'middle\',';
+		falshCode+= '\'play\', \'true\',';
+		falshCode+= '\'loop\', \'true\',';
+		falshCode+= '\'scale\', \'noscale\',';
+		falshCode+= '\'wmode\', \''+flashWMode+'\',';
+		falshCode+= '\'devicefont\', \'false\',';
+		falshCode+= '\'id\', \''+flashFile+'\',';
+		falshCode+= '\'bgcolor\', \'#ffffff\',';
+		falshCode+= '\'name\', \''+flashFile+'\',';
+		falshCode+= '\'menu\', \'false\',';
+		falshCode+= '\'allowFullScreen\', \'false\',';
+		falshCode+= '\'allowScriptAccess\',\'always\',';
+		falshCode+= '\'movie\', \''+textlinksServer+'/videos/'+flashFile+'\',';
+        if(otfUrl && otfUrl != 'undefined'){
+            falshCode+= '\'flashVars\', \''+otfUrl+'\',';
+        }
+        falshCode+= '\'salign\', \'lt\'';
+		falshCode+= '); ';
+	falshCode+= '}';
+
+    var flashScript = document.createElement("script");
+
+    flashScript.text = falshCode;
+    AdvertBanner.appendChild(flashScript);
+
+}
+
+function displayFlashAds() {
+    tf_css_key = 1;
+    if(tf_pubObj && tf_pubObj.colorSchemeId) {
+			tf_css_key = tf_pubObj.colorSchemeId;
+    }
+    var AdvertBanner = document.getElementById('tf_AdDiv');
+
+    if(tf_css_key > 2){
+    	tf_flash_key = 2;
+        tf_css_key = 3;
+        tf_current_flash_name = 'NDwidget_v1';
+    	cssFileName = textlinksServer+'/textlinks'+tf_css_key+'.css';
+        AdvertBanner.style.padding = 0+'px';
+        AdvertBanner.style.height = 200+'px';
+        AdvertBanner.style.width = 350+'px';
+
+    }
+    var p = document.createElement("p");
+    p.style.background="none";
+    p.style.border = "0";
+    p.style.padding = "0";
+    p.style.margin = "0";
+
+    p.innerHTML = (tf_flash_key == 1)? tf_ActiveXObject1 : tf_ActiveXObject2;
+    AdvertBanner.appendChild(p);
+    tf_flash_object = window.document.widget_v1;
+    if(tf_flash_key == 2){
+    	tf_flash_object = window.document.NDwidget_v1;
+    }
+    if(!isIE && tf_flash_key == 2){
+        posDivVisibleArea();
+    }
+    tf_dragAutofunction();
+//    sendStatus();
+//    window.setTimeout("sendStatus()", 100);
+//    if(tf_flash_key == 2){
+//        tf_hideAd();
+//    }
+
+}
+var countr = 0;
+function posDivVisibleArea(){
+        var AdvertBanner = document.getElementById('tf_AdDiv');
+        AdvertBanner.style.top = Math.max(document.body.scrollTop, document.documentElement.scrollTop) + 'px';
+        AdvertBanner.style.left = Math.max(document.body.scrollLeft, document.documentElement.scrollLeft)+'px';
+        if(!flashLoaded && countr < 10){
+            countr ++ ;
+            window.setTimeout("posDivVisibleArea()",200);
+        }
+}
+function sendAdNum(){
+    if(typeof tf_flash_object.SetVariable=='undefined'){
+        return;
+    }
+    tf_flash_object.SetVariable("adNumb", "ad"+tf_flash_adNum);
+    tf_flash_object.SetVariable("showAdStatus", "1");
+}
+function sendAdNumClear(){
+    if(typeof tf_flash_object.SetVariable=='undefined'){
+        return;
+    }
+    tf_flash_object.SetVariable("adNumb", tf_clear_flash);
+    tf_flash_object.SetVariable("showAdStatus", "1");
+}
+function etFlashLoaded(){  //called by flash when it gets loaded. i.e. isreadyState
+    sendStatus();
+}
+function sendStatus(){
+    if(!tf_advObjects || tf_advObjects.length==0){
+        return;
+    }
+    if(typeof tf_flash_object.SetVariable=='undefined'){
+        if(++tf_flash_load_counter < 20){
+            window.setTimeout("sendStatus()",200);
+        }
+        return;
+    }
+    tf_flash_load_counter = 0;
+    passVar();
+	tf_flash_object.SetVariable("wStatus", "1");
+}
+function tf_dragEnd(){
+    sendStatus();
+	sendAdNum();
+}
+
+function tf_showAd(){
+	document.getElementById("tf_AdDiv").style.visibility = "visible";
+}
+function tf_hideAd(){
+	document.getElementById('tf_AdDiv').style.visibility = 'hidden';
+}
+
+function passVar(){
+    var whatsThis = textlinksServer + "/whatsthis.jsp?siteId=" + tf_advObjects[0].pubSiteId + "&siteName=" + tf_docURL;
+    var whatsThisTag = 'javascript:window.open(\''+whatsThis + '\');void(\'\');';
+    tf_flash_object.SetVariable("cssFile", cssFileName);
+    tf_flash_object.SetVariable("adCount",tf_advObjects.length);
+    tf_flash_object.SetVariable("whatsThisURL", whatsThisTag);
+    tf_flash_object.SetVariable("mainSep", "~~#~~");
+    tf_flash_object.SetVariable("subSep", "-|-");
+    tf_flash_object.SetVariable("pubSiteID", (tf_css_key==2?36:(tf_css_key==1 ||(tf_pubObj && tf_pubObj.colorSchemeId==3))?1:2)+""); // for new flash 1(for roof curve) or 2(for pond curve).
+    tf_flash_object.SetVariable("setDrag", (tf_flash_key ==2)?0:(isIE?1:0)+"");
+    tf_flash_object.SetVariable("et_mode", clickmode);
+    tf_flash_object.SetVariable("bgColor", "white"); // or white.
+    for(var i=1;i<=tf_advObjects.length;i++){
+		var adv = tf_advObjects[i-1];
+        var tf_flash_var = "";
+
+        if(adv.partnerId == '111'){
+            tf_flash_var = tf_getPGFlashVar(adv,i);
+        } else if(adv.partnerId == TD_ID){
+            tf_flash_var = tf_getTDFlashVar(adv,i);
+        } else if(adv.partnerId == SH_ID){
+            tf_flash_var = tf_getSHFlashVar(adv,i);
+        } else if(adv.partnerId == '114') {
+	        var descTokens = adv.desc.split('-||-');
+	        var jobTitle = descTokens[0];
+            var companyName = descTokens[1];
+            var areaCode = descTokens[2];
+            var municipality = descTokens[3];
+            var region = descTokens[4];
+            var location = '';
+            location = tf_getUserLocation();
+            var diceCategory = "cat9";
+            var logo =textlinksServer + "/images/spacer.gif";
+            var diceLogo =textlinksServer + "/images/dice-logo.gif";
+            var clickTagFunction = "javascript:submitClickIndex(\"" + i + "\")";
+            var clickTagUrl = adv.clickURL;
+            var button ='';
+            var showTxt1 ="";
+            var pdTxt ="";
+            var showTxt2 ="";
+            var pdTxt2 ="";
+            var adDes = "";
+            diceAdNumber = Math.floor(Math.random()*11)%11;
+            if(diceAdNumber!=0){
+               clickTagFunction = "javascript:Dice_Click(\"" + diceAdNumber + "\")";
+               diceCategory = "cat10";
+               diceLogo =textlinksServer + "/images/dice-logo_new.gif";
+               button = textlinksServer + "/images/btn_searchNow.gif";
+                if(diceAdNumber==6 ||diceAdNumber==7 ||diceAdNumber== 8){
+                   diceAdNumber = diceAdNumber -5;
+                }
+                if(diceAdNumber==1) {
+                    adDes = "<span class='tfAdv_desc_dice'>Find </span><span class='tf_flash"+tf_css_key+"_titleCat7'>" + jobTitle + "</span><span class='tfAdv_desc_dice'> position in </span><span class='tf_flash"+tf_css_key+"_titleCat7'><br>" + municipality + ", " + region + "</span>";
+                    showTxt1 = "<span class='tf_flash"+tf_css_key+"_title2Cat7'>Enter keywords (skill, job title)</span>";
+                    pdTxt = "";
+                }else if(diceAdNumber==2) {
+                    adDes = "<span class='tfAdv_desc_dice'>Find </span><span class='tf_flash"+tf_css_key+"_titleCat7'>" + jobTitle + "</span><span class='tfAdv_desc_dice'> position in </span><span class='tf_flash"+tf_css_key+"_titleCat7'><br>" + municipality + ", " + region + "</span>";
+                    showTxt1 = "<span class='tf_flash"+tf_css_key+"_title2Cat7'>Enter location (city, state or zip)</span>";
+                    pdTxt = "";
+                }else if(diceAdNumber==3) {
+                    adDes = "<span class='tf_flash"+tf_css_key+"_titleCat7'>Find " + jobTitle + " position in <br>" + municipality + ", " + region + "</span>";
+                }else if(diceAdNumber==4) {
+                    adDes = "<span class='tf_flash"+tf_css_key+"_titleCat7'>Post Your Resume and Find a Better Job Today!</span>";
+                    button = textlinksServer + "/images/btn_postResume.gif";
+                }else if(diceAdNumber==5) {
+                    adDes = "<span class='tf_flash"+tf_css_key+"_titleCat7'>Find a New Job Today!</span>";
+                    button = textlinksServer + "/images/search_Dice.gif";
+                    showTxt1 = "<span class='tf_flash"+tf_css_key+"_title2Cat7'>Enter keywords (skill, job title)</span>";
+                    pdTxt = "";
+                    showTxt2 = "<span class='tf_flash"+tf_css_key+"_title2Cat7'>Enter location (city, state or zip)</span>";
+                    pdTxt2 = tf_getUserLocation();
+                } else if(diceAdNumber==6){
+                    adDes = "<span class='tf_flash"+tf_css_key+"_titleCat7'>Find the Hottest Tech Jobs in Your Local Area</span>";
+                    pdTxt = municipality + ", " + region + areaCode;
+                }else if(diceAdNumber==7){
+                    adDes = "<span class='tf_flash"+tf_css_key+"_titleCat7'>Find the Hottest Tech Jobs in Your Local Area</span>";
+                    showTxt1 = "<span class='tf_flash"+tf_css_key+"_title2Cat7'>Job Title</span>";
+                    pdTxt = jobTitle;
+                    showTxt2 = "<span class='tf_flash"+tf_css_key+"_title2Cat7'>Zip Code</span>";
+                    pdTxt2 = areaCode;
+                }else if(diceAdNumber==8){
+                    adDes = "<span class='tf_flash"+tf_css_key+"_titleCat7'>Find the Hottest IT Job Markets</span>";
+                    pdTxt = municipality + ", " + region;
+                }else if(diceAdNumber==9){
+                    adDes = "<span class='tf_flash"+tf_css_key+"_titleCat7'>Get Your Free Salary Report Today!</span>";
+                    button = textlinksServer + "/images/search_Dice.gif";
+                    showTxt1 = "<span class='tf_flash"+tf_css_key+"_title2Cat7'>Job Title</span>";
+                    pdTxt = jobTitle;
+                    showTxt2 = "<span class='tf_flash"+tf_css_key+"_title2Cat7'>Zip Code</span>";
+                    pdTxt2 = municipality + ", " + region + " " + areaCode;
+                }else if(diceAdNumber==10){
+                    adDes = "<span class='tf_flash"+tf_css_key+"_titleCat7'>How Much is Your Job Worth?</span>";
+                    button = textlinksServer + "/images/search_Dice.gif";
+                    pdTxt = jobTitle;
+                }
+            }else{
+                adDes = "<span class='tf_flash"+tf_css_key+"_title2Cat8'>Apply For: <br></span><span class='tf_flash"+tf_css_key+"_titleCat7'>" + jobTitle + "<br></span><span class='tfAdv_desc_dice'>" + companyName + "<br>" + municipality + ", " + region + " " + areaCode + "</span>";
+                button =textlinksServer + "/images/search_Dice.gif";
+            }
+            var rateJob = ( Math.round(Math.random()*100) )%2;
+            rateJob = 0;
+            tf_flash_var+= "adType-|-"+diceCategory;
+            tf_flash_var+= "~~#~~wHeader-|-pwByET";
+            tf_flash_var+= "~~#~~rateJob-|-"+rateJob;
+            tf_flash_var+= "~~#~~diceNum-|-d"+diceAdNumber;
+            tf_flash_var+= "~~#~~adDes-|-"+adDes;
+            tf_flash_var+= "~~#~~wLogo-|-" + logo;
+            tf_flash_var+= "~~#~~diceLogo-|-" + diceLogo;
+            tf_flash_var+= "~~#~~button-|-" + button;
+            tf_flash_var+= "~~#~~btn-|-" + button;
+            tf_flash_var+= "~~#~~showTxt1-|-" + showTxt1;
+            tf_flash_var+= "~~#~~pdTxt-|-" + pdTxt;
+            tf_flash_var+= "~~#~~showTxt2-|-" + showTxt2;
+            tf_flash_var+= "~~#~~pdTxt2-|-" + pdTxt2;
+            tf_flash_var+= "~~#~~skillTxt-|-<span class='tf-dice-bold_10'>Enter Keywords(skill, job title)</span>";
+            tf_flash_var+= "~~#~~locTxt-|-<span class='tf-dice-bold_10'>Enter Location(city, state or zip)</span>";
+            tf_flash_var+= "~~#~~searchSkillInput-|-" + adv.title;
+            tf_flash_var+= "~~#~~locationInput-|-" + location;
+            tf_flash_var+= "~~#~~bottomURL-|-<span class='tf_flash" + tf_css_key + "_bottomURL1'>" + adv.sitehost + "</span>";
+            tf_flash_var+= "~~#~~clickTagURL-|-"+clickTagFunction;
+            tf_flash_var+= "~~#~~et_clickURL-|-"+adv.clickURL+"";
+            tf_flash_var+= "~~#~~et_trackURL-|-"+adv.trackURL+"";
+       } else {
+            tf_flash_var+= "adType-|-"+tf_getFlashCategory(adv);
+            tf_flash_var+= "~~#~~wHeader-|-"+tf_getFlashheaderImage(adv);
+            
+		if(adv.partnerId == ASK_ID) {
+			var temp_array1 = adv.desc.split('-||-');
+			tf_flash_var+= "~~#~~keyword-|-"+tf_trim_string(temp_array1[0]);
+				if(temp_array1[1] != null){
+					var temp_array2 = tf_trim_string(temp_array1[1]).split('-&&-');
+					for(var j = 0; j< temp_array2.length; j++){
+						var temp_array3 = temp_array2[j].split('-##-');
+						if(temp_array3[1] != null){
+							tf_flash_var+= "~~#~~tabtitle"+(j+1)+"-|-"+tf_trim_string(temp_array3[0]);
+							tf_flash_var+= "~~#~~tabsearchurl"+(j+1)+"-|-"+tf_trim_string(temp_array3[1]);
+						}
+					}
+				}			
+		} else {
+            tf_flash_var+= "~~#~~adTitle-|-<span class='tf_flash"+tf_css_key+"_title1'>"+adv.title+"</span>";
+            tf_flash_var+= "~~#~~adDes-|-<span class='tf_flash"+tf_css_key+"_description1'>"+adv.desc+"</span>";
+			}
+
+            var logo =adv.logo;
+            if(adv.logo ==null){
+               logo = "noLogo";
+            }
+	    tf_flash_var+= "~~#~~selectedTab-|-tab1";
+            tf_flash_var+= "~~#~~wLogo-|-"+logo;
+            tf_flash_var+= "~~#~~linkURL-|-<span class='tf_flash"+tf_css_key+"_bottomURL1'>"+adv.sitehost+"</span>";
+            tf_flash_var+= "~~#~~displayURL-|-"+adv.sitehost;
+            tf_flash_var+= "~~#~~bannerURL-|-"+adv.bannerURL;
+            tf_flash_var+= "~~#~~btnURL-|-"+textlinksServer + "/images/btn_learnmore.png";
+            tf_flash_var+= "~~#~~proImage-|-"+adv.image;
+            tf_flash_var+= "~~#~~videoPlayer-|-"+textlinksServer + "/videos/bannerFWVideo.swf";
+            tf_flash_var+= "~~#~~tf_mediafile-|-"+adv.video;
+            tf_flash_var+= "~~#~~cSearchTxt-|-<span class='tf_flash"+tf_css_key+"_bottomURL_cs'><img src='"+textlinksServer + "/images/srch-button.gif' align='right'/><BR>Site search for: \""+adv.keyword+"\"</span>";
+            tf_flash_var+= "~~#~~comSearchURL-|-"+tf_getSrchString(adv);
+            tf_flash_var+= "~~#~~clickTagURL-|-javascript:submitClickIndex(\""+i+"\")";
+            tf_flash_var+= "~~#~~et_clickURL-|-"+adv.clickURL+"";
+            tf_flash_var+= "~~#~~et_trackURL-|-"+adv.trackURL+"";
+       }
+        tf_flash_object.SetVariable("ad"+i,tf_flash_var);
+    }
+}
+function tf_getSrchString(adv){
+   return (adv.pubSiteId=='6')? COMPUTING_SEARCH + escape(adv.keyword) + '&forum=' + getForumLoc() :
+          (adv.pubSiteId=='1')? MAJORGEEKS_SRCH_PRFX + escape(adv.keyword) + MAJORGEEKS_SRCH_SUFFIX :'';
+}
+function tf_getFlashCategory(adv){
+    if(adv.partnerId == ASK_ID){
+		return "cat16";
+	}else if(adv.partnerId == TD_ID){
+		return "cat13";
+	}else if (adv.partnerId == SS_ID && adv.bannerURL != null){
+	        return "cat15";
+	}else if(adv.video != null && (adv.pubSiteId=='6' || adv.pubSiteId=='1') ){
+		return "cat6";
+	}else if(adv.video != null && (adv.pubSiteId!='6' || adv.pubSiteId!='1') ){
+		return "cat5";
+	}else if(adv.image != null && (adv.pubSiteId=='6' || adv.pubSiteId=='1') ){
+		return "cat4";
+	}else if(adv.image == null && (adv.pubSiteId=='6' || adv.pubSiteId=='1') ){
+		return "cat3";
+	}else if(adv.image == null){
+		return "cat1";
+	}else if(adv.image != null){
+		return "cat2";
+	}
+}
+function tf_getTDFlashVar(adv, index){
+    var tf_flash_var = "";
+        tf_flash_var+= "adType-|-"+tf_getFlashCategory(adv);
+        tf_flash_var+= "~~#~~wHeader-|-"+tf_getFlashheaderImage(adv);
+    var titleTokens = tf_getPgTitleTokens(adv.title);
+        tf_flash_var+= "~~#~~adTitle-|-<span class='tf_flash"+tf_css_key+"_title1'>"+titleTokens[0]+"</span>";
+    var desc = (titleTokens[1].length > 1) ? "- "+titleTokens[1]+"..." :"";
+        tf_flash_var+= "~~#~~adDes-|-<span class='tf_flash"+tf_css_key+"_description1'>"+desc+"</span><span class='tf_flash"+tf_css_key+"_title'>Read more </span>";
+
+        tf_flash_var+= "~~#~~wLogo-|-"+textlinksServer + "/images/td-logo.gif";
+        tf_flash_var+= "~~#~~rBtn-|-"+textlinksServer + "/images/buy_now_red.gif";
+    var price = adv.desc;
+    if(price && price!='' && price.indexOf("$")==-1){
+       price = "$"+price;
+    }
+    if(price && price!=''){
+       price = "Final Price : "+price;
+    }
+        tf_flash_var+= "~~#~~txtPrice-|-<span class='tf_flash"+tf_css_key+"_title2Cat8'>"+price+"</span>";
+        tf_flash_var+= "~~#~~rTxt-|- ";
+        tf_flash_var+= "~~#~~rImg-|- ";
+        tf_flash_var+= "~~#~~proImage-|-"+adv.image;
+        tf_flash_var+= "~~#~~clickTagURL-|-javascript:submitClickIndex(\""+index+"\")";
+        tf_flash_var+= "~~#~~et_clickURL-|-"+adv.clickURL+"";
+        tf_flash_var+= "~~#~~et_trackURL-|-"+adv.trackURL+"";
+    return tf_flash_var;
+}
+
+function tf_getSHFlashVar(adv, index){
+    var advDesc = adv.desc;
+    var advDescriptionTokens = advDesc.split("-##-");
+    var SHmode = advDescriptionTokens[0];
+    var srchData = advDescriptionTokens[1];
+    var whatsThis = textlinksServer + "/whatsthis.jsp?siteId=" + adv.pubSiteId + "&siteName=" + tf_docURL;
+    var tf_flash_var = "";
+    if(SHmode !=ITEM_MATCH){
+        adv.trackURL = adv.trackURL + pgTrackPrms + "0";
+        tf_flash_var+= "adType-|-cat14";
+        tf_flash_var+= "~~#~~wHeader-|-pwByET";
+        tf_flash_var+= "~~#~~totalProduct-|-"+(advDescriptionTokens.length-2);
+        tf_flash_var+= "~~#~~wLogo-|-"+textlinksServer + "/images/shopping-logo.gif";
+        tf_flash_var+= "~~#~~PGKeyWord-|-"+srchData;
+        tf_flash_var+= "~~#~~clickTagURL-|-javascript:submitClickIndex(\""+index+ "\")";
+        adv.trackURL = adv.trackURL + pgTrackPrms + "0";
+        tf_flash_var+= "~~#~~PG_SrchTrackURL-|-"+adv.trackURL;
+
+        for(var i=2;i <advDescriptionTokens.length;i++){
+            if(advDescriptionTokens[i] && advDescriptionTokens[i].length>0){
+                var advDescTokens = advDescriptionTokens[i].split('-||-');
+                var clickUrl = advDescTokens[0];
+                var title = advDescTokens[1];
+                var titleTokens = tf_getPgTitleTokens(title);
+                tf_flash_var+= "~~#~~adText"+(i-1)+"-|-<span class='tf_flash"+tf_css_key+"_title1Cat8'>"+titleTokens[0]+"</span>";
+                tf_flash_var+= "<br><span class='tf_flash"+tf_css_key+"_title2Cat8'>"+titleTokens[1]+"</span>";
+                var description = advDescTokens[3];
+                if(description && description.length > 0){
+                    tf_flash_var+= "<span class='tfAdv_pg_grey'> - " + description +"</span>";
+                }
+                var imageUrl = textlinksServer + '/images/no_image.gif';
+                if(advDescTokens[2] && advDescTokens[2]!=""){
+                    imageUrl = advDescTokens[2];
+                    imageUrl = imageUrl.replace('100x100','50x50');
+                }
+                tf_flash_var+= "~~#~~proImage"+(i-1)+"-|-"+imageUrl;
+                var pric = advDescTokens[4];
+                var ratingUrl = advDescTokens[5];
+                if(pric.indexOf("$")== -1){
+                   pric = "$"+pric;
+                }
+                var priceTxt = (pric != "")? "<span class='tf_flash"+tf_css_key+"_title2Cat8'>As low as: "+pric +"</span>": " ";
+                tf_flash_var+= "~~#~~priceTxt"+(i-1)+"-|-"+priceTxt;
+                tf_flash_var+= "~~#~~DirectonURL"+(i-1)+"-|-javascript:submitSHClickIndex(\""+ sh_click_url_array.length +"\")";
+                tf_flash_var+= "~~#~~btnURL"+(i-1)+"-|-javascript:submitSHClickIndex(\""+ sh_click_url_array.length +"\")";
+                sh_click_url_array[sh_click_url_array.length] = clickUrl;
+                sh_click_url_array[sh_click_url_array.length] = adv.trackURL;
+                tf_flash_var+= "~~#~~DirectonClickURL"+(i-1)+"-|-" + clickUrl;
+                tf_flash_var+= "~~#~~DirectonTrackURL"+(i-1)+"-|-" + adv.trackURL;
+
+                tf_flash_var+= "~~#~~btnClickURL"+(i-1)+"-|-" + clickUrl;
+                tf_flash_var+= "~~#~~btnTrackURL"+(i-1)+"-|-" + adv.trackURL;
+
+                var ratingTxt = (ratingUrl!="")?"<span class='tf_flash"+tf_css_key+"_desCat8'>Expert Rating:</span>" : " ";
+                var rating = (ratingUrl!="")? ratingUrl :" ";
+                tf_flash_var+= "~~#~~ratingText"+(i-1)+"-|-"+ratingTxt;
+                tf_flash_var+= "~~#~~rating"+(i-1)+"-|-"+rating;
+            }
+        }
+            tf_flash_var+= "~~#~~et_clickURL-|-"+adv.clickURL+"";
+            tf_flash_var+= "~~#~~et_trackURL-|-"+adv.trackURL+"";
+
+    }else{
+        var description = advDescriptionTokens[1];
+        var ratingImage = advDescriptionTokens[2];
+        var retailerString = advDescriptionTokens[3];
+
+        var imageUrl = textlinksServer + '/images/noImage_125.gif';
+        if(adv.image != null){
+            imageUrl = adv.image;
+        }
+		tf_flash_var+= "adType-|-cat13";
+        tf_flash_var+= "~~#~~wHeader-|-pwByET";
+        var titleTokens = tf_getPgTitleTokens(adv.title);
+        tf_flash_var+= "~~#~~adTitle-|-<span class='tf_flash"+tf_css_key+"_titleCat7'>"+titleTokens[0]+"</span><br>";
+        tf_flash_var+= "<span class='tf_flash"+tf_css_key+"_title2Cat7'>"+titleTokens[1]+"</span>";
+        tf_flash_var+= "~~#~~adDes-|-<span class='tfAdv_pg_grey'>" + description + " ... <span class='tf_flash"+tf_css_key+"_title'>Read more </span></span>";
+
+        var priceTxt =" ";
+        if(retailerString && retailerString.length > 0){
+            var advDescTokens = retailerString.split("-&&-");
+            var count =0;
+            for(var i=0;i<advDescTokens.length;i++){
+                if(advDescTokens[i] && advDescTokens[i].length>0){
+                    var retDetails = advDescTokens[i].split("-||-");
+                    var retPrice = retDetails[1];
+                    var storeUrl = retDetails[2];
+                    adv.clickURL = storeUrl;
+                    adv.trackURL = adv.trackURL + pgTrackPrms + '1';
+                    if(retPrice.indexOf('$')==-1){
+                       retPrice = '$'+retPrice;
+                    }
+                    priceTxt += "Final Price: " + retPrice;
+                    count++;
+                    if(count >= 1) {
+                        break;
+                    }
+                }
+            }
+        }
+
+        var ratingTxt = " ";
+        if(ratingImage.length>0){
+           ratingTxt = "<b>Expert Rating</b>";
+        }
+        tf_flash_var+= "~~#~~proImage-|-"+imageUrl;
+        tf_flash_var+= "~~#~~wLogo-|-"+textlinksServer + "/images/shopping-logo.gif";
+        tf_flash_var+= "~~#~~rBtn-|-"+textlinksServer + "/images/buy_now_red.gif";
+        tf_flash_var+= "~~#~~rTxt-|-"+ratingTxt;
+        tf_flash_var+= "~~#~~rImg-|-"+ratingImage;
+        tf_flash_var+= "~~#~~txtPrice-|-"+priceTxt;
+        tf_flash_var+= "~~#~~clickTagURL-|-javascript:submitClickIndex(\""+index+ "\")";
+        tf_flash_var+= "~~#~~et_clickURL-|-"+adv.clickURL+"";
+        tf_flash_var+= "~~#~~et_trackURL-|-"+adv.trackURL+"";
+
+    }
+    return tf_flash_var;
+}
+function tf_getPGFlashVar(adv,index){
+    var advDesc = adv.desc;
+    var advDescriptionTokens = advDesc.split("-##-");
+    var pGmode = advDescriptionTokens[0];
+    var srchData = advDescriptionTokens[1];
+    var whatsThis = textlinksServer + "/whatsthis.jsp?siteId=" + adv.pubSiteId + "&siteName=" + tf_docURL;
+    var tf_flash_var = "";
+    if (pGmode != ITEM_MATCH) {
+        adv.clickURL = tf_homePage;
+        var pgClickUrl = null;
+        tf_flash_var+= "adType-|-cat8";
+        tf_flash_var+= "~~#~~wHeader-|-pwByET";
+        tf_flash_var+= "~~#~~totalProduct-|-"+(advDescriptionTokens.length-2);
+        tf_flash_var+= "~~#~~headerImg-|-"+textlinksServer + ((tf_pubObj && tf_pubObj.colorSchemeId==2)?"/images/checkOutImg36.gif":"/images/checkOutImg.gif");
+        tf_flash_var+= "~~#~~wLogo-|-"+textlinksServer + "/images/pg_logo.gif";
+        tf_flash_var+= "~~#~~PGKeyWord-|-"+srchData;
+        tf_flash_var+= "~~#~~clickTagURL-|-javascript:submitClickIndex(\""+index+ "\")";
+        tf_flash_var+= "~~#~~PG_SrchTrackURL-|-"+adv.trackURL+ pgTrackPrms+"0";
+        for(var i=2;i <advDescriptionTokens.length;i++){
+            if(advDescriptionTokens[i] && advDescriptionTokens[i].length>0){
+                var advDescTokens = advDescriptionTokens[i].split('-||-');
+                var clickUrl = advDescTokens[0];
+                if(pgClickUrl==null){
+                   pgClickUrl = clickUrl;
+                }
+                var trackURL = adv.trackURL;
+                var title = advDescTokens[1];
+                var titleTokens = tf_getPgTitleTokens(title);
+                tf_flash_var+= "~~#~~adText"+(i-1)+"-|-<span class='tf_flash"+tf_css_key+"_title1Cat8'>"+titleTokens[0]+"</span>";
+                tf_flash_var+= "<br><span class='tf_flash"+tf_css_key+"_title2Cat8'>"+titleTokens[1]+"</span><br>";
+                if(advDescTokens[3] && advDescTokens[3]!=""){
+                    var merchantUrl = advDescTokens[4];
+                    clickUrl = merchantUrl;
+
+                    var retailer = advDescTokens[5];
+                    tf_flash_var+= "~~#~~lowPText"+(i-1)+"-|-<span class='tf_flash"+tf_css_key+"_desCat8'>Lowest Price At : </span>";
+                    var pric = advDescTokens[3];
+                    if(pric.indexOf("$")== -1){
+                       pric = "$"+pric;
+                    }
+                    tf_flash_var+= "~~#~~DirectonTxt"+(i-1)+"-|-<span class='tf_flash"+tf_css_key+"_link2Cat8'>"+retailer+"&nbsp;&nbsp;"+pric+"</span>";
+                    tf_flash_var+= "~~#~~DirectonURL"+(i-1)+"-|-javascript:submitPGClickIndex(\""+ pg_click_url_array.length +"\")";
+                    pg_click_url_array[pg_click_url_array.length] = merchantUrl;
+                    trackURL = trackURL + pgTrackPrms+'1';
+                    pg_click_url_array[pg_click_url_array.length] = trackURL;
+                    tf_flash_var+= "~~#~~DirectonClickURL"+(i-1)+"-|-" + merchantUrl;
+                    tf_flash_var+= "~~#~~DirectonTrackURL"+(i-1)+"-|-" + trackURL;
+                }else{
+                    tf_flash_var+= "~~#~~lowPText"+(i-1)+"-|- ";
+                    tf_flash_var+= "~~#~~DirectonTxt"+(i-1)+"-|- ";
+                    tf_flash_var+= "~~#~~DirectonURL"+(i-1)+"-|- ";
+                    trackURL = trackURL + pgTrackPrms+'0';
+                }
+
+                var imageUrl = textlinksServer + '/images/noImage50.gif';
+                    if(advDescTokens[2] && advDescTokens[2]!=""){
+                        imageUrl = advDescTokens[2];
+                    }
+                tf_flash_var+= "~~#~~proImage"+(i-1)+"-|-"+imageUrl;
+                var ratingImageUrl = advDescTokens[6];
+                if(ratingImageUrl && ratingImageUrl!=""){
+                   tf_flash_var+= "~~#~~ratingText"+(i-1)+"-|-<span class='tf_flash"+tf_css_key+"_desCat8'>user rating</span>";
+                   tf_flash_var+= "~~#~~rating"+(i-1)+"-|-"+ratingImageUrl;
+                }else{
+                   tf_flash_var+= "~~#~~ratingText"+(i-1)+"-|- ";
+                   tf_flash_var+= "~~#~~rating"+(i-1)+"-|- ";
+                }
+                tf_flash_var+= "~~#~~btnURL"+(i-1)+"-|-javascript:submitPGClickIndex(\""+ pg_click_url_array.length +"\")";
+                pg_click_url_array[pg_click_url_array.length] = clickUrl;
+                pg_click_url_array[pg_click_url_array.length] = trackURL;
+                tf_flash_var+= "~~#~~btnClickURL"+(i-1)+"-|-" + clickUrl;
+                tf_flash_var+= "~~#~~btnTrackURL"+(i-1)+"-|-" + trackURL;
+            }
+        }
+        if(pgClickUrl!=null){
+            adv.clickURL = pgClickUrl;
+            adv.trackURL = adv.trackURL + pgTrackPrms+'1';
+        }
+        tf_flash_var+= "~~#~~et_clickURL-|-"+adv.clickURL+"";
+        tf_flash_var+= "~~#~~et_trackURL-|-"+adv.trackURL+"";
+
+    }else{
+        var imageUrl = textlinksServer + '/images/noImage_125.gif';
+        if(adv.image != null){
+            imageUrl = adv.image;
+        }
+		tf_flash_var+= "adType-|-cat7";
+        tf_flash_var+= "~~#~~wHeader-|-pwByET";
+        var titleTokens = tf_getPgTitleTokens(adv.title);
+        tf_flash_var+= "~~#~~adText-|-<span class='tf_flash"+tf_css_key+"_titleCat7'>"+titleTokens[0]+"</span><br>";
+        tf_flash_var+= "<span class='tf_flash"+tf_css_key+"_title2Cat7'>"+titleTokens[1]+"</span><br><br>";
+        tf_flash_var+= "<span class='tf_flash"+tf_css_key+"_description1'>"+tf_getPGItemDesc(adv,advDescriptionTokens);
+        tf_flash_var+= tf_getPGMerchantCount(adv,advDescriptionTokens);
+        var userRating = advDescriptionTokens[2];
+        var expertRating = '';
+        var retailerString = advDescriptionTokens[3];
+        if(retailerString && retailerString.length>0){
+            var advDescTokens = retailerString.split("-&&-");
+            for(var i=0;i<advDescTokens.length;i++){
+                    if(advDescTokens[i] && advDescTokens[i].length>0){
+                        var retDetails = advDescTokens[i].split("-||-");
+                        expertRating = retDetails[3];
+                        if(expertRating!=''){
+                            break;
+                        }
+                    }
+                }
+        }
+        if(userRating && userRating.length>0){
+            tf_flash_var+= "~~#~~ratingSys-|-<b>User Rating<br><img src=\'"+userRating+"\'hspace='0' vspace='2' class='tf_flash"+tf_css_key+"_imgStyle'/><br><br>";
+        }else{
+            tf_flash_var+= "~~#~~ratingSys-|-<b>";
+        }
+        if(expertRating.length>0){
+            tf_flash_var+= "Expert Rating<br><img src=\'"+expertRating+"\'hspace='0' vspace='2' class='tf_flash"+tf_css_key+"_imgStyle'/><br></b>";
+        }else{
+            tf_flash_var+= "</b>"
+        }
+        tf_flash_var+= "~~#~~image-|-"+imageUrl;
+        tf_flash_var+= "~~#~~headerImg-|-"+textlinksServer + ((tf_pubObj && tf_pubObj.colorSchemeId==2)?"/images/checkOutImg36.gif":"/images/checkOutImg.gif");
+        tf_flash_var+= "~~#~~wLogo-|-"+textlinksServer + "/images/pg_logo.gif";
+        tf_flash_var+= "~~#~~btnURL-|-javascript:submitClickIndex(\""+index+ "\")";
+        tf_flash_var+= "~~#~~clickTagURL-|-javascript:submitClickIndex(\""+index+ "\")";
+        tf_flash_var+= "~~#~~et_clickURL-|-"+adv.clickURL+"";
+        tf_flash_var+= "~~#~~et_trackURL-|-"+adv.trackURL+"";
+        tf_flash_var+= "~~#~~btnClickURL-|-"+adv.clickURL+"";
+        tf_flash_var+= "~~#~~btnTrackURL-|-"+adv.trackURL+"";
+   }
+    return tf_flash_var;
+
+}
+function tf_getPGItemDesc(adv,advDescriptionTokens){
+    var descString='';
+    var descTruncLength = 90;
+    var retailerString = advDescriptionTokens[3];
+    if(retailerString && retailerString.length>0){
+	descTruncLength = 120;
+    }
+    if(advDescriptionTokens[1] && advDescriptionTokens[1]!='Not Available'){
+	var addescriptn = advDescriptionTokens[1];
+	var i = descTruncLength;
+	while (addescriptn.charAt(i) != " "){
+	    if (addescriptn.length < i) {
+		break;
+	    }
+            i--;
+        }
+	if(addescriptn.length > descTruncLength){
+            descString = addescriptn.substring(0,i) + "...<span class='tf_flash"+tf_css_key+"_cat7Link'>Read More></span>";
+        } else {
+            descString = addescriptn;
+        }
+     }
+     if(retailerString && retailerString.length>0){
+        descString+= "</span><br><br>";
+	var retailers = "<span class='tf_flash"+tf_css_key+"_title2Cat7'>Top Merchants & Prices</span><br>";
+        descString += retailers;
+     } else {
+        descString+= "&nbsp;</span>";
+     }
+     return descString;
+}
+
+function tf_getPGMerchantCount(adv,advDescriptionTokens){
+    var count=0;
+    var merchantString = '';
+    var merchText = '';
+    var merchUrl = '';
+    var retailerString = '';
+    var pgClickUrl = null;
+    if(advDescriptionTokens && advDescriptionTokens.length >3){
+       retailerString = advDescriptionTokens[3];
+    }
+    if(retailerString && retailerString.length>0){
+        var advDescTokens = retailerString.split("-&&-");
+        for(var i=0;i<advDescTokens.length;i++){
+                if(advDescTokens[i] && advDescTokens[i].length>0){
+                    var retDetails = advDescTokens[i].split("-||-");
+                    var retPrice = retDetails[1];
+                    if(retPrice.indexOf('$')==-1){
+                       retPrice = '$'+retPrice;
+                    }
+                    merchText+= "~~#~~merchent"+(count+1)+"-|-<span class='tf_flash"+tf_css_key+"_cat7Link'>"+retDetails[0] + '&nbsp;&nbsp;'+ retPrice+"</span>";
+                    merchUrl+= "~~#~~merchentURL"+(count+1)+"-|-javascript:submitPGClickIndex(\""+ pg_click_url_array.length +"\")";
+                    var merchentClickURL = retDetails[2];
+                    var merchentTrackURL = adv.trackURL+pgTrackPrms+'1';
+                    pg_click_url_array[pg_click_url_array.length] = merchentClickURL;
+                    pg_click_url_array[pg_click_url_array.length] = merchentTrackURL;
+                    merchUrl+= "~~#~~merchentClickURL"+(count+1)+"-|-" + merchentClickURL;
+                    merchUrl+= "~~#~~merchentTrackURL"+(count+1)+"-|-" + merchentTrackURL;
+                    if(pgClickUrl==null){
+                        pgClickUrl = retDetails[2];
+                    }
+                    count++;
+                    if(count >= 3) {
+                        break;
+                    }
+                }
+         }
+    }
+    if(pgClickUrl!=null){
+        adv.clickURL = pgClickUrl;
+        adv.trackURL = adv.trackURL + pgTrackPrms + '1';
+    }else{
+        adv.trackURL = adv.trackURL + pgTrackPrms + '0';
+    }
+    merchantString+= "~~#~~totalM_URL-|-"+count;
+    merchantString+= merchText;
+    merchantString+= merchUrl;
+    return merchantString;
+}
+
+function tf_getFlashheaderImage(adv){
+	return "pwByET";
+}
+
+function tf_getPgTitleTokens(title){
+    var toks = title.split(" ");
+    var tokens = new Array();
+    tokens[0] = '';
+    tokens[1] = '';
+    if(toks.length>4){
+        for(var i=0;i<4;i++){
+           tokens[0]+= toks[i]+" ";
+        }
+        for(var i=4;i<toks.length;i++){
+           tokens[1]+= toks[i]+" ";
+        }
+    }else{
+        for(var i=0;i<toks.length;i++){
+           tokens[0]+= toks[i]+" ";
+        }
+    }
+    tokens[0] = tf_trim_string(tokens[0]);
+    tokens[1] = tf_trim_string(tokens[1]);
+    return tokens;
+}
+function tf_clipAd(top, right, bottom, left){
+    var newbottom=(parseInt(bottom) + 16)+'';
+    tf_flash_object.width = right;
+    tf_flash_object.height = bottom;
+    right = parseInt(right);
+    bottom = parseInt(bottom);
+    if(tf_flash_key == 1){
+       right += 20;
+       bottom += 20;
+    }
+    document.getElementById("tf_AdDiv").style.width = right+'px';
+    document.getElementById("tf_AdDiv").style.height = bottom+'px';
+
+    var bottomClip = tf_flashDiv_height - parseInt(bottom);
+    var rightClip = tf_flashDiv_width - parseInt(right);
+    if(tf_adjustPos){
+    	tf_setBannerPosition(nodeSrc, 0, 0);
+        if(!isIE){
+            window.setTimeout("tf_showAd();", 100);
+        }
+    }
+//    window.setTimeout("tf_showAd();", 1);
+    tf_adjustPos = false;
+}
+
+function tf_dragAutofunction(){
+}
+
+function URLEncode(plaintext){
+    var SAFECHARS = "0123456789" +					
+		   "ABCDEFGHIJKLMNOPQRSTUVWXYZ" +	
+		   "abcdefghijklmnopqrstuvwxyz" +
+		   "-_.!~*'()";
+    var HEX = "0123456789ABCDEF";
+
+    var encoded = "";
+    for (var i = 0; i < plaintext.length; i++ ) {
+	var ch = plaintext.charAt(i);
+	if (ch == " ") {
+	    encoded += "+";
+	} else if (SAFECHARS.indexOf(ch) != -1) {
+	    encoded += ch;
+	} else {
+	    var charCode = ch.charCodeAt(0);
+	    if (charCode > 255) {
+		alert( "Unicode Character '" + ch
+                          + "' cannot be encoded using standard URL encoding.\n" +
+       	                  "(URL encoding only supports 8-bit characters.)\n" +
+			  "A space (+) will be substituted." );
+		encoded += "+";
+	     } else {
+		encoded += "%";
+		encoded += HEX.charAt((charCode >> 4) & 0xF);
+		encoded += HEX.charAt(charCode & 0xF);
+	     }
+	}
+    }
+    return encoded;
+}
+
+
+/////////////////////////////AC_TF_RunActiveContent.js /////////////////////
+var isIE  = (navigator.appVersion.indexOf("MSIE") != -1) ? true : false;
+var isWin = (navigator.appVersion.toLowerCase().indexOf("win") != -1) ? true : false;
+var isOpera = (navigator.userAgent.indexOf("Opera") != -1) ? true : false;
+
+function ControlVersion()
+{
+	var version;
+	var axo;
+	var e;
+
+	try {
+		axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.7");
+		version = axo.GetVariable("$version");
+	} catch (e) {
+	}
+
+	if (!version)
+	{
+		try {
+			axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.6");
+			version = "WIN 6,0,21,0";
+			axo.AllowScriptAccess = "always";
+			version = axo.GetVariable("$version");
+
+		} catch (e) {
+		}
+	}
+
+	if (!version)
+	{
+		try {
+			axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.3");
+			version = axo.GetVariable("$version");
+		} catch (e) {
+		}
+	}
+
+	if (!version)
+	{
+		try {
+			axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.3");
+			version = "WIN 3,0,18,0";
+		} catch (e) {
+		}
+	}
+
+	if (!version)
+	{
+		try {
+			axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash");
+			version = "WIN 2,0,0,11";
+		} catch (e) {
+			version = -1;
+		}
+	}
+
+	return version;
+}
+
+function GetSwfVer(){
+	var flashVer = -1;
+	if (navigator.plugins != null && navigator.plugins.length > 0) {
+		if (navigator.plugins["Shockwave Flash 2.0"] || navigator.plugins["Shockwave Flash"]) {
+			var swVer2 = navigator.plugins["Shockwave Flash 2.0"] ? " 2.0" : "";
+			var flashDescription = navigator.plugins["Shockwave Flash" + swVer2].description;
+			var descArray = flashDescription.split(" ");
+			var tempArrayMajor = descArray[2].split(".");
+			var versionMajor = tempArrayMajor[0];
+			var versionMinor = tempArrayMajor[1];
+			var versionRevision = descArray[3];
+			if (versionRevision == "") {
+				versionRevision = descArray[4];
+			}
+			if (versionRevision[0] == "d") {
+				versionRevision = versionRevision.substring(1);
+			} else if (versionRevision[0] == "r") {
+				versionRevision = versionRevision.substring(1);
+				if (versionRevision.indexOf("d") > 0) {
+					versionRevision = versionRevision.substring(0, versionRevision.indexOf("d"));
+				}
+			}
+			var flashVer = versionMajor + "." + versionMinor + "." + versionRevision;
+		}
+	}
+	else if (navigator.userAgent.toLowerCase().indexOf("webtv/2.6") != -1) flashVer = 4;
+	else if (navigator.userAgent.toLowerCase().indexOf("webtv/2.5") != -1) flashVer = 3;
+	else if (navigator.userAgent.toLowerCase().indexOf("webtv") != -1) flashVer = 2;
+	else if ( isIE && isWin && !isOpera ) {
+		flashVer = ControlVersion();
+	}
+	return flashVer;
+}
+
+function DetectFlashVer(reqMajorVer, reqMinorVer, reqRevision)
+{
+	versionStr = GetSwfVer();
+	if (versionStr == -1 ) {
+		return false;
+	} else if (versionStr != 0) {
+		if(isIE && isWin && !isOpera) {
+			tempArray         = versionStr.split(" ");
+			tempString        = tempArray[1];
+			versionArray      = tempString.split(",");
+		} else {
+			versionArray      = versionStr.split(".");
+		}
+		var versionMajor      = versionArray[0];
+		var versionMinor      = versionArray[1];
+		var versionRevision   = versionArray[2];
+
+		if (versionMajor > parseFloat(reqMajorVer)) {
+			return true;
+		} else if (versionMajor == parseFloat(reqMajorVer)) {
+			if (versionMinor > parseFloat(reqMinorVer))
+				return true;
+			else if (versionMinor == parseFloat(reqMinorVer)) {
+				if (versionRevision >= parseFloat(reqRevision))
+					return true;
+			}
+		}
+		return false;
+	}
+}
+
+function AC_TF_AddExtension(src, ext)
+{
+  if (src.indexOf('?') != -1)
+    return src.replace(/\?/, ext+'?');
+  else
+    return src + ext + '?version=' + tf_version;
+}
+
+function AC_TF_Generateobj(objAttrs, params, embedAttrs)
+{
+  var str = '';
+  if (isIE && isWin && !isOpera)
+  {
+    str += '<object ';
+    for (var i in objAttrs)
+    {
+      str += i + '="' + objAttrs[i] + '" ';
+    }
+    str += '>';
+    for (var i in params)
+    {
+      str += '<param name="' + i + '" value="' + params[i] + '" /> ';
+    }
+    str += '</object>';
+  }
+  else
+  {
+    str += '<embed ';
+    for (var i in embedAttrs)
+    {
+      str += i + '="' + embedAttrs[i] + '" ';
+    }
+    str += '> </embed>';
+  }
+   tf_ActiveXObject = str;
+}
+
+function AC_TF_FL_RunContent(){
+
+  var ret =
+    AC_TF_GetArgs
+    (  arguments, ".swf", "movie", "clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+     , "application/x-shockwave-flash"
+    );
+  AC_TF_Generateobj(ret.objAttrs, ret.params, ret.embedAttrs);
+}
+
+function AC_TF_SW_RunContent(){
+  var ret =
+    AC_TF_GetArgs
+    (  arguments, ".dcr", "src", "clsid:166B1BCA-3F9C-11CF-8075-444553540000"
+     , null
+    );
+  AC_TF_Generateobj(ret.objAttrs, ret.params, ret.embedAttrs);
+}
+
+function AC_TF_GetArgs(args, ext, srcParamName, classid, mimeType){
+  var ret = new Object();
+  ret.embedAttrs = new Object();
+  ret.params = new Object();
+  ret.objAttrs = new Object();
+  for (var i=0; i < args.length; i=i+2){
+    var currArg = args[i].toLowerCase();
+
+    switch (currArg){
+      case "classid":
+        break;
+      case "pluginspage":
+        ret.embedAttrs[args[i]] = args[i+1];
+        break;
+      case "src":
+      case "movie":
+        args[i+1] = AC_TF_AddExtension(args[i+1], ext);
+        ret.embedAttrs["src"] = args[i+1];
+        ret.params[srcParamName] = args[i+1];
+        break;
+      case "onafterupdate":
+      case "onbeforeupdate":
+      case "onblur":
+      case "oncellchange":
+      case "onclick":
+      case "ondblclick":
+      case "ondrag":
+      case "ondragend":
+      case "ondragenter":
+      case "ondragleave":
+      case "ondragover":
+      case "ondrop":
+      case "onfinish":
+      case "onfocus":
+      case "onhelp":
+      case "onmousedown":
+      case "onmouseup":
+      case "onmouseover":
+      case "onmousemove":
+      case "onmouseout":
+      case "onkeypress":
+      case "onkeydown":
+      case "onkeyup":
+      case "onload":
+      case "onlosecapture":
+      case "onpropertychange":
+      case "onreadystatechange":
+      case "onrowsdelete":
+      case "onrowenter":
+      case "onrowexit":
+      case "onrowsinserted":
+      case "onstart":
+      case "onscroll":
+      case "onbeforeeditfocus":
+      case "onactivate":
+      case "onbeforedeactivate":
+      case "ondeactivate":
+      case "type":
+      case "codebase":
+      case "id":
+        ret.objAttrs[args[i]] = args[i+1];
+        break;
+      case "width":
+      case "height":
+      case "align":
+      case "vspace":
+      case "hspace":
+      case "class":
+      case "title":
+      case "accesskey":
+      case "name":
+      case "tabindex":
+        ret.embedAttrs[args[i]] = ret.objAttrs[args[i]] = args[i+1];
+        break;
+      default:
+        ret.embedAttrs[args[i]] = ret.params[args[i]] = args[i+1];
+    }
+  }
+  ret.objAttrs["classid"] = classid;
+  if (mimeType) ret.embedAttrs["type"] = mimeType;
+  return ret;
+}
+

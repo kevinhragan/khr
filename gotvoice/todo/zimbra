@@ -1,0 +1,42 @@
+plan:
+    on newmail:
+x       ubuntu
+x       install os 4.5.3
+        install network 4.5.2
+
+    on mail:
+         backup runs
+         upgrade to 4.5.3open source zimbra
+	break
+             on newmail:
+             after backup:
+             move /opt/zimbra to newmail
+	     restart
+	     test offline
+             leave mail halted after backup
+             rsync /opt/zimbra to newmail
+                sudo rsync --delete -az -e ssh  10.92.1.9:/opt/zimbra/index .
+                sudo rsync --delete -az -e ssh  10.92.1.9:/opt/zimbra/store .
+     		find /opt/zimbra -uid 500 -exec chown 1001 {} \;
+             change newamil's ip to mail
+             put it up on the newwork
+             test as outside mail server
+             halt and upgrade newmail to network 4.5.3
+             test
+	     update cfengine    
+         done
+         
+buy network license
+prove mysqldump works with password
+         
+# customize newmail after /opt/zimbra migration
+sudo ln -s /usr/lib/libssl.so.0.9.7 /usr/lib/libssl.so.5  
+sudo ln -s /usr/lib/libcrypto.so.0.9.7 /usr/lib/libcrypto.so.5
+
+
+newmail in cfengine
+prove root mail form newmail goes to admin
+find postscript logging on mail
+update cfengine
+do backup
+

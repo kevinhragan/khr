@@ -1,0 +1,22 @@
+# nfs performance issues
+
+use non-nonsynchronous writes
+reorg disk to 1+0 raid
+add additional nfs server
+filesystem organization (huge directories)
+v4 of nfs
+check memory usage of codec processes
+gotvoice sheduling effect
+move journal of export fs to other fs
+   
+
+
+# non nfs thruput 
+local write, one huge file 16mb/sec
+peak normal write 1mb/sec
+
+Oct 07
+nfs4 help with writing?
+hathor support more raid devices
+chunk size on hathor
+tcpflow on hathor

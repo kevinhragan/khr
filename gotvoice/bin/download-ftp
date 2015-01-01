@@ -1,0 +1,11 @@
+local_in=/home/kevinr/tmp
+cd $local_in
+
+for file in $(curl -k --ftp-ssl -s -u gotvoice:gv10512\$ ftp://70.150.66.250:1234/test/  |sed 's/.* //'); 
+do
+   # download, retain file names.  
+   ### insert error reporting, logging?
+   curl -k --ftp-ssl -sB -O -u gotvoice:gv10512\$ 'ftp://70.150.66.250:1234/test/'$file  -Q "-DELE $file" ||
+      echo "Error code $? from curl on file: $file" >&2 
+done
+

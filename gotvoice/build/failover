@@ -1,0 +1,106 @@
+# build procedure
+
+# gets all the needed packages
+aptitude install heartbeat mon (?)
+edit ips in app to match cluster-ip
+
+
+create new app cluster ip as needed in dns 
+and create nat and forward rules in firewall
+
+
+#remove startup links
+rm /etc/rc?.d/S*app-name*
+
+
+
+### heartbeat doc on http://www.linux-ha.org
+if first cluster member is setup then
+    sudo scp -pr /etc/ha.d/authkeys /etc/ha.d/ha.cf /etc/ha.d/haresources <host>:/etc/ha.d
+    skip to ####mon 
+else
+
+#vi /etc/ha.d/authkeys
+auth 3
+3 md5 ImBleepingAlive
+
+# chmod 600 /etc/ha.d/authkeys
+
+# vi /etc/ha.d/ha.cf:
+debugfile /var/log/ha-debug
+logfile /var/log/ha-log
+keepalive 5
+deadtime 30
+initdead 120
+udpport 694
+bcast   eth1           
+ucast   eth0  <twin's ip>
+auto_failback off
+ping <router>
+respawn hacluster /usr/lib/heartbeat/ipfail
+node    <host1>
+node    <host2>
+
+# vi /etc/ha.d/haresources (this is identical on both hosts):
+master-host cluster-ip asterisk mon
+
+fi
+
+# vi /etc/network/interfaces
+
+    iface eth1 inet static
+        address 172.16.0.[12]
+        netmask 255.255.255.0
+
+
+#### mon #####
+
+vi /etc/init.d/mon
+   user=root
+   group=root
+
+# remove links so heartbeat starts
+rm /etc/rc?.d/???mon
+
+##  http mon ##
+if making copy
+ sudo scp -pr /usr/local/lib/mon/alert.d/httpd.alert  cherry:/usr/local/lib/mon/alert.d
+sudo scp -pr /etc/mon/mon.cf cherry:/etc/mon                   
+else
+
+vi /usr/local/lib/mon/alert.d/httpd.alert
+    echo "verify web service up for host1 and www; check all web cluster members." |mail -s "www cluster member failed" batphone@gotvoice.com admin@gotvoice.com
+    /etc/init.d/heartbeat stop
+
+fi
+
+
+vi /etc/mon/mon.cf
+    watch <service ip or name>
+        service http
+            interval 30s
+            monitor http.monitor
+            period wd {Mon-Sun}
+                alert httpd.alert 
+ 
+##  asterisk mon ##
+## better to get a monitor that worked asterisk's udp than the ps.monitor
+
+sudo aptitude install libproc-process-perl
+
+ copy over custom process script
+scp lime:/usr/lib/mon/mon.d/ps.monitor /usr/lib/mon/mon.d
+
+vi /usr/local/lib/mon/alert.d/asterisk.alert
+    echo "verify asterisk service up for cluster ; check all asterisk cluster members." |mail -s "asterisk cluster member failed" batphone@gotvoice.com admin@gotvoice.com
+    /usr/lib/heartbeat/hb_standby all
+
+sudo chmod +x /usr/local/lib/mon/alert.d/asterisk.alert
+
+vi /etc/mon/mon.cf
+    watch localhost
+        service asterisk
+            interval 30s
+            monitor ps.monitor asterisk:1- 
+            period wd {Mon-Sun}
+                alert asterisk.alert

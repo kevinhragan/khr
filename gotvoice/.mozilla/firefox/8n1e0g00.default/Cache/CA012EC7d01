@@ -1,0 +1,1396 @@
+body {
+	background: #E9E9E9 url(http://s3.worldchanging.com/siteimages/backgroundtile.gif) repeat-y 50% 0;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, san-serif;
+	font-size: 95%;
+	height: 100%;
+	}
+
+a {
+	color: #822424;
+	text-decoration: none;
+	}
+	
+a.hover {
+	text-decoration: underline;
+	}
+	
+form {
+	padding: 0px;
+	margin: 0px;
+	}
+
+	
+#centerwrapper {
+	width: 829px;
+	text-align: left;
+	margin: 0 auto;
+	border-left: 1px #555454 solid;
+	border-right: 1px #555454 solid;
+	/* background-image: url(http://s3.worldchanging.com/siteimages/contentbg.gif); */
+	}
+
+#logomast {
+	width: 829px;
+	height: 90px;
+	background-image: url(http://s3.worldchanging.com/siteimages/bgmast.gif);
+	position: relative;
+	}
+
+#logo {
+	position: absolute;
+	top: 20px;
+	left: 17px;
+	font-size: 24px;
+	line-height: 14px;
+	}
+
+#donate {
+	position: absolute;
+	top: 18px;
+	right: 20px;
+	}
+	
+#contentfade {
+	position: relative;
+	width: 829px;
+	height: 6px;
+	}
+	
+#contentblocks {
+	margin: 0px;
+	padding: 0px;
+	width: 829px;
+	background-image: url(http://s3.worldchanging.com/siteimages/homepagebgstripe.gif);
+	background-repeat: repeat-y;
+	background-position: 0px 0px;
+	}
+
+#leftcols {
+	float: left;
+	display: inline;
+	width: 656px;
+	margin-left: 5px;
+	font-size: 11px;
+	line-height: 14px;
+	}
+	
+#rightcol {
+	float: right;
+	display: inline;
+	width: 160px;
+	margin-right: 6px;
+	font-size: 11px;
+	line-height: 14px;
+	}
+
+#rightcol a {
+	font-weight: bold;
+	}
+
+#aboutsectioncolor {
+	width: 811px;
+	height: 6px;
+	margin: 0px 1px 0px 1px;
+	background-color: #c5db57;
+	border-bottom: 1px solid #fff;
+	}
+
+#stuffsectioncolor {
+	width: 811px;
+	height: 6px;
+	margin: 0px 1px 0px 1px;
+	background-color: #b5d60d;
+	border-bottom: 1px solid #fff;
+	}
+
+#sheltersectioncolor {
+	width: 811px;
+	height: 6px;
+	margin: 0px 1px 0px 1px;
+	background-color: #91c515;
+	border-bottom: 1px solid #fff;
+	}
+
+#citiessectioncolor {
+	width: 811px;
+	height: 6px;
+	margin: 0px 1px 0px 1px;
+	background-color: #6db41d;
+	border-bottom: 1px solid #fff;
+	}
+
+#communitysectioncolor {
+	width: 811px;
+	height: 6px;
+	margin: 0px 1px 0px 1px;
+	background-color: #3e8a1f;
+	border-bottom: 1px solid #fff;
+	}
+
+#businesssectioncolor {
+	width: 811px;
+	height: 6px;
+	margin: 0px 1px 0px 1px;
+	background-color: #19641f;
+	border-bottom: 1px solid #fff;
+	}
+
+#politicssectioncolor {
+	width: 811px;
+	height: 6px;
+	margin: 0px 1px 0px 1px;
+	background-color: #00441b;
+	border-bottom: 1px solid #fff;
+	}
+
+#planetsectioncolor {
+	width: 811px;
+	height: 6px;
+	margin: 0px 1px 0px 1px;
+	background-color: #002f13;
+	border-bottom: 1px solid #fff;
+	}
+
+#sectioncontent {
+	height: 428px;
+	width: 801px;
+	margin: 5px 6px 5px 6px;
+	position: relative;
+	}
+
+#teamcontentblocks {
+	margin: 0px;
+	padding: 0px;
+	width: 829px;
+	background-image: url(http://s3.worldchanging.com/siteimages/teambgstripe.gif);
+	background-repeat: repeat-y;
+	background-position: 0px 0px;
+	}
+
+#teamhead {
+	width: 565px;
+	height: 292px;
+	border: 1px #fefefe solid;
+	background: #e8e8e7 url(http://s3.worldchanging.com/siteimages/teamheadbg.gif) repeat;
+	padding: 9px 7px 9px 7px;
+	position: relative;
+	}
+
+#teamheadgrey {
+	display: inline;
+	width: 581px;
+	height: 312px;
+	border: 1px solid #d6d4d4;
+	margin-left: 5px;
+	float: left;
+	}
+
+#teamheadimage {
+	float: left;
+	border: 1px solid #fff;
+	margin: 0px 6px 0px 0px;
+	}
+	
+#teamheadcontent {
+	font-size: 13px;
+	line-height: 17px;
+	position: absolute;
+	bottom: 4px;
+	right: 10px;
+	width: 320px;
+	}
+
+#teamheadcontent h3 {
+	color: #007b4d;
+	font-size: 17px;
+	line-height: 22px;
+	}
+
+#teamheadcontent a {
+	font-weight: bold;
+	}
+
+#nobgcontentblocks {
+	margin: 0px;
+	padding: 0px;
+	width: 829px;
+	background-image: url(http://s3.worldchanging.com/siteimages/blankbgstripe.gif);
+	background-repeat: repeat-y;
+	background-position: 0px 0px;
+	}
+
+#abouthead {
+	width: 515px;
+	border: 1px #fefefe solid;
+	background: #fff url(http://s3.worldchanging.com/siteimages/aboutglobebg.gif) no-repeat 160px 150px;
+	padding: 27px 27px 27px 37px;
+	position: relative;
+	font-size: 13px;
+	line-height: 18px;
+	}
+
+#abouthead #aboutbigger {
+	line-height: 24px;
+	font-size: 16px;
+	}
+
+#aboutheadgrey {
+	display: inline;
+	width: 581px;
+	border: 1px solid #d6d4d4;
+	margin-left: 5px;
+	float: left;
+	}
+
+#aboutcontactinfo {
+	float: left;
+	display: inline;
+	width: 521px;
+	border: 1px solid #fff;
+	background: #ddf3d4;
+	padding: 10px 20px 10px 40px;
+	margin-top: 3px;
+	margin-left: 5px;
+	font-size: 12px;
+	line-height: 15px;
+	}
+	
+#aboutcontactinfo #addy {
+	float: left;
+	width: 190px;
+	font-weight: bold;
+	}
+
+#aboutcontactinfo #phone {
+	float: left;
+	width: 130px;
+	margin-top: 16px;
+	}
+
+#aboutcontactinfo #email {
+	float: left;
+	width: 190px;
+	font-weight: bold;
+	font-size: 11px;
+	}
+	
+#aboutheadcontent {
+	font-size: 13px;
+	line-height: 17px;
+	position: absolute;
+	bottom: 4px;
+	right: 10px;
+	width: 320px;
+	}
+	
+#sectionhead {
+	width: 813px;
+	height: 444px;
+	border: 1px #fefefe solid;
+	background: #e8e8e7 url(http://s3.worldchanging.com/siteimages/sectionheadbg.gif) repeat;
+	}
+
+#sectiontitle {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	padding-top: 15px;
+	margin-right: 15px;
+	width: 390px;
+	font-size: 11px;
+	line-height: 12px;
+	}
+	
+#sectiontitle img {
+	margin-bottom: 5px;
+	}
+
+#sectiontitle a {
+	text-decoration: none;
+	}
+
+#sectionfromthebook {
+	position: absolute;
+	bottom: 3px;
+	right: 3px;
+	width: 378px;
+	font-size: 13px;
+	line-height: 19px;
+	background: #e0e0e0;
+	padding: 15px;
+	}
+	
+#sectionfromthebook h3 {
+	color: #0f8257;
+	margin: 0px;
+	padding: 0px;
+	font-size: 18px;
+	padding-bottom: 5px;
+	}
+
+#sectionfromthebook h4 {
+	color: #4d4d4d;
+	font-size: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 0px;
+	padding: 0px;
+	}
+	
+#sectionheadgrey {
+	width: 815px;
+	height: 446px;
+	border: 1px solid #d6d4d4;
+	margin-left: 5px;
+	}
+
+#furtherreading {
+	position: absolute;
+	bottom: 3px;
+	left: 0px;
+	width: 362px;
+	height: 104px;
+	background: url(http://s3.worldchanging.com/siteimages/forfurtherreadingbg.gif);
+	padding: 10px;
+	font-size: 13px;
+	}
+	
+#furtherreading img {
+	margin-top: 3px;
+	}
+
+#furtherreading ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 7px 0px 0px 22px;
+	}
+
+#furtherreading li {
+	margin-left: -19px;
+	line-height: 19px;
+	vertical-align: top;
+	background-image: url(http://s3.worldchanging.com/siteimages/featurearrow.gif);
+	background-repeat: no-repeat;
+	background-position: 0 6px;
+	padding-left: 15px;
+	}
+	
+#furtherreading a {
+	color: #822424;
+	text-decoration: none;
+	}
+
+#furtherreading #allresources {
+	float: right;
+	margin-right: 2px;
+	margin-top: -2px;
+	}
+
+#featuredcontent {
+	width: 647px;
+	height: 259px;
+	border: 1px #fefefe solid;
+	background: url(http://www.worldchanging.com/siteimages/featuredbg.gif) repeat;
+	position: relative;
+	padding: 3px;
+	}
+
+#featuredgrey {
+	width: 655px;
+	height: 267px;
+	border: 1px solid #d6d4d4;
+	}
+
+#featuredimage {
+	float: left;
+	border: 1px solid #fff;
+	margin: 1px 10px 1px 0px;
+	}
+
+.categorybar {
+	margin-bottom: 5px;
+	}
+
+
+#featuredtext, #featuredtext a {
+	font-family: Arial, Helvetica, san-serif;
+	font-size: 19px;
+	line-height: 20px;
+	color: #007b4d;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	}
+
+#featuresarchive {
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	width: 236px;
+	background-color: #e4e6e4;
+	padding: 10px;
+	}
+
+#featuresarchive ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 7px 0px 0px 22px;
+	}
+
+#featuresarchive li {
+	margin-left: -19px;
+	line-height: 17px;
+	vertical-align: top;
+	background-image: url(http://s3.worldchanging.com/siteimages/featurearrow.gif);
+	background-repeat: no-repeat;
+	background-position: 0 5px;
+	padding-left: 15px;
+	}
+	
+#featuresarchive a {
+	color: #822424;
+	text-decoration: none;
+	}
+
+#teamblogbar {
+	float: left;
+	margin-left: 8px;
+	display: inline;
+	width: 578px;
+	}
+
+.teamblogentry {
+	margin-top: 2px;
+	background-color: #fff;
+	padding: 17px 17px 17px 17px;
+	line-height: 14px;
+	width: 544px;
+	font-size: 11px;
+	}
+
+.teamblogentry h3, .teamblogentry h3 a {
+	color: #007b4d;
+	font-family: Arial, Helvetica, san-serif;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 18px;
+	margin-bottom: 3px;
+	margin-top: 0px;
+	}
+
+.boardblogentry h3, .boardblogentry h3 a {
+	color: #007b4d;
+	font-family: Arial, Helvetica, san-serif;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 18px;
+	margin-bottom: 10px;
+	margin-top: 0px;
+	}
+
+.boardblogentry {
+	margin-top: 2px;
+	background-color: #fff;
+	padding: 15px 17px 15px 17px;
+	line-height: 16px;
+	width: 459px;
+	font-size: 13px;
+	}
+
+.boardblogentry img {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	}
+
+#blogbar {
+	float: right;
+	display: inline;
+	width: 493px;
+
+	}
+
+.bioblogentry {
+	margin-top: 2px;
+	background-color: #fff;
+	padding: 15px 17px 15px 17px;
+	line-height: 19px;
+	width: 459px;
+	font-size: 14px;
+	}
+
+.bioblogentry h2 {
+	color: #007b4d;
+	font-family: Arial, Helvetica, san-serif;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 23px;
+	margin-bottom: 6px;
+	margin-top: 0px;
+	}
+
+.bioblogentry img {
+	float: right;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	}
+	
+.blogentry {
+	margin-top: 2px;
+	background-color: #fff;
+	padding: 15px 17px 15px 17px;
+	line-height: 13px;
+	width: 459px;
+	font-size: 11px;
+	}
+	
+.blogentry img {
+	border: 0px;
+	}
+	
+.blogentryimage {
+	float: left;
+	margin-right: 17px;
+	}
+	
+.blogentry h2 {
+	color: #007b4d;
+	font-family: Arial, Helvetica, san-serif;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 23px;
+	margin-bottom: 6px;
+	margin-top: 0px;
+	}
+
+.blogentry h3, .blogentry h3 a {
+	color: #007b4d;
+	font-family: Arial, Helvetica, san-serif;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 18px;
+	margin-bottom: 3px;
+	margin-top: 0px;
+	}
+
+.blogentry h4 {
+	color: #000;
+	font-family: Arial, Helvetica, san-serif;
+	font-weight: normal;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: -15px;
+	margin-top: 5px;
+	}
+
+#blogactionbar {
+	margin-top: 20px;
+	text-align: left;
+	padding: 2px 10px 3px 20px;
+	height: 12px;
+	width: 427px;
+	background: url(http://s3.worldchanging.com/siteimages/articleactionbar.gif) no-repeat;
+	color: #fff;
+	}
+	
+#blogactionbar a {
+	color: #fff;
+	}
+
+.blogarticletext {
+	font-size: 13px;
+	line-height: 18px;
+	}
+
+.blogarticletext blockquote {
+	font-style: italic;
+	}
+
+.articlebioblock {
+	background: #f2f1f1;
+	padding: 12px;
+	font-style: italic;
+	}
+
+.articlebioblock img {
+	float: left;
+	height: 79px;
+	width: 82px;
+	margin-right: 10px;
+	}
+
+p.blogexcerpt {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	}
+
+p.blogresourceexcerpt {
+	font-size: 12px;
+	line-height: 17px;
+	}
+
+#newsandviewsimg {
+	float: right;
+	display: inline;
+	margin-top: -12px;
+	}
+
+#newsandviewsimg img {
+	border: 1px solid #fff;
+	}
+
+#newsandviews {
+	height: 160px;
+	width: 459px;
+	background-image: url(http://www.worldchanging.com/siteimages/newsandviewsbg.gif);
+	margin-top: 2px;
+	padding: 16px 17px 16px 17px;
+	}
+
+#newsandviews ul {
+	padding: 0px;
+	margin: 10px 0px 0px 35px;
+	list-style-type: none;
+	padding: 0;
+	margin-left: 22px;
+	}
+
+#newsandviews li {
+	margin-left: -19px;
+	line-height: 17px;
+	vertical-align: top;
+	background-image: url(http://s3.worldchanging.com/siteimages/featurearrow.gif);
+	background-repeat: no-repeat;
+	background-position: 0 5px;
+	padding-left: 15px;
+	font-size: 12px;
+	}
+
+.blogentry ul {
+	padding: 0px;
+	margin: 10px 0px 0px 35px;
+	list-style-type: none;
+	padding: 0;
+	margin-left: 22px;
+	}
+
+.blogentry li {
+	margin-left: -19px;
+	line-height: 17px;
+	vertical-align: top;
+	background-image: url(http://s3.worldchanging.com/siteimages/featurearrow.gif);
+	background-repeat: no-repeat;
+	background-position: 0 5px;
+	padding-left: 15px;
+	font-size: 12px;
+	}
+
+.blogentry a {
+	color: #822424;
+	text-decoration: none;
+	}
+	
+.blogcommentposted {
+	font-size: 10px;
+	margin-top: -5px;
+	margin-bottom: 15px;
+	}
+	
+#commentspersonalinfo {
+	float: right;
+	width: 200px;
+	font-size: 11px;
+	}
+	
+#commentsbox {
+	font-size: 11px;
+	}
+	
+#commentsbox input {
+	width: 200px;
+	background: #f5f5f5;
+	}
+#commentsbox textarea {
+	width: 450px;
+	height: 150px;
+	background: #f5f5f5;
+	}
+
+#newsandviews a {
+	color: #822424;
+	text-decoration: none;
+	}
+
+#leftcolumn {
+	padding-top: 1px;
+	width: 159px;
+	height: auto;
+	background: #d6d4d4;
+}
+
+#sponsorgrey {
+	width: 157px;
+	height: 217px;
+	border: 1px solid #d6d4d4;
+	}
+
+#sponsor {
+	width: 157px;
+	height: 217px;
+	background: url(http://s3.worldchanging.com/siteimages/sponsorsbg_med.gif);
+	border: 1px #fefefe solid;
+	padding: 0px 0px 0px 0px;
+	text-align: center;
+	overflow: hidden;
+}
+#sponsor img {
+	border: 0px;
+	}
+#sponsor p {
+	text-align: left;
+	margin-top: 8px;
+	margin-bottom: 14px;
+	line-height: 14px;
+	}
+
+<!-- Alternate sponsor styles -->
+#sponsorgrey_alt {
+	width: 157px;
+	height: 310px;
+	border: 1px solid #d6d4d4;
+	}
+
+#sponsor_alt {
+	width: 160px;
+	height: 320px;
+	background: url(http://s3.worldchanging.com/siteimages/sponsorsbg.gif);
+	border: 1px #fefefe solid;
+	padding: 0px 0px 0px 0px;
+	text-align: center;
+	overflow: hidden;
+}
+#sponsor_alt img {
+	border: 0px;
+	}
+#sponsor_alt p {
+	text-align: left;
+	margin-top: 8px;
+	margin-bottom: 14px;
+	line-height: 14px;
+	}
+
+	
+<!-- End Alternat sponsor styles -->
+
+#bookgrey {
+	margin-top: 1px;
+	width: 158px;
+	height: 599px;
+	border: 1px solid #d6d4d4;
+	}
+
+#book {
+	width: 156px;
+	height: 597px;
+	text-align: center;
+	border: 1px #fefefe solid;
+}
+
+#rssgrey {
+	margin-top: 1px;
+	width: 158px;
+	border: 1px solid #d6d4d4;
+	}
+
+#rss {
+	width: 136px;
+	background-color: #b9e5a7;
+	border: 1px #fefefe solid;
+	padding: 10px;
+	overflow: hidden;
+}
+	
+#leftdotsgrey {
+	margin-top: 1px;
+	width: 158px;
+	height: auto;
+	border: 1px solid #d6d4d4;
+	}
+
+#leftdots {
+	width: 156px;
+	height: 220px;
+	background-color: #d8facb;
+	background: url(http://s3.worldchanging.com/siteimages/dotpattern.gif) repeat;
+	border: 1px #fefefe solid;
+}
+	
+#teamrightcol {
+	display: inline;
+	float: right;
+	width: 234px;
+	margin-right: 5px;
+	background: #e6e3e3;
+	}
+
+#teamlistgrey {
+
+	width: 230px;
+	border: 1px solid #d6d4d4;
+	background-color: #c7eab9;
+	}
+
+.teamblogentry h3 {
+	color: #007b4d;
+	font-size: 16px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	}
+
+#teamlist {
+	width: 205px;
+	padding: 15px 10px 15px 15px;
+	font-size: 11px;
+	line-height: 15px;
+	background: #c7eab9;
+	border: 1px solid #fff;
+	}
+
+#teamlist a {
+	font-weight: bold;
+	}
+
+.teamwhitegreentop {
+	width: 232px;
+	height: 1px;
+	background: #fff;
+	margin-left: 1px;
+	margin-top: 2px;
+}
+
+#resourcesblurb {
+	margin-bottom: -5px;
+	font-size: 14px;
+	margin-top: 25px;
+	}
+
+#searchgrey {
+	width: 158px;
+	border: 1px solid #d6d4d4;
+	}
+
+#search {
+	z-index: 1;
+	width: 146px;
+/*	background-color: #b7e5a6; */
+	background-color: #addd9a;
+	border: 1px #fefefe solid;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#search a {
+	text-decoration: none;
+	}
+
+#hiddensearch {
+	z-index: 100;
+	height: 180px;
+	width: 350px;
+	position: absolute;
+	display: none;
+	/* top: 135px; */
+	left: 50%;
+	background: #f1f9ed;
+	border: 1px solid #d6d4d4;
+	padding: 5px;
+	padding-left: 15px;
+	padding-right: 10px;
+	font-weight: bold;
+	line-height: 18px;
+	}
+
+#hiddensearch img {
+	margin-top: 10px;
+	margin-bottom: 5px;
+	}
+	
+#hiddensearch label, #hiddensearch input {
+	display: block;
+	width: 235px;
+	background: #fff;
+	margin-bottom: 10px;
+	float: left;
+	}
+
+#hiddensearch label {
+	background: #f1f9ed;
+	text-align: right;
+	width: 75px;
+	padding-right: 10px;
+	padding-top: 2px;
+	}
+	
+#hiddensearch br {
+	clear: left;
+	}
+	
+#searchkeywords {
+	width: 90px;
+	height: 14px;
+	font-size: 13px;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	}
+
+#missiongrey {
+	width: 158px;
+	border: 1px solid #d6d4d4;
+	}
+
+#mission {
+	width: 136px;
+	border: 1px #fefefe solid;
+	background: url(http://s3.worldchanging.com/siteimages/greenglobe.gif) #d8f0ce bottom right no-repeat;
+	padding: 10px;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, san-serif;
+	font-size: 9px;
+	line-height: 15px;
+}
+
+#mission a {
+	color: #822424;
+	text-decoration: none;
+	font-weight: bold;
+	}
+
+.leftgrey {
+	width: 158px;
+	border: 1px solid #d6d4d4;
+	}
+
+#team {
+	width: 148px;
+	border: 1px #fefefe solid;
+	background-color: #b6e4a4;
+	padding: 12px 4px 12px 4px;
+	line-height: 17px;
+	font-size: 11px;
+	}
+
+#team .centered {
+		font-size: 15px;
+	}
+
+#team p {
+	margin-top: 3px;
+	margin-bottom: 3px;
+	margin-right: 10px;
+	margin-left: 10px;
+	}
+
+#team img {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	}
+
+#team .photo {
+	border: 1px #489778 solid;
+	}
+
+#team .teamdate {
+	color: #8f3e3e;
+	font-weight: bold;
+	margin-top: 0px;
+	margin-bottom: 2px;
+	}
+	
+#teamgreen {
+	width: 134px;
+	background-color: #98c586;
+	padding: 7px;
+	line-height: 14px;
+	font-size: 11px;
+}
+
+#teamgreen p {
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-bottom: 0px;
+	margin-top: 5px;
+	padding-top: 0px;
+	}
+
+#teamgreen img {
+	margin: 0px 0px 5px 0px;
+	}
+
+
+
+#quote {
+	width: 136px;
+	border: 1px #fefefe solid;
+	background: url(http://s3.worldchanging.com/siteimages/greentuckcorner.gif) #d3efc9 top right no-repeat;
+	padding: 10px;
+	padding-top: 17px;
+	font-family: Arial, Helvetica, san-serif;
+	color: #007b4d;
+}
+#quotetext {
+	font-size: 17px;
+	line-height: 20px;
+	margin-bottom: 5px;
+	margin-top: 15px;
+	}
+#quotebyline {
+	font-size: 13px;
+	line-height: 20px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	}
+	
+#feedback {
+	width: 136px;
+	border: 1px #fefefe solid;
+	background-color: #b6e4a4;
+	padding: 10px;
+}
+
+#feedback p {
+	margin-top: 3px;
+	margin-bottom: 3px;
+	}
+
+#feedback img {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	}
+
+#feedback a {
+	color: #822424;
+	text-decoration: none;
+	}
+
+#feedback hr {
+	background-color: #cdf6bd;
+	}
+	
+#feedback #polycotlogo {
+	margin-left: -5px;
+	}
+
+.whitegreentop {
+	width: 158px;
+	height: 1px;
+	background: #fff;
+	margin-left: 1px;
+	margin-top: 1px;
+}
+
+#rightdotsgrey {
+	margin-top: 1px;
+	width: 158px;
+	height: auto;
+	border: 1px solid #d6d4d4;
+	}
+
+#rightdots {
+	width: 156px;
+	height: 150px;
+	background-color: #d8facb;
+	background: url(http://s3.worldchanging.com/siteimages/dotpattern.gif) repeat;
+	border: 1px #fefefe solid;
+}
+	
+
+.clear {
+	clear: both;
+	}
+	
+.centered {
+	text-align: center;
+	}
+	
+.smallright {
+	text-align: right;
+	font-size: 9px;
+	margin-top: 0px;
+	margin-bottom: -10px;
+	}
+	
+#navbar {
+	width: 829px;
+	height: 36px;
+	position: relative;
+	}
+
+#localcolorbar {
+	width: 829px;
+	height: 15px;
+	position: relative;
+	}
+
+#topnav {
+	margin: 0;
+	padding: 0;
+	height: 36px;
+	list-style: none;
+	display: inline;
+	overflow: hidden;
+	width: 829px;
+	}
+
+#topnav li {
+	margin: 0; 
+	padding: 0;
+    list-style: none;
+	display: inline;
+	}
+
+#topnav a {
+	float: left;
+	padding: 36px 0 0 0;
+	overflow: hidden;
+	height: 0px !important; 
+	height /**/:36px; /* for IE5/Win only */
+	}
+	
+#topnav a:hover {
+	background-position: 0 -36px;
+	}
+
+#topnav a:active, #nav a.selected {
+	background-position: 0 -36px;
+	}
+	
+#nabout a  {
+	width: 104px;
+	background: url(http://s3.worldchanging.com/siteimages/navabout.gif) top left no-repeat;
+	}
+	
+#nstuff a  {
+	width: 103px;
+	background: url(http://s3.worldchanging.com/siteimages/navstuff.gif) top left no-repeat;
+	}
+	
+#nshelter a  {
+	width: 103px;
+	background: url(http://s3.worldchanging.com/siteimages/navshelter.gif) top left no-repeat;
+	}
+	
+#ncities a  {
+	width: 104px;
+	background: url(http://s3.worldchanging.com/siteimages/navcities.gif) top left no-repeat;
+	}
+	
+#ncommunity a  {
+	width: 104px;
+	background: url(http://s3.worldchanging.com/siteimages/navcommunity.gif) top left no-repeat;
+	}
+
+#nbusiness a  {
+	width: 104px;
+	background: url(http://s3.worldchanging.com/siteimages/navbusiness.gif) top left no-repeat;
+	}
+
+#npolitics a  {
+	width: 106px;
+	background: url(http://s3.worldchanging.com/siteimages/navpolitics.gif) top left no-repeat;
+	}
+
+#nplanet a  {
+	width: 101px;
+	background: url(http://s3.worldchanging.com/siteimages/navplanet.gif) top left no-repeat;
+	}
+	
+/* These are standard sIFR styles... do not modify */
+
+.sIFR-flash {
+	visibility: visible !important;
+	margin: 0;
+}
+
+.sIFR-replaced {
+	visibility: visible !important;
+}
+
+span.sIFR-alternate {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+	display: block;
+	overflow: hidden;
+	font-size: 16px;
+}
+
+/* Hide Adblock Object tab: the text should show up just fine, not poorly with a tab laid over it. */
+.sIFR-flash + div[adblocktab=true] {
+  display: none !important;
+}
+
+
+/* These "decoy" styles are used to hide the browser text before it is replaced... the negative-letter spacing in this case is used to make the browser text metrics match up with the sIFR text metrics since the sIFR text in this example is so much narrower... your own settings may vary... any weird sizing issues you may run into are usually fixed by tweaking these decoy styles */
+
+
+.sIFR-hasFlash h4#datemast {
+	visibility: hidden;
+	letter-spacing: -5px;
+	font-size: 16px;
+}
+
+
+#datemast {
+	position: absolute;
+	bottom: 8px;
+	width: 80px;
+	height: 20px;
+	left: 725px;
+	margin: 0;
+	padding: 0;
+	}
+	
+#bookbluefade {
+	display: inline;
+	height: 360px;
+	width: 431px;
+	float: right;
+	margin-right: 7px;
+	padding: 8px 35px 2px 35px;
+	background: #fff url(http://s3.worldchanging.com/siteimages/book/bluefade.gif) repeat-x;
+	font-size: 11px;
+	line-height: 18px;
+	}
+
+#bookbluefadebuy {
+	text-align: center;
+	font-weight: bold;
+	margin-top: 6px;
+	font-size: 11px;
+	}
+
+#bookgreenfade {
+	display: inline;
+	height: 308px;
+	width: 227px;
+	float: left;
+	margin-left: 8px;
+	background: #e0ef7c url(http://s3.worldchanging.com/siteimages/book/bookwithgreenfade.jpg) no-repeat;
+	padding: 333px 43px 0px 43px;
+	font-size: 11px;
+	line-height: 18px;
+	}
+	
+#bookgreenfade h4 {
+	margin-bottom: 2px;
+	padding-top: 5px;
+	font-size: 10px;
+	font-weight: bold;
+	color: #4d4e46;
+	text-transform: uppercase;
+	}
+	
+#bookgreenfade h3 {
+	margin-top: 2px;
+	margin-bottom: 8px;
+	font-size: 18px;
+	color: #007b4d;
+	}
+	
+#bookourtour {
+	display: inline;
+	width: 237px;
+	float: left;
+	margin-top: 2px;
+	margin-left: 8px;
+	background: #dcefbe;
+	padding: 30px 33px 0px 43px;
+	font-size: 11px;
+	line-height: 18px;
+	}
+
+#bookwhatsinside {
+	display: inline;
+	width: 237px;
+	float: left;
+	margin-top: 2px;
+	margin-left: 8px;
+	background: #fff;
+	padding: 30px 33px 0px 43px;
+	font-size: 11px;
+	line-height: 18px;
+	}
+
+#bookwrapper a {
+	font-weight: bold;
+	}
+
+#bookourtour a {
+	text-transform: uppercase;
+	}
+	
+#bookwhitespace {
+	display: inline;
+	width: 429px;
+	float: right;
+	margin-top: 2px;
+	margin-left: 2px;
+	margin-right: 7px;
+	padding: 35px 35px 2px 35px;
+	background: #fff;
+	font-size: 13px;
+	line-height: 16px;
+	}
+
+#bookwhitespace a {
+	margin-left: 10px;
+	}
+	
+#bookwhitespace img {
+	margin-left: 0px;
+	}
+	
+#bookwhitespace p {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	}
+	
+.byline, .byline a {
+	font-family: Arial, Helvetica, san-serif;
+	font-weight: bold;
+	font-size: 10px;
+	line-height: 10px;
+	color: #434242;
+	text-transform: uppercase;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	}
+	
+.req_failed_validate { color: red; font-weight:bold; }
+
+div.adspot * ul {
+  list-style: none;
+  width: 150px;
+  margin: 0;
+  padding: 0;
+}
+
+div.adspot * li {
+   background-image: url(semi.gif);
+   text-align: center;
+   width: 100%;
+   cursor: pointer;
+   overflow: hidden;
+   display: block;
+}
+

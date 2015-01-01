@@ -1,0 +1,6 @@
+for f
+do
+   echo "command[${f}_queue]=/usr/local/nagios/libexec/check_transcription_vendor.sh -v $f"
+    echo "command[${f}_timeout]=/usr/local/nagios/libexec/check_transcription_vendor_timeouts.sh -v $f"
+    echo
+done

@@ -1,0 +1,825 @@
+
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html>
+		<head>
+		<link rev="x-refresh" href="/cgi-bin/findweather/getForecast?query=eugene&MR=1" />
+		<meta name="ICBM" content="38.39196014, -92.36550140" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="pics-label" content='(pics-1.1 "http://www.icra.org/ratingsv02.html" comment "ICRAonline v2.0" l gen true for "http://www.wunderground.com" r (nz 0 vz 0 lz 0 oz 0 cz 0) "http://www.rsac.org/ratingsv01.html" l gen true for "http://www.wunderground.com"  r (n 0 s 0 v 0 l 0))' />
+  <title>Search for eugene : Weather Underground</title>
+		<link rel="stylesheet" type="text/css" href="http://icons-pe.wxug.com/css/wu2_base.css?v=2008033101" />
+		<link rel="stylesheet" type="text/css" href="http://icons-pe.wxug.com/css/wu2_print.css?v=2008030602" media="print" />
+		<link rel="stylesheet" type="text/css" href="http://icons-pe.wxug.com/css/wu2_conditions.css?v=2008022701" />
+	<link rel="search" href="/scripts/opensearchdescription.xml" type="application/opensearchdescription+xml" title="Weather Underground" />
+	<script language="javascript" type="text/javascript">
+		<!--
+			function bodyOnLoad()
+			{
+			
+			}
+		//-->
+	</script>
+		<script language="javascript" type="text/javascript" src="http://icons-pe.wxug.com/scripts/tablesort.js"></script>
+		<!-- PUT THIS TAG IN THE head SECTION -->
+		<script type="text/javascript" src="http://partner.googleadservices.com/gampad/google_service.js">
+		</script>
+		<script type="text/javascript">
+  GS_googleAddAdSenseService("ca-pub-0983527230240367");
+  GS_googleEnableAllServices();
+		</script>
+		<script type="text/javascript">
+  GA_googleAddSlot("ca-pub-0983527230240367", "300x250_ROS");
+		</script>
+		<script type="text/javascript">
+  GA_googleFetchAds();
+		</script>
+		<!-- END OF TAG FOR head SECTION -->
+</head>
+<!-- Iterate ad calls
+	
+		CAMPAIGN - INCP-00593  - 
+	
+		CAMPAIGN - CNTW-00151 RightTower - 
+	
+		CAMPAIGN -  popup - 
+	
+		CAMPAIGN -   - 
+	
+		CAMPAIGN -   - 
+	
+		CAMPAIGN - INCP-00593 468x60_0 - 
+	
+		CAMPAIGN - CNTW-00151 RightTower_0 - 
+	
+--->
+<body onload="bodyOnLoad()">
+<a name="top"></a>
+<table cellpadding="0" cellspacing="0" class="full" id="topNav">
+	<tr>
+		<td class="vaT taC">
+		<div class="leftBar">
+		<div><a href="/"><img src="http://icons-pe.wxug.com/graphics/smash/wunderTransparent3.gif" width="120" height="70" alt="Weather Underground" /></a></div>
+		<div class="sm"><a href="http://m.wund.com/">Mobile</a> - <a href="http://i.wund.com/">iPhone</a></div>
+		</div>
+		</td>
+		<td class="vaM">
+		<form action=/cgi-bin/findweather/getForecast name="wxsearch">
+		<div class="taJ">Find the Weather for any <b>City</b>, <b>State</b> or <b>ZIP Code</b>, or <b>Airport Code</b> or <b>Country</b></div>
+		<table cellspacing="2" cellpadding="0">
+		<tr>
+		<td><input type="text" name="query" id="wxQuery" /></td>
+		<td>
+		<a href="javascript: document.wxsearch.submit();"><img src="http://icons-pe.wxug.com/graphics/smash/blue_search.gif" width="22" alt="Fast Forecast" height="22" /></a>
+		<noscript>
+		<input type="submit" value="Fast Forecast" />
+		</noscript>
+		</td>
+		</tr>
+		</table>
+		</form>
+		</td>
+		<td class="vaM taR full">
+		<script language="javascript" type="text/javascript">
+		if (screen.width >= 1024)
+		{
+		document.write('<a href="/wximage/viewsingleimage.html?mode=singleimage&handle=ImageMaker07&number=132&gallery=CURRWEATHER"><img src="http://icons-pe.wxug.com/data/wximagenew/i/ImageMaker07/132-banner.jpg" width="640" height="80" alt="View More Weather Photos" /></a>');
+		}
+		else
+		{
+		document.write('&nbsp;');
+		}
+		</script>
+		</td>
+	</tr>
+</table>
+<table cellpadding="0" cellspacing="0" class="full" id="wrapperTable">
+	<tr>
+		<td>
+		<div class="taC leftBar">
+		<a href="/members/signup.asp"><img src="http://icons-pe.wxug.com/graphics/wu2/signup.png" width="100" height="30" alt="Signup" /></a>
+		</div>
+		</td>
+		<td colspan="2" class="full" id="featuresBar">
+		<table cellpadding="0" cellspacing="0">
+	<tr>
+		<td class="topLeft"><div></div></td>
+		<td class="b">Features:</td>
+		<td class="topDiv"><div></div></td>
+		<td class="topLink"><a href="/wximage/viewimages.html">Wunder Photos</a></td>
+		<td class="topSep"><div></div></td>
+		<td class="topLink"><a href="/radar/map.asp">NEXRAD Radar</a></td>
+		<td class="topSep"><div></div></td>
+		<td class="topLink"><a href="/radar/mosaic.asp">Regional Radar</a></td>
+		<td class="topSep"><div></div></td>
+		<td class="topLink"><a href="/satellite/vis/1k/US.html">Zoom Satellite</a></td>
+		<td class="topSep"><div></div></td>
+		<td class="topLink"><a href="/US/Region/US/2xTemperature.html">Maps</a></td>
+		<td class="topSep"><div></div></td>
+		<td class="topLink"><a href="/tripplanner/index.asp">Trip Planner</a></td>
+		<td class="topSep"><div></div></td>
+		<td class="topLink"><a href="/history/">History</a></td>
+		<td class="topSep"><div></div></td>
+		<td class="topLink"><a href="/download/index.asp">Downloads</a></td>
+		<td class="topSep"><div></div></td>
+		<td class="topLink"><a href="/sports/">Sports</a></td>
+		<td class="topSep"><div></div></td>
+		<td class="topLink"><a href="/tornado/">Tornadoes</a></td>
+		<td class="topRight"><div></div></td>
+	</tr>
+	<tr>
+		<td class="midDiv" colspan="23"><img src="http://icons-pe.wxug.com/graphics/smash/r3c1.gif" width="27" height="1" alt="" /></td>
+	</tr>
+</table>
+<table cellpadding="0" cellspacing="0">
+	<tr class="taC">
+		<td class="botLeft"><div></div></td>
+		<td class="bgG"><a href="/tropical/">Tropical / Hurricane</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/MAR/">Marine</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/severe.asp">Severe</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/sky/index.asp">Astronomy</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/ski/">Ski</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/education/education.asp">Education</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/webcams/index.html">Web Cams</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/blog/index.html?range=updated">Blogs</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/climate/">Climate Change</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/favorites/edit.html">Favorites</a></td>
+		<td class="botSep"><div></div></td>
+		<td class="bgG"><a href="/weatherstation/">Personal Weather Stations</a></td>
+		<td class="botRight"><div></div></td>
+	</tr>
+	<tr>
+		<td class="lowLeft"><img src="http://icons-pe.wxug.com/graphics/smash/r5c1.gif" width="27" height="2" alt="" /></td>
+		<td class="lowRight" colspan="22"><img src="http://icons-pe.wxug.com/graphics/smash/r5c5.gif" width="18" height="2" alt="" /></td>
+	</tr>
+</table>
+		</td>
+	</tr>
+	<tr>
+		<td class="vaT">
+		<div class="leftBar">
+		<div class="none taC"><a href="/members/signup.asp"><img src="http://icons-pe.wxug.com/graphics/sign-up10.gif" width="110" height="75" alt="Sign Up" /></a></div>
+		<form action="/login/submitlogin.php" method="post" class="bm10">
+		<input type="hidden" name="referer" value="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=eugene" />
+		<div class="smB">Email:</div>
+		<div class="taC"><input type="text" name="email" autocomplete="on" value="" style="width: 120px;" /></div>
+		<div class="smB">Password:</div>
+		<div class="taC"><input type="password" autocomplete="off" name="password" onchange="this.form.submit()" style="width: 120px;" /></div>
+		<div class="taC"><input type="submit" value="Sign In" /></div>
+		</form>
+	<div class="leftButton">
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td><a href="/help/"><img src="http://icons-pe.wxug.com/graphics/smash/blue_help.gif" width="22" height="22" alt="Help & Support"></a></td>
+		<td class="full"><a href="/help/">Help & Support</a></td>
+		</tr>
+		</table>
+	</div>
+	<div class="leftButton">
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td><a href="/member/membersettings.html"><img src="http://icons-pe.wxug.com/graphics/smash/blue_M.gif" width="22" height="22" alt="Preferences"></a></td>
+		<td class="full"><a href="/member/membersettings.html">Preferences</a></td>
+		</tr>
+		</table>
+	</div>
+	<div class="leftButton">
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td><a href="http://printer.wunderground.com/cgi-bin/findweather/getForecast?query=eugene"><img src="http://icons-pe.wxug.com/graphics/smash/blue_printer.gif" width="22" height="22" alt="Print This Page"></a></td>
+		<td class="full"><a href="http://printer.wunderground.com/cgi-bin/findweather/getForecast?query=eugene">Print This Page</a></td>
+		</tr>
+		</table>
+	</div>
+	<div class="leftButton">
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td><a href="/wxradio/index.html"><img src="http://icons-pe.wxug.com/graphics/smash/blue_radio.gif" width="22" height="22" alt="Weather Radio"></a></td>
+		<td class="full"><a href="/wxradio/index.html">Weather Radio</a></td>
+		</tr>
+		</table>
+	</div>
+	<div class="leftButton">
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+		<td><a href="/printer/cityforecast.asp?zip=65032"><img src="http://icons-pe.wxug.com/graphics/smash/blue_forecastFlyer.gif" width="22" height="22" alt="Forecast Flyer"></a></td>
+		<td class="full"><a href="/printer/cityforecast.asp?zip=65032">Forecast Flyer</a></td>
+		</tr>
+		</table>
+	</div>
+	<h2>Favorites</h2>
+	<table cellspacing="0" cellpadding="1" class="full bgW">
+		<tr class="rowG">
+		<td colspan="2" class="sm">
+		<a href="/cgi-bin/findweather/getForecast?query=80014" class="nu b">Denver, CO</a>
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/cgi-bin/findweather/getForecast?query=80014"><img src="http://icons-pe.wxug.com/i/c/a/clear.gif" width="25" alt="Clear" height="25" class="condIcon" /></a>
+		</td>
+		<td class="full vaM">
+		<div>
+  <nobr><b>50.8</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>10.4</b>&nbsp;&#176;C</nobr>
+</div>
+		<div>Clear</div>
+		</td>
+		</tr>
+		<tr class="rowG">
+		<td colspan="2" class="sm">
+		<a href="/cgi-bin/findweather/getForecast?query=10001" class="nu b">New York, NY</a>
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/cgi-bin/findweather/getForecast?query=10001"><img src="http://icons-pe.wxug.com/i/c/a/cloudy.gif" width="25" alt="Overcast" height="25" class="condIcon" /></a>
+		</td>
+		<td class="full vaM">
+		<div>
+  <nobr><b>51.0</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>10.6</b>&nbsp;&#176;C</nobr>
+</div>
+		<div>Overcast</div>
+		</td>
+		</tr>
+		<tr class="rowG">
+		<td colspan="2" class="sm">
+		<a href="/cgi-bin/findweather/getForecast?query=94101" class="nu b">San Francisco, CA</a>
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<a href="/cgi-bin/findweather/getForecast?query=94101"><img src="http://icons-pe.wxug.com/i/c/a/mostlycloudy.gif" width="25" alt="Mostly Cloudy" height="25" class="condIcon" /></a>
+		</td>
+		<td class="full vaM">
+		<div>
+  <nobr><b>50.0</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>10.0</b>&nbsp;&#176;C</nobr>
+</div>
+		<div>Mostly Cloudy</div>
+		</td>
+		</tr>
+	</table>
+	<p class="sm taC bgG tm10 bm10"><a href="/favorites/edit.html" class="leftLink">Edit My Favorites</a></p>
+		<a name="PPREFS"></a>
+<h2>Page Preferences</h2>
+<form action="post">
+	<table cellspacing="0" cellpadding="1" class="full bgW">
+		<tr class="rowG">
+		<td colspan="3">Language: <span class="b">English</span></td>
+		</tr>
+		<tr>
+		<td colspan="3" class="p5 sm">&raquo; <a href="/SwitchLanguage.asp">Select Language</a></td>
+		</tr>
+		<tr class="rowG">
+		<td colspan="3">Timezone: <span class="b">GMT</span></td>
+		</tr>
+		<tr>
+		<td colspan="3" class="p5 sm">&raquo; <a href="/picktimezone.asp?tz=America/Chicago">Set My Timezone</a></td>
+		</tr>
+		<tr class="rowG">
+		<td colspan="3">
+		Units:
+		<span class="b">
+		Both
+		</span>
+		</td>
+		</tr>
+		<tr>
+		<td colspan="3" class="p5 sm taC">
+		<a href="/cgi-bin/findweather/getForecast?setunits=metric">Metric</a> | <a href="/cgi-bin/findweather/getForecast?setunits=english">English</a>
+		</td>
+		</tr>
+		<tr class="rowG">
+		<td class="b">Show</td>
+		<td class="taC b">Yes</td>
+		<td class="taC b">No</td>
+		</tr>
+		<tr>
+		<td class="vaT" style="border-bottom: 1px solid #EEE;">
+		Favorites
+		</td>
+		<td style="border-bottom: 1px solid #EEE;"><input type="radio" name="0&value" value="1" checked="checked" onclick="location.href='/cgi-bin/findweather/getForecast?setpref=FAVS&value=1&referer=%2fcgi%2dbin%2ffindweather%2fgetForecast%3fquery%3deugene';" /></td>
+		<td style="border-bottom: 1px solid #EEE;"><input type="radio" name="0&value" value="0" onclick="location.href='/cgi-bin/findweather/getForecast?setpref=FAVS&value=0&referer=%2fcgi%2dbin%2ffindweather%2fgetForecast%3fquery%3deugene';" /></td>
+		</tr>
+		<tr>
+		<td class="vaT" style="border-bottom: 1px solid #EEE;">
+		Wunder Photos
+		</td>
+		<td style="border-bottom: 1px solid #EEE;"><input type="radio" name="10&value" value="1" checked="checked" onclick="location.href='/cgi-bin/findweather/getForecast?setpref=WPHO&value=1&referer=%2fcgi%2dbin%2ffindweather%2fgetForecast%3fquery%3deugene';" /></td>
+		<td style="border-bottom: 1px solid #EEE;"><input type="radio" name="10&value" value="0" onclick="location.href='/cgi-bin/findweather/getForecast?setpref=WPHO&value=0&referer=%2fcgi%2dbin%2ffindweather%2fgetForecast%3fquery%3deugene';" /></td>
+		</tr>
+		<tr>
+		<td class="vaT" style="border-bottom: 1px solid #EEE;">
+		Top Photo Banner
+		</td>
+		<td style="border-bottom: 1px solid #EEE;"><input type="radio" name="11&value" value="1" checked="checked" onclick="location.href='/cgi-bin/findweather/getForecast?setpref=PHOT&value=1&referer=%2fcgi%2dbin%2ffindweather%2fgetForecast%3fquery%3deugene';" /></td>
+		<td style="border-bottom: 1px solid #EEE;"><input type="radio" name="11&value" value="0" onclick="location.href='/cgi-bin/findweather/getForecast?setpref=PHOT&value=0&referer=%2fcgi%2dbin%2ffindweather%2fgetForecast%3fquery%3deugene';" /></td>
+		</tr>
+		<tr>
+		<td class="vaT" style="border-bottom: 1px solid #EEE;">
+		Gift Promo
+		</td>
+		<td style="border-bottom: 1px solid #EEE;"><input type="radio" name="12&value" value="1" checked="checked" onclick="location.href='/cgi-bin/findweather/getForecast?setpref=GIFT&value=1&referer=%2fcgi%2dbin%2ffindweather%2fgetForecast%3fquery%3deugene';" /></td>
+		<td style="border-bottom: 1px solid #EEE;"><input type="radio" name="12&value" value="0" onclick="location.href='/cgi-bin/findweather/getForecast?setpref=GIFT&value=0&referer=%2fcgi%2dbin%2ffindweather%2fgetForecast%3fquery%3deugene';" /></td>
+		</tr>
+	</table>
+</form>
+<h2>Maps</h2>
+<div class="b bgG p3">International</div>
+<ul class="leftList">
+	<li><a href="/US/Region/US/Temperature.html">United States</a></li>
+	<li><a href="/global/Region/CN/Temperature.html">Canada</a></li>
+	<li><a href="/global/Region/CA/Temperature.html">Mexico</a></li>
+	<li><a href="/global/Region/CA/Temperature.html">Central America</a></li>
+	<li><a href="/global/Region/SA/Temperature.html">South America</a></li>
+	<li><a href="/global/Region/AS/Temperature.html">Northern Asia</a></li>
+	<li><a href="/global/Region/A2/Temperature.html">Southern Asia</a></li>
+	<li><a href="/global/Region/EU/Temperature.html">Europe</a></li>
+	<li><a href="/global/Region/AU/Temperature.html">Australia</a></li>
+	<li><a href="/global/Region/AF/Temperature.html">Africa</a></li>
+	<li><a href="/global/IS_ST_Index.html">Islands</a></li>
+	<li><a href="/global/Region/AN/Temperature.html">Antarctica</a></li>
+</ul>
+<h2>Information</h2>
+<ul class="leftList">
+	<li><a href="/help/">Need Help?</a></li>
+	<li><a href="/about/faq/faq.asp">Link to Us</a></li>
+	<li><a href="/about/contact.asp">About Us</a></li>
+	<li><a href="/autobrand/">Custom Weather</a></li>
+	<li><a href="/newspaper/">Newspaper Weather</a></li>
+	<li><a href="/about/adinfo.asp">Advertising</a></li>
+	<li><a href="http://www.cafepress.com/wunderground" target="new">Online WunderStore</a></li>
+</ul>
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class=smalltable>
+<!-- ADPL-00032 -->
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Vacation Deals</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<center>
+<a href="http://www.redweek.com">
+<img src="http://icons.wunderground.com/ads/images/ADPL-00032-Redweek_logo2.jpg" width=100 height=25 border=0></a></center>
+<li><a href="http://www.redweek.com">Save On Vacation Condo Rentals</a></li>
+<li><a href="http://www.redweek.com">Save money with Timeshare rentals</a></li>
+</td></tr>
+</table>
+</td></tr>
+<!-- CNDO-00002 -->
+<tr><td bgcolor="#000080" align=center class=leftadhead><font face="Arial,Helvetica" color="FFFFFF"><b>Eugene</b></font> <a href="http://www.condocompany.com/"><font face="Arial,Helvetica" color="FFFFFF"><b>Condos</b></font></a><font face="Arial,Helvetica" color="FFFFFF"><b> and Vacations</b>
+</font></td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<a href="http://www.condocompany.com/"><center><img src="http://icons.wunderground.com/ads/images/CONDO-cclogo.jpg" width="100" alt="Condominiums for sale, for rent, and vacation rentals" height="25" border="0"></center></a>
+<li><a href="http://miami.condocompany.com">Miami Condos</a></li>
+<li><a href="http://www.condocompany.com">Eugene Condos</a></li>
+<li><a href="http://www.beachstore.com/">Beach Towels</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Eugene Tickets and Technology</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.xpandercommunications.com/">VOIP Phone Systems</a></li>
+<li><a href="http://www.dwtickets.com/">Disney Tickets</a></li>
+<li><a href="http://www.premiumseatsusa.com/">Event and Concert Tickets</a></li>
+<li><a href="http://www.orlandofuntickets.com/">Walt Disney World Tickets</a></li>
+</td></tr>
+</table>
+</td></tr><!-- UGEN-00003 -->
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Real Estate Guide</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.50stateshomesforsale.com">Eugene Homes For Sale</a></li>
+<li><a href="http://www.jbriggsrealty.com">Eugene Real Estate Agents</a></li>
+<li><a href="http://www.icomjh.com">Eugene Investment Property</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Hot Travel Savings</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.vacationpackages.bz">Eugene Vacation Packages</a></li>
+<li><a href="http://www.rentalcars.bz">Eugene Car Rentals</a></li>
+<li><a href="http://www.findhotels.cc">Eugene Hotels</a></li>
+<li><a href="http://www.airlinetickets.vc">Eugene Airline Tickets</a></li>
+<li><a href="http://www.internetproviders.cc">Eugene Internet Providers</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Great Vacation Ideas</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.funvacationscheap.com">Eugene Cheap Vacations</a></li>
+<li><a href="http://www.bedandbreakfastideas.net">Eugene Bed and Breakfast</a></li>
+<li><a href="http://www.vacationideas.biz">Eugene Vacation</a></li>
+<li><a href="http://www.4lasvegasvacation.org">Las Vegas Travel Deals</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Real Estate</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.us-homes-for-sale.com">Eugene Homes For Sale</a></li>
+<li><a href="http://www.foreclosures.bz">Eugene Foreclosures</a></li>
+<li><a href="http://www.homeownersinsurance.cc">Missouri Homeowners Insurance</a></li>
+<li><a href="http://www.1st-nationwide-mortgage-loans.com">Eugene Real Estate</a></li>
+<li><a href="http://www.fasthighspeedinternetaccess.com">Eugene High Speed Internet</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Fantastic Rental Deals</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.4vacationrentals.info">Eugene Vacation Rentals</a></li>
+<li><a href="http://www.timeshares.la">Eugene Timeshares</a></li>
+<li><a href="http://www.apartmentsforrent.bz">Eugene Apartments</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Cosmetic Surgery</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://tummytuck.esurgery.us">Eugene Tummy Tuck</a></li>
+<li><a href="http://cosmetic.esurgery.us">Cosmetic Surgery Eugene</a></li>
+<li><a href="http://www.lapbandsurgeryanswers.com">Eugene Lap Band Surgery</a></li>
+<li><a href="http://bariatric.esurgery.us">Eugene Bariatric Surgery</a></li>
+<li><a href="http://liposuction.esurgery.us">Liposuction Eugene</a></li>
+<li><a href="http://www.plasticsurgeonstat.com">Eugene Plastic Surgeon</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Financial Advice on...</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.foreclosure.vc">Eugene Foreclosure</a></li>
+<li><a href="http://www.personalinjuryattorney.bz">Eugene Personal Injury Attorney</a></li>
+<li><a href="http://www.bankruptcy.vc">Missouri Bankruptcy</a></li>
+<li><a href="http://www.jobs411.biz">Eugene Jobs</a></li>
+<li><a href="http://www.broadband-service-providers.com">Eugene Broadband Service Providers</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Detailed Information on...</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.taxpreparation.la">Eugene Tax Preparation</a></li>
+<li><a href="http://www.workathomejobslisting.com">Work at Home Jobs</a></li>
+<li><a href="http://www.singlesnearyou.org">Eugene Singles - Online Dating</a></li>
+<li><a href="http://www.tummytuckanswers.com">Eugene Tummy Tucks</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>How To Save Money On...</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.carinsurance.vc">Eugene Car Insurance</a></li>
+<li><a href="http://www.cheapflightsto.info">Eugene Cheap Flights</a></li>
+<li><a href="http://www.usedcars.vc">Eugene Used Cars</a></li>
+<li><a href="http://www.4traveldeals.org">Eugene Travel Deals</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Industrial Magnets</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.magnetsinc.com">Magnets</a></li>
+</td></tr>
+</table>
+</td></tr><!-- HMKY-00002 -->
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF">
+<a href="http://www.homekeys.net/" target="_blank"><font color="#FFFFFF"><b>Real Estate</b></font></a>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.byownerhomes.com" "target="_blank">
+For Sale By Owner <br>Flat Fee MLS Listing<br></a></li>
+<li><a href="http://www.reversemortgageloansusa.net" "target="_blank">Reverse Mortgages
+<br>Mortgage Loans</a></li>
+</td></tr>
+</table>
+</td></tr><!-- ATDC-00001 -->
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Tickets and Worldwide Attractions</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.attraction-tickets-direct.co.uk">Disney Tickets</a></li>
+<li><a href="http://www.dosomethingdifferent.com">Tours and Tickets</a></li>
+</td></tr>
+</table>
+</td></tr><!-- RXCA-00007 -->
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Canadian Pharmacy</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<li><a href="http://www.rxcarecanada.com">Canada Pharmacy</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Cheap Hotels</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.hoteldealsandmore.com">Cheap Hotel</a></li>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Find Jobs In Your City</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.mployd.com">Eugene Jobs </a></li>
+</td></tr>
+</table>
+</td></tr><!-- ONMP-00001 -->
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>Condos for Sale</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.prodigynetwork.com">Condos for Sale</a></li>
+<li><a href="http://www.mareazul.com">Playa del Carmen Condos</a></li>
+<li><a href="http://www.theflowerexchange.com">Wholesale Flowers</a></li>
+</td></tr>
+</table>
+</td></tr><!-- GREE-00006 -->
+<tr><td bgcolor="#000080" align=center class=leftadhead>
+<font face="Arial,Helvetica" color="FFFFFF"><b>College Students</b>
+</font>
+</td></tr><tr><td bgcolor="FFFFFF" valign=top>
+<table width="100%" border=0 class=leftadbody>
+<tr><td class=leftadbody>
+<li><a href="http://www.greek101.com/">Fraternity</a></li>
+<li><a href="http://www.greek101.com/">Sorority</a></li>
+<li><a href="http://puertorealestate.com">Puerto Escondido</a></li>
+</td></tr>
+</table>
+</td></tr>
+<!-- goog-00015 -->
+<tr><td bgcolor="000080" align=center class=leftadhead><font face="Arial,Helvetica"
+color="#ffffff">
+<b>Google Search
+</b></font>
+</td></tr>
+<tr>
+<td bgcolor=#ffffff class=leftadbody>
+<form action=http://www.google.com/custom>
+Search the Net!<br>
+<input type=text name=q size=14>
+<INPUT type=hidden name=cof VALUE="LW:440;L:http://www.wunderground.com/graphics/WUIlogo.gif;LH:55;AH:center;AWFID:1351276b545b1450;">
+<table><tr><td><input type=submit value="Search"><input type=hidden name=start value=0></td></tr></table>
+<a href="http://www.google.com">Powered by Google</a>
+<br>
+</form>
+</td>
+</tr>
+</table>
+<div class="sm" style="color: #EEE;">
+	<!-- SERVERHOSTNAME -->
+	l3b3<br />
+	Mar 21 2008 18:30:25<br />
+</div>
+		</div>
+		</td>
+		<td id="gutter"><div></div></td>
+		<td class="full vaT" id="content">
+		<a name="a_topad"></a>
+		<div class="taC tm10">
+		<? # ---- Special Case Marine Ad for Marine Pages --- ?>
+  <!-- Campaign=INCP-00593 Views=1 Caps=[86400,1207327693] -->
+
+<script language="JavaScript">var zflag_nid="162"; var zflag_bt="25_728_bt"; var zflag_pt="25_728_pt"; var zflag_width="728"; var zflag_height="90";
+</script><script language="JavaScript" src="http://simg.zedo.com/intercept/tag/zzsmt.js"></script>
+		</div>
+		<div class="tm10">
+<div id="TESTCITYLIST"></div>
+  <h1>Search Results:</h1>
+<table id="full" cellpadding="10" cellspacing="0">
+<tr class="vaT">
+  <td id="full">
+		<h3>eugene <span style="font-weight: normal;">&mdash; (Click on a column heading to sort this information)</span></h3>
+	<table cellspacing="0" cellpadding="0" onclick="sortColumn(event)" class="boxB full">
+		<thead>
+		<tr class="nobr">
+		<td class="sortH" title="Sort by Place"><span style="padding-right: 5px;">Place</span></td>
+		<td class="sortH" title="Sort by Temperature"><span style="padding-right: 5px;">Temperature</span></td>
+		<td class="sortH" title="Sort by Humidity" type="FirstInteger"><span style="padding-right: 5px;">Humidity</span></td>
+		<td class="sortH" title="Sort by Pressure"><span style="padding-right: 5px;">Pressure</span></td>
+		<td class="sortH" title="Sort by Conditions"><span style="padding-right: 5px;">Conditions</span></td>
+		<td class="sortH" title="Sort by Wind" type="FirstInteger"><span style="padding-right: 5px;">Wind</span></td>
+		<td class="sortH" title="Sort by Updated" type="FirstInteger" colspan="2"><span style="padding-right: 5px;">Updated</span></td>
+		</tr>
+		</thead>
+		<tbody>
+		<tr class="rowW" onmouseover="this.className='rowY'" onmouseout="this.className='rowW'">
+		<td class="sortC"><a href="/US/MO/Eugene.html">Eugene, Missouri</a>
+</td>
+		<td class="sortC">
+  <nobr><b>47.8</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>8.8</b>&nbsp;&#176;C</nobr>
+</td>
+		<td class="sortC">49%</td>
+		<td class="sortC">
+  <b>29.97</b>&nbsp;in
+  /
+  <b>1014.8</b>&nbsp;hPa
+		(Rising)
+		</td>
+		<td class="sortC">Overcast</td>
+		<td class="sortC">North at
+  <nobr><b>4.0</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>6.4</b>&nbsp;km/h</nobr> / <nobr><b></b>&nbsp;m/s</nobr>
+</td>
+		<td class="sortC">11:44 AM CDT</td>
+		<td class="sortC" style="white-space: nowrap;">
+		<a href=/php/editfavs.php?addfav=65032.1><img src="http://icons-pe.wxug.com/graphics/ADD.gif" width="30" height="16" alt="Add to My Favorites" /></a>
+</td>
+		</tr>
+		<tr class="rowW" onmouseover="this.className='rowY'" onmouseout="this.className='rowW'">
+		<td class="sortC"><a href="/US/OR/Eugene.html">Eugene, Oregon</a>
+		<a href="/US/OR/Eugene.html#REC"><img src="http://icons-pe.wxug.com/graphics/REC.gif" width="17" alt="Record Report" height="17" /></a>
+</td>
+		<td class="sortC">
+  <nobr><b>48.0</b>&nbsp;&#176;F</nobr>
+  /
+  <nobr><b>8.9</b>&nbsp;&#176;C</nobr>
+</td>
+		<td class="sortC">65%</td>
+		<td class="sortC">
+  <b>30.06</b>&nbsp;in
+  /
+  <b>1017.8</b>&nbsp;hPa
+		(Steady)
+		</td>
+		<td class="sortC">Mostly Cloudy</td>
+		<td class="sortC">SE at
+  <nobr><b>2.0</b>&nbsp;mph</nobr>
+  /
+  <nobr><b>3.2</b>&nbsp;km/h</nobr> / <nobr><b></b>&nbsp;m/s</nobr>
+</td>
+		<td class="sortC">9:40 AM PDT</td>
+		<td class="sortC" style="white-space: nowrap;">
+		<a href=/php/editfavs.php?addfav=97401.1><img src="http://icons-pe.wxug.com/graphics/ADD.gif" width="30" height="16" alt="Add to My Favorites" /></a>
+</td>
+		</tr>
+		</tbody>
+	</table>
+	<p class="taC"><a href="/cgi-bin/findweather/getForecast?addfav=" class="subLink">Edit My Favorite Cities List</a></p>
+		<a name="legend"></a>
+		<table cellspacing="0" cellpadding="0" class="boxG full">
+		<tr>
+		<td colspan="8"><h4>Weather Warning Legend</h4></td>
+		</tr>
+		<tr id="Moon06">
+		<td><img src="http://icons-pe.wxug.com/graphics/TOR.gif" width="17" height="17"></td>
+		<td>Tornado Warning</td>
+		<td><img src="http://icons-pe.wxug.com/graphics/THU.gif" width="17" height="17"></td>
+		<td>Severe Thunderstorm Warning</td>
+		<td><img src="http://icons-pe.wxug.com/graphics/FLO.gif" width="17" height="17"></td>
+		<td>Flood Warning</td>
+		<td><img src="http://icons-pe.wxug.com/graphics/WND.gif" width="17" height="17"></td>
+		<td>High Wind Advisory</td>
+		</tr>
+		<tr id="Moon06">
+		<td><img src="http://icons-pe.wxug.com/graphics/TOW.gif" width="17" height="17"></td>
+		<td>Tornado Watch</td>
+		<td><img src="http://icons-pe.wxug.com/graphics/SEW.gif" width="17" height="17"></td>
+		<td>Severe Thunderstorm Watch</td>
+		<td><img src="http://icons-pe.wxug.com/graphics/WAT.gif" width="17" height="17"></td>
+		<td>Flood Watch / Flood Statement</td>
+		<td><img src="http://icons-pe.wxug.com/graphics/FOG.gif" width="17" height="17"></td>
+		<td>Dense Fog Advisory</td>
+		</tr>
+		<tr id="Moon06">
+		<td><img src="http://icons-pe.wxug.com/graphics/FIR.gif" width="17" height="17"></td>
+		<td>Fire Weather Advisory</td>
+		<td><img src="http://icons-pe.wxug.com/graphics/HUR.gif" width="17" height="17"></td>
+		<td>Hurricane Local Statement</td>
+		<td><img src="http://icons-pe.wxug.com/graphics/WIN.gif" width="17" height="17"></td>
+		<td>Winter Weather Statement</td>
+		<td><img src="http://icons-pe.wxug.com/graphics/HEA.gif" width="17" height="17"></td>
+		<td>Heat Advisory</td>
+		</tr>
+		<tr id="Moon06">
+		<td><img src="http://icons-pe.wxug.com/graphics/REC.gif" width="17" height="17"></td>
+		<td>Special Weather Statement</td>
+		<td><img src="http://icons-pe.wxug.com/graphics/REC.gif" width="17" height="17"></td>
+		<td>Public Notice</td>
+		<td><img src="http://icons-pe.wxug.com/graphics/REC.gif" width="17" height="17"></td>
+		<td>Public Record</td>
+		<td><img src="http://icons-pe.wxug.com/graphics/REC.gif" width="17" height="17"></td>
+		<td>Public Statement</td>
+		</tr>
+		</table>
+  </td>
+  <td>
+  <div>
+  <!-- Campaign=CNTW-00151 Views=2 Caps=[86400,1207327608,1207327693] -->
+
+<script  src="http://tag.contextweb.com/TagPublish/getjs.aspx?action=VIEWAD&cwrun=200&cwadformat=120X600&cwpid=501711&cwwidth=120&cwheight=600&cwpnet=1&cwtagid=16200"></script>
+</div>
+  </td>
+</tr>
+</table>
+		</div>
+		<div class="pageTop"><span class="noPrint">: <a href="#">Top of Page</a> :</span></div>
+		<div id="bottomAds">
+		<!-- blue credits bar -->
+		<!-- serial # 041801-1 -->
+		<h3>Please Visit Our Sponsors:</h3>
+		<!-- ads -->
+	<div style="background-color: #EEEEEE;">
+		<div style="clear: both;">&nbsp;</div>
+		<div class="ad125">
+		<!-- VDON-00058 3 -->
+		<a href="http://server.as5000.com/AS5000/adserver/click?ID=VDON-00058&C=3"><img src="http://config.privoxy.org/send-banner?type=auto" border="0" title="Killed-http://icons.wunderground.com/ads/images/VDON_VTG_creative.gif-by-size" width=125 height=125></a>
+		</div>
+		<div class="ad125">
+		<!-- CLSM-00018 1 -->
+		<a href="http://server.as5000.com/AS5000/adserver/click?ID=CLSM-00018&C=1"><img src="http://config.privoxy.org/send-banner?type=auto" border="0" title="Killed-http://icons.wunderground.com/ads/images/CLSM-00014-cmb71_125x125.gif-by-size" width=125 height=125></a>
+		</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<br>
+		</div>
+  <div class="taC">
+		<!-- Start Quantcast tag -->
+		<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+		<script type="text/javascript">_qacct="p-01lvMKu--eLQE";quantserve();</script>
+		<noscript></noscript>
+		<!-- End Quantcast tag -->
+<table class="taC tm20 center">
+	<tr>
+		<td><img src="http://icons-pe.wxug.com/graphics/wu2/logo_footer.gif" width="53" height="25" alt="" /></td>
+		<td>Copyright &copy; 2008 <a href="/about/background.asp">The Weather Underground, Inc.</a></td>
+	</tr>
+</table>
+<div class="taC noPrint"><a href="/about/employment.asp">Employment</a> | <a href="/about/contact.asp">Contact Us</a> | <a href="/help/">Help</a> | <a href="/members/tos.asp">Terms of Service</a> | <a href="/about/adinfo.asp">Advertise Here</a></div>
+</div>
+		</td>
+	</tr>
+</table>
+</body>
+	</html>
+  <div id="debug">
+	<!--  WUICATEGORY:CityPage:CityList -->
+<!-- 0.062:0 -->

@@ -1,0 +1,7 @@
+scp -rp isis:/usr/local/nagios /usr/local
+scp -pr isis:/usr/sbin/nrpe /usr/sbin
+scp -p isis:/etc/nrpe.cfg /etc
+nrpe -c /etc/nrpe.cfg -d
+echo "/usr/sbin/nrpe -c /etc/nrpe.cfg -d" >> /etc/rc.local
+/usr/sbin/nrpe -c /etc/nrpe.cfg -d
+

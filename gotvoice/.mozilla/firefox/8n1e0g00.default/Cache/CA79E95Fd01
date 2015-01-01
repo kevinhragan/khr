@@ -1,0 +1,750 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- Server: sf-web24 -->
+<!--
+  ~ SourceForge.net: Create, Participate, Evaluate
+  ~ Copyright (c) 1999-2007 OSTG, Inc. All rights reserved.
+  ~ @version $Id: header.html 23751 2008-03-14 17:20:35Z sazriel $
+  -->
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="The world's largest development and download repository of Open Source code and applications" />
+        <meta name="keywords" content="Open Source, Development, Developers, Projects, Downloads, OSTG, VA Software, SF.net, SourceForge" />
+        <link rel="alternate" type="application/rss+xml" title="SourceForge.net Project News" href="/export/rss2_sfnews.php?group_id=1&amp;rss_fulltext=1" />
+        <link rel="alternate" type="application/rss+xml" title="SourceForge.net News" href="/export/rss2_projnews.php?group_id=141424&amp;rss_fulltext=1" />
+        <title>SourceForge.net: ipsec-tools-users</title>
+       <link rel="stylesheet" type="text/css" href="http://static.sourceforge.net/css/sfx.php?secure=0&amp;20080327-1035" media="screen" title="SFx" />
+        <script type="text/javascript">
+	//<![CDATA[
+                var link = document.createElement('link');
+                link.setAttribute('rel', 'stylesheet');
+                link.setAttribute('type', 'text/css');
+                link.setAttribute('href', 'http://static.sourceforge.net/css/sfxjs.php?secure=0&amp;20080327-1035');
+                document.getElementsByTagName('head')[0].appendChild(link);
+
+                function help_window(helpurl) {
+                        HelpWin = window.open( 'http://sourceforge.net' + helpurl,'HelpWindow','scrollbars=yes,resizable=yes,toolbar=no,height=400,width=400');
+                }
+	//]]>
+        </script>
+        <script type="text/javascript" src="http://static.sourceforge.net/include/thickbox/jquery.js"></script>
+        <script type="text/javascript">
+        //<![CDATA[
+            jQuery.noConflict();
+        //]]>
+        </script>
+        <script type="text/javascript" src="http://static.sourceforge.net/include/thickbox/goods.js"></script>
+        <script type="text/javascript"
+        src="http://static.sourceforge.net/include/js/Util.js"></script>
+<!--pageid mail_archive -->
+        <script type="text/javascript">
+	//<![CDATA[
+                jQuery(document).ready(function(){
+                        if(jQuery.browser.msie || jQuery.browser.mozilla ){
+                        jQuery('div.firstwave li ul').append("<iframe src=\"javascript:false\"></iframe>");
+                        jQuery('#fad36 li ul').append('<iframe src=\"javascript:false\"></iframe>');
+                        };
+                });
+	//]]>
+        </script>
+		<script type="text/javascript" src="http://static.sourceforge.net/include/thickbox/thickbox.js"></script>
+	<script type="text/javascript" src="http://static.sourceforge.net/include/thickbox/dialog.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://static.sourceforge.net/include/thickbox/thickbox.php?secure=0&amp;20080327-1035" media="screen" title="SFx" />
+        <!--[if IE]><link rel="stylesheet" type="text/css" media="screen" href="http://static.sourceforge.net/css/iestyles.php?secure=0&amp;20080327-1035"  /><![endif]-->
+        <script type="text/javascript" src="http://static.sourceforge.net/sfx.js"></script>
+       <link rel="stylesheet" type="text/css" href="http://static.sourceforge.net/css/print.php?secure=0&amp;20080327-1035" media="print" />
+<!-- BEGIN: AdSolution-Tag 4.2: Global-Code [PLACE IN HTML-HEAD-AREA!] -->
+<!-- DoubleClick Random Number -->
+<script language="JavaScript" type="text/javascript">
+   dfp_ord=Math.random()*10000000000000000;
+   dfp_tile = 1;
+</script>
+<!-- End DoubleClick Random Number -->
+
+<script type="text/javascript">
+	var google_page_url = 'http://sourceforge.net/projects/ipsec-tools';
+	var sourceforge_project_name = 'ipsec-tools';
+	var sourceforge_project_description = 'User-space IPsec tools for various IPsec implementations.  A port of KAME\'s libipsec, setkey, and racoon to the Linux OS.  Also works on various BSD systems.';
+</script>
+<!-- END: AdSolution-Tag 4.2: Global-Code -->
+<!-- after META tags -->
+
+<script type="text/javascript">
+var sf_net_pageid = "mail_archive";
+var krugle_elements = new Object;
+var krugleLinks = "";
+</script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-32013-6");
+pageTracker._initData();
+</script>
+
+</head>
+<body>
+<!-- End OSDN NavBar gid: 74601 keywords: ipsec-tools,os_groups,modern_oses,linux,posix,c,networking,system,security:security -->
+	<div id="hd">
+                <h1>
+                        <a href="/" title="">SourceForge.net</a>
+                </h1>
+                <ul class="jump">
+                        <li><a href="#content">Jump to main content</a></li>
+                                        <li><a href="#projectnav">Jump to project navigation</a></li>
+                        <li><a href="/project/showfiles.php?group_id=74601#downloads">Jump to downloads for IPsec Tools</a></li>
+                                </ul>
+                <div id="topuser">
+                        <a href="https://sourceforge.net/account/login.php" title="Log in and gain access to additional features including the Marketplace">Log in</a> <a href="/account/registration/" title="Get a SourceForge.net account">Create account</a> <a href="/support/getsupport.php" title="Get help and support on SourceForge.net">Help</a>
+                        
+                </div>
+	</div>
+        <ul id="mainnav">
+                <li><a href="/">Home</a></li>
+                <li class="selected"><a href="/softwaremap/">Browse&nbsp;Software</a></li>
+                <li class="new"><a href="/services/buy/index.php">Marketplace<sup><b>NEW</b></sup></a></li>
+                <li><a href="/community/">Community</a></li>
+                <li><a href="/register-project/">Create&nbsp;Project</a></li>
+        		<li><a href="http://jobs.sourceforge.net">Jobs</a></li>
+        </ul>
+        <div id="kahuna">
+                <form action="/search/" method="get" name="searchform">
+                        <input type="hidden" name="type_of_search" value="soft" />
+                        <fieldset>
+                                <legend>Search</legend>
+                                <label>Search SourceForge.net Projects </label>
+                                <select name="type_of_search">
+                                        <option value="soft" selected="selected">Software</option>
+                                        <option value="projectsWithServices">Marketplace</option>
+                                </select>
+                                <input type="text" value="" id="searchbox" name="words" tabindex="1" /><input type="submit" value="Search" id="searchsubmit" tabindex="0" />&nbsp;&nbsp;<a href="/search/" class="advanced">Advanced</a>
+                        </fieldset>
+                </form>
+        </div>
+	<div id="frame" class="mail_archive">
+		<!-- begin content -->
+
+        <div id="innerframe" class="project">
+
+        <div id="fad1p">&nbsp;</div>
+
+        <ul id="breadcrumb">
+                                        <li class="begin"><a href="/">SF.net</a></li>
+<li><a href="/softwaremap/">Projects</a></li>
+<li><a href="/projects/ipsec-tools/">IPsec Tools</a></li>
+<li><a href="/mail/?group_id=74601">Mail</a></li>
+<li class="selected"><a href="/mailarchive/forum.php?forum_name=ipsec-tools-users">Archive</a></li>
+                        </ul>
+
+        <a name="projectnav"></a>
+        <div class="topnav">
+            <h2><span>IPsec Tools</span></h2>
+                <form action="/search/" method="get" class="projectsearch">
+                            <input type="hidden" name="ml_name" value="ipsec-tools-users" />                                            
+            <input type="hidden" name="type_of_search" value="mlists" />                <input type="hidden" name="group_id" value="74601" />
+                <label>Search  Mailing Lists </label><input type="text" value=" Mailing Lists" class="searchword passive" id="projectsearchbox" name="words" tabindex="4" onfocus="this.className='active'; if(this.value==' Mailing Lists')this.value='';" onblur="if(this.value=='')this.value=' Mailing Lists';this.className='passive';" />
+                <input type="submit" value="Search" class="submit" tabindex="5" />
+                <a href="/search/?group_id=74601&amp;type_of_search=mlists&ml_name=ipsec-tools-users" class="advanced">Advanced</a>
+            </form>
+
+                            <div class="firstwave">
+                    <ul class="nav">
+                        <li class="website"><a href="http://ipsec-tools.sourceforge.net" >Project&nbsp;Web&nbsp;Site</a></li>
+<li class="begin"><a href="/projects/ipsec-tools/" >Project</a><ul>
+<li class="begin"><a href="/projects/ipsec-tools/">Summary</a></li>
+<li><a href="http://ipsec-tools.sourceforge.net">Web Site</a></li>
+<li><a href="/project/screenshots.php?group_id=74601">Screenshots</a></li>
+<li><a href="/news/?group_id=74601">News</a></li>
+<li><a href="/project/stats/?group_id=74601&amp;ugn=ipsec-tools">Statistics</a></li>
+</ul>
+</li>
+<li><a href="/tracker/?group_id=74601" >Tracker</a><ul>
+<li><a href="/tracker/?group_id=74601">Tracker Summary</a></li>
+<li><a href="/tracker/?group_id=74601&amp;atid=541482">Bugs</a></li>
+<li><a href="/tracker/?group_id=74601&amp;atid=541485">Feature Requests</a></li>
+<li><a href="/tracker/?group_id=74601&amp;atid=541484">Patches</a></li>
+<li><a href="/tracker/?group_id=74601&amp;atid=541483">Support Requests</a></li>
+<li class="tools"><a href="/project/stats/detail.php?group_id=74601&amp;ugn=ipsec-tools&amp;type=tracker">Statistics</a></li>
+<li><a href="/search/?group_id=74601&amp;type_of_search=artifact">Search</a></li>
+</ul>
+</li>
+<li class="selected"><a href="/mail/?group_id=74601" >Mailing&nbsp;Lists</a><ul>
+<li><a href="/mail/?group_id=74601">Mailing Lists Summary</a></li>
+<li><a href="/mailarchive/forum.php?forum_name=ipsec-tools-devel">ipsec-tools-devel</a></li>
+<li><a href="/mailarchive/forum.php?forum_name=ipsec-tools-announce">ipsec-tools-announce</a></li>
+<li><a href="/mailarchive/forum.php?forum_name=ipsec-tools-users">ipsec-tools-users</a></li>
+<li><a href="/mailarchive/forum.php?forum_name=ipsec-tools-commits">ipsec-tools-commits</a></li>
+<li class="tools"><a href="/search/?group_id=74601&amp;type_of_search=mlists">Search</a></li>
+</ul>
+</li>
+<li><a href="/cvs/?group_id=74601" >Code</a><ul>
+<li><a href="/cvs/?group_id=74601">CVS</a></li>
+<li><a href="http://ipsec-tools.cvs.sourceforge.net/ipsec-tools/">CVS Browse</a></li>
+<li><a href="/project/stats/detail.php?group_id=74601&amp;ugn=ipsec-tools&amp;type=cvs">CVS Statistics</a></li>
+</ul>
+</li>
+<li><a href="/services/project_services.php?project_id=74601" >Services</a><ul>
+<li><a href="/services/project_services.php?project_id=74601">Get Services</a></li>
+</ul>
+</li>
+<li><a href="/project/showfiles.php?group_id=74601" >Download</a><ul>
+<li><a href="/project/showfiles.php?group_id=74601">Browse All Files</a></li>
+<li class="tools"><a href="/project/stats/detail.php?group_id=74601&amp;ugn=ipsec-tools&amp;type=prdownload">Statistics</a></li>
+<li><a href="/search/?group_id=74601&amp;type_of_search=files">Search</a></li>
+</ul>
+</li>
+<li><a href="/docman/?group_id=74601" >Documentation</a><ul>
+<li><a href="/docman/?group_id=74601">Browse</a></li>
+<li><a href="/docman/new.php?group_id=74601">Submit</a></li>
+<li class="tools"><a href="/search/?group_id=74601&amp;type_of_search=docs">Search</a></li>
+</ul>
+</li>
+
+                    </ul>
+                </div>
+                            <div id="thirdwave">
+                                    </div>
+                <small class="options">
+                    
+                    
+					                    <a href="/project/stats/?group_id=74601&amp;ugn=ipsec-tools" class="sitestats" title="Project Stats  - Activity: 93.73%">Stats</a>
+					                    <a href="/export/rss2_project.php?group_id=74601" class="rss">RSS</a>
+                </small>
+                <br />
+            </div>
+
+            <!-- begin right column -->
+
+<a name="content"></a>
+						
+<!--
+/mailarchive/header.html - Copyright 1999-2006 (c) Open Source Technology Group
+@version $Id: header.html 14618 2007-03-13 16:57:26Z avoigt $
+-->
+
+<p>
+<h3>Email Archive: <a href="forum.php?forum_name=ipsec-tools-users"><!-- google_ad_section_start -->ipsec-tools-users<!-- google_ad_section_end --></A> (read-only)
+</h3>
+</p>
+
+<table width="450" border=0>
+	<tr>
+		<td>
+			<table width="100%" border="1" cellpadding="1" cellspacing="0">
+	<tr>
+		<th>
+			<center><b>2005:</b></center>
+		</th>
+			<td bgcolor="#eeeeee">
+			<sub>Jan</sub><br />
+									&nbsp;&nbsp;&nbsp;
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Feb</sub><br />
+									&nbsp;&nbsp;&nbsp;
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Mar</sub><br />
+									&nbsp;&nbsp;&nbsp;
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Apr</sub><br />
+									&nbsp;&nbsp;&nbsp;
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>May</sub><br />
+									<a href="forum.php?forum_name=ipsec-tools-users&amp;max_rows=25&amp;style=ultimate&amp;viewmonth=200505">(16)</a>
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Jun</sub><br />
+									<a href="forum.php?forum_name=ipsec-tools-users&amp;max_rows=25&amp;style=ultimate&amp;viewmonth=200506">(25)</a>
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Jul</sub><br />
+									<a href="forum.php?forum_name=ipsec-tools-users&amp;max_rows=25&amp;style=ultimate&amp;viewmonth=200507">(22)</a>
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Aug</sub><br />
+									<a href="forum.php?forum_name=ipsec-tools-users&amp;max_rows=25&amp;style=ultimate&amp;viewmonth=200508">(15)</a>
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Sep</sub><br />
+									<a href="forum.php?forum_name=ipsec-tools-users&amp;max_rows=25&amp;style=ultimate&amp;viewmonth=200509">(21)</a>
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Oct</sub><br />
+									<a href="forum.php?forum_name=ipsec-tools-users&amp;max_rows=25&amp;style=ultimate&amp;viewmonth=200510">(24)</a>
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Nov</sub><br />
+									<a href="forum.php?forum_name=ipsec-tools-users&amp;max_rows=25&amp;style=ultimate&amp;viewmonth=200511">(24)</a>
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Dec</sub><br />
+									<a href="forum.php?forum_name=ipsec-tools-users&amp;max_rows=25&amp;style=ultimate&amp;viewmonth=200512">(41)</a>
+								</td>
+		<tr>
+		<th>
+			<center><b>2006:</b></center>
+		</th>
+			<td bgcolor="#eeeeee">
+			<sub>Jan</sub><br />
+									<a href="forum.php?forum_name=ipsec-tools-users&amp;max_rows=25&amp;style=ultimate&amp;viewmonth=200601">(23)</a>
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Feb</sub><br />
+									<a href="forum.php?forum_name=ipsec-tools-users&amp;max_rows=25&amp;style=ultimate&amp;viewmonth=200602">(39)</a>
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Mar</sub><br />
+									<a href="forum.php?forum_name=ipsec-tools-users&amp;max_rows=25&amp;style=ultimate&amp;viewmonth=200603">(22)</a>
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Apr</sub><br />
+									<a href="forum.php?forum_name=ipsec-tools-users&amp;max_rows=25&amp;style=ultimate&amp;viewmonth=200604">(11)</a>
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>May</sub><br />
+									<a href="forum.php?forum_name=ipsec-tools-users&amp;max_rows=25&amp;style=ultimate&amp;viewmonth=200605">(23)</a>
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Jun</sub><br />
+									<a href="forum.php?forum_name=ipsec-tools-users&amp;max_rows=25&amp;style=ultimate&amp;viewmonth=200606">(17)</a>
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Jul</sub><br />
+									<a href="forum.php?forum_name=ipsec-tools-users&amp;max_rows=25&amp;style=ultimate&amp;viewmonth=200607">(12)</a>
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Aug</sub><br />
+									<a href="forum.php?forum_name=ipsec-tools-users&amp;max_rows=25&amp;style=ultimate&amp;viewmonth=200608">(11)</a>
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Sep</sub><br />
+									<a href="forum.php?forum_name=ipsec-tools-users&amp;max_rows=25&amp;style=ultimate&amp;viewmonth=200609">(27)</a>
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Oct</sub><br />
+									<a href="forum.php?forum_name=ipsec-tools-users&amp;max_rows=25&amp;style=ultimate&amp;viewmonth=200610">(30)</a>
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Nov</sub><br />
+									<a href="forum.php?forum_name=ipsec-tools-users&amp;max_rows=25&amp;style=ultimate&amp;viewmonth=200611">(17)</a>
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Dec</sub><br />
+									<a href="forum.php?forum_name=ipsec-tools-users&amp;max_rows=25&amp;style=ultimate&amp;viewmonth=200612">(16)</a>
+								</td>
+		<tr>
+		<th>
+			<center><b>2007:</b></center>
+		</th>
+			<td bgcolor="#eeeeee">
+			<sub>Jan</sub><br />
+									<a href="forum.php?forum_name=ipsec-tools-users&amp;max_rows=25&amp;style=ultimate&amp;viewmonth=200701">(10)</a>
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Feb</sub><br />
+									<a href="forum.php?forum_name=ipsec-tools-users&amp;max_rows=25&amp;style=ultimate&amp;viewmonth=200702">(38)</a>
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Mar</sub><br />
+									<a href="forum.php?forum_name=ipsec-tools-users&amp;max_rows=25&amp;style=ultimate&amp;viewmonth=200703">(15)</a>
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Apr</sub><br />
+									<a href="forum.php?forum_name=ipsec-tools-users&amp;max_rows=25&amp;style=ultimate&amp;viewmonth=200704">(32)</a>
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>May</sub><br />
+									<a href="forum.php?forum_name=ipsec-tools-users&amp;max_rows=25&amp;style=ultimate&amp;viewmonth=200705">(29)</a>
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Jun</sub><br />
+									<a href="forum.php?forum_name=ipsec-tools-users&amp;max_rows=25&amp;style=ultimate&amp;viewmonth=200706">(15)</a>
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Jul</sub><br />
+									<a href="forum.php?forum_name=ipsec-tools-users&amp;max_rows=25&amp;style=ultimate&amp;viewmonth=200707">(21)</a>
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Aug</sub><br />
+									<a href="forum.php?forum_name=ipsec-tools-users&amp;max_rows=25&amp;style=ultimate&amp;viewmonth=200708">(32)</a>
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Sep</sub><br />
+									<a href="forum.php?forum_name=ipsec-tools-users&amp;max_rows=25&amp;style=ultimate&amp;viewmonth=200709">(17)</a>
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Oct</sub><br />
+									<a href="forum.php?forum_name=ipsec-tools-users&amp;max_rows=25&amp;style=ultimate&amp;viewmonth=200710">(21)</a>
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Nov</sub><br />
+									<a href="forum.php?forum_name=ipsec-tools-users&amp;max_rows=25&amp;style=ultimate&amp;viewmonth=200711">(12)</a>
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Dec</sub><br />
+									<a href="forum.php?forum_name=ipsec-tools-users&amp;max_rows=25&amp;style=ultimate&amp;viewmonth=200712">(10)</a>
+								</td>
+		<tr>
+		<th>
+			<center><b>2008:</b></center>
+		</th>
+			<td bgcolor="#eeeeee">
+			<sub>Jan</sub><br />
+									<a href="forum.php?forum_name=ipsec-tools-users&amp;max_rows=25&amp;style=ultimate&amp;viewmonth=200801">(7)</a>
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Feb</sub><br />
+									<a href="forum.php?forum_name=ipsec-tools-users&amp;max_rows=25&amp;style=ultimate&amp;viewmonth=200802">(22)</a>
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Mar</sub><br />
+									<a href="forum.php?forum_name=ipsec-tools-users&amp;max_rows=25&amp;style=ultimate&amp;viewmonth=200803">(40)</a>
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Apr</sub><br />
+									&nbsp;&nbsp;&nbsp;
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>May</sub><br />
+									&nbsp;&nbsp;&nbsp;
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Jun</sub><br />
+									&nbsp;&nbsp;&nbsp;
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Jul</sub><br />
+									&nbsp;&nbsp;&nbsp;
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Aug</sub><br />
+									&nbsp;&nbsp;&nbsp;
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Sep</sub><br />
+									&nbsp;&nbsp;&nbsp;
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Oct</sub><br />
+									&nbsp;&nbsp;&nbsp;
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Nov</sub><br />
+									&nbsp;&nbsp;&nbsp;
+								</td>
+			<td bgcolor="#eeeeee">
+			<sub>Dec</sub><br />
+									&nbsp;&nbsp;&nbsp;
+								</td>
+	</table>
+			
+		</td>
+	</tr>
+</table>
+
+<form action="/mailarchive/forum.php" method="get">
+<input type="hidden" name="set" value="custom">
+<input type="hidden" name="viewmonth" value="">
+<input type="hidden" name="viewday" value="">
+
+<table border="0" width="500">
+	<tr>
+		<td>
+			<small>
+			
+<select name="forum_name">
+	<option value="ipsec-tools-users" selected="selected">ipsec-tools-users</option>
+	<option value="ipsec-tools-devel">ipsec-tools-devel</option>
+	<option value="ipsec-tools-commits">ipsec-tools-commits</option>
+	<option value="ipsec-tools-announce">ipsec-tools-announce</option>
+</select>
+
+			</small>
+		</td>
+		<td>
+			<small>
+			
+<select name="style">
+	<option value="nested">Nested</option>
+	<option value="flat">Flat</option>
+	<option value="threaded">Threaded</option>
+	<option value="ultimate" selected="selected">Ultimate</option>
+</select>
+
+			</small>
+		</td>
+		<td>
+			<small>
+			
+<select name="max_rows">
+	<option value="25" selected="selected">Show 25</option>
+	<option value="50">Show 50</option>
+	<option value="75">Show 75</option>
+	<option value="100">Show 100</option>
+</select>
+
+			</small>
+		</td>
+		<td>
+			<small>
+			<input type="submit" name="submit" value="Change View">
+			</small>
+		</td>
+	</tr>
+</table>
+
+
+
+
+	
+<table width="100%" border="0" cellspacing="2" cellpadding="3">
+<tr bgcolor="#ffffff">
+<td align="middle"><font color="#000000"><b>Topic<b></font></td>
+<td align="middle"><font color="#000000"><b>Topic Starter<b></font></td>
+<td align="middle"><font color="#000000"><b>Thread<br>Posts<b></font></td>
+<td align="middle"><font color="#000000"><b>Last Post<b></font></td>
+</tr>
+
+			<tr bgcolor="#ffffff">
+			<td width="50%"><a href="/mailarchive/forum.php?thread_name=52FC6A79.5%25Kertu-jiseitai%40CJ-TECH.CO.KR&forum_name=ipsec-tools-users"><img src="http://images.sourceforge.net/images/ic/cfolder15.png" alt="" width="15" height="13" /> &nbsp; <!-- google_ad_section_start -->[Ipsec-tools-users] Your partner will love you more now<!-- google_ad_section_end --></a></td>
+			<td>Kertu Gilkey &lt;Kertu-jiseitai@CJ...&gt;</td>
+			<td>1</td>
+			<td>2008-03-31 10:25</td>
+		</tr>
+			<tr bgcolor="#eaecef">
+			<td width="50%"><a href="/mailarchive/forum.php?thread_name=F8E43DFE.6%25suoicned_2004%40EDUC.KENT.EDU&forum_name=ipsec-tools-users"><img src="http://images.sourceforge.net/images/ic/cfolder15.png" alt="" width="15" height="13" /> &nbsp; <!-- google_ad_section_start -->[Ipsec-tools-users] Not enough length, no problem<!-- google_ad_section_end --></a></td>
+			<td>Kenbond Hagenah &lt;suoicned_2004@ED...&gt;</td>
+			<td>1</td>
+			<td>2008-03-30 16:21</td>
+		</tr>
+			<tr bgcolor="#ffffff">
+			<td width="50%"><a href="/mailarchive/forum.php?thread_name=ACC29641-B6FB-3FDC-B96B-F9AFA4298E6E%40lists.sourceforge.net&forum_name=ipsec-tools-users"><img src="http://images.sourceforge.net/images/ic/cfolder15.png" alt="" width="15" height="13" /> &nbsp; <!-- google_ad_section_start -->[Ipsec-tools-users] Lindsay wet and ready<!-- google_ad_section_end --></a></td>
+			<td>irv menace &lt;suteto@FH...&gt;</td>
+			<td>1</td>
+			<td>2008-03-28 13:33</td>
+		</tr>
+			<tr bgcolor="#eaecef">
+			<td width="50%"><a href="/mailarchive/forum.php?thread_name=5437E542.8%25aenila%403d-artdesign.com&forum_name=ipsec-tools-users"><img src="http://images.sourceforge.net/images/ic/cfolder15.png" alt="" width="15" height="13" /> &nbsp; <!-- google_ad_section_start -->[Ipsec-tools-users] Change Your Life Forever<!-- google_ad_section_end --></a></td>
+			<td>brie Lindmark &lt;aenila@3d...&gt;</td>
+			<td>1</td>
+			<td>2008-03-27 10:49</td>
+		</tr>
+			<tr bgcolor="#ffffff">
+			<td width="50%"><a href="/mailarchive/forum.php?thread_name=27FBE20A-06A0-CEE8-E47B-960B9E595A9E%40lists.sourceforge.net&forum_name=ipsec-tools-users"><img src="http://images.sourceforge.net/images/ic/cfolder15.png" alt="" width="15" height="13" /> &nbsp; <!-- google_ad_section_start -->[Ipsec-tools-users] Get freaky at the motel<!-- google_ad_section_end --></a></td>
+			<td>Dariel hassaan &lt;Dariel-ikvystyt@BI...&gt;</td>
+			<td>1</td>
+			<td>2008-03-26 09:56</td>
+		</tr>
+			<tr bgcolor="#eaecef">
+			<td width="50%"><a href="/mailarchive/forum.php?thread_name=CF7C0641-45E4-AC56-E714-B8BCF6EA5F72%40lists.sourceforge.net&forum_name=ipsec-tools-users"><img src="http://images.sourceforge.net/images/ic/cfolder15.png" alt="" width="15" height="13" /> &nbsp; <!-- google_ad_section_start -->[Ipsec-tools-users] Find out what works for men<!-- google_ad_section_end --></a></td>
+			<td>Mansuh Denton &lt;Mansuh-psnehcer@4s...&gt;</td>
+			<td>1</td>
+			<td>2008-03-24 22:22</td>
+		</tr>
+			<tr bgcolor="#ffffff">
+			<td width="50%"><a href="/mailarchive/forum.php?thread_name=EB21B0DE-67FC-61CA-E539-51A3FFBC36E3%40lists.sourceforge.net&forum_name=ipsec-tools-users"><img src="http://images.sourceforge.net/images/ic/cfolder15.png" alt="" width="15" height="13" /> &nbsp; <!-- google_ad_section_start -->[Ipsec-tools-users] Feel her all over<!-- google_ad_section_end --></a></td>
+			<td>hantu Liou &lt;0muriel@21...&gt;</td>
+			<td>1</td>
+			<td>2008-03-24 12:38</td>
+		</tr>
+			<tr bgcolor="#eaecef">
+			<td width="50%"><a href="/mailarchive/forum.php?thread_name=1DD5308B.1%25jyousasi%40RFFTODAY.COM&forum_name=ipsec-tools-users"><img src="http://images.sourceforge.net/images/ic/cfolder15.png" alt="" width="15" height="13" /> &nbsp; <!-- google_ad_section_start -->[Ipsec-tools-users] Amateur videos for you<!-- google_ad_section_end --></a></td>
+			<td>casey Raines &lt;jyousasi@RF...&gt;</td>
+			<td>1</td>
+			<td>2008-03-23 10:45</td>
+		</tr>
+			<tr bgcolor="#ffffff">
+			<td width="50%"><a href="/mailarchive/forum.php?thread_name=9BAC88EA-E2C4-7134-A4CF-9BF1F580BEF5%40lists.sourceforge.net&forum_name=ipsec-tools-users"><img src="http://images.sourceforge.net/images/ic/cfolder15.png" alt="" width="15" height="13" /> &nbsp; <!-- google_ad_section_start -->[Ipsec-tools-users] Herbal Science Revolutionary Breakthrough<!-- google_ad_section_end --></a></td>
+			<td>Viktor Lubell &lt;Viktor-oznennib@RF...&gt;</td>
+			<td>1</td>
+			<td>2008-03-22 15:02</td>
+		</tr>
+			<tr bgcolor="#eaecef">
+			<td width="50%"><a href="/mailarchive/forum.php?thread_name=75224DBE.7%25soheb-belffuhs%4019.co.uk&forum_name=ipsec-tools-users"><img src="http://images.sourceforge.net/images/ic/cfolder15.png" alt="" width="15" height="13" /> &nbsp; <!-- google_ad_section_start -->[Ipsec-tools-users] Kiss Bang Bonk Galore<!-- google_ad_section_end --></a></td>
+			<td>soheb melanie &lt;soheb-belffuhs@19...&gt;</td>
+			<td>1</td>
+			<td>2008-03-22 10:38</td>
+		</tr>
+			<tr bgcolor="#ffffff">
+			<td width="50%"><a href="/mailarchive/forum.php?thread_name=001201c88b30%242cee87a0%24425fcdd4%40your49c37e7425&forum_name=ipsec-tools-users"><img src="http://images.sourceforge.net/images/ic/cfolder15.png" alt="" width="15" height="13" /> &nbsp; <!-- google_ad_section_start -->[Ipsec-tools-users] Britney moans loud when she comes<!-- google_ad_section_end --></a></td>
+			<td>Andrey Dobberteen &lt;epiction1961@SI...&gt;</td>
+			<td>1</td>
+			<td>2008-03-21 08:47</td>
+		</tr>
+			<tr bgcolor="#eaecef">
+			<td width="50%"><a href="/mailarchive/forum.php?thread_name=000601c88a65%248bd1eda0%24a17e3d52%40xp1&forum_name=ipsec-tools-users"><img src="http://images.sourceforge.net/images/ic/cfolder15.png" alt="" width="15" height="13" /> &nbsp; <!-- google_ad_section_start -->[Ipsec-tools-users] Subject her to a punishing ride<!-- google_ad_section_end --></a></td>
+			<td>EM LeBrun &lt;berecurb_2003@FR...&gt;</td>
+			<td>1</td>
+			<td>2008-03-20 08:36</td>
+		</tr>
+			<tr bgcolor="#ffffff">
+			<td width="50%"><a href="/mailarchive/forum.php?thread_name=47E21713.7010101%40tronicplanet.de&forum_name=ipsec-tools-users"><img src="http://images.sourceforge.net/images/ic/cfolder15.png" alt="" width="15" height="13" /> &nbsp; <!-- google_ad_section_start -->Re: [Ipsec-tools-users] security problem with racoon and remote
+	anonymous<!-- google_ad_section_end --></a></td>
+			<td>Thomas Stegbauer &lt;thomas.stegbauer@tr...&gt;</td>
+			<td>2</td>
+			<td>2008-03-20 09:56</td>
+		</tr>
+			<tr bgcolor="#eaecef">
+			<td width="50%"><a href="/mailarchive/forum.php?thread_name=8845881068.20080319131753%40infocamp.com.br&forum_name=ipsec-tools-users"><img src="http://images.sourceforge.net/images/ic/cfolder15.png" alt="" width="15" height="13" /> &nbsp; <!-- google_ad_section_start -->[Ipsec-tools-users] donates<!-- google_ad_section_end --></a></td>
+			<td>Chism Prescott &lt;slithery@in...&gt;</td>
+			<td>1</td>
+			<td>2008-03-19 17:08</td>
+		</tr>
+			<tr bgcolor="#ffffff">
+			<td width="50%"><a href="/mailarchive/forum.php?thread_name=2ea2d00c966a6238e75940cc4eccfddf%40chopper.luffy.cx&forum_name=ipsec-tools-users"><img src="http://images.sourceforge.net/images/ic/cfolder15.png" alt="" width="15" height="13" /> &nbsp; <!-- google_ad_section_start -->[Ipsec-tools-users] NAT-T and transport mode status<!-- google_ad_section_end --></a></td>
+			<td>Vincent Bernat &lt;bernat@lu...&gt;</td>
+			<td>1</td>
+			<td>2008-03-19 08:16</td>
+		</tr>
+			<tr bgcolor="#eaecef">
+			<td width="50%"><a href="/mailarchive/forum.php?thread_name=000f01c8890b%24c8989eb0%246ab6164f%40NSC&forum_name=ipsec-tools-users"><img src="http://images.sourceforge.net/images/ic/cfolder15.png" alt="" width="15" height="13" /> &nbsp; <!-- google_ad_section_start -->[Ipsec-tools-users] Change your life around today<!-- google_ad_section_end --></a></td>
+			<td>wilfredo Chavarie &lt;wilfredo-aolatalo@Ad...&gt;</td>
+			<td>1</td>
+			<td>2008-03-18 15:21</td>
+		</tr>
+			<tr bgcolor="#ffffff">
+			<td width="50%"><a href="/mailarchive/forum.php?thread_name=000c01c88816%2409ec0560%2402fdbdd4%40Teresa&forum_name=ipsec-tools-users"><img src="http://images.sourceforge.net/images/ic/cfolder15.png" alt="" width="15" height="13" /> &nbsp; <!-- google_ad_section_start -->[Ipsec-tools-users] Real Men Have The Real Deal!<!-- google_ad_section_end --></a></td>
+			<td>PHUOC Endsley &lt;tnanger@MA...&gt;</td>
+			<td>1</td>
+			<td>2008-03-17 10:03</td>
+		</tr>
+			<tr bgcolor="#eaecef">
+			<td width="50%"><a href="/mailarchive/forum.php?thread_name=001201c88786%242eb2db20%24eb8f114f%40db1ecc5eab4e427&forum_name=ipsec-tools-users"><img src="http://images.sourceforge.net/images/ic/cfolder15.png" alt="" width="15" height="13" /> &nbsp; <!-- google_ad_section_start -->[Ipsec-tools-users] Develop more self confidence instantly<!-- google_ad_section_end --></a></td>
+			<td>cemil krishna &lt;cemil-ugurammo@OH...&gt;</td>
+			<td>1</td>
+			<td>2008-03-16 16:52</td>
+		</tr>
+			<tr bgcolor="#ffffff">
+			<td width="50%"><a href="/mailarchive/forum.php?thread_name=632d4b970803130835i281bb49bxabb8c43e7c89ea5%40mail.gmail.com&forum_name=ipsec-tools-users"><img src="http://images.sourceforge.net/images/ic/cfolder15.png" alt="" width="15" height="13" /> &nbsp; <!-- google_ad_section_start -->[Ipsec-tools-users] Racoon appears to hang<!-- google_ad_section_end --></a></td>
+			<td>Chris Lane &lt;splitbus@gm...&gt;</td>
+			<td>2</td>
+			<td>2008-03-18 15:34</td>
+		</tr>
+			<tr bgcolor="#eaecef">
+			<td width="50%"><a href="/mailarchive/forum.php?thread_name=000701c88458%2406a6381c%2404f4709e%40aicvx&forum_name=ipsec-tools-users"><img src="http://images.sourceforge.net/images/ic/cfolder15.png" alt="" width="15" height="13" /> &nbsp; <!-- google_ad_section_start -->[Ipsec-tools-users] aleck arid<!-- google_ad_section_end --></a></td>
+			<td>elnar elvira &lt;-ron13@aa...&gt;</td>
+			<td>1</td>
+			<td>2008-03-12 15:51</td>
+		</tr>
+			<tr bgcolor="#ffffff">
+			<td width="50%"><a href="/mailarchive/forum.php?thread_name=000d01c8842b%24541f0b80%2450cd084f%40sarae63c22db25&forum_name=ipsec-tools-users"><img src="http://images.sourceforge.net/images/ic/cfolder15.png" alt="" width="15" height="13" /> &nbsp; <!-- google_ad_section_start -->[Ipsec-tools-users] Pics of Scarlett Johansson<!-- google_ad_section_end --></a></td>
+			<td>Kael lampshire &lt;Kael-snetrops@ab...&gt;</td>
+			<td>1</td>
+			<td>2008-03-12 10:25</td>
+		</tr>
+			<tr bgcolor="#eaecef">
+			<td width="50%"><a href="/mailarchive/forum.php?thread_name=000601c8835d%24e8e3cea0%24d6ec7151%40NUOVO&forum_name=ipsec-tools-users"><img src="http://images.sourceforge.net/images/ic/cfolder15.png" alt="" width="15" height="13" /> &nbsp; <!-- google_ad_section_start -->[Ipsec-tools-users] Hidden cam in changing room<!-- google_ad_section_end --></a></td>
+			<td>Blazej Dare &lt;Blazej-dreeluna@Cr...&gt;</td>
+			<td>1</td>
+			<td>2008-03-11 09:54</td>
+		</tr>
+			<tr bgcolor="#ffffff">
+			<td width="50%"><a href="/mailarchive/forum.php?thread_name=000d01c882cc%243ef768c0%2471001c57%40CASSAATHENEUM&forum_name=ipsec-tools-users"><img src="http://images.sourceforge.net/images/ic/cfolder15.png" alt="" width="15" height="13" /> &nbsp; <!-- google_ad_section_start -->[Ipsec-tools-users] Victoria Secrets models catfight<!-- google_ad_section_end --></a></td>
+			<td>Selvakumary Kaarenoja &lt;tsdaeher@ai...&gt;</td>
+			<td>1</td>
+			<td>2008-03-10 16:31</td>
+		</tr>
+			<tr bgcolor="#eaecef">
+			<td width="50%"><a href="/mailarchive/forum.php?thread_name=000901c88222%24c0671860%240eaacd57%40psutek&forum_name=ipsec-tools-users"><img src="http://images.sourceforge.net/images/ic/cfolder15.png" alt="" width="15" height="13" /> &nbsp; <!-- google_ad_section_start -->[Ipsec-tools-users] Average length of a male is 7 inches<!-- google_ad_section_end --></a></td>
+			<td>Dragoljub Edman &lt;taramasc@al...&gt;</td>
+			<td>1</td>
+			<td>2008-03-09 20:18</td>
+		</tr>
+			<tr bgcolor="#ffffff">
+			<td width="50%"><a href="/mailarchive/forum.php?thread_name=000e01c881d7%2453e1ae30%2444ba074f%40oem&forum_name=ipsec-tools-users"><img src="http://images.sourceforge.net/images/ic/cfolder15.png" alt="" width="15" height="13" /> &nbsp; <!-- google_ad_section_start -->[Ipsec-tools-users] Unbelievable size and width<!-- google_ad_section_end --></a></td>
+			<td>Korie Sofillas &lt;manned1959@DE...&gt;</td>
+			<td>1</td>
+			<td>2008-03-09 11:18</td>
+		</tr>
+		</table>
+
+
+<table width="100%" border="0">
+        <tr bgcolor="#eeeeee">
+                <td width="50%">
+                                        &nbsp;
+                                </td>
+                <td>&nbsp;</td>
+                <td align="right" width="50%">
+                						<a href="forum.php?max_rows=25&style=ultimate&offset=25&forum_name=ipsec-tools-users">
+						<b>Next Messages <img src="http://images.sourceforge.net/images/t.gif" align="middle" alt="" width="15" height="15" /></b></a>
+                                </td>
+        </tr>
+</table>
+
+</form>
+
+	</div>
+</div>
+
+
+
+<div id="footer">
+        <ul>
+		<li><a href="/docs/about">About SourceForge.net</a></li>
+		<li><a href="/tos/privacy.php">Privacy Statement</a></li>
+		<li><a href="/tos/tos.php">Terms of Use</a></li>
+		<li><a href="http://web.sourceforge.com/media_kit.php">Advertise</a></li>
+		<li><a href="/support/getsupport.php">Get Support</a></li>
+		<li><a href="/supporters.php">Our Supporters</a></li>
+		<li><a href="/subscriptions.php">Subscribe</a></li>
+		<li><a href="http://newsletters.ostg.com/wws/subrequest/sourceforge-daily">Newsletter</a></li>
+		<li><a href="/export/rss2_sfnews.php?group_id=1&amp;rss_fulltext=1">RSS</a></li>
+	</ul>
+	<p>
+		&copy;Copyright 1999-2008 - <a href="http://sourceforge.com"  title="Network which provides and promotes Open Source software downloads, development, discussion and news.">SourceForge</a>, Inc., All Rights Reserved 
+	</p>
+        	<ul class="ostgnavbar">
+		<li class="begin"><a href="http://sourceforge.com">SourceForge</a></li>
+		<li><a href="http://thinkgeek.com">ThinkGeek</a></li>
+		<li><a href="http://slashdot.org">Slashdot</a></li>
+		<li><a href="http://itmj.com">ITMJ</a></li>
+		<li><a href="http://linux.com">Linux.com</a></li>
+		<li><a href="http://newsforge.com">NewsForge</a></li>
+		<li><a href="http://freshmeat.net">freshmeat</a></li>
+		<li><a href="http://newsletters.ostg.com">Newsletters</a></li>
+		<li><a href="http://sourceforge.pricegrabber.com/">PriceGrabber</a></li>
+		<li><a href="http://ad.doubleclick.net/clk;177533387;24688860;z?http://seeker.dice.com/jobsearch/genthree/index.jsp">Jobs</a></li>
+	</ul>
+</div>
+ 
+<!-- Ad calls and positioning -->
+<div id="adbatch" class="mail_archive">
+	 
+
+	
+		<div id="fad1">
+			<div>
+				<div>
+				<!-- DoubleClick Ad Tag -->
+<script type="text/javascript">
+//<![CDATA[
+   document.write('<script src="http://ad.doubleclick.net/adj/ostg.sourceforge/security_p1_leader;pg=/mailarchive/forum.php;psrch=0;logged_in=0;tile='+dfp_tile+';tpc=ipsec-tools;tpc=os_groups;tpc=modern_oses;tpc=linux;tpc=posix;tpc=c;tpc=networking;tpc=system;tpc=security;ord='+dfp_ord+'?" type="text/javascript"><\/script>');
+   dfp_tile++;
+//]]>
+</script>
+<!-- End DoubleClick Ad Tag -->
+				</div>
+							</div>
+		</div>
+		
+		
+
+	 
+</div>
+
+
+<script type="text/javascript">
+pageTracker._trackPageview();
+</script>
+
+
+</body>
+</html>
+ 	  	 

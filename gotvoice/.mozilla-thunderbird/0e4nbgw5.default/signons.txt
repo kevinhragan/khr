@@ -1,0 +1,8 @@
+#2c
+.
+smtp://kevinr@mail.gotvoice.com
+\=username=\
+~
+*\=password=\
+~I2VudGl0eTM=
+.

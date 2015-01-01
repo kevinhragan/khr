@@ -1,0 +1,35 @@
+added server_id and bin_log on cairo
+steps for ra db migration
+    config cairo to be a replicaton master; access for nut, binary logging
+    databases to move (?): gv, ocns, garg, lerg
+    
+    not move: host1_gv, oldocns, mysql
+
+
+steps:
+pre:
+    copy/rsync relevevant database files ra -> cairo     
+
+switch:
+ra:
+    "flush tables with read lock"; 
+    "show master status", record output
+ra-bin.000033 | 475501323
+    kill mysqld  
+cairo:
+    "flush tables with read lock"; 
+    "show master status", record output
+ cairo-bin.000002 | 25151131 | 
+    kill mysqld  
+rsync database dirs from /var/mysql: gv ocns lerg and garg. ra -> cairo
+start cairo 
+update access permissions for new dbs
+point db connects to cairo 
+verify
+ 
+post:
+fix nut to slave
+    catch up after inserting cairo's log position
+move db backup ra -> cairo
+update cfengine backup info
+update nagios checks

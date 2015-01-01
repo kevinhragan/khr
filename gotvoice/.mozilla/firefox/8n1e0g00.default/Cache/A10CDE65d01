@@ -1,0 +1,390 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Debian GNU/Linux Installation Guide</title>
+<link rel="stylesheet" href="install.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.68.1">
+<meta name="description" content="
+This document contains installation instructions for the Debian GNU/Linux
+4.0 system (codename etch),
+for the Intel x86 (i386)
+architecture.  It also contains pointers to more information and
+information on how to make the most of your new Debian system.
+ 
+
+
+
+
+
+Although this installation guide for i386 is mostly up-to-date,
+we plan to make some changes and reorganize parts of the manual after the
+official release of etch. A newer version of this manual may be
+found on the Internet at the debian-installer home page.
+You may also be able to find additional translations there.
+
+">
+<link rel="start" href="index.html.en" title="Debian GNU/Linux Installation Guide">
+<link rel="next" href="pr01.html.en" title="Installing Debian GNU/Linux 4.0 For i386">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="navheader">
+<table width="100%" summary="Navigation header">
+<tr><th colspan="3" align="center">Debian GNU/Linux Installation Guide</th></tr>
+<tr>
+<td width="20%" align="left"> </td>
+<th width="60%" align="center"> </th>
+<td width="20%" align="right"> <a accesskey="n" href="pr01.html.en">Next</a>
+</td>
+</tr>
+</table>
+<hr>
+</div>
+<div class="book" lang="en">
+<div class="titlepage">
+<div>
+<div><h1 class="title">
+<a name="id2529713"></a>Debian GNU/Linux Installation Guide</h1></div>
+<div><p class="copyright">Copyright © 2004, 2005, 2006, 2007 the Debian Installer team</p></div>
+<div><div class="legalnotice">
+<a name="id2468272"></a><p>
+
+This manual is free software; you may redistribute it and/or modify it
+under the terms of the GNU General Public License. Please refer to the
+license in <a href="apf.html.en" title="Appendix F. GNU General Public License">Appendix F, <i>GNU General Public License</i></a>.
+
+</p>
+</div></div>
+<div><div class="abstract">
+<p class="title"><b>Abstract</b></p>
+<p>
+This document contains installation instructions for the Debian GNU/Linux
+4.0 system (codename “<span class="quote">etch</span>”),
+for the <span>Intel x86</span> (“<span class="quote">i386</span>”)
+architecture.  It also contains pointers to more information and
+information on how to make the most of your new Debian system.
+</p>
+<p>
+
+
+
+
+</p>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Note</h3>
+<p>
+Although this installation guide for i386 is mostly up-to-date,
+we plan to make some changes and reorganize parts of the manual after the
+official release of etch. A newer version of this manual may be
+found on the Internet at the <a href="http://www.debian.org/devel/debian-installer/" target="_top"><code class="classname">debian-installer</code> home page</a>.
+You may also be able to find additional translations there.
+</p>
+</div>
+<p>
+</p>
+</div></div>
+</div>
+<hr>
+</div>
+<div class="toc">
+<p><b>Table of Contents</b></p>
+<dl>
+<dt><span class="preface"><a href="pr01.html.en">Installing Debian GNU/Linux 4.0 For i386</a></span></dt>
+<dt><span class="chapter"><a href="ch01.html.en">1. Welcome to Debian</a></span></dt>
+<dd><dl>
+<dt><span class="sect1"><a href="ch01s01.html.en">1.1. What is Debian?</a></span></dt>
+<dt><span class="sect1"><a href="ch01s02.html.en">1.2. What is GNU/Linux?</a></span></dt>
+<dt><span class="sect1"><a href="ch01s03.html.en">1.3. What is Debian GNU/Linux?</a></span></dt>
+<dt><span class="sect1"><a href="ch01s04.html.en">1.4. Getting Debian</a></span></dt>
+<dt><span class="sect1"><a href="ch01s05.html.en">1.5. Getting the Newest Version of This Document</a></span></dt>
+<dt><span class="sect1"><a href="ch01s06.html.en">1.6. Organization of This Document</a></span></dt>
+<dt><span class="sect1"><a href="ch01s07.html.en">1.7. About Copyrights and Software Licenses
+    </a></span></dt>
+</dl></dd>
+<dt><span class="chapter"><a href="ch02.html.en">2. System Requirements</a></span></dt>
+<dd><dl>
+<dt><span class="sect1"><a href="ch02s01.html.en">2.1. Supported Hardware</a></span></dt>
+<dd><dl>
+<dt><span class="sect2"><a href="ch02s01.html.en#id2529946">2.1.1. Supported Architectures</a></span></dt>
+<dt><span class="sect2"><a href="ch02s01.html.en#id2530465">2.1.2. CPU, Main Boards, and Video Support</a></span></dt>
+<dt><span class="sect2"><a href="ch02s01.html.en#gfx">2.1.3. Graphics Card Support</a></span></dt>
+<dt><span class="sect2"><a href="ch02s01.html.en#laptops">2.1.4. Laptops</a></span></dt>
+<dt><span class="sect2"><a href="ch02s01.html.en#id2467397">2.1.5. Multiple Processors</a></span></dt>
+</dl></dd>
+<dt><span class="sect1"><a href="ch02s02.html.en">2.2. Installation Media</a></span></dt>
+<dd><dl>
+<dt><span class="sect2"><a href="ch02s02.html.en#id2530880">2.2.1. Floppies</a></span></dt>
+<dt><span class="sect2"><a href="ch02s02.html.en#id2530894">2.2.2. CD-ROM/DVD-ROM</a></span></dt>
+<dt><span class="sect2"><a href="ch02s02.html.en#id2530955">2.2.3. Hard Disk</a></span></dt>
+<dt><span class="sect2"><a href="ch02s02.html.en#id2530967">2.2.4. USB Memory Stick</a></span></dt>
+<dt><span class="sect2"><a href="ch02s02.html.en#id2530985">2.2.5. Network</a></span></dt>
+<dt><span class="sect2"><a href="ch02s02.html.en#id2531018">2.2.6. Un*x or GNU system</a></span></dt>
+<dt><span class="sect2"><a href="ch02s02.html.en#id2531043">2.2.7. Supported Storage Systems</a></span></dt>
+</dl></dd>
+<dt><span class="sect1"><a href="ch02s03.html.en">2.3. Peripherals and Other Hardware</a></span></dt>
+<dt><span class="sect1"><a href="ch02s04.html.en">2.4. Purchasing Hardware Specifically for GNU/Linux</a></span></dt>
+<dd><dl>
+<dt><span class="sect2"><a href="ch02s04.html.en#id2531195">2.4.1. Avoid Proprietary or Closed Hardware</a></span></dt>
+<dt><span class="sect2"><a href="ch02s04.html.en#id2531216">2.4.2. Windows-specific Hardware</a></span></dt>
+</dl></dd>
+<dt><span class="sect1"><a href="ch02s05.html.en">2.5. Memory and Disk Space Requirements</a></span></dt>
+<dt><span class="sect1"><a href="ch02s06.html.en">2.6. Network Connectivity Hardware</a></span></dt>
+<dd><dl>
+<dt><span class="sect2"><a href="ch02s06.html.en#nics-firmware">2.6.1. Drivers Requiring Firmware</a></span></dt>
+<dt><span class="sect2"><a href="ch02s06.html.en#nics-wireless">2.6.2. Wireless Network Cards</a></span></dt>
+</dl></dd>
+</dl></dd>
+<dt><span class="chapter"><a href="ch03.html.en">3. Before Installing Debian GNU/Linux</a></span></dt>
+<dd><dl>
+<dt><span class="sect1"><a href="ch03s01.html.en">3.1. Overview of the Installation Process</a></span></dt>
+<dt><span class="sect1"><a href="ch03s02.html.en">3.2. Back Up Your Existing Data!</a></span></dt>
+<dt><span class="sect1"><a href="ch03s03.html.en">3.3. Information You Will Need</a></span></dt>
+<dd><dl>
+<dt><span class="sect2"><a href="ch03s03.html.en#id2531788">3.3.1. Documentation</a></span></dt>
+<dt><span class="sect2"><a href="ch03s03.html.en#fsohi">3.3.2. Finding Sources of Hardware Information</a></span></dt>
+<dt><span class="sect2"><a href="ch03s03.html.en#id2532171">3.3.3. Hardware Compatibility</a></span></dt>
+<dt><span class="sect2"><a href="ch03s03.html.en#id2532236">3.3.4. Network Settings</a></span></dt>
+</dl></dd>
+<dt><span class="sect1"><a href="ch03s04.html.en">3.4. Meeting Minimum Hardware Requirements</a></span></dt>
+<dt><span class="sect1"><a href="ch03s05.html.en">3.5. Pre-Partitioning for Multi-Boot Systems</a></span></dt>
+<dd><dl><dt><span class="sect2"><a href="ch03s05.html.en#id2532702">3.5.1. Partitioning From DOS or Windows</a></span></dt></dl></dd>
+<dt><span class="sect1"><a href="ch03s06.html.en">3.6. Pre-Installation Hardware and Operating System Setup</a></span></dt>
+<dd><dl>
+<dt><span class="sect2"><a href="ch03s06.html.en#bios-setup">3.6.1. Invoking the BIOS Set-Up Menu</a></span></dt>
+<dt><span class="sect2"><a href="ch03s06.html.en#boot-dev-select">3.6.2. Boot Device Selection</a></span></dt>
+<dt><span class="sect2"><a href="ch03s06.html.en#id2533470">3.6.3. Miscellaneous BIOS Settings</a></span></dt>
+<dt><span class="sect2"><a href="ch03s06.html.en#hardware-issues">3.6.4. Hardware Issues to Watch Out For</a></span></dt>
+</dl></dd>
+</dl></dd>
+<dt><span class="chapter"><a href="ch04.html.en">4. Obtaining System Installation Media</a></span></dt>
+<dd><dl>
+<dt><span class="sect1"><a href="ch04s01.html.en">4.1. Official Debian GNU/Linux CD-ROM Sets</a></span></dt>
+<dt><span class="sect1"><a href="ch04s02.html.en">4.2. Downloading Files from Debian Mirrors</a></span></dt>
+<dd><dl><dt><span class="sect2"><a href="ch04s02.html.en#where-files">4.2.1. Where to Find Installation Images</a></span></dt></dl></dd>
+<dt><span class="sect1"><a href="ch04s03.html.en">4.3. Creating Floppies from Disk Images</a></span></dt>
+<dd><dl>
+<dt><span class="sect2"><a href="ch04s03.html.en#id2534059">4.3.1. Writing Disk Images From a Linux or Unix System</a></span></dt>
+<dt><span class="sect2"><a href="ch04s03.html.en#id2534127">4.3.2. Writing Disk Images From DOS, Windows, or OS/2</a></span></dt>
+</dl></dd>
+<dt><span class="sect1"><a href="ch04s04.html.en">4.4. Preparing Files for USB Memory Stick Booting</a></span></dt>
+<dd><dl>
+<dt><span class="sect2"><a href="ch04s04.html.en#usb-copy-easy">4.4.1. Copying the files — the easy way</a></span></dt>
+<dt><span class="sect2"><a href="ch04s04.html.en#usb-copy-flexible">4.4.2. Copying the files — the flexible way</a></span></dt>
+<dt><span class="sect2"><a href="ch04s04.html.en#usb-add-iso">4.4.3. Adding an ISO image</a></span></dt>
+<dt><span class="sect2"><a href="ch04s04.html.en#id2534621">4.4.4. Booting the USB stick</a></span></dt>
+</dl></dd>
+<dt><span class="sect1"><a href="ch04s05.html.en">4.5. Preparing Files for Hard Disk Booting</a></span></dt>
+<dd><dl><dt><span class="sect2"><a href="ch04s05.html.en#files-lilo">4.5.1. Hard disk installer booting using <span><strong class="command">LILO</strong></span> or
+  <span><strong class="command">GRUB</strong></span></a></span></dt></dl></dd>
+<dt><span class="sect1"><a href="ch04s06.html.en">4.6. Preparing Files for TFTP Net Booting</a></span></dt>
+<dd><dl>
+<dt><span class="sect2"><a href="ch04s06.html.en#tftp-bootp">4.6.1. Setting up a BOOTP server</a></span></dt>
+<dt><span class="sect2"><a href="ch04s06.html.en#dhcpd">4.6.2. Setting up a DHCP server</a></span></dt>
+<dt><span class="sect2"><a href="ch04s06.html.en#tftpd">4.6.3. Enabling the TFTP Server</a></span></dt>
+<dt><span class="sect2"><a href="ch04s06.html.en#tftp-images">4.6.4. Move TFTP Images Into Place</a></span></dt>
+</dl></dd>
+<dt><span class="sect1"><a href="ch04s07.html.en">4.7. Automatic Installation</a></span></dt>
+<dd><dl><dt><span class="sect2"><a href="ch04s07.html.en#preseed">4.7.1. Automatic Installation Using the Debian Installer</a></span></dt></dl></dd>
+</dl></dd>
+<dt><span class="chapter"><a href="ch05.html.en">5. Booting the Installation System</a></span></dt>
+<dd><dl>
+<dt><span class="sect1"><a href="ch05s01.html.en">5.1. Booting the Installer on <span>Intel x86</span></a></span></dt>
+<dd><dl>
+<dt><span class="sect2"><a href="ch05s01.html.en#id2535631">5.1.1. Booting from a CD-ROM</a></span></dt>
+<dt><span class="sect2"><a href="ch05s01.html.en#boot-initrd">5.1.2. Booting from Linux Using <span><strong class="command">LILO</strong></span> or
+  <span><strong class="command">GRUB</strong></span></a></span></dt>
+<dt><span class="sect2"><a href="ch05s01.html.en#usb-boot">5.1.3. Booting from USB Memory Stick</a></span></dt>
+<dt><span class="sect2"><a href="ch05s01.html.en#floppy-boot">5.1.4. Booting from Floppies</a></span></dt>
+<dt><span class="sect2"><a href="ch05s01.html.en#boot-tftp">5.1.5. Booting with TFTP</a></span></dt>
+<dt><span class="sect2"><a href="ch05s01.html.en#id2536232">5.1.6. The Boot Prompt</a></span></dt>
+</dl></dd>
+<dt><span class="sect1"><a href="ch05s02.html.en">5.2. Boot Parameters</a></span></dt>
+<dd><dl><dt><span class="sect2"><a href="ch05s02.html.en#installer-args">5.2.1. Debian Installer Parameters</a></span></dt></dl></dd>
+<dt><span class="sect1"><a href="ch05s03.html.en">5.3. Troubleshooting the Installation Process</a></span></dt>
+<dd><dl>
+<dt><span class="sect2"><a href="ch05s03.html.en#unreliable-cd">5.3.1. CD-ROM Reliability</a></span></dt>
+<dt><span class="sect2"><a href="ch05s03.html.en#unreliable-floppies">5.3.2. Floppy Disk Reliability</a></span></dt>
+<dt><span class="sect2"><a href="ch05s03.html.en#id2537860">5.3.3. Boot Configuration</a></span></dt>
+<dt><span class="sect2"><a href="ch05s03.html.en#i386-boot-problems">5.3.4. Common <span>Intel x86</span> Installation Problems</a></span></dt>
+<dt><span class="sect2"><a href="ch05s03.html.en#kernel-msgs">5.3.5. Interpreting the Kernel Startup Messages</a></span></dt>
+<dt><span class="sect2"><a href="ch05s03.html.en#problem-report">5.3.6. Reporting Installation Problems</a></span></dt>
+<dt><span class="sect2"><a href="ch05s03.html.en#submit-bug">5.3.7. Submitting Installation Reports</a></span></dt>
+</dl></dd>
+</dl></dd>
+<dt><span class="chapter"><a href="ch06.html.en">6. Using the Debian Installer</a></span></dt>
+<dd><dl>
+<dt><span class="sect1"><a href="ch06s01.html.en">6.1. How the Installer Works</a></span></dt>
+<dt><span class="sect1"><a href="ch06s02.html.en">6.2. Components Introduction</a></span></dt>
+<dt><span class="sect1"><a href="ch06s03.html.en">6.3. Using Individual Components</a></span></dt>
+<dd><dl>
+<dt><span class="sect2"><a href="ch06s03.html.en#di-setup">6.3.1. Setting up Debian Installer and Hardware Configuration</a></span></dt>
+<dt><span class="sect2"><a href="ch06s03.html.en#di-partition">6.3.2. Partitioning and Mount Point Selection</a></span></dt>
+<dt><span class="sect2"><a href="ch06s03.html.en#di-system-setup">6.3.3. Setting up the System</a></span></dt>
+<dt><span class="sect2"><a href="ch06s03.html.en#di-install-base">6.3.4. Installing the Base System</a></span></dt>
+<dt><span class="sect2"><a href="ch06s03.html.en#di-install-software">6.3.5. Installing Additional Software</a></span></dt>
+<dt><span class="sect2"><a href="ch06s03.html.en#di-make-bootable">6.3.6. Making Your System Bootable</a></span></dt>
+<dt><span class="sect2"><a href="ch06s03.html.en#di-finish">6.3.7. Finishing the Installation</a></span></dt>
+<dt><span class="sect2"><a href="ch06s03.html.en#di-miscellaneous">6.3.8. Miscellaneous</a></span></dt>
+</dl></dd>
+</dl></dd>
+<dt><span class="chapter"><a href="ch07.html.en">7. Booting Into Your New Debian System</a></span></dt>
+<dd><dl>
+<dt><span class="sect1"><a href="ch07s01.html.en">7.1. The Moment of Truth</a></span></dt>
+<dt><span class="sect1"><a href="ch07s02.html.en">7.2. Mounting encrypted volumes</a></span></dt>
+<dd><dl>
+<dt><span class="sect2"><a href="ch07s02.html.en#mount-dm-crypt">7.2.1. dm-crypt</a></span></dt>
+<dt><span class="sect2"><a href="ch07s02.html.en#mount-loop-aes">7.2.2. loop-AES</a></span></dt>
+<dt><span class="sect2"><a href="ch07s02.html.en#crypto-troubleshooting">7.2.3. Troubleshooting</a></span></dt>
+</dl></dd>
+<dt><span class="sect1"><a href="ch07s03.html.en">7.3. Log In</a></span></dt>
+</dl></dd>
+<dt><span class="chapter"><a href="ch08.html.en">8. Next Steps and Where to Go From Here</a></span></dt>
+<dd><dl>
+<dt><span class="sect1"><a href="ch08s01.html.en">8.1. Shutting down the system</a></span></dt>
+<dt><span class="sect1"><a href="ch08s02.html.en">8.2. If You Are New to Unix</a></span></dt>
+<dt><span class="sect1"><a href="ch08s03.html.en">8.3. Orienting Yourself to Debian</a></span></dt>
+<dd><dl>
+<dt><span class="sect2"><a href="ch08s03.html.en#id2543793">8.3.1. Debian Packaging System</a></span></dt>
+<dt><span class="sect2"><a href="ch08s03.html.en#id2543911">8.3.2. Application Version Management</a></span></dt>
+<dt><span class="sect2"><a href="ch08s03.html.en#id2543924">8.3.3. Cron Job Management</a></span></dt>
+</dl></dd>
+<dt><span class="sect1"><a href="ch08s04.html.en">8.4. Further Reading and Information</a></span></dt>
+<dt><span class="sect1"><a href="ch08s05.html.en">8.5. Setting Up Your System To Use E-Mail</a></span></dt>
+<dd><dl>
+<dt><span class="sect2"><a href="ch08s05.html.en#mail-default">8.5.1. Default E-Mail Configuration</a></span></dt>
+<dt><span class="sect2"><a href="ch08s05.html.en#mail-outgoing">8.5.2. Sending E-Mails Outside The System</a></span></dt>
+<dt><span class="sect2"><a href="ch08s05.html.en#config-mta">8.5.3. Configuring the Exim4 Mail Transport Agent</a></span></dt>
+</dl></dd>
+<dt><span class="sect1"><a href="ch08s06.html.en">8.6. Compiling a New Kernel</a></span></dt>
+<dd><dl><dt><span class="sect2"><a href="ch08s06.html.en#id2544694">8.6.1. Kernel Image Management</a></span></dt></dl></dd>
+<dt><span class="sect1"><a href="ch08s07.html.en">8.7. Recovering a Broken System</a></span></dt>
+</dl></dd>
+<dt><span class="appendix"><a href="apa.html.en">A. Installation Howto</a></span></dt>
+<dd><dl>
+<dt><span class="sect1"><a href="apas01.html.en">A.1. Preliminaries</a></span></dt>
+<dt><span class="sect1"><a href="apas02.html.en">A.2. Booting the installer</a></span></dt>
+<dd><dl>
+<dt><span class="sect2"><a href="apas02.html.en#howto-getting-images-cdrom">A.2.1. CDROM</a></span></dt>
+<dt><span class="sect2"><a href="apas02.html.en#howto-getting-images-floppy">A.2.2. Floppy</a></span></dt>
+<dt><span class="sect2"><a href="apas02.html.en#howto-getting-images-usb">A.2.3. USB memory stick</a></span></dt>
+<dt><span class="sect2"><a href="apas02.html.en#howto-getting-images-netboot">A.2.4. Booting from network</a></span></dt>
+<dt><span class="sect2"><a href="apas02.html.en#howto-getting-images-hard-disk">A.2.5. Booting from hard disk</a></span></dt>
+</dl></dd>
+<dt><span class="sect1"><a href="apas03.html.en">A.3. Installation</a></span></dt>
+<dt><span class="sect1"><a href="apas04.html.en">A.4. Send us an installation report</a></span></dt>
+<dt><span class="sect1"><a href="apas05.html.en">A.5. And finally…</a></span></dt>
+</dl></dd>
+<dt><span class="appendix"><a href="apb.html.en">B. Automating the installation using preseeding</a></span></dt>
+<dd><dl>
+<dt><span class="sect1"><a href="apbs01.html.en">B.1. Introduction</a></span></dt>
+<dd><dl>
+<dt><span class="sect2"><a href="apbs01.html.en#preseed-methods">B.1.1. Preseeding methods</a></span></dt>
+<dt><span class="sect2"><a href="apbs01.html.en#preseed-limitations">B.1.2. Limitations</a></span></dt>
+</dl></dd>
+<dt><span class="sect1"><a href="apbs02.html.en">B.2. Using preseeding</a></span></dt>
+<dd><dl>
+<dt><span class="sect2"><a href="apbs02.html.en#preseed-loading">B.2.1. Loading the preconfiguration file</a></span></dt>
+<dt><span class="sect2"><a href="apbs02.html.en#preseed-bootparms">B.2.2. Using boot parameters to preseed questions</a></span></dt>
+<dt><span class="sect2"><a href="apbs02.html.en#preseed-auto">B.2.3. Auto mode</a></span></dt>
+<dt><span class="sect2"><a href="apbs02.html.en#preseed-aliases">B.2.4. Aliases useful with preseeding</a></span></dt>
+<dt><span class="sect2"><a href="apbs02.html.en#preseed-dhcp">B.2.5. Using a DHCP server to specify preconfiguration files</a></span></dt>
+</dl></dd>
+<dt><span class="sect1"><a href="apbs03.html.en">B.3. Creating a preconfiguration file</a></span></dt>
+<dt><span class="sect1"><a href="apbs04.html.en">B.4. Contents of the preconfiguration file</a></span></dt>
+<dd><dl>
+<dt><span class="sect2"><a href="apbs04.html.en#preseed-l10n">B.4.1. Localization</a></span></dt>
+<dt><span class="sect2"><a href="apbs04.html.en#preseed-network">B.4.2. Network configuration</a></span></dt>
+<dt><span class="sect2"><a href="apbs04.html.en#preseed-mirror">B.4.3. Mirror settings</a></span></dt>
+<dt><span class="sect2"><a href="apbs04.html.en#preseed-partman">B.4.4. Partitioning</a></span></dt>
+<dt><span class="sect2"><a href="apbs04.html.en#preseed-partman-raid">B.4.5. Partitioning using RAID</a></span></dt>
+<dt><span class="sect2"><a href="apbs04.html.en#preseed-time">B.4.6. Clock and time zone setup</a></span></dt>
+<dt><span class="sect2"><a href="apbs04.html.en#preseed-apt">B.4.7. Apt setup</a></span></dt>
+<dt><span class="sect2"><a href="apbs04.html.en#preseed-account">B.4.8. Account setup</a></span></dt>
+<dt><span class="sect2"><a href="apbs04.html.en#preseed-base-installer">B.4.9. Base system installation</a></span></dt>
+<dt><span class="sect2"><a href="apbs04.html.en#preseed-bootloader">B.4.10. Boot loader installation</a></span></dt>
+<dt><span class="sect2"><a href="apbs04.html.en#preseed-pkgsel">B.4.11. Package selection</a></span></dt>
+<dt><span class="sect2"><a href="apbs04.html.en#preseed-finish">B.4.12. Finishing up the first stage install</a></span></dt>
+<dt><span class="sect2"><a href="apbs04.html.en#preseed-X">B.4.13. X configuration</a></span></dt>
+<dt><span class="sect2"><a href="apbs04.html.en#preseed-other">B.4.14. Preseeding other packages</a></span></dt>
+</dl></dd>
+<dt><span class="sect1"><a href="apbs05.html.en">B.5. Advanced options</a></span></dt>
+<dd><dl>
+<dt><span class="sect2"><a href="apbs05.html.en#preseed-hooks">B.5.1. Running custom commands during the installation</a></span></dt>
+<dt><span class="sect2"><a href="apbs05.html.en#preseed-seenflag">B.5.2. Using preseeding to change default values</a></span></dt>
+<dt><span class="sect2"><a href="apbs05.html.en#preseed-chainload">B.5.3. Chainloading preconfiguration files</a></span></dt>
+</dl></dd>
+</dl></dd>
+<dt><span class="appendix"><a href="apc.html.en">C. Partitioning for Debian</a></span></dt>
+<dd><dl>
+<dt><span class="sect1"><a href="apcs01.html.en">C.1. Deciding on Debian Partitions and Sizes</a></span></dt>
+<dt><span class="sect1"><a href="apcs02.html.en">C.2. The Directory Tree</a></span></dt>
+<dt><span class="sect1"><a href="apcs03.html.en">C.3. Recommended Partitioning Scheme</a></span></dt>
+<dt><span class="sect1"><a href="apcs04.html.en">C.4. Device Names in Linux</a></span></dt>
+<dt><span class="sect1"><a href="apcs05.html.en">C.5. Debian Partitioning Programs</a></span></dt>
+<dd><dl><dt><span class="sect2"><a href="apcs05.html.en#id2549509">C.5.1. Partitioning for <span>Intel x86</span></a></span></dt></dl></dd>
+</dl></dd>
+<dt><span class="appendix"><a href="apd.html.en">D. Random Bits</a></span></dt>
+<dd><dl>
+<dt><span class="sect1"><a href="apds01.html.en">D.1. Linux Devices</a></span></dt>
+<dd><dl><dt><span class="sect2"><a href="apds01.html.en#device-mouse">D.1.1. Setting Up Your Mouse</a></span></dt></dl></dd>
+<dt><span class="sect1"><a href="apds02.html.en">D.2. Disk Space Needed for Tasks</a></span></dt>
+<dt><span class="sect1"><a href="apds03.html.en">D.3. Installing Debian GNU/Linux from a Unix/Linux System</a></span></dt>
+<dd><dl>
+<dt><span class="sect2"><a href="apds03.html.en#id2550614">D.3.1. Getting Started</a></span></dt>
+<dt><span class="sect2"><a href="apds03.html.en#id2550709">D.3.2. Install <span><strong class="command">debootstrap</strong></span></a></span></dt>
+<dt><span class="sect2"><a href="apds03.html.en#id2550848">D.3.3. Run <span><strong class="command">debootstrap</strong></span></a></span></dt>
+<dt><span class="sect2"><a href="apds03.html.en#id2550989">D.3.4. Configure The Base System</a></span></dt>
+<dt><span class="sect2"><a href="apds03.html.en#id2551387">D.3.5. Install a Kernel</a></span></dt>
+<dt><span class="sect2"><a href="apds03.html.en#id2551460">D.3.6. Set up the Boot Loader</a></span></dt>
+<dt><span class="sect2"><a href="apds03.html.en#id2551662">D.3.7. Finishing touches</a></span></dt>
+</dl></dd>
+<dt><span class="sect1"><a href="apds04.html.en">D.4. Installing Debian GNU/Linux over Parallel Line IP (PLIP)</a></span></dt>
+<dd><dl>
+<dt><span class="sect2"><a href="apds04.html.en#id2551774">D.4.1. Requirements</a></span></dt>
+<dt><span class="sect2"><a href="apds04.html.en#id2551827">D.4.2. Setting up source</a></span></dt>
+<dt><span class="sect2"><a href="apds04.html.en#id2551873">D.4.3. Installing target</a></span></dt>
+</dl></dd>
+<dt><span class="sect1"><a href="apds05.html.en">D.5. Installing Debian GNU/Linux using PPP over Ethernet (PPPoE)</a></span></dt>
+<dt><span class="sect1"><a href="apds06.html.en">D.6. The Graphical Installer</a></span></dt>
+<dd><dl>
+<dt><span class="sect2"><a href="apds06.html.en#gtk-using">D.6.1. Using the graphical installer</a></span></dt>
+<dt><span class="sect2"><a href="apds06.html.en#gtk-issues">D.6.2. Known issues</a></span></dt>
+</dl></dd>
+</dl></dd>
+<dt><span class="appendix"><a href="ape.html.en">E. Administrivia</a></span></dt>
+<dd><dl>
+<dt><span class="sect1"><a href="apes01.html.en">E.1. About This Document</a></span></dt>
+<dt><span class="sect1"><a href="apes02.html.en">E.2. Contributing to This Document</a></span></dt>
+<dt><span class="sect1"><a href="apes03.html.en">E.3. Major Contributions</a></span></dt>
+<dt><span class="sect1"><a href="apes04.html.en">E.4. Trademark Acknowledgement</a></span></dt>
+</dl></dd>
+<dt><span class="appendix"><a href="apf.html.en">F. GNU General Public License</a></span></dt>
+</dl>
+</div>
+<div class="list-of-tables">
+<p><b>List of Tables</b></p>
+<dl>
+<dt>3.1. <a href="ch03s03.html.en#id2531920">Hardware Information Needed for an Install</a>
+</dt>
+<dt>3.2. <a href="ch03s04.html.en#id2532353">Recommended Minimum System Requirements</a>
+</dt>
+</dl>
+</div>
+</div>
+<div class="navfooter">
+<hr>
+<table width="100%" summary="Navigation footer">
+<tr>
+<td width="40%" align="left"> </td>
+<td width="20%" align="center"> </td>
+<td width="40%" align="right"> <a accesskey="n" href="pr01.html.en">Next</a>
+</td>
+</tr>
+<tr>
+<td width="40%" align="left" valign="top"> </td>
+<td width="20%" align="center"> </td>
+<td width="40%" align="right" valign="top"> Installing Debian GNU/Linux 4.0 For i386</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

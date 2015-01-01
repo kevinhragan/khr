@@ -1,0 +1,12 @@
+# kernels built on re
+
+scp peach:/boot/280207.img /boot
+ssh re tar -cf - -C /lib/modules  2.6.16.16 |(cd /lib/modules; tar xf -)
+#scp -r peach:/lib/modules/2.6.16.16 /lib/modules
+vi /etc/lilo.conf
+#prepend:
+image = /boot/280207.img
+  root = /dev/sda1
+  label = custom
+  read-only
+lilo   

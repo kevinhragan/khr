@@ -1,0 +1,59 @@
+build slackware package for ipmitool
+install on all slacks
+execute script to allow lan access
+ 
+
+# procedure on slackware 2.4.29
+# record if this works anywhere
+modprobe ipmi_devintf
+modprobe ipmi_msghandler
+mknod -m 0600 /dev/ipmi0 c $(awk '/ipmi/ { print $1}' /proc/devices) 0f 
+$IP=$( host $(hostname) |awk '{ print $NF}' )
+ipmitool -I open lan set 1 macaddr $(ifconfig eth0 |awk 'NR==1 {print $5}')
+ipmitool -I open lan set 1 ipaddr $( host $(hostname) |awk '{ print $NF}' )
+ipmitool -I open lan set 1 defgw ipaddr 10.98.1.1
+ipmitool -I open user set password 2 owwwtboab
+ipmitool -I open lan  set 1 access on
+
+# ipmitool install on slackware
+cd /
+sudo scp lagoon:~kevinr/packages/ipmi.tar .
+sudo tar xf ipmi.tar ; sudo rm ipmi.tar
+
+
+ 
+# procedure on 2.6 
+
+modprobe ipmi_msghandler
+modprobe ipmi_devintf 
+mknod -m 0600 /dev/ipmi0 c $(awk '/ipmi/ { print $1}' /proc/devices) 0f 
+modprobe ipmi_si
+aptitude install ipmitool
+ipmitool sdr
+
+
+test from remote: ipmitool -I lan -H tefnut -U ADMIN sdr
+
+hosts:
+serial 21652 and later should have ipmi support in hardware
+cairo 2.6.16 ; can't insert ipmi_si ; no hardware support ?
+fig good nagios
+kale: remote install - no lan config
+tefnut good
+hathor no support
+heket 2.4 failed - hardware should be new
+lime: 2.6 works!
+mail: no support in hardware (new host mail)
+nile 2.6 probable lack of hardware
+nun works; need nagios
+nut working via open interface; lan not working; due to running on eth1? nagios
+osiris2: works need nagios
+osiris3: 2.6 works! nagios
+peach works; needs nagios
+re remote install with 2.6
+server1 works but no readings
+shu: same as heket
+tefnut works
+trial; copied over modules from ra; modprobe fails - reason unknown. Probable no hardware support
+ra; no hardware support
+uadjet: works need nagios

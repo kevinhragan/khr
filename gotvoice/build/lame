@@ -1,0 +1,4 @@
+echo 'deb http://www.debian-multimedia.org etch main' >> /etc/apt/sources.list
+aptitude update
+aptitude install lame
+

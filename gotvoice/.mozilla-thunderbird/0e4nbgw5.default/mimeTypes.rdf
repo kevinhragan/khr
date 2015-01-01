@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="urn:mimetype:text/xml"
+                   NC:description="XML document"
+                   NC:value="text/xml"
+                   NC:editable="true">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:text/xml"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:handler:text/plain"
+                   NC:alwaysAsk="true"
+                   NC:saveToDisk="true"
+                   NC:useSystemDefault="false">
+    <NC:externalApplication RDF:resource="urn:mimetype:externalApplication:text/plain"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:handler:image/png"
+                   NC:useSystemDefault="false"
+                   NC:handleInternal="false"
+                   NC:alwaysAsk="true"
+                   NC:saveToDisk="true">
+    <NC:externalApplication RDF:resource="urn:mimetype:externalApplication:image/png"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:externalApplication:text/x-python"
+                   NC:prettyName=""
+                   NC:path="" />
+  <RDF:Description RDF:about="urn:mimetype:text/calendar"
+                   NC:value="text/calendar"
+                   NC:editable="true"
+                   NC:description="">
+    <NC:fileExtensions>ics</NC:fileExtensions>
+    <NC:fileExtensions>icz</NC:fileExtensions>
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:text/calendar"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:image/jpeg"
+                   NC:value="image/jpeg"
+                   NC:editable="true"
+                   NC:description="JPEG Image">
+    <NC:fileExtensions>jpg</NC:fileExtensions>
+    <NC:fileExtensions>jpeg</NC:fileExtensions>
+    <NC:fileExtensions>jpe</NC:fileExtensions>
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:image/jpeg"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:handler:application/pdf"
+                   NC:alwaysAsk="false"
+                   NC:useSystemDefault="true">
+    <NC:externalApplication RDF:resource="urn:mimetype:externalApplication:application/pdf"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:externalApplication:text/xml"
+                   NC:prettyName=""
+                   NC:path="" />
+  <RDF:Description RDF:about="urn:mimetype:message/delivery-status"
+                   NC:description=""
+                   NC:value="message/delivery-status"
+                   NC:editable="true">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:message/delivery-status"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:externalApplication:message/delivery-status"
+                   NC:path="/usr/bin/less"
+                   NC:prettyName="less" />
+  <RDF:Description RDF:about="urn:mimetype:handler:text/x-python"
+                   NC:alwaysAsk="true"
+                   NC:saveToDisk="true">
+    <NC:externalApplication RDF:resource="urn:mimetype:externalApplication:text/x-python"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetypes">
+    <NC:MIME-types RDF:resource="urn:mimetypes:root"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:image/png"
+                   NC:fileExtensions="png"
+                   NC:description=""
+                   NC:value="image/png"
+                   NC:editable="true">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:image/png"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:externalApplication:application/pdf"
+                   NC:prettyName=""
+                   NC:path="" />
+  <RDF:Description RDF:about="urn:mimetype:externalApplication:image/jpeg"
+                   NC:prettyName=""
+                   NC:path="/usr/bin/firefox" />
+  <RDF:Description RDF:about="urn:mimetype:externalApplication:text/plain"
+                   NC:prettyName=""
+                   NC:path="" />
+  <RDF:Description RDF:about="urn:mimetype:text/rfc822-headers"
+                   NC:description=""
+                   NC:value="text/rfc822-headers"
+                   NC:editable="true">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:text/rfc822-headers"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:text/plain"
+                   NC:description=""
+                   NC:value="text/plain"
+                   NC:editable="true">
+    <NC:fileExtensions>txt</NC:fileExtensions>
+    <NC:fileExtensions>asc</NC:fileExtensions>
+    <NC:fileExtensions>text</NC:fileExtensions>
+    <NC:fileExtensions>pot</NC:fileExtensions>
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:text/plain"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:application/pdf"
+                   NC:value="application/pdf"
+                   NC:editable="true"
+                   NC:fileExtensions="pdf"
+                   NC:description="Portable Document Format">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:application/pdf"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:externalApplication:text/calendar"
+                   NC:path="/home/kevinr/tmp/sunbird/sunbird"
+                   NC:prettyName="sunbird" />
+  <RDF:Description RDF:about="urn:mimetype:handler:text/xml"
+                   NC:alwaysAsk="true"
+                   NC:saveToDisk="true"
+                   NC:useSystemDefault="false">
+    <NC:externalApplication RDF:resource="urn:mimetype:externalApplication:text/xml"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:handler:image/jpeg"
+                   NC:alwaysAsk="false"
+                   NC:useSystemDefault="false"
+                   NC:saveToDisk="false">
+    <NC:externalApplication RDF:resource="urn:mimetype:externalApplication:image/jpeg"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:handler:image/bmp"
+                   NC:alwaysAsk="true"
+                   NC:useSystemDefault="true"
+                   NC:saveToDisk="false">
+    <NC:externalApplication RDF:resource="urn:mimetype:externalApplication:image/bmp"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:externalApplication:image/png"
+                   NC:path="/usr/bin/firefox"
+                   NC:prettyName="firefox" />
+  <RDF:Description RDF:about="urn:mimetype:externalApplication:text/rfc822-headers"
+                   NC:prettyName=""
+                   NC:path="" />
+  <RDF:Description RDF:about="urn:mimetype:image/bmp"
+                   NC:fileExtensions="bmp"
+                   NC:description=""
+                   NC:value="image/bmp"
+                   NC:editable="true">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:image/bmp"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:externalApplication:image/bmp"
+                   NC:prettyName=""
+                   NC:path="" />
+  <RDF:Seq RDF:about="urn:mimetypes:root">
+    <RDF:li RDF:resource="urn:mimetype:message/delivery-status"/>
+    <RDF:li RDF:resource="urn:mimetype:image/bmp"/>
+    <RDF:li RDF:resource="urn:mimetype:text/rfc822-headers"/>
+    <RDF:li RDF:resource="urn:mimetype:image/jpeg"/>
+    <RDF:li RDF:resource="urn:mimetype:application/pdf"/>
+    <RDF:li RDF:resource="urn:mimetype:text/xml"/>
+    <RDF:li RDF:resource="urn:mimetype:text/plain"/>
+    <RDF:li RDF:resource="urn:mimetype:text/calendar"/>
+    <RDF:li RDF:resource="urn:mimetype:text/x-python"/>
+    <RDF:li RDF:resource="urn:mimetype:image/png"/>
+  </RDF:Seq>
+  <RDF:Description RDF:about="urn:mimetype:handler:text/rfc822-headers"
+                   NC:alwaysAsk="true"
+                   NC:useSystemDefault="true"
+                   NC:saveToDisk="false">
+    <NC:externalApplication RDF:resource="urn:mimetype:externalApplication:text/rfc822-headers"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:handler:text/calendar"
+                   NC:alwaysAsk="true"
+                   NC:saveToDisk="false"
+                   NC:useSystemDefault="false"
+                   NC:handleInternal="false">
+    <NC:externalApplication RDF:resource="urn:mimetype:externalApplication:text/calendar"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:text/x-python"
+                   NC:value="text/x-python"
+                   NC:editable="true"
+                   NC:fileExtensions="py"
+                   NC:description="">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:text/x-python"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:handler:message/delivery-status"
+                   NC:handleInternal="false"
+                   NC:alwaysAsk="true"
+                   NC:saveToDisk="true"
+                   NC:useSystemDefault="false">
+    <NC:externalApplication RDF:resource="urn:mimetype:externalApplication:message/delivery-status"/>
+  </RDF:Description>
+</RDF:RDF>

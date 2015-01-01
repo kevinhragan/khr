@@ -1,0 +1,24 @@
+for bs in 200 
+do
+	for si in 1.5 2.0 2.5 3.0
+	do
+		makesigs $bs $si alfred armida dab kate martin pake phoebe tinky setb
+		for cc in 0.5 0.6 0.7
+		do
+			makeclusters $cc alfred armida dab kate martin pake phoebe tinky 
+			rm -f sigs/*.sni
+			for i in alfred armida dab kate martin pake phoebe tinky; do mv ${i}/${i}.sni sigs; done
+			( cd setb
+			for i in *.sni 
+			do  
+				for j in ../sigs/*.sni 
+				do 
+					for cr in 0.2 0.3 0.4 0.5 0.6
+					do
+						snicmp $i $j -C${cr} >>rb${bs}x${si}x${cc}x${cr}.$$ 
+					done
+				done
+			done ) 
+		done
+	done
+done

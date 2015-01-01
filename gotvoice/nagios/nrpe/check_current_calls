@@ -1,0 +1,94 @@
+#!/bin/sh -x
+# check_current_calls plugin for Nagios
+# Written by Allen Caldwell
+# Created: 07-17-06
+version=1.0
+
+# Nagios return codes
+STATE_OK=0
+STATE_WARNING=1
+STATE_CRITICAL=2
+STATE_UNKNOWN=3
+
+warnlevel=50
+critlevel=75
+prog_name=`basename $0`
+exitstatus=$STATE_UNKNOWN  #default
+
+print_help(){
+        echo ""
+        echo "Monitor the asterisk server for current calls.  A shell script plugin for nagios."
+        echo "---------------------------------------------------------------------------------"
+        echo ""
+        echo "Usage: $prog_name -w -c [-h] [-V]"
+        echo ""
+        echo "-w, --warning-INTEGER"
+        echo "Number of calls being made to generate a warning state (Default: 1)"
+        echo ""
+        echo "-c"
+        echo "Number of calls being made to generate a critical state (Default: 2)"
+        echo ""
+        echo "-h, --help"
+        echo "  Show this help"
+        echo ""
+        echo "-V, --version"
+        echo "  Output version information for the plugin"
+        echo ""
+        exit 0
+}
+
+print_version(){
+        echo ""
+        echo "Monitor the asterisk server for current calls."
+        echo ""
+        echo "Version: $version"
+        echo ""
+        exit 0
+}
+
+check_calls_being_made(){
+/usr/sbin/asterisk -rx "sip show channels"
+n_calls=`sudo /usr/sbin/asterisk -rx "sip show channels" | awk '/active/ {print $1}'`
+        if [ "$n_calls" -ge "$critlevel" ]
+        then
+                MESSAGE="CRITICAL:  $n_calls calls being made on asterisk server."
+                exitstatus=$STATE_CRITICAL
+        elif [ "$n_calls" -ge "$warnlevel" ]
+        then
+                MESSAGE="WARNING: $n_calls calls being made on asterisk server."
+                exitstatus=$STATE_WARNING
+        else
+                MESSAGE="OK: $n_calls calls being made on asterisk server."
+                exitstatus=$STATE_OK
+        fi
+}
+
+while test -n "$1"; do
+        case "$1" in
+          --help)
+                print_help
+                exit $STATE_OK
+                ;;
+          -h)
+                print_help
+                exit $STATE_OK
+                ;;
+          -V)
+                print_version
+                exit $STATE_OK
+                ;;
+          -w)
+                warnlevel=$2
+                shift
+                ;;
+          -c)
+                critlevel=$2
+                shift
+                ;;
+        esac
+        shift
+done
+
+check_calls_being_made
+echo "$MESSAGE"
+exit $exitstatus

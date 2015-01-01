@@ -1,0 +1,13 @@
+replace sendmail.cf with version built from sendmail.mc; test
+add sendmail.mc features
+    accept mail from outside
+    enable virtusertable    
+put prog in smrsh bin
+create alias with absolute path
+add virtusertable to sendmail.mc
+create edit virtusertable for new domain:
+    @compose.gotvoice.com replybot
+fix spif value for compose external ip
+add firewall rules 
+external and internal dns
+cleanup lime

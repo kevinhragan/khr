@@ -1,0 +1,210 @@
+// <!-- <mdb:mork:z v="1.4"/> -->
+< <(a=c)> // (f=iso-8859-1)
+  (B8=sortOrder)(B9=viewFlags)(BA=viewType)(BB=current-view)
+  (BC=imageSize)(BD=junkscore)(BE=retainBy)(BF=daysToKeepHdrs)
+  (C0=numHdrsToKeep)(C1=daysToKeepBodies)(C2=keepUnreadOnly)
+  (C3=useServerDefaults)(C4=cleanupBodies)
+  (80=ns:msg:db:row:scope:msgs:all)(81=subject)(82=sender)(83=message-id)
+  (84=references)(85=recipients)(86=date)(87=size)(88=flags)(89=priority)
+  (8A=label)(8B=statusOfset)(8C=numLines)(8D=ccList)(8E=msgThreadId)
+  (8F=threadId)(90=threadFlags)(91=threadNewestMsgDate)(92=children)
+  (93=unreadChildren)(94=threadSubject)(95=numRefs)(96=msgCharSet)
+  (97=ns:msg:db:table:kind:msgs)(98=ns:msg:db:table:kind:thread)
+  (99=ns:msg:db:table:kind:allthreads)
+  (9A=ns:msg:db:row:scope:threads:all)(9B=threadParent)(9C=threadRoot)
+  (9D=msgOffset)(9E=offlineMsgSize)
+  (9F=ns:msg:db:row:scope:dbfolderinfo:all)
+  (A0=ns:msg:db:table:kind:dbfolderinfo)(A1=numMsgs)(A2=numNewMsgs)
+  (A3=folderSize)(A4=expungedBytes)(A5=folderDate)(A6=highWaterKey)
+  (A7=mailboxName)(A8=UIDValidity)(A9=totPendingMsgs)
+  (AA=unreadPendingMsgs)(AB=expiredMark)(AC=version)
+  (AD=fixedBadRefThreading)(AE=onlineName)(AF=LastPurgeTime)
+  (B0=imapFlags)(B1=charSetOverride)(B2=charSet)
+  (B3=ns:msg:db:row:scope:pending:all)(B4=ns:msg:db:table:kind:pending)
+  (B5=keywords)(B6=folderName)(B7=sortType)>
+<(8F=10b2b)(8A=4469e9d8)(80=1)>[1:m(^9C^8F)(^8F^8F)(^91^8A)(^92=1)]
+<(94=15cb6)(92=44804ce4)>[2:m(^9C^94)(^8F^94)(^91^92)(^92=1)]
+<(9B=17cd9)(98=44856bf5)>[3:m(^9C^9B)(^8F^9B)(^91^98)(^92=1)]
+<(A1=192f7)(9F=4488e90e)>[4:m(^9C^A1)(^8F^A1)(^91^9F)(^92=1)]
+<(BA=2ef15)(A7=1d708)(A5=44946be0)(95=2)>
+[5:m(^9C^BA)(^8F^A7)(^91^A5)(^92=2)]
+<(AD=28b6e)(AB=44ce42ec)>[6:m(^9C^AD)(^8F^AD)(^91^AB)(^92=1)]
+<(B5=291da)(B1=44ca5c38)>[7:m(^9C^B5)(^8F^B5)(^91^B1)(^92=1)]
+<(C0=313db)(BE=44e5b9c9)>[8:m(^9C^C0)(^8F^C0)(^91^BE)(^92=1)]
+<(C6=31d10)(C4=44e72033)>[9:m(^9C^C6)(^8F^C6)(^91^C4)(^92=1)]
+<(CC=31d12)(CA=44e8d309)>[A:m(^9C^CC)(^8F^CC)(^91^CA)(^92=1)]
+<(D2=3fa2d)(D0=45394601)>[B:m(^9C^D2)(^8F^D2)(^91^D0)(^92=1)]
+<(D7=50415)(D6=4575d81e)>[C:m(^9C^D7)(^8F^D7)(^91^D6)(^92=1)]
+
+<(85=0)(86=GotVoice <support@gotvoice.com>)(87=support@gotvoice.com)
+  (C8=Account Upgrade Complete for memommy1947@aol.com)(C9
+    =200608202124.k7KLOPuo025784@ra.gotvoice.com)(8B=us-ascii)(CB=14d9)
+  (8E=ffffffff)>
+{31D12:^80 {(k^98:c)(s=9)A:m } [31D12(^88=1)(^8B=0)(^82^86)(^85^87)(^81^C8)
+    (^83^C9)(^86^CA)(^89=1)(^96^8B)(^87^CB)(^9B^8E)(^8E^CC)]}
+
+<(B3=2001001)(AF=Account Upgrade Failed for jack@communitym.com)(B0
+    =200607281849.k6SInSuq003834@ra.gotvoice.com)(B2=f37)(B4=Forwarded)>
+{291DA:^80 {(k^98:c)(s=9)7:m } [291DA(^88^B3)(^8B=0)(^82^86)(^85^87)(^81^AF)
+    (^83^B0)(^86^B1)(^89=1)(^96^8B)(^87^B2)(^8A=1)(^B5^B4)(^9B^8E)(^8E^B5)]}
+
+<(8D=2000001)(D4=Account Upgrade Failed for rrobbins@vendomecom.com)
+  (D5=200612052035.kB5KZg4P027301@ra.gotvoice.com)(99=f3d)>
+{50415:^80 {(k^98:c)(s=9)C:m } [50415(^88^8D)(^8B=0)(^82^86)(^85^87)(^81^D4)
+    (^83^D5)(^86^D6)(^89=1)(^96^8B)(^87^99)(^8A=1)(^9B^8E)(^8E^D7)]}
+
+<(9D=Account Upgrade Failed for computerfreak411@gmail.com)(9E
+    =200606090320.k593Kk8h025580@ra.gotvoice.com)(A0=f42)>
+{192F7:^80 {(k^98:c)(s=9)4:m } [192F7(^88=1)(^8B=0)(^82^86)(^85^87)(^81^9D)
+    (^83^9E)(^86^9F)(^89=1)(^96^8B)(^87^A0)(^9B^8E)(^8E^A1)]}
+
+<(88=Account Upgrade Failed for auriclux@usa.net)(89
+    =200605161503.k4GF3qHG013608@ra.gotvoice.com)(8C=f27)(90
+    =Account Upgrade Failed for dave67@charter.net)(91
+    =200606021436.k52EaKVc030274@ra.gotvoice.com)(93=f32)(9A=4000001)
+  (96=Account Upgrade Failed for scoghill@chicagonet.net)(97
+    =200606061150.k56BoDkE025576@ra.gotvoice.com)(A3
+    =Account Upgrade Failed for voicemail@jeffkolb.com)(A4
+    =200606172053.k5HKrqjH006082@ra.gotvoice.com)(A6=e6c)(A9
+    =Account Upgrade Failed for zach@gotvoice.com)(AA
+    =200607311750.k6VHoaul001600@ra.gotvoice.com)(AC=f33)(B7
+    =200606172051.k5HKpQaH006064@ra.gotvoice.com)(B8=44946b4e)(B9=f3c)
+  (BC=Account Upgrade Complete for michael.gardner@gmail.com)(BD
+    =200608181259.k7ICxrD0002323@ra.gotvoice.com)(BF=14db)(C2
+    =Account Upgrade Complete for brian@blueflavor.com)(C3
+    =200608191429.k7JET7B8002178@ra.gotvoice.com)(C5=14e3)(CE
+    =Account Upgrade Complete for msslroomservice@gmail.com)(CF
+    =200610202156.k9KLuHQh023750@ra.gotvoice.com)(D1=14dd)>
+{1:^80 {(k^97:c)(s=9)} 
+  [10B2B(^88^8D)(^8B=0)(^82^86)(^85^87)(^81^88)(^83^89)(^86^8A)(^89=1)
+    (^96^8B)(^87^8C)(^8A=1)(^9B^8E)(^8E^8F)]
+  [15CB6(^88^8D)(^8B=0)(^82^86)(^85^87)(^81^90)(^83^91)(^86^92)(^89=1)
+    (^96^8B)(^87^93)(^8A=1)(^9B^8E)(^8E^94)]
+  [17CD9(^88^9A)(^8B=0)(^82^86)(^85^87)(^81^96)(^83^97)(^86^98)(^89=1)
+    (^96^8B)(^87^99)(^8A=2)(^9B^8E)(^8E^9B)]192F7 
+  [1D708(^88^9A)(^8B=0)(^82^86)(^85^87)(^81^A3)(^83^A4)(^86^A5)(^89=1)
+    (^96^8B)(^87^A6)(^8A=2)(^9B^BA)(^8E^A7)]
+  [28B6E(^88=1)(^8B=0)(^82^86)(^85^87)(^81^A9)(^83^AA)(^86^AB)(^89=1)
+    (^96^8B)(^87^AC)(^9B^8E)(^8E^AD)]291DA 
+  [2EF15(^88=1)(^8B=0)(^82^86)(^85^87)(^81^A3)(^83^B7)(^86^B8)(^89=1)
+    (^96^8B)(^87^B9)(^9B^8E)(^8E^A7)]
+  [313DB(^88=1)(^8B=0)(^82^86)(^85^87)(^81^BC)(^83^BD)(^86^BE)(^89=1)
+    (^96^8B)(^87^BF)(^9B^8E)(^8E^C0)]
+  [31D10(^88=1)(^8B=0)(^82^86)(^85^87)(^81^C2)(^83^C3)(^86^C4)(^89=1)
+    (^96^8B)(^87^C5)(^9B^8E)(^8E^C6)]31D12 
+  [3FA2D(^88=1)(^8B=0)(^82^86)(^85^87)(^81^CE)(^83^CF)(^86^D0)(^89=1)
+    (^96^8B)(^87^D1)(^9B^8E)(^8E^D2)]50415 }
+{1D708:^80 {(k^98:c)(s=9)5:m } 2EF15 1D708 }
+{28B6E:^80 {(k^98:c)(s=9)6:m } 28B6E }
+{17CD9:^80 {(k^98:c)(s=9)3:m } 17CD9 }
+{15CB6:^80 {(k^98:c)(s=9)2:m } 15CB6 }
+{313DB:^80 {(k^98:c)(s=9)8:m } 313DB }
+{3FA2D:^80 {(k^98:c)(s=9)B:m } 3FA2D }
+{10B2B:^80 {(k^98:c)(s=9)1:m } 10B2B }
+{31D10:^80 {(k^98:c)(s=9)9:m } 31D10 }
+{FFFFFFFD:^9A {(k^99:c)(s=9)} [10B2B(^94^88)]
+  [15CB6(^94^90)]
+  [17CD9(^94^96)]
+  [192F7(^94^9D)]
+  [1D708(^94^A3)]
+  [28B6E(^94^A9)]
+  [291DA(^94^AF)]
+  [313DB(^94^BC)]
+  [31D10(^94^C2)]
+  [31D12(^94^C8)]
+  [3FA2D(^94^CE)]
+  [50415(^94^D4)]}
+
+<(81=Account Upgrade failure)(530=Mon Apr 14 18:59:18 2008)(83=ee00)
+  (84=11c68)(D8=d)(D9=12)>
+{1:^9F {(k^A0:c)(s=9u)} 
+  [1(^AC=1)(^AD=1)(^AE^81)(^A7^81)(^AF^530)(^B0^83)(^A8^84)(^A1=d)(^B7=12)
+    (^B8=1)(^B9=0)(^BA=0)]}
+
+@$${1{@
+<(531=Tue Apr 15 02:59:20 2008)>
+[1:^9F(^AF^531)]
+@$$}1}@
+
+@$${2{@
+@$$}2}@
+
+@$${4{@
+<(532=Tue Apr 15 10:59:21 2008)>
+[1:^9F(^AF^532)]
+@$$}4}@
+
+@$${5{@
+@$$}5}@
+
+@$${7{@
+<(533=Tue Apr 15 18:59:22 2008)>
+[1:^9F(^AF^533)]
+@$$}7}@
+
+@$${8{@
+@$$}8}@
+
+@$${A{@
+<(534=Wed Apr 16 02:59:24 2008)>
+[1:^9F(^AF^534)]
+@$$}A}@
+
+@$${B{@
+@$$}B}@
+
+@$${D{@
+<(535=Wed Apr 16 10:59:25 2008)>
+[1:^9F(^AF^535)]
+@$$}D}@
+
+@$${E{@
+@$$}E}@
+
+@$${10{@
+<(536=Wed Apr 16 18:59:28 2008)>
+[1:^9F(^AF^536)]
+@$$}10}@
+
+@$${11{@
+@$$}11}@
+
+@$${13{@
+<(537=Thu Apr 17 02:59:29 2008)>
+[1:^9F(^AF^537)]
+@$$}13}@
+
+@$${14{@
+@$$}14}@
+
+@$${16{@
+<(538=Thu Apr 17 10:59:30 2008)>
+[1:^9F(^AF^538)]
+@$$}16}@
+
+@$${17{@
+@$$}17}@
+
+@$${19{@
+<(539=Thu Apr 17 18:59:32 2008)>
+[1:^9F(^AF^539)]
+@$$}19}@
+
+@$${1A{@
+@$$}1A}@
+
+@$${1C{@
+<(53A=Fri Apr 18 02:59:34 2008)>
+[1:^9F(^AF^53A)]
+@$$}1C}@
+
+@$${1D{@
+@$$}1D}@
+
+@$${1F{@
+<(53B=Fri Apr 18 10:59:35 2008)>
+[1:^9F(^AF^53B)]
+@$$}1F}@
+
+@$${20{@
+@$$}20}@

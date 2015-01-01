@@ -1,0 +1,221 @@
+// <!-- <mdb:mork:z v="1.4"/> -->
+< <(a=c)> // (f=iso-8859-1)
+  (8A=charset)(8B=folderName)(8C=boxFlags)(8D=hierDelim)(8E=onlineName)
+  (8F=aclFlags)(90=LastPurgeTime)(80=ns:msg:db:row:scope:folders:all)
+  (81=ns:msg:db:table:kind:folders)(82=key)(83=flags)(84=totalMsgs)
+  (85=totalUnreadMsgs)(86=pendingUnreadMsgs)(87=pendingMsgs)
+  (88=expungedBytes)(89=folderSize)>
+
+<(8E=/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/Mail/Local Folders)
+  (8F=1c)(90=ffffffff)(82=0)(83=)(88
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/Mail/Local Folders/Dra\
+fts.msf)(39DF1=404)(8A=Drafts)(8B
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/Mail/Local Folders/Uns\
+ent Messages.msf)(8C=804)(8D=Unsent)(80
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/Mail/Local Folders/Tra\
+sh.msf)(81=104)(C9=1)(2A45C=586)(84=Trash)(85
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/Mail/Local Folders/Sen\
+t.msf)(86=204)(87=Sent)(139
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/ImapMail/mail.gotvoice\
+-1.com)(94=5e)(91
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/ImapMail/mail.gotvoice\
+-1.com/INBOX.msf)(3525E=883004)(3A2D8=3b)(406E5=8dc64)(12E=40)(9C=2f)
+  (95=INBOX)(34E73=ef)(148
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/ImapMail/mail.gotvoice\
+-1.com/Sent.msf)(35474=882214)(3A215=12)(3F1AE=665a36)(97
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/ImapMail/mail.gotvoice\
+-1.com/Trash.msf)(35358=882114)(3A34D=f3)(406E2=1d3)(3FF78=19808e)(137=50)
+  (AE3
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/ImapMail/mail.gotvoice\
+-1.com/spamcomplaint.msf)(AC=82014)(AE4=spamcomplaint)(13A
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/ImapMail/mail.gotvoice\
+-3.com)(13B=10)(9F
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/ImapMail/mail.gotvoice\
+-3.com/INBOX.msf)(3A3BD=883014)(337BF=1e)(3FFE1=142d48)(C37=ISO-8859-1)
+  (2496D
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/ImapMail/mail.gotvoice\
+-3.com/Sent.msf)(131=82214)(A8
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/ImapMail/mail.gotvoice\
+-3.com/Trash.msf)(98=82114)(13C
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/ImapMail/mail.gotvoice\
+.com)(B7
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/ImapMail/mail.gotvoice\
+.com/admininfo.msf)(3576A=882004)(39E15=3af7e2)(B9=admininfo)(AB
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/ImapMail/mail.gotvoice\
+.com/spam.msf)(35741=882014)(26481=2)(27662=1f0f)(AE=spam)(B4
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/ImapMail/mail.gotvoice\
+.com/techinfo.msf)(3A203=11)(3A18F=45102)(B6=techinfo)(143
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/ImapMail/mail.gotvoice\
+.com/Drafts.msf)(35504=882414)(3576E=99a)(A9
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/ImapMail/mail.gotvoice\
+.com/INBOX.msf)(3A500=9a)(406FB=70a48e)(12D
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/ImapMail/mail.gotvoice\
+.com/Sent.msf)(40682=8d7)(88E=d)(4067F=213e1f4)(B1
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/ImapMail/mail.gotvoice\
+.com/Trash.msf)(3A193=882104)(3A330=4c)(3A189=e)(406EC=3eb04a)(13D
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/ImapMail/mail.gotvoice\
+-2.com)(D1
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/ImapMail/mail.gotvoice\
+-2.com/Access numbers - user supplied.msf)(96C=56)(21799=56151)(D3
+    =Access numbers - user supplied)(C7
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/ImapMail/mail.gotvoice\
+-2.com/Account Downgrade complete.msf)(968=54)(805=5)(2179B=5fec5)(CA
+    =Account Downgrade complete)(30467
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/ImapMail/mail.gotvoice\
+-2.com/Cancelled -  Reason No.msf)(30468=Cancelled -  Reason No)(BF
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/ImapMail/mail.gotvoice\
+-2.com/Account Upgrade complete.msf)(814=150)(95A=4d)(2179D=1b6e4b)
+  (C0=Account Upgrade complete)(30465
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/ImapMail/mail.gotvoice\
+-2.com/Cancelled - Reason Yes.msf)(30466=Cancelled - Reason Yes)(30469
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/ImapMail/mail.gotvoice\
+-2.com/Billing .msf)(3046A=Billing )(C4
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/ImapMail/mail.gotvoice\
+-2.com/Support reply.msf)(C6=Support reply)(D4
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/ImapMail/mail.gotvoice\
+-2.com/Blog phone added.msf)(216AC=1a8f)(216AD=b86)(216AE=185a52f)(D7
+    =Blog phone added)(708
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/ImapMail/mail.gotvoice\
+-2.com/Templates.msf)(714=482014)(9E=Templates)(F2
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/ImapMail/mail.gotvoice\
+-2.com/Blog Sign up failure.msf)(F5=Blog Sign up failure)(BC
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/ImapMail/mail.gotvoice\
+-2.com/INBOX.msf)(92=83014)(30C6A=1bf)(30BBE=168)(337B5=438e2d)(70B
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/ImapMail/mail.gotvoice\
+-2.com/Blog   returned Support mail.msf)(70C=Blog   returned Support mail)
+  (70D
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/ImapMail/mail.gotvoice\
+-2.com/Account Downgrade failure.msf)(DF=3)(2179C=2afc)(70E
+    =Account Downgrade failure)(713
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/ImapMail/mail.gotvoice\
+-2.com/Sent.msf)(C1
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/ImapMail/mail.gotvoice\
+-2.com/Trash.msf)(881=9)(1547=8176)(D8
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/ImapMail/mail.gotvoice\
+-2.com/Account Upgrade failure.msf)(2179E=db9b)(DB=Account Upgrade failure)
+  (124
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/ImapMail/mail.gotvoice\
+-2.com/Blog Sign up welcome.msf)(127=Blog Sign up welcome)(10B
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/ImapMail/mail.gotvoice\
+-2.com/Blog - GV testing your .....msf)(217C0=207d)(217C1=c6b)(217C2
+    =1bd7d04)(10E=Blog - GV testing your ....)(123
+    =/home/kevinr/.mozilla-thunderbird/0e4nbgw5.default/ImapMail/mail.gotvoice\
+-2.com/Drafts-1.msf)(130=82414)>
+{1:^80 {(k^81:c)(s=9)} 
+  [15D(^82^8E)(^83=1c)(^84^90)(^85^90)(^86=0)(^87=0)(^88=0)(^89=0)(^8A=)
+    (^8B=)]
+  [15E(^82^88)(^83=404)(^84=0)(^85=0)(^86=0)(^87=0)(^88=0)(^89=0)(^8A=)
+    (^8B^8A)]
+  [15F(^82^8B)(^83^8C)(^84=0)(^85=0)(^86=0)(^87=0)(^88=0)(^89=0)(^8A=)
+    (^8B^8D)]
+  [160(^82^80)(^83^81)(^84=1)(^85=0)(^86=0)(^87=0)(^88=0)(^89=586)(^8A=)
+    (^8B^84)]
+  [161(^82^85)(^83^86)(^84=0)(^85=0)(^86=0)(^87=0)(^88=0)(^89=0)(^8A=)
+    (^8B^87)]
+  [162(^82^139)(^83=0)(^84=0)(^85=0)(^86=0)(^87=0)(^88=0)(^89=0)(^8A=)
+    (^8C=0)(^8D=5e)(^8E=)(^8F=0)]
+  [163(^82^91)(^83^3525E)(^84=3b)(^85=0)(^86=0)(^87=0)(^88=0)(^89=8dc64)
+    (^8A=)(^8C=40)(^8D=2f)(^8E^95)(^8F=ef)]
+  [164(^82^148)(^83^35474)(^84=ef)(^85=0)(^86=0)(^87=12)(^88=0)(^89^3F1AE)
+    (^8A=)(^8C=40)(^8D=2f)(^8E^87)(^8F=ef)]
+  [165(^82^97)(^83^35358)(^84=f3)(^85=0)(^86=1)(^87=1d3)(^88=0)(^89^3FF78)
+    (^8A=)(^8C=50)(^8D=2f)(^8E^84)(^8F=ef)]
+  [166(^82^AE3)(^83^AC)(^84=0)(^85=0)(^86=0)(^87=0)(^88=0)(^89=0)(^8A=)
+    (^8C=40)(^8D=2f)(^8E^AE4)(^8F=0)]
+  [167(^82^13A)(^83=10)(^84=0)(^85=0)(^86=0)(^87=0)(^88=0)(^89=0)(^8A=)
+    (^8C=0)(^8D=5e)(^8E=)(^8F=0)]
+  [168(^82^9F)(^83^3A3BD)(^84=1e)(^85=1e)(^86=0)(^87=0)(^88=0)(^89^3FFE1)
+    (^8A^C37)(^8C=40)(^8D=2f)(^8E^95)(^8F=ef)]
+  [169(^82^2496D)(^83^131)(^84=0)(^85=0)(^86=0)(^87=1)(^88=0)(^89=0)
+    (^8A=)(^8C=40)(^8D=2f)(^8E^87)(^8F=0)]
+  [16A(^82^A8)(^83^98)(^84=0)(^85=0)(^86=0)(^87=0)(^88=0)(^89=0)(^8A=)
+    (^8C=50)(^8D=2f)(^8E^84)(^8F=0)]
+  [16B(^82^13C)(^83=0)(^84=0)(^85=0)(^86=0)(^87=0)(^88=0)(^89=0)(^8A=)
+    (^8C=0)(^8D=5e)(^8E=)(^8F=0)]
+  [16C(^82^B7)(^83^3576A)(^84=1)(^85=0)(^86=0)(^87=0)(^88=0)(^89^39E15)
+    (^8A=)(^8C=40)(^8D=2f)(^8E^B9)(^8F=ef)]
+  [16D(^82^AB)(^83^35741)(^84=2)(^85=0)(^86=0)(^87=0)(^88=0)(^89=1f0f)
+    (^8A=)(^8C=40)(^8D=2f)(^8E^AE)(^8F=ef)]
+  [16E(^82^B4)(^83^35741)(^84=11)(^85=0)(^86=0)(^87=0)(^88=0)(^89=45102)
+    (^8A=)(^8C=40)(^8D=2f)(^8E^B6)(^8F=ef)]
+  [16F(^82^143)(^83^35504)(^84=1)(^85=0)(^86=0)(^87=0)(^88=0)(^89=99a)
+    (^8A=)(^8C=40)(^8D=2f)(^8E^8A)(^8F=ef)]
+  [170(^82^A9)(^83^3525E)(^84=9a)(^85=1)(^86=0)(^87=0)(^88=0)(^89^406FB)
+    (^8A=)(^8C=40)(^8D=2f)(^8E^95)(^8F=ef)]
+  [171(^82^12D)(^83^35474)(^84=8d7)(^85=0)(^86=0)(^87=d)(^88=0)(^89^4067F)
+    (^8A=)(^8C=40)(^8D=2f)(^8E^87)(^8F=ef)]
+  [172(^82^B1)(^83^3A193)(^84=4c)(^85=1)(^86=0)(^87=e)(^88=0)(^89^406EC)
+    (^8A=)(^8C=50)(^8D=2f)(^8E^84)(^8F=ef)]
+  [173(^82^13D)(^83=10)(^84=0)(^85=0)(^86=0)(^87=0)(^88=0)(^89=0)(^8A=)
+    (^8C=0)(^8D=5e)(^8E=)(^8F=0)]
+  [174(^82^D1)(^83^AC)(^84=56)(^85=0)(^86=0)(^87=0)(^88=0)(^89=56151)
+    (^8A=)(^8C=40)(^8D=2f)(^8E^D3)(^8F=0)]
+  [175(^82^C7)(^83^AC)(^84=54)(^85=5)(^86=0)(^87=0)(^88=0)(^89=5fec5)
+    (^8A=)(^8C=40)(^8D=2f)(^8E^CA)(^8F=0)]
+  [176(^82^30467)(^83^AC)(^84=0)(^85=0)(^86=0)(^87=0)(^88=0)(^89=0)
+    (^8A=)(^8C=40)(^8D=2f)(^8E^30468)(^8F=0)]
+  [177(^82^BF)(^83^AC)(^84=150)(^85=4d)(^86=0)(^87=0)(^88=0)(^89^2179D)
+    (^8A=)(^8C=40)(^8D=2f)(^8E^C0)(^8F=0)]
+  [178(^82^30465)(^83^AC)(^84=0)(^85=0)(^86=0)(^87=0)(^88=0)(^89=0)
+    (^8A=)(^8C=40)(^8D=2f)(^8E^30466)(^8F=0)]
+  [179(^82^30469)(^83^AC)(^84=0)(^85=0)(^86=0)(^87=0)(^88=0)(^89=0)
+    (^8A=)(^8C=40)(^8D=2f)(^8E^3046A)(^8F=0)]
+  [17A(^82^C4)(^83^AC)(^84=0)(^85=0)(^86=0)(^87=0)(^88=0)(^89=0)(^8A=)
+    (^8C=40)(^8D=2f)(^8E^C6)(^8F=0)]
+  [17B(^82^D4)(^83^AC)(^84=1a8f)(^85=b86)(^86=0)(^87=0)(^88=0)(^89^216AE)
+    (^8A=)(^8C=40)(^8D=2f)(^8E^D7)(^8F=0)]
+  [17C(^82^708)(^83^714)(^84=0)(^85=0)(^86=0)(^87=0)(^88=0)(^89=0)(^8A=)
+    (^8C=40)(^8D=2f)(^8E^9E)(^8F=0)]
+  [17D(^82^F2)(^83^AC)(^84=0)(^85=0)(^86=0)(^87=0)(^88=0)(^89=0)(^8A=)
+    (^8C=40)(^8D=2f)(^8E^F5)(^8F=0)]
+  [17E(^82^BC)(^83^92)(^84=1bf)(^85=168)(^86=0)(^87=0)(^88=0)(^89^337B5)
+    (^8A=)(^8C=40)(^8D=2f)(^8E^95)(^8F=0)]
+  [17F(^82^70B)(^83^AC)(^84=0)(^85=0)(^86=0)(^87=0)(^88=0)(^89=0)(^8A=)
+    (^8C=40)(^8D=2f)(^8E^70C)(^8F=0)]
+  [180(^82^70D)(^83^AC)(^84=3)(^85=0)(^86=0)(^87=0)(^88=0)(^89=2afc)
+    (^8A=)(^8C=40)(^8D=2f)(^8E^70E)(^8F=0)]
+  [181(^82^713)(^83^131)(^84=0)(^85=0)(^86=0)(^87=0)(^88=0)(^89=0)(^8A=)
+    (^8C=40)(^8D=2f)(^8E^87)(^8F=0)]
+  [182(^82^C1)(^83^98)(^84=d)(^85=9)(^86=0)(^87=0)(^88=0)(^89=8176)
+    (^8A=)(^8C=50)(^8D=2f)(^8E^84)(^8F=0)]
+  [183(^82^D8)(^83^AC)(^84=d)(^85=0)(^86=0)(^87=0)(^88=0)(^89=db9b)
+    (^8A=)(^8C=40)(^8D=2f)(^8E^DB)(^8F=0)]
+  [184(^82^124)(^83^AC)(^84=0)(^85=0)(^86=0)(^87=0)(^88=0)(^89=0)(^8A=)
+    (^8C=40)(^8D=2f)(^8E^127)(^8F=0)]
+  [185(^82^10B)(^83^AC)(^84=207d)(^85=c6b)(^86=0)(^87=0)(^88=0)(^89^217C2)
+    (^8A=)(^8C=40)(^8D=2f)(^8E^10E)(^8F=0)]
+  [186(^82^123)(^83^130)(^84=0)(^85=0)(^86=0)(^87=0)(^88=0)(^89=0)(^8A=)
+    (^8C=40)(^8D=2f)(^8E^8A)(^8F=0)]}
+
+@$${4DE05{@
+@$$}4DE05}@
+
+@$${4DE06{@
+@$$}4DE06}@
+
+@$${4DE07{@
+@$$}4DE07}@
+
+@$${4DE08{@
+@$$}4DE08}@
+
+@$${4DE09{@
+@$$}4DE09}@
+
+@$${4DE0A{@
+@$$}4DE0A}@
+
+@$${4DE0B{@
+@$$}4DE0B}@
+
+@$${4DE0C{@
+@$$}4DE0C}@
+
+@$${4DE0D{@
+@$$}4DE0D}@
+
+@$${4DE0E{@
+@$$}4DE0E}@
+
+@$${4DE0F{@
+@$$}4DE0F}@

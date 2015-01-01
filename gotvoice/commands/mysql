@@ -1,0 +1,19 @@
+# ra mysql login
+mysql -u root -p (hawaii)
+
+
+show slave status 
+
+change master to VAR='val';
+
+show databases; 
+use databasename
+show tables;
+describe tablename;
+
+drop user gvuser@'10.96.1.0/255.255.255.0';
+
+
+# change slave to master:
+stop slave; 
+restet master;

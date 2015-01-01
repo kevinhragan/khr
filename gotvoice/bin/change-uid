@@ -1,0 +1,10 @@
+# Change all ast gid and ast-gid files to gv asterisk ownership
+# Run as root
+
+ast_uid=$(awk -F: '$1=="asterisk" { print $3 }' /etc/passwd ) 
+ast_gid=$(awk -F: '$1=="asterisk" { print $3 }' /etc/group ) 
+
+find / -user $ast_uid -exec chown 501 {} \; -gid $ast_gid -exec chgrp 501 {} \;
+
+vi /etc/passwd /etc/group
+# restart apache (?)

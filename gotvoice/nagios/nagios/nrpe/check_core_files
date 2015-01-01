@@ -1,0 +1,100 @@
+#!/usr/bin/perl -w
+#
+# check_core_files
+# Checks the spoolers for too many core files.
+# Author: Allen Caldwell
+
+use strict;
+use Getopt::Long qw(:config no_ignore_case bundling) ;
+use lib "/usr/local/nagios/libexec";
+use utils qw($TIMEOUT %ERRORS &print_revision &support &usage) ;
+use File::Basename;
+
+my $prog_name = basename $0 ;
+my $prog_ver = "1.0" ;
+my $status = 3 ;
+my $status_print = "UNKNOWN" ;
+my $warn_val = 1 ; # Default - override with -w arg
+my $crit_val = 3 ; # Default - override with -c arg
+my $help_val = 0 ; # Off unless -h arg
+my $verb_val = 0 ; # Off unless -v arg
+my $vers_val = 0 ; # Off unless -V arg
+
+# Gives us a way to print out verbose debug information to the screen when user
+# passes in the -v arguement.
+# print_debug() should receive one parameter: a text string to print out.
+sub print_debug() {
+        my $message = shift ;
+        if ( $verb_val == 1 ) {
+                print "DEBUG: " . $message . "\n" ;
+        }
+}
+
+# Show help information
+sub show_help() {
+        print '
+
+Perl-Check the spoolers for core dump files. A plugin for Nagios
+
+Usage: $prog_name -w -c [-h] [-V] [-v]
+
+-w, --warning=INTEGER
+        Number of core dump files to generate a warning state (Default: 1)
+-c, --critical=INTEGER
+        Number of core dump files to generate a critical state (Default: 3)
+-h, --help
+        Show this help
+-V, --version
+        Output version information for this plugin
+-v, --verbose
+        Enable verbose output
+'
+}
+
+GetOptions (
+        "w=i" => \$warn_val, "warning=i" => \$warn_val,
+        "c=i" => \$crit_val, "critical=i" => \$crit_val,
+        "h" => \$help_val, "help" => \$help_val,
+        "V" => \$vers_val, "version" => \$vers_val,
+        "v" => \$verb_val, "verbose" => \$verb_val,
+) ;
+&print_debug("GetOptions: warning: $warn_val, critical: $crit_val, help value: $help_val, version: $vers_val") ;
+
+
+if ( $help_val != 0 ) {
+        &show_help ;
+        exit $ERRORS{'OK'} ;
+}
+
+if ( $vers_val != 0 ) {
+        &print_revision($prog_name,$prog_ver) ;
+        exit $ERRORS{'OK'} ;
+}
+
+# Let's get our date...
+my ($sec, $min, $hour, $mday, $mon, $year, $wday, $yday, $isdst) = localtime time ;
+if ( $mday <= 9 ) { $mday = "0" . $mday ; }
+$mon += 1 ;
+if ( $mon <= 9 ) { $mon = "0" . $mon ; }
+$year += 1900 ;
+my $date = $year . "-" . $mon . "-" . $mday ;
+&print_debug( "date: $date" ) ;
+
+#Let's get our number of core files...
+my $how_many = `ls -1 -al /var/gv/spool 2>/dev/null | grep core* | grep $date | wc -l` ;
+chomp $how_many ;
+&print_debug( "core files: $how_many" ) ;
+
+# We've got our number, now let's figure out what to return...
+if ( $how_many < $warn_val ) { $status = $ERRORS{'OK'} ;
+                                $status_print = "OK" ; }
+elsif ( $how_many >= $warn_val && $how_many < $crit_val ) { $status = $ERRORS{'WARNING'} ;
+                                                           $status_print = "WARNING" ; }
+elsif ( $how_many >= $crit_val ) { $status = $ERRORS{'CRITICAL'} ;
+                                  $status_print = "CRITICAL" ; }
+else { $status = $ERRORS{'UNKNOWN'} ;
+        $status_print = "UNKNOWN" ; }
+
+# Let's send back the stuff we need to send back...single descriptive line printed and exit value.
+print $status_print . " - " . $how_many . " core file(s) in /var/gv/spool.\n" ;
+exit $status ;

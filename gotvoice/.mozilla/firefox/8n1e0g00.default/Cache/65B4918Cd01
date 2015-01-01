@@ -1,0 +1,883 @@
+<!DOCTYPE HTML PUBLIC "-//SimoTime//DTD HTML 4.0 Transitional//EN" "hmpro6.dtd">
+<HTML> 
+  <HEAD> <META NAME="Author" CONTENT="Larry Simmons">
+    <META NAME="Generator" CONTENT="SimoTime Version 1.0">
+    <META NAME="description"
+     CONTENT="A Summary of FTP commands to download or upload files between a Mainframe and Windows System using Micro Focus.">
+    <META NAME="KEYWORDS"
+     CONTENT="ftp,file,transfer,protocol,ascii,binary,download,upload,mainframe,file,fixed,variable,length,records,IBM,Micro,Focus,microfocus,mf">
+    
+    <TITLE>FTP, File Transfer Protocol - Summary of Commands</TITLE> <STYLE TYPE="TEXT/CSS">
+  P   {FONT-FAMILY: Arial; FONT-SIZE:12px}
+  H1  {FONT-FAMILY: TIMES NEW ROMAN; FONT-SIZE: 28px; color: navy}
+  H2  {FONT-FAMILY: TIMES NEW ROMAN; FONT-SIZE: 18px; color: navy}
+  H3  {FONT-FAMILY: TIMES NEW ROMAN; FONT-SIZE: 16px; color: navy}
+  H4  {FONT-FAMILY: TIMES NEW ROMAN; FONT-SIZE: 14px; color: navy}
+  TD  {FONT-FAMILY: Arial; FONT-SIZE: 16px}
+  PRE {FONT-FAMILY: Courier New; FONT-SIZE: 14px}
+  </STYLE> 
+  </HEAD> 
+  <BODY> 
+    <TABLE WIDTH="100%" CELLPADDING="0" CELLSPACING="0" BORDER="0"> 
+      <TR> 
+        <TD> 
+          <TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0"> 
+            <TR> 
+              <TD ALIGN="LEFT"> <A NAME="TOC" STYLE="font-size: 6pt"><img src="simotime.gif" width="165" HEIGHT="55" BORDER="0"> </A></TD> 
+              <TD ALIGN="LEFT"> 
+                <TABLE WIDTH="100%" CELLPADDING="0" CELLSPACING="0"
+                 ALIGN="RIGHT" BORDER="0"> 
+                  <TR> 
+                    <TD ALIGN="RIGHT" NOWRAP="NOWRAP"><FONT
+                      STYLE="font-size: 26pt; font-weight: bold; color: navy"> &nbsp;File Transfer
+                      Protocol</FONT></TD> 
+                  </TR> 
+                </TABLE> </TD> 
+            </TR> 
+          </TABLE> 
+          <TABLE WIDTH="100%" CELLPADDING="0" CELLSPACING="0" BORDER="0"> 
+            <TR> 
+              <TD NOWRAP="NOWRAP"><FONT
+                STYLE="font-style: normal; font-size: 12pt; font-family: Arial; color: maroon; font-weight: normal; font-variant: normal">When
+                technology complements business &nbsp;</FONT></TD> 
+              <TD ALIGN="RIGHT" NOWRAP="NOWRAP"><FONT
+                STYLE="font-style: normal; font-size: 14pt; font-family: Arial; color: navy; font-weight: normal; font-variant: normal">FTP
+                Commands</FONT></TD> 
+            </TR> 
+          </TABLE></TD> 
+      </TR> 
+      <TR> 
+        <TD> 
+          <TABLE WIDTH="100%" CELLPADDING="0" CELLSPACING="0" BORDER="0"> 
+            <TR> 
+              <TD STYLE="color: gray; font-size: 8pt" NOWRAP="NOWRAP"
+               VALIGN="MIDDLE"><FONT
+                STYLE="font-size: 12px; font-weight: normal; color: gray">Copyright &copy;
+                1987-2008 &nbsp;SimoTime Enterprises, LLC &nbsp;All Rights
+                Reserved&nbsp;</FONT></TD> 
+              <TD ALIGN="RIGHT" NOWRAP="NOWRAP" VALIGN="MIDDLE">
+                <A HREF="http://www.simotime.com"
+                 STYLE="font-size: 12px; font-weight: normal; color: blue"
+                 ONMOUSEOVER="this.style.color='FF0000'"
+                 ONMOUSEOUT="this.style.color='0000FF'">http://www.simotime.com </A></TD> 
+            </TR> 
+          </TABLE></TD> 
+      </TR> 
+    </TABLE> <HR SIZE="4" COLOR="navy"> 
+    <TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="100%"
+     BGCOLOR="#FFFFC0"> 
+      <TR> 
+        <TD WIDTH="73%"> 
+          <TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0"> 
+            <TR> 
+              <TD WIDTH="5px">&nbsp;</TD> 
+              <TD>
+                <A HREF="#Introduction" ONMOUSEOUT="this.style.color='0000FF'"
+                 ONMOUSEOVER="this.style.color='FF0000'"
+                 STYLE="color: blue; font-size: 12pt; font-weight: bold; text-decoration: none">Introduction</A></TD>
+              
+            </TR> 
+            <TR> 
+              <TD>&nbsp;</TD> 
+              <TD>
+                <A HREF="#InteractiveSession" ONMOUSEOVER="this.style.color='FF0000'"
+                 ONMOUSEOUT="this.style.color='0000FF'"
+                 STYLE="color: blue; font-size: 12pt; font-weight: bold; text-decoration: none">An
+                Interactive FTP Session</A></TD> 
+            </TR> 
+            <TR> 
+              <TD>&nbsp;</TD> 
+              <TD>
+                <A HREF="#AutomatedBatchSession" ONMOUSEOVER="this.style.color='FF0000'"
+                 ONMOUSEOUT="this.style.color='0000FF'"
+                 STYLE="color: blue; font-size: 12pt; font-weight: bold; text-decoration: none">An
+                Automated, Batch FTP Session</A></TD> 
+            </TR> 
+            <TR> 
+              <TD>&nbsp;</TD> 
+              <TD>
+                <A HREF="#CommandList" ONMOUSEOVER="this.style.color='FF0000'"
+                 ONMOUSEOUT="this.style.color='0000FF'"
+                 STYLE="color: blue; font-size: 12pt; font-weight: bold; text-decoration: none">An
+                FTP Command List</A></TD> 
+            </TR> 
+            <TR> 
+              <TD>&nbsp;</TD> 
+              <TD><A HREF="#ExtendedCommandList"
+                ONMOUSEOVER="this.style.color='FF0000'" ONMOUSEOUT="this.style.color='0000FF'"
+                STYLE="color: blue; font-size: 12pt; font-weight: bold; text-decoration: none">An
+                FTP Extended Command List</A></TD> 
+            </TR> 
+            <TR> 
+              <TD>&nbsp;</TD> 
+              <TD>
+                <A HREF="#Summary" ONMOUSEOUT="this.style.color='0000FF'"
+                 ONMOUSEOVER="this.style.color='FF0000'"
+                 STYLE="color: blue; font-size: 12pt; font-weight: bold; text-decoration: none">Summary</A></TD>
+              
+            </TR> 
+            <TR> 
+              <TD>&nbsp;</TD> 
+              <TD> 
+                <TABLE WIDTH="100%" CELLPADDING="0" CELLSPACING="0" BORDER="0">
+                  
+                  <TR> 
+                    <TD WIDTH="2%">&nbsp;</TD> 
+                    <TD>
+                      <A HREF="#SimilarPoints" ONMOUSEOUT="this.style.color='0000FF'"
+                       ONMOUSEOVER="this.style.color='FF0000'"
+                       STYLE="color: blue; font-size: 10pt; text-decoration: none">Links to Similar
+                      Pages of Interest</A></TD> 
+                  </TR> 
+                  <TR> 
+                    <TD>&nbsp;</TD> 
+                    <TD><A HREF="#GlossaryOfTerms"
+                      ONMOUSEOUT="this.style.color='0000FF'" ONMOUSEOVER="this.style.color='FF0000'"
+                      STYLE="color: blue; font-size: 10pt; text-decoration: none">Glossary of
+                      Terms</A></TD> 
+                  </TR> 
+                  <TR> 
+                    <TD>&nbsp;</TD> 
+                    <TD>
+                      <A HREF="#Comments" ONMOUSEOUT="this.style.color='0000FF'"
+                       ONMOUSEOVER="this.style.color='FF0000'"
+                       STYLE="color: blue; font-size: 10pt; text-decoration: none">Comments or
+                      Suggestions</A></TD> 
+                  </TR> 
+                  <TR> 
+                    <TD>&nbsp;</TD> 
+                    <TD>
+                      <A HREF="#AboutSimoTime" ONMOUSEOUT="this.style.color='0000FF'"
+                       ONMOUSEOVER="this.style.color='FF0000'"
+                       STYLE="color: blue; font-size: 10pt; text-decoration: none">About
+                      SimoTime</A></TD> 
+                  </TR> 
+                </TABLE></TD> 
+            </TR> 
+          </TABLE></TD> 
+        <TD WIDTH="2%">&nbsp;</TD> 
+        <TD VALIGN="TOP" ALIGN="RIGHT"> 
+          <TABLE WIDTH="100%" CELLPADDING="2" CELLSPACING="0" BORDER="1"> 
+            <TR> 
+              <TD BGCOLOR="navy" ALIGN="CENTER" NOWRAP="NOWRAP"><FONT
+                STYLE="font-size: 10pt; background-color: navy; color: white; font-family: Arial; font-weight: bold">&nbsp;Quick
+                Connects&nbsp;</FONT></TD> 
+            </TR> 
+            <TR> 
+              <TD ALIGN="CENTER" BGCOLOR="#0099FF"><A HREF="indexasm.htm"
+                TARGET="_blank"
+                STYLE="font-size: 8pt; font-family: Arial; color: white; text-decoration: none; font-weight: bold"
+                ONMOUSEOVER="this.style.color='FFFF00'"
+                ONMOUSEOUT="this.style.color='white'">The Assembler Connection</A></TD> 
+            </TR> 
+            <TR> 
+              <TD BGCOLOR="#0055FF" ALIGN="CENTER" NOWRAP="NOWRAP"><A
+                HREF="indexcbl.htm" TARGET="_blank"
+                STYLE="font-size: 8pt; font-family: Arial; color: white; text-decoration: none; font-weight: bold"
+                ONMOUSEOVER="this.style.color='FFFF00'"
+                ONMOUSEOUT="this.style.color='white'">The COBOL Connection</A></TD> 
+            </TR> 
+            <TR> 
+              <TD ALIGN="CENTER" BGCOLOR="#0099FF"><A HREF="indexjcl.htm"
+                TARGET="_blank"
+                STYLE="font-size: 8pt; font-family: Arial; color: white; text-decoration: none; font-weight: bold"
+                ONMOUSEOVER="this.style.color='FFFF00'"
+                ONMOUSEOUT="this.style.color='white'">The JCL Connection</A></TD> 
+            </TR> 
+            <TR> 
+              <TD ALIGN="CENTER" BGCOLOR="#0055FF" NOWRAP="NOWRAP"><A
+                HREF="indexnum.htm" TARGET="_blank"
+                STYLE="font-size: 8pt; font-family: Arial; color: white; text-decoration: none; font-weight: bold"
+                ONMOUSEOVER="this.style.color='FFFF00'"
+                ONMOUSEOUT="this.style.color='white'">The Numbers Connection</A></TD> 
+            </TR> 
+            <TR> 
+              <TD ALIGN="CENTER" BGCOLOR="#0099FF" NOWRAP="NOWRAP"><A
+                HREF="indexsql.htm" TARGET="_blank"
+                STYLE="font-size: 8pt; font-family: Arial; color: white; text-decoration: none; font-weight: bold"
+                ONMOUSEOVER="this.style.color='FFFF00'"
+                ONMOUSEOUT="this.style.color='white'">The SQL Connection</A></TD> 
+            </TR> 
+            <TR> 
+              <TD ALIGN="CENTER" BGCOLOR="#0055FF" NOWRAP="NOWRAP"><A
+                HREF="indexsam.htm" TARGET="_blank"
+                STYLE="font-size: 8pt; font-family: Arial; color: white; text-decoration: none; font-weight: bold"
+                ONMOUSEOVER="this.style.color='FFFF00'"
+                ONMOUSEOUT="this.style.color='white'">The VSAM-QSAM-SORT Connection</A></TD> 
+            </TR> 
+            <TR> 
+              <TD ALIGN="CENTER" BGCOLOR="navy"><FONT
+                STYLE="font-size: 10pt; background-color: navy; color: white; font-family: Arial; font-weight: bold">&nbsp;References</FONT></TD>
+              
+            </TR> 
+            <TR> 
+              <TD ALIGN="CENTER" BGCOLOR="#0055FF"><A HREF="asc2ebc1.htm"
+                TARGET="_blank"
+                STYLE="font-size: 8pt; font-family: Arial; color: white; text-decoration: none; font-weight: bold"
+                ONMOUSEOVER="this.style.color='FFFF00'"
+                ONMOUSEOUT="this.style.color='white'">ASCII / EBCDIC Tables</A></TD> 
+            </TR> 
+            <TR> 
+              <TD ALIGN="CENTER" BGCOLOR="#0099FF" NOWRAP="NOWRAP"><A
+                HREF="dfsers01.htm" TARGET="_blank"
+                STYLE="font-size: 8pt; font-family: Arial; color: white; text-decoration: none; font-weight: bold"
+                ONMOUSEOVER="this.style.color='FFFF00'"
+                ONMOUSEOUT="this.style.color='white'">Data Management</A></TD> 
+            </TR> 
+            <TR> 
+              <TD ALIGN="CENTER" BGCOLOR="#0055FF"><A HREF="vsmfsk01.htm"
+                TARGET="_blank"
+                STYLE="font-size: 8pt; font-family: Arial; color: white; text-decoration: none; font-weight: bold"
+                ONMOUSEOVER="this.style.color='FFFF00'"
+                ONMOUSEOUT="this.style.color='white'">File Status Codes</A></TD> 
+            </TR> 
+            <TR> 
+              <TD ALIGN="CENTER" BGCOLOR="maroon"><FONT
+                STYLE="font-size: 8pt; font-weight: bold; color: yellow">File Transfer
+                Protocol</FONT></TD> 
+            </TR> 
+            <TR> 
+              <TD ALIGN="CENTER" BGCOLOR="#0055FF"><A HREF="glossary.htm"
+                TARGET="_blank"
+                STYLE="font-size: 8pt; font-family: Arial; color: white; text-decoration: none; font-weight: bold"
+                ONMOUSEOVER="this.style.color='FFFF00'"
+                ONMOUSEOUT="this.style.color='white'">Glossary of Terms</A></TD> 
+            </TR> 
+            <TR> 
+              <TD ALIGN="CENTER" BGCOLOR="#0099FF" NOWRAP="NOWRAP"><A
+                HREF="sim4srch.htm" TARGET="_blank"
+                STYLE="font-size: 8pt; font-family: Arial; color: white; text-decoration: none; font-weight: bold"
+                ONMOUSEOVER="this.style.color='FFFF00'" ONMOUSEOUT="this.style.color='white'">
+                Search Engines and Links</A></TD> 
+            </TR> 
+            <TR> 
+              <TD ALIGN="CENTER" BGCOLOR="#0055FF"><A HREF="simopath.htm"
+                TARGET="_blank"
+                STYLE="font-size: 8pt; font-family: Arial; color: white; text-decoration: none; font-weight: bold"
+                ONMOUSEOVER="this.style.color='FFFF00'" ONMOUSEOUT="this.style.color='white'">
+                Training and Self Study</A></TD> 
+            </TR> 
+            <TR> 
+              <TD ALIGN="CENTER" BGCOLOR="#0099FF"><A
+                HREF="mailto:HelpDesk@SimoTime.com" TARGET="_blank"
+                STYLE="font-size: 8pt; font-family: Arial; color: white; text-decoration: none; font-weight: bold"
+                ONMOUSEOVER="this.style.color='FFFF00'" ONMOUSEOUT="this.style.color='white'">
+                Help Desk for SimoTime</A></TD> 
+            </TR> 
+          </TABLE> </TD> 
+      </TR> 
+    </TABLE><HR SIZE="4" COLOR="navy"> 
+    <H1> <A NAME="Introduction">Introduction</A><FONT FACE="Arial"
+      STYLE="color: gray; font-size: 8pt; font-weight: normal"><BR>(<A
+      HREF="#InteractiveSession" ONMOUSEOUT="this.style.color='808080'"
+      ONMOUSEOVER="this.style.color='FF0000'" STYLE="color: gray">Next</A>) (<A
+      HREF="#TOC" ONMOUSEOUT="this.style.color='808080'"
+      ONMOUSEOVER="this.style.color='FF0000'" STYLE="color: gray">Previous</A>) (<A
+      HREF="#TOC" ONMOUSEOUT="this.style.color='808080'"
+      ONMOUSEOVER="this.style.color='FF0000'"
+      STYLE="color: gray">Table-of-Contents</A>)</FONT></H1> 
+    <P>The following information is provided as a reference for the File
+      Transfer Protocol (FTP) commands. This document describes a typical process for
+      an interactive and automated, batch FTP session running on a PC with
+      Windows/2000 and connecting to a UNIX system. This process may vary slightly
+      depending on the hardware and software configurations of the local and remote
+      systems. </P> 
+    <H1> <A NAME="InteractiveSession">An Interactive FTP Session</A><FONT
+      FACE="Arial" STYLE="color: gray; font-size: 8pt; font-weight: normal"><BR>(<A
+      HREF="#AutomatedBatchSession" ONMOUSEOUT="this.style.color='808080'"
+      ONMOUSEOVER="this.style.color='FF0000'" STYLE="color: gray">Next</A>) (<A
+      HREF="#Introduction" ONMOUSEOUT="this.style.color='808080'"
+      ONMOUSEOVER="this.style.color='FF0000'" STYLE="color: gray">Previous</A>) (<A
+      HREF="#TOC" ONMOUSEOUT="this.style.color='808080'"
+      ONMOUSEOVER="this.style.color='FF0000'"
+      STYLE="color: gray">Table-of-Contents</A>)</FONT></H1> 
+    <P>To start an FTP interactive session type "ftp" from a DOS Command
+      window.</P> 
+    <PRE><FONT STYLE="color: navy; font-size: 14px">C:\&gt; </FONT><FONT STYLE="color: maroon; font-size: 14px; font-weight: bold">ftp</FONT></PRE> 
+    <P>The DOS prompt should be replaced with the FTP prompt. The FTP program
+      is now running on the local system. A connection (or session) to a remote
+      system has not been established.</P> 
+    <P>The help command or ? (<I>question mark</I>) may be executed without
+      being attached to a remote system and will do a print (usually to the screen)
+      of the FTP commands. The following is a typical result of the help command
+      running on a PC with Windows.</P> 
+    <PRE><FONT STYLE="color: navy">ftp&gt; </FONT><FONT STYLE="color: maroon; font-size: 14px; font-weight: bold">help</FONT>
+<FONT STYLE="color: maroon">Commands may be abbreviated. Commands are:
+!           delete      literal     prompt      send
+?           debug       ls          put         status
+append      dir         mdelete     pwd         trace
+ascii       disconnect  mdir        quit        type
+bell        get         mget        quote       user
+binary      glob        mkdir       recv        verbose
+bye         hash        mls         remotehelp
+cd          help        mput        rename
+close       lcd         open        rmdir</FONT>
+<FONT STYLE="color: navy">ftp&gt;</FONT>
+</PRE> 
+    <P> The following commands will establish a connection (or session) by
+      doing a logon between the local FTP program and a remote system.</P> 
+    <PRE><FONT STYLE="color: navy">ftp&gt; </FONT><FONT STYLE="color: maroon; font-size: 14px; font-weight: bold">open <I>domain.name</I></FONT>
+<FONT STYLE="color: maroon">Connected to <I>domain.name</I>
+220 antigonous FTP server ready.</FONT>
+<FONT STYLE="color: navy">User (<I>domain.name</I>:(none)):</FONT> <FONT STYLE="color: maroon; font-size: 14px; font-weight: bold"><I>User-Name</I></FONT>
+<FONT STYLE="color: maroon">331 Password required for <I>user-name</I></FONT>
+<FONT STYLE="color: navy">Password: </FONT><FONT STYLE="color: maroon; font-size: 14px; font-weight: bold"><I>password</I></FONT>
+<FONT STYLE="color: maroon">230 User <I>user-name</I> logged in.</FONT>
+<FONT STYLE="color: navy">ftp&gt; </FONT>
+</PRE> 
+    <P>The following command will change the directory on the remote
+      system.</P> 
+    <PRE><FONT STYLE="color: navy">ftp&gt; </FONT><FONT STYLE="color: maroon; font-size: 14px; font-weight: bold">cd /web</FONT>
+<FONT STYLE="color: maroon">250 CWD command successful.</FONT>
+<FONT STYLE="color: navy">ftp&gt; </FONT></PRE> 
+    <P>The following command will find out the pathname of the current
+      directory on the remote system and display the information.</P> 
+    <PRE><FONT STYLE="color: navy">ftp&gt; </FONT><FONT STYLE="color: maroon; font-size: 14px; font-weight: bold">pwd</FONT>
+<FONT STYLE="color: maroon">257 "/web" is the current directory.</FONT>
+<FONT STYLE="color: navy">ftp&gt; </FONT></PRE> 
+    <P>The following command will set the file transfer mode to ASCII (this is
+      the default and transmits seven bits per byte).</P> 
+    <PRE><FONT STYLE="color: navy">ftp&gt; </FONT><FONT STYLE="color: maroon; font-size: 14px; font-weight: bold">ascii</FONT>
+<FONT STYLE="color: maroon">200 Type set to A.</FONT>
+<FONT STYLE="color: navy">ftp&gt; </FONT></PRE> 
+    <P>The following command will copy a file from the local system to the
+      remote system. </P> 
+    <PRE><FONT STYLE="color: navy">ftp&gt; </FONT><FONT STYLE="color: maroon; font-size: 14px; font-weight: bold">put d:\simoweb1\<I>filename.txt</I></FONT>
+<FONT STYLE="color: maroon">200 PORT command successful.
+Opening ASCII mode data connection for <I>filename.txt</I>
+226 Transfer complete</FONT>
+<FONT STYLE="color: navy">ftp&gt; </FONT></PRE> 
+    <P>The following command will set the file transfer mode to binary (the
+      binary mode transfers all eight bits per byte and must be used to transfer
+      non-ASCII files).</P> 
+    <PRE><FONT STYLE="color: navy">ftp&gt; </FONT><FONT STYLE="color: maroon; font-size: 14px; font-weight: bold">binary</FONT>
+<FONT STYLE="color: maroon">200 Type set to I.</FONT>
+<FONT STYLE="color: navy">ftp&gt; </FONT></PRE> 
+    <P>The following command will copy a file from the local system to the
+      remote system. </P> 
+    <PRE><FONT STYLE="color: navy">ftp&gt; </FONT><FONT STYLE="color: maroon; font-size: 14px; font-weight: bold">put d:\simoweb1\<I>filename.zip</I>
+</FONT>
+<FONT STYLE="color: maroon">200 PORT command successful.
+Opening BINARY mode data connection for <I>filename.zip</I>
+226 Transfer complete</FONT>
+<FONT STYLE="color: navy">ftp&gt; </FONT></PRE> 
+    <P>The following command will exit the FTP environment (<I>same as</I>
+      "bye").</P> 
+    <PRE><FONT STYLE="color: navy">ftp&gt; </FONT><FONT STYLE="color: maroon; font-size: 14px; font-weight: bold">quit</FONT>
+<FONT STYLE="color: maroon">221 Goodbye.</FONT></PRE> 
+    <P>When the preceding command is finished the DOS prompt will be
+      displayed.</P> 
+    <PRE><FONT STYLE="color: navy; font-size: 16px">C:\&gt;</FONT></PRE> 
+    <P>The preceding is a typical process for an interactive FTP session
+      running on a PC with Windows/2000 and connecting to a UNIX system. This process
+      may vary slightly depending on the hardware and software configurations of the
+      local and remote systems.</P> 
+    <H1> <A NAME="AutomatedBatchSession">An Automated, Batch FTP
+      Session</A><FONT FACE="Arial"
+      STYLE="color: gray; font-size: 8pt; font-weight: normal"><BR>(<A
+      HREF="#CommandList" ONMOUSEOUT="this.style.color='808080'"
+      ONMOUSEOVER="this.style.color='FF0000'" STYLE="color: gray">Next</A>) (<A
+      HREF="#InteractiveSession" ONMOUSEOUT="this.style.color='808080'"
+      ONMOUSEOVER="this.style.color='FF0000'" STYLE="color: gray">Previous</A>) (<A
+      HREF="#TOC" ONMOUSEOUT="this.style.color='808080'"
+      ONMOUSEOVER="this.style.color='FF0000'"
+      STYLE="color: gray">Table-of-Contents</A>)</FONT></H1> 
+    <P>The following batch file <FONT
+      STYLE="color: maroon">(UPWIP001.BAT)</FONT> will start an FTP session and pass
+      the name of a text file <FONT STYLE="color: maroon">(UPWIP001.TXT)</FONT> to
+      the FTP program. This text file will be processed by the FTP program and each
+      of the statements in the text file will be processed in the sequence they
+      appear.</P> 
+    <PRE><FONT STYLE="color: navy">@echo OFF</FONT>
+<FONT STYLE="color: maroon">echo * *******************************************************************
+echo *                   This program is provided by:                    *
+echo *                    SimoTime Enterprises, LLC                      *
+echo *           (C) Copyright 1987-2001 All Rights Reserved             *
+echo *             Web Site URL:   http://www.simotime.com               *
+echo *                   e-mail:   helpdesk@simotime.com                 *
+echo * *******************************************************************
+echo *
+echo * This batch and text file illustrate the use of FTP to upload an
+echo * ASCII file and an EBCDIC or Binary file. The UPWIP001.BAT file
+echo * references UPWIP001.TXT that contains...
+echo *
+echo *   <I>user</I>
+echo *   <I>password</I>
+echo *   cd /web
+echo *   pwd
+echo *   ascii
+echo *   put d:\simoweb1\cbltxn01.htm
+echo *   binary
+echo *   put d:\simoweb1\cbltxn01.zip
+echo *   quit
+echo *</FONT>
+<FONT STYLE="color: navy">ftp -s:upwip001.txt www.simotime.com</FONT></PRE> 
+    <P>The following is a listing of the contents of the text file
+      <FONT STYLE="color: maroon">(UPWIP001.TXT)</FONT>.</P> 
+    <PRE><FONT STYLE="color: navy"><I>user</I>
+<I>password</I>
+cd /web
+pwd
+ascii
+put d:\simoweb1\cbltxn01.htm
+binary
+put d:\simoweb1\cbltxn01.zip
+quit</FONT></PRE> 
+    <H1> <A NAME="CommandList">An FTP Command List </A><FONT
+      FACE="Arial" STYLE="color: gray; font-size: 8pt; font-weight: normal"><BR>(<A
+      HREF="#ExtendedCommandList" ONMOUSEOUT="this.style.color='808080'"
+      ONMOUSEOVER="this.style.color='FF0000'" STYLE="color: gray">Next</A>) (<A
+      HREF="#AutomatedBatchSession" ONMOUSEOUT="this.style.color='808080'"
+      ONMOUSEOVER="this.style.color='FF0000'" STYLE="color: gray">Previous</A>) (<A
+      HREF="#TOC" ONMOUSEOUT="this.style.color='808080'"
+      ONMOUSEOVER="this.style.color='FF0000'"
+      STYLE="color: gray">Table-of-Contents</A>)</FONT></H1> 
+    <P>The following is a summary of the commonly used FTP Commands.</P> 
+    <TABLE WIDTH="100%" CELLPADDING="4" CELLSPACING="2" BORDER="1"> 
+      <TR> 
+        <TD ALIGN="CENTER" WIDTH="10%" BGCOLOR="#FFFFC0"><B>Command</B></TD> 
+        <TD BGCOLOR="#FFFFC0"><B>Description</B></TD> 
+      </TR> 
+      <TR> 
+        <TD ALIGN="LEFT" VALIGN="TOP"
+         STYLE="color: navy; font-weight: bold">!</TD> 
+        <TD STYLE="color: maroon">Preceding a command with the exclamation
+          point will cause the command to execute on the local system instead of the
+          remote system. </TD> 
+      </TR> 
+      <TR> 
+        <TD ALIGN="LEFT" VALIGN="TOP" STYLE="color: navy; font-weight: bold">?
+          </TD> 
+        <TD STYLE="color: maroon">Request assistance or information about the
+          FTP commands. This command does not require a connection to a remote
+          system.</TD> 
+      </TR> 
+      <TR> 
+        <TD VALIGN="TOP" STYLE="color: navy; font-weight: bold">ascii</TD> 
+        <TD STYLE="color: maroon">Set the file transfer mode to ASCII <I>(Note:
+          this is the default and transmits seven bits per byte)</I>.</TD> 
+      </TR> 
+      <TR> 
+        <TD VALIGN="TOP" STYLE="color: navy; font-weight: bold">bell</TD> 
+        <TD STYLE="color: maroon">Turns bell mode on / off. This command does
+          not require a connection to a remote system.</TD> 
+      </TR> 
+      <TR> 
+        <TD VALIGN="TOP" STYLE="color: navy; font-weight: bold">binary</TD> 
+        <TD STYLE="color: maroon">Set the file transfer mode to binary
+          <I>(Note: the binary mode transfers all eight bits per byte and must be used to
+          transfer non-ASCII files)</I>.</TD> 
+      </TR> 
+      <TR> 
+        <TD VALIGN="TOP" STYLE="color: navy; font-weight: bold">bye</TD> 
+        <TD STYLE="color: maroon">Exit the FTP environment (<I>same as</I>
+          quit). This command does not require a connection to a remote system.</TD> 
+      </TR> 
+      <TR> 
+        <TD VALIGN="TOP" STYLE="color: navy; font-weight: bold">cd</TD> 
+        <TD STYLE="color: maroon">Change directory on the remote system.</TD> 
+      </TR> 
+      <TR> 
+        <TD VALIGN="TOP" STYLE="color: navy; font-weight: bold">close</TD> 
+        <TD STYLE="color: maroon">Terminate a session with another system.</TD>
+        
+      </TR> 
+      <TR> 
+        <TD VALIGN="TOP" STYLE="color: navy; font-weight: bold">debug</TD> 
+        <TD STYLE="color: maroon">Sets debugging on/off. This command does not
+          require a connection to a remote system.</TD> 
+      </TR> 
+      <TR> 
+        <TD VALIGN="TOP" STYLE="color: navy; font-weight: bold">delete</TD> 
+        <TD STYLE="color: maroon">Delete (<I>remove</I>) a file in the current
+          remote directory (<I>same as</I> rm <I>in UNIX</I>).</TD> 
+      </TR> 
+      <TR> 
+        <TD VALIGN="TOP" STYLE="color: navy; font-weight: bold">dir</TD> 
+        <TD STYLE="color: maroon">Lists the contents of the remote
+          directory.The asterisk (*) and the question mark (?) may be used as wild cards.
+          For example:<BR><BR> 
+          <TABLE WIDTH="100%" CELLPADDING="2" CELLSPACING="4" BORDER="0"> 
+            <TR> 
+              <TD WIDTH="10%" VALIGN="TOP"><FONT
+                STYLE="color: navy; font-size: 14px">dir b*</FONT></TD> 
+              <TD><FONT STYLE="color: maroon; font-size: 14px">This will
+                display all entries that start with the letter "b". For example, the following
+                will be displayed.</FONT><BR><FONT
+                STYLE="color: maroon; font-style: italic; font-size: 14px">bet, ben, bingo,
+                born, boon, bipartisan, bandit, boy</FONT></TD> 
+            </TR> 
+            <TR> 
+              <TD VALIGN="TOP"><FONT STYLE="color: navy; font-size: 14px">dir
+                b*n*</FONT></TD> 
+              <TD><FONT STYLE="color: maroon; font-size: 14px">This will
+                display all entries that start with the letter "b" and have the letter "n"
+                somewhere after the letter "b". For example, the following will be
+                displayed.</FONT><BR><FONT
+                STYLE="color: maroon; font-style: italic; font-size: 14px">ben, bingo, born,
+                boon, bipartisan, bandit</FONT><BR><FONT
+                STYLE="color: maroon; font-size: 14px">The following will not be
+                displayed.</FONT><BR><FONT
+                STYLE="color: maroon; font-style: italic; font-size: 14px">bet, boy</FONT></TD>
+              
+            </TR> 
+            <TR> 
+              <TD VALIGN="TOP"><FONT STYLE="color: navy; font-size: 14px">dir
+                b?n</FONT></TD> 
+              <TD><FONT STYLE="color: maroon; font-size: 14px">This will
+                display all entries that start with the letter "b", have the letter "n" in the
+                3rd position and have a three character name. For example, the following will
+                be displayed.</FONT><BR><FONT
+                STYLE="color: maroon; font-style: italic; font-size: 14px">ben</FONT><BR><FONT
+                STYLE="color: maroon; font-size: 14px">The following will not be
+                displayed.</FONT><BR><FONT
+                STYLE="color: maroon; font-style: italic; font-size: 14px">bet, bingo, born,
+                boon, bipartisan, bandit, boy</FONT></TD> 
+            </TR> 
+            <TR> 
+              <TD NOWRAP="NOWRAP" VALIGN="TOP"><FONT
+                STYLE="color: navy; font-size: 14px">dir b?n*</FONT></TD> 
+              <TD><FONT STYLE="color: maroon; font-size: 14px">This will
+                display all entries that start with the letter "b" and have the letter "n" in
+                the 3rd position. For example, the following will be displayed.</FONT><BR><FONT
+                STYLE="color: maroon; font-style: italic; font-size: 14px">ben, bingo,
+                bandit</FONT><BR><FONT STYLE="color: maroon; font-size: 14px">The following
+                will not be displayed.</FONT><BR><FONT
+                STYLE="color: maroon; font-style: italic; font-size: 14px">bet, born, boon,
+                bipartisan, boy</FONT></TD> 
+            </TR> 
+          </TABLE></TD> 
+      </TR> 
+      <TR> 
+        <TD VALIGN="TOP" STYLE="color: navy; font-weight: bold">get</TD> 
+        <TD STYLE="color: maroon"> Copy a file from the remote system to the
+          local system.<BR><BR> 
+          <TABLE WIDTH="100%" CELLPADDING="0" CELLSPACING="0"> 
+            <TR> 
+              <TD VALIGN="TOP"><FONT STYLE="color: navy; font-size: 14px">get
+                <I>filename-1</I></FONT></TD> 
+              <TD STYLE="color: maroon"><FONT
+                STYLE="color: maroon; font-size: 14px">Copy (<I>or replace</I>)
+                <I>filename-1</I> from the current remote directory to a file with the same
+                name in the current local directory. </FONT></TD> 
+            </TR> 
+            <TR> 
+              <TD VALIGN="TOP" NOWRAP="NOWRAP" STYLE="color: navy"><FONT
+                STYLE="color: navy; font-size: 14px">get <I>filename-1</I>
+                <I>filename-2</I>&nbsp;&nbsp;</FONT></TD> 
+              <TD STYLE="color: maroon"><FONT
+                STYLE="color: maroon; font-size: 14px">Copy (<I>or replace</I>)
+                <I>filename-1</I> from the current remote directory to <I>filename-2</I> in the
+                current local directory. </FONT></TD> 
+            </TR> 
+          </TABLE></TD> 
+      </TR> 
+      <TR> 
+        <TD STYLE="color: navy; font-weight: bold" VALIGN="TOP">help</TD> 
+        <TD STYLE="color: maroon">Request a list of all available FTP commands.
+          This command does not require a connection to a remote system.</TD> 
+      </TR> 
+      <TR> 
+        <TD STYLE="color: navy; font-weight: bold" VALIGN="TOP">lcd</TD> 
+        <TD STYLE="color: maroon">Change directory on your local system
+          (<I>same as</I> CD <I>in UNIX</I>).</TD> 
+      </TR> 
+      <TR> 
+        <TD STYLE="color: navy; font-weight: bold" VALIGN="TOP">ls</TD> 
+        <TD STYLE="color: maroon">List the names of the files in the current
+          remote directory.</TD> 
+      </TR> 
+      <TR> 
+        <TD STYLE="color: navy; font-weight: bold" VALIGN="TOP">mget</TD> 
+        <TD STYLE="color: maroon">Copy multiple files from the remote system to
+          the local system. <I>(Note: You will be prompted for a</I> "y/n" <I>response
+          before copying each file)</I>.<BR><BR> 
+          <TABLE WIDTH="100%" CELLPADDING="0" CELLSPACING="0"> 
+            <TR> 
+              <TD VALIGN="TOP" STYLE="color: navy" NOWRAP="NOWRAP"><FONT
+                STYLE="color: navy; font-size: 14px">mget&nbsp; *&nbsp; &nbsp;</FONT></TD> 
+              <TD STYLE="color: maroon"><FONT
+                STYLE="color: maroon; font-size: 14px">Copies all the files in the current
+                remote directory to the current local directory, using the same filenames.
+                <I>Note the use of the asterisk (*) as a wild card character</I>.</FONT></TD> 
+            </TR> 
+          </TABLE></TD> 
+      </TR> 
+      <TR> 
+        <TD STYLE="color: navy; font-weight: bold" VALIGN="TOP">mkdir</TD> 
+        <TD STYLE="color: maroon">Make a new directory within the current
+          remote directory.</TD> 
+      </TR> 
+      <TR> 
+        <TD STYLE="color: navy; font-weight: bold" VALIGN="TOP">mput</TD> 
+        <TD STYLE="color: maroon">Copy multiple files from the local system to
+          the remote system. <I>(Note: You will be prompted for a</I> "y/n" <I>response
+          before copying each file)</I>.</TD> 
+      </TR> 
+      <TR> 
+        <TD STYLE="color: navy; font-weight: bold" VALIGN="TOP">open</TD> 
+        <TD STYLE="color: maroon">Open a connection with another system.</TD> 
+      </TR> 
+      <TR> 
+        <TD STYLE="color: navy; font-weight: bold" VALIGN="TOP">put</TD> 
+        <TD STYLE="color: maroon">Copy a file from the local system to the
+          remote system. </TD> 
+      </TR> 
+      <TR> 
+        <TD STYLE="color: navy; font-weight: bold" VALIGN="TOP">pwd</TD> 
+        <TD STYLE="color: maroon">Find out the pathname of the current
+          directory on the remote system.</TD> 
+      </TR> 
+      <TR> 
+        <TD STYLE="color: navy; font-weight: bold" VALIGN="TOP">quit</TD> 
+        <TD STYLE="color: maroon">Exit the FTP environment (<I>same as</I>
+          "bye"). This command does not require a connection to a remote system.</TD> 
+      </TR> 
+      <TR> 
+        <TD STYLE="color: navy; font-weight: bold" VALIGN="TOP">rmdir</TD> 
+        <TD STYLE="color: maroon">Remove (<I>delete</I>) a directory in the
+          current remote directory. </TD> 
+      </TR> 
+      <TR> 
+        <TD STYLE="color: navy; font-weight: bold" VALIGN="TOP">trace</TD> 
+        <TD STYLE="color: maroon">Toggles packet tracing. This command does not
+          require a connection to a remote system.</TD> 
+      </TR> 
+    </TABLE> 
+    <H1> <A NAME="ExtendedCommandList">An FTP Extended Command List </A><FONT
+      FACE="Arial" STYLE="color: gray; font-size: 8pt; font-weight: normal"><BR>(<A
+      HREF="#Summary" ONMOUSEOUT="this.style.color='808080'"
+      ONMOUSEOVER="this.style.color='FF0000'" STYLE="color: gray">Next</A>) (<A
+      HREF="#CommandList" ONMOUSEOUT="this.style.color='808080'"
+      ONMOUSEOVER="this.style.color='FF0000'" STYLE="color: gray">Previous</A>) (<A
+      HREF="#TOC" ONMOUSEOUT="this.style.color='808080'"
+      ONMOUSEOVER="this.style.color='FF0000'"
+      STYLE="color: gray">Table-of-Contents</A>)</FONT></H1> 
+    <P>The following are additional commands that are used when tranferring
+      files between an IBM Mainframe and a Windows or UNIX client swystem. Also, the
+      following includes commands required when working with files containing
+      variable length records.</P> 
+    <PRE><FONT STYLE="color: navy"><I>user</I>
+<I>password</I>
+CD ..
+PWD
+VERBOSE
+BINARY
+LITERAL SITE RDW LRECL=80 RECFM=FB TRACKS PRIMARY=10 SECONDARY=5
+PUT c:\SimoDemo\TestLib1\DataFtp1\CARDFILE.DAT SIMOTIME.DATA.CARDFILE
+QUIT </FONT></PRE> 
+    <TABLE WIDTH="100%" CELLPADDING="4" CELLSPACING="2" BORDER="1"> 
+      <TR> 
+        <TD WIDTH="10%" BGCOLOR="#FFFFC0"><B>Command</B></TD> 
+        <TD BGCOLOR="#FFFFC0"><B>Description</B></TD> 
+      </TR> 
+      <TR> 
+        <TD VALIGN="TOP" STYLE="color: navy; font-weight: bold">literal</TD> 
+        <TD STYLE="color: maroon">Will send an argument to the remote FTP
+          Server. This statement is similar in purpose as the "QUOTE" statement.</TD> 
+      </TR> 
+      <TR> 
+        <TD VALIGN="TOP" STYLE="color: navy; font-weight: bold">locsite</TD> 
+        <TD STYLE="color: maroon">LOCSITE This statement may be used at the
+          mainframe for commands specific to the mainframe</TD> 
+      </TR> 
+      <TR> 
+        <TD VALIGN="top" STYLE="color: navy; font-weight: bold">quote</TD> 
+        <TD STYLE="color: maroon">Will send an argument to the remote FTP
+          Server. This statement is similar in purpose as the "LITERAL" statement.</TD> 
+      </TR> 
+      <TR> 
+        <TD VALIGN="top" STYLE="color: navy; font-weight: bold">site</TD> 
+        <TD STYLE="color: maroon">This statement is used at the client system
+          and is used to transfer a function <I>(via the literal or quote)</I> to the
+          host site. The following is a summary of the commonly used SITE/LOCSITE
+          Commands. 
+          <TABLE WIDTH="100%" CELLPADDING="4" CELLSPACING="0" BORDER="0"> 
+            <TR> 
+              <TD WIDTH="10%" BGCOLOR="#E0E0E0"><B>Command</B></TD> 
+              <TD BGCOLOR="#E0E0E0"><B>Description</B></TD> 
+            </TR> 
+            <TR> 
+              <TD VALIGN="TOP"
+               STYLE="color: navy; font-weight: bold">BLKSIZE</TD> 
+              <TD STYLE="color: maroon">BLocKSIZE=nnnn where nnnn is the block
+                size (BLKSIZE) </TD> 
+            </TR> 
+            <TR> 
+              <TD VALIGN="TOP"
+               STYLE="color: navy; font-weight: bold">CYLINDERS</TD> 
+              <TD STYLE="color: maroon">CYlinders To indicate that space should
+                be allocated in cylinders </TD> 
+            </TR> 
+            <TR> 
+              <TD VALIGN="top"
+               STYLE="color: navy; font-weight: bold">DIRECTORY</TD> 
+              <TD STYLE="color: maroon">DIrectory=nnn where 'nnn' indicates the
+                number of directory blocks to be allocated for the directory of a PDS </TD> 
+            </TR> 
+            <TR> 
+              <TD VALIGN="top"
+               STYLE="color: navy; font-weight: bold">LRECL</TD> 
+              <TD STYLE="color: maroon">LRecl=nnn where nnn is the logical
+                record length (LRECL) </TD> 
+            </TR> 
+            <TR> 
+              <TD VALIGN="top"
+               STYLE="color: navy; font-weight: bold">PRIMARY</TD> 
+              <TD STYLE="color: maroon">PRImary=nnn where nnn indicates the
+                number of primary space units (tracks or cylinders) </TD> 
+            </TR> 
+            <TR> 
+              <TD VALIGN="top" STYLE="color: navy; font-weight: bold">RDW</TD> 
+              <TD STYLE="color: maroon">RDW will cause each record of a
+                variable length record to be preceded with a four byte Record Descriptor Word
+                (RDW) and possible four byte Block Descriptor Word (BDW). </TD> 
+            </TR> 
+            <TR> 
+              <TD VALIGN="top"
+               STYLE="color: navy; font-weight: bold">RECFM</TD> 
+              <TD STYLE="color: maroon">RECfm=format where format is: F, FA,
+                FB, FBA, FBM, FM, U, V, VA, VB, VBA, VBM, or VBS </TD> 
+            </TR> 
+            <TR> 
+              <TD VALIGN="top"
+               STYLE="color: navy; font-weight: bold">SECONDARY</TD> 
+              <TD STYLE="color: maroon">SECondary=nnn where nnn indicates the
+                number of secondary space units (tracks or cylinders) </TD> 
+            </TR> 
+            <TR> 
+              <TD VALIGN="top"
+               STYLE="color: navy; font-weight: bold">TRACKS</TD> 
+              <TD STYLE="color: maroon">TRacks To indicate that space should be
+                allocated in tracks.</TD> 
+            </TR> 
+          </TABLE></TD> 
+      </TR> 
+    </TABLE> 
+    <H1> <A NAME="Summary">Summary</A>
+      <FONT FACE="Arial"
+       STYLE="color: gray; font-size: 8pt; font-weight: normal"><BR>(<A
+      HREF="#SimilarPoints" ONMOUSEOUT="this.style.color='808080'"
+      ONMOUSEOVER="this.style.color='FF0000'" STYLE="color: gray">Next</A>) (<A
+      HREF="#ExtendedCommandList" ONMOUSEOUT="this.style.color='808080'"
+      ONMOUSEOVER="this.style.color='FF0000'" STYLE="color: gray">Previous</A>) (<A
+      HREF="#TOC" ONMOUSEOUT="this.style.color='808080'"
+      ONMOUSEOVER="this.style.color='FF0000'"
+      STYLE="color: gray">Table-of-Contents</A>)</FONT></H1> 
+    <P>The purpose of this document is to provide a quick reference for
+      connecting and exchanging information between two systems. This document
+      describes a typical process for an interactive or automated, batch File
+      Transfer Protocol (FTP) session running on a PC with Windows/2000 and
+      connecting to a UNIX system. This process may vary slightly depending on the
+      hardware and software configurations of the local and remote systems. </P> 
+    <P>This document is made available on an "as-is" basis and may be
+      downloaded, copied and modified for specific situations as long as the
+      copyright information is not removed or changed. As always, it is the
+      programmer's responsibility to thoroughly test all programs.</P> 
+    <H2> <A NAME="SimilarPoints">Links to Similar Pages of Interest</A><FONT
+      FACE="Arial" STYLE="color: gray; font-size: 8pt; font-weight: normal"><BR>(<A
+      HREF="#GlossaryOfTerms" ONMOUSEOUT="this.style.color='808080'"
+      ONMOUSEOVER="this.style.color='FF0000'" STYLE="color: gray">Next</A>) (<A
+      HREF="#Summary" ONMOUSEOUT="this.style.color='808080'"
+      ONMOUSEOVER="this.style.color='FF0000'" STYLE="color: gray">Previous</A>) (<A
+      HREF="#TOC" ONMOUSEOUT="this.style.color='808080'"
+      ONMOUSEOVER="this.style.color='FF0000'"
+      STYLE="color: gray">Table-of-Contents</A>)</FONT></H2> 
+    <P>Check out &nbsp;
+      <A HREF="sim4lib1.htm" TARGET="_blank" STYLE="color: blue"
+      ONMOUSEOVER="this.style.color='FF0000'"
+      ONMOUSEOUT="this.style.color='0000FF'">The SimoTime Library </A>&nbsp; for a
+      wide range of topics for Programmers, Project Managers and Software
+      Developers.</P> 
+    <P>To review all the information available on this site start at &nbsp;
+      <A HREF="http://www.simotime.com" TARGET="_blank" STYLE="color: blue"
+      ONMOUSEOVER="this.style.color='FF0000'"
+      ONMOUSEOUT="this.style.color='0000FF'">The SimoTime Home Page </A>&nbsp;.</P> 
+    <H2> <A NAME="GlossaryOfTerms">Glossary of Terms</A><FONT FACE="Arial"
+      STYLE="color: gray; font-size: 8pt; font-weight: normal"><BR> (<A
+      HREF="#Comments" ONMOUSEOUT="this.style.color='808080'"
+      ONMOUSEOVER="this.style.color='FF0000'" STYLE="color: gray">Next</A>) (<A
+      HREF="#SimilarPoints" ONMOUSEOUT="this.style.color='808080'"
+      ONMOUSEOVER="this.style.color='FF0000'" STYLE="color: gray">Previous</A>) (<A
+      HREF="#TOC" ONMOUSEOUT="this.style.color='808080'"
+      ONMOUSEOVER="this.style.color='FF0000'"
+      STYLE="color: gray">Table-of-Contents</A>)</FONT></H2> 
+    <P>Check out &nbsp;<A HREF="glossary.htm" TARGET="_blank"
+      STYLE="color: blue" ONMOUSEOVER="this.style.color='FF0000'"
+      ONMOUSEOUT="this.style.color='0000FF'">The SimoTime Glossary</A>&nbsp; for a
+      list of terms and definitions used in the documents provided by SimoTime.</P> 
+    <H2> <A NAME="Comments">Comments or Suggestions</A><FONT
+      FACE="Arial" STYLE="color: gray; font-size: 8pt; font-weight: normal"><BR>(<A
+      HREF="#AboutSimoTime" ONMOUSEOUT="this.style.color='808080'"
+      ONMOUSEOVER="this.style.color='FF0000'" STYLE="color: gray">Next</A>) (<A
+      HREF="#GlossaryOfTerms" ONMOUSEOUT="this.style.color='808080'"
+      ONMOUSEOVER="this.style.color='FF0000'" STYLE="color: gray">Previous</A>) (<A
+      HREF="#TOC" ONMOUSEOUT="this.style.color='808080'"
+      ONMOUSEOVER="this.style.color='FF0000'"
+      STYLE="color: gray">Table-of-Contents</A>)</FONT></H2> 
+    <P> If you have any questions, suggestions or comments please call or send
+      an e-mail to:
+      <A HREF="mailto:helpdesk@simotime.com" ONMOUSEOUT="this.style.color='0000FF'"
+      ONMOUSEOVER="this.style.color='FF0000'"
+      STYLE="color: blue; font-family: Arial">helpdesk@simotime.com </A></P> 
+    <H2> <A NAME="AboutSimoTime">About SimoTime Enterprises, LLC</A><FONT
+      FACE="Arial" STYLE="color: gray; font-size: 8pt; font-weight: normal"><BR>(<A
+      HREF="#TOC" ONMOUSEOUT="this.style.color='808080'"
+      ONMOUSEOVER="this.style.color='FF0000'" STYLE="color: gray">Next</A>) (<A
+      HREF="#Comments" ONMOUSEOUT="this.style.color='808080'"
+      ONMOUSEOVER="this.style.color='FF0000'" STYLE="color: gray">Previous</A>) (<A
+      HREF="#TOC" ONMOUSEOUT="this.style.color='808080'"
+      ONMOUSEOVER="this.style.color='FF0000'"
+      STYLE="color: gray">Table-of-Contents</A>)</FONT></H2> 
+    <P>Founded in 1987, SimoTime Enterprises is a privately owned, Limited
+      Liability Corporation located in Novato, California. We specialize in the
+      creation and deployment of business applications using new or existing
+      technologies and services. We have a team of individuals that understand the
+      broad range of technologies being used in today's environments. This includes
+      the smallest thin client using the Internet and the very large mainframe
+      systems. There is more to making the Internet work for your company's business
+      than just having a nice looking WEB site. It is about combining the latest
+      technologies and existing technologies with practical business experience. It's
+      about the business of doing business and looking good in the process. Quite
+      often, to reach larger markets or provide a higher level of service to existing
+      customers it requires the newer Internet technologies to work in a
+      complementary manner with existing corporate mainframe systems. Whether you
+      want to use the Internet to expand into new market segments or as a delivery
+      vehicle for existing business functions simply give us a call or check the web
+      site at
+      <A HREF="http://www.simotime.com" TARGET="_blank"
+       ONMOUSEOUT="this.style.color='0000FF'" ONMOUSEOVER="this.style.color='FF0000'"
+       STYLE="color: blue; font-family: Arial">http://www.simotime.com </A></P>
+    <HR SIZE="2" COLOR="navy"> 
+    <TABLE BORDER="0" ALIGN="CENTER" CELLSPACING="1" CELLPADDING="1"> 
+      <TR> 
+        <TD ALIGN="CENTER"><A HREF="#TOC"
+          ONMOUSEOUT="this.style.color='808080'" ONMOUSEOVER="this.style.color='FF0000'"
+          STYLE="font-size: 12px; font-weight: normal; color: gray">Return-to-Top</A></TD>
+        
+      </TR> 
+      <TR> 
+        <TD ALIGN="CENTER"><FONT
+          STYLE="font-size: 12px; font-weight: normal; color: navy">Copyright &copy;
+          1987-2008</FONT><FONT STYLE="font-weight: bold">&nbsp;SimoTime Enterprises, LLC
+          &nbsp;</FONT>All Rights Reserved</TD> 
+      </TR> 
+      <TR> 
+        <TD ALIGN="CENTER"><FONT
+          STYLE="font-style: italic; font-size: 14px; font-family: Arial; color: maroon; font-weight: bold; font-variant: normal">When
+          technology complements business </FONT></TD> 
+      </TR> 
+      <TR> 
+        <TD ALIGN="CENTER"><A HREF="http://www.simotime.com" TARGET="_blank"
+          ONMOUSEOUT="this.style.color='0000FF'" ONMOUSEOVER="this.style.color='FF0000'"
+          STYLE="color: blue; font-family: Arial; font-size: 12px">http://www.simotime.com</A></TD>
+        
+      </TR> 
+      <TR> 
+        <TD ALIGN="CENTER"><FONT
+          STYLE="color: navy; font-size: 12px; text-decoration: none; font-style: italic">Version
+          05.06.27</FONT></TD> 
+      </TR> 
+    </TABLE> 
+    <P>&nbsp;</P> </BODY>
+</HTML>

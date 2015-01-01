@@ -1,0 +1,655 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+	
+	
+	<title>OnTheCommons.org 
+	
+	
+	
+	</title>
+
+	<script src="scripts.js" type="text/javascript"></script>
+
+
+	
+	<style type="text/css">
+		@import url("style.css");
+	</style>
+
+<!--[if IE 6]>
+<link rel="stylesheet" type="text/css" href="msie6hacks.css" />
+<![endif]-->
+
+<!--[if lt IE 7]>
+<script defer type="text/javascript" src="pngfix_map.js"></script>
+<![endif]-->
+
+<script type="text/javascript" src="suckerfish.js"></script>
+
+</head>
+
+<body>
+
+<div id="header">
+
+<div id='nav-title'>
+
+<table cellspacing='0' cellpadding='0' ><tr><td>
+<ul id='nav' class='nav-left'>
+<li>	
+	
+	<a href='index.php'><img src='images/onthecommonsorg.png' width='233' height='30' alt='On the Commons' /></a>
+						<ul>
+							<li><a href="content.php?id=1467">About the Commons</a></li>
+							<li><a href="content.php?id=19">About the Website</a></li>
+							<li><a href="content.php?id=1710">About the Organization</a></li>
+							<li><a href="content.php?id=1477">The Commons Mark </a></li>
+							<li><a href="content.php?id=1217">Contact</a></li>
+							</ul>
+				
+	
+</li>	
+</ul>
+
+</td>
+
+<td class='nav-right'  valign='bottom'>
+<ul id='nav2' >
+<li>
+
+<a class='participate'>Participate <img src="images/white-arrow.gif" width="9" alt="image" height="7" /></a>
+
+			<ul>
+						<li><a href="login.php">Log-in / Register</a></li>
+
+			
+			<li><a href="contribute.php">Contribute Content</a></li>
+			 
+			<li><a href="edit-profile.php">Edit Profile</a></li>
+			<li><a href="content.php?id=1217">Contact Editors</a></li>
+								<li><a href="content.php?id=1451">Community Guidelines</a></li>
+									<li><a href="content.php?id=1453">Terms of Use</a></li>
+							</ul>
+
+
+
+</li>
+
+	
+</ul>
+</td></tr></table>
+</div>
+
+<div id='nav-departments'>
+	<table><tr>
+	<td class='nav-label'><p>Departments</p></td>
+	<td class='nav-links'>
+		<a href="format.php?format=commons_in_action" style="background: #CCFF99; border-color: #CCFF99;">Commons in Action</a>
+		<a href="format.php?format=commons_in_the_news" style="background: #99cc99; border-color: #99cc99;">Commons in the News</a>
+		<a href="profile.php" style="background: #d1cfa0; border-color: #d1cfa0;">Commoners</a>
+		<a href="profile.php?sType=heroes" style="background: #d1cfa0; border-color: #d1cfa0;">Commons Champions</a>
+		<a href="format.php?format=blog" style="background: #e9f9d0; border-color: #e9f9d0;">Blog</a>
+		<a href="format.php?format=essay" style="background: #ffffdd; border-color: #ffffdd;">Essays</a>
+		<a href="library.php" style="background: #CCFFFF; border-color: #CCFFFF;">Library</a>
+	</td>
+	</tr></table>
+</div>
+
+<div id='nav-topics'>
+	<table><tr>
+	<td class='nav-label'><p>Topics</p></td>
+	<td class='nav-links'>
+			<div><a href="topic.php?topic=519">Climate Crisis</a></div>
+			<div><a href="topic.php?topic=83">Commons Strategies</a></div>
+			<div><a href="topic.php?topic=123">Community Life</a></div>
+			<div><a href="topic.php?topic=24">Cultural Commons</a></div>
+			<div><a href="topic.php?topic=79">Economics and Markets</a></div>
+			<div><a href="topic.php?topic=113">Environment</a></div>
+			<div><a href="topic.php?topic=27">Everyday Life</a></div>
+			<div><a href="topic.php?topic=1">Food and Agriculture</a></div>
+			<div><a href="topic.php?topic=300">Indigenous People</a></div>
+			<div><a href="topic.php?topic=103">International</a></div>
+			<div><a href="topic.php?topic=26">Knowledge Commons</a></div>
+			<div><a href="topic.php?topic=74">Media and Internet</a></div>
+			<div><a href="topic.php?topic=202">Politics and Government</a></div>
+			<div><a href="topic.php?topic=106">Science and Health</a></div>
+			<div><a href="topic.php?topic=121">Water</a></div>
+		</td>
+	</tr></table>
+</div>
+
+<div id='searchbar'>
+<form name="searchForm" action="search.php" method="get" onsubmit="if (document.searchForm.search.value == '') { alert('Please Enter a Keyword to Search.'); return false; } else { document.searchForm.submit(); }"><input type="text" size="15" name="search" value="Search..." onfocus="if (this.value == 'Search...') this.value = '';" onblur="if (this.value == '') this.value = 'Search...';" /><button name="submit" type="submit" width='7' height='9' style='background-color: white; border: 0;'><img src="images/black-arrow.gif" width='7' height='9' border="0" alt="" /></button></form>
+</div>
+		
+</div>
+
+<div id="container">
+
+
+<div id="home-features">
+	<div id="commonsFlashHolder" onmouseover="initFlashOver();" onmouseout="initFlashOut();">
+		<object id="commonsFlash" type="application/x-shockwave-flash" data="flash/c.swf?path=flash/commons.swf" width="970" height="350">
+			<param name="movie" value="flash/c.swf?path=flash/commons.swf" />
+			<param name="wmode" value="opaque" />
+			<param name="bgcolor" value="#ffffff" />
+			Commons
+		</object>
+
+<!-- This: wmode="opaque" needs to go in the embed tag of the flash movie -->
+
+	</div>
+ </div>
+
+
+<div id="content">
+
+
+	<div class="home-topic">
+	<h2><a href="topic.php?topic=83" >Commons Strategies</a></h2> 
+	<div class="section">
+		
+		
+<div class='item-profile new-border'>
+<table cellspacing='0'><tr><td><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=519">Climate Crisis</a>; <a href="topic.php?topic=83">Commons Strategies</a>; <a href="topic.php?topic=79">Economics and Markets</a>; <a href="topic.php?topic=113">Environment</a>; <a href="topic.php?topic=1">Food and Agriculture</a>; <a href="topic.php?topic=103">International</a>; <a href="topic.php?topic=202">Politics and Government</a>; <a href="topic.php?topic=106">Science and Health</a>; <a href="topic.php?topic=121">Water</a></p>
+<h3><a href='profile.php?id=1786'>Skaidra Smith-Heisters</a></h3>
+<p class='location'>Santa Rosa, CA</p>
+<p>&mdash;&nbsp;OnTheCommons.org Member</p>
+</td></tr></table></div>
+
+<div class='item-essay new-border' style="width:320px;"><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=83">Commons Strategies</a></p>
+<a href="content.php?id=1284"><img src="media/image/medium/path765816502_0cea9b013a.jpg" border="0" alt="" /></a><h3><a href='content.php?id=1284'>Why the Commons Matters to Me</a></h3>
+<p>Jay Walljasper, a newcomer to OntheCommons.org, explains how this new framework helps him understand the world and inspires him to change it <a href='content.php?id=1284' class='read-more' >Read&nbsp;more...</a></p>
+<p class="date-author">8 Apr 2008 / <a href="profile.php?user_id=294">Jay Walljasper</a></p>
+</div>
+
+<div class='item-profile new-border'>
+<table cellspacing='0'><tr><td><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=519">Climate Crisis</a>; <a href="topic.php?topic=83">Commons Strategies</a>; <a href="topic.php?topic=123">Community Life</a>; <a href="topic.php?topic=24">Cultural Commons</a>; <a href="topic.php?topic=79">Economics and Markets</a>; <a href="topic.php?topic=113">Environment</a>; <a href="topic.php?topic=27">Everyday Life</a>; <a href="topic.php?topic=1">Food and Agriculture</a>; <a href="topic.php?topic=300">Indigenous People</a>; <a href="topic.php?topic=103">International</a>; <a href="topic.php?topic=26">Knowledge Commons</a>; <a href="topic.php?topic=74">Media and Internet</a>; <a href="topic.php?topic=202">Politics and Government</a>; <a href="topic.php?topic=106">Science and Health</a>; <a href="topic.php?topic=121">Water</a></p>
+<h3><a href='profile.php?id=1763'>Michael Casey</a></h3>
+<p class='location'>Ottawa</p>
+<p>&mdash;&nbsp;OnTheCommons.org Member</p>
+</td></tr></table></div>
+	<a href="topic.php?topic=83" class="more"><div class='more'>MORE</div></a> 
+	</div>	
+	</div>
+	<div class="home-topic">
+	<h2><a href="topic.php?topic=1" >Food and Agriculture</a></h2> 
+	<div class="section">
+		
+		
+<div class='item-profile new-border'>
+<table cellspacing='0'><tr><td><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=519">Climate Crisis</a>; <a href="topic.php?topic=83">Commons Strategies</a>; <a href="topic.php?topic=79">Economics and Markets</a>; <a href="topic.php?topic=113">Environment</a>; <a href="topic.php?topic=1">Food and Agriculture</a>; <a href="topic.php?topic=103">International</a>; <a href="topic.php?topic=202">Politics and Government</a>; <a href="topic.php?topic=106">Science and Health</a>; <a href="topic.php?topic=121">Water</a></p>
+<h3><a href='profile.php?id=1786'>Skaidra Smith-Heisters</a></h3>
+<p class='location'>Santa Rosa, CA</p>
+<p>&mdash;&nbsp;OnTheCommons.org Member</p>
+</td></tr></table></div>
+
+<div class='item-profile new-border'>
+<table cellspacing='0'><tr><td><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=113">Environment</a>; <a href="topic.php?topic=1">Food and Agriculture</a>; <a href="topic.php?topic=202">Politics and Government</a></p>
+<h3><a href='profile.php?id=1769'>Simon Smith</a></h3>
+<p class='location'></p>
+<p>&mdash;&nbsp;OnTheCommons.org Member</p>
+</td></tr></table></div>
+
+<div class='item-profile new-border'>
+<table cellspacing='0'><tr><td><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=519">Climate Crisis</a>; <a href="topic.php?topic=83">Commons Strategies</a>; <a href="topic.php?topic=123">Community Life</a>; <a href="topic.php?topic=24">Cultural Commons</a>; <a href="topic.php?topic=79">Economics and Markets</a>; <a href="topic.php?topic=113">Environment</a>; <a href="topic.php?topic=27">Everyday Life</a>; <a href="topic.php?topic=1">Food and Agriculture</a>; <a href="topic.php?topic=300">Indigenous People</a>; <a href="topic.php?topic=103">International</a>; <a href="topic.php?topic=26">Knowledge Commons</a>; <a href="topic.php?topic=74">Media and Internet</a>; <a href="topic.php?topic=202">Politics and Government</a>; <a href="topic.php?topic=106">Science and Health</a>; <a href="topic.php?topic=121">Water</a></p>
+<h3><a href='profile.php?id=1763'>Michael Casey</a></h3>
+<p class='location'>Ottawa</p>
+<p>&mdash;&nbsp;OnTheCommons.org Member</p>
+</td></tr></table></div>
+	<a href="topic.php?topic=1" class="more"><div class='more'>MORE</div></a> 
+	</div>	
+	</div>
+	<div class="home-topic">
+	<h2><a href="topic.php?topic=202" >Politics and Government</a></h2> 
+	<div class="section">
+		
+		
+<div class='item-profile new-border'>
+<table cellspacing='0'><tr><td><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=519">Climate Crisis</a>; <a href="topic.php?topic=83">Commons Strategies</a>; <a href="topic.php?topic=79">Economics and Markets</a>; <a href="topic.php?topic=113">Environment</a>; <a href="topic.php?topic=1">Food and Agriculture</a>; <a href="topic.php?topic=103">International</a>; <a href="topic.php?topic=202">Politics and Government</a>; <a href="topic.php?topic=106">Science and Health</a>; <a href="topic.php?topic=121">Water</a></p>
+<h3><a href='profile.php?id=1786'>Skaidra Smith-Heisters</a></h3>
+<p class='location'>Santa Rosa, CA</p>
+<p>&mdash;&nbsp;OnTheCommons.org Member</p>
+</td></tr></table></div>
+
+<div class='item-commons_in_the_news new-border'><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=202">Politics and Government</a>; <a href="topic.php?topic=106">Science and Health</a></p>
+<h3><a href='content.php?id=1779'>Insurers Abuse Social Security Disability </a></h3>
+<p>In an attempt to avoid paying disability claims, private insurers are increasingly requiring policyholders to file disability claims with the Social Security system first, even when they don’t qualify for benefits.  The practice is clogging the Social Security bureaucracy with a flood of dubious claims that is not only costing taxpayers more, it is making it harder for claimants who are truly disabled from getting Social Security benefits.  The problem is a classic example of private companies abusing the commons--in this case, social risk insurance--to defray their own costs of doing business.</p>
+<p class='citation'>See <a href='http://www.nytimes.com/2008/04/01/business/01disabled.html?ex=1364788800&en=edb149ef24199ce8&ei=5124&partner=permalink&exprod=permalink' target='blank' >Read the source.</a></p>
+<p class='date-author'>8 Apr 2008 / <a href='profile.php?user_id=6'>David Bollier</a></p>
+</div>
+
+<div class='item-blog new-border' style="width:320px;"><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=27">Everyday Life</a>; <a href="topic.php?topic=26">Knowledge Commons</a>; <a href="topic.php?topic=202">Politics and Government</a></p>
+<a href="content.php?id=1468"><img src="media/image/medium/bible.jpg" border="0" alt="" /></a><h3><a href='content.php?id=1468'>The Good Book</a></h3>
+<p>Many dogged conservatives who dismiss the commons as insignificant should take a second look.  It may be at the core of all their beliefs. <a href='content.php?id=1468' class='read-more' >Read&nbsp;more...</a></p>
+<p class="date-author">8 Apr 2008 / <a href="profile.php?user_id=294">Jay Walljasper</a></p>
+</div>
+	<a href="topic.php?topic=202" class="more"><div class='more'>MORE</div></a> 
+	</div>	
+	</div>
+	<div class="home-topic">
+	<h2><a href="topic.php?topic=113" >Environment</a></h2> 
+	<div class="section">
+		
+		
+<div class='item-profile new-border'>
+<table cellspacing='0'><tr><td><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=519">Climate Crisis</a>; <a href="topic.php?topic=83">Commons Strategies</a>; <a href="topic.php?topic=79">Economics and Markets</a>; <a href="topic.php?topic=113">Environment</a>; <a href="topic.php?topic=1">Food and Agriculture</a>; <a href="topic.php?topic=103">International</a>; <a href="topic.php?topic=202">Politics and Government</a>; <a href="topic.php?topic=106">Science and Health</a>; <a href="topic.php?topic=121">Water</a></p>
+<h3><a href='profile.php?id=1786'>Skaidra Smith-Heisters</a></h3>
+<p class='location'>Santa Rosa, CA</p>
+<p>&mdash;&nbsp;OnTheCommons.org Member</p>
+</td></tr></table></div>
+
+<div class='item-commons_in_action new-border' style="width:320px;"><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=24">Cultural Commons</a>; <a href="topic.php?topic=113">Environment</a>; <a href="topic.php?topic=300">Indigenous People</a></p>
+<a href="content.php?id=1783"><img src="media/image/medium/sitka33089555_cbb8893075.jpg" border="0" alt="" /></a><h3><a href='content.php?id=1783'>“Who Owns the Commons?” Symposium</a></h3>
+<h5></h5>
+<p>Writers to explore issues posed by the commons <a href='content.php?id=1783' class='read-more' >Read&nbsp;more...</a></p>
+</p><p class='date-author'>8 Apr 2008 / <a href='profile.php?user_id=6'>David Bollier</a></p>
+</div>
+
+<div class='item-commons_in_the_news new-border'><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=113">Environment</a></p>
+<h3><a href='content.php?id=1770'>Where All That Stuff Goes</a></h3>
+<p>Plastic pollution is an even bigger problem than you think it is.  In the Pacific Ocean, between Hawaii and California, lies the Pacific Trash Vortex—a Texas-sized accumulation of floating plastic rubbish. This is a sad symbol of what’s wrong with our out-of-control addiction to plastic, reports the Canadian publication This Magazine.</p>
+<p class='citation'>See <a href='http://www.thismagazine.ca/issues/2008/03/unfantastic.php' target='blank' >Read the source.</a></p>
+<p class='date-author'>8 Apr 2008 / <a href='profile.php?user_id=294'>Jay Walljasper</a></p>
+</div>
+	<a href="topic.php?topic=113" class="more"><div class='more'>MORE</div></a> 
+	</div>	
+	</div>
+	<div class="home-topic">
+	<h2><a href="topic.php?topic=79" >Economics and Markets</a></h2> 
+	<div class="section">
+		
+		
+<div class='item-profile new-border'>
+<table cellspacing='0'><tr><td><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=519">Climate Crisis</a>; <a href="topic.php?topic=83">Commons Strategies</a>; <a href="topic.php?topic=79">Economics and Markets</a>; <a href="topic.php?topic=113">Environment</a>; <a href="topic.php?topic=1">Food and Agriculture</a>; <a href="topic.php?topic=103">International</a>; <a href="topic.php?topic=202">Politics and Government</a>; <a href="topic.php?topic=106">Science and Health</a>; <a href="topic.php?topic=121">Water</a></p>
+<h3><a href='profile.php?id=1786'>Skaidra Smith-Heisters</a></h3>
+<p class='location'>Santa Rosa, CA</p>
+<p>&mdash;&nbsp;OnTheCommons.org Member</p>
+</td></tr></table></div>
+
+<div class='item-profile new-border'>
+<table cellspacing='0'><tr><td><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=519">Climate Crisis</a>; <a href="topic.php?topic=83">Commons Strategies</a>; <a href="topic.php?topic=123">Community Life</a>; <a href="topic.php?topic=24">Cultural Commons</a>; <a href="topic.php?topic=79">Economics and Markets</a>; <a href="topic.php?topic=113">Environment</a>; <a href="topic.php?topic=27">Everyday Life</a>; <a href="topic.php?topic=1">Food and Agriculture</a>; <a href="topic.php?topic=300">Indigenous People</a>; <a href="topic.php?topic=103">International</a>; <a href="topic.php?topic=26">Knowledge Commons</a>; <a href="topic.php?topic=74">Media and Internet</a>; <a href="topic.php?topic=202">Politics and Government</a>; <a href="topic.php?topic=106">Science and Health</a>; <a href="topic.php?topic=121">Water</a></p>
+<h3><a href='profile.php?id=1763'>Michael Casey</a></h3>
+<p class='location'>Ottawa</p>
+<p>&mdash;&nbsp;OnTheCommons.org Member</p>
+</td></tr></table></div>
+
+<div class='item-library_book new-border'><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=24">Cultural Commons</a>; <a href="topic.php?topic=79">Economics and Markets</a>; <a href="topic.php?topic=74">Media and Internet</a></p>
+<h3><a href='content.php?id=1766'>Ready to Share: Fashion & the Ownership of Creativity</a></h3>
+<p class='library_info'>by  <br />
+published Apr 7, 2006</p>
+<p class='info'></p>
+<p class='info'><a href='http://www.readytoshare.org' target='blank' >This book has a website.</a></p>
+<p class='date-author'>7 Apr 2008 / <a href='profile.php?user_id=0'></a>
+</p></div>
+	<a href="topic.php?topic=79" class="more"><div class='more'>MORE</div></a> 
+	</div>	
+	</div>
+	<div class="home-topic">
+	<h2><a href="topic.php?topic=106" >Science and Health</a></h2> 
+	<div class="section">
+		
+		
+<div class='item-profile new-border'>
+<table cellspacing='0'><tr><td><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=519">Climate Crisis</a>; <a href="topic.php?topic=83">Commons Strategies</a>; <a href="topic.php?topic=79">Economics and Markets</a>; <a href="topic.php?topic=113">Environment</a>; <a href="topic.php?topic=1">Food and Agriculture</a>; <a href="topic.php?topic=103">International</a>; <a href="topic.php?topic=202">Politics and Government</a>; <a href="topic.php?topic=106">Science and Health</a>; <a href="topic.php?topic=121">Water</a></p>
+<h3><a href='profile.php?id=1786'>Skaidra Smith-Heisters</a></h3>
+<p class='location'>Santa Rosa, CA</p>
+<p>&mdash;&nbsp;OnTheCommons.org Member</p>
+</td></tr></table></div>
+
+<div class='item-commons_in_the_news new-border'><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=202">Politics and Government</a>; <a href="topic.php?topic=106">Science and Health</a></p>
+<h3><a href='content.php?id=1779'>Insurers Abuse Social Security Disability </a></h3>
+<p>In an attempt to avoid paying disability claims, private insurers are increasingly requiring policyholders to file disability claims with the Social Security system first, even when they don’t qualify for benefits.  The practice is clogging the Social Security bureaucracy with a flood of dubious claims that is not only costing taxpayers more, it is making it harder for claimants who are truly disabled from getting Social Security benefits.  The problem is a classic example of private companies abusing the commons--in this case, social risk insurance--to defray their own costs of doing business.</p>
+<p class='citation'>See <a href='http://www.nytimes.com/2008/04/01/business/01disabled.html?ex=1364788800&en=edb149ef24199ce8&ei=5124&partner=permalink&exprod=permalink' target='blank' >Read the source.</a></p>
+<p class='date-author'>8 Apr 2008 / <a href='profile.php?user_id=6'>David Bollier</a></p>
+</div>
+
+<div class='item-profile new-border'>
+<table cellspacing='0'><tr><td><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=519">Climate Crisis</a>; <a href="topic.php?topic=83">Commons Strategies</a>; <a href="topic.php?topic=123">Community Life</a>; <a href="topic.php?topic=24">Cultural Commons</a>; <a href="topic.php?topic=79">Economics and Markets</a>; <a href="topic.php?topic=113">Environment</a>; <a href="topic.php?topic=27">Everyday Life</a>; <a href="topic.php?topic=1">Food and Agriculture</a>; <a href="topic.php?topic=300">Indigenous People</a>; <a href="topic.php?topic=103">International</a>; <a href="topic.php?topic=26">Knowledge Commons</a>; <a href="topic.php?topic=74">Media and Internet</a>; <a href="topic.php?topic=202">Politics and Government</a>; <a href="topic.php?topic=106">Science and Health</a>; <a href="topic.php?topic=121">Water</a></p>
+<h3><a href='profile.php?id=1763'>Michael Casey</a></h3>
+<p class='location'>Ottawa</p>
+<p>&mdash;&nbsp;OnTheCommons.org Member</p>
+</td></tr></table></div>
+	<a href="topic.php?topic=106" class="more"><div class='more'>MORE</div></a> 
+	</div>	
+	</div>
+	<div class="home-topic">
+	<h2><a href="topic.php?topic=519" >Climate Crisis</a></h2> 
+	<div class="section">
+		
+		
+<div class='item-profile new-border'>
+<table cellspacing='0'><tr><td><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=519">Climate Crisis</a>; <a href="topic.php?topic=83">Commons Strategies</a>; <a href="topic.php?topic=79">Economics and Markets</a>; <a href="topic.php?topic=113">Environment</a>; <a href="topic.php?topic=1">Food and Agriculture</a>; <a href="topic.php?topic=103">International</a>; <a href="topic.php?topic=202">Politics and Government</a>; <a href="topic.php?topic=106">Science and Health</a>; <a href="topic.php?topic=121">Water</a></p>
+<h3><a href='profile.php?id=1786'>Skaidra Smith-Heisters</a></h3>
+<p class='location'>Santa Rosa, CA</p>
+<p>&mdash;&nbsp;OnTheCommons.org Member</p>
+</td></tr></table></div>
+
+<div class='item-profile new-border'>
+<table cellspacing='0'><tr><td><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=519">Climate Crisis</a>; <a href="topic.php?topic=83">Commons Strategies</a>; <a href="topic.php?topic=123">Community Life</a>; <a href="topic.php?topic=24">Cultural Commons</a>; <a href="topic.php?topic=79">Economics and Markets</a>; <a href="topic.php?topic=113">Environment</a>; <a href="topic.php?topic=27">Everyday Life</a>; <a href="topic.php?topic=1">Food and Agriculture</a>; <a href="topic.php?topic=300">Indigenous People</a>; <a href="topic.php?topic=103">International</a>; <a href="topic.php?topic=26">Knowledge Commons</a>; <a href="topic.php?topic=74">Media and Internet</a>; <a href="topic.php?topic=202">Politics and Government</a>; <a href="topic.php?topic=106">Science and Health</a>; <a href="topic.php?topic=121">Water</a></p>
+<h3><a href='profile.php?id=1763'>Michael Casey</a></h3>
+<p class='location'>Ottawa</p>
+<p>&mdash;&nbsp;OnTheCommons.org Member</p>
+</td></tr></table></div>
+
+<div class='item-profile new-border'>
+<table cellspacing='0'><tr><td><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=519">Climate Crisis</a>; <a href="topic.php?topic=83">Commons Strategies</a>; <a href="topic.php?topic=24">Cultural Commons</a>; <a href="topic.php?topic=79">Economics and Markets</a>; <a href="topic.php?topic=113">Environment</a>; <a href="topic.php?topic=103">International</a>; <a href="topic.php?topic=202">Politics and Government</a>; <a href="topic.php?topic=121">Water</a></p>
+<h3><a href='profile.php?id=1758'>Dean R Johnson</a></h3>
+<p class='location'>Cambridge, MA</p>
+<p>&mdash;&nbsp;OnTheCommons.org Member</p>
+</td></tr></table></div>
+	<a href="topic.php?topic=519" class="more"><div class='more'>MORE</div></a> 
+	</div>	
+	</div>
+	<div class="home-topic">
+	<h2><a href="topic.php?topic=121" >Water</a></h2> 
+	<div class="section">
+		
+		
+<div class='item-profile new-border'>
+<table cellspacing='0'><tr><td><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=519">Climate Crisis</a>; <a href="topic.php?topic=83">Commons Strategies</a>; <a href="topic.php?topic=79">Economics and Markets</a>; <a href="topic.php?topic=113">Environment</a>; <a href="topic.php?topic=1">Food and Agriculture</a>; <a href="topic.php?topic=103">International</a>; <a href="topic.php?topic=202">Politics and Government</a>; <a href="topic.php?topic=106">Science and Health</a>; <a href="topic.php?topic=121">Water</a></p>
+<h3><a href='profile.php?id=1786'>Skaidra Smith-Heisters</a></h3>
+<p class='location'>Santa Rosa, CA</p>
+<p>&mdash;&nbsp;OnTheCommons.org Member</p>
+</td></tr></table></div>
+
+<div class='item-profile new-border'>
+<table cellspacing='0'><tr><td><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=519">Climate Crisis</a>; <a href="topic.php?topic=83">Commons Strategies</a>; <a href="topic.php?topic=123">Community Life</a>; <a href="topic.php?topic=24">Cultural Commons</a>; <a href="topic.php?topic=79">Economics and Markets</a>; <a href="topic.php?topic=113">Environment</a>; <a href="topic.php?topic=27">Everyday Life</a>; <a href="topic.php?topic=1">Food and Agriculture</a>; <a href="topic.php?topic=300">Indigenous People</a>; <a href="topic.php?topic=103">International</a>; <a href="topic.php?topic=26">Knowledge Commons</a>; <a href="topic.php?topic=74">Media and Internet</a>; <a href="topic.php?topic=202">Politics and Government</a>; <a href="topic.php?topic=106">Science and Health</a>; <a href="topic.php?topic=121">Water</a></p>
+<h3><a href='profile.php?id=1763'>Michael Casey</a></h3>
+<p class='location'>Ottawa</p>
+<p>&mdash;&nbsp;OnTheCommons.org Member</p>
+</td></tr></table></div>
+
+<div class='item-profile new-border'>
+<table cellspacing='0'><tr><td><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=519">Climate Crisis</a>; <a href="topic.php?topic=83">Commons Strategies</a>; <a href="topic.php?topic=24">Cultural Commons</a>; <a href="topic.php?topic=79">Economics and Markets</a>; <a href="topic.php?topic=113">Environment</a>; <a href="topic.php?topic=103">International</a>; <a href="topic.php?topic=202">Politics and Government</a>; <a href="topic.php?topic=121">Water</a></p>
+<h3><a href='profile.php?id=1758'>Dean R Johnson</a></h3>
+<p class='location'>Cambridge, MA</p>
+<p>&mdash;&nbsp;OnTheCommons.org Member</p>
+</td></tr></table></div>
+	<a href="topic.php?topic=121" class="more"><div class='more'>MORE</div></a> 
+	</div>	
+	</div>
+	<div class="home-topic">
+	<h2><a href="topic.php?topic=103" >International</a></h2> 
+	<div class="section">
+		
+		
+<div class='item-profile new-border'>
+<table cellspacing='0'><tr><td><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=519">Climate Crisis</a>; <a href="topic.php?topic=83">Commons Strategies</a>; <a href="topic.php?topic=79">Economics and Markets</a>; <a href="topic.php?topic=113">Environment</a>; <a href="topic.php?topic=1">Food and Agriculture</a>; <a href="topic.php?topic=103">International</a>; <a href="topic.php?topic=202">Politics and Government</a>; <a href="topic.php?topic=106">Science and Health</a>; <a href="topic.php?topic=121">Water</a></p>
+<h3><a href='profile.php?id=1786'>Skaidra Smith-Heisters</a></h3>
+<p class='location'>Santa Rosa, CA</p>
+<p>&mdash;&nbsp;OnTheCommons.org Member</p>
+</td></tr></table></div>
+
+<div class='item-profile new-border'>
+<table cellspacing='0'><tr><td><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=519">Climate Crisis</a>; <a href="topic.php?topic=83">Commons Strategies</a>; <a href="topic.php?topic=123">Community Life</a>; <a href="topic.php?topic=24">Cultural Commons</a>; <a href="topic.php?topic=79">Economics and Markets</a>; <a href="topic.php?topic=113">Environment</a>; <a href="topic.php?topic=27">Everyday Life</a>; <a href="topic.php?topic=1">Food and Agriculture</a>; <a href="topic.php?topic=300">Indigenous People</a>; <a href="topic.php?topic=103">International</a>; <a href="topic.php?topic=26">Knowledge Commons</a>; <a href="topic.php?topic=74">Media and Internet</a>; <a href="topic.php?topic=202">Politics and Government</a>; <a href="topic.php?topic=106">Science and Health</a>; <a href="topic.php?topic=121">Water</a></p>
+<h3><a href='profile.php?id=1763'>Michael Casey</a></h3>
+<p class='location'>Ottawa</p>
+<p>&mdash;&nbsp;OnTheCommons.org Member</p>
+</td></tr></table></div>
+
+<div class='item-profile new-border'>
+<table cellspacing='0'><tr><td><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=519">Climate Crisis</a>; <a href="topic.php?topic=83">Commons Strategies</a>; <a href="topic.php?topic=24">Cultural Commons</a>; <a href="topic.php?topic=79">Economics and Markets</a>; <a href="topic.php?topic=113">Environment</a>; <a href="topic.php?topic=103">International</a>; <a href="topic.php?topic=202">Politics and Government</a>; <a href="topic.php?topic=121">Water</a></p>
+<h3><a href='profile.php?id=1758'>Dean R Johnson</a></h3>
+<p class='location'>Cambridge, MA</p>
+<p>&mdash;&nbsp;OnTheCommons.org Member</p>
+</td></tr></table></div>
+	<a href="topic.php?topic=103" class="more"><div class='more'>MORE</div></a> 
+	</div>	
+	</div>
+	<div class="home-topic">
+	<h2><a href="topic.php?topic=24" >Cultural Commons</a></h2> 
+	<div class="section">
+		
+		
+<div class='item-commons_in_action new-border' style="width:320px;"><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=24">Cultural Commons</a>; <a href="topic.php?topic=113">Environment</a>; <a href="topic.php?topic=300">Indigenous People</a></p>
+<a href="content.php?id=1783"><img src="media/image/medium/sitka33089555_cbb8893075.jpg" border="0" alt="" /></a><h3><a href='content.php?id=1783'>“Who Owns the Commons?” Symposium</a></h3>
+<h5></h5>
+<p>Writers to explore issues posed by the commons <a href='content.php?id=1783' class='read-more' >Read&nbsp;more...</a></p>
+</p><p class='date-author'>8 Apr 2008 / <a href='profile.php?user_id=6'>David Bollier</a></p>
+</div>
+
+<div class='item-profile new-border'>
+<table cellspacing='0'><tr><td><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=24">Cultural Commons</a>; <a href="topic.php?topic=74">Media and Internet</a></p>
+<h3><a href='profile.php?id=1764'>Johanna Blakley</a></h3>
+<p class='location'>Los Angeles</p>
+<p>&mdash;&nbsp;OnTheCommons.org Member</p>
+</td></tr></table></div>
+
+<div class='item-profile new-border'>
+<table cellspacing='0'><tr><td><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=519">Climate Crisis</a>; <a href="topic.php?topic=83">Commons Strategies</a>; <a href="topic.php?topic=123">Community Life</a>; <a href="topic.php?topic=24">Cultural Commons</a>; <a href="topic.php?topic=79">Economics and Markets</a>; <a href="topic.php?topic=113">Environment</a>; <a href="topic.php?topic=27">Everyday Life</a>; <a href="topic.php?topic=1">Food and Agriculture</a>; <a href="topic.php?topic=300">Indigenous People</a>; <a href="topic.php?topic=103">International</a>; <a href="topic.php?topic=26">Knowledge Commons</a>; <a href="topic.php?topic=74">Media and Internet</a>; <a href="topic.php?topic=202">Politics and Government</a>; <a href="topic.php?topic=106">Science and Health</a>; <a href="topic.php?topic=121">Water</a></p>
+<h3><a href='profile.php?id=1763'>Michael Casey</a></h3>
+<p class='location'>Ottawa</p>
+<p>&mdash;&nbsp;OnTheCommons.org Member</p>
+</td></tr></table></div>
+	<a href="topic.php?topic=24" class="more"><div class='more'>MORE</div></a> 
+	</div>	
+	</div>
+	<div class="home-topic">
+	<h2><a href="topic.php?topic=26" >Knowledge Commons</a></h2> 
+	<div class="section">
+		
+		
+<div class='item-blog new-border' style="width:320px;"><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=27">Everyday Life</a>; <a href="topic.php?topic=26">Knowledge Commons</a>; <a href="topic.php?topic=202">Politics and Government</a></p>
+<a href="content.php?id=1468"><img src="media/image/medium/bible.jpg" border="0" alt="" /></a><h3><a href='content.php?id=1468'>The Good Book</a></h3>
+<p>Many dogged conservatives who dismiss the commons as insignificant should take a second look.  It may be at the core of all their beliefs. <a href='content.php?id=1468' class='read-more' >Read&nbsp;more...</a></p>
+<p class="date-author">8 Apr 2008 / <a href="profile.php?user_id=294">Jay Walljasper</a></p>
+</div>
+
+<div class='item-profile new-border'>
+<table cellspacing='0'><tr><td><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=519">Climate Crisis</a>; <a href="topic.php?topic=83">Commons Strategies</a>; <a href="topic.php?topic=123">Community Life</a>; <a href="topic.php?topic=24">Cultural Commons</a>; <a href="topic.php?topic=79">Economics and Markets</a>; <a href="topic.php?topic=113">Environment</a>; <a href="topic.php?topic=27">Everyday Life</a>; <a href="topic.php?topic=1">Food and Agriculture</a>; <a href="topic.php?topic=300">Indigenous People</a>; <a href="topic.php?topic=103">International</a>; <a href="topic.php?topic=26">Knowledge Commons</a>; <a href="topic.php?topic=74">Media and Internet</a>; <a href="topic.php?topic=202">Politics and Government</a>; <a href="topic.php?topic=106">Science and Health</a>; <a href="topic.php?topic=121">Water</a></p>
+<h3><a href='profile.php?id=1763'>Michael Casey</a></h3>
+<p class='location'>Ottawa</p>
+<p>&mdash;&nbsp;OnTheCommons.org Member</p>
+</td></tr></table></div>
+
+<div class='item-profile new-border'>
+<table cellspacing='0'><tr><td><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=519">Climate Crisis</a>; <a href="topic.php?topic=83">Commons Strategies</a>; <a href="topic.php?topic=123">Community Life</a>; <a href="topic.php?topic=24">Cultural Commons</a>; <a href="topic.php?topic=113">Environment</a>; <a href="topic.php?topic=26">Knowledge Commons</a></p>
+<h3><a href='profile.php?id=1757'>Bonnie McCay</a></h3>
+<p class='location'>New Jersey, USA</p>
+<p>&mdash;&nbsp;OnTheCommons.org Member</p>
+</td></tr></table></div>
+	<a href="topic.php?topic=26" class="more"><div class='more'>MORE</div></a> 
+	</div>	
+	</div>
+	<div class="home-topic">
+	<h2><a href="topic.php?topic=27" >Everyday Life</a></h2> 
+	<div class="section">
+		
+		
+<div class='item-blog new-border' style="width:320px;"><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=27">Everyday Life</a>; <a href="topic.php?topic=26">Knowledge Commons</a>; <a href="topic.php?topic=202">Politics and Government</a></p>
+<a href="content.php?id=1468"><img src="media/image/medium/bible.jpg" border="0" alt="" /></a><h3><a href='content.php?id=1468'>The Good Book</a></h3>
+<p>Many dogged conservatives who dismiss the commons as insignificant should take a second look.  It may be at the core of all their beliefs. <a href='content.php?id=1468' class='read-more' >Read&nbsp;more...</a></p>
+<p class="date-author">8 Apr 2008 / <a href="profile.php?user_id=294">Jay Walljasper</a></p>
+</div>
+
+<div class='item-profile new-border'>
+<table cellspacing='0'><tr><td><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=519">Climate Crisis</a>; <a href="topic.php?topic=83">Commons Strategies</a>; <a href="topic.php?topic=123">Community Life</a>; <a href="topic.php?topic=24">Cultural Commons</a>; <a href="topic.php?topic=79">Economics and Markets</a>; <a href="topic.php?topic=113">Environment</a>; <a href="topic.php?topic=27">Everyday Life</a>; <a href="topic.php?topic=1">Food and Agriculture</a>; <a href="topic.php?topic=300">Indigenous People</a>; <a href="topic.php?topic=103">International</a>; <a href="topic.php?topic=26">Knowledge Commons</a>; <a href="topic.php?topic=74">Media and Internet</a>; <a href="topic.php?topic=202">Politics and Government</a>; <a href="topic.php?topic=106">Science and Health</a>; <a href="topic.php?topic=121">Water</a></p>
+<h3><a href='profile.php?id=1763'>Michael Casey</a></h3>
+<p class='location'>Ottawa</p>
+<p>&mdash;&nbsp;OnTheCommons.org Member</p>
+</td></tr></table></div>
+
+<div class='item-profile new-border'>
+<table cellspacing='0'><tr><td><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=123">Community Life</a>; <a href="topic.php?topic=113">Environment</a>; <a href="topic.php?topic=27">Everyday Life</a>; <a href="topic.php?topic=26">Knowledge Commons</a></p>
+<h3><a href='profile.php?id=1747'>Aron Gamman</a></h3>
+<p class='location'>Columbus, Ohio</p>
+<p>&mdash;&nbsp;OnTheCommons.org Member</p>
+</td></tr></table></div>
+	<a href="topic.php?topic=27" class="more"><div class='more'>MORE</div></a> 
+	</div>	
+	</div>
+	<div class="home-topic">
+	<h2><a href="topic.php?topic=300" >Indigenous People</a></h2> 
+	<div class="section">
+		
+		
+<div class='item-commons_in_action new-border' style="width:320px;"><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=24">Cultural Commons</a>; <a href="topic.php?topic=113">Environment</a>; <a href="topic.php?topic=300">Indigenous People</a></p>
+<a href="content.php?id=1783"><img src="media/image/medium/sitka33089555_cbb8893075.jpg" border="0" alt="" /></a><h3><a href='content.php?id=1783'>“Who Owns the Commons?” Symposium</a></h3>
+<h5></h5>
+<p>Writers to explore issues posed by the commons <a href='content.php?id=1783' class='read-more' >Read&nbsp;more...</a></p>
+</p><p class='date-author'>8 Apr 2008 / <a href='profile.php?user_id=6'>David Bollier</a></p>
+</div>
+
+<div class='item-profile new-border'>
+<table cellspacing='0'><tr><td><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=519">Climate Crisis</a>; <a href="topic.php?topic=83">Commons Strategies</a>; <a href="topic.php?topic=123">Community Life</a>; <a href="topic.php?topic=24">Cultural Commons</a>; <a href="topic.php?topic=79">Economics and Markets</a>; <a href="topic.php?topic=113">Environment</a>; <a href="topic.php?topic=27">Everyday Life</a>; <a href="topic.php?topic=1">Food and Agriculture</a>; <a href="topic.php?topic=300">Indigenous People</a>; <a href="topic.php?topic=103">International</a>; <a href="topic.php?topic=26">Knowledge Commons</a>; <a href="topic.php?topic=74">Media and Internet</a>; <a href="topic.php?topic=202">Politics and Government</a>; <a href="topic.php?topic=106">Science and Health</a>; <a href="topic.php?topic=121">Water</a></p>
+<h3><a href='profile.php?id=1763'>Michael Casey</a></h3>
+<p class='location'>Ottawa</p>
+<p>&mdash;&nbsp;OnTheCommons.org Member</p>
+</td></tr></table></div>
+
+<div class='item-profile new-border'>
+<table cellspacing='0'><tr><td><span class='new'>NEW</span>
+<img src='media/image/small/Photo32.jpg' border='0' alt='' /></td><td>
+<p class='item-topics'><a href="topic.php?topic=519">Climate Crisis</a>; <a href="topic.php?topic=83">Commons Strategies</a>; <a href="topic.php?topic=24">Cultural Commons</a>; <a href="topic.php?topic=113">Environment</a>; <a href="topic.php?topic=300">Indigenous People</a>; <a href="topic.php?topic=26">Knowledge Commons</a>; <a href="topic.php?topic=74">Media and Internet</a>; <a href="topic.php?topic=106">Science and Health</a></p>
+<h3><a href='profile.php?id=1748'>Matthew Battles</a></h3>
+<p class='location'>Boston, Massachusetts</p>
+<p>&mdash;&nbsp;OnTheCommons.org Member</p>
+</td></tr></table></div>
+	<a href="topic.php?topic=300" class="more"><div class='more'>MORE</div></a> 
+	</div>	
+	</div>
+	<div class="home-topic">
+	<h2><a href="topic.php?topic=74" >Media and Internet</a></h2> 
+	<div class="section">
+		
+		
+<div class='item-profile new-border'>
+<table cellspacing='0'><tr><td><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=24">Cultural Commons</a>; <a href="topic.php?topic=74">Media and Internet</a></p>
+<h3><a href='profile.php?id=1764'>Johanna Blakley</a></h3>
+<p class='location'>Los Angeles</p>
+<p>&mdash;&nbsp;OnTheCommons.org Member</p>
+</td></tr></table></div>
+
+<div class='item-profile new-border'>
+<table cellspacing='0'><tr><td><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=519">Climate Crisis</a>; <a href="topic.php?topic=83">Commons Strategies</a>; <a href="topic.php?topic=123">Community Life</a>; <a href="topic.php?topic=24">Cultural Commons</a>; <a href="topic.php?topic=79">Economics and Markets</a>; <a href="topic.php?topic=113">Environment</a>; <a href="topic.php?topic=27">Everyday Life</a>; <a href="topic.php?topic=1">Food and Agriculture</a>; <a href="topic.php?topic=300">Indigenous People</a>; <a href="topic.php?topic=103">International</a>; <a href="topic.php?topic=26">Knowledge Commons</a>; <a href="topic.php?topic=74">Media and Internet</a>; <a href="topic.php?topic=202">Politics and Government</a>; <a href="topic.php?topic=106">Science and Health</a>; <a href="topic.php?topic=121">Water</a></p>
+<h3><a href='profile.php?id=1763'>Michael Casey</a></h3>
+<p class='location'>Ottawa</p>
+<p>&mdash;&nbsp;OnTheCommons.org Member</p>
+</td></tr></table></div>
+
+<div class='item-library_book new-border'><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=24">Cultural Commons</a>; <a href="topic.php?topic=79">Economics and Markets</a>; <a href="topic.php?topic=74">Media and Internet</a></p>
+<h3><a href='content.php?id=1766'>Ready to Share: Fashion & the Ownership of Creativity</a></h3>
+<p class='library_info'>by  <br />
+published Apr 7, 2006</p>
+<p class='info'></p>
+<p class='info'><a href='http://www.readytoshare.org' target='blank' >This book has a website.</a></p>
+<p class='date-author'>7 Apr 2008 / <a href='profile.php?user_id=0'></a>
+</p></div>
+	<a href="topic.php?topic=74" class="more"><div class='more'>MORE</div></a> 
+	</div>	
+	</div>
+	<div class="home-topic">
+	<h2><a href="topic.php?topic=123" >Community Life</a></h2> 
+	<div class="section">
+		
+		
+<div class='item-profile new-border'>
+<table cellspacing='0'><tr><td><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=519">Climate Crisis</a>; <a href="topic.php?topic=83">Commons Strategies</a>; <a href="topic.php?topic=123">Community Life</a>; <a href="topic.php?topic=24">Cultural Commons</a>; <a href="topic.php?topic=79">Economics and Markets</a>; <a href="topic.php?topic=113">Environment</a>; <a href="topic.php?topic=27">Everyday Life</a>; <a href="topic.php?topic=1">Food and Agriculture</a>; <a href="topic.php?topic=300">Indigenous People</a>; <a href="topic.php?topic=103">International</a>; <a href="topic.php?topic=26">Knowledge Commons</a>; <a href="topic.php?topic=74">Media and Internet</a>; <a href="topic.php?topic=202">Politics and Government</a>; <a href="topic.php?topic=106">Science and Health</a>; <a href="topic.php?topic=121">Water</a></p>
+<h3><a href='profile.php?id=1763'>Michael Casey</a></h3>
+<p class='location'>Ottawa</p>
+<p>&mdash;&nbsp;OnTheCommons.org Member</p>
+</td></tr></table></div>
+
+<div class='item-profile new-border'>
+<table cellspacing='0'><tr><td><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=519">Climate Crisis</a>; <a href="topic.php?topic=83">Commons Strategies</a>; <a href="topic.php?topic=123">Community Life</a>; <a href="topic.php?topic=24">Cultural Commons</a>; <a href="topic.php?topic=113">Environment</a>; <a href="topic.php?topic=26">Knowledge Commons</a></p>
+<h3><a href='profile.php?id=1757'>Bonnie McCay</a></h3>
+<p class='location'>New Jersey, USA</p>
+<p>&mdash;&nbsp;OnTheCommons.org Member</p>
+</td></tr></table></div>
+
+<div class='item-profile new-border'>
+<table cellspacing='0'><tr><td><span class='new'>NEW</span>
+<p class='item-topics'><a href="topic.php?topic=123">Community Life</a>; <a href="topic.php?topic=113">Environment</a>; <a href="topic.php?topic=27">Everyday Life</a>; <a href="topic.php?topic=26">Knowledge Commons</a></p>
+<h3><a href='profile.php?id=1747'>Aron Gamman</a></h3>
+<p class='location'>Columbus, Ohio</p>
+<p>&mdash;&nbsp;OnTheCommons.org Member</p>
+</td></tr></table></div>
+	<a href="topic.php?topic=123" class="more"><div class='more'>MORE</div></a> 
+	</div>	
+	</div>
+
+
+
+
+
+</div>
+
+
+
+<div id="footer">
+<table>
+<tr>
+<td class='td-left'>
+<img src="images/on-the-commons.png" width="150" alt="image" height="17" />
+</td>
+<td class='td-right'>
+<a rel="license" href="http://creativecommons.org/licenses/by/3.0/">
+<img src="images/by.png" width="80" alt="image" height="15" border='0' />
+</a> <a href='rssfeeds.php' alt="RSS Feeds" ><img src="images/rss.png" width="43" alt="RSS Feeds" height="14" /></a> <a href='content.php?id=1477'><img src="images/commons-small.png" width="92" alt="image" height="16" /></a>
+</td>
+</tr>
+</table>
+</div>
+
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-2640161-6");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+
+</html>

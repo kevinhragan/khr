@@ -1,0 +1,6 @@
+#!/bin/bash
+for host in waimanalo wailua spool1 waianae waipahu mango nile nun seth fig server1 pepper horus lime seadev4 heket isis ammut nut icecream shu karnac newpop2 kale peach parsley yam butter ra tefnut seadev2 www thoth atum ramses
+do
+   echo $host
+   ssh $host "grep magic_quotes_gpc /etc/php*/apache/php.ini"
+done < ~/tmp/hostnames

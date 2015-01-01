@@ -1,0 +1,500 @@
+  210  gvjob -s -c newjob 4254430791 xo.sns 8088647784  -- -a -Z
+  211  gvjob -s -c newjob 7035472600 xo.sns 8088647784  -- -a
+  212  vi /var/gv/spool/services/xo.sns
+  213  gvjob -s -c newjob 4254430791 xo.sns 8088647784  -- -a
+  214  cd newcall
+  215  vi loader.cc
+  216  vi /var/gv/spool/services/xo.sns
+  217  gvjob -s -c newjob 4254430791 xo.sns 8088647784  -- -a
+  218  gvjob -s -c newjob 4254430791 xo.sns 8088647784  -- -a
+  219  gvjob -s -c newjob 4254430791 xo.sns 8088647784  -- -a -I
+  220  gvjob -s -c newjob 8086962267 xo.sns 8088647784  -- -a -W
+  221  gvjob -s -c newjob 5185716000 xo.sns 8088647784  -- -a -I
+  222  gvjob -s -c newjob 4254430791 xo.sns 8088647784  -- -a -I
+  223  vi /var/gv/spool/services/xo.sns
+  224  gvjob -s -c newjob 4254430791 xo.sns 8088647784  -- -a -I
+  225  gvjob -s -c newjob 4254430791 xo.sns 8088647784  -- -a -I
+  226  vi /var/gv/spool/services/xo.sns
+  227  gvjob -s -c newjob 17035472600 xo.sns 8088647784  -- -a
+  228  gvjob -s -c newjob 17035472600 xo.sns 8088647784  -- -a
+  229  vi /var/gv/spool/services/xo.sns
+  230  gvjob -s -c newjob 17035472600 xo20.sns 8088647784  -- -a
+  231  gvjob -s -c newjob 18086958789 xo20.sns 8088647784  -- -a
+  232  gvjob -s -c newjob 18086958789 xo20.sns 8088647784  -- -a
+  233  gvjob -s -c newjob 18086958789 xo20.sns 8088647784  -- -a
+  234  gvjob -s -c newjob 14254430791 xo20.sns 8088647784  -- -a -I
+  235  vi /var/gv/spool/services/xo.sns
+  236  gvjob -s -c newjob 14254430791 xo20.sns 8088647784  -- -a -W
+  237  gvjob -s -c newjob 14254430791 xo20.sns 8088647784  -- -a -W
+  238  vi iax_client.cc
+  239  gvjob -s -c newjob 15185716000 xo20.sns 8088647784  -- -a -W
+  240  gvjob -s -c newjob 14254430791 xo.sns 8088647784  -- -a -I
+  241  gvjob -s -c newjob 14254430791 xo.sns 8088647784  -- -a -I
+  242  gvjob -s -c newjob 14254430791 xo.sns 8088647784  -- -a -I
+  243  gvjob -s -c newjob 14254430791 xo.sns 8088647784  -- -a -I
+  244  gvjob -s -c newjob 14254430791 xo.sns 8088647784  -- -a
+  245  gvjob -s -c newjob 14254430791 xo.sns ""  -- -a -W
+  246  gvjob -s -c newjob 14254430791 xo.sns ""  -- -a
+  247  gvjob -s -c newjob 14254430791 xo.sns ""  -- -a -I
+  248  gvjob -c jobs
+  249  history | grep messagecap
+  250  gvjob -c newjob -- -d 41:dialin@10.44.50.109 messagecapture.sns 8088647784
+  251  gvjob -c jobs
+  252  gvjob -c purge jobs
+  253  gvjob -c jobs
+  254  vi /var/gv/spool/services/messagecapture.sns
+  255  gvjob -c newjob -- -d 42:dialin@10.44.50.109 messagecapture.sns 8088647784
+  256  gvjob -s -c newjob 14254430791 xo.sns "Restricted"  -- -a -I
+  257  exit
+  258  ssh 10.244.51.11
+  259  ssh root@10.244.51.11
+  260  ssh root@10.244.51.11
+  261  ssh gvinst
+  262  ssh root@gvinst
+  263  ssh 10.244.51.11
+  264  ssh 10.244.51.11
+  265  ssh 10.244.51.21
+  266  ssh 10.244.51.21
+  267  cd
+  268  cd sni
+  269  vi snicut.cc
+  270  vi sngcid.cc
+  271  vi snicut.cc
+  272  make
+  273  vi snicut.cc
+  274  make
+  275  touch sngcid.cc
+  276  make
+  277  vi sngcid.cc
+  278  make
+  279  vi Makefile
+  280  make
+  281  touch snicut.cc
+  282  make
+  283  vi sngcid.cc
+  284  make
+  285  vi sngcid.cc
+  286  make
+  287  vi sngcid.cc
+  288  make
+  289  vi snicut.cc
+  290  make
+  291  vi +475 engine.cc
+  292  make
+  293  vi snicut.cc
+  294  vi +475 engine.cc
+  295  make
+  296  vi snicut.cc
+  297  vi sngcid.cc
+  298  make
+  299  make install
+  300  history | grep sngcid
+  301  ./sngcid -X0 -btd -eam timedate/tmobile/1164558000_000.wav timedate/*.sng 
+  302  ./sngcid -X0 -Btd -Eam timedate/tmobile/1164558000_000.wav timedate/*.sng 
+  303  vi snicut.cc
+  304  ls
+  305  cp ../vsend/helloworld.wav .
+  306  cp ../gvsend/helloworld.wav .
+  307  snicut -Brec -Eat helloworld.wav
+  308  ls
+  309  vi snicut.cc
+  310  vi sngcid.cc
+  311  snicut -Brec -Eat helloworld.wav -D0
+  312  snicut -D1 -Brec -Eat helloworld.wav -D0
+  313  ./snicut -D1 -Brec -Eat helloworld.wav -D0
+  314  vi snicut.cc
+  315  ./snicut -D1 -Brec -Eat helloworld.wav
+  316  ls
+  317  vi snicut.cc
+  318  ./snicut -D1 -Brec -Eat helloworld.wav foo.wav
+  319  vi sngcid.cc
+  320  make
+  321  ./snicut -D1 -Brec -Eat helloworld.wav
+  322  vi snicut.cc
+  323  ./snicut -D1 -Brec -Eat -ltimedate helloworld.wav
+  324  vi snicut.cc
+  325  ./snicut -D1 -Brec -Eat -ltimedate helloworld.wav -x
+  326  ls -ltr
+  327  ./snicut -D1 -Brec -Eat -ltimedate helloworld.wav -x
+  328  ls -l
+  329  vi snicut.cc
+  330  ./snicut -D1 -Brec -Eat -ltimedate helloworld.wav -n2000
+  331  ls
+  332  ./snicut -D1 -Brec -Eat -ltimedate helloworld.wav -n2000 -x
+  333  ls
+  334  ls -ltr
+  335  ./snicut -D1 -Brec -Eat -ltimedate helloworld.wav -n1000 -x
+  336  ls -ltr
+  337  vi snicut.cc
+  338  make 
+  339  vi +365 snicut.cc
+  340  make
+  341  vi snicut.cc
+  342  make
+  343  history | grep sngcid
+  344  ./snicut -D1 -Brec -Eat -ltimedate -n2000 -x timedate/tmobile/1164558000_000.wav
+  345  ./snicut -Brec -Eat -ltimedate -n2000 -x timedate/tmobile/1164558000_000.wav
+  346  ./snicut -Brec -Eam,pm -ltimedate -n2000 -x timedate/tmobile/1164558000_000.wav
+  347  vi engine.cc
+  348  make
+  349  vi snicut.cc
+  350  make
+  351  vi +390 snicut.cc
+  352  make
+  353  ./snicut -Brec -Eam,pm -ltimedate -n2000 -x timedate/tmobile/1164558000_000.wav
+  354  ls -ltr
+  355  ls -ltr
+  356  ls -ltr
+  357  ./snicut -Brec -Eam,pm -ltimedate -n2000 -x timedate/tmobile/1164558000_000.wav
+  358  ./snicut -D1 -Brec -Eam,pm -ltimedate -n2000 -x timedate/tmobile/1164558000_000.wav
+  359  ls
+  360  ls -ltr
+  361  ./snicut -D1 -Brec -Eam,pm -ltimedate -n2000 -x timedate/tmobile/1164558000_000.wav | more
+  362  ./snicut -D1 -Brec -Eam,pm -ltimedate -n2000 timedate/tmobile/1164558000_000.wav | more
+  363  ls -ltr
+  364  play 1164558000_000_000.wav
+  365  vi +390 snicut.cc
+  366  make
+  367  ./snicut -D1 -Brec -Eam,pm -ltimedate -n2000 timedate/tmobile/1164558000_000.wav | more
+  368  play 1164558000_000_000.wav
+  369  sngcid -X 1164558000_000_000.wav timedate/*.sng
+  370  vi +390 snicut.cc
+  371  make
+  372  ./snicut -D1 -Brec -Eam,pm -ltimedate -n2000 timedate/tmobile/1164558000_000.wav | more
+  373  ./snicut -D1 -Brec -Eam,pm -ltimedate -n2000 timedate/tmobile/1164558000_000.wav
+  374  ./snicut -D0 -Brec -Eam,pm -ltimedate -n2000 timedate/tmobile/1164558000_000.wav
+  375  play 1164558000_000_000.wav
+  376  sngcid -X 1164558000_000_000.wav timedate/*.sng
+  377  cvs diff
+  378  cvs commit -m"added -B and -E options to snicut and sngcid"
+  379  bison
+  380  lex
+  381  man lex
+  382  man bison
+  383  man yacc
+  384  cd
+  385  vi /var/gv/spool/services/nextel_save.sns
+  386  cd sni
+  387  play 1164558000_000_000.wav
+  388  sngcid -X 1164558000_000_000.wav timedate/*.sng
+  389  ls timedate
+  390  sngcid -X 1164558000_000_000.wav timedate/*.sng
+  391  sngcid -X1 1164558000_000_000.wav timedate/*.sng
+  392  sngcid -X 1164558000_000_000.wav timedate/*.sng
+  393  ls
+  394  cat makedigits
+  395  ls
+  396  cd timedate
+  397  ls
+  398  ls -l
+  399  cd
+  400  gvjob -c jobs
+  401  ssh gvinst
+  402  ssh root@gvinst
+  403  cd ../gvsend
+  404  ls
+  405  vi dispatch.conf
+  406  cd ../sni
+  407  cvs diff
+  408  vi sngcid.cc
+  409  vi sni_engine.cc
+  410  make install
+  411  history | grep sngcid
+  412  ./sngcid -X0 -brec -eam timedate/tmobile/1164558000_000.wav timedate/*.sng 
+  413  ./sngcid -X0 -brec -eat timedate/tmobile/1164558000_000.wav timedate/*.sng 
+  414  vi engine.cc
+  415  make install
+  416  vi +307 engine.cc
+  417  make install
+  418  vi +308 engine.cc
+  419  make install
+  420  ./sngcid -X0 -brec -epm,am timedate/tmobile/1164558000_000.wav timedate/*.sng 
+  421  ulimit -c unlimited
+  422  ./sngcid -X0 -brec -epm,am timedate/tmobile/1164558000_000.wav timedate/*.sng 
+  423  gdb sngcid core
+  424  ./sngcid -X0 -brec -eam timedate/tmobile/1164558000_000.wav timedate/*.sng 
+  425  ./sngcid -X0 -brec -eam,pm timedate/tmobile/1164558000_000.wav timedate/*.sng 
+  426  vi engine.cc
+  427  make install
+  428  ./sngcid -X0 -brec -eam,pm timedate/tmobile/1164558000_000.wav timedate/*.sng 
+  429  ./sngcid -X0 -brec -epm,hello,am timedate/tmobile/1164558000_000.wav timedate/*.sng 
+  430  ./sngcid -X0 -brec -epm,am,hello timedate/tmobile/1164558000_000.wav timedate/*.sng 
+  431  ./sngcid -X0 -brec -epm,oh,hello timedate/tmobile/1164558000_000.wav timedate/*.sng 
+  432  ./sngcid -X0 timedate/tmobile/1164558000_000.wav timedate/*.sng 
+  433  ./sngcid -X0 timedate/tmobile/1164558000_000.wav timedate/*.sng /var/gv/lib/tmobile/*.sng
+  434  ls /var/gv/lib
+  435  ls
+  436  ls cid
+  437  ls callerid
+  438  ls new_cid
+  439  vi engine.cc
+  440  make
+  441  make install
+  442  ./sngcid -X0 -bfrom,rec -eam,pm timedate/tmobile/1164558000_000.wav timedate/*.sng /var/gv/lib/tmobile/*.sng
+  443  ./sngcid -X0 -brec,nar -eam,pm timedate/tmobile/1164558000_000.wav timedate/*.sng /var/gv/lib/tmobile/*.sng
+  444  ./sngcid -X0 -brec,nar -eam,pm timedate/tmobile/1164558000_000.wav timedate/*.sng
+  445  ./sngcid -X0 -brec,td -eam,pm timedate/tmobile/1164558000_000.wav timedate/*.sng
+  446  ./sngcid -X1 -brec,td -eam,pm timedate/tmobile/1164558000_000.wav timedate/*.sng
+  447  cvs log sngcid.cc
+  448  vi engine.cc
+  449  vi sngcid.cc
+  450  ls /var/gv/lib
+  451  ls /var/gv/lib/*
+  452  ls /var/gv/lib/* | more
+  453   ls
+  454  vi engine.h
+  455  make
+  456  make install
+  457  ./sngcid -X0 -brec,td -eam,pm timedate/tmobile/1164558000_000.wav timedate/*.sng
+  458  ./sngcid timedate/tmobile/1164558000_000.wav timedate/*.sng
+  459  ./sngcid -b2 -e6 timedate/tmobile/1164558000_000.wav timedate/*.sng
+  460  vi sngcid.cc
+  461  ./sngcid -b2 -e6 timedate/tmobile/1164558000_000.wav timedate/*.sng
+  462  ./sngcid -b2 -e6 timedate/tmobile/1164558000_000.wav timedate/*.sng -D1
+  463  ./sngcid -b2 -e6 timedate/tmobile/1164558000_000.wav timedate/*.sng -D0
+  464  ./sngcid -e6 timedate/tmobile/1164558000_000.wav timedate/*.sng -D0
+  465  ./sngcid -bmessage -r -e6 timedate/tmobile/1164558000_000.wav timedate/*.sng -D0
+  466  ./sngcid -b7 -e6 timedate/tmobile/1164558000_000.wav timedate/*.sng -D0
+  467  ./sngcid -b3 -e6 timedate/tmobile/1164558000_000.wav timedate/*.sng -D0
+  468  ./sngcid -b3 -e6 timedate/tmobile/1164558000_000.wav timedate/*.sng 
+  469  ./sngcid -b3 -e6 timedate/tmobile/1164558000_000.wav timedate/*.sng 
+  470  ./sngcid -b3 -e6 timedate/tmobile/1164558000_000.wav timedate/*.sng -X
+  471  ./sngcid -brec -eam,pm timedate/tmobile/1164558000_000.wav timedate/*.sng -X
+  472  ./sngcid timedate/tmobile/1164558000_000.wav timedate/*.sng -X
+  473  ./sngcid timedate/tmobile/1164558000_000.wav timedate/*.sng
+  474  ./sngcid timedate/tmobile/1164558000_000.wav timedate/*.sng -bfrom -erec
+  475  ./sngcid timedate/tmobile/1164558000_000.wav timedate/*.sng -bfrom -erec -X
+  476  grep '\\n' *.cc
+  477  vi sngcid.cc
+  478  make
+  479  ./sngcid timedate/tmobile/1164558000_000.wav timedate/*.sng -bfrom -erec
+  480  ./sngcid timedate/tmobile/1164558000_000.wav timedate/*.sng -bfrom -erec
+  481  ./sngcid timedate/tmobile/1164558000_000.wav timedate/*.sng -bfrom -erec -X
+  482  ./sngcid timedate/tmobile/1164558000_000.wav timedate/*.sng -bfrom -erec -r
+  483  cvs commit -m"added -b and -e options"
+  484  cvs update
+  485  cvs diff -r1.7 sngcid.cc
+  486  make
+  487  ./sngcid timedate/tmobile/1164558000_000.wav timedate/*.sng -bfrom -erec -r
+  488  ./sngcid timedate/tmobile/1164558000_000.wav timedate/*.sng -bfrom -erec -X
+  489  ./sngcid timedate/tmobile/1164558000_000.wav timedate/*.sng -bfrom -erec
+  490  ssh root@voipa
+  491  cd newcall
+  492  cd 
+  493  cd newcall
+  494  ls
+  495  vi iax_client.cc
+  496  make
+  497  ssh root@voipa
+  498  ssh root@voipa
+  499  ping ammut
+  500  exit
+  501  cd sni
+  502  ls
+  503  history
+  504  ls
+  505  play 1164558000_000_000.wav
+  506  ls timedate
+  507  ls timedate/tmobile
+  508  sngcid -X timedate/tmobile/i0998025914_000.wav timedate/*.sng
+  509  sngcid -X -Brec -Eam,pm timedate/tmobile/i0998025914_000.wav timedate/*.sng
+  510  sngcid -X -Brec -Eam,pm timedate/tmobile/i0998025914_000.wav timedate/*.sng | tmo
+  511  cd ../bison
+  512  (cd ,,/sni; sngcid -X -Brec -Eam,pm timedate/tmobile/i0998025914_000.wav timedate/*.sng) | tmo
+  513  ls ../sni
+  514  (cd ../sni; sngcid -X -Brec -Eam,pm timedate/tmobile/i0998025914_000.wav timedate/*.sng) | tmo
+  515  history | tail -5 >history
+  516  cat history
+  517  ls
+  518  vi lex.yy.c
+  519  tzset
+  520  tz
+  521  timezone
+  522  timezone
+  523  cp ../newcall/timezones.cc .
+  524  vi timezones.cc
+  525  ls
+  526  vi tmobile.y
+  527  (cd ../sni; sngcid -X -Brec -Eam,pm timedate/tmobile/i0998025914_000.wav timedate/*.sng) | tmo
+  528  vi timezones.cc
+  529  man asctime
+  530  timezones 8088647784
+  531  ../newcall/timezone 8088647784
+  532  ../newcall/timezones 8088647784
+  533  ../newcall/timezones 4258647784
+  534  ../newcall/timezones 7028647784
+  535  ../newcall/timezones 8108647784
+  536  vi Makefile
+  537  make
+  538  vi timezones.cc
+  539  make
+  540  vi +94 timezones.cc
+  541  g++ -c timezones.cc
+  542  grep gvtz ../newcall/*.h
+  543  vi ../newcall/engine.h
+  544  vi timezones.cc
+  545  make
+  546  ls
+  547  vi timezones.cc
+  548  make
+  549  vi tmobile.y
+  550  make
+  551  vi tmobile.y
+  552  cd ../sni
+  553  vi snicut.cc
+  554  cd ../bison
+  555  make
+  556  man exit
+  557  vi tmobile.y
+  558  make
+  559  vi timezones.cc
+  560  vi sngcid.h
+  561  vi timezones.cc
+  562  make
+  563  vi tmobile.y
+  564  make
+  565  vi sngcid.h
+  566  vi tmobile.y
+  567  make
+  568  vi tmobile.y
+  569  make
+  570  (cd ../sni; sngcid -X -Brec -Eam,pm timedate/tmobile/i0998025914_000.wav timedate/*.sng) | tmo -R8088647784
+  571  (cd ../sni; sngcid -X -Brec -Eam,pm timedate/tmobile/i0998025914_000.wav timedate/*.sng) | tmo -R4258647784
+  572  man ctime
+  573  vi tmobile.y
+  574  make
+  575  (cd ../sni; sngcid -X -Brec -Eam,pm timedate/tmobile/i0998025914_000.wav timedate/*.sng) | tmo -R4258647784
+  576  timezone 8088647784
+  577  ../newcall/timezone 8088647784
+  578  ../newcall/timezones 8088647784
+  579  ../newcall/timezones 4258647784
+  580  ../newcall/timezones 2128647784
+  581  vi timezones.cc
+  582  man asctime
+  583  echo $tzname
+  584  man asctime
+  585  vi tmobile.y
+  586  make
+  587  (cd ../sni; sngcid -X -Brec -Eam,pm timedate/tmobile/i0998025914_000.wav timedate/*.sng) | tmo -R4258647784
+  588  (cd ../sni; sngcid -X -Brec -Eam,pm timedate/tmobile/i0998025914_000.wav timedate/*.sng) | tmo -R8088647784
+  589  vi tmobile.y
+  590  vi tmobile.y
+  591  make
+  592  (cd ../sni; sngcid -X -Brec -Eam,pm timedate/tmobile/i0998025914_000.wav timedate/*.sng) | tmo -R8088647784
+  593  (cd ../sni; sngcid -X -Brec -Eam,pm timedate/tmobile/i0998025914_000.wav timedate/*.sng) | ./tmo -R8088647784
+  594  vi tmobile.y
+  595  make
+  596  (cd ../sni; sngcid -X -Brec -Eam,pm timedate/tmobile/i0998025914_000.wav timedate/*.sng) | ./tmo -R8088647784
+  597  vi tmobile.y
+  598  make
+  599  (cd ../sni; sngcid -X -Brec -Eam,pm timedate/tmobile/i0998025914_000.wav timedate/*.sng) | ./tmo -R8088647784
+  600  vi tmobile.y
+  601  make
+  602  (cd ../sni; sngcid -X -Brec -Eam,pm timedate/tmobile/i0998025914_000.wav timedate/*.sng) | ./tmo -R8088647784
+  603  tmo -R8088647784
+  604  vi tmobile.y
+  605  make
+  606  echo rec thu at 9 40 7 am | tmo -R8088647784
+  607  echo rec thu at 9 40 7 am | tmo -R4258647784
+  608  echo rec mon at 9 40 7 am | tmo -R4258647784
+  609  echo rec sun at 9 40 7 am | tmo -R4258647784
+  610  echo rec sun at 9 40 7 pm | tmo -R4258647784
+  611  vi tmobile.y
+  612  make
+  613  vi +151 timezones.cc
+  614  make
+  615  echo rec sun at 9 40 7 am | tmo -R4258647784
+  616  vi +151 timezones.cc
+  617  make
+  618  vi tmobile.y
+  619  make
+  620  vi sngcid.h
+  621  make
+  622  vi tmobile.y
+  623  make
+  624  echo rec sun at 9 40 7 am | tmo -R4258647784
+  625  echo rec sun at 9 40 7 am | tmo -R8088647784
+  626  echo rec sun at 9 40 7 pm | tmo -R8088647784
+  627  echo rec sun at 9 40 7 pm | tmo -R2128647784
+  628  echo rec sun at 9 40 7 pm | tmo -R2128647784
+  629  gvjob -c jobs
+  630  history | grep gvjob
+  631  gvjob -c job
+  632  gvjob -c jobs
+  633  ssh 808.gotvoice.com
+  634  cd 
+  635  cd newcall
+  636  vi mailbox.cc
+  637  cat /usr/local/bin/gvsetprof
+  638  ls
+  639  vi mailbox.cc
+  640  grep blogurl *.cc
+  641  vi gvmain.cc
+  642  cd ../newspool
+  643  vi spool.cc
+  644  gvjob -c jobs
+  645  history | grep newjob
+  646  cd ../newcall
+  647  cat bigblog.sns
+  648  vi mailbox.cc
+  649  cat bigblog.sns
+  650  /$8
+  651  cat bigblog.sns
+  652  vi bigblog.sns
+  653  grep set *.sns
+  654  grep 'set r' /var/gv/spool/services/*,sns
+  655  ls /var/gv/spool/services
+  656  grep 'set r' /var/gv/spool/services/*.sns
+  657  grep 'set R' /var/gv/spool/services/*.sns
+  658  vi engine.cc
+  659  vi mailbox.cc
+  660  grep publish *.cc
+  661  vi engineloop.cc
+  662  vi mailbox.cc
+  663  grep 'N' *engine*
+  664  grep '\'N\'' *engine*
+  665  grep '\\'N\\'' *engine*
+  666  grep '\\'N' *engine*
+  667  grep '\'N' *engine*
+  668  vi engineloop.cc
+  669  cd
+  670  cd sni
+  671  ls
+  672  cd bison
+  673  ls
+  674  history
+  675  echo rec sun at 9 40 7 pm | tmo -R2128647784
+  676  vi tmobile.l
+  677  make
+  678  man strlen
+  679  vi +23 tmobile.l
+  680  make
+  681  vi tmobile.l
+  682  make
+  683  man strlen
+  684  vi tmobile.l
+  685  ls /usr/include/s*.h
+  686  vi tmobile.l
+  687  make
+  688  vi tmobile.l
+  689  make
+  690  echo rec sun at 9 40 7 pm | tmo -R2128647784
+  691  vi tmobile.l
+  692  make
+  693  vi tmobile.l
+  694  make
+  695  echo rec sun at 9 40 7 pm | tmo -R2128647784
+  696  vi tmobile.l
+  697  vi tmobile.l
+  698  make
+  699  echo rec sun at 9 40 7 pm | tmo -R2128647784
+  700  vi tmobile.l
+  701  make
+  702  echo rec sun at 9 40 7 pm | tmo -R2128647784
+  703  cat test.in | tmo -R2128647784
+  704  vi tmobile.y
+  705  cvs add test.in
+  706  cd ..
+  707  cvs diff
+  708  cvs commit -m"properly formatted date/time"
+  709  history >history

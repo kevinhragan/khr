@@ -1,0 +1,2 @@
+validate internal passwords
+turn off unsecured imap; any other uses of cleartext passwords - pserver(?)

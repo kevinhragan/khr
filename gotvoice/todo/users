@@ -1,0 +1,16 @@
+add users by host type: uid, gid 
+	/etc/passwd
+	/etc/shadow
+   	homedir
+
+remove users
+
+change passwords
+
+global sudoers
+
+
+Steps: 
+
+1. create users with only "kevinr" configured
+2. build and export sudoers file

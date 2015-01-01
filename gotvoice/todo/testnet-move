@@ -1,0 +1,11 @@
+osiris3 
+   change ext ip -> 4.79.104.123
+   turn on autoneg on eth0
+   connect to switch; test
+   reconfig vpn both ends
+move test network switch
+all test hosts: ammut karnac peach tefnut thoth lime
+change external ip in sip.conf for asterisk host: lime
+update nagios
+update mrtg
+update cfengine 

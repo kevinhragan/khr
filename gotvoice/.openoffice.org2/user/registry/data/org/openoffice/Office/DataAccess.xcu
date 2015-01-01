@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oor:component-data xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" oor:name="DataAccess" oor:package="org.openoffice.Office">
+ <node oor:name="RegisteredNames">
+  <node oor:name="machinedb" oor:op="replace">
+   <prop oor:name="Location" oor:type="xs:string">
+    <value>file:///home/kevinr/machinedb.odb</value>
+   </prop>
+   <prop oor:name="Name" oor:type="xs:string">
+    <value>machinedb</value>
+   </prop>
+  </node>
+ </node>
+</oor:component-data>

@@ -1,0 +1,313 @@
+head	1.3;
+access;
+symbols;
+locks
+	kevinr:1.3; strict;
+comment	@# @;
+
+
+1.3
+date	2006.07.18.17.59.17;	author kevinr;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2006.07.18.15.31.06;	author kevinr;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2006.07.18.14.59.11;	author kevinr;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.3
+log
+@thru out wierdo port forwarding, changed names to geneeric servces
+@
+text
+@#!/bin/sh
+
+IPTABLES=/sbin/iptables
+
+# Configure ipaddresses
+public_ip=63.211.200.106
+private_ip=10.97.1.1
+
+www_public=
+www_private=10.9
+
+# secondary webserver
+host1_public=
+host1_private=10.9
+
+#nationaltest_public=209.245.183.5
+#nationaltest_private=10.96.1.101
+
+voip_public=
+voip_private=10.9
+
+
+anywhere=0.0.0.0/0
+loopback=127.0.0.0/8
+localnet=10.97.1.0/24
+gotvoicenet=10.0.0.0/8
+
+# Flush iptables
+$IPTABLES -F
+$IPTABLES -t nat -F
+$IPTABLES -X
+
+# Mostly closed firewall
+$IPTABLES -P INPUT DROP
+$IPTABLES -P OUTPUT DROP
+$IPTABLES -P FORWARD DROP
+$IPTABLES -t nat -P PREROUTING ACCEPT
+$IPTABLES -t nat -P POSTROUTING ACCEPT
+$IPTABLES -t nat -P OUTPUT ACCEPT
+
+# Safe to enable ip forwarding
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+# Loopback is okay
+$IPTABLES -A INPUT -i lo -s $anywhere -d $anywhere -j ACCEPT
+$IPTABLES -A OUTPUT -o lo -s $anywhere -d $anywhere -j ACCEPT
+
+# Local interface from local machines going anywhere is okay
+$IPTABLES -A INPUT -i eth1 -s $localnet -d $anywhere -j ACCEPT
+
+# gotvoice traffic from ipsec is valid
+$IPTABLES -A INPUT -i eth0 -s $gotvoicenet -d $localnet -j ACCEPT
+
+# Local packets from remote interface are not valid
+#$IPTABLES -A INPUT -i eth0 -s $localnet -d $anywhere -j DROP
+
+# Allow any related traffic back through nat
+$IPTABLES -A INPUT -i eth0 -s $anywhere -d $public_ip -m state --state ESTABLISHED,RELATED -j ACCEPT
+
+# Open ssh to outside
+$IPTABLES -A INPUT -p tcp -i eth0 -m state --state NEW,ESTABLISHED,RELATED -s $anywhere --dport 22 -j ACCEPT
+
+# Open name server to outside
+# no dns
+#$IPTABLES -A INPUT -p tcp -i eth0 -s $anywhere --dport 53 -j ACCEPT
+#$IPTABLES -A INPUT -p udp -i eth0 -s $anywhere --dport 53 -j ACCEPT
+#$IPTABLES -A OUTPUT -p tcp -o eth0 -s $public_ip -d $anywhere --sport 53 -j ACCEPT
+#$IPTABLES -A OUTPUT -p udp -o eth0 -s $public_ip -d $anywhere --sport 53 -j ACCEPT
+
+# Temp allow access to proxy
+$IPTABLES -A INPUT -p tcp -i eth0 -s $anywhere --dport 80 -j ACCEPT
+$IPTABLES -A INPUT -p udp -i eth0 -s $anywhere --dport 80 -j ACCEPT
+$IPTABLES -A OUTPUT -p tcp -o eth0 -s $public_ip -d $anywhere --sport 80 -j ACCEPT
+
+
+# Enable IPSec
+# IKE negotiations
+$IPTABLES -A INPUT -p udp -i eth0 --dport 500 -j ACCEPT
+$IPTABLES -A OUTPUT -p udp -o eth0 --sport 500 -j ACCEPT
+# ESP encryption
+$IPTABLES -A INPUT -p 50 -i eth0 -j ACCEPT
+$IPTABLES -A OUTPUT -p 50 -o eth0 -j ACCEPT
+
+# Catch all rule
+#$IPTABLES -A INPUT -s $anywhere -d $anywhere -j DROP
+
+# Local interfaces,sources going to local net is valid 
+$IPTABLES -A OUTPUT -o eth1 -s $public_ip -d $localnet -j ACCEPT
+$IPTABLES -A OUTPUT -o eth1 -s $private_ip -d $localnet -j ACCEPT
+
+# Outgoing on public interface from private IP deny
+#$IPTABLES -A OUTPUT -o eth0 -s $anywhere -d 192.168.0.0/16 -j DROP
+#$IPTABLES -A OUTPUT -o eth0 -s $anywhere -d 172.16.0.0/12 -j DROP
+#$IPTABLES -A OUTPUT -o eth0 -s $anywhere -d 10.0.0.0/8 -j DROP
+
+# Everything else on public interface is valid
+$IPTABLES -A OUTPUT -o eth0 -s $public_ip -d $anywhere -j ACCEPT
+
+# Packets destined for rest of gotvoice network over IPSec are valid
+$IPTABLES -A OUTPUT -o eth0 -s $private_ip -d $gotvoicenet -j ACCEPT
+$IPTABLES -A OUTPUT -o eth0 -s $public_ip -d $gotvoicenet -j ACCEPT
+
+# Packets from gotvoice network are also okay
+$IPTABLES -A INPUT -i eth0 -d $private_ip -s $gotvoicenet -j ACCEPT
+$IPTABLES -A INPUT -i eth0 -d $public_ip -s $gotvoicenet -j ACCEPT
+
+# Must rewrite local packets to include correct source IP when traveling over ipsec
+$IPTABLES -A POSTROUTING -t nat -d $gotvoicenet -s $public_ip -j SNAT --to $private_ip
+
+# Catch all rule, all others are dropped
+#$IPTABLES -A OUTPUT -s $anywhere -d $anywhere -j DROP
+
+## FORWARDING Rules
+
+# All local traffic to internet accept
+$IPTABLES -A FORWARD -i eth1 -o eth0 -j ACCEPT
+
+# All local traffic to local network accept
+$IPTABLES -A FORWARD -i eth1 -o eth1 -j ACCEPT
+
+# All returning connections accept
+$IPTABLES -A FORWARD -i eth0 -o eth1 -m state --state ESTABLISHED,RELATED -j ACCEPT
+
+# Enable forwarding through VPN
+$IPTABLES -A FORWARD -s 10.97.0.0/16 -d 10.0.0.0/8 -i eth1 -o eth0 -j ACCEPT
+$IPTABLES -A FORWARD -s 10.0.0.0/8 -d 10.97.0.0/16 -i eth0 -o eth1 -j ACCEPT
+
+# Everything else is dropped
+#$IPTABLES -A FORWARD -j DROP
+
+# Enable NAT
+$IPTABLES -t nat -A POSTROUTING -o eth0 -d $gotvoicenet -j ACCEPT
+$IPTABLES -t nat -A POSTROUTING -o eth0 -s $localnet -j SNAT --to $public_ip
+
+## PORT FORWARDING
+
+# Enable access to web server (www)
+$IPTABLES -A PREROUTING -t nat -p tcp -d $www_public --dport 80 -j DNAT --to $www_private:80
+$IPTABLES -I FORWARD -i eth0 -o eth1 -p tcp -d $www_private --dport 80 -j ACCEPT
+
+# Enable access to host1
+$IPTABLES -A PREROUTING -t nat -p tcp -d $ra_public --dport 80 -j DNAT --to $ra_private:80
+$IPTABLES -I FORWARD -i eth0 -o eth1 -p tcp -d $ra_private --dport 80 -j ACCEPT
+
+# VoIP connections
+$IPTABLES -A PREROUTING -t nat -i eth0 -p udp -d $voip_public --dport 5060 -j DNAT --to $voip_private:5060
+$IPTABLES -I FORWARD -i eth0 -o eth1 -p udp -d $voip_private --dport 5060 -j ACCEPT
+$IPTABLES -A PREROUTING -t nat -i eth0 -p tcp -d $voip_public --dport 5060 -j DNAT --to $voip_private:5060
+$IPTABLES -I FORWARD -i eth0 -o eth1 -p tcp -d $voip_private --dport 5060 -j ACCEPT
+$IPTABLES -A PREROUTING -t nat -i eth0 -d $voip_public -p udp --dport 4569 -j DNAT --to 192.168.1.10:4569
+$IPTABLES -I FORWARD -i eth0 -o eth1 -p udp -d 192.168.1.10 --dport 4569 -j ACCEPT
+$IPTABLES -A PREROUTING -t nat -i eth0 -d $voip_public -p tcp --dport 4569 -j DNAT --to 192.168.1.10:4569
+$IPTABLES -I FORWARD -i eth0 -o eth1 -p tcp -d 192.168.1.10 --dport 4569 -j ACCEPT
+$IPTABLES -A PREROUTING -t nat -i eth0 -d $voip_public -p udp --dport 5036 -j DNAT --to $voip_private:5036
+$IPTABLES -I FORWARD -i eth0 -o eth1 -p udp -d $voip_private --dport 5036 -j ACCEPT
+$IPTABLES -A PREROUTING -t nat -i eth0 -d $voip_public -p udp --dport 10000:20000 -j DNAT --to $voip_private
+$IPTABLES -I FORWARD -i eth0 -o eth1 -p udp -d $voip_private --dport 10000:20000 -j ACCEPT
+$IPTABLES -A PREROUTING -t nat -i eth0 -d $voip_public -p udp --dport 2727 -j DNAT --to $voip_private:2727
+$IPTABLES -I FORWARD -i eth0 -o eth1 -p udp -d $voip_private --dport 2727 -j ACCEPT
+@
+
+
+1.2
+log
+@first approximation.  updated internal, external addresses, ommitted obviously inapplicable rules.
+@
+text
+@d9 2
+a10 2
+#www_public=209.245.183.6
+#www_private=10.96.1.55
+d12 3
+a14 2
+#ra_public=209.245.183.3
+#ra_private=10.96.1.51
+d19 2
+a20 2
+#voip_a_public=209.245.176.14
+#voip_a_private=10.96.1.10
+d141 1
+a141 1
+# Enable access to ra
+d146 5
+a150 5
+$IPTABLES -A PREROUTING -t nat -i eth0 -p udp -d $voip_a_public --dport 5060 -j DNAT --to $voip_a_private:5060
+$IPTABLES -I FORWARD -i eth0 -o eth1 -p udp -d $voip_a_private --dport 5060 -j ACCEPT
+$IPTABLES -A PREROUTING -t nat -i eth0 -p tcp -d $voip_a_public --dport 5060 -j DNAT --to $voip_a_private:5060
+$IPTABLES -I FORWARD -i eth0 -o eth1 -p tcp -d $voip_a_private --dport 5060 -j ACCEPT
+$IPTABLES -A PREROUTING -t nat -i eth0 -d $voip_a_public -p udp --dport 4569 -j DNAT --to 192.168.1.10:4569
+d152 1
+a152 1
+$IPTABLES -A PREROUTING -t nat -i eth0 -d $voip_a_public -p tcp --dport 4569 -j DNAT --to 192.168.1.10:4569
+d154 6
+a159 29
+$IPTABLES -A PREROUTING -t nat -i eth0 -d $voip_a_public -p udp --dport 5036 -j DNAT --to $voip_a_private:5036
+$IPTABLES -I FORWARD -i eth0 -o eth1 -p udp -d $voip_a_private --dport 5036 -j ACCEPT
+$IPTABLES -A PREROUTING -t nat -i eth0 -d $voip_a_public -p udp --dport 10000:20000 -j DNAT --to $voip_a_private
+$IPTABLES -I FORWARD -i eth0 -o eth1 -p udp -d $voip_a_private --dport 10000:20000 -j ACCEPT
+$IPTABLES -A PREROUTING -t nat -i eth0 -d $voip_a_public -p udp --dport 2727 -j DNAT --to $voip_a_private:2727
+$IPTABLES -I FORWARD -i eth0 -o eth1 -p udp -d $voip_a_private --dport 2727 -j ACCEPT
+
+# sigtool to karnac
+$IPTABLES -A PREROUTING -t nat -i eth0 -p tcp -d 209.245.183.5 --dport 9200 -j DNAT --to 10.96.1.61
+$IPTABLES -I FORWARD -i eth0 -o eth1 -p tcp -d 10.96.1.61 --dport 9200 -j ACCEPT
+# https to host1
+$IPTABLES -A PREROUTING -t nat -i eth0 -p tcp -d 209.245.183.3 --dport 443 -j DNAT --to 10.96.1.51
+$IPTABLES -I FORWARD -i eth0 -o eth1 -p tcp -d 10.96.1.51 --dport 443 -j ACCEPT
+# smtp to host1
+$IPTABLES -A PREROUTING -t nat -i eth0 -p tcp -d 209.245.183.3 --dport 25 -j DNAT --to 10.96.1.51
+$IPTABLES -I FORWARD -i eth0 -o eth1 -p tcp -d 10.96.1.51 --dport 25 -j ACCEPT
+
+$IPTABLES -A PREROUTING -t nat -i eth0 -p tcp -d 209.245.183.5 --dport 80 -j DNAT --to 10.96.1.101
+$IPTABLES -A FORWARD -i eth0 -o eth1 -p tcp -d 10.96.1.101 --dport 80 -j ACCEPT
+
+$IPTABLES -A PREROUTING -t nat -i eth0 -p tcp -d 209.245.183.5 --dport 1935 -j DNAT --to 10.96.1.101
+$IPTABLES -A FORWARD -i eth0 -o eth1 -p tcp -d 10.96.1.101 --dport 1935 -j ACCEPT
+
+$IPTABLES -A PREROUTING -t nat -i eth0 -p tcp -d 209.245.183.5 --dport 1111 -j DNAT --to 10.96.1.101
+$IPTABLES -A FORWARD -i eth0 -o eth1 -p tcp -d 10.96.1.101 --dport 1111 -j ACCEPT
+
+# Flash client access to server1
+$IPTABLES -A PREROUTING -t nat -p tcp -d $nationaltest_public --dport 1935 -j DNAT --to $nationaltest_private:1935
+$IPTABLES -I FORWARD -i eth0 -o eth1 -p tcp -d $nationaltest_private --dport 1935 -j ACCEPT
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d6 2
+a7 3
+public_ip=209.245.176.14
+private_ip=10.96.1.1
+private_ip2=192.168.1.0/24
+d9 2
+a10 2
+www_public=209.245.183.6
+www_private=10.96.1.55
+d12 2
+a13 2
+ra_public=209.245.183.3
+ra_private=10.96.1.51
+d15 2
+a16 2
+nationaltest_public=209.245.183.5
+nationaltest_private=10.96.1.101
+d18 2
+a19 2
+voip_a_public=209.245.176.14
+voip_a_private=10.96.1.10
+d24 1
+a24 2
+localnet=10.96.1.0/24
+oldlocalnet=192.168.1.0/24
+a48 1
+$IPTABLES -A INPUT -i eth1 -s $oldlocalnet -d $anywhere -j ACCEPT
+a54 1
+#$IPTABLES -A INPUT -i eth0 -s $oldlocalnet -d $anywhere -j DROP
+d63 5
+a67 4
+$IPTABLES -A INPUT -p tcp -i eth0 -s $anywhere --dport 53 -j ACCEPT
+$IPTABLES -A INPUT -p udp -i eth0 -s $anywhere --dport 53 -j ACCEPT
+$IPTABLES -A OUTPUT -p tcp -o eth0 -s 209.245.176.14 -d $anywhere --sport 53 -j ACCEPT
+$IPTABLES -A OUTPUT -p udp -o eth0 -s 209.245.176.14 -d $anywhere --sport 53 -j ACCEPT
+d72 1
+a72 2
+$IPTABLES -A OUTPUT -p tcp -o eth0 -s 209.245.176.14 -d $anywhere --sport 80 -j ACCEPT
+$IPTABLES -A OUTPUT -p udp -o eth0 -s 209.245.176.14 -d $anywhere --sport 80 -j ACCEPT
+a88 2
+$IPTABLES -A OUTPUT -o eth1 -s $public_ip -d $oldlocalnet -j ACCEPT
+$IPTABLES -A OUTPUT -o eth1 -s $private_ip2 -d $oldlocalnet -j ACCEPT
+d124 2
+a125 2
+$IPTABLES -A FORWARD -s 10.96.0.0/16 -d 10.0.0.0/8 -i eth1 -o eth0 -j ACCEPT
+$IPTABLES -A FORWARD -s 10.0.0.0/8 -d 10.96.0.0/16 -i eth0 -o eth1 -j ACCEPT
+a132 1
+$IPTABLES -t nat -A POSTROUTING -o eth0 -s $oldlocalnet -j SNAT --to $public_ip
+@

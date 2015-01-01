@@ -1,0 +1,1097 @@
+<HTML>
+<head>  
+<TITLE>ServerWatch Server Categories</TITLE>
+<META NAME="description" CONTENT="Types of servers reviewed on ServerWatch">
+<META NAME="keywords" CONTENT="web Servers, web, web server, application servers, application server, app server, app servers, proxy Servers, proxy server, proxy, FTP Servers, FTP server, ftp, mail Servers, mail server, e-mail server, e-mail servers, messaging server, list servers, list server, chat server, chat servers, groupware servers, groupware, group servers, groupware server, telnet servers, telnet server, fax servers, fax server, news servers, news server, A/V servers, A/V server, audio/video servers, IRC server, IRC servers, platforms, platform, operating systems">
+
+   <link REL="stylesheet" HREF="/css/text.css" TYPE="text/css">
+
+<script language="JavaScript">
+
+<!--
+function MM_preloadImages() { //v3.0  
+ var d=document;
+ if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+ if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image;
+ d.MM_p[j++].src=a[i];
+   }
+ }
+}
+
+//-->
+</script>
+
+</head>
+<body bgcolor="ffffff" marginwidth="0" marginheight="0" rightmargin="0" leftmargin="0" topmargin="0" bottommargin="0" onLoad="MM_preloadImages('/img/news-nav2.gif','/img/tutorials-nav2.gif','/img/server-nav2.gif','/img/stats-nav2.gif','/img/hardware-nav2.gif','/img/forum-nav2.gif','/img/sitemap-nav2.gif','/img/contact-nav2.gif','/img/home-nav2.gif')">
+<!-- "send" begin" -->
+<A HREF="http://www.serverwatch.com/RealMedia/ads/click_lx.cgi/intm/it/www.serverwatch.com/stypes/index/190284192/send/OasDefault/default/empty.gif/34613564366538393437666663373830" target="_top"><img SRC="http://www.serverwatch.com/RealMedia/ads/Creatives/OasDefault/default/empty.gif" width=2 HEIGHT=2 ALT="" BORDER=0 BORDER="0"></A><!-- "send" end" -->
+<center><script type="text/javascript" src="/icom_includes/toolbars/globaltoolbar/scripts/fsmenu_commented.js"></script>
+<script type="text/javascript" src="/icom_includes/toolbars/globaltoolbar/scripts/menuset.js"></script>
+<script type="text/javascript" src="/icom_includes/toolbars/globaltoolbar/scripts/menusetv2.js"></script>
+<script type="text/javascript" src="/icom_includes/toolbars/globaltoolbar/scripts/menusetv3.js"></script>
+<link rel="stylesheet" type="text/css" href="/icom_includes/toolbars/globaltoolbar/css/listmenu_h.css" />
+<link rel="stylesheet" type="text/css" href="/icom_includes/toolbars/globaltoolbar/css/listmenu_h_settings.css" />
+
+<style type="text/css">
+
+#navitoolbarcontainer a {
+	line-height: 16px;
+	}
+
+</style>
+
+
+
+<!-- START TOP TOOLBAR -->
+<div id="heightcontainer"></div>		
+
+<div style="width: 100%;" id="navitoolbarcontainer">
+		  <div style="margin: 0px; padding: 0px; width: 100%;">
+		  <div id="navitile" style="width: 100%;">
+			<div style="padding-left: 0px; margin-left: 0px; padding-top: 5px; padding-right: 5px; float: left; white-space: nowrap;">
+
+			<a title="View Internet.com - The Network for Technology Professionals" href="http://www.internet.com/" class="gt"><img src="/icom_includes/toolbars/globaltoolbar/img/icom_logo_global.png" alt="Internet.com - The Network for Technology Professionals" border="0"></a>
+
+			</div>		
+				<ul class="menulist" id="listMenuRoot" style="height:22px;">
+				 <li style="margin-top:0px;">
+				  <a class="gt"  href="http://www.internet.com/it/" style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration:none;"> <b>IT</b> </a>
+
+				  
+				  
+				  <ul id="listMenu-id-1">
+                   <li style="background-image:url(/icom_includes/toolbars/globaltoolbar/img/background_topsub.jpg);  background-repeat:repeat-x;"><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none; font-weight: bold;" href="http://www.internet.com/it">internet.com/IT</a></li>
+		   <li style="background-image:url(/icom_includes/toolbars/globaltoolbar/img/background_topsub.jpg);  background-repeat:repeat-x;"><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none; font-weight: bold;" href="http://www.internet.com/cio">internet.com/CIO</a></li>  
+                   <li style="background-image:url(/icom_includes/toolbars/globaltoolbar/img/background_topsub.jpg);  background-repeat:repeat-x;"><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none; font-weight: bold;" href="http://www.internet.com/security">internet.com/Security</a></li>  
+                   <li style="background-image:url(/icom_includes/toolbars/globaltoolbar/img/background_topsub.jpg);  background-repeat:repeat-x;"><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none; font-weight: bold;" href="http://www.internet.com/networking">internet.com/Networking</a></li>  
+                   <li style="background-image:url(/icom_includes/toolbars/globaltoolbar/img/background_topsub.jpg);  background-repeat:repeat-x;"><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none; font-weight: bold;" href="http://www.internet.com/storage">internet.com/Storage</a></li>  
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.bitaplanet.com">bITa Planet</a></li>  
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.cioupdate.com">CIO Update</a></li> 
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.databasejournal.com/">Database Journal</a></li>   
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.datamation.com">Datamation</a></li> 
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.enterpriseitplanet.com/">Enterprise IT Planet</a></li>   
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.enterprisenetworkingplanet.com">Enterprise Networking Planet</a></li> 
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.enterprisestorageforum.com">Enterprise Storage Forum</a></li> 
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.esecurityplanet.com">eSecurity Planet</a></li> 
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.hardwarecentral.com/">Hardware Central</a></li>   
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.intranetjournal.com">Intranet Journal</a></li> 
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.isp-planet.com/">ISP Planet</a></li> 
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.itsmwatch.com">ITSMwatch</a></li> 
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.itchannelplanet.com/">IT Channel Planet</a></li> 
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.linuxplanet.com/">Linux Planet</a></li>
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.opennetworkstoday.com">Open Networks Today</a></li>
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://serverwatch.internet.com/">ServerWatch</a></li>   
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.voipplanet.com/">VoIP Planet</a></li>   
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.webvideouniverse.com">WebVideoUniverse</a> 
+				   </li><li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.wi-fiplanet.com/">Wi-Fi Planet</a></li>   
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.windrivers.com/">WinDrivers.com</a></li>   
+                   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.internet.com/sections/">Network Map</a></li>  
+				  </ul>
+				 </li>
+				
+				 <li style="margin-top:0px;">
+				  <a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.internet.com/developer" class="gt"> <b>Developer</b> </a>
+				   <ul id="listMenu-id-2">
+                   <li style="background-image:url(/icom_includes/toolbars/globaltoolbar/img/background_topsub.jpg);  background-repeat:repeat-x;"><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none; font-weight: bold;" href="http://www.internet.com/developer/">internet.com/Developer</a></li>
+                   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.15seconds.com/">15 Seconds</a></li>
+
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.4guysfromrolla.com/">4GuysFromRolla.com</a></li>
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.asp101.com/">ASP101</a></li>		
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.codeguru.com">CodeGuru</a></li>
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.developer.com">Developer.com</a></li>
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.devx.com">DevX</a></li>
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.flashkit.com/">FlashKit.com</a></li>
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.developer.com/java/">Gamelan</a></li>
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.jars.com">JARS</a></li>
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.javascript.com/">JavaScript.com</a></li>
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://javascriptsource.com/">JavaScriptSource</a></li>
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.phpbuilder.com/">PHPBuilder.com</a></li>   
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.scriptsearch.com/">ScriptSearch</a></li>
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.vbforums.com/">VB Forums</a></li>
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.vbwire.com/">VB Wire</a></li>
+
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.webdeveloper.com/">WebDeveloper.com</a></li>
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.webreference.com/">Webreference</a></li>
+                   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.internet.com/sections/">Network Map</a></li>  
+				  </ul>
+
+				 </li>
+				
+				 <li style="margin-top:0px;">
+				  <a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.internetnews.com/" class="gt"> <b>News</b> </a>
+				   <ul id="listMenu-id-3">
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.internetnews.com/">Internetnews.com</a></li>
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.linuxtoday.com/">Linux Today</a></li>   		   
+                   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.internet.com/sections/">Network Map</a></li>  
+				  </ul>
+				 </li>
+				
+				
+				 <li style="margin-top:0px;"><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.smallbusinesscomputing.com/" class="gt"> <b>Small Business</b> </a>
+				   <ul id="listMenu-id-4">
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.ecommerce-guide.com/">Ecommerce Guide</a></li>
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.refer-it.com/">Refer-It</a></li>
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.smallbusinesscomputing.com/">SmallBusinessComputing</a></li>
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.webopedia.com/">Webopedia</a></li>
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.winplanet.com/">WinPlanet</a></li>
+                   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.internet.com/sections/">Network Map</a></li>  
+				  </ul>
+				 </li>
+				 
+				
+				 <li style="margin-top:0px;"><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.internet.com/personaltechnology/" class="gt"> <b>Personal Tech</b> </a>
+
+				   <ul id="listMenu-id-5">
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.blackberrytoday.com/">BlackBerryToday</a></li>
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://blog.iphoneguide.com/">iPhoneGuide</a></li>
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.jumbo.com/">Jumbo</a></li>
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.megapixel.net">Megapixel.net</a></li>
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.palmblvd.com/">Palm Boulevard</a></li>
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.pdastreet.com/">PDAStreet</a></li>
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.pocketpcwire.com/">PocketPCWire</a></li>
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.sharkyextreme.com/">SharkyExtreme</a></li>
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.smartphonetoday.com/">Smart Phone Today</a></li>
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://asp.thelist.com/">The List: ASPs</a></li>
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://broadband.thelist.com/">The List: Broadband</a></li>
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.thelist.com/">The List: ISPs</a></li>
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://webhosts.thelist.com/">The List: WebHosts</a></li>
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://webdesign.thelist.com/">The List: WebDesigners</a></li>
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.wi-fihotspotlist.com/">Wi-FiHotSpotList</a></li>
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.windowsmobiletoday.com/">WindowsMobileToday</a></li>
+                   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.internet.com/sections/">Network Map</a></li>  
+				  </ul>
+				 </li>		
+				</ul>
+				
+				
+				
+				<ul style="height: 22px;" id="listMenuv2Root" class="menulistv2">
+				 <li style="margin-top:0px;">
+
+				  <a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica;" href="http://www.jupiterevents.com/" class="gt"> Events </a>
+
+				  <ul id="listMenuv2-id-1">
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.jupiterevents.com/">JupiterEvents</a></li>
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.internet.com/webcasts">internet.com/webcasts</a></li>
+				  </ul>
+				 </li>
+
+				 <li style="margin-top:0px;"><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.justtechjobs.com" class="gt"> Jobs </a></li>
+				 <li style="margin-top:0px;"><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.jupitermedia.com/partners/" class="gt"> Partners </a></li>
+
+				 <li style="margin-top:0px;">
+				  <a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.internet.com/solutions" class="gt"> Solutions </a>
+				  <ul id="listMenuv2-id-2">
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.internet.com/ebook"> eBooks </a></li>
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.internet.com/video"> Video </a></li>
+				  </ul>
+				 </li>
+
+				 <li style="margin-top:0px;"><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration:none;" href="http://www.internetshopper.com/" class=""gt> Shop </a></li>
+
+				 
+				</ul>
+		
+		
+				<ul class="menulistv3" id="listMenuv3Root" style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; height: 22px;">
+				 <li style="margin-top:0px;"><a class="gt" href="http://member.internet.com/" style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration:none"> Login </a>
+
+				 
+				  <ul id="listMenuv3-id-1">
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://member.internet.com/profile/postal">Manage My Profile</a></li>
+
+				  </ul>
+
+				 
+				 
+				 </li>
+				 <li style="margin-top:0px;"><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://member.internet.com/register" class="gt">Register </a>
+				 
+				   <ul id="listMenuv3-id-2">
+				   <li><a style="color: #fff; font-size: 10px; font-family: arial,verdana,helvetica; text-decoration: none;" href="http://www.internet.com/WhyJoin">Why Join?</a></li>
+				  </ul>
+				 
+				 
+				 </li>
+		
+				 
+				</ul>
+
+		<div style="margin-top: 0px;" id="lightgrey">
+
+		<form target="_top" action="http://search.internet.com/www.jupiterweb.com" method="post">
+			<input value="1" name="IC_Summary" type="hidden">
+			<input value="0" name="IC_StartNumber" type="hidden">
+			<input value="10" name="IC_BatchSize" type="hidden">
+
+			<input value="50" name="IC_RelevanceThreshold" type="hidden">
+			<input value="all" name="IC_QueryDatabase" type="hidden">
+			<input title="Search Internet.com" onFocus="this.value='';" class="inputglobal" size="11" name="IC_QueryText" value="" type="text">
+
+			<input alt="go" src="/icom_includes/toolbars/globaltoolbar/img/searchgt_button.gif" name="SUBMIT" value="Find" type="image" align="absmiddle" border="0" height="18" vspace="2" width="42">
+		</form>
+		</div>
+	</div>
+	</div>
+
+	<!--
+	<div style="width:100%;">
+    	<img src="/icom_includes/toolbars/globaltoolbar/img/shad.png" style="width:100%; height:11px; padding:0px; margin-top:22px;" />
+	</div>
+	-->
+	</div>
+   
+   <script src="/icom_includes/footers/scripts/pngadapt.js" type="text/javascript"></script>
+
+
+<!-- END TOP TOOLBAR -->
+<IMG SRC="http://www.serverwatch.com/RealMedia/ads/adstream_lx.ads/intm/it/www.serverwatch.com/stypes/index/393526380/house_ribbon/OasDefault/Testing_GlobalToolbar_1d/globaltoolbarE.html/34613564366538393437666663373830?_RM_EMPTY_" WIDTH=2 HEIGHT=2><br><br>
+<iframe src="http://view.atdmt.com/L1G/iview/ntroiaxe0070000005l1g/direct/01&349979041?click=" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" allowtransparency="true" width="728" height="90">
+<script language="JavaScript" type="text/javascript">
+document.write('<a href="http://clk.atdmt.com/L1G/go/ntroiaxe0070000005l1g/direct/01/349979041" target="_blank"><img src="http://view.atdmt.com/L1G/view/ntroiaxe0070000005l1g/direct/01/349979041"/></a>');
+</script><noscript><a href="http://clk.atdmt.com/L1G/go/ntroiaxe0070000005l1g/direct/01/349979041" target="_blank"><img src="http://view.atdmt.com/L1G/view/ntroiaxe0070000005l1g/direct/01/349979041" border="0"/></a></noscript></iframe></center>
+<br>
+
+  <!-- OBJECT:index.navbar(Top) --><!--Begin Top Navigation-->
+<table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="CC3333">
+<tr bgcolor="990000">
+    <td height="3">
+
+    </td>
+
+  </tr>
+        <td align="left" >
+
+          <table cellpadding="0" cellspacing="0" border="0" bgcolor="FFFFFF">                   <tr>
+              <td width="391"><a href="/"><img src="/img/newnav/swatch_logo.gif" width="391" hspace="10" height="71" border="0"></a></td>
+              <td width="100%" align="right" class="grad">
+              
+<!-- start table for search and newsletters and glossary -->
+<table border="0"><tr>
+<td valign="top" >
+       
+       <table class="stroke" border="0" bgcolor="990000" cellpadding="3" cellspacing="0">
+
+    	  <tr><FORM METHOD="POST" ACTION="http://search.internet.com/www.serverwatch.com">
+    	    <td><nobr>
+      		<img src="/img/newnav/search.gif" width="127" height="16" alt="Search ServerWatch"><BR>
+      		<INPUT TYPE="text"  NAME="IC_QueryText" VALUE="" SIZE="10">
+      		<INPUT TYPE="image" NAME="SUBMIT" src="/img/newnav/go.jpg" align="absmiddle">
+    	    </nobr></td>
+    	  </tr></FORM>
+    	</table>
+</td>
+
+<td valign="top">
+       <table class="stroke" border="0" bgcolor="990000" cellpadding="3" cellspacing="0">
+    	  <tr><FORM METHOD="POST" ACTION="http://member.internet.com/subscribe.php">
+    	    <input type="hidden" name="list_names[]" value="serverwatch-text">
+    	    <td><nobr>
+      		<img src="/img/newnav/freenewsletter.gif" width="127" height="16" alt="Search ServerWatch"><BR>
+			<INPUT TYPE="image" NAME="SUBMIT" src="/img/newnav/join.jpg" align="absmiddle">
+    	    </nobr></td>
+    	  </tr></FORM>
+
+    	</table>
+</td>
+<td valign="top">
+        <table class="stroke" border="0" bgcolor="990000" cellpadding="3" cellspacing="0">
+    	  <tr><FORM METHOD="POST" ACTION="http://serverwatch.webopedia.com/SHARED/search_action.asp">
+    	    <td><nobr>
+      		<img src="/img/newnav/glossary.gif" width="127" height="16" alt="Search ServerWatch"><BR>
+      		<INPUT TYPE="text"   NAME="Term" VALUE="" SIZE="10">
+      		<INPUT TYPE="image" NAME="SUBMIT" src="/img/newnav/find.jpg" align="absmiddle">
+    	    </nobr></td>
+
+    	  </tr></FORM>
+    	</table>
+</td>
+</tr></table>
+<!-- end table for search and newsletters -->                
+              </td>
+            </tr>
+          </table>              </td>
+  </tr>
+
+  <tr bgcolor="990000">
+
+    <td height="3">
+
+    </td>
+  </tr>
+</table>
+<!--End Top Navigation-->      
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr> 
+      <td width="10%" valign="top" background="/img/leftnav-bg.gif">
+     
+ <!-- OBJECT:index.navbar(left) --><!-- OBJECT:index.navbar(left) -->
+        <img src="/img/sp.gif" width="1" height="3" border="0"><br>
+   <link REL="stylesheet" HREF="/img/newnav/styles.css" TYPE="text/css">
+<P>
+<div id="icomtb"><A Href="/index.php"><img src="/img/newnav/insidesw.gif" width="166" height="25" border="0"></A><BR> <ul>
+<li>
+<a href="/news/" title="ServerWatch News" CLASS="icomtb">News</a><BR>
+<a href="/trends/" title="ServerWatch Trends" CLASS="icomtb">Trends</a> <BR>
+<a href="/tutorials/" title="ServerWatch Tutorials" CLASS="icomtb">Tutorials</a><BR>
+<a href="/stats/" title="ServerWatch Stats" CLASS="icomtb">Stats</a><BR>
+<a href="/hreviews/" title="ServerWatch Server Hardware" CLASS="icomtb">Hardware</a><BR>
+<a href="/sreviews/" title="ServerWatch Reviews" CLASS="icomtb">Reviews</a><BR>
+
+<a href="/eur/" title="Enterprise Unix Roundup" CLASS="icomtb">Unix Roundup</a><BR>
+<a href="/hottopics/" title="ServerWatch Hot Topics" CLASS="icomtb">Hot Topics</a><BR>
+<a href="http://forums.serverwatch.com/" title="ServerWatch Forum" CLASS="icomtb">Forum</a><BR>
+<a href="http://products.serverwatch.com" title="ServerWatch Product Watch" CLASS="icomtb">Product Watch</a><BR>
+<a href="http://serverwatch.webopedia.com" title="ServerWatch Glossary" CLASS="icomtb">Glossary</a><BR>
+</li></ul></div>
+<BR>
+<P>
+<div id="icomtb"><a href="/virtualization/index.php" title="Virtualization Watch"><img src="/img/newnav/virtualization_watch.GIF" width="166" height="25" border="0"></A></div>
+<P>
+<P>
+<div id="icomtb"><a href="/stypes/servers/index.php/15877" title="ApacheToday"><img src="/img/newnav/apachetoday.gif" width="166" height="25" border="0"></A></div>
+<P>
+<div id="icomtb"><a href="/stypes/servers/index.php/15921" title="SolarisGuide"><img src="/img/newnav/solarisguide.gif" width="166" height="25" border="0"></A></div>
+<P>
+<div id="icomtb"><a href="/stypes/compare/" title="ServerCompare"><img src="/img/newnav/servercompare.gif" width="166" height="25" border="0"></A></div>
+
+<P>
+<div id="icomtb"><A Href="/stypes/"><img src="http://www.serverwatch.com/img/newnav/servertypes.gif" width="166" height="25" border="0"></A><BR><ul>
+<li>
+<a href="/stypes/index.php/V2Vi" class="icomtb">Web</a><BR>
+<a href="/stypes/index.php/TWFpbA==" class="icomtb">Mail</a><BR>
+<a href="/stypes/index.php/UmVhbC1UaW1lIENvbW11bmljYXRpb24=" class="icomtb">Real-Time Communication</a><BR>
+<a href="/stypes/index.php/QXBwbGljYXRpb24=" class="icomtb">Application</a><BR>
+<a href="/stypes/index.php/RlRQ" class="icomtb">FTP</a><BR>
+<a href="/stypes/index.php/UHJveHk=" class="icomtb">Proxy</a><BR>
+<a href="/stypes/index.php/Q29sbGFib3JhdGlvbg==" class="icomtb">Collaboration</a><BR>
+<a href="/stypes/index.php/TGlzdA==" class="icomtb">List</a><BR>
+<a href="/stypes/index.php/VGVsbmV0" class="icomtb">Telnet</a><BR>
+<a href="/stypes/index.php/T3BlcmF0aW5nIFN5c3RlbQ==" class="icomtb">Operating System</a><BR>
+<a href="/stypes/index.php/U2VydmVyIEF0dGlj" class="icomtb">Server Attic</a><BR>
+</li></ul></div>
+
+<BR><P>
+<div id="icomtb"><img src="/img/newnav/sitenav.gif" width="166" height="25" border="0"><BR> <ul>
+<li>
+<a href="/sitemap/" title="ServerWatch Sitemap" CLASS="icomtb">Sitemap</a><BR>
+<a href="/feedback.php/" title="ServerWatch Contact Us" CLASS="icomtb">Contact Us</a><BR>
+<a href="/" title="ServerWatch Home" CLASS="icomtb">Home</a><BR>
+<a href="http://www.justtechjobs.com" title="Technology Jobs" CLASS="icomtb">Technology Jobs</a><BR>
+</li></ul></div>
+
+
+<P>
+<P>
+<div id="icomtb"><img src="http://www.serverwatch.com/img/newnav/networksecurityblog.gif" width="166" height="41" border="0"><ul>
+<li>						
+
+<b><a href="http://www.opennetworkstoday.com/2008/04/dont-blame-the.html" class="blogfeed">Don't Blame the Sub-Prime Meltdown for the NAC Market's Underperformance</a></b><br><br>
+<b><a href="http://www.opennetworkstoday.com/2008/04/tech-company-10.html" class="blogfeed">Tech Company 101: When In Doubt, Form a "Coalition."</a></b><br><br>
+<b><a href="http://www.opennetworkstoday.com/2008/04/symantec-threat.html" class="blogfeed">Symantec Threat Report: Web Threats Outnumber Traditional Malware</a></b><br><br>
+
+</li></ul><br><br><br>
+<div align="center"><a href="http://www.opennetworkstoday.com/" class="blogfeed">More Open Networks Today</a>&nbsp;&nbsp;<a href="http://www.opennetworkstoday.com/index.xml"><br><br><img src="http://www.internet.com/icom_includes/earthweb/img/xml.gif" border="0"><img src="http://www.internet.com/icom_includes/earthweb/img/rss.png" border="0"></a></div>
+</div>
+<!-- start of marketplace ads --->
+<style type="text/css">
+/*
+-----------------------------------------------
+Partner Styles
+----------------------------------------------- */
+#skypartnerset {
+  width: 160px; 
+  clear: both;
+  color: #333;
+  font-size: 10px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  margin-top: 10px;
+   font-family: arial, verdana, helvetica;
+ }
+
+#skypartnerset a, #skypartnerset a:link, #skypartnerset a:visited {
+  width: 160px; 
+  clear: both;
+  color: #333;
+  font-size: 10px;
+  margin-top: 10px;
+  }
+
+#skypartnerset a:hover {
+  text-decoration: none;
+  }
+
+#skypartnerset p {
+  padding-bottom: 2px;
+  border-bottom: 1px solid #ccc;
+  }
+ </style>
+<div align="center" id="skypartnerset">
+<a href="http://www.jupitermedia.com/partners/"><img src="/img/swatch_partners.gif" border="0" alt=""/></a>
+    <p><a href="http://www.jupitermedia.com/partners/"><strong><big>Become a Marketplace Partner</big></strong></a></p>
+<CENTER><a href="http://www.serverwatch.com/RealMedia/ads/click_lx.cgi/intm/it/www.serverwatch.com/stypes/index/227898802/marketplace01/OasDefault/Dotster_62k/dotsterreferit.html/34613564366538393437666663373830" target="new"><IMG SRC="http://www.serverwatch.com/RealMedia/ads/Creatives/OasDefault/Dotster_62k/bnnr_jumbo_150x30_2.gif" width="150" height="30" border="0"><BR>
+<FONT FACE="Verdana, Helvetica, sans-serif" SIZE="1">World Class Web Hosting & more</FONT></a>
+</CENTER>
+<br><CENTER><a href="http://www.serverwatch.com/RealMedia/ads/click_lx.cgi/intm/it/www.serverwatch.com/stypes/index/1775177866/marketplace02/OasDefault/Directory_M_9k/tech_150x30.html/34613564366538393437666663373830" target="new"><img SRC="http://www.serverwatch.com/RealMedia/ads/Creatives/OasDefault/Directory_M_9k/tech_150x30.jpg" width="150" height="30" border="0"><BR>
+<FONT FACE="Verdana, Helvetica, sans-serif" SIZE="1">Click for Technology & Business providers</FONT></a>
+</CENTER>
+<br><A HREF="http://www.serverwatch.com/RealMedia/ads/click_lx.cgi/intm/it/www.serverwatch.com/stypes/index/1082926752/marketplace03/OasDefault/default/empty.gif/34613564366538393437666663373830" target="_top"><img SRC="http://www.serverwatch.com/RealMedia/ads/Creatives/OasDefault/default/empty.gif" width=2 HEIGHT=2 ALT="" BORDER=0 BORDER="0"></A><A HREF="http://www.serverwatch.com/RealMedia/ads/click_lx.cgi/intm/it/www.serverwatch.com/stypes/index/2009259443/marketplace04/OasDefault/default/empty.gif/34613564366538393437666663373830" target="_top"><img SRC="http://www.serverwatch.com/RealMedia/ads/Creatives/OasDefault/default/empty.gif" width=2 HEIGHT=2 ALT="" BORDER=0 BORDER="0"></A><A HREF="http://www.serverwatch.com/RealMedia/ads/click_lx.cgi/intm/it/www.serverwatch.com/stypes/index/1135924389/marketplace05/OasDefault/default/empty.gif/34613564366538393437666663373830" target="_top"><img SRC="http://www.serverwatch.com/RealMedia/ads/Creatives/OasDefault/default/empty.gif" width=2 HEIGHT=2 ALT="" BORDER=0 BORDER="0"></A><A HREF="http://www.serverwatch.com/RealMedia/ads/click_lx.cgi/intm/it/www.serverwatch.com/stypes/index/631224580/marketplace06/OasDefault/default/empty.gif/34613564366538393437666663373830" target="_top"><img SRC="http://www.serverwatch.com/RealMedia/ads/Creatives/OasDefault/default/empty.gif" width=2 HEIGHT=2 ALT="" BORDER=0 BORDER="0"></A></div>
+<!-- end of market place ads -->
+<P>
+<div id="icomtb"><img src="http://www.serverwatch.com/img/newnav/icom.gif" width="166" height="25" border="0"><ul>
+<li>						
+						
+<A HREF="http://www.internet.com/it/" CLASS="icomtb">IT</A><BR>
+<A HREF="http://www.internet.com/developer/" CLASS="icomtb">Developer</A><BR>
+<A HREF="http://www.internetnews.com" CLASS="icomtb">Internet News</A><BR>
+<A HREF="http://www.smallbusinesscomputing.com" CLASS="icomtb">Small Business</A> <BR>
+<A HREF="http://www.internet.com/personaltechnology/" CLASS="icomtb">Personal Technology</A><BR>
+<A HREF="http://www.internet.com/sections/international.html" CLASS="icomtb">International</A><BR>
+ <BR>
+<A HREF="http://search.internet.com" CLASS="icomtb">Search internet.com</A><BR>
+<A HREF="http://www.internet.com/mediakit/" CLASS="icomtb">Advertise</A><BR>
+<A HREF="http://www.jupitermedia.com/corporate/" CLASS="icomtb">Corporate Info</A><BR>
+<A HREF="http://e-newsletters.internet.com/" CLASS="icomtb">Newsletters</A><BR>
+<A HREF="http://www.justtechjobs.com/" CLASS="icomtb">Tech Jobs</A><BR>
+<A HREF="http://e-newsletters.internet.com/mailinglists.html" CLASS="icomtb">E-mail Offers</A><BR>
+</li></ul></div>
+
+<P>
+<div id="icomtb"><img src="/img/newnav/icomm.gif" width="166" height="25" border="0"><ul>
+<li><a href="http://www.jupitermedia.com/partners/">Partner With Us</A><BR>
+<a href="http://www.4imprint.com">Promotional Pens</a>
+<br><a href="http://www.callingcardplus.com/">Calling Cards</a>
+<br><a href="http://www.yousendit.com/signup.php?action=promo_display&s=40270" target=new>Transfer Large Files</a>
+<br><a href="http://www.condocompany.com/">Condos For Sale</a>
+<br><a href="http://www.internetshopper.com/" target=new>Online Shopping</a>
+<br><a href="http://www.garrettspecialties.com" target=new>Corporate Awards</a>
+<br><a href="http://www.getafreelancer.com">Web Design</a>
+<br><a href="http://www.branders.com">Giveaways</a>
+<br><a href="http://www.thecutekid.com" target=new>Baby Photo Contest</a>
+<br><a href="http://www.datamemorysystems.com" target=new>Memory Upgrades</a>
+<br><a href="http://www.server-rack-online.com/server-rack-height.html" target=new>Build a Server Rack</a>
+<br><a href="http://www.elearners.com">Online Education</a>
+<br><a href="http://www.gimmees.com">Imprinted Promotions</a>
+<br><a href="http://www.boatangel.org">Boat Donations</a>
+<br></li></ul></div>
+
+         
+  
+ 	
+<P>
+<center>
+<A HREF="http://www.server-rack-online.com/"><img src="http://config.privoxy.org/send-banner?type=auto" border="0" title="Killed-http://www.serverwatch.com/RealMedia/ads/Creatives/OasDefault/Server_Racks_Online_31c/sro-125x125.gif-by-size" WIDTH=125 HEIGHT=125></A>
+</center>
+<!-- END OBJECT:index.navbar(left) -->
+   
+          
+      </td>
+
+      <td bgcolor="#FFFFFF" valign="top"> 
+
+<script language="javascript" src="/server_search.js"></script>
+         <table width="100%" border="0" cellspacing="3" cellpadding="0">
+          <tr valign="top"> 
+            <td> 
+              <table border="0" cellspacing="0" cellpadding="3" align="right" width="150">
+                <tr align="center"> 
+                  <td>
+                  
+                  <!--Start Bob Position-->
+<script language="JavaScript" type="text/javascript" src="http://view.atdmt.com/MRT/jview/rthwbitp0310006160mrt/direct;vt.1/01347320045?buster_url=&pub_view_url=&click=">
+</script><noscript><a href="http://clk.atdmt.com/MRT/go/rthwbitp0310006160mrt/direct/01/" target="_blank"><img src="http://view.atdmt.com/MRT/view/rthwbitp0310006160mrt/direct/01/347320045" border="0"/></a></noscript><!--solution center disabled...to restore activate apr 5 obj-->       
+                  <!--End Bob Position-->
+                  <!--End Bob Position-->
+<p>
+<table width="358" border="0" cellspacing="0" cellpadding="0" style="background-color:#E2E2E2;">
+	<tr>
+		<td><a href="http://www.serverwatch.com/RealMedia/ads/click_lx.ads/intm/it/www.serverwatch.com/stypes/index/1690144204/accessunit/OasDefault/HP_TSG_SVMWare_SolCtr_1a/HPSCDoor37417.gif/34613564366538393437666663373830?HPSC/Door/37417" target="_blank"><img src="http://assets.devx.com/HPAssets/22501.gif" border="0"></a></td>
+	</tr><tr>
+		<td style="background-color:#E2E2E2;border-left:1px solid #0066FF;border-right:1px solid #0066FF;padding:10px;text-align:left; background-color:#ffffff;">
+<script>
+function popWin(url){
+	spawn = window.open(url,'newWin','width=800,height=600,top=0,left=0,location=yes,toolbar=yes,status=true,scrollbars=yes,resizable=yes,fullscreen=no,menubar=no,directories=no');
+	spawn.focus();
+}
+</script>
+
+
+<SPAN STYLE="font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:14px;">
+ <a href="http://www.serverwatch.com/RealMedia/ads/click_lx.ads/intm/it/www.serverwatch.com/stypes/index/1690144204/accessunit/OasDefault/HP_TSG_SVMWare_SolCtr_1a/HPSCDoor37417.gif/34613564366538393437666663373830?HPSC/Door/37417" onclick="javascript:popWin('http://www.serverwatch.com/RealMedia/ads/click_lx.ads/intm/it/www.serverwatch.com/stypes/index/1690144204/accessunit/OasDefault/HP_TSG_SVMWare_SolCtr_1a/ContinuousRealtime.gif/34613564366538393437666663373830?HPSC/Link/37418')"  style="color:#0066FF;font-size:12px;text-decoration:none;"><b>Continuous Real-time Data Protection and Disaster Recovery</b></a><br>
+<b>Whitepaper:</b> Learn how building a solid foundation from a flexible solution can not only integrate all elements within your datacenter - computing, storage, power and management - but prepares your data to survive and recovery...
+ <a href="http://www.serverwatch.com/RealMedia/ads/click_lx.ads/intm/it/www.serverwatch.com/stypes/index/1690144204/accessunit/OasDefault/HP_TSG_SVMWare_SolCtr_1a/HPSCDoor37417.gif/34613564366538393437666663373830?HPSC/Door/37417" onclick="javascript:popWin('http://www.serverwatch.com/RealMedia/ads/click_lx.ads/intm/it/www.serverwatch.com/stypes/index/1690144204/accessunit/OasDefault/HP_TSG_SVMWare_SolCtr_1a/ContinuousRealtime.gif/34613564366538393437666663373830?HPSC/Link/37418')" style="color:#EB8000;text-decoration:none;font-size:14px;font-weight:bold;">&raquo;</a>
+ </span>
+ 
+ <div style="border-top: 1px dotted #FF9900;margin-top:8px;margin-bottom:4px"></div>
+
+ <SPAN STYLE="font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:14px;">
+ <a href="http://www.serverwatch.com/RealMedia/ads/click_lx.ads/intm/it/www.serverwatch.com/stypes/index/1690144204/accessunit/OasDefault/HP_TSG_SVMWare_SolCtr_1a/HPSCDoor37417.gif/34613564366538393437666663373830?HPSC/Door/37417" onclick="javascript:popWin('http://www.serverwatch.com/RealMedia/ads/click_lx.ads/intm/it/www.serverwatch.com/stypes/index/1690144204/accessunit/OasDefault/HP_TSG_SVMWare_SolCtr_1a/Virtualization.gif/34613564366538393437666663373830?HPSC/Link/37419')"  style="color:#0066FF;font-size:12px;text-decoration:none;"><b>Virtualization - It's Not Just for Enterprises Anymore</b></a><br>
+<b>Whitepaper:</b> Read how virtualization can help companies of all sizes vastly increase server utilization levels, delay or avoid hardware purchases, and expand infrastructure capacity without increasing physical space requirements.
+ <a href="http://www.serverwatch.com/RealMedia/ads/click_lx.ads/intm/it/www.serverwatch.com/stypes/index/1690144204/accessunit/OasDefault/HP_TSG_SVMWare_SolCtr_1a/HPSCDoor37417.gif/34613564366538393437666663373830?HPSC/Door/37417" onclick="javascript:popWin('http://www.serverwatch.com/RealMedia/ads/click_lx.ads/intm/it/www.serverwatch.com/stypes/index/1690144204/accessunit/OasDefault/HP_TSG_SVMWare_SolCtr_1a/Virtualization.gif/34613564366538393437666663373830?HPSC/Link/37419')" style="color:#EB8000;text-decoration:none;font-size:14px;font-weight:bold;">&raquo;</a>
+ </span>
+ <div style="border-top: 1px dotted #FF9900;margin-top:8px;margin-bottom:4px"></div>
+ 
+ <SPAN STYLE="font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:14px;">
+ <a href="http://www.serverwatch.com/RealMedia/ads/click_lx.ads/intm/it/www.serverwatch.com/stypes/index/1690144204/accessunit/OasDefault/HP_TSG_SVMWare_SolCtr_1a/HPSCDoor37417.gif/34613564366538393437666663373830?HPSC/Door/37417" onclick="javascript:popWin('http://www.serverwatch.com/RealMedia/ads/click_lx.ads/intm/it/www.serverwatch.com/stypes/index/1690144204/accessunit/OasDefault/HP_TSG_SVMWare_SolCtr_1a/RightsizingBlades.gif/34613564366538393437666663373830?HPSC/Link/37420')"  style="color:#0066FF;font-size:12px;text-decoration:none;"><b>Rightsizing Blades for the Mid-market</b></a><br>
+<b>Whitepaper:</b> Examine the requirements for servers, storage, and blade systems in the mid-market and how to apply blades your data center in a cost effective manner.
+ <a href="http://www.serverwatch.com/RealMedia/ads/click_lx.ads/intm/it/www.serverwatch.com/stypes/index/1690144204/accessunit/OasDefault/HP_TSG_SVMWare_SolCtr_1a/HPSCDoor37417.gif/34613564366538393437666663373830?HPSC/Door/37417" onclick="javascript:popWin('http://www.serverwatch.com/RealMedia/ads/click_lx.ads/intm/it/www.serverwatch.com/stypes/index/1690144204/accessunit/OasDefault/HP_TSG_SVMWare_SolCtr_1a/RightsizingBlades.gif/34613564366538393437666663373830?HPSC/Link/37420')" style="color:#EB8000;text-decoration:none;font-size:14px;font-weight:bold;">&raquo;</a>
+ </span>
+ <div style="border-top: 1px dotted #FF9900;margin-top:8px;margin-bottom:4px"></div>
+ 
+ <SPAN STYLE="font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:14px;">
+ <a href="http://www.serverwatch.com/RealMedia/ads/click_lx.ads/intm/it/www.serverwatch.com/stypes/index/1690144204/accessunit/OasDefault/HP_TSG_SVMWare_SolCtr_1a/HPSCDoor37417.gif/34613564366538393437666663373830?HPSC/Door/37417" onclick="javascript:popWin('http://www.serverwatch.com/RealMedia/ads/click_lx.ads/intm/it/www.serverwatch.com/stypes/index/1690144204/accessunit/OasDefault/HP_TSG_SVMWare_SolCtr_1a/VMwareInfrastructure.gif/34613564366538393437666663373830?HPSC/Link/37421')"  style="color:#0066FF;font-size:12px;text-decoration:none;"><b>VMware Infrastructure 3, Planning </b></a><br>
+<b>Whitepaper:</b> Read about planning, deployment, and operation of an Adaptive Infrastructure based on VMware Infrastructure and HP servers, storage, and management technologies.
+ <a href="http://www.serverwatch.com/RealMedia/ads/click_lx.ads/intm/it/www.serverwatch.com/stypes/index/1690144204/accessunit/OasDefault/HP_TSG_SVMWare_SolCtr_1a/HPSCDoor37417.gif/34613564366538393437666663373830?HPSC/Door/37417" onclick="javascript:popWin('http://www.serverwatch.com/RealMedia/ads/click_lx.ads/intm/it/www.serverwatch.com/stypes/index/1690144204/accessunit/OasDefault/HP_TSG_SVMWare_SolCtr_1a/VMwareInfrastructure.gif/34613564366538393437666663373830?HPSC/Link/37421')" style="color:#EB8000;text-decoration:none;font-size:14px;font-weight:bold;">&raquo;</a>
+ </span>
+
+ <div style="border-top: 1px dotted #FF9900;margin-top:8px;margin-bottom:4px"></div>
+ 
+ <SPAN STYLE="font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:14px;">
+ <a href="http://www.serverwatch.com/RealMedia/ads/click_lx.ads/intm/it/www.serverwatch.com/stypes/index/1690144204/accessunit/OasDefault/HP_TSG_SVMWare_SolCtr_1a/HPSCDoor37417.gif/34613564366538393437666663373830?HPSC/Door/37417" onclick="javascript:popWin('http://www.serverwatch.com/RealMedia/ads/click_lx.ads/intm/it/www.serverwatch.com/stypes/index/1690144204/accessunit/OasDefault/HP_TSG_SVMWare_SolCtr_1a/Disasterrecovery.gif/34613564366538393437666663373830?HPSC/Link/37422')"  style="color:#0066FF;font-size:12px;text-decoration:none;"><b>Disaster recovery made easy with HP BladeSystem and VMware virtualization</b></a><br>
+<b>Webcast:</b> Learn how you can leverage HP BladeSystem and VMware ESX Server to build a cost effective DR solution that can grow with your business.
+ <a href="http://www.serverwatch.com/RealMedia/ads/click_lx.ads/intm/it/www.serverwatch.com/stypes/index/1690144204/accessunit/OasDefault/HP_TSG_SVMWare_SolCtr_1a/HPSCDoor37417.gif/34613564366538393437666663373830?HPSC/Door/37417" onclick="javascript:popWin('http://www.serverwatch.com/RealMedia/ads/click_lx.ads/intm/it/www.serverwatch.com/stypes/index/1690144204/accessunit/OasDefault/HP_TSG_SVMWare_SolCtr_1a/Disasterrecovery.gif/34613564366538393437666663373830?HPSC/Link/37422')" style="color:#EB8000;text-decoration:none;font-size:14px;font-weight:bold;">&raquo;</a>
+ </span>
+  
+ </td>
+ </tr><tr>
+		<td><a href="http://www.serverwatch.com/RealMedia/ads/click_lx.ads/intm/it/www.serverwatch.com/stypes/index/1690144204/accessunit/OasDefault/HP_TSG_SVMWare_SolCtr_1a/HPSCDoor37417.gif/34613564366538393437666663373830?HPSC/Door/37417" target="_blank"><img src="http://assets.devx.com/HPAssets/22502.gif" border="0"></a></td>
+	</tr>
+</table>
+                  </td>
+                </tr>
+               </table>
+
+
+<table border="0" cellspacing="0" cellpadding="1" bgcolor="#000000">
+        <tr>
+          <td>
+            <table border="0" cellspacing="0" cellpadding="1" bgcolor="#CCCCCC">
+              <tr> 
+                <td><font face="Verdana, Arial, Helvetica, sans-serif" size="-2"><A HREF="http://www.serverwatch.com/RealMedia/ads/click_lx.cgi/intm/it/www.serverwatch.com/stypes/index/1495304326/ciu/OasDefault/Symantec_CIU_GEMS_2cb/CIU_Issecure.html/34613564366538393437666663373830">
+Is secure, available data a challenge? Symantec Online Backup can help with an easy to use, secure, web-based solution for your business. Sign up by April 30, 2008 and get your first 3 months FREE.
+</A>
+
+</font></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table><P><span class=tiny><a href=/><span class=tiny>ServerWatch</span></a> > <a href="/stypes"><span class=tiny>Server Directory</span></a></span><br><br>
+<!-- feature swatch content starts here-->
+<table border="0" cellspacing="0" cellpadding="4" style="border-right: 1px solid #000000; border-left: 1px solid #000000; border-top: 1px solid #000000; border-bottom: 1px solid #000000;">
+
+
+
+ 
+<!--Column of the Day-->
+<tr>  <td colspan="2" bgcolor="White">
+<table align="left"><tr><td><img src="http://www.serverwatch.com/img/winserver08.JPG" border="0" alt="Windows Server 2008"></td></tr></table>
+<font face="arial, helvetica" size="2"><b> 
+<a href= "http://www.serverwatch.com/tutorials/article.php/3740341">Win Server 2008 Directory Services, Read Only Domain Controllers</a></b> <br>
+
+If you've been concerned about hosting full-fledged domain controllers in environments that could be easily compromised, consider a Read Only Domain Controller. Microsoft recently released this bundle of standard Active Directory mechanisms as a new product feature set.</td></tr>
+
+
+<tr valign="top">
+<td bgcolor="#FFFFFF">
+
+
+<!--News and Trends -->
+<font face="arial, helvetica" size="2">
+<b><font face="arial, helvetica" size="2"><a href="http://www.serverwatch.com/virtualization/index.php">Virtualization Watch</a></b><br>
+
+
+<font face="arial, helvetica" size="2">
+» <a href= "http://www.serverwatch.com/virtualization/article.php/3739461">Virtually Speaking: Unclogging the I/O Pipes</a></font><br>» <a href="http://www.serverwatch.com/news/article.php/3737576">Has 3Leaf Found a Virtual Four-Leaf Clover?</a></font>
+<br>
+
+
+
+
+<p></p>
+<!--tutorials/tips
+<b><font face="arial, helvetica" size="2">In the IT Trenches</b><br>
+»<a href="http://www.serverwatch.com/tutorials/article.php/3737746">Tip of the Trade: psad</a><br>
+» <a href="http://www.serverwatch.com/tutorials/article.php/3736201">Reining in Bandwidth With Squid Proxying </a><br>
+
+-->
+
+</font>
+
+
+
+<p></p>
+<!--server snapshot-->
+<b><font face="arial, helvetica" size="2"><a href="http://www.serverwatch.com/hreviews/">Server Snapshots</a></b><br>
+» <a href= "http://www.serverwatch.com/hreviews/article.php/3740111">Server Snapshots: HP ProLiant BL 260c</a><br>
+» <a href= "http://www.serverwatch.com/hreviews/article.php/3738611">Server Snapshots: HP ProLiant 785 G5  </a><br>
+
+
+<!--review
+
+<b>ServerWatch Review:</b> <a href= "http://www.serverwatch.com/sreviews/article.php/3738761">Apple Xserve, One Sweet Byte</a> 
+-->
+
+ <!--reader faves
+<font face="arial, helvetica" size="2">
+<b><a href="http://www.serverwatch.com/hottopics/index.php/26851">Reader Favorite</a></b> 
+<br>
+» <A href="http://www.serverwatch.com/tutorials/article.php/3357241">Reining in Bandwidth With Squid Proxying</A>
+-->
+
+
+
+
+</td>
+<td width=45% bgcolor="#FFFFFF" valign="top" >
+
+<!-- Patches-->
+<b><font face="arial, helvetica" size="2"><a href="http://www.serverwatch.com/stypes/servers/ulist/">Recent News</a></b><br>
+» <a href="http://www.serverwatch.com/news/article.php/3740396">More Cool Threads From Sun</a><br>
+» <a href="http://www.serverwatch.com/hreviews/article.php/3739866">IBM Streamlines Systems to Double Down the Clock</a><br>
+
+</font>
+<p>
+
+<!--news and trends -->
+ <font face="arial, helvetica" size="2"><b><a href="http://www.serverwatch.com/stats/">Stat Pack</a></b></b><br>
+» <a href= "http://www.serverwatch.com/stats/article.php/3739201">March 2008 Security Space Survey Results</a>
+<br>
+» <a href="http://www.serverwatch.com/stats/article.php/3738486">First Quarter Netcraft Survey Shows Continued Growth</a><br>
+
+</td></tr></table>
+
+
+<!--tips
+<b><font face="arial, helvetica" size="2"><a href="http://www.serverwatch.com/hottopics/index.php/26861">Tips of the Trade</a></font></b><br>
+» <a href= "http://www.serverwatch.com/tutorials/article.php/3739096">lm-sensors</a><br>
+» <a href="http://www.serverwatch.com/tutorials/article.php/3737746">psad</a><br>
+» <a href="http://www.serverwatch.com/tutorials/article.php/3736201">SATA Storage Servers</a><br>-->
+
+
+
+
+<!--tips and tuts 
+<b><font face="arial, helvetica" size="2">Windows Server 2008</font></b><br>
+&raquo; <a href="http://www.serverwatch.com/tutorials/article.php/3728211">Win Server 2008 Directory Services, Functional Levels Overview</a><br></font>
+&raquo; <a href="http://www.serverwatch.com/sreviews/article.php/3726441">7.0, Microsoft's Lucky Version?</a>
+tips and tuts-->
+
+
+
+
+
+<!-- feature swatch content end here -->
+
+
+
+
+
+
+
+<!--tips and tuts
+<b><font face="arial, helvetica" size="2">In the Trenches</font></b><br>
+<i><font size="-3"><a href="http://www.serverwatch.com/hottopics/index.php/26861">Tips</a> and <a href="http://www.serverwatch.com/tutorials/">Tutorials</a></font></i><br>
+» <a href="http://www.serverwatch.com/tutorials/article.php/3734671">Tip of the Trade: ZFS on Leopard</a><br>
+» <a href="http://www.serverwatch.com/tutorials/article.php/3734071">Win Server 2008 Directory Services, Windows Server 2008 Functional Levels Overview</a><br>-->
+
+
+
+
+
+
+
+
+
+<p align="center"><a href="http://solutions.internet.com/index.php/4731_default"><img src="/img/serverwatch_poy_08_sm.gif" width="160" border="0" height="60"></a><br/>
+<b style="font-size:10pt;"><a href="http://solutions.internet.com/index.php/4731_default">Nominate Your Favorite Products Now! </a></b></p>
+
+
+ <p> 
+ <span class=header>
+ Server Directory </span>
+ <p>
+ <span class=body>
+  ServerWatch breaks down the Internet servers we review into 14 categories. For more information about a category, click on the server type for a comprehensive overview and a list of servers reviewed on the site. </span>
+ <p>
+ <span class=topic><a href="/stypes/index.php/V2Vi">Web Servers</a></span><br>  
+		<span class=body><i>(See a detailed list of all <a href='http://www.serverwatch.com/stypes/compare/index.php/compare_V2Vi_______'>Web servers</a>.)</i>
+<p>
+
+At its core, a Web server serves static content to a Web browser by loading a file from a disk and serving it across the network to a user's Web browser. This entire exchange is mediated by the browser and server talking to each other using Hypertext Transfer Protocol (HTTP). 
+</span><p><span class=topic><a href="/stypes/index.php/TWFpbA==">Mail Servers</a></span><br>  
+		<span class=body><i>(See a detailed list of all <a href='http://www.serverwatch.com/stypes/compare/index.php/compare_TWFpbA==_______'>mail servers</a>.)</i>
+<p>
+Almost as ubiquitous and crucial as Web servers, mail servers move and store mail over private networks and across the Internet. </span><p><table border=2 cellspacing=3 cellpadding=6><tr border=2><td><script language="javascript" src="/server_search.js"></script>
+<font face="verdana, helvetica, arial" size="+1"><b>Quick Search</b></font><p>
+<form name=quicksearch method="POST" action="/stypes/compare/index.php/compare">
+ 
+<select name="servertype" style="color: #FFFFFF; font-family:  verdana, arial, sans-serif ; font-weight: bold; font-size: 10px; background-color: #CC3333;">
+<option value=''>Server Type</option>
+<option value='QVBQTElDQVRJT04='>APPLICATION</option><option value='Q09MTEFCT1JBVElPTg=='>COLLABORATION</option><option value='RlRQ'>FTP</option><option value='TElTVA=='>LIST</option><option value='TUFJTA=='>MAIL</option><option value='UFJPWFk='>PROXY</option><option value='UkVBTC1USU1FIENPTU1VTklDQVRJT04='>REAL-TIME COMMUNICATION</option><option value='VEVMTkVU'>TELNET</option><option value='V0VC'>WEB</option>		
+</select><br>
+									 <select name="oslist" style="color: #FFFFFF; font-family:  verdana, arial, sans-serif ; font-weight: bold; font-size: 10px; background-color: #CC3333;"> 
+<option value='' selected >Operating System</option>		
+<option value='5961'>AIX</option><option value='5977'>AS/400</option><option value='6065'>BSD (any)</option><option value='5985'>Be OS</option><option value='5957'>Digital UNIX</option><option value='5941'>HP-UX</option><option value='5975'>IRIX</option><option value='5981'>Java_VM</option><option value='5947'>Linux</option><option value='5995'>MVS</option><option value='6053'>MacOS</option><option value='5999'>MacOS X Server</option><option value='6007'>NetWare</option><option value='5963'>OS/2</option><option value='6031'>OS/400</option><option value='6037'>OSF/1</option><option value='5971'>QNX</option><option value='6001'>Red Hat Linux</option><option value='5967'>SCO OpenServer</option><option value='6061'>SUSE Linux</option><option value='5953'>Solaris</option><option value='6027'>Tru64 Unix</option><option value='6047'>Unix (all)</option><option value='5987'>VM/CMS</option><option value='5969'>VMS</option><option value='6011'>Windows 2000</option><option value='6067'>Windows 95/98</option><option value='6013'>Windows ME</option><option value='5945'>Windows NT 4.0</option><option value='6063'>Windows Server 2003</option><option value='6073'>Windows Vista</option><option value='6023'>Windows XP</option></select><br>
+										 <select name="price" style="color: #FFFFFF; font-family:  verdana, arial, sans-serif ; font-weight: bold; font-size: 10px; background-color: #CC3333;">		 	<option value='' selected>Base Price</option> 				 	
+                <option value=0> Free </option>
+                <option value=25> $25 </option>
+                <option value=50> $50 </option>						               
+                <option value=100> $100 </option>
+		<option value=150> $150 </option>
+ 		<option value=200> $200 </option>
+ 		<option value=250> $250 </option>
+ 		<option value=300> $300 </option>
+ 	 </select><br>
+							 
+ 	 <select name="vendor" style="color: #FFFFFF; font-family:  verdana, arial, sans-serif ; font-weight: bold; font-size: 10px; background-color: #CC3333;">
+ 	<option selected value='' >Vendor</option>		
+<option value='11199'>3RSoft</option><option value='11119'>4D, Inc.</option><option value='13249'>Adobe</option><option value='9673'>Agranat Systems, Inc.</option><option value='13155'>Akiva Idea Technologies</option><option value='13203'>Akonix </option><option value='13165'>Alcomp Development</option><option value='9705'>Allegro Software Development Corp.</option><option value='13039'>Alt-N Technologies</option><option value='10793'>America Online</option><option value='9737'>AnalogX</option><option value='13209'>Antepo</option><option value='9735'>Apache Software Foundation</option><option value='13073'>Apple</option><option value='13223'>Aprelium Technologies</option><option value='13085'>ArGo Software Design</option><option value='11171'>Arcane Software</option><option value='11209'>Astroline</option><option value='13049'>Ataman Software</option><option value='11203'>Atrium Software</option><option value='11145'>Avirt</option><option value='11223'>BEA Systems</option><option value='11149'>BPFTP Server</option><option value='11183'>BVRP Software</option><option value='11121'>BadBlue</option><option value='13191'>Bahamut</option><option value='11147'>BisonWare Software</option><option value='11225'>Borland</option><option value='13101'>Burton Computer Corporation</option><option value='9723'>C2Net Software</option><option value='11215'>CE Software</option><option value='13121'>Caldera International, Inc.</option><option value='13233'>Canonical</option><option value='11159'>Center for Biological Comp at IN St Univ</option><option value='11125'>Centrinity Inc.</option><option value='13211'>Chris Evans</option><option value='13225'>CommuniGate Systems</option><option value='11191'>CoolFusion.com</option><option value='13083'>Covalent Technologies</option><option value='11101'>Crescendo</option><option value='11151'>CrushFTP</option><option value='13177'>Cybernet Systems </option><option value='13145'>Cybozu</option><option value='13071'>Data Access Worldwide</option><option value='11141'>Deerfield.com</option><option value='13045'>Delano Technology Corp. </option><option value='11097'>Digigami, Inc.</option><option value='13193'>Documentum</option><option value='11229'>EMWAC</option><option value='9683'>Edinburgh University</option><option value='13227'>Enstar</option><option value='9711'>Epsylon Technologies</option><option value='13097'>Esker Software</option><option value='13137'>Etype</option><option value='13079'>Evermind Data</option><option value='13175'>ExperTelligence</option><option value='13195'>FaceTime Communications</option><option value='11155'>Fictional.net</option><option value='13043'>Fictional.net/Fictional Daemon</option><option value='11187'>Floosietek Ltd.</option><option value='13029'>FreeBSD Project</option><option value='13099'>GFI </option><option value='13215'>GNU Project </option><option value='13241'>Gecad Technologies</option><option value='13051'>Georgia SoftWorks </option><option value='13149'>GlobalSCAPE</option><option value='9713'>GoAhead Software</option><option value='11189'>Gordano</option><option value='13117'>Great Circle Associates</option><option value='11161'>GuildFTPd</option><option value='13057'>HAHT Commerce</option><option value='13067'>HP Middleware (HPMD) </option><option value='9709'>Hawkeye Project</option><option value='13091'>Hewlett-Packard</option><option value='9679'>I/NET, Inc.</option><option value='9689'>IBM</option><option value='13201'>IMlogic</option><option value='11177'>IPswitch Software</option><option value='13095'>IRCD Group</option><option value='13031'>IRCPlus</option><option value='13141'>ITServ inc.</option><option value='13143'>ITServ inc.</option><option value='11201'>IceWarp Software</option><option value='13243'>Igniterealtime</option><option value='13135'>Infopulse</option><option value='11095'>InterVU, Inc</option><option value='13103'>Internet Software Consortium (ISC) </option><option value='13061'>IronFlare</option><option value='13169'>JBoss, a division of Red Hat</option><option value='13217'>Jabber SoftwareFoundation</option><option value='13219'>Jabberd Project </option><option value='11173'>Jarle Aase</option><option value='13239'>Jive Software</option><option value='13125'>Kerio Technologies</option><option value='13111'>L-Soft Interactive</option><option value='13127'>LAN-Projekt </option><option value='11103'>Liquid Audio, Inc.</option><option value='13047'>Live Update</option><option value='11127'>Lotus</option><option value='13115'>Lyris Technologies, Inc.</option><option value='13113'>MCF Software</option><option value='11227'>Macromedia</option><option value='11165'>Maxum Development Corporation</option><option value='13119'>MessageMedia</option><option value='13107'>MetaInfo, Inc.</option><option value='9727'>Michael Lamont</option><option value='9693'>Microsoft Corp.</option><option value='9685'>Mike Meyer</option><option value='9721'>NEON Systems, Inc.</option><option value='13037'>NLANR</option><option value='11129'>National Center for Supercomputing Apps</option><option value='13207'>NetBSD Project</option><option value='11169'>NetWin Ltd.</option><option value='13123'>NetcPlus Internet Solutions  </option><option value='13105'>Netscape</option><option value='13181'>Noisette Software </option><option value='11143'>Northwestern University Math Dept</option><option value='11123'>Novell</option><option value='9697'>O'Reilly & Associates</option><option value='13173'>Open Text</option><option value='13231'>Open-Xchange</option><option value='13205'>OpenBSD</option><option value='11211'>Openwave</option><option value='13059'>Oracle Corporation </option><option value='13129'>Ositis Software</option><option value='13187'>Outspring </option><option value='11139'>Pacific Software Publishing, Inc.</option><option value='13213'>Parlano</option><option value='11205'>Pegasus Mail</option><option value='13147'>Pendulab</option><option value='13063'>Persistence Software</option><option value='13089'>Pervasive Software</option><option value='13053'>Pragmasys.com</option><option value='13087'>Pramati</option><option value='13183'>Qbik</option><option value='11185'>Qualcomm</option><option value='13159'>Quality On Line</option><option value='11135'>RED HAT INC</option><option value='11163'>RaidenFTPD Project</option><option value='9715'>Rapid Logic Inc.</option><option value='11131'>RapidSite, Inc.</option><option value='11105'>RealNetworks</option><option value='11167'>RhinoSoft.com</option><option value='9717'>RobTex</option><option value='11197'>Rockliffe Software</option><option value='13109'>Roger Smith Software </option><option value='10785'>Roxen Internet Software</option><option value='13163'>SUSE</option><option value='11133'>Sambar Technologies</option><option value='13235'>Scalix</option><option value='11219'>Seattle Lab</option><option value='11217'>Sendmail, Inc.</option><option value='9731'>Servertec</option><option value='11153'>Shadow Ops Software</option><option value='11157'>SmartMax Software</option><option value='11179'>Software602</option><option value='13237'>SolidSpace</option><option value='13167'>South River</option><option value='9691'>Spyglass</option><option value='11181'>Stalker Software, Inc.</option><option value='9707'>StarNine Technologies, Inc.</option><option value='9703'>Sterling Software, Inc.</option><option value='9695'>Sun Microsystems</option><option value='11207'>Sun Netscape Alliance</option><option value='13065'>Sybase</option><option value='13133'>Sybergen Networks</option><option value='11137'>Tcl Developer Exchange</option><option value='13197'>Teamware Group</option><option value='9701'>Tenon Intersystems</option><option value='11175'>Texas Imperial Software</option><option value='11111'>The DSP Group, Inc.</option><option value='13033'>The Dalnet Development Group</option><option value='13189'>The Debian Project</option><option value='13093'>The Undernet IRCd Development Group </option><option value='11193'>True North Software</option><option value='13157'>TrueSpectra</option><option value='13131'>Trumpet Software International</option><option value='11113'>VDOnet Corp.</option><option value='13035'>VTEL.</option><option value='13055'>Van Dyke Technologies </option><option value='13075'>VanDyke Software</option><option value='9733'>Velocity Software, Inc.</option><option value='13069'>Versata</option><option value='13139'>Vicomsoft</option><option value='11221'>Vircom</option><option value='11195'>Virtual Motion</option><option value='13151'>VirtualTek</option><option value='11115'>Vivo Software, Inc.</option><option value='13199'>Volano</option><option value='11117'>Vosaic LLC</option><option value='11109'>Voxware, Inc.</option><option value='9725'>W3C</option><option value='13185'>WebMaster</option><option value='9719'>Webbase, Inc.</option><option value='13179'>Wietse Zweitze Venema</option><option value='13221'>WiredRed</option><option value='13171'>With Enterprises</option><option value='13247'>Xandros</option><option value='13161'>Ximian</option><option value='11107'>Xing Technology Corporation</option><option value='9681'>Zeus Technology</option><option value='13229'>Zimbra</option><option value='13041'>Zope</option><option value='13153'>eRoom Technology  </option><option value='10783'>iMatix</option><option value='13245'>lighthttpd</option><option value='11213'>qmail</option><option value='9699'>vqSoft</option> 	 </select><br>
+<center><input type="button" value="Search" onclick=fixParameters4QS(quicksearch) style="color: #FFFFFF; font-family:  verdana, arial, sans-serif ; font-weight: bold; font-size: 10px; background-color: #CC3333;"><br>
+<a href="/stypes/compare/"><font face="verdana, arial, sans-serif" size=0>Detailed Search</font></a></center>
+</form></td></tr></table><br><span class=topic><a href="/stypes/index.php/UmVhbC1UaW1lIENvbW11bmljYXRpb24=">Real-Time Communication Servers</a></span><br>  
+		<span class=body>Our real-time communication server category consists of chat servers, instant messaging servers, instant messaging gateway servers, and IRC servers.&nbsp;</span><p><span class=topic><a href="/stypes/index.php/QXBwbGljYXRpb24=">Application Servers</a></span><br>  
+		<span class=body>(See a detailed list of all <a href='http://www.serverwatch.com/stypes/compare/index.php/compare_QXBwbGljYXRpb24=_______'>app servers</a>.)
+<p>
+
+Sometimes referred to as a type of middleware, application servers occupy a large chunk of computing territory between database servers and the end user, and they often connect the two. </span><p><span class=topic><a href="/stypes/index.php/RlRQ">FTP Servers</a></span><br>  
+		<span class=body><i>(See a detailed list of all <a href='/stypes/compare/index.php/compare_RlRQ___'>FTP servers</a>.)</i>
+<p>
+File Transfer Protocol makes it possible to move files from one computer to another via the Internet. Although one of the oldest  Internet services,  FTP servers have kept pace with the times.
+Today's FTP  servers feature user authentication, file transfer policies, and detailed activity logging as well as deliver virtualization and automation capabilities.</span><p><span class=topic><a href="/stypes/index.php/UHJveHk=">Proxy Servers</a></span><br>  
+		<span class=body><i>(See a detailed list of all <a href='http://www.serverwatch.com/stypes/compare/index.php/compare_UHJveHk=_______'>proxy servers</a>.)</i>
+<p>
+In the general sense, a proxy is a stand in. In network architecture, it's an entity that sits between corporate client machines and the Internet. A forward proxy stands in the way of the Internet and receives data from client machines bound for the Internet and forwards it on on their behalf. A reverse proxy stands in the way of servers within the corporate network and receives data bound for them, and distributes it on.</span><p><span class=topic><a href="/stypes/index.php/Q29sbGFib3JhdGlvbg==">Collaboration Servers</a></span><br>  
+		<span class=body>In many ways, groupware is the clearest way to show the true power of the World Wide Web </span><p><span class=topic><a href="/stypes/index.php/TGlzdA==">List Servers</a></span><br>  
+		<span class=body>List servers offer a way to better manage mailing lists, whether they be interactive discussions open to the public or one-way lists that deliver announcements, newsletters, or advertising.</span><p><span class=topic><a href="/stypes/index.php/VGVsbmV0">Telnet Servers</a></span><br>  
+		<span class=body>A telnet server enables users to log on to a host computer and perform tasks as if they're working on the remote computer itself. </span><p><span class=topic><a href="/stypes/index.php/T3BlcmF0aW5nIFN5c3RlbQ==">Operating System Servers</a></span><br>  
+		<span class=body>A term often used synonymously with 'operating system,' a platform is the underlying hardware or software for a system and is thus the engine that drives the server. </span><p><span class=topic><a href="/stypes/index.php/U2VydmVyIEF0dGlj">Server Attic Servers</a></span><br>  
+		<span class=body>In the fast-paced world of IT, servers come and go. This section is for those servers that are no longer sold or supported but that an organization, for whatever reason,  may be interested in learning more about. </span><p><p>
+ <p>
+
+
+<br clear="all">
+               
+<!-- OBJECT:index.body.navbox(whatsnew) -->	  		<!--WHAT'S NEW-->
+			<center>	  		
+	  		<table width="500" bgcolor="990000" cellpadding="2" cellspacing="0" border="0">
+	  		  <tr>
+	  		    <td>
+	  		      <table width="496" bgcolor="ffffff" cellpadding="2" cellspacing="0" border="0">
+	  		        <tr>
+	  		          <td>
+	  		            <table width="492" bgcolor="990000" cellpadding="2" cellspacing="0" border="0">
+	  		  			  <tr>
+	  		    			<td align="center">
+	  		    			  <img src="/img/whatsnew.gif" width="110" height="24" border="0">
+	  		    			  <table width="488" bgcolor="ffffff" cellpadding="2" cellspacing="0" border="0">
+	  		        			<tr>
+	  		          			  <td width="244" valign=top>
+	  		          			   	<font face="verdana, helvetica, arial" size="-1"><b>News</b><br>
+<font face=Arial size=-2><a href="http://www.serverwatch.com/news/article.php/3737306"><b>GroundWork, Hyperic Deliver Systems Management Solutions</b></a></font><br><font size=-2>[March 28, 2008]</FONT>
+<FONT size=-2>Open source enterprise-class systems management has arrived, and vendors are jockeying for positions.</FONT><br><br>
+	  							   	
+ 								   	</font></font>
+ 								   	<font face="verdana, helvetica, arial" size="-1"><b>Tutorials</b><br>
+<font face=Arial size=-2><a href="http://www.serverwatch.com/tutorials/article.php/3736201"><b>Tip of the Trade: SATA Storage Servers</b></a></font><br><font size=-2>[March 24, 2008]</FONT>
+<FONT size=-2>SCSI drives may be the toughest and most reliable, but oftentimes SATA drives are equally good. From price point to form factor  and feature options, they offer a plethora of advantages.</FONT><br>
+ 								   	</font></font>
+	  		          			  </td>
+	  		          			  <td width="244"  valign=top>
+	  		          			    <font face="verdana, helvetica, arial" size="-1"><b>Stats</b><br>
+<font face=Arial size=-2><a href="http://www.serverwatch.com/stats/article.php/3729161"><b>Surveys Says IT Pros Want Windows Server 2008</b></a></font><br><font size=-2>[February 20, 2008]</FONT>
+<FONT size=-2>A new customer survey by a major Microsoft reseller finds swelling demand for the new operating system.</FONT><br> 									</font></font>
+ <br>
+ 									<font face="verdana, helvetica, arial" size="-1"><b>Reviews</b><br>
+
+<font face=Arial size=-2><a href="http://www.serverwatch.com/sreviews/article.php/3735416"><b>Adobe Flash Media Server: Streamed Content in the Blink of an Eye?</b></a></font><br><font size=-2>[March 19, 2008]</FONT>
+<FONT size=-2>With Flash video  far and away the leader when it comes to Web-based media, many organizations need a  server that can stream content  as well as  support  stored, live, and protected video content. Does Adobe Flash Media Server make the grade?</FONT><br>
+								</font></font>  
+	  		          			  </td>
+	  		          			</tr>
+	  		          	      </table>
+	  		          	    </td>
+	  		          	  </tr>
+	  		          	</table>
+	  		          </td>
+	  		        </tr>
+	  		      </table>
+	  		    </td>	  		          
+	  		  </tr>
+	  		</table>
+	  		</center>
+<!--END WHAT'S NEW-->   
+
+
+              <p align="center">
+<span class=tiny><center>
+
+
+</center>
+</span>
+            </td>
+          </tr>
+        </table> 
+      </td>
+    </tr>
+  </table>
+</div>
+
+<p align="center">
+ <font size="-1" face="verdana, arial, helvetica">
+  <center>
+   <!-- OBJECT:index.footer --><center>
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="right">
+<div style="padding-right: 15px;">
+	<script src="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=rb&c=22&pli=375220&pi=0&w=336&h=280&ord=1509731317"></script>
+<noscript>
+<a href="http://bs.serving-sys.com/BurstingPipe/BannerRedirect.asp?FlightID=375220&Page=&PluID=0&Pos=1073" target="_blank"><img src="http://config.privoxy.org/send-banner?type=auto" border="0" title="Killed-http://bs.serving-sys.com/BurstingPipe/BannerSource.asp?FlightID=375220&Page=&PluID=0&Pos=1073-by-size" width=336 height=280></a>
+</noscript></div>
+</td>
+<td align="left">
+<div style="padding-left: 15px;">
+<script type="text/javascript">
+//<![CDATA[
+dm_affiliate = "437";
+dm_size = "336x280";
+dm_color_border = "990033";
+dm_color_title = "FFFFFF";
+dm_color_links = "000000";
+dm_color_background = "FFFFFF";
+dm_set_categorylist = "";
+dm_set_categoryexcludelist = "";
+dm_set_autoregion = "no";
+dm_set_regionlist = "";
+dm_set_regionexcludelist = "";
+dm_set_autotopic = "no";
+dm_set_topic = "technology";
+//]]>
+</script>
+<script type="text/javascript" src="http://aserve.directorym.com/affiliate_1-
+
+01.js"></script>
+<noscript><a href="http://www.directorym.net" title="Local Business Directory">Local 
+
+Business Directory</a><br /><a href="http://articles.directorym.com" title="Local 
+
+Buying Guides">Local Buying Guides</a></noscript>
+</div>
+</td>
+</tr>
+</table>
+</center>
+<!-- Google Analytics -->
+<script src="/icom_includes/footers/scripts/ga.js"  type="text/javascript">
+</script>
+<script  type="text/javascript" >
+<!--     hide from no js browsers
+delete Array.prototype.itemValidation;
+delete Array.prototype.isArray;
+var superTracker = _gat._getTracker("UA-2838492-1");
+superTracker._initData();
+superTracker._trackPageview();
+
+-->
+</script>
+<script  type="text/javascript" >
+   var site_name =  location.hostname;
+   if ( site_name.indexOf("www.") != 0 ) {
+     site_name  = "www."+site_name ;
+   }
+   document.write("<SCR" + "IPT LANGUAGE='JavaScript1.2' SRC='/icom_includes/footers/sites/"+ site_name +".js' TYPE='text/javascript'><\/SCR" + "IPT>");
+-->
+</script>
+<script  type="text/javascript" >
+<!--     hide from no js browsers
+   pageTracker._initData();
+   pageTracker._trackPageview();
+   // -->
+</script>
+<!-- End Google Analytics -->
+
+<script src="/icom_includes/footers/scripts/pngadapt.js" type="text/javascript"></script>
+
+<BR CLEAR="all"><br><center><table border="0" cellspacing="0" cellpadding="5">
+                <tr> 
+                  <form method="POST" action="http://search.internet.com/www.jupiterweb.com" target="_top">
+
+                    <td align="center">
+<table border="0" class="mgfoot">
+  <tr><td class="foot_alt" align="center" style="vertical-align:middle;">
+					 <img src="/icom_includes/footers/onlinemedia_footer.png" width="175" alt="JupiterOnlineMedia" height="17" hspace="0" border="0"> 
+                      <p align="center"> 
+                      <a target="_blank" href="http://www.internet.com" class="foot" target="_top"><img src="/icom_includes/footers/icom_foot.png" width="97" alt="internet.com" height="15" hspace="0" border="0" align="absmiddle" style="margin-top:expression('-24px');"></a><img src="/icom_includes/footers/ruledivide_foot.gif" width="1" alt="" height="25" hspace="10" border="0" align="absmiddle"><a target="_blank" href="http://www.earthweb.com" target="_top"><img src="/icom_includes/footers/earthweb_foot.png" width="93" alt="earthweb.com" height="10" hspace="5" border="0" align="absmiddle" style="margin-top:expression('-22px');"></a><img src="/icom_includes/footers/ruledivide_foot.gif" width="1" alt="" height="25" hspace="10" border="0" align="absmiddle"><a target="_blank" href="http://www.devx.com" target="_top"><img src="/icom_includes/footers/devx_foot.png" width="34" alt="Devx.com" height="30" hspace="0" border="0" align="absmiddle"></a><img src="/icom_includes/footers/ruledivide_foot.gif" width="1" alt="" height="25" hspace="10" border="0" align="absmiddle"><a target="_blank" href="http://www.mediabistro.com" target="_top"><img src="/icom_includes/footers/mediabistro_foot.png" width="100" alt="mediabistro.com" height="35" hspace="0" border="0" align="absmiddle"></a><img src="/icom_includes/footers/ruledivide_foot.gif" width="1" alt="" height="25" hspace="10" border="0" align="absmiddle"><a target="_blank" href="http://www.graphics.com" target="_top"><img src="/icom_includes/footers/grcom_foot.png" width="97" alt="Graphics.com" height="16" hspace="0" border="0" align="absmiddle" style="margin-top:expression('-24px');"></a></td></tr></table>
+                      <p> 
+                      <font size="-2" face="verdana, arial, helvetica"><b>Search:</b> 
+                      <input type="HIDDEN" name="IC_Summary" value="1">
+                      <input type="HIDDEN" name="IC_StartNumber" value="0">
+
+                      <input type="HIDDEN" name="IC_BatchSize" value="10">
+
+                      <input type="HIDDEN" name="IC_RelevanceThreshold" value="50">
+                      <input type="hidden" name="IC_QueryDatabase" value="all">
+                      <input type="text" name="IC_QueryText" size="45">
+                      <input type="image" border="0" value="Find" name="SUBMIT" src="/icom_includes/footers/but_find.gif" width="41" height="20" align="absmiddle">
+                      </font>
+                      <p>
+                      <font size="-2" face="verdana, arial, helvetica">
+
+                     <a target="_blank" href="http://www.jupitermedia.com/" class="foot"> Jupitermedia Corporation</a> has two divisions: <a target="_blank" href="http://www.jupiterimages.com/" class="foot">Jupiterimages</a> and <a target="_blank" href="http://www.jupitermedia.com/onlinemedia.html" class="foot">JupiterOnlineMedia</a><P> <font size="-2" face="verdana, arial, helvetica"><a target="_blank" href="http://www.jupitermedia.com/corporate/" class="foot" target="_top">Jupitermedia Corporate Info</a>                      <p>
+
+                      <div class="foot"><!--Copyright 2005-2007-->
+
+<script type="text/javascript">
+document.write(' Copyright ');
+var now = new Date();
+document.write(  + now.getFullYear());
+document.write(' Jupitermedia Corporation All Rights Reserved.');
+</script>
+<noscript> Copyright 2008 Jupitermedia Corporation All Rights Reserved.</noscript>
+<br>
+                        <a target="_blank" href="http://www.jupitermedia.com/corporate/legal.html" class="foot" target="_top">Legal 
+                        Notices</a>, <a target="_blank" href="http://www.jupitermedia.com/corporate/reprints.html#Licensing1" class="foot" target="_top">Licensing</a>, 
+                        <a target="_blank" href="http://www.jupitermedia.com/corporate/reprints.html#Reprints1" class="foot" target="_top">Reprints</a>, 
+                        & <a target="_blank" href="http://www.jupitermedia.com/corporate/reprints.html#Permissions" class="foot" target="_top">Permissions</a>, 
+                        <a target="_blank" href="http://www.jupitermedia.com/corporate/privacy/privacypolicy.html" class="foot" target="_top">Privacy 
+                        Policy</a>. </font>
+
+                      <p> <font size="-2" face="verdana, arial, helvetica"><a target="_blank" href="http://www.internet.com/mediakit/" class="foot" target="_top">Advertise</a> | <a target="_blank" href="http://e-newsletters.internet.com/" class="foot">Newsletters</a> 
+                       | <a target="_blank" href="http://www.justtechjobs.com/" class="foot" target="_top">Tech 
+                        Jobs</a> | <a target="_blank" href="http://www.internetshopper.com/" class="foot" target="_top">Shopping</a> | <a target="_blank" href="http://e-newsletters.internet.com/announcement_list.html" class="foot" target="_top">E-mail 
+                        Offers</a></div></font>
+
+                    </td>
+                  </form>
+                </tr>
+              </table></center>
+
+<!-- start solutions links section -->
+<link href="/icom_includes/footers/css/solstyle.css" rel="stylesheet" type="text/css">
+<center>
+<div id="solsect" style="margin: 0pt auto; padding-top: 10px; padding-left: 0px; padding-right: 0px; width: 100%;">
+  <div style="margin-bottom: 15px;">
+    <div style="clear: left; padding-left:0px; padding-right:0px;" class="collapseWrap">
+      <table width="100%" cellspacing="1" cellpadding="1">
+        <tr>
+          <td style="background:url('/icom_includes/footers/soltopbg.gif') repeat-x;" height="26" align="left"><a style="font-size:16px; font-weight:bold; color:#333333; font-family:Arial, Helvetica, sans-serif; text-decoration:none; margin-left:5px;" href="#">Solutions</a></td>
+        </tr>
+                <tr>
+          <td bgcolor="#e1e2dc" class="sitemappad"  align="left">
+            <table cellpadding="5" cellspacing="0" border="0" bgcolor="#e7e8e3" style="background:url('/icom_includes/footers/solmidbg.gif') repeat-x;">
+              <tr>
+                <td align="left" colspan="3" style="font-size:12px;">Whitepapers and eBooks</td>
+              </tr>
+              <tr>
+                <td width="50%" valign="top" align="left">
+                                    <a target="_blank" href="http://www.devx.com/go-parallel/Article/37573">Intel Go Parallel Portal: Interview with C++ Guru Herb Sutter </a><br>
+                                                    <a target="_blank" href="http://www.devx.com/IT_Innovation/Article/36066">IBM Article: How Cool Is Your Data Center?</a><br>
+                                                    <a target="_blank" href="http://www.devx.com/MS_System_Center/Article/36903">Microsoft Article: Managing Virtual Machines with Microsoft System Center </a><br>
+                                                    <a target="_blank" href="http://www.devx.com/avaya/Article/37477">Avaya Article: How to Begin Developing with Avaya's Event Processing Language</a><br>
+                                                    <a target="_blank" href="http://www.devx.com/avaya/Article/37033">Avaya Article: Deep Dive--Event Processor Offers Familiar Tools for Creating Event-Driven SOA Apps</a><br>
+                                                    <a target="_blank" href="http://www.devx.com/go-parallel/Link/37158">Intel Whitepaper: A Methodology for Threading Serial Applications (PDF)</a><br>
+                                                    <a target="_blank" href="http://www.devx.com/HPSC/Door/37383">HP eBook: Storage Networking , Part 1</a><br>
+                                                    <a target="_blank" href="http://www.serverwatch.com/tutorials/article.php/3731601">ServerWatch.com Article: Tip of the Trade--IP Address Management </a><br>
+                                                    <a target="_blank" href="http://www.itchannelplanet.com/channel_insight/article.php/3733161/Enterprise%20Fixed-Mobile%20Convergence%20Can%20Be%20Lucrative%20for%20Channel">ITChannelPlanet.com Article: Enterprise Fixed-Mobile Convergence Can Be Lucrative</a><br>
+                                </td>
+                <td width="10"></td>
+                <td width="50%" valign="top" align="left">
+                                                    <a target="_blank" href="http://www.devx.com/go-parallel/Article/37171 ">Intel Article: Transitioning Software to Future Generations of Multi-Core </a><br>
+                                                    <a target="_blank" href="http://www.devx.com/Hoovers/Door/36957">Hoovers Article: Boost Employee Morale without Breaking the Bank </a><br>
+                                                    <a target="_blank" href="http://www.devx.com/MS_System_Center/Article/36901">Microsoft Article: Solving Data Center Complexity with Microsoft System Center Configuration Manager 2007 </a><br>
+                                                    <a target="_blank" href="http://www.devx.com/ebook/Link/36783">Internet.com eBook: All About Botnets </a><br>
+                                                    <a target="_blank" href="http://www.devx.com/go-parallel/Article/37034">Intel Article: 8 Simple Rules for Designing Threaded Applications </a><br>
+                                                    <a target="_blank" href="http://www.devx.com/go-parallel/Article/33534">Intel Whitepaper: Best Practices for Developing and Optimizing Threaded Applications</a><br>
+                                                    <a target="_blank" href="http://www.devx.com/go-parallel/Article/36229">Intel Article: The Challenges of Developing Multithreaded Processing Pipelines </a><br>
+                                                    <a target="_blank" href="http://www.devx.com/solutions">MORE WHITEPAPERS, EBOOKS, AND ARTICLES</a><br>
+                                                  </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+                <tr>
+          <td bgcolor="#e1e2dc" class="sitemappad"  align="left">
+            <table cellpadding="5" cellspacing="0" border="0" bgcolor="#e7e8e3" style="background:url('/icom_includes/footers/solmidbg.gif') repeat-x;">
+              <tr>
+                <td align="left" colspan="3" style="font-size:12px;">Webcasts</td>
+              </tr>
+              <tr>
+                <td width="50%" valign="top" align="left">
+                                    <a target="_blank" href="http://www.devx.com/go-parallel/Article/36010">Intel Video:   Foundations of Parallel Programming, Part One  </a><br>
+                                                    <a target="_blank" href="http://ad.doubleclick.net/clk;192031513;24975484;h?http://www.devx.com/HPSC/HTML/37183">HP Video: Page Cost Calculator</a><br>
+                                                    <a target="_blank" href="http://www.devx.com/HPSC/Door/37383">HP Webcast: Storage Is Changing Fast - Be Ready or Be Left Behind</a><br>
+                                                    <a target="_blank" href="http://www.devx.com/go-parallel/Article/36007">Intel Video: Three Must-Knows for Parallelism </a><br>
+                                </td>
+                <td width="10"></td>
+                <td width="50%" valign="top" align="left">
+                                                    <a target="_blank" href="http://www.devx.com/MS_Partner/Door/35665">Microsoft Partner Program  Video:  The Secrets to Partner Success</a><br>
+                                                    <a target="_blank" href="http://www.devx.com/RIA/Article/36298">Microsoft Silverlight Video: Creating Fading Controls with Expression Design and Expression Blend 2</a><br>
+                                                    <a target="_blank" href="http://www.devx.com/solutions">MORE WEBCASTS, PODCASTS, AND VIDEOS</a><br>
+                                                  </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+                <tr>
+          <td bgcolor="#e1e2dc" class="sitemappad"  align="left">
+            <table cellpadding="5" cellspacing="0" border="0" bgcolor="#e7e8e3" style="background:url('/icom_includes/footers/solmidbg.gif') repeat-x;">
+              <tr>
+                <td align="left" colspan="3" style="font-size:12px;">Downloads and eKits</td>
+              </tr>
+              <tr>
+                <td width="50%" valign="top" align="left">
+                                    <a target="_blank" href="http://www.devx.com/Sybase/Door/37529">Sybase Download: SQL Anywhere Developer Edition </a><br>
+                                                    <a target="_blank" href="http://www.devx.com/RedGateVS/Door/37320">Red Gate Download: SQL Backup Pro and free DBA Best Practices eBook</a><br>
+                                                    <a target="_blank" href="http://www.devx.com/RedGateVS/Door/37329">Red Gate Download: SQL Compare Pro 6</a><br>
+                                </td>
+                <td width="10"></td>
+                <td width="50%" valign="top" align="left">
+                                                    <a target="_blank" href="http://www.devx.com/IronSpeedVS/Door/17479">Iron Speed Designer Application Generator</a><br>
+                                                    <a target="_blank" href="http://www.devx.com/solutions">MORE DOWNLOADS, EKITS, AND FREE TRIALS</a><br>
+                                                  </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+                <tr>
+          <td bgcolor="#e1e2dc" class="sitemappad"  align="left">
+            <table cellpadding="5" cellspacing="0" border="0" bgcolor="#e7e8e3" style="background:url('/icom_includes/footers/solmidbg.gif') repeat-x;">
+              <tr>
+                <td align="left" colspan="3" style="font-size:12px;">Tutorials and Demos</td>
+              </tr>
+              <tr>
+                <td width="50%" valign="top" align="left">
+                                    <a target="_blank" href="http://www.devx.com/MS_Partner/Article/36474">How-to-Article: How to Market Your Technology Solutions </a><br>
+                                                    <a target="_blank" href="http://www.devx.com/IT_Innovation/Article/36065">IBM Article:  Collaborating in the High-Performance Workplace</a><br>
+                                                    <a target="_blank" href="http://www.devx.com/HPSC/Door/37383">HP Demo: StorageWorks EVA4400</a><br>
+                                </td>
+                <td width="10"></td>
+                <td width="50%" valign="top" align="left">
+                                                    <a target="_blank" href="http://www.devx.com/RIA/Article/35777">Microsoft How-to Article: Get Going with Silverlight and Windows Live </a><br>
+                                                    <a target="_blank" href="http://www.devx.com/solutions">MORE TUTORIALS, DEMOS AND STEP-BY-STEP GUIDES</a><br>
+                                                  </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+              </table>
+    </div>
+  </div>
+</div>
+</center>
+<!-- end solutions links section -->
+   
+
+  </center>
+ </font>
+</p>
+
+ 
+ 
+</body>
+</html>   

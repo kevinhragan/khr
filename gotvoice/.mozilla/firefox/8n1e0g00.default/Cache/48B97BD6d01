@@ -1,0 +1,650 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+ <base href="http://news.netcraft.com/" target="_blank">
+ <title>Netcraft: Web Server Survey Archives</title>
+ <link rel="stylesheet" href="http://news.netcraft.com/stylesheet2006.css" type="text/css" />
+ <link rel="alternate" type="application/rss+xml" title="RSS" href="http://news.netcraft.com/index.rdf" />
+ <link rel="shortcut icon" href="/favicon.ico" />
+
+ <script language="JavaScript">
+
+    function showHide(which) {
+        which = document.getElementById(which);
+        if (which.style.visibility == 'hidden') {
+            which.style.visibility = 'visible';
+            which.style.display = 'block';
+        }
+        else {
+            which.style.visibility = 'hidden';
+            which.style.display = 'none';
+        }
+    }
+
+</script>
+
+</head>
+
+<body>
+
+   <div id="header">
+
+      <div class="premiumadvertisinglinks">
+
+    </div>
+
+        <div id="letterbox">
+     <p>
+     <script language='JavaScript' type='text/javascript' src='http://banners.netcraft.com/banneradmin/adx.js'></script>
+     <script language='JavaScript' type='text/javascript'>
+<!--
+   if (!document.phpAds_used) document.phpAds_used = ',';
+   document.write ("<" + "script language='JavaScript' type='text/javascript' src='");
+   document.write ("http://banners.netcraft.com/banneradmin/adjs.php?n=a98ae9f3");
+   document.write ("&amp;what=zone:1&amp;source=newsletterbox&amp;target=_blank&amp;withText=0");
+   document.write ("&amp;exclude=" + document.phpAds_used);
+   document.write ("'><" + "/script>");
+//-->
+     </script><noscript><a href='http://banners.netcraft.com/banneradmin/adclick.php?n=a98ae9f3' target='_blank'><img src='http://banners.netcraft.com/banneradmin/adview.php?what=zone:1&amp;source=newsletterbox&amp;target=_blank&amp;n=a98ae9f3' border='0' alt=''></a></noscript>
+     </p>
+    </div>
+
+    <div class="premiumadvertisinglinks">
+    </div>
+
+</div>
+
+<div id="content">
+
+
+        <div class="blogtitle">
+
+        <a name="000924"></a>
+
+        <h2><a href="http://news.netcraft.com/archives/2008/03/26/march_2008_web_server_survey.html" target="_top">March 2008 Web Server Survey</a></h2>
+    </div>
+
+    <div class="blogbody">
+        <p>In the <b>March 2008</b> survey, we received responses from
+<b>162,662,052</b> sites. Growth has continued to rise over the past few months, with this month seeing a gain of four and a half million new sites.</p>
+
+<p>
+ The largest changes this month are once again seen amongst the blogging and social network providers. Google increases its developer share by gaining 842 thousand hostnames; most of which are used for blogspot.com blogs. Although MySpace gained nearly 200 thousand hostnames this month, the total number of active sites fell noticeably after many more users marked their profiles as private.
+</p>
+
+
+<p>
+ Apple has recently started hosting sites created with their own <a href="http://www.apple.com/ilife/iweb/">iWeb</a> program. iWeb is a template-based web page creation tool, and the latest version is included with Apple's <a href="http://www.apple.com/ilife/">iLife</a> package. The majority &mdash; more than 24 thousand &mdash; of these iWeb sites are being served from a single IP address, using the new AppleDotMacServer-1B5626 web server.
+</p>
+
+<p>
+ While Google is the largest developer to gain share this month, the LiteSpeed web server continues to show very rapid growth on the internet &mdash; growing by more than a quarter this month &mdash; and is now serving 605 thousand websites around the world.
+</p>
+
+<center>
+<p>
+<div class="blogsubtitle">Total Sites Across All Domains August 1995 - March 2008</div>
+</p>
+<p>
+<img src="http://news.netcraft.com/archives/2008/03/site_count_history.gif" align="middle" alt="Total Sites Across All Domains, August 1995 - March 2008">
+<br><br>
+</p>
+<p>
+<div class="blogsubtitle">
+<a name="March">Market Share for Top Servers Across All Domains August 1995 - March 2008</A>
+</div>
+</p>
+<p>
+<img src="http://news.netcraft.com/archives/2008/03/overallc.gif" align="middle" alt="Graph of market share for top servers across all domains, August 1995 - March 2008">
+</p>
+<p>
+<div class="blogsubtitle">Top Developers</div>
+<table cellspacing="3">
+<tr><th>Developer</th><th>February 2008</th><th>Percent</th><th>March 2008</th><th>Percent</th><th>Change</th></tr>
+<tr align="right"><td align="left">Apache</td><td>80,580,183</td><td>50.93%</td><td>82,454,415</td><td>50.69%</td><td>-0.24</td></tr><tr align="right"><td align="left">Microsoft</td><td>56,265,527</td><td>35.56%</td><td>57,698,503</td><td>35.47%</td><td>-0.09</td></tr><tr align="right"><td align="left">Google</td><td>8,169,930</td><td>5.16%</td><td>9,012,004</td><td>5.54%</td><td>0.38</td></tr><tr align="right"><td align="left">lighttpd</td><td>1,565,536</td><td>0.99%</td><td>1,552,650</td><td>0.95%</td><td>-0.04</td></tr><tr align="right"><td align="left">Sun</td><td>547,510</td><td>0.35%</td><td>546,581</td><td>0.34%</td><td>-0.01</td></tr>
+</table>
+</center>
+
+
+        			<div class="extended"><a href="http://news.netcraft.com/archives/2008/03/26/march_2008_web_server_survey.html" target="_top">More...</a></div>
+	
+
+        <div class="posted">Posted by wss at 04:05 PM UTC
+on Mar 26, 2008 in <a href="http://news.netcraft.com/archives/web_server_survey.html" target="_top">Web Server Survey</a>
+|
+<a href="http://news.netcraft.com/archives/2008/03/26/march_2008_web_server_survey.html" target="_top">Link to this article</a>
+|
+<a href="http://www.netcraft.com/cgi-bin/Survey/subscription" target="_top">Subscribe</a>
+|
+<a href="javascript:window.print()">Print this page</a>
+</div>
+
+    </div>
+
+        <div class="blogtitle">
+
+        <a name="000922"></a>
+
+        <h2><a href="http://news.netcraft.com/archives/2008/02/17/extended_validation_ssl_certificates_now_1_year_old.html" target="_top">Extended Validation SSL Certificates now 1 Year Old</a></h2>
+    </div>
+
+    <div class="blogbody">
+        <p>
+Extended Validation SSL certificates are now a year old, with the total number of EV SSL sites now above 4,000 representing 0.5% of the valid third party certificates that the Netcraft <a href="http://news.netcraft.com/archives/2003/04/09/netcraft_ssl_survey.html">SSL Survey</a> finds on the Internet. Absolute growth of EV SSL certificates has remained largely constant for several months, and the total is dwarfed by the 809,000 sites that use traditional SSL certificates.
+</p>
+
+<p>
+<img src="http://news.netcraft.com/archives/2008/02/13/ev-ssl-growth.png" alt="ev-ssl-growth.png" width="545" height="304" border="0" />
+</p>
+
+<p>
+A year ago, Netcraft’s SSL Survey found a total of 81 sites using EV SSL certificates, five of which have since reverted to conventional SSL certificates. Interestingly, three of these sites belong to certificate authorities. VeriSign no longer uses EV SSL certificates for either admin-manager.verisign.com or onsite.verisign.com, while Entrust no longer uses an EV SSL certificate for www.entrust.com, although this site redirects users to secure.entrust.com, which does use EV SSL. The two other sites to have stopped using extended validation are www.dunbarvalutrak.com, a system for tracking valuables and cash in transit, and www.senderra.com, a service mark of Avelo Mortgage, L.L.C.
+</p>
+
+<p>
+The number of desktops which recognise EV SSL certificates is set to increase this month. On February 12th, Microsoft released the Windows Internet Explorer 7 Installation and Availability update to Windows Server Update Services. After this date, customers who have configured WSUS to auto-approve Update Rollup packages will have all instances of Internet Explorer 6 upgraded to version 7. Microsoft Knowledge Base article <a href="http://support.microsoft.com/kb/946202/">946202</a> describes how administrators may deploy Internet Explorer 7 using WSUS, or to postpone the update.
+</p>
+
+<p>
+<img src="http://news.netcraft.com/archives/2008/02/13/root-update.png" alt="root-update.png" width="491" height="133" border="0" />
+</p>
+
+<p>
+For users of Windows Vista, Internet Explorer 7 turns the address bar green when a user visits a site which offers a valid EV SSL certificate, helping to boost consumer confidence in such sites and reduce fraud. By default, Windows XP users will not see the green address bar unless they install an <i>optional</i> Root Certificates Update, which will enable the use of EV SSL certificates.
+</p>
+
+<p>
+<img src="http://news.netcraft.com/archives/2008/02/13/firefox-ev-paypal.png" alt="firefox-ev-paypal.png" width="364" height="110" border="0" />
+</p>
+
+<p>
+In addition to the Internet Explorer 7 push, nightly builds of the Firefox web browser now also support EV SSL certificates, using the VeriSign EV root for testing purposes. Other EV SSL certificates are currently treated as conventional SSL certificates, although when Firefox 3 is ready to be released to the public, it is expected to have full support for all EV SSL certificates.
+</p>
+
+<p>
+Further trends and observations are made in Netcraft’s monthly <a href="http://news.netcraft.com/archives/2003/04/09/netcraft_ssl_survey.html">SSL Survey</a>.
+</p>
+        
+
+        <div class="posted">Posted by Paul Mutton at 12:26 PM UTC
+on Feb 17, 2008 in <a href="http://news.netcraft.com/archives/web_server_survey.html" target="_top">Web Server Survey</a>
+|
+<a href="http://news.netcraft.com/archives/2008/02/17/extended_validation_ssl_certificates_now_1_year_old.html" target="_top">Link to this article</a>
+|
+<a href="http://www.netcraft.com/cgi-bin/Survey/subscription" target="_top">Subscribe</a>
+|
+<a href="javascript:window.print()">Print this page</a>
+</div>
+
+    </div>
+
+        <div class="blogtitle">
+
+        <a name="000920"></a>
+
+        <h2><a href="http://news.netcraft.com/archives/2008/02/06/february_2008_web_server_survey.html" target="_top">February 2008 Web Server Survey</a></h2>
+    </div>
+
+    <div class="blogbody">
+        <p>Growth is up again this month, with the <b>February 2008</b> survey receiving responses from
+<b>158,209,426</b> sites. This is an increase of 2.6 million sites, compared with last month's unusually low growth of only 354 thousand.</p>
+<p>
+ Apache continues to climb back, now reaching nearly 51% of the market share, while both Microsoft and Google fall slightly in share. 
+</p>
+<p>
+Some strong growth is seen amongst the smaller web servers. <a href="http://litespeedtech.com/">LiteSpeed</a> grows by a further 10% this month, now approaching half a million
+sites with a total of 476 thousand hostnames.
+The LiteSpeed web server is interchangeable with Apache and is
+used by the Wordpress blogging system. LiteSpeed was the fastest
+and most robust server that Wordpress had tested, according to its founding
+developer, Matthew Mullenweg.
+</p>
+<p>
+Unusually, America Online's open source <a href="http://www.aolserver.com/">AOLserver</a> sees tremendous growth,
+jumping from 35 thousand to 105 thousand sites in just one month. AOLserver is a multithreaded, Tcl-enabled
+web server which can be used for large scale, dynamic web sites, but has not seen the release of a new version since
+2006. The majority of the new sites served by AOLserver are hosted in Poland.
+</p>
+<center>
+<p>
+<div class="blogsubtitle">Total Sites Across All Domains August 1995 - February 2008</div>
+</p>
+<p>
+<img src="http://news.netcraft.com/archives/2008/02/site_count_history.gif" align="middle" alt="Total Sites Across All Domains, August 1995 - February 2008">
+<br><br>
+</p>
+<p>
+<div class="blogsubtitle">
+<a name="February">Market Share for Top Servers Across All Domains August 1995 - February 2008</A>
+</div>
+</p>
+<p>
+<img src="http://news.netcraft.com/archives/2008/02/overallc.gif" align="middle" alt="Graph of market share for top servers across all domains, August 1995 - February 2008">
+</p>
+<p>
+<div class="blogsubtitle">Top Developers</div>
+<table cellspacing="3">
+<tr><th>Developer</th><th>January 2008</th><th>Percent</th><th>February 2008</th><th>Percent</th><th>Change</th></tr>
+<tr align="right"><td align="left">Apache</td><td>78,735,581</td><td>50.61%</td><td>80,580,183</td><td>50.93%</td><td>0.33</td></tr><tr align="right"><td align="left">Microsoft</td><td>55,709,926</td><td>35.81%</td><td>56,265,527</td><td>35.56%</td><td>-0.24</td></tr><tr align="right"><td align="left">Google</td><td>8,290,471</td><td>5.33%</td><td>8,169,930</td><td>5.16%</td><td>-0.16</td></tr><tr align="right"><td align="left">lighttpd</td><td>1,536,981</td><td>0.99%</td><td>1,565,536</td><td>0.99%</td><td>0.00</td></tr><tr align="right"><td align="left">Sun</td><td>557,673</td><td>0.36%</td><td>547,510</td><td>0.35%</td><td>-0.01</td></tr>
+</table>
+</center>
+
+
+        			<div class="extended"><a href="http://news.netcraft.com/archives/2008/02/06/february_2008_web_server_survey.html" target="_top">More...</a></div>
+	
+
+        <div class="posted">Posted by wss at 09:48 AM UTC
+on Feb  6, 2008 in <a href="http://news.netcraft.com/archives/web_server_survey.html" target="_top">Web Server Survey</a>
+|
+<a href="http://news.netcraft.com/archives/2008/02/06/february_2008_web_server_survey.html" target="_top">Link to this article</a>
+|
+<a href="http://www.netcraft.com/cgi-bin/Survey/subscription" target="_top">Subscribe</a>
+|
+<a href="javascript:window.print()">Print this page</a>
+</div>
+
+    </div>
+
+
+
+        <div class="blogtitle">
+
+        <a name="000914"></a>
+
+        <h2><a href="http://news.netcraft.com/archives/2008/01/28/january_2008_web_server_survey.html" target="_top">January 2008 Web Server Survey</a></h2>
+    </div>
+
+	<div class="blogbody">
+	    
+<!--StartAd--><br /><br />Related Netcraft Service: <a href="http://audited.netcraft.com/dsm?source=rss">Dedicated Server Monitoring</a><!--EndAd-->
+            <div class="extended"><a href="http://news.netcraft.com/archives/2008/01/28/january_2008_web_server_survey.html" target="_top">More...</a></div>
+    
+        <div class="posted">Posted by wss at 12:08 PM UTC
+on Jan 28, 2008 in <a href="http://news.netcraft.com/archives/web_server_survey.html" target="_top">Web Server Survey</a>
+|
+<a href="http://news.netcraft.com/archives/2008/01/28/january_2008_web_server_survey.html" target="_top">Link to this article</a>
+|
+<a href="http://www.netcraft.com/cgi-bin/Survey/subscription" target="_top">Subscribe</a>
+|
+<a href="javascript:window.print()">Print this page</a>
+</div>
+    
+    </div>
+
+        <div class="blogtitle">
+
+        <a name="000912"></a>
+
+        <h2><a href="http://news.netcraft.com/archives/2007/12/29/december_2007_web_server_survey.html" target="_top">December 2007 Web Server Survey</a></h2>
+    </div>
+
+	<div class="blogbody">
+	    
+<!--StartAd--><br /><br />Related Netcraft Service: <a href="http://audited.netcraft.com/dsm?source=rss">Dedicated Server Monitoring</a><!--EndAd-->
+            <div class="extended"><a href="http://news.netcraft.com/archives/2007/12/29/december_2007_web_server_survey.html" target="_top">More...</a></div>
+    
+        <div class="posted">Posted by wss at 10:10 AM UTC
+on Dec 29, 2007 in <a href="http://news.netcraft.com/archives/web_server_survey.html" target="_top">Web Server Survey</a>
+|
+<a href="http://news.netcraft.com/archives/2007/12/29/december_2007_web_server_survey.html" target="_top">Link to this article</a>
+|
+<a href="http://www.netcraft.com/cgi-bin/Survey/subscription" target="_top">Subscribe</a>
+|
+<a href="javascript:window.print()">Print this page</a>
+</div>
+    
+    </div>
+
+        <div class="blogtitle">
+
+        <a name="000910"></a>
+
+        <h2><a href="http://news.netcraft.com/archives/2007/11/23/november_2007_web_server_survey.html" target="_top">November 2007 Web Server Survey</a></h2>
+    </div>
+
+	<div class="blogbody">
+	    <p>In the <b>November 2007</b> survey we received responses from
+<b>149,784,002</b> sites. This is an increase of increase of 7.0M sites since last month, and represents growth of over 40 million sites since the start of the year.</p>
+
+<!--StartAd--><br /><br />Related Netcraft Service: <a href="http://news.netcraft.com/archives/2003/06/18/hosting_provider_switching_analysis_available.html?source=rss">Hosting Provider Switching Analysis</a><!--EndAd-->
+            <div class="extended"><a href="http://news.netcraft.com/archives/2007/11/23/november_2007_web_server_survey.html" target="_top">More...</a></div>
+    
+        <div class="posted">Posted by wss at 10:43 AM UTC
+on Nov 23, 2007 in <a href="http://news.netcraft.com/archives/web_server_survey.html" target="_top">Web Server Survey</a>
+|
+<a href="http://news.netcraft.com/archives/2007/11/23/november_2007_web_server_survey.html" target="_top">Link to this article</a>
+|
+<a href="http://www.netcraft.com/cgi-bin/Survey/subscription" target="_top">Subscribe</a>
+|
+<a href="javascript:window.print()">Print this page</a>
+</div>
+    
+    </div>
+
+        <div class="blogtitle">
+
+        <a name="000907"></a>
+
+        <h2><a href="http://news.netcraft.com/archives/2007/10/11/october_2007_web_server_survey.html" target="_top">October 2007 Web Server Survey</a></h2>
+    </div>
+
+	<div class="blogbody">
+	    In the October 2007 survey we received responses from 142,805,398 sites, an increase of 7.6 million sites since last month....
+            <div class="extended"><a href="http://news.netcraft.com/archives/2007/10/11/october_2007_web_server_survey.html" target="_top">More...</a></div>
+    
+        <div class="posted">Posted by wss at 03:51 PM UTC
+on Oct 11, 2007 in <a href="http://news.netcraft.com/archives/web_server_survey.html" target="_top">Web Server Survey</a>
+|
+<a href="http://news.netcraft.com/archives/2007/10/11/october_2007_web_server_survey.html" target="_top">Link to this article</a>
+|
+<a href="http://www.netcraft.com/cgi-bin/Survey/subscription" target="_top">Subscribe</a>
+|
+<a href="javascript:window.print()">Print this page</a>
+</div>
+    
+    </div>
+
+        <div class="blogtitle">
+
+        <a name="000901"></a>
+
+        <h2><a href="http://news.netcraft.com/archives/2007/09/03/september_2007_web_server_survey.html" target="_top">September 2007 Web Server Survey</a></h2>
+    </div>
+
+	<div class="blogbody">
+	    In the <b>September 2007</b> survey we received responses from
+<b>135,166,473</b> sites. This is an increase of 7.2 million sites since last month, the largest growth in the number of sites recorded by the survey.
+<!--StartAd--><br /><br />Related Netcraft Service: <a href="http://audited.netcraft.com/dsm?source=rss">Dedicated Server Monitoring</a><!--EndAd-->
+            <div class="extended"><a href="http://news.netcraft.com/archives/2007/09/03/september_2007_web_server_survey.html" target="_top">More...</a></div>
+    
+        <div class="posted">Posted by wss at 10:57 AM UTC
+on Sep  3, 2007 in <a href="http://news.netcraft.com/archives/web_server_survey.html" target="_top">Web Server Survey</a>
+|
+<a href="http://news.netcraft.com/archives/2007/09/03/september_2007_web_server_survey.html" target="_top">Link to this article</a>
+|
+<a href="http://www.netcraft.com/cgi-bin/Survey/subscription" target="_top">Subscribe</a>
+|
+<a href="javascript:window.print()">Print this page</a>
+</div>
+    
+    </div>
+
+        <div class="blogtitle">
+
+        <a name="000897"></a>
+
+        <h2><a href="http://news.netcraft.com/archives/2007/08/06/august_2007_web_server_survey.html" target="_top">August 2007 Web Server Survey</a></h2>
+    </div>
+
+	<div class="blogbody">
+	    In the August 2007 survey we received responses from 127,961,479 sites, an increase of 2.3 million sites from last month.
+<!--StartAd--><br /><br />Related Netcraft Service: <a href="http://audited.netcraft.com/dsm?source=rss">Dedicated Server Monitoring</a><!--EndAd-->
+            <div class="extended"><a href="http://news.netcraft.com/archives/2007/08/06/august_2007_web_server_survey.html" target="_top">More...</a></div>
+    
+        <div class="posted">Posted by wss at 07:36 AM UTC
+on Aug  6, 2007 in <a href="http://news.netcraft.com/archives/web_server_survey.html" target="_top">Web Server Survey</a>
+|
+<a href="http://news.netcraft.com/archives/2007/08/06/august_2007_web_server_survey.html" target="_top">Link to this article</a>
+|
+<a href="http://www.netcraft.com/cgi-bin/Survey/subscription" target="_top">Subscribe</a>
+|
+<a href="javascript:window.print()">Print this page</a>
+</div>
+    
+    </div>
+
+        <div class="blogtitle">
+
+        <a name="000891"></a>
+
+        <h2><a href="http://news.netcraft.com/archives/2007/07/09/july_2007_web_server_survey.html" target="_top">July 2007 Web Server Survey</a></h2>
+    </div>
+
+	<div class="blogbody">
+	    In the <b>July 2007</b> survey we received responses from
+<b>125,626,329</b> sites, an increase of 3.62 million sites from the June survey.
+<!--StartAd--><br /><br />Related Netcraft Service: <a href="http://audited.netcraft.com/dsm?source=rss">Dedicated Server Monitoring</a><!--EndAd-->
+            <div class="extended"><a href="http://news.netcraft.com/archives/2007/07/09/july_2007_web_server_survey.html" target="_top">More...</a></div>
+    
+        <div class="posted">Posted by wss at 08:02 PM UTC
+on Jul  9, 2007 in <a href="http://news.netcraft.com/archives/web_server_survey.html" target="_top">Web Server Survey</a>
+|
+<a href="http://news.netcraft.com/archives/2007/07/09/july_2007_web_server_survey.html" target="_top">Link to this article</a>
+|
+<a href="http://www.netcraft.com/cgi-bin/Survey/subscription" target="_top">Subscribe</a>
+|
+<a href="javascript:window.print()">Print this page</a>
+</div>
+    
+    </div>
+
+
+</div>
+
+
+   <div id="links">
+
+     <div id="netcraft-logo">
+     <a href="http://news.netcraft.com/" accesskey="1" target="_top">
+     <img src="http://news.netcraft.com/images/n2s.gif" alt="Netcraft" border="0" width="200" height="57" />
+     </a>
+   </div>
+
+    <div class="sidetitle">Webserver Search</div>
+<div class="sidelinks">
+ <form name="f" method="get" action="http://searchdns.netcraft.com/">
+ <strong>What's that site running?...</strong>
+
+ <input type="text" name="host" value="" size="23" maxlength="80" />
+ <input type="hidden" name="position" value="limited" />
+
+ <input type="submit" name="lookup" value='Search' class="button" onClick='f.lookup.value="Wait..";return true' />
+ </form>
+ Example:&nbsp;<a href="http://searchdns.netcraft.com/?restriction=site+ends+with&amp;host=.google.com">.google.com</a><br />
+ Example:&nbsp;<a href="http://toolbar.netcraft.com/site_report?url=http://www.netcraft.com" target="_top">www.netcraft.com</a>
+</div>
+
+  <div class="sidetitle">Netcraft Services</div>
+
+<div class="sidelinks">
+
+<div class="linktitle">News</div>
+<div class="linkset" id="linkset_news">
+ <ul>
+  <li><a href="http://news.netcraft.com/cgi-bin/subscription" target="_top">Subscribe to Netcraft News</a></li>
+ </ul>
+</div>
+
+<div class="linktitle">Security Services</div>
+<div class="linkset" id="linkset_security">
+ <ul>
+  <li><a href="http://toolbar.netcraft.com"target="_top">Anti-Phishing Toolbar</a></li>
+  <li><a href="http://news.netcraft.com/phishing-site-feed"target="_top">Phishing Site Feed</a></li>
+  <li><a href="http://audited.netcraft.com/bank-fraud-detection" target="_top">Bank Fraud Detection</a></li>
+  <li><a href="http://news.netcraft.com/phishing-site-takedown" target="_top">Phishing Site Countermeasures</a></li>
+  <li><a href="http://audited.netcraft.com/audited" target="_top">Audited by Netcraft</a></li>
+  <li><a href="http://news.netcraft.com/open-redirect-detection" target="_top">Open Redirect Detection</a></li>
+  <li><a href="http://audited.netcraft.com/web-application" target="_top">Web Application Security Testing</a></li>
+  <li><a href="http://audited.netcraft.com/web-application-course" target="_top">Web Application Security Course</a></li>
+ </ul>
+</div>
+
+<div class="linktitle">Internet Data Mining</div>
+
+<div class="linkset" id="linkset_mining">
+ <ul>
+  <li><a href="http://news.netcraft.com/hosting-provider-switching-dataset" target="_top">Hosting Provider Switching Analysis</a></li>
+  <li><a href="http://news.netcraft.com/hosting-provider-server-count" target="_top">Hosting Provider Server Count</a></li>
+  <li><a href="http://news.netcraft.com/site-operator-survey" target="_top">Hosting Reseller Survey</a></li>
+  <li><a href="http://news.netcraft.com/SSL-survey" target="_top">SSL Survey</a></li>
+ </ul>
+</div>
+
+<div class="linktitle">Internet Exploration</div>
+
+<div class="linkset" id="linkset_exploration">
+ <ul>
+  <li><a href="http://uptime.netcraft.com/up/graph" target="_top">Whats that site running?</a></li>
+  <li><a href="http://searchdns.netcraft.com/?host" target="_top">SearchDNS</a></li>
+  <li><a href="http://uptime.netcraft.com/netmove/today" target="_top">Sites on the Move</a></li>
+ </ul>
+</div>
+
+<div class="linktitle">Performance</div>
+<div class="linkset" id="linkset_performance">
+ <ul>
+  <li><a href="http://news.netcraft.com/hosting-prospect-monitoring-uptime-alerts" target="_top">Hosting Prospects Performance Alerts</a></li>
+  <li><a href="http://uptime.netcraft.com/perf/reports/Hosters" target="_top">Hosting Providers Network Performance</a></li>
+  <li><a href="http://audited.netcraft.com/dsm" target="_top">Dedicated Server Monitoring</a></li>
+ </ul>
+</div>
+
+<div class="linktitle">Advertising</div>
+<div class="linkset" id="linkset_advertising">
+ <ul>
+  <li><a href="http://news.netcraft.com/banner-advertising" target="_top">Banner Advertising on Netcraft</a></li>
+ </ul>
+</div>
+
+<div class="linktitle">About Netcraft</div>
+<div class="linkset" id="linkset_about">
+ <ul>
+  <li><a href="http://news.netcraft.com/about-netcraft"  target="_top">About Netcraft</a></li>
+  <li><a href="http://news.netcraft.com/jobs"  target="_top">Jobs at Netcraft</a></li>
+  <li><a href="http://news.netcraft.com/fair-use-copyright" target="_top">Fair Use, Copyright</a></li>
+  <li><a href="http://news.netcraft.com/privacy-statement" target="_top">Site Privacy Statement</a></li>
+  <li><a href="http://news.netcraft.com/visiting-netcraft" target="_top">Visiting Netcraft</a></li>
+ </ul>
+</div>
+
+<div class="linktitle">Contact Us</div>
+<div class="linkset" id="linkset_contact">
+ <ul>
+  <li><a href="mailto:webmaster@netcraft.com">Webmaster</a></li>
+ </ul>
+</div>
+
+</div>
+
+
+  <div class="sidetitle">Article Categories</div>
+<div class="sidelinks">
+ <ul>
+      <li><a href="http://news.netcraft.com/archives/about_netcraft.html" target="_top">About Netcraft</a></li>
+      <li><a href="http://news.netcraft.com/archives/around_the_net.html" target="_top">Around the Net</a></li>
+      <li><a href="http://news.netcraft.com/archives/banner_advertising.html" target="_top">Banner Advertising</a></li>
+      <li><a href="http://news.netcraft.com/archives/dogfood.html" target="_top">Dogfood</a></li>
+      <li><a href="http://news.netcraft.com/archives/domains.html" target="_top">Domains</a></li>
+      <li><a href="http://news.netcraft.com/archives/hosting.html" target="_top">Hosting</a></li>
+      <li><a href="http://news.netcraft.com/archives/interviews.html" target="_top">Interviews</a></li>
+      <li><a href="http://news.netcraft.com/archives/netcraft_services.html" target="_top">Netcraft Services</a></li>
+      <li><a href="http://news.netcraft.com/archives/performance.html" target="_top">Performance</a></li>
+      <li><a href="http://news.netcraft.com/archives/security.html" target="_top">Security</a></li>
+      <li><a href="http://news.netcraft.com/archives/web_server_survey.html" target="_top">Web Server Survey</a></li>
+  
+  <li><a href="/fullindex.html" target="_top">All Categories</a></li>
+ </ul>
+</div>
+
+<div class="sidetitle">Archives</div>
+<div class="sidelinks">
+ <ul>
+      <li><a href="http://news.netcraft.com/archives/2008/03/index.html" target="_top">March 2008</a></li>
+      <li><a href="http://news.netcraft.com/archives/2008/02/index.html" target="_top">February 2008</a></li>
+      <li><a href="http://news.netcraft.com/archives/2008/01/index.html" target="_top">January 2008</a></li>
+      <li><a href="http://news.netcraft.com/archives/2007/12/index.html" target="_top">December 2007</a></li>
+      <li><a href="http://news.netcraft.com/archives/2007/11/index.html" target="_top">November 2007</a></li>
+      <li><a href="http://news.netcraft.com/archives/2007/10/index.html" target="_top">October 2007</a></li>
+      <li><a href="http://news.netcraft.com/archives/2007/09/index.html" target="_top">September 2007</a></li>
+      <li><a href="http://news.netcraft.com/archives/2007/08/index.html" target="_top">August 2007</a></li>
+      <li><a href="http://news.netcraft.com/archives/2007/07/index.html" target="_top">July 2007</a></li>
+      <li><a href="http://news.netcraft.com/archives/2007/06/index.html" target="_top">June 2007</a></li>
+      <li><a href="http://news.netcraft.com/archives/2007/05/index.html" target="_top">May 2007</a></li>
+      <li><a href="http://news.netcraft.com/archives/2007/04/index.html" target="_top">April 2007</a></li>
+  
+  <li><a href="/fullindex.html" target="_top">Previous Months</a></li>
+ </ul>
+</div>
+
+
+</div>
+
+   <div id="skyscraper">
+
+    <div id="sitesearch">
+     Site Search<br/>
+     <form method="get" action="/cgi-bin/search.cgi" target="_top">
+      <input type="hidden" name="IncludeBlogs" value="1" />
+      <input id="search" name="search" size="20" /><br />
+     </form>
+     <p id="rssbutton"><a href="/index.rdf"><img src="/images/rss.png" width="35" alt="RSS" height="16" border="0" /></a></p>
+    </div>
+
+<script language='JavaScript' type='text/javascript'>
+<!--
+   if (!document.phpAds_used) document.phpAds_used = ',';
+   document.write ("<" + "script language='JavaScript' type='text/javascript' src='");
+   document.write ("http://banners.netcraft.com/banneradmin/adjs.php?n=a7a0d565");
+   document.write ("&amp;what=zone:2&amp;source=newsskyscraper&amp;target=_blank&amp;withText=0");
+   document.write ("&amp;exclude=" + document.phpAds_used);
+   document.write ("'><" + "/script>");
+//-->
+</script><noscript><a href='http://banners.netcraft.com/banneradmin/adclick.php?n=a7a0d565' target='_blank'><img src='http://banners.netcraft.com/banneradmin/adview.php?what=zone:2&amp;source=newsskyscraper&amp;target=_blank&amp;n=a7a0d565' border='0' alt=''></a></noscript>
+</div>
+
+   <div class="advertisinglinks">
+<table class="advertisinglinkstable" cellspacing="5">
+  <tr>
+    <td colspan="3" class="premiumadvertisinglinks">
+    </td>
+  </tr>
+  <tr><td colspan="3"><br></td></tr>
+  <tr>
+
+    <td><a href="http://www.rackspace.co.uk">Rackspace Managed Hosting - Web Hosting - Hosting</a></td>
+    <td>Swishmail.com Business <a href="http://www.swishmail.com/">Email Hosting</a></td>
+    <td><a href="http://www.apollohosting.com/">Apollo Hosting – VPS, Ecommerce & Website Hosting</a></td>
+
+  </tr>
+  <tr>
+    <td><a href="http://www.inetu.net/">INetU Managed Hosting - Dedicated Servers</a></td>
+
+    <td><a href="http://www.datapipe.com/">DataPipe – Personal Touch, Global Reach</a></td>
+    <td><a href="http://www.websitesource.com">Web Hosting</a> - Website Source - Ecommerce, VPS</td>
+  </tr>
+
+  <tr>
+    <td><a href="http://www.ahosting.biz/">Reseller hosting Managed dedicated server Ahosting</a></td>
+    <td><a href="http://www.hostdepartment.com/">Web Hosting and Reseller Hosting</a> By HostDepartment </td>
+    <td><a href="http://www.webhosting.uk.com/">Web Hosting UK - VPS Hosting Dedicated Server</a></td>
+  </tr>
+
+  <tr>
+    <td><a href="http://www.networksolutions.com/web-hosting/index.jsp">Web Site Hosting</a> - Network Solutions</td>
+    <td></td>
+    <td></td>
+  </tr>
+
+</table>
+<br>
+<b><a href="mailto:banners@netcraft.com?subject=Advertising%20on%20Netcraft">Advertising on Netcraft</a></b>
+<br>
+
+</div>
+
+   <div class="copyright">
+Copyright &copy; Netcraft Ltd 2008<br />
+</div>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2150242-1";
+urchinTracker();
+</script>
+
+</body>
+</html>

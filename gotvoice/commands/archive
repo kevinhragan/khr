@@ -1,0 +1,12 @@
+from ra:
+cd /tmp; find . -maxdepth 1 -name "*mp3" -mtime +2 |sudo cpio -o -H tar |ssh -p 2222 root@ext-osiris2 tar xf - -C /srv/ra-tmp
+
+from hathor to potato:
+rsync -az --bwlimit=3000 -e "ssh -p 2222 -l root" /srv/ ext-osiris2:/srv
+
+
+on hathor:
+find . -name "*wav" -type f -mtime +5 -exec rm  {} \;
+find . -path "*/trash/*" -mtime +5 -exec sudo rm {} \;
+# delete everything in trash and all wav files older than 1 day
+find . \( -name "*wav" -type f -o -path "*/trash/*"  \) -mtime +0 -exec rm  {} \;
