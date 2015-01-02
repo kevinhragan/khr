@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/khr/todo'
+let g:netrw_dirhist_2='/home/khr/finance'
+let g:netrw_dirhist_3='/home/khr/todo'
+let g:netrw_dirhist_4='/mnt/MUSIC/Guided By Voices/Under_the_Bushes'
+let g:netrw_dirhist_5='/home/khr/music/tracks/Superchunk/Incidental_Music'
