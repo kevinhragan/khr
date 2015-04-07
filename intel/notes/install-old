@@ -1,0 +1,154 @@
+# probably want to use url to install from; tab at boot menu and append:
+url=ftp://10.55.0.98/Fedora-18-x86_64
+# kickstart build
+# use Ronald's script to create file; (edit?)
+# install file in this host in /var/www
+# boot option
+ks=http://10.55.1.115/ks.config
+
+# as needed to supersede new nameing 
+ln -s /dev/null 80-net-name-slot.rules
+
+HWADDR=00:25:90:39:1C:68
+IPADDR=10.55.0.195
+NETMASK=255.255.0.0
+TYPE=Ethernet
+BOOTPROTO=static
+DEFROUTE=yes
+NAME=em1
+ONBOOT=yes
+
+/etc/sysconfig/network   
+  GATEWAY=10.55.0.1
+  NOZEROCONF=yes
+/etc/hostname
+
+# create repo
+echo '[everything]
+name=FC18 Everything
+baseurl=ftp://10.55.0.98/Fedora-18-x86_64-Everything
+enabled=1
+gpgcheck=0' > /etc/yum.repos.d/ringo.repo 
+
+vi /etc/default/grub 
+/CMDLINE/s/rhgb/selinux=0 vga=792/
+grub2-mkconfig -o /boot/grub2/grub.cfg
+
+cd ~
+git clone git://ringo/scripts/testing
+git clone git://ringo/scripts/install
+install/setup.sh
+
+# copy needed files from kevin 
+# cd testing/users/kevin/
+cd ~/testing/users/kevin/; cp -r commands  .screenrc tests ~
+
+# debugging .bash* setup; trial .bash_profile:
+export TEST_SCRIPTS=/root/testing ; . /root/testing/config/init_test.sh
+pgrep screen  || screen -d -m -S kevin
+. ~/.bashrc
+
+# prepend to .bashrc; and fix this later
+alias tmsg='tail -f -n 100 /var/log/messages'
+alias gitl="git log --color --pretty=format:'%h %an %s'"
+
+neighbor() {
+    lldptool -tni $1|egrep 'IPv4:|Local:|Ifname:'
+}
+
+fcoe2=eth2.172-fcoe
+fcoe3=eth3.228-fcoe
+function fci() {
+case $1 in
+    2) arg=$fcoe2;;
+    3) arg=$fcoe3;;
+    *) arg=$1;;
+esac
+fcoeadm -i $arg; }
+function fcs() {
+case $1 in
+    2) arg=$fcoe2;;
+    3) arg=$fcoe3;;
+    *) arg=$1;;
+esac
+fcoeadm -S $arg; }
+function fcl() {
+case $1 in
+    2) arg=$fcoe2;;
+    3) arg=$fcoe3;;
+    *) arg=$1;;
+esac
+fcoeadm -l $arg; }
+function fcr() {
+case $1 in
+    2) arg=$fcoe2;;
+    3) arg=$fcoe3;;
+    *) arg=$1;;
+esac
+fcoeadm -r $arg; }
+function fct() {
+case $1 in
+    2) arg=$fcoe2;;
+    3) arg=$fcoe3;;
+    *) arg=$1;;
+esac
+fcoeadm -t $arg; }
+function gdo() {
+get-dcb-oper.sh $1
+}
+function gdp() {
+get-dcb-peer.sh $1
+}
+function gdc() {
+get-dcb-config.sh $1
+}
+
+set -o vi
+shopt -s histappend
+PS1='\h\w\$ '
+PATH=$PATH:$HOME/testing/diagnostic:$HOME/testing/users/kevin/bin
+export GIT_AUTHOR_NAME="Kevin Ragan"
+export GIT_AUTHOR_EMAIL="kevinx.ragan@intel.com"
+export GIT_COMMITER_NAME=root
+export GIT_COMMITER_EMAIL="<$USER@$HOSTNAME>"
+
+#disable network manager
+yum -y remove NetworkManager
+#disable selinux
+sed -i 's/=enforcing/=disabled/' /etc/selinux/config
+
+yum install lldpad fcoe-utils     
+
+# install config file
+echo '## Type:       yes/no
+## Default:    no
+# Switch on/off debug messages (script & C code)
+DEBUG="yes"
+
+## Type:       yes/no
+## Default:    yes
+# All the messages go to syslog and stderr (script & C code)
+USE_SYSLOG="yes"
+
+## Type:       string. Driver names separated by space
+## Default:    list of default drivers
+# All supported drivers listed here are loaded when service starts
+SUPPORTED_DRIVERS="fcoe bnx2fc"' > /etc/fcoe/config
+
+systemctl enable lldpad fcoe
+systemctl start lldpad fcoe
+
+# need netprio_cgroup for iscsi testing
+#fedora
+echo netprio_cgroup > /etc/modules-load.d/netprio.conf
+
+#disable firewalld  (?)
+systemctl disable firewalld
+iptables -F
+# verify iptables -L; document steps
+
+
+for port in p{1,3}p{1,2}; do dcbtool sc $port dcb on;dcbtool sc $port app:fcoe e:1 w:1;dcbtool sc $port pfc e:1 a:1 w:1; cp /etc/fcoe/cfg-ethx /etc/fcoe/cfg-$port; done
+
+#upgrade kernel/userspace commands
+reboopt

@@ -1,0 +1,19 @@
+1) To install a base linux_stable testing platform for your SUT run:
+yum -y install cgdcbxd fcoe-utils libhbaapi libhbalinux lldpad
+yum -y install *linux_stable*
+reboot
+uname -a
+
+2) To switch that to a net_next SUT run:
+yum -y erase kernel-vanilla
+yum -y upgrade *net_next*
+reboot
+uname -a
+
+3) To switch that back to a linux_stable SUT run:
+yum -y erase kernel-vanilla
+yum -y downgrade *linux_stable*
+yum -y install kernel-vanilla-3.*linux_stable*
+reboot
+uname -a
+

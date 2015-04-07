@@ -1,0 +1,316 @@
+## SLES12  autoyast install
+netdevice=eth0 netsetup=dhcp autoyast=ftp://10.55.1.2/deploy/<hostname>.linux.sles12.0.xml
+
+## FEDORA 20 on hp proliant; add to boot parameters
+# modprobe.blacklist=cnic,bnx2i
+# this file should include steps needed for new kickstart installs
+# boot option
+ks=http://10.55.1.15/ks.config
+ks=ftp://10.55.1.2/linux/lX-YYY.linux.fc20.cfg
+
+## FEDORA 20 on hp proliant; add to boot parameters
+# modprobe.blacklist=cnic,bnx2i
+# this file should include steps needed for new kickstart installs
+# boot option
+ks=http://10.55.1.15/ks.config
+ks=ftp://10.55.1.2/linux/lX-YYY.linux.fc20.cfg
+## SLES12  autoyast install
+netdevice=eth0 netsetup=dhcp autoyast=ftp://10.55.1.2/deploy/<hostname>.linux.sles12.0.xml
+
+## FEDORA 20 on hp proliant; add to boot parameters
+# modprobe.blacklist=cnic,bnx2i
+# this file should include steps needed for new kickstart installs
+# boot option
+ks=http://10.55.1.15/ks.config
+ks=ftp://10.55.1.2/linux/lX-YYY.linux.fc20.cfg
+
+
+## FEDORA 20 on hp proliant; add to boot parameters
+# modprobe.blacklist=cnic,bnx2i
+# this file should include steps needed for new kickstart installs
+# boot option
+ks=http://10.55.1.15/ks.config
+ks=ftp://10.55.1.2/linux/lX-YYY.linux.fc20.cfg
+
+# as needed to supersede new nameing 
+ln -s /dev/null /usr/lib/udev/rules.d/80-net-name-slot.rules
+
+# use renum-int script to alter interface names on fedora 20
+
+git config --global user.email "kevinx.ragan@intel.com"
+git config --global kevin.ragan "Kevin Ragan"
+
+git clone git://ume/scripts/deploy
+# git clone git://ume/scripts/provision
+# add rest of git commands from how to git
+
+# scp -pr kraganx@10.55.1.2:/srv/git/users/kraganx/testing ~
+# figure out how to set path for testing
+
+# copy needed files from kevin 
+# cd testing/users/kevin/
+cp -rp ~/provision/tool/tester/kraganx/bin ~
+cd ~/testing/users/kevin/; cp -r commands  .screenrc tests ~
+
+# cp ~/provision/tool/tester/kraganx/.bash* ~
+
+
+
+## FEDORA/RHEL
+    yum install fcoe-utils     
+
+## SLES 11
+    zypper install fcoe-utils
+
+# install config file
+echo '## Type:       yes/no
+## Default:    no
+# Switch on/off debug messages (script & C code)
+DEBUG="yes"
+
+## Type:       yes/no
+## Default:    yes
+# All the messages go to syslog and stderr (script & C code)
+USE_SYSLOG="yes"
+
+## Type:       string. Driver names separated by space
+## Default:    list of default drivers
+# All supported drivers listed here are loaded when service starts
+SUPPORTED_DRIVERS="fcoe bnx2fc"' > /etc/fcoe/config
+
+systemctl enable lldpad fcoe
+# what about cgdcbxd
+
+# need netprio_cgroup for iscsi testing
+# FEDORA (?)
+# echo netprio_cgroup > /etc/modules-load.d/netprio.conf
+
+
+systemctl start lldpad
+# SLES 11
+   service boot.lldpad start
+
+for port in {sf,tp}p{0,1}; do dcbtool sc $port dcb on;dcbtool sc $port app:fcoe e:1 w:1;dcbtool sc $port pfc e:1 a:1 w:1; cp /etc/fcoe/cfg-ethx /etc/fcoe/cfg-$port; done
+
+systemctl start fcoe 
+
+#cp ~/testing/users/kevin/.[a-z]* ~; #better leave off .bashrc
+cp ~/provision/tool/tester/kraganx/.[vsi]* ~/provision/tool/tester/kraganx/.bash_profile ~
+# grab .bashrc for manual install
+# cp ~/provision/tool/tester/kraganx/.bashrc ~ 
+
+# as needed to supersede new nameing 
+ln -s /dev/null /usr/lib/udev/rules.d/80-net-name-slot.rules
+
+# use renum-int script to alter interface names on fedora 20
+
+
+# this is needed till we reorg on new script locations
+cd ~
+echo '10.55.1.2	ume' >> /etc/hosts
+
+git config --global user.email "kevinx.ragan@intel.com"
+git config --global kevin.ragan "Kevin Ragan"
+
+git clone git://mango/scripts/deploy
+git clone git://mango/scripts/provision
+# add rest of git commands from how to git
+
+# scp -pr kraganx@10.55.1.2:/srv/git/users/kraganx/testing ~
+# figure out how to set path for testing
+
+# copy needed files from kevin 
+# cd testing/users/kevin/
+cp -rp ~/provision/tool/tester/kraganx/bin ~
+# cd ~/testing/users/kevin/; cp -r commands  .screenrc tests ~
+
+# cp ~/provision/tool/tester/kraganx/.bash* ~
+
+
+
+## FEDORA/RHEL
+yum install lldpad fcoe-utils     
+
+## SLES 11
+    zypper install fcoe-utils
+
+# install config file
+echo '## Type:       yes/no
+## Default:    no
+# Switch on/off debug messages (script & C code)
+DEBUG="yes"
+
+## Type:       yes/no
+## Default:    yes
+# All the messages go to syslog and stderr (script & C code)
+USE_SYSLOG="yes"
+
+## Type:       string. Driver names separated by space
+## Default:    list of default drivers
+# All supported drivers listed here are loaded when service starts
+SUPPORTED_DRIVERS="fcoe bnx2fc"' > /etc/fcoe/config
+
+systemctl enable lldpad fcoe
+# what about cgdcbxd
+
+# need netprio_cgroup for iscsi testing
+# FEDORA (?)
+echo netprio_cgroup > /etc/modules-load.d/netprio.conf
+
+
+systemctl start lldpad
+# SLES 11
+   service boot.lldpad start
+
+for port in {sf,tp}p{0,1}; do dcbtool sc $port dcb on;dcbtool sc $port app:fcoe e:1 w:1;dcbtool sc $port pfc e:1 a:1 w:1; cp /etc/fcoe/cfg-ethx /etc/fcoe/cfg-$port; done
+
+systemctl start fcoe 
+
+#cp ~/testing/users/kevin/.[a-z]* ~; #better leave off .bashrc
+cp ~/provision/tool/tester/kraganx/.[vsi]* ~/provision/tool/tester/kraganx/.bash_profile ~
+# grab .bashrc for manual install
+# cp ~/provision/tool/tester/kraganx/.bashrc ~ 
+
+
+# as needed to supersede new nameing 
+ln -s /dev/null /usr/lib/udev/rules.d/80-net-name-slot.rules
+
+# use renum-int script to alter interface names on fedora 20
+
+
+# this is needed till we reorg on new script locations
+cd ~
+echo '10.55.1.2	ume' >> /etc/hosts
+
+git config --global user.email "kevinx.ragan@intel.com"
+git config --global kevin.ragan "Kevin Ragan"
+
+git clone git://ume/scripts/deploy
+git clone git://ume/scripts/provision
+# add rest of git commands from how to git
+
+scp -pr kraganx@10.55.1.2:/srv/git/users/kraganx/testing ~
+# figure out how to set path for testing
+
+# copy needed files from kevin 
+# cd testing/users/kevin/
+cp -rp ~/provision/tool/tester/kraganx/bin ~
+cd ~/testing/users/kevin/; cp -r commands  .screenrc tests ~
+
+# cp ~/provision/tool/tester/kraganx/.bash* ~
+
+
+
+## FEDORA/RHEL
+    yum install fcoe-utils     
+
+## SLES 11
+    zypper install fcoe-utils
+
+#
+echo '## Type:       yes/no
+## Default:    no
+# Switch on/off debug messages (script & C code)
+DEBUG="yes"
+
+## Type:       yes/no
+## Default:    yes
+# All the messages go to syslog and stderr (script & C code)
+USE_SYSLOG="yes"
+
+## Type:       string. Driver names separated by space
+## Default:    list of default drivers
+# All supported drivers listed here are loaded when service starts
+SUPPORTED_DRIVERS="fcoe bnx2fc"' > /etc/fcoe/config
+
+systemctl enable lldpad fcoe
+# what about cgdcbxd
+
+# need netprio_cgroup for iscsi testing
+# FEDORA (?)
+echo netprio_cgroup > /etc/modules-load.d/netprio.conf
+
+
+systemctl start lldpad
+# SLES 11
+   service boot.lldpad start
+
+for port in {sf,tp}p{0,1}; do dcbtool sc $port dcb on;dcbtool sc $port app:fcoe e:1 w:1;dcbtool sc $port pfc e:1 a:1 w:1; cp /etc/fcoe/cfg-ethx /etc/fcoe/cfg-$port; done
+
+systemctl start fcoe 
+
+#cp ~/testing/users/kevin/.[a-z]* ~; #better leave off .bashrc
+cp ~/provision/tool/tester/kraganx/.[vsi]* ~/provision/tool/tester/kraganx/.bash_profile ~
+# grab .bashrc for manual install
+# cp ~/provision/tool/tester/kraganx/.bashrc ~ 
+
+# as needed to supersede new nameing 
+ln -s /dev/null /usr/lib/udev/rules.d/80-net-name-slot.rules
+
+# use renum-int script to alter interface names on fedora 20
+
+
+# this is needed till we reorg on new script locations
+cd ~
+echo '10.166.48.35	mango' >> /etc/hosts
+
+git config --global user.email "kevinx.ragan@intel.com"
+git config --global kevin.ragan "Kevin Ragan"
+
+# for ssh connection; goes here?
+ssh-keygen
+ssy-copy-id kraganx@mango
+
+git clone git://mango/scripts/deploy
+# add rest of git commands from how to git
+
+scp -pr kraganx@mango:/srv/git/users/kraganx/testing ~
+# figure out how to set path for testing
+
+# copy needed files from kevin 
+# cd testing/users/kevin/
+cp -rp ~/provision/tool/tester/kraganx/bin ~
+cd ~/testing/users/kevin/; cp -r commands  .screenrc tests ~
+
+# cp ~/provision/tool/tester/kraganx/.bash* ~
+
+
+
+# install config file
+echo '## Type:       yes/no
+## Default:    no
+# Switch on/off debug messages (script & C code)
+DEBUG="yes"
+
+## Type:       yes/no
+## Default:    yes
+# All the messages go to syslog and stderr (script & C code)
+USE_SYSLOG="yes"
+
+## Type:       string. Driver names separated by space
+## Default:    list of default drivers
+# All supported drivers listed here are loaded when service starts
+SUPPORTED_DRIVERS="fcoe bnx2fc"' > /etc/fcoe/config
+
+systemctl enable lldpad fcoe
+# what about cgdcbxd
+
+# need netprio_cgroup for iscsi testing
+# FEDORA (?)
+echo netprio_cgroup > /etc/modules-load.d/netprio.conf
+
+
+systemctl start lldpad
+# SLES 11
+   service boot.lldpad start
+
+for port in {sf,tp}p{0,1}; do dcbtool sc $port dcb on;dcbtool sc $port app:fcoe e:1 w:1;dcbtool sc $port pfc e:1 a:1 w:1; cp /etc/fcoe/cfg-ethx /etc/fcoe/cfg-$port; done
+# enp{8,5}s0f{0,1}
+
+systemctl start fcoe 
+
+#cp ~/testing/users/kevin/.[a-z]* ~; #better leave off .bashrc
+cp ~/provision/tool/tester/kraganx/.[vsi]* ~/provision/tool/tester/kraganx/.bash_profile ~
+# grab .bashrc for manual install
+# cp ~/provision/tool/tester/kraganx/.bashrc ~ 
+

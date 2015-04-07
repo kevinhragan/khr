@@ -1,0 +1,10 @@
+large drive to install to (4G is big enough)
+know: base mac, san mac, fabric, lun#
+disconnect local hard drives
+boot option WithFcoe=1
+F4 to select ftp source
+config 1g interface to reach ftp source
+to add other repos to build base repo must be ftp repo not cd
+watch for where grub2 is installing boot code
+reputed prob on twinville; setup working twinvill bfs
+

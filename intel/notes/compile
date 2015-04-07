@@ -1,0 +1,20 @@
+# random stuff I remember about doing compile by hand on sut
+# add these packages, there might be others I forgot
+yum install autoconf make libtools pkgconfig lldpad-devel libapi-devel libhbalinux-devel
+
+
+
+
+#steps 
+modify source with patches in the sequence listed in SPEC file
+then modify with programmers patch
+autoconf or reautconf -fi
+configure
+make
+ 
+# binary expects config files in /usr/local/etc/fcoe; fix at compile time or cp -r /etc/fcoe 
+pkill fcoemon
+# vervify none are running
+pgrep fcoemon
+# start the compiled version
+./fcoemon -sd

@@ -1,0 +1,7 @@
+# srcript target setup
+
+/backstores/ramdisk> create dX 256M
+
+/iscsi> create
+/iscsi/iqn.20...da47f30a/tpg1> cd luns
+/iscsi/iqn.20...30a/tpg1/luns> create /backstores/ramdisk/d3

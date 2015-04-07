@@ -1,0 +1,32 @@
+# lldptool settings for back-back target side
+# not working 
+
+lldptool -T -i <interface> -V PFC willing=0 enabled=3
+lldptool -T -i <interface> -V ETS-CFG willing=0 tsa=0:ets,1:ets,2:ets,3:ets,4:ets,5:ets,6:ets,7:ets up2tc=0:2,1:2,2:2,3:1,4:2,5:2,6:2,7:2 tcbw=50,50,0,0,0,0,0,0
+lldptool -T -i <interface> -V ETS-REC willing=0 enableTX=yes tsa=0:ets,1:ets,2:ets,3:ets,4:ets,5:ets,6:ets,7:ets up2tc=0:2,1:2,2:2,3:1,4:2,5:2,6:2,7:2 tcbw=50,50,0,0,0,0,0,0
+# per Marcus's page
+lldptool -T -i pXpX -V APP app=3,1,35078
+# lldptool -T -i <interface> -V APP app=3,1,3260
+# lldptool settings for back-back initiator side
+# leave as-is; willing
+
+
+# juniper commands to setup vn2vn commands
+
+set interfaces xe-0/0/17 mtu 9216
+set interfaces xe-0/0/17 ether-options no-flow-control
+set interfaces xe-0/0/17 unit 0 family ethernet-switching port-mode tagged-access
+set interfaces xe-0/0/17 unit 0 family ethernet-switching vlan members 102
+set interfaces xe-0/0/1
+set interfaces xe-0/0/17 unit 0 family ethernet-switching native-vlan-id 1
+
+# troubles
+
+target is Fedora 18 with old upstream
+target base interface and fcoe interface both show as up
+target interface shows as linkdown
+fipvlan fails or hangs on linkdown interfaces
+reboot sometimes cures linkdown interface
+when targe gets logged in, initiator sees it
+
+ 

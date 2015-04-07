@@ -1,0 +1,100 @@
+alias rd="rdesktop -u Administrator -p Vmware00 -a 16 -f VM"
+export TEST_SCRIPTS=/root/testing ; #. /root/testing/config/init_test.sh
+alias tmsg='tail -f -n 100 /var/log/messages'
+alias gitl="git log --color --pretty=format:'%h %an %s'"
+alias xlock="xscreensaver-command -lock"
+
+neighbor() {
+    lldptool -tni $1|egrep 'IPv4:|Local:|Ifname:'
+}
+
+#rx() {
+#xterm -title $1 -fg black -bg 'navajowhite' -geom 116x32 -sl 1000 -e ssh $1 &
+#}
+
+rx() {
+echo -ne "\033]0;$1\007"
+ssh $1
+}
+
+alias 192='rx 192'
+alias 194='rx 194'
+alias 195='rx 195'
+
+
+fcoe2=eth2.172-fcoe
+fcoe3=eth3.228-fcoe
+fci() { 
+case $1 in
+	2) arg=$fcoe2;;
+	3) arg=$fcoe3;;
+	*) arg=$1;;
+esac
+fcoeadm -i $arg; }
+fcs() { 
+case $1 in
+	2) arg=$fcoe2;;
+	3) arg=$fcoe3;;
+	*) arg=$1;;
+esac
+fcoeadm -S $arg; }
+fcl() { 
+case $1 in
+	2) arg=$fcoe2;;
+	3) arg=$fcoe3;;
+	*) arg=$1;;
+esac
+fcoeadm -l $arg; }
+fcr() { 
+case $1 in
+	2) arg=$fcoe2;;
+	3) arg=$fcoe3;;
+	*) arg=$1;;
+esac
+fcoeadm -r $arg; }
+fct() { 
+case $1 in
+	2) arg=$fcoe2;;
+	3) arg=$fcoe3;;
+	*) arg=$1;;
+esac
+fcoeadm -t $arg; }
+gdo() {
+get-dcb-oper.sh $1
+}
+gdp() {
+get-dcb-peer.sh $1
+}
+gdc() {
+get-dcb-config.sh $1
+}
+
+set -o vi
+shopt -s histappend
+PS1='\h\w\$ '
+export GIT_AUTHOR_NAME="Kevin Ragan"
+export GIT_AUTHOR_EMAIL="kevinx.ragan@intel.com"
+export GIT_COMMITER_NAME=root
+export GIT_COMMITER_EMAIL="<$USER@$HOSTNAME>"
+## MEDUSA BEGIN ##
+## Automatically generated - DO NOT edit between these comment lines.
+
+if [ "${MEDUSA_ENV:-''}" != "yup" ]; then
+        MEDUSA_MLTT_INSTALL_DIR="/opt/medusa_labs/test_tools/"
+        export MEDUSA_MLTT_INSTALL_DIR
+        PATH="${MEDUSA_MLTT_INSTALL_DIR}bin:${PATH}"
+        export PATH
+        MEDUSA_MLM_ADMIN_CFG="/opt/medusa_labs/test_tools/config/MedusaTools.cfg"
+        export MEDUSA_MLM_ADMIN_CFG
+        MEDUSA_MLM_PRODUCT=1/1
+       export MEDUSA_MLM_PRODUCT
+        MEDUSA_ENV="yup"
+        export MEDUSA_ENV
+fi
+
+type pain > /dev/null 2>&1
+if [ $? -ne 0 ]; then
+    PATH="${MEDUSA_MLTT_INSTALL_DIR}bin:${PATH}"
+fi
+
+## MEDUSA END ##

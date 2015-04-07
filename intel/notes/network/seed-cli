@@ -1,0 +1,22 @@
+# wiki: http://lad-storage.jf.intel.com/confluence/display/train/Cisco+Command+Line+Zoning
+# ssh -l admin 10.0.0.174 # pw fsw174fcoe
+# config t
+ 
+# paste, edit and run in shell
+init=<initiator name> #L7_195_tpp1
+pwwn=<initiator port wwn> #2000A0369F0B3F19
+target=clar5_spb1
+
+# create initiator alias
+echo "
+fcalias name $init vsan 174
+member pwwn $pwwn
+# create zone
+zone name z_$init vsan 174
+member fcalias $init
+member fcalias $target
+# add zone to zoneset
+zoneset name zs_less vsan 174
+member z_$init
+# activation
+zoneset activate name zs_less vsan 174"

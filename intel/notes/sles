@@ -1,0 +1,108 @@
+# SLES12  autoyast install
+# commenting out steps not needed after provision.py
+netdevice=eth0 netsetup=dhcp autoyast=ftp://10.55.1.2/deploy/<hostname>.linux.sles12.0.xml
+
+# <F4> ftp boot
+
+###################################### post autoyast install steps ##########################
+
+# network
+############ need to sort out procedure for re-naming interfaces ##########
+# try this on 12 and report
+# as needed to supersede new nameing 
+ln -s /dev/null /usr/lib/udev/rules.d/80-net-name-slot.rules
+# or rename via yast
+# assign ip to eth0
+# default route
+# echo "default 10.55.0.1 - -" > /etc/sysconfig/network/routes
+
+#### one way to change network names; done after /etc/udev/rules.d/70* update  (tested on sles12)
+# grep /etc/sysconfig/network/HWADDR ifcfg-[ep]*|sort -t= -k2
+# old=<oldint> new=<newint>
+# sed -i "s/$old/$new/g" /etc/sysconfig/network/ifcfg-$old  && mv /etc/sysconfig/network/ifcfg-$old /etc/sysconfig/network/ifcfg-$new
+# reboot (worked)
+### would provision.py create valid config files instead and easier?
+
+ifdown <intterface>
+modify /etc/udev/rules.d/70-persistent-net.rules (or its equivalent)
+udevadm control --reload-rules
+udevadm trigger --attr-match=subsystem=net
+ifup <interface>
+###################################################
+
+# zypper install git mlocate htop medusa copa disktest ethregs fio gfio iozone iperf netperf pfc socat tig  tree xdd lsscsi lio-utils ethtool wireshark dstat
+
+
+
+#### git repos #######
+# cd ~
+# echo '10.55.1.2	ume' >> /etc/hosts
+# git clone git://ume/scripts/deploy
+
+###### steps needed after provision.sh #######
+# using testing repo is deprecated; but many scripts there; moving to provision
+# scp -pr kraganx@10.55.1.2:/srv/git/users/kraganx/testing ~
+
+# copy needed files from kevin 
+# cd testing/users/kevin/
+# not all of the below are copied; put them as needed into provision (with cisco.py)
+# cp -rp ~/provision/tool/tester/kraganx/bin ~
+# cd ~/testing/users/kevin/; cp -r commands  .screenrc tests ~
+
+# cp ~/provision/tool/tester/kraganx/.bash* ~
+zypper install --no-recommends medusa
+
+# zypper install -y fcoe-utils
+sed -i '/DEBUG/s/no/yes/' /etc/fcoe/config
+
+# need netprio_cgroup for iscsi testing
+#sles: verify below is correct 
+echo netprio_cgroup > /etc/modules-load.d/netprio.conf
+
+
+systemctl enable lldpad fcoe
+systemctl start lldpad
+   
+
+for port in {sf,tp}p{0,1}; do dcbtool sc $port dcb on;dcbtool sc $port app:fcoe e:1 w:1;dcbtool sc $port pfc e:1 a:1 w:1; cp /etc/fcoe/cfg-ethx /etc/fcoe/cfg-$port; done
+
+systemctl start fcoe 
+
+#cp ~/testing/users/kevin/.[a-z]* ~; #better leave off .bashrc
+# cp ~/testing/users/kevin/.[si]* ~/testing/users/kevin/.bash_profile ~; 
+# cp ~/testing/users/kevin/.bashrc ~ 
+
+
+# for me
+# procdure for pexpect install goes here
+scp khr@10.55.1.115:software/*gz .
+for f in *gz; do tar xzf $f && rm $f; done
+for dir in ipyth*[^z] pexpect*[^z]; do cd $dir; python ./setup.py install;cd ..; done
+
+git config --global user.email "kevinx.ragan@intel.com"
+git config --global kevin.ragan "Kevin Ragan"
+cp ~/provision/tool/tester/kraganx/.[vsi]* ~/provision/tool/tester/kraganx/.bash_profile ~
+
+############# misc stuff #####################33
+
+# echo “default 10.55.0.1 - 1” >> /etc/sysconfig/network/routes
+
+# sample vlan config file /etc/sysconfig/network/ifcfg-<base>.102
+ETHERDEVICE='p4p1'
+VLAN_ID='102'
+BOOTPROTO='static'
+IPADDR='10.2.2.195/24'
+NETMASK='255.255.0.0'
+
+# virtualization
+
+# sut
+zypper in qemu-kvm libvirt #virt-manager
+systemctl start libvrtd
+scp khr@10.55.1.115:iso/* /var/lib/libvirt/images
+# scp /home/ronald/Documents/images/SLE-12-Server-DVD-x86_64-Beta8-DVD1.iso root@10.55.0.212:/var/lib/libvirt/images
+# right-click and connect to the SUT in virt-manager
+# right-click and select "Details", go to storage and hit the refresh button beside "Volumes", you should see your newly copied iso.
+# Optionally also create a new storage pool named "machines" and point it at /var/lib/libvirt/filesystems/, put your machine drive images here
+# Optionally configure your network interfaces and virtual networks now, this can also be done at SUT VM creation time
+# Install using our normal autoyast/kickstart solution, install should take about 12 minutes.

@@ -1,0 +1,175 @@
+#### RHEL Host ####
+
+yum install bridge-utils kvm libvirt virt-manager qemu-kvm
+
+# kernel "modules"
+  kvm and kvm_amd baked in
+
+cat ifcfg-br0
+DEVICE=br0
+TYPE=Bridge
+BOOTPROTO=static
+IPADDR=10.55.0.194
+NETMASK=255.255.0.0
+ONBOOT=yes
+ 
+cat ifcfg-em1
+HWADDR=00:25:90:39:E3:78
+BRIDGE=br0
+#IPADDR=10.55.0.194
+#NETMASK=255.255.255.0
+TYPE=Ethernet
+BOOTPROTO=static
+DEFROUTE=yes
+NAME=em1
+UUID=fa47a0f3-8764-4cd3-b827-e419e4210e2b
+ONBOOT=yes
+
+#### Debian Host ####
+apt-get install qemu-kvm virtinst libvirt-bin virt-manager netcat
+    # for remote mgnt for <user>
+    adduser <user> libvirt
+    adduser <user> kvm
+
+
+
+#### Guest ####
+## install ###
+
+## maybe move this to new install page ###
+setup 1G network connection 
+    needed for:
+        repo updates installs
+        ssh connect
+    steps:
+        maybe save host:/etc/sysconfig/network first
+## SLES ###
+zypper install virt-manager libvirt-daemon qemu-kvm
+
+# try with virsh list on same host; systemctl stop/start libvirtd; may need more packages
+zypper install patterns-sles-kvm_server patterns-sles-kvm_tools qemu-guest-agent
+
+# clone command #
+virt-clone --name guest3 -o v1 --file /var/lib/libvirt/images/guest3.img
+# example url for debian install
+http://linux-ftp.jf.intel.com/pub/mirrors/debian/dists/testing/main/installer-amd64/
+
+
+
+
+
+########################## Brendans Notes ####################
+## integrate these with above
+
+# RedHat KVM Installation.
+# These packages are for KVM itself
+yum install -y libvirt virt-manager qemu-kvm
+# Install these for the fonts and do xhost/xauth for display.
+yum install -y xauth xorg-x11-font*
+# Start the service
+systemctl start libvirtd
+#
+# SuSE KVM Installation
+# These packages are for KVM itself
+zypper install -y libvirt virt-manager qemu-kvm
+# SuSE has xauth and fonts installed by default.
+# Start the service
+systemctl start libvirtd || service libvirtd start
+# SuSE error
+# ** (virt-manager:4364): WARNING **: Couldn't connect to accessibility bus: Failed to connect to socket /tmp/dbus-drwuLuUL60: Connection refused
+# Doesn't actually fix anything.
+systemctl restart dbus.socket
+# VMs disappear when virt-manager is restarted.  Need to recover VM.
+1. Delete storage pool from "Details".
+2. Delete VM (uncheck delete storage).
+3. Create new VM.
+4. Import existing disk image.
+5. Browse to the disk partition holding VM.
+6. Change memory/cpu if needed and change VM name.
+
+# brctl addif virbr0 p6p1
+
+# turn off DHCP in default virtual network.
+# or just don't use it and create your own bridge as defined below.
+
+vi /etc/libvirt/qemu/networks/default.xml
+systemctl restart libvirtd.service
+
+# connect guest eth0 to 10.55.0.0/16
+ip addr del 10.55.3.27/16 dev eth8
+brctl addbr br0
+brctl addif br0 eth8
+ip addr add 10.55.3.27/16 dev br0
+ip l s br0 up
+
+# example from L10-013
+[root@L10-013 network-scripts]# cat ifcfg-br0
+
+DEVICE=br0
+HWADDR=bc:30:5b:ed:49:8d
+TYPE=Bridge
+BOOTPROTO=none
+ONBOOT=yes
+DEFROUTE=yes
+NETBOOT=yes
+NETMASK=255.255.0.0
+IPADDR=10.55.4.13
+METRIC=5
+DELAY=0
+[root@L10-013 network-scripts]# cat ifcfg-em4
+
+DEVICE=em4
+NAME=em4
+HWADDR=bc:30:5b:ed:49:8d
+TYPE=Ethernet
+BOOTPROTO=none
+ONBOOT=yes
+DEFROUTE=yes
+NETBOOT=yes
+BRIDGE=br0
+
+# edit guest settings in virt-manager and set network device to br0
+# "specify shared device name" and use model "virtio"
+# on guest configure eth0 by hand.  pick an IP that won't conflict.
+# and add a route for 10.0.0.0/16 for Medusa
+[root@guest1 ~]# ip addr add 10.55.3.127/16 dev eth0
+[root@guest1 ~]# ip l s eth0 up
+[root@guest1 ~]# ip route add 10.0.0.0/16 via 10.55.0.1 dev eth0
+[root@guest1-l10-13 network-scripts]# echo "10.0.0.0/16 via 10.55.0.1" > route-eth0
+
+
+-- issues with attaching pci devices to guests --
+grep CONFIG_DMAR_DEFAULT_ON /boot/config-`uname -r`
+# edit your boot loader configuration and add intel_iommu=on
+dmesg | grep -e DMAR -e IOMMU
+
+Identify the host PCI device to assign to the guest.
+
+tux@vmhost:~> lspci -nn
+[...] 00:1b.0 Audio device [0403]: Intel Corporation 82801H (ICH8 Family) \
+HD Audio Controller [8086:284b] (rev 02) [...]
+Note down the device (00:1b.0) and vendor (8086:284b) ID.
+
+Unbind the device from host Kernel driver and bind it to the PCI stub driver.
+
+tux@vmhost:~> modprobe pci_stub
+tux@vmhost:~> echo "8086 284b" > /sys/bus/pci/drivers/pci-stub/new_id
+tux@vmhost:~> echo "0000:00:1b.0" > /sys/bus/pci/devices/0000:00:1b.0/driver/unbind
+tux@vmhost:~> echo "0000:00:1b.0" > /sys/bus/pci/drivers/pci-stub/bind
+
+[root@L9-027 ~]# virsh nodedev-list | grep pci
+[root@L9-027 ~]# virsh nodedev-dettach pci_0000_09_00_0
+# and attach device in virt-manager
+# guest hung on boot.
+
+-- direct attach pci with rhel7 --
+
+# still need intel_iommu=on as grub2 option
+
+[root@L10-013 ~]# lspci | grep 520
+42:00.0 Ethernet controller: Intel Corporation Ethernet 10G 2P X520 Adapter (rev 01)
+42:00.1 Ethernet controller: Intel Corporation Ethernet 10G 2P X520 Adapter (rev 01)
+[root@L10-013 ~]# virsh nodedev-list | grep pci | grep 42
+pci_0000_42_00_0
+pci_0000_42_00_1
+[root@L10-013 ~]# rmmod ixgbe

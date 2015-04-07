@@ -1,0 +1,5 @@
+# net_prio module must be loaded at boot; provision.py?
+mkdir /sys/fs/cgroup/net_prio
+mount -t cgroup -onet_prio none /sys/fs/cgroup/net_prio
+systemctl start cgdcbxd
+

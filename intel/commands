@@ -1,0 +1,131 @@
+useradd -m  -g 100 -G sudo -u 1008 -p '$6$wp1ufuKN$5i.J2VxUFOux/X7H7Oao9iTX0rASqFy/eSvNkGDIap.Fqe3ShmRidPU9kXZHTjM/9MI9csV4YsNIinXWBGH7v0:16415' rjbynoex
+useradd -m  -g 100 -G sudo -u 1011 -p '$6$Aq7/LAd2$mpCVI7C2cz64MUFL7liHxvSQ1I8/XMAbT1vxSJdnmvrekJovfIYcR/F6JnKdcfi5kmxOBWRdmpARR2ghOZvy1/' swtaylor
+useradd -m  -g 100 -G sudo -u 1001 -p '$6$sqU2fxyecmoO$r1VrKyTUMNCeSeKYDzG2/r8tIK5Y02n11v9b13FiG.zg7R0KwTjaR45eeJcxmmfNC0WYs.Mdp.9htEb/l.6Jx1' jmorgan1
+
+# example download fedora iso
+wget http://linux-ftp.jf.intel.com/pub/mirrors/fedora/linux/releases/21/Server/x86_64/iso/Fedora-Server-DVD-x86_64-21.iso
+# move git remote repo
+git remote set-url origin git://new.url.here
+# git config
+git config --global user.name "Kevin Ragan"
+git config --global user.email kevinx.ragan@intel.com
+
+# rsync ftp dir from ume to mango
+rsync -ae ssh --exclude /linux-auto kraganx@ume:/srv/ftp/* /srv/ftp
+# rsync git dir from ume to mango
+cd /srv; rsync -ae ssh --exclude git/berta --exclude git/ite-esx --exclude 'git/users/[msvh][grat]*' kraganx@ume:/srv/git /srv
+# rsync home dir from ume to mango
+# rsync data dir ume -> mango
+rsync -ae ssh --exclude /[AEIOW]*  --exclude '/Users/[^rb]*' kraganx@ume:/srv/data/ /srv/data
+rsync -ave ssh --exclude /[AEIOW]*  --exclude 'Users/[^rb]*'  /srv/data/ 10.166.48.35:/srv/data/
+
+# option rom update
+bootutil> bootutil.exe -nic=<n> -up=fcoe -file=<####>.flb
+
+# make -j $JOBS && make -j $JOBS modules_install && make -j $JOBS
+# headers_install && make install get dcb info on neighbor
+lldptool -tni ethx echo -e ',4000\n;\n;' |sfdisk -uM /dev/sdb
+# make tree; assumes 1* files in /mnt/lun1
+for f in {1..10}; do mkdir dir$f; cp /mnt/lun1/1k dir$f; cd dir$f; done for
+size in 512b 1k 2k 4k 8k 16k 32k 64k 256k 512k 1024k ; do pain -d3600 -b$size
+-f./test; done
+# scans pain csv script for errors
+ awk -F, '{p=0; for(i=15; i<27; i++){if($i>0){p=1}}if(p){print $0}}' <*csv|grep
+-v '% CPU'
+# switches on pain for more thruput
+ pain -f/dev/sd\;e,f,g -b512K -o -T4 -t16 512k for size in 512B 4K 16k 64; do
+maim -b$size -Q4 -d3600 -f/dev/sdc,/dev/sdd; done for size in 512B 4K 16k 64;
+do pain -b$size -t4 -d3600 -f'/dev/sd;X,Y'; done for f in b c ; do echo  -e
+',4000\n;\n;' |sfdisk -uM /dev/sd$f; done for f in b c ; do mke2fs
+/dev/sd${f}1; mkdir /mnt/$f; mount /dev/sd${f}1 /mnt/$f; done
+# remount hack
+f=1;for i in {c..m} v; do mount /dev/sd${i}1 /mnt/$((f++)); done diskio1: for
+size in 512b 1k 2k  4k 8k 16k 32k 64k 128k 256k 512k 1024k; do pain -b$size
+-m18 -d3600 -f/dev/sdd,/dev/sde,/dev/sdh,/dev/sdi; done pain -m18
+-f/mnt/b1,/mnt/c1,/mnt/f1,/mnt/d1 diskio17: for a in 0x0, 0xf 0xff 0xfff 0xffff
+0xffff; do echo $a; echo $a >/sys/module/fcoe/parameters/ddp_min; for size in
+512b 1k 2k 4k 8k 16k 32k 64k 128k 256k 512k 1024k; do pain -b$size -d300
+-f/mnt/b/t,/mnt/c/t,/mnt/e/t,/mnt/f/t; done; done
+tshark -i eth3 -w brocadefip2.out ether proto 0x8914 or ether proto 0x8906 or ether proto 0x88CC
+# dump with priorities
+tshark -i $ETH -z proto,colinfo,vlan.priority,vlan.priority
+
+#upstream fix dcbtool sc dcbx v:force-cee
+
+# ieee even split 4q
+lldptool -Ti $eth -V ETS-CFG enableTx=yes willing=no up2tc=0:0,1:0,2:1,3:2,4:2,5:2,6:3,7:3 tcbw=25,25,25,25 tsa=0:ets,1:ets,2:ets,3:ets
+lldptool -Ti $eth -V ETS-REC enableTx=yes up2tc=0:0,1:0,2:1,3:2,4:2,5:2,6:3,7:3 tcbw=25,25,25,25 tsa=0:ets,1:ets,2:ets,3:ets
+# ieee even split 8q
+lldptool -Ti $eth -V ETS-CFG enableTx=yes willing=no up2tc=0:0,1:1,2:2,3:3,4:4,5:5,6:6,7:7 tcbw=12,12,12,12,13,13,13,13 tsa=0:ets,1:ets,2:ets,3:ets,4:ets,5:ets,6:ets,7:ets
+lldptool -Ti $eth -V ETS-REC enableTx=yes up2tc=0:0,1:1,2:2,3:3,4:4,5:5,6:6,7:7 tcbw=12,12,12,12,13,13,13,13 tsa=0:ets,1:ets,2:ets,3:ets,4:ets,5:ets,6:ets,7:ets
+
+# double check the below is correct
+ip link add link <interface> name <interface>.<vlan nu> type vlan id <vlan nu>
+ip addr add <ip/subnet> dev $eth.102
+
+# copy new modulaes update dir
+mkdir /lib/modules/$(uname -r)/updates
+
+# get fip, fcoe and lldp traffic
+tcpdump -i $eth -s 1024 ether proto 0x8906 or ether proto 0x8914 or ether proto 0x88cc -w ~/tmp/fip.dump &
+# option rom
+fcoe@cherry:/srv/ladsw/Linux/optionROM/VC18421_1.6.00/Disk/APPS/BootUtil
+# make targets.dat list
+fcoeadm -t |awk '/\/dev/ {print $2}' > targets.dat lsscsi |awk '/SANBlaze/ ||
+/DGC/ || /IET/ { print $NF}' > targets.dat
+# create 2 gig partition on $disk
+disk=   parted $disk mklabel msdos; parted $disk mkpartfs primary ext2 0 2000
+
+# iscsi; login to selected target
+iscsiadm -m node --targetname
+"iqn.2003-04.com.sanblaze:virtualun.liniop12.target-03000000" --portal
+172.31.2.12 --login
+# view packet buffer layout
+regs.sh eth3 |grep PBSIZE
+
+
+# switch
+#
+## juniper
+# change to dcb mode 
+set protocols dcbx interface xe-0/0/<num> dcbx-version dcbx-1.01
+# change to ieee mode 
+set protocols dcbx interface xe-0/0/<num> dcbx-version ieee-dcbx
+
+## brocade
+show run interface tengigabitethernet X/Y
+debug lldp packet interface te X/Y [detail|rx|tx]
+show lldp interface tengigabit 0/9
+# put this in a script
+last=$(hostname -s |sed 's/[a-z]*//');vconfig add eth3 103; ifconfig eth3.103 10.3.3.$last/24
+last=$(hostname -s |sed 's/[a-z]*//');vconfig add eth2 102; ifconfig eth2.102 10.2.2.$last/24
+last=$(hostname -s |sed 's/[a-z]*//');vconfig add eth3 103; ifconfig vlan103 10.3.3.$last/24
+last=$(hostname -s |sed 's/[a-z]*//');vconfig add eth2 102; ifconfig vlan102 10.2.2.$last/24
+
+# copa
+fcoeadm -t |awk '/dev/ { print "DEVICE : -R-N " $2 }' >devices
+multipath -ll | awk '/dm-/ { print "DEVICE : -R-N /dev/" $2 }'> devices
+multipath -ll | awk '/dm-/ { print "/dev/" $2 }'> targets.dat
+rm /root/tools/copa/step_files/mstd5.log; /root/tools/copa/linux_x86_64/copa /root/tools/copa/step_files/mstd5 devices
+
+INQP=fcoe@cherry:/srv/ladsw/Linux/EMC-INQP/RHEL6.3
+
+grep ^ /sys/devices/virtual/net/*/host*/fc_host/host*/*|less
+
+
+
+# Ross' disktest command
+echo /dev/sd{b,c,d}| disktest -Ag -C0 -D 80:20 -E0 -h 10 -Ibd -K8 -T 6000 -ma -PA -B 1k:256K -N 2000 -w -r -F /dev/stdin
+# minimalist disktest; 1000 seconds, disk traffic messages every 20 secs, read and write
+disktest -T 1000 -h 20 -PT -rw -F ~/targets 
+
+# shutup vim till local vimrc copy is exported.
+touch /root/provision/tool/tester/kraganx/vimrc.local
+# correct version of iperf
+yum install iperf-2*sockprio_intel*
+rdesktop -u Administrator -p Vmware00 -a 16 -g 1200x950 VM
+
+# targetcli
+## 256 ramdisks
+for name in {0..255}; do targetcli backstores/ramdisk create ramdisk$name 8M; done
+for n in {2..255} ; do targetcli /tcm_fc/naa.2000001b2190999e/luns create /backstores/ramdisk/ramdisk$n; done

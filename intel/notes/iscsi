@@ -1,0 +1,49 @@
+### TARGET ###
+# create target from backstore
+/backstores/block/disk3> /iscsi create
+
+#### L7 ######
+# arbitrarily setup iscsi target on 172.55.80.200
+# cisco
+cat ifcfg-p1p1.3260
+DEVICE=p1p1.3260
+BOOTPROTO=static
+ONBOOT=yes
+IPADDR=172.55.80.200
+NETMASK=255.255.255.0
+USERCTL=no
+VLAN=yes
+
+# brocade 
+cat ifcfg-p1p2.3260
+DEVICE=p1p2.3260
+BOOTPROTO=static
+ONBOOT=yes
+IPADDR=172.55.81.200
+NETMASK=255.255.255.0
+USERCTL=no
+VLAN=yes
+
+
+# setting up open authorization; not entirely obvious on site wiki page
+set attribute  authentication=0 demo_mode_write_protect=0 generate_node_acls=1 cache_dynamic_acls=1
+
+# 
+last=$(hostname -s |sed 's/.*-//')
+ip link add dev $ETH.3260 link $ETH type vlan id 3260
+ip addr add 172.55.80.$last/24 dev $ETH.3260
+ip link set $ETH.3260 up
+
+
+### CLIENT ###
+# iscsid was running already
+# discovery command
+iscsiadm --mode discoverydb --type sendtargets --portal 172.31.2.60 --discover
+# login command 
+iscsiadm -m node -L all
+# lifted from test case instructions; figure these out
+-iscsiadm --mode discoverydb –login
+-iscsiadm -m discoverydb -t sendtargets -p {target IP 	address}:3260 -D
+-iscsiadm --mode node --targetname {target iqn} --portal {target IP address}:3260 –login
+
+

@@ -1,0 +1,13 @@
+### kickstart install ##
+ks=ftp://10.166.48.35/deploy/LIN-ND#-###.linux.fc##.cfg
+
+#### configure vlan file
+cat ifcfg-p1p1.102
+DEVICE=p1p1.102
+BOOTPROTO=static
+ONBOOT=yes
+IPADDR=10.2.2.193
+NETMASK=255.255.255.0
+USERCTL=no
+VLAN=yes
+

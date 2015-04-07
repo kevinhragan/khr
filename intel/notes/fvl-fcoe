@@ -1,0 +1,8 @@
+download 3.14-rc6 from kernel.org
+  is i40e stuff ok in 3.14.-rc6 kernel
+apply patch from Vasu
+do standard make commands
+reboot
+  
+fipvlan gets nothing on 166 p3p1
+fipvlan works on 168 p2p1

@@ -1,0 +1,1 @@
+file /usr/include/linux/netfilter_ipv6/ip6t_frag.h from install of kernel-vanilla-headers-3.11.0-0.201309131619git6e46645.linux_stable.fc18.x86_64 conflicts with file from package kernel-headers-3.6.10-4.fc18.x86_64

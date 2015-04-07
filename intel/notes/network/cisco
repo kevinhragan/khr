@@ -1,0 +1,201 @@
+# from nexus 5000 wiki page
+# Display per-port policy mappings
+show policy-map interface brief
+
+# To adjust FCoE / non-FCoE ratio.
+
+# FCoE is on TC 3, everything else is on TC != 3.
+
+This sets 33% / 66% FCoE / non-FCoE
+policy-map type queuing dcb-test
+    class type queuing class-fcoe
+      bandwidth percent 33
+    class type queuing class-default
+      bandwidth percent 66
+
+
+
+# trial config 
+class-map type qos qos-class-3
+  match cos 3
+class-map type queuing queuing-class-3
+  match qos-group 3
+
+class-map type qos qos-class-iscsi
+  match cos 4
+class-map type queuing queuing-class-iscsi
+  match qos-group 2
+
+class-map type qos qos-class-4
+  match cos 6
+class-map type queuing queuing-class-4
+  match qos-group 4
+
+policy-map type qos qos-pmap-5tc
+#  class type qos class-default
+#    set qos-group 0
+  class class-fcoe
+    set qos-group 1
+  class qos-class-iscsi
+    set qos-group 2
+  class qos-class-3
+    set qos-group 3
+  class qos-class-4
+    set qos-group 4
+    
+policy-map type queuing queuing-pmap-5tc
+  class type queuing class-default
+    bandwidth percent 20
+  class type queuing class-fcoe
+    bandwidth percent 40
+  class type queuing queuing-class-iscsi
+    bandwidth percent 20
+  class type queuing queuing-class-3
+     bandwidth percent 10
+  class type queuing queuing-class-4
+     bandwidth percent 10
+
+# apply interface specific to interface
+service-policy type queuing input queuing-pmap-5tc
+service-policy type queuing output queuing-pmap-5tc 
+service-policy type qos input qos-pmap-5tc
+# revert
+service-policy type queuing input fcoe-default-in-policy
+service-policy type queuing output fcoe-default-out-policy
+no service-policy type qos input qos-pmap-5tc
+
+
+## needed later ##
+policy-map type network-qos netqos-pmap-jumbo-5tc
+  class type network-qos netqos-class-2
+    pause no-drop
+    mtu 9216
+  class type network-qos netqos-class-iscsi
+    pause no-drop
+    mtu 9216
+  class type network-qos netqos-class-6
+    pause no-drop
+    mtu 9216
+  class type network-qos class-default
+    mtu 9216
+
+## modify (?)
+interface ethernet x/y qos
+  service-policy type qos input qos-pmap-5tc
+  service-policy type queuing input queuing-pmap-5tc
+  service-policy type queuing output queuing-pmap-5tc
+
+# clean up
+no class-map qos-class-2
+no class-map queuing-class-2
+
+no class-map qos-class-iscsi
+no class-map queuing-class-iscsi
+
+no class-map qos-class-6
+no class-map queuing-class-6
+
+no policy-map qos-pmap-5tc
+##########
+no class type queuing queuing-class-2
+no class type queuing queuing-class-iscsi
+no  class type queuing class-fcoe
+no  class type queuing class-default
+no  class type network-qos netqos-class-2
+no  class type network-qos netqos-class-iscsi
+no  class type network-qos netqos-class-6
+no  class type network-qos class-default
+no policy-map type queuing queuing-pmap-5tc
+no policy-map type network-qos netqos-pmap-jumbo-5tc
+
+
+
+# config example from iscsi-dcb wiki page
+
+class-map type qos match-all qos-class-iscsi
+  match cos 4
+  match protocol iscsi
+class-map type queuing queuing-class-iscsi
+  match qos-group 4
+policy-map type qos qos-pmap-2tc
+policy-map type qos qos-pmap-3tc
+  class qos-class-iscsi
+    set qos-group 4
+policy-map type queuing queuing-pmap-2tc
+  class type queuing class-fcoe
+    bandwidth percent 40
+  class type queuing class-default
+    bandwidth percent 60
+policy-map type queuing queuing-pmap-3tc
+  class type queuing queuing-class-iscsi
+    bandwidth percent 25
+  class type queuing class-fcoe
+    bandwidth percent 30
+  class type queuing class-default
+    bandwidth percent 45
+class-map type network-qos netqos-class-iscsi
+  match qos-group 4
+policy-map type network-qos netqos-pmap-jumbo-2tc
+  class type network-qos class-default
+    mtu 9216
+policy-map type network-qos netqos-pmap-jumbo-3tc
+  class type network-qos netqos-class-iscsi
+    pause no-drop
+    mtu 9216
+  class type network-qos class-default
+    mtu 9216
+system qos
+  service-policy type qos input qos-pmap-3tc
+  service-policy type queuing input queuing-pmap-3tc
+  service-policy type queuing output queuing-pmap-3tc
+  service-policy type network-qos netqos-pmap-jumbo-3tc
+
+# config example from qos manual
+
+fcf(config-if)# service-policy type queuing input dcb-test
+fcf(config-if)# service-policy type queuing output dcb-test
+(config)# class-map type qos cmap-qos-bandwidth
+(config-cmap-qos)# match access-group ACL-bandwidth
+(config-cmap-qos)# exit
+(config)# policy-map type qos pmap-qos-eth1-1
+(config-pmap-qos)# class cmap-qos-bandwidth
+(config-pmap-c-qos)# set qos-group 2
+(config-pmap-c-qos)# exit
+(config-pmap-qos)# exit
+
+(config)# interface ethernet 1/1
+(config-if)# service-policy type qos input pmap-qos-eth1-1
+(config-if)# exit
+
+(config)# class-map type queuing cmap-que-bandwidth
+(config-cmap-que)# match qos-group 2
+(config-cmap-que)# exit
+
+(config)# policy-map type queuing pmap-que-eth1-2
+(config-pmap-que)# class type queuing class-default
+(config-pmap-c-que)# bandwidth percent 10
+(config-pmap-c-que)# exit
+(config-pmap-que)# class type queuing class-fcoe
+(config-pmap-c-que)# bandwidth percent 40
+(config-pmap-c-que)# exit
+(config-pmap-que)# class type queuing cmap-que-bandwidth
+(config-pmap-c-que)# bandwidth percent 50
+(config-pmap-c-que)# exit
+(config-pmap-que)# exit
+
+(config)# interface ethernet 1/3
+(config-if)# service-policy type queuing output pmap-que-eth1-2
+(config-if)# exit
+
+(config)# class-map type network-qos cmap-nq-bandwidth
+(config-cmap-nq)# match qos-group 2
+(config-cmap-nq)# exit
+
+(config)# policy-map type network-qos pmap-nq-bandwidth
+(config-pmap-nq)# class type network-qos cmap-nq-bandwidth
+(config-pmap-c-nq)# exit
+(config-pmap-nq)# exit
+
+(config)# system qos
+(config-sys-qos)# service-policy type network-qos pmap-nq-bandwidth
+(config-sys-qos)# exit

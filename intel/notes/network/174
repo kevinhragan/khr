@@ -1,0 +1,1598 @@
+ssh admin@10.0.0.74
+pw: fsw174fcoe
+
+
+
+zoneset name zs_less vsan 174
+  zone name z_L1_016_tpp3 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:a0:36:9f:0e:20:c9
+  
+  zone name z_L1_002_tpp4 vsan 174
+    pwwn 20:00:a0:36:9f:0f:17:ef
+  * fcid 0xec0060 [pwwn 50:06:01:6e:3b:20:0f:18]
+  
+  zone name z_L1_003_tpp4 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0xec0240 [pwwn 20:00:a0:36:9f:14:67:cb]
+  
+  zone name z_L1_004_sfp2 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0xec00c0 [pwwn 20:00:90:e2:ba:29:34:c2]
+  * fcid 0xec0040 [pwwn 50:06:01:66:3b:20:0f:18]
+  
+  zone name z_L1_005_sfp2 vsan 174
+  * fcid 0xec0000 [pwwn 50:06:01:63:46:e0:51:26]
+  * fcid 0xec0100 [pwwn 20:00:90:e2:ba:29:33:22]
+  
+  zone name z_auto_prodsut02_00 vsan 174
+    pwwn 20:00:00:1b:21:90:92:16
+  * fcid 0x020000 [pwwn 20:24:00:80:e5:18:2f:72]
+  
+  zone name z_L4-50N-Testhost-01_sfp4 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:00:1b:21:69:9e:ea
+  
+  zone name z_L4-50N-Testhost-01_sfp5 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:00:1b:21:69:9e:eb
+  
+  zone name z_L4-50N-Auxhost-01_sfp4 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:00:1b:21:67:66:2a
+  
+  zone name z_L4-50N-Auxhost-01_sfp5 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:00:1b:21:67:66:2b
+  
+  zone name z_L4-50T-Testhost-02_tpp2 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:a0:36:9f:0f:19:23
+  
+  zone name z_L4-50T-Testhost-02_tpp3 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:a0:36:9f:0f:19:21
+  
+  zone name z_L4-50T-Auxhost-02_tpp2 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:a0:36:9f:0e:20:cf
+  
+  zone name z_L1_006_sfp2 vsan 174
+  * fcid 0xec0000 [pwwn 50:06:01:63:46:e0:51:26]
+    pwwn 20:00:00:1b:21:6b:95:4a
+  
+  zone name z_L6_167_sfp0 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0x020b00 [pwwn 50:06:01:61:3b:20:00:73]
+    pwwn 20:00:00:1b:21:87:ab:5e
+  
+  zone name z_L1_006_tpp4 vsan 174
+  * fcid 0xec0000 [pwwn 50:06:01:63:46:e0:51:26]
+    pwwn 20:00:a0:36:9f:1d:18:3b
+  
+  zone name z_L1_007_tpp0_Clar4_a0 vsan 174
+  * fcid 0xec0000 [pwwn 50:06:01:63:46:e0:51:26]
+    pwwn 20:00:a0:36:9f:14:65:c3
+  
+  zone name z_L1_007_tpp1_Clar4_a0 vsan 174
+  * fcid 0xec0000 [pwwn 50:06:01:63:46:e0:51:26]
+  * fcid 0xec0540 [pwwn 20:00:a0:36:9f:14:65:c1]
+  
+  zone name z_L1_007_sfp0 vsan 174
+  * fcid 0xec0000 [pwwn 50:06:01:63:46:e0:51:26]
+    pwwn 20:00:90:e2:ba:17:3b:ae
+  
+  zone name z_L1_008_sfp0_Clar4_a0 vsan 174
+  * fcid 0xec0000 [pwwn 50:06:01:63:46:e0:51:26]
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0xec0040 [pwwn 50:06:01:66:3b:20:0f:18]
+    pwwn 20:00:90:e2:ba:29:37:32
+  * fcid 0x990000 [pwwn 20:00:00:1b:21:90:97:16]
+  * fcid 0x990020 [pwwn 20:00:a0:36:9f:1d:0f:4b]
+  
+  zone name z_L1_009_sfp0_Clar4_a0 vsan 174
+  * fcid 0xec0000 [pwwn 50:06:01:63:46:e0:51:26]
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:90:e2:ba:29:33:56
+  
+  zone name zs_L1_015_tpp4_Clar4_a0 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  
+  zone name zs_L1_015_tpp5_Clar4_b0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  
+  zone name zs_L1_015_sfp6_Clar4_a0 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:00:1b:21:6b:95:7a
+  
+  zone name z_L6_163_sfp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+    pwwn 20:00:00:1b:21:67:65:fa
+  
+  zone name z_L6_163_tpp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x6100a1 [pwwn 20:00:a0:36:9f:0f:1a:bf]
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+  
+  zone name zs_L2_038_sfp6_Clar4_a0 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0x990000 [pwwn 20:00:00:1b:21:90:97:16]
+  * fcid 0x990020 [pwwn 20:00:a0:36:9f:1d:0f:4b]
+  
+  zone name z_L8_226_sfp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x440420 [pwwn 20:00:00:1b:21:a5:9b:32]
+  * fcid 0x020b00 [pwwn 50:06:01:61:3b:20:00:73]
+  
+  zone name z_L8_226_tpp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x440440 [pwwn 20:00:a0:36:9f:0b:3f:d3]
+  * fcid 0x020b00 [pwwn 50:06:01:61:3b:20:00:73]
+  
+  zone name z_L6_164_sfp0 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0x020b00 [pwwn 50:06:01:61:3b:20:00:73]
+    pwwn 20:00:00:1b:21:69:9e:3a
+  
+  zone name z_L7_194_tpp vsan 174
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+    pwwn 20:00:a0:36:9f:0e:21:ef
+  
+  zone name z_L1_022_tpp5 vsan 174
+  * fcid 0xec0000 [pwwn 50:06:01:63:46:e0:51:26]
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+    pwwn 20:00:a0:36:9f:19:a0:7d
+  
+  zone name z_L1_012 vsan 174
+  * fcid 0xec0040 [pwwn 50:06:01:66:3b:20:0f:18]
+  
+  zone name z_L2_vasu_sfp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+    pwwn 20:00:00:1b:21:87:ab:f6
+    pwwn 20:00:00:11:0d:55:88:00
+    pwwn 20:02:00:11:0d:a7:bc:00
+    pwwn 20:03:00:11:0d:a7:bd:00
+    pwwn 20:01:00:11:0d:55:89:00
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+  
+  zone name z_L1_024_sfp4 vsan 174
+  * fcid 0xec0000 [pwwn 50:06:01:63:46:e0:51:26]
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:00:1b:21:87:ab:26
+  
+  zone name z_L1_023_sfp6 vsan 174
+  * fcid 0xec0000 [pwwn 50:06:01:63:46:e0:51:26]
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:00:1b:21:87:ab:ba
+  
+  zone name z_L1_002_sfp8 vsan 174
+  * fcid 0xec0060 [pwwn 50:06:01:6e:3b:20:0f:18]
+  * fcid 0xec0080 [pwwn 20:00:90:e2:ba:22:f8:e6]
+  
+  zone name z_L1_022_sfp6 vsan 174
+  * fcid 0xec0000 [pwwn 50:06:01:63:46:e0:51:26]
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:00:1b:21:87:ab:46
+  
+  zone name z_L8_230_tpp1 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+    pwwn 20:00:a0:36:9f:1a:0e:71
+  
+  zone name z_L8_236_sfp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+    pwwn 20:00:90:e2:ba:39:b7:e6
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+  
+  zone name zs_L2_038_tpp4_Clar4_a0 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0x990020 [pwwn 20:00:a0:36:9f:1d:0f:4b]
+  
+  zone name z_L1_023_tpp5 vsan 174
+  * fcid 0xec0000 [pwwn 50:06:01:63:46:e0:51:26]
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+    pwwn 20:00:a0:36:9f:19:a3:75
+  
+  zone name z_L8_233_tpp1 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:a0:36:9f:14:66:25
+  
+  zone name z_L6_161_sfp0 vsan 174
+    pwwn 20:00:90:e2:ba:39:b9:82
+  * fcid 0x020b00 [pwwn 50:06:01:61:3b:20:00:73]
+  
+  zone name z_L8_236_tpp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+    pwwn 20:00:a0:36:9f:1d:16:eb
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+  
+  zone name z_L2_037_sfp4 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:00:1b:21:67:65:fa
+  
+  zone name zs_L2_038_tpp5_Clar4_b0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x990040 [pwwn 20:00:a0:36:9f:1d:0f:49]
+  
+  zone name z_L1_023_tpp4 vsan 174
+  * fcid 0xec0000 [pwwn 50:06:01:63:46:e0:51:26]
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:a0:36:9f:19:a3:77
+  
+  zone name z_L8_239_sfp0 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:00:1b:21:6b:94:ea
+  
+  zone name z_L1_024_tpp4 vsan 174
+  * fcid 0xec0000 [pwwn 50:06:01:63:46:e0:51:26]
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:a0:36:9f:14:69:2b
+  
+  zone name z_L1_024_tpp5 vsan 174
+  * fcid 0xec0000 [pwwn 50:06:01:63:46:e0:51:26]
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+    pwwn 20:00:a0:36:9f:14:69:29
+  
+  zone name z_L1_022_tpp4 vsan 174
+  * fcid 0xec0000 [pwwn 50:06:01:63:46:e0:51:26]
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:a0:36:9f:19:a0:7f
+  
+  zone name zs_L2_041_sfp5_Clar4_a0 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  
+  zone name z_linux-auto-sut vsan 174
+    pwwn 50:06:01:61:41:e0:63:03
+    pwwn 20:00:90:e2:ba:39:ba:13
+  
+  zone name z_L1_007_sfp1 vsan 174
+    pwwn 20:00:90:e2:ba:17:3b:af
+  
+  zone name z_L1_018_tpp4 vsan 174
+  * fcid 0xec0000 [pwwn 50:06:01:63:46:e0:51:26]
+  * fcid 0xec0040 [pwwn 50:06:01:66:3b:20:0f:18]
+    pwwn 20:00:a0:36:9f:0f:18:0f
+  
+  zone name z_L1_018_tpp5 vsan 174
+  * fcid 0xec0000 [pwwn 50:06:01:63:46:e0:51:26]
+  * fcid 0xec0060 [pwwn 50:06:01:6e:3b:20:0f:18]
+    pwwn 20:00:a0:36:9f:0f:18:0d
+  
+  zone name z_L1_018_sfp6 vsan 174
+  * fcid 0xec0380 [pwwn 20:00:00:1b:21:9b:50:2a]
+  * fcid 0x020800 [pwwn 50:0a:09:86:8f:30:c4:f0]
+  
+  zone name z_L1_002_tpp5 vsan 174
+  * fcid 0xec0060 [pwwn 50:06:01:6e:3b:20:0f:18]
+    pwwn 20:00:a0:36:9f:0f:17:ed
+  
+  zone name z_L8_240_sfp1 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:00:1b:21:87:a9:d7
+  
+  zone name z_L8_227_tpp1 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+  * fcid 0x4403a0 [pwwn 20:00:a0:36:9f:0e:23:4d]
+  
+  zone name z_L8_233_sfp1 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:90:e2:ba:17:3a:1f
+  
+  zone name zs_L2_041_tpp6_Clar4_a0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  
+  zone name z_auto_temp_04 vsan 174
+  * fcid 0xec0000 [pwwn 50:06:01:63:46:e0:51:26]
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0x020000 [pwwn 20:24:00:80:e5:18:2f:72]
+    pwwn 20:00:a0:36:9f:1d:0e:43
+  
+  zone name zs_L2_041_tpp7_Clar4_b0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  
+  zone name z_L1_003_sfp6 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:00:1b:21:69:9e:36
+  
+  zone name z_Oracle_Concord_tpp0 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:a0:36:9f:02:38:9b
+  
+  zone name z_L8_228_sfp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+    pwwn 20:00:00:1b:21:87:a8:12
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+  
+  zone name z_L1_019_tpp0 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:a0:36:9f:0b:40:a3
+  
+  zone name z_L1_014_sfp9 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0xec0b00 [pwwn 20:00:90:e2:ba:17:38:ff]
+  
+  zone name z_L4-50T-Auxhost-02_tpp3 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:a0:36:9f:0e:20:cd
+  
+  zone name z_L4-51N-Testhost-03_sfp2 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:00:1b:21:90:9a:22
+  
+  zone name z_L4-51N-Testhost-03_sfp3 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:00:1b:21:90:9a:23
+  
+  zone name z_L4-51N-Auxhost-03_sfp2 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:00:1b:21:87:ac:7e
+  
+  zone name z_L1_019_tpp1 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+    pwwn 20:00:a0:36:9f:0b:40:a1
+    pwwn 20:00:00:1b:21:87:a8:a7
+  
+  zone name z_L4-51N-Auxhost-03_sfp3 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:00:1b:21:87:ac:7f
+  
+  zone name z_L4-51T-Testhost-04_tpp2 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+    pwwn 20:00:a0:36:9f:1d:11:d7
+  
+  zone name z_L4-51T-Testhost-04_tpp3 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+    pwwn 20:00:a0:36:9f:1d:11:d5
+  
+  zone name z_L4-51T-Auxhost-04_tpp2 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:a0:36:9f:1d:12:fb
+  
+  zone name z_L4-51T-Auxhost-04_tpp3 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:a0:36:9f:1d:12:f9
+  
+  zone name z_L4-55N-Testhost-05_sfp2 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0x020800 [pwwn 50:0a:09:86:8f:30:c4:f0]
+    pwwn 20:00:00:1b:21:9b:50:22
+  
+  zone name z_L4-55N-Testhost-05_sfp3 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0x020800 [pwwn 50:0a:09:86:8f:30:c4:f0]
+    pwwn 20:00:00:1b:21:9b:50:23
+  
+  zone name z_L4-55N-Auxhost-05_sfp2 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0x020800 [pwwn 50:0a:09:86:8f:30:c4:f0]
+    pwwn 20:00:00:1b:21:87:a8:a6
+  
+  zone name z_L1_019_sfp4 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0xec0400 [pwwn 20:00:90:e2:ba:22:f7:3e]
+  
+  zone name z_L1_014_sfp8 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0xec01c0 [pwwn 20:00:90:e2:ba:17:38:fe]
+  
+  zone name z_L8_228_tpp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+    pwwn 20:00:a0:36:9f:0b:40:cf
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+  
+  zone name z_L7_210_tpp0 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0x020b00 [pwwn 50:06:01:61:3b:20:00:73]
+    pwwn 20:00:a0:36:9f:1d:19:19
+  
+  zone name z_L1-015_tpp7 vsan 174
+  * fcid 0xec0040 [pwwn 50:06:01:66:3b:20:0f:18]
+    pwwn 20:00:a0:36:9f:18:2d:29
+  
+  zone name z_L8_228_tpp1 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+    pwwn 20:00:a0:36:9f:0b:40:cd
+  
+  zone name z_L1_015_quad9 vsan 174
+  * fcid 0xec0040 [pwwn 50:06:01:66:3b:20:0f:18]
+    pwwn 20:00:68:05:ca:19:e4:a7
+  
+  zone name z_L1_015_quad11 vsan 174
+  * fcid 0xec0060 [pwwn 50:06:01:6e:3b:20:0f:18]
+    pwwn 20:00:68:05:ca:19:e4:a5
+    pwwn 20:00:a0:36:9f:1d:0f:e9
+  
+  zone name z_L1_006_tpp5 vsan 174
+  * fcid 0xec0000 [pwwn 50:06:01:63:46:e0:51:26]
+    pwwn 20:00:a0:36:9f:1d:18:39
+  
+  zone name z_auto_batsut02_00 vsan 174
+  * fcid 0xc90000 [pwwn 20:00:00:1b:21:57:1f:06]
+  * fcid 0x020000 [pwwn 20:24:00:80:e5:18:2f:72]
+  
+  zone name z_L4-55N-Auxhost-05_sfp3 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0x020800 [pwwn 50:0a:09:86:8f:30:c4:f0]
+    pwwn 20:00:00:1b:21:87:a8:a7
+  
+  zone name z_L7_202_sfp0 vsan 174
+  * fcid 0x020b00 [pwwn 50:06:01:61:3b:20:00:73]
+  * fcid 0x4300a0 [pwwn 20:00:90:e2:ba:17:3b:aa]
+  
+  zone name z_L1_015_tpp6 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0xec0aa1 [pwwn 20:00:a0:36:9f:18:2d:2b]
+  
+  zone name z_L1_017_tpp3 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0x020000 [pwwn 20:24:00:80:e5:18:2f:72]
+  * fcid 0x020b00 [pwwn 50:06:01:61:3b:20:00:73]
+  * fcid 0xec0560 [pwwn 20:00:a0:36:9f:14:65:05]
+  
+  zone name z_L1_015_sfp5 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+    pwwn 20:00:00:1b:21:6b:95:7b
+  
+  zone name z_L10_19_sfp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+  * fcid 0xe204a0 [pwwn 20:01:d4:ae:52:2d:4e:87]
+  
+  zone name z_L6_166_tpp0 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:a0:36:9f:1d:11:9f
+  
+  zone name z_L10_14_gkp1 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+    pwwn 20:01:d4:ae:52:2d:4e:44
+  
+  zone name h-016-tpp2-clar4 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:a0:36:9f:0e:20:cb
+  
+  zone name z_L1_003_tpp5 vsan 174
+  * fcid 0xec0200 [pwwn 20:00:a0:36:9f:14:67:c9]
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  
+  zone name h-016-tpp3-clar4 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:a0:36:9f:0e:20:c9
+  
+  zone name z_L1_010_sfp2 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:00:1b:21:69:9e:42
+  
+  zone name z_L4-55T-Testhost-06_tpp2 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0x020800 [pwwn 50:0a:09:86:8f:30:c4:f0]
+    pwwn 20:00:a0:36:9f:1d:10:33
+  
+  zone name z_L4-55T-Testhost-06_tpp3 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0x020800 [pwwn 50:0a:09:86:8f:30:c4:f0]
+    pwwn 20:00:a0:36:9f:1d:10:31
+  
+  zone name z_L4-55T-Auxhost-06_tpp2 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0x020800 [pwwn 50:0a:09:86:8f:30:c4:f0]
+    pwwn 20:00:a0:36:9f:1d:0f:eb
+  
+  zone name z_L4-55T-Auxhost-06_tpp3 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0x020800 [pwwn 50:0a:09:86:8f:30:c4:f0]
+    pwwn 20:00:a0:36:9f:1d:0f:e9
+  
+  zone name z_L1_010_sfp3 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:00:1b:21:69:9e:43
+  
+  zone name z_L6_162_sfp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+  * fcid 0x610140 [pwwn 20:00:90:e2:ba:06:8c:26]
+  
+  zone name z_L6_162_tpp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+  * fcid 0x610160 [pwwn 20:00:a0:36:9f:0b:3f:67]
+  
+  zone name z_L1_011_sfp2 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0xec0b80 [pwwn 20:00:00:1b:21:69:9e:da]
+  
+  zone name z_L8_224_sfp0 vsan 174
+  * fcid 0x020b00 [pwwn 50:06:01:61:3b:20:00:73]
+    pwwn 20:00:00:1b:21:55:23:da
+  
+  zone name z_L8_227_sfp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+  * fcid 0x440400 [pwwn 20:00:00:1b:21:90:99:9e]
+  
+  zone name z_L8_227_tpp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+  * fcid 0x4400a0 [pwwn 20:00:a0:36:9f:0e:23:4f]
+  
+  zone name z_L1_003_sfp7 vsan 174
+  * fcid 0xec0040 [pwwn 50:06:01:66:3b:20:0f:18]
+  * fcid 0xec0ba0 [pwwn 20:00:00:1b:21:53:1d:fb]
+  
+  zone name z_L8_229_sfp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x020b00 [pwwn 50:06:01:61:3b:20:00:73]
+  * fcid 0x440000 [pwwn 20:00:00:1b:21:55:23:92]
+  
+  zone name z_L8_229_tpp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x020b00 [pwwn 50:06:01:61:3b:20:00:73]
+  * fcid 0x440100 [pwwn 20:00:a0:36:9f:0b:40:6b]
+  
+  zone name z_L1_014_tpp4 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0xec0180 [pwwn 20:00:a0:36:9f:0b:40:23]
+  
+  zone name z_L1_014_tpp5 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0xec0220 [pwwn 20:00:a0:36:9f:0b:40:21]
+  
+  zone name z_L8_225_sfp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x020b00 [pwwn 50:06:01:61:3b:20:00:73]
+    pwwn 20:00:00:1b:21:90:97:e2
+  
+  zone name z_L8_226_tpp1 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+  * fcid 0x440460 [pwwn 20:00:a0:36:9f:0b:3f:d1]
+  
+  zone name z_L8_229_tpp1 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x440360 [pwwn 20:00:a0:36:9f:0b:40:69]
+  
+  zone name z_L7_203_sfp0 vsan 174
+  * fcid 0x020b00 [pwwn 50:06:01:61:3b:20:00:73]
+    pwwn 20:00:90:e2:ba:17:3b:da
+  
+  zone name z_L8_230_sfp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+    pwwn 20:00:00:1b:21:67:64:66
+  
+  zone name z_L8_230_tpp0 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:a0:36:9f:1a:0e:73
+  
+  zone name z_L8_235_sfp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+    pwwn 20:00:90:e2:ba:39:b8:6a
+  
+  zone name z_L8_235_tpp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x4401a0 [pwwn 20:00:a0:36:9f:1d:0f:b3]
+  
+  zone name z_L8_235_tpp1 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0x4402a0 [pwwn 20:00:a0:36:9f:1d:0f:b1]
+  
+  zone name z_L10_15_sfp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+  * fcid 0xe20280 [pwwn 20:01:d4:ae:52:2d:4e:53]
+  
+  zone name z_L3_233_tpp1 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+    pwwn 20:00:a0:36:9f:14:66:25
+  
+  zone name z_L8_234_tpp0 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:a0:36:9f:1d:0f:cb
+  
+  zone name z_L8_234_tpp1 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0x440320 [pwwn 20:00:a0:36:9f:1d:0f:c9]
+  
+  zone name z_L2_039_sfp0 vsan 174
+  * fcid 0x021000 [pwwn 50:0a:09:86:9f:30:c4:f0]
+    pwwn 20:00:00:1b:21:72:ce:aa
+  
+  zone name z_L2_vasu_sfp1 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0x390061 [pwwn 20:00:00:1b:21:87:ab:10]
+  * fcid 0x020b00 [pwwn 50:06:01:61:3b:20:00:73]
+  
+  zone name z_L8_240_tpp0 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:a0:36:9f:1d:0f:cf
+  
+  zone name z_L8_240_tpp1 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:a0:36:9f:1d:0f:cd
+  
+  zone name z_L8_231_sfp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+    pwwn 20:00:00:1b:21:57:20:02
+  
+  zone name z_L8_231_tpp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x440120 [pwwn 20:00:a0:36:9f:14:65:8f]
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+  
+  zone name z_L8_231_tpp1 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+    pwwn 20:00:a0:36:9f:14:65:8d
+  
+  zone name z_devbench_neerav_ef01 vsan 174
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+    pwwn 20:00:00:00:00:00:03:17
+  
+  zone name z_L8_239_tpp0 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0x020b00 [pwwn 50:06:01:61:3b:20:00:73]
+  * fcid 0x4404a0 [pwwn 20:00:a0:36:9f:14:64:ff]
+  
+  zone name z_L6_160_sfp0 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0x610061 [pwwn 20:00:00:1b:21:90:94:5b]
+  
+  zone name z_L7_194_sfp0 vsan 174
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+    pwwn 20:00:00:1b:21:9e:66:0e
+  
+  zone name z_L1_011_sfp3 vsan 174
+  * fcid 0xec0040 [pwwn 50:06:01:66:3b:20:0f:18]
+    pwwn 20:00:00:1b:21:69:9e:db
+  
+  zone name z_L8_232_sfp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+  * fcid 0x440520 [pwwn 20:00:90:e2:ba:06:88:aa]
+  
+  zone name z_L8_232_tpp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+  * fcid 0x4404c0 [pwwn 20:00:a0:36:9f:0e:21:2b]
+  
+  zone name z_L6_172_sfp0 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0x020b00 [pwwn 50:06:01:61:3b:20:00:73]
+    pwwn 20:00:00:1b:21:9e:66:aa
+  
+  zone name z_L6_167_tpp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+  * fcid 0x6101c0 [pwwn 20:00:a0:36:9f:0b:3e:57]
+  
+  zone name z_L10_4_tpp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+  * fcid 0xe20000 [pwwn 20:00:00:1b:21:74:bd:96]
+  
+  zone name z_L10_4_sfp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+  * fcid 0xe20060 [pwwn 20:00:00:1b:21:9e:65:22]
+  
+  zone name z_L10_6_sfp0 vsan 174
+  * fcid 0xe20220 [pwwn 20:00:90:e2:ba:39:b7:52]
+  
+  zone name z_L10_6_tpp0 vsan 174
+  * fcid 0xe20200 [pwwn 20:00:a0:36:9f:11:7e:5e]
+  
+  zone name z_L5_137_sfp0 vsan 174
+  * fcid 0x020b00 [pwwn 50:06:01:61:3b:20:00:73]
+    pwwn 20:00:90:e2:ba:6b:16:22
+  
+  zone name z_LB_224_tfp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+    pwwn 20:00:68:05:ca:23:b3:9e
+  
+  zone name z_LB_224_tfp1 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+    pwwn 20:00:68:05:ca:23:b3:9f
+  
+  zone name z_L10_10_tpp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+  * fcid 0xe200a0 [pwwn 20:00:a0:36:9f:19:ed:5f]
+  
+  zone name z_L10_012_tpp1 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0x020b00 [pwwn 50:06:01:61:3b:20:00:73]
+    pwwn 20:00:a0:36:9f:1d:10:f1
+  
+  zone name z_L10_013_tpp1 vsan 174
+  * fcid 0x020b00 [pwwn 50:06:01:61:3b:20:00:73]
+    pwwn 20:00:a0:36:9f:1d:12:b9
+  
+  zone name z_L10_2_sfp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+  * fcid 0xe20120 [pwwn 20:00:00:1b:21:9b:4f:7a]
+  
+  zone name z_L1_012_sfp2 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0xec0a60 [pwwn 20:00:00:1b:21:72:cf:66]
+  
+  zone name z_L1_012_sfp3 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+    pwwn 20:00:00:1b:21:72:cf:67
+  
+  zone name z_L1_013_sfp2 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0xec01c0 [pwwn 20:00:90:e2:ba:17:38:fe]
+  * fcid 0xec0a20 [pwwn 20:00:90:e2:ba:39:b3:6a]
+  
+  zone name z_L1_013_sfp3 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+    pwwn 20:00:90:e2:ba:39:b3:6b
+  
+  zone name z_L10_9_sfp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+  * fcid 0xe200c0 [pwwn 20:00:00:1b:21:60:62:be]
+  
+  zone name z_L10_007_sfp1 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0xe20160 [pwwn 20:00:a0:36:9f:11:74:97]
+  
+  zone name z_L10_5_sfp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+  * fcid 0xe20040 [pwwn 20:00:00:1b:21:87:a7:52]
+  
+  zone name z_L10_5_tpp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+  * fcid 0xe20020 [pwwn 20:00:00:1b:21:bd:b6:f7]
+  
+  zone name z_L10_007_tpp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0xe20180 [pwwn 20:00:a0:36:9f:1d:0f:df]
+  
+  zone name z_L1_017_tpp2 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x020b00 [pwwn 50:06:01:61:3b:20:00:73]
+  * fcid 0xec02c0 [pwwn 20:00:a0:36:9f:14:65:07]
+  
+  zone name z_L10_008_tpp0 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0xe201c0 [pwwn 20:00:a0:36:9f:0f:1a:43]
+  
+  zone name z_L5_137_tpp0 vsan 174
+  * fcid 0x020b00 [pwwn 50:06:01:61:3b:20:00:73]
+    pwwn 20:00:a0:36:9f:24:d6:b3
+  
+  zone name z_L7_204_tpp0 vsan 174
+  * fcid 0x020b00 [pwwn 50:06:01:61:3b:20:00:73]
+    pwwn 20:00:a0:36:9f:29:b0:79
+  
+  zone name z_L7_205_tpp0 vsan 174
+  * fcid 0x020b00 [pwwn 50:06:01:61:3b:20:00:73]
+  * fcid 0x430260 [pwwn 20:00:a0:36:9f:0b:3e:fb]
+  
+  zone name z_L5_137_tpp1 vsan 174
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+    pwwn 20:00:a0:36:9f:24:d6:b1
+  
+  zone name z_L7_204_tpp1 vsan 174
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+    pwwn 20:00:a0:36:9f:29:b0:7b
+  
+  zone name z_L7_205_tpp1 vsan 174
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+  * fcid 0x430240 [pwwn 20:00:a0:36:9f:0b:3e:f9]
+  
+  zone name z_L7_211_tpp0 vsan 174
+  * fcid 0xec0040 [pwwn 50:06:01:66:3b:20:0f:18]
+  * fcid 0x020b00 [pwwn 50:06:01:61:3b:20:00:73]
+  * fcid 0x430080 [pwwn 20:00:a0:36:9f:1d:18:55]
+  
+  zone name z_L10_13_wfp0 vsan 174
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+    pwwn 20:01:bc:30:5b:ed:49:89
+  
+  zone name z_L7_214_tpp0 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0x020b00 [pwwn 50:06:01:61:3b:20:00:73]
+    pwwn 20:00:a0:36:9f:0b:3e:b9
+  
+  zone name z_L10_12_efp0 vsan 174
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+    pwwn 20:01:bc:30:5b:f2:e3:d3
+  
+  zone name z_L10_13_sf2p0 vsan 174
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+  * fcid 0xe20122 [pwwn 20:01:a0:36:9f:15:e6:7d]
+  
+  zone name z_L7_198_sfp0 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0x020b00 [pwwn 50:06:01:61:3b:20:00:73]
+    pwwn 20:00:00:1b:21:b1:f4:3a
+  
+  zone name z_L8_241_sfp0 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:00:1b:21:90:97:0a
+  
+  zone name z_L10_17_gkp1 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+  * fcid 0xe20460 [pwwn 20:01:d4:ae:52:2d:4e:6b]
+  
+  zone name z_L7_198_sfp1 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0x020b00 [pwwn 50:06:01:61:3b:20:00:73]
+    pwwn 20:00:00:1b:21:b1:f4:3b
+  
+  zone name z_L7_198_tpp1 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+  * fcid 0x020b00 [pwwn 50:06:01:61:3b:20:00:73]
+  * fcid 0x4403c0 [pwwn 20:00:a0:36:9f:1d:18:5f]
+  
+  zone name z_L8_241_tpp0 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:a0:36:9f:1d:12:c9
+  
+  zone name z_L8_241_tpp1 vsan 174
+  * fcid 0x020900 [pwwn 50:06:01:60:3b:20:0f:18]
+    pwwn 20:00:a0:36:9f:1d:12:cb
+  
+  zone name z_L8_236_tpp1 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+    pwwn 20:00:a0:36:9f:1d:16:e9
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+  
+  zone name z_L10_16_sfp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+  * fcid 0xe202c0 [pwwn 20:01:d4:ae:52:2d:4e:60]
+  
+  zone name z_L10_18_gkp1 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+  * fcid 0xe20480 [pwwn 20:01:d4:ae:52:2d:4e:78]
+  
+  zone name z_L10_20_sfp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+  * fcid 0xe20420 [pwwn 20:01:d4:ae:52:2d:4e:94]
+  
+  zone name z_L10_21_sfp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+  * fcid 0xe20380 [pwwn 20:01:d4:ae:52:2d:4e:a1]
+  
+  zone name z_L10_22_sfp0 vsan 174
+  * fcid 0x020a00 [pwwn 50:06:01:68:3b:20:0f:18]
+  * fcid 0x020c00 [pwwn 50:06:01:69:3b:20:00:73]
+  * fcid 0xe203a0 [pwwn 20:01:d4:ae:52:2d:4e:ae]
+
+
+
+
+
+fcalias name Compellent_fcoe_3422 vsan 174
+  pwwn 50:00:d3:10:00:29:34:22
+
+fcalias name H15-qua111 vsan 174
+  pwwn 20:00:68:05:ca:19:e4:a5
+  pwwn 20:00:a0:36:9f:1d:0f:e9
+
+fcalias name H15-qua19 vsan 174
+  pwwn 20:00:68:05:ca:19:e4:a7
+
+fcalias name L1-015_tpp7 vsan 174
+  pwwn 20:00:a0:36:9f:18:2d:29
+
+fcalias name L1-016-tpp2 vsan 174
+  pwwn 20:00:a0:36:9f:0e:20:cb
+
+fcalias name L1-016-tpp3 vsan 174
+  pwwn 20:00:a0:36:9f:0e:20:c9
+
+fcalias name L1-017-tpp2 vsan 174
+  pwwn 20:00:a0:36:9f:14:65:07
+
+fcalias name L1-017-tpp3 vsan 174
+  pwwn 20:00:a0:36:9f:14:65:05
+
+fcalias name L10_007_sfp1 vsan 174
+  pwwn 20:00:a0:36:9f:11:74:97
+
+fcalias name L10_007_tpp0 vsan 174
+  pwwn 20:00:a0:36:9f:1d:0f:df
+
+fcalias name L10_008_tpp0 vsan 174
+  pwwn 20:00:a0:36:9f:0f:1a:43
+
+fcalias name L10_012_tpp1 vsan 174
+  pwwn 20:00:a0:36:9f:1d:10:f1
+
+fcalias name L10_013_tpp1 vsan 174
+  pwwn 20:00:a0:36:9f:1d:12:b9
+
+fcalias name L10_10_tpp0 vsan 174
+  pwwn 20:00:a0:36:9f:19:ed:5f
+
+fcalias name L10_12_efp0 vsan 174
+  pwwn 20:01:bc:30:5b:f2:e3:d3
+
+fcalias name L10_13_sf2p0 vsan 174
+  pwwn 20:01:a0:36:9f:15:e6:7d
+
+fcalias name L10_13_wfp0 vsan 174
+  pwwn 20:01:bc:30:5b:ed:49:89
+
+fcalias name L10_14_gkp1 vsan 174
+  pwwn 20:01:d4:ae:52:2d:4e:44
+
+fcalias name L10_15_sfp0 vsan 174
+  pwwn 20:01:d4:ae:52:2d:4e:53
+
+fcalias name L10_16_sfp0 vsan 174
+  pwwn 20:01:d4:ae:52:2d:4e:60
+
+fcalias name L10_17_gkp1 vsan 174
+  pwwn 20:01:d4:ae:52:2d:4e:6b
+
+fcalias name L10_18_gkp1 vsan 174
+  pwwn 20:01:d4:ae:52:2d:4e:78
+
+fcalias name L10_19_sfp0 vsan 174
+  pwwn 20:01:d4:ae:52:2d:4e:87
+
+fcalias name L10_20_sfp0 vsan 174
+  pwwn 20:01:d4:ae:52:2d:4e:94
+
+fcalias name L10_21_sfp0 vsan 174
+  pwwn 20:01:d4:ae:52:2d:4e:a1
+
+fcalias name L10_22_sfp0 vsan 174
+  pwwn 20:01:d4:ae:52:2d:4e:ae
+
+fcalias name L10_2_sfp0 vsan 174
+  pwwn 20:00:00:1b:21:9b:4f:7a
+
+fcalias name L10_4_sfp0 vsan 174
+  pwwn 20:00:00:1b:21:9e:65:22
+
+fcalias name L10_4_tpp0 vsan 174
+  pwwn 20:00:00:1b:21:74:bd:96
+
+fcalias name L10_5_sfp0 vsan 174
+  pwwn 20:00:00:1b:21:87:a7:52
+
+fcalias name L10_5_tpp0 vsan 174
+  pwwn 20:00:00:1b:21:bd:b6:f7
+
+fcalias name L10_6_sfp0 vsan 174
+  pwwn 20:00:90:e2:ba:39:b7:52
+
+fcalias name L10_6_tpp0 vsan 174
+  pwwn 20:00:a0:36:9f:11:7e:5e
+
+fcalias name L10_9_sfp0 vsan 174
+  pwwn 20:00:00:1b:21:60:62:be
+
+fcalias name L1_002_C_tpp4 vsan 174
+  pwwn 20:00:a0:36:9f:0f:17:ef
+
+fcalias name L1_002_D_tpp5 vsan 174
+  pwwn 20:00:a0:36:9f:0f:17:ed
+
+fcalias name L1_002_sfp6 vsan 174
+  pwwn 20:00:90:e2:ba:22:f8:e6
+
+fcalias name L1_003_sfp6 vsan 174
+  pwwn 20:00:00:1b:21:69:9e:36
+
+fcalias name L1_003_sfp7 vsan 174
+  pwwn 20:00:00:1b:21:53:1d:fb
+
+fcalias name L1_003_tpp4 vsan 174
+  pwwn 20:00:a0:36:9f:14:67:cb
+
+fcalias name L1_003_tpp5_67c9 vsan 174
+  pwwn 20:00:a0:36:9f:14:67:c9
+
+fcalias name L1_004_sfp2 vsan 174
+  pwwn 20:00:90:e2:ba:29:34:c2
+
+fcalias name L1_005_npiv2 vsan 174
+  pwwn 20:02:90:e2:ba:29:33:22
+
+fcalias name L1_005_npiv3 vsan 174
+  pwwn 20:03:90:e2:ba:29:33:22
+
+fcalias name L1_005_sfp1p1_npiv_2001 vsan 174
+  pwwn 20:01:90:e2:ba:29:33:22
+
+fcalias name L1_005_sfp2 vsan 174
+  pwwn 20:00:90:e2:ba:29:33:22
+
+fcalias name L1_006_sfp2 vsan 174
+  pwwn 20:00:00:1b:21:6b:95:4a
+
+fcalias name L1_006_tpp4 vsan 174
+  pwwn 20:00:a0:36:9f:1d:18:3b
+
+fcalias name L1_006_tpp5 vsan 174
+  pwwn 20:00:a0:36:9f:1d:18:39
+
+fcalias name L1_007_sfp0 vsan 174
+  pwwn 20:00:90:e2:ba:17:3b:ae
+
+fcalias name L1_007_sfp1 vsan 174
+  pwwn 20:00:90:e2:ba:17:3b:af
+
+fcalias name L1_007_tpp0 vsan 174
+  pwwn 20:00:a0:36:9f:14:65:c3
+
+fcalias name L1_007_tpp1 vsan 174
+  pwwn 20:00:a0:36:9f:14:65:c1
+
+fcalias name L1_008_sfp0 vsan 174
+  pwwn 20:00:90:e2:ba:29:37:32
+
+fcalias name L1_009_sfp0 vsan 174
+  pwwn 20:00:90:e2:ba:29:33:56
+
+fcalias name L1_010_sfp2 vsan 174
+  pwwn 20:00:00:1b:21:69:9e:42
+
+fcalias name L1_010_sfp3 vsan 174
+  pwwn 20:00:00:1b:21:69:9e:43
+
+fcalias name L1_011_sfp2 vsan 174
+  pwwn 20:00:00:1b:21:69:9e:da
+
+fcalias name L1_011_sfp3 vsan 174
+  pwwn 20:00:00:1b:21:69:9e:db
+
+fcalias name L1_012_sfp2 vsan 174
+  pwwn 20:00:00:1b:21:72:cf:66
+
+fcalias name L1_012_sfp3 vsan 174
+  pwwn 20:00:00:1b:21:72:cf:67
+
+fcalias name L1_013_sfp2 vsan 174
+  pwwn 20:00:90:e2:ba:17:38:fe
+  pwwn 20:00:90:e2:ba:39:b3:6a
+
+fcalias name L1_013_sfp3 vsan 174
+  pwwn 20:00:90:e2:ba:39:b3:6b
+
+fcalias name L1_014_sfp8 vsan 174
+  pwwn 20:00:90:e2:ba:17:38:fe
+
+fcalias name L1_014_sfp9 vsan 174
+  pwwn 20:00:90:e2:ba:17:38:ff
+
+fcalias name L1_014_tpp4 vsan 174
+  pwwn 20:00:a0:36:9f:0b:40:23
+
+fcalias name L1_014_tpp5 vsan 174
+  pwwn 20:00:a0:36:9f:0b:40:21
+
+fcalias name L1_015_sfp4 vsan 174
+  pwwn 20:00:00:1b:21:6b:95:7a
+
+fcalias name L1_015_sfp5 vsan 174
+  pwwn 20:00:00:1b:21:6b:95:7b
+
+fcalias name L1_015_sfp6 vsan 174
+  pwwn 20:00:00:1b:21:6b:95:7a
+
+fcalias name L1_015_tpp6 vsan 174
+  pwwn 20:00:a0:36:9f:18:2d:2b
+
+fcalias name L1_016_tpp3 vsan 174
+  pwwn 20:00:a0:36:9f:0e:20:c9
+
+fcalias name L1_017_tpp2 vsan 174
+  pwwn 20:00:a0:36:9f:14:65:07
+
+fcalias name L1_017_tpp3 vsan 174
+  pwwn 20:00:a0:36:9f:14:65:05
+
+fcalias name L1_018_sfp6 vsan 174
+  pwwn 20:00:00:1b:21:9b:50:2a
+
+fcalias name L1_018_tpp4 vsan 174
+  pwwn 20:00:a0:36:9f:0f:18:0f
+
+fcalias name L1_018_tpp5 vsan 174
+  pwwn 20:00:a0:36:9f:0f:18:0d
+
+fcalias name L1_019_sfp4 vsan 174
+  pwwn 20:00:90:e2:ba:22:f7:3e
+
+fcalias name L1_019_tpp0 vsan 174
+  pwwn 20:00:a0:36:9f:0b:40:a3
+
+fcalias name L1_019_tpp1 vsan 174
+  pwwn 20:00:a0:36:9f:0b:40:a1
+  pwwn 20:00:00:1b:21:87:a8:a7
+
+fcalias name L1_022_sfp6 vsan 174
+  pwwn 20:00:00:1b:21:87:ab:46
+
+fcalias name L1_022_tpp4 vsan 174
+  pwwn 20:00:a0:36:9f:19:a0:7f
+
+fcalias name L1_022_tpp5 vsan 174
+  pwwn 20:00:a0:36:9f:19:a0:7d
+
+fcalias name L1_023_sfp6 vsan 174
+  pwwn 20:00:00:1b:21:87:ab:ba
+
+fcalias name L1_023_tpp4 vsan 174
+  pwwn 20:00:a0:36:9f:19:a3:77
+
+fcalias name L1_023_tpp5 vsan 174
+  pwwn 20:00:a0:36:9f:19:a3:75
+
+fcalias name L1_024_sfp3 vsan 174
+  pwwn 20:00:00:1b:21:87:ab:27
+
+fcalias name L1_024_sfp4 vsan 174
+  pwwn 20:00:00:1b:21:87:ab:26
+
+fcalias name L1_024_tpp4 vsan 174
+  pwwn 20:00:a0:36:9f:14:69:2b
+
+fcalias name L1_024_tpp5 vsan 174
+  pwwn 20:00:a0:36:9f:14:69:29
+
+fcalias name L2_033_ssb_p0 vsan 174
+  pwwn 20:00:00:11:0d:55:88:00
+
+fcalias name L2_033_ssb_p2 vsan 174
+  pwwn 20:02:00:11:0d:a7:bc:00
+
+fcalias name L2_037_sfp4 vsan 174
+  pwwn 20:00:00:1b:21:67:65:fa
+
+fcalias name L2_038_sfp6 vsan 174
+  pwwn 20:00:00:1b:21:90:97:16
+  pwwn 20:00:a0:36:9f:1d:0f:4b
+
+fcalias name L2_038_tpp4 vsan 174
+  pwwn 20:00:a0:36:9f:1d:0f:4b
+
+fcalias name L2_038_tpp5 vsan 174
+  pwwn 20:00:a0:36:9f:1d:0f:49
+
+fcalias name L2_039_sfp0 vsan 174
+  pwwn 20:00:00:1b:21:72:ce:aa
+
+fcalias name L2_042_sp6 vsan 174
+  pwwn 20:00:00:1b:21:72:cf:66
+
+fcalias name L2_042_tpp5 vsan 174
+  pwwn 20:00:a0:36:9f:1d:0f:c9
+
+fcalias name L2_047_sfp4 vsan 174
+  pwwn 20:00:90:e2:ba:39:b6:b6
+
+fcalias name L2_047_sfp7 vsan 174
+  pwwn 20:00:00:1b:21:87:a9:33
+
+fcalias name L2_048_tpp4 vsan 174
+  pwwn 20:00:a0:36:9f:1d:18:cf
+
+fcalias name L2_vasu_sfp0 vsan 174
+  pwwn 20:00:00:1b:21:87:ab:f6
+
+fcalias name L2_vasu_sfp1 vsan 174
+  pwwn 20:00:00:1b:21:87:ab:10
+
+fcalias name L4-50N-Auxhost-01_sfp4 vsan 174
+  pwwn 20:00:00:1b:21:67:66:2a
+
+fcalias name L4-50N-Auxhost-01_sfp5 vsan 174
+  pwwn 20:00:00:1b:21:67:66:2b
+
+fcalias name L4-50N-Testhost-01_sfp4 vsan 174
+  pwwn 20:00:00:1b:21:69:9e:ea
+
+fcalias name L4-50N-Testhost-01_sfp5 vsan 174
+  pwwn 20:00:00:1b:21:69:9e:eb
+
+fcalias name L4-50T-Auxhost-02_tpp2 vsan 174
+  pwwn 20:00:a0:36:9f:0e:20:cf
+
+fcalias name L4-50T-Auxhost-02_tpp3 vsan 174
+  pwwn 20:00:a0:36:9f:0e:20:cd
+
+fcalias name L4-50T-Testhost-02_tpp2 vsan 174
+  pwwn 20:00:a0:36:9f:0f:19:23
+
+fcalias name L4-50T-Testhost-02_tpp3 vsan 174
+  pwwn 20:00:a0:36:9f:0f:19:21
+
+fcalias name L4-51N-Auxhost-03_sfp2 vsan 174
+  pwwn 20:00:00:1b:21:87:ac:7e
+
+fcalias name L4-51N-Auxhost-03_sfp3 vsan 174
+  pwwn 20:00:00:1b:21:87:ac:7f
+
+fcalias name L4-51N-Testhost-03_sfp2 vsan 174
+  pwwn 20:00:00:1b:21:90:9a:22
+
+fcalias name L4-51N-Testhost-03_sfp3 vsan 174
+  pwwn 20:00:00:1b:21:90:9a:23
+
+fcalias name L4-51T-Auxhost-04_tpp2 vsan 174
+  pwwn 20:00:a0:36:9f:1d:12:fb
+
+fcalias name L4-51T-Auxhost-04_tpp3 vsan 174
+  pwwn 20:00:a0:36:9f:1d:12:f9
+
+fcalias name L4-51T-Testhost-04_tpp2 vsan 174
+  pwwn 20:00:a0:36:9f:1d:11:d7
+
+fcalias name L4-51T-Testhost-04_tpp3 vsan 174
+  pwwn 20:00:a0:36:9f:1d:11:d5
+
+fcalias name L4-55N-Auxhost-05_sfp2 vsan 174
+  pwwn 20:00:00:1b:21:87:a8:a6
+
+fcalias name L4-55N-Auxhost-05_sfp3 vsan 174
+  pwwn 20:00:00:1b:21:87:a8:a7
+
+fcalias name L4-55N-Testhost-05_sfp2 vsan 174
+  pwwn 20:00:00:1b:21:9b:50:22
+
+fcalias name L4-55N-Testhost-05_sfp3 vsan 174
+  pwwn 20:00:00:1b:21:9b:50:23
+
+fcalias name L4-55T-Auxhost-06_tpp2 vsan 174
+  pwwn 20:00:a0:36:9f:1d:0f:eb
+
+fcalias name L4-55T-Auxhost-06_tpp3 vsan 174
+  pwwn 20:00:a0:36:9f:1d:0f:e9
+
+fcalias name L4-55T-Testhost-06_tpp2 vsan 174
+  pwwn 20:00:a0:36:9f:1d:10:33
+
+fcalias name L4-55T-Testhost-06_tpp3 vsan 174
+  pwwn 20:00:a0:36:9f:1d:10:31
+
+fcalias name L5_137_sfp0 vsan 174
+  pwwn 20:00:90:e2:ba:6b:16:22
+
+fcalias name L5_137_tpp0 vsan 174
+  pwwn 20:00:a0:36:9f:24:d6:b3
+
+fcalias name L5_137_tpp1 vsan 174
+  pwwn 20:00:a0:36:9f:24:d6:b1
+
+fcalias name L6_160_sfp0 vsan 174
+  pwwn 20:00:00:1b:21:90:94:5b
+
+fcalias name L6_161_sfp0 vsan 174
+  pwwn 20:00:90:e2:ba:39:b9:82
+
+fcalias name L6_162_sfp0 vsan 174
+  pwwn 20:00:90:e2:ba:06:8c:26
+
+fcalias name L6_162_tpp0 vsan 174
+  pwwn 20:00:a0:36:9f:0b:3f:67
+
+fcalias name L6_163_sfp0 vsan 174
+  pwwn 20:00:00:1b:21:67:65:fa
+
+fcalias name L6_163_tpp0 vsan 174
+  pwwn 20:00:a0:36:9f:0f:1a:bf
+
+fcalias name L6_164_sfp0 vsan 174
+  pwwn 20:00:00:1b:21:69:9e:3a
+
+fcalias name L6_166_tpp0 vsan 174
+  pwwn 20:00:a0:36:9f:1d:11:9f
+
+fcalias name L6_167_sfp0 vsan 174
+  pwwn 20:00:00:1b:21:87:ab:5e
+
+fcalias name L6_167_tpp0 vsan 174
+  pwwn 20:00:a0:36:9f:0b:3e:57
+
+fcalias name L6_172_sfp0 vsan 174
+  pwwn 20:00:00:1b:21:9e:66:aa
+
+fcalias name L7_194_sfp0 vsan 174
+  pwwn 20:00:00:1b:21:9e:66:0e
+
+fcalias name L7_194_tpp0 vsan 174
+  pwwn 20:00:a0:36:9f:0e:21:ef
+
+fcalias name L7_198_sfp0 vsan 174
+  pwwn 20:00:00:1b:21:b1:f4:3a
+
+fcalias name L7_198_sfp1 vsan 174
+  pwwn 20:00:00:1b:21:b1:f4:3b
+
+fcalias name L7_198_tpp1 vsan 174
+  pwwn 20:00:a0:36:9f:1d:18:5f
+
+fcalias name L7_202_sfp0 vsan 174
+  pwwn 20:00:90:e2:ba:17:3b:aa
+
+fcalias name L7_203_sfp0 vsan 174
+  pwwn 20:00:90:e2:ba:17:3b:da
+
+fcalias name L7_204_tpp0 vsan 174
+  pwwn 20:00:a0:36:9f:29:b0:79
+
+fcalias name L7_204_tpp1 vsan 174
+  pwwn 20:00:a0:36:9f:29:b0:7b
+
+fcalias name L7_205_tpp0 vsan 174
+  pwwn 20:00:a0:36:9f:0b:3e:fb
+
+fcalias name L7_205_tpp1 vsan 174
+  pwwn 20:00:a0:36:9f:0b:3e:f9
+
+fcalias name L7_210_tpp0 vsan 174
+  pwwn 20:00:a0:36:9f:1d:19:19
+
+fcalias name L7_211_tpp0 vsan 174
+  pwwn 20:00:a0:36:9f:1d:18:55
+
+fcalias name L7_214_tpp0 vsan 174
+  pwwn 20:00:a0:36:9f:0b:3e:b9
+
+fcalias name L8_224_sfp0 vsan 174
+  pwwn 20:00:00:1b:21:55:23:da
+
+fcalias name L8_225_sfp0 vsan 174
+  pwwn 20:00:00:1b:21:90:97:e2
+
+fcalias name L8_226_sfp0 vsan 174
+  pwwn 20:00:00:1b:21:a5:9b:32
+
+fcalias name L8_226_tpp0 vsan 174
+  pwwn 20:00:a0:36:9f:0b:3f:d3
+
+fcalias name L8_226_tpp1 vsan 174
+  pwwn 20:00:a0:36:9f:0b:3f:d1
+
+fcalias name L8_227_sfp0 vsan 174
+  pwwn 20:00:00:1b:21:90:99:9e
+
+fcalias name L8_227_tpp0 vsan 174
+  pwwn 20:00:a0:36:9f:0e:23:4f
+
+fcalias name L8_227_tpp1 vsan 174
+  pwwn 20:00:a0:36:9f:0e:23:4d
+
+fcalias name L8_228_sfp0 vsan 174
+  pwwn 20:00:00:1b:21:87:a8:12
+
+fcalias name L8_228_tpp0 vsan 174
+  pwwn 20:00:a0:36:9f:0b:40:cf
+
+fcalias name L8_228_tpp1 vsan 174
+  pwwn 20:00:a0:36:9f:0b:40:cd
+
+fcalias name L8_229_sfp0 vsan 174
+  pwwn 20:00:00:1b:21:55:23:92
+
+fcalias name L8_229_tpp0 vsan 174
+  pwwn 20:00:a0:36:9f:0b:40:6b
+
+fcalias name L8_229_tpp1 vsan 174
+  pwwn 20:00:a0:36:9f:0b:40:69
+
+fcalias name L8_230_sfp0 vsan 174
+  pwwn 20:00:00:1b:21:67:64:66
+
+fcalias name L8_230_tpp0 vsan 174
+  pwwn 20:00:a0:36:9f:1a:0e:73
+
+fcalias name L8_230_tpp1 vsan 174
+  pwwn 20:00:a0:36:9f:1a:0e:71
+
+fcalias name L8_231_sfp0 vsan 174
+  pwwn 20:00:00:1b:21:57:20:02
+
+fcalias name L8_231_tpp0 vsan 174
+  pwwn 20:00:a0:36:9f:14:65:8f
+
+fcalias name L8_231_tpp1 vsan 174
+  pwwn 20:00:a0:36:9f:14:65:8d
+
+fcalias name L8_232_sfp0 vsan 174
+  pwwn 20:00:90:e2:ba:06:88:aa
+
+fcalias name L8_232_tpp0 vsan 174
+  pwwn 20:00:a0:36:9f:0e:21:2b
+
+fcalias name L8_233_sfp1 vsan 174
+  pwwn 20:00:90:e2:ba:17:3a:1f
+
+fcalias name L8_233_tpp1 vsan 174
+  pwwn 20:00:a0:36:9f:14:66:25
+
+fcalias name L8_234_tpp0 vsan 174
+  pwwn 20:00:a0:36:9f:1d:0f:cb
+
+fcalias name L8_234_tpp1 vsan 174
+  pwwn 20:00:a0:36:9f:1d:0f:c9
+
+fcalias name L8_235_sfp0 vsan 174
+  pwwn 20:00:90:e2:ba:39:b8:6a
+
+fcalias name L8_235_tpp0 vsan 174
+  pwwn 20:00:a0:36:9f:1d:0f:b3
+
+fcalias name L8_235_tpp1 vsan 174
+  pwwn 20:00:a0:36:9f:1d:0f:b1
+
+fcalias name L8_236_sfp0 vsan 174
+  pwwn 20:00:90:e2:ba:39:b7:e6
+
+fcalias name L8_236_tpp0 vsan 174
+  pwwn 20:00:a0:36:9f:1d:16:eb
+
+fcalias name L8_236_tpp1 vsan 174
+  pwwn 20:00:a0:36:9f:1d:16:e9
+
+fcalias name L8_239_sfp0 vsan 174
+  pwwn 20:00:00:1b:21:6b:94:ea
+
+fcalias name L8_239_tpp0 vsan 174
+  pwwn 20:00:a0:36:9f:14:64:ff
+
+fcalias name L8_240_sfp1 vsan 174
+  pwwn 20:00:00:1b:21:87:a9:d7
+
+fcalias name L8_240_tpp0 vsan 174
+  pwwn 20:00:a0:36:9f:1d:0f:cf
+
+fcalias name L8_240_tpp1 vsan 174
+  pwwn 20:00:a0:36:9f:1d:0f:cd
+
+fcalias name L8_241_sfp0 vsan 174
+  pwwn 20:00:00:1b:21:90:97:0a
+
+fcalias name L8_241_tpp0 vsan 174
+  pwwn 20:00:a0:36:9f:1d:12:c9
+
+fcalias name L8_241_tpp1 vsan 174
+  pwwn 20:00:a0:36:9f:1d:12:cb
+
+fcalias name LB_224_tfp0 vsan 174
+  pwwn 20:00:68:05:ca:23:b3:9e
+
+fcalias name LB_224_tfp1 vsan 174
+  pwwn 20:00:68:05:ca:23:b3:9f
+
+fcalias name Oracle_Concord_tpp0 vsan 174
+  pwwn 20:00:a0:36:9f:02:38:9b
+
+fcalias name absolute_head_a vsan 174
+  pwwn 50:0a:09:86:8f:30:c4:f0
+
+fcalias name absolute_head_b vsan 174
+  pwwn 50:0a:09:86:9f:30:c4:f0
+
+fcalias name auto-04-temp vsan 174
+  pwwn 20:00:a0:36:9f:1d:0e:43
+
+fcalias name clar1_spa1 vsan 174
+  pwwn 50:06:01:61:41:e0:33:75
+
+fcalias name clar1_spb1 vsan 174
+  pwwn 50:06:01:69:41:e0:33:75
+
+fcalias name clar2_spa1 vsan 174
+  pwwn 50:06:01:61:41:e0:63:03
+
+fcalias name clar4_fcoe_spa0 vsan 174
+  pwwn 50:06:01:66:3b:20:0f:18
+
+fcalias name clar4_fcoe_spb0 vsan 174
+  pwwn 50:06:01:6e:3b:20:0f:18
+
+fcalias name clar4_spa0 vsan 174
+  pwwn 50:06:01:60:3b:20:0f:18
+
+fcalias name clar4_spb0 vsan 174
+  pwwn 50:06:01:68:3b:20:0f:18
+
+fcalias name clar5_spa1 vsan 174
+  pwwn 50:06:01:61:3b:20:00:73
+
+fcalias name clar5_spb1 vsan 174
+  pwwn 50:06:01:69:3b:20:00:73
+
+fcalias name compellent_fcoe_340A vsan 174
+  pwwn 50:00:d3:10:00:29:34:0a
+
+fcalias name devbench-neerav-ef01 vsan 174
+  pwwn 20:00:00:00:00:00:03:17
+
+fcalias name ibm_ds5020_spa_ch2 vsan 174
+  pwwn 20:24:00:80:e5:18:2f:72
+
+fcalias name ibm_ds5020_spb_ch2 vsan 174
+  pwwn 20:25:00:80:e5:18:2f:72
+
+fcalias name l1_015_tpp7 vsan 174
+  pwwn 20:00:a0:36:9f:18:2d:29
+
+fcalias name l2_042_sfp7 vsan 174
+  pwwn 20:00:00:1b:21:69:9e:17
+
+fcalias name l2_042_tpp4 vsan 174
+  pwwn 20:00:a0:36:9f:1d:0f:cb
+
+fcalias name linux-auto-sut vsan 174
+  pwwn 20:00:90:e2:ba:39:ba:13
+
+fcalias name netapp6 vsan 174
+  pwwn 20:00:00:1b:21:72:d0:37
+
+fcalias name sanblaze4_fc0 vsan 174
+  pwwn 20:00:00:11:0d:1a:8d:00
+
+fcalias name sanblaze4_fc1 vsan 174
+  pwwn 20:01:00:11:0d:1a:8c:00
+
+fcalias name sanblaze4_fc2 vsan 174
+  pwwn 20:02:00:11:0d:1a:8b:00
+
+fcalias name sanblaze4_fc3 vsan 174
+  pwwn 20:03:00:11:0d:1a:8a:00
+
+fcalias name softsanblaze4_fc0 vsan 174
+  pwwn 20:00:00:11:0d:55:88:00
+
+fcalias name softsanblaze4_fc1 vsan 174
+  pwwn 20:01:00:11:0d:55:89:00
+
+fcalias name softsanblaze4_fc2 vsan 174
+  pwwn 20:02:00:11:0d:a7:bc:00
+
+fcalias name softsanblaze4_fc3 vsan 174
+  pwwn 20:03:00:11:0d:a7:bd:00
+
+fcalias name vmax_7F0 vsan 174
+  pwwn 50:00:09:72:c0:09:29:58
+
+fcalias name vnx_spa1_a3 vsan 174
+  pwwn 50:06:01:63:46:e0:51:26
+
+
+
+
+fcalias clar1_spa1 vsan 174
+fcalias clar1_spb1 vsan 174
+fcalias clar2_spa1 vsan 174
+fcalias clar4_fcoe_spa0 vsan 174
+fcalias clar4_fcoe_spb0 vsan 174
+fcalias clar4_spa0 vsan 174
+fcalias clar4_spb0 vsan 174
+fcalias ibm_ds5020_spa_ch2 vsan 174
+fcalias ibm_ds5020_spb_ch2 vsan 174
+fcalias softsanblaze4_fc0 vsan 174
+fcalias softsanblaze4_fc1 vsan 174
+fcalias softsanblaze4_fc2 vsan 174
+fcalias softsanblaze4_fc3 vsan 174
+fcalias sanblaze4_fc0 vsan 174
+fcalias sanblaze4_fc1 vsan 174
+fcalias sanblaze4_fc2 vsan 174
+fcalias sanblaze4_fc3 vsan 174
+fcalias vnx_spa1_a3 vsan 174
+fcalias vmax_7F0 vsan 174
+fcalias absolute_head_a vsan 174
+fcalias compellent_fcoe_340A vsan 174
+fcalias Compellent_fcoe_3422 vsan 174

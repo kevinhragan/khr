@@ -1,0 +1,2 @@
+install xauth on sshd server
+   fedora: yum install xorg-x11-xauth

@@ -1,0 +1,6 @@
+# allow local imports
+import sys
+sys.path.append("/root/git/provision/lib")
+
+import io_lib
+io_lib.run_io("maim", "-M120 -d60", ("/dev/sdh",), "/tmp", log.return_logger("/tmp","git-test"))

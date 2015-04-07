@@ -1,0 +1,11 @@
+# copy over ssh-keys
+ssh-copy-id <host>
+
+# pull in needed repos
+# how come we don't need these anymore?
+git clone git://ringo/scripts/testing
+git clone git://ringo/scripts/install
+
+# copy in .screenrc .bashrc .bash_profile
+cp testing/users/kevin/.{bash,screen}* .
+
